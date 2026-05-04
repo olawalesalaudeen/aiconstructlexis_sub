@@ -28,7 +28,3 @@ pip install -r requirements.txt
 4. **Characterize** — synthesize a usage description for each canonical entity
    from its source snippets.
 5. **Join** venue-level networks into the global Lexis.
-6. **Analyze** and **visualize** (figures in `../local/figures/` if present;
-   the interactive viewer is at the repo root).
-
-See the paper §3 and Appendix A for the full pipeline diagram and prompts.
