@@ -1,0 +1,100 @@
+{
+  "canonical_name": "Biography",
+  "type": "measurement",
+  "canonical_definition": "Across the provided sources, Biography is consistently characterized as a dataset for evaluating language models. It is defined as a \"fact-seeking long-form generation dataset\" containing prompts or questions centered on biographical information, with its size noted as 181 prompts in one paper and 183 questions in another. The prevailing use of the dataset is to assess factuality; papers report using it to measure the construct of `Faithfulness` and to evaluate \"factual consistency in narrative generation.\" One study specifically employs it as a test set for \"out-of-domain evaluation of factuality.\" A different line of inquiry uses the Biography dataset to measure `Knowledge forgetting`. The tasks within the instrument are explicitly related to the behavior of `Biography generation`.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Biography",
+    "Biography dataset"
+  ],
+  "papers": [
+    "Disambiguating Reference in Visually Grounded Dialogues through Joint Modeling of Textual and Multimodal Semantic Structures",
+    "OMGM: Orchestrate Multiple Granularities and Modalities for Efficient Multimodal Retrieval",
+    "Mask-DPO: Generalizable Fine-grained Factuality Alignment of LLMs",
+    "Spurious Forgetting in Continual Learning of Language Models"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Fact-seeking long-form generation dataset with 181 prompts centered on biographical information, used to evaluate factual consistency in narrative generation.",
+      "paper": "Disambiguating Reference in Visually Grounded Dialogues through Joint Modeling of Textual and Multimodal Semantic Structures",
+      "original_name": "Biography"
+    },
+    {
+      "text": "A test set containing questions about generating biographies, used for out-of-domain evaluation of factuality.",
+      "paper": "Mask-DPO: Generalizable Fine-grained Factuality Alignment of LLMs",
+      "original_name": "Biography dataset"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Factuality",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Mask-DPO: Generalizable Fine-grained Factuality Alignment of LLMs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Mask-DPO: Generalizable Fine-grained Factuality Alignment of LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Biography generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Mask-DPO: Generalizable Fine-grained Factuality Alignment of LLMs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Mask-DPO: Generalizable Fine-grained Factuality Alignment of LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge forgetting",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Spurious Forgetting in Continual Learning of Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Spurious Forgetting in Continual Learning of Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the provided sources, Biography is consistently characterized as a dataset for evaluating language models. It is defined as a \"fact-seeking long-form generation dataset\" containing prompts or questions centered on biographical information, with its size noted as 181 prompts in one paper and 183 questions in another. The prevailing use of the dataset is to assess factuality; papers report using it to measure the construct of `Faithfulness` and to evaluate \"factual consistency in narrative generation.\" One study specifically employs it as a test set for \"out-of-domain evaluation of factuality.\" A different line of inquiry uses the Biography dataset to measure `Knowledge forgetting`. The tasks within the instrument are explicitly related to the behavior of `Biography generation`.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Disambiguating Reference in Visually Grounded Dialogues through Joint Modeling of Textual and Multimodal Semantic Structures",
+      "OMGM: Orchestrate Multiple Granularities and Modalities for Efficient Multimodal Retrieval"
+    ],
+    "iclr25": [
+      "Mask-DPO: Generalizable Fine-grained Factuality Alignment of LLMs",
+      "Spurious Forgetting in Continual Learning of Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "iclr25": 2
+  },
+  "conferences": [
+    "acl25",
+    "iclr25"
+  ]
+}

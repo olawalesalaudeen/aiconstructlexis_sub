@@ -1,0 +1,187 @@
+{
+  "canonical_name": "Emotion understanding",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, \"Emotion understanding\" is consistently characterized as a model's ability to perceive, interpret, and infer emotional states from multimodal inputs like images, text, and voice. A prevalent theme is the distinction between basic classification and more complex comprehension, with many definitions emphasizing \"fine-grained\" or \"nuanced\" recognition of \"subtle, compound, or culturally specific emotional states\" (OV-MER: Towards Open-Vocabulary Multimodal Emotion Recognition). This advanced capability is often contrasted with \"naive discriminative tasks,\" aiming instead for generative descriptions of complex emotions (AffectGPT: A New Dataset, Model, and Benchmark for Emotion Understanding with Multimodal Large Language Models). The construct is operationalized and measured using several benchmarks, including MVSA-S and MVSA-M for sentiment polarity classification, TumEmo for classifying six basic emotions, and the MELD dataset. Some work highlights that models still struggle with this ability, finding it difficult to \"distinguish between semantically similar emotions\" or filter \"irrelevant visual information\" (Catch Your Emotion: Sharpening Emotion Perception in Multimodal Large Language Models). The construct is studied alongside \"Emotional reasoning\" and is explicitly positioned as a component of \"Fine-grained understanding.\"",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Emotion understanding",
+    "Emotion perception",
+    "Emotional recognition",
+    "Fine-grained emotion recognition",
+    "Nuanced emotion recognition"
+  ],
+  "papers": [
+    "AffectGPT: A New Dataset, Model, and Benchmark for Emotion Understanding with Multimodal Large Language Models",
+    "Catch Your Emotion: Sharpening Emotion Perception in Multimodal Large Language Models",
+    "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding",
+    "OV-MER: Towards Open-Vocabulary Multimodal Emotion Recognition",
+    "$E^3$: Exploring Embodied Emotion Through A Large-Scale Egocentric Video Dataset",
+    "ConMe: Rethinking Evaluation of Compositional Reasoning for Modern VLMs",
+    "Emotion-LLaMA: Multimodal Emotion Recognition and Reasoning with Instruction Tuning",
+    "II-Bench: An Image Implication Understanding Benchmark for Multimodal Large Language Models"
+  ],
+  "paper_count": 8,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The ability to infer or form an opinion about the emotional or atmospheric qualities of a scene based on visual evidence.",
+      "paper": "ConMe: Rethinking Evaluation of Compositional Reasoning for Modern VLMs",
+      "original_name": "Emotion understanding"
+    },
+    {
+      "text": "The ability to perceive and interpret the human emotions, sentiment, and affective tone conveyed by an image.",
+      "paper": "II-Bench: An Image Implication Understanding Benchmark for Multimodal Large Language Models",
+      "original_name": "Emotional understanding"
+    },
+    {
+      "text": "The latent ability to accurately identify and interpret emotional expressions from multimodal inputs.",
+      "paper": "Emotion-LLaMA: Multimodal Emotion Recognition and Reasoning with Instruction Tuning",
+      "original_name": "Emotion perception"
+    },
+    {
+      "text": "The latent ability to infer a person's emotion category from multimodal evidence such as facial expression, voice, and text.",
+      "paper": "Emotion-LLaMA: Multimodal Emotion Recognition and Reasoning with Instruction Tuning",
+      "original_name": "Emotional recognition"
+    },
+    {
+      "text": "The capacity to identify and generate detailed, nuanced emotional categories beyond basic emotions, reflecting the diversity and subtlety of human affective states.",
+      "paper": "AffectGPT: A New Dataset, Model, and Benchmark for Emotion Understanding with Multimodal Large Language Models",
+      "original_name": "Fine-grained emotion recognition"
+    },
+    {
+      "text": "The ability to detect and represent subtle, compound, or culturally specific emotional states that are not captured by basic emotion taxonomies.",
+      "paper": "OV-MER: Towards Open-Vocabulary Multimodal Emotion Recognition",
+      "original_name": "Nuanced emotion recognition"
+    }
+  ],
+  "definition_count": 6,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Emotional reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Catch Your Emotion: Sharpening Emotion Perception in Multimodal Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Catch Your Emotion: Sharpening Emotion Perception in Multimodal Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Fine-grained understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding",
+      "evidence": "While recent MLLMs show promising results in basic perception, they still struggle to perceive fine-grained details (Tong et al., 2024b), which is essential for understanding cognition and emotion.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Emotion analysis",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Catch Your Emotion: Sharpening Emotion Perception in Multimodal Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Catch Your Emotion: Sharpening Emotion Perception in Multimodal Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MVSA-S",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding",
+      "evidence": "\u201cEmotion: Following (Yang et al., 2023; Huang et al., 2024), we conduct experiments on 4 benchmark datasets. MVSA-S and MVSA-M (Niu et al., 2016) are datasets used for sentiment polarity classification (positive or negative), while TumEmo (Yang et al., 2021) is a multimodal dataset designed for classifying six basic emotions. Additionally, HFM (Liu et al., 2022) is a multimodal dataset focused on recognizing high-level implicit emotion of sarcasm.\u201d",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MVSA-M",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding",
+      "evidence": "\u201cEmotion: Following (Yang et al., 2023; Huang et al., 2024), we conduct experiments on 4 benchmark datasets. MVSA-S and MVSA-M (Niu et al., 2016) are datasets used for sentiment polarity classification (positive or negative), while TumEmo (Yang et al., 2021) is a multimodal dataset designed for classifying six basic emotions. Additionally, HFM (Liu et al., 2022) is a multimodal dataset focused on recognizing high-level implicit emotion of sarcasm.\u201d",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TumEmo",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding",
+      "evidence": "\u201cEmotion: Following (Yang et al., 2023; Huang et al., 2024), we conduct experiments on 4 benchmark datasets. MVSA-S and MVSA-M (Niu et al., 2016) are datasets used for sentiment polarity classification (positive or negative), while TumEmo (Yang et al., 2021) is a multimodal dataset designed for classifying six basic emotions. Additionally, HFM (Liu et al., 2022) is a multimodal dataset focused on recognizing high-level implicit emotion of sarcasm.\u201d",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MELD",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Robust Adaptation of Large Multimodal Models for Retrieval Augmented Hateful Meme Detection",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Robust Adaptation of Large Multimodal Models for Retrieval Augmented Hateful Meme Detection"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 7,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 6,
+  "characterization": "Across the surveyed literature, \"Emotion understanding\" is consistently characterized as a model's ability to perceive, interpret, and infer emotional states from multimodal inputs like images, text, and voice. A prevalent theme is the distinction between basic classification and more complex comprehension, with many definitions emphasizing \"fine-grained\" or \"nuanced\" recognition of \"subtle, compound, or culturally specific emotional states\" (OV-MER: Towards Open-Vocabulary Multimodal Emotion Recognition). This advanced capability is often contrasted with \"naive discriminative tasks,\" aiming instead for generative descriptions of complex emotions (AffectGPT: A New Dataset, Model, and Benchmark for Emotion Understanding with Multimodal Large Language Models). The construct is operationalized and measured using several benchmarks, including MVSA-S and MVSA-M for sentiment polarity classification, TumEmo for classifying six basic emotions, and the MELD dataset. Some work highlights that models still struggle with this ability, finding it difficult to \"distinguish between semantically similar emotions\" or filter \"irrelevant visual information\" (Catch Your Emotion: Sharpening Emotion Perception in Multimodal Large Language Models). The construct is studied alongside \"Emotional reasoning\" and is explicitly positioned as a component of \"Fine-grained understanding.\"",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "$E^3$: Exploring Embodied Emotion Through A Large-Scale Egocentric Video Dataset",
+      "ConMe: Rethinking Evaluation of Compositional Reasoning for Modern VLMs",
+      "Emotion-LLaMA: Multimodal Emotion Recognition and Reasoning with Instruction Tuning",
+      "II-Bench: An Image Implication Understanding Benchmark for Multimodal Large Language Models"
+    ],
+    "icml25": [
+      "AffectGPT: A New Dataset, Model, and Benchmark for Emotion Understanding with Multimodal Large Language Models",
+      "Catch Your Emotion: Sharpening Emotion Perception in Multimodal Large Language Models",
+      "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding",
+      "OV-MER: Towards Open-Vocabulary Multimodal Emotion Recognition"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 4,
+    "icml25": 4
+  },
+  "conferences": [
+    "icml25",
+    "neurips24"
+  ]
+}

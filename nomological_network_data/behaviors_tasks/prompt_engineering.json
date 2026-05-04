@@ -1,0 +1,692 @@
+{
+  "canonical_name": "Prompt engineering",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, prompt engineering is predominantly characterized as the observable behavior of either generating new textual inputs or modifying existing ones to guide language models toward desired outcomes. The most common form is the generation of new content, which encompasses a wide range of actions from producing search queries for retrieval and formulating questions to resolve ambiguity, to creating novel mathematical problems or task instructions. For instance, several papers define this as asking clarifying questions to \"elicit more information\" (\"Modeling Future Conversation Turns to Teach LLMs to Ask Clarifying Questions\"), while others focus on generating new data for model training. A second, widely discussed aspect involves the modification and optimization of existing prompts. This includes rewriting queries to be more \"search-engine-friendly\" (\"MMSearch: Unveiling the Potential of Large Models as Multi-modal Search Engines\"), rephrasing prompts to bypass safety measures, or systematically refining them to improve task performance. The literature describes several distinct optimization methods, such as \"soft prompt tuning,\" which optimizes trainable embedding vectors, and \"black-box prompt tuning,\" which adjusts prompts based only on model outputs. The effectiveness of these behaviors is operationalized and evaluated using benchmarks including MS-COCO, MovieLens, and SQuAD v1.1. Prompt engineering is frequently studied alongside disambiguation and mathematical reasoning, and some work reports that specific techniques can influence model generalization, interpretability, and flexibility.",
+  "expert_reviewed": false,
+  "expert_removed": true,
+  "expert_removed_reason": "method/engineering \u2014 not a construct/measurement/behavior of LLM ability",
+  "names": [
+    "Question formulation",
+    "Follow-up question generation",
+    "Prompt generation",
+    "Question generation",
+    "Task description generation",
+    "Prompt inversion",
+    "Asking clarifying questions",
+    "Prompt paraphrasing",
+    "Expression rewriting",
+    "Prompt rewriting",
+    "Query modification",
+    "Prompt distillation",
+    "Prompt evolution",
+    "Hybrid prompt generation",
+    "Discrete prompt optimization",
+    "Black-box prompt tuning",
+    "Soft prompt tuning",
+    "Contrastive prompt generation",
+    "Clarification question asking",
+    "Clarifying question generation",
+    "Question asking",
+    "Open-ended questioning",
+    "Chain-of-thought prompting",
+    "Query synthesis",
+    "Open-ended question asking",
+    "Pseudo-query generation"
+  ],
+  "papers": [
+    "Code-Switching Red-Teaming:LLMEvaluation for Safety and Multilingual Understanding",
+    "CrafText Benchmark: Advancing Instruction Following in Complex Multimodal Open-Ended World",
+    "HD-NDEs: Neural Differential Equations for Hallucination Detection inLLMs",
+    "Sharper and Faster mean Better: Towards More Efficient Vision-Language Model for Hour-scale Long Video Understanding",
+    "2025.emnlp-main.960.checklist",
+    "ChameleonLLMs: User Personas Influence Chatbot Personality Shifts",
+    "Compositional Generalisation for Explainable Hate Speech Detection",
+    "Extracting and Combining Abilities For Building Multi-lingual Ability-enhanced Large Language Models",
+    "LeTS: Learning to Think-and-Search via Process-and-Outcome Reward Hybridization",
+    "RCScore: Quantifying Response Consistency in Large Language Models",
+    "RPDR: A Round-trip Prediction-Based Data Augmentation Framework for Long-Tail Question Answering",
+    "Reading Between the Prompts: How Stereotypes ShapeLLM\u2019s Implicit Personalization",
+    "TinySQL: A Progressive Text-to-SQLDataset for Mechanistic Interpretability Research",
+    "Connecting Large Language Models with Evolutionary Algorithms Yields Powerful Prompt Optimizers",
+    "DP-OPT: Make Large Language Model Your Privacy-Preserving Prompt Engineer",
+    "Large Language Models as Optimizers",
+    "Advancing Mathematical Reasoning in Language Models: The Impact of Problem-Solving Data, Data Synthesis Methods, and Training Stages",
+    "Anyprefer: An Agentic Framework for Preference Data Synthesis",
+    "BIRD: A Trustworthy Bayesian Inference Framework for Large Language Models",
+    "Bootstrapping Language-Guided Navigation Learning with Self-Refining Data Flywheel",
+    "Bridging the Semantic Gap Between Text and Table: A Case Study on NL2SQL",
+    "Can Textual Gradient Work in Federated Learning?",
+    "DELIFT: Data Efficient Language model Instruction Fine-Tuning",
+    "DOTS: Learning to Reason Dynamically in LLMs via Optimal Reasoning Trajectories Search",
+    "GReaTer: Gradients Over Reasoning Makes Smaller Language Models Strong Prompt Optimizers",
+    "Grounding by Trying: LLMs with Reinforcement Learning-Enhanced Retrieval",
+    "InsightBench: Evaluating Business Analytics Agents Through Multi-Step Insight Generation",
+    "MMSearch: Unveiling the Potential of Large Models as Multi-modal Search Engines",
+    "Magpie: Alignment Data Synthesis from Scratch by Prompting Aligned LLMs with Nothing",
+    "Modeling Future Conversation Turns to Teach LLMs to Ask Clarifying Questions",
+    "Mutual Reasoning Makes Smaller LLMs Stronger Problem-Solver",
+    "OMNI-EPIC: Open-endedness via Models of human Notions of Interestingness with Environments Programmed in Code",
+    "One Model Transfer to All: On Robust Jailbreak Prompts Generation against LLMs",
+    "OpenMathInstruct-2: Accelerating AI for Math with Massive Open-Source Instruction Data",
+    "Pareto Prompt Optimization",
+    "Prompt as Knowledge Bank: Boost Vision-language model via Structural Representation for  zero-shot medical detection",
+    "Rare-to-Frequent: Unlocking Compositional Generation Power of Diffusion Models on Rare Concepts with LLM Guidance",
+    "Re-Aligning Language to Visual Objects with an Agentic Workflow",
+    "Self-Boosting Large Language Models with  Synthetic Preference Data",
+    "SmartRAG: Jointly Learn RAG-Related Tasks From the Environment Feedback",
+    "TeaserGen: Generating Teasers for Long Documentaries",
+    "Unbounded: A Generative Infinite Game of Character Life Simulation",
+    "Unified Parameter-Efficient Unlearning for LLMs",
+    "Visually Guided Decoding: Gradient-Free Hard Prompt Inversion with Language Models",
+    "Active Task Disambiguation with LLMs",
+    "Learning to Clarify: Multi-turn Conversations with Action-Based Contrastive Self-Training",
+    "Alpha-SQL: Zero-Shot Text-to-SQL using Monte Carlo Tree Search",
+    "C-3PO: Compact Plug-and-Play Proxy Optimization to Achieve Human-like Retrieval-Augmented Generation",
+    "CPCF: A Cross-Prompt Contrastive Framework for Referring Multimodal Large Language Models",
+    "DocKS-RAG: Optimizing Document-Level Relation Extraction through LLM-Enhanced Hybrid Prompt Tuning",
+    "Efficient and Privacy-Preserving Soft Prompt Transfer for LLMs",
+    "FedOne: Query-Efficient Federated Learning for Black-box Discrete Prompt Learning",
+    "LLMs can see and hear without any training",
+    "Larger or Smaller Reward Margins to Select Preferences for LLM Alignment?",
+    "Position: Uncertainty Quantification Needs Reassessment for Large Language Model Agents",
+    "Reliable and Efficient Amortized Model-based Evaluation",
+    "Reward-Guided Prompt Evolving in Reinforcement Learning for LLMs",
+    "SNS-Bench: Defining, Building, and Assessing Capabilities of Large Language Models in Social Networking Services",
+    "The Synergy of LLMs & RL Unlocks Offline Learning of Generalizable Language-Conditioned Policies with Low-fidelity Data",
+    "Unbiased Evaluation of Large Language Models from a Causal Perspective",
+    "Understanding Complexity in VideoQA via Visual Program Generation",
+    "LMRL Gym: Benchmarks for Multi-Turn Reinforcement Learning with Language Models",
+    "Position: Medical Large Language Model Benchmarks Should Prioritize Construct Validity",
+    "ALiiCE: Evaluating Positional Fine-grained Citation Generation",
+    "Characterizing the Role of Similarity in the Property Inferences of Language Models",
+    "Guiding Medical Vision-Language Models with Diverse Visual Prompts: Framework Design and Comprehensive Exploration of Prompt Variations",
+    "MediQ: Question-Asking LLMs and a Benchmark for Reliable Interactive Clinical Reasoning",
+    "Uncertainty of Thoughts: Uncertainty-Aware Planning Enhances Information Seeking in LLMs",
+    "Approaching Human-Level Forecasting with Language Models",
+    "Can Language Models Perform Robust Reasoning in Chain-of-thought Prompting with Noisy Rationales?",
+    "IPO: Interpretable Prompt Optimization for Vision-Language Models",
+    "LOVA3: Learning to Visual Question Answering, Asking and Assessment",
+    "Localized Zeroth-Order Prompt Optimization",
+    "Long-form factuality in large language models",
+    "Observational Scaling Laws and the Predictability of Langauge Model Performance",
+    "Perception of Knowledge Boundary for Large Language Models through Semi-open-ended Question Answering",
+    "STaRK: Benchmarking LLM Retrieval on Textual and Relational Knowledge Bases",
+    "SearchLVLMs: A Plug-and-Play Framework for Augmenting Large Vision-Language Models by Searching Up-to-Date Internet Knowledge",
+    "SelfCodeAlign: Self-Alignment for Code Generation",
+    "Time-Reversal Provides Unsupervised Feedback to LLMs"
+  ],
+  "paper_count": 80,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The observable act of generating relevant and specific questions to explore a dataset in pursuit of a high-level goal.",
+      "paper": "InsightBench: Evaluating Business Analytics Agents Through Multi-Step Insight Generation",
+      "original_name": "Question formulation"
+    },
+    {
+      "text": "Producing textual prompts that are fed to a task-specific language model to elicit desired outputs.",
+      "paper": "Pareto Prompt Optimization",
+      "original_name": "Prompt generation"
+    },
+    {
+      "text": "The observable act of generating questions to acquire additional information needed to improve confidence in a decision.",
+      "paper": "BIRD: A Trustworthy Bayesian Inference Framework for Large Language Models",
+      "original_name": "Follow-up question generation"
+    },
+    {
+      "text": "The observable task of creating new mathematical problems, often based on seed examples from an existing dataset.",
+      "paper": "OpenMathInstruct-2: Accelerating AI for Math with Massive Open-Source Instruction Data",
+      "original_name": "Question generation"
+    },
+    {
+      "text": "The task of producing a natural language instruction that accurately describes a given trajectory through an environment.",
+      "paper": "Bootstrapping Language-Guided Navigation Learning with Self-Refining Data Flywheel",
+      "original_name": "Instruction generation"
+    },
+    {
+      "text": "The observable action of a model producing a textual query to be sent to a retriever or search engine.",
+      "paper": "Grounding by Trying: LLMs with Reinforcement Learning-Enhanced Retrieval",
+      "original_name": "Search query generation"
+    },
+    {
+      "text": "Generating a textual prompt that, when provided to a text-to-image model, reproduces a given target image.",
+      "paper": "Visually Guided Decoding: Gradient-Free Hard Prompt Inversion with Language Models",
+      "original_name": "Prompt inversion"
+    },
+    {
+      "text": "The observable action of producing a novel task description in natural language, intended to be both learnable for an agent and distinct from previously seen tasks.",
+      "paper": "OMNI-EPIC: Open-endedness via Models of human Notions of Interestingness with Environments Programmed in Code",
+      "original_name": "Task description generation"
+    },
+    {
+      "text": "The act of generating a question in response to a user's query to resolve ambiguity and elicit more information.",
+      "paper": "Modeling Future Conversation Turns to Teach LLMs to Ask Clarifying Questions",
+      "original_name": "Asking clarifying questions"
+    },
+    {
+      "text": "Rewriting a user query into a clearer or search-engine-friendly form, sometimes incorporating information extracted from an image.",
+      "paper": "MMSearch: Unveiling the Potential of Large Models as Multi-modal Search Engines",
+      "original_name": "Query reformulation"
+    },
+    {
+      "text": "The task of modifying an existing language expression to correct inaccuracies and better align it with a target visual object.",
+      "paper": "Re-Aligning Language to Visual Objects with an Agentic Workflow",
+      "original_name": "Expression rewriting"
+    },
+    {
+      "text": "Rephrasing an input prompt while preserving its meaning, often to make malicious intent less detectable.",
+      "paper": "One Model Transfer to All: On Robust Jailbreak Prompts Generation against LLMs",
+      "original_name": "Prompt rewriting"
+    },
+    {
+      "text": "The observable behavior of rewriting a text prompt to make it easier for a model to interpret, while preserving the original meaning.",
+      "paper": "Rare-to-Frequent: Unlocking Compositional Generation Power of Diffusion Models on Rare Concepts with LLM Guidance",
+      "original_name": "Prompt paraphrasing"
+    },
+    {
+      "text": "The action of restating a given problem or question, often to clarify conditions or focus on key information.",
+      "paper": "Mutual Reasoning Makes Smaller LLMs Stronger Problem-Solver",
+      "original_name": "Question rephrasing"
+    },
+    {
+      "text": "The observable action of reformulating an input query to improve its clarity or comprehensibility before attempting to solve it.",
+      "paper": "DOTS: Learning to Reason Dynamically in LLMs via Optimal Reasoning Trajectories Search",
+      "original_name": "Query rewriting"
+    },
+    {
+      "text": "The observable action of adjusting input tokens in a query, such as removing noisy or correcting erroneous tokens.",
+      "paper": "Unified Parameter-Efficient Unlearning for LLMs",
+      "original_name": "Query modification"
+    },
+    {
+      "text": "Shortening a long, descriptive text prompt into a more concise version while preserving its core semantic meaning for image generation.",
+      "paper": "Visually Guided Decoding: Gradient-Free Hard Prompt Inversion with Language Models",
+      "original_name": "Prompt distillation"
+    },
+    {
+      "text": "Refining a prompt to improve a language model's performance on a target task.",
+      "paper": "GReaTer: Gradients Over Reasoning Makes Smaller Language Models Strong Prompt Optimizers",
+      "original_name": "Prompt optimization"
+    },
+    {
+      "text": "The task of creating effective search queries to send to a retriever to obtain relevant information for a given question.",
+      "paper": "C-3PO: Compact Plug-and-Play Proxy Optimization to Achieve Human-like Retrieval-Augmented Generation",
+      "original_name": "Query generation"
+    },
+    {
+      "text": "The process of adjusting sequences of discrete tokens (prompts) through interaction with a black-box LLM to improve task performance without access to model gradients.",
+      "paper": "FedOne: Query-Efficient Federated Learning for Black-box Discrete Prompt Learning",
+      "original_name": "Discrete prompt optimization"
+    },
+    {
+      "text": "Adjusting input prompts to a large language model based solely on its outputs, without access to internal model states or gradients, typically via API queries.",
+      "paper": "FedOne: Query-Efficient Federated Learning for Black-box Discrete Prompt Learning",
+      "original_name": "Black-box prompt tuning"
+    },
+    {
+      "text": "The process of optimizing trainable embedding vectors prepended to the input of a frozen language model to adapt it to a downstream task.",
+      "paper": "Efficient and Privacy-Preserving Soft Prompt Transfer for LLMs",
+      "original_name": "Soft prompt tuning"
+    },
+    {
+      "text": "The process of combining structural knowledge from a document-level knowledge graph and semantic context from retrieved sentences into a unified prompt for LLM input.",
+      "paper": "DocKS-RAG: Optimizing Document-Level Relation Extraction through LLM-Enhanced Hybrid Prompt Tuning",
+      "original_name": "Hybrid prompt generation"
+    },
+    {
+      "text": "Modifying existing prompts through rewriting or transformation to increase their complexity or learning value for the model.",
+      "paper": "Reward-Guided Prompt Evolving in Reinforcement Learning for LLMs",
+      "original_name": "Prompt evolution"
+    },
+    {
+      "text": "Producing alternative visual prompts from misleading regions that are used to contrast against the original input prompt during decoding.",
+      "paper": "CPCF: A Cross-Prompt Contrastive Framework for Referring Multimodal Large Language Models",
+      "original_name": "Contrastive prompt generation"
+    },
+    {
+      "text": "Producing a clarifying question instead of directly answering when the user request is ambiguous or underspecified.",
+      "paper": "Learning to Clarify: Multi-turn Conversations with Action-Based Contrastive Self-Training",
+      "original_name": "Clarification question asking"
+    },
+    {
+      "text": "Producing questions intended to elicit missing task specifications that distinguish among multiple compatible solutions.",
+      "paper": "Active Task Disambiguation with LLMs",
+      "original_name": "Clarifying question generation"
+    },
+    {
+      "text": "Generating follow-up inquiries to gather additional patient information when initial context is insufficient.",
+      "paper": "MediQ: Question-Asking LLMs and a Benchmark for Reliable Interactive Clinical Reasoning",
+      "original_name": "Question asking"
+    },
+    {
+      "text": "The behavior of asking questions that encourage detailed, narrative responses rather than simple yes/no answers.",
+      "paper": "Position: Medical Large Language Model Benchmarks Should Prioritize Construct Validity",
+      "original_name": "Open-ended questioning"
+    },
+    {
+      "text": "Generating prompts that encourage step-by-step reasoning before answering a problem.",
+      "paper": "Localized Zeroth-Order Prompt Optimization",
+      "original_name": "Chain-of-thought prompting"
+    },
+    {
+      "text": "Generating natural-sounding user queries from relational and textual requirements for benchmark construction.",
+      "paper": "STaRK: Benchmarking LLM Retrieval on Textual and Relational Knowledge Bases",
+      "original_name": "Query synthesis"
+    },
+    {
+      "text": "Posing free-form questions that elicit descriptive answers, rather than binary yes/no responses, to gather richer information about a hidden object.",
+      "paper": "ChameleonLLMs: User Personas Influence Chatbot Personality Shifts",
+      "original_name": "Open-ended question asking"
+    },
+    {
+      "text": "The process by which an LLM generates synthetic queries from unlabeled passages to form augmented training pairs for retrieval models.",
+      "paper": "Extracting and Combining Abilities For Building Multi-lingual Ability-enhanced Large Language Models",
+      "original_name": "Pseudo-query generation"
+    }
+  ],
+  "definition_count": 33,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Visually Guided Decoding: Gradient-Free Hard Prompt Inversion with Language Models",
+      "evidence": "VGD enhances the interpretability, generalization, and flexibility of prompt generation without the need for additional training. (Section 1)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Visually Guided Decoding: Gradient-Free Hard Prompt Inversion with Language Models"
+        ],
+        "icml25": [
+          "Reward-Guided Prompt Evolving in Reinforcement Learning for LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "SimulS2S-LLM: Unlocking Simultaneous Inference of SpeechLLMs for Speech-to-Speech Translation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "SimulS2S-LLM: Unlocking Simultaneous Inference of SpeechLLMs for Speech-to-Speech Translation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Localized Zeroth-Order Prompt Optimization",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Localized Zeroth-Order Prompt Optimization"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Characterizing the Role of Similarity in the Property Inferences of Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Characterizing the Role of Similarity in the Property Inferences of Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mathematical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Code-Switching Red-Teaming:LLMEvaluation for Safety and Multilingual Understanding",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Code-Switching Red-Teaming:LLMEvaluation for Safety and Multilingual Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Interpretability and explainability",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Visually Guided Decoding: Gradient-Free Hard Prompt Inversion with Language Models",
+      "evidence": "Additionally, we add the perplexity regularization term Lperpl to promote the interpretability of the optimized prompt",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Visually Guided Decoding: Gradient-Free Hard Prompt Inversion with Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Robustness",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Reward-Guided Prompt Evolving in Reinforcement Learning for LLMs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Reward-Guided Prompt Evolving in Reinforcement Learning for LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Flexibility",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Visually Guided Decoding: Gradient-Free Hard Prompt Inversion with Language Models",
+      "evidence": "VGD enhances the interpretability, generalization, and flexibility of prompt generation without the need for additional training. (Section 1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Visually Guided Decoding: Gradient-Free Hard Prompt Inversion with Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Style transfer",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Visually Guided Decoding: Gradient-Free Hard Prompt Inversion with Language Models",
+      "evidence": "VGD can also be easily adapted to style transfer. (Section 4.2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Visually Guided Decoding: Gradient-Free Hard Prompt Inversion with Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MS-COCO",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Visually Guided Decoding: Gradient-Free Hard Prompt Inversion with Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Visually Guided Decoding: Gradient-Free Hard Prompt Inversion with Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "FeTaQA",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Bridging the Semantic Gap Between Text and Table: A Case Study on NL2SQL",
+      "evidence": "To further increase data diversity, we also adapt FetaQA (Nan et al., 2022), WikiTableQuestion (Pasupat & Liang, 2015), and ToTTo (Parikh et al., 2020) into formats suitable for training column embeddings, resulting in three adapted tasks: \u2462Question Generation... \u2463Table Titling... and \u2464Row Summarization (Section 4.2).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Bridging the Semantic Gap Between Text and Table: A Case Study on NL2SQL"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Self-reflection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Active Task Disambiguation with LLMs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Active Task Disambiguation with LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MovieLens",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Unified Parameter-Efficient Unlearning for LLMs",
+      "evidence": "Experimental results on the QM task, using LLaRA as the LLM4Rec model on the MovieLens and LastFM datasets. (Table 3)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Unified Parameter-Efficient Unlearning for LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LastFM",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Unified Parameter-Efficient Unlearning for LLMs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Unified Parameter-Efficient Unlearning for LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Ambiguity handling",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Modeling Future Conversation Turns to Teach LLMs to Ask Clarifying Questions",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Modeling Future Conversation Turns to Teach LLMs to Ask Clarifying Questions"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Expressive power",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "RNNs are not Transformers (Yet):  The Key Bottleneck on In-Context Retrieval",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "RNNs are not Transformers (Yet):  The Key Bottleneck on In-Context Retrieval"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Parameters vs FLOPs: Scaling Laws for Optimal Sparsity for Mixture-of-Experts Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Parameters vs FLOPs: Scaling Laws for Optimal Sparsity for Mixture-of-Experts Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Text generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Reward-Guided Prompt Evolving in Reinforcement Learning for LLMs",
+      "evidence": "Using the generated instruction IL, we prompt \u03c0S to produce two responses: a chosen response yS \u223c\u03c0S(y \u2223xS) based on the short context xS, and a rejected response yL\u223c\u03c0S(y \u2223xL) derived from the long context xL.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Reward-Guided Prompt Evolving in Reinforcement Learning for LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Disambiguation",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Bitune: Leveraging Bidirectional Attention to Improve Decoder-OnlyLLMs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Bitune: Leveraging Bidirectional Attention to Improve Decoder-OnlyLLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SQuAD v1.1",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Reading Between the Prompts: How Stereotypes ShapeLLM\u2019s Implicit Personalization",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Reading Between the Prompts: How Stereotypes ShapeLLM\u2019s Implicit Personalization"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 20,
+  "incoming_relationship_count": 5,
+  "outgoing_relationship_count": 15,
+  "characterization": "Across the surveyed literature, prompt engineering is predominantly characterized as the observable behavior of either generating new textual inputs or modifying existing ones to guide language models toward desired outcomes. The most common form is the generation of new content, which encompasses a wide range of actions from producing search queries for retrieval and formulating questions to resolve ambiguity, to creating novel mathematical problems or task instructions. For instance, several papers define this as asking clarifying questions to \"elicit more information\" (\"Modeling Future Conversation Turns to Teach LLMs to Ask Clarifying Questions\"), while others focus on generating new data for model training. A second, widely discussed aspect involves the modification and optimization of existing prompts. This includes rewriting queries to be more \"search-engine-friendly\" (\"MMSearch: Unveiling the Potential of Large Models as Multi-modal Search Engines\"), rephrasing prompts to bypass safety measures, or systematically refining them to improve task performance. The literature describes several distinct optimization methods, such as \"soft prompt tuning,\" which optimizes trainable embedding vectors, and \"black-box prompt tuning,\" which adjusts prompts based only on model outputs. The effectiveness of these behaviors is operationalized and evaluated using benchmarks including MS-COCO, MovieLens, and SQuAD v1.1. Prompt engineering is frequently studied alongside disambiguation and mathematical reasoning, and some work reports that specific techniques can influence model generalization, interpretability, and flexibility.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Advancing Mathematical Reasoning in Language Models: The Impact of Problem-Solving Data, Data Synthesis Methods, and Training Stages",
+      "Anyprefer: An Agentic Framework for Preference Data Synthesis",
+      "BIRD: A Trustworthy Bayesian Inference Framework for Large Language Models",
+      "Bootstrapping Language-Guided Navigation Learning with Self-Refining Data Flywheel",
+      "Bridging the Semantic Gap Between Text and Table: A Case Study on NL2SQL",
+      "Can Textual Gradient Work in Federated Learning?",
+      "DELIFT: Data Efficient Language model Instruction Fine-Tuning",
+      "DOTS: Learning to Reason Dynamically in LLMs via Optimal Reasoning Trajectories Search",
+      "GReaTer: Gradients Over Reasoning Makes Smaller Language Models Strong Prompt Optimizers",
+      "Grounding by Trying: LLMs with Reinforcement Learning-Enhanced Retrieval",
+      "InsightBench: Evaluating Business Analytics Agents Through Multi-Step Insight Generation",
+      "MMSearch: Unveiling the Potential of Large Models as Multi-modal Search Engines",
+      "Magpie: Alignment Data Synthesis from Scratch by Prompting Aligned LLMs with Nothing",
+      "Modeling Future Conversation Turns to Teach LLMs to Ask Clarifying Questions",
+      "Mutual Reasoning Makes Smaller LLMs Stronger Problem-Solver",
+      "OMNI-EPIC: Open-endedness via Models of human Notions of Interestingness with Environments Programmed in Code",
+      "One Model Transfer to All: On Robust Jailbreak Prompts Generation against LLMs",
+      "OpenMathInstruct-2: Accelerating AI for Math with Massive Open-Source Instruction Data",
+      "Pareto Prompt Optimization",
+      "Prompt as Knowledge Bank: Boost Vision-language model via Structural Representation for  zero-shot medical detection",
+      "Rare-to-Frequent: Unlocking Compositional Generation Power of Diffusion Models on Rare Concepts with LLM Guidance",
+      "Re-Aligning Language to Visual Objects with an Agentic Workflow",
+      "Self-Boosting Large Language Models with  Synthetic Preference Data",
+      "SmartRAG: Jointly Learn RAG-Related Tasks From the Environment Feedback",
+      "TeaserGen: Generating Teasers for Long Documentaries",
+      "Unbounded: A Generative Infinite Game of Character Life Simulation",
+      "Unified Parameter-Efficient Unlearning for LLMs",
+      "Visually Guided Decoding: Gradient-Free Hard Prompt Inversion with Language Models",
+      "Active Task Disambiguation with LLMs",
+      "Learning to Clarify: Multi-turn Conversations with Action-Based Contrastive Self-Training"
+    ],
+    "icml25": [
+      "Alpha-SQL: Zero-Shot Text-to-SQL using Monte Carlo Tree Search",
+      "C-3PO: Compact Plug-and-Play Proxy Optimization to Achieve Human-like Retrieval-Augmented Generation",
+      "CPCF: A Cross-Prompt Contrastive Framework for Referring Multimodal Large Language Models",
+      "DocKS-RAG: Optimizing Document-Level Relation Extraction through LLM-Enhanced Hybrid Prompt Tuning",
+      "Efficient and Privacy-Preserving Soft Prompt Transfer for LLMs",
+      "FedOne: Query-Efficient Federated Learning for Black-box Discrete Prompt Learning",
+      "LLMs can see and hear without any training",
+      "Larger or Smaller Reward Margins to Select Preferences for LLM Alignment?",
+      "Position: Uncertainty Quantification Needs Reassessment for Large Language Model Agents",
+      "Reliable and Efficient Amortized Model-based Evaluation",
+      "Reward-Guided Prompt Evolving in Reinforcement Learning for LLMs",
+      "SNS-Bench: Defining, Building, and Assessing Capabilities of Large Language Models in Social Networking Services",
+      "The Synergy of LLMs & RL Unlocks Offline Learning of Generalizable Language-Conditioned Policies with Low-fidelity Data",
+      "Unbiased Evaluation of Large Language Models from a Causal Perspective",
+      "Understanding Complexity in VideoQA via Visual Program Generation",
+      "LMRL Gym: Benchmarks for Multi-Turn Reinforcement Learning with Language Models",
+      "Position: Medical Large Language Model Benchmarks Should Prioritize Construct Validity"
+    ],
+    "neurips24": [
+      "MediQ: Question-Asking LLMs and a Benchmark for Reliable Interactive Clinical Reasoning",
+      "Uncertainty of Thoughts: Uncertainty-Aware Planning Enhances Information Seeking in LLMs",
+      "Approaching Human-Level Forecasting with Language Models",
+      "Can Language Models Perform Robust Reasoning in Chain-of-thought Prompting with Noisy Rationales?",
+      "IPO: Interpretable Prompt Optimization for Vision-Language Models",
+      "LOVA3: Learning to Visual Question Answering, Asking and Assessment",
+      "Localized Zeroth-Order Prompt Optimization",
+      "Long-form factuality in large language models",
+      "Observational Scaling Laws and the Predictability of Langauge Model Performance",
+      "Perception of Knowledge Boundary for Large Language Models through Semi-open-ended Question Answering",
+      "STaRK: Benchmarking LLM Retrieval on Textual and Relational Knowledge Bases",
+      "SearchLVLMs: A Plug-and-Play Framework for Augmenting Large Vision-Language Models by Searching Up-to-Date Internet Knowledge",
+      "SelfCodeAlign: Self-Alignment for Code Generation",
+      "Time-Reversal Provides Unsupervised Feedback to LLMs"
+    ],
+    "iclr24": [
+      "Connecting Large Language Models with Evolutionary Algorithms Yields Powerful Prompt Optimizers",
+      "DP-OPT: Make Large Language Model Your Privacy-Preserving Prompt Engineer",
+      "Large Language Models as Optimizers"
+    ],
+    "naacl25": [
+      "ALiiCE: Evaluating Positional Fine-grained Citation Generation",
+      "Characterizing the Role of Similarity in the Property Inferences of Language Models",
+      "Guiding Medical Vision-Language Models with Diverse Visual Prompts: Framework Design and Comprehensive Exploration of Prompt Variations"
+    ],
+    "acl25": [
+      "Code-Switching Red-Teaming:LLMEvaluation for Safety and Multilingual Understanding",
+      "CrafText Benchmark: Advancing Instruction Following in Complex Multimodal Open-Ended World",
+      "HD-NDEs: Neural Differential Equations for Hallucination Detection inLLMs",
+      "Sharper and Faster mean Better: Towards More Efficient Vision-Language Model for Hour-scale Long Video Understanding"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.960.checklist",
+      "ChameleonLLMs: User Personas Influence Chatbot Personality Shifts",
+      "Compositional Generalisation for Explainable Hate Speech Detection",
+      "Extracting and Combining Abilities For Building Multi-lingual Ability-enhanced Large Language Models",
+      "LeTS: Learning to Think-and-Search via Process-and-Outcome Reward Hybridization",
+      "RCScore: Quantifying Response Consistency in Large Language Models",
+      "RPDR: A Round-trip Prediction-Based Data Augmentation Framework for Long-Tail Question Answering",
+      "Reading Between the Prompts: How Stereotypes ShapeLLM\u2019s Implicit Personalization",
+      "TinySQL: A Progressive Text-to-SQLDataset for Mechanistic Interpretability Research"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 30,
+    "icml25": 17,
+    "neurips24": 14,
+    "iclr24": 3,
+    "naacl25": 3,
+    "acl25": 4,
+    "emnlp25": 9
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "canonical_name": "Completeness",
+  "type": "construct",
+  "canonical_definition": "The most prevalent definition of completeness, found across a majority of the provided papers, describes it as the extent to which a model's output includes all valid items satisfying given constraints, without omitting valid solutions. This core idea of avoiding omissions is applied in various contexts; for instance, some work describes it as providing \"in-depth and in-breadth information\" to address an instruction, while other research frames it as including all \"key-facts\" in a summary. Related framings include \"Response informativeness,\" which refers to a RAG generator's ability to \"fully utilize valuable information from retrieved documents,\" and \"Information coverage,\" the ability to capture all relevant facts from a source text. A distinct, less frequent usage appears in the context of reasoning systems, where completeness is the property of being able to \"find a valid proof whenever one exists.\" To operationalize this construct, researchers employ several measurement approaches. Completeness is frequently measured using Human evaluation, where raters score outputs on scales, as well as through automated instruments like FLASK and G-Eval. One paper quantifies it as \"the fraction of ground truth answers that have such an approximate match\" (KITAB). The construct is also studied in relation to behaviors such as Question answering.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Completeness",
+    "Response informativeness",
+    "Information coverage"
+  ],
+  "papers": [
+    "CanLLMs SimulateL2-English Dialogue? An Information-Theoretic Analysis ofL1-Dependent Biases",
+    "DRAE: Dynamic Retrieval-Augmented Expert Networks for Lifelong Learning and Task Adaptation in Robotics",
+    "FoldMoE: Efficient Long SequenceMoETraining via Attention-MoEPipelining",
+    "KazMMLU: Evaluating Language Models onKazakh,Russian, and Regional Knowledge ofKazakhstan",
+    "LLMs can be easily Confused by Instructional Distractions",
+    "MAPoRL: Multi-Agent Post-Co-Training for Collaborative Large Language Models with Reinforcement Learning",
+    "A Multi-Agent Framework with Automated Decision Rule Optimization for Cross-Domain Misinformation Detection",
+    "Calibrating Verbal Uncertainty as a Linear Feature to Reduce Hallucinations",
+    "Does Context Matter? A Prosodic Comparison ofEnglish andSpanish in Monolingual and Multilingual Discourse Settings",
+    "EMNLP: Educator-role Moral and Normative Large Language Models Profiling",
+    "Embedding Domain Knowledge for Large Language Models via Reinforcement Learning from Augmented Generation",
+    "Learning to Ask: WhenLLMAgents Meet Unclear Instruction",
+    "Mining the Past with Dual Criteria: Integrating Three types of Historical Information for Context-aware Event Forecasting",
+    "Same evaluation, more tokens: On the effect of input length for machine translation evaluation using Large Language Models",
+    "SmartBench: Is YourLLMTruly a GoodChinese Smartphone Assistant?",
+    "TRUST-VL: An Explainable News Assistant for General Multimodal Misinformation Detection",
+    "FLASK: Fine-grained Language Model Evaluation based on Alignment Skill Sets",
+    "KITAB: Evaluating LLMs on Constraint Satisfaction for Information Retrieval",
+    "Agent-Oriented Planning in Multi-Agent Systems",
+    "Mixture-of-Agents Enhances Large Language Model Capabilities",
+    "ALERT: AnLLM-powered Benchmark for Automatic Evaluation of Recommendation Explanations",
+    "Enhancing Discriminative Representation in Similar Relation Clusters for Few-Shot Continual Relation Extraction",
+    "Familiarity: Better Evaluation of Zero-Shot Named Entity Recognition by Quantifying Label Shifts in Synthetic Training Data",
+    "KS-Lottery: Finding Certified Lottery Tickets for Multilingual Transfer in Large Language Models"
+  ],
+  "paper_count": 24,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The extent to which the model retrieves all and only the items that satisfy the given constraints, without omitting valid solutions.",
+      "paper": "FLASK: Fine-grained Language Model Evaluation based on Alignment Skill Sets",
+      "original_name": "Completeness"
+    },
+    {
+      "text": "The latent ability of a RAG generator to fully utilize valuable information from retrieved documents to produce complete and correct answers.",
+      "paper": "KS-Lottery: Finding Certified Lottery Tickets for Multilingual Transfer in Large Language Models",
+      "original_name": "Response informativeness"
+    },
+    {
+      "text": "The ability of a model to capture and represent all relevant claims and facts from a source text in its generated output.",
+      "paper": "MAPoRL: Multi-Agent Post-Co-Training for Collaborative Large Language Models with Reinforcement Learning",
+      "original_name": "Information coverage"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "FLASK",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Mixture-of-Agents Enhances Large Language Model Capabilities",
+      "evidence": "Additionally, MoA also outperforms GPT-4 Omni in terms of insightfulness, correctness, factuality, completeness, and metacognition.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Mixture-of-Agents Enhances Large Language Model Capabilities"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Decoding-Time Language Model Alignment with Multiple Objectives",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Decoding-Time Language Model Alignment with Multiple Objectives"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Same evaluation, more tokens: On the effect of input length for machine translation evaluation using Large Language Models",
+      "evidence": "Each sample was scored on a 0\u201310 scale for: completeness (whether it covered all clinically relevant considerations), correctness (factual accuracy of reasoning and answers), and logical flow (coherence and structure of the reasoning path). (Section 5.2.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Same evaluation, more tokens: On the effect of input length for machine translation evaluation using Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "G-Eval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Same evaluation, more tokens: On the effect of input length for machine translation evaluation using Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Same evaluation, more tokens: On the effect of input length for machine translation evaluation using Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 4,
+  "characterization": "The most prevalent definition of completeness, found across a majority of the provided papers, describes it as the extent to which a model's output includes all valid items satisfying given constraints, without omitting valid solutions. This core idea of avoiding omissions is applied in various contexts; for instance, some work describes it as providing \"in-depth and in-breadth information\" to address an instruction, while other research frames it as including all \"key-facts\" in a summary. Related framings include \"Response informativeness,\" which refers to a RAG generator's ability to \"fully utilize valuable information from retrieved documents,\" and \"Information coverage,\" the ability to capture all relevant facts from a source text. A distinct, less frequent usage appears in the context of reasoning systems, where completeness is the property of being able to \"find a valid proof whenever one exists.\" To operationalize this construct, researchers employ several measurement approaches. Completeness is frequently measured using Human evaluation, where raters score outputs on scales, as well as through automated instruments like FLASK and G-Eval. One paper quantifies it as \"the fraction of ground truth answers that have such an approximate match\" (KITAB). The construct is also studied in relation to behaviors such as Question answering.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "FLASK: Fine-grained Language Model Evaluation based on Alignment Skill Sets",
+      "KITAB: Evaluating LLMs on Constraint Satisfaction for Information Retrieval"
+    ],
+    "iclr25": [
+      "Agent-Oriented Planning in Multi-Agent Systems",
+      "Mixture-of-Agents Enhances Large Language Model Capabilities"
+    ],
+    "naacl25": [
+      "ALERT: AnLLM-powered Benchmark for Automatic Evaluation of Recommendation Explanations",
+      "Enhancing Discriminative Representation in Similar Relation Clusters for Few-Shot Continual Relation Extraction",
+      "Familiarity: Better Evaluation of Zero-Shot Named Entity Recognition by Quantifying Label Shifts in Synthetic Training Data",
+      "KS-Lottery: Finding Certified Lottery Tickets for Multilingual Transfer in Large Language Models"
+    ],
+    "acl25": [
+      "CanLLMs SimulateL2-English Dialogue? An Information-Theoretic Analysis ofL1-Dependent Biases",
+      "DRAE: Dynamic Retrieval-Augmented Expert Networks for Lifelong Learning and Task Adaptation in Robotics",
+      "FoldMoE: Efficient Long SequenceMoETraining via Attention-MoEPipelining",
+      "KazMMLU: Evaluating Language Models onKazakh,Russian, and Regional Knowledge ofKazakhstan",
+      "LLMs can be easily Confused by Instructional Distractions",
+      "MAPoRL: Multi-Agent Post-Co-Training for Collaborative Large Language Models with Reinforcement Learning"
+    ],
+    "emnlp25": [
+      "A Multi-Agent Framework with Automated Decision Rule Optimization for Cross-Domain Misinformation Detection",
+      "Calibrating Verbal Uncertainty as a Linear Feature to Reduce Hallucinations",
+      "Does Context Matter? A Prosodic Comparison ofEnglish andSpanish in Monolingual and Multilingual Discourse Settings",
+      "EMNLP: Educator-role Moral and Normative Large Language Models Profiling",
+      "Embedding Domain Knowledge for Large Language Models via Reinforcement Learning from Augmented Generation",
+      "Learning to Ask: WhenLLMAgents Meet Unclear Instruction",
+      "Mining the Past with Dual Criteria: Integrating Three types of Historical Information for Context-aware Event Forecasting",
+      "Same evaluation, more tokens: On the effect of input length for machine translation evaluation using Large Language Models",
+      "SmartBench: Is YourLLMTruly a GoodChinese Smartphone Assistant?",
+      "TRUST-VL: An Explainable News Assistant for General Multimodal Misinformation Detection"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "iclr25": 2,
+    "naacl25": 4,
+    "acl25": 6,
+    "emnlp25": 10
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "naacl25"
+  ]
+}

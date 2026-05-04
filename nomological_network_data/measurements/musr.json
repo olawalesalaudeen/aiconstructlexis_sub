@@ -1,0 +1,177 @@
+{
+  "canonical_name": "MuSR",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, MuSR is consistently described as a benchmark for evaluating reasoning in large language models. The most common definition specifies its purpose as assessing reasoning over social or multi-step scenarios, while a less frequent framing describes it more broadly as evaluating reasoning-oriented performance. It is frequently situated within the context of the Hugging Face Open LLM Leaderboard, where it is used alongside other benchmarks like GPQA, BBH, and MMLU-Pro. Papers use MuSR to measure several constructs, including social reasoning, commonsense understanding, language proficiency, and logical reasoning. One paper characterizes it as a \"semi-symbolic reasoning benchmark\" for probing \"soft-reasoning performance,\" and another notes that its tasks require the \"application of logical rules to reach the answer.\" Operationally, the benchmark is presented in a multiple-choice format.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "MUSR",
+    "MuSR"
+  ],
+  "papers": [
+    "Beyond Correctness: Confidence-Aware Reward Modeling for Enhancing Large Language Model Reasoning",
+    "Improving Rule-based Reasoning inLLMs using Neurosymbolic Representations",
+    "Where Confabulation Lives: Latent Feature Discovery inLLMs",
+    "Diffusion-based Neural Network Weights Generation",
+    "Magnetic Preference Optimization: Achieving Last-iterate Convergence for Language Model Alignment",
+    "On a Connection Between Imitation Learning and RLHF",
+    "To CoT or not to CoT? Chain-of-thought helps mainly on math and symbolic reasoning",
+    "Unveiling the Secret Recipe: A Guide For Supervised Fine-Tuning Small LLMs",
+    "Reward-Augmented Data Enhances Direct Preference Alignment of LLMs",
+    "SPRI: Aligning Large Language Models with Context-Situated Principles",
+    "Token Signature: Predicting Chain-of-Thought Gains with Token Decoding Feature in Large Language Models"
+  ],
+  "paper_count": 11,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A benchmark included in Open LLM Leaderboard v2 for evaluating reasoning over social or multi-step scenarios.",
+      "paper": "Magnetic Preference Optimization: Achieving Last-iterate Convergence for Language Model Alignment",
+      "original_name": "MUSR"
+    },
+    {
+      "text": "A benchmark from the Open LLM Leaderboard used to evaluate reasoning-oriented performance.",
+      "paper": "Unveiling the Secret Recipe: A Guide For Supervised Fine-Tuning Small LLMs",
+      "original_name": "MuSR"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "MuSR: Testing the Limits of Chain-of-thought with Multistep Soft Reasoning",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr24": [
+          "MuSR: Testing the Limits of Chain-of-thought with Multistep Soft Reasoning"
+        ],
+        "emnlp25": [
+          "Where Confabulation Lives: Latent Feature Discovery inLLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "To CoT or not to CoT? Chain-of-thought helps mainly on math and symbolic reasoning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "To CoT or not to CoT? Chain-of-thought helps mainly on math and symbolic reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MuSR: Testing the Limits of Chain-of-thought with Multistep Soft Reasoning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "MuSR: Testing the Limits of Chain-of-thought with Multistep Soft Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Social reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "MuSR: Testing the Limits of Chain-of-thought with Multistep Soft Reasoning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "MuSR: Testing the Limits of Chain-of-thought with Multistep Soft Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language proficiency",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "MuSR: Testing the Limits of Chain-of-thought with Multistep Soft Reasoning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "MuSR: Testing the Limits of Chain-of-thought with Multistep Soft Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hugging Face Open LLM Leaderboard",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "On a Connection Between Imitation Learning and RLHF",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "On a Connection Between Imitation Learning and RLHF"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Logical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "To CoT or not to CoT? Chain-of-thought helps mainly on math and symbolic reasoning",
+      "evidence": "These datasets require the application of logical rules to reach the answer... (MuSR Murder Mysteries)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "To CoT or not to CoT? Chain-of-thought helps mainly on math and symbolic reasoning"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 7,
+  "incoming_relationship_count": 5,
+  "outgoing_relationship_count": 2,
+  "characterization": "Across the provided literature, MuSR is consistently described as a benchmark for evaluating reasoning in large language models. The most common definition specifies its purpose as assessing reasoning over social or multi-step scenarios, while a less frequent framing describes it more broadly as evaluating reasoning-oriented performance. It is frequently situated within the context of the Hugging Face Open LLM Leaderboard, where it is used alongside other benchmarks like GPQA, BBH, and MMLU-Pro. Papers use MuSR to measure several constructs, including social reasoning, commonsense understanding, language proficiency, and logical reasoning. One paper characterizes it as a \"semi-symbolic reasoning benchmark\" for probing \"soft-reasoning performance,\" and another notes that its tasks require the \"application of logical rules to reach the answer.\" Operationally, the benchmark is presented in a multiple-choice format.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Diffusion-based Neural Network Weights Generation",
+      "Magnetic Preference Optimization: Achieving Last-iterate Convergence for Language Model Alignment",
+      "On a Connection Between Imitation Learning and RLHF",
+      "To CoT or not to CoT? Chain-of-thought helps mainly on math and symbolic reasoning",
+      "Unveiling the Secret Recipe: A Guide For Supervised Fine-Tuning Small LLMs"
+    ],
+    "icml25": [
+      "Reward-Augmented Data Enhances Direct Preference Alignment of LLMs",
+      "SPRI: Aligning Large Language Models with Context-Situated Principles",
+      "Token Signature: Predicting Chain-of-Thought Gains with Token Decoding Feature in Large Language Models"
+    ],
+    "emnlp25": [
+      "Beyond Correctness: Confidence-Aware Reward Modeling for Enhancing Large Language Model Reasoning",
+      "Improving Rule-based Reasoning inLLMs using Neurosymbolic Representations",
+      "Where Confabulation Lives: Latent Feature Discovery inLLMs"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 5,
+    "icml25": 3,
+    "emnlp25": 3
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "icml25"
+  ]
+}

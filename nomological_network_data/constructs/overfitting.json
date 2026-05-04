@@ -1,0 +1,365 @@
+{
+  "canonical_name": "Overfitting",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, the prevailing definition of Overfitting is a phenomenon where a model learns its training data too closely, capturing noise and specific artifacts, which harms its ability to generalize to new data. This can involve learning superficial details like \"formatting details, exact wording, and text length\" (\"NEFTune: Noisy Embeddings Improve Instruction Finetuning\"). While this general framing is common, a smaller body of work introduces more specific variants, such as \"benchmark overfitting,\" where models exploit patterns in evaluation data, and \"overadaptation,\" a form of overfitting during fine-tuning that results in the loss of pretrained knowledge. One paper also describes \"catastrophic overtraining,\" where excessive pre-training harms post-training performance.\n\nAs a construct, overfitting is most directly operationalized by observing a \"U-curve\" where validation loss increases while training loss continues to decrease. It is also assessed by measuring performance on out-of-domain data splits. The literature indicates that performance on a range of benchmarks, including HumanEval, MMLU, HellaSwag, WinoGrande, and BoolQ, is used in the context of studying overfitting.\n\nOverfitting is consistently positioned as being inversely related to generalization, with multiple papers stating that it causes a decline in generalization capability. It is also linked to memorization, with one study defining it as a model \"memorizing the full context at the expense of using capacity to learn statistics of subcontext\" (\"Understanding Transformers via N-Gram Statistics\"). The concept is also studied alongside knowledge forgetting and catastrophic forgetting.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Overfitting",
+    "Overadaptation",
+    "Catastrophic overtraining",
+    "Benchmark overfitting"
+  ],
+  "papers": [
+    "Continuous-Time Attention:PDE-Guided Mechanisms for Long-Sequence Transformers",
+    "JUDGEBERT: Assessing Legal Meaning Preservation Between Sentences",
+    "Mixture-of-Experts Meets Instruction Tuning: A Winning Combination for Large Language Models",
+    "NEFTune: Noisy Embeddings Improve Instruction Finetuning",
+    "Bilinear MLPs enable weight-based mechanistic interpretability",
+    "In-Context Editing: Learning Knowledge from Self-Induced Distributions",
+    "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code",
+    "Privacy-Preserving Personalized Federated Prompt Learning for Multimodal Large Language Models",
+    "TDDBench: A Benchmark for Training data detection",
+    "Be Confident: Uncovering Overfitting in MLLM Multi-Task Tuning",
+    "Overtrained Language Models Are Harder to Fine-Tune",
+    "Scaling Laws for Forgetting during Finetuning with Pretraining Data Injection",
+    "Understanding Overadaptation in Supervised Fine-Tuning: The Role of Ensemble Methods",
+    "From Introspection to Best Practices: Principled Analysis of Demonstrations in Multimodal In-Context Learning",
+    "Soft Prompting for Unlearning in Large Language Models",
+    "Threshold Filtering Packing for Supervised Fine-Tuning: Training Related Samples within Packs",
+    "A Careful Examination of Large Language Model Performance on Grade School Arithmetic",
+    "FouRA: Fourier Low-Rank Adaptation",
+    "IPO: Interpretable Prompt Optimization for Vision-Language Models",
+    "Instruction Tuning With Loss Over Instructions",
+    "Training Compute-Optimal Protein Language Models",
+    "Understanding Transformers via N-Gram Statistics",
+    "Imitating Language via Scalable Inverse Reinforcement Learning",
+    "Preference Learning Algorithms Do Not Learn Preference Rankings"
+  ],
+  "paper_count": 24,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The phenomenon where a model learns the training data too closely, capturing noise and specific artifacts, which harms its ability to generalize to new data.",
+      "paper": "Mixture-of-Experts Meets Instruction Tuning: A Winning Combination for Large Language Models",
+      "original_name": "Overfitting"
+    },
+    {
+      "text": "The latent tendency of a fine-tuned model to overfit to downstream task data, resulting in degraded generalization and loss of pretrained knowledge, analogous to harmful overfitting in statistical learning.",
+      "paper": "Understanding Overadaptation in Supervised Fine-Tuning: The Role of Ensemble Methods",
+      "original_name": "Overadaptation"
+    },
+    {
+      "text": "The phenomenon where extending pre-training beyond a certain token budget results in decreased model performance after subsequent modifications such as fine-tuning, due to increased sensitivity to parameter changes.",
+      "paper": "Overtrained Language Models Are Harder to Fine-Tune",
+      "original_name": "Catastrophic overtraining"
+    },
+    {
+      "text": "A model's tendency to rely on superficial cues, specific phrasing, or structural patterns within a benchmark's prompts, leading to high scores that do not reflect true, generalizable capabilities.",
+      "paper": "Continuous-Time Attention:PDE-Guided Mechanisms for Long-Sequence Transformers",
+      "original_name": "Benchmark overfitting"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "NEFTune: Noisy Embeddings Improve Instruction Finetuning",
+      "evidence": "This indicated less overfitting and better generalization when NEFTune is used. (Section 5.1)",
+      "paper_count": 6,
+      "papers_by_conference": {
+        "iclr24": [
+          "NEFTune: Noisy Embeddings Improve Instruction Finetuning",
+          "Mixture-of-Experts Meets Instruction Tuning: A Winning Combination for Large Language Models"
+        ],
+        "neurips24": [
+          "FouRA: Fourier Low-Rank Adaptation",
+          "Instruction Tuning With Loss Over Instructions",
+          "A Careful Examination of Large Language Model Performance on Grade School Arithmetic"
+        ],
+        "naacl25": [
+          "Threshold Filtering Packing for Supervised Fine-Tuning: Training Related Samples within Packs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Robustness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Diagnosing Transformers: Illuminating Feature Spaces for Clinical Decision-Making",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr24": [
+          "Diagnosing Transformers: Illuminating Feature Spaces for Clinical Decision-Making"
+        ],
+        "neurips24": [
+          "Imitating Language via Scalable Inverse Reinforcement Learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Privacy-Preserving Personalized Federated Prompt Learning for Multimodal Large Language Models",
+      "evidence": "Over-personalization can lead to overfitting, reducing generalizability (Abstract).",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Privacy-Preserving Personalized Federated Prompt Learning for Multimodal Large Language Models"
+        ],
+        "icml25": [
+          "In-Context Learning and Occam\u2019s Razor"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Memorization",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "A Careful Examination of Large Language Model Performance on Grade School Arithmetic",
+      "evidence": "This result suggests that some of the reason for over\ufb01tting is due to partial memorization of the test set. (Section 5.4)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "A Careful Examination of Large Language Model Performance on Grade School Arithmetic"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Pre-training data detection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "TDDBench: A Benchmark for Training data detection",
+      "evidence": "A common view is that the effectiveness of TDD is closely tied to the level of training-data memorization or overfitting exhibited by the target model during training (Yeom et al., 2018; Long et al., 2018).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "TDDBench: A Benchmark for Training data detection"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "HumanEval",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code",
+      "evidence": "This indicates some level of overfitting to HUMANEVAL.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Knowledge forgetting",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Overtrained Language Models Are Harder to Fine-Tune",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Overtrained Language Models Are Harder to Fine-Tune"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge forgetting",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Understanding Overadaptation in Supervised Fine-Tuning: The Role of Ensemble Methods",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Understanding Overadaptation in Supervised Fine-Tuning: The Role of Ensemble Methods"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-Easy",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "How Much Can We Forget about Data Contamination?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "How Much Can We Forget about Data Contamination?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SocialIQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "How Much Can We Forget about Data Contamination?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "How Much Can We Forget about Data Contamination?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "How Much Can We Forget about Data Contamination?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "How Much Can We Forget about Data Contamination?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "How Much Can We Forget about Data Contamination?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "How Much Can We Forget about Data Contamination?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BoolQ",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "How Much Can We Forget about Data Contamination?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "How Much Can We Forget about Data Contamination?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "How Much Can We Forget about Data Contamination?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "How Much Can We Forget about Data Contamination?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HellaSwag",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "How Much Can We Forget about Data Contamination?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "How Much Can We Forget about Data Contamination?"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Catastrophic forgetting",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Scaling Laws for Forgetting during Finetuning with Pretraining Data Injection",
+      "evidence": "Injecting pretraining data has a regularizing effect that reduces overfitting and forgetting. (Figure 1 caption)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Scaling Laws for Forgetting during Finetuning with Pretraining Data Injection"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 16,
+  "incoming_relationship_count": 5,
+  "outgoing_relationship_count": 11,
+  "characterization": "Across the surveyed literature, the prevailing definition of Overfitting is a phenomenon where a model learns its training data too closely, capturing noise and specific artifacts, which harms its ability to generalize to new data. This can involve learning superficial details like \"formatting details, exact wording, and text length\" (\"NEFTune: Noisy Embeddings Improve Instruction Finetuning\"). While this general framing is common, a smaller body of work introduces more specific variants, such as \"benchmark overfitting,\" where models exploit patterns in evaluation data, and \"overadaptation,\" a form of overfitting during fine-tuning that results in the loss of pretrained knowledge. One paper also describes \"catastrophic overtraining,\" where excessive pre-training harms post-training performance.\n\nAs a construct, overfitting is most directly operationalized by observing a \"U-curve\" where validation loss increases while training loss continues to decrease. It is also assessed by measuring performance on out-of-domain data splits. The literature indicates that performance on a range of benchmarks, including HumanEval, MMLU, HellaSwag, WinoGrande, and BoolQ, is used in the context of studying overfitting.\n\nOverfitting is consistently positioned as being inversely related to generalization, with multiple papers stating that it causes a decline in generalization capability. It is also linked to memorization, with one study defining it as a model \"memorizing the full context at the expense of using capacity to learn statistics of subcontext\" (\"Understanding Transformers via N-Gram Statistics\"). The concept is also studied alongside knowledge forgetting and catastrophic forgetting.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Mixture-of-Experts Meets Instruction Tuning: A Winning Combination for Large Language Models",
+      "NEFTune: Noisy Embeddings Improve Instruction Finetuning"
+    ],
+    "neurips24": [
+      "A Careful Examination of Large Language Model Performance on Grade School Arithmetic",
+      "FouRA: Fourier Low-Rank Adaptation",
+      "IPO: Interpretable Prompt Optimization for Vision-Language Models",
+      "Instruction Tuning With Loss Over Instructions",
+      "Training Compute-Optimal Protein Language Models",
+      "Understanding Transformers via N-Gram Statistics",
+      "Imitating Language via Scalable Inverse Reinforcement Learning",
+      "Preference Learning Algorithms Do Not Learn Preference Rankings"
+    ],
+    "iclr25": [
+      "Bilinear MLPs enable weight-based mechanistic interpretability",
+      "In-Context Editing: Learning Knowledge from Self-Induced Distributions",
+      "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code",
+      "Privacy-Preserving Personalized Federated Prompt Learning for Multimodal Large Language Models",
+      "TDDBench: A Benchmark for Training data detection"
+    ],
+    "naacl25": [
+      "From Introspection to Best Practices: Principled Analysis of Demonstrations in Multimodal In-Context Learning",
+      "Soft Prompting for Unlearning in Large Language Models",
+      "Threshold Filtering Packing for Supervised Fine-Tuning: Training Related Samples within Packs"
+    ],
+    "icml25": [
+      "Be Confident: Uncovering Overfitting in MLLM Multi-Task Tuning",
+      "Overtrained Language Models Are Harder to Fine-Tune",
+      "Scaling Laws for Forgetting during Finetuning with Pretraining Data Injection",
+      "Understanding Overadaptation in Supervised Fine-Tuning: The Role of Ensemble Methods"
+    ],
+    "emnlp25": [
+      "Continuous-Time Attention:PDE-Guided Mechanisms for Long-Sequence Transformers",
+      "JUDGEBERT: Assessing Legal Meaning Preservation Between Sentences"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "neurips24": 8,
+    "iclr25": 5,
+    "naacl25": 3,
+    "icml25": 4,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

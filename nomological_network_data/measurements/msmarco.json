@@ -1,0 +1,89 @@
+{
+  "canonical_name": "MSMARCO",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, MSMARCO is consistently characterized as a large-scale dataset used for evaluation. Its most prevalent application is for measuring `Information retrieval`, with papers defining it as a tool for assessing tasks like \"in-domain retrieval performance\" (Promptriever: Instruction-Trained Retrievers Can Be Prompted Like Language Models). Several sources also define and use it as a benchmark for `Reading comprehension` and `Question answering`, including `Open-domain question answering`. A more specific line of work operationalizes MSMARCO as a \"passage-ranking benchmark\" (BadJudge: Backdoor Vulnerabilities of LLM-As-A-Judge) to evaluate `Ranking` in a retrieval setting. The dataset is described as a \"large-scale collection of queries and passages,\" and specific subsets like the TREC Deep Learning tracks (DL19, DL20) and \"msmarco-passages\" are mentioned. One paper also uses the dataset to measure aspects of `Safety`, demonstrating how a reranker can be backdoored on its passages. Evaluation on the MS MARCO Dev set is reported using the MRR metric.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "MSMARCO",
+    "MSMarco",
+    "MARCO QA"
+  ],
+  "papers": [
+    "BadJudge: Backdoor Vulnerabilities of LLM-As-A-Judge",
+    "HELMET: How to Evaluate Long-context Models Effectively and Thoroughly",
+    "MMTEB: Massive Multilingual Text Embedding Benchmark",
+    "NV-Embed: Improved Techniques for Training LLMs as Generalist Embedding Models",
+    "PICASO: Permutation-Invariant Context Composition with State Space Models",
+    "Promptriever: Instruction-Trained Retrievers Can Be Prompted Like Language Models",
+    "Provence: efficient and robust context pruning for retrieval-augmented generation",
+    "RAG-DDR: Optimizing Retrieval-Augmented Generation Using Differentiable Data Rewards",
+    "SePer: Measure Retrieval Utility Through The Lens Of Semantic Perplexity Reduction"
+  ],
+  "paper_count": 9,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The Microsoft Machine Reading Comprehension (MSMARCO) dataset, a large-scale collection of queries and passages used for evaluating reading comprehension and information retrieval tasks.",
+      "paper": "PICASO: Permutation-Invariant Context Composition with State Space Models",
+      "original_name": "MSMARCO"
+    },
+    {
+      "text": "A passage-ranking benchmark used to evaluate reranker judges in a retrieval setting.",
+      "paper": "BadJudge: Backdoor Vulnerabilities of LLM-As-A-Judge",
+      "original_name": "MSMarco"
+    },
+    {
+      "text": "The MS MARCO Question Answering (MARCO QA) dataset, a large-scale benchmark for reading comprehension and question answering.",
+      "paper": "RAG-DDR: Optimizing Retrieval-Augmented Generation Using Differentiable Data Rewards",
+      "original_name": "MARCO QA"
+    },
+    {
+      "text": "The Microsoft Machine Reading Comprehension (MS MARCO) dataset, including its TREC Deep Learning track subsets (DL19, DL20), used here to evaluate in-domain retrieval performance.",
+      "paper": "Promptriever: Instruction-Trained Retrievers Can Be Prompted Like Language Models",
+      "original_name": "MS MARCO"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Open-domain question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "RAG-DDR: Optimizing Retrieval-Augmented Generation Using Differentiable Data Rewards",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "RAG-DDR: Optimizing Retrieval-Augmented Generation Using Differentiable Data Rewards"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, MSMARCO is consistently characterized as a large-scale dataset used for evaluation. Its most prevalent application is for measuring `Information retrieval`, with papers defining it as a tool for assessing tasks like \"in-domain retrieval performance\" (Promptriever: Instruction-Trained Retrievers Can Be Prompted Like Language Models). Several sources also define and use it as a benchmark for `Reading comprehension` and `Question answering`, including `Open-domain question answering`. A more specific line of work operationalizes MSMARCO as a \"passage-ranking benchmark\" (BadJudge: Backdoor Vulnerabilities of LLM-As-A-Judge) to evaluate `Ranking` in a retrieval setting. The dataset is described as a \"large-scale collection of queries and passages,\" and specific subsets like the TREC Deep Learning tracks (DL19, DL20) and \"msmarco-passages\" are mentioned. One paper also uses the dataset to measure aspects of `Safety`, demonstrating how a reranker can be backdoored on its passages. Evaluation on the MS MARCO Dev set is reported using the MRR metric.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "BadJudge: Backdoor Vulnerabilities of LLM-As-A-Judge",
+      "HELMET: How to Evaluate Long-context Models Effectively and Thoroughly",
+      "MMTEB: Massive Multilingual Text Embedding Benchmark",
+      "NV-Embed: Improved Techniques for Training LLMs as Generalist Embedding Models",
+      "PICASO: Permutation-Invariant Context Composition with State Space Models",
+      "Promptriever: Instruction-Trained Retrievers Can Be Prompted Like Language Models",
+      "Provence: efficient and robust context pruning for retrieval-augmented generation",
+      "RAG-DDR: Optimizing Retrieval-Augmented Generation Using Differentiable Data Rewards",
+      "SePer: Measure Retrieval Utility Through The Lens Of Semantic Perplexity Reduction"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 9
+  },
+  "conferences": [
+    "iclr25"
+  ]
+}

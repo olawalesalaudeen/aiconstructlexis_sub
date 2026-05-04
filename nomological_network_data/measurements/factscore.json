@@ -1,0 +1,244 @@
+{
+  "canonical_name": "FactScore",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, FactScore is consistently described as an evaluation instrument\u2014variously termed a procedure, benchmark, tool, or metric\u2014for assessing the factuality of long-form text from LLMs. The prevailing operationalization, which appears in nearly all sources, is a 'decomposition-then-verify' framework where generated text is broken down into 'atomic facts' or 'claims'. Each claim is then individually verified against a knowledge source, which is often specified as Wikipedia, retrieved passages, or citations. The output is typically a quantitative score, such as the 'percentage of atomic facts supported' or a precision score. The relationships show that FactScore is most frequently used to measure the construct of `Faithfulness`, and in one instance, `Hallucination`. While its application is for long-form text generally, the most commonly cited use case is for evaluating the factual correctness of biography generations. A few papers also introduce or discuss variants, such as FactScore-Atom, a modified decomposition policy, and FactScore-Bio, a question-answering dataset.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "FactScore",
+    "FActscore",
+    "FActScore",
+    "FACTSCORE",
+    "FACTSCORES",
+    "FActScore-Atom",
+    "FactScore-Bio"
+  ],
+  "papers": [
+    "AGrail: A Lifelong Agent Guardrail with Effective and Adaptive Safety Detection",
+    "All That Glitters is Not Novel: Plagiarism inAIGenerated Research",
+    "Data Quality Issues in Multilingual Speech Datasets: The Need for Sociolinguistic Awareness and Proactive Language Planning",
+    "EditInspector: A Benchmark for Evaluation of Text-Guided Image Edits",
+    "FoldMoE: Efficient Long SequenceMoETraining via Attention-MoEPipelining",
+    "Lost in Multilinguality: Dissecting Cross-lingual Factual Inconsistency in Transformer Language Models",
+    "MemeQA: Holistic Evaluation for Meme Understanding",
+    "Movie101v2: Improved Movie Narration Benchmark",
+    "Neural Topic Modeling with Large Language Models in the Loop",
+    "Planning-Driven Programming: A Large Language Model Programming Workflow",
+    "Self-Taught Agentic Long Context Understanding",
+    "A Computational Simulation of Language Production in First Language Acquisition",
+    "AesBiasBench: Evaluating Bias and Alignment in Multimodal Language Models for Personalized Image Aesthetic Assessment",
+    "Agent-as-Judge for Factual Summarization of Long Narratives",
+    "Answer Convergence as a Signal for Early Stopping in Reasoning",
+    "Can Prompts Rewind Time forLLMs? Evaluating the Effectiveness of Prompted Knowledge Cutoffs",
+    "Connecting the Knowledge Dots: Retrieval-augmented Knowledge Connection for Commonsense Reasoning",
+    "LM-Searcher: Cross-domain Neural Architecture Search withLLMs via Unified Numerical Encoding",
+    "Refusal-Aware Red Teaming: Exposing Inconsistency in Safety Evaluations",
+    "Table-LLM-Specialist: Language Model Specialists for Tables using Iterative Fine-tuning",
+    "Fine-Tuning Language Models for Factuality",
+    "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+    "Everything is Editable: Extend Knowledge Editing to Unstructured Data in Large Language Models",
+    "Exploring Prosocial Irrationality for LLM Agents: A Social Cognition View",
+    "Fictitious Synthetic Data Can Improve LLM Factuality via Prerequisite Learning",
+    "Is Factuality Enhancement a Free Lunch For LLMs? Better Factuality Can Lead to Worse Context-Faithfulness",
+    "Mask-DPO: Generalizable Fine-grained Factuality Alignment of LLMs",
+    "Varying Shades of Wrong: Aligning LLMs with Wrong Answers Only",
+    "Benchmarking Large Language Models on Answering and Explaining Challenging Medical Questions",
+    "Rethinking the Role ofLLMs for Document-level Relation Extraction: a Refiner with Task Distribution and Probability Fusion",
+    "Enhancing LLM\u2019s Cognition via Structurization",
+    "Large language model validity via enhanced conformal prediction methods",
+    "Long-form factuality in large language models",
+    "Nearest Neighbor Speculative Decoding for LLM Generation and Attribution",
+    "PaCE: Parsimonious Concept Engineering for Large Language Models"
+  ],
+  "paper_count": 35,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A factuality evaluation procedure used to assess the factual correctness of biography generations.",
+      "paper": "Fine-Tuning Language Models for Factuality",
+      "original_name": "FactScore"
+    },
+    {
+      "text": "A fine-grained factuality evaluation procedure for long-form text generation that checks whether claims are supported by retrieved evidence.",
+      "paper": "Large language model validity via enhanced conformal prediction methods",
+      "original_name": "FActscore"
+    },
+    {
+      "text": "An evaluation tool that measures the factuality of generated text by computing the percentage of its atomic facts that are supported by a given set of reference passages.",
+      "paper": "Varying Shades of Wrong: Aligning LLMs with Wrong Answers Only",
+      "original_name": "FActScore"
+    },
+    {
+      "text": "A benchmark for evaluating the factual accuracy of long-form text generated by LLMs by decomposing the generation into atomic facts and verifying them against a knowledge source.",
+      "paper": "Is Factuality Enhancement a Free Lunch For LLMs? Better Factuality Can Lead to Worse Context-Faithfulness",
+      "original_name": "FACTSCORE"
+    },
+    {
+      "text": "A metric that measures the proportion of sub-facts in an answer that are supported by citations, used for fine-grained evaluation of partially supportive attributions.",
+      "paper": "Movie101v2: Improved Movie Narration Benchmark",
+      "original_name": "FACTSCORES"
+    },
+    {
+      "text": "A modified version of FActScore's decomposition policy designed to decompose atomic subclaims (atomicity 0) into partially trivial subclaims (atomicity -1).",
+      "paper": "Lost in Multilinguality: Dissecting Cross-lingual Factual Inconsistency in Transformer Language Models",
+      "original_name": "FActScore-Atom"
+    },
+    {
+      "text": "A long-form question answering dataset containing biography questions from Wikipedia, used to evaluate claim-level uncertainty estimation.",
+      "paper": "EditInspector: A Benchmark for Evaluation of Text-Guided Image Edits",
+      "original_name": "FactScore-Bio"
+    }
+  ],
+  "definition_count": 7,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Factuality",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Fine-Tuning Language Models for Factuality",
+      "evidence": "",
+      "paper_count": 9,
+      "papers_by_conference": {
+        "iclr24": [
+          "Fine-Tuning Language Models for Factuality",
+          "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection"
+        ],
+        "neurips24": [
+          "Large language model validity via enhanced conformal prediction methods"
+        ],
+        "iclr25": [
+          "Is Factuality Enhancement a Free Lunch For LLMs? Better Factuality Can Lead to Worse Context-Faithfulness",
+          "Mask-DPO: Generalizable Fine-grained Factuality Alignment of LLMs",
+          "Fictitious Synthetic Data Can Improve LLM Factuality via Prerequisite Learning"
+        ],
+        "icml25": [
+          "Toward Robust Hyper-Detailed Image Captioning: A Multiagent Approach and Dual Evaluation Metrics for Factuality and Coverage"
+        ],
+        "emnlp25": [
+          "Connecting the Knowledge Dots: Retrieval-augmented Knowledge Connection for Commonsense Reasoning",
+          "Agent-as-Judge for Factual Summarization of Long Narratives"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "PaCE: Parsimonious Concept Engineering for Large Language Models",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "neurips24": [
+          "PaCE: Parsimonious Concept Engineering for Large Language Models"
+        ],
+        "acl25": [
+          "Data Quality Issues in Multilingual Speech Datasets: The Need for Sociolinguistic Awareness and Proactive Language Planning"
+        ],
+        "emnlp25": [
+          "Table-LLM-Specialist: Language Model Specialists for Tables using Iterative Fine-tuning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Planning-Driven Programming: A Large Language Model Programming Workflow",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Planning-Driven Programming: A Large Language Model Programming Workflow"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Factuality",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Benchmarking Large Language Models on Answering and Explaining Challenging Medical Questions",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Benchmarking Large Language Models on Answering and Explaining Challenging Medical Questions"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the provided literature, FactScore is consistently described as an evaluation instrument\u2014variously termed a procedure, benchmark, tool, or metric\u2014for assessing the factuality of long-form text from LLMs. The prevailing operationalization, which appears in nearly all sources, is a 'decomposition-then-verify' framework where generated text is broken down into 'atomic facts' or 'claims'. Each claim is then individually verified against a knowledge source, which is often specified as Wikipedia, retrieved passages, or citations. The output is typically a quantitative score, such as the 'percentage of atomic facts supported' or a precision score. The relationships show that FactScore is most frequently used to measure the construct of `Faithfulness`, and in one instance, `Hallucination`. While its application is for long-form text generally, the most commonly cited use case is for evaluating the factual correctness of biography generations. A few papers also introduce or discuss variants, such as FactScore-Atom, a modified decomposition policy, and FactScore-Bio, a question-answering dataset.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Fine-Tuning Language Models for Factuality",
+      "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection"
+    ],
+    "neurips24": [
+      "Enhancing LLM\u2019s Cognition via Structurization",
+      "Large language model validity via enhanced conformal prediction methods",
+      "Long-form factuality in large language models",
+      "Nearest Neighbor Speculative Decoding for LLM Generation and Attribution",
+      "PaCE: Parsimonious Concept Engineering for Large Language Models"
+    ],
+    "iclr25": [
+      "Everything is Editable: Extend Knowledge Editing to Unstructured Data in Large Language Models",
+      "Exploring Prosocial Irrationality for LLM Agents: A Social Cognition View",
+      "Fictitious Synthetic Data Can Improve LLM Factuality via Prerequisite Learning",
+      "Is Factuality Enhancement a Free Lunch For LLMs? Better Factuality Can Lead to Worse Context-Faithfulness",
+      "Mask-DPO: Generalizable Fine-grained Factuality Alignment of LLMs",
+      "Varying Shades of Wrong: Aligning LLMs with Wrong Answers Only"
+    ],
+    "naacl25": [
+      "Benchmarking Large Language Models on Answering and Explaining Challenging Medical Questions",
+      "Rethinking the Role ofLLMs for Document-level Relation Extraction: a Refiner with Task Distribution and Probability Fusion"
+    ],
+    "acl25": [
+      "AGrail: A Lifelong Agent Guardrail with Effective and Adaptive Safety Detection",
+      "All That Glitters is Not Novel: Plagiarism inAIGenerated Research",
+      "Data Quality Issues in Multilingual Speech Datasets: The Need for Sociolinguistic Awareness and Proactive Language Planning",
+      "EditInspector: A Benchmark for Evaluation of Text-Guided Image Edits",
+      "FoldMoE: Efficient Long SequenceMoETraining via Attention-MoEPipelining",
+      "Lost in Multilinguality: Dissecting Cross-lingual Factual Inconsistency in Transformer Language Models",
+      "MemeQA: Holistic Evaluation for Meme Understanding",
+      "Movie101v2: Improved Movie Narration Benchmark",
+      "Neural Topic Modeling with Large Language Models in the Loop",
+      "Planning-Driven Programming: A Large Language Model Programming Workflow",
+      "Self-Taught Agentic Long Context Understanding"
+    ],
+    "emnlp25": [
+      "A Computational Simulation of Language Production in First Language Acquisition",
+      "AesBiasBench: Evaluating Bias and Alignment in Multimodal Language Models for Personalized Image Aesthetic Assessment",
+      "Agent-as-Judge for Factual Summarization of Long Narratives",
+      "Answer Convergence as a Signal for Early Stopping in Reasoning",
+      "Can Prompts Rewind Time forLLMs? Evaluating the Effectiveness of Prompted Knowledge Cutoffs",
+      "Connecting the Knowledge Dots: Retrieval-augmented Knowledge Connection for Commonsense Reasoning",
+      "LM-Searcher: Cross-domain Neural Architecture Search withLLMs via Unified Numerical Encoding",
+      "Refusal-Aware Red Teaming: Exposing Inconsistency in Safety Evaluations",
+      "Table-LLM-Specialist: Language Model Specialists for Tables using Iterative Fine-tuning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "neurips24": 5,
+    "iclr25": 6,
+    "naacl25": 2,
+    "acl25": 11,
+    "emnlp25": 9
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "naacl25",
+    "neurips24"
+  ]
+}

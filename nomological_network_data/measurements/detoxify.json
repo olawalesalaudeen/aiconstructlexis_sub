@@ -1,0 +1,128 @@
+{
+  "canonical_name": "Detoxify",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, Detoxify is consistently described as a model-based tool used to evaluate and score the toxicity of generated text. It is most frequently used to operationalize the construct of Harmlessness, and in one instance, Harmful content generation. The instrument functions by assigning a numerical toxicity score, where a higher value indicates more toxic content, and researchers sometimes apply a threshold to this score for classification. One paper specifies that Detoxify evaluates six distinct attributes: \"toxicity, severe toxicity, obscene, threat, insult, identity attack.\" In practice, it is used as an automated evaluation procedure for LLM outputs, sometimes alongside other tools like the OpenAI Moderation API and Perspective API. One study compares its detection rate on harmful instructions to other APIs, finding it flagged 6% of cases with a threshold of \u22650.7. The data also shows that researchers may use different scoring thresholds or even retrain the model on custom datasets for specific applications.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Detoxify"
+  ],
+  "papers": [
+    "2025.emnlp-main.996.checklist",
+    "CanGRPOBoost Complex Multimodal Table Understanding?",
+    "Emotion Transfer with Enhanced Prototype for Unseen Emotion Recognition in Conversation",
+    "EvaluatingLLM-Generated Diagrams as Graphs",
+    "Exploring Artificial Image Generation for Stance Detection",
+    "StepER: Step-wise Knowledge Distillation for Enhancing Reasoning Ability in Multi-Step Retrieval-Augmented Language Models",
+    "learnable soft visual prompt",
+    "Fine-tuning Aligned Language Models Compromises Safety, Even When Users Do Not Intend To!",
+    "Model Merging by Uncertainty-Based Gradient Matching",
+    "Prompt Risk Control: A Rigorous Framework for Responsible Deployment of Large Language Models",
+    "WildChat: 1M ChatGPT Interaction Logs in the Wild",
+    "Model Editing as a Robust and Denoised variant of DPO: A Case Study on Toxicity",
+    "UniDetox: Universal Detoxification of Large Language Models via Dataset Distillation",
+    "Conformal Tail Risk Control for Large Language Model Alignment",
+    "Metadata Conditioning Accelerates Language Model Pre-training"
+  ],
+  "paper_count": 15,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Model-based toxicity scoring system that assigns a toxicity score to generated text.",
+      "paper": "Fine-tuning Aligned Language Models Compromises Safety, Even When Users Do Not Intend To!",
+      "original_name": "Detoxify"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmlessness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "WildChat: 1M ChatGPT Interaction Logs in the Wild",
+      "evidence": "",
+      "paper_count": 11,
+      "papers_by_conference": {
+        "iclr24": [
+          "WildChat: 1M ChatGPT Interaction Logs in the Wild",
+          "Model Merging by Uncertainty-Based Gradient Matching",
+          "Prompt Risk Control: A Rigorous Framework for Responsible Deployment of Large Language Models"
+        ],
+        "iclr25": [
+          "UniDetox: Universal Detoxification of Large Language Models via Dataset Distillation",
+          "Model Editing as a Robust and Denoised variant of DPO: A Case Study on Toxicity"
+        ],
+        "naacl25": [
+          "CogLM: Tracking Cognitive Development of Large Language Models"
+        ],
+        "icml25": [
+          "Conformal Tail Risk Control for Large Language Model Alignment",
+          "Metadata Conditioning Accelerates Language Model Pre-training"
+        ],
+        "emnlp25": [
+          "EvaluatingLLM-Generated Diagrams as Graphs",
+          "learnable soft visual prompt",
+          "StepER: Step-wise Knowledge Distillation for Enhancing Reasoning Ability in Multi-Step Retrieval-Augmented Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmful content generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "WildChat: 1M ChatGPT Interaction Logs in the Wild",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "WildChat: 1M ChatGPT Interaction Logs in the Wild"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, Detoxify is consistently described as a model-based tool used to evaluate and score the toxicity of generated text. It is most frequently used to operationalize the construct of Harmlessness, and in one instance, Harmful content generation. The instrument functions by assigning a numerical toxicity score, where a higher value indicates more toxic content, and researchers sometimes apply a threshold to this score for classification. One paper specifies that Detoxify evaluates six distinct attributes: \"toxicity, severe toxicity, obscene, threat, insult, identity attack.\" In practice, it is used as an automated evaluation procedure for LLM outputs, sometimes alongside other tools like the OpenAI Moderation API and Perspective API. One study compares its detection rate on harmful instructions to other APIs, finding it flagged 6% of cases with a threshold of \u22650.7. The data also shows that researchers may use different scoring thresholds or even retrain the model on custom datasets for specific applications.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Fine-tuning Aligned Language Models Compromises Safety, Even When Users Do Not Intend To!",
+      "Model Merging by Uncertainty-Based Gradient Matching",
+      "Prompt Risk Control: A Rigorous Framework for Responsible Deployment of Large Language Models",
+      "WildChat: 1M ChatGPT Interaction Logs in the Wild"
+    ],
+    "iclr25": [
+      "Model Editing as a Robust and Denoised variant of DPO: A Case Study on Toxicity",
+      "UniDetox: Universal Detoxification of Large Language Models via Dataset Distillation"
+    ],
+    "icml25": [
+      "Conformal Tail Risk Control for Large Language Model Alignment",
+      "Metadata Conditioning Accelerates Language Model Pre-training"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.996.checklist",
+      "CanGRPOBoost Complex Multimodal Table Understanding?",
+      "Emotion Transfer with Enhanced Prototype for Unseen Emotion Recognition in Conversation",
+      "EvaluatingLLM-Generated Diagrams as Graphs",
+      "Exploring Artificial Image Generation for Stance Detection",
+      "StepER: Step-wise Knowledge Distillation for Enhancing Reasoning Ability in Multi-Step Retrieval-Augmented Language Models",
+      "learnable soft visual prompt"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 4,
+    "iclr25": 2,
+    "icml25": 2,
+    "emnlp25": 7
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25"
+  ]
+}

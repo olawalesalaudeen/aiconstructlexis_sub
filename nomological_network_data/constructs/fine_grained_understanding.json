@@ -1,0 +1,232 @@
+{
+  "canonical_name": "Fine-grained understanding",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, the prevailing framing of fine-grained understanding is a model's ability to comprehend detailed, local information within an image, such as object attributes and relationships, as opposed to global scene-level content. Some definitions broaden this to include capturing \"subtle differences and detailed semantic information in both visual and linguistic patterns\" (\"Multi-Head Mixture-of-Experts\"), while others specify it as the latent ability to use detailed visual information for tasks like answering multimodal questions. This construct is frequently discussed in the context of model limitations, with multiple sources noting that models often \"struggle to perceive fine-grained details\" (\"MODA...\"). The field operationalizes and measures this construct using a wide array of benchmarks, including MMVP, ChartQA, CapsBench, Stanford Dogs, COCO Caption, OCRBench, and MMMU. Fine-grained understanding is studied alongside other capabilities, with some work stating it is necessary for understanding cognition and emotion. One paper also proposes that the behavior of image reconstruction can enhance a model's fine-grained understanding.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Fine-grained understanding",
+    "Finer-grained understanding",
+    "Fine-grained visual perception",
+    "Fine-grained comprehension"
+  ],
+  "papers": [
+    "Reconstructive Visual Instruction Tuning",
+    "Uni-Sign: Toward Unified Sign Language Understanding at Scale",
+    "EasyRef: Omni-Generalized Group Image Reference for Diffusion Models via Multimodal LLM",
+    "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding",
+    "FineCLIP: Self-distilled Region-based CLIP for Better Fine-grained Understanding",
+    "Multi-Head Mixture-of-Experts"
+  ],
+  "paper_count": 6,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The model's ability to comprehend and represent detailed local information within an image, such as object attributes and their relationships, as opposed to just global scene-level content.",
+      "paper": "FineCLIP: Self-distilled Region-based CLIP for Better Fine-grained Understanding",
+      "original_name": "Fine-grained understanding"
+    },
+    {
+      "text": "The ability to capture subtle differences and detailed semantic information in both visual and linguistic patterns.",
+      "paper": "Multi-Head Mixture-of-Experts",
+      "original_name": "Finer-grained understanding"
+    },
+    {
+      "text": "The latent ability to capture detailed visual attributes and subtle appearance cues from images.",
+      "paper": "EasyRef: Omni-Generalized Group Image Reference for Diffusion Models via Multimodal LLM",
+      "original_name": "Fine-grained visual perception"
+    },
+    {
+      "text": "The latent ability to preserve and use detailed visual information when answering multimodal questions.",
+      "paper": "Reconstructive Visual Instruction Tuning",
+      "original_name": "Fine-grained comprehension"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMVP",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Reconstructive Visual Instruction Tuning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Reconstructive Visual Instruction Tuning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Image reconstruction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Reconstructive Visual Instruction Tuning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Reconstructive Visual Instruction Tuning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ChartQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Reconstructive Visual Instruction Tuning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Reconstructive Visual Instruction Tuning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Sign language recognition",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Uni-Sign: Toward Unified Sign Language Understanding at Scale",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Uni-Sign: Toward Unified Sign Language Understanding at Scale"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Cognition",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Emotion understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding",
+      "evidence": "While recent MLLMs show promising results in basic perception, they still struggle to perceive fine-grained details (Tong et al., 2024b), which is essential for understanding cognition and emotion.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CapsBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "ProtoVQA: An Adaptable Prototypical Framework for Explainable Fine-Grained Visual Question Answering",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "ProtoVQA: An Adaptable Prototypical Framework for Explainable Fine-Grained Visual Question Answering"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Stanford Dogs",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "ProtoVQA: An Adaptable Prototypical Framework for Explainable Fine-Grained Visual Question Answering",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "ProtoVQA: An Adaptable Prototypical Framework for Explainable Fine-Grained Visual Question Answering"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "COCO Caption",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "ProtoVQA: An Adaptable Prototypical Framework for Explainable Fine-Grained Visual Question Answering",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "ProtoVQA: An Adaptable Prototypical Framework for Explainable Fine-Grained Visual Question Answering"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OCRBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "ProtoVQA: An Adaptable Prototypical Framework for Explainable Fine-Grained Visual Question Answering",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "ProtoVQA: An Adaptable Prototypical Framework for Explainable Fine-Grained Visual Question Answering"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMMU",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "ProtoVQA: An Adaptable Prototypical Framework for Explainable Fine-Grained Visual Question Answering",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "ProtoVQA: An Adaptable Prototypical Framework for Explainable Fine-Grained Visual Question Answering"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 11,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 8,
+  "characterization": "Across the surveyed literature, the prevailing framing of fine-grained understanding is a model's ability to comprehend detailed, local information within an image, such as object attributes and relationships, as opposed to global scene-level content. Some definitions broaden this to include capturing \"subtle differences and detailed semantic information in both visual and linguistic patterns\" (\"Multi-Head Mixture-of-Experts\"), while others specify it as the latent ability to use detailed visual information for tasks like answering multimodal questions. This construct is frequently discussed in the context of model limitations, with multiple sources noting that models often \"struggle to perceive fine-grained details\" (\"MODA...\"). The field operationalizes and measures this construct using a wide array of benchmarks, including MMVP, ChartQA, CapsBench, Stanford Dogs, COCO Caption, OCRBench, and MMMU. Fine-grained understanding is studied alongside other capabilities, with some work stating it is necessary for understanding cognition and emotion. One paper also proposes that the behavior of image reconstruction can enhance a model's fine-grained understanding.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "FineCLIP: Self-distilled Region-based CLIP for Better Fine-grained Understanding",
+      "Multi-Head Mixture-of-Experts"
+    ],
+    "icml25": [
+      "EasyRef: Omni-Generalized Group Image Reference for Diffusion Models via Multimodal LLM",
+      "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding"
+    ],
+    "iclr25": [
+      "Reconstructive Visual Instruction Tuning",
+      "Uni-Sign: Toward Unified Sign Language Understanding at Scale"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 2,
+    "icml25": 2,
+    "iclr25": 2
+  },
+  "conferences": [
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

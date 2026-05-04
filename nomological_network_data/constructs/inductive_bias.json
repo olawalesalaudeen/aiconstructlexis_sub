@@ -1,0 +1,164 @@
+{
+  "canonical_name": "Inductive bias",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, inductive bias is consistently defined as an inherent property of a model that predisposes it to favor certain solutions or generalizations over others. This property is most commonly attributed to a model's architecture, such as a 'looped transformer' or 'butterfly structure', as well as its training method or the use of pre-trained models. The construct is primarily operationalized by observing its influence on model behaviors, with a recurring focus on its relationship with generalization. For example, some papers argue that a desirable inductive bias 'improves its generalization abilities', and its effects can be revealed through performance on tasks like length generalization. While the connection to generalization is prevalent, inductive bias is also linked to commonsense knowledge and understanding, though these relationships are less detailed in the provided data. A specialized variant, 'geometric inductive bias', is described in the context of protein modeling as the capacity to capture spatial relationships. Despite its frequent discussion, some work notes that the specific inductive biases behind certain behaviors 'are not clearly understood', while other research questions whether common architectures truly encode 'distinctive' inductive biases.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Inductive bias",
+    "Geometric inductive bias"
+  ],
+  "papers": [
+    "Constrained Non-negative Matrix Factorization for Guided Topic Modeling of Minority Topics",
+    "MMAG: Multimodal Learning for Mucus Anomaly Grading in Nasal Endoscopy via Semantic Attribute Prompting",
+    "Re-Align: Aligning Vision Language Models via Retrieval-Augmented Direct Preference Optimization",
+    "In-Context Learning through the Bayesian Prism",
+    "Looped Transformers are Better at Learning Learning Algorithms",
+    "Parameter-Efficient Orthogonal Finetuning via Butterfly Factorization",
+    "Unleashing the Power of Pre-trained Language Models for Offline Reinforcement Learning",
+    "Efficient stagewise pretraining via progressive subnetworks",
+    "Explaining Modern Gated-Linear RNNs via a Unified Implicit Attention Formulation",
+    "Language Models Need Inductive Biases to Count Inductively",
+    "Training Neural Networks as Recognizers of Formal Languages",
+    "Elucidating the Design Space of Multimodal Protein Language Models",
+    "LLMs on the Line: Data Determines Loss-to-Loss Scaling Laws",
+    "What Has a Foundation Model Found? Using Inductive Bias to Probe for World Models",
+    "Algorithmic Capabilities of Random Transformers",
+    "On the Inductive Bias of Stacking Towards Improving Reasoning"
+  ],
+  "paper_count": 16,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "An inherent property of a model or training method that causes it to prefer certain solutions or generalizations over others, influencing its performance on new tasks.",
+      "paper": "In-Context Learning through the Bayesian Prism",
+      "original_name": "Inductive bias"
+    },
+    {
+      "text": "The model's inherent architectural capacity to capture spatial and geometric relationships among protein residues, such as pairwise distances and angular constraints, which are critical for accurate structure prediction.",
+      "paper": "Elucidating the Design Space of Multimodal Protein Language Models",
+      "original_name": "Geometric inductive bias"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Efficient stagewise pretraining via progressive subnetworks",
+      "evidence": "This suggests a desirable inductive bias of RAPTR that improves its generalization abilities beyond perplexity. (Section 4)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Efficient stagewise pretraining via progressive subnetworks"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "On the Inductive Bias of Stacking Towards Improving Reasoning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "On the Inductive Bias of Stacking Towards Improving Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Length generalization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Training Neural Networks as Recognizers of Formal Languages",
+      "evidence": "The short validation set reveals an architecture\u2019s inductive bias in the absence of any disambiguating information about how it should generalize to longer lengths, as in the experiments of Del\u00b4etang et al. (2023). (Section 4)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Training Neural Networks as Recognizers of Formal Languages"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "LLMs on the Line: Data Determines Loss-to-Loss Scaling Laws",
+      "evidence": "Our results indicate that common LLM architectures and training setups might encode very similar inductive biases, freeing practitioners to optimize them for training efficiency without adversely affecting downstream generalization. (Section 1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "LLMs on the Line: Data Determines Loss-to-Loss Scaling Laws"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "What Has a Foundation Model Found? Using Inductive Bias to Probe for World Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "What Has a Foundation Model Found? Using Inductive Bias to Probe for World Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 3,
+  "characterization": "Across the surveyed literature, inductive bias is consistently defined as an inherent property of a model that predisposes it to favor certain solutions or generalizations over others. This property is most commonly attributed to a model's architecture, such as a 'looped transformer' or 'butterfly structure', as well as its training method or the use of pre-trained models. The construct is primarily operationalized by observing its influence on model behaviors, with a recurring focus on its relationship with generalization. For example, some papers argue that a desirable inductive bias 'improves its generalization abilities', and its effects can be revealed through performance on tasks like length generalization. While the connection to generalization is prevalent, inductive bias is also linked to commonsense knowledge and understanding, though these relationships are less detailed in the provided data. A specialized variant, 'geometric inductive bias', is described in the context of protein modeling as the capacity to capture spatial relationships. Despite its frequent discussion, some work notes that the specific inductive biases behind certain behaviors 'are not clearly understood', while other research questions whether common architectures truly encode 'distinctive' inductive biases.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "In-Context Learning through the Bayesian Prism",
+      "Looped Transformers are Better at Learning Learning Algorithms",
+      "Parameter-Efficient Orthogonal Finetuning via Butterfly Factorization",
+      "Unleashing the Power of Pre-trained Language Models for Offline Reinforcement Learning"
+    ],
+    "neurips24": [
+      "Algorithmic Capabilities of Random Transformers",
+      "On the Inductive Bias of Stacking Towards Improving Reasoning"
+    ],
+    "iclr25": [
+      "Efficient stagewise pretraining via progressive subnetworks",
+      "Explaining Modern Gated-Linear RNNs via a Unified Implicit Attention Formulation",
+      "Language Models Need Inductive Biases to Count Inductively",
+      "Training Neural Networks as Recognizers of Formal Languages"
+    ],
+    "icml25": [
+      "Elucidating the Design Space of Multimodal Protein Language Models",
+      "LLMs on the Line: Data Determines Loss-to-Loss Scaling Laws",
+      "What Has a Foundation Model Found? Using Inductive Bias to Probe for World Models"
+    ],
+    "emnlp25": [
+      "Constrained Non-negative Matrix Factorization for Guided Topic Modeling of Minority Topics",
+      "MMAG: Multimodal Learning for Mucus Anomaly Grading in Nasal Endoscopy via Semantic Attribute Prompting",
+      "Re-Align: Aligning Vision Language Models via Retrieval-Augmented Direct Preference Optimization"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 4,
+    "neurips24": 2,
+    "iclr25": 4,
+    "icml25": 3,
+    "emnlp25": 3
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "canonical_name": "Grammatical acceptability judgment",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, \"Grammatical acceptability judgment\" is predominantly framed as the task of determining whether a sentence adheres to the grammatical rules of a language. While most definitions focus on syntactic correctness, a smaller set of papers broadens this to \"linguistic acceptability,\" which also includes semantic well-formedness. The most common operationalization of this behavior is as a classification task, where a model must label a sentence as either grammatically acceptable or unacceptable. An alternative operationalization involves a comparative judgment, where the model chooses between a correct and a corrupted version of a sentence or, as one paper notes, is evaluated on whether it \"assigned a higher probability to the acceptable sentence\" (\"Speech Vecalign: an Embedding-based Method for Aligning Parallel Speech Documents\"). A more specific instance of this task is subject-verb agreement, where the model's goal is to \"choose the appropriate verb inflection\" (\"Sparse Feature Circuits: Discovering and Editing Interpretable Causal Graphs in Language Models\"). This behavior is frequently measured using the CoLA benchmark and is also evaluated with instruments like BLiMP. The task is studied in relation to language proficiency, with one paper using a \"discriminative grammar judgment experiment\" to test a model's acquisition of grammar knowledge (\"Can LLMs Really Learn to Translate a Low-Resource Language from One Grammar Book?\").",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Subject-verb agreement",
+    "Syntactic well-formedness detection",
+    "Grammatical acceptability judgment",
+    "Grammaticality judgment"
+  ],
+  "papers": [
+    "A Systematic Analysis of Base Model Choice for Reward Modeling",
+    "Bridging the Gap Between Molecule and Textual Descriptions via Substructure-aware Alignment",
+    "Computational Analysis of Character Development in Holocaust Testimonies",
+    "Constrained Non-negative Matrix Factorization for Guided Topic Modeling of Minority Topics",
+    "DiplomacyAgent: DoLLMs Balance Interests and Ethical Principles in International Events?",
+    "OG-RAG: Ontology-grounded retrieval-augmented generation for large language models",
+    "Primus: A Pioneering Collection of Open-Source Datasets for CybersecurityLLMTraining",
+    "Skip-Thinking: Chunk-wise Chain-of-Thought Distillation Enable Smaller Language Models to Reason Better and Faster",
+    "Speech Vecalign: an Embedding-based Method for Aligning Parallel Speech Documents",
+    "Trustworthy Medical Question Answering: An Evaluation-Centric Survey",
+    "AlphaEdit: Null-Space Constrained Knowledge Editing for Language Models",
+    "Can LLMs Really Learn to Translate a Low-Resource Language from One Grammar Book?",
+    "Collaborative Discrete-Continuous Black-Box Prompt Learning for Language Models",
+    "Emergence of a High-Dimensional Abstraction Phase in Language Transformers",
+    "MoLEx: Mixture of Layer Experts for Fine-tuning with Sparse Upcycling",
+    "Sparse Feature Circuits: Discovering and Editing Interpretable Causal Graphs in Language Models",
+    "TopoNets: High performing vision and language models with brain-like topography"
+  ],
+  "paper_count": 17,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Choosing the appropriate verb inflection based on the grammatical number of the subject.",
+      "paper": "Sparse Feature Circuits: Discovering and Editing Interpretable Causal Graphs in Language Models",
+      "original_name": "Subject-verb agreement"
+    },
+    {
+      "text": "The observable task of determining whether a given sentence adheres to the grammatical rules of a language.",
+      "paper": "Emergence of a High-Dimensional Abstraction Phase in Language Transformers",
+      "original_name": "Syntactic well-formedness detection"
+    },
+    {
+      "text": "The task of determining whether a sentence is grammatically or semantically well-formed, as evaluated by benchmarks like BLiMP.",
+      "paper": "TopoNets: High performing vision and language models with brain-like topography",
+      "original_name": "Linguistic acceptability judgment"
+    },
+    {
+      "text": "The task of determining whether a given sentence is grammatically correct according to the rules of a language, often by choosing between a correct and a corrupted version.",
+      "paper": "Can LLMs Really Learn to Translate a Low-Resource Language from One Grammar Book?",
+      "original_name": "Grammaticality judgment"
+    },
+    {
+      "text": "The task of classifying a sentence as either grammatically acceptable or unacceptable.",
+      "paper": "AlphaEdit: Null-Space Constrained Knowledge Editing for Language Models",
+      "original_name": "Grammatical acceptability judgment"
+    },
+    {
+      "text": "The task of determining whether a sentence is grammatically correct.",
+      "paper": "DiplomacyAgent: DoLLMs Balance Interests and Ethical Principles in International Events?",
+      "original_name": "Grammatical judgment"
+    }
+  ],
+  "definition_count": 6,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CoLA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "AlphaEdit: Null-Space Constrained Knowledge Editing for Language Models",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "AlphaEdit: Null-Space Constrained Knowledge Editing for Language Models"
+        ],
+        "emnlp25": [
+          "Skip-Thinking: Chunk-wise Chain-of-Thought Distillation Enable Smaller Language Models to Reason Better and Faster"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Causal tracing",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "What does the Knowledge Neuron Thesis Have to do with Knowledge?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "What does the Knowledge Neuron Thesis Have to do with Knowledge?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Language proficiency",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Can LLMs Really Learn to Translate a Low-Resource Language from One Grammar Book?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Can LLMs Really Learn to Translate a Low-Resource Language from One Grammar Book?"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 3,
+  "characterization": "Across the provided literature, \"Grammatical acceptability judgment\" is predominantly framed as the task of determining whether a sentence adheres to the grammatical rules of a language. While most definitions focus on syntactic correctness, a smaller set of papers broadens this to \"linguistic acceptability,\" which also includes semantic well-formedness. The most common operationalization of this behavior is as a classification task, where a model must label a sentence as either grammatically acceptable or unacceptable. An alternative operationalization involves a comparative judgment, where the model chooses between a correct and a corrupted version of a sentence or, as one paper notes, is evaluated on whether it \"assigned a higher probability to the acceptable sentence\" (\"Speech Vecalign: an Embedding-based Method for Aligning Parallel Speech Documents\"). A more specific instance of this task is subject-verb agreement, where the model's goal is to \"choose the appropriate verb inflection\" (\"Sparse Feature Circuits: Discovering and Editing Interpretable Causal Graphs in Language Models\"). This behavior is frequently measured using the CoLA benchmark and is also evaluated with instruments like BLiMP. The task is studied in relation to language proficiency, with one paper using a \"discriminative grammar judgment experiment\" to test a model's acquisition of grammar knowledge (\"Can LLMs Really Learn to Translate a Low-Resource Language from One Grammar Book?\").",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "AlphaEdit: Null-Space Constrained Knowledge Editing for Language Models",
+      "Can LLMs Really Learn to Translate a Low-Resource Language from One Grammar Book?",
+      "Collaborative Discrete-Continuous Black-Box Prompt Learning for Language Models",
+      "Emergence of a High-Dimensional Abstraction Phase in Language Transformers",
+      "MoLEx: Mixture of Layer Experts for Fine-tuning with Sparse Upcycling",
+      "Sparse Feature Circuits: Discovering and Editing Interpretable Causal Graphs in Language Models",
+      "TopoNets: High performing vision and language models with brain-like topography"
+    ],
+    "emnlp25": [
+      "A Systematic Analysis of Base Model Choice for Reward Modeling",
+      "Bridging the Gap Between Molecule and Textual Descriptions via Substructure-aware Alignment",
+      "Computational Analysis of Character Development in Holocaust Testimonies",
+      "Constrained Non-negative Matrix Factorization for Guided Topic Modeling of Minority Topics",
+      "DiplomacyAgent: DoLLMs Balance Interests and Ethical Principles in International Events?",
+      "OG-RAG: Ontology-grounded retrieval-augmented generation for large language models",
+      "Primus: A Pioneering Collection of Open-Source Datasets for CybersecurityLLMTraining",
+      "Skip-Thinking: Chunk-wise Chain-of-Thought Distillation Enable Smaller Language Models to Reason Better and Faster",
+      "Speech Vecalign: an Embedding-based Method for Aligning Parallel Speech Documents",
+      "Trustworthy Medical Question Answering: An Evaluation-Centric Survey"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 7,
+    "emnlp25": 10
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25"
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "canonical_name": "MixEval",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, MixEval is consistently described as a hybrid evaluation benchmark for large language models, designed to provide a comprehensive assessment of their capabilities across a diverse mix of tasks. The benchmark is defined as combining 18 ground-truth-based tasks, with one source noting it \"collects data from numerous QA datasets under real-world data distribution\" (\"Unnatural Languages Are Not Bugs but Features for LLMs\"). Papers use MixEval to measure a wide array of model attributes, most commonly for evaluating `Alignment`, `Instruction following`, and `Problem-solving`. It is also used to assess more specific capabilities such as `Conversational ability` (for \"generalist chat capabilities\"), `Adversarial robustness` (specifically \"jailbreak robustness\"), `Faithfulness`, and `Commonsense knowledge`. In a different framing, one paper categorizes MixEval as a `Classification` benchmark. One study reports that the benchmark has a \"0.96 correlation to human preferences\" (\"RMB: Comprehensively benchmarking reward models in LLM alignment\").",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "MixEval"
+  ],
+  "papers": [
+    "ALLaM: Large Language Models for Arabic and English",
+    "Learn Your Reference Model for Real Good Alignment",
+    "Magnetic Preference Optimization: Achieving Last-iterate Convergence for Language Model Alignment",
+    "RMB: Comprehensively benchmarking reward models in LLM alignment",
+    "A Unified Approach to Routing and Cascading for LLMs",
+    "An Architecture Search Framework for Inference-Time Techniques",
+    "LLM Alignment as Retriever Optimization: An Information Retrieval Perspective",
+    "Unnatural Languages Are Not Bugs but Features for LLMs",
+    "WildChat-50M: A Deep Dive Into the Role of Synthetic Data in Post-Training"
+  ],
+  "paper_count": 9,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A hybrid evaluation benchmark for language models that combines 18 ground-truth-based tasks.",
+      "paper": "RMB: Comprehensively benchmarking reward models in LLM alignment",
+      "original_name": "MixEval"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Adversarial robustness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Learn Your Reference Model for Real Good Alignment",
+      "evidence": "We also evaluate on the MixEval (Ni et al., 2024) benchmark, which contains downstream tasks, and assess jailbreak robustness; additional details are provided in Appendices F and G.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Learn Your Reference Model for Real Good Alignment"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Alignment",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "RMB: Comprehensively benchmarking reward models in LLM alignment",
+      "evidence": "\"We evaluate alignment effectiveness using three benchmarks: (1) MixEval ...\"",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "RMB: Comprehensively benchmarking reward models in LLM alignment"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "An Architecture Search Framework for Inference-Time Techniques",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "An Architecture Search Framework for Inference-Time Techniques"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Classification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "A Unified Approach to Routing and Cascading for LLMs",
+      "evidence": "The classification benchmarks include ARC-Challenge (Clark et al., 2018), MMLU-Pro (Wang et al., 2024), and MixEval (Ni et al., 2024). (Section 5.2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "A Unified Approach to Routing and Cascading for LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction following",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Unnatural Languages Are Not Bugs but Features for LLMs",
+      "evidence": "We evaluate all variants on Length-controlled (LC) AlpacaEval 2.0 (Li et al., 2023) and MixEval (Ni et al., 2024). MixEval is a ground-truth-based benchmark that collects data from numerous QA datasets under real-world data distribution.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Unnatural Languages Are Not Bugs but Features for LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Conversational ability",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "WildChat-50M: A Deep Dive Into the Role of Synthetic Data in Post-Training",
+      "evidence": "For generalist chat capabilities, we use MixEval, AlpacaEval2, and MTBench with GPT-4o-mini as the judge LLM (Ni et al., 2024; Dubois et al., 2024; Zheng et al., 2023). (Section 3.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "WildChat-50M: A Deep Dive Into the Role of Synthetic Data in Post-Training"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Problem-solving",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "LLM Alignment as Retriever Optimization: An Information Retrieval Perspective",
+      "evidence": "These benchmarks collectively provide a comprehensive assessment of the models\u2019 instruction-following and problem-solving capabilities. (Section 5. Main Results)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "LLM Alignment as Retriever Optimization: An Information Retrieval Perspective"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 7,
+  "incoming_relationship_count": 7,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, MixEval is consistently described as a hybrid evaluation benchmark for large language models, designed to provide a comprehensive assessment of their capabilities across a diverse mix of tasks. The benchmark is defined as combining 18 ground-truth-based tasks, with one source noting it \"collects data from numerous QA datasets under real-world data distribution\" (\"Unnatural Languages Are Not Bugs but Features for LLMs\"). Papers use MixEval to measure a wide array of model attributes, most commonly for evaluating `Alignment`, `Instruction following`, and `Problem-solving`. It is also used to assess more specific capabilities such as `Conversational ability` (for \"generalist chat capabilities\"), `Adversarial robustness` (specifically \"jailbreak robustness\"), `Faithfulness`, and `Commonsense knowledge`. In a different framing, one paper categorizes MixEval as a `Classification` benchmark. One study reports that the benchmark has a \"0.96 correlation to human preferences\" (\"RMB: Comprehensively benchmarking reward models in LLM alignment\").",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "ALLaM: Large Language Models for Arabic and English",
+      "Learn Your Reference Model for Real Good Alignment",
+      "Magnetic Preference Optimization: Achieving Last-iterate Convergence for Language Model Alignment",
+      "RMB: Comprehensively benchmarking reward models in LLM alignment"
+    ],
+    "icml25": [
+      "A Unified Approach to Routing and Cascading for LLMs",
+      "An Architecture Search Framework for Inference-Time Techniques",
+      "LLM Alignment as Retriever Optimization: An Information Retrieval Perspective",
+      "Unnatural Languages Are Not Bugs but Features for LLMs",
+      "WildChat-50M: A Deep Dive Into the Role of Synthetic Data in Post-Training"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 4,
+    "icml25": 5
+  },
+  "conferences": [
+    "iclr25",
+    "icml25"
+  ]
+}

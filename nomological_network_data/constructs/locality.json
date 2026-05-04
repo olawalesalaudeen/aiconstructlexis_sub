@@ -1,0 +1,293 @@
+{
+  "canonical_name": "Locality",
+  "type": "construct",
+  "canonical_definition": "Across the provided literature, Locality is consistently defined as a property of knowledge editing that measures the extent to which an edit is localized, ensuring a model's behavior on unrelated inputs remains unchanged. The prevailing framing emphasizes preventing unintended side effects, with one paper noting that a successful edit should \"adjust the targeted knowledge locally while leaving unrelated knowledge unaffected.\" The field operationalizes this construct by evaluating an edited model's performance on a wide array of general benchmarks to detect degradation in areas untargeted by the edit. For instance, one study explicitly uses this method to \"assess this, we evaluate the model on general benchmarks, including CommonsenseQA..., BigBench-Hard..., MMLU..., and GSM8k.\" Other measurement instruments frequently used to assess Locality include CounterFact, zs-RE, Natural Questions, and RedPajama. This evaluation is also applied to the Visual question answering task, and one source describes the underlying procedure as \"comparing the outputs of the unedited and edited models\" on unrelated knowledge. In the context of knowledge editing research, Locality is studied alongside other constructs such as Faithfulness and Generalization.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Locality"
+  ],
+  "papers": [
+    "Can External Validation Tools Improve Annotation Quality forLLM-as-a-Judge?",
+    "Extending Complex Logical Queries on Uncertain Knowledge Graphs",
+    "MockConf: A Student Interpretation Dataset: Analysis, Word- and Span-level Alignment and Baselines",
+    "Understanding In-Context Machine Translation for Low-Resource Languages: A Case Study onManchu",
+    "CalibratingLLMs for Text-to-SQLParsing by Leveraging Sub-clause Frequencies",
+    "Dual-Path Dynamic Fusion with Learnable Query for Multimodal Sentiment Analysis",
+    "EvolvingChinese Spelling Correction with Corrector-Verifier Collaboration",
+    "From Capabilities to Performance: Evaluating Key Functional Properties ofLLMArchitectures in Penetration Testing",
+    "Investigating Pedagogical Teacher and StudentLLMAgents: Genetic Adaptation Meets Retrieval-Augmented Generation Across Learning Styles",
+    "Measuring the Effect of Disfluency in Multilingual Knowledge Probing Benchmarks",
+    "SciNLP: A Domain-Specific Benchmark for Full-Text Scientific Entity and Relation Extraction inNLP",
+    "RWKU: Benchmarking Real-World Knowledge Unlearning for Large Language Models",
+    "VLKEB: A Large Vision-Language Model Knowledge Editing Benchmark",
+    "WISE: Rethinking the Knowledge Memory for Lifelong Model Editing of Large Language Models"
+  ],
+  "paper_count": 14,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The extent to which a knowledge edit is localized, ensuring the model's behavior on unrelated inputs remains unchanged.",
+      "paper": "VLKEB: A Large Vision-Language Model Knowledge Editing Benchmark",
+      "original_name": "Locality"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge editing",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Unlocking Efficient, Scalable, and Continual Knowledge Editing with Basis-Level Representation Fine-Tuning",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Unlocking Efficient, Scalable, and Continual Knowledge Editing with Basis-Level Representation Fine-Tuning",
+          "In-Context Editing: Learning Knowledge from Self-Induced Distributions"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "zs-RE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "A Cognitive Evaluation Benchmark of Image Reasoning and Description for Large Vision-Language Models",
+      "evidence": "Results on three metrics for the two datasets using LLAMA2-7B and LLAMA-7B. (Table 1)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "naacl25": [
+          "A Cognitive Evaluation Benchmark of Image Reasoning and Description for Large Vision-Language Models"
+        ],
+        "emnlp25": [
+          "Investigating Pedagogical Teacher and StudentLLMAgents: Genetic Adaptation Meets Retrieval-Augmented Generation Across Learning Styles"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CounterFact",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "A Cognitive Evaluation Benchmark of Image Reasoning and Description for Large Vision-Language Models",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "naacl25": [
+          "A Cognitive Evaluation Benchmark of Image Reasoning and Description for Large Vision-Language Models"
+        ],
+        "emnlp25": [
+          "Investigating Pedagogical Teacher and StudentLLMAgents: Genetic Adaptation Meets Retrieval-Augmented Generation Across Learning Styles"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Natural Questions",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MMKE-Bench: A Multimodal Editing Benchmark for Diverse Visual Knowledge",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "MMKE-Bench: A Multimodal Editing Benchmark for Diverse Visual Knowledge"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reliability",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "WISE: Rethinking the Knowledge Memory for Lifelong Model Editing of Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "WISE: Rethinking the Knowledge Memory for Lifelong Model Editing of Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "WISE: Rethinking the Knowledge Memory for Lifelong Model Editing of Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "WISE: Rethinking the Knowledge Memory for Lifelong Model Editing of Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "RedPajama",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "WISE: Rethinking the Knowledge Memory for Lifelong Model Editing of Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "WISE: Rethinking the Knowledge Memory for Lifelong Model Editing of Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "VLKEB: A Large Vision-Language Model Knowledge Editing Benchmark",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "VLKEB: A Large Vision-Language Model Knowledge Editing Benchmark"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WikiDatarecent",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "In-Context Editing: Learning Knowledge from Self-Induced Distributions",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "In-Context Editing: Learning Knowledge from Self-Induced Distributions"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WikiDatacounterfact",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "In-Context Editing: Learning Knowledge from Self-Induced Distributions",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "In-Context Editing: Learning Knowledge from Self-Induced Distributions"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Length generalization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "The Role of Sparsity for Length Generalization in LLMs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "The Role of Sparsity for Length Generalization in LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CommonsenseQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Dual-Path Dynamic Fusion with Learnable Query for Multimodal Sentiment Analysis",
+      "evidence": "For KE, we also need to consider locality, which ensures edits do not affect unrelated knowledge and abilities. To assess this, we evaluate the model on general benchmarks, including CommonsenseQA (Talmor et al., 2019), BigBench-Hard (Suzgun et al., 2023), MMLU (Hendrycks et al., 2021), and GSM8k (Cobbe et al., 2021) (Section 4.1).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Dual-Path Dynamic Fusion with Learnable Query for Multimodal Sentiment Analysis"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BBH",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Dual-Path Dynamic Fusion with Learnable Query for Multimodal Sentiment Analysis",
+      "evidence": "For KE, we also need to consider locality, which ensures edits do not affect unrelated knowledge and abilities. To assess this, we evaluate the model on general benchmarks, including CommonsenseQA (Talmor et al., 2019), BigBench-Hard (Suzgun et al., 2023), MMLU (Hendrycks et al., 2021), and GSM8k (Cobbe et al., 2021) (Section 4.1).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Dual-Path Dynamic Fusion with Learnable Query for Multimodal Sentiment Analysis"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Dual-Path Dynamic Fusion with Learnable Query for Multimodal Sentiment Analysis",
+      "evidence": "For KE, we also need to consider locality, which ensures edits do not affect unrelated knowledge and abilities. To assess this, we evaluate the model on general benchmarks, including CommonsenseQA (Talmor et al., 2019), BigBench-Hard (Suzgun et al., 2023), MMLU (Hendrycks et al., 2021), and GSM8k (Cobbe et al., 2021) (Section 4.1).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Dual-Path Dynamic Fusion with Learnable Query for Multimodal Sentiment Analysis"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8k",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Dual-Path Dynamic Fusion with Learnable Query for Multimodal Sentiment Analysis",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Dual-Path Dynamic Fusion with Learnable Query for Multimodal Sentiment Analysis"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 15,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 12,
+  "characterization": "Across the provided literature, Locality is consistently defined as a property of knowledge editing that measures the extent to which an edit is localized, ensuring a model's behavior on unrelated inputs remains unchanged. The prevailing framing emphasizes preventing unintended side effects, with one paper noting that a successful edit should \"adjust the targeted knowledge locally while leaving unrelated knowledge unaffected.\" The field operationalizes this construct by evaluating an edited model's performance on a wide array of general benchmarks to detect degradation in areas untargeted by the edit. For instance, one study explicitly uses this method to \"assess this, we evaluate the model on general benchmarks, including CommonsenseQA..., BigBench-Hard..., MMLU..., and GSM8k.\" Other measurement instruments frequently used to assess Locality include CounterFact, zs-RE, Natural Questions, and RedPajama. This evaluation is also applied to the Visual question answering task, and one source describes the underlying procedure as \"comparing the outputs of the unedited and edited models\" on unrelated knowledge. In the context of knowledge editing research, Locality is studied alongside other constructs such as Faithfulness and Generalization.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "RWKU: Benchmarking Real-World Knowledge Unlearning for Large Language Models",
+      "VLKEB: A Large Vision-Language Model Knowledge Editing Benchmark",
+      "WISE: Rethinking the Knowledge Memory for Lifelong Model Editing of Large Language Models"
+    ],
+    "acl25": [
+      "Can External Validation Tools Improve Annotation Quality forLLM-as-a-Judge?",
+      "Extending Complex Logical Queries on Uncertain Knowledge Graphs",
+      "MockConf: A Student Interpretation Dataset: Analysis, Word- and Span-level Alignment and Baselines",
+      "Understanding In-Context Machine Translation for Low-Resource Languages: A Case Study onManchu"
+    ],
+    "emnlp25": [
+      "CalibratingLLMs for Text-to-SQLParsing by Leveraging Sub-clause Frequencies",
+      "Dual-Path Dynamic Fusion with Learnable Query for Multimodal Sentiment Analysis",
+      "EvolvingChinese Spelling Correction with Corrector-Verifier Collaboration",
+      "From Capabilities to Performance: Evaluating Key Functional Properties ofLLMArchitectures in Penetration Testing",
+      "Investigating Pedagogical Teacher and StudentLLMAgents: Genetic Adaptation Meets Retrieval-Augmented Generation Across Learning Styles",
+      "Measuring the Effect of Disfluency in Multilingual Knowledge Probing Benchmarks",
+      "SciNLP: A Domain-Specific Benchmark for Full-Text Scientific Entity and Relation Extraction inNLP"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 3,
+    "acl25": 4,
+    "emnlp25": 7
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "neurips24"
+  ]
+}

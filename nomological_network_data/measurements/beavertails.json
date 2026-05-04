@@ -1,0 +1,207 @@
+{
+  "canonical_name": "Beavertails",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, Beavertails is predominantly described as a benchmark dataset for evaluating the safety and alignment of language models. The most frequent definition characterizes it as a tool for \"response safety classification,\" while other papers frame it as a dataset for assessing \"safety-related responses\" and \"harmlessness.\" Papers use Beavertails to operationalize and measure several constructs, most commonly `Harmlessness`, but also `Helpfulness`, `Safety`, and `Harmful content generation`. For instance, some studies explicitly measure `Harmful content generation` by sampling \"1000 harmful instructions from the testing set of BeaverTails\" to compute a score. The dataset is described as containing human annotations, with multiple sources noting it is structured around a \"safety taxonomy of 14 categories.\" It is characterized as both a \"human-annotated preference dataset\" and a \"question answering dataset containing advice queries and candidate answers,\" and is also used to test \"safety filtering and jailbreak resistance.\" One study reports that models trained on the dataset \"surpass their baselines in both helpfulness and harmlessness evaluations.\"",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Beavertails",
+    "BeaverTails",
+    "BeaverTails-Evaluation"
+  ],
+  "papers": [
+    "Powerformer: Efficient and High-Accuracy Privacy-Preserving Language Model with Homomorphic Encryption",
+    "Retrieve to Explain: Evidence-driven Predictions for Explainable Drug Target Identification",
+    "Exploiting Contextual Knowledge inLLMs through\ud835\udcb1-usable Information based Layer Enhancement",
+    "Performance Gap in Entity Knowledge Extraction Across Modalities in Vision Language Models",
+    "BRSpeech-DF: A Deep Fake Synthetic Speech Dataset forPortuguese Zero-ShotTTS",
+    "Correct-Detect: Balancing Performance and Ambiguity Through the Lens of Coreference Resolution inLLMs",
+    "DeepWell-Adol: A Scalable Expert-Based Dialogue Corpus for Adolescent Positive Mental Health and Wellbeing Promotion",
+    "Improving Clustering with Positive Pairs Generated fromLLM-Driven Labels",
+    "Mixture of Languages: Improved Multilingual Encoders Through Language Grouping",
+    "TokenSelect: Efficient Long-Context Inference and Length Extrapolation forLLMs via Dynamic Token-LevelKVCache Selection",
+    "$R^2$-Guard: Robust Reasoning Enabled LLM Guardrail via Knowledge-Enhanced Logical Reasoning",
+    "Beyond Interpretability: The Gains of Feature Monosemanticity on Model Robustness",
+    "BingoGuard: LLM Content Moderation Tools with Risk Levels",
+    "Booster: Tackling Harmful Fine-tuning for Large Language Models via Attenuating Harmful Perturbation",
+    "On Evaluating the Durability of Safeguards for Open-Weight LLMs",
+    "Antidote: Post-fine-tuning Safety Alignment for Large Language Models against Harmful Fine-tuning Attack",
+    "Learning Safety Constraints for Large Language Models",
+    "Vulnerability-Aware Alignment: Mitigating Uneven Forgetting in Harmful Fine-Tuning",
+    "In-Context Learning with Long-Context Models: An In-Depth Exploration",
+    "Uncovering Bias in Large Vision-Language Models at Scale with Counterfactuals"
+  ],
+  "paper_count": 20,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A dataset used to evaluate alignment and safety-related responses of finetuned language models.",
+      "paper": "Beyond Interpretability: The Gains of Feature Monosemanticity on Model Robustness",
+      "original_name": "Beavertails"
+    },
+    {
+      "text": "A benchmark dataset used for evaluating the performance of models on response safety classification.",
+      "paper": "BingoGuard: LLM Content Moderation Tools with Risk Levels",
+      "original_name": "BeaverTails"
+    },
+    {
+      "text": "A benchmark for evaluating the harmlessness of LLM responses to harmful instructions, assessing both content safety and refusal behavior.",
+      "paper": "Performance Gap in Entity Knowledge Extraction Across Modalities in Vision Language Models",
+      "original_name": "BeaverTails-Evaluation"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmlessness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Alignment at Pre-training! Towards Native Alignment for Arabic LLMs",
+      "evidence": "",
+      "paper_count": 5,
+      "papers_by_conference": {
+        "neurips24": [
+          "Alignment at Pre-training! Towards Native Alignment for Arabic LLMs",
+          "Alignment for Honesty",
+          "Aligner: Efficient Alignment by Learning to Correct"
+        ],
+        "acl25": [
+          "Performance Gap in Entity Knowledge Extraction Across Modalities in Vision Language Models"
+        ],
+        "emnlp25": [
+          "Mixture of Languages: Improved Multilingual Encoders Through Language Grouping"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Alignment at Pre-training! Towards Native Alignment for Arabic LLMs",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "Alignment at Pre-training! Towards Native Alignment for Arabic LLMs",
+          "Aligner: Efficient Alignment by Learning to Correct"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmful content generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Booster: Tackling Harmful Fine-tuning for Large Language Models via Attenuating Harmful Perturbation",
+      "evidence": "\u201cTo calculate the harmful score, we sample 1000 instructions from the testing set of BeaverTails (Ji et al., 2023).\u201d",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Booster: Tackling Harmful Fine-tuning for Large Language Models via Attenuating Harmful Perturbation"
+        ],
+        "icml25": [
+          "Antidote: Post-fine-tuning Safety Alignment for Large Language Models against Harmful Fine-tuning Attack"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Safety",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Powerformer: Efficient and High-Accuracy Privacy-Preserving Language Model with Homomorphic Encryption",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "acl25": [
+          "Powerformer: Efficient and High-Accuracy Privacy-Preserving Language Model with Homomorphic Encryption"
+        ],
+        "icml25": [
+          "Test-Time Preference Optimization: On-the-Fly Alignment via Iterative Textual Feedback"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmful content detection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "$R^2$-Guard: Robust Reasoning Enabled LLM Guardrail via Knowledge-Enhanced Logical Reasoning",
+      "evidence": "We evaluate the guardrail models on six datasets including five standard safety datasets (OpenAI Mod (Markov et al., 2023),ToxicChat (Lin et al., 2023), XSTest (R\u00f6ttger et al., 2023), Overkill (Shi et al., 2024), BeaverTails (Ji et al., 2024)) and (2) our novel safety dataset TwinSafety. (Section 5)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "$R^2$-Guard: Robust Reasoning Enabled LLM Guardrail via Knowledge-Enhanced Logical Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Adversarial attacks",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "On Evaluating the Durability of Safeguards for Open-Weight LLMs",
+      "evidence": "BeaverTails (Ji et al., 2024) is the benchmark used by Rosati et al. (2024) to evaluate RepNoise; we adopt the same evaluation setup, reporting the average harmfulness scores (ranging from 0 to 1) as assessed by their harmfulness score. (Section 2.2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "On Evaluating the Durability of Safeguards for Open-Weight LLMs"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 6,
+  "incoming_relationship_count": 6,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, Beavertails is predominantly described as a benchmark dataset for evaluating the safety and alignment of language models. The most frequent definition characterizes it as a tool for \"response safety classification,\" while other papers frame it as a dataset for assessing \"safety-related responses\" and \"harmlessness.\" Papers use Beavertails to operationalize and measure several constructs, most commonly `Harmlessness`, but also `Helpfulness`, `Safety`, and `Harmful content generation`. For instance, some studies explicitly measure `Harmful content generation` by sampling \"1000 harmful instructions from the testing set of BeaverTails\" to compute a score. The dataset is described as containing human annotations, with multiple sources noting it is structured around a \"safety taxonomy of 14 categories.\" It is characterized as both a \"human-annotated preference dataset\" and a \"question answering dataset containing advice queries and candidate answers,\" and is also used to test \"safety filtering and jailbreak resistance.\" One study reports that models trained on the dataset \"surpass their baselines in both helpfulness and harmlessness evaluations.\"",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "$R^2$-Guard: Robust Reasoning Enabled LLM Guardrail via Knowledge-Enhanced Logical Reasoning",
+      "Beyond Interpretability: The Gains of Feature Monosemanticity on Model Robustness",
+      "BingoGuard: LLM Content Moderation Tools with Risk Levels",
+      "Booster: Tackling Harmful Fine-tuning for Large Language Models via Attenuating Harmful Perturbation",
+      "On Evaluating the Durability of Safeguards for Open-Weight LLMs"
+    ],
+    "naacl25": [
+      "In-Context Learning with Long-Context Models: An In-Depth Exploration",
+      "Uncovering Bias in Large Vision-Language Models at Scale with Counterfactuals"
+    ],
+    "acl25": [
+      "Powerformer: Efficient and High-Accuracy Privacy-Preserving Language Model with Homomorphic Encryption",
+      "Retrieve to Explain: Evidence-driven Predictions for Explainable Drug Target Identification",
+      "Exploiting Contextual Knowledge inLLMs through\ud835\udcb1-usable Information based Layer Enhancement",
+      "Performance Gap in Entity Knowledge Extraction Across Modalities in Vision Language Models"
+    ],
+    "icml25": [
+      "Antidote: Post-fine-tuning Safety Alignment for Large Language Models against Harmful Fine-tuning Attack",
+      "Learning Safety Constraints for Large Language Models",
+      "Vulnerability-Aware Alignment: Mitigating Uneven Forgetting in Harmful Fine-Tuning"
+    ],
+    "emnlp25": [
+      "BRSpeech-DF: A Deep Fake Synthetic Speech Dataset forPortuguese Zero-ShotTTS",
+      "Correct-Detect: Balancing Performance and Ambiguity Through the Lens of Coreference Resolution inLLMs",
+      "DeepWell-Adol: A Scalable Expert-Based Dialogue Corpus for Adolescent Positive Mental Health and Wellbeing Promotion",
+      "Improving Clustering with Positive Pairs Generated fromLLM-Driven Labels",
+      "Mixture of Languages: Improved Multilingual Encoders Through Language Grouping",
+      "TokenSelect: Efficient Long-Context Inference and Length Extrapolation forLLMs via Dynamic Token-LevelKVCache Selection"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 5,
+    "naacl25": 2,
+    "acl25": 4,
+    "icml25": 3,
+    "emnlp25": 6
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "naacl25"
+  ]
+}

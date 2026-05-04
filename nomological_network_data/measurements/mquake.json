@@ -1,0 +1,124 @@
+{
+  "canonical_name": "MQUAKE",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, MQUAKE is consistently defined as a benchmark for evaluating knowledge editing in language models. The benchmark's task format is centered on multi-hop question answering, where models are required to reason over facts that have been edited. One paper specifies that MQUAKE \"considers different numbers of hops (from 2 to 4) and different positions of the knowledge used in the multi-hop questions\" (\"Dual-Path Dynamic Fusion with Learnable Query for Multimodal Sentiment Analysis\"). The most prevalent use of MQUAKE is to measure both `Complex reasoning` and `Multi-hop question answering`. A smaller set of studies also employs the benchmark to assess other capabilities, such as `Counterfactual reasoning` and `Faithfulness`.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "MQUAKE",
+    "MQuAKE"
+  ],
+  "papers": [
+    "AnyMAC: Cascading Flexible Multi-Agent Collaboration via Next-Agent Prediction",
+    "CalibratingLLMs for Text-to-SQLParsing by Leveraging Sub-clause Frequencies",
+    "Dual-Path Dynamic Fusion with Learnable Query for Multimodal Sentiment Analysis",
+    "From Capabilities to Performance: Evaluating Key Functional Properties ofLLMArchitectures in Penetration Testing",
+    "AlphaEdit: Null-Space Constrained Knowledge Editing for Language Models",
+    "Is Factuality Enhancement a Free Lunch For LLMs? Better Factuality Can Lead to Worse Context-Faithfulness",
+    "MQuAKE-Remastered: Multi-Hop Knowledge Editing Can Only Be Advanced with Reliable Evaluations"
+  ],
+  "paper_count": 7,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A benchmark for evaluating model editing on multi-hop knowledge questions.",
+      "paper": "AlphaEdit: Null-Space Constrained Knowledge Editing for Language Models",
+      "original_name": "MQUAKE"
+    },
+    {
+      "text": "Multi-hop knowledge editing benchmark that evaluates models on question-answering tasks requiring reasoning over edited facts, with versions varying in hop count and temporal knowledge.",
+      "paper": "Dual-Path Dynamic Fusion with Learnable Query for Multimodal Sentiment Analysis",
+      "original_name": "MQuAKE"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Complex reasoning",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "From Capabilities to Performance: Evaluating Key Functional Properties ofLLMArchitectures in Penetration Testing",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "emnlp25": [
+          "From Capabilities to Performance: Evaluating Key Functional Properties ofLLMArchitectures in Penetration Testing",
+          "Dual-Path Dynamic Fusion with Learnable Query for Multimodal Sentiment Analysis"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multi-hop question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "MQuAKE-Remastered: Multi-Hop Knowledge Editing Can Only Be Advanced with Reliable Evaluations",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "MQuAKE-Remastered: Multi-Hop Knowledge Editing Can Only Be Advanced with Reliable Evaluations"
+        ],
+        "emnlp25": [
+          "Dual-Path Dynamic Fusion with Learnable Query for Multimodal Sentiment Analysis"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Counterfactual reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "LoFiT: Localized Fine-tuning on LLM Representations",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "LoFiT: Localized Fine-tuning on LLM Representations"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Is Factuality Enhancement a Free Lunch For LLMs? Better Factuality Can Lead to Worse Context-Faithfulness",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Is Factuality Enhancement a Free Lunch For LLMs? Better Factuality Can Lead to Worse Context-Faithfulness"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, MQUAKE is consistently defined as a benchmark for evaluating knowledge editing in language models. The benchmark's task format is centered on multi-hop question answering, where models are required to reason over facts that have been edited. One paper specifies that MQUAKE \"considers different numbers of hops (from 2 to 4) and different positions of the knowledge used in the multi-hop questions\" (\"Dual-Path Dynamic Fusion with Learnable Query for Multimodal Sentiment Analysis\"). The most prevalent use of MQUAKE is to measure both `Complex reasoning` and `Multi-hop question answering`. A smaller set of studies also employs the benchmark to assess other capabilities, such as `Counterfactual reasoning` and `Faithfulness`.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "AlphaEdit: Null-Space Constrained Knowledge Editing for Language Models",
+      "Is Factuality Enhancement a Free Lunch For LLMs? Better Factuality Can Lead to Worse Context-Faithfulness",
+      "MQuAKE-Remastered: Multi-Hop Knowledge Editing Can Only Be Advanced with Reliable Evaluations"
+    ],
+    "emnlp25": [
+      "AnyMAC: Cascading Flexible Multi-Agent Collaboration via Next-Agent Prediction",
+      "CalibratingLLMs for Text-to-SQLParsing by Leveraging Sub-clause Frequencies",
+      "Dual-Path Dynamic Fusion with Learnable Query for Multimodal Sentiment Analysis",
+      "From Capabilities to Performance: Evaluating Key Functional Properties ofLLMArchitectures in Penetration Testing"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3,
+    "emnlp25": 4
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25"
+  ]
+}

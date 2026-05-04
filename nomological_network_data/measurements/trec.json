@@ -1,0 +1,192 @@
+{
+  "canonical_name": "TREC",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, TREC is predominantly described as a benchmark dataset originating from the Text REtrieval Conference. Its most common application is to measure the behavior of `Text classification`, specifically through a 6-way question classification task. This task requires models to categorize questions into predefined types, which are frequently cited as including \"person, location, numeric,\" \"abbreviation,\" and \"entity.\" While this is the prevailing usage, a smaller line of work frames TREC as a component of the LongBench suite, where it is used to evaluate few-shot learning performance. Additionally, it is sometimes employed for more general natural language understanding (NLU) evaluation. One study also uses the dataset to measure the construct of `Sensitivity`, noting that classes such as \"Description, Entity, and Number\" exhibit the highest sensitivity scores.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "TREC",
+    "Trec"
+  ],
+  "papers": [
+    "Gender Inclusivity Fairness Index (GIFI): A Multilevel Framework for Evaluating Gender Diversity in Large Language Models",
+    "Innovative Image Fraud Detection with Cross-Sample Anomaly Analysis: The Power ofLLMs",
+    "Refining Salience-Aware Sparse Fine-Tuning Strategies for Language Models",
+    "2025.emnlp-main.1116.checklist",
+    "A Systematic Analysis of Base Model Choice for Reward Modeling",
+    "AraEval: AnArabic Multi-Task Evaluation Suite for Large Language Models",
+    "CR4-NarrEmote: An Open Vocabulary Dataset of Narrative Emotions Derived Using Citizen Science",
+    "Language Model Based Text-to-Audio Generation: Anti-Causally Aligned Collaborative Residual Transformers",
+    "Measuring and Mitigating Media Outlet Name Bias in Large Language Models",
+    "XQuant: Achieving Ultra-Low BitKVCache Quantization with Cross-Layer Compression",
+    "iTool: Reinforced Fine-Tuning with Dynamic Deficiency Calibration for Advanced Tool Use",
+    "Connecting Large Language Models with Evolutionary Algorithms Yields Powerful Prompt Optimizers",
+    "DP-OPT: Make Large Language Model Your Privacy-Preserving Prompt Engineer",
+    "EMO: EARTH MOVER DISTANCE OPTIMIZATION FOR AUTO-REGRESSIVE LANGUAGE MODELING",
+    "Out-of-Distribution Detection by Leveraging Between-Layer Transformation Smoothness",
+    "Privacy-Preserving In-Context Learning for Large Language Models",
+    "Privacy-Preserving In-Context Learning with Differentially Private Few-Shot Generation",
+    "PromptAgent: Strategic Planning with Language Models Enables Expert-level Prompt Optimization",
+    "Retrieval meets Long Context Large Language Models",
+    "Adaptive Transformer Programs: Bridging the Gap Between Performance and Interpretability in Transformers",
+    "Attention in Large Language Models Yields Efficient Zero-Shot Re-Rankers",
+    "Data-adaptive Differentially Private Prompt Synthesis for In-Context Learning",
+    "HELMET: How to Evaluate Long-context Models Effectively and Thoroughly",
+    "Implicit In-context Learning",
+    "Large (Vision) Language Models are Unsupervised In-Context Learners",
+    "Revisiting In-context Learning Inference Circuit in Large Language Models",
+    "Second-Order Fine-Tuning without Pain for LLMs: A Hessian Informed Zeroth-Order Optimizer",
+    "VL-ICL Bench: The Devil in the Details of Multimodal In-Context Learning",
+    "Efficient and Privacy-Preserving Soft Prompt Transfer for LLMs",
+    "Fourier Position Embedding: Enhancing Attention\u2019s Periodic Extension for Length Generalization",
+    "Large Language Models are Demonstration Pre-Selectors for Themselves",
+    "Overtrained Language Models Are Harder to Fine-Tune",
+    "Plausible Token Amplification for Improving Accuracy of Differentially Private In-Context Learning Based on Implicit Bayesian Inference",
+    "Towards Global-level Mechanistic Interpretability: A Perspective of Modular Circuits of Large Language Models",
+    "DREAM: Disentangling Risks to Enhance Safety Alignment in Multimodal Large Language Models",
+    "Large Language Models Are Cross-Lingual Knowledge-Free Reasoners"
+  ],
+  "paper_count": 36,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A question classification dataset from the Text REtrieval Conference (TREC), where the task is to classify questions into six types.",
+      "paper": "Connecting Large Language Models with Evolutionary Algorithms Yields Powerful Prompt Optimizers",
+      "original_name": "TREC"
+    },
+    {
+      "text": "A dataset from the LongBench suite used to evaluate few-shot learning performance.",
+      "paper": "DP-OPT: Make Large Language Model Your Privacy-Preserving Prompt Engineer",
+      "original_name": "Trec"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text classification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Privacy-Preserving In-Context Learning for Large Language Models",
+      "evidence": "We use eight text classification datasets for ID data: SST-2 (SST; Socher et al., 2013), Subjectivity (SUBJ; Pang & Lee, 2004), AG-News (AGN; Zhang et al., 2015), and TREC (TREC; Li & Roth, 2002), BigPatent (BP; Sharma et al., 2019), AmazonReviews (AR; McAuley et al., 2015), MovieGenre (MG; Maas et al., 2011), 20NewsGroups (NG; Lang, 1995). (Section 4.1)",
+      "paper_count": 7,
+      "papers_by_conference": {
+        "iclr24": [
+          "Privacy-Preserving In-Context Learning for Large Language Models",
+          "DP-OPT: Make Large Language Model Your Privacy-Preserving Prompt Engineer"
+        ],
+        "iclr25": [
+          "Data-adaptive Differentially Private Prompt Synthesis for In-Context Learning",
+          "Adaptive Transformer Programs: Bridging the Gap Between Performance and Interpretability in Transformers"
+        ],
+        "icml25": [
+          "Plausible Token Amplification for Improving Accuracy of Differentially Private In-Context Learning Based on Implicit Bayesian Inference"
+        ],
+        "emnlp25": [
+          "Language Model Based Text-to-Audio Generation: Anti-Causally Aligned Collaborative Residual Transformers",
+          "iTool: Reinforced Fine-Tuning with Dynamic Deficiency Calibration for Advanced Tool Use"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Sensitivity",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Large Language Models Are Cross-Lingual Knowledge-Free Reasoners",
+      "evidence": "In Figure 3 (bottom), we plot the sensitivity S\u03c4 for each class and prompting strategy (Llama3). Consistently with the example of Section 1, we see that on TREC the classes Description, Entity, and Number are the ones with the highest sensitivity. (Section 5)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Large Language Models Are Cross-Lingual Knowledge-Free Reasoners"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Consistency",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Large Language Models Are Cross-Lingual Knowledge-Free Reasoners",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Large Language Models Are Cross-Lingual Knowledge-Free Reasoners"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, TREC is predominantly described as a benchmark dataset originating from the Text REtrieval Conference. Its most common application is to measure the behavior of `Text classification`, specifically through a 6-way question classification task. This task requires models to categorize questions into predefined types, which are frequently cited as including \"person, location, numeric,\" \"abbreviation,\" and \"entity.\" While this is the prevailing usage, a smaller line of work frames TREC as a component of the LongBench suite, where it is used to evaluate few-shot learning performance. Additionally, it is sometimes employed for more general natural language understanding (NLU) evaluation. One study also uses the dataset to measure the construct of `Sensitivity`, noting that classes such as \"Description, Entity, and Number\" exhibit the highest sensitivity scores.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Connecting Large Language Models with Evolutionary Algorithms Yields Powerful Prompt Optimizers",
+      "DP-OPT: Make Large Language Model Your Privacy-Preserving Prompt Engineer",
+      "EMO: EARTH MOVER DISTANCE OPTIMIZATION FOR AUTO-REGRESSIVE LANGUAGE MODELING",
+      "Out-of-Distribution Detection by Leveraging Between-Layer Transformation Smoothness",
+      "Privacy-Preserving In-Context Learning for Large Language Models",
+      "Privacy-Preserving In-Context Learning with Differentially Private Few-Shot Generation",
+      "PromptAgent: Strategic Planning with Language Models Enables Expert-level Prompt Optimization",
+      "Retrieval meets Long Context Large Language Models"
+    ],
+    "iclr25": [
+      "Adaptive Transformer Programs: Bridging the Gap Between Performance and Interpretability in Transformers",
+      "Attention in Large Language Models Yields Efficient Zero-Shot Re-Rankers",
+      "Data-adaptive Differentially Private Prompt Synthesis for In-Context Learning",
+      "HELMET: How to Evaluate Long-context Models Effectively and Thoroughly",
+      "Implicit In-context Learning",
+      "Large (Vision) Language Models are Unsupervised In-Context Learners",
+      "Revisiting In-context Learning Inference Circuit in Large Language Models",
+      "Second-Order Fine-Tuning without Pain for LLMs: A Hessian Informed Zeroth-Order Optimizer",
+      "VL-ICL Bench: The Devil in the Details of Multimodal In-Context Learning"
+    ],
+    "naacl25": [
+      "DREAM: Disentangling Risks to Enhance Safety Alignment in Multimodal Large Language Models",
+      "Large Language Models Are Cross-Lingual Knowledge-Free Reasoners"
+    ],
+    "acl25": [
+      "Gender Inclusivity Fairness Index (GIFI): A Multilevel Framework for Evaluating Gender Diversity in Large Language Models",
+      "Innovative Image Fraud Detection with Cross-Sample Anomaly Analysis: The Power ofLLMs",
+      "Refining Salience-Aware Sparse Fine-Tuning Strategies for Language Models"
+    ],
+    "icml25": [
+      "Efficient and Privacy-Preserving Soft Prompt Transfer for LLMs",
+      "Fourier Position Embedding: Enhancing Attention\u2019s Periodic Extension for Length Generalization",
+      "Large Language Models are Demonstration Pre-Selectors for Themselves",
+      "Overtrained Language Models Are Harder to Fine-Tune",
+      "Plausible Token Amplification for Improving Accuracy of Differentially Private In-Context Learning Based on Implicit Bayesian Inference",
+      "Towards Global-level Mechanistic Interpretability: A Perspective of Modular Circuits of Large Language Models"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.1116.checklist",
+      "A Systematic Analysis of Base Model Choice for Reward Modeling",
+      "AraEval: AnArabic Multi-Task Evaluation Suite for Large Language Models",
+      "CR4-NarrEmote: An Open Vocabulary Dataset of Narrative Emotions Derived Using Citizen Science",
+      "Language Model Based Text-to-Audio Generation: Anti-Causally Aligned Collaborative Residual Transformers",
+      "Measuring and Mitigating Media Outlet Name Bias in Large Language Models",
+      "XQuant: Achieving Ultra-Low BitKVCache Quantization with Cross-Layer Compression",
+      "iTool: Reinforced Fine-Tuning with Dynamic Deficiency Calibration for Advanced Tool Use"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 8,
+    "iclr25": 9,
+    "naacl25": 2,
+    "acl25": 3,
+    "icml25": 6,
+    "emnlp25": 8
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25"
+  ]
+}

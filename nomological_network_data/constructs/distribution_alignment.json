@@ -1,0 +1,128 @@
+{
+  "canonical_name": "Distribution alignment",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, \"Distribution alignment\" is a construct with several distinct definitions, generally centered on matching statistical distributions to improve model learning. The most prevalent framing concerns the correspondence between different datasets, where it is defined as the degree to which selected training data matches the distribution of a target task. In this context, one paper notes that alignment enables \"data-efficient finetuning\" and can be measured using optimal transport. A related usage applies this concept to knowledge distillation, defining it as a student model's ability to replicate a teacher model's output probability distribution. A different conceptualization treats it as a model's capacity to leverage statistical correlations within in-context data to improve learning efficiency, particularly in studies of in-context learning and retrieval augmented generation. The construct is operationalized and measured using the OpinionQA and GlobalOpinionQA benchmarks. It is also studied in relation to Information retrieval, Generation diversity, and Faithfulness.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Distribution alignment",
+    "Distributional alignment"
+  ],
+  "papers": [
+    "MLWQ: Efficient Small Language Model Deployment via Multi-Level Weight Quantization",
+    "REARANK: Reasoning Re-ranking Agent via Reinforcement Learning",
+    "Fine-grained Analysis of In-context Linear Estimation: Data, Architecture, and Beyond",
+    "TSDS: Data Selection for Task-Specific Model Finetuning"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The degree to which the distribution of selected training data matches the distribution of representative examples from a target task, enabling a model to learn the target distribution efficiently.",
+      "paper": "TSDS: Data Selection for Task-Specific Model Finetuning",
+      "original_name": "Distribution alignment"
+    },
+    {
+      "text": "The model's capacity to leverage statistical correlations within the in-context data, such as between task and feature vectors or between query and demonstration examples, to improve learning efficiency.",
+      "paper": "Fine-grained Analysis of In-context Linear Estimation: Data, Architecture, and Beyond",
+      "original_name": "Distributional alignment"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Retrieval-augmented generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Fine-grained Analysis of In-context Linear Estimation: Data, Architecture, and Beyond",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Fine-grained Analysis of In-context Linear Estimation: Data, Architecture, and Beyond"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generation diversity",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "TSDS: Data Selection for Task-Specific Model Finetuning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "TSDS: Data Selection for Task-Specific Model Finetuning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OpinionQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Understanding Figurative Meaning through Explainable Visual Entailment",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Understanding Figurative Meaning through Explainable Visual Entailment"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GlobalOpinionQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Understanding Figurative Meaning through Explainable Visual Entailment",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Understanding Figurative Meaning through Explainable Visual Entailment"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "REARANK: Reasoning Re-ranking Agent via Reinforcement Learning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "REARANK: Reasoning Re-ranking Agent via Reinforcement Learning"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 5,
+  "characterization": "Across the surveyed literature, \"Distribution alignment\" is a construct with several distinct definitions, generally centered on matching statistical distributions to improve model learning. The most prevalent framing concerns the correspondence between different datasets, where it is defined as the degree to which selected training data matches the distribution of a target task. In this context, one paper notes that alignment enables \"data-efficient finetuning\" and can be measured using optimal transport. A related usage applies this concept to knowledge distillation, defining it as a student model's ability to replicate a teacher model's output probability distribution. A different conceptualization treats it as a model's capacity to leverage statistical correlations within in-context data to improve learning efficiency, particularly in studies of in-context learning and retrieval augmented generation. The construct is operationalized and measured using the OpinionQA and GlobalOpinionQA benchmarks. It is also studied in relation to Information retrieval, Generation diversity, and Faithfulness.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "Fine-grained Analysis of In-context Linear Estimation: Data, Architecture, and Beyond",
+      "TSDS: Data Selection for Task-Specific Model Finetuning"
+    ],
+    "emnlp25": [
+      "MLWQ: Efficient Small Language Model Deployment via Multi-Level Weight Quantization",
+      "REARANK: Reasoning Re-ranking Agent via Reinforcement Learning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 2,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "neurips24"
+  ]
+}

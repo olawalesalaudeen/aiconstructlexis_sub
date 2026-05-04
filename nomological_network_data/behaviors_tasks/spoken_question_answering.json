@@ -1,0 +1,132 @@
+{
+  "canonical_name": "Spoken question answering",
+  "type": "behavior",
+  "canonical_definition": "The behavior of spoken question answering is defined in several distinct ways across the surveyed literature. The most prevalent framing describes it as a model's ability to answer spoken questions about \"broad factual knowledge without access to external knowledge,\" with responses being either spoken or textual. A different line of work defines it as a multimodal task involving answering a question posed in speech about the content of a given image. A third definition, termed \"Audio Question Answering (AQA),\" involves generating open-ended answers to questions about the content of an audio input itself, covering both factual and reasoning-based queries. To operationalize this behavior, researchers frequently use datasets such as WebQuestions and TriviaQA, with some studies noting the use of synthesized audio versions of these benchmarks. For the vision-language variant of the task, the SQA dataset is mentioned as a measurement instrument. The behavior is also studied in relation to speech understanding.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Speech question answering",
+    "Spoken question answering"
+  ],
+  "papers": [
+    "Scaling Speech-Text Pre-training with Synthetic Interleaved Data",
+    "VLAS: Vision-Language-Action Model with Speech Instructions for Customized Robot Manipulation",
+    "Aligning Spoken Dialogue Models from User Interactions",
+    "Audio Flamingo 2: An Audio-Language Model with Long-Audio Understanding and Expert Reasoning Abilities",
+    "Long-Form Speech Generation with Spoken Language Models",
+    "MATS: An Audio Language Model under Text-only Supervision"
+  ],
+  "paper_count": 6,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The model answers spoken questions with either spoken or textual responses.",
+      "paper": "Scaling Speech-Text Pre-training with Synthetic Interleaved Data",
+      "original_name": "Spoken question answering"
+    },
+    {
+      "text": "The task of answering a question posed in speech based on the content of a given image.",
+      "paper": "VLAS: Vision-Language-Action Model with Speech Instructions for Customized Robot Manipulation",
+      "original_name": "Speech question answering"
+    },
+    {
+      "text": "Generating answers to questions about audio content, including both factual and reasoning-based queries.",
+      "paper": "Audio Flamingo 2: An Audio-Language Model with Long-Audio Understanding and Expert Reasoning Abilities",
+      "original_name": "Audio question answering"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WebQuestions",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Spoken Question Answering and Speech Continuation Using Spectrogram-Powered LLM",
+      "evidence": "Spoken Question Answering ... We evaluate our model on 3 datasets in D\u00b4efossez et al. (2024): Web Questions (Berant et al., 2013), Llama Questions (Nachmani et al., 2024), and TriviaQA (Joshi et al., 2017).",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr24": [
+          "Spoken Question Answering and Speech Continuation Using Spectrogram-Powered LLM"
+        ],
+        "iclr25": [
+          "Scaling Speech-Text Pre-training with Synthetic Interleaved Data"
+        ],
+        "icml25": [
+          "Aligning Spoken Dialogue Models from User Interactions"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TriviaQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Scaling Speech-Text Pre-training with Synthetic Interleaved Data",
+      "evidence": "Spoken Question Answering ... We evaluate our model on 3 datasets in D\u00b4efossez et al. (2024): Web Questions (Berant et al., 2013), Llama Questions (Nachmani et al., 2024), and TriviaQA (Joshi et al., 2017).",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Scaling Speech-Text Pre-training with Synthetic Interleaved Data"
+        ],
+        "icml25": [
+          "Aligning Spoken Dialogue Models from User Interactions"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "VLAS: Vision-Language-Action Model with Speech Instructions for Customized Robot Manipulation",
+      "evidence": "\u201cthe model is fine-tuned using both our curated speech question answering (SQA) dataset and the original visual question answering (VQA) datasets from LLaVA\u201d",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "VLAS: Vision-Language-Action Model with Speech Instructions for Customized Robot Manipulation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Speech understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "SVD-LLMV2: Optimizing Singular Value Truncation for Large Language Model Compression",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "SVD-LLMV2: Optimizing Singular Value Truncation for Large Language Model Compression"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 3,
+  "characterization": "The behavior of spoken question answering is defined in several distinct ways across the surveyed literature. The most prevalent framing describes it as a model's ability to answer spoken questions about \"broad factual knowledge without access to external knowledge,\" with responses being either spoken or textual. A different line of work defines it as a multimodal task involving answering a question posed in speech about the content of a given image. A third definition, termed \"Audio Question Answering (AQA),\" involves generating open-ended answers to questions about the content of an audio input itself, covering both factual and reasoning-based queries. To operationalize this behavior, researchers frequently use datasets such as WebQuestions and TriviaQA, with some studies noting the use of synthesized audio versions of these benchmarks. For the vision-language variant of the task, the SQA dataset is mentioned as a measurement instrument. The behavior is also studied in relation to speech understanding.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Scaling Speech-Text Pre-training with Synthetic Interleaved Data",
+      "VLAS: Vision-Language-Action Model with Speech Instructions for Customized Robot Manipulation"
+    ],
+    "icml25": [
+      "Aligning Spoken Dialogue Models from User Interactions",
+      "Audio Flamingo 2: An Audio-Language Model with Long-Audio Understanding and Expert Reasoning Abilities",
+      "Long-Form Speech Generation with Spoken Language Models",
+      "MATS: An Audio Language Model under Text-only Supervision"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "icml25": 4
+  },
+  "conferences": [
+    "iclr25",
+    "icml25"
+  ]
+}

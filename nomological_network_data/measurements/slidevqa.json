@@ -1,0 +1,97 @@
+{
+  "canonical_name": "SlideVQA",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, SlideVQA is consistently defined as a public dataset for visual question answering on presentation slides, with a recurring structural detail that each document consists of 20 pages. The prevailing use of SlideVQA is as a measurement instrument. It is most commonly employed to evaluate `Visual question answering`, where it is cited as a tool for domain-specific, multi-image QA problems on slides. The dataset is also used to assess `Information retrieval`, with one paper stating it is used to \"evaluate the retrieval accuracy\" of a system module (\"SV-RAG: LoRA-Contextualizing Adaptation of  MLLMs for Long Document Understanding\"). Additionally, SlideVQA is associated with the measurement of `Long-context understanding`. A less frequent application appears in one paper where the dataset serves not for evaluation, but as a source for \"refining queries\" to construct a new dataset (\"ComplexTempQA: A 100m Dataset for Complex Temporal Question Answering\").",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "SlideVQA"
+  ],
+  "papers": [
+    "AutoCT: Automating Interpretable Clinical Trial Prediction withLLMAgents",
+    "ComplexTempQA: A 100m Dataset for Complex Temporal Question Answering",
+    "SV-RAG: LoRA-Contextualizing Adaptation of  MLLMs for Long Document Understanding",
+    "VisRAG: Vision-based Retrieval-augmented Generation on Multi-modality Documents"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A public dataset for visual question answering on presentation slides, where each document consists of 20 pages.",
+      "paper": "SV-RAG: LoRA-Contextualizing Adaptation of  MLLMs for Long Document Understanding",
+      "original_name": "SlideVQA"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Information retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "SV-RAG: LoRA-Contextualizing Adaptation of  MLLMs for Long Document Understanding",
+      "evidence": "We first evaluate the retrieval accuracy of the Col-retrieval module within SV-RAG and compare it with several baselines on SlideVQA (Tanaka et al., 2023), MM-LongBench (Ma et al., 2024d), DUDE (Van Landeghem et al., 2023), DocVQA (Mathew et al., 2020; 2021) and VisR-Bench. (Section 5)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "SV-RAG: LoRA-Contextualizing Adaptation of  MLLMs for Long Document Understanding"
+        ],
+        "acl25": [
+          "Enhancing Machine Translation with Self-Supervised Preference Data"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-context understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "MMLONGBENCH-DOC: Benchmarking Long-context Document Understanding with Visualizations",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "MMLONGBENCH-DOC: Benchmarking Long-context Document Understanding with Visualizations"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "VisRAG: Vision-based Retrieval-augmented Generation on Multi-modality Documents",
+      "evidence": "We collect question-document pairs from a series of VQA datasets, targeting different document types: MP-DocVQA (Tito et al., 2023) for industrial documents, ArXivQA (Li et al., 2024b), ChartQA (Masry et al., 2022), InfographicsVQA (Mathew et al., 2022), and PlotQA (Methani et al., 2020) for various figure types, and SlideVQA (Tanaka et al., 2023) for presentation slides.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "VisRAG: Vision-based Retrieval-augmented Generation on Multi-modality Documents"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, SlideVQA is consistently defined as a public dataset for visual question answering on presentation slides, with a recurring structural detail that each document consists of 20 pages. The prevailing use of SlideVQA is as a measurement instrument. It is most commonly employed to evaluate `Visual question answering`, where it is cited as a tool for domain-specific, multi-image QA problems on slides. The dataset is also used to assess `Information retrieval`, with one paper stating it is used to \"evaluate the retrieval accuracy\" of a system module (\"SV-RAG: LoRA-Contextualizing Adaptation of  MLLMs for Long Document Understanding\"). Additionally, SlideVQA is associated with the measurement of `Long-context understanding`. A less frequent application appears in one paper where the dataset serves not for evaluation, but as a source for \"refining queries\" to construct a new dataset (\"ComplexTempQA: A 100m Dataset for Complex Temporal Question Answering\").",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "SV-RAG: LoRA-Contextualizing Adaptation of  MLLMs for Long Document Understanding",
+      "VisRAG: Vision-based Retrieval-augmented Generation on Multi-modality Documents"
+    ],
+    "emnlp25": [
+      "AutoCT: Automating Interpretable Clinical Trial Prediction withLLMAgents",
+      "ComplexTempQA: A 100m Dataset for Complex Temporal Question Answering"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25"
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "canonical_name": "Misclassification",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, misclassification is most commonly defined as an observable failure mode where a model produces an incorrect class label for a given input. This behavior is observed in various contexts, from text classification where an input is assigned to a wrong category, to vision-language models where it is framed as \u201ctricking VLMs into misidentifying class labels\u201d (Shadowcast: Stealthy Data Poisoning Attacks Against Vision-Language Models). A more specific variant is \u201ctriggered misclassification,\u201d which describes incorrect classification specifically in response to inputs containing a backdoor trigger. The provided research identifies several conditions that can lead to this behavior. One paper reports that `Backdoor vulnerability` causes misclassification, noting that when a \u201cpoisoned trigger\u201d is present, the model is induced to produce an adversarial response. Other work states that \u201ceven slight perturbations to input data can result in misclassification\u201d (Text-Guided Attention is All You Need for Zero-Shot Robustness in Vision-Language Models). The behavior is operationalized by measuring the rate at which a model produces a targeted adversarial output or an incorrect label under these conditions.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Misclassification",
+    "Label misidentification",
+    "Triggered misclassification"
+  ],
+  "papers": [
+    "Confidence Elicitation: A New Attack Vector for Large Language Models",
+    "Re-Imagining Multimodal Instruction Tuning: A Representation View",
+    "Backdoor Attacks in Token Selection of Attention Mechanism",
+    "ICLShield: Exploring and Mitigating In-Context Learning Backdoor Attacks",
+    "Shadowcast: Stealthy Data Poisoning Attacks Against Vision-Language Models",
+    "Text-Guided Attention is All You Need for Zero-Shot Robustness in Vision-Language Models"
+  ],
+  "paper_count": 6,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "An observable failure mode where the model produces an incorrect class label for a given input.",
+      "paper": "Text-Guided Attention is All You Need for Zero-Shot Robustness in Vision-Language Models",
+      "original_name": "Misclassification"
+    },
+    {
+      "text": "Responding to an image with the wrong class label or identity, such as naming one person or object as another.",
+      "paper": "Shadowcast: Stealthy Data Poisoning Attacks Against Vision-Language Models",
+      "original_name": "Label misidentification"
+    },
+    {
+      "text": "The observable behavior in which a model incorrectly classifies inputs that contain a backdoor trigger, producing a targeted adversarial output.",
+      "paper": "Backdoor Attacks in Token Selection of Attention Mechanism",
+      "original_name": "Triggered misclassification"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Backdoor vulnerability",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Backdoor Attacks in Token Selection of Attention Mechanism",
+      "evidence": "\u201cbackdoor attacks are particularly insidious: they introduce \u2018poisoned triggers\u2019 ... When a trigger is present, the model produces an adversarial response; otherwise, it behaves normally.\u201d",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Backdoor Attacks in Token Selection of Attention Mechanism"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, misclassification is most commonly defined as an observable failure mode where a model produces an incorrect class label for a given input. This behavior is observed in various contexts, from text classification where an input is assigned to a wrong category, to vision-language models where it is framed as \u201ctricking VLMs into misidentifying class labels\u201d (Shadowcast: Stealthy Data Poisoning Attacks Against Vision-Language Models). A more specific variant is \u201ctriggered misclassification,\u201d which describes incorrect classification specifically in response to inputs containing a backdoor trigger. The provided research identifies several conditions that can lead to this behavior. One paper reports that `Backdoor vulnerability` causes misclassification, noting that when a \u201cpoisoned trigger\u201d is present, the model is induced to produce an adversarial response. Other work states that \u201ceven slight perturbations to input data can result in misclassification\u201d (Text-Guided Attention is All You Need for Zero-Shot Robustness in Vision-Language Models). The behavior is operationalized by measuring the rate at which a model produces a targeted adversarial output or an incorrect label under these conditions.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "Shadowcast: Stealthy Data Poisoning Attacks Against Vision-Language Models",
+      "Text-Guided Attention is All You Need for Zero-Shot Robustness in Vision-Language Models"
+    ],
+    "iclr25": [
+      "Confidence Elicitation: A New Attack Vector for Large Language Models",
+      "Re-Imagining Multimodal Instruction Tuning: A Representation View"
+    ],
+    "icml25": [
+      "Backdoor Attacks in Token Selection of Attention Mechanism",
+      "ICLShield: Exploring and Mitigating In-Context Learning Backdoor Attacks"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 2,
+    "iclr25": 2,
+    "icml25": 2
+  },
+  "conferences": [
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

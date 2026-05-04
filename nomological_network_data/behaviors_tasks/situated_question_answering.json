@@ -1,0 +1,86 @@
+{
+  "canonical_name": "Situated question answering",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, 'Situated question answering' is most commonly framed as a behavior involving answering questions grounded in a 3D scene. This task requires a model to use a provided multi-modal context to answer questions about objects, their attributes, counts, and spatial relations. As one paper describes it, the model answers a \"text-image interleaved question grounded in the 3D scene\" (\"Multi-modal Situated Reasoning in 3D Scenes\"). This form of question answering is explicitly related to `Spatial reasoning`, with questions designed to target this ability in embodied agents. The behavior is operationalized and measured using the `SQA3D` benchmark. A distinct, less frequent usage appears under the name 'Situational question answering,' which is defined as responding to questions about a scenario or dilemma. This alternative framing is used to elicit personality-specific responses, such as extroversion, and is associated with the `PERSONALITYBENCH` dataset.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Situated question answering",
+    "Situational question answering"
+  ],
+  "papers": [
+    "Neuron based Personality Trait Induction in Large Language Models",
+    "SPARTUN3D: Situated Spatial Understanding of 3D World in Large Language Model",
+    "Chat-Scene: Bridging 3D Scene and Large Language Models with Object Identifiers",
+    "Multi-modal Situated Reasoning in 3D Scenes"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Answering questions about objects, attributes, counts, spatial relations, affordances, room type, or descriptions using the provided 3D situation context.",
+      "paper": "Multi-modal Situated Reasoning in 3D Scenes",
+      "original_name": "Situated question answering"
+    },
+    {
+      "text": "The task of responding to questions that describe a specific scenario or dilemma, often designed to elicit personality-specific responses.",
+      "paper": "Neuron based Personality Trait Induction in Large Language Models",
+      "original_name": "Situational question answering"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SQA3D",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Chat-Scene: Bridging 3D Scene and Large Language Models with Object Identifiers",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Chat-Scene: Bridging 3D Scene and Large Language Models with Object Identifiers"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Spatial reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "SPARTUN3D: Situated Spatial Understanding of 3D World in Large Language Model",
+      "evidence": "Situated QA is designed with different types of questions targeting various levels of spatial reasoning ability for embodied agents.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "SPARTUN3D: Situated Spatial Understanding of 3D World in Large Language Model"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 2,
+  "characterization": "Across the provided literature, 'Situated question answering' is most commonly framed as a behavior involving answering questions grounded in a 3D scene. This task requires a model to use a provided multi-modal context to answer questions about objects, their attributes, counts, and spatial relations. As one paper describes it, the model answers a \"text-image interleaved question grounded in the 3D scene\" (\"Multi-modal Situated Reasoning in 3D Scenes\"). This form of question answering is explicitly related to `Spatial reasoning`, with questions designed to target this ability in embodied agents. The behavior is operationalized and measured using the `SQA3D` benchmark. A distinct, less frequent usage appears under the name 'Situational question answering,' which is defined as responding to questions about a scenario or dilemma. This alternative framing is used to elicit personality-specific responses, such as extroversion, and is associated with the `PERSONALITYBENCH` dataset.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "Chat-Scene: Bridging 3D Scene and Large Language Models with Object Identifiers",
+      "Multi-modal Situated Reasoning in 3D Scenes"
+    ],
+    "iclr25": [
+      "Neuron based Personality Trait Induction in Large Language Models",
+      "SPARTUN3D: Situated Spatial Understanding of 3D World in Large Language Model"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 2,
+    "iclr25": 2
+  },
+  "conferences": [
+    "iclr25",
+    "neurips24"
+  ]
+}

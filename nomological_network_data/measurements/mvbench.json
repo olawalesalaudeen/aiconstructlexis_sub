@@ -1,0 +1,171 @@
+{
+  "canonical_name": "MVBench",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, MVBench is consistently used as a benchmark to measure `Video understanding` in multimodal models. The most prevalent definition characterizes it as a tool for assessing `visual temporal reasoning`, specifying that it contains \"nine core temporal tasks with 20 subtasks\" that are explicitly \"designed to be unsolvable using a single frame.\" This design underscores its focus on temporal comprehension rather than static image analysis. Papers operationalize its use by evaluating models on its various subtasks, with some work focusing specifically on its action-related components like \"Action Antonym, Action Count, Action Sequence,\" while others use it to assess \"action recognition, object existence, and episodic reasoning.\" A smaller number of sources also employ MVBench to measure `Multi-image understanding`, and it is listed as an instrument for evaluating `Action localization` and `Mathematical reasoning`. Beyond model evaluation, it is also used to assess the generalizability of methods across different datasets.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "MVBench"
+  ],
+  "papers": [
+    "Lexical Diversity-aware Relevance Assessment for Retrieval-Augmented Generation",
+    "NexusSum: HierarchicalLLMAgents for Long-Form Narrative Summarization",
+    "Cache-of-Thought: Master-Apprentice Framework for Cost-Effective Vision Language Model Reasoning",
+    "CondenseLM:LLMs-driven Text Dataset Condensation via Reward Matching",
+    "Debatable Intelligence: BenchmarkingLLMJudges via Debate Speech Evaluation",
+    "HydraRAG: Structured Cross-Source Enhanced Large Language Model Reasoning",
+    "InfoGain-RAG: Boosting Retrieval-Augmented Generation through Document Information Gain-based Reranking and Filtering",
+    "Mapping the Minds ofLLMs: A Graph-Based Analysis of ReasoningLLMs",
+    "MedFact: A Large-scaleChinese Dataset for Evidence-based Medical Fact-checking ofLLMResponses",
+    "RaDeR: Reasoning-aware Dense Retrieval Models",
+    "RiTTA: Modeling Event Relations in Text-to-Audio Generation",
+    "SoundMind:RL-Incentivized Logic Reasoning for Audio-Language Models",
+    "LLaVA-Interleave: Tackling Multi-image, Video, and 3D in Large Multimodal Models",
+    "LLaVA-Mini: Efficient Image and Video Large Multimodal Models with One Vision Token",
+    "LongVILA: Scaling Long-Context Visual Language Models for Long Videos",
+    "MIA-DPO: Multi-Image Augmented Direct Preference Optimization For Large Vision-Language Models",
+    "MM1.5: Methods, Analysis & Insights from Multimodal LLM Fine-tuning",
+    "Oryx MLLM: On-Demand Spatial-Temporal Understanding at Arbitrary Resolution",
+    "SVBench: A Benchmark with Temporal Multi-Turn Dialogues for Streaming Video Understanding",
+    "TOMATO: Assessing Visual Temporal Reasoning Capabilities in Multimodal Foundation Models",
+    "TimeSuite: Improving MLLMs for Long Video Understanding via Grounded Tuning",
+    "Unhackable Temporal Reward for Scalable Video MLLMs",
+    "mPLUG-Owl3: Towards Long Image-Sequence Understanding in Multi-Modal Large Language Models",
+    "Divide and Conquer: Exploring Language-centric Tree Reasoning for Video Question-Answering",
+    "LongVU: Spatiotemporal Adaptive Compression for Long Video-Language Understanding",
+    "Understanding Complexity in VideoQA via Visual Program Generation"
+  ],
+  "paper_count": 26,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A benchmark for visual temporal reasoning that defines nine core temporal tasks with 20 subtasks, designed to be unsolvable using a single frame.",
+      "paper": "TOMATO: Assessing Visual Temporal Reasoning Capabilities in Multimodal Foundation Models",
+      "original_name": "MVBench"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Video understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "ShareGPT4Video: Improving Video Understanding and Generation with Better Captions",
+      "evidence": "We evaluate LLaVA-Mini on image and video understanding tasks. Experiments are conducted on 11 image benchmarks and 7 video benchmarks... Table 3: Performance on MVBench",
+      "paper_count": 8,
+      "papers_by_conference": {
+        "neurips24": [
+          "ShareGPT4Video: Improving Video Understanding and Generation with Better Captions"
+        ],
+        "iclr25": [
+          "Unhackable Temporal Reward for Scalable Video MLLMs",
+          "LLaVA-Mini: Efficient Image and Video Large Multimodal Models with One Vision Token",
+          "MM1.5: Methods, Analysis & Insights from Multimodal LLM Fine-tuning",
+          "LongVILA: Scaling Long-Context Visual Language Models for Long Videos",
+          "mPLUG-Owl3: Towards Long Image-Sequence Understanding in Multi-Modal Large Language Models"
+        ],
+        "emnlp25": [
+          "Debatable Intelligence: BenchmarkingLLMJudges via Debate Speech Evaluation",
+          "Cache-of-Thought: Master-Apprentice Framework for Cost-Effective Vision Language Model Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Action localization",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "TOPA: Extending Large Language Models for Video Understanding via Text-Only Pre-Alignment",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "TOPA: Extending Large Language Models for Video Understanding via Text-Only Pre-Alignment"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Temporal reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "HydraRAG: Structured Cross-Source Enhanced Large Language Model Reasoning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "HydraRAG: Structured Cross-Source Enhanced Large Language Model Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multi-image understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "MIA-DPO: Multi-Image Augmented Direct Preference Optimization For Large Vision-Language Models",
+      "evidence": "First, we select five multi-image benchmarks: MMMU (Yue et al., 2024), BLINK (Fu et al., 2024), Mantis (Jiang et al., 2024), NLVR2 (Suhr et al., 2018), and MVBench (Li et al., 2024c). (Section 4.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "MIA-DPO: Multi-Image Augmented Direct Preference Optimization For Large Vision-Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, MVBench is consistently used as a benchmark to measure `Video understanding` in multimodal models. The most prevalent definition characterizes it as a tool for assessing `visual temporal reasoning`, specifying that it contains \"nine core temporal tasks with 20 subtasks\" that are explicitly \"designed to be unsolvable using a single frame.\" This design underscores its focus on temporal comprehension rather than static image analysis. Papers operationalize its use by evaluating models on its various subtasks, with some work focusing specifically on its action-related components like \"Action Antonym, Action Count, Action Sequence,\" while others use it to assess \"action recognition, object existence, and episodic reasoning.\" A smaller number of sources also employ MVBench to measure `Multi-image understanding`, and it is listed as an instrument for evaluating `Action localization` and `Mathematical reasoning`. Beyond model evaluation, it is also used to assess the generalizability of methods across different datasets.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "LLaVA-Interleave: Tackling Multi-image, Video, and 3D in Large Multimodal Models",
+      "LLaVA-Mini: Efficient Image and Video Large Multimodal Models with One Vision Token",
+      "LongVILA: Scaling Long-Context Visual Language Models for Long Videos",
+      "MIA-DPO: Multi-Image Augmented Direct Preference Optimization For Large Vision-Language Models",
+      "MM1.5: Methods, Analysis & Insights from Multimodal LLM Fine-tuning",
+      "Oryx MLLM: On-Demand Spatial-Temporal Understanding at Arbitrary Resolution",
+      "SVBench: A Benchmark with Temporal Multi-Turn Dialogues for Streaming Video Understanding",
+      "TOMATO: Assessing Visual Temporal Reasoning Capabilities in Multimodal Foundation Models",
+      "TimeSuite: Improving MLLMs for Long Video Understanding via Grounded Tuning",
+      "Unhackable Temporal Reward for Scalable Video MLLMs",
+      "mPLUG-Owl3: Towards Long Image-Sequence Understanding in Multi-Modal Large Language Models"
+    ],
+    "acl25": [
+      "Lexical Diversity-aware Relevance Assessment for Retrieval-Augmented Generation",
+      "NexusSum: HierarchicalLLMAgents for Long-Form Narrative Summarization"
+    ],
+    "icml25": [
+      "Divide and Conquer: Exploring Language-centric Tree Reasoning for Video Question-Answering",
+      "LongVU: Spatiotemporal Adaptive Compression for Long Video-Language Understanding",
+      "Understanding Complexity in VideoQA via Visual Program Generation"
+    ],
+    "emnlp25": [
+      "Cache-of-Thought: Master-Apprentice Framework for Cost-Effective Vision Language Model Reasoning",
+      "CondenseLM:LLMs-driven Text Dataset Condensation via Reward Matching",
+      "Debatable Intelligence: BenchmarkingLLMJudges via Debate Speech Evaluation",
+      "HydraRAG: Structured Cross-Source Enhanced Large Language Model Reasoning",
+      "InfoGain-RAG: Boosting Retrieval-Augmented Generation through Document Information Gain-based Reranking and Filtering",
+      "Mapping the Minds ofLLMs: A Graph-Based Analysis of ReasoningLLMs",
+      "MedFact: A Large-scaleChinese Dataset for Evidence-based Medical Fact-checking ofLLMResponses",
+      "RaDeR: Reasoning-aware Dense Retrieval Models",
+      "RiTTA: Modeling Event Relations in Text-to-Audio Generation",
+      "SoundMind:RL-Incentivized Logic Reasoning for Audio-Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 11,
+    "acl25": 2,
+    "icml25": 3,
+    "emnlp25": 10
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25"
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "canonical_name": "Multi-step planning",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, multi-step planning is most commonly defined as the ability to decompose a complex problem into an ordered sequence of steps or subgoals to achieve a goal. Some definitions emphasize selecting a sequence of actions to manipulate future outcomes, while another highlights planning over an \"extended horizon, where early decisions can have significant downstream consequences\" (\"Doubling Your Data in Minutes: Ultra-fast Tabular Data Generation viaLLM-Induced Dependency Graphs\"). This behavior is also referred to as \"natural planning\" or \"step-by-step planning\" in some work, with one paper distinguishing \"natural planning\" from classical AI planning. To elicit and evaluate this behavior, researchers use instruments like the SPaRC benchmark, which is designed to test \"long-term, step-by-step path planning\". Additionally, methods such as PLAN-TUNING are used to teach models this skill. Multi-step planning is studied in relation to Task decomposition, and one paper reports that \"planning trajectories improves complex reasoning capabilities\" (\"zFLoRA: Zero-Latency Fused Low-Rank Adapters\").",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Multi-step planning",
+    "Natural planning",
+    "Step-by-step planning"
+  ],
+  "papers": [
+    "2025.emnlp-main.635.checklist",
+    "Answering Narrative-Driven Recommendation Queries via a Retrieve\u2013Rank Paradigm and theOCG-Agent",
+    "IndoSafety: Culturally Grounded Safety forLLMs inIndonesian Languages",
+    "2025.emnlp-main.1087.checklist",
+    "Doubling Your Data in Minutes: Ultra-fast Tabular Data Generation viaLLM-Induced Dependency Graphs",
+    "zFLoRA: Zero-Latency Fused Low-Rank Adapters",
+    "EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents",
+    "MONA: Myopic Optimization with Non-myopic Approval Can Mitigate Multi-step Reward Hacking"
+  ],
+  "paper_count": 8,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Selecting a sequence of actions across multiple steps to achieve a goal or manipulate future outcomes.",
+      "paper": "MONA: Myopic Optimization with Non-myopic Approval Can Mitigate Multi-step Reward Hacking",
+      "original_name": "Multi-step planning"
+    },
+    {
+      "text": "The ability to decompose a problem into an ordered sequence of intermediate subgoals that guide solution generation.",
+      "paper": "zFLoRA: Zero-Latency Fused Low-Rank Adapters",
+      "original_name": "Natural planning"
+    },
+    {
+      "text": "The latent ability of a model to decompose complex problems into intermediate reasoning steps before arriving at a solution.",
+      "paper": "2025.emnlp-main.1087.checklist",
+      "original_name": "Step-by-step planning"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Task decomposition",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "zFLoRA: Zero-Latency Fused Low-Rank Adapters",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "zFLoRA: Zero-Latency Fused Low-Rank Adapters"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Complex reasoning",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "zFLoRA: Zero-Latency Fused Low-Rank Adapters",
+      "evidence": "Our detailed analysis demonstrates how planning trajectories improves complex reasoning capabilities, showing that PLAN-TUNING is an effective strategy for improving task-specific performance of smaller LLMs. (Abstract)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "zFLoRA: Zero-Latency Fused Low-Rank Adapters"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 2,
+  "characterization": "Across the provided literature, multi-step planning is most commonly defined as the ability to decompose a complex problem into an ordered sequence of steps or subgoals to achieve a goal. Some definitions emphasize selecting a sequence of actions to manipulate future outcomes, while another highlights planning over an \"extended horizon, where early decisions can have significant downstream consequences\" (\"Doubling Your Data in Minutes: Ultra-fast Tabular Data Generation viaLLM-Induced Dependency Graphs\"). This behavior is also referred to as \"natural planning\" or \"step-by-step planning\" in some work, with one paper distinguishing \"natural planning\" from classical AI planning. To elicit and evaluate this behavior, researchers use instruments like the SPaRC benchmark, which is designed to test \"long-term, step-by-step path planning\". Additionally, methods such as PLAN-TUNING are used to teach models this skill. Multi-step planning is studied in relation to Task decomposition, and one paper reports that \"planning trajectories improves complex reasoning capabilities\" (\"zFLoRA: Zero-Latency Fused Low-Rank Adapters\").",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "icml25": [
+      "EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents",
+      "MONA: Myopic Optimization with Non-myopic Approval Can Mitigate Multi-step Reward Hacking"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.635.checklist",
+      "Answering Narrative-Driven Recommendation Queries via a Retrieve\u2013Rank Paradigm and theOCG-Agent",
+      "IndoSafety: Culturally Grounded Safety forLLMs inIndonesian Languages",
+      "2025.emnlp-main.1087.checklist",
+      "Doubling Your Data in Minutes: Ultra-fast Tabular Data Generation viaLLM-Induced Dependency Graphs",
+      "zFLoRA: Zero-Latency Fused Low-Rank Adapters"
+    ]
+  },
+  "paper_count_by_conference": {
+    "icml25": 2,
+    "emnlp25": 6
+  },
+  "conferences": [
+    "emnlp25",
+    "icml25"
+  ]
+}

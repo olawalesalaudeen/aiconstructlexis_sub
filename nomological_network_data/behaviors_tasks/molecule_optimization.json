@@ -1,0 +1,80 @@
+{
+  "canonical_name": "Molecule optimization",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, molecule optimization is consistently defined as the task of generating or searching for molecules to optimize specific, desirable properties. The goal, as one paper states, is to \"design new molecules with desired properties such as high chemical stability, low toxicity, or selective inhibition against a target disease\" (LICO: Large Language Models for In-Context Molecular Optimization). Other commonly targeted properties include drug-likeness, binding affinity, and synthesis difficulty. The task is described as either an iterative search of the chemical space or the generation of chemical structures, such as SMILES. This behavior is operationalized and measured using specific benchmarks and scoring systems. For instance, papers evaluate performance on the Practical Molecular Optimization (PMO) benchmark, which is referred to as a \"standard benchmark for molecular optimization.\" Another approach involves using metrics like SCScore to assess whether generated molecules have successfully reduced synthesis difficulty.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Molecular optimization",
+    "Molecule optimization"
+  ],
+  "papers": [
+    "LICO: Large Language Models for In-Context Molecular Optimization",
+    "OSDA Agent: Leveraging Large Language Models for De Novo Design of Organic Structure Directing Agents",
+    "Searching for Optimal Solutions with LLMs via Bayesian Optimization"
+  ],
+  "paper_count": 3,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The task of iteratively searching the chemical space to find molecules that maximize a specific desired property, such as drug-likeness or bioactivity.",
+      "paper": "LICO: Large Language Models for In-Context Molecular Optimization",
+      "original_name": "Molecular optimization"
+    },
+    {
+      "text": "The generation of chemical structures (SMILES) to optimize specific properties like druglikeness and binding affinity.",
+      "paper": "Searching for Optimal Solutions with LLMs via Bayesian Optimization",
+      "original_name": "Molecule optimization"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PMO",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LICO: Large Language Models for In-Context Molecular Optimization",
+      "evidence": "We evaluate LICO on Practical Molecular Optimization (PMO) (Gao et al., 2022), a standard benchmark for molecular optimization with a focus on sample efficiency. (Section 5.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "LICO: Large Language Models for In-Context Molecular Optimization"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SCScore",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "OSDA Agent: Leveraging Large Language Models for De Novo Design of Organic Structure Directing Agents",
+      "evidence": "The results indicate that our OSDA Agent successfully generated optimized versions of these molecules, reducing the SCScore and thereby lowering the synthesis difficulty, while preserving the functional characteristics necessary for zeolite templating. (Section 5.3)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "OSDA Agent: Leveraging Large Language Models for De Novo Design of Organic Structure Directing Agents"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 2,
+  "characterization": "Across the provided literature, molecule optimization is consistently defined as the task of generating or searching for molecules to optimize specific, desirable properties. The goal, as one paper states, is to \"design new molecules with desired properties such as high chemical stability, low toxicity, or selective inhibition against a target disease\" (LICO: Large Language Models for In-Context Molecular Optimization). Other commonly targeted properties include drug-likeness, binding affinity, and synthesis difficulty. The task is described as either an iterative search of the chemical space or the generation of chemical structures, such as SMILES. This behavior is operationalized and measured using specific benchmarks and scoring systems. For instance, papers evaluate performance on the Practical Molecular Optimization (PMO) benchmark, which is referred to as a \"standard benchmark for molecular optimization.\" Another approach involves using metrics like SCScore to assess whether generated molecules have successfully reduced synthesis difficulty.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "LICO: Large Language Models for In-Context Molecular Optimization",
+      "OSDA Agent: Leveraging Large Language Models for De Novo Design of Organic Structure Directing Agents",
+      "Searching for Optimal Solutions with LLMs via Bayesian Optimization"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3
+  },
+  "conferences": [
+    "iclr25"
+  ]
+}

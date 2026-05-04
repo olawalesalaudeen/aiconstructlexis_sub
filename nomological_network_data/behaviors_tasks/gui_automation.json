@@ -1,0 +1,176 @@
+{
+  "canonical_name": "GUI automation",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, GUI automation is predominantly characterized as the behavior of an agent interacting with a graphical user interface to accomplish tasks. While several terms are used, including 'GUI control,' 'UI control,' and 'GUI interaction,' they consistently describe an agent manipulating graphical elements like windows, buttons, and forms. This behavior is operationalized through a sequence of low-level actions, where agents perceive the device state from visual inputs like screenshots and generate actions such as clicking, typing, and scrolling. Several papers define these actions precisely, such as 'clicking' by specifying coordinates or 'dragging' with start and end points, with one source describing this as performing \"pixel-level operations\" equivalent to using a mouse. The application context varies, with some work focusing on enterprise software and general desktop environments, while other papers specifically address 'on-device control' for mobile applications. The performance of this behavior is measured by benchmarks, with the provided data identifying `AitW` as one such instrument. GUI automation is studied in relation to `Action prediction` and is suggested by one paper to be an outcome of `Code generation`.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "GUI control",
+    "GUI automation",
+    "Clicking",
+    "Dragging",
+    "Scrolling",
+    "GUI interaction",
+    "UI control",
+    "GUI navigation",
+    "Pixel-level operation",
+    "On-device control",
+    "Mobile device control",
+    "Computer interaction"
+  ],
+  "papers": [
+    "DistRL: An Asynchronous Distributed Reinforcement Learning Framework for On-Device Control Agent",
+    "Grounding Multimodal Large Language Model in GUI World",
+    "Navigating the Digital World as Humans Do: Universal Visual Grounding for GUI Agents",
+    "OSCAR: Operating System Control via State-Aware Reasoning and Re-Planning",
+    "Towards Efficient Online Tuning of VLM Agents via Counterfactual Soft Reinforcement Learning",
+    "What Limits Virtual Agent Application? OmniBench: A Scalable Multi-Dimensional Benchmark for Essential Virtual Agent Capabilities",
+    "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
+    "On the Effects of Data Scale on UI Control Agents",
+    "Spider2-V: How Far Are Multimodal Agents From Automating Data Science and Engineering Workflows?",
+    "VideoGUI: A Benchmark for GUI Automation from Instructional Videos"
+  ],
+  "paper_count": 10,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The observable action of interacting with graphical user interfaces, including navigating web pages, clicking buttons, and filling in forms, to manage enterprise software systems.",
+      "paper": "Spider2-V: How Far Are Multimodal Agents From Automating Data Science and Engineering Workflows?",
+      "original_name": "GUI control"
+    },
+    {
+      "text": "Performing end-to-end computer interface tasks by navigating software and executing interface actions to achieve a goal state.",
+      "paper": "VideoGUI: A Benchmark for GUI Automation from Instructional Videos",
+      "original_name": "GUI automation"
+    },
+    {
+      "text": "The action of identifying and specifying the coordinates of a target UI element to be clicked.",
+      "paper": "VideoGUI: A Benchmark for GUI Automation from Instructional Videos",
+      "original_name": "Clicking"
+    },
+    {
+      "text": "The action of identifying and specifying both the start and end coordinates for a drag-and-drop operation on a UI element.",
+      "paper": "VideoGUI: A Benchmark for GUI Automation from Instructional Videos",
+      "original_name": "Dragging"
+    },
+    {
+      "text": "The action of determining whether a target UI element is currently visible and, if not, deciding the direction to scroll (up or down).",
+      "paper": "VideoGUI: A Benchmark for GUI Automation from Instructional Videos",
+      "original_name": "Scrolling"
+    },
+    {
+      "text": "Interacting with a computer system by manipulating graphical elements like windows, icons, and buttons using a mouse and keyboard.",
+      "paper": "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
+      "original_name": "GUI interaction"
+    },
+    {
+      "text": "The observable behavior of an agent interacting with a digital device's user interface to accomplish tasks specified in natural language.",
+      "paper": "On the Effects of Data Scale on UI Control Agents",
+      "original_name": "UI control"
+    },
+    {
+      "text": "Selecting and executing actions on interface elements to complete web or mobile tasks from screenshots and instructions.",
+      "paper": "Grounding Multimodal Large Language Model in GUI World",
+      "original_name": "GUI navigation"
+    },
+    {
+      "text": "Executing direct interactions on a GUI such as clicking or typing at specific screen coordinates without relying on underlying code structures.",
+      "paper": "Navigating the Digital World as Humans Do: Universal Visual Grounding for GUI Agents",
+      "original_name": "Pixel-level operation"
+    },
+    {
+      "text": "The act of operating a mobile device's applications and functionalities to fulfill user requests.",
+      "paper": "DistRL: An Asynchronous Distributed Reinforcement Learning Framework for On-Device Control Agent",
+      "original_name": "On-device control"
+    },
+    {
+      "text": "Completing tasks by operating mobile interfaces and apps through GUI actions.",
+      "paper": "What Limits Virtual Agent Application? OmniBench: A Scalable Multi-Dimensional Benchmark for Essential Virtual Agent Capabilities",
+      "original_name": "Mobile device control"
+    },
+    {
+      "text": "Completing tasks through direct interaction with desktop or GUI-based computer interfaces.",
+      "paper": "What Limits Virtual Agent Application? OmniBench: A Scalable Multi-Dimensional Benchmark for Essential Virtual Agent Capabilities",
+      "original_name": "Computer interaction"
+    }
+  ],
+  "definition_count": 12,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "OSCAR: Operating System Control via State-Aware Reasoning and Re-Planning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "OSCAR: Operating System Control via State-Aware Reasoning and Re-Planning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AitW",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "DistRL: An Asynchronous Distributed Reinforcement Learning Framework for On-Device Control Agent",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "DistRL: An Asynchronous Distributed Reinforcement Learning Framework for On-Device Control Agent"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Action prediction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "UI-Vision: A Desktop-centric GUI Benchmark for Visual Perception and Interaction",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "UI-Vision: A Desktop-centric GUI Benchmark for Visual Perception and Interaction"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the surveyed literature, GUI automation is predominantly characterized as the behavior of an agent interacting with a graphical user interface to accomplish tasks. While several terms are used, including 'GUI control,' 'UI control,' and 'GUI interaction,' they consistently describe an agent manipulating graphical elements like windows, buttons, and forms. This behavior is operationalized through a sequence of low-level actions, where agents perceive the device state from visual inputs like screenshots and generate actions such as clicking, typing, and scrolling. Several papers define these actions precisely, such as 'clicking' by specifying coordinates or 'dragging' with start and end points, with one source describing this as performing \"pixel-level operations\" equivalent to using a mouse. The application context varies, with some work focusing on enterprise software and general desktop environments, while other papers specifically address 'on-device control' for mobile applications. The performance of this behavior is measured by benchmarks, with the provided data identifying `AitW` as one such instrument. GUI automation is studied in relation to `Action prediction` and is suggested by one paper to be an outcome of `Code generation`.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
+      "On the Effects of Data Scale on UI Control Agents",
+      "Spider2-V: How Far Are Multimodal Agents From Automating Data Science and Engineering Workflows?",
+      "VideoGUI: A Benchmark for GUI Automation from Instructional Videos"
+    ],
+    "iclr25": [
+      "DistRL: An Asynchronous Distributed Reinforcement Learning Framework for On-Device Control Agent",
+      "Grounding Multimodal Large Language Model in GUI World",
+      "Navigating the Digital World as Humans Do: Universal Visual Grounding for GUI Agents",
+      "OSCAR: Operating System Control via State-Aware Reasoning and Re-Planning"
+    ],
+    "icml25": [
+      "Towards Efficient Online Tuning of VLM Agents via Counterfactual Soft Reinforcement Learning",
+      "What Limits Virtual Agent Application? OmniBench: A Scalable Multi-Dimensional Benchmark for Essential Virtual Agent Capabilities"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 4,
+    "iclr25": 4,
+    "icml25": 2
+  },
+  "conferences": [
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

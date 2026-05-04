@@ -1,0 +1,147 @@
+{
+  "canonical_name": "CodeContests",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, CodeContests is consistently described as a benchmark dataset used to measure code generation capabilities. The most common framing is that it features \"challenging programming problems from code competitions,\" designed to evaluate the robustness and correctness of generated code. Several papers elaborate on its composition, with one noting it contains problems with \"multiple human-written correct and incorrect solutions,\" and another stating that its test problems are divided into \"basic and advanced levels according to their difficulty tags.\" The task format is specified as generating code from natural language descriptions, with solutions being evaluated against private test cases. The primary and most frequently documented use of CodeContests is to evaluate code generation, often alongside other benchmarks like HumanEval, MBPP, and APPS. A smaller line of work uses it to assess more specific constructs; for instance, one paper suggests that its competition-level problems provide an \"ideal testbed to evaluate\" algorithmic reasoning. Another paper lists it as a measure for faithfulness, though no specific evidence for this application is provided in the data.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "CodeContests",
+    "CodeContests dataset",
+    "CodeContest"
+  ],
+  "papers": [
+    "A Unified Agentic Framework for Evaluating Conditional Image Generation",
+    "Quantifying Semantic Emergence in Language Models",
+    "TunableLLM-based Proactive Recommendation Agent",
+    "Generative Monoculture in Large Language Models",
+    "SFS: Smarter Code Space Search improves LLM Inference Scaling",
+    "Training Language Models on Synthetic Edit Sequences Improves Code Synthesis",
+    "What Makes Large Language Models Reason in (Multi-Turn) Code Generation?",
+    "An Architecture Search Framework for Inference-Time Techniques",
+    "Improving Diversity in Language Models: When Temperature Fails, Change the Loss",
+    "Multi-Turn Code Generation Through Single-Step Rewards",
+    "Optimizing Language Models for Inference Time Objectives using Reinforcement Learning",
+    "Position: Future Research and Challenges Remain Towards AI for Software Engineering",
+    "RLEF: Grounding Code LLMs in Execution Feedback with Reinforcement Learning",
+    "Teaching Language Models to Critique via Reinforcement Learning"
+  ],
+  "paper_count": 14,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A benchmark dataset featuring challenging programming problems from code competitions.",
+      "paper": "SFS: Smarter Code Space Search improves LLM Inference Scaling",
+      "original_name": "CodeContests"
+    },
+    {
+      "text": "A competitive programming dataset containing problems with multiple human-written correct and incorrect solutions, used as the source distribution (Dsrc) for the code generation task.",
+      "paper": "Generative Monoculture in Large Language Models",
+      "original_name": "CodeContests dataset"
+    },
+    {
+      "text": "A benchmark dataset for code generation that includes test problems divided into basic and advanced levels based on their difficulty tags.",
+      "paper": "Quantifying Semantic Emergence in Language Models",
+      "original_name": "CodeContest"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "TurkingBench: A Challenge Benchmark for Web Agents",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "naacl25": [
+          "TurkingBench: A Challenge Benchmark for Web Agents"
+        ],
+        "icml25": [
+          "Optimizing Language Models for Inference Time Objectives using Reinforcement Learning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "CodeChain: Towards Modular Code Generation Through Chain of Self-revisions with Representative Sub-modules",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "CodeChain: Towards Modular Code Generation Through Chain of Self-revisions with Representative Sub-modules"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Algorithmic reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "What Makes Large Language Models Reason in (Multi-Turn) Code Generation?",
+      "evidence": "Competition-level benchmarks require algorithmic reasoning and thus provide an ideal testbed to evaluate whether CoT techniques can be extended beyond single-turn reasoning. (Section 1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "What Makes Large Language Models Reason in (Multi-Turn) Code Generation?"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Coding",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "An Architecture Search Framework for Inference-Time Techniques",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "An Architecture Search Framework for Inference-Time Techniques"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, CodeContests is consistently described as a benchmark dataset used to measure code generation capabilities. The most common framing is that it features \"challenging programming problems from code competitions,\" designed to evaluate the robustness and correctness of generated code. Several papers elaborate on its composition, with one noting it contains problems with \"multiple human-written correct and incorrect solutions,\" and another stating that its test problems are divided into \"basic and advanced levels according to their difficulty tags.\" The task format is specified as generating code from natural language descriptions, with solutions being evaluated against private test cases. The primary and most frequently documented use of CodeContests is to evaluate code generation, often alongside other benchmarks like HumanEval, MBPP, and APPS. A smaller line of work uses it to assess more specific constructs; for instance, one paper suggests that its competition-level problems provide an \"ideal testbed to evaluate\" algorithmic reasoning. Another paper lists it as a measure for faithfulness, though no specific evidence for this application is provided in the data.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Generative Monoculture in Large Language Models",
+      "SFS: Smarter Code Space Search improves LLM Inference Scaling",
+      "Training Language Models on Synthetic Edit Sequences Improves Code Synthesis",
+      "What Makes Large Language Models Reason in (Multi-Turn) Code Generation?"
+    ],
+    "acl25": [
+      "A Unified Agentic Framework for Evaluating Conditional Image Generation",
+      "Quantifying Semantic Emergence in Language Models",
+      "TunableLLM-based Proactive Recommendation Agent"
+    ],
+    "icml25": [
+      "An Architecture Search Framework for Inference-Time Techniques",
+      "Improving Diversity in Language Models: When Temperature Fails, Change the Loss",
+      "Multi-Turn Code Generation Through Single-Step Rewards",
+      "Optimizing Language Models for Inference Time Objectives using Reinforcement Learning",
+      "Position: Future Research and Challenges Remain Towards AI for Software Engineering",
+      "RLEF: Grounding Code LLMs in Execution Feedback with Reinforcement Learning",
+      "Teaching Language Models to Critique via Reinforcement Learning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 4,
+    "acl25": 3,
+    "icml25": 7
+  },
+  "conferences": [
+    "acl25",
+    "iclr25",
+    "icml25"
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "canonical_name": "ProofNet",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, ProofNet is predominantly characterized as a benchmark for evaluating theorem proving capabilities, specifically within the Lean proof assistant. It is most commonly used to measure `Theorem proving` and `Formal theorem proving`, with some work also using it to assess `Information retrieval`, `Autoformalization`, and `Generalization` to out-of-domain theorems. The benchmark is consistently described as containing formalized mathematics problems at the college or undergraduate level, which distinguishes it from other instruments like miniF2F, noted to contain high-school level problems. Several sources characterize its problems as \"isolated\" or \"less context-dependent.\" While its primary role is for evaluation, with papers reporting performance on its test set (`ProofNet-test`), a less common usage frames ProofNet as a \"dataset of high-quality mathematical proofs\" for collecting training data. One definition also states it is used to assess \"advanced mathematical reasoning in LLMs.\"",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "ProofNet",
+    "ProofNet-test"
+  ],
+  "papers": [
+    "CARTS: Advancing Neural Theorem Proving with Diversified Tactic Calibration and Bias-Resistant Tree Search",
+    "DeepSeek-Prover-V1.5: Harnessing Proof Assistant Feedback for Reinforcement Learning and Monte-Carlo Tree Search",
+    "Rethinking and Improving Autoformalization: Towards a Faithful Metric and a Dependency Retrieval-based Approach",
+    "miniCTX: Neural Theorem Proving with (Long-)Contexts",
+    "One Example Shown, Many Concepts Known! Counterexample-Driven Conceptual Reasoning in Mathematical LLMs",
+    "Position: Formal Mathematical Reasoning\u2014A New Frontier in AI",
+    "STP: Self-play LLM Theorem Provers with Iterative Conjecturing and Proving"
+  ],
+  "paper_count": 7,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "ProofNet is a Lean theorem-proving benchmark used as a comparison benchmark for isolated or less context-dependent theorem proving.",
+      "paper": "miniCTX: Neural Theorem Proving with (Long-)Contexts",
+      "original_name": "ProofNet"
+    },
+    {
+      "text": "Benchmark consisting of formalized college-level mathematics problems used to assess advanced mathematical reasoning in LLMs.",
+      "paper": "STP: Self-play LLM Theorem Provers with Iterative Conjecturing and Proving",
+      "original_name": "ProofNet-test"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Theorem proving",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "CARTS: Advancing Neural Theorem Proving with Diversified Tactic Calibration and Bias-Resistant Tree Search",
+      "evidence": "We conducted sufficient experiments on the widely recognized theorem-proving benchmarks, namely miniF2F (Zheng et al., 2022) and ProofNet (Azerbayev et al., 2023) in Lean. (Section 1)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "CARTS: Advancing Neural Theorem Proving with Diversified Tactic Calibration and Bias-Resistant Tree Search"
+        ],
+        "icml25": [
+          "STP: Self-play LLM Theorem Provers with Iterative Conjecturing and Proving"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PutnamBench",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "PutnamBench: Evaluating Neural Theorem-Provers on the Putnam Mathematical Competition",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "PutnamBench: Evaluating Neural Theorem-Provers on the Putnam Mathematical Competition"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Autoformalization",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Rethinking and Improving Autoformalization: Towards a Faithful Metric and a Dependency Retrieval-based Approach",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Rethinking and Improving Autoformalization: Towards a Faithful Metric and a Dependency Retrieval-based Approach"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Information retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Rethinking and Improving Autoformalization: Towards a Faithful Metric and a Dependency Retrieval-based Approach",
+      "evidence": "Table 2 demonstrates the results on the ProofNet benchmark.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Rethinking and Improving Autoformalization: Towards a Faithful Metric and a Dependency Retrieval-based Approach"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Formal theorem proving",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "DeepSeek-Prover-V1.5: Harnessing Proof Assistant Feedback for Reinforcement Learning and Monte-Carlo Tree Search",
+      "evidence": "Unlike popular benchmarks (e.g., miniF2F (Zheng et al., 2022), ProofNet (Azerbayev et al., 2023)...) that focus on isolated competition problems",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "DeepSeek-Prover-V1.5: Harnessing Proof Assistant Feedback for Reinforcement Learning and Monte-Carlo Tree Search"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "STP: Self-play LLM Theorem Provers with Iterative Conjecturing and Proving",
+      "evidence": "We also report the performance of the model trained only on LeanWorkbook for 24 iterations, excluding miniF2F-valid and proofnet-valid, demonstrating that the model trained with STP also generalizes to out-of-domain theorems. (Section 4.2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "STP: Self-play LLM Theorem Provers with Iterative Conjecturing and Proving"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 6,
+  "incoming_relationship_count": 5,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the provided literature, ProofNet is predominantly characterized as a benchmark for evaluating theorem proving capabilities, specifically within the Lean proof assistant. It is most commonly used to measure `Theorem proving` and `Formal theorem proving`, with some work also using it to assess `Information retrieval`, `Autoformalization`, and `Generalization` to out-of-domain theorems. The benchmark is consistently described as containing formalized mathematics problems at the college or undergraduate level, which distinguishes it from other instruments like miniF2F, noted to contain high-school level problems. Several sources characterize its problems as \"isolated\" or \"less context-dependent.\" While its primary role is for evaluation, with papers reporting performance on its test set (`ProofNet-test`), a less common usage frames ProofNet as a \"dataset of high-quality mathematical proofs\" for collecting training data. One definition also states it is used to assess \"advanced mathematical reasoning in LLMs.\"",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "CARTS: Advancing Neural Theorem Proving with Diversified Tactic Calibration and Bias-Resistant Tree Search",
+      "DeepSeek-Prover-V1.5: Harnessing Proof Assistant Feedback for Reinforcement Learning and Monte-Carlo Tree Search",
+      "Rethinking and Improving Autoformalization: Towards a Faithful Metric and a Dependency Retrieval-based Approach",
+      "miniCTX: Neural Theorem Proving with (Long-)Contexts"
+    ],
+    "icml25": [
+      "One Example Shown, Many Concepts Known! Counterexample-Driven Conceptual Reasoning in Mathematical LLMs",
+      "Position: Formal Mathematical Reasoning\u2014A New Frontier in AI",
+      "STP: Self-play LLM Theorem Provers with Iterative Conjecturing and Proving"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 4,
+    "icml25": 3
+  },
+  "conferences": [
+    "iclr25",
+    "icml25"
+  ]
+}

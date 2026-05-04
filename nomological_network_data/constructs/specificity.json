@@ -1,0 +1,138 @@
+{
+  "canonical_name": "Specificity",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, Specificity is predominantly defined as a model's tendency to use concrete facts and details rather than making vague or general arguments. This prevailing view appears in contexts ranging from general-purpose alignment to generating fine-grained feedback. A domain-specific variant, \"logical specificity,\" applies this concept to legal reasoning, describing answers tailored to the specific facts and rules of a legal question. A distinct and less common framing defines specificity in the context of model refusal, where it measures the ability to avoid abstaining from questions about related concepts, ensuring that refusal is narrowly targeted. The work presenting this refusal-based view also notes an \"inherent trade-off\" between specificity and generalization. The construct is operationalized and measured using both `LLM-as-a-judge` and `Human evaluation`. For example, one study's human evaluators assess \"whether the responses are directly related to the specific issues raised in the question,\" while the refusal-based definition is calculated as the proportion of non-refused answers to queries about a concept's \"siblings\" and \"ancestors\".",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Specificity",
+    "Logical specificity"
+  ],
+  "papers": [
+    "Benchmark Profiling: Mechanistic Diagnosis ofLLMBenchmarks",
+    "MemeArena: Automating Context-Aware Unbiased Evaluation of Harmfulness Understanding for Multimodal Large Language Models",
+    "PruneCD: Contrasting Pruned Self Model to Improve Decoding Factuality",
+    "Diverse In-Context Example Selection After Decomposing Programs and Aligned Utterances Improves Semantic Parsing",
+    "DrawEduMath: Evaluating Vision Language Models with Expert-Annotated Students\u2019 Hand-Drawn Math Images",
+    "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+    "Understanding Information Storage and Transfer in Multi-Modal Large Language Models"
+  ],
+  "paper_count": 7,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The model's tendency to refer to concrete facts and details rather than making vague or general arguments.",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "original_name": "Specificity"
+    },
+    {
+      "text": "The ability of a model to produce detailed, precise, and logically structured answers tailored to the specific facts and rules of a legal question, rather than general statements.",
+      "paper": "Diverse In-Context Example Selection After Decomposing Programs and Aligned Utterances Improves Semantic Parsing",
+      "original_name": "Logical specificity"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-as-a-judge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MemeArena: Automating Context-Aware Unbiased Evaluation of Harmfulness Understanding for Multimodal Large Language Models",
+      "evidence": "The evaluation framework uses multi-perspective criteria by LLM-as-a-judge, such as comprehensiveness, specificity, and relevance. (Section 1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "MemeArena: Automating Context-Aware Unbiased Evaluation of Harmfulness Understanding for Multimodal Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "DrawEduMath: Evaluating Vision Language Models with Expert-Annotated Students\u2019 Hand-Drawn Math Images",
+      "evidence": "Generalization and specificity are tied together by an inherent trade-off: abstaining from everything achieves perfect generalization but no specificity, and not abstaining at all results in perfect specificity rates but no generalization. (Section 5.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "DrawEduMath: Evaluating Vision Language Models with Expert-Annotated Students\u2019 Hand-Drawn Math Images"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Diverse In-Context Example Selection After Decomposing Programs and Aligned Utterances Improves Semantic Parsing",
+      "evidence": "Specificity: this aspect measures whether the responses are directly related to the specific issues raised in the question, providing clear and targeted answers rather than generalized responses.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Diverse In-Context Example Selection After Decomposing Programs and Aligned Utterances Improves Semantic Parsing"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Refusal to answer",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "DrawEduMath: Evaluating Vision Language Models with Expert-Annotated Students\u2019 Hand-Drawn Math Images",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "DrawEduMath: Evaluating Vision Language Models with Expert-Annotated Students\u2019 Hand-Drawn Math Images"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Legal reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Diverse In-Context Example Selection After Decomposing Programs and Aligned Utterances Improves Semantic Parsing",
+      "evidence": "\"responses generated by LLMs often lack logical specificity and may include hallucinations\"",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Diverse In-Context Example Selection After Decomposing Programs and Aligned Utterances Improves Semantic Parsing"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 2,
+  "characterization": "Across the surveyed literature, Specificity is predominantly defined as a model's tendency to use concrete facts and details rather than making vague or general arguments. This prevailing view appears in contexts ranging from general-purpose alignment to generating fine-grained feedback. A domain-specific variant, \"logical specificity,\" applies this concept to legal reasoning, describing answers tailored to the specific facts and rules of a legal question. A distinct and less common framing defines specificity in the context of model refusal, where it measures the ability to avoid abstaining from questions about related concepts, ensuring that refusal is narrowly targeted. The work presenting this refusal-based view also notes an \"inherent trade-off\" between specificity and generalization. The construct is operationalized and measured using both `LLM-as-a-judge` and `Human evaluation`. For example, one study's human evaluators assess \"whether the responses are directly related to the specific issues raised in the question,\" while the refusal-based definition is calculated as the proportion of non-refused answers to queries about a concept's \"siblings\" and \"ancestors\".",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "Understanding Information Storage and Transfer in Multi-Modal Large Language Models"
+    ],
+    "naacl25": [
+      "Diverse In-Context Example Selection After Decomposing Programs and Aligned Utterances Improves Semantic Parsing",
+      "DrawEduMath: Evaluating Vision Language Models with Expert-Annotated Students\u2019 Hand-Drawn Math Images"
+    ],
+    "emnlp25": [
+      "Benchmark Profiling: Mechanistic Diagnosis ofLLMBenchmarks",
+      "MemeArena: Automating Context-Aware Unbiased Evaluation of Harmfulness Understanding for Multimodal Large Language Models",
+      "PruneCD: Contrasting Pruned Self Model to Improve Decoding Factuality"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 2,
+    "naacl25": 2,
+    "emnlp25": 3
+  },
+  "conferences": [
+    "emnlp25",
+    "naacl25",
+    "neurips24"
+  ]
+}

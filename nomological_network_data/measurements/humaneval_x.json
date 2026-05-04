@@ -1,0 +1,101 @@
+{
+  "canonical_name": "HumanEval-X",
+  "type": "measurement",
+  "canonical_definition": "HumanEval-X is consistently described across the provided literature as a multilingual benchmark for evaluating large language models on code-related tasks. The definitions converge on its role in assessing model-generated code, with one paper framing this as evaluating 'code generation capabilities' and another as assessing 'functional correctness' and 'model utility'. The benchmark is also referred to as 'HumanEval-Multi', described as the 'multi-lingual version of Humaneval' in one study. In practice, papers use HumanEval-X to measure several capabilities. The most frequently measured behavior is Text generation, though it is also used to assess Faithfulness and Machine translation. Its application extends to evaluating specific models like DeepSeekV2-Lite and serving as a general 'test dataset for utility'. One study also leverages the benchmark to analyze internal model mechanics, such as 'expert activation frequencies' ('MxMoE: Mixed-precision Quantization for MoE with Accuracy and Performance Co-Design').",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "HumanEval-X",
+    "HumanEval-Multi"
+  ],
+  "papers": [
+    "EffiCoder: Enhancing Code Generation in Large Language Models through Efficiency-Aware Fine-tuning",
+    "MxMoE: Mixed-precision Quantization for MoE with Accuracy and Performance Co-Design",
+    "PAK-UCB Contextual Bandit: An Online Learning Approach to Prompt-Aware Selection of Generative Models and LLMs",
+    "ProSec: Fortifying Code LLMs with Proactive Security Alignment",
+    "Selective Prompt Anchoring for Code Generation"
+  ],
+  "paper_count": 5,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A multilingual benchmark for evaluating the code generation capabilities of large language models.",
+      "paper": "MxMoE: Mixed-precision Quantization for MoE with Accuracy and Performance Co-Design",
+      "original_name": "HumanEval-X"
+    },
+    {
+      "text": "A multilingual benchmark for evaluating the functional correctness of model-generated code, used in this paper to assess model utility.",
+      "paper": "ProSec: Fortifying Code LLMs with Proactive Security Alignment",
+      "original_name": "HumanEval-Multi"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data"
+        ],
+        "icml25": [
+          "Selective Prompt Anchoring for Code Generation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "EffiCoder: Enhancing Code Generation in Large Language Models through Efficiency-Aware Fine-tuning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "EffiCoder: Enhancing Code Generation in Large Language Models through Efficiency-Aware Fine-tuning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Machine translation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "PAK-UCB Contextual Bandit: An Online Learning Approach to Prompt-Aware Selection of Generative Models and LLMs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "PAK-UCB Contextual Bandit: An Online Learning Approach to Prompt-Aware Selection of Generative Models and LLMs"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization": "HumanEval-X is consistently described across the provided literature as a multilingual benchmark for evaluating large language models on code-related tasks. The definitions converge on its role in assessing model-generated code, with one paper framing this as evaluating 'code generation capabilities' and another as assessing 'functional correctness' and 'model utility'. The benchmark is also referred to as 'HumanEval-Multi', described as the 'multi-lingual version of Humaneval' in one study. In practice, papers use HumanEval-X to measure several capabilities. The most frequently measured behavior is Text generation, though it is also used to assess Faithfulness and Machine translation. Its application extends to evaluating specific models like DeepSeekV2-Lite and serving as a general 'test dataset for utility'. One study also leverages the benchmark to analyze internal model mechanics, such as 'expert activation frequencies' ('MxMoE: Mixed-precision Quantization for MoE with Accuracy and Performance Co-Design').",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "icml25": [
+      "EffiCoder: Enhancing Code Generation in Large Language Models through Efficiency-Aware Fine-tuning",
+      "MxMoE: Mixed-precision Quantization for MoE with Accuracy and Performance Co-Design",
+      "PAK-UCB Contextual Bandit: An Online Learning Approach to Prompt-Aware Selection of Generative Models and LLMs",
+      "ProSec: Fortifying Code LLMs with Proactive Security Alignment",
+      "Selective Prompt Anchoring for Code Generation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "icml25": 5
+  },
+  "conferences": [
+    "icml25"
+  ]
+}

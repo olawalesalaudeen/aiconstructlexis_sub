@@ -1,0 +1,165 @@
+{
+  "canonical_name": "Pairwise comparison",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, pairwise comparison is predominantly described as a behavior where two model-generated responses are compared to select a winner, loser, or tie. This is frequently operationalized by prompting a model to \"judge which of rA and rB is better\" for a given instruction, sometimes with the goal of selecting the answer that is \"less wrong\". This comparative approach is explicitly contrasted with \"pointwise rating,\" where items are judged independently. A less common definition treats it as a task where a model judges a single item's correctness, with the output then compared against human annotations for accuracy. As an evaluation procedure, pairwise comparison is used to measure constructs like `Helpfulness`. The behavior is frequently situated within the `LLM-as-a-judge` paradigm, with one paper describing it as a \"typical LLM-as-a-judge method\". It is also studied in relation to `Knowledge forgetting`, and one paper reports that it can cause `Uncertainty estimation`. Beyond evaluation, one study notes its use as an inference strategy to \"reduce the context size\" by comparing all pairs of candidate generations.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Pairwise comparison",
+    "Pairwise rating",
+    "Pairwise Comparison"
+  ],
+  "papers": [
+    "S-RAG: A Novel Audit Framework for Detecting Unauthorized Use of Personal Data inRAGSystems",
+    "Stepwise Reasoning Disruption Attack ofLLMs",
+    "Task-Specific Information Decomposition for End-to-End Dense Video Captioning",
+    "A Multilingual, Culture-First Approach to Addressing Misgendering inLLMApplications",
+    "From Schema to State: Zero-Shot Scheme-Only Dialogue State Tracking via Diverse Synthetic Dialogue and Step-by-Step Distillation",
+    "IG-Pruning: Input-Guided Block Pruning for Large Language Models",
+    "Interdisciplinary Research in Conversation: A Case Study in Computational Morphology for Language Documentation",
+    "KGECalibrator: An Efficient Probability Calibration Method of Knowledge Graph Embedding Models for Trustworthy Link Prediction",
+    "Speech Discrete Tokens or Continuous Features? A Comparative Analysis for Spoken Language Understanding inSpeechLLMs",
+    "Transferable Direct Prompt Injection via Activation-GuidedMCMCSampling",
+    "An Empirical Analysis of Uncertainty in Large Language Model Evaluations",
+    "Justice or Prejudice? Quantifying Biases in LLM-as-a-Judge",
+    "RevisEval: Improving LLM-as-a-Judge via Response-Adapted References",
+    "RocketEval: Efficient automated LLM evaluation via grading checklist",
+    "SaMer: A Scenario-aware Multi-dimensional Evaluator for Large Language Models",
+    "DataMan: Data Manager for Pre-training Large Language Models",
+    "Varying Shades of Wrong: Aligning LLMs with Wrong Answers Only",
+    "Correcting Negative Bias in Large Language Models through Negative Attention Score Alignment",
+    "Enhancing Multimodal Entity Linking withJaccard Distance-based Conditional Contrastive Learning and Contextual Visual Augmentation",
+    "Uplifting Lower-Income Data: Strategies for Socioeconomic Perspective Shifts in Large Multi-modal Models"
+  ],
+  "paper_count": 20,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Comparing two model-generated responses and selecting a winner, loser, or tie.",
+      "paper": "SaMer: A Scenario-aware Multi-dimensional Evaluator for Large Language Models",
+      "original_name": "Pairwise comparison"
+    },
+    {
+      "text": "Selecting which of two candidate responses is better in a comparative judgment setting.",
+      "paper": "From Schema to State: Zero-Shot Scheme-Only Dialogue State Tracking via Diverse Synthetic Dialogue and Step-by-Step Distillation",
+      "original_name": "Response ranking"
+    },
+    {
+      "text": "A comparison procedure in which documents are judged relative to one another rather than rated independently.",
+      "paper": "DataMan: Data Manager for Pre-training Large Language Models",
+      "original_name": "Pairwise rating"
+    },
+    {
+      "text": "An evaluation task where MLLMs are asked to judge whether a given MCoT is correct or incorrect, with outputs compared to human annotations for accuracy.",
+      "paper": "Correcting Negative Bias in Large Language Models through Negative Attention Score Alignment",
+      "original_name": "Pairwise Comparison"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge forgetting",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "RevisEval: Improving LLM-as-a-Judge via Response-Adapted References",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "RevisEval: Improving LLM-as-a-Judge via Response-Adapted References"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "DACO: Towards Application-Driven and Comprehensive Data Analysis via Code Generation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "DACO: Towards Application-Driven and Comprehensive Data Analysis via Code Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Uncertainty",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "An Empirical Analysis of Uncertainty in Large Language Model Evaluations",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "An Empirical Analysis of Uncertainty in Large Language Model Evaluations"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "LLM-as-a-judge",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Varying Shades of Wrong: Aligning LLMs with Wrong Answers Only",
+      "evidence": "We explore two typical LLM-as-a-judge methods: Pairwise comparison (Section 2.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Varying Shades of Wrong: Aligning LLMs with Wrong Answers Only"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the provided literature, pairwise comparison is predominantly described as a behavior where two model-generated responses are compared to select a winner, loser, or tie. This is frequently operationalized by prompting a model to \"judge which of rA and rB is better\" for a given instruction, sometimes with the goal of selecting the answer that is \"less wrong\". This comparative approach is explicitly contrasted with \"pointwise rating,\" where items are judged independently. A less common definition treats it as a task where a model judges a single item's correctness, with the output then compared against human annotations for accuracy. As an evaluation procedure, pairwise comparison is used to measure constructs like `Helpfulness`. The behavior is frequently situated within the `LLM-as-a-judge` paradigm, with one paper describing it as a \"typical LLM-as-a-judge method\". It is also studied in relation to `Knowledge forgetting`, and one paper reports that it can cause `Uncertainty estimation`. Beyond evaluation, one study notes its use as an inference strategy to \"reduce the context size\" by comparing all pairs of candidate generations.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "An Empirical Analysis of Uncertainty in Large Language Model Evaluations",
+      "Justice or Prejudice? Quantifying Biases in LLM-as-a-Judge",
+      "RevisEval: Improving LLM-as-a-Judge via Response-Adapted References",
+      "RocketEval: Efficient automated LLM evaluation via grading checklist",
+      "SaMer: A Scenario-aware Multi-dimensional Evaluator for Large Language Models",
+      "DataMan: Data Manager for Pre-training Large Language Models",
+      "Varying Shades of Wrong: Aligning LLMs with Wrong Answers Only"
+    ],
+    "acl25": [
+      "S-RAG: A Novel Audit Framework for Detecting Unauthorized Use of Personal Data inRAGSystems",
+      "Stepwise Reasoning Disruption Attack ofLLMs",
+      "Task-Specific Information Decomposition for End-to-End Dense Video Captioning"
+    ],
+    "emnlp25": [
+      "A Multilingual, Culture-First Approach to Addressing Misgendering inLLMApplications",
+      "From Schema to State: Zero-Shot Scheme-Only Dialogue State Tracking via Diverse Synthetic Dialogue and Step-by-Step Distillation",
+      "IG-Pruning: Input-Guided Block Pruning for Large Language Models",
+      "Interdisciplinary Research in Conversation: A Case Study in Computational Morphology for Language Documentation",
+      "KGECalibrator: An Efficient Probability Calibration Method of Knowledge Graph Embedding Models for Trustworthy Link Prediction",
+      "Speech Discrete Tokens or Continuous Features? A Comparative Analysis for Spoken Language Understanding inSpeechLLMs",
+      "Transferable Direct Prompt Injection via Activation-GuidedMCMCSampling"
+    ],
+    "naacl25": [
+      "Correcting Negative Bias in Large Language Models through Negative Attention Score Alignment",
+      "Enhancing Multimodal Entity Linking withJaccard Distance-based Conditional Contrastive Learning and Contextual Visual Augmentation",
+      "Uplifting Lower-Income Data: Strategies for Socioeconomic Perspective Shifts in Large Multi-modal Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 7,
+    "acl25": 3,
+    "emnlp25": 7,
+    "naacl25": 3
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "naacl25"
+  ]
+}

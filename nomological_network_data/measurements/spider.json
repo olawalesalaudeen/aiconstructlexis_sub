@@ -1,0 +1,175 @@
+{
+  "canonical_name": "Spider",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, Spider is consistently described as a large-scale, complex, and cross-domain benchmark for the text-to-SQL task. Its primary use is to evaluate a model's ability to generate syntactically and semantically correct SQL queries from natural language questions over diverse databases. As such, papers use Spider to measure the behavior of `Code generation`, specifically for database queries. Several sources characterize its scale, noting it contains thousands of text-SQL pairs spanning nearly 200 databases and 138 domains, with problems categorized into different difficulty levels (ROUTE: Robust Multitask Tuning and Collaboration for Text-to-SQL; IterGen: Iterative Semantic-aware Structured LLM Generation with Backtracking). One paper also states that the benchmark introduced the Execution Accuracy (EX) metric, which has been adopted by other datasets (Transferable Post-training via Inverse Value Learning). It is frequently studied alongside other text-to-SQL benchmarks such as BIRD and KaggleDBQA. One study highlights its use in a setting 'where there are no unit tests in the problem description' (Teaching Large Language Models to Self-Debug).",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Spider",
+    "SPIDER"
+  ],
+  "papers": [
+    "An Efficient Task-Oriented Dialogue Policy: Evolutionary Reinforcement Learning Injected by Elite Individuals",
+    "Decoding on Graphs: Faithful and Sound Reasoning on Knowledge Graphs through Generation of Well-Formed Chains",
+    "EPO: Explicit Policy Optimization for Strategic Reasoning inLLMs via Reinforcement Learning",
+    "KatFishNet: DetectingLLM-GeneratedKorean Text through Linguistic Feature Analysis",
+    "Pre3: Enabling Deterministic Pushdown Automata for Faster StructuredLLMGeneration",
+    "A ComprehensiveLiteraryChinese Reading Comprehension Dataset with an Evidence Curation Based Solution",
+    "Grammar Pruning: Enabling Low-Latency Zero-Shot Task-Oriented Language Models for EdgeAI",
+    "Iterative Multilingual Spectral Attribute Erasure",
+    "Logits-Based Finetuning",
+    "OmniThink: Expanding Knowledge Boundaries in Machine Writing through Thinking",
+    "PhonoThink: Improving Large Language Models\u2019 Reasoning onChinese Phonological Ambiguities",
+    "Playpen: An Environment for Exploring Learning From Dialogue Game Feedback",
+    "SAKI-RAG: Mitigating Context Fragmentation in Long-DocumentRAGvia Sentence-level Attention Knowledge Integration",
+    "Towards Robust Mathematical Reasoning",
+    "Training a Utility-based Retriever Through Shared Context Attribution for Retrieval-Augmented Language Models",
+    "UniformInformationDensity and Syntactic Reduction: Revisiting *that*-Mentioning inEnglish Complement Clauses",
+    "Lemur: Harmonizing Natural Language and Code for Language Agents",
+    "Teaching Large Language Models to Self-Debug",
+    "Bridging the Semantic Gap Between Text and Table: A Case Study on NL2SQL",
+    "CHASE-SQL: Multi-Path Reasoning and Preference Optimized Candidate Selection in Text-to-SQL",
+    "Holistic Reasoning with Long-Context LMs: A Benchmark for Database Operations on Massive Textual Data",
+    "IterGen: Iterative Semantic-aware Structured LLM Generation with Backtracking",
+    "Learning to Clarify: Multi-turn Conversations with Action-Based Contrastive Self-Training",
+    "MMQA: Evaluating LLMs with Multi-Table Multi-Hop Complex Questions",
+    "Optimized Multi-Token Joint Decoding With Auxiliary Model for LLM Inference",
+    "ROUTE: Robust Multitask Tuning and Collaboration for Text-to-SQL",
+    "Syntactic and Semantic Control of Large Language Models via Sequential Monte Carlo",
+    "Alpha-SQL: Zero-Shot Text-to-SQL using Monte Carlo Tree Search",
+    "An Efficient Private GPT Never Autoregressively Decodes",
+    "Parameter-Efficient Fine-Tuning of State Space Models",
+    "Revealing the Barriers of Language Agents in Planning",
+    "TheRussian-focused embedders\u2019 exploration: ruMTEBbenchmark andRussian embedding model design",
+    "Transferable Post-training via Inverse Value Learning"
+  ],
+  "paper_count": 33,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Text-to-SQL benchmark evaluating the ability to generate syntactically and semantically correct SQL queries from natural language questions over complex databases, used here without unit tests.",
+      "paper": "Lemur: Harmonizing Natural Language and Code for Language Agents",
+      "original_name": "Spider"
+    },
+    {
+      "text": "A widely-used, large-scale, cross-domain benchmark dataset for evaluating Text-to-SQL models, consisting of natural language questions paired with SQL queries across multiple databases.",
+      "paper": "ROUTE: Robust Multitask Tuning and Collaboration for Text-to-SQL",
+      "original_name": "SPIDER"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "StreamBench: Towards Benchmarking Continuous Improvement of Language Agents",
+      "evidence": "We use six datasets spanning different domains: GLUE for natural language understanding (Wang et al., 2019), DART for RDF-to-text generation (Nan et al., 2021), SAMSum (Gliwa et al., 2019) for summarization, Spider for text-to-SQL generation (Yu et al., 2018), and two vision datasets\u2014CIFAR-10 (Krizhevsky et al., 2009) and CelebA (Liu et al., 2015), with the vision datasets processed by cropping, resizing, and flattening pixel values into space-separated numerical sentences.",
+      "paper_count": 6,
+      "papers_by_conference": {
+        "neurips24": [
+          "StreamBench: Towards Benchmarking Continuous Improvement of Language Agents"
+        ],
+        "iclr25": [
+          "IterGen: Iterative Semantic-aware Structured LLM Generation with Backtracking"
+        ],
+        "naacl25": [
+          "Revealing the Barriers of Language Agents in Planning"
+        ],
+        "acl25": [
+          "KatFishNet: DetectingLLM-GeneratedKorean Text through Linguistic Feature Analysis"
+        ],
+        "icml25": [
+          "Parameter-Efficient Fine-Tuning of State Space Models"
+        ],
+        "emnlp25": [
+          "SAKI-RAG: Mitigating Context Fragmentation in Long-DocumentRAGvia Sentence-level Attention Knowledge Integration"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Optimized Multi-Token Joint Decoding With Auxiliary Model for LLM Inference",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Optimized Multi-Token Joint Decoding With Auxiliary Model for LLM Inference"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, Spider is consistently described as a large-scale, complex, and cross-domain benchmark for the text-to-SQL task. Its primary use is to evaluate a model's ability to generate syntactically and semantically correct SQL queries from natural language questions over diverse databases. As such, papers use Spider to measure the behavior of `Code generation`, specifically for database queries. Several sources characterize its scale, noting it contains thousands of text-SQL pairs spanning nearly 200 databases and 138 domains, with problems categorized into different difficulty levels (ROUTE: Robust Multitask Tuning and Collaboration for Text-to-SQL; IterGen: Iterative Semantic-aware Structured LLM Generation with Backtracking). One paper also states that the benchmark introduced the Execution Accuracy (EX) metric, which has been adopted by other datasets (Transferable Post-training via Inverse Value Learning). It is frequently studied alongside other text-to-SQL benchmarks such as BIRD and KaggleDBQA. One study highlights its use in a setting 'where there are no unit tests in the problem description' (Teaching Large Language Models to Self-Debug).",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Lemur: Harmonizing Natural Language and Code for Language Agents",
+      "Teaching Large Language Models to Self-Debug"
+    ],
+    "iclr25": [
+      "Bridging the Semantic Gap Between Text and Table: A Case Study on NL2SQL",
+      "CHASE-SQL: Multi-Path Reasoning and Preference Optimized Candidate Selection in Text-to-SQL",
+      "Holistic Reasoning with Long-Context LMs: A Benchmark for Database Operations on Massive Textual Data",
+      "IterGen: Iterative Semantic-aware Structured LLM Generation with Backtracking",
+      "Learning to Clarify: Multi-turn Conversations with Action-Based Contrastive Self-Training",
+      "MMQA: Evaluating LLMs with Multi-Table Multi-Hop Complex Questions",
+      "Optimized Multi-Token Joint Decoding With Auxiliary Model for LLM Inference",
+      "ROUTE: Robust Multitask Tuning and Collaboration for Text-to-SQL",
+      "Syntactic and Semantic Control of Large Language Models via Sequential Monte Carlo"
+    ],
+    "naacl25": [
+      "Revealing the Barriers of Language Agents in Planning",
+      "TheRussian-focused embedders\u2019 exploration: ruMTEBbenchmark andRussian embedding model design",
+      "Transferable Post-training via Inverse Value Learning"
+    ],
+    "acl25": [
+      "An Efficient Task-Oriented Dialogue Policy: Evolutionary Reinforcement Learning Injected by Elite Individuals",
+      "Decoding on Graphs: Faithful and Sound Reasoning on Knowledge Graphs through Generation of Well-Formed Chains",
+      "EPO: Explicit Policy Optimization for Strategic Reasoning inLLMs via Reinforcement Learning",
+      "KatFishNet: DetectingLLM-GeneratedKorean Text through Linguistic Feature Analysis",
+      "Pre3: Enabling Deterministic Pushdown Automata for Faster StructuredLLMGeneration"
+    ],
+    "icml25": [
+      "Alpha-SQL: Zero-Shot Text-to-SQL using Monte Carlo Tree Search",
+      "An Efficient Private GPT Never Autoregressively Decodes",
+      "Parameter-Efficient Fine-Tuning of State Space Models"
+    ],
+    "emnlp25": [
+      "A ComprehensiveLiteraryChinese Reading Comprehension Dataset with an Evidence Curation Based Solution",
+      "Grammar Pruning: Enabling Low-Latency Zero-Shot Task-Oriented Language Models for EdgeAI",
+      "Iterative Multilingual Spectral Attribute Erasure",
+      "Logits-Based Finetuning",
+      "OmniThink: Expanding Knowledge Boundaries in Machine Writing through Thinking",
+      "PhonoThink: Improving Large Language Models\u2019 Reasoning onChinese Phonological Ambiguities",
+      "Playpen: An Environment for Exploring Learning From Dialogue Game Feedback",
+      "SAKI-RAG: Mitigating Context Fragmentation in Long-DocumentRAGvia Sentence-level Attention Knowledge Integration",
+      "Towards Robust Mathematical Reasoning",
+      "Training a Utility-based Retriever Through Shared Context Attribution for Retrieval-Augmented Language Models",
+      "UniformInformationDensity and Syntactic Reduction: Revisiting *that*-Mentioning inEnglish Complement Clauses"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "iclr25": 9,
+    "naacl25": 3,
+    "acl25": 5,
+    "icml25": 3,
+    "emnlp25": 11
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25"
+  ]
+}

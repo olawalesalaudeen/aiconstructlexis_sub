@@ -1,0 +1,201 @@
+{
+  "canonical_name": "Code execution",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, code execution is most commonly characterized as the observable behavior of a model running generated code within an interpreter and receiving the output. This behavior is frequently framed as a form of tool use for tasks like computation, data analysis, and arithmetic. Several papers describe its application in multi-step problem-solving, where a model can \"generate and execute code incrementally\" and use the results for self-correction (\"Solving Challenging Math Word Problems Using GPT-4 Code Interpreter with Code-based Self-Verification\"). The behavior is operationalized and measured using benchmarks such as CruxEval and LiveCodeBench. A distinct, less common line of work treats this concept as a reasoning task, using terms like \"execution reasoning\" or \"output prediction,\" where the goal is to predict a program's output rather than run the code. Another minority view defines it as \"plan execution,\" where running code is one step in a larger planned sequence. Code execution is studied alongside tool use and is reported to influence evaluation, while difficulties in reasoning about execution are reported to affect test generation.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Code execution",
+    "Execution reasoning",
+    "Output prediction"
+  ],
+  "papers": [
+    "2025.emnlp-main.1260.checklist",
+    "EasyRec: Simple yet Effective Language Models for Recommendation",
+    "LIDDIA: Language-based Intelligent Drug Discovery Agent",
+    "Solving Challenging Math Word Problems Using GPT-4 Code Interpreter with Code-based Self-Verification",
+    "Tool-Augmented Reward Modeling",
+    "From an LLM Swarm to a PDDL-empowered Hive: Planning Self-executed Instructions in a Multi-modal Jungle",
+    "Law of the Weakest Link: Cross Capabilities of Large Language Models",
+    "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code",
+    "SBSC: Step-by-Step Coding for Improving Mathematical Olympiad Performance",
+    "Steering Large Language Models between Code Execution and Textual Reasoning",
+    "Unveiling the Magic of Code Reasoning through Hypothesis Decomposition and Amendment",
+    "GuardAgent: Safeguard LLM Agents via Knowledge-Enabled Reasoning",
+    "Learning to Plan & Reason for Evaluation with Thinking-LLM-as-a-Judge",
+    "SemCoder: Training Code Language Models with Comprehensive Semantics Reasoning",
+    "Stealth edits to large language models"
+  ],
+  "paper_count": 15,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The observable process where the model runs generated code within an interpreter and receives the output.",
+      "paper": "GAIA: a benchmark for General AI Assistants",
+      "original_name": "Code execution"
+    },
+    {
+      "text": "The observable task of predicting program outputs given inputs or inferring inputs given outputs, often involving step-by-step simulation.",
+      "paper": "SemCoder: Training Code Language Models with Comprehensive Semantics Reasoning",
+      "original_name": "Execution reasoning"
+    },
+    {
+      "text": "Retrieving and running code snippets associated with chosen models to perform the steps of a planned action sequence.",
+      "paper": "From an LLM Swarm to a PDDL-empowered Hive: Planning Self-executed Instructions in a Multi-modal Jungle",
+      "original_name": "Plan execution"
+    },
+    {
+      "text": "Predicting the final output of a program given the program and its inputs.",
+      "paper": "Unveiling the Magic of Code Reasoning through Hypothesis Decomposition and Amendment",
+      "original_name": "Output prediction"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Critique",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Solving Challenging Math Word Problems Using GPT-4 Code Interpreter with Code-based Self-Verification",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Solving Challenging Math Word Problems Using GPT-4 Code Interpreter with Code-based Self-Verification"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Self-correction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Solving Challenging Math Word Problems Using GPT-4 Code Interpreter with Code-based Self-Verification",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Solving Challenging Math Word Problems Using GPT-4 Code Interpreter with Code-based Self-Verification"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Tool use",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Law of the Weakest Link: Cross Capabilities of Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Law of the Weakest Link: Cross Capabilities of Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CruxEval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "SemCoder: Training Code Language Models with Comprehensive Semantics Reasoning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "SemCoder: Training Code Language Models with Comprehensive Semantics Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LiveCodeBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "SemCoder: Training Code Language Models with Comprehensive Semantics Reasoning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "SemCoder: Training Code Language Models with Comprehensive Semantics Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Test generation",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "TestGenEval: A Real World Unit Test Generation and Test Completion Benchmark",
+      "evidence": "This is primarily due to models struggling to reason about execution, and their frequent assertion errors when addressing complex code paths.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "TestGenEval: A Real World Unit Test Generation and Test Completion Benchmark"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CruxEval",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code",
+      "evidence": "The code execution scenario is based on the output prediction setup used in CRUXEVAL (Gu et al., 2024).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 7,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 7,
+  "characterization": "Across the surveyed literature, code execution is most commonly characterized as the observable behavior of a model running generated code within an interpreter and receiving the output. This behavior is frequently framed as a form of tool use for tasks like computation, data analysis, and arithmetic. Several papers describe its application in multi-step problem-solving, where a model can \"generate and execute code incrementally\" and use the results for self-correction (\"Solving Challenging Math Word Problems Using GPT-4 Code Interpreter with Code-based Self-Verification\"). The behavior is operationalized and measured using benchmarks such as CruxEval and LiveCodeBench. A distinct, less common line of work treats this concept as a reasoning task, using terms like \"execution reasoning\" or \"output prediction,\" where the goal is to predict a program's output rather than run the code. Another minority view defines it as \"plan execution,\" where running code is one step in a larger planned sequence. Code execution is studied alongside tool use and is reported to influence evaluation, while difficulties in reasoning about execution are reported to affect test generation.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Solving Challenging Math Word Problems Using GPT-4 Code Interpreter with Code-based Self-Verification",
+      "Tool-Augmented Reward Modeling"
+    ],
+    "neurips24": [
+      "SemCoder: Training Code Language Models with Comprehensive Semantics Reasoning",
+      "Stealth edits to large language models"
+    ],
+    "iclr25": [
+      "From an LLM Swarm to a PDDL-empowered Hive: Planning Self-executed Instructions in a Multi-modal Jungle",
+      "Law of the Weakest Link: Cross Capabilities of Large Language Models",
+      "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code",
+      "SBSC: Step-by-Step Coding for Improving Mathematical Olympiad Performance",
+      "Steering Large Language Models between Code Execution and Textual Reasoning",
+      "Unveiling the Magic of Code Reasoning through Hypothesis Decomposition and Amendment"
+    ],
+    "icml25": [
+      "GuardAgent: Safeguard LLM Agents via Knowledge-Enabled Reasoning",
+      "Learning to Plan & Reason for Evaluation with Thinking-LLM-as-a-Judge"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.1260.checklist",
+      "EasyRec: Simple yet Effective Language Models for Recommendation",
+      "LIDDIA: Language-based Intelligent Drug Discovery Agent"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "neurips24": 2,
+    "iclr25": 6,
+    "icml25": 2,
+    "emnlp25": 3
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "canonical_name": "Long-horizon planning",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, long-horizon planning is most commonly defined as the ability to produce a sequence of actions over many steps to achieve a goal, sometimes involving multiple concurrent objectives or interdependent steps. A smaller set of papers uses the related term \"long-term planning\" to describe formulating high-level strategies over an extended period, while more specific framings like \"strategic dialogue planning\" and \"high-level planning\" appear in single papers. The construct is operationalized and measured through performance on various complex tasks. For example, it is evaluated using the Travelplanner benchmark, which tests planning under user-defined constraints, and in environments like Crafter, which combines \"multiple interactions, concurrent objectives, and error handling.\" Other evaluations involve sequential robotic instruction chains and complex desktop tasks. The concept is frequently associated with hierarchical planning, which one paper describes as a method to \"decomposes long-horizon planning problems into several short-horizon problems\" (Learning Grounded Action Abstractions from Language). It is also studied alongside embodied planning and is a target for enhancement through auxiliary tasks in theorem proving. Several sources note that this capability remains a challenge for models, particularly in \"partially observable multi-agent settings\" (Long-Horizon Planning for Multi-Agent Robots in Partially Observable Environments) or due to the \"auto-regressive nature of LLMs\" (Enhancing Decision-Making of Large Language Models via Actor-Critic).",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Long-horizon planning",
+    "Long-term planning",
+    "Strategic dialogue planning",
+    "High-level planning"
+  ],
+  "papers": [
+    "AlignDistil: Token-Level Language Model Alignment as Adaptive Policy Distillation",
+    "Error-driven Data-efficient Large Multimodal Model Tuning",
+    "Exploring the Limitations of Mamba inCOPYandCoTReasoning",
+    "From Tens of Hours to Tens of Thousands: Scaling Back-Translation for Speech Recognition",
+    "Interpretability Analysis of Arithmetic In-Context Learning in Large Language Models",
+    "Weight-Aware Activation Sparsity with ConstrainedBayesian Optimization Scheduling for Large Language Models",
+    "Learning Grounded Action Abstractions from Language",
+    "Vision-Language Foundation Models as Effective Robot Imitators",
+    "Agent S: An Open Agentic Framework that Uses Computers Like a Human",
+    "DeepSeek-Prover-V1.5: Harnessing Proof Assistant Feedback for Reinforcement Learning and Monte-Carlo Tree Search",
+    "HAMSTER: Hierarchical Action Models for Open-World Robot Manipulation",
+    "Robotouille: An Asynchronous Planning Benchmark for LLM Agents",
+    "BALROG: Benchmarking Agentic LLM and VLM Reasoning On Games",
+    "Discriminator-Guided Embodied Planning for LLM Agent",
+    "Monte Carlo Planning with Large Language Model for Text-Based Game Agents",
+    "Regressing the Relative Future: Efficient Policy Optimization for Multi-turn RLHF",
+    "Synthesizing Programmatic Reinforcement Learning Policies with Large Language Model Guided Search",
+    "EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents",
+    "Enhancing Decision-Making of Large Language Models via Actor-Critic",
+    "Large Language Models Play StarCraft II:Benchmarks and A Chain of Summarization Approach",
+    "Long-Horizon Planning for Multi-Agent Robots in Partially Observable Environments"
+  ],
+  "paper_count": 21,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Producing action sequences that achieve a goal over many steps or with multiple concurrent objectives.",
+      "paper": "Learning Grounded Action Abstractions from Language",
+      "original_name": "Long-horizon planning"
+    },
+    {
+      "text": "The capacity to formulate and adapt high-level strategies that unfold over an extended period to achieve a final goal.",
+      "paper": "Large Language Models Play StarCraft II:Benchmarks and A Chain of Summarization Approach",
+      "original_name": "Long-term planning"
+    },
+    {
+      "text": "The ability to strategically generate a sequence of dialogue actions to guide a conversation toward a specific, long-horizon target.",
+      "paper": "Error-driven Data-efficient Large Multimodal Model Tuning",
+      "original_name": "Strategic dialogue planning"
+    },
+    {
+      "text": "The capability to capture and coordinate dependencies between distant elements in a dialogue, such as ensuring correct keyword order across multiple turns or aligning early actions with final goals.",
+      "paper": "Error-driven Data-efficient Large Multimodal Model Tuning",
+      "original_name": "Long-range dependency modeling"
+    },
+    {
+      "text": "The capacity to generate and execute long-horizon, goal-directed plans under constraints, requiring decomposition of complex objectives into coordinated subtasks.",
+      "paper": "Interpretability Analysis of Arithmetic In-Context Learning in Large Language Models",
+      "original_name": "High-level planning"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hierarchical planning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Learning Grounded Action Abstractions from Language",
+      "evidence": "This bi-level planning approach decomposes long-horizon planning problems into several short-horizon problems. (Section 2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Learning Grounded Action Abstractions from Language"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Embodied planning",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Discriminator-Guided Embodied Planning for LLM Agent",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Discriminator-Guided Embodied Planning for LLM Agent"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Theorem proving",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "DeepSeek-Prover-V1.5: Harnessing Proof Assistant Feedback for Reinforcement Learning and Monte-Carlo Tree Search",
+      "evidence": "We begin by training a whole-proof generation model, incorporating several auxiliary tasks to enhance its capabilities in mathematical reasoning and long-horizon planning",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "DeepSeek-Prover-V1.5: Harnessing Proof Assistant Feedback for Reinforcement Learning and Monte-Carlo Tree Search"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Critique",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Closed-Loop Long-Horizon Robotic Planning via Equilibrium Sequence Modeling",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Closed-Loop Long-Horizon Robotic Planning via Equilibrium Sequence Modeling"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Travelplanner",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Interpretability Analysis of Arithmetic In-Context Learning in Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Interpretability Analysis of Arithmetic In-Context Learning in Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the surveyed literature, long-horizon planning is most commonly defined as the ability to produce a sequence of actions over many steps to achieve a goal, sometimes involving multiple concurrent objectives or interdependent steps. A smaller set of papers uses the related term \"long-term planning\" to describe formulating high-level strategies over an extended period, while more specific framings like \"strategic dialogue planning\" and \"high-level planning\" appear in single papers. The construct is operationalized and measured through performance on various complex tasks. For example, it is evaluated using the Travelplanner benchmark, which tests planning under user-defined constraints, and in environments like Crafter, which combines \"multiple interactions, concurrent objectives, and error handling.\" Other evaluations involve sequential robotic instruction chains and complex desktop tasks. The concept is frequently associated with hierarchical planning, which one paper describes as a method to \"decomposes long-horizon planning problems into several short-horizon problems\" (Learning Grounded Action Abstractions from Language). It is also studied alongside embodied planning and is a target for enhancement through auxiliary tasks in theorem proving. Several sources note that this capability remains a challenge for models, particularly in \"partially observable multi-agent settings\" (Long-Horizon Planning for Multi-Agent Robots in Partially Observable Environments) or due to the \"auto-regressive nature of LLMs\" (Enhancing Decision-Making of Large Language Models via Actor-Critic).",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Learning Grounded Action Abstractions from Language",
+      "Vision-Language Foundation Models as Effective Robot Imitators"
+    ],
+    "neurips24": [
+      "Large Language Models Play StarCraft II:Benchmarks and A Chain of Summarization Approach",
+      "Long-Horizon Planning for Multi-Agent Robots in Partially Observable Environments"
+    ],
+    "iclr25": [
+      "Agent S: An Open Agentic Framework that Uses Computers Like a Human",
+      "DeepSeek-Prover-V1.5: Harnessing Proof Assistant Feedback for Reinforcement Learning and Monte-Carlo Tree Search",
+      "HAMSTER: Hierarchical Action Models for Open-World Robot Manipulation",
+      "Robotouille: An Asynchronous Planning Benchmark for LLM Agents",
+      "BALROG: Benchmarking Agentic LLM and VLM Reasoning On Games",
+      "Discriminator-Guided Embodied Planning for LLM Agent",
+      "Monte Carlo Planning with Large Language Model for Text-Based Game Agents",
+      "Regressing the Relative Future: Efficient Policy Optimization for Multi-turn RLHF",
+      "Synthesizing Programmatic Reinforcement Learning Policies with Large Language Model Guided Search"
+    ],
+    "acl25": [
+      "AlignDistil: Token-Level Language Model Alignment as Adaptive Policy Distillation",
+      "Error-driven Data-efficient Large Multimodal Model Tuning"
+    ],
+    "emnlp25": [
+      "Exploring the Limitations of Mamba inCOPYandCoTReasoning",
+      "From Tens of Hours to Tens of Thousands: Scaling Back-Translation for Speech Recognition",
+      "Interpretability Analysis of Arithmetic In-Context Learning in Large Language Models",
+      "Weight-Aware Activation Sparsity with ConstrainedBayesian Optimization Scheduling for Large Language Models"
+    ],
+    "icml25": [
+      "EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents",
+      "Enhancing Decision-Making of Large Language Models via Actor-Critic"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "neurips24": 2,
+    "iclr25": 9,
+    "acl25": 2,
+    "emnlp25": 4,
+    "icml25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

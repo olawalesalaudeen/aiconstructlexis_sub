@@ -1,0 +1,88 @@
+{
+  "canonical_name": "Verbalized confidence",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, verbalized confidence is consistently described as a measurement technique that involves directly prompting a large language model to self-report its confidence. This method, also referred to as 'Verbal Confidence' or 'Verbalization', is operationalized by asking the model to express its confidence in its own answer or judgment, sometimes as a scalar value, through what one paper calls 'well-designed prompts' (Latent Space Chain-of-Embedding Enables Output-free LLM Self-Evaluation). The definitions characterize it as a 'black-box self-evaluation procedure' and a 'baseline confidence measure'. The primary purpose of this procedure is to obtain a model's self-evaluated confidence level for a given output. In practice, verbalized confidence is used as a method to measure `Hallucination`. It is also studied in relation to `Instruction following`. The definitions and descriptions provided are in strong agreement, all centering on the direct elicitation of a confidence score from the model itself.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Verbalized confidence",
+    "Verbal Confidence",
+    "Verbalization"
+  ],
+  "papers": [
+    "Do LLMs estimate uncertainty well in instruction-following?",
+    "HaDeMiF: Hallucination Detection and Mitigation in Large Language Models",
+    "Latent Space Chain-of-Embedding Enables Output-free LLM Self-Evaluation",
+    "Trust or Escalate: LLM Judges with Provable Guarantees for Human Agreement"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A baseline confidence measure obtained by directly prompting an LLM judge to express its confidence in its own judgment as a scalar value.",
+      "paper": "Trust or Escalate: LLM Judges with Provable Guarantees for Human Agreement",
+      "original_name": "Verbalized confidence"
+    },
+    {
+      "text": "A black-box self-evaluation procedure that asks the model to express confidence in its own answer.",
+      "paper": "Latent Space Chain-of-Embedding Enables Output-free LLM Self-Evaluation",
+      "original_name": "Verbal Confidence"
+    },
+    {
+      "text": "An evaluation protocol that measures a model's confidence by directly prompting it to self-report its confidence level.",
+      "paper": "HaDeMiF: Hallucination Detection and Mitigation in Large Language Models",
+      "original_name": "Verbalization"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction following",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "LitCab: Lightweight Language Model Calibration over Short- and Long-form Responses",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "LitCab: Lightweight Language Model Calibration over Short- and Long-form Responses"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "From Scores to Steps: Diagnosing and ImprovingLLMPerformance in Evidence-Based Medical Calculations",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "From Scores to Steps: Diagnosing and ImprovingLLMPerformance in Evidence-Based Medical Calculations"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, verbalized confidence is consistently described as a measurement technique that involves directly prompting a large language model to self-report its confidence. This method, also referred to as 'Verbal Confidence' or 'Verbalization', is operationalized by asking the model to express its confidence in its own answer or judgment, sometimes as a scalar value, through what one paper calls 'well-designed prompts' (Latent Space Chain-of-Embedding Enables Output-free LLM Self-Evaluation). The definitions characterize it as a 'black-box self-evaluation procedure' and a 'baseline confidence measure'. The primary purpose of this procedure is to obtain a model's self-evaluated confidence level for a given output. In practice, verbalized confidence is used as a method to measure `Hallucination`. It is also studied in relation to `Instruction following`. The definitions and descriptions provided are in strong agreement, all centering on the direct elicitation of a confidence score from the model itself.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Do LLMs estimate uncertainty well in instruction-following?",
+      "HaDeMiF: Hallucination Detection and Mitigation in Large Language Models",
+      "Latent Space Chain-of-Embedding Enables Output-free LLM Self-Evaluation",
+      "Trust or Escalate: LLM Judges with Provable Guarantees for Human Agreement"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 4
+  },
+  "conferences": [
+    "iclr25"
+  ]
+}

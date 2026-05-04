@@ -1,0 +1,111 @@
+{
+  "canonical_name": "T-Eval",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, T-Eval is consistently characterized as a benchmark for evaluating how Large Language Models use external tools and APIs. The most frequently cited purpose is to assess the capabilities of \"multi-step decision-making\" and \"API utilization.\" This is directly operationalized as a measure of a model's `Planning` ability. The benchmark is also reported to measure `Action execution` and `Commonsense knowledge`. A recurring theme is its design as an out-of-distribution (OOD) benchmark, which is used to test the generalization of these capabilities. As one paper notes, its OOD nature allows researchers to \"evaluate the generalization capability of\" a model in a zero-shot setting (\"WorkflowLLM: Enhancing Workflow Orchestration Capability of Large Language Models\").",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "T-Eval"
+  ],
+  "papers": [
+    "CODI: Compressing Chain-of-Thought into Continuous Space via Self-Distillation",
+    "OpenTuringBench: An Open-Model-based Benchmark and Framework for Machine-Generated Text Detection and Attribution",
+    "CS-Bench: A Comprehensive Benchmark for Large Language Models towards Computer Science Mastery",
+    "WorkflowLLM: Enhancing Workflow Orchestration Capability of Large Language Models"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "An out-of-distribution benchmark designed to evaluate the multi-step decision-making and API utilization capabilities of LLMs.",
+      "paper": "WorkflowLLM: Enhancing Workflow Orchestration Capability of Large Language Models",
+      "original_name": "T-Eval"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Planning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "WorkflowLLM: Enhancing Workflow Orchestration Capability of Large Language Models",
+      "evidence": "T-Eval, a widely-used benchmark to evaluate the multi-step decision-making capability of LLMs to utilize APIs... enhances the model's out-of-distribution planning ability.",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "WorkflowLLM: Enhancing Workflow Orchestration Capability of Large Language Models"
+        ],
+        "icml25": [
+          "Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Action execution",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction following",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, T-Eval is consistently characterized as a benchmark for evaluating how Large Language Models use external tools and APIs. The most frequently cited purpose is to assess the capabilities of \"multi-step decision-making\" and \"API utilization.\" This is directly operationalized as a measure of a model's `Planning` ability. The benchmark is also reported to measure `Action execution` and `Commonsense knowledge`. A recurring theme is its design as an out-of-distribution (OOD) benchmark, which is used to test the generalization of these capabilities. As one paper notes, its OOD nature allows researchers to \"evaluate the generalization capability of\" a model in a zero-shot setting (\"WorkflowLLM: Enhancing Workflow Orchestration Capability of Large Language Models\").",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "CS-Bench: A Comprehensive Benchmark for Large Language Models towards Computer Science Mastery",
+      "WorkflowLLM: Enhancing Workflow Orchestration Capability of Large Language Models"
+    ],
+    "emnlp25": [
+      "CODI: Compressing Chain-of-Thought into Continuous Space via Self-Distillation",
+      "OpenTuringBench: An Open-Model-based Benchmark and Framework for Machine-Generated Text Detection and Attribution"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25"
+  ]
+}

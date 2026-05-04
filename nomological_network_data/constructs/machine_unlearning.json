@@ -1,0 +1,150 @@
+{
+  "canonical_name": "Machine unlearning",
+  "type": "construct",
+  "canonical_definition": "Across the provided literature, machine unlearning is predominantly defined as the latent ability of a model to selectively remove the influence of specific training data, making it behave as if those data points had never been observed. A recurring emphasis is on the dual nature of this process: the goal is not just to \"forget\" targeted information, such as private knowledge or memorized content, but to do so without degrading overall model utility or suffering from \"catastrophic forgetting.\" Several papers frame this as a balance, where unlearning should be \"precise, affecting only the Forget set without disturbing the Retain set\" (\"BPO: Towards Balanced Preference Optimization between Knowledge Breadth and Depth in Alignment\"). To operationalize this construct, researchers use several measurement instruments; the provided data shows that machine unlearning is evaluated using benchmarks such as WMDP, TOFU, and MUSE, as well as through Membership inference attacks. The concept is studied alongside related constructs like Memorization, Faithfulness, and Adversarial robustness. One paper also posits a directional relationship, suggesting that machine unlearning causes Safety.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Forgetting",
+    "Machine unlearning",
+    "Knowledge unlearning"
+  ],
+  "papers": [
+    "2025.emnlp-main.1109.checklist",
+    "Leaky Thoughts: Large Reasoning Models Are Not Private Thinkers",
+    "Mitigating Catastrophic Forgetting in Large Language Models with Forgetting-aware Pruning",
+    "BPO: Towards Balanced Preference Optimization between Knowledge Breadth and Depth in Alignment",
+    "Communication Makes Perfect: Persuasion Dataset Construction via Multi-LLMCommunication",
+    "Evaluating Morphological Compositional Generalization in Large Language Models",
+    "KMMLU: Measuring Massive Multitask Language Understanding inKorean"
+  ],
+  "paper_count": 7,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The latent ability of a model to remove the influence of selected training data so that those examples no longer shape its outputs as if they had never been observed.",
+      "paper": "Communication Makes Perfect: Persuasion Dataset Construction via Multi-LLMCommunication",
+      "original_name": "Machine unlearning"
+    },
+    {
+      "text": "The latent ability of a model to reduce its reliance on or association with specific training data, effectively treating those examples as if they were never observed.",
+      "paper": "Communication Makes Perfect: Persuasion Dataset Construction via Multi-LLMCommunication",
+      "original_name": "Forgetting"
+    },
+    {
+      "text": "The degree to which a model removes targeted private knowledge about specified individuals from its parameters or outputs.",
+      "paper": "KMMLU: Measuring Massive Multitask Language Understanding inKorean",
+      "original_name": "Unlearning efficacy"
+    },
+    {
+      "text": "The latent ability of a model to selectively forget specific knowledge or memorized content without degrading overall language performance or suffering catastrophic forgetting.",
+      "paper": "BPO: Towards Balanced Preference Optimization between Knowledge Breadth and Depth in Alignment",
+      "original_name": "Unlearning"
+    },
+    {
+      "text": "The latent ability of a language model to remove targeted information while retaining unrelated knowledge after post-training.",
+      "paper": "Mitigating Catastrophic Forgetting in Large Language Models with Forgetting-aware Pruning",
+      "original_name": "Knowledge unlearning"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge forgetting",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Communication Makes Perfect: Persuasion Dataset Construction via Multi-LLMCommunication",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Communication Makes Perfect: Persuasion Dataset Construction via Multi-LLMCommunication"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TOFU",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Adaptive Localization of Knowledge Negation for Continual LLM Unlearning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Adaptive Localization of Knowledge Negation for Continual LLM Unlearning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge retention",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Leaky Thoughts: Large Reasoning Models Are Not Private Thinkers",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Leaky Thoughts: Large Reasoning Models Are Not Private Thinkers"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Interpretability and explainability",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Leaky Thoughts: Large Reasoning Models Are Not Private Thinkers",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Leaky Thoughts: Large Reasoning Models Are Not Private Thinkers"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Adversarial robustness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Leaky Thoughts: Large Reasoning Models Are Not Private Thinkers",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Leaky Thoughts: Large Reasoning Models Are Not Private Thinkers"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the provided literature, machine unlearning is predominantly defined as the latent ability of a model to selectively remove the influence of specific training data, making it behave as if those data points had never been observed. A recurring emphasis is on the dual nature of this process: the goal is not just to \"forget\" targeted information, such as private knowledge or memorized content, but to do so without degrading overall model utility or suffering from \"catastrophic forgetting.\" Several papers frame this as a balance, where unlearning should be \"precise, affecting only the Forget set without disturbing the Retain set\" (\"BPO: Towards Balanced Preference Optimization between Knowledge Breadth and Depth in Alignment\"). To operationalize this construct, researchers use several measurement instruments; the provided data shows that machine unlearning is evaluated using benchmarks such as WMDP, TOFU, and MUSE, as well as through Membership inference attacks. The concept is studied alongside related constructs like Memorization, Faithfulness, and Adversarial robustness. One paper also posits a directional relationship, suggesting that machine unlearning causes Safety.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "naacl25": [
+      "BPO: Towards Balanced Preference Optimization between Knowledge Breadth and Depth in Alignment",
+      "Communication Makes Perfect: Persuasion Dataset Construction via Multi-LLMCommunication",
+      "Evaluating Morphological Compositional Generalization in Large Language Models",
+      "KMMLU: Measuring Massive Multitask Language Understanding inKorean"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.1109.checklist",
+      "Leaky Thoughts: Large Reasoning Models Are Not Private Thinkers",
+      "Mitigating Catastrophic Forgetting in Large Language Models with Forgetting-aware Pruning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "naacl25": 4,
+    "emnlp25": 3
+  },
+  "conferences": [
+    "emnlp25",
+    "naacl25"
+  ]
+}

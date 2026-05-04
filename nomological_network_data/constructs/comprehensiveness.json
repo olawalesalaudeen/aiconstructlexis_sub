@@ -1,0 +1,137 @@
+{
+  "canonical_name": "Comprehensiveness",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, Comprehensiveness is most commonly defined as the extent to which a generated output contains sufficient information to answer a query or support a downstream task. While this task-oriented framing is prevalent, other work defines the construct in terms of source coverage, such as incorporating perspectives from all available documents or including all relevant details from a source video. A related framing, termed \"Answer comprehensiveness,\" focuses on the degree to which a response addresses the full set of facets needed for a complete answer. As a construct, Comprehensiveness is primarily operationalized and measured through `Human evaluation`, with papers reporting the use of human judges who rate outputs on Likert scales. A less common approach involves using `LLM-as-a-judge` for evaluation. One paper specifically operationalizes the concept as \"sub-question coverage,\" noting this metric can \"approximate human perception of answer quality well\" (SUNAR: Semantic Uncertainty based Neighborhood Aware Retrieval for ComplexQA). The construct is often studied alongside other subjective qualities like conciseness, clarity, and formality, and is explicitly likened to recall in at least one study.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Comprehensiveness",
+    "Answer comprehensiveness"
+  ],
+  "papers": [
+    "Confidence v.s. Critique: A Decomposition of Self-Correction Capability forLLMs",
+    "Theory of Mind in Large Language Models: Assessment and Enhancement",
+    "Benchmark Profiling: Mechanistic Diagnosis ofLLMBenchmarks",
+    "Controlled Generation for Private Synthetic Text",
+    "Expanding before Inferring: Enhancing Factuality in Large Language Models through Premature Layers Interpolation",
+    "Mapping Toxic Comments Across Demographics: A Dataset fromGerman Public Broadcasting",
+    "MemeArena: Automating Context-Aware Unbiased Evaluation of Harmfulness Understanding for Multimodal Large Language Models",
+    "PandaLM: An Automatic Evaluation Benchmark for LLM Instruction Tuning Optimization",
+    "RECOMP: Improving Retrieval-Augmented LMs with Context Compression and Selective Augmentation",
+    "Fingerspelling within Sign Language Translation",
+    "Is a Peeled Apple Still Red? EvaluatingLLMs\u2019 Ability for Conceptual Combination with Property Type",
+    "SUNAR: Semantic Uncertainty based Neighborhood Aware Retrieval for ComplexQA",
+    "VisDoM: Multi-DocumentQAwith Visually Rich Elements Using Multimodal Retrieval-Augmented Generation",
+    "Artemis:  Towards Referential Understanding in Complex Videos",
+    "Beyond Accuracy: Ensuring Correct Predictions With Correct Rationales"
+  ],
+  "paper_count": 15,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The extent to which a summary contains enough information to answer the query or support the downstream task, regardless of whether every detail is directly copied from the source documents.",
+      "paper": "PandaLM: An Automatic Evaluation Benchmark for LLM Instruction Tuning Optimization",
+      "original_name": "Comprehensiveness"
+    },
+    {
+      "text": "The extent to which a response addresses the full set of important facets needed for a complete answer to an open-ended question.",
+      "paper": "SUNAR: Semantic Uncertainty based Neighborhood Aware Retrieval for ComplexQA",
+      "original_name": "Answer comprehensiveness"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "VisDoM: Multi-DocumentQAwith Visually Rich Elements Using Multimodal Retrieval-Augmented Generation",
+      "evidence": "We find the sub-question coverage as an answer quality metric can approximate human perception of answer quality well (section 4).",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "naacl25": [
+          "VisDoM: Multi-DocumentQAwith Visually Rich Elements Using Multimodal Retrieval-Augmented Generation"
+        ],
+        "emnlp25": [
+          "Controlled Generation for Private Synthetic Text"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-as-a-judge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MemeArena: Automating Context-Aware Unbiased Evaluation of Harmfulness Understanding for Multimodal Large Language Models",
+      "evidence": "The evaluation framework uses multi-perspective criteria by LLM-as-a-judge, such as comprehensiveness, specificity, and relevance. (Section 1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "MemeArena: Automating Context-Aware Unbiased Evaluation of Harmfulness Understanding for Multimodal Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "The Sound of Syntax: Finetuning and Comprehensive Evaluation of Language Models for Speech Pathology",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "The Sound of Syntax: Finetuning and Comprehensive Evaluation of Language Models for Speech Pathology"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 2,
+  "characterization": "Across the surveyed literature, Comprehensiveness is most commonly defined as the extent to which a generated output contains sufficient information to answer a query or support a downstream task. While this task-oriented framing is prevalent, other work defines the construct in terms of source coverage, such as incorporating perspectives from all available documents or including all relevant details from a source video. A related framing, termed \"Answer comprehensiveness,\" focuses on the degree to which a response addresses the full set of facets needed for a complete answer. As a construct, Comprehensiveness is primarily operationalized and measured through `Human evaluation`, with papers reporting the use of human judges who rate outputs on Likert scales. A less common approach involves using `LLM-as-a-judge` for evaluation. One paper specifically operationalizes the concept as \"sub-question coverage,\" noting this metric can \"approximate human perception of answer quality well\" (SUNAR: Semantic Uncertainty based Neighborhood Aware Retrieval for ComplexQA). The construct is often studied alongside other subjective qualities like conciseness, clarity, and formality, and is explicitly likened to recall in at least one study.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "PandaLM: An Automatic Evaluation Benchmark for LLM Instruction Tuning Optimization",
+      "RECOMP: Improving Retrieval-Augmented LMs with Context Compression and Selective Augmentation"
+    ],
+    "neurips24": [
+      "Artemis:  Towards Referential Understanding in Complex Videos",
+      "Beyond Accuracy: Ensuring Correct Predictions With Correct Rationales"
+    ],
+    "naacl25": [
+      "Fingerspelling within Sign Language Translation",
+      "Is a Peeled Apple Still Red? EvaluatingLLMs\u2019 Ability for Conceptual Combination with Property Type",
+      "SUNAR: Semantic Uncertainty based Neighborhood Aware Retrieval for ComplexQA",
+      "VisDoM: Multi-DocumentQAwith Visually Rich Elements Using Multimodal Retrieval-Augmented Generation"
+    ],
+    "acl25": [
+      "Confidence v.s. Critique: A Decomposition of Self-Correction Capability forLLMs",
+      "Theory of Mind in Large Language Models: Assessment and Enhancement"
+    ],
+    "emnlp25": [
+      "Benchmark Profiling: Mechanistic Diagnosis ofLLMBenchmarks",
+      "Controlled Generation for Private Synthetic Text",
+      "Expanding before Inferring: Enhancing Factuality in Large Language Models through Premature Layers Interpolation",
+      "Mapping Toxic Comments Across Demographics: A Dataset fromGerman Public Broadcasting",
+      "MemeArena: Automating Context-Aware Unbiased Evaluation of Harmfulness Understanding for Multimodal Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "neurips24": 2,
+    "naacl25": 4,
+    "acl25": 2,
+    "emnlp25": 5
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "naacl25",
+    "neurips24"
+  ]
+}

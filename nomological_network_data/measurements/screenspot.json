@@ -1,0 +1,121 @@
+{
+  "canonical_name": "ScreenSpot",
+  "type": "measurement",
+  "canonical_definition": "ScreenSpot is consistently described across the provided literature as a benchmark for assessing grounding capabilities within Graphical User Interfaces (GUIs). The prevailing usage is to evaluate \"single-step GUI grounding capabilities across multiple platforms,\" a concept closely related to visual grounding, which it is also explicitly stated to measure. Some work also uses ScreenSpot to validate model adaptability, particularly a model's \"universal grounding capability across platforms.\" The benchmark's evaluation procedure is defined in one paper, which notes that \"a prediction is considered correct if the predicted location falls within the ground truth element's bounding box\" (\"OS-ATLAS: Foundation Action Model for Generalist GUI Agents\"). This assessment is conducted across environments including mobile, desktop, and web. A smaller line of work also positions it as a tool for evaluating general multi-modal task performance.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "ScreenSpot"
+  ],
+  "papers": [
+    "AgentStudio: A Toolkit for Building General Virtual Agents",
+    "AgentTrek: Agent Trajectory Synthesis via Guiding Replay with Web Tutorials",
+    "Grounding Multimodal Large Language Model in GUI World",
+    "Harnessing Webpage UIs for Text-Rich Visual Understanding",
+    "Navigating the Digital World as Humans Do: Universal Visual Grounding for GUI Agents",
+    "OS-ATLAS: Foundation Action Model for Generalist GUI Agents",
+    "Aguvis: Unified Pure Vision Agents for Autonomous GUI Interaction",
+    "Efficient Multi-modal Long Context Learning for Training-free Adaptation"
+  ],
+  "paper_count": 8,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A benchmark that assesses single-step GUI grounding capabilities across multiple platforms by evaluating whether predicted locations fall within ground truth element bounding boxes.",
+      "paper": "OS-ATLAS: Foundation Action Model for Generalist GUI Agents",
+      "original_name": "ScreenSpot"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "GUI understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Harnessing Webpage UIs for Text-Rich Visual Understanding",
+      "evidence": "\u201cWe begin by conducting a comprehensive evaluation of the GUI grounding performance of OS-Atlas-Base. Our evaluation utilizes ScreenSpot (Cheng et al., 2024), which assesses single-step GUI grounding capabilities across multiple platforms.\u201d",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr25": [
+          "Harnessing Webpage UIs for Text-Rich Visual Understanding",
+          "OS-ATLAS: Foundation Action Model for Generalist GUI Agents"
+        ],
+        "emnlp25": [
+          "Reverse Prompt Engineering: A Zero-Shot, Genetic Algorithm Approach to Language Model Inversion"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual grounding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "AgentTrek: Agent Trajectory Synthesis via Guiding Replay with Web Tutorials",
+      "evidence": "We first evaluate UGround on the ScreenSpot benchmark (Cheng et al., 2024), which is specifically designed for visual grounding on GUIs. (Section 3.1)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "AgentTrek: Agent Trajectory Synthesis via Guiding Replay with Web Tutorials",
+          "Navigating the Digital World as Humans Do: Universal Visual Grounding for GUI Agents"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Adaptability",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Grounding Multimodal Large Language Model in GUI World",
+      "evidence": "Our approach demonstrates superior performance in task accuracy and adaptability, as validated by benchmarks such as ScreenSpot, MiniWob, AITW, and Mind2Web.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Grounding Multimodal Large Language Model in GUI World"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Grounding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Aguvis: Unified Pure Vision Agents for Autonomous GUI Interaction",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Aguvis: Unified Pure Vision Agents for Autonomous GUI Interaction"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 0,
+  "characterization": "ScreenSpot is consistently described across the provided literature as a benchmark for assessing grounding capabilities within Graphical User Interfaces (GUIs). The prevailing usage is to evaluate \"single-step GUI grounding capabilities across multiple platforms,\" a concept closely related to visual grounding, which it is also explicitly stated to measure. Some work also uses ScreenSpot to validate model adaptability, particularly a model's \"universal grounding capability across platforms.\" The benchmark's evaluation procedure is defined in one paper, which notes that \"a prediction is considered correct if the predicted location falls within the ground truth element's bounding box\" (\"OS-ATLAS: Foundation Action Model for Generalist GUI Agents\"). This assessment is conducted across environments including mobile, desktop, and web. A smaller line of work also positions it as a tool for evaluating general multi-modal task performance.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "AgentStudio: A Toolkit for Building General Virtual Agents",
+      "AgentTrek: Agent Trajectory Synthesis via Guiding Replay with Web Tutorials",
+      "Grounding Multimodal Large Language Model in GUI World",
+      "Harnessing Webpage UIs for Text-Rich Visual Understanding",
+      "Navigating the Digital World as Humans Do: Universal Visual Grounding for GUI Agents",
+      "OS-ATLAS: Foundation Action Model for Generalist GUI Agents"
+    ],
+    "icml25": [
+      "Aguvis: Unified Pure Vision Agents for Autonomous GUI Interaction",
+      "Efficient Multi-modal Long Context Learning for Training-free Adaptation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 6,
+    "icml25": 2
+  },
+  "conferences": [
+    "iclr25",
+    "icml25"
+  ]
+}

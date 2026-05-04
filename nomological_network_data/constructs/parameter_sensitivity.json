@@ -1,0 +1,106 @@
+{
+  "canonical_name": "Parameter sensitivity",
+  "type": "construct",
+  "canonical_definition": "Across the provided literature, parameter sensitivity is most commonly framed as the degree to which specific model parameters disproportionately influence optimization outcomes during fine-tuning. This construct is operationalized by identifying parameters with maximized \"coordinate-wise gradient square values\" or by using the \"empirical Fisher information matrix,\" with one study noting that as few as \"0.1%-1% parameters contribute about 50% gradient norm square\" (Zeroth-Order Fine-Tuning of LLMs with Transferable Static Sparsity). Another paper characterizes this phenomenon as being marked by \"high Hessian values\" during the initial phases of adaptation. While this is the prevailing usage, the concept is also applied to other contexts, such as 'quantization sensitivity,' where different model components show varied accuracy loss from reduced precision, and 'numeric precision sensitivity,' which concerns a model's response to small changes in input specifications. A specific framing, 'progressive sensitivity,' posits that models become more sensitive to parameter modifications with more pre-training. This particular form of sensitivity is reported to cause greater 'knowledge forgetting' when the model is subsequently modified.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Parameter sensitivity",
+    "Hyper-parameter sensitivity",
+    "Numeric precision sensitivity",
+    "Progressive sensitivity",
+    "Quantization sensitivity",
+    "Weight sensitivity"
+  ],
+  "papers": [
+    "Efficient Model Editing with Task-Localized Sparse Fine-tuning",
+    "Zeroth-Order Fine-Tuning of LLMs with Transferable Static Sparsity",
+    "Antidote: Post-fine-tuning Safety Alignment for Large Language Models against Harmful Fine-tuning Attack",
+    "FloE: On-the-Fly MoE Inference on Memory-constrained GPU",
+    "LaMAGIC2: Advanced Circuit Formulations for Language Model-Based Analog Topology Generation",
+    "LensLLM: Unveiling Fine-Tuning Dynamics for LLM Selection",
+    "MxMoE: Mixed-precision Quantization for MoE with Accuracy and Performance Co-Design",
+    "Overtrained Language Models Are Harder to Fine-Tune",
+    "Radio: Rate\u2013Distortion Optimization for Large Language Model Compression"
+  ],
+  "paper_count": 9,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The extent to which particular parameters contribute disproportionately to optimization progress or loss change during fine-tuning.",
+      "paper": "Zeroth-Order Fine-Tuning of LLMs with Transferable Static Sparsity",
+      "original_name": "Parameter sensitivity"
+    },
+    {
+      "text": "The model's ability to detect and respond accurately to small differences in numeric input specifications, such as voltage conversion ratio or efficiency targets.",
+      "paper": "LaMAGIC2: Advanced Circuit Formulations for Language Model-Based Analog Topology Generation",
+      "original_name": "Numeric precision sensitivity"
+    },
+    {
+      "text": "The degree to which different components of a model are affected by reduced numerical precision, influencing the accuracy loss when quantized.",
+      "paper": "MxMoE: Mixed-precision Quantization for MoE with Accuracy and Performance Co-Design",
+      "original_name": "Quantization sensitivity"
+    },
+    {
+      "text": "A property of a defense mechanism where its effectiveness is highly dependent on the specific hyper-parameters, such as learning rate and training epochs, used during the fine-tuning process.",
+      "paper": "Antidote: Post-fine-tuning Safety Alignment for Large Language Models against Harmful Fine-tuning Attack",
+      "original_name": "Hyper-parameter sensitivity"
+    },
+    {
+      "text": "The latent tendency of pre-trained models to become increasingly sensitive to parameter modifications\u2014such as fine-tuning or noise\u2014as the amount of pre-training data increases, leading to greater forgetting of pre-trained knowledge.",
+      "paper": "Overtrained Language Models Are Harder to Fine-Tune",
+      "original_name": "Progressive sensitivity"
+    },
+    {
+      "text": "The degree to which perturbations in a model's specific weights affect the overall output distortion and final prediction accuracy.",
+      "paper": "Radio: Rate\u2013Distortion Optimization for Large Language Model Compression",
+      "original_name": "Weight sensitivity"
+    }
+  ],
+  "definition_count": 6,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Knowledge forgetting",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Overtrained Language Models Are Harder to Fine-Tune",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Overtrained Language Models Are Harder to Fine-Tune"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the provided literature, parameter sensitivity is most commonly framed as the degree to which specific model parameters disproportionately influence optimization outcomes during fine-tuning. This construct is operationalized by identifying parameters with maximized \"coordinate-wise gradient square values\" or by using the \"empirical Fisher information matrix,\" with one study noting that as few as \"0.1%-1% parameters contribute about 50% gradient norm square\" (Zeroth-Order Fine-Tuning of LLMs with Transferable Static Sparsity). Another paper characterizes this phenomenon as being marked by \"high Hessian values\" during the initial phases of adaptation. While this is the prevailing usage, the concept is also applied to other contexts, such as 'quantization sensitivity,' where different model components show varied accuracy loss from reduced precision, and 'numeric precision sensitivity,' which concerns a model's response to small changes in input specifications. A specific framing, 'progressive sensitivity,' posits that models become more sensitive to parameter modifications with more pre-training. This particular form of sensitivity is reported to cause greater 'knowledge forgetting' when the model is subsequently modified.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Efficient Model Editing with Task-Localized Sparse Fine-tuning",
+      "Zeroth-Order Fine-Tuning of LLMs with Transferable Static Sparsity"
+    ],
+    "icml25": [
+      "Antidote: Post-fine-tuning Safety Alignment for Large Language Models against Harmful Fine-tuning Attack",
+      "FloE: On-the-Fly MoE Inference on Memory-constrained GPU",
+      "LaMAGIC2: Advanced Circuit Formulations for Language Model-Based Analog Topology Generation",
+      "LensLLM: Unveiling Fine-Tuning Dynamics for LLM Selection",
+      "MxMoE: Mixed-precision Quantization for MoE with Accuracy and Performance Co-Design",
+      "Overtrained Language Models Are Harder to Fine-Tune",
+      "Radio: Rate\u2013Distortion Optimization for Large Language Model Compression"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "icml25": 7
+  },
+  "conferences": [
+    "iclr25",
+    "icml25"
+  ]
+}

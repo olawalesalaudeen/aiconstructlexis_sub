@@ -1,0 +1,115 @@
+{
+  "canonical_name": "SelfCheckGPT",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, SelfCheckGPT is predominantly characterized as a suite of methods for hallucination detection. Its operational principle is consistency-based; it analyzes multiple stochastically sampled responses from a model to assess the veracity of a given response, with one paper specifying this involves checking for \"contradictions in its own generated text\" (Self-Taught Agentic Long Context Understanding). A recurring feature is its application in \"zero-resource\" and \"black-box or gray-box\" settings. In practice, papers use SelfCheckGPT to measure the construct of Hallucination and, more broadly, for general Evaluation. Several sources also position it as a \"baseline method\" for performance comparison in fact-checking or hallucination detection tasks. While the core mechanism is consistently described, the specific goal is variously framed as assessing \"self-consistency,\" \"veracity,\" or performing \"fact-checking.\" A single paper refers to it by the variant name \"Self-CKGPT\" while describing it similarly as a consistency-based method.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "SelfCheckGPT",
+    "Self-CKGPT"
+  ],
+  "papers": [
+    "Extending Complex Logical Queries on Uncertain Knowledge Graphs",
+    "PerSphere: A Comprehensive Framework for Multi-Faceted Perspective Retrieval and Summarization",
+    "Self-Taught Agentic Long Context Understanding",
+    "FactTest: Factuality Testing in Large Language Models with Finite-Sample and Distribution-Free Guarantees",
+    "Steer LLM Latents for Hallucination Detection",
+    "LLM-Check: Investigating Detection of Hallucinations in Large Language Models",
+    "WISE: Rethinking the Knowledge Memory for Lifelong Model Editing of Large Language Models"
+  ],
+  "paper_count": 7,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A suite of hallucination detection methods that analyzes multiple stochastically sampled responses from a model to assess the veracity of a given response, often in a black-box or gray-box setting.",
+      "paper": "LLM-Check: Investigating Detection of Hallucinations in Large Language Models",
+      "original_name": "SelfCheckGPT"
+    },
+    {
+      "text": "A consistency-based baseline method for hallucination detection that assesses the consistency of a model's own generated responses.",
+      "paper": "Steer LLM Latents for Hallucination Detection",
+      "original_name": "Self-CKGPT"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Evaluation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "WISE: Rethinking the Knowledge Memory for Lifelong Model Editing of Large Language Models",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "neurips24": [
+          "WISE: Rethinking the Knowledge Memory for Lifelong Model Editing of Large Language Models"
+        ],
+        "emnlp25": [
+          "SciNLP: A Domain-Specific Benchmark for Full-Text Scientific Entity and Relation Extraction inNLP",
+          "EquiBench: Benchmarking Large Language Models\u2019 Reasoning about Program Semantics via Equivalence Checking"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "WISE: Rethinking the Knowledge Memory for Lifelong Model Editing of Large Language Models",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "WISE: Rethinking the Knowledge Memory for Lifelong Model Editing of Large Language Models",
+          "LLM-Check: Investigating Detection of Hallucinations in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination detection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "ToW: Thoughts of Words Improve Reasoning in Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "ToW: Thoughts of Words Improve Reasoning in Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, SelfCheckGPT is predominantly characterized as a suite of methods for hallucination detection. Its operational principle is consistency-based; it analyzes multiple stochastically sampled responses from a model to assess the veracity of a given response, with one paper specifying this involves checking for \"contradictions in its own generated text\" (Self-Taught Agentic Long Context Understanding). A recurring feature is its application in \"zero-resource\" and \"black-box or gray-box\" settings. In practice, papers use SelfCheckGPT to measure the construct of Hallucination and, more broadly, for general Evaluation. Several sources also position it as a \"baseline method\" for performance comparison in fact-checking or hallucination detection tasks. While the core mechanism is consistently described, the specific goal is variously framed as assessing \"self-consistency,\" \"veracity,\" or performing \"fact-checking.\" A single paper refers to it by the variant name \"Self-CKGPT\" while describing it similarly as a consistency-based method.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "LLM-Check: Investigating Detection of Hallucinations in Large Language Models",
+      "WISE: Rethinking the Knowledge Memory for Lifelong Model Editing of Large Language Models"
+    ],
+    "acl25": [
+      "Extending Complex Logical Queries on Uncertain Knowledge Graphs",
+      "PerSphere: A Comprehensive Framework for Multi-Faceted Perspective Retrieval and Summarization",
+      "Self-Taught Agentic Long Context Understanding"
+    ],
+    "icml25": [
+      "FactTest: Factuality Testing in Large Language Models with Finite-Sample and Distribution-Free Guarantees",
+      "Steer LLM Latents for Hallucination Detection"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 2,
+    "acl25": 3,
+    "icml25": 2
+  },
+  "conferences": [
+    "acl25",
+    "icml25",
+    "neurips24"
+  ]
+}

@@ -1,0 +1,269 @@
+{
+  "canonical_name": "CoLA",
+  "type": "measurement",
+  "canonical_definition": "The name \"CoLA\" refers to two distinct benchmarks in the provided literature, with one usage being substantially more prevalent. The dominant framing identifies CoLA as the Corpus of Linguistic Acceptability, a task frequently situated within the GLUE benchmark. This instrument is consistently used to measure a model's capacity for `grammatical acceptability judgment` and `linguistic acceptability judgment`, operationalized as a single-sentence binary classification task where models must determine if a sentence is grammatically correct. Performance on this linguistic task, which uses text from \"books and journal articles,\" is reported using the \"Matthews correlation\" metric and is also used to assess broader constructs like `natural language understanding` and `generalization`. In a separate, smaller set of papers, \"CoLA\" or \"Cola\" refers to a vision-language benchmark designed to evaluate `compositional reasoning`. This second benchmark is a text-to-image retrieval task where a Vision-Language Model must match captions describing entity relationships to the correct images, sometimes from a database containing distractors.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "CoLA",
+    "Cola",
+    "COLA",
+    "GLUE-COLA",
+    "GLUE-CoLA"
+  ],
+  "papers": [
+    "Bridging the Language Gaps in Large Language Models with Inference-Time Cross-Lingual Intervention",
+    "Enhancing Hyperbole and Metaphor Detection with Their Bidirectional Dynamic Interaction and Emotion Knowledge",
+    "Integrating Audio, Visual, and Semantic Information for Enhanced Multimodal Speaker Diarization on Multi-party Conversation",
+    "CoVLM: Composing Visual Entities and Relationships in Large Language Models Via Communicative Decoding",
+    "Fast-ELECTRA for Efficient Pre-training",
+    "Increasing Model Capacity for Free: A Simple Strategy for Parameter Efficient Fine-tuning",
+    "ReLoRA: High-Rank Training Through Low-Rank Updates",
+    "Stable Anisotropic Regularization",
+    "The Hedgehog & the Porcupine: Expressive Linear Attentions with Softmax Mimicry",
+    "AlphaEdit: Null-Space Constrained Knowledge Editing for Language Models",
+    "Collaborative Discrete-Continuous Black-Box Prompt Learning for Language Models",
+    "DARE the Extreme: Revisiting Delta-Parameter Pruning For Fine-Tuned Models",
+    "ELICIT: LLM Augmentation Via External In-context Capability",
+    "Encryption-Friendly LLM Architecture",
+    "Federated Residual Low-Rank Adaption of Large Language Models",
+    "HeadMap: Locating and Enhancing Knowledge Circuits in LLMs",
+    "Improving Language Model Distillation through Hidden State Matching",
+    "KaSA: Knowledge-Aware Singular-Value Adaptation of Large Language Models",
+    "PEARL: Towards Permutation-Resilient LLMs",
+    "TDDBench: A Benchmark for Training data detection",
+    "UniCoTT: A Unified Framework for Structural Chain-of-Thought Distillation",
+    "Beyond Zero Initialization: Investigating the Impact of Non-Zero Initialization on LoRA Fine-Tuning Dynamics",
+    "Does Low Rank Adaptation Lead to Lower Robustness against Training-Time Attacks?",
+    "Large Language Models are Demonstration Pre-Selectors for Themselves",
+    "Learngene Tells You How to Customize: Task-Aware Parameter Initialization at Flexible Scales",
+    "LoRA-One: One-Step Full Gradient Could Suffice for Fine-Tuning Large Language Models, Provably and Efficiently",
+    "On-the-Fly Adaptive Distillation of Transformer to Dual-State Linear Attention for Long-Context LLM Serving",
+    "Reinforced Lifelong Editing for Language Models",
+    "The Ripple Effect: On Unforeseen Complications of Backdoor Attacks",
+    "ConMe: Rethinking Evaluation of Compositional Reasoning for Modern VLMs",
+    "Learning to Reason via Program Generation, Emulation, and Search",
+    "Towards Understanding How Transformers Learn In-context Through a Representation Learning Lens",
+    "TripletCLIP:  Improving Compositional Reasoning of CLIP via Synthetic Vision-Language Negatives"
+  ],
+  "paper_count": 33,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The Corpus of Linguistic Acceptability benchmark, used here as a downstream grammatical acceptability evaluation.",
+      "paper": "Fast-ELECTRA for Efficient Pre-training",
+      "original_name": "CoLA"
+    },
+    {
+      "text": "Text-to-image retrieval benchmark that assesses compositional ability by matching captions describing relations between entities to correct images.",
+      "paper": "CoVLM: Composing Visual Entities and Relationships in Large Language Models Via Communicative Decoding",
+      "original_name": "Cola"
+    },
+    {
+      "text": "A benchmark that evaluates compositional reasoning by tasking a VLM with retrieving correct images based on specific configurations of attributes and objects from a database containing distractor images.",
+      "paper": "ConMe: Rethinking Evaluation of Compositional Reasoning for Modern VLMs",
+      "original_name": "COLA"
+    },
+    {
+      "text": "The Corpus of Linguistic Acceptability, a task from the GLUE benchmark for determining if a sentence is grammatically correct.",
+      "paper": "ELICIT: LLM Augmentation Via External In-context Capability",
+      "original_name": "GLUE-COLA"
+    },
+    {
+      "text": "A dataset of text from books and journal articles, part of the GLUE benchmark, used in TDDBench to evaluate TDD algorithms.",
+      "paper": "TDDBench: A Benchmark for Training data detection",
+      "original_name": "GLUE-CoLA"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Natural language understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "UniCoTT: A Unified Framework for Structural Chain-of-Thought Distillation",
+      "evidence": "",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "iclr25": [
+          "UniCoTT: A Unified Framework for Structural Chain-of-Thought Distillation",
+          "HeadMap: Locating and Enhancing Knowledge Circuits in LLMs",
+          "Federated Residual Low-Rank Adaption of Large Language Models"
+        ],
+        "icml25": [
+          "LoRA-One: One-Step Full Gradient Could Suffice for Fine-Tuning Large Language Models, Provably and Efficiently"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Compositional reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "CoVLM: Composing Visual Entities and Relationships in Large Language Models Via Communicative Decoding",
+      "evidence": "We first evaluate our CoVLM on compositional reasoning tasks, including... matching the correct captions describing the relation between two images with similar entities (Cola, (Ray et al., 2023))... (Section 4.1)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr24": [
+          "CoVLM: Composing Visual Entities and Relationships in Large Language Models Via Communicative Decoding"
+        ],
+        "neurips24": [
+          "TripletCLIP:  Improving Compositional Reasoning of CLIP via Synthetic Vision-Language Negatives"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Grammatical acceptability judgment",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "AlphaEdit: Null-Space Constrained Knowledge Editing for Language Models",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "AlphaEdit: Null-Space Constrained Knowledge Editing for Language Models"
+        ],
+        "emnlp25": [
+          "Skip-Thinking: Chunk-wise Chain-of-Thought Distillation Enable Smaller Language Models to Reason Better and Faster"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GLUE",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "KaSA: Knowledge-Aware Singular-Value Adaptation of Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "KaSA: Knowledge-Aware Singular-Value Adaptation of Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text classification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Learning to Reason via Program Generation, Emulation, and Search",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Learning to Reason via Program Generation, Emulation, and Search"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "AlphaEdit: Null-Space Constrained Knowledge Editing for Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "AlphaEdit: Null-Space Constrained Knowledge Editing for Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Linguistic acceptability judgment",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Primus: A Pioneering Collection of Open-Source Datasets for CybersecurityLLMTraining",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Primus: A Pioneering Collection of Open-Source Datasets for CybersecurityLLMTraining"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "ELICIT: LLM Augmentation Via External In-context Capability",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "ELICIT: LLM Augmentation Via External In-context Capability"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 8,
+  "incoming_relationship_count": 7,
+  "outgoing_relationship_count": 1,
+  "characterization": "The name \"CoLA\" refers to two distinct benchmarks in the provided literature, with one usage being substantially more prevalent. The dominant framing identifies CoLA as the Corpus of Linguistic Acceptability, a task frequently situated within the GLUE benchmark. This instrument is consistently used to measure a model's capacity for `grammatical acceptability judgment` and `linguistic acceptability judgment`, operationalized as a single-sentence binary classification task where models must determine if a sentence is grammatically correct. Performance on this linguistic task, which uses text from \"books and journal articles,\" is reported using the \"Matthews correlation\" metric and is also used to assess broader constructs like `natural language understanding` and `generalization`. In a separate, smaller set of papers, \"CoLA\" or \"Cola\" refers to a vision-language benchmark designed to evaluate `compositional reasoning`. This second benchmark is a text-to-image retrieval task where a Vision-Language Model must match captions describing entity relationships to the correct images, sometimes from a database containing distractors.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "CoVLM: Composing Visual Entities and Relationships in Large Language Models Via Communicative Decoding",
+      "Fast-ELECTRA for Efficient Pre-training",
+      "Increasing Model Capacity for Free: A Simple Strategy for Parameter Efficient Fine-tuning",
+      "ReLoRA: High-Rank Training Through Low-Rank Updates",
+      "Stable Anisotropic Regularization",
+      "The Hedgehog & the Porcupine: Expressive Linear Attentions with Softmax Mimicry"
+    ],
+    "neurips24": [
+      "ConMe: Rethinking Evaluation of Compositional Reasoning for Modern VLMs",
+      "Learning to Reason via Program Generation, Emulation, and Search",
+      "Towards Understanding How Transformers Learn In-context Through a Representation Learning Lens",
+      "TripletCLIP:  Improving Compositional Reasoning of CLIP via Synthetic Vision-Language Negatives"
+    ],
+    "iclr25": [
+      "AlphaEdit: Null-Space Constrained Knowledge Editing for Language Models",
+      "Collaborative Discrete-Continuous Black-Box Prompt Learning for Language Models",
+      "DARE the Extreme: Revisiting Delta-Parameter Pruning For Fine-Tuned Models",
+      "ELICIT: LLM Augmentation Via External In-context Capability",
+      "Encryption-Friendly LLM Architecture",
+      "Federated Residual Low-Rank Adaption of Large Language Models",
+      "HeadMap: Locating and Enhancing Knowledge Circuits in LLMs",
+      "Improving Language Model Distillation through Hidden State Matching",
+      "KaSA: Knowledge-Aware Singular-Value Adaptation of Large Language Models",
+      "PEARL: Towards Permutation-Resilient LLMs",
+      "TDDBench: A Benchmark for Training data detection",
+      "UniCoTT: A Unified Framework for Structural Chain-of-Thought Distillation"
+    ],
+    "acl25": [
+      "Bridging the Language Gaps in Large Language Models with Inference-Time Cross-Lingual Intervention",
+      "Enhancing Hyperbole and Metaphor Detection with Their Bidirectional Dynamic Interaction and Emotion Knowledge",
+      "Integrating Audio, Visual, and Semantic Information for Enhanced Multimodal Speaker Diarization on Multi-party Conversation"
+    ],
+    "icml25": [
+      "Beyond Zero Initialization: Investigating the Impact of Non-Zero Initialization on LoRA Fine-Tuning Dynamics",
+      "Does Low Rank Adaptation Lead to Lower Robustness against Training-Time Attacks?",
+      "Large Language Models are Demonstration Pre-Selectors for Themselves",
+      "Learngene Tells You How to Customize: Task-Aware Parameter Initialization at Flexible Scales",
+      "LoRA-One: One-Step Full Gradient Could Suffice for Fine-Tuning Large Language Models, Provably and Efficiently",
+      "On-the-Fly Adaptive Distillation of Transformer to Dual-State Linear Attention for Long-Context LLM Serving",
+      "Reinforced Lifelong Editing for Language Models",
+      "The Ripple Effect: On Unforeseen Complications of Backdoor Attacks"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 6,
+    "neurips24": 4,
+    "iclr25": 12,
+    "acl25": 3,
+    "icml25": 8
+  },
+  "conferences": [
+    "acl25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

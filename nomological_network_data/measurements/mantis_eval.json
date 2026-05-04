@@ -1,0 +1,153 @@
+{
+  "canonical_name": "Mantis-Eval",
+  "type": "measurement",
+  "canonical_definition": "Mantis-Eval is predominantly characterized as an evaluation dataset or benchmark for assessing model performance on multi-image inputs. Across the provided literature, it is most frequently used to measure \"multi-image understanding\" and \"multi-image reasoning,\" with some papers also using it to evaluate broader capabilities like \"visual question answering\" and \"multimodal reasoning.\" The benchmark is described as a human-annotated set of 207 examples designed to test diverse skills. For instance, one paper notes it targets \"size perceptions and weight comparisons,\" while another states it is designed for skills such as \"co-reference, reasoning, and comparison.\" This usage for performance comparison is a recurring theme, as seen in one study that compares various VLMs on the dataset. A contrasting view appears in a single paper where \"MANTIS\" is defined not as an evaluation tool, but as a multimodal instruction-tuning dataset used for continual training.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Mantis-Eval",
+    "Mantis",
+    "MANTIS"
+  ],
+  "papers": [
+    "Just Go Parallel: Improving the Multilingual Capabilities of Large Language Models",
+    "Lexical Diversity-aware Relevance Assessment for Retrieval-Augmented Generation",
+    "Adapt-$\\infty$: Scalable Continual Multimodal Instruction Tuning via Dynamic Data Selection",
+    "LLaVA-Interleave: Tackling Multi-image, Video, and 3D in Large Multimodal Models",
+    "MIA-DPO: Multi-Image Augmented Direct Preference Optimization For Large Vision-Language Models",
+    "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding",
+    "mPLUG-Owl3: Towards Long Image-Sequence Understanding in Multi-Modal Large Language Models",
+    "JourneyBench: A Challenging One-Stop Vision-Language Understanding Benchmark of Generated Images",
+    "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens"
+  ],
+  "paper_count": 9,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "An evaluation dataset for multi-image visual reasoning used for performance comparison.",
+      "paper": "JourneyBench: A Challenging One-Stop Vision-Language Understanding Benchmark of Generated Images",
+      "original_name": "Mantis-Eval"
+    },
+    {
+      "text": "A multi-image benchmark used to assess performance on multi-image inputs.",
+      "paper": "MIA-DPO: Multi-Image Augmented Direct Preference Optimization For Large Vision-Language Models",
+      "original_name": "Mantis"
+    },
+    {
+      "text": "A multimodal instruction-tuning dataset used as one timestep in the continual training sequence.",
+      "paper": "Adapt-$\\infty$: Scalable Continual Multimodal Instruction Tuning via Dynamic Data Selection",
+      "original_name": "MANTIS"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multi-image understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "mPLUG-Owl3: Towards Long Image-Sequence Understanding in Multi-Modal Large Language Models",
+      "evidence": "First, we select five multi-image benchmarks: MMMU (Yue et al., 2024), BLINK (Fu et al., 2024), Mantis (Jiang et al., 2024), NLVR2 (Suhr et al., 2018), and MVBench (Li et al., 2024c). (Section 4.1)",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr25": [
+          "mPLUG-Owl3: Towards Long Image-Sequence Understanding in Multi-Modal Large Language Models",
+          "MIA-DPO: Multi-Image Augmented Direct Preference Optimization For Large Vision-Language Models",
+          "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multi-image reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens"
+        ],
+        "icml25": [
+          "CoMemo: LVLMs Need Image Context with Image Memory"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Just Go Parallel: Improving the Multilingual Capabilities of Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Just Go Parallel: Improving the Multilingual Capabilities of Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 5,
+  "outgoing_relationship_count": 0,
+  "characterization": "Mantis-Eval is predominantly characterized as an evaluation dataset or benchmark for assessing model performance on multi-image inputs. Across the provided literature, it is most frequently used to measure \"multi-image understanding\" and \"multi-image reasoning,\" with some papers also using it to evaluate broader capabilities like \"visual question answering\" and \"multimodal reasoning.\" The benchmark is described as a human-annotated set of 207 examples designed to test diverse skills. For instance, one paper notes it targets \"size perceptions and weight comparisons,\" while another states it is designed for skills such as \"co-reference, reasoning, and comparison.\" This usage for performance comparison is a recurring theme, as seen in one study that compares various VLMs on the dataset. A contrasting view appears in a single paper where \"MANTIS\" is defined not as an evaluation tool, but as a multimodal instruction-tuning dataset used for continual training.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "JourneyBench: A Challenging One-Stop Vision-Language Understanding Benchmark of Generated Images",
+      "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens"
+    ],
+    "iclr25": [
+      "Adapt-$\\infty$: Scalable Continual Multimodal Instruction Tuning via Dynamic Data Selection",
+      "LLaVA-Interleave: Tackling Multi-image, Video, and 3D in Large Multimodal Models",
+      "MIA-DPO: Multi-Image Augmented Direct Preference Optimization For Large Vision-Language Models",
+      "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding",
+      "mPLUG-Owl3: Towards Long Image-Sequence Understanding in Multi-Modal Large Language Models"
+    ],
+    "acl25": [
+      "Just Go Parallel: Improving the Multilingual Capabilities of Large Language Models",
+      "Lexical Diversity-aware Relevance Assessment for Retrieval-Augmented Generation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 2,
+    "iclr25": 5,
+    "acl25": 2
+  },
+  "conferences": [
+    "acl25",
+    "iclr25",
+    "neurips24"
+  ]
+}

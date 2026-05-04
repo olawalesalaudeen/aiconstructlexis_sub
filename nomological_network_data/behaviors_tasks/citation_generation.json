@@ -1,0 +1,116 @@
+{
+  "canonical_name": "Citation generation",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, citation generation is most commonly defined as the behavior of producing supporting evidence\u2014such as quotes, URLs, or extracted context\u2014for a generated response. The stated purpose of this behavior is frequently to provide transparency and traceability, allowing users to verify the origin of information and evaluate a model's fidelity to its source context. As one paper notes, the goal is for each claim to be \"fully supported by the cited documents, while avoiding irrelevant citations.\" This behavior is operationalized in various ways, from generating in-line references like `[1]` to providing extracted text from web pages. A few papers treat this behavior more narrowly, with some distinguishing between \"page-level\" and more difficult \"block-level\" citations, where the latter requires identifying a precise bounding box of evidence. Other specific framings include \"reference generation,\" defined as producing a list of formal academic citations with full metadata, and the generation of citations in a \"parenthetical author-date style.\" The behavior is evaluated using instruments like the L-CiteEval suite, and it is also studied in relation to other constructs, with one paper investigating \"political bias in LLM-generated citations.\"",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Citation generation",
+    "Reference generation",
+    "Block-level citation",
+    "Page-level citation"
+  ],
+  "papers": [
+    "Beyond Output Matching: Bidirectional Alignment for Enhanced In-Context Learning",
+    "Explicit and Implicit Data Augmentation for Social Event Detection",
+    "Learning to Reason from Feedback at Test-Time",
+    "Tree-of-Debate: Multi-Persona Debate Trees Elicit Critical Thinking for Scientific Comparative Analysis",
+    "2025.emnlp-main.83.checklist",
+    "COCO-Tree: Compositional Hierarchical Concept Trees for Enhanced Reasoning in Vision-Language Models",
+    "Effective Red-Teaming of Policy-Adherent Agents",
+    "POINTS-Reader: Distillation-Free Adaptation of Vision-Language Models for Document Conversion",
+    "SciEvent: Benchmarking Multi-domain Scientific Event Extraction",
+    "Superpose Task-specific Features for Model Merging",
+    "Utility-FocusedLLMAnnotation for Retrieval and Retrieval-Augmented Generation",
+    "AttriBoT: A Bag of Tricks for Efficiently Approximating Leave-One-Out Context Attribution",
+    "Measuring and Enhancing Trustworthiness of LLMs in RAG through Grounded Attributions and Learning to Refuse",
+    "Fingerspelling within Sign Language Translation",
+    "KS-Lottery: Finding Certified Lottery Tickets for Multilingual Transfer in Large Language Models",
+    "THREAD: Thinking Deeper with Recursive Spawning"
+  ],
+  "paper_count": 16,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Producing citations, quotes, URLs, or extracted context intended to support a generated response.",
+      "paper": "AttriBoT: A Bag of Tricks for Efficiently Approximating Leave-One-Out Context Attribution",
+      "original_name": "Citation generation"
+    },
+    {
+      "text": "Producing a list of academic citations with full metadata (title, authors, journal, year, etc.) based on a given research topic.",
+      "paper": "POINTS-Reader: Distillation-Free Adaptation of Vision-Language Models for Document Conversion",
+      "original_name": "Reference generation"
+    },
+    {
+      "text": "The specific behavior of identifying and outputting a reference to the correct source page that contains evidence for a generated answer.",
+      "paper": "Superpose Task-specific Features for Model Merging",
+      "original_name": "Page-level citation"
+    },
+    {
+      "text": "The specific behavior of identifying and outputting coordinates for a bounding box around the precise region within a source page that contains evidence for a generated answer.",
+      "paper": "Superpose Task-specific Features for Model Merging",
+      "original_name": "Block-level citation"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Political bias",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "SciEvent: Benchmarking Multi-domain Scientific Event Extraction",
+      "evidence": "this paper focuses on empirically quantifying and analyzing the political leaning of LLM in citation generation. (Section 2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "SciEvent: Benchmarking Multi-domain Scientific Event Extraction"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the surveyed literature, citation generation is most commonly defined as the behavior of producing supporting evidence\u2014such as quotes, URLs, or extracted context\u2014for a generated response. The stated purpose of this behavior is frequently to provide transparency and traceability, allowing users to verify the origin of information and evaluate a model's fidelity to its source context. As one paper notes, the goal is for each claim to be \"fully supported by the cited documents, while avoiding irrelevant citations.\" This behavior is operationalized in various ways, from generating in-line references like `[1]` to providing extracted text from web pages. A few papers treat this behavior more narrowly, with some distinguishing between \"page-level\" and more difficult \"block-level\" citations, where the latter requires identifying a precise bounding box of evidence. Other specific framings include \"reference generation,\" defined as producing a list of formal academic citations with full metadata, and the generation of citations in a \"parenthetical author-date style.\" The behavior is evaluated using instruments like the L-CiteEval suite, and it is also studied in relation to other constructs, with one paper investigating \"political bias in LLM-generated citations.\"",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "AttriBoT: A Bag of Tricks for Efficiently Approximating Leave-One-Out Context Attribution",
+      "Measuring and Enhancing Trustworthiness of LLMs in RAG through Grounded Attributions and Learning to Refuse"
+    ],
+    "naacl25": [
+      "Fingerspelling within Sign Language Translation",
+      "KS-Lottery: Finding Certified Lottery Tickets for Multilingual Transfer in Large Language Models",
+      "THREAD: Thinking Deeper with Recursive Spawning"
+    ],
+    "acl25": [
+      "Beyond Output Matching: Bidirectional Alignment for Enhanced In-Context Learning",
+      "Explicit and Implicit Data Augmentation for Social Event Detection",
+      "Learning to Reason from Feedback at Test-Time",
+      "Tree-of-Debate: Multi-Persona Debate Trees Elicit Critical Thinking for Scientific Comparative Analysis"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.83.checklist",
+      "COCO-Tree: Compositional Hierarchical Concept Trees for Enhanced Reasoning in Vision-Language Models",
+      "Effective Red-Teaming of Policy-Adherent Agents",
+      "POINTS-Reader: Distillation-Free Adaptation of Vision-Language Models for Document Conversion",
+      "SciEvent: Benchmarking Multi-domain Scientific Event Extraction",
+      "Superpose Task-specific Features for Model Merging",
+      "Utility-FocusedLLMAnnotation for Retrieval and Retrieval-Augmented Generation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "naacl25": 3,
+    "acl25": 4,
+    "emnlp25": 7
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "naacl25"
+  ]
+}

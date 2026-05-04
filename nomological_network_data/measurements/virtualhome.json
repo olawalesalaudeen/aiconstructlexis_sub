@@ -1,0 +1,179 @@
+{
+  "canonical_name": "VirtualHome",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, VirtualHome is consistently described as a simulated 3D household environment used as a benchmark for embodied agents. It is widely used to evaluate an agent's capabilities in task planning and execution, specifically measuring constructs such as `Embodied planning`, `Sequential decision-making`, and `Generalization`. Other papers in this set also use it to assess `Cross-domain generalization`, `Data efficiency`, `Decision-making`, and `Safety`. The benchmark operationalizes these constructs by requiring an agent to complete complex, multi-step household activities in a \"fully furnished household with various rich objects.\" Agents interact with the environment through a defined set of actions, including \"pick up,\" \"open,\" \"close,\" \"switch on,\" \"put down,\" and \"find,\" to determine if their generated plans are executable. While most sources frame it as a general task planning environment, a few papers offer more specific descriptions; for instance, one paper characterizes it as an \"interactive simulator for modeling... human-agent collaboration.\" Another source notes that the benchmark offers \"long-horizon... and multi-agent tasks\" but also points out that it \"lacks time delays.\"",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "VirtualHome"
+  ],
+  "papers": [
+    "Discursive Circuits: How Do Language Models Understand Discourse Relations?",
+    "SAFE: Schema-Driven Approximate Distance Join for Efficient Knowledge Graph Querying",
+    "LoTa-Bench: Benchmarking Language-oriented Task Planners for Embodied Agents",
+    "PlaSma: Procedural Knowledge Models for Language-based Planning and Re-Planning",
+    "Tree-Planner: Efficient Close-loop Task Planning with Large Language Models",
+    "True Knowledge Comes from Practice: Aligning Large Language Models with Embodied Environments via Reinforcement Learning",
+    "Can We Trust Embodied Agents? Exploring Backdoor Attacks against Embodied LLM-Based Decision-Making Systems",
+    "Discriminator-Guided Embodied Planning for LLM Agent",
+    "NeSyC: A Neuro-symbolic Continual Learner For Complex Embodied Tasks in Open Domains",
+    "Robotouille: An Asynchronous Planning Benchmark for LLM Agents",
+    "Unveiling the Magic of Code Reasoning through Hypothesis Decomposition and Amendment",
+    "Overcoming Multi-step Complexity in Multimodal Theory-of-Mind Reasoning: A Scalable Bayesian Planner",
+    "World Model Implanting for Test-time Adaptation of Embodied Agents"
+  ],
+  "paper_count": 13,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "VirtualHome is an embodied environment benchmark used to evaluate whether generated plans translate into executable household action programs.",
+      "paper": "LoTa-Bench: Benchmarking Language-oriented Task Planners for Embodied Agents",
+      "original_name": "VirtualHome"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "True Knowledge Comes from Practice: Aligning Large Language Models with Embodied Environments via Reinforcement Learning",
+      "evidence": "For the last two crossover tests, TWOSOME agent trained in Food Preparation is tested in Entertainment and TWOSOME trained in Entertainment is tested in Food Preparation. (Figure 6)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr24": [
+          "True Knowledge Comes from Practice: Aligning Large Language Models with Embodied Environments via Reinforcement Learning"
+        ],
+        "neurips24": [
+          "Reinforcing LLM Agents via Policy Optimization with Action Decomposition"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Data efficiency",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "True Knowledge Comes from Practice: Aligning Large Language Models with Embodied Environments via Reinforcement Learning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "True Knowledge Comes from Practice: Aligning Large Language Models with Embodied Environments via Reinforcement Learning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Decision-making",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "True Knowledge Comes from Practice: Aligning Large Language Models with Embodied Environments via Reinforcement Learning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "True Knowledge Comes from Practice: Aligning Large Language Models with Embodied Environments via Reinforcement Learning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Sequential decision-making",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Reinforcing LLM Agents via Policy Optimization with Action Decomposition",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Reinforcing LLM Agents via Policy Optimization with Action Decomposition"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Robustness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Exploratory Retrieval-Augmented Planning For Continual Embodied Instruction Following",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Exploratory Retrieval-Augmented Planning For Continual Embodied Instruction Following"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Embodied planning",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Discriminator-Guided Embodied Planning for LLM Agent",
+      "evidence": "To evaluate the effectiveness of DGAP and other baseline methods in complex embodied reasoning tasks, we employ the ScienceWorld (Wang et al., 2022) and VirtualHome (Puig et al., 2018) benchmark.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Discriminator-Guided Embodied Planning for LLM Agent"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Cross-domain generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "World Model Implanting for Test-time Adaptation of Embodied Agents",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "World Model Implanting for Test-time Adaptation of Embodied Agents"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 7,
+  "incoming_relationship_count": 7,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, VirtualHome is consistently described as a simulated 3D household environment used as a benchmark for embodied agents. It is widely used to evaluate an agent's capabilities in task planning and execution, specifically measuring constructs such as `Embodied planning`, `Sequential decision-making`, and `Generalization`. Other papers in this set also use it to assess `Cross-domain generalization`, `Data efficiency`, `Decision-making`, and `Safety`. The benchmark operationalizes these constructs by requiring an agent to complete complex, multi-step household activities in a \"fully furnished household with various rich objects.\" Agents interact with the environment through a defined set of actions, including \"pick up,\" \"open,\" \"close,\" \"switch on,\" \"put down,\" and \"find,\" to determine if their generated plans are executable. While most sources frame it as a general task planning environment, a few papers offer more specific descriptions; for instance, one paper characterizes it as an \"interactive simulator for modeling... human-agent collaboration.\" Another source notes that the benchmark offers \"long-horizon... and multi-agent tasks\" but also points out that it \"lacks time delays.\"",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "LoTa-Bench: Benchmarking Language-oriented Task Planners for Embodied Agents",
+      "PlaSma: Procedural Knowledge Models for Language-based Planning and Re-Planning",
+      "Tree-Planner: Efficient Close-loop Task Planning with Large Language Models",
+      "True Knowledge Comes from Practice: Aligning Large Language Models with Embodied Environments via Reinforcement Learning"
+    ],
+    "iclr25": [
+      "Can We Trust Embodied Agents? Exploring Backdoor Attacks against Embodied LLM-Based Decision-Making Systems",
+      "Discriminator-Guided Embodied Planning for LLM Agent",
+      "NeSyC: A Neuro-symbolic Continual Learner For Complex Embodied Tasks in Open Domains",
+      "Robotouille: An Asynchronous Planning Benchmark for LLM Agents",
+      "Unveiling the Magic of Code Reasoning through Hypothesis Decomposition and Amendment"
+    ],
+    "icml25": [
+      "Overcoming Multi-step Complexity in Multimodal Theory-of-Mind Reasoning: A Scalable Bayesian Planner",
+      "World Model Implanting for Test-time Adaptation of Embodied Agents"
+    ],
+    "emnlp25": [
+      "Discursive Circuits: How Do Language Models Understand Discourse Relations?",
+      "SAFE: Schema-Driven Approximate Distance Join for Efficient Knowledge Graph Querying"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 4,
+    "iclr25": 5,
+    "icml25": 2,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25"
+  ]
+}

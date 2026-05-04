@@ -1,0 +1,202 @@
+{
+  "canonical_name": "Few-shot learning",
+  "type": "measurement",
+  "canonical_definition": "Across the provided sources, few-shot learning is consistently framed as an evaluation procedure and a form of prompt engineering. The single available definition describes it as a method where a model is provided with a small number of task examples within the prompt to guide its response. One paper offers a concrete operationalization, specifying the use of \"three examples for tasks 1 and 2, and one example for task 3.\" This evaluation procedure is applied across a range of benchmarks, including LongBench, MMLU, HellaSwag, ARC, LongBench-E, and GLUE. The concept is also studied in relation to generalization, with one source noting that humans use this capability for \"rapidly generalizing from a single task demonstration.\" Additionally, few-shot learning is studied alongside continual learning, information extraction, and time series forecasting.",
+  "expert_reviewed": false,
+  "expert_removed": true,
+  "expert_removed_reason": "method/training pipeline \u2014 not a construct/measurement/behavior of LLM ability",
+  "names": [
+    "Few-shot learning"
+  ],
+  "papers": [
+    "Extending Automatic Machine Translation Evaluation to Book-Length Documents",
+    "Retrieval over Classification: Integrating Relation Semantics for Multimodal Relation Extraction",
+    "SAND: BoostingLLMAgents with Self-Taught Action Deliberation",
+    "START: Self-taught Reasoner with Tools"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "An evaluation procedure where the model is provided with a small number of examples of the task within the prompt to guide its response.",
+      "paper": "Retrieval over Classification: Integrating Relation Semantics for Multimodal Relation Extraction",
+      "original_name": "Few-shot learning"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LongBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "CLEX: Continuous  Length Extrapolation for Large Language Models",
+      "evidence": "",
+      "paper_count": 7,
+      "papers_by_conference": {
+        "iclr24": [
+          "CLEX: Continuous  Length Extrapolation for Large Language Models"
+        ],
+        "neurips24": [
+          "An Efficient Recipe for Long Context Extension via Middle-Focused Positional Encoding"
+        ],
+        "iclr25": [
+          "Human-inspired Episodic Memory for Infinite Context LLMs",
+          "ThinK: Thinner Key Cache by Query-Driven Pruning"
+        ],
+        "acl25": [
+          "Logic-Regularized Verifier Elicits Reasoning fromLLMs",
+          "SoRFT: Issue Resolving with Subtask-oriented Reinforced Fine-Tuning"
+        ],
+        "icml25": [
+          "LaCache: Ladder-Shaped KV Caching for Efficient Long-Context Modeling of Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "VLM Agents Generate Their Own Memories: Distilling Experience into Embodied Programs of Thought",
+      "evidence": "Humans exhibit remarkable few-shot learning capabilities, rapidly generalizing from a single task demonstration to related conditions by integrating the observed behavior with their internal world model.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "VLM Agents Generate Their Own Memories: Distilling Experience into Embodied Programs of Thought"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Time series forecasting",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "TEST: Text Prototype Aligned Embedding to Activate LLM's Ability for Time Series",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "TEST: Text Prototype Aligned Embedding to Activate LLM's Ability for Time Series"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "SGLang: Efficient Execution of Structured Language Model Programs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "SGLang: Efficient Execution of Structured Language Model Programs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HellaSwag",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "SGLang: Efficient Execution of Structured Language Model Programs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "SGLang: Efficient Execution of Structured Language Model Programs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Combining Induction and Transduction for Abstract Reasoning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Combining Induction and Transduction for Abstract Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LongBench-E",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LongMamba: Enhancing Mamba's Long-Context Capabilities via Training-Free Receptive Field Enlargement",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "LongMamba: Enhancing Mamba's Long-Context Capabilities via Training-Free Receptive Field Enlargement"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GLUE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "On the Crucial Role of Initialization for Matrix Factorization",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "On the Crucial Role of Initialization for Matrix Factorization"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Continual learning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Adaptive Prompting: Ad-hoc Prompt Composition for Social Bias Detection",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Adaptive Prompting: Ad-hoc Prompt Composition for Social Bias Detection"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Information extraction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Adaptive Prompting: Ad-hoc Prompt Composition for Social Bias Detection",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Adaptive Prompting: Ad-hoc Prompt Composition for Social Bias Detection"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 10,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 9,
+  "characterization": "Across the provided sources, few-shot learning is consistently framed as an evaluation procedure and a form of prompt engineering. The single available definition describes it as a method where a model is provided with a small number of task examples within the prompt to guide its response. One paper offers a concrete operationalization, specifying the use of \"three examples for tasks 1 and 2, and one example for task 3.\" This evaluation procedure is applied across a range of benchmarks, including LongBench, MMLU, HellaSwag, ARC, LongBench-E, and GLUE. The concept is also studied in relation to generalization, with one source noting that humans use this capability for \"rapidly generalizing from a single task demonstration.\" Additionally, few-shot learning is studied alongside continual learning, information extraction, and time series forecasting.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Extending Automatic Machine Translation Evaluation to Book-Length Documents",
+      "Retrieval over Classification: Integrating Relation Semantics for Multimodal Relation Extraction",
+      "SAND: BoostingLLMAgents with Self-Taught Action Deliberation",
+      "START: Self-taught Reasoner with Tools"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 4
+  },
+  "conferences": [
+    "emnlp25"
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "canonical_name": "Fact-seeking question answering",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, \"Fact-seeking question answering\" is consistently defined as the task of answering questions that require objective, verifiable, and specific factual information. Papers use slightly different but related terms like \"Factual,\" \"Factoid,\" and \"Fact-based\" question answering to describe this behavior, which typically involves generating short, precise responses about entities, dates, or locations. As one paper exemplifies, this includes questions like \"\u2018In which year was the Eiffel Tower built?\u2019\" (\"Procedural Environment Generation for Tool-Use Agents\"). This behavior is operationalized and measured using a range of question-answering benchmarks. The most frequently cited instruments in this set are TriviaQA and Natural Questions. TriviaQA is described as a dataset for testing the \"retrieval of world knowledge,\" and both are used for what some papers term \"factoid QA tasks.\" Other benchmarks used to evaluate this behavior include HotpotQA, SQuAD v1.1, NFCorpus, and SimpleQA, with the latter being explicitly called a \"representative benchmark for factual QA\" (\"VisualWebInstruct: Scaling up Multimodal Instruction Data through Web Search\"). While often concerning general knowledge, some work applies this task to specific domains, such as factual queries grounded in a Polish context.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Fact-seeking question answering",
+    "Factoid question answering",
+    "Fact-based question answering"
+  ],
+  "papers": [
+    "2025.emnlp-main.937.checklist",
+    "Balanced Multi-Factor In-Context Learning for Multilingual Large Language Models",
+    "Faster In-Context Learning forLLMs via N-Gram Trie Speculative Decoding",
+    "Internal Chain-of-Thought: Empirical Evidence for Layer\u2010wise Subtask Scheduling inLLMs",
+    "Investigating Pedagogical Teacher and StudentLLMAgents: Genetic Adaptation Meets Retrieval-Augmented Generation Across Learning Styles",
+    "MCIP: ProtectingMCPSafety via Model Contextual Integrity Protocol",
+    "Priority on High-Quality: Selecting Instruction Data via Consistency Verification of Noise Injection",
+    "Procedural Environment Generation for Tool-Use Agents",
+    "R-PRM: Reasoning-Driven Process Reward Modeling",
+    "REALM: Recursive Relevance Modeling forLLM-based Document Re-Ranking",
+    "Studying the Role of Input-Neighbor Overlap in Retrieval-Augmented Language Models Training Efficiency",
+    "VisualWebInstruct: Scaling up Multimodal Instruction Data through Web Search",
+    "reWordBench: Benchmarking and Improving the Robustness of Reward Models with Transformed Inputs"
+  ],
+  "paper_count": 13,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The task of answering questions by extracting specific, factual information from a given text.",
+      "paper": "MCIP: ProtectingMCPSafety via Model Contextual Integrity Protocol",
+      "original_name": "Factual question answering"
+    },
+    {
+      "text": "The task in which an LLM answers questions that ask for objective, verifiable information such as dates, locations, or entities, typically with short and precise responses.",
+      "paper": "Procedural Environment Generation for Tool-Use Agents",
+      "original_name": "Fact-seeking question answering"
+    },
+    {
+      "text": "The task of answering questions that have a single, concise factual answer, often requiring the retrieval of a few targeted facts.",
+      "paper": "Balanced Multi-Factor In-Context Learning for Multilingual Large Language Models",
+      "original_name": "Factoid question answering"
+    },
+    {
+      "text": "The observable generation of answers to factual queries, particularly those grounded in Polish context and knowledge.",
+      "paper": "REALM: Recursive Relevance Modeling forLLM-based Document Re-Ranking",
+      "original_name": "Fact-based question answering"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TriviaQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Balanced Multi-Factor In-Context Learning for Multilingual Large Language Models",
+      "evidence": "TriviaQA (5-shot) (Joshi et al., 2017), a factual question-answering dataset compiled by trivia enthusiasts to test retrieval of world knowledge. (Section 4.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Balanced Multi-Factor In-Context Learning for Multilingual Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Natural Questions",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Balanced Multi-Factor In-Context Learning for Multilingual Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Balanced Multi-Factor In-Context Learning for Multilingual Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HotpotQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Balanced Multi-Factor In-Context Learning for Multilingual Large Language Models",
+      "evidence": "For testing on factoid QA tasks, we use HotpotQA (Yang et al., 2018), Natural Questions (NQ) (Kwiatkowski et al., 2019), and TriviaQA (Joshi et al., 2017), as curated by HELMET (Yen et al., 2025) for long-context benchmarking with 128k input tokens. (Section 4.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Balanced Multi-Factor In-Context Learning for Multilingual Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 3,
+  "characterization": "Across the provided literature, \"Fact-seeking question answering\" is consistently defined as the task of answering questions that require objective, verifiable, and specific factual information. Papers use slightly different but related terms like \"Factual,\" \"Factoid,\" and \"Fact-based\" question answering to describe this behavior, which typically involves generating short, precise responses about entities, dates, or locations. As one paper exemplifies, this includes questions like \"\u2018In which year was the Eiffel Tower built?\u2019\" (\"Procedural Environment Generation for Tool-Use Agents\"). This behavior is operationalized and measured using a range of question-answering benchmarks. The most frequently cited instruments in this set are TriviaQA and Natural Questions. TriviaQA is described as a dataset for testing the \"retrieval of world knowledge,\" and both are used for what some papers term \"factoid QA tasks.\" Other benchmarks used to evaluate this behavior include HotpotQA, SQuAD v1.1, NFCorpus, and SimpleQA, with the latter being explicitly called a \"representative benchmark for factual QA\" (\"VisualWebInstruct: Scaling up Multimodal Instruction Data through Web Search\"). While often concerning general knowledge, some work applies this task to specific domains, such as factual queries grounded in a Polish context.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "2025.emnlp-main.937.checklist",
+      "Balanced Multi-Factor In-Context Learning for Multilingual Large Language Models",
+      "Faster In-Context Learning forLLMs via N-Gram Trie Speculative Decoding",
+      "Internal Chain-of-Thought: Empirical Evidence for Layer\u2010wise Subtask Scheduling inLLMs",
+      "Investigating Pedagogical Teacher and StudentLLMAgents: Genetic Adaptation Meets Retrieval-Augmented Generation Across Learning Styles",
+      "MCIP: ProtectingMCPSafety via Model Contextual Integrity Protocol",
+      "Priority on High-Quality: Selecting Instruction Data via Consistency Verification of Noise Injection",
+      "Procedural Environment Generation for Tool-Use Agents",
+      "R-PRM: Reasoning-Driven Process Reward Modeling",
+      "REALM: Recursive Relevance Modeling forLLM-based Document Re-Ranking",
+      "Studying the Role of Input-Neighbor Overlap in Retrieval-Augmented Language Models Training Efficiency",
+      "VisualWebInstruct: Scaling up Multimodal Instruction Data through Web Search",
+      "reWordBench: Benchmarking and Improving the Robustness of Reward Models with Transformed Inputs"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 13
+  },
+  "conferences": [
+    "emnlp25"
+  ]
+}

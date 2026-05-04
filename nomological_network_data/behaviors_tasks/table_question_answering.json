@@ -1,0 +1,352 @@
+{
+  "canonical_name": "Table question answering",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, Table question answering is most commonly described as the task of generating a natural language answer to a question using information from one or more provided tables. The scope of this behavior varies, with some work focusing on single-table contexts, while a sub-task termed \"Multi-table question answering\" requires synthesizing information across multiple tables. The required operations also differ, ranging from direct answer retrieval and span extraction to performing arithmetic. A recurring distinction is made based on the expected output, separating \"Short-form table QA,\" which requires \"brief, precise answers,\" from \"Free-form table QA,\" which involves generating \"open-ended, paragraph-length answers.\" The field operationalizes and measures this behavior using several benchmarks; the provided data explicitly states that it is measured by `WikiTableQuestions`. Other papers refer to WikiTQ and FeTaQA as \"widely used TableQA benchmarks,\" with one study linking the former to short-form QA and the latter to free-form QA. This behavior is studied alongside related concepts like `Tabular reasoning` and is sometimes paired with fact verification. A less common framing, termed \"Table extraction,\" defines a related task of producing structured table-like information from source content rather than answering a specific question.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Table-based question answering",
+    "Multi-table question answering",
+    "Table extraction",
+    "Table question answering",
+    "Tabular question answering",
+    "Free-form table QA",
+    "Short-form table QA"
+  ],
+  "papers": [
+    "AutoMedEval: Harnessing Language Models for Automatic Medical Capability Evaluation",
+    "Mitigating Lost-in-Retrieval Problems in Retrieval Augmented Multi-Hop Question Answering",
+    "R-Fairness: Assessing Fairness of Ranking in Subjective Data",
+    "2025.emnlp-main.363.checklist",
+    "Bias Beware: The Impact of Cognitive Biases onLLM-Driven Product Recommendations",
+    "ExeCoder: Empowering Large Language Models with Executability Representation for Code Translation",
+    "Improving the Quality of Web-mined Parallel Corpora of Low-Resource Languages using Debiasing Heuristics",
+    "MrGuard: A Multilingual Reasoning Guardrail for UniversalLLMSafety",
+    "R2I-Bench: Benchmarking Reasoning-Driven Text-to-Image Generation",
+    "SNaRe: Domain-aware Data Generation for Low-Resource Event Detection",
+    "Towards Robust Mathematical Reasoning",
+    "Chain-of-Table: Evolving Tables in the Reasoning Chain for Table Understanding",
+    "OpenTab: Advancing Large Language Models as Open-domain Table Reasoners",
+    "Learning to Clarify: Multi-turn Conversations with Action-Based Contrastive Self-Training",
+    "LiveXiv - A Multi-Modal live benchmark based on Arxiv papers content",
+    "MMQA: Evaluating LLMs with Multi-Table Multi-Hop Complex Questions",
+    "SciLitLLM: How to Adapt LLMs for Scientific Literature Understanding",
+    "Triples as the Key: Structuring Makes Decomposition and Verification Easier in LLM-based TableQA"
+  ],
+  "paper_count": 18,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The observable task of generating a concise, natural language answer to a question using information found within one or more provided tables.",
+      "paper": "Chain-of-Table: Evolving Tables in the Reasoning Chain for Table Understanding",
+      "original_name": "Table-based question answering"
+    },
+    {
+      "text": "The task of generating a correct answer to a question by retrieving and synthesizing information from multiple provided tables.",
+      "paper": "MMQA: Evaluating LLMs with Multi-Table Multi-Hop Complex Questions",
+      "original_name": "Multi-table question answering"
+    },
+    {
+      "text": "Reading scientific text or tables and producing structured table-like information from the source content.",
+      "paper": "SciLitLLM: How to Adapt LLMs for Scientific Literature Understanding",
+      "original_name": "Table extraction"
+    },
+    {
+      "text": "Answering questions that require interpreting table content and associated numerical or textual information.",
+      "paper": "LiveXiv - A Multi-Modal live benchmark based on Arxiv papers content",
+      "original_name": "Table question answering"
+    },
+    {
+      "text": "Answering questions grounded in tabular or mixed tabular-text data, including cases requiring arithmetic or span extraction.",
+      "paper": "Learning to Clarify: Multi-turn Conversations with Action-Based Contrastive Self-Training",
+      "original_name": "Tabular question answering"
+    },
+    {
+      "text": "Generating open-ended, paragraph-length answers grounded in tabular data, requiring synthesis and natural language generation.",
+      "paper": "SNaRe: Domain-aware Data Generation for Low-Resource Event Detection",
+      "original_name": "Free-form table QA"
+    },
+    {
+      "text": "Answering questions with brief, precise answers based on information in a table, often requiring extraction and aggregation of specific cell values.",
+      "paper": "SNaRe: Domain-aware Data Generation for Low-Resource Event Detection",
+      "original_name": "Short-form table QA"
+    }
+  ],
+  "definition_count": 7,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WikiTQ",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "CABINET: Content Relevance-based Noise Reduction for Table Question Answering",
+      "evidence": "",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "iclr24": [
+          "CABINET: Content Relevance-based Noise Reduction for Table Question Answering"
+        ],
+        "acl25": [
+          "Mitigating Lost-in-Retrieval Problems in Retrieval Augmented Multi-Hop Question Answering",
+          "AutoMedEval: Harnessing Language Models for Automatic Medical Capability Evaluation"
+        ],
+        "emnlp25": [
+          "Towards Robust Mathematical Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "FeTaQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "CABINET: Content Relevance-based Noise Reduction for Table Question Answering",
+      "evidence": "",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "iclr24": [
+          "CABINET: Content Relevance-based Noise Reduction for Table Question Answering"
+        ],
+        "neurips24": [
+          "DACO: Towards Application-Driven and Comprehensive Data Analysis via Code Generation"
+        ],
+        "acl25": [
+          "Mitigating Lost-in-Retrieval Problems in Retrieval Augmented Multi-Hop Question Answering",
+          "AutoMedEval: Harnessing Language Models for Automatic Medical Capability Evaluation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WikiTableQuestions",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "R-Fairness: Assessing Fairness of Ranking in Subjective Data",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "acl25": [
+          "R-Fairness: Assessing Fairness of Ranking in Subjective Data"
+        ],
+        "emnlp25": [
+          "Seeing More, Saying More: Lightweight Language Experts are Dynamic Video Token Compressors"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TabFact",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "TableRAG: Million-Token Table Understanding with Language Models",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "TableRAG: Million-Token Table Understanding with Language Models",
+          "TabPedia: Towards Comprehensive Visual Table Understanding with Concept Synergy"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Table reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Chain-of-Table: Evolving Tables in the Reasoning Chain for Table Understanding",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Chain-of-Table: Evolving Tables in the Reasoning Chain for Table Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WikiSQL",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "CABINET: Content Relevance-based Noise Reduction for Table Question Answering",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "CABINET: Content Relevance-based Noise Reduction for Table Question Answering"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BIG-Bench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Buffer of Thoughts: Thought-Augmented Reasoning with Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Buffer of Thoughts: Thought-Augmented Reasoning with Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Task decomposition",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Triples as the Key: Structuring Makes Decomposition and Verification Easier in LLM-based TableQA",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Triples as the Key: Structuring Makes Decomposition and Verification Easier in LLM-based TableQA"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Evaluation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Triples as the Key: Structuring Makes Decomposition and Verification Easier in LLM-based TableQA",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Triples as the Key: Structuring Makes Decomposition and Verification Easier in LLM-based TableQA"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Tabular reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "UNDIAL: Self-Distillation with Adjusted Logits for Robust Unlearning in Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "UNDIAL: Self-Distillation with Adjusted Logits for Robust Unlearning in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HiTab",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "R2I-Bench: Benchmarking Reasoning-Driven Text-to-Image Generation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "R2I-Bench: Benchmarking Reasoning-Driven Text-to-Image Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TableBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Towards Robust Mathematical Reasoning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Towards Robust Mathematical Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Semantic reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Improving the Quality of Web-mined Parallel Corpora of Low-Resource Languages using Debiasing Heuristics",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Improving the Quality of Web-mined Parallel Corpora of Low-Resource Languages using Debiasing Heuristics"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TableEval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "ExeCoder: Empowering Large Language Models with Executability Representation for Code Translation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "ExeCoder: Empowering Large Language Models with Executability Representation for Code Translation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "FinQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Towards Robust Mathematical Reasoning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Towards Robust Mathematical Reasoning"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 15,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 13,
+  "characterization": "Across the surveyed literature, Table question answering is most commonly described as the task of generating a natural language answer to a question using information from one or more provided tables. The scope of this behavior varies, with some work focusing on single-table contexts, while a sub-task termed \"Multi-table question answering\" requires synthesizing information across multiple tables. The required operations also differ, ranging from direct answer retrieval and span extraction to performing arithmetic. A recurring distinction is made based on the expected output, separating \"Short-form table QA,\" which requires \"brief, precise answers,\" from \"Free-form table QA,\" which involves generating \"open-ended, paragraph-length answers.\" The field operationalizes and measures this behavior using several benchmarks; the provided data explicitly states that it is measured by `WikiTableQuestions`. Other papers refer to WikiTQ and FeTaQA as \"widely used TableQA benchmarks,\" with one study linking the former to short-form QA and the latter to free-form QA. This behavior is studied alongside related concepts like `Tabular reasoning` and is sometimes paired with fact verification. A less common framing, termed \"Table extraction,\" defines a related task of producing structured table-like information from source content rather than answering a specific question.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Chain-of-Table: Evolving Tables in the Reasoning Chain for Table Understanding",
+      "OpenTab: Advancing Large Language Models as Open-domain Table Reasoners"
+    ],
+    "iclr25": [
+      "Learning to Clarify: Multi-turn Conversations with Action-Based Contrastive Self-Training",
+      "LiveXiv - A Multi-Modal live benchmark based on Arxiv papers content",
+      "MMQA: Evaluating LLMs with Multi-Table Multi-Hop Complex Questions",
+      "SciLitLLM: How to Adapt LLMs for Scientific Literature Understanding",
+      "Triples as the Key: Structuring Makes Decomposition and Verification Easier in LLM-based TableQA"
+    ],
+    "acl25": [
+      "AutoMedEval: Harnessing Language Models for Automatic Medical Capability Evaluation",
+      "Mitigating Lost-in-Retrieval Problems in Retrieval Augmented Multi-Hop Question Answering",
+      "R-Fairness: Assessing Fairness of Ranking in Subjective Data"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.363.checklist",
+      "Bias Beware: The Impact of Cognitive Biases onLLM-Driven Product Recommendations",
+      "ExeCoder: Empowering Large Language Models with Executability Representation for Code Translation",
+      "Improving the Quality of Web-mined Parallel Corpora of Low-Resource Languages using Debiasing Heuristics",
+      "MrGuard: A Multilingual Reasoning Guardrail for UniversalLLMSafety",
+      "R2I-Bench: Benchmarking Reasoning-Driven Text-to-Image Generation",
+      "SNaRe: Domain-aware Data Generation for Low-Resource Event Detection",
+      "Towards Robust Mathematical Reasoning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "iclr25": 5,
+    "acl25": 3,
+    "emnlp25": 8
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25"
+  ]
+}

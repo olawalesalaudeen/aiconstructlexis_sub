@@ -1,0 +1,130 @@
+{
+  "canonical_name": "GovReport",
+  "type": "measurement",
+  "canonical_definition": "GovReport is consistently characterized across the provided literature as a dataset for evaluating language models on long documents, composed of U.S. government and congressional reports. The prevailing use of this benchmark is to measure `Text summarization` capabilities, with papers describing it as a \"generic summarization dataset\" and a tool to test \"long text summarization capacity.\" Some sources specify its use for abstractive summarization in long-context scenarios. A smaller set of studies uses GovReport to evaluate `Language modeling` performance, particularly for \"long sequence language modeling.\" One paper also positions it as a benchmark for assessing `Length generalization` or \"long-context extrapolation.\" The dataset's documents are noted for their length, with an average of 7,866 tokens, and one source identifies GovReport as part of the SCROLL benchmark.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "GovReport"
+  ],
+  "papers": [
+    "MultipleLLMAgents Debate for Equitable Cultural Alignment",
+    "PlanGenLLMs: A Modern Survey ofLLMPlanning Capabilities",
+    "CanLLMs Generate and Solve Linguistic Olympiad Puzzles?",
+    "Measuring Bias or Measuring the Task: Understanding the Brittle Nature ofLLMGender Biases",
+    "Multi-LMentry: Can MultilingualLLMs Solve Elementary Tasks Across Languages?",
+    "In-Context Pretraining: Language Modeling Beyond Document Boundaries",
+    "PoSE: Efficient Context Window Extension of LLMs via Positional Skip-wise Training",
+    "YaRN: Efficient Context Window Extension of Large Language Models",
+    "Gated Delta Networks: Improving Mamba2 with Delta Rule",
+    "Samba: Simple Hybrid State Space Models for Efficient Unlimited Context Language Modeling",
+    "What is Wrong with Perplexity for Long-context Language Modeling?",
+    "An Efficient Recipe for Long Context Extension via Middle-Focused Positional Encoding",
+    "Chain of Agents: Large Language Models Collaborating on Long-Context Tasks"
+  ],
+  "paper_count": 13,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Summarization dataset of U.S. government and congressional reports, used to evaluate language modeling performance on long documents with an average length of 7,866 tokens.",
+      "paper": "In-Context Pretraining: Language Modeling Beyond Document Boundaries",
+      "original_name": "GovReport"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text summarization",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Chain of Agents: Large Language Models Collaborating on Long-Context Tasks",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "neurips24": [
+          "Chain of Agents: Large Language Models Collaborating on Long-Context Tasks"
+        ],
+        "iclr25": [
+          "Gated Delta Networks: Improving Mamba2 with Delta Rule"
+        ],
+        "emnlp25": [
+          "Measuring Bias or Measuring the Task: Understanding the Brittle Nature ofLLMGender Biases"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language modeling",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "An Efficient Recipe for Long Context Extension via Middle-Focused Positional Encoding",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "An Efficient Recipe for Long Context Extension via Middle-Focused Positional Encoding"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Length generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Gated Delta Networks: Improving Mamba2 with Delta Rule",
+      "evidence": "As shown in Fig.2, we evaluate the models' capacity to extrapolate to sequences of up to 20K tokens across six long-context benchmarks.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Gated Delta Networks: Improving Mamba2 with Delta Rule"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization": "GovReport is consistently characterized across the provided literature as a dataset for evaluating language models on long documents, composed of U.S. government and congressional reports. The prevailing use of this benchmark is to measure `Text summarization` capabilities, with papers describing it as a \"generic summarization dataset\" and a tool to test \"long text summarization capacity.\" Some sources specify its use for abstractive summarization in long-context scenarios. A smaller set of studies uses GovReport to evaluate `Language modeling` performance, particularly for \"long sequence language modeling.\" One paper also positions it as a benchmark for assessing `Length generalization` or \"long-context extrapolation.\" The dataset's documents are noted for their length, with an average of 7,866 tokens, and one source identifies GovReport as part of the SCROLL benchmark.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "In-Context Pretraining: Language Modeling Beyond Document Boundaries",
+      "PoSE: Efficient Context Window Extension of LLMs via Positional Skip-wise Training",
+      "YaRN: Efficient Context Window Extension of Large Language Models"
+    ],
+    "neurips24": [
+      "An Efficient Recipe for Long Context Extension via Middle-Focused Positional Encoding",
+      "Chain of Agents: Large Language Models Collaborating on Long-Context Tasks"
+    ],
+    "iclr25": [
+      "Gated Delta Networks: Improving Mamba2 with Delta Rule",
+      "Samba: Simple Hybrid State Space Models for Efficient Unlimited Context Language Modeling",
+      "What is Wrong with Perplexity for Long-context Language Modeling?"
+    ],
+    "acl25": [
+      "MultipleLLMAgents Debate for Equitable Cultural Alignment",
+      "PlanGenLLMs: A Modern Survey ofLLMPlanning Capabilities"
+    ],
+    "emnlp25": [
+      "CanLLMs Generate and Solve Linguistic Olympiad Puzzles?",
+      "Measuring Bias or Measuring the Task: Understanding the Brittle Nature ofLLMGender Biases",
+      "Multi-LMentry: Can MultilingualLLMs Solve Elementary Tasks Across Languages?"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 3,
+    "neurips24": 2,
+    "iclr25": 3,
+    "acl25": 2,
+    "emnlp25": 3
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "neurips24"
+  ]
+}

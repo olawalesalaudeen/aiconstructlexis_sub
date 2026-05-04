@@ -1,0 +1,92 @@
+{
+  "canonical_name": "Query generation",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, query generation is characterized in two primary ways: as a general capability within retrieval-augmented systems and as a specific semantic parsing task. The more general usage defines it as the production of search queries to fetch external knowledge for retrieval-augmented generation. In this context, performance issues are sometimes attributed to \"imprecise query generation,\" with one paper noting that models can produce \"under-specified queries\" (\"Training a Utility-based Retriever...\"). A second, more specific framing treats it as the task of translating natural language questions into executable query languages for graph databases, such as Text-to-Cypher or Text-to-nGQL generation, which is described as a \"central focus in semantic parsing\" (\"SAKI-RAG...\"). This behavior is operationalized and measured using datasets tailored to the target query language; for example, the Text-to-Cypher task is evaluated using the Text2Cypher dataset. Functionally, query generation is presented as a component within a larger information retrieval process where a system \"iteratively generates queries, retrieves documents, and selects useful documents\".",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Query generation",
+    "Text-to-Cypher generation",
+    "Text-to-nGQL generation"
+  ],
+  "papers": [
+    "Look Beyond Feeling: Unveiling Latent Needs from Implicit Expressions for Proactive Emotional Support",
+    "SAFENUDGE: Safeguarding Large Language Models in Real-time with Tunable Safety-Performance Trade-offs",
+    "SAKI-RAG: Mitigating Context Fragmentation in Long-DocumentRAGvia Sentence-level Attention Knowledge Integration",
+    "Training a Utility-based Retriever Through Shared Context Attribution for Retrieval-Augmented Language Models",
+    "Understanding the Thinking Process of Reasoning Models: A Perspective from Schoenfeld\u2019s Episode Theory",
+    "X-CoT: Explainable Text-to-Video Retrieval viaLLM-based Chain-of-Thought Reasoning"
+  ],
+  "paper_count": 6,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The observable production of search queries by a model, particularly in the context of retrieval-augmented generation, where queries are used to fetch external knowledge.",
+      "paper": "Training a Utility-based Retriever Through Shared Context Attribution for Retrieval-Augmented Language Models",
+      "original_name": "Query generation"
+    },
+    {
+      "text": "The specific task of translating a natural language question into an executable Cypher query for a graph database.",
+      "paper": "SAKI-RAG: Mitigating Context Fragmentation in Long-DocumentRAGvia Sentence-level Attention Knowledge Integration",
+      "original_name": "Text-to-Cypher generation"
+    },
+    {
+      "text": "The specific task of translating a natural language question into an executable nGQL query for a graph database.",
+      "paper": "SAKI-RAG: Mitigating Context Fragmentation in Long-DocumentRAGvia Sentence-level Attention Knowledge Integration",
+      "original_name": "Text-to-nGQL generation"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Information retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "SAFENUDGE: Safeguarding Large Language Models in Real-time with Tunable Safety-Performance Trade-offs",
+      "evidence": "Recent works like Search-R1 (Jin et al., 2025) and R1-Searcher (Song et al., 2025) use reinforcement learning to optimize reasoning-based query generation while keeping the retrieval model fixed. (Section 2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "SAFENUDGE: Safeguarding Large Language Models in Real-time with Tunable Safety-Performance Trade-offs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Text2Cypher",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "SAKI-RAG: Mitigating Context Fragmentation in Long-DocumentRAGvia Sentence-level Attention Knowledge Integration",
+      "evidence": "For the Text-to-Cypher task, We evaluate our approach on Text2Cypher (Ozsoy et al., 2025), a large-scale dataset released by Neo4j.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "SAKI-RAG: Mitigating Context Fragmentation in Long-DocumentRAGvia Sentence-level Attention Knowledge Integration"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the provided literature, query generation is characterized in two primary ways: as a general capability within retrieval-augmented systems and as a specific semantic parsing task. The more general usage defines it as the production of search queries to fetch external knowledge for retrieval-augmented generation. In this context, performance issues are sometimes attributed to \"imprecise query generation,\" with one paper noting that models can produce \"under-specified queries\" (\"Training a Utility-based Retriever...\"). A second, more specific framing treats it as the task of translating natural language questions into executable query languages for graph databases, such as Text-to-Cypher or Text-to-nGQL generation, which is described as a \"central focus in semantic parsing\" (\"SAKI-RAG...\"). This behavior is operationalized and measured using datasets tailored to the target query language; for example, the Text-to-Cypher task is evaluated using the Text2Cypher dataset. Functionally, query generation is presented as a component within a larger information retrieval process where a system \"iteratively generates queries, retrieves documents, and selects useful documents\".",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Look Beyond Feeling: Unveiling Latent Needs from Implicit Expressions for Proactive Emotional Support",
+      "SAFENUDGE: Safeguarding Large Language Models in Real-time with Tunable Safety-Performance Trade-offs",
+      "SAKI-RAG: Mitigating Context Fragmentation in Long-DocumentRAGvia Sentence-level Attention Knowledge Integration",
+      "Training a Utility-based Retriever Through Shared Context Attribution for Retrieval-Augmented Language Models",
+      "Understanding the Thinking Process of Reasoning Models: A Perspective from Schoenfeld\u2019s Episode Theory",
+      "X-CoT: Explainable Text-to-Video Retrieval viaLLM-based Chain-of-Thought Reasoning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 6
+  },
+  "conferences": [
+    "emnlp25"
+  ]
+}

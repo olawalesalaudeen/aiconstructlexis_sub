@@ -1,0 +1,182 @@
+{
+  "canonical_name": "ASQA",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, ASQA is consistently described as a benchmark dataset for long-form question answering. The most prevalent feature highlighted is its focus on ambiguous questions, with several papers defining it as a tool to assess how well models generate answers that cover \"multiple possible interpretations.\" This is further specified by one source stating that ASQA extends the AmbigQA dataset for this purpose. Another recurring theme is the dataset's utility for evaluating attributable generation, with some papers describing it as a benchmark for \"attributable, long-form question-answering tasks\" and for assessing \"citation quality.\"\n\nBased on its application in the surveyed papers, ASQA is used to measure a range of capabilities. It directly operationalizes the evaluation of `Question answering`, particularly `Conditional ambiguous question answering` and `Long-form text generation`. Beyond these core tasks, the dataset is also employed to assess broader model behaviors such as `Faithfulness` and `Refusal`. While widely used, one paper notes a potential limitation, suggesting its \"annotation process leads to logical inconsistencies when linking different answer components.\"",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "ASQA"
+  ],
+  "papers": [
+    "CADReview: Automatically ReviewingCADPrograms with Error Detection and Correction",
+    "Cracking the Code of Hallucination inLVLMs with Vision-aware Head Divergence",
+    "Enhancing Machine Translation with Self-Supervised Preference Data",
+    "From Objectives to Questions: A Planning-based Framework for Educational Mathematical Question Generation",
+    "MemeQA: Holistic Evaluation for Meme Understanding",
+    "More is not always better? Enhancing Many-Shot In-Context Learning with Differentiated and Reweighting Objectives",
+    "NeuronXA",
+    "Representations of Fact, Fiction and Forecast in Large Language Models: Epistemics and Attitudes",
+    "Bitune: Leveraging Bidirectional Attention to Improve Decoder-OnlyLLMs",
+    "Effective Red-Teaming of Policy-Adherent Agents",
+    "Exploring Large Language Models for Detecting Mental Disorders",
+    "From Scores to Steps: Diagnosing and ImprovingLLMPerformance in Evidence-Based Medical Calculations",
+    "Identifying Pre-training Data inLLMs: A Neuron Activation-Based Detection Framework",
+    "Words Like Knives: Backstory-Personalized Modeling and Detection of Violent Communication",
+    "A Theory for Token-Level Harmonization in Retrieval-Augmented Generation",
+    "Chain-of-Action: Faithful and Multimodal Question Answering through Large Language Models",
+    "HELMET: How to Evaluate Long-context Models Effectively and Thoroughly",
+    "InstructRAG: Instructing Retrieval-Augmented Generation via Self-Synthesized Rationales",
+    "Long-Context LLMs Meet RAG: Overcoming Challenges for Long Inputs in RAG",
+    "Measuring and Enhancing Trustworthiness of LLMs in RAG through Grounded Attributions and Learning to Refuse",
+    "Generating Complex Question Decompositions in the Face of Distribution Shifts",
+    "KS-Lottery: Finding Certified Lottery Tickets for Multilingual Transfer in Large Language Models",
+    "PeerQA: A Scientific Question Answering Dataset from Peer Reviews"
+  ],
+  "paper_count": 23,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A benchmark dataset for attributable, long-form question-answering tasks used for evaluation.",
+      "paper": "Measuring and Enhancing Trustworthiness of LLMs in RAG through Grounded Attributions and Learning to Refuse",
+      "original_name": "ASQA"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Trustworthiness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Measuring and Enhancing Trustworthiness of LLMs in RAG through Grounded Attributions and Learning to Refuse",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Measuring and Enhancing Trustworthiness of LLMs in RAG through Grounded Attributions and Learning to Refuse"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Refusal",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Measuring and Enhancing Trustworthiness of LLMs in RAG through Grounded Attributions and Learning to Refuse",
+      "evidence": "TRUST-ALIGN improves models' refusal capability. Across all 27 configurations, TRUST-ALIGN yields substantial improvements in F1GR. In LLaMA-3-8b, TRUST-ALIGN outperforms FRONT by 23.87% (ASQA), 47.95% (QAMPARI), and 45.72% (ELI5).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Measuring and Enhancing Trustworthiness of LLMs in RAG through Grounded Attributions and Learning to Refuse"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "KS-Lottery: Finding Certified Lottery Tickets for Multilingual Transfer in Large Language Models",
+      "evidence": "The questions used for constructing our training data are sourced from the ASQA (Stelmakh et al., 2022), WebQuestions (Berant et al., 2013), and Natural Questions (Kwiatkowski et al., 2019) training splits. (Section 4.1.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "KS-Lottery: Finding Certified Lottery Tickets for Multilingual Transfer in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Conditional ambiguous question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Generating Complex Question Decompositions in the Face of Distribution Shifts",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Generating Complex Question Decompositions in the Face of Distribution Shifts"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-form text generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Bitune: Leveraging Bidirectional Attention to Improve Decoder-OnlyLLMs",
+      "evidence": "To the best of our knowledge, ASQA (Stelmakh et al., 2022) is the only dataset that falls into this category. (Section 4)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Bitune: Leveraging Bidirectional Attention to Improve Decoder-OnlyLLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Factual accuracy",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Exploring Large Language Models for Detecting Mental Disorders",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Exploring Large Language Models for Detecting Mental Disorders"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 6,
+  "incoming_relationship_count": 6,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, ASQA is consistently described as a benchmark dataset for long-form question answering. The most prevalent feature highlighted is its focus on ambiguous questions, with several papers defining it as a tool to assess how well models generate answers that cover \"multiple possible interpretations.\" This is further specified by one source stating that ASQA extends the AmbigQA dataset for this purpose. Another recurring theme is the dataset's utility for evaluating attributable generation, with some papers describing it as a benchmark for \"attributable, long-form question-answering tasks\" and for assessing \"citation quality.\"\n\nBased on its application in the surveyed papers, ASQA is used to measure a range of capabilities. It directly operationalizes the evaluation of `Question answering`, particularly `Conditional ambiguous question answering` and `Long-form text generation`. Beyond these core tasks, the dataset is also employed to assess broader model behaviors such as `Faithfulness` and `Refusal`. While widely used, one paper notes a potential limitation, suggesting its \"annotation process leads to logical inconsistencies when linking different answer components.\"",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "A Theory for Token-Level Harmonization in Retrieval-Augmented Generation",
+      "Chain-of-Action: Faithful and Multimodal Question Answering through Large Language Models",
+      "HELMET: How to Evaluate Long-context Models Effectively and Thoroughly",
+      "InstructRAG: Instructing Retrieval-Augmented Generation via Self-Synthesized Rationales",
+      "Long-Context LLMs Meet RAG: Overcoming Challenges for Long Inputs in RAG",
+      "Measuring and Enhancing Trustworthiness of LLMs in RAG through Grounded Attributions and Learning to Refuse"
+    ],
+    "naacl25": [
+      "Generating Complex Question Decompositions in the Face of Distribution Shifts",
+      "KS-Lottery: Finding Certified Lottery Tickets for Multilingual Transfer in Large Language Models",
+      "PeerQA: A Scientific Question Answering Dataset from Peer Reviews"
+    ],
+    "acl25": [
+      "CADReview: Automatically ReviewingCADPrograms with Error Detection and Correction",
+      "Cracking the Code of Hallucination inLVLMs with Vision-aware Head Divergence",
+      "Enhancing Machine Translation with Self-Supervised Preference Data",
+      "From Objectives to Questions: A Planning-based Framework for Educational Mathematical Question Generation",
+      "MemeQA: Holistic Evaluation for Meme Understanding",
+      "More is not always better? Enhancing Many-Shot In-Context Learning with Differentiated and Reweighting Objectives",
+      "NeuronXA",
+      "Representations of Fact, Fiction and Forecast in Large Language Models: Epistemics and Attitudes"
+    ],
+    "emnlp25": [
+      "Bitune: Leveraging Bidirectional Attention to Improve Decoder-OnlyLLMs",
+      "Effective Red-Teaming of Policy-Adherent Agents",
+      "Exploring Large Language Models for Detecting Mental Disorders",
+      "From Scores to Steps: Diagnosing and ImprovingLLMPerformance in Evidence-Based Medical Calculations",
+      "Identifying Pre-training Data inLLMs: A Neuron Activation-Based Detection Framework",
+      "Words Like Knives: Backstory-Personalized Modeling and Detection of Violent Communication"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 6,
+    "naacl25": 3,
+    "acl25": 8,
+    "emnlp25": 6
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "naacl25"
+  ]
+}

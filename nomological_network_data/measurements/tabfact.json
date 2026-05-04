@@ -1,0 +1,103 @@
+{
+  "canonical_name": "TabFact",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, TabFact is consistently defined as a benchmark dataset for table-based fact verification. The core task requires a model to determine if a given statement is supported by an accompanying Wikipedia table, a process frequently described as assessing whether the statement is 'entailed or refuted' by the table's content. One paper specifies that the labels for this task are 'Entailed' ('True') or 'Refuted' ('False'), while two sources mention a test set containing 2,024 statements and 298 tables. As a measurement instrument, TabFact is used to evaluate several model capabilities. The provided data shows it is used to assess `Table understanding` and `Table and chart reasoning`, in addition to being used for more general `Evaluation`. Its role as a tool for table-based reasoning is a recurring theme, with one paper referring to it as a 'widely-used table-based reasoning benchmark'.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "TabFact"
+  ],
+  "papers": [
+    "Mitigating Lost-in-Retrieval Problems in Retrieval Augmented Multi-Hop Question Answering",
+    "R-Fairness: Assessing Fairness of Ranking in Subjective Data",
+    "SCOP: Evaluating the Comprehension Process of Large Language Models from a Cognitive View",
+    "DAWN-ICL: Strategic Planning of Problem-solving Trajectories for Zero-Shot In-Context Learning",
+    "Instantly Learning Preference Alignment via In-contextDPO",
+    "UNDIAL: Self-Distillation with Adjusted Logits for Robust Unlearning in Large Language Models"
+  ],
+  "paper_count": 6,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A benchmark dataset for table-based fact verification, containing statements paired with Wikipedia tables, where the task is to determine if the statement is supported by the table.",
+      "paper": "DAWN-ICL: Strategic Planning of Problem-solving Trajectories for Zero-Shot In-Context Learning",
+      "original_name": "TabFact"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Evaluation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Mitigating Lost-in-Retrieval Problems in Retrieval Augmented Multi-Hop Question Answering",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "acl25": [
+          "Mitigating Lost-in-Retrieval Problems in Retrieval Augmented Multi-Hop Question Answering"
+        ],
+        "emnlp25": [
+          "SNaRe: Domain-aware Data Generation for Low-Resource Event Detection",
+          "R2I-Bench: Benchmarking Reasoning-Driven Text-to-Image Generation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Table question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "TableRAG: Million-Token Table Understanding with Language Models",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "TableRAG: Million-Token Table Understanding with Language Models",
+          "TabPedia: Towards Comprehensive Visual Table Understanding with Concept Synergy"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Table reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Instantly Learning Preference Alignment via In-contextDPO",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Instantly Learning Preference Alignment via In-contextDPO"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, TabFact is consistently defined as a benchmark dataset for table-based fact verification. The core task requires a model to determine if a given statement is supported by an accompanying Wikipedia table, a process frequently described as assessing whether the statement is 'entailed or refuted' by the table's content. One paper specifies that the labels for this task are 'Entailed' ('True') or 'Refuted' ('False'), while two sources mention a test set containing 2,024 statements and 298 tables. As a measurement instrument, TabFact is used to evaluate several model capabilities. The provided data shows it is used to assess `Table understanding` and `Table and chart reasoning`, in addition to being used for more general `Evaluation`. Its role as a tool for table-based reasoning is a recurring theme, with one paper referring to it as a 'widely-used table-based reasoning benchmark'.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "naacl25": [
+      "DAWN-ICL: Strategic Planning of Problem-solving Trajectories for Zero-Shot In-Context Learning",
+      "Instantly Learning Preference Alignment via In-contextDPO",
+      "UNDIAL: Self-Distillation with Adjusted Logits for Robust Unlearning in Large Language Models"
+    ],
+    "acl25": [
+      "Mitigating Lost-in-Retrieval Problems in Retrieval Augmented Multi-Hop Question Answering",
+      "R-Fairness: Assessing Fairness of Ranking in Subjective Data",
+      "SCOP: Evaluating the Comprehension Process of Large Language Models from a Cognitive View"
+    ]
+  },
+  "paper_count_by_conference": {
+    "naacl25": 3,
+    "acl25": 3
+  },
+  "conferences": [
+    "acl25",
+    "naacl25"
+  ]
+}

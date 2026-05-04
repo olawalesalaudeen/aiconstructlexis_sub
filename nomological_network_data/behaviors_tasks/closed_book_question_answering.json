@@ -1,0 +1,116 @@
+{
+  "canonical_name": "Closed-book question answering",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, Closed-book question answering (CBQA) is consistently defined as the task of answering questions using only the general knowledge stored within a model's parameters, without access to external documents or evidence. This behavior is framed as a test of a model's ability to \"recall their parametric memory\" or, as one paper states, to \"recall information from the weights\" (The Cost of Scaling Down Large Language Models...). The field operationalizes and measures this behavior using several datasets; the most frequently mentioned instruments in this set are TriviaQA and Web Questions, with Natural Questions and Entity Questions also cited as evaluation tools. One paper specifically describes Entity Questions as a \"CBQA-specific dataset\" (MPRF: Interpretable Stance Detection through Multi-Path Reasoning Framework). The task is associated with the challenge of `Hallucination`, with one study noting that a problem in CBQA is addressing \"instances where the model generates incorrect or fabricated answers.\" Finally, CBQA is also situated within the context of `Multi-task capability`, where it is treated as a distinct \"task type\" that can be contrasted with open-book QA.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Closed-book question answering"
+  ],
+  "papers": [
+    "Class Distillation with Mahalanobis Contrast: An Efficient Training Paradigm for Pragmatic Language Understanding Tasks",
+    "MIND: A Multi-agent Framework for Zero-shot Harmful Meme Detection",
+    "MPRF: Interpretable Stance Detection through Multi-Path Reasoning Framework",
+    "OmniEval: An Omnidirectional and AutomaticRAGEvaluation Benchmark in Financial Domain",
+    "Adaptive Chameleon  or Stubborn Sloth: Revealing the Behavior of Large Language Models in Knowledge Conflicts",
+    "Benchmarking and Improving Generator-Validator Consistency of Language Models",
+    "Mixture of LoRA Experts",
+    "The Cost of Scaling Down Large Language Models: Reducing Model Size Affects Memory before In-context Learning",
+    "Two-stage LLM Fine-tuning with Less Specialization and More Generalization",
+    "BERTs are Generative In-Context Learners",
+    "Empowering and Assessing the Utility of Large Language Models in Crop Science"
+  ],
+  "paper_count": 11,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The task of answering questions based on general knowledge stored in the model's parameters, without access to external documents.",
+      "paper": "Adaptive Chameleon  or Stubborn Sloth: Revealing the Behavior of Large Language Models in Knowledge Conflicts",
+      "original_name": "Closed-book question answering"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "MPRF: Interpretable Stance Detection through Multi-Path Reasoning Framework",
+      "evidence": "One significant challenge in CBQA is addressing hallucinations-instances where the model generates incorrect or fabricated answers (Section 2).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "MPRF: Interpretable Stance Detection through Multi-Path Reasoning Framework"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Entity Questions",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MPRF: Interpretable Stance Detection through Multi-Path Reasoning Framework",
+      "evidence": "we use the ENTITYQUESTIONS (Sciavolino et al., 2021) to construct the training and testing datasets for our experiments, which is a CBQA-specific dataset containing knowledge across 24 topics extracted from Wikipedia (Section 3.1).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "MPRF: Interpretable Stance Detection through Multi-Path Reasoning Framework"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multi-task capability",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "OmniEval: An Omnidirectional and AutomaticRAGEvaluation Benchmark in Financial Domain",
+      "evidence": "AQuilt achieves better task generalization by incorporating Chinese data and defining more flexible task types. Specifically, AQuilt assigns the task type as closed/open-book QA and uses task requirements as question prefixes. (Section 4.3)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "OmniEval: An Omnidirectional and AutomaticRAGEvaluation Benchmark in Financial Domain"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 3,
+  "characterization": "Across the provided literature, Closed-book question answering (CBQA) is consistently defined as the task of answering questions using only the general knowledge stored within a model's parameters, without access to external documents or evidence. This behavior is framed as a test of a model's ability to \"recall their parametric memory\" or, as one paper states, to \"recall information from the weights\" (The Cost of Scaling Down Large Language Models...). The field operationalizes and measures this behavior using several datasets; the most frequently mentioned instruments in this set are TriviaQA and Web Questions, with Natural Questions and Entity Questions also cited as evaluation tools. One paper specifically describes Entity Questions as a \"CBQA-specific dataset\" (MPRF: Interpretable Stance Detection through Multi-Path Reasoning Framework). The task is associated with the challenge of `Hallucination`, with one study noting that a problem in CBQA is addressing \"instances where the model generates incorrect or fabricated answers.\" Finally, CBQA is also situated within the context of `Multi-task capability`, where it is treated as a distinct \"task type\" that can be contrasted with open-book QA.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Adaptive Chameleon  or Stubborn Sloth: Revealing the Behavior of Large Language Models in Knowledge Conflicts",
+      "Benchmarking and Improving Generator-Validator Consistency of Language Models",
+      "Mixture of LoRA Experts",
+      "The Cost of Scaling Down Large Language Models: Reducing Model Size Affects Memory before In-context Learning",
+      "Two-stage LLM Fine-tuning with Less Specialization and More Generalization"
+    ],
+    "neurips24": [
+      "BERTs are Generative In-Context Learners",
+      "Empowering and Assessing the Utility of Large Language Models in Crop Science"
+    ],
+    "acl25": [
+      "Class Distillation with Mahalanobis Contrast: An Efficient Training Paradigm for Pragmatic Language Understanding Tasks",
+      "MIND: A Multi-agent Framework for Zero-shot Harmful Meme Detection"
+    ],
+    "emnlp25": [
+      "MPRF: Interpretable Stance Detection through Multi-Path Reasoning Framework",
+      "OmniEval: An Omnidirectional and AutomaticRAGEvaluation Benchmark in Financial Domain"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 5,
+    "neurips24": 2,
+    "acl25": 2,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "neurips24"
+  ]
+}

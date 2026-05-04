@@ -1,0 +1,201 @@
+{
+  "canonical_name": "Knowledge graph question answering",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, Knowledge graph question answering (KGQA) is consistently defined as the task of answering natural language questions by retrieving and reasoning over structured facts from a knowledge graph. This process is formalized in one paper as finding the correct answer `a*` given a question `q` and a graph `G`. A less common framing, termed \"Graph question answering,\" describes a similar task involving a \"textual graph.\" The provided sources state that KGQA requires a \"deep understanding of natural language questions\" and is thus related to `Natural language understanding`. This behavior is operationalized and measured using several benchmark datasets. The most frequently mentioned instruments are `WebQSP` and `CWQ`, which are described as \"widely used\" and \"classical benchmarks for complex logical reasoning in KGQA.\" Other benchmarks cited for evaluating this task, though less often in this set of papers, include `GrailQA`, `MedQA`, and `Text2Cypher`.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Knowledge graph question answering",
+    "Graph question answering"
+  ],
+  "papers": [
+    "An Empirical Study ofLLMReasoning Ability Under Strict Output Length Constraint",
+    "Evaluating Large Language Models for Detecting Antisemitism",
+    "Media Source Matters More Than Content: Unveiling Political Bias inLLM-Generated Citations",
+    "MiCRo: Mixture Modeling and Context-aware Routing for Personalized Preference Learning",
+    "R",
+    "Reasoning of Large Language Models over Knowledge Graphs with Super-Relations",
+    "Simple is Effective: The Roles of Graphs and Large Language Models in Knowledge-Graph-Based Retrieval-Augmented Generation",
+    "G-Retriever: Retrieval-Augmented Generation for Textual Graph Understanding and Question Answering",
+    "Plan-on-Graph: Self-Correcting Adaptive Planning of Large Language Model on Knowledge Graphs"
+  ],
+  "paper_count": 9,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The observable task of answering a natural language question by retrieving and reasoning over structured facts from a knowledge graph.",
+      "paper": "Reasoning of Large Language Models over Knowledge Graphs with Super-Relations",
+      "original_name": "Knowledge graph question answering"
+    },
+    {
+      "text": "The task of generating a natural language answer to a question based on the information contained within a provided textual graph.",
+      "paper": "G-Retriever: Retrieval-Augmented Generation for Textual Graph Understanding and Question Answering",
+      "original_name": "Graph question answering"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WebQSP",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Personalized Generation In Large Model Era: A Survey",
+      "evidence": "We evaluate reasoning performance on benchmark KGQA datasets used by: WebQSP (Yih et al., 2016)... (Section 4.1)",
+      "paper_count": 7,
+      "papers_by_conference": {
+        "acl25": [
+          "Personalized Generation In Large Model Era: A Survey",
+          "Efficient Long Context Language Model Retrieval with Compression",
+          "PreP-OCR: A Complete Pipeline for Document Image Restoration and EnhancedOCRAccuracy"
+        ],
+        "emnlp25": [
+          "An Empirical Study ofLLMReasoning Ability Under Strict Output Length Constraint",
+          "Media Source Matters More Than Content: Unveiling Political Bias inLLM-Generated Citations",
+          "MiCRo: Mixture Modeling and Context-aware Routing for Personalized Preference Learning",
+          "Social Bias in Multilingual Language Models: A Survey"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CWQ",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Efficient Long Context Language Model Retrieval with Compression",
+      "evidence": "\"We evaluate reasoning performance on benchmark KGQA datasets used by: WebQSP (Yih et al., 2016) includes 4,737 questions involving simple and two-hop reasoning, while CWQ (Talmor and Berant, 2018) features 34,689 questions requiring complex 2-4 hop reasoning.\"",
+      "paper_count": 5,
+      "papers_by_conference": {
+        "acl25": [
+          "Efficient Long Context Language Model Retrieval with Compression",
+          "PreP-OCR: A Complete Pipeline for Document Image Restoration and EnhancedOCRAccuracy"
+        ],
+        "emnlp25": [
+          "An Empirical Study ofLLMReasoning Ability Under Strict Output Length Constraint",
+          "Media Source Matters More Than Content: Unveiling Political Bias inLLM-Generated Citations",
+          "MiCRo: Mixture Modeling and Context-aware Routing for Personalized Preference Learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GrailQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "PreP-OCR: A Complete Pipeline for Document Image Restoration and EnhancedOCRAccuracy",
+      "evidence": "We assess the performance of SAFE on three widely-used multi-hop KGQA benchmarks: CWQ (Talmor and Berant, 2018), WebQSP (Yih et al., 2016), and GrailQA (Gu et al., 2021) (Section 5).",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "acl25": [
+          "PreP-OCR: A Complete Pipeline for Document Image Restoration and EnhancedOCRAccuracy"
+        ],
+        "emnlp25": [
+          "MiCRo: Mixture Modeling and Context-aware Routing for Personalized Preference Learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WebQuestions",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "PreP-OCR: A Complete Pipeline for Document Image Restoration and EnhancedOCRAccuracy",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "PreP-OCR: A Complete Pipeline for Document Image Restoration and EnhancedOCRAccuracy"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "PreP-OCR: A Complete Pipeline for Document Image Restoration and EnhancedOCRAccuracy",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "PreP-OCR: A Complete Pipeline for Document Image Restoration and EnhancedOCRAccuracy"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MedQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Social Bias in Multilingual Language Models: A Survey",
+      "evidence": "We evaluate KGQA benchmarks spanning different backbone KGs. ... MedQA (Jin et al., 2021) consists of questions extracted from USMLE exams. (Section 4.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Social Bias in Multilingual Language Models: A Survey"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Text2Cypher",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Social Bias in Multilingual Language Models: A Survey",
+      "evidence": "We evaluate KGQA benchmarks spanning different backbone KGs. ... The Text2cypher dataset (Ozsoy et al., 2024) emulates text2cypher queries encountered in enterprise KGs... (Section 4.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Social Bias in Multilingual Language Models: A Survey"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Natural language understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Evaluating Large Language Models for Detecting Antisemitism",
+      "evidence": "KGQA poses challenges to existing approaches, as it requires a deep understanding of natural language questions and the ability to perform complex reasoning over KGs. (Section 1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Evaluating Large Language Models for Detecting Antisemitism"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 8,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 7,
+  "characterization": "Across the provided literature, Knowledge graph question answering (KGQA) is consistently defined as the task of answering natural language questions by retrieving and reasoning over structured facts from a knowledge graph. This process is formalized in one paper as finding the correct answer `a*` given a question `q` and a graph `G`. A less common framing, termed \"Graph question answering,\" describes a similar task involving a \"textual graph.\" The provided sources state that KGQA requires a \"deep understanding of natural language questions\" and is thus related to `Natural language understanding`. This behavior is operationalized and measured using several benchmark datasets. The most frequently mentioned instruments are `WebQSP` and `CWQ`, which are described as \"widely used\" and \"classical benchmarks for complex logical reasoning in KGQA.\" Other benchmarks cited for evaluating this task, though less often in this set of papers, include `GrailQA`, `MedQA`, and `Text2Cypher`.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Reasoning of Large Language Models over Knowledge Graphs with Super-Relations",
+      "Simple is Effective: The Roles of Graphs and Large Language Models in Knowledge-Graph-Based Retrieval-Augmented Generation"
+    ],
+    "emnlp25": [
+      "An Empirical Study ofLLMReasoning Ability Under Strict Output Length Constraint",
+      "Evaluating Large Language Models for Detecting Antisemitism",
+      "Media Source Matters More Than Content: Unveiling Political Bias inLLM-Generated Citations",
+      "MiCRo: Mixture Modeling and Context-aware Routing for Personalized Preference Learning",
+      "R"
+    ],
+    "neurips24": [
+      "G-Retriever: Retrieval-Augmented Generation for Textual Graph Understanding and Question Answering",
+      "Plan-on-Graph: Self-Correcting Adaptive Planning of Large Language Model on Knowledge Graphs"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "emnlp25": 5,
+    "neurips24": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "neurips24"
+  ]
+}

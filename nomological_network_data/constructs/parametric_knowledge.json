@@ -1,0 +1,212 @@
+{
+  "canonical_name": "Parametric knowledge",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, parametric knowledge is most commonly defined as the knowledge implicitly stored within a language model's parameters, acquired during pre-training. This framing, appearing under various names including \"internal knowledge\" and \"model knowledge,\" is frequently contrasted with knowledge accessed from external sources or provided in-context; for instance, some work positions it as a \"safety net when the retriever makes mistakes\" (RA-DIT: Retrieval-Augmented Dual Instruction Tuning). A related line of work uses the term \"in-weights learning\" to emphasize the process of encoding query-response relationships into the model's weights, explicitly setting it in opposition to in-context learning. The construct is operationalized through performance on closed-book tasks where external information is withheld. Specifically, the MMLU benchmark is used to measure it, with one paper noting it \"primarily assesses a model\u2019s parametric knowledge\" (Retrieval Head Mechanistically Explains Long-Context Factuality). This internal knowledge is studied alongside `memorization` and `faithfulness`. Some research suggests this knowledge is stored in the FFN layers and can be leveraged to facilitate `semantic understanding`.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "In-weights learning",
+    "Open-world knowledge",
+    "Parametric knowledge",
+    "Multi-task knowledge",
+    "Model knowledge",
+    "Internal knowledge",
+    "In-weight learning",
+    "In-Weights Learning"
+  ],
+  "papers": [
+    "Layered Insights: Generalizable Analysis of Human Authorial Style by Leveraging All Transformer Layers",
+    "MPRF: Interpretable Stance Detection through Multi-Path Reasoning Framework",
+    "One Planner To Guide Them All ! Learning Adaptive Conversational Planners for Goal-oriented Dialogues",
+    "Probing for Arithmetic Errors in Language Models",
+    "RA-DIT: Retrieval-Augmented Dual Instruction Tuning",
+    "Seeking Neural Nuggets: Knowledge Transfer in Large Language Models from a Parametric Perspective",
+    "The mechanistic basis of data dependence and abrupt learning in an in-context classification task",
+    "VDC: Versatile Data Cleanser based on Visual-Linguistic Inconsistency by Multimodal Large Language Models",
+    "MRAG-Bench: Vision-Centric Evaluation for Retrieval-Augmented Multimodal Models",
+    "Retrieval Head Mechanistically Explains Long-Context Factuality",
+    "Synthetic continued pretraining",
+    "DRoC: Elevating Large Language Models for Complex Vehicle Routing via Decomposed Retrieval of Constraints",
+    "Streaming Video Understanding and Multi-round Interaction with Memory-enhanced Knowledge",
+    "Dual Process Learning: Controlling Use of In-Context vs. In-Weights Strategies with Weight Forgetting",
+    "Toward Understanding In-context vs. In-weight Learning",
+    "ETHIC: Evaluating Large Language Models on Long-Context Tasks with High Information Coverage",
+    "Iterative Self-TuningLLMs for Enhanced Jailbreaking Capabilities",
+    "Verify-in-the-Graph: Entity Disambiguation Enhancement for Complex Claim Verification with Interactive Graph Representation"
+  ],
+  "paper_count": 18,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The latent repository of general knowledge about the world that a model can draw upon to perform tasks that require information not present in the immediate input.",
+      "paper": "VDC: Versatile Data Cleanser based on Visual-Linguistic Inconsistency by Multimodal Large Language Models",
+      "original_name": "Open-world knowledge"
+    },
+    {
+      "text": "The knowledge implicitly stored within the parameters of a language model, as opposed to knowledge accessed from an external source.",
+      "paper": "RA-DIT: Retrieval-Augmented Dual Instruction Tuning",
+      "original_name": "Parametric knowledge"
+    },
+    {
+      "text": "The tendency of a model to encode query-response relationships in its parameters and use those learned weights rather than context examples at inference time.",
+      "paper": "The mechanistic basis of data dependence and abrupt learning in an in-context classification task",
+      "original_name": "In-weights learning"
+    },
+    {
+      "text": "The general knowledge and task-related understanding acquired by a model during its pre-training phase, which influences its predictions independently of in-context examples.",
+      "paper": "ETHIC: Evaluating Large Language Models on Long-Context Tasks with High Information Coverage",
+      "original_name": "Prior knowledge"
+    },
+    {
+      "text": "The latent breadth of factual and domain knowledge that supports performance across many subject areas.",
+      "paper": "Iterative Self-TuningLLMs for Enhanced Jailbreaking Capabilities",
+      "original_name": "Multi-task knowledge"
+    },
+    {
+      "text": "The latent store of factual world knowledge encoded in a model during pre-training and potentially altered during fine-tuning, which supports accurate responses in closed-book settings.",
+      "paper": "MPRF: Interpretable Stance Detection through Multi-Path Reasoning Framework",
+      "original_name": "Model knowledge"
+    },
+    {
+      "text": "The knowledge acquired by a large language model during its pre-training phase, which is embedded within its parameters.",
+      "paper": "Probing for Arithmetic Errors in Language Models",
+      "original_name": "Internal knowledge"
+    },
+    {
+      "text": "The latent trait where query-response relationships and memorized information are encoded directly in the model parameters after iterated observations.",
+      "paper": "Dual Process Learning: Controlling Use of In-Context vs. In-Weights Strategies with Weight Forgetting",
+      "original_name": "In-Weights Learning"
+    },
+    {
+      "text": "The ability of a model to acquire knowledge by updating its parameters during training, effectively encoding patterns from the training data into its weights.",
+      "paper": "Toward Understanding In-context vs. In-weight Learning",
+      "original_name": "In-weight learning"
+    }
+  ],
+  "definition_count": 9,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-context learning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "The mechanistic basis of data dependence and abrupt learning in an in-context classification task",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr24": [
+          "The mechanistic basis of data dependence and abrupt learning in an in-context classification task"
+        ],
+        "iclr25": [
+          "MLPs Learn In-Context on Regression and Classification Tasks",
+          "Toward Understanding In-context vs. In-weight Learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Retrieval Head Mechanistically Explains Long-Context Factuality",
+      "evidence": "MMLU primarily assesses a model\u2019s parametric knowledge and requires minimal reasoning, thus offering limited benefits from CoT reasoning. (Section 4.3)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Retrieval Head Mechanistically Explains Long-Context Factuality"
+        ],
+        "naacl25": [
+          "Iterative Self-TuningLLMs for Enhanced Jailbreaking Capabilities"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Memorization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Toward Understanding In-context vs. In-weight Learning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Toward Understanding In-context vs. In-weight Learning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Probing for Arithmetic Errors in Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Probing for Arithmetic Errors in Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Semantic understanding",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Verify-in-the-Graph: Entity Disambiguation Enhancement for Complex Claim Verification with Interactive Graph Representation",
+      "evidence": "As LLMs encompass general open-world knowledge, they can be utilized for the semantic understanding of nodes\u2019 textual content. (Section 1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Verify-in-the-Graph: Entity Disambiguation Enhancement for Complex Claim Verification with Interactive Graph Representation"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 2,
+  "characterization": "Across the surveyed literature, parametric knowledge is most commonly defined as the knowledge implicitly stored within a language model's parameters, acquired during pre-training. This framing, appearing under various names including \"internal knowledge\" and \"model knowledge,\" is frequently contrasted with knowledge accessed from external sources or provided in-context; for instance, some work positions it as a \"safety net when the retriever makes mistakes\" (RA-DIT: Retrieval-Augmented Dual Instruction Tuning). A related line of work uses the term \"in-weights learning\" to emphasize the process of encoding query-response relationships into the model's weights, explicitly setting it in opposition to in-context learning. The construct is operationalized through performance on closed-book tasks where external information is withheld. Specifically, the MMLU benchmark is used to measure it, with one paper noting it \"primarily assesses a model\u2019s parametric knowledge\" (Retrieval Head Mechanistically Explains Long-Context Factuality). This internal knowledge is studied alongside `memorization` and `faithfulness`. Some research suggests this knowledge is stored in the FFN layers and can be leveraged to facilitate `semantic understanding`.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "RA-DIT: Retrieval-Augmented Dual Instruction Tuning",
+      "Seeking Neural Nuggets: Knowledge Transfer in Large Language Models from a Parametric Perspective",
+      "The mechanistic basis of data dependence and abrupt learning in an in-context classification task",
+      "VDC: Versatile Data Cleanser based on Visual-Linguistic Inconsistency by Multimodal Large Language Models"
+    ],
+    "iclr25": [
+      "MRAG-Bench: Vision-Centric Evaluation for Retrieval-Augmented Multimodal Models",
+      "Retrieval Head Mechanistically Explains Long-Context Factuality",
+      "Synthetic continued pretraining",
+      "DRoC: Elevating Large Language Models for Complex Vehicle Routing via Decomposed Retrieval of Constraints",
+      "Streaming Video Understanding and Multi-round Interaction with Memory-enhanced Knowledge",
+      "Dual Process Learning: Controlling Use of In-Context vs. In-Weights Strategies with Weight Forgetting",
+      "Toward Understanding In-context vs. In-weight Learning"
+    ],
+    "naacl25": [
+      "ETHIC: Evaluating Large Language Models on Long-Context Tasks with High Information Coverage",
+      "Iterative Self-TuningLLMs for Enhanced Jailbreaking Capabilities",
+      "Verify-in-the-Graph: Entity Disambiguation Enhancement for Complex Claim Verification with Interactive Graph Representation"
+    ],
+    "emnlp25": [
+      "Layered Insights: Generalizable Analysis of Human Authorial Style by Leveraging All Transformer Layers",
+      "MPRF: Interpretable Stance Detection through Multi-Path Reasoning Framework",
+      "One Planner To Guide Them All ! Learning Adaptive Conversational Planners for Goal-oriented Dialogues",
+      "Probing for Arithmetic Errors in Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 4,
+    "iclr25": 7,
+    "naacl25": 3,
+    "emnlp25": 4
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "naacl25"
+  ]
+}

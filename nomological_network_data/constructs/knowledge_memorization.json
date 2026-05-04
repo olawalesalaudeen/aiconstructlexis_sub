@@ -1,0 +1,116 @@
+{
+  "canonical_name": "Knowledge memorization",
+  "type": "construct",
+  "canonical_definition": "Knowledge memorization is characterized in the provided literature as the extent to which a model retains factual or content knowledge from data it was intended to forget. This is consistently framed as an undesirable property, particularly in the context of machine unlearning, where the goal is described as achieving \"no knowledge memorization.\" The construct is operationalized by evaluating a model's inability to answer questions about a designated \"forget set.\" Several measurement instruments are used to assess this, including the MUSE benchmark, which explicitly lists \"no knowledge memorization\" as one of its core evaluation properties, and Membership inference attacks. One paper also describes using a \"knowledge memorization metric\" to evaluate Utility preservation on data that is meant to be retained. The concept is also studied alongside Information retrieval and Knowledge awareness.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Knowledge memorization"
+  ],
+  "papers": [
+    "LLM Unlearning via Loss Adjustment with Only Forget Data",
+    "MUSE: Machine Unlearning Six-Way Evaluation for Language Models",
+    "Mix-CPT: A Domain Adaptation Framework via Decoupling Knowledge Learning and Format Alignment"
+  ],
+  "paper_count": 3,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The extent to which a model retains factual or content knowledge derived from data that should have been forgotten.",
+      "paper": "MUSE: Machine Unlearning Six-Way Evaluation for Language Models",
+      "original_name": "Knowledge memorization"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge awareness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "KoLA: Carefully Benchmarking World Knowledge of Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "KoLA: Carefully Benchmarking World Knowledge of Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Membership inference attack",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "RWKU: Benchmarking Real-World Knowledge Unlearning for Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "RWKU: Benchmarking Real-World Knowledge Unlearning for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Information retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Mix-CPT: A Domain Adaptation Framework via Decoupling Knowledge Learning and Format Alignment",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Mix-CPT: A Domain Adaptation Framework via Decoupling Knowledge Learning and Format Alignment"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MUSE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MUSE: Machine Unlearning Six-Way Evaluation for Language Models",
+      "evidence": "We address this issue by proposing MUSE, a comprehensive machine unlearning evaluation benchmark that enumerates six diverse desirable properties for unlearned models: (1) no verbatim memorization, (2) no knowledge memorization, (3) no privacy leakage, (4) utility preservation on data not intended for removal, (5) scalability with respect to the size of removal requests, and (6) sustainability over sequential unlearning requests. (Section 1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "MUSE: Machine Unlearning Six-Way Evaluation for Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Utility preservation",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "MUSE: Machine Unlearning Six-Way Evaluation for Language Models",
+      "evidence": "To quantify this, we evaluate the unlearned model\u2019s performance on the retain set using the knowledge memorization metric KnowMem(funlearn, Dretain). (Section 3.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "MUSE: Machine Unlearning Six-Way Evaluation for Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 2,
+  "characterization": "Knowledge memorization is characterized in the provided literature as the extent to which a model retains factual or content knowledge from data it was intended to forget. This is consistently framed as an undesirable property, particularly in the context of machine unlearning, where the goal is described as achieving \"no knowledge memorization.\" The construct is operationalized by evaluating a model's inability to answer questions about a designated \"forget set.\" Several measurement instruments are used to assess this, including the MUSE benchmark, which explicitly lists \"no knowledge memorization\" as one of its core evaluation properties, and Membership inference attacks. One paper also describes using a \"knowledge memorization metric\" to evaluate Utility preservation on data that is meant to be retained. The concept is also studied alongside Information retrieval and Knowledge awareness.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "LLM Unlearning via Loss Adjustment with Only Forget Data",
+      "MUSE: Machine Unlearning Six-Way Evaluation for Language Models",
+      "Mix-CPT: A Domain Adaptation Framework via Decoupling Knowledge Learning and Format Alignment"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3
+  },
+  "conferences": [
+    "iclr25"
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "canonical_name": "WMT16",
+  "type": "measurement",
+  "canonical_definition": "WMT16 is predominantly characterized as a machine translation benchmark dataset with two distinct applications in the provided literature. The most prevalent usage is for evaluating the performance of machine-generated text detection systems, particularly in a cross-lingual context. In this capacity, its English and German splits are frequently used to assess \"cross-lingual detection performance\" and \"text detection evasion.\" For example, one study notes its selection to \"evaluate performance in German\" (DNA-GPT: Divergent N-Gram Analysis for Training-Free Detection of GPT-Generated Text). A separate line of work uses WMT16 to directly evaluate machine translation capabilities. These studies operationalize it for tasks like English-to-Romanian translation, using it for fine-tuning or, as one paper states, to \"distill the pre-trained mBART students for the downstream task of translation\" (Improving Language Model Distillation through Hidden State Matching). Across these applications, WMT16 is explicitly used to measure the behavior of `Machine translation` and is also listed as a measure for `Multilingual ability`.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "WMT16",
+    "WMT-2016",
+    "WMT-16"
+  ],
+  "papers": [
+    "An Efficient Task-Oriented Dialogue Policy: Evolutionary Reinforcement Learning Injected by Elite Individuals",
+    "ShifCon: Enhancing Non-Dominant Language Capabilities with a Shift-based Multilingual Contrastive Framework",
+    "DNA-GPT: Divergent N-Gram Analysis for Training-Free Detection of GPT-Generated Text",
+    "Fast-DetectGPT: Efficient Zero-Shot Detection of Machine-Generated Text via Conditional Probability Curvature",
+    "Humanizing the Machine: Proxy Attacks to Mislead LLM Detectors",
+    "Improving Language Model Distillation through Hidden State Matching",
+    "Scaling Laws for Downstream Task Performance in Machine Translation",
+    "Training-free LLM-generated Text Detection by Mining Token Probability Sequences"
+  ],
+  "paper_count": 8,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Machine translation dataset in English and German used to evaluate cross-lingual detection performance.",
+      "paper": "DNA-GPT: Divergent N-Gram Analysis for Training-Free Detection of GPT-Generated Text",
+      "original_name": "WMT16"
+    },
+    {
+      "text": "A machine translation benchmark dataset used here for cross-language evaluation of text detection evasion.",
+      "paper": "Humanizing the Machine: Proxy Attacks to Mislead LLM Detectors",
+      "original_name": "WMT-2016"
+    },
+    {
+      "text": "A machine translation benchmark/task suite used here for English-to-Romanian fine-tuning evaluation.",
+      "paper": "Scaling Laws for Downstream Task Performance in Machine Translation",
+      "original_name": "WMT-16"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Machine translation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "BERTs are Generative In-Context Learners",
+      "evidence": "We distill the pre-trained mBART students for the downstream task of translation from English to Romanian using the WMT16 dataset (Bojar et al., 2016). (Section 3.2)",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "neurips24": [
+          "BERTs are Generative In-Context Learners"
+        ],
+        "iclr25": [
+          "Improving Language Model Distillation through Hidden State Matching"
+        ],
+        "acl25": [
+          "ShifCon: Enhancing Non-Dominant Language Capabilities with a Shift-based Multilingual Contrastive Framework"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multilingual ability",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Instruction Tuning With Loss Over Instructions",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Instruction Tuning With Loss Over Instructions"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "WMT16 is predominantly characterized as a machine translation benchmark dataset with two distinct applications in the provided literature. The most prevalent usage is for evaluating the performance of machine-generated text detection systems, particularly in a cross-lingual context. In this capacity, its English and German splits are frequently used to assess \"cross-lingual detection performance\" and \"text detection evasion.\" For example, one study notes its selection to \"evaluate performance in German\" (DNA-GPT: Divergent N-Gram Analysis for Training-Free Detection of GPT-Generated Text). A separate line of work uses WMT16 to directly evaluate machine translation capabilities. These studies operationalize it for tasks like English-to-Romanian translation, using it for fine-tuning or, as one paper states, to \"distill the pre-trained mBART students for the downstream task of translation\" (Improving Language Model Distillation through Hidden State Matching). Across these applications, WMT16 is explicitly used to measure the behavior of `Machine translation` and is also listed as a measure for `Multilingual ability`.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "DNA-GPT: Divergent N-Gram Analysis for Training-Free Detection of GPT-Generated Text",
+      "Fast-DetectGPT: Efficient Zero-Shot Detection of Machine-Generated Text via Conditional Probability Curvature"
+    ],
+    "iclr25": [
+      "Humanizing the Machine: Proxy Attacks to Mislead LLM Detectors",
+      "Improving Language Model Distillation through Hidden State Matching",
+      "Scaling Laws for Downstream Task Performance in Machine Translation",
+      "Training-free LLM-generated Text Detection by Mining Token Probability Sequences"
+    ],
+    "acl25": [
+      "An Efficient Task-Oriented Dialogue Policy: Evolutionary Reinforcement Learning Injected by Elite Individuals",
+      "ShifCon: Enhancing Non-Dominant Language Capabilities with a Shift-based Multilingual Contrastive Framework"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "iclr25": 4,
+    "acl25": 2
+  },
+  "conferences": [
+    "acl25",
+    "iclr24",
+    "iclr25"
+  ]
+}

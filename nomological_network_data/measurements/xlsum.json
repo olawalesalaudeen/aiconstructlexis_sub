@@ -1,0 +1,113 @@
+{
+  "canonical_name": "XLSum",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, XLSum is consistently characterized as a dataset or benchmark for evaluating summarization capabilities in language models. The most prevalent framing describes it as a multilingual or cross-lingual instrument, with one paper noting it covers 45 languages and another defining it as a benchmark for a model's ability to \"condense text.\" It is used to measure both general \"Text summarization\" and, more specifically, \"Abstractive summarization.\" Several papers define it as a dataset for news summarization, with one source describing it as \"the largest publicly available summarization dataset\" containing over 300,000 training samples. In practice, researchers use it for both fine-tuning and evaluation. For instance, one study utilizes its English subset, while another reports sampling 500 data points from its test set for evaluation purposes.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "XLSum",
+    "XLSUM",
+    "XL-Sum"
+  ],
+  "papers": [
+    "CHENGYU-BENCH: Benchmarking Large Language Models forChinese Idiom Understanding and Use",
+    "ImproveLLM-as-a-Judge Ability as a General Ability",
+    "Beyond Model Collapse: Scaling Up with Synthesized Data Requires Verification",
+    "Drop-Upcycling: Training Sparse Mixture of Experts with Partial Re-initialization",
+    "Vector-ICL: In-context Learning with Continuous Vector Representations",
+    "Beyond Logit Lens: Contextual Embeddings for Robust Hallucination Detection & Grounding inVLMs",
+    "Has this Fact been Edited? Detecting Knowledge Edits in Language Models"
+  ],
+  "paper_count": 7,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A summarization dataset used to evaluate text summarization from projected embeddings.",
+      "paper": "Vector-ICL: In-context Learning with Continuous Vector Representations",
+      "original_name": "XLSum"
+    },
+    {
+      "text": "A large, publicly available multilingual dataset for news summarization, used in this work for its English subset to fine-tune and evaluate Llama models.",
+      "paper": "Beyond Model Collapse: Scaling Up with Synthesized Data Requires Verification",
+      "original_name": "XLSUM"
+    },
+    {
+      "text": "Cross-lingual summarization benchmark evaluating the model's ability to condense text.",
+      "paper": "Drop-Upcycling: Training Sparse Mixture of Experts with Partial Re-initialization",
+      "original_name": "XL-Sum"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text summarization",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "How do Large Language Models Handle Multilingualism?",
+      "evidence": "",
+      "paper_count": 5,
+      "papers_by_conference": {
+        "neurips24": [
+          "How do Large Language Models Handle Multilingualism?",
+          "Compact Language Models via Pruning and Knowledge Distillation"
+        ],
+        "iclr25": [
+          "Vector-ICL: In-context Learning with Continuous Vector Representations"
+        ],
+        "naacl25": [
+          "Beyond Logit Lens: Contextual Embeddings for Robust Hallucination Detection & Grounding inVLMs",
+          "Has this Fact been Edited? Detecting Knowledge Edits in Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Abstractive summarization",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Many-Shot In-Context Learning",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "Many-Shot In-Context Learning"
+        ],
+        "acl25": [
+          "Beyond N-Grams: Rethinking Evaluation Metrics and Strategies for Multilingual Abstractive Summarization"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, XLSum is consistently characterized as a dataset or benchmark for evaluating summarization capabilities in language models. The most prevalent framing describes it as a multilingual or cross-lingual instrument, with one paper noting it covers 45 languages and another defining it as a benchmark for a model's ability to \"condense text.\" It is used to measure both general \"Text summarization\" and, more specifically, \"Abstractive summarization.\" Several papers define it as a dataset for news summarization, with one source describing it as \"the largest publicly available summarization dataset\" containing over 300,000 training samples. In practice, researchers use it for both fine-tuning and evaluation. For instance, one study utilizes its English subset, while another reports sampling 500 data points from its test set for evaluation purposes.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Beyond Model Collapse: Scaling Up with Synthesized Data Requires Verification",
+      "Drop-Upcycling: Training Sparse Mixture of Experts with Partial Re-initialization",
+      "Vector-ICL: In-context Learning with Continuous Vector Representations"
+    ],
+    "naacl25": [
+      "Beyond Logit Lens: Contextual Embeddings for Robust Hallucination Detection & Grounding inVLMs",
+      "Has this Fact been Edited? Detecting Knowledge Edits in Language Models"
+    ],
+    "emnlp25": [
+      "CHENGYU-BENCH: Benchmarking Large Language Models forChinese Idiom Understanding and Use",
+      "ImproveLLM-as-a-Judge Ability as a General Ability"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3,
+    "naacl25": 2,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "naacl25"
+  ]
+}

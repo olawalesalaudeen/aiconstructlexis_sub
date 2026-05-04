@@ -1,0 +1,446 @@
+{
+  "canonical_name": "Retrieval-augmented generation",
+  "type": "behavior",
+  "canonical_definition": "Retrieval-augmented generation (RAG) is predominantly described as a two-step behavior where a model first retrieves relevant information from an external knowledge source to augment its context, and then generates a response based on that augmented context. A common specialization of this behavior is retrieval-augmented question answering, with one paper equating open-domain question answering with RAG applications. While most definitions are general, a few papers frame RAG for specific domains, such as retrieving code examples for code generation. A distinct line of work emphasizes the verifiability of the output, defining related behaviors like \"grounded question answering\" and \"source-supported response generation,\" which require the generated text to be \"systematically entailed by\" or \"explicitly backed by\" the provided documents. This focus on attribution is further operationalized through tasks like \"sentence-level\" and \"chunk-level\" citation generation. The behavior, particularly its grounded variant, is measured using benchmarks such as ARC and MedQA, where evaluation centers on a \"Grounding Rate\" of test hypotheses. The external knowledge source itself is variously described as a \"non-parametric datastore,\" a \"knowledge corpus,\" or knowledge chunks modeled as a graph. The emphasis on verifiability also connects the behavior to textual entailment.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Retrieval-augmented generation",
+    "Retrieval-augmented question answering",
+    "Generation with citations",
+    "Grounded question answering",
+    "Source-supported response generation",
+    "Chunk-level citation generation",
+    "Sentence-level citation generation",
+    "RAG"
+  ],
+  "papers": [
+    "AligningVLMAssistants with Personalized Situated Cognition",
+    "All That Glitters is Not Novel: Plagiarism inAIGenerated Research",
+    "Crab: A Novel Configurable Role-PlayingLLMwith Assessing Benchmark",
+    "MorphMark: Flexible Adaptive Watermarking for Large Language Models",
+    "ReMedy: Learning Machine Translation Evaluation from Human Preferences with Reward Modeling",
+    "SQUiD: Synthesizing Relational Databases from Unstructured Text",
+    "Transformer-Based Temporal Information Extraction and Application: A Review",
+    "BioBridge: Bridging Biomedical Foundation Models via Knowledge Graphs",
+    "DSPy: Compiling Declarative Language Model Calls into State-of-the-Art Pipelines",
+    "APE: Faster and Longer Context-Augmented Generation via Adaptive Parallel Encoding",
+    "Block Verification Accelerates Speculative Decoding",
+    "Block-Attention for Efficient Prefilling",
+    "Controllable Context Sensitivity and the Knob Behind It",
+    "Eliminating Position Bias of Language Models: A Mechanistic Approach",
+    "From Models to Microtheories: Distilling a Model's Topical Knowledge for Grounded Question-Answering",
+    "Generative Representational Instruction Tuning",
+    "HELMET: How to Evaluate Long-context Models Effectively and Thoroughly",
+    "Long-Context LLMs Meet RAG: Overcoming Challenges for Long Inputs in RAG",
+    "PICASO: Permutation-Invariant Context Composition with State Space Models",
+    "SePer: Measure Retrieval Utility Through The Lens Of Semantic Perplexity Reduction",
+    "SiReRAG: Indexing Similar and Related Information for Multihop Reasoning",
+    "Training Large Language Models for Retrieval-Augmented Question Answering through Backtracking Correction",
+    "Ward: Provable RAG Dataset Inference via LLM Watermarks",
+    "Graph World Model",
+    "NExtLong: Toward Effective Long-Context Training without Long Documents",
+    "SelfCite: Self-Supervised Alignment for Context Attribution in Large Language Models",
+    "polybasic Speculative Decoding Through a Theoretical Perspective",
+    "CROPE: Evaluating In-Context Adaptation of Vision and Language Models to Culture-Specific Concepts",
+    "Improving Model Evaluation usingSMARTFiltering of Benchmark Datasets",
+    "Is your benchmark truly adversarial?AdvScore: Evaluating Human-Grounded Adversarialness",
+    "Knowledge Graph-Guided Retrieval Augmented Generation",
+    "Yeah, Un, Oh: Continuous and Real-time Backchannel Prediction with Fine-tuning of Voice Activity Projection",
+    "Compact Language Models via Pruning and Knowledge Distillation",
+    "Evaluating Copyright Takedown Methods for Language Models",
+    "Kangaroo: Lossless Self-Speculative Decoding for Accelerating LLMs via Double Early Exiting",
+    "Mixture of In-Context Experts Enhance LLMs' Long Context Awareness",
+    "SGLang: Efficient Execution of Structured Language Model Programs",
+    "Unified Generative and Discriminative Training for Multi-modal Large Language Models",
+    "xRAG: Extreme Context Compression for Retrieval-augmented Generation with One Token"
+  ],
+  "paper_count": 39,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A generation process where a model first retrieves relevant information from an external knowledge source to augment its context before generating a response.",
+      "paper": "BioBridge: Bridging Biomedical Foundation Models via Knowledge Graphs",
+      "original_name": "Retrieval-augmented generation"
+    },
+    {
+      "text": "The task of answering questions by first retrieving relevant information from an external knowledge source and then synthesizing an answer based on that information.",
+      "paper": "Compact Language Models via Pruning and Knowledge Distillation",
+      "original_name": "Retrieval-augmented question answering"
+    },
+    {
+      "text": "The task of generating a long-form answer to a multi-faceted question and correctly attributing each sentence to the source passages provided in the context.",
+      "paper": "HELMET: How to Evaluate Long-context Models Effectively and Thoroughly",
+      "original_name": "Generation with citations"
+    },
+    {
+      "text": "The observable behavior of providing an answer to a question while also showing how that answer is systematically entailed by a set of verifiable documents or facts.",
+      "paper": "From Models to Microtheories: Distilling a Model's Topical Knowledge for Grounded Question-Answering",
+      "original_name": "Grounded question answering"
+    },
+    {
+      "text": "The observable behavior of generating text that is explicitly backed by information present in provided source documents.",
+      "paper": "Ward: Provable RAG Dataset Inference via LLM Watermarks",
+      "original_name": "Source-supported response generation"
+    },
+    {
+      "text": "Producing citations after individual response statements that reference specific sentences from the provided context.",
+      "paper": "SelfCite: Self-Supervised Alignment for Context Attribution in Large Language Models",
+      "original_name": "Sentence-level citation generation"
+    },
+    {
+      "text": "The behavior of citing larger blocks of text, such as paragraphs, as evidence for a generated statement.",
+      "paper": "SelfCite: Self-Supervised Alignment for Context Attribution in Large Language Models",
+      "original_name": "Chunk-level citation generation"
+    },
+    {
+      "text": "Retrieval-Augmented Generation, a method that retrieves relevant code examples from a database to enhance prompt context for code generation tasks.",
+      "paper": "ReMedy: Learning Machine Translation Evaluation from Human Preferences with Reward Modeling",
+      "original_name": "RAG"
+    }
+  ],
+  "definition_count": 8,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Spec-Bench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Block Verification Accelerates Speculative Decoding",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr25": [
+          "Block Verification Accelerates Speculative Decoding"
+        ],
+        "emnlp25": [
+          "AISees YourLocation\u2014But With A Bias Toward The Wealthy World",
+          "Intrinsic Test of Unlearning Using Parametric Knowledge Traces"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HotpotQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "HELMET: How to Evaluate Long-context Models Effectively and Thoroughly",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "HELMET: How to Evaluate Long-context Models Effectively and Thoroughly"
+        ],
+        "emnlp25": [
+          "Beyond Input Activations: Identifying Influential Latents by Gradient Sparse Autoencoders"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Natural Questions",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Generative Representational Instruction Tuning",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Generative Representational Instruction Tuning"
+        ],
+        "emnlp25": [
+          "Beyond Input Activations: Identifying Influential Latents by Gradient Sparse Autoencoders"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "BioBridge: Bridging Biomedical Foundation Models via Knowledge Graphs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "BioBridge: Bridging Biomedical Foundation Models via Knowledge Graphs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Text generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Generative Representational Instruction Tuning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Generative Representational Instruction Tuning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Information retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "SePer: Measure Retrieval Utility Through The Lens Of Semantic Perplexity Reduction",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "SePer: Measure Retrieval Utility Through The Lens Of Semantic Perplexity Reduction"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Distribution alignment",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Fine-grained Analysis of In-context Linear Estimation: Data, Architecture, and Beyond",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Fine-grained Analysis of In-context Linear Estimation: Data, Architecture, and Beyond"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "NOVA-63: Native Omni-lingual Versatile Assessments of 63 Disciplines",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "NOVA-63: Native Omni-lingual Versatile Assessments of 63 Disciplines"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TriviaQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "AISees YourLocation\u2014But With A Bias Toward The Wealthy World",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "AISees YourLocation\u2014But With A Bias Toward The Wealthy World"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "From Models to Microtheories: Distilling a Model's Topical Knowledge for Grounded Question-Answering",
+      "evidence": "Figure 6: % of test hypotheses fully groundable after adding various microtheories (n-sized Random, Usage, QC, & PC Mts) to a base Corpus. ... ARC Grounding Rate (%) of Test Hypotheses",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "From Models to Microtheories: Distilling a Model's Topical Knowledge for Grounded Question-Answering"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MedQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "From Models to Microtheories: Distilling a Model's Topical Knowledge for Grounded Question-Answering",
+      "evidence": "Figure 6: % of test hypotheses fully groundable after adding various microtheories (n-sized Random, Usage, QC, & PC Mts) to a base Corpus. ... MedQA Grounding Rate (%) of Test Hypotheses",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "From Models to Microtheories: Distilling a Model's Topical Knowledge for Grounded Question-Answering"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Textual entailment",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "From Models to Microtheories: Distilling a Model's Topical Knowledge for Grounded Question-Answering",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "From Models to Microtheories: Distilling a Model's Topical Knowledge for Grounded Question-Answering"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HELMET",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "NExtLong: Toward Effective Long-Context Training without Long Documents",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "NExtLong: Toward Effective Long-Context Training without Long Documents"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Ranking",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "correlates",
+      "paper": "HELMET: How to Evaluate Long-context Models Effectively and Thoroughly",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "HELMET: How to Evaluate Long-context Models Effectively and Thoroughly"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Robustness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Improving Model Evaluation usingSMARTFiltering of Benchmark Datasets",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Improving Model Evaluation usingSMARTFiltering of Benchmark Datasets"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LongBench v2",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Graph World Model",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Graph World Model"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "DPR",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "polybasic Speculative Decoding Through a Theoretical Perspective",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "polybasic Speculative Decoding Through a Theoretical Perspective"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GPQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Table-R1: Inference-Time Scaling for Table Reasoning Tasks",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Table-R1: Inference-Time Scaling for Table Reasoning Tasks"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 18,
+  "incoming_relationship_count": 5,
+  "outgoing_relationship_count": 13,
+  "characterization": "Retrieval-augmented generation (RAG) is predominantly described as a two-step behavior where a model first retrieves relevant information from an external knowledge source to augment its context, and then generates a response based on that augmented context. A common specialization of this behavior is retrieval-augmented question answering, with one paper equating open-domain question answering with RAG applications. While most definitions are general, a few papers frame RAG for specific domains, such as retrieving code examples for code generation. A distinct line of work emphasizes the verifiability of the output, defining related behaviors like \"grounded question answering\" and \"source-supported response generation,\" which require the generated text to be \"systematically entailed by\" or \"explicitly backed by\" the provided documents. This focus on attribution is further operationalized through tasks like \"sentence-level\" and \"chunk-level\" citation generation. The behavior, particularly its grounded variant, is measured using benchmarks such as ARC and MedQA, where evaluation centers on a \"Grounding Rate\" of test hypotheses. The external knowledge source itself is variously described as a \"non-parametric datastore,\" a \"knowledge corpus,\" or knowledge chunks modeled as a graph. The emphasis on verifiability also connects the behavior to textual entailment.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "BioBridge: Bridging Biomedical Foundation Models via Knowledge Graphs",
+      "DSPy: Compiling Declarative Language Model Calls into State-of-the-Art Pipelines"
+    ],
+    "neurips24": [
+      "Compact Language Models via Pruning and Knowledge Distillation",
+      "Evaluating Copyright Takedown Methods for Language Models",
+      "Kangaroo: Lossless Self-Speculative Decoding for Accelerating LLMs via Double Early Exiting",
+      "Mixture of In-Context Experts Enhance LLMs' Long Context Awareness",
+      "SGLang: Efficient Execution of Structured Language Model Programs",
+      "Unified Generative and Discriminative Training for Multi-modal Large Language Models",
+      "xRAG: Extreme Context Compression for Retrieval-augmented Generation with One Token"
+    ],
+    "iclr25": [
+      "APE: Faster and Longer Context-Augmented Generation via Adaptive Parallel Encoding",
+      "Block Verification Accelerates Speculative Decoding",
+      "Block-Attention for Efficient Prefilling",
+      "Controllable Context Sensitivity and the Knob Behind It",
+      "Eliminating Position Bias of Language Models: A Mechanistic Approach",
+      "From Models to Microtheories: Distilling a Model's Topical Knowledge for Grounded Question-Answering",
+      "Generative Representational Instruction Tuning",
+      "HELMET: How to Evaluate Long-context Models Effectively and Thoroughly",
+      "Long-Context LLMs Meet RAG: Overcoming Challenges for Long Inputs in RAG",
+      "PICASO: Permutation-Invariant Context Composition with State Space Models",
+      "SePer: Measure Retrieval Utility Through The Lens Of Semantic Perplexity Reduction",
+      "SiReRAG: Indexing Similar and Related Information for Multihop Reasoning",
+      "Training Large Language Models for Retrieval-Augmented Question Answering through Backtracking Correction",
+      "Ward: Provable RAG Dataset Inference via LLM Watermarks"
+    ],
+    "naacl25": [
+      "CROPE: Evaluating In-Context Adaptation of Vision and Language Models to Culture-Specific Concepts",
+      "Improving Model Evaluation usingSMARTFiltering of Benchmark Datasets",
+      "Is your benchmark truly adversarial?AdvScore: Evaluating Human-Grounded Adversarialness",
+      "Knowledge Graph-Guided Retrieval Augmented Generation",
+      "Yeah, Un, Oh: Continuous and Real-time Backchannel Prediction with Fine-tuning of Voice Activity Projection"
+    ],
+    "acl25": [
+      "AligningVLMAssistants with Personalized Situated Cognition",
+      "All That Glitters is Not Novel: Plagiarism inAIGenerated Research",
+      "Crab: A Novel Configurable Role-PlayingLLMwith Assessing Benchmark",
+      "MorphMark: Flexible Adaptive Watermarking for Large Language Models"
+    ],
+    "icml25": [
+      "Graph World Model",
+      "NExtLong: Toward Effective Long-Context Training without Long Documents",
+      "SelfCite: Self-Supervised Alignment for Context Attribution in Large Language Models",
+      "polybasic Speculative Decoding Through a Theoretical Perspective"
+    ],
+    "emnlp25": [
+      "ReMedy: Learning Machine Translation Evaluation from Human Preferences with Reward Modeling",
+      "SQUiD: Synthesizing Relational Databases from Unstructured Text",
+      "Transformer-Based Temporal Information Extraction and Application: A Review"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "neurips24": 7,
+    "iclr25": 14,
+    "naacl25": 5,
+    "acl25": 4,
+    "icml25": 4,
+    "emnlp25": 3
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

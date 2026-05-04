@@ -1,0 +1,162 @@
+{
+  "canonical_name": "Task completion",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, task completion is most commonly defined as successfully reaching the intended end state of a benchmark task, a process typically judged by task-specific evaluation scripts. The specific nature of this behavior, however, is highly contextual and varies across different research domains. For instance, in software engineering, it is framed as 'issue resolution,' which entails fixing a software issue to pass a test suite. In simulated environments, it manifests as 'household task execution' in 3D worlds, 'indoor task simulation' guided by text, or 'achievement unlocking' in open-world games, where agents must 'unlock all achievements while ensuring its survival.' A more abstract conceptualization treats it as 'graph-structured task execution,' which involves performing a sequence of actions on a task with dependencies. The operationalization of this behavior frequently relies on quantitative metrics, such as a binary 'success flag (0/1)', a success rate like the 'proportion of achievements unlocked', or the 'time to completion.' To elicit and measure this behavior, papers use specific instruments, including the SWE-bench Lite and SWE-Bench Verified benchmarks for software tasks, and simulated environments like VirtualHome and ALFWorld for embodied tasks.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Achievement unlocking",
+    "Task completion",
+    "Household task execution",
+    "Issue resolution",
+    "Indoor task simulation",
+    "Graph-structured task execution"
+  ],
+  "papers": [
+    "Nemotron-CORTEXA: Enhancing LLM Agents for Software Engineering Tasks via Improved Localization and Solution Diversity",
+    "Position: Human Baselines in Model Evaluations Need Rigor and Transparency (With Recommendations & Reporting Checklist)",
+    "What Limits Virtual Agent Application? OmniBench: A Scalable Multi-Dimensional Benchmark for Essential Virtual Agent Capabilities",
+    "World Model Implanting for Test-time Adaptation of Embodied Agents",
+    "AMOR: A Recipe for Building Adaptable Modular Knowledge Agents Through Process Feedback",
+    "AutoManual: Constructing Instruction Manuals by LLM Agents via Interactive Environmental Learning",
+    "DigiRL: Training In-The-Wild Device-Control Agents with Autonomous Reinforcement Learning",
+    "Mars: Situated Inductive Reasoning in an Open-World Environment",
+    "Spider2-V: How Far Are Multimodal Agents From Automating Data Science and Engineering Workflows?"
+  ],
+  "paper_count": 9,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The task of accomplishing specific goals such as collecting resources, crafting tools, or placing objects within the game environment.",
+      "paper": "Mars: Situated Inductive Reasoning in an Open-World Environment",
+      "original_name": "Achievement unlocking"
+    },
+    {
+      "text": "Successfully reaching the intended end state of a benchmark task as judged by task-specific evaluation scripts.",
+      "paper": "Spider2-V: How Far Are Multimodal Agents From Automating Data Science and Engineering Workflows?",
+      "original_name": "Task completion"
+    },
+    {
+      "text": "The end-to-end task of successfully fixing a software issue described in natural language, resulting in a passing test suite.",
+      "paper": "Nemotron-CORTEXA: Enhancing LLM Agents for Software Engineering Tasks via Improved Localization and Solution Diversity",
+      "original_name": "Issue resolution"
+    },
+    {
+      "text": "Performing a variety of common tasks within a simulated home environment, such as moving objects or operating appliances.",
+      "paper": "World Model Implanting for Test-time Adaptation of Embodied Agents",
+      "original_name": "Household task execution"
+    },
+    {
+      "text": "Completing tasks within a simulated indoor setting, typically guided by text-based interactions and instructions.",
+      "paper": "World Model Implanting for Test-time Adaptation of Embodied Agents",
+      "original_name": "Indoor task simulation"
+    },
+    {
+      "text": "Performing a sequence of actions on a task represented as a directed acyclic graph with dependencies, branches, and hierarchical levels.",
+      "paper": "What Limits Virtual Agent Application? OmniBench: A Scalable Multi-Dimensional Benchmark for Essential Virtual Agent Capabilities",
+      "original_name": "Graph-structured task execution"
+    }
+  ],
+  "definition_count": 6,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Android-in-the-Wild",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "DigiRL: Training In-The-Wild Device-Control Agents with Autonomous Reinforcement Learning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "DigiRL: Training In-The-Wild Device-Control Agents with Autonomous Reinforcement Learning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "LLM-as-a-judge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "DigiRL: Training In-The-Wild Device-Control Agents with Autonomous Reinforcement Learning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "DigiRL: Training In-The-Wild Device-Control Agents with Autonomous Reinforcement Learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WebArena",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "AgentTrek: Agent Trajectory Synthesis via Guiding Replay with Web Tutorials",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "AgentTrek: Agent Trajectory Synthesis via Guiding Replay with Web Tutorials"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SWE-bench Lite",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Nemotron-CORTEXA: Enhancing LLM Agents for Software Engineering Tasks via Improved Localization and Solution Diversity",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Nemotron-CORTEXA: Enhancing LLM Agents for Software Engineering Tasks via Improved Localization and Solution Diversity"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SWE-Bench Verified",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Nemotron-CORTEXA: Enhancing LLM Agents for Software Engineering Tasks via Improved Localization and Solution Diversity",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Nemotron-CORTEXA: Enhancing LLM Agents for Software Engineering Tasks via Improved Localization and Solution Diversity"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 3,
+  "characterization": "Across the provided literature, task completion is most commonly defined as successfully reaching the intended end state of a benchmark task, a process typically judged by task-specific evaluation scripts. The specific nature of this behavior, however, is highly contextual and varies across different research domains. For instance, in software engineering, it is framed as 'issue resolution,' which entails fixing a software issue to pass a test suite. In simulated environments, it manifests as 'household task execution' in 3D worlds, 'indoor task simulation' guided by text, or 'achievement unlocking' in open-world games, where agents must 'unlock all achievements while ensuring its survival.' A more abstract conceptualization treats it as 'graph-structured task execution,' which involves performing a sequence of actions on a task with dependencies. The operationalization of this behavior frequently relies on quantitative metrics, such as a binary 'success flag (0/1)', a success rate like the 'proportion of achievements unlocked', or the 'time to completion.' To elicit and measure this behavior, papers use specific instruments, including the SWE-bench Lite and SWE-Bench Verified benchmarks for software tasks, and simulated environments like VirtualHome and ALFWorld for embodied tasks.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "AMOR: A Recipe for Building Adaptable Modular Knowledge Agents Through Process Feedback",
+      "AutoManual: Constructing Instruction Manuals by LLM Agents via Interactive Environmental Learning",
+      "DigiRL: Training In-The-Wild Device-Control Agents with Autonomous Reinforcement Learning",
+      "Mars: Situated Inductive Reasoning in an Open-World Environment",
+      "Spider2-V: How Far Are Multimodal Agents From Automating Data Science and Engineering Workflows?"
+    ],
+    "icml25": [
+      "Nemotron-CORTEXA: Enhancing LLM Agents for Software Engineering Tasks via Improved Localization and Solution Diversity",
+      "Position: Human Baselines in Model Evaluations Need Rigor and Transparency (With Recommendations & Reporting Checklist)",
+      "What Limits Virtual Agent Application? OmniBench: A Scalable Multi-Dimensional Benchmark for Essential Virtual Agent Capabilities",
+      "World Model Implanting for Test-time Adaptation of Embodied Agents"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 5,
+    "icml25": 4
+  },
+  "conferences": [
+    "icml25",
+    "neurips24"
+  ]
+}

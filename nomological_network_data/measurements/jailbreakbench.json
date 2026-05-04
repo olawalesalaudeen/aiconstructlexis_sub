@@ -1,0 +1,151 @@
+{
+  "canonical_name": "JailbreakBench",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, JailbreakBench is consistently defined as a standardized benchmark used to evaluate large language models. Its primary application is to measure a model's `Safety` and `Adversarial robustness` against jailbreak attacks, with papers also using it to assess `Harmlessness` and `Refusal behavior`. The benchmark is composed of harmful queries or instructions designed to test a model's resistance to generating disallowed content, and is listed in one paper among other \"commonly used harmful query datasets\" (\"On the Role of Attention Heads in Large Language Model Safety\"). In practice, researchers report using subsets of its data, such as sampling 100 harmful prompts for evaluation. A specific feature highlighted by one study is its evaluation protocol, which \"recommends using LLM as a judge\" to automatically assess whether a model produces a disallowed response (\"FineReason: Evaluating and ImprovingLLMs\u2019 Deliberate Reasoning through Reflective Puzzle Solving\"). One paper also distinguishes between \"template\" and \"direct\" versions of the benchmark, though without further detail. The overall goal is to test \"jailbreak resistance and safety degradation,\" particularly in response to what one paper calls \"adversarial prompt injection.\"",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "JailbreakBench",
+    "Jailbreakbench"
+  ],
+  "papers": [
+    "Cheems: A Practical Guidance for Building and EvaluatingChinese Reward Models from Scratch",
+    "FineReason: Evaluating and ImprovingLLMs\u2019 Deliberate Reasoning through Reflective Puzzle Solving",
+    "PIG: Privacy Jailbreak Attack onLLMs via Gradient-based Iterative In-Context Optimization",
+    "A Probabilistic Perspective on Unlearning and Alignment for Large Language Models",
+    "Does Safety Training of LLMs Generalize to Semantically Related Natural Prompts?",
+    "Jailbreak Antidote: Runtime Safety-Utility Balance via Sparse Representation Adjustment in Large Language Models",
+    "On the Role of Attention Heads in Large Language Model Safety",
+    "Persistent Pre-training Poisoning of LLMs",
+    "Surgical, Cheap, and Flexible: Mitigating False Refusal in Language Models via Single Vector Ablation",
+    "TIS-DPO: Token-level Importance Sampling for Direct Preference Optimization With Estimated Weights",
+    "h4rm3l: A Language for Composable Jailbreak Attack Synthesis",
+    "Activation Space Interventions Can Be Transferred Between Large Language Models",
+    "Automated Red Teaming with GOAT: the Generative Offensive Agent Tester",
+    "Evolving Prompts In-Context: An Open-ended, Self-replicating Perspective",
+    "Learning Safety Constraints for Large Language Models",
+    "POROver: Improving Safety and Reducing Overrefusal in Large Language Models with Overgeneration and Preference Optimization",
+    "The Geometry of Refusal in Large Language Models: Concept Cones and Representational Independence"
+  ],
+  "paper_count": 17,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A standardized benchmark designed to evaluate a large language model's safety and robustness against a variety of jailbreak attacks.",
+      "paper": "Jailbreak Antidote: Runtime Safety-Utility Balance via Sparse Representation Adjustment in Large Language Models",
+      "original_name": "JailbreakBench"
+    },
+    {
+      "text": "A harmful-query benchmark used to test jailbreak resistance and safety degradation after head ablation.",
+      "paper": "On the Role of Attention Heads in Large Language Model Safety",
+      "original_name": "Jailbreakbench"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Adversarial robustness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Robust Prompt Optimization for Defending Language Models Against Jailbreaking Attacks",
+      "evidence": "\u201cWe additionally evaluate on Adaptive Attack (Andriushchenko et al., 2024), a state-of-the-art adversarial attack method, on JailBreakBench (Chao et al., 2024).\u201d",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "neurips24": [
+          "Robust Prompt Optimization for Defending Language Models Against Jailbreaking Attacks",
+          "Navigating the Safety Landscape: Measuring Risks in Finetuning Large Language Models"
+        ],
+        "icml25": [
+          "POROver: Improving Safety and Reducing Overrefusal in Large Language Models with Overgeneration and Preference Optimization"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmlessness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "TIS-DPO: Token-level Importance Sampling for Direct Preference Optimization With Estimated Weights",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "TIS-DPO: Token-level Importance Sampling for Direct Preference Optimization With Estimated Weights"
+        ],
+        "emnlp25": [
+          "LLM-OREF: An Open Relation Extraction Framework Based on Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Safety",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Jailbreak Antidote: Runtime Safety-Utility Balance via Sparse Representation Adjustment in Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Jailbreak Antidote: Runtime Safety-Utility Balance via Sparse Representation Adjustment in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Refusal behavior",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "The Geometry of Refusal in Large Language Models: Concept Cones and Representational Independence",
+      "evidence": "We evaluate the jailbreak Attack Success Rate (ASR) on JAILBREAKBENCH (Chao et al., 2024) using the STRONGREJECT fine\u2013tuned judge (Souly et al., 2024).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "The Geometry of Refusal in Large Language Models: Concept Cones and Representational Independence"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, JailbreakBench is consistently defined as a standardized benchmark used to evaluate large language models. Its primary application is to measure a model's `Safety` and `Adversarial robustness` against jailbreak attacks, with papers also using it to assess `Harmlessness` and `Refusal behavior`. The benchmark is composed of harmful queries or instructions designed to test a model's resistance to generating disallowed content, and is listed in one paper among other \"commonly used harmful query datasets\" (\"On the Role of Attention Heads in Large Language Model Safety\"). In practice, researchers report using subsets of its data, such as sampling 100 harmful prompts for evaluation. A specific feature highlighted by one study is its evaluation protocol, which \"recommends using LLM as a judge\" to automatically assess whether a model produces a disallowed response (\"FineReason: Evaluating and ImprovingLLMs\u2019 Deliberate Reasoning through Reflective Puzzle Solving\"). One paper also distinguishes between \"template\" and \"direct\" versions of the benchmark, though without further detail. The overall goal is to test \"jailbreak resistance and safety degradation,\" particularly in response to what one paper calls \"adversarial prompt injection.\"",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "A Probabilistic Perspective on Unlearning and Alignment for Large Language Models",
+      "Does Safety Training of LLMs Generalize to Semantically Related Natural Prompts?",
+      "Jailbreak Antidote: Runtime Safety-Utility Balance via Sparse Representation Adjustment in Large Language Models",
+      "On the Role of Attention Heads in Large Language Model Safety",
+      "Persistent Pre-training Poisoning of LLMs",
+      "Surgical, Cheap, and Flexible: Mitigating False Refusal in Language Models via Single Vector Ablation",
+      "TIS-DPO: Token-level Importance Sampling for Direct Preference Optimization With Estimated Weights",
+      "h4rm3l: A Language for Composable Jailbreak Attack Synthesis"
+    ],
+    "acl25": [
+      "Cheems: A Practical Guidance for Building and EvaluatingChinese Reward Models from Scratch",
+      "FineReason: Evaluating and ImprovingLLMs\u2019 Deliberate Reasoning through Reflective Puzzle Solving",
+      "PIG: Privacy Jailbreak Attack onLLMs via Gradient-based Iterative In-Context Optimization"
+    ],
+    "icml25": [
+      "Activation Space Interventions Can Be Transferred Between Large Language Models",
+      "Automated Red Teaming with GOAT: the Generative Offensive Agent Tester",
+      "Evolving Prompts In-Context: An Open-ended, Self-replicating Perspective",
+      "Learning Safety Constraints for Large Language Models",
+      "POROver: Improving Safety and Reducing Overrefusal in Large Language Models with Overgeneration and Preference Optimization",
+      "The Geometry of Refusal in Large Language Models: Concept Cones and Representational Independence"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 8,
+    "acl25": 3,
+    "icml25": 6
+  },
+  "conferences": [
+    "acl25",
+    "iclr25",
+    "icml25"
+  ]
+}

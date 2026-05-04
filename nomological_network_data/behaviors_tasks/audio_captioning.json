@@ -1,0 +1,153 @@
+{
+  "canonical_name": "Audio captioning",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, audio captioning is predominantly defined as the task of generating natural language descriptions for audio content. The most common definitions specify that this applies to non-speech audio, such as \"environmental sounds or events,\" although one paper also includes music in this category. A more specialized variant, \"music captioning,\" is also described, focusing exclusively on generating text for music clips. This behavior is consistently operationalized and evaluated using several benchmarks, with AudioCaps and Clotho being the most frequently cited datasets for this purpose, alongside MusicCaps for the music-specific version of the task. One paper illustrates a direct method for eliciting this behavior from a model using the prompt, \"write an audio caption describing the sound\". The task is generally positioned as a \"conventional\" or \"fundamental\" audio processing capability, often studied as a component of broader \"General Auditory Awareness and Processing.\"",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Audio captioning",
+    "Music captioning"
+  ],
+  "papers": [
+    "Improving Instruct Models for Free: A Study on Partial Adaptation",
+    "MA-GTS: A Multi-Agent Framework for Solving Complex Graph Problems in Real-World Applications",
+    "RecGPT: A Foundation Model for Sequential Recommendation",
+    "Listen, Think, and Understand",
+    "SALMONN: Towards Generic Hearing Abilities for Large Language Models",
+    "ADIFF: Explaining audio difference using natural language",
+    "Aligned Better, Listen Better for Audio-Visual Large Language Models",
+    "NatureLM-audio: an Audio-Language Foundation Model for Bioacoustics",
+    "ALMTokenizer: A Low-bitrate and Semantic-rich Audio Codec Tokenizer for Audio Language Modeling",
+    "Audio Flamingo 2: An Audio-Language Model with Long-Audio Understanding and Expert Reasoning Abilities",
+    "LLMs can see and hear without any training",
+    "MATS: An Audio Language Model under Text-only Supervision"
+  ],
+  "paper_count": 12,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Generating natural language descriptions of non-speech audio content such as environmental sounds or events.",
+      "paper": "Listen, Think, and Understand",
+      "original_name": "Audio captioning"
+    },
+    {
+      "text": "Generating descriptive text for music clips, used to evaluate the understanding capabilities of the audio tokenizer in a language model.",
+      "paper": "ALMTokenizer: A Low-bitrate and Semantic-rich Audio Codec Tokenizer for Audio Language Modeling",
+      "original_name": "Music captioning"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AudioCaps",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Listen, Think, and Understand",
+      "evidence": "The results on all 15 tasks produced by SALMONN are shown in Table 3. From the results, SALMONN, without or with activation tuning, can produce competitive results on all level 1 tasks. (Section 5.1)",
+      "paper_count": 5,
+      "papers_by_conference": {
+        "iclr24": [
+          "Listen, Think, and Understand",
+          "SALMONN: Towards Generic Hearing Abilities for Large Language Models"
+        ],
+        "neurips24": [
+          "An eye for an ear: zero-shot audio description leveraging an image captioner with audio-visual token distribution matching"
+        ],
+        "icml25": [
+          "Audio Flamingo 2: An Audio-Language Model with Long-Audio Understanding and Expert Reasoning Abilities",
+          "MATS: An Audio Language Model under Text-only Supervision"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Clotho",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "An eye for an ear: zero-shot audio description leveraging an image captioner with audio-visual token distribution matching",
+      "evidence": "We evaluate our approach on a popular audio captioning dataset, Clotho (Drossos et al., 2020). (Section 4.3)",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "neurips24": [
+          "An eye for an ear: zero-shot audio description leveraging an image captioner with audio-visual token distribution matching"
+        ],
+        "icml25": [
+          "LLMs can see and hear without any training",
+          "MATS: An Audio Language Model under Text-only Supervision"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MusicCaps",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "SALMONN: Towards Generic Hearing Abilities for Large Language Models",
+      "evidence": "Table 2 summarizes the comparative results for audio captioning tasks on AudioCaps, Clotho, and MusicCaps benchmarks. (Section 4.2.1)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr24": [
+          "SALMONN: Towards Generic Hearing Abilities for Large Language Models"
+        ],
+        "icml25": [
+          "MATS: An Audio Language Model under Text-only Supervision"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Audio understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "MA-GTS: A Multi-Agent Framework for Solving Complex Graph Problems in Real-World Applications",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "MA-GTS: A Multi-Agent Framework for Solving Complex Graph Problems in Real-World Applications"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 4,
+  "characterization": "Across the surveyed literature, audio captioning is predominantly defined as the task of generating natural language descriptions for audio content. The most common definitions specify that this applies to non-speech audio, such as \"environmental sounds or events,\" although one paper also includes music in this category. A more specialized variant, \"music captioning,\" is also described, focusing exclusively on generating text for music clips. This behavior is consistently operationalized and evaluated using several benchmarks, with AudioCaps and Clotho being the most frequently cited datasets for this purpose, alongside MusicCaps for the music-specific version of the task. One paper illustrates a direct method for eliciting this behavior from a model using the prompt, \"write an audio caption describing the sound\". The task is generally positioned as a \"conventional\" or \"fundamental\" audio processing capability, often studied as a component of broader \"General Auditory Awareness and Processing.\"",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Listen, Think, and Understand",
+      "SALMONN: Towards Generic Hearing Abilities for Large Language Models"
+    ],
+    "iclr25": [
+      "ADIFF: Explaining audio difference using natural language",
+      "Aligned Better, Listen Better for Audio-Visual Large Language Models",
+      "NatureLM-audio: an Audio-Language Foundation Model for Bioacoustics"
+    ],
+    "icml25": [
+      "ALMTokenizer: A Low-bitrate and Semantic-rich Audio Codec Tokenizer for Audio Language Modeling",
+      "Audio Flamingo 2: An Audio-Language Model with Long-Audio Understanding and Expert Reasoning Abilities",
+      "LLMs can see and hear without any training",
+      "MATS: An Audio Language Model under Text-only Supervision"
+    ],
+    "emnlp25": [
+      "Improving Instruct Models for Free: A Study on Partial Adaptation",
+      "MA-GTS: A Multi-Agent Framework for Solving Complex Graph Problems in Real-World Applications",
+      "RecGPT: A Foundation Model for Sequential Recommendation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "iclr25": 3,
+    "icml25": 4,
+    "emnlp25": 3
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25"
+  ]
+}

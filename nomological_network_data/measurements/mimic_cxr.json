@@ -1,0 +1,137 @@
+{
+  "canonical_name": "MIMIC-CXR",
+  "type": "measurement",
+  "canonical_definition": "Across the surveyed literature, MIMIC-CXR is consistently characterized as a large-scale, publicly available dataset containing de-identified chest X-ray images and their corresponding free-text radiology reports. The dataset is described as originating from the Beth Israel Deaconess Medical Center and is used for both training and evaluating models. The most prevalent application of MIMIC-CXR is to measure the performance of models on `Medical report generation` and the closely related task of `Radiology report generation`, with multiple papers stating they use it for evaluation on these tasks. For instance, one study notes, \"For English report generation, we evaluate our model on the report generation task for chest X-ray datasets MIMIC-CXR\". A less frequent application, mentioned in one paper, is its use for evaluating `Medical visual question answering`. Some definitions also describe its purpose as assessing \"visual understanding in clinical settings\" and \"grounded report generation evaluation\".",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "MIMIC-CXR"
+  ],
+  "papers": [
+    "Balancing Diversity and Risk inLLMSampling: How to Select Your Method and Parameter for Open-Ended Text Generation",
+    "Forward Knows Efficient Backward Path: Saliency-Guided Memory-Efficient Fine-tuning of Large Language Models",
+    "QuASAR: A Question-Driven Structure-Aware Approach for Table-to-Text Generation",
+    "Weaving Context Across Images: Improving Vision-Language Models through Focus-Centric Visual Chains",
+    "2025.emnlp-main.598.checklist",
+    "2025.emnlp-main.939.checklist",
+    "D-CoDe: Scaling Image-PretrainedVLMs to Video via Dynamic Compression and Question Decomposition",
+    "Deriving Strategic Market Insights with Large Language Models: A Benchmark for Forward Counterfactual Generation",
+    "Noise, Adaptation, and Strategy: AssessingLLMFidelity in Decision-Making",
+    "OMS: On-the-fly, Multi-Objective, Self-Reflective Ad Keyword Generation viaLLMAgent",
+    "Conformal Generative Modeling with Improved Sample Efficiency through Sequential Greedy Filtering",
+    "Interpretable Bilingual Multimodal Large Language Model for Diverse Biomedical Tasks",
+    "MMed-RAG: Versatile Multimodal RAG System for Medical Vision Language Models",
+    "Is your benchmark truly adversarial?AdvScore: Evaluating Human-Grounded Adversarialness",
+    "Stealthy Jailbreak Attacks on Large Language Models via Benign Data Mirroring"
+  ],
+  "paper_count": 15,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A chest X-ray dataset used for medical report generation and grounded report generation evaluation.",
+      "paper": "Interpretable Bilingual Multimodal Large Language Model for Diverse Biomedical Tasks",
+      "original_name": "MIMIC-CXR"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Medical report generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "MMed-RAG: Versatile Multimodal RAG System for Medical Vision Language Models",
+      "evidence": "For English report generation, we evaluate our model on the report generation task for chest X-ray datasets MIMIC-CXR (Johnson et al., 2019) and IU-Xray (Demner-Fushman et al., 2016). (Section 5.1)",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "iclr25": [
+          "MMed-RAG: Versatile Multimodal RAG System for Medical Vision Language Models",
+          "Interpretable Bilingual Multimodal Large Language Model for Diverse Biomedical Tasks"
+        ],
+        "icml25": [
+          "MMedPO: Aligning Medical Vision-Language Models with Clinical-Aware Multimodal Preference Optimization"
+        ],
+        "emnlp25": [
+          "OMS: On-the-fly, Multi-Objective, Self-Reflective Ad Keyword Generation viaLLMAgent"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Radiology report generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Conformal Alignment: Knowing When to Trust Foundation Models with Guarantees",
+      "evidence": "We evaluate our model using three publicly available radiology report generation datasets: MIMIC-CXR, CHEXPERT PLUS, and IU X-RAY (Section 4.1)",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "neurips24": [
+          "Conformal Alignment: Knowing When to Trust Foundation Models with Guarantees"
+        ],
+        "iclr25": [
+          "Conformal Generative Modeling with Improved Sample Efficiency through Sequential Greedy Filtering"
+        ],
+        "acl25": [
+          "Weaving Context Across Images: Improving Vision-Language Models through Focus-Centric Visual Chains"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Medical visual question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "MMed-RAG: Versatile Multimodal RAG System for Medical Vision Language Models",
+      "evidence": "\"We utilize five medical vision-language datasets for medical VQA and report generation tasks, i.e., MIMIC-CXR (Johnson et al., 2019), IU-Xray (Demner-Fushman et al., 2016), Harvard-FairVLMed (Luo et al., 2024), PMC-OA (Lin et al., 2023a) (we only select the pathology part) and Quilt-1M (Ikezogwo et al., 2024).\"",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "MMed-RAG: Versatile Multimodal RAG System for Medical Vision Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the surveyed literature, MIMIC-CXR is consistently characterized as a large-scale, publicly available dataset containing de-identified chest X-ray images and their corresponding free-text radiology reports. The dataset is described as originating from the Beth Israel Deaconess Medical Center and is used for both training and evaluating models. The most prevalent application of MIMIC-CXR is to measure the performance of models on `Medical report generation` and the closely related task of `Radiology report generation`, with multiple papers stating they use it for evaluation on these tasks. For instance, one study notes, \"For English report generation, we evaluate our model on the report generation task for chest X-ray datasets MIMIC-CXR\". A less frequent application, mentioned in one paper, is its use for evaluating `Medical visual question answering`. Some definitions also describe its purpose as assessing \"visual understanding in clinical settings\" and \"grounded report generation evaluation\".",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Conformal Generative Modeling with Improved Sample Efficiency through Sequential Greedy Filtering",
+      "Interpretable Bilingual Multimodal Large Language Model for Diverse Biomedical Tasks",
+      "MMed-RAG: Versatile Multimodal RAG System for Medical Vision Language Models"
+    ],
+    "naacl25": [
+      "Is your benchmark truly adversarial?AdvScore: Evaluating Human-Grounded Adversarialness",
+      "Stealthy Jailbreak Attacks on Large Language Models via Benign Data Mirroring"
+    ],
+    "acl25": [
+      "Balancing Diversity and Risk inLLMSampling: How to Select Your Method and Parameter for Open-Ended Text Generation",
+      "Forward Knows Efficient Backward Path: Saliency-Guided Memory-Efficient Fine-tuning of Large Language Models",
+      "QuASAR: A Question-Driven Structure-Aware Approach for Table-to-Text Generation",
+      "Weaving Context Across Images: Improving Vision-Language Models through Focus-Centric Visual Chains"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.598.checklist",
+      "2025.emnlp-main.939.checklist",
+      "D-CoDe: Scaling Image-PretrainedVLMs to Video via Dynamic Compression and Question Decomposition",
+      "Deriving Strategic Market Insights with Large Language Models: A Benchmark for Forward Counterfactual Generation",
+      "Noise, Adaptation, and Strategy: AssessingLLMFidelity in Decision-Making",
+      "OMS: On-the-fly, Multi-Objective, Self-Reflective Ad Keyword Generation viaLLMAgent"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3,
+    "naacl25": 2,
+    "acl25": 4,
+    "emnlp25": 6
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "naacl25"
+  ]
+}

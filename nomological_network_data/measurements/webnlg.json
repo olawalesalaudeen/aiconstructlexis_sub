@@ -1,0 +1,100 @@
+{
+  "canonical_name": "WebNLG",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, WebNLG is consistently used as a benchmark dataset to measure text generation capabilities, particularly from structured data. The task it operationalizes is most frequently described as data-to-text, struct-to-text, or table-to-text generation. Several sources specify that the task involves verbalizing structured inputs, commonly in the form of RDF triples, into fluent text. One prevalent definition characterizes the dataset as containing 22,000 examples that span 14 distinct categories. While most papers in this set use WebNLG to evaluate general language generation performance, a smaller line of work employs it for more specific evaluations. For example, one paper uses the dataset to assess domain adaptation under distribution shift by filtering its training and test sets to include different data categories, such as infrastructure versus person descriptions.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "WebNLG",
+    "Web NLG"
+  ],
+  "papers": [
+    "Mixture of LoRA Experts",
+    "NOLA: Compressing LoRA using Linear Combination of Random Basis",
+    "RevisEval: Improving LLM-as-a-Judge via Response-Adapted References",
+    "Revisiting Prefix-tuning: Statistical Benefits of Reparameterization among Prompts",
+    "Joint Localization and Activation Editing for Low-Resource Fine-Tuning",
+    "Logits are All We Need to Adapt Closed Models"
+  ],
+  "paper_count": 6,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A text-to-data dataset with 22,000 examples across 14 categories, used to evaluate natural language generation from structured data.",
+      "paper": "Mixture of LoRA Experts",
+      "original_name": "WebNLG"
+    },
+    {
+      "text": "Natural language generation dataset involving conversion of RDF triples into fluent text, used to evaluate domain adaptation under distribution shift.",
+      "paper": "Logits are All We Need to Adapt Closed Models",
+      "original_name": "Web NLG"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "NOLA: Compressing LoRA using Linear Combination of Random Basis",
+      "evidence": "We evaluate table-to-text generation with E2E (Novikova et al., 2017) and WebNLG (Gardent et al., 2017) datasets... (Section 5.1)",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr24": [
+          "NOLA: Compressing LoRA using Linear Combination of Random Basis"
+        ],
+        "iclr25": [
+          "Revisiting Prefix-tuning: Statistical Benefits of Reparameterization among Prompts"
+        ],
+        "icml25": [
+          "Logits are All We Need to Adapt Closed Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Data-to-text generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Smoothie: Label Free Language Model Routing",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Smoothie: Label Free Language Model Routing"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, WebNLG is consistently used as a benchmark dataset to measure text generation capabilities, particularly from structured data. The task it operationalizes is most frequently described as data-to-text, struct-to-text, or table-to-text generation. Several sources specify that the task involves verbalizing structured inputs, commonly in the form of RDF triples, into fluent text. One prevalent definition characterizes the dataset as containing 22,000 examples that span 14 distinct categories. While most papers in this set use WebNLG to evaluate general language generation performance, a smaller line of work employs it for more specific evaluations. For example, one paper uses the dataset to assess domain adaptation under distribution shift by filtering its training and test sets to include different data categories, such as infrastructure versus person descriptions.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Mixture of LoRA Experts",
+      "NOLA: Compressing LoRA using Linear Combination of Random Basis"
+    ],
+    "iclr25": [
+      "RevisEval: Improving LLM-as-a-Judge via Response-Adapted References",
+      "Revisiting Prefix-tuning: Statistical Benefits of Reparameterization among Prompts"
+    ],
+    "icml25": [
+      "Joint Localization and Activation Editing for Low-Resource Fine-Tuning",
+      "Logits are All We Need to Adapt Closed Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "iclr25": 2,
+    "icml25": 2
+  },
+  "conferences": [
+    "iclr24",
+    "iclr25",
+    "icml25"
+  ]
+}

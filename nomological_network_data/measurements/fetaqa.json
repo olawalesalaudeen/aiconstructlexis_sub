@@ -1,0 +1,125 @@
+{
+  "canonical_name": "FeTaQA",
+  "type": "measurement",
+  "canonical_definition": "FeTaQA is predominantly described across the literature as a benchmark for table question answering. It is widely used to measure model capabilities in `Table understanding`, with some papers also using it to evaluate `Data-to-text generation` and performance on \"structured knowledge grounding tasks\". Several sources characterize it as a challenging dataset because it requires generating long-form, free-form natural language answers, which average around 18 words. This task structure, as one paper notes, requires \"fetching multiple entities from the table, aggregating and reasoning over these entities, and structuring the inferred information to produce a coherent answer\" (CABINET: Content Relevance-based Noise Reduction for Table Question Answering). Due to its nature as an \"open-ended generation task\", evaluation is sometimes performed with overlap-based metrics like Sacre-BLEU. While its prevailing use is for evaluation, a smaller line of work treats FeTaQA as a \"table-language dataset\" that can be adapted into different training formats for other tasks, such as question generation or row summarization.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "FeTaQA",
+    "FetaQA"
+  ],
+  "papers": [
+    "AutoMedEval: Harnessing Language Models for Automatic Medical Capability Evaluation",
+    "Mitigating Lost-in-Retrieval Problems in Retrieval Augmented Multi-Hop Question Answering",
+    "CABINET: Content Relevance-based Noise Reduction for Table Question Answering",
+    "Chain-of-Knowledge: Grounding Large Language Models via Dynamic Knowledge Adapting over Heterogeneous Sources",
+    "Chain-of-Table: Evolving Tables in the Reasoning Chain for Table Understanding",
+    "Bridging the Semantic Gap Between Text and Table: A Case Study on NL2SQL",
+    "SCOPE: A Self-supervised Framework for Improving Faithfulness in Conditional Text Generation",
+    "DAWN-ICL: Strategic Planning of Problem-solving Trajectories for Zero-Shot In-Context Learning",
+    "UNDIAL: Self-Distillation with Adjusted Logits for Robust Unlearning in Large Language Models"
+  ],
+  "paper_count": 9,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "FeTaQA, a table question answering benchmark with long-form natural-language answers that require fetching multiple entities and reasoning over them.",
+      "paper": "CABINET: Content Relevance-based Noise Reduction for Table Question Answering",
+      "original_name": "FeTaQA"
+    },
+    {
+      "text": "A table-language dataset adapted here into training formats for table-language interleaved learning.",
+      "paper": "Bridging the Semantic Gap Between Text and Table: A Case Study on NL2SQL",
+      "original_name": "FetaQA"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Table question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "CABINET: Content Relevance-based Noise Reduction for Table Question Answering",
+      "evidence": "",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "iclr24": [
+          "CABINET: Content Relevance-based Noise Reduction for Table Question Answering"
+        ],
+        "neurips24": [
+          "DACO: Towards Application-Driven and Comprehensive Data Analysis via Code Generation"
+        ],
+        "acl25": [
+          "Mitigating Lost-in-Retrieval Problems in Retrieval Augmented Multi-Hop Question Answering",
+          "AutoMedEval: Harnessing Language Models for Automatic Medical Capability Evaluation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Prompt engineering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Bridging the Semantic Gap Between Text and Table: A Case Study on NL2SQL",
+      "evidence": "To further increase data diversity, we also adapt FetaQA (Nan et al., 2022), WikiTableQuestion (Pasupat & Liang, 2015), and ToTTo (Parikh et al., 2020) into formats suitable for training column embeddings, resulting in three adapted tasks: \u2462Question Generation... \u2463Table Titling... and \u2464Row Summarization (Section 4.2).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Bridging the Semantic Gap Between Text and Table: A Case Study on NL2SQL"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Data-to-text generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "SCOPE: A Self-supervised Framework for Improving Faithfulness in Conditional Text Generation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "SCOPE: A Self-supervised Framework for Improving Faithfulness in Conditional Text Generation"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 1,
+  "characterization": "FeTaQA is predominantly described across the literature as a benchmark for table question answering. It is widely used to measure model capabilities in `Table understanding`, with some papers also using it to evaluate `Data-to-text generation` and performance on \"structured knowledge grounding tasks\". Several sources characterize it as a challenging dataset because it requires generating long-form, free-form natural language answers, which average around 18 words. This task structure, as one paper notes, requires \"fetching multiple entities from the table, aggregating and reasoning over these entities, and structuring the inferred information to produce a coherent answer\" (CABINET: Content Relevance-based Noise Reduction for Table Question Answering). Due to its nature as an \"open-ended generation task\", evaluation is sometimes performed with overlap-based metrics like Sacre-BLEU. While its prevailing use is for evaluation, a smaller line of work treats FeTaQA as a \"table-language dataset\" that can be adapted into different training formats for other tasks, such as question generation or row summarization.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "CABINET: Content Relevance-based Noise Reduction for Table Question Answering",
+      "Chain-of-Knowledge: Grounding Large Language Models via Dynamic Knowledge Adapting over Heterogeneous Sources",
+      "Chain-of-Table: Evolving Tables in the Reasoning Chain for Table Understanding"
+    ],
+    "iclr25": [
+      "Bridging the Semantic Gap Between Text and Table: A Case Study on NL2SQL",
+      "SCOPE: A Self-supervised Framework for Improving Faithfulness in Conditional Text Generation"
+    ],
+    "naacl25": [
+      "DAWN-ICL: Strategic Planning of Problem-solving Trajectories for Zero-Shot In-Context Learning",
+      "UNDIAL: Self-Distillation with Adjusted Logits for Robust Unlearning in Large Language Models"
+    ],
+    "acl25": [
+      "AutoMedEval: Harnessing Language Models for Automatic Medical Capability Evaluation",
+      "Mitigating Lost-in-Retrieval Problems in Retrieval Augmented Multi-Hop Question Answering"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 3,
+    "iclr25": 2,
+    "naacl25": 2,
+    "acl25": 2
+  },
+  "conferences": [
+    "acl25",
+    "iclr24",
+    "iclr25",
+    "naacl25"
+  ]
+}

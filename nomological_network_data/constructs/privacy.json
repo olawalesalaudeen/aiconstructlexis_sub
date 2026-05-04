@@ -1,0 +1,466 @@
+{
+  "canonical_name": "Privacy",
+  "type": "construct",
+  "canonical_definition": "The most prevalent view of privacy in the provided literature concerns a model's ability to prevent the leakage of sensitive information, whether from its training data, user inputs, or private datastores. This is frequently framed as a vulnerability or risk, with terms like \"privacy leakage,\" \"data leakage risk,\" and \"privacy vulnerability\" appearing across multiple papers. The core concern is the model revealing personally identifiable, proprietary, or otherwise sensitive information in its outputs. Operationalization of this construct varies, with one common approach being to assess a model's refusal to answer questions containing personal data, as one paper notes, to evaluate its \"privacy awareness\" (\"Benchmarking Large Language Models Under Data Contamination...\"). Another prevalent line of work operationalizes privacy by investigating training data exposure through \"membership inference attacks,\" which aim to \"determine if a particular record was part of the model\u2019s training data\" (\"DocMIA: Document-Level Membership Inference Attacks against DocVQA Models\"), a task for which the Paired t-test is cited as a measurement method. A more formal definition, present in several papers, characterizes privacy through \"differential privacy guarantees,\" where a model should produce similar outputs even when input exemplars change. A smaller set of studies presents alternative framings, such as \"secrecy maintenance\" in social interactions or, in one distinct case, a \"Low-Test-Error Preference\" where in-context learning favors pretraining functions over task adaptation. Across the surveyed work, privacy is studied alongside concepts like faithfulness, memorization, and safety alignment, and is sometimes broken down into components like \"privacy awareness\" and \"privacy leakage\" for evaluation.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Privacy",
+    "Secrecy maintenance",
+    "Low-Test-Error Preference",
+    "Dataset membership inference",
+    "Information leakage",
+    "Dataset membership",
+    "Vulnerability",
+    "Safety vulnerability",
+    "Adversarial vulnerability",
+    "Prompt leakage vulnerability",
+    "Privacy leakage",
+    "Data leakage risk",
+    "Privacy risk",
+    "Impermissible information leakage",
+    "Data leakage vulnerability"
+  ],
+  "papers": [
+    "C",
+    "mPLUG-DocOwl2: High-resolution Compressing forOCR-free Multi-page Document Understanding",
+    "2025.emnlp-main.1196.checklist",
+    "2025.emnlp-main.1531.checklist",
+    "A Symbolic Adversarial Learning Framework for Evolving Fake News Generation and Detection",
+    "AdvancingArabic Diacritization: Improved Datasets, Benchmarking, and State-of-the-Art Models",
+    "Benchmarking Large Language Models Under Data Contamination: A Survey from Static to Dynamic Evaluation",
+    "EnAnchored-X2X:English-Anchored Optimization for Many-to-Many Translation",
+    "Generative or Discriminative? Revisiting Text Classification in the Era of Transformers",
+    "Med-VRAgent: A Framework for Medical Visual Reasoning-Enhanced Agents",
+    "UICOMPASS:UIMap Guided Mobile Task Automation via Adaptive Action Generation",
+    "VoiceCraft-X: Unifying Multilingual, Voice-Cloning Speech Synthesis and Speech Editing",
+    "2025.emnlp-main.1386.checklist",
+    "ActionStudio: A Lightweight Framework for Data and Training of Large Action Models",
+    "Language-Guided Temporal Token Pruning for EfficientVideoLLMProcessing",
+    "Privacy-Preserving In-Context Learning for Large Language Models",
+    "SOTOPIA: Interactive Evaluation for Social Intelligence in Language Agents",
+    "Can In-context Learning Really Generalize to Out-of-distribution Tasks?",
+    "MMDT: Decoding the Trustworthiness and Safety of Multimodal Foundation Models",
+    "More RLHF, More Trust? On The Impact of Preference Alignment On Trustworthiness",
+    "Privacy-Preserving Personalized Federated Prompt Learning for Multimodal Large Language Models",
+    "Breach By A Thousand Leaks: Unsafe Information Leakage in 'Safe' AI Responses",
+    "DocMIA: Document-Level Membership Inference Attacks against DocVQA Models",
+    "Follow My Instruction and Spill the Beans: Scalable Data Extraction from Retrieval-Augmented Generation Systems",
+    "LLM Unlearning via Loss Adjustment with Only Forget Data",
+    "MUSE: Machine Unlearning Six-Way Evaluation for Language Models",
+    "Privacy Auditing of Large Language Models",
+    "TDDBench: A Benchmark for Training data detection",
+    "Uncovering Latent Memories in Large Language Models",
+    "Cape: Context-Aware Prompt Perturbation Mechanism with Differential Privacy",
+    "Exploiting Presentative Feature Distributions for Parameter-Efficient Continual Learning of Large Language Models",
+    "Ferret: Federated Full-Parameter Tuning at Scale for Large Language Models",
+    "GuardAgent: Safeguard LLM Agents via Knowledge-Enabled Reasoning",
+    "Position: AI Scaling: From Up to Down and Out",
+    "STAMP Your Content: Proving Dataset Membership via Watermarked Rephrasings",
+    "Scaling Laws for Differentially Private Language Models",
+    "Unlocking Post-hoc Dataset Inference with Synthetic Data",
+    "Auditing Prompt Caching in Language Model APIs",
+    "Textual Unlearning Gives a False Sense of Unlearning",
+    "The Canary\u2019s Echo: Auditing Privacy Risks of LLM-Generated Synthetic Text",
+    "Underestimated Privacy Risks for Minority Populations in Large Language Model Unlearning",
+    "BPO: Towards Balanced Preference Optimization between Knowledge Breadth and Depth in Alignment",
+    "JAWAHER: A Multidialectal Dataset ofArabic Proverbs forLLMBenchmarking",
+    "LLMThe Genius Paradox: A Linguistic and Math Expert\u2019s Struggle with Simple Word-based Counting Problems",
+    "ProMQA: Question Answering Dataset for Multimodal Procedural Activity Understanding",
+    "UnderstandingLLMs\u2019 Fluid Intelligence Deficiency: An Analysis of theARCTask",
+    "CARES: A Comprehensive Benchmark of Trustworthiness in Medical Vision Language Models",
+    "Enhancing Multiple Dimensions of Trustworthiness in LLMs via Sparse Activation Control",
+    "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+    "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models",
+    "Stepwise Alignment for Constrained Language Model Policy Optimization",
+    "Membership Inference Attacks against Large Vision-Language Models"
+  ],
+  "paper_count": 52,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The degree to which a model's outputs do not reveal sensitive information from its input exemplars, formalized through differential privacy guarantees.",
+      "paper": "Privacy-Preserving In-Context Learning for Large Language Models",
+      "original_name": "Privacy"
+    },
+    {
+      "text": "The ability to protect private information or intentions from being revealed during social interaction, especially when disclosure would reduce strategic advantage.",
+      "paper": "SOTOPIA: Interactive Evaluation for Social Intelligence in Language Agents",
+      "original_name": "Secrecy maintenance"
+    },
+    {
+      "text": "A disposition where ICL tends to select the pretraining function that minimizes test error rather than adapting to entirely new tasks.",
+      "paper": "Can In-context Learning Really Generalize to Out-of-distribution Tasks?",
+      "original_name": "Low-Test-Error Preference"
+    },
+    {
+      "text": "The ability of a system to fulfill user requests without revealing personally identifiable information to untrusted components, such as remote API-based models.",
+      "paper": "JAWAHER: A Multidialectal Dataset ofArabic Proverbs forLLMBenchmarking",
+      "original_name": "Privacy preservation"
+    },
+    {
+      "text": "The unintended access or reuse of task-specific information (e.g., training data, task identifiers) from previously learned tasks during continual learning, posing privacy risks and enabling unfair performance advantages.",
+      "paper": "Exploiting Presentative Feature Distributions for Parameter-Efficient Continual Learning of Large Language Models",
+      "original_name": "Information leakage"
+    },
+    {
+      "text": "The latent property of a language model having been trained on a specific dataset, inferred from systematic differences in likelihood between semantically equivalent but differently watermarked versions of the data.",
+      "paper": "STAMP Your Content: Proving Dataset Membership via Watermarked Rephrasings",
+      "original_name": "Dataset membership"
+    },
+    {
+      "text": "The latent ability of a model or method to determine whether a suspect dataset was used in the training of a target LLM, based on statistical signals extracted from model behavior.",
+      "paper": "Unlocking Post-hoc Dataset Inference with Synthetic Data",
+      "original_name": "Dataset membership inference"
+    },
+    {
+      "text": "The susceptibility of LLM judges to adversarial manipulations such as prompt injection or adversarial phrases that distort judgment outcomes.",
+      "paper": "VoiceCraft-X: Unifying Multilingual, Voice-Cloning Speech Synthesis and Speech Editing",
+      "original_name": "Vulnerability"
+    },
+    {
+      "text": "A latent weakness in a model's architecture or alignment that can be exploited to bypass its safety mechanisms.",
+      "paper": "Generative or Discriminative? Revisiting Text Classification in the Era of Transformers",
+      "original_name": "Safety vulnerability"
+    },
+    {
+      "text": "The latent susceptibility of a model to hidden malicious behavior that activates upon exposure to a specific trigger, while maintaining normal performance on clean inputs.",
+      "paper": "Med-VRAgent: A Framework for Medical Visual Reasoning-Enhanced Agents",
+      "original_name": "Backdoor vulnerability"
+    },
+    {
+      "text": "The degree to which a model's performance can be degraded or its safety mechanisms bypassed by malicious actors using manipulation strategies not covered in its training or benchmark data.",
+      "paper": "2025.emnlp-main.1196.checklist",
+      "original_name": "Adversarial vulnerability"
+    },
+    {
+      "text": "The susceptibility of a large language model to being manipulated by adversarial queries into revealing its confidential system prompt.",
+      "paper": "EnAnchored-X2X:English-Anchored Optimization for Many-to-Many Translation",
+      "original_name": "Prompt leakage vulnerability"
+    },
+    {
+      "text": "The tendency to reveal personal or sensitive information when prompted directly or indirectly.",
+      "paper": "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models",
+      "original_name": "Privacy leakage"
+    },
+    {
+      "text": "The susceptibility of a model to attacks that can reveal sensitive information about its training data.",
+      "paper": "DocMIA: Document-Level Membership Inference Attacks against DocVQA Models",
+      "original_name": "Privacy vulnerability"
+    },
+    {
+      "text": "The tendency for a model to reveal sensitive or proprietary training information in its outputs, creating privacy and misuse concerns.",
+      "paper": "Uncovering Latent Memories in Large Language Models",
+      "original_name": "Data leakage risk"
+    },
+    {
+      "text": "The potential for a model to reveal sensitive information about its training data, which can be assessed through training data detection.",
+      "paper": "TDDBench: A Benchmark for Training data detection",
+      "original_name": "Privacy risk"
+    },
+    {
+      "text": "The tendency of a RAG system to expose private datastore content through model outputs.",
+      "paper": "Follow My Instruction and Spill the Beans: Scalable Data Extraction from Retrieval-Augmented Generation Systems",
+      "original_name": "Data leakage vulnerability"
+    },
+    {
+      "text": "The extent to which a model's outputs, even if individually permissible, reveal dangerous or undesirable knowledge that an adversary can infer.",
+      "paper": "Breach By A Thousand Leaks: Unsafe Information Leakage in 'Safe' AI Responses",
+      "original_name": "Impermissible information leakage"
+    }
+  ],
+  "definition_count": 18,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Trustworthiness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "CARES: A Comprehensive Benchmark of Trustworthiness in Medical Vision Language Models",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "CARES: A Comprehensive Benchmark of Trustworthiness in Medical Vision Language Models"
+        ],
+        "iclr25": [
+          "More RLHF, More Trust? On The Impact of Preference Alignment On Trustworthiness"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-context learning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Can In-context Learning Really Generalize to Out-of-distribution Tasks?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Can In-context Learning Really Generalize to Out-of-distribution Tasks?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Privacy awareness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models",
+      "evidence": "From the perspectives of consciousness and behaviors [132], we evaluate privacy in terms of awareness and leakage. (Sec. 2.2.5)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Privacy leakage",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Model selection",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Can In-context Learning Really Generalize to Out-of-distribution Tasks?",
+      "evidence": "\u201cwe theoretically reveal the algorithm-selection mechanism for ICL. We find there simultaneously exist two parallel mechanisms: the Low-test-error preference and the Similar-input-distribution preference.\u201d",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Can In-context Learning Really Generalize to Out-of-distribution Tasks?"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Safety",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Breach By A Thousand Leaks: Unsafe Information Leakage in 'Safe' AI Responses",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Breach By A Thousand Leaks: Unsafe Information Leakage in 'Safe' AI Responses"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Pre-training data detection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "TDDBench: A Benchmark for Training data detection",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "TDDBench: A Benchmark for Training data detection"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Endless Jailbreaks with Bijection Learning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Endless Jailbreaks with Bijection Learning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge forgetting",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Follow My Instruction and Spill the Beans: Scalable Data Extraction from Retrieval-Augmented Generation Systems",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Follow My Instruction and Spill the Beans: Scalable Data Extraction from Retrieval-Augmented Generation Systems"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Memorization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Follow My Instruction and Spill the Beans: Scalable Data Extraction from Retrieval-Augmented Generation Systems",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Follow My Instruction and Spill the Beans: Scalable Data Extraction from Retrieval-Augmented Generation Systems"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Harmbench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Endless Jailbreaks with Bijection Learning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Endless Jailbreaks with Bijection Learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Safety alignment",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Ensemble Watermarks for Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Ensemble Watermarks for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Cape: Context-Aware Prompt Perturbation Mechanism with Differential Privacy",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Cape: Context-Aware Prompt Perturbation Mechanism with Differential Privacy"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Paired t-test",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "STAMP Your Content: Proving Dataset Membership via Watermarked Rephrasings",
+      "evidence": "\u201cUsing these perplexity scores, we perform a paired t-test to detect membership.\u201d",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "STAMP Your Content: Proving Dataset Membership via Watermarked Rephrasings"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 14,
+  "incoming_relationship_count": 8,
+  "outgoing_relationship_count": 6,
+  "characterization": "The most prevalent view of privacy in the provided literature concerns a model's ability to prevent the leakage of sensitive information, whether from its training data, user inputs, or private datastores. This is frequently framed as a vulnerability or risk, with terms like \"privacy leakage,\" \"data leakage risk,\" and \"privacy vulnerability\" appearing across multiple papers. The core concern is the model revealing personally identifiable, proprietary, or otherwise sensitive information in its outputs. Operationalization of this construct varies, with one common approach being to assess a model's refusal to answer questions containing personal data, as one paper notes, to evaluate its \"privacy awareness\" (\"Benchmarking Large Language Models Under Data Contamination...\"). Another prevalent line of work operationalizes privacy by investigating training data exposure through \"membership inference attacks,\" which aim to \"determine if a particular record was part of the model\u2019s training data\" (\"DocMIA: Document-Level Membership Inference Attacks against DocVQA Models\"), a task for which the Paired t-test is cited as a measurement method. A more formal definition, present in several papers, characterizes privacy through \"differential privacy guarantees,\" where a model should produce similar outputs even when input exemplars change. A smaller set of studies presents alternative framings, such as \"secrecy maintenance\" in social interactions or, in one distinct case, a \"Low-Test-Error Preference\" where in-context learning favors pretraining functions over task adaptation. Across the surveyed work, privacy is studied alongside concepts like faithfulness, memorization, and safety alignment, and is sometimes broken down into components like \"privacy awareness\" and \"privacy leakage\" for evaluation.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Privacy-Preserving In-Context Learning for Large Language Models",
+      "SOTOPIA: Interactive Evaluation for Social Intelligence in Language Agents"
+    ],
+    "neurips24": [
+      "CARES: A Comprehensive Benchmark of Trustworthiness in Medical Vision Language Models",
+      "Enhancing Multiple Dimensions of Trustworthiness in LLMs via Sparse Activation Control",
+      "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+      "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models",
+      "Stepwise Alignment for Constrained Language Model Policy Optimization",
+      "Membership Inference Attacks against Large Vision-Language Models"
+    ],
+    "iclr25": [
+      "Can In-context Learning Really Generalize to Out-of-distribution Tasks?",
+      "MMDT: Decoding the Trustworthiness and Safety of Multimodal Foundation Models",
+      "More RLHF, More Trust? On The Impact of Preference Alignment On Trustworthiness",
+      "Privacy-Preserving Personalized Federated Prompt Learning for Multimodal Large Language Models",
+      "Breach By A Thousand Leaks: Unsafe Information Leakage in 'Safe' AI Responses",
+      "DocMIA: Document-Level Membership Inference Attacks against DocVQA Models",
+      "Follow My Instruction and Spill the Beans: Scalable Data Extraction from Retrieval-Augmented Generation Systems",
+      "LLM Unlearning via Loss Adjustment with Only Forget Data",
+      "MUSE: Machine Unlearning Six-Way Evaluation for Language Models",
+      "Privacy Auditing of Large Language Models",
+      "TDDBench: A Benchmark for Training data detection",
+      "Uncovering Latent Memories in Large Language Models"
+    ],
+    "naacl25": [
+      "BPO: Towards Balanced Preference Optimization between Knowledge Breadth and Depth in Alignment",
+      "JAWAHER: A Multidialectal Dataset ofArabic Proverbs forLLMBenchmarking",
+      "LLMThe Genius Paradox: A Linguistic and Math Expert\u2019s Struggle with Simple Word-based Counting Problems",
+      "ProMQA: Question Answering Dataset for Multimodal Procedural Activity Understanding",
+      "UnderstandingLLMs\u2019 Fluid Intelligence Deficiency: An Analysis of theARCTask"
+    ],
+    "acl25": [
+      "C",
+      "mPLUG-DocOwl2: High-resolution Compressing forOCR-free Multi-page Document Understanding"
+    ],
+    "icml25": [
+      "Cape: Context-Aware Prompt Perturbation Mechanism with Differential Privacy",
+      "Exploiting Presentative Feature Distributions for Parameter-Efficient Continual Learning of Large Language Models",
+      "Ferret: Federated Full-Parameter Tuning at Scale for Large Language Models",
+      "GuardAgent: Safeguard LLM Agents via Knowledge-Enabled Reasoning",
+      "Position: AI Scaling: From Up to Down and Out",
+      "STAMP Your Content: Proving Dataset Membership via Watermarked Rephrasings",
+      "Scaling Laws for Differentially Private Language Models",
+      "Unlocking Post-hoc Dataset Inference with Synthetic Data",
+      "Auditing Prompt Caching in Language Model APIs",
+      "Textual Unlearning Gives a False Sense of Unlearning",
+      "The Canary\u2019s Echo: Auditing Privacy Risks of LLM-Generated Synthetic Text",
+      "Underestimated Privacy Risks for Minority Populations in Large Language Model Unlearning"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.1196.checklist",
+      "2025.emnlp-main.1531.checklist",
+      "A Symbolic Adversarial Learning Framework for Evolving Fake News Generation and Detection",
+      "AdvancingArabic Diacritization: Improved Datasets, Benchmarking, and State-of-the-Art Models",
+      "Benchmarking Large Language Models Under Data Contamination: A Survey from Static to Dynamic Evaluation",
+      "EnAnchored-X2X:English-Anchored Optimization for Many-to-Many Translation",
+      "Generative or Discriminative? Revisiting Text Classification in the Era of Transformers",
+      "Med-VRAgent: A Framework for Medical Visual Reasoning-Enhanced Agents",
+      "UICOMPASS:UIMap Guided Mobile Task Automation via Adaptive Action Generation",
+      "VoiceCraft-X: Unifying Multilingual, Voice-Cloning Speech Synthesis and Speech Editing",
+      "2025.emnlp-main.1386.checklist",
+      "ActionStudio: A Lightweight Framework for Data and Training of Large Action Models",
+      "Language-Guided Temporal Token Pruning for EfficientVideoLLMProcessing"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "neurips24": 6,
+    "iclr25": 12,
+    "naacl25": 5,
+    "acl25": 2,
+    "icml25": 12,
+    "emnlp25": 13
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

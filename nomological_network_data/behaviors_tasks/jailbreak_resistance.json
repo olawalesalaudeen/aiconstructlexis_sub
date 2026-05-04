@@ -1,0 +1,156 @@
+{
+  "canonical_name": "Jailbreak resistance",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, jailbreak resistance is most commonly defined as the observable behavior of a model refusing to comply with prompts designed to bypass its safety filters and elicit harmful or prohibited content. A less frequent framing, termed \"safety model evasion,\" characterizes the phenomenon as an outcome where a malicious prompt is misclassified by a dedicated, external safety model. To operationalize and assess this behavior, the field uses specific measurement instruments; for instance, jailbreak resistance is reported to be measured by LlamaGuard. The concept is frequently studied in relation to model training, with one paper noting that \"fine-tuning significantly reduces the resistance of LLMs to jailbreaking\" (\"TAIA: Large Language Models are Out-of-Distribution Data Learners\"). Conversely, other work discusses conducting \"safety training on LLMs\" to enhance this resistance. The term \"jailbreak robustness\" is also used to describe this behavior. One study notes that techniques like \"adversarial tokenization\" can increase the probability of bypassing safety layers, representing a failure of this resistance.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Jailbreak resistance",
+    "Safety model evasion"
+  ],
+  "papers": [
+    "Enhancing Unsupervised Sentence Embeddings via Knowledge-Driven Data Augmentation andGaussian-Decayed Contrastive Learning",
+    "Using Shapley interactions to understand how models use structure",
+    "$R^2$-Guard: Robust Reasoning Enabled LLM Guardrail via Knowledge-Enhanced Logical Reasoning",
+    "Learn Your Reference Model for Real Good Alignment",
+    "SaLoRA: Safety-Alignment Preserved Low-Rank Adaptation",
+    "HonestLLM: Toward an Honest and Helpful Large Language Model",
+    "TAIA: Large Language Models are Out-of-Distribution Data Learners"
+  ],
+  "paper_count": 7,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The observable behavior of refusing to comply with prompts designed to bypass safety filters and elicit harmful or prohibited content.",
+      "paper": "TAIA: Large Language Models are Out-of-Distribution Data Learners",
+      "original_name": "Jailbreak resistance"
+    },
+    {
+      "text": "The observable outcome where a malicious prompt is misclassified as safe by a dedicated safety model, thereby bypassing an external layer of defense.",
+      "paper": "Using Shapley interactions to understand how models use structure",
+      "original_name": "Safety model evasion"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AdvBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "TAIA: Large Language Models are Out-of-Distribution Data Learners",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "TAIA: Large Language Models are Out-of-Distribution Data Learners"
+        ],
+        "iclr25": [
+          "$R^2$-Guard: Robust Reasoning Enabled LLM Guardrail via Knowledge-Enhanced Logical Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GCG attack",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "$R^2$-Guard: Robust Reasoning Enabled LLM Guardrail via Knowledge-Enhanced Logical Reasoning",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "$R^2$-Guard: Robust Reasoning Enabled LLM Guardrail via Knowledge-Enhanced Logical Reasoning",
+          "SaLoRA: Safety-Alignment Preserved Low-Rank Adaptation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Safety",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Enhancing Unsupervised Sentence Embeddings via Knowledge-Driven Data Augmentation andGaussian-Decayed Contrastive Learning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Enhancing Unsupervised Sentence Embeddings via Knowledge-Driven Data Augmentation andGaussian-Decayed Contrastive Learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PAIR",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "$R^2$-Guard: Robust Reasoning Enabled LLM Guardrail via Knowledge-Enhanced Logical Reasoning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "$R^2$-Guard: Robust Reasoning Enabled LLM Guardrail via Knowledge-Enhanced Logical Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AutoDAN",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "$R^2$-Guard: Robust Reasoning Enabled LLM Guardrail via Knowledge-Enhanced Logical Reasoning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "$R^2$-Guard: Robust Reasoning Enabled LLM Guardrail via Knowledge-Enhanced Logical Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LlamaGuard",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Using Shapley interactions to understand how models use structure",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Using Shapley interactions to understand how models use structure"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 6,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 6,
+  "characterization": "Across the surveyed literature, jailbreak resistance is most commonly defined as the observable behavior of a model refusing to comply with prompts designed to bypass its safety filters and elicit harmful or prohibited content. A less frequent framing, termed \"safety model evasion,\" characterizes the phenomenon as an outcome where a malicious prompt is misclassified by a dedicated, external safety model. To operationalize and assess this behavior, the field uses specific measurement instruments; for instance, jailbreak resistance is reported to be measured by LlamaGuard. The concept is frequently studied in relation to model training, with one paper noting that \"fine-tuning significantly reduces the resistance of LLMs to jailbreaking\" (\"TAIA: Large Language Models are Out-of-Distribution Data Learners\"). Conversely, other work discusses conducting \"safety training on LLMs\" to enhance this resistance. The term \"jailbreak robustness\" is also used to describe this behavior. One study notes that techniques like \"adversarial tokenization\" can increase the probability of bypassing safety layers, representing a failure of this resistance.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "HonestLLM: Toward an Honest and Helpful Large Language Model",
+      "TAIA: Large Language Models are Out-of-Distribution Data Learners"
+    ],
+    "iclr25": [
+      "$R^2$-Guard: Robust Reasoning Enabled LLM Guardrail via Knowledge-Enhanced Logical Reasoning",
+      "Learn Your Reference Model for Real Good Alignment",
+      "SaLoRA: Safety-Alignment Preserved Low-Rank Adaptation"
+    ],
+    "acl25": [
+      "Enhancing Unsupervised Sentence Embeddings via Knowledge-Driven Data Augmentation andGaussian-Decayed Contrastive Learning",
+      "Using Shapley interactions to understand how models use structure"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 2,
+    "iclr25": 3,
+    "acl25": 2
+  },
+  "conferences": [
+    "acl25",
+    "iclr25",
+    "neurips24"
+  ]
+}

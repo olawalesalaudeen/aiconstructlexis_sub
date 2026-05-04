@@ -1,0 +1,120 @@
+{
+  "canonical_name": "Simplicity",
+  "type": "construct",
+  "canonical_definition": "Across the provided literature, Simplicity is predominantly framed as a latent trait reflecting a model's ability to reduce linguistic and conceptual complexity, making text accessible to a general, non-expert audience. One paper uses the term 'Layness' to describe this same quality, defined as the degree to which text is suitable for non-experts. A distinct and less common framing, 'Pipeline simplicity,' refers to an architectural design principle favoring simpler model structures. The field operationalizes the primary, text-based definition of Simplicity through several methods. Human evaluation is a common approach, with papers describing the use of annotators to rate simplicity or layness on a 5-point Likert scale. Automatic evaluation is also employed, with the SARI metric being explicitly cited for this purpose. Other reported measurement instruments include LLM-based evaluation and the PRMBENCH benchmark. One study further specifies that simplicity can be assessed either as a raw quality of the output or as a 'relative simplicity gain when compared to the input complex sentence.'",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Layness",
+    "Simplicity",
+    "Pipeline simplicity"
+  ],
+  "papers": [
+    "Large Language Models as Realistic Microservice Trace Generators",
+    "VISaGE: Understanding Visual Generics and Exceptions",
+    "On The Origin of Cultural Biases in Language Models: From Pre-training Data to Linguistic Phenomena",
+    "VisDoM: Multi-DocumentQAwith Visually Rich Elements Using Multimodal Retrieval-Augmented Generation"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The latent trait reflecting a model's ability to reduce linguistic and conceptual complexity, making text accessible to non-experts without domain knowledge.",
+      "paper": "On The Origin of Cultural Biases in Language Models: From Pre-training Data to Linguistic Phenomena",
+      "original_name": "Simplicity"
+    },
+    {
+      "text": "The degree to which the generated text is suitable and understandable for a general, non-expert audience.",
+      "paper": "VisDoM: Multi-DocumentQAwith Visually Rich Elements Using Multimodal Retrieval-Augmented Generation",
+      "original_name": "Layness"
+    },
+    {
+      "text": "The design principle that simpler architectures with fewer processing stages tend to be more effective and robust when paired with strong language and embedding models, avoiding unnecessary complexity.",
+      "paper": "VISaGE: Understanding Visual Generics and Exceptions",
+      "original_name": "Pipeline simplicity"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "VisDoM: Multi-DocumentQAwith Visually Rich Elements Using Multimodal Retrieval-Augmented Generation",
+      "evidence": "Using a 1-5 Likert scale, the judges are asked to rate the model output based on five criteria: comprehensiveness, layness, meaning preservation, conciseness, and fluency. (Section 5.3.3).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "VisDoM: Multi-DocumentQAwith Visually Rich Elements Using Multimodal Retrieval-Augmented Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SARI",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "VisDoM: Multi-DocumentQAwith Visually Rich Elements Using Multimodal Retrieval-Augmented Generation",
+      "evidence": "We evaluate DSPT5 with other SOTA LLMs using the following automatic evaluation metrics... (4) Simplicity: SARI (Xu et al., 2016a). (Section 5.2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "VisDoM: Multi-DocumentQAwith Visually Rich Elements Using Multimodal Retrieval-Augmented Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-based evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "On The Origin of Cultural Biases in Language Models: From Pre-training Data to Linguistic Phenomena",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "On The Origin of Cultural Biases in Language Models: From Pre-training Data to Linguistic Phenomena"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PRMBENCH",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Language Constrained Multimodal Hyper Adapter For Many-to-Many Multimodal Summarization",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Language Constrained Multimodal Hyper Adapter For Many-to-Many Multimodal Summarization"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 4,
+  "characterization": "Across the provided literature, Simplicity is predominantly framed as a latent trait reflecting a model's ability to reduce linguistic and conceptual complexity, making text accessible to a general, non-expert audience. One paper uses the term 'Layness' to describe this same quality, defined as the degree to which text is suitable for non-experts. A distinct and less common framing, 'Pipeline simplicity,' refers to an architectural design principle favoring simpler model structures. The field operationalizes the primary, text-based definition of Simplicity through several methods. Human evaluation is a common approach, with papers describing the use of annotators to rate simplicity or layness on a 5-point Likert scale. Automatic evaluation is also employed, with the SARI metric being explicitly cited for this purpose. Other reported measurement instruments include LLM-based evaluation and the PRMBENCH benchmark. One study further specifies that simplicity can be assessed either as a raw quality of the output or as a 'relative simplicity gain when compared to the input complex sentence.'",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "naacl25": [
+      "On The Origin of Cultural Biases in Language Models: From Pre-training Data to Linguistic Phenomena",
+      "VisDoM: Multi-DocumentQAwith Visually Rich Elements Using Multimodal Retrieval-Augmented Generation"
+    ],
+    "emnlp25": [
+      "Large Language Models as Realistic Microservice Trace Generators",
+      "VISaGE: Understanding Visual Generics and Exceptions"
+    ]
+  },
+  "paper_count_by_conference": {
+    "naacl25": 2,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "naacl25"
+  ]
+}

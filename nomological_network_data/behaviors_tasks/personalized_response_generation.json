@@ -1,0 +1,150 @@
+{
+  "canonical_name": "Personalized response generation",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, personalized response generation is most commonly framed as the observable task of producing text tailored to a specific user's style, preferences, or historical data. Several definitions, including \"personalized text generation\" and \"adaptive interaction,\" converge on this idea of modifying responses based on user context. The user's profile is described as being inferred from sources like past choices on a questionnaire, historical data, or background information, with one paper noting the goal is to generate \"user-tailored responses for unseen contexts\" (DrDiff: Dynamic Routing Diffusion with Hierarchical Attention for Breaking the Efficiency-Quality Trade-off). A smaller set of studies applies the concept to more specific scenarios, such as generating \"speaker-specific responses\" in multi-party dialogues or producing \"tailored explanations\" for other models. One paper treats \"personalized review generation\" as a \"representative personalization task\" (Viability of Machine Translation for Healthcare in Low-Resourced Languages). This behavior is operationalized and measured using datasets like Amazon Reviews 2023 and benchmarks such as LaMP and LongLaMP. The quality of the personalization is frequently assessed through both Human evaluation and LLM-as-a-judge methods. The behavior is also studied in relation to Long-context understanding.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Speaker-specific response generation",
+    "Tailored explanation generation",
+    "Adaptive interaction",
+    "Personalized generation",
+    "Personalized response generation",
+    "Personalized review generation",
+    "Personalized text generation"
+  ],
+  "papers": [
+    "2025.emnlp-main.1723.checklist",
+    "2025.emnlp-main.475.checklist",
+    "Can Large Language Models Act as Ensembler for Multi-GNNs?",
+    "Corrupted but Not Broken: Understanding and Mitigating the Negative Impacts of Corrupted Data in Visual Instruction Tuning",
+    "DrDiff: Dynamic Routing Diffusion with Hierarchical Attention for Breaking the Efficiency-Quality Trade-off",
+    "Few-Shot Learning Translation from New Languages",
+    "Logit Space Constrained Fine-Tuning for Mitigating Hallucinations inLLM-Based Recommender Systems",
+    "Uncovering the Bigger Picture: Comprehensive Event Understanding Via Diverse News Retrieval",
+    "Viability of Machine Translation for Healthcare in Low-Resourced Languages"
+  ],
+  "paper_count": 9,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Producing structured, adapted explanations (e.g., using bullet points or simplified logic) when the identity of the receiving model is known, especially for weaker solvers.",
+      "paper": "Can Large Language Models Act as Ensembler for Multi-GNNs?",
+      "original_name": "Tailored explanation generation"
+    },
+    {
+      "text": "The observable generation of replies that are explicitly directed at and tailored for a particular speaker in a multi-party conversation.",
+      "paper": "Logit Space Constrained Fine-Tuning for Mitigating Hallucinations inLLM-Based Recommender Systems",
+      "original_name": "Speaker-specific response generation"
+    },
+    {
+      "text": "The model's ability to modify its responses based on context or user history, such as personalizing results or adjusting conversational tone.",
+      "paper": "Few-Shot Learning Translation from New Languages",
+      "original_name": "Adaptive interaction"
+    },
+    {
+      "text": "The observable task of generating text responses that are tailored to a specific user's preferences for previously unseen contexts or questions.",
+      "paper": "DrDiff: Dynamic Routing Diffusion with Hierarchical Attention for Breaking the Efficiency-Quality Trade-off",
+      "original_name": "Personalized generation"
+    },
+    {
+      "text": "Producing natural language responses that reflect a specific user's preferred style, content, or tone, as inferred from their past choices in a questionnaire.",
+      "paper": "DrDiff: Dynamic Routing Diffusion with Hierarchical Attention for Breaking the Efficiency-Quality Trade-off",
+      "original_name": "Personalized response generation"
+    },
+    {
+      "text": "The specific task of generating a product or item review that reflects a particular user's writing style, opinions, and preferences.",
+      "paper": "Viability of Machine Translation for Healthcare in Low-Resourced Languages",
+      "original_name": "Personalized review generation"
+    },
+    {
+      "text": "The observable task of generating text that is tailored to a specific user's style, preferences, and historical data.",
+      "paper": "Uncovering the Bigger Picture: Comprehensive Event Understanding Via Diverse News Retrieval",
+      "original_name": "Personalized text generation"
+    }
+  ],
+  "definition_count": 7,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-context understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "DenseLoRA: Dense Low-Rank Adaptation of Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "DenseLoRA: Dense Low-Rank Adaptation of Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Logit Space Constrained Fine-Tuning for Mitigating Hallucinations inLLM-Based Recommender Systems",
+      "evidence": "PAChat achieves the best results across all metrics, demonstrating significant improvements in personalized response generation and particularly winning favor with both GPT and human judges. (Section 5.3.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Logit Space Constrained Fine-Tuning for Mitigating Hallucinations inLLM-Based Recommender Systems"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Amazon Reviews 2023",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Viability of Machine Translation for Healthcare in Low-Resourced Languages",
+      "evidence": "Building upon prior work, we focus on the representative task of item review generation for LLM personalization (Ni et al., 2019; Peng et al., 2024; Kumar et al., 2024; Au et al., 2025). Specifically, we adopt the Amazon Reviews 2023 dataset (Section 4.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Viability of Machine Translation for Healthcare in Low-Resourced Languages"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-as-a-judge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Logit Space Constrained Fine-Tuning for Mitigating Hallucinations inLLM-Based Recommender Systems",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Logit Space Constrained Fine-Tuning for Mitigating Hallucinations inLLM-Based Recommender Systems"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 3,
+  "characterization": "Across the surveyed literature, personalized response generation is most commonly framed as the observable task of producing text tailored to a specific user's style, preferences, or historical data. Several definitions, including \"personalized text generation\" and \"adaptive interaction,\" converge on this idea of modifying responses based on user context. The user's profile is described as being inferred from sources like past choices on a questionnaire, historical data, or background information, with one paper noting the goal is to generate \"user-tailored responses for unseen contexts\" (DrDiff: Dynamic Routing Diffusion with Hierarchical Attention for Breaking the Efficiency-Quality Trade-off). A smaller set of studies applies the concept to more specific scenarios, such as generating \"speaker-specific responses\" in multi-party dialogues or producing \"tailored explanations\" for other models. One paper treats \"personalized review generation\" as a \"representative personalization task\" (Viability of Machine Translation for Healthcare in Low-Resourced Languages). This behavior is operationalized and measured using datasets like Amazon Reviews 2023 and benchmarks such as LaMP and LongLaMP. The quality of the personalization is frequently assessed through both Human evaluation and LLM-as-a-judge methods. The behavior is also studied in relation to Long-context understanding.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "2025.emnlp-main.1723.checklist",
+      "2025.emnlp-main.475.checklist",
+      "Can Large Language Models Act as Ensembler for Multi-GNNs?",
+      "Corrupted but Not Broken: Understanding and Mitigating the Negative Impacts of Corrupted Data in Visual Instruction Tuning",
+      "DrDiff: Dynamic Routing Diffusion with Hierarchical Attention for Breaking the Efficiency-Quality Trade-off",
+      "Few-Shot Learning Translation from New Languages",
+      "Logit Space Constrained Fine-Tuning for Mitigating Hallucinations inLLM-Based Recommender Systems",
+      "Uncovering the Bigger Picture: Comprehensive Event Understanding Via Diverse News Retrieval",
+      "Viability of Machine Translation for Healthcare in Low-Resourced Languages"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 9
+  },
+  "conferences": [
+    "emnlp25"
+  ]
+}

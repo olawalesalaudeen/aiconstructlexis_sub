@@ -1,0 +1,75 @@
+{
+  "canonical_name": "Llama-Guard",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, Llama-Guard is consistently described as a model used for safety evaluation. It is defined as a \"dedicated safety classifier LLM\" trained to detect unsafe content, and it is applied to both prompts and generated responses. Papers use Llama-Guard to operationalize safety assessment in a few ways: one study uses it to \"determine the safety of the responses\" from another model, while another employs it to evaluate \"bypass rates,\" which are defined as the percentage of malicious requests it misclassifies as safe. In addition to its role as an evaluation tool, one paper also frames Llama-Guard as a deployable \"safety mechanism\" designed to \"detect and filter adversarial or harmful prompts\" in settings like multi-agent systems. The effectiveness of Llama-Guard itself is also a subject of study, with one paper noting that it can \"fail to defend against\" certain attacks.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Llama-Guard"
+  ],
+  "papers": [
+    "PIG: Privacy Jailbreak Attack onLLMs via Gradient-based Iterative In-Context Optimization",
+    "Using Shapley interactions to understand how models use structure",
+    "Learning Diverse Attacks on Large Language Models for Robust Red-Teaming and Safety Tuning",
+    "TIS-DPO: Token-level Importance Sampling for Direct Preference Optimization With Estimated Weights"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A safety evaluation model used to judge whether generated responses are safe.",
+      "paper": "TIS-DPO: Token-level Importance Sampling for Direct Preference Optimization With Estimated Weights",
+      "original_name": "Llama-Guard"
+    },
+    {
+      "text": "A dedicated safety classifier LLM trained to detect unsafe prompts or responses, used to evaluate bypass rates under adversarial tokenization.",
+      "paper": "Using Shapley interactions to understand how models use structure",
+      "original_name": "LlamaGuard"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmlessness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "TIS-DPO: Token-level Importance Sampling for Direct Preference Optimization With Estimated Weights",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr25": [
+          "TIS-DPO: Token-level Importance Sampling for Direct Preference Optimization With Estimated Weights",
+          "Learning Diverse Attacks on Large Language Models for Robust Red-Teaming and Safety Tuning"
+        ],
+        "emnlp25": [
+          "LLM-OREF: An Open Relation Extraction Framework Based on Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, Llama-Guard is consistently described as a model used for safety evaluation. It is defined as a \"dedicated safety classifier LLM\" trained to detect unsafe content, and it is applied to both prompts and generated responses. Papers use Llama-Guard to operationalize safety assessment in a few ways: one study uses it to \"determine the safety of the responses\" from another model, while another employs it to evaluate \"bypass rates,\" which are defined as the percentage of malicious requests it misclassifies as safe. In addition to its role as an evaluation tool, one paper also frames Llama-Guard as a deployable \"safety mechanism\" designed to \"detect and filter adversarial or harmful prompts\" in settings like multi-agent systems. The effectiveness of Llama-Guard itself is also a subject of study, with one paper noting that it can \"fail to defend against\" certain attacks.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Learning Diverse Attacks on Large Language Models for Robust Red-Teaming and Safety Tuning",
+      "TIS-DPO: Token-level Importance Sampling for Direct Preference Optimization With Estimated Weights"
+    ],
+    "acl25": [
+      "PIG: Privacy Jailbreak Attack onLLMs via Gradient-based Iterative In-Context Optimization",
+      "Using Shapley interactions to understand how models use structure"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "acl25": 2
+  },
+  "conferences": [
+    "acl25",
+    "iclr25"
+  ]
+}

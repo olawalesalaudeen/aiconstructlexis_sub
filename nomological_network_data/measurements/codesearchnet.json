@@ -1,0 +1,106 @@
+{
+  "canonical_name": "CodeSearchNet",
+  "type": "measurement",
+  "canonical_definition": "CodeSearchNet is predominantly characterized as a benchmark for evaluating function-level text-to-code retrieval. This task is consistently framed as a semantic search where natural language queries are used to retrieve relevant code snippets. The provided literature shows it is used to measure both code retrieval and the related behavior of ranking, where one study evaluates a reranker on its output. A less frequent but present framing positions CodeSearchNet as a dataset for assessing code generation and code understanding. One source specifies its composition, noting it contains over two million comment-code pairs across six programming languages. The most common usage across the supplied papers is for code retrieval tasks, with its application to code generation being a secondary, less-mentioned use.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "CodeSearchNet",
+    "Code Search Net"
+  ],
+  "papers": [
+    "EventRAG: EnhancingLLMGeneration with Event Knowledge Graphs",
+    "INVESTORBENCH: A Benchmark for Financial Decision-Making Tasks withLLM-based Agent",
+    "KV-Latent: Dimensional-levelKVCache Reduction with Frequency-aware Rotary Positional Embedding",
+    "ReinforcedIR: A Self-Boosting Framework For Domain-Adapted Information Retrieval",
+    "Self-Taught Agentic Long Context Understanding",
+    "CoRNStack: High-Quality Contrastive Data for Better Code Retrieval and Reranking",
+    "Selective Aggregation for Low-Rank Adaptation in Federated Learning"
+  ],
+  "paper_count": 7,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "CodeSearchNet (CSN), a benchmark for function-level text-to-code retrieval using natural language queries and code snippets.",
+      "paper": "CoRNStack: High-Quality Contrastive Data for Better Code Retrieval and Reranking",
+      "original_name": "CodeSearchNet"
+    },
+    {
+      "text": "Dataset for evaluating code generation and understanding, containing code snippets and natural language descriptions across multiple programming languages.",
+      "paper": "EventRAG: EnhancingLLMGeneration with Event Knowledge Graphs",
+      "original_name": "Code Search Net"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "CoRNStack: High-Quality Contrastive Data for Better Code Retrieval and Reranking",
+      "evidence": "First, we consider CodeSearchNet (CSN) (Husain et al., 2019) and AdvTest (Lu et al., 2021) as benchmarks for function-level text-to-code retrieval, a semantic search task where natural language queries are used to retrieve relevant code snippets. (Section 4.1.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "CoRNStack: High-Quality Contrastive Data for Better Code Retrieval and Reranking"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Ranking",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "CoRNStack: High-Quality Contrastive Data for Better Code Retrieval and Reranking",
+      "evidence": "For evaluation, we employ the CodeSearchNet and AdvTest text-to-code retrieval benchmarks... the top 100 results from our code retriever are passed to the reranker, with evaluation conducted using MRR@100.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "CoRNStack: High-Quality Contrastive Data for Better Code Retrieval and Reranking"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Selective Aggregation for Low-Rank Adaptation in Federated Learning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Selective Aggregation for Low-Rank Adaptation in Federated Learning"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization": "CodeSearchNet is predominantly characterized as a benchmark for evaluating function-level text-to-code retrieval. This task is consistently framed as a semantic search where natural language queries are used to retrieve relevant code snippets. The provided literature shows it is used to measure both code retrieval and the related behavior of ranking, where one study evaluates a reranker on its output. A less frequent but present framing positions CodeSearchNet as a dataset for assessing code generation and code understanding. One source specifies its composition, noting it contains over two million comment-code pairs across six programming languages. The most common usage across the supplied papers is for code retrieval tasks, with its application to code generation being a secondary, less-mentioned use.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "CoRNStack: High-Quality Contrastive Data for Better Code Retrieval and Reranking",
+      "Selective Aggregation for Low-Rank Adaptation in Federated Learning"
+    ],
+    "acl25": [
+      "EventRAG: EnhancingLLMGeneration with Event Knowledge Graphs",
+      "INVESTORBENCH: A Benchmark for Financial Decision-Making Tasks withLLM-based Agent",
+      "KV-Latent: Dimensional-levelKVCache Reduction with Frequency-aware Rotary Positional Embedding",
+      "ReinforcedIR: A Self-Boosting Framework For Domain-Adapted Information Retrieval",
+      "Self-Taught Agentic Long Context Understanding"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "acl25": 5
+  },
+  "conferences": [
+    "acl25",
+    "iclr25"
+  ]
+}

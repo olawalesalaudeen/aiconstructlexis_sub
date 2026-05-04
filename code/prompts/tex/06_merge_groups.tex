@@ -1,0 +1,43 @@
+\section*{Prompt: Merge Groups Across Batches}
+\begin{description}
+\item[Pipeline step:] Harmonization --- Hierarchical Merge
+\item[Models:] Gemini 2.5 Pro
+\item[Source:] \texttt{misc/prompts.py} $\rightarrow$ \texttt{MERGE\_GROUPS\_PROMPT}
+\item[Called from:] \texttt{scripts/llm\_aggregator.py:\_merge\_groups\_batch()}
+\end{description}
+\begin{tcolorbox}[colback=yellow!8,colframe=yellow!50!black,left=4pt,right=4pt,top=4pt,bottom=4pt,arc=2pt]
+\textbf{Note:} The \texttt{\{node\_type\}} and \texttt{\{output\_example\_json\}} placeholders are filled at runtime. The groups JSON is appended after this template.
+\end{tcolorbox}
+
+\begin{tcolorbox}[breakable,enhanced,colback=blue!3,colframe=blue!40!black,title={Prompt},fonttitle=\bfseries,left=8pt,right=8pt,top=6pt,bottom=6pt]
+
+You are merging groups of \{node\_type\} that were created from different batches. Some groups may refer to the same concept even though they were processed separately.
+
+Each input group has an \texttt{id}. Output only the merge mapping as \texttt{\{\{canonical\_name: [ids]\}\}}. All metadata (definitions, papers, snippets) is resolved from the IDs programmatically --- do NOT repeat them.
+
+\textbf{Task:}
+Review all groups below and merge any that refer to the same concept.
+
+\textbf{Canonical name rules:} Use the most specific/common community-standard name. Sentence case. For measurement instruments, include the subset if applicable.
+
+\textbf{Merge rules:}
+\begin{itemize}
+\item ONLY merge groups that refer to the EXACT SAME concept (true synonyms)
+\item DO NOT merge hierarchical relationships --- "Reasoning" and "Mathematical Reasoning" are DIFFERENT and should stay separate
+\item DO NOT merge parent-child relationships --- keep specialized variants separate
+\item DO NOT merge distinct facets of a broader concept (e.g. "Mathematical reasoning" and "Commonsense reasoning" are separate facets, not synonyms)
+\item For measurement instruments: DO NOT merge different datasets, subsets, or evaluation types (e.g. "HELM Math" $\neq$ "HELM Code"; "MMLU" $\neq$ "MMLU Math"; "User preference study" $\neq$ "Expert annotation evaluation")
+\item Be VERY conservative: if unsure, keep them separate
+\end{itemize}
+
+\textbf{Output format:}
+\begin{verbatim}
+{{"groups": {{"Reasoning": [0, 3], "Mathematical reasoning": [1], "MMLU": [2, 5]}}, "ungrouped": [4, 6]}}
+\end{verbatim}
+\texttt{ungrouped} lists IDs that don't match any other group. Every input ID must appear exactly once.
+
+\textbf{Input groups:}
+\{groups\_json\}
+
+Return only the JSON object.
+\end{tcolorbox}

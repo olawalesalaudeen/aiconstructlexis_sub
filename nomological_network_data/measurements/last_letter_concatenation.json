@@ -1,0 +1,110 @@
+{
+  "canonical_name": "Last letter concatenation",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, Last letter concatenation is consistently framed as a benchmark task used to evaluate different forms of reasoning in language models. The task itself is a form of string manipulation where a model must \"concatenate the last letters of words in a given name,\" as exemplified by one paper's instance of transforming \"Amy Brown\" into \"yn\". Its most prevalent application is to measure `Symbolic reasoning`, a use case supported by multiple definitions and a relationship cited across five papers. Some work also uses it to evaluate \"algorithmic reasoning\" and \"length generalization.\" A less common application, found in one paper, is its use to measure `Commonsense knowledge`. The benchmark is described as both \"frequently used\" and a \"difficult string manipulation task,\" with performance typically reported as accuracy on the test set.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "LLC",
+    "LastLetter",
+    "Last Letter Concatenation",
+    "Last letter concatenation"
+  ],
+  "papers": [
+    "CodePlan: Unlocking Reasoning Potential in Large Language Models by Scaling Code-form Planning",
+    "Don't Take Things Out of Context: Attention Intervention for Enhancing Chain-of-Thought Reasoning in Large Language Models",
+    "Generative Verifiers: Reward Modeling as Next-Token Prediction",
+    "Efficient Contextual LLM Cascades through Budget-Constrained Policy Learning",
+    "Self-Guiding Exploration for Combinatorial Problems"
+  ],
+  "paper_count": 5,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Last Letter Concatenation, a reasoning task and dataset where the model must concatenate the last letters of words in a given name.",
+      "paper": "Efficient Contextual LLM Cascades through Budget-Constrained Policy Learning",
+      "original_name": "LLC"
+    },
+    {
+      "text": "A benchmark test set used to evaluate symbolic reasoning performance.",
+      "paper": "Self-Guiding Exploration for Combinatorial Problems",
+      "original_name": "LastLetter"
+    },
+    {
+      "text": "A string-manipulation benchmark used to evaluate algorithmic reasoning and length generalization in verification settings.",
+      "paper": "Generative Verifiers: Reward Modeling as Next-Token Prediction",
+      "original_name": "Last Letter Concatenation"
+    },
+    {
+      "text": "A symbolic reasoning task used to test whether a model can follow letter-based transformation rules across inputs.",
+      "paper": "Don't Take Things Out of Context: Attention Intervention for Enhancing Chain-of-Thought Reasoning in Large Language Models",
+      "original_name": "Last letter concatenation"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Symbolic reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Escape Sky-high Cost: Early-stopping Self-Consistency for Multi-step Reasoning",
+      "evidence": "",
+      "paper_count": 5,
+      "papers_by_conference": {
+        "iclr24": [
+          "Escape Sky-high Cost: Early-stopping Self-Consistency for Multi-step Reasoning"
+        ],
+        "neurips24": [
+          "Self-Guiding Exploration for Combinatorial Problems"
+        ],
+        "iclr25": [
+          "CodePlan: Unlocking Reasoning Potential in Large Language Models by Scaling Code-form Planning",
+          "Don't Take Things Out of Context: Attention Intervention for Enhancing Chain-of-Thought Reasoning in Large Language Models"
+        ],
+        "icml25": [
+          "Rethinking Chain-of-Thought from the Perspective of Self-Training"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Efficient Contextual LLM Cascades through Budget-Constrained Policy Learning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Efficient Contextual LLM Cascades through Budget-Constrained Policy Learning"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, Last letter concatenation is consistently framed as a benchmark task used to evaluate different forms of reasoning in language models. The task itself is a form of string manipulation where a model must \"concatenate the last letters of words in a given name,\" as exemplified by one paper's instance of transforming \"Amy Brown\" into \"yn\". Its most prevalent application is to measure `Symbolic reasoning`, a use case supported by multiple definitions and a relationship cited across five papers. Some work also uses it to evaluate \"algorithmic reasoning\" and \"length generalization.\" A less common application, found in one paper, is its use to measure `Commonsense knowledge`. The benchmark is described as both \"frequently used\" and a \"difficult string manipulation task,\" with performance typically reported as accuracy on the test set.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "Efficient Contextual LLM Cascades through Budget-Constrained Policy Learning",
+      "Self-Guiding Exploration for Combinatorial Problems"
+    ],
+    "iclr25": [
+      "CodePlan: Unlocking Reasoning Potential in Large Language Models by Scaling Code-form Planning",
+      "Don't Take Things Out of Context: Attention Intervention for Enhancing Chain-of-Thought Reasoning in Large Language Models",
+      "Generative Verifiers: Reward Modeling as Next-Token Prediction"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 2,
+    "iclr25": 3
+  },
+  "conferences": [
+    "iclr25",
+    "neurips24"
+  ]
+}

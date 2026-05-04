@@ -1,0 +1,124 @@
+{
+  "canonical_name": "ROUGE-L",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, ROUGE-L is consistently described as an evaluation metric that measures the similarity between a generated text and a reference text by computing their longest common subsequence. The most prevalent definition characterizes it as an n-gram-based metric, while a smaller set of papers describe it more simply as an \"overlap-based metric.\" Its primary function is to assess the quality of model outputs, and it is used to operationalize several concepts, most commonly correctness, precision, and summarization quality. For instance, some studies define a generated text as correct or \"admissible\" if its ROUGE-L score exceeds a predefined threshold. Less frequent applications include measuring content homogenization, key point alignment, and overfitting. ROUGE-L is frequently used alongside embedding-based metrics like BERTScore, where it is explicitly positioned to assess \"lexical similarity\" or \"token overlap\" as opposed to semantic similarity. As one paper notes, higher scores indicate that a model's responses \"contain a significantly larger portion of the same words in the same order\" (NEFTune: Noisy Embeddings Improve Instruction Finetuning).",
+  "expert_reviewed": false,
+  "expert_removed": true,
+  "expert_removed_reason": "metric/method/tool \u2014 not a benchmark or LLM ability",
+  "names": [
+    "ROUGE-L",
+    "Rouge-L"
+  ],
+  "papers": [
+    "2025.emnlp-main.1626.checklist",
+    "AdaptThink: Reasoning Models Can Learn When to Think",
+    "Are Language Models Consequentialist or Deontological Moral Reasoners?",
+    "Can Large Language Models Outperform Non-Experts in Poetry Evaluation? A Comparative Study Using the Consensual Assessment Technique",
+    "Dynamic Collaboration of Multi-Language Models based on Minimal Complete Semantic Units",
+    "EduVidQA: Generating and Evaluating Long-form Answers to Student Questions based on Lecture Videos",
+    "Language-Guided Temporal Token Pruning for EfficientVideoLLMProcessing",
+    "LiTEx: A Linguistic Taxonomy of Explanations for Understanding Within-Label Variation in Natural Language Inference",
+    "MCIP: ProtectingMCPSafety via Model Contextual Integrity Protocol",
+    "MultiDocFusion : Hierarchical and Multimodal Chunking Pipeline for EnhancedRAGon Long Industrial Documents",
+    "Noise, Adaptation, and Strategy: AssessingLLMFidelity in Decision-Making",
+    "RRInf: Efficient Influence Function Estimation via Ridge Regression for Large Language Models and Text-to-Image Diffusion Models",
+    "Training compute-optimal transformer encoder models",
+    "Web Intellectual Property at Risk: Preventing Unauthorized Real-Time Retrieval by Large Language Models",
+    "iKnow-audio: Integrating Knowledge Graphs with Audio-Language Models",
+    "Conformal Language Modeling",
+    "Does Writing with Language Models Reduce Content Diversity?",
+    "INSIDE: LLMs' Internal States Retain the Power of Hallucination Detection",
+    "Instructive Decoding: Instruction-Tuned Large Language Models are Self-Refiner from Noisy Instructions",
+    "MiniLLM: Knowledge Distillation of Large Language Models",
+    "NEFTune: Noisy Embeddings Improve Instruction Finetuning",
+    "Prompt Risk Control: A Rigorous Framework for Responsible Deployment of Large Language Models",
+    "Time Travel in LLMs: Tracing Data Contamination in Large Language Models",
+    "CBT-Bench: Evaluating Large Language Models on Assisting Cognitive Behavior Therapy",
+    "Ethical Concern Identification inNLP: A Corpus ofACLAnthology Ethics Statements",
+    "From Redundancy to Relevance: Information Flow inLVLMs Across Reasoning Tasks",
+    "Is your benchmark truly adversarial?AdvScore: Evaluating Human-Grounded Adversarialness",
+    "Seq1F1B: Efficient Sequence-Level Pipeline Parallelism for Large Language Model Training"
+  ],
+  "paper_count": 28,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Overlap-based metric that measures similarity between texts using longest common subsequence, used here to compute homogenization and key point alignment.",
+      "paper": "Does Writing with Language Models Reduce Content Diversity?",
+      "original_name": "Rouge-L"
+    },
+    {
+      "text": "An n-gram-based evaluation metric that computes the longest common subsequence between generated and reference texts to assess correctness.",
+      "paper": "Conformal Language Modeling",
+      "original_name": "ROUGE-L"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text summarization",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Seq1F1B: Efficient Sequence-Level Pipeline Parallelism for Large Language Model Training",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Seq1F1B: Efficient Sequence-Level Pipeline Parallelism for Large Language Model Training"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, ROUGE-L is consistently described as an evaluation metric that measures the similarity between a generated text and a reference text by computing their longest common subsequence. The most prevalent definition characterizes it as an n-gram-based metric, while a smaller set of papers describe it more simply as an \"overlap-based metric.\" Its primary function is to assess the quality of model outputs, and it is used to operationalize several concepts, most commonly correctness, precision, and summarization quality. For instance, some studies define a generated text as correct or \"admissible\" if its ROUGE-L score exceeds a predefined threshold. Less frequent applications include measuring content homogenization, key point alignment, and overfitting. ROUGE-L is frequently used alongside embedding-based metrics like BERTScore, where it is explicitly positioned to assess \"lexical similarity\" or \"token overlap\" as opposed to semantic similarity. As one paper notes, higher scores indicate that a model's responses \"contain a significantly larger portion of the same words in the same order\" (NEFTune: Noisy Embeddings Improve Instruction Finetuning).",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Conformal Language Modeling",
+      "Does Writing with Language Models Reduce Content Diversity?",
+      "INSIDE: LLMs' Internal States Retain the Power of Hallucination Detection",
+      "Instructive Decoding: Instruction-Tuned Large Language Models are Self-Refiner from Noisy Instructions",
+      "MiniLLM: Knowledge Distillation of Large Language Models",
+      "NEFTune: Noisy Embeddings Improve Instruction Finetuning",
+      "Prompt Risk Control: A Rigorous Framework for Responsible Deployment of Large Language Models",
+      "Time Travel in LLMs: Tracing Data Contamination in Large Language Models"
+    ],
+    "naacl25": [
+      "CBT-Bench: Evaluating Large Language Models on Assisting Cognitive Behavior Therapy",
+      "Ethical Concern Identification inNLP: A Corpus ofACLAnthology Ethics Statements",
+      "From Redundancy to Relevance: Information Flow inLVLMs Across Reasoning Tasks",
+      "Is your benchmark truly adversarial?AdvScore: Evaluating Human-Grounded Adversarialness",
+      "Seq1F1B: Efficient Sequence-Level Pipeline Parallelism for Large Language Model Training"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.1626.checklist",
+      "AdaptThink: Reasoning Models Can Learn When to Think",
+      "Are Language Models Consequentialist or Deontological Moral Reasoners?",
+      "Can Large Language Models Outperform Non-Experts in Poetry Evaluation? A Comparative Study Using the Consensual Assessment Technique",
+      "Dynamic Collaboration of Multi-Language Models based on Minimal Complete Semantic Units",
+      "EduVidQA: Generating and Evaluating Long-form Answers to Student Questions based on Lecture Videos",
+      "Language-Guided Temporal Token Pruning for EfficientVideoLLMProcessing",
+      "LiTEx: A Linguistic Taxonomy of Explanations for Understanding Within-Label Variation in Natural Language Inference",
+      "MCIP: ProtectingMCPSafety via Model Contextual Integrity Protocol",
+      "MultiDocFusion : Hierarchical and Multimodal Chunking Pipeline for EnhancedRAGon Long Industrial Documents",
+      "Noise, Adaptation, and Strategy: AssessingLLMFidelity in Decision-Making",
+      "RRInf: Efficient Influence Function Estimation via Ridge Regression for Large Language Models and Text-to-Image Diffusion Models",
+      "Training compute-optimal transformer encoder models",
+      "Web Intellectual Property at Risk: Preventing Unauthorized Real-Time Retrieval by Large Language Models",
+      "iKnow-audio: Integrating Knowledge Graphs with Audio-Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 8,
+    "naacl25": 5,
+    "emnlp25": 15
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "naacl25"
+  ]
+}

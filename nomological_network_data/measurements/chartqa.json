@@ -1,0 +1,272 @@
+{
+  "canonical_name": "ChartQA",
+  "type": "measurement",
+  "canonical_definition": "ChartQA is a benchmark dataset primarily used to evaluate models on chart understanding and visual question answering. The most prevalent application across the surveyed literature is to measure a model's ability for \"Chart and diagram understanding,\" with papers stating it assesses \"understanding, reasoning, and data extraction skills\" and \"visual and logical reasoning over charts.\" The dataset is described as containing human-crafted questions that require models to perform tasks like \"item comparison, counting, and numerical computation\" based on chart images. It is also frequently used to evaluate the broader behavior of \"Visual question answering,\" often included in a suite of benchmarks to test general or domain-specific VQA capabilities. A smaller set of papers operationalizes ChartQA to measure more specific constructs, including \"Visual reasoning\" and \"Optical character recognition.\" A few sources also refer to it more generally as a \"single-page document understanding dataset\" alongside benchmarks like DocVQA. The dataset is used to demonstrate model advancements, as one study notes its method \"solves previously unsolvable problem in ChartQA dataset\" (ReFocus: Visual Editing as a Chain of Thought for Structured Image Understanding).",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "ChartQA"
+  ],
+  "papers": [
+    "An Expanded Massive Multilingual Dataset for High-Performance Language Technologies (HPLT)",
+    "Efficient Universal Goal Hijacking with Semantics-guided Prompt Organization",
+    "Enhancing Machine Translation with Self-Supervised Preference Data",
+    "Real-time Factuality Assessment from Adversarial Feedback",
+    "Response Wide Shut? Surprising Observations in Basic Vision Language Model Capabilities",
+    "BigDocs: An Open Dataset for Training Multimodal Models on Document and Code Tasks",
+    "ChartMoE: Mixture of Diversely Aligned Expert Connector for Chart Understanding",
+    "CogCoM: A Visual Language Model with Chain-of-Manipulations Reasoning",
+    "Eagle: Exploring The Design Space for Multimodal LLMs with Mixture of Encoders",
+    "Enhancing Document Understanding with Group Position Embedding: A Novel Approach to Incorporate Layout Information",
+    "Harnessing Webpage UIs for Text-Rich Visual Understanding",
+    "Inference Optimal VLMs Need Fewer Visual Tokens and More Parameters",
+    "LLaVA-Interleave: Tackling Multi-image, Video, and 3D in Large Multimodal Models",
+    "Learning Interleaved Image-Text Comprehension in Vision-Language Large Models",
+    "LiveXiv - A Multi-Modal live benchmark based on Arxiv papers content",
+    "MEGA-Bench: Scaling Multimodal Evaluation to over 500 Real-World Tasks",
+    "MME-RealWorld: Could Your Multimodal LLM Challenge High-Resolution Real-World Scenarios that are Difficult for Humans?",
+    "Matryoshka Multimodal Models",
+    "Mini-Monkey: Alleviating the Semantic Sawtooth Effect for Lightweight MLLMs via Complementary Image Pyramid",
+    "Reconstructive Visual Instruction Tuning",
+    "SV-RAG: LoRA-Contextualizing Adaptation of  MLLMs for Long Document Understanding",
+    "Solving Token Gradient Conflict in Mixture-of-Experts for Large Vision-Language Model",
+    "TaskGalaxy: Scaling Multi-modal Instruction Fine-tuning with Tens of Thousands Vision Task Types",
+    "VCR: A Task for Pixel-Level Complex Reasoning in Vision Language Models via Restoring Occluded Text",
+    "VisRAG: Vision-based Retrieval-augmented Generation on Multi-modality Documents",
+    "CoMemo: LVLMs Need Image Context with Image Memory",
+    "CoreMatching: A Co-adaptive Sparse Inference Framework with Token and Neuron Pruning for Comprehensive Acceleration of Vision-Language Models",
+    "Diffusion Instruction Tuning",
+    "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding",
+    "Ranked from Within: Ranking Large Multimodal Models Without Labels",
+    "ReFocus: Visual Editing as a Chain of Thought for Structured Image Understanding",
+    "Streamline Without Sacrifice - Squeeze out Computation Redundancy in LMM",
+    "Towards Rationale-Answer Alignment of LVLMs via Self-Rationale Calibration"
+  ],
+  "paper_count": 33,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Chart question answering benchmark referenced as a prior single-page document understanding dataset.",
+      "paper": "SV-RAG: LoRA-Contextualizing Adaptation of  MLLMs for Long Document Understanding",
+      "original_name": "ChartQA"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Chart and diagram understanding",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+      "evidence": "Previous works focus on chart question answering (Masry et al., 2022; Methani et al., 2020; Xu et al., 2023; Wang et al., 2024b; Li et al., 2024c; Zeng et al., 2024) and chart captioning (Rahman et al., 2023; Kantharaj et al., 2022). (Section 5)",
+      "paper_count": 5,
+      "papers_by_conference": {
+        "neurips24": [
+          "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+          "MoVA: Adapting Mixture of Vision Experts to Multimodal Context"
+        ],
+        "iclr25": [
+          "ChartMoE: Mixture of Diversely Aligned Expert Connector for Chart Understanding",
+          "Eagle: Exploring The Design Space for Multimodal LLMs with Mixture of Encoders"
+        ],
+        "icml25": [
+          "CoreMatching: A Co-adaptive Sparse Inference Framework with Token and Neuron Pruning for Comprehensive Acceleration of Vision-Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "We collect question-document pairs from a series of VQA datasets, targeting different document types: MP-DocVQA (Tito et al., 2023) for industrial documents, ArXivQA (Li et al., 2024b), ChartQA (Masry et al., 2022), InfographicsVQA (Mathew et al., 2022), and PlotQA (Methani et al., 2020) for various figure types, and SlideVQA (Tanaka et al., 2023) for presentation slides.",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "neurips24": [
+          "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+          "Enhancing Large Vision Language Models with Self-Training on Image Comprehension"
+        ],
+        "iclr25": [
+          "VisRAG: Vision-based Retrieval-augmented Generation on Multi-modality Documents"
+        ],
+        "icml25": [
+          "Towards Rationale-Answer Alignment of LVLMs via Self-Rationale Calibration"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Optical character recognition",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD",
+      "evidence": "ChartQA (Masry et al., 2022), OCRVQA (Mishra et al., 2019), TextVQA (Singh et al., 2019) and DocVQA (Mathew et al., 2021) to examine their ability to recognize optical character (Section 5.1)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD"
+        ],
+        "icml25": [
+          "Ranked from Within: Ranking Large Multimodal Models Without Labels"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Inference Optimal VLMs Need Fewer Visual Tokens and More Parameters",
+      "evidence": "To estimate the downstream error Y (N, C), we test our trained VLMs on a suite of nine commonly used benchmarks for evaluating visual reasoning: MME (Fu et al., 2024), GQA (Hudson & Manning, 2019), AI2D (Kembhavi et al., 2016), MMBench (Liu et al., 2024c), MMMU (Yue et al., 2023), ScienceQA (Lu et al., 2022), MathVista (Lu et al., 2024), POPE (Li et al., 2023c), and ChartQA (Masry et al., 2022). (Section 3.2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Inference Optimal VLMs Need Fewer Visual Tokens and More Parameters"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Document understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Matryoshka Multimodal Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Matryoshka Multimodal Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Chart question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "ShouldIShare this Translation? Evaluating Quality Feedback for User Reliance on Machine Translation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "ShouldIShare this Translation? Evaluating Quality Feedback for User Reliance on Machine Translation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Fine-grained visual understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Streamline Without Sacrifice - Squeeze out Computation Redundancy in LMM",
+      "evidence": "To evaluate the impact of this masking on the performance of LMMs, we select a set of OCR-extensive benchmarks (DocVQA (Mathew et al., 2021), ChartQA (Masry et al., 2022), InfoVQA (Mathew et al., 2022), OCRBench (Liu et al., 2024c), TextVQA (Singh et al., 2019)) that require fine-grained visual information, thus being highly sensitive to potential information loss in vision tokens",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Streamline Without Sacrifice - Squeeze out Computation Redundancy in LMM"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Fine-grained understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Reconstructive Visual Instruction Tuning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Reconstructive Visual Instruction Tuning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Information retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Enhancing Machine Translation with Self-Supervised Preference Data",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Enhancing Machine Translation with Self-Supervised Preference Data"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal perception",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 10,
+  "incoming_relationship_count": 10,
+  "outgoing_relationship_count": 0,
+  "characterization": "ChartQA is a benchmark dataset primarily used to evaluate models on chart understanding and visual question answering. The most prevalent application across the surveyed literature is to measure a model's ability for \"Chart and diagram understanding,\" with papers stating it assesses \"understanding, reasoning, and data extraction skills\" and \"visual and logical reasoning over charts.\" The dataset is described as containing human-crafted questions that require models to perform tasks like \"item comparison, counting, and numerical computation\" based on chart images. It is also frequently used to evaluate the broader behavior of \"Visual question answering,\" often included in a suite of benchmarks to test general or domain-specific VQA capabilities. A smaller set of papers operationalizes ChartQA to measure more specific constructs, including \"Visual reasoning\" and \"Optical character recognition.\" A few sources also refer to it more generally as a \"single-page document understanding dataset\" alongside benchmarks like DocVQA. The dataset is used to demonstrate model advancements, as one study notes its method \"solves previously unsolvable problem in ChartQA dataset\" (ReFocus: Visual Editing as a Chain of Thought for Structured Image Understanding).",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "BigDocs: An Open Dataset for Training Multimodal Models on Document and Code Tasks",
+      "ChartMoE: Mixture of Diversely Aligned Expert Connector for Chart Understanding",
+      "CogCoM: A Visual Language Model with Chain-of-Manipulations Reasoning",
+      "Eagle: Exploring The Design Space for Multimodal LLMs with Mixture of Encoders",
+      "Enhancing Document Understanding with Group Position Embedding: A Novel Approach to Incorporate Layout Information",
+      "Harnessing Webpage UIs for Text-Rich Visual Understanding",
+      "Inference Optimal VLMs Need Fewer Visual Tokens and More Parameters",
+      "LLaVA-Interleave: Tackling Multi-image, Video, and 3D in Large Multimodal Models",
+      "Learning Interleaved Image-Text Comprehension in Vision-Language Large Models",
+      "LiveXiv - A Multi-Modal live benchmark based on Arxiv papers content",
+      "MEGA-Bench: Scaling Multimodal Evaluation to over 500 Real-World Tasks",
+      "MME-RealWorld: Could Your Multimodal LLM Challenge High-Resolution Real-World Scenarios that are Difficult for Humans?",
+      "Matryoshka Multimodal Models",
+      "Mini-Monkey: Alleviating the Semantic Sawtooth Effect for Lightweight MLLMs via Complementary Image Pyramid",
+      "Reconstructive Visual Instruction Tuning",
+      "SV-RAG: LoRA-Contextualizing Adaptation of  MLLMs for Long Document Understanding",
+      "Solving Token Gradient Conflict in Mixture-of-Experts for Large Vision-Language Model",
+      "TaskGalaxy: Scaling Multi-modal Instruction Fine-tuning with Tens of Thousands Vision Task Types",
+      "VCR: A Task for Pixel-Level Complex Reasoning in Vision Language Models via Restoring Occluded Text",
+      "VisRAG: Vision-based Retrieval-augmented Generation on Multi-modality Documents"
+    ],
+    "acl25": [
+      "An Expanded Massive Multilingual Dataset for High-Performance Language Technologies (HPLT)",
+      "Efficient Universal Goal Hijacking with Semantics-guided Prompt Organization",
+      "Enhancing Machine Translation with Self-Supervised Preference Data",
+      "Real-time Factuality Assessment from Adversarial Feedback",
+      "Response Wide Shut? Surprising Observations in Basic Vision Language Model Capabilities"
+    ],
+    "icml25": [
+      "CoMemo: LVLMs Need Image Context with Image Memory",
+      "CoreMatching: A Co-adaptive Sparse Inference Framework with Token and Neuron Pruning for Comprehensive Acceleration of Vision-Language Models",
+      "Diffusion Instruction Tuning",
+      "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding",
+      "Ranked from Within: Ranking Large Multimodal Models Without Labels",
+      "ReFocus: Visual Editing as a Chain of Thought for Structured Image Understanding",
+      "Streamline Without Sacrifice - Squeeze out Computation Redundancy in LMM",
+      "Towards Rationale-Answer Alignment of LVLMs via Self-Rationale Calibration"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 20,
+    "acl25": 5,
+    "icml25": 8
+  },
+  "conferences": [
+    "acl25",
+    "iclr25",
+    "icml25"
+  ]
+}

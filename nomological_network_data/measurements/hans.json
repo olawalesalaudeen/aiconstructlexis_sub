@@ -1,0 +1,82 @@
+{
+  "canonical_name": "HANS",
+  "type": "measurement",
+  "canonical_definition": "HANS is predominantly characterized as a dataset for Natural Language Inference (NLI), frequently described as a 'stress test' or 'adversarial' dataset. Across the provided papers, its main purpose is to evaluate a model's reliance on simple heuristics, with 'lexical overlap' being the most commonly cited heuristic it is designed to challenge. One paper elaborates that it manipulates features like subsequence and negation to expose reliance on 'syntactic heuristics rather than semantic understanding.' In practice, HANS is used to measure the behavior of `Natural language inference` and, in one instance, the construct of `Safety`. Researchers also use it for more specific assessments, such as evaluating 'minority generalization' and assessing 'length bias in binary classification.' The dataset, which one source notes contains 30K examples, is applied in both finetuning and in-context learning (ICL) evaluation settings. The consistent focus on testing against heuristics positions HANS as an instrument for evaluating whether models move beyond superficial cues for NLI tasks.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "HANS"
+  ],
+  "papers": [
+    "Generating Plausible Distractors for Multiple-Choice Questions via Student Choice Prediction",
+    "KG-Agent: An Efficient Autonomous Agent Framework for Complex Reasoning over Knowledge Graph",
+    "The MaleCEOand the Female Assistant: Evaluation and Mitigation of Gender Biases in Text-To-Image Generation of Dual Subjects",
+    "CultureInstruct: Curating Multi-Cultural Instructions at Scale",
+    "Padding Tone: A Mechanistic Analysis of Padding Tokens inT2IModels"
+  ],
+  "paper_count": 5,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Natural Language Inference dataset designed to evaluate models' sensitivity to lexical overlap and other artifacts, used here to assess length bias in binary classification.",
+      "paper": "CultureInstruct: Curating Multi-Cultural Instructions at Scale",
+      "original_name": "HANS"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Natural language inference",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Generating Plausible Distractors for Multiple-Choice Questions via Student Choice Prediction",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Generating Plausible Distractors for Multiple-Choice Questions via Student Choice Prediction"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Robustness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Generating Plausible Distractors for Multiple-Choice Questions via Student Choice Prediction",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Generating Plausible Distractors for Multiple-Choice Questions via Student Choice Prediction"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "HANS is predominantly characterized as a dataset for Natural Language Inference (NLI), frequently described as a 'stress test' or 'adversarial' dataset. Across the provided papers, its main purpose is to evaluate a model's reliance on simple heuristics, with 'lexical overlap' being the most commonly cited heuristic it is designed to challenge. One paper elaborates that it manipulates features like subsequence and negation to expose reliance on 'syntactic heuristics rather than semantic understanding.' In practice, HANS is used to measure the behavior of `Natural language inference` and, in one instance, the construct of `Safety`. Researchers also use it for more specific assessments, such as evaluating 'minority generalization' and assessing 'length bias in binary classification.' The dataset, which one source notes contains 30K examples, is applied in both finetuning and in-context learning (ICL) evaluation settings. The consistent focus on testing against heuristics positions HANS as an instrument for evaluating whether models move beyond superficial cues for NLI tasks.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "naacl25": [
+      "CultureInstruct: Curating Multi-Cultural Instructions at Scale",
+      "Padding Tone: A Mechanistic Analysis of Padding Tokens inT2IModels"
+    ],
+    "acl25": [
+      "Generating Plausible Distractors for Multiple-Choice Questions via Student Choice Prediction",
+      "KG-Agent: An Efficient Autonomous Agent Framework for Complex Reasoning over Knowledge Graph",
+      "The MaleCEOand the Female Assistant: Evaluation and Mitigation of Gender Biases in Text-To-Image Generation of Dual Subjects"
+    ]
+  },
+  "paper_count_by_conference": {
+    "naacl25": 2,
+    "acl25": 3
+  },
+  "conferences": [
+    "acl25",
+    "naacl25"
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "canonical_name": "lm1b",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, lm1b is consistently characterized as a dataset for evaluating language models. The most prevalent framing identifies it as the \"One-Billion Word Language Model Benchmark (LM1B)\" used specifically to assess `Language modeling` performance. This operationalization is common, with one paper stating its use to \"evaluate on prompts from a wide range of datasets and tasks, including language modeling with one-billion language benchmark (LM1B)\" (Block Verification Accelerates Speculative Decoding). A slightly different framing describes it as a dataset for validating experimental methods across different data sources, noting its use alongside other benchmarks to \"observe similar results\" (Selective Attention Improves Transformer). A single paper also lists lm1b as a measure for `Multilingual generalization`, although no direct evidence for this application is provided in the input.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "lm1b",
+    "LM1B"
+  ],
+  "papers": [
+    "Block Diffusion: Interpolating Between Autoregressive and Diffusion Language Models",
+    "Block Verification Accelerates Speculative Decoding",
+    "Energy-Based Diffusion Language Models for Text Generation",
+    "Selective Attention Improves Transformer"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A dataset used for running experiments to observe results similar to those on C4, validating the method across different data sources.",
+      "paper": "Selective Attention Improves Transformer",
+      "original_name": "lm1b"
+    },
+    {
+      "text": "The One-Billion Word Language Model Benchmark (LM1B), a dataset used for evaluating language modeling performance.",
+      "paper": "Block Verification Accelerates Speculative Decoding",
+      "original_name": "LM1B"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language modeling",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Selective Attention Improves Transformer",
+      "evidence": "We also ran experiments with WikiText (Merity et al., 2016), and lm1b (Chelba et al., 2014) and observed similar results. (Section 5)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Selective Attention Improves Transformer",
+          "Block Verification Accelerates Speculative Decoding"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Zero-shot generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Energy-Based Diffusion Language Models for Text Generation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Energy-Based Diffusion Language Models for Text Generation"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, lm1b is consistently characterized as a dataset for evaluating language models. The most prevalent framing identifies it as the \"One-Billion Word Language Model Benchmark (LM1B)\" used specifically to assess `Language modeling` performance. This operationalization is common, with one paper stating its use to \"evaluate on prompts from a wide range of datasets and tasks, including language modeling with one-billion language benchmark (LM1B)\" (Block Verification Accelerates Speculative Decoding). A slightly different framing describes it as a dataset for validating experimental methods across different data sources, noting its use alongside other benchmarks to \"observe similar results\" (Selective Attention Improves Transformer). A single paper also lists lm1b as a measure for `Multilingual generalization`, although no direct evidence for this application is provided in the input.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Block Diffusion: Interpolating Between Autoregressive and Diffusion Language Models",
+      "Block Verification Accelerates Speculative Decoding",
+      "Energy-Based Diffusion Language Models for Text Generation",
+      "Selective Attention Improves Transformer"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 4
+  },
+  "conferences": [
+    "iclr25"
+  ]
+}

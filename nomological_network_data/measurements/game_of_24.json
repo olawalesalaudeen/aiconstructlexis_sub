@@ -1,0 +1,202 @@
+{
+  "canonical_name": "Game of 24",
+  "type": "measurement",
+  "canonical_definition": "Game of 24 is predominantly described as a benchmark for mathematical reasoning. Across the provided sources, the task is consistently defined: an agent must use four given numbers and basic arithmetic operations (+, \u2212, \u00d7, /) to construct an expression that evaluates to 24. The prevailing use of this benchmark is to measure mathematical reasoning, a connection supported by the largest number of papers. A smaller line of work also frames it as a benchmark for planning, with one definition stating it evaluates \"combinatorial search and planning ability.\" Less frequently, Game of 24 is used to assess logical reasoning, decision-making, and general problem-solving. While several papers associate it with measuring commonsense knowledge, the provided data does not contain specific evidence detailing this relationship.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Game 24",
+    "Game of 24",
+    "Game24"
+  ],
+  "papers": [
+    "Beyond Autoregression: Discrete Diffusion for Complex Reasoning and Planning",
+    "DOTS: Learning to Reason Dynamically in LLMs via Optimal Reasoning Trajectories Search",
+    "Enhancing Language Model Agents using Diversity of Thoughts",
+    "Intelligent Go-Explore: Standing on the Shoulders of Giant Foundation Models",
+    "LLMs Can Plan Only If We Tell Them",
+    "Learning to Search from Demonstration Sequences",
+    "On the self-verification limitations of large language models on reasoning and planning tasks",
+    "Rational Decision-Making Agent with Learning Internal Utility Judgment",
+    "Scaling Autonomous Agents via Automatic Reward Modeling And Planning",
+    "Steering Large Language Models between Code Execution and Textual Reasoning",
+    "Fleet of Agents: Coordinated Problem Solving with Large Language Models",
+    "Flow of Reasoning: Training LLMs for Divergent Reasoning with Minimal Examples",
+    "Forest-of-Thought: Scaling Test-Time Compute for Enhancing LLM Reasoning",
+    "LLMs Can Reason Faster Only If We Let Them",
+    "Language Models as Implicit Tree Search",
+    "Rethinking External Slow-Thinking: From Snowball Errors to Probability of Correct Reasoning"
+  ],
+  "paper_count": 16,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A mathematical reasoning and search benchmark in which an agent must combine four numbers with arithmetic operations to obtain 24.",
+      "paper": "Intelligent Go-Explore: Standing on the Shoulders of Giant Foundation Models",
+      "original_name": "Game of 24"
+    },
+    {
+      "text": "A mathematical reasoning benchmark where the goal is to form an equation that evaluates to 24 using a given set of integers.",
+      "paper": "Steering Large Language Models between Code Execution and Textual Reasoning",
+      "original_name": "Game 24"
+    },
+    {
+      "text": "Planning and reasoning benchmark where models must use four numbers and basic arithmetic operations to reach 24, evaluating combinatorial search and planning ability.",
+      "paper": "Language Models as Implicit Tree Search",
+      "original_name": "Game24"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Boosting of Thoughts: Trial-and-Error Problem Solving with Large Language Models",
+      "evidence": "IGE reaches 100% success rate on Game of 24 (Yao et al., 2023a), a standard mathematical reasoning and search problem, 70.8% faster than classic graph search.",
+      "paper_count": 7,
+      "papers_by_conference": {
+        "iclr24": [
+          "Boosting of Thoughts: Trial-and-Error Problem Solving with Large Language Models"
+        ],
+        "neurips24": [
+          "Buffer of Thoughts: Thought-Augmented Reasoning with Large Language Models"
+        ],
+        "iclr25": [
+          "Intelligent Go-Explore: Standing on the Shoulders of Giant Foundation Models",
+          "Rational Decision-Making Agent with Learning Internal Utility Judgment",
+          "Scaling Autonomous Agents via Automatic Reward Modeling And Planning"
+        ],
+        "icml25": [
+          "Forest-of-Thought: Scaling Test-Time Compute for Enhancing LLM Reasoning",
+          "Fleet of Agents: Coordinated Problem Solving with Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Planning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "LLMs Can Plan Only If We Tell Them",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "LLMs Can Plan Only If We Tell Them"
+        ],
+        "icml25": [
+          "Language Models as Implicit Tree Search"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Learning to Search from Demonstration Sequences",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Learning to Search from Demonstration Sequences",
+          "On the self-verification limitations of large language models on reasoning and planning tasks"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Evaluation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "DOTS: Learning to Reason Dynamically in LLMs via Optimal Reasoning Trajectories Search",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "DOTS: Learning to Reason Dynamically in LLMs via Optimal Reasoning Trajectories Search"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Decision-making",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Rational Decision-Making Agent with Learning Internal Utility Judgment",
+      "evidence": "\"we conduct extensive experiments on Game of 24 (Yao et al., 2023), WebShop (Yao et al., 2022a), ToolBench (Qin et al., 2023c) and RestBench (Song et al., 2023) datasets\"",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Rational Decision-Making Agent with Learning Internal Utility Judgment"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Logical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Forest-of-Thought: Scaling Test-Time Compute for Enhancing LLM Reasoning",
+      "evidence": "the performance comparison on the Game of 24 validates the effectiveness of the FoT in the mathematical and logical reasoning task. (Section 4.6)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Forest-of-Thought: Scaling Test-Time Compute for Enhancing LLM Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Problem-solving",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Fleet of Agents: Coordinated Problem Solving with Large Language Models",
+      "evidence": "We assess the effectiveness of our proposed FOA framework through comparisons with representative SOTA methods on a judicious mix of tasks that require a variety of reasoning, planning, and general problem-solving skills.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Fleet of Agents: Coordinated Problem Solving with Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 7,
+  "incoming_relationship_count": 7,
+  "outgoing_relationship_count": 0,
+  "characterization": "Game of 24 is predominantly described as a benchmark for mathematical reasoning. Across the provided sources, the task is consistently defined: an agent must use four given numbers and basic arithmetic operations (+, \u2212, \u00d7, /) to construct an expression that evaluates to 24. The prevailing use of this benchmark is to measure mathematical reasoning, a connection supported by the largest number of papers. A smaller line of work also frames it as a benchmark for planning, with one definition stating it evaluates \"combinatorial search and planning ability.\" Less frequently, Game of 24 is used to assess logical reasoning, decision-making, and general problem-solving. While several papers associate it with measuring commonsense knowledge, the provided data does not contain specific evidence detailing this relationship.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Beyond Autoregression: Discrete Diffusion for Complex Reasoning and Planning",
+      "DOTS: Learning to Reason Dynamically in LLMs via Optimal Reasoning Trajectories Search",
+      "Enhancing Language Model Agents using Diversity of Thoughts",
+      "Intelligent Go-Explore: Standing on the Shoulders of Giant Foundation Models",
+      "LLMs Can Plan Only If We Tell Them",
+      "Learning to Search from Demonstration Sequences",
+      "On the self-verification limitations of large language models on reasoning and planning tasks",
+      "Rational Decision-Making Agent with Learning Internal Utility Judgment",
+      "Scaling Autonomous Agents via Automatic Reward Modeling And Planning",
+      "Steering Large Language Models between Code Execution and Textual Reasoning"
+    ],
+    "icml25": [
+      "Fleet of Agents: Coordinated Problem Solving with Large Language Models",
+      "Flow of Reasoning: Training LLMs for Divergent Reasoning with Minimal Examples",
+      "Forest-of-Thought: Scaling Test-Time Compute for Enhancing LLM Reasoning",
+      "LLMs Can Reason Faster Only If We Let Them",
+      "Language Models as Implicit Tree Search",
+      "Rethinking External Slow-Thinking: From Snowball Errors to Probability of Correct Reasoning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 10,
+    "icml25": 6
+  },
+  "conferences": [
+    "iclr25",
+    "icml25"
+  ]
+}

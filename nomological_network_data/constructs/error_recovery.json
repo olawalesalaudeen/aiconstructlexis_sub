@@ -1,0 +1,53 @@
+{
+  "canonical_name": "Error recovery",
+  "type": "construct",
+  "canonical_definition": "Across the provided literature, \"Error recovery\" is conceptualized in two primary ways: as a latent, internal ability and as an observable, iterative behavior. One perspective defines it as the \"latent ability of the agent to correct erroneous actions\" after detecting a failure state (\"FinRAGBench-V: A Benchmark for MultimodalRAGwith Visual Citation in the Financial Domain\"). In contrast, other work frames it as an \"observable behavior of detecting and correcting its own mistakes during inference\" (\"TinySQL: A Progressive Text-to-SQLDataset for Mechanistic Interpretability Research\") or as an \"iterative process\" of regeneration following an execution failure (\"A ComprehensiveLiteraryChinese Reading Comprehension Dataset with an Evidence Curation Based Solution\"). Despite these different framings, the operationalization consistently involves a model regenerating or revising its output after a failure is detected. Failures that trigger this process include syntax errors or unexecutable code, such as when a generated SQL query fails. This corrective process is described as being implemented through mechanisms like a \"reflector\" module that refines actions or a \"self-reflective inference pipeline\" where the model is \"re-prompted to self-reflect and revise its reasoning or tool choice\" (\"TinySQL...\"). The process is frequently described as iterative, allowing the model to make multiple attempts to correct its output.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Error recovery",
+    "Query regeneration"
+  ],
+  "papers": [
+    "FinRAGBench-V: A Benchmark for MultimodalRAGwith Visual Citation in the Financial Domain",
+    "OpenTuringBench: An Open-Model-based Benchmark and Framework for Machine-Generated Text Detection and Attribution",
+    "A ComprehensiveLiteraryChinese Reading Comprehension Dataset with an Evidence Curation Based Solution",
+    "TinySQL: A Progressive Text-to-SQLDataset for Mechanistic Interpretability Research"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The latent ability of the agent to correct erroneous actions by regenerating appropriate actions after detecting a failure state, enabling successful continuation toward task completion.",
+      "paper": "FinRAGBench-V: A Benchmark for MultimodalRAGwith Visual Citation in the Financial Domain",
+      "original_name": "Error recovery"
+    },
+    {
+      "text": "An iterative process where the model attempts to generate a new query if the previous one fails execution or contains syntax errors.",
+      "paper": "A ComprehensiveLiteraryChinese Reading Comprehension Dataset with an Evidence Curation Based Solution",
+      "original_name": "Query regeneration"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, \"Error recovery\" is conceptualized in two primary ways: as a latent, internal ability and as an observable, iterative behavior. One perspective defines it as the \"latent ability of the agent to correct erroneous actions\" after detecting a failure state (\"FinRAGBench-V: A Benchmark for MultimodalRAGwith Visual Citation in the Financial Domain\"). In contrast, other work frames it as an \"observable behavior of detecting and correcting its own mistakes during inference\" (\"TinySQL: A Progressive Text-to-SQLDataset for Mechanistic Interpretability Research\") or as an \"iterative process\" of regeneration following an execution failure (\"A ComprehensiveLiteraryChinese Reading Comprehension Dataset with an Evidence Curation Based Solution\"). Despite these different framings, the operationalization consistently involves a model regenerating or revising its output after a failure is detected. Failures that trigger this process include syntax errors or unexecutable code, such as when a generated SQL query fails. This corrective process is described as being implemented through mechanisms like a \"reflector\" module that refines actions or a \"self-reflective inference pipeline\" where the model is \"re-prompted to self-reflect and revise its reasoning or tool choice\" (\"TinySQL...\"). The process is frequently described as iterative, allowing the model to make multiple attempts to correct its output.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "FinRAGBench-V: A Benchmark for MultimodalRAGwith Visual Citation in the Financial Domain",
+      "OpenTuringBench: An Open-Model-based Benchmark and Framework for Machine-Generated Text Detection and Attribution",
+      "A ComprehensiveLiteraryChinese Reading Comprehension Dataset with an Evidence Curation Based Solution",
+      "TinySQL: A Progressive Text-to-SQLDataset for Mechanistic Interpretability Research"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 4
+  },
+  "conferences": [
+    "emnlp25"
+  ]
+}

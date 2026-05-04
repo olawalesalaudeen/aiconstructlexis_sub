@@ -1,0 +1,102 @@
+{
+  "canonical_name": "AlpacaFarm",
+  "type": "measurement",
+  "canonical_definition": "Across the surveyed literature, AlpacaFarm is most commonly described as an evaluation framework for assessing open-ended conversation models, with some papers also referring to it as a benchmark, test set, or dataset. Its primary stated purpose is to evaluate a model's 'instructability' or instruction-following capabilities, and the provided data also indicates it is used to measure the constructs of 'helpfulness' and 'commonsense knowledge'. The evaluation is typically operationalized through pairwise comparisons of two model outputs for a given instruction. These comparisons are conducted using either human preference annotations\u2014with one paper noting a 66% inter-annotator agreement\u2014or model-based evaluators. For instance, one study employs GPT-4 as an evaluator to determine a model's win rate against a baseline. The dataset component contains a set of instructions, with one paper specifying a test set of 805 instructions, and is described as providing specific data splits for different stages of RLHF. In addition to being a dataset, one paper refers to the 'AlpacaFarm codebase' for judging model responses, indicating it is also a software tool.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "AlpacaFarm",
+    "Alpacafarm"
+  ],
+  "papers": [
+    "Evaluating Large Language Models at Evaluating Instruction Following",
+    "Gaining Wisdom from Setbacks: Aligning Large Language Models via Mistake Analysis",
+    "Reward Model Ensembles Help Mitigate Overoptimization",
+    "Seeking Neural Nuggets: Knowledge Transfer in Large Language Models from a Parametric Perspective",
+    "DataMan: Data Manager for Pre-training Large Language Models",
+    "RevisEval: Improving LLM-as-a-Judge via Response-Adapted References",
+    "Unintentional Unalignment: Likelihood Displacement in Direct Preference Optimization",
+    "GRAM: A Generative Foundation Reward Model for Reward Generalization",
+    "Model Swarms: Collaborative Search to Adapt LLM Experts via Swarm Intelligence",
+    "The Energy Loss Phenomenon in RLHF: A New Perspective on Mitigating Reward Hacking"
+  ],
+  "paper_count": 10,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Evaluation framework for open-ended conversation models, using human or model-based comparisons to assess response quality and instructability.",
+      "paper": "Evaluating Large Language Models at Evaluating Instruction Following",
+      "original_name": "AlpacaFarm"
+    },
+    {
+      "text": "A benchmark for evaluating instruction-following models, which includes human preference annotations for pairwise comparisons.",
+      "paper": "RevisEval: Improving LLM-as-a-Judge via Response-Adapted References",
+      "original_name": "Alpacafarm"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Gaining Wisdom from Setbacks: Aligning Large Language Models via Mistake Analysis",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Gaining Wisdom from Setbacks: Aligning Large Language Models via Mistake Analysis"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense knowledge",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "DataMan: Data Manager for Pre-training Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "DataMan: Data Manager for Pre-training Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the surveyed literature, AlpacaFarm is most commonly described as an evaluation framework for assessing open-ended conversation models, with some papers also referring to it as a benchmark, test set, or dataset. Its primary stated purpose is to evaluate a model's 'instructability' or instruction-following capabilities, and the provided data also indicates it is used to measure the constructs of 'helpfulness' and 'commonsense knowledge'. The evaluation is typically operationalized through pairwise comparisons of two model outputs for a given instruction. These comparisons are conducted using either human preference annotations\u2014with one paper noting a 66% inter-annotator agreement\u2014or model-based evaluators. For instance, one study employs GPT-4 as an evaluator to determine a model's win rate against a baseline. The dataset component contains a set of instructions, with one paper specifying a test set of 805 instructions, and is described as providing specific data splits for different stages of RLHF. In addition to being a dataset, one paper refers to the 'AlpacaFarm codebase' for judging model responses, indicating it is also a software tool.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Evaluating Large Language Models at Evaluating Instruction Following",
+      "Gaining Wisdom from Setbacks: Aligning Large Language Models via Mistake Analysis",
+      "Reward Model Ensembles Help Mitigate Overoptimization",
+      "Seeking Neural Nuggets: Knowledge Transfer in Large Language Models from a Parametric Perspective"
+    ],
+    "iclr25": [
+      "DataMan: Data Manager for Pre-training Large Language Models",
+      "RevisEval: Improving LLM-as-a-Judge via Response-Adapted References",
+      "Unintentional Unalignment: Likelihood Displacement in Direct Preference Optimization"
+    ],
+    "icml25": [
+      "GRAM: A Generative Foundation Reward Model for Reward Generalization",
+      "Model Swarms: Collaborative Search to Adapt LLM Experts via Swarm Intelligence",
+      "The Energy Loss Phenomenon in RLHF: A New Perspective on Mitigating Reward Hacking"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 4,
+    "iclr25": 3,
+    "icml25": 3
+  },
+  "conferences": [
+    "iclr24",
+    "iclr25",
+    "icml25"
+  ]
+}

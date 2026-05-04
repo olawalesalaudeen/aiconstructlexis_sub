@@ -1,0 +1,150 @@
+{
+  "canonical_name": "BARTScore",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, BARTScore is predominantly characterized as a model-based evaluation metric used to assess the quality of generated text. Its core mechanism, as described in multiple papers, involves leveraging a pre-trained BART model to calculate a score based on generation probability, such as the conditional or average likelihood of the output text. The most common application described is as an automated procedure for comparing generated chain-of-thought rationales against \"manually created golden references.\" Papers use BARTScore to operationalize several constructs, including general `Output quality`, `Faithfulness`, and `Coherence`, with one study using it to measure \"semantic coherence\" in argument structures. It is applied to evaluate tasks such as `Text summarization` and question answering. While most sources treat it as a reference-based metric, one paper notes its use \"without human annotations,\" and another describes its function as providing \"pseudo ground-truth\" for output quality. In evaluation contexts, BARTScore is frequently studied alongside other metrics like BERTScore, BLEURT, and human judgments.",
+  "expert_reviewed": false,
+  "expert_removed": true,
+  "expert_removed_reason": "metric/method/tool \u2014 not a benchmark or LLM ability",
+  "names": [
+    "BARTScore",
+    "BART Score"
+  ],
+  "papers": [
+    "Connecting the Knowledge Dots: Retrieval-augmented Knowledge Connection for Commonsense Reasoning",
+    "Disambiguation in Conversational Question Answering in the Era ofLLMs and Agents: A Survey",
+    "TokenSkip: Controllable Chain-of-Thought Compression inLLMs",
+    "A Picture is Worth A Thousand Numbers: EnablingLLMs Reason about Time Series via Visualization",
+    "SimRAG: Self-Improving Retrieval-Augmented Generation for Adapting Large Language Models to Specialized Domains",
+    "TRANSIENTTABLES: EvaluatingLLMs\u2019 Reasoning on Temporally Evolving Semi-structured Tables",
+    "Token-based Decision Criteria Are Suboptimal in In-context Learning",
+    "Unfamiliar Finetuning Examples Control How Language Models Hallucinate"
+  ],
+  "paper_count": 8,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "An automated evaluation procedure used to compare generated chain-of-thought rationales against manually created golden references.",
+      "paper": "A Picture is Worth A Thousand Numbers: EnablingLLMs Reason about Time Series via Visualization",
+      "original_name": "BARTScore"
+    },
+    {
+      "text": "A reference-based metric that uses the probability assigned by a BART model to the output given the input as a proxy for quality, used here as pseudo ground-truth for summarization and QA.",
+      "paper": "TokenSkip: Controllable Chain-of-Thought Compression inLLMs",
+      "original_name": "BART Score"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Response quality",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Hybrid LLM: Cost-Efficient and Quality-Aware Query Routing",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Hybrid LLM: Cost-Efficient and Quality-Aware Query Routing"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-as-a-judge",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "SimRAG: Self-Improving Retrieval-Augmented Generation for Adapting Large Language Models to Specialized Domains",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "SimRAG: Self-Improving Retrieval-Augmented Generation for Adapting Large Language Models to Specialized Domains"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BERTScore",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "SimRAG: Self-Improving Retrieval-Augmented Generation for Adapting Large Language Models to Specialized Domains",
+      "evidence": "It has been shown that BARTScore outperforms other metrics such as BERTScore and BLEURT (Yuan et al., 2021) (Section 3.1).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "SimRAG: Self-Improving Retrieval-Augmented Generation for Adapting Large Language Models to Specialized Domains"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BLEURT",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "SimRAG: Self-Improving Retrieval-Augmented Generation for Adapting Large Language Models to Specialized Domains",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "SimRAG: Self-Improving Retrieval-Augmented Generation for Adapting Large Language Models to Specialized Domains"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Unfamiliar Finetuning Examples Control How Language Models Hallucinate",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Unfamiliar Finetuning Examples Control How Language Models Hallucinate"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text summarization",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "A Picture is Worth A Thousand Numbers: EnablingLLMs Reason about Time Series via Visualization",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "A Picture is Worth A Thousand Numbers: EnablingLLMs Reason about Time Series via Visualization"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 6,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 3,
+  "characterization": "Across the provided literature, BARTScore is predominantly characterized as a model-based evaluation metric used to assess the quality of generated text. Its core mechanism, as described in multiple papers, involves leveraging a pre-trained BART model to calculate a score based on generation probability, such as the conditional or average likelihood of the output text. The most common application described is as an automated procedure for comparing generated chain-of-thought rationales against \"manually created golden references.\" Papers use BARTScore to operationalize several constructs, including general `Output quality`, `Faithfulness`, and `Coherence`, with one study using it to measure \"semantic coherence\" in argument structures. It is applied to evaluate tasks such as `Text summarization` and question answering. While most sources treat it as a reference-based metric, one paper notes its use \"without human annotations,\" and another describes its function as providing \"pseudo ground-truth\" for output quality. In evaluation contexts, BARTScore is frequently studied alongside other metrics like BERTScore, BLEURT, and human judgments.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "naacl25": [
+      "A Picture is Worth A Thousand Numbers: EnablingLLMs Reason about Time Series via Visualization",
+      "SimRAG: Self-Improving Retrieval-Augmented Generation for Adapting Large Language Models to Specialized Domains",
+      "TRANSIENTTABLES: EvaluatingLLMs\u2019 Reasoning on Temporally Evolving Semi-structured Tables",
+      "Token-based Decision Criteria Are Suboptimal in In-context Learning",
+      "Unfamiliar Finetuning Examples Control How Language Models Hallucinate"
+    ],
+    "emnlp25": [
+      "Connecting the Knowledge Dots: Retrieval-augmented Knowledge Connection for Commonsense Reasoning",
+      "Disambiguation in Conversational Question Answering in the Era ofLLMs and Agents: A Survey",
+      "TokenSkip: Controllable Chain-of-Thought Compression inLLMs"
+    ]
+  },
+  "paper_count_by_conference": {
+    "naacl25": 5,
+    "emnlp25": 3
+  },
+  "conferences": [
+    "emnlp25",
+    "naacl25"
+  ]
+}

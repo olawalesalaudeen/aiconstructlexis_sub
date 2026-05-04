@@ -1,0 +1,102 @@
+{
+  "canonical_name": "Data leakage",
+  "type": "construct",
+  "canonical_definition": "Across the provided literature, the most common framing of \"Data leakage\" is the unintentional disclosure of information by a model, though the specific type of information and mechanism of exposure vary. A prevalent view treats this as the inadvertent release of sensitive or private content, such as \"confidential information embedded in its context or training data\" (\"Growing Through Experience: Scaling Episodic Grounding in Language Models\") or \"protected knowledge file data\" (\"MegaPairs: Massive Data Synthesis for Universal Multimodal Retrieval\"). In contrast, a more specific, technical definition frames it as \"data contamination,\" where a model exhibits an artificially high log-likelihood on a text because that corpus was part of its pre-training data (\"RAG\"). A smaller line of work discusses the leakage of \"benchmark-specific knowledge\" to a student model through processes like distillation (\"Browsing Lost Unformed Recollections: A Benchmark for Tip-of-the-Tongue Search and Reasoning\"). The construct is operationalized in multiple ways; some work detects it by comparing a model's log-likelihood with its benchmark performance, while other approaches use specific attack methods, such as exploiting \"lower-ranked output tokens to leak sensitive information.\" The provided data also indicates that the `MMStar` benchmark is used as a measurement instrument for data leakage. This construct is explicitly related to `Memorization`, with one paper noting that \"models do memorize some personal information and may occasionally disclose it.\" The scope of leakage is described as broad, with one study identifying five distinct \"leakage vectors,\" including metadata, retrieval, and prompts (\"MegaPairs: Massive Data Synthesis for Universal Multimodal Retrieval\").",
+  "expert_reviewed": false,
+  "expert_removed": true,
+  "expert_removed_reason": "data property / engineering \u2014 not a construct of LLM ability",
+  "names": [
+    "Knowledge leakage",
+    "Privacy leakage",
+    "Information leakage risk",
+    "Knowledge file leakage",
+    "Data leakage"
+  ],
+  "papers": [
+    "Browsing Lost Unformed Recollections: A Benchmark for Tip-of-the-Tongue Search and Reasoning",
+    "Incorporating Domain Knowledge into Materials Tokenization",
+    "MegaPairs: Massive Data Synthesis for Universal Multimodal Retrieval",
+    "RAG",
+    "STUN: Structured-Then-Unstructured Pruning for ScalableMoEPruning"
+  ],
+  "paper_count": 5,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The phenomenon where benchmark-specific knowledge is transferred to a student model, often covertly through methods like distillation, even without direct training on the test set.",
+      "paper": "Browsing Lost Unformed Recollections: A Benchmark for Tip-of-the-Tongue Search and Reasoning",
+      "original_name": "Knowledge leakage"
+    },
+    {
+      "text": "The latent tendency of a model to inadvertently reveal confidential information embedded in its context or training data, even when not explicitly prompted to do so.",
+      "paper": "Growing Through Experience: Scaling Episodic Grounding in Language Models",
+      "original_name": "Privacy leakage"
+    },
+    {
+      "text": "The latent potential for a tool-learning system to unintentionally disclose sensitive user or tool information to unauthorized parties as a result of its design and behavior.",
+      "paper": "STUN: Structured-Then-Unstructured Pruning for ScalableMoEPruning",
+      "original_name": "Information leakage risk"
+    },
+    {
+      "text": "The latent propensity of an LLM agent to expose protected knowledge file data\u2014such as titles, content, or original files\u2014through various system vectors, even without direct adversarial prompting.",
+      "paper": "MegaPairs: Massive Data Synthesis for Universal Multimodal Retrieval",
+      "original_name": "Knowledge file leakage"
+    },
+    {
+      "text": "The phenomenon where a model exhibits an artificially high log-likelihood on a text corpus because that corpus was included in its pre-training data.",
+      "paper": "RAG",
+      "original_name": "Data leakage"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Memorization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Are We on the Right Way for Evaluating Large Vision-Language Models?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Are We on the Right Way for Evaluating Large Vision-Language Models?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMStar",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Are We on the Right Way for Evaluating Large Vision-Language Models?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Are We on the Right Way for Evaluating Large Vision-Language Models?"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 2,
+  "characterization": "Across the provided literature, the most common framing of \"Data leakage\" is the unintentional disclosure of information by a model, though the specific type of information and mechanism of exposure vary. A prevalent view treats this as the inadvertent release of sensitive or private content, such as \"confidential information embedded in its context or training data\" (\"Growing Through Experience: Scaling Episodic Grounding in Language Models\") or \"protected knowledge file data\" (\"MegaPairs: Massive Data Synthesis for Universal Multimodal Retrieval\"). In contrast, a more specific, technical definition frames it as \"data contamination,\" where a model exhibits an artificially high log-likelihood on a text because that corpus was part of its pre-training data (\"RAG\"). A smaller line of work discusses the leakage of \"benchmark-specific knowledge\" to a student model through processes like distillation (\"Browsing Lost Unformed Recollections: A Benchmark for Tip-of-the-Tongue Search and Reasoning\"). The construct is operationalized in multiple ways; some work detects it by comparing a model's log-likelihood with its benchmark performance, while other approaches use specific attack methods, such as exploiting \"lower-ranked output tokens to leak sensitive information.\" The provided data also indicates that the `MMStar` benchmark is used as a measurement instrument for data leakage. This construct is explicitly related to `Memorization`, with one paper noting that \"models do memorize some personal information and may occasionally disclose it.\" The scope of leakage is described as broad, with one study identifying five distinct \"leakage vectors,\" including metadata, retrieval, and prompts (\"MegaPairs: Massive Data Synthesis for Universal Multimodal Retrieval\").",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Browsing Lost Unformed Recollections: A Benchmark for Tip-of-the-Tongue Search and Reasoning",
+      "Incorporating Domain Knowledge into Materials Tokenization",
+      "MegaPairs: Massive Data Synthesis for Universal Multimodal Retrieval",
+      "RAG",
+      "STUN: Structured-Then-Unstructured Pruning for ScalableMoEPruning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 5
+  },
+  "conferences": [
+    "acl25"
+  ]
+}

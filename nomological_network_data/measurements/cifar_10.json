@@ -1,0 +1,220 @@
+{
+  "canonical_name": "CIFAR-10",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, CIFAR-10 is consistently characterized as a benchmark image dataset, with definitions widely agreeing on its composition of 60,000 32x32 color images in 10 classes. The most prevalent application of this dataset is to measure `Image classification` performance, with numerous papers using it to evaluate, fine-tune, and compare a variety of models, including Vision Transformers and ResNets. Beyond this primary function, CIFAR-10 is also frequently used to assess `Generalization`, for instance by evaluating model performance on \"dirty-sample detection under poisoned samples, noisy labels, and hybrid dirty samples.\" Several papers also employ it as a testbed for model robustness, using it to assess the impact of backdoor attacks or for \"automated accuracy prediction under synthetic and natural shifts.\" Other documented uses include evaluating visual processing capabilities, comparing clustering algorithms, and assessing neural architecture search performance. The dataset is also associated with measuring `Noise robustness` and `Multimodal understanding`, though the specific methods for these evaluations are not detailed in the provided evidence.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "CIFAR-10",
+    "CIFAR10"
+  ],
+  "papers": [
+    "Hanfu-Bench: A Multimodal Benchmark on Cross-Temporal Cultural Understanding and Transcreation",
+    "SPECS: Specificity-EnhancedCLIP-Score for Long Image Caption Evaluation",
+    "Bootstrapping Variational Information Pursuit with Large Language and Vision Models for Interpretable Image Classification",
+    "Energy-based Automated Model Evaluation",
+    "Faithful Vision-Language Interpretation via Concept Bottleneck Models",
+    "Image Clustering Conditioned on Text Criteria",
+    "Octavius: Mitigating Task Interference in MLLMs via LoRA-MoE",
+    "Understanding prompt engineering may not require rethinking generalization",
+    "VDC: Versatile Data Cleanser based on Visual-Linguistic Inconsistency by Multimodal Large Language Models",
+    "A Multi-Level Framework for Accelerating Training Transformer Models",
+    "Repeated Random Sampling for Minimizing the Time-to-Accuracy of Learning",
+    "Vanishing Gradients in Reinforcement Finetuning of Language Models",
+    "Can Generative AI Solve Your In-Context Learning Problem?  A Martingale Perspective",
+    "Causal Graphical Models for Vision-Language Compositional Understanding",
+    "Entropy-based Activation Function Optimization: A Method on Searching Better Activation Functions",
+    "Forget the Data and Fine-Tuning! Just Fold the Network to Compress",
+    "Large (Vision) Language Models are Unsupervised In-Context Learners",
+    "MCNC: Manifold-Constrained Reparameterization for Neural Compression",
+    "Mitigate the Gap: Improving Cross-Modal Alignment in CLIP",
+    "On the Optimization Landscape of Low Rank Adaptation Methods for Large Language Models",
+    "Quantum-PEFT: Ultra parameter-efficient fine-tuning",
+    "Re-Imagining Multimodal Instruction Tuning: A Representation View",
+    "Reflexive Guidance: Improving OoDD in Vision-Language Models via Self-Guided Image-Adaptive Concept Generation",
+    "Small-to-Large Generalization: Training Data Influences Models Consistently Across Scale",
+    "The Hyperfitting Phenomenon: Sharpening and Stabilizing LLMs for Open-Ended Text Generation",
+    "Towards Scalable Exact Machine Unlearning Using Parameter-Efficient Fine-Tuning",
+    "Transformer Block Coupling and its Correlation with Generalization in LLMs",
+    "Two Sparse Matrices are Better than One: Sparsifying Neural Networks with Double Sparse Factorization",
+    "dEBORA: Efficient Bilevel Optimization-based low-Rank Adaptation",
+    "Disentangling and Integrating Relational and Sensory Information in Transformer Architectures",
+    "Dynamic Sparse Training of Diagonally Sparse Networks",
+    "Looking Beyond the Top-1: Transformers Determine Top Tokens in Order",
+    "On Exact Bit-level Reversible Transformers Without Changing Architecture",
+    "Parameter-Efficient Fine-Tuning of State Space Models",
+    "Relating Misfit to Gain in Weak-to-Strong Generalization Beyond the Squared Loss",
+    "SAFE: Finding Sparse and Flat Minima to Improve Pruning",
+    "Self-Consuming Generative Models with Adversarially Curated Data"
+  ],
+  "paper_count": 37,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A standard image dataset with 10 object classes, used to compare the proposed text-conditioned clustering method against classical clustering algorithms.",
+      "paper": "Bootstrapping Variational Information Pursuit with Large Language and Vision Models for Interpretable Image Classification",
+      "original_name": "CIFAR-10"
+    },
+    {
+      "text": "A dataset of 60,000 32x32 color images in 10 classes, used for image classification tasks.",
+      "paper": "Quantum-PEFT: Ultra parameter-efficient fine-tuning",
+      "original_name": "CIFAR10"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Image classification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "NOLA: Compressing LoRA using Linear Combination of Random Basis",
+      "evidence": "We compare MCNC on CIFAR-10 and CIFAR-100 (Krizhevsky et al., 2009) with both pruning methods as well as PRANC (Nooralinejad et al., 2023) and NOLA (Koohpayegani et al., 2024) under extreme compression rates. (Section 4.1)",
+      "paper_count": 13,
+      "papers_by_conference": {
+        "iclr24": [
+          "NOLA: Compressing LoRA using Linear Combination of Random Basis",
+          "A Multi-Level Framework for Accelerating Training Transformer Models"
+        ],
+        "neurips24": [
+          "Sparse High Rank Adapters",
+          "Orchid: Flexible and Data-Dependent Convolution for Sequence Modeling"
+        ],
+        "iclr25": [
+          "MCNC: Manifold-Constrained Reparameterization for Neural Compression",
+          "Quantum-PEFT: Ultra parameter-efficient fine-tuning",
+          "Causal Graphical Models for Vision-Language Compositional Understanding",
+          "Transformer Block Coupling and its Correlation with Generalization in LLMs",
+          "Entropy-based Activation Function Optimization: A Method on Searching Better Activation Functions"
+        ],
+        "icml25": [
+          "On Exact Bit-level Reversible Transformers Without Changing Architecture",
+          "Dynamic Sparse Training of Diagonally Sparse Networks",
+          "SAFE: Finding Sparse and Flat Minima to Improve Pruning",
+          "Parameter-Efficient Fine-Tuning of State Space Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Noise robustness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Repeated Random Sampling for Minimizing the Time-to-Accuracy of Learning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Repeated Random Sampling for Minimizing the Time-to-Accuracy of Learning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Understanding prompt engineering may not require rethinking generalization",
+      "evidence": "Extensive experiments demonstrate its superior performance and generalization to various categories and types of dirty samples. The results on CIFAR-10, ImageNet-100 and ImageNet-Dog with different poisoning ratios are presented in Tables 1,2,13,14.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Understanding prompt engineering may not require rethinking generalization"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Mitigate the Gap: Improving Cross-Modal Alignment in CLIP",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Mitigate the Gap: Improving Cross-Modal Alignment in CLIP"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Zero-shot image classification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Mitigate the Gap: Improving Cross-Modal Alignment in CLIP",
+      "evidence": "We conduct zero-shot classification experiments on ImageNet-1K (Russakovsky et al., 2015), CIFAR-100, CIFAR-10 (Krizhevsky et al., 2009)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Mitigate the Gap: Improving Cross-Modal Alignment in CLIP"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 5,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, CIFAR-10 is consistently characterized as a benchmark image dataset, with definitions widely agreeing on its composition of 60,000 32x32 color images in 10 classes. The most prevalent application of this dataset is to measure `Image classification` performance, with numerous papers using it to evaluate, fine-tune, and compare a variety of models, including Vision Transformers and ResNets. Beyond this primary function, CIFAR-10 is also frequently used to assess `Generalization`, for instance by evaluating model performance on \"dirty-sample detection under poisoned samples, noisy labels, and hybrid dirty samples.\" Several papers also employ it as a testbed for model robustness, using it to assess the impact of backdoor attacks or for \"automated accuracy prediction under synthetic and natural shifts.\" Other documented uses include evaluating visual processing capabilities, comparing clustering algorithms, and assessing neural architecture search performance. The dataset is also associated with measuring `Noise robustness` and `Multimodal understanding`, though the specific methods for these evaluations are not detailed in the provided evidence.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Bootstrapping Variational Information Pursuit with Large Language and Vision Models for Interpretable Image Classification",
+      "Energy-based Automated Model Evaluation",
+      "Faithful Vision-Language Interpretation via Concept Bottleneck Models",
+      "Image Clustering Conditioned on Text Criteria",
+      "Octavius: Mitigating Task Interference in MLLMs via LoRA-MoE",
+      "Understanding prompt engineering may not require rethinking generalization",
+      "VDC: Versatile Data Cleanser based on Visual-Linguistic Inconsistency by Multimodal Large Language Models",
+      "A Multi-Level Framework for Accelerating Training Transformer Models",
+      "Repeated Random Sampling for Minimizing the Time-to-Accuracy of Learning",
+      "Vanishing Gradients in Reinforcement Finetuning of Language Models"
+    ],
+    "iclr25": [
+      "Can Generative AI Solve Your In-Context Learning Problem?  A Martingale Perspective",
+      "Causal Graphical Models for Vision-Language Compositional Understanding",
+      "Entropy-based Activation Function Optimization: A Method on Searching Better Activation Functions",
+      "Forget the Data and Fine-Tuning! Just Fold the Network to Compress",
+      "Large (Vision) Language Models are Unsupervised In-Context Learners",
+      "MCNC: Manifold-Constrained Reparameterization for Neural Compression",
+      "Mitigate the Gap: Improving Cross-Modal Alignment in CLIP",
+      "On the Optimization Landscape of Low Rank Adaptation Methods for Large Language Models",
+      "Quantum-PEFT: Ultra parameter-efficient fine-tuning",
+      "Re-Imagining Multimodal Instruction Tuning: A Representation View",
+      "Reflexive Guidance: Improving OoDD in Vision-Language Models via Self-Guided Image-Adaptive Concept Generation",
+      "Small-to-Large Generalization: Training Data Influences Models Consistently Across Scale",
+      "The Hyperfitting Phenomenon: Sharpening and Stabilizing LLMs for Open-Ended Text Generation",
+      "Towards Scalable Exact Machine Unlearning Using Parameter-Efficient Fine-Tuning",
+      "Transformer Block Coupling and its Correlation with Generalization in LLMs",
+      "Two Sparse Matrices are Better than One: Sparsifying Neural Networks with Double Sparse Factorization",
+      "dEBORA: Efficient Bilevel Optimization-based low-Rank Adaptation"
+    ],
+    "icml25": [
+      "Disentangling and Integrating Relational and Sensory Information in Transformer Architectures",
+      "Dynamic Sparse Training of Diagonally Sparse Networks",
+      "Looking Beyond the Top-1: Transformers Determine Top Tokens in Order",
+      "On Exact Bit-level Reversible Transformers Without Changing Architecture",
+      "Parameter-Efficient Fine-Tuning of State Space Models",
+      "Relating Misfit to Gain in Weak-to-Strong Generalization Beyond the Squared Loss",
+      "SAFE: Finding Sparse and Flat Minima to Improve Pruning",
+      "Self-Consuming Generative Models with Adversarially Curated Data"
+    ],
+    "emnlp25": [
+      "Hanfu-Bench: A Multimodal Benchmark on Cross-Temporal Cultural Understanding and Transcreation",
+      "SPECS: Specificity-EnhancedCLIP-Score for Long Image Caption Evaluation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 10,
+    "iclr25": 17,
+    "icml25": 8,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25"
+  ]
+}

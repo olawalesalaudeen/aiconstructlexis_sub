@@ -1,0 +1,202 @@
+{
+  "canonical_name": "Logical consistency",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, logical consistency is a widely discussed property of language models, predominantly defined as the absence of internal contradictions in generated outputs. This concept appears under several names, including \"logical coherence\" and \"logical robustness,\" all pointing to the quality of being logically structured and free from self-contradiction. The most common framing applies to the internal coherence of a single output, such as ensuring the absence of \"discrepancies within the plot, character development, or themes of a generated summary\" (BooookScore: A systematic exploration of book-length summarization in the era of LLMs) or maintaining a reasoning process \"without any contradiction\" (FLASK: Fine-grained Language Model Evaluation based on Alignment Skill Sets). A more formal line of work operationalizes this concept through adherence to propositional logic, assessing whether a model's responses to \"logically equivalent or related queries, such as a statement and its negation,\" are semantically opposite (Logical Consistency of Large Language Models in Fact-Checking). This perspective is extended in some work to evaluate consistency across a model's \"beliefs or probability assignments across a set of logically related statements\" (ToW: Thoughts of Words Improve Reasoning in Large Language Models). Other papers define logical consistency in relation to specific task constraints, such as an agent producing \"invariant decisions across equivalent representations of the same problem\" (MatViX: Multimodal Information Extraction from Visually Rich Articles), or a model's generated code adhering to \"explicit rules and conditions specified in domain knowledge documents\" (ReachAgent: Enhancing Mobile Agent via Page Reaching and Operation). For example, in Natural Language Inference, it is measured by checking if a model's predictions on \"atomic NLI and defeasible NLI sub-problems\" align with its overall prediction (No Simple Answer to Data Complexity: An Examination of Instance-Level Complexity Metrics for Classification Tasks). Thus, while the core idea of non-contradiction is stable, its operationalization varies, ranging from narrative coherence and reasoning chain integrity to formal logical equivalence and adherence to external knowledge.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Logical consistency",
+    "Logical robustness",
+    "Logical coherence"
+  ],
+  "papers": [
+    "Deontological Keyword Bias: The Impact of Modal Expressions on Normative Judgments of Language Models",
+    "TETRIS: Optimal Draft Token Selection for Batch Speculative Decoding",
+    "TST: A Schema-Based Top-Down and Dynamic-Aware Agent of Text-to-Table Tasks",
+    "Whose Boat Does it Float? Improving Personalization in Preference Tuning via Inferred User Personas",
+    "BIG-Bench Extra Hard",
+    "CodeTool: Enhancing Programmatic Tool Invocation ofLLMs via Process Supervision",
+    "Think&Cite: Improving Attributed Text Generation with Self-Guided Tree Search and Progress Reward Modeling",
+    "Alignment for Efficient Tool Calling of Large Language Models",
+    "CLIP-MoE: Towards Building Mixture of Experts forCLIPwith Diversified Multiplet Upcycling",
+    "Disambiguation in Conversational Question Answering in the Era ofLLMs and Agents: A Survey",
+    "PLAN-TUNING: Post-Training Language Models to Learn Step-by-Step Planning for Complex Problem Solving",
+    "PerspectiveMod: A Perspectivist Resource for Deliberative Moderation",
+    "SOLAR: Towards Characterizing Subjectivity of Individuals through Modeling Value Conflicts and Trade-offs",
+    "Sentence Smith: Controllable Edits for Evaluating Text Embeddings",
+    "TRUST-VL: An Explainable News Assistant for General Multimodal Misinformation Detection",
+    "Understanding the Thinking Process of Reasoning Models: A Perspective from Schoenfeld\u2019s Episode Theory",
+    "BooookScore: A systematic exploration of book-length summarization in the era of LLMs",
+    "FLASK: Fine-grained Language Model Evaluation based on Alignment Skill Sets",
+    "Consistency Checks for Language Model Forecasters",
+    "Logical Consistency of Large Language Models in Fact-Checking",
+    "Logically Consistent Language Models via Neuro-Symbolic Integration",
+    "NeSyC: A Neuro-symbolic Continual Learner For Complex Embodied Tasks in Open Domains",
+    "SVBench: A Benchmark with Temporal Multi-Turn Dialogues for Streaming Video Understanding",
+    "Think Thrice Before You Act: Progressive Thought Refinement in Large Language Models",
+    "MatViX: Multimodal Information Extraction from Visually Rich Articles",
+    "No Simple Answer to Data Complexity: An Examination of Instance-Level Complexity Metrics for Classification Tasks",
+    "ReachAgent: Enhancing Mobile Agent via Page Reaching and Operation",
+    "ToW: Thoughts of Words Improve Reasoning in Large Language Models",
+    "Decompose, Analyze and Rethink: Solving Intricate Problems with Human-like Reasoning Cycle",
+    "MMDU: A Multi-Turn Multi-Image Dialog Understanding Benchmark and Instruction-Tuning Dataset for LVLMs"
+  ],
+  "paper_count": 30,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The degree to which a response remains logically consistent and generally applicable throughout its reasoning process without contradictions.",
+      "paper": "FLASK: Fine-grained Language Model Evaluation based on Alignment Skill Sets",
+      "original_name": "Logical robustness"
+    },
+    {
+      "text": "The absence of internal contradictions or discrepancies within the plot, character development, or themes of a generated summary.",
+      "paper": "BooookScore: A systematic exploration of book-length summarization in the era of LLMs",
+      "original_name": "Logical consistency"
+    },
+    {
+      "text": "The quality of a model's generated output being logically structured, consistent, and free from contradictions.",
+      "paper": "MMDU: A Multi-Turn Multi-Image Dialog Understanding Benchmark and Instruction-Tuning Dataset for LVLMs",
+      "original_name": "Logical coherence"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-as-a-judge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "PAFT: Prompt-Agnostic Fine-Tuning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "PAFT: Prompt-Agnostic Fine-Tuning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Factuality",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Logically Consistent Language Models via Neuro-Symbolic Integration",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Logically Consistent Language Models via Neuro-Symbolic Integration"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Position: Trustworthy AI Agents Require the Integration of Large Language Models and Formal Methods",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Position: Trustworthy AI Agents Require the Integration of Large Language Models and Formal Methods"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SNLI",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "No Simple Answer to Data Complexity: An Examination of Instance-Level Complexity Metrics for Classification Tasks",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "No Simple Answer to Data Complexity: An Examination of Instance-Level Complexity Metrics for Classification Tasks"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Self-consistency",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "MS-RAG: Simple and Effective Multi-Semantic Retrieval-Augmented Generation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "MS-RAG: Simple and Effective Multi-Semantic Retrieval-Augmented Generation"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 3,
+  "characterization": "Across the surveyed literature, logical consistency is a widely discussed property of language models, predominantly defined as the absence of internal contradictions in generated outputs. This concept appears under several names, including \"logical coherence\" and \"logical robustness,\" all pointing to the quality of being logically structured and free from self-contradiction. The most common framing applies to the internal coherence of a single output, such as ensuring the absence of \"discrepancies within the plot, character development, or themes of a generated summary\" (BooookScore: A systematic exploration of book-length summarization in the era of LLMs) or maintaining a reasoning process \"without any contradiction\" (FLASK: Fine-grained Language Model Evaluation based on Alignment Skill Sets). A more formal line of work operationalizes this concept through adherence to propositional logic, assessing whether a model's responses to \"logically equivalent or related queries, such as a statement and its negation,\" are semantically opposite (Logical Consistency of Large Language Models in Fact-Checking). This perspective is extended in some work to evaluate consistency across a model's \"beliefs or probability assignments across a set of logically related statements\" (ToW: Thoughts of Words Improve Reasoning in Large Language Models). Other papers define logical consistency in relation to specific task constraints, such as an agent producing \"invariant decisions across equivalent representations of the same problem\" (MatViX: Multimodal Information Extraction from Visually Rich Articles), or a model's generated code adhering to \"explicit rules and conditions specified in domain knowledge documents\" (ReachAgent: Enhancing Mobile Agent via Page Reaching and Operation). For example, in Natural Language Inference, it is measured by checking if a model's predictions on \"atomic NLI and defeasible NLI sub-problems\" align with its overall prediction (No Simple Answer to Data Complexity: An Examination of Instance-Level Complexity Metrics for Classification Tasks). Thus, while the core idea of non-contradiction is stable, its operationalization varies, ranging from narrative coherence and reasoning chain integrity to formal logical equivalence and adherence to external knowledge.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "BooookScore: A systematic exploration of book-length summarization in the era of LLMs",
+      "FLASK: Fine-grained Language Model Evaluation based on Alignment Skill Sets"
+    ],
+    "iclr25": [
+      "Consistency Checks for Language Model Forecasters",
+      "Logical Consistency of Large Language Models in Fact-Checking",
+      "Logically Consistent Language Models via Neuro-Symbolic Integration",
+      "NeSyC: A Neuro-symbolic Continual Learner For Complex Embodied Tasks in Open Domains",
+      "SVBench: A Benchmark with Temporal Multi-Turn Dialogues for Streaming Video Understanding",
+      "Think Thrice Before You Act: Progressive Thought Refinement in Large Language Models"
+    ],
+    "naacl25": [
+      "MatViX: Multimodal Information Extraction from Visually Rich Articles",
+      "No Simple Answer to Data Complexity: An Examination of Instance-Level Complexity Metrics for Classification Tasks",
+      "ReachAgent: Enhancing Mobile Agent via Page Reaching and Operation",
+      "ToW: Thoughts of Words Improve Reasoning in Large Language Models"
+    ],
+    "acl25": [
+      "Deontological Keyword Bias: The Impact of Modal Expressions on Normative Judgments of Language Models",
+      "TETRIS: Optimal Draft Token Selection for Batch Speculative Decoding",
+      "TST: A Schema-Based Top-Down and Dynamic-Aware Agent of Text-to-Table Tasks",
+      "Whose Boat Does it Float? Improving Personalization in Preference Tuning via Inferred User Personas",
+      "BIG-Bench Extra Hard",
+      "CodeTool: Enhancing Programmatic Tool Invocation ofLLMs via Process Supervision",
+      "Think&Cite: Improving Attributed Text Generation with Self-Guided Tree Search and Progress Reward Modeling"
+    ],
+    "neurips24": [
+      "Decompose, Analyze and Rethink: Solving Intricate Problems with Human-like Reasoning Cycle",
+      "MMDU: A Multi-Turn Multi-Image Dialog Understanding Benchmark and Instruction-Tuning Dataset for LVLMs"
+    ],
+    "emnlp25": [
+      "Alignment for Efficient Tool Calling of Large Language Models",
+      "CLIP-MoE: Towards Building Mixture of Experts forCLIPwith Diversified Multiplet Upcycling",
+      "Disambiguation in Conversational Question Answering in the Era ofLLMs and Agents: A Survey",
+      "PLAN-TUNING: Post-Training Language Models to Learn Step-by-Step Planning for Complex Problem Solving",
+      "PerspectiveMod: A Perspectivist Resource for Deliberative Moderation",
+      "SOLAR: Towards Characterizing Subjectivity of Individuals through Modeling Value Conflicts and Trade-offs",
+      "Sentence Smith: Controllable Edits for Evaluating Text Embeddings",
+      "TRUST-VL: An Explainable News Assistant for General Multimodal Misinformation Detection",
+      "Understanding the Thinking Process of Reasoning Models: A Perspective from Schoenfeld\u2019s Episode Theory"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "iclr25": 6,
+    "naacl25": 4,
+    "acl25": 7,
+    "neurips24": 2,
+    "emnlp25": 9
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "naacl25",
+    "neurips24"
+  ]
+}

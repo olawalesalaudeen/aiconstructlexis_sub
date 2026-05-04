@@ -1,0 +1,87 @@
+{
+  "canonical_name": "Label prediction",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, label prediction is consistently defined as the behavior of producing a correct class label or final answer for a given input. Some definitions frame this as predicting a label for a target item within a context sequence, while another explicitly separates it from the reasoning process, defining it as generating the final answer for a question or premise. This behavior is operationalized by training or finetuning models with ground-truth labels. As one paper notes, this involves training a network \"to predict the label of the target token\" (Differential learning kinetics govern the transition from memorization to generalization during in-context learning), and another mentions using a specific input prefix like \"< Predict >\" to elicit the output. Label prediction is commonly studied in conjunction with reasoning-oriented behaviors. For instance, it is frequently paired with `Explanation generation` in simultaneous training tasks and is also performed alongside `Chain-of-thought reasoning`, where a model is fine-tuned to generate both the reasoning steps and the final prediction. This co-occurrence in training contexts reinforces the framing of label prediction as a distinct output task that can be coupled with, but is separate from, the generation of intermediate reasoning.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Label prediction"
+  ],
+  "papers": [
+    "CanLLMs Reason Abstractly Over Math Word Problems WithoutCoT? Disentangling Abstract Formulation From Arithmetic Computation",
+    "Reasoning-to-Defend: Safety-Aware Reasoning Can Defend Large Language Models from Jailbreaking",
+    "VeriLocc: End-to-End Cross-Architecture Register Allocation viaLLM",
+    "Differential learning kinetics govern the transition from memorization to generalization during in-context learning",
+    "On the Learn-to-Optimize Capabilities of Transformers in In-Context Sparse Recovery",
+    "Reasoning-Enhanced Healthcare Predictions with Knowledge Graph Community Retrieval"
+  ],
+  "paper_count": 6,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Producing the correct class label for a target item given its context sequence.",
+      "paper": "Differential learning kinetics govern the transition from memorization to generalization during in-context learning",
+      "original_name": "Label prediction"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Explanation generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Unlocking General Long Chain-of-Thought Reasoning Capabilities of Large Language Models via Representation Engineering",
+      "evidence": "It involved training the smaller language model simultaneously on both label prediction and rationale generation tasks, effectively leveraging their mutual benefits. (Section 1)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "acl25": [
+          "Unlocking General Long Chain-of-Thought Reasoning Capabilities of Large Language Models via Representation Engineering"
+        ],
+        "emnlp25": [
+          "CanLLMs Reason Abstractly Over Math Word Problems WithoutCoT? Disentangling Abstract Formulation From Arithmetic Computation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Chain-of-thought reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Reasoning-Enhanced Healthcare Predictions with Knowledge Graph Community Retrieval",
+      "evidence": "We fine-tune a relatively small local LLM (e.g., a 7B-parameter model) to perform both reasoning chain generation and label prediction for each patient p and healthcare prediction task \u03c4 (such as mortality or readmission prediction). (Section 3.3.2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Reasoning-Enhanced Healthcare Predictions with Knowledge Graph Community Retrieval"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, label prediction is consistently defined as the behavior of producing a correct class label or final answer for a given input. Some definitions frame this as predicting a label for a target item within a context sequence, while another explicitly separates it from the reasoning process, defining it as generating the final answer for a question or premise. This behavior is operationalized by training or finetuning models with ground-truth labels. As one paper notes, this involves training a network \"to predict the label of the target token\" (Differential learning kinetics govern the transition from memorization to generalization during in-context learning), and another mentions using a specific input prefix like \"< Predict >\" to elicit the output. Label prediction is commonly studied in conjunction with reasoning-oriented behaviors. For instance, it is frequently paired with `Explanation generation` in simultaneous training tasks and is also performed alongside `Chain-of-thought reasoning`, where a model is fine-tuned to generate both the reasoning steps and the final prediction. This co-occurrence in training contexts reinforces the framing of label prediction as a distinct output task that can be coupled with, but is separate from, the generation of intermediate reasoning.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Differential learning kinetics govern the transition from memorization to generalization during in-context learning",
+      "On the Learn-to-Optimize Capabilities of Transformers in In-Context Sparse Recovery",
+      "Reasoning-Enhanced Healthcare Predictions with Knowledge Graph Community Retrieval"
+    ],
+    "emnlp25": [
+      "CanLLMs Reason Abstractly Over Math Word Problems WithoutCoT? Disentangling Abstract Formulation From Arithmetic Computation",
+      "Reasoning-to-Defend: Safety-Aware Reasoning Can Defend Large Language Models from Jailbreaking",
+      "VeriLocc: End-to-End Cross-Architecture Register Allocation viaLLM"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3,
+    "emnlp25": 3
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25"
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "canonical_name": "ToolBench",
+  "type": "measurement",
+  "canonical_definition": "ToolBench is predominantly characterized across the provided literature as a large-scale benchmark or dataset for evaluating large language models. Its most common application is to measure the construct of \"Tool use,\" with papers using it to assess behaviors like API-calling accuracy, function calling, and multi-turn tool usage. The benchmark is also used, though less frequently, to evaluate an agent's \"Decision-making\" and \"Information retrieval\" capabilities. Operationally, ToolBench is consistently described as containing a massive set of over 16,000 real-world APIs, often sourced from RapidAPI, paired with diverse user requests, instructions, and in some cases, expert trajectories. While its prevailing use is for evaluation\u2014with some papers reporting metrics like \"pass rate, win rate, and success rate\" (\"JMMMU...\")\u2014a notable subset of papers also defines and uses ToolBench as an \"instruction-tuning dataset\" for training models. A few sources offer more specific framings, describing it as a \"workload\" with tool demonstrations (\"Preble...\") or a suite with environments like \"Home Search, Trip Booking, Google Sheets, and Virtual Home\" (\"ToolChain*...\").",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "ToolBench",
+    "Toolbench"
+  ],
+  "papers": [
+    "LLMs can be easily Confused by Instructional Distractions",
+    "STUN: Structured-Then-Unstructured Pruning for ScalableMoEPruning",
+    "ToolChain*: Efficient Action Space Navigation in Large Language Models with A* Search",
+    "ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world APIs",
+    "API Pack: A Massive Multi-Programming Language Dataset for API Call Generation",
+    "From Exploration to Mastery: Enabling LLMs to Master Tools via Self-Driven Interactions",
+    "Preble: Efficient Distributed Prompt Scheduling for LLM Serving",
+    "Rational Decision-Making Agent with Learning Internal Utility Judgment",
+    "ShortcutsBench: A Large-Scale Real-world Benchmark for API-based Agents",
+    "Tool-Planner: Task Planning with Clusters across Multiple Tools",
+    "ToolGen: Unified Tool Retrieval and Calling via Generation",
+    "Understanding the Generalization of In-Context Learning in Transformers: An Empirical Study",
+    "Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression",
+    "MoRAgent: Parameter Efficient Agent Tuning with Mixture-of-Roles",
+    "Reducing Tool Hallucination via Reliability Alignment",
+    "Tool Unlearning for Tool-Augmented LLMs",
+    "An Interpretable and Crosslingual Method for Evaluating Second-Language Dialogues",
+    "JMMMU: AJapanese Massive Multi-discipline Multimodal Understanding Benchmark for Culture-aware Evaluation",
+    "Multilingual Reasoning via Self-training",
+    "Advancing Tool-Augmented Large Language Models: Integrating Insights from Errors in Inference Trees",
+    "StreamBench: Towards Benchmarking Continuous Improvement of Language Agents",
+    "Watch Out for Your Agents! Investigating Backdoor Threats to LLM-Based Agents"
+  ],
+  "paper_count": 22,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A benchmark suite for evaluating the tool-use capabilities of LLM agents across various environments, including Home Search, Trip Booking, Google Sheets, and Virtual Home.",
+      "paper": "ToolChain*: Efficient Action Space Navigation in Large Language Models with A* Search",
+      "original_name": "ToolBench"
+    },
+    {
+      "text": "A workload used to evaluate an LLM's ability to use tools, characterized by prompts that include tool demonstrations and calls.",
+      "paper": "Preble: Efficient Distributed Prompt Scheduling for LLM Serving",
+      "original_name": "Toolbench"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Tool use",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world APIs",
+      "evidence": "Projects like the Berkeley Function Calling Leaderboard (BFCL), ToolBench and MetaTool test tool use/function calling in multiple programming languages and propose various methods for evaluating the accuracy of function calls. (Section 2)",
+      "paper_count": 8,
+      "papers_by_conference": {
+        "iclr24": [
+          "ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world APIs"
+        ],
+        "neurips24": [
+          "StreamBench: Towards Benchmarking Continuous Improvement of Language Agents",
+          "Watch Out for Your Agents! Investigating Backdoor Threats to LLM-Based Agents"
+        ],
+        "iclr25": [
+          "ShortcutsBench: A Large-Scale Real-world Benchmark for API-based Agents",
+          "Understanding the Generalization of In-Context Learning in Transformers: An Empirical Study",
+          "From Exploration to Mastery: Enabling LLMs to Master Tools via Self-Driven Interactions"
+        ],
+        "naacl25": [
+          "Multilingual Reasoning via Self-training",
+          "JMMMU: AJapanese Massive Multi-discipline Multimodal Understanding Benchmark for Culture-aware Evaluation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Decision-making",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Rational Decision-Making Agent with Learning Internal Utility Judgment",
+      "evidence": "\"we conduct extensive experiments on Game of 24 (Yao et al., 2023), WebShop (Yao et al., 2022a), ToolBench (Qin et al., 2023c) and RestBench (Song et al., 2023) datasets\"",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Rational Decision-Making Agent with Learning Internal Utility Judgment"
+        ],
+        "emnlp25": [
+          "AgentPro: EnhancingLLMAgents with Automated Process Supervision"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Planning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "ToolChain*: Efficient Action Space Navigation in Large Language Models with A* Search",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "ToolChain*: Efficient Action Space Navigation in Large Language Models with A* Search"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Information retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "ToolGen: Unified Tool Retrieval and Calling via Generation",
+      "evidence": "Our experiments are based on ToolBench, a real-world tool benchmark containing more 16k tool collections... Our retrieval and end-to-end agent-tuning data are converted from the original data in ToolBench. (Section 4.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "ToolGen: Unified Tool Retrieval and Calling via Generation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Multilingual Reasoning via Self-training",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Multilingual Reasoning via Self-training"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 5,
+  "outgoing_relationship_count": 0,
+  "characterization": "ToolBench is predominantly characterized across the provided literature as a large-scale benchmark or dataset for evaluating large language models. Its most common application is to measure the construct of \"Tool use,\" with papers using it to assess behaviors like API-calling accuracy, function calling, and multi-turn tool usage. The benchmark is also used, though less frequently, to evaluate an agent's \"Decision-making\" and \"Information retrieval\" capabilities. Operationally, ToolBench is consistently described as containing a massive set of over 16,000 real-world APIs, often sourced from RapidAPI, paired with diverse user requests, instructions, and in some cases, expert trajectories. While its prevailing use is for evaluation\u2014with some papers reporting metrics like \"pass rate, win rate, and success rate\" (\"JMMMU...\")\u2014a notable subset of papers also defines and uses ToolBench as an \"instruction-tuning dataset\" for training models. A few sources offer more specific framings, describing it as a \"workload\" with tool demonstrations (\"Preble...\") or a suite with environments like \"Home Search, Trip Booking, Google Sheets, and Virtual Home\" (\"ToolChain*...\").",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "ToolChain*: Efficient Action Space Navigation in Large Language Models with A* Search",
+      "ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world APIs"
+    ],
+    "neurips24": [
+      "Advancing Tool-Augmented Large Language Models: Integrating Insights from Errors in Inference Trees",
+      "StreamBench: Towards Benchmarking Continuous Improvement of Language Agents",
+      "Watch Out for Your Agents! Investigating Backdoor Threats to LLM-Based Agents"
+    ],
+    "iclr25": [
+      "API Pack: A Massive Multi-Programming Language Dataset for API Call Generation",
+      "From Exploration to Mastery: Enabling LLMs to Master Tools via Self-Driven Interactions",
+      "Preble: Efficient Distributed Prompt Scheduling for LLM Serving",
+      "Rational Decision-Making Agent with Learning Internal Utility Judgment",
+      "ShortcutsBench: A Large-Scale Real-world Benchmark for API-based Agents",
+      "Tool-Planner: Task Planning with Clusters across Multiple Tools",
+      "ToolGen: Unified Tool Retrieval and Calling via Generation",
+      "Understanding the Generalization of In-Context Learning in Transformers: An Empirical Study"
+    ],
+    "naacl25": [
+      "An Interpretable and Crosslingual Method for Evaluating Second-Language Dialogues",
+      "JMMMU: AJapanese Massive Multi-discipline Multimodal Understanding Benchmark for Culture-aware Evaluation",
+      "Multilingual Reasoning via Self-training"
+    ],
+    "acl25": [
+      "LLMs can be easily Confused by Instructional Distractions",
+      "STUN: Structured-Then-Unstructured Pruning for ScalableMoEPruning"
+    ],
+    "icml25": [
+      "Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression",
+      "MoRAgent: Parameter Efficient Agent Tuning with Mixture-of-Roles",
+      "Reducing Tool Hallucination via Reliability Alignment",
+      "Tool Unlearning for Tool-Augmented LLMs"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "neurips24": 3,
+    "iclr25": 8,
+    "naacl25": 3,
+    "acl25": 2,
+    "icml25": 4
+  },
+  "conferences": [
+    "acl25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

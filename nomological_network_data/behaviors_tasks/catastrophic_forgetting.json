@@ -1,0 +1,557 @@
+{
+  "canonical_name": "Catastrophic forgetting",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, Catastrophic forgetting is most commonly defined as the observable phenomenon where a model's performance on previously learned tasks significantly deteriorates after it is trained on new data. This behavior is a frequently discussed challenge within the context of `Continual learning`, but is also studied in relation to `Machine unlearning` and sequential model editing, where it is sometimes referred to as \"Knowledge forgetting.\" To operationalize and measure this phenomenon, researchers evaluate models for performance degradation on general capability benchmarks, with `MMLU`, `GSM8k`, `PIQA`, `BIG-Bench Hard`, and `MMLU-Pro` being explicitly named for this purpose. The most widely reported consequence of this behavior is a degradation of the model's `Generalization` capabilities. Some work also suggests a relationship with `Overfitting`, noting that injecting pretraining data can serve as a regularizer to reduce both. As one study notes, \"injecting as little as 1% of pretraining data in the training mix is enough to mitigate forgetting significantly\" (\"Scaling Laws for Forgetting during Finetuning with Pretraining Data Injection\"). A less frequent connection is also drawn to `Hallucination`.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Catastrophic forgetting",
+    "Knowledge forgetting",
+    "Pretraining data injection"
+  ],
+  "papers": [
+    "CollabEdit: Towards Non-destructive Collaborative Knowledge Editing",
+    "LeanAgent: Lifelong Learning for Formal Theorem Proving",
+    "TPO: Aligning Large Language Models with Multi-branch & Multi-step Preference Trees",
+    "Towards Robust and Parameter-Efficient Knowledge Unlearning for LLMs",
+    "Learning Dynamics in Continual Pre-Training for Large Language Models",
+    "Scaling Laws for Forgetting during Finetuning with Pretraining Data Injection",
+    "Towards Lifelong Model Editing via Simulating Ideal Editor",
+    "CogVLM: Visual Expert for Pretrained Language Models",
+    "Learn more, but bother less: parameter efficient continual learning",
+    "Mercury: A Code Efficiency Benchmark for Code Large Language Models",
+    "Why are Visually-Grounded Language Models Bad at Image Classification?"
+  ],
+  "paper_count": 11,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The observable phenomenon where a model's performance on previously learned tasks significantly deteriorates after it is trained on new data.",
+      "paper": "Learn more, but bother less: parameter efficient continual learning",
+      "original_name": "Catastrophic forgetting"
+    },
+    {
+      "text": "Previously edited facts become less accurately retained after many subsequent editing rounds.",
+      "paper": "CollabEdit: Towards Non-destructive Collaborative Knowledge Editing",
+      "original_name": "Knowledge forgetting"
+    },
+    {
+      "text": "The observable behavior of mixing pretraining data into the finetuning data stream according to a specified proportion, used to regularize finetuning and reduce forgetting.",
+      "paper": "Scaling Laws for Forgetting during Finetuning with Pretraining Data Injection",
+      "original_name": "Pretraining data injection"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Continual learning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Scalable Language Model with Generalized Continual Learning",
+      "evidence": "\u201cContinual Fine-Tuning (Madotto et al., 2021; Wu et al., 2024), which incrementally incorporates new knowledge while mitigating catastrophic forgetting.\u201d",
+      "paper_count": 5,
+      "papers_by_conference": {
+        "iclr24": [
+          "Scalable Language Model with Generalized Continual Learning"
+        ],
+        "iclr25": [
+          "DELIFT: Data Efficient Language model Instruction Fine-Tuning",
+          "LeanAgent: Lifelong Learning for Formal Theorem Proving",
+          "Scalable Bayesian Learning with posteriors"
+        ],
+        "icml25": [
+          "Exploiting Presentative Feature Distributions for Parameter-Efficient Continual Learning of Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Beyond Text Compression: Evaluating Tokenizers Across Scales",
+      "evidence": "catastrophic forgetting (CF) is still an unavoidable problem during CIT, which refers to the forgetting of previously learned tasks and the deterioration of original generalization ability (Section 1).",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "acl25": [
+          "Beyond Text Compression: Evaluating Tokenizers Across Scales"
+        ],
+        "icml25": [
+          "Splitting with Importance-aware Updating for Heterogeneous Federated Learning with Large Language Models",
+          "Scaling Laws for Forgetting during Finetuning with Pretraining Data Injection",
+          "Learn from Downstream and Be Yourself in Multimodal Large Language Models Fine-Tuning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Knowledge retention",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Scalable Language Model with Generalized Continual Learning",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr24": [
+          "Scalable Language Model with Generalized Continual Learning"
+        ],
+        "icml25": [
+          "SEFE: Superficial and Essential Forgetting Eliminator for Multimodal Continual Instruction Tuning",
+          "Large Continual Instruction Assistant"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Commonsense knowledge",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Understanding Catastrophic Forgetting in Language Models via Implicit Inference",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr24": [
+          "Understanding Catastrophic Forgetting in Language Models via Implicit Inference"
+        ],
+        "neurips24": [
+          "CoIN: A Benchmark of Continual Instruction Tuning for Multimodel Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Mercury: A Code Efficiency Benchmark for Code Large Language Models",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "Mercury: A Code Efficiency Benchmark for Code Large Language Models",
+          "BackdoorAlign: Mitigating Fine-tuning based Jailbreak Attack with Backdoor Enhanced Safety Alignment"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Unlocking the Power of Function Vectors for Characterizing and Mitigating Catastrophic Forgetting in Continual Instruction Tuning",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Unlocking the Power of Function Vectors for Characterizing and Mitigating Catastrophic Forgetting in Continual Instruction Tuning"
+        ],
+        "naacl25": [
+          "Learning to Solve Domain-Specific Calculation Problems with Knowledge-Intensive Programs Generator"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8k",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "CultureLLM: Incorporating Cultural Differences into Large Language Models",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "CultureLLM: Incorporating Cultural Differences into Large Language Models"
+        ],
+        "naacl25": [
+          "Learning to Solve Domain-Specific Calculation Problems with Knowledge-Intensive Programs Generator"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Adaptability",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Step-level Verifier-guided Hybrid Test-Time Scaling for Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Step-level Verifier-guided Hybrid Test-Time Scaling for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Learning to Solve Domain-Specific Calculation Problems with Knowledge-Intensive Programs Generator",
+      "evidence": "The fine-tuned models under MDS are evaluated on the general tasks including MMLU (Hendrycks et al., 2021), GSM8K (Cobbe et al., 2021), and PIQA (Bisk et al., 2020) to measure the catastrophic forgetting of the PEFT approaches. (Section 4.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Learning to Solve Domain-Specific Calculation Problems with Knowledge-Intensive Programs Generator"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BIG-Bench Hard",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Multilingual Arbitration: Optimizing Data Pools to Accelerate Multilingual Progress",
+      "evidence": "For out-domain evaluations, BIG-Bench-Hard (Suzgun et al., 2022) and MMLU-Pro (Wang et al., 2024b) are used. These benchmarks encompass challenging subsets of tasks across a wide range of domains and are widely employed for evaluating the capabilities of LLMs. Additionally, they include samples that are more complex than those in our training data, ensuring minimal overlap. We use lm-eval (Gao et al., 2024), available with MIT License, for reporting out-domain evaluation. (Section 5.1.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Multilingual Arbitration: Optimizing Data Pools to Accelerate Multilingual Progress"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Learning to Solve Domain-Specific Calculation Problems with Knowledge-Intensive Programs Generator",
+      "evidence": "The fine-tuned models under MDS are evaluated on the general tasks including MMLU (Hendrycks et al., 2021), GSM8K (Cobbe et al., 2021), and PIQA (Bisk et al., 2020) to measure the catastrophic forgetting of the PEFT approaches. (Section 4.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Learning to Solve Domain-Specific Calculation Problems with Knowledge-Intensive Programs Generator"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Personalization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Yo'LLaVA: Your Personalized Language and Vision Assistant",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Yo'LLaVA: Your Personalized Language and Vision Assistant"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "POPE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Yo'LLaVA: Your Personalized Language and Vision Assistant",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Yo'LLaVA: Your Personalized Language and Vision Assistant"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Yo'LLaVA: Your Personalized Language and Vision Assistant",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Yo'LLaVA: Your Personalized Language and Vision Assistant"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLaVA-Bench-in-the-Wild",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Yo'LLaVA: Your Personalized Language and Vision Assistant",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Yo'LLaVA: Your Personalized Language and Vision Assistant"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Agent Skill Acquisition for Large Language Models via CycleQD",
+      "evidence": "The first limitation is that TPO may introduce a stronger form of \u201ccatastrophic forgetting\u201d. The results in Sec. 4.2 indicate that while TPO exhibits excellent performance on in-distribution datasets, it may suffer from performance degradation on out-of-distribution datasets.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Agent Skill Acquisition for Large Language Models via CycleQD"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BBH",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "CultureLLM: Incorporating Cultural Differences into Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "CultureLLM: Incorporating Cultural Differences into Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Language model pre-training",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Data Mixing Laws: Optimizing Data Mixtures by Predicting Language Modeling Performance",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Data Mixing Laws: Optimizing Data Mixtures by Predicting Language Modeling Performance"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "In-context learning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Unlocking the Power of Function Vectors for Characterizing and Mitigating Catastrophic Forgetting in Continual Instruction Tuning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Unlocking the Power of Function Vectors for Characterizing and Mitigating Catastrophic Forgetting in Continual Instruction Tuning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Knowledge forgetting",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Spurious Forgetting in Continual Learning of Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Spurious Forgetting in Continual Learning of Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction fine-tuning",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Towards Lifelong Model Editing via Simulating Ideal Editor",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Towards Lifelong Model Editing via Simulating Ideal Editor"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Task interference",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "LiNeS: Post-training Layer Scaling Prevents Forgetting and Enhances Model Merging",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "LiNeS: Post-training Layer Scaling Prevents Forgetting and Enhances Model Merging"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Instruction fine-tuning",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "ChainEdit: Propagating Ripple Effects inLLMKnowledge Editing through Logical Rule-Guided Chains",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "ChainEdit: Propagating Ripple Effects inLLMKnowledge Editing through Logical Rule-Guided Chains"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Unlearning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "BPO: Towards Balanced Preference Optimization between Knowledge Breadth and Depth in Alignment",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "BPO: Towards Balanced Preference Optimization between Knowledge Breadth and Depth in Alignment"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU-Pro",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Multilingual Arbitration: Optimizing Data Pools to Accelerate Multilingual Progress",
+      "evidence": "On the knowledge-intensive benchmarks (i.e., WikiBench, MMLU, and MMLU-Pro), Genius can maintain the performances of the base LLMs, avoiding catastrophic forgetting after post-training (Section 3.2).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Multilingual Arbitration: Optimizing Data Pools to Accelerate Multilingual Progress"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multilingual ability",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Neutral residues: revisiting adapters for model extension",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Neutral residues: revisiting adapters for model extension"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "General capabilities",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Multilingual Arbitration: Optimizing Data Pools to Accelerate Multilingual Progress",
+      "evidence": "Validated across multiple datasets and models, this method significantly alleviates forgetting in both general and in-context learning abilities, confirming the correlation between FV dynamics and forgetting. (Section 1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Multilingual Arbitration: Optimizing Data Pools to Accelerate Multilingual Progress"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Large Continual Instruction Assistant",
+      "evidence": "(Zhai et al., 2023) deem that the hallucination in large models is related to the catastrophic forgetting in continual tuning. (Section 5.4. Analysis of Examples)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Large Continual Instruction Assistant"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Knowledge forgetting",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Scaling Laws for Forgetting during Finetuning with Pretraining Data Injection",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Scaling Laws for Forgetting during Finetuning with Pretraining Data Injection"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Overfitting",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Scaling Laws for Forgetting during Finetuning with Pretraining Data Injection",
+      "evidence": "Injecting pretraining data has a regularizing effect that reduces overfitting and forgetting. (Figure 1 caption)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Scaling Laws for Forgetting during Finetuning with Pretraining Data Injection"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reward hacking",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "NovelHopQA: Diagnosing Multi-Hop Reasoning Failures in Long Narrative Contexts",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "NovelHopQA: Diagnosing Multi-Hop Reasoning Failures in Long Narrative Contexts"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generality",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Dynamic Model-Bank Test-Time Adaptation for Automatic Speech Recognition",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Dynamic Model-Bank Test-Time Adaptation for Automatic Speech Recognition"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 32,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 29,
+  "characterization": "Across the surveyed literature, Catastrophic forgetting is most commonly defined as the observable phenomenon where a model's performance on previously learned tasks significantly deteriorates after it is trained on new data. This behavior is a frequently discussed challenge within the context of `Continual learning`, but is also studied in relation to `Machine unlearning` and sequential model editing, where it is sometimes referred to as \"Knowledge forgetting.\" To operationalize and measure this phenomenon, researchers evaluate models for performance degradation on general capability benchmarks, with `MMLU`, `GSM8k`, `PIQA`, `BIG-Bench Hard`, and `MMLU-Pro` being explicitly named for this purpose. The most widely reported consequence of this behavior is a degradation of the model's `Generalization` capabilities. Some work also suggests a relationship with `Overfitting`, noting that injecting pretraining data can serve as a regularizer to reduce both. As one study notes, \"injecting as little as 1% of pretraining data in the training mix is enough to mitigate forgetting significantly\" (\"Scaling Laws for Forgetting during Finetuning with Pretraining Data Injection\"). A less frequent connection is also drawn to `Hallucination`.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "CogVLM: Visual Expert for Pretrained Language Models",
+      "Learn more, but bother less: parameter efficient continual learning",
+      "Mercury: A Code Efficiency Benchmark for Code Large Language Models",
+      "Why are Visually-Grounded Language Models Bad at Image Classification?"
+    ],
+    "iclr25": [
+      "CollabEdit: Towards Non-destructive Collaborative Knowledge Editing",
+      "LeanAgent: Lifelong Learning for Formal Theorem Proving",
+      "TPO: Aligning Large Language Models with Multi-branch & Multi-step Preference Trees",
+      "Towards Robust and Parameter-Efficient Knowledge Unlearning for LLMs"
+    ],
+    "icml25": [
+      "Learning Dynamics in Continual Pre-Training for Large Language Models",
+      "Scaling Laws for Forgetting during Finetuning with Pretraining Data Injection",
+      "Towards Lifelong Model Editing via Simulating Ideal Editor"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 4,
+    "iclr25": 4,
+    "icml25": 3
+  },
+  "conferences": [
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

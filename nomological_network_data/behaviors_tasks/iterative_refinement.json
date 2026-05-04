@@ -1,0 +1,378 @@
+{
+  "canonical_name": "Iterative refinement",
+  "type": "behavior",
+  "canonical_definition": "Iterative refinement is a widely studied behavior, consistently defined as a multi-step process where a model improves an initial output based on some form of feedback. The mechanism for improvement varies across papers: it can be driven by internal processes like self-evaluation and uncertainty monitoring, as in \"iterative self-calibration,\" or by external feedback. This external feedback includes execution results for code (\"self-debugging\"), explicit user instructions (\"response refinement\"), input from other models (\"iterative critique-revision\"), or feedback from a formal verifier (\"program refinement\"). The behavior is operationalized across numerous domains, most frequently in code-related tasks like \"bug fixing\" and \"solution revision,\" but also in modifying reasoning steps (\"stepwise revision\"), arguments (\"argument revision\"), and general text (\"proofreading\"). Some research identifies this behavior through explicit linguistic markers, noting that models may use phrases like \"Wait\" or \"Alternatively\" to signal a \"self-revision\" of their reasoning. The effectiveness of this behavior is measured using benchmarks such as GPQA and MMLU. It is studied in relation to code generation and self-correction, and some work posits that it is driven by constructs like uncertainty awareness.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Self-debugging",
+    "Correction suggestion generation",
+    "Stepwise revision",
+    "Self-refinement",
+    "Self-revision",
+    "Response refinement",
+    "Iterative refinement",
+    "Bug fixing",
+    "Proofreading",
+    "Error refinement",
+    "Iterative self-calibration",
+    "Answer revision",
+    "Argument revision",
+    "Code revision",
+    "Program refinement",
+    "Thought correction",
+    "Refinement during generation",
+    "Solution optimization",
+    "Multi-step rectification",
+    "Action refinement",
+    "Candidate refinement",
+    "Solution revision",
+    "Iterative critique-revision"
+  ],
+  "papers": [
+    "AlignDistil: Token-Level Language Model Alignment as Adaptive Policy Distillation",
+    "AnRe: Analogical Replay for Temporal Knowledge Graph Forecasting",
+    "Building a Long Text Privacy Policy Corpus with Multi-Class Labels",
+    "Bypass Back-propagation: Optimization-based Structural Pruning for Large Language Models via Policy Gradient",
+    "Decoding on Graphs: Faithful and Sound Reasoning on Knowledge Graphs through Generation of Well-Formed Chains",
+    "D\u00e9j\u00e0 Vu? Decoding Repeated Reading from Eye Movements",
+    "ELABORATION: A Comprehensive Benchmark on Human-LLMCompetitive Programming",
+    "ERU-KG: Efficient Reference-aligned Unsupervised Keyphrase Generation",
+    "Enhancing Spoken Discourse Modeling in Language Models Using Gestural Cues",
+    "GradOT: Training-free Gradient-preserving Offsite-tuning for Large Language Models",
+    "GrammaMT: Improving Machine Translation with Grammar-Informed In-Context Learning",
+    "Insight Over Sight: Exploring the Vision-Knowledge Conflicts in MultimodalLLMs",
+    "Locate-and-Focus: Enhancing Terminology Translation in Speech Language Models",
+    "MaXIFE: Multilingual and Cross-lingual Instruction Following Evaluation",
+    "Neural Incompatibility",
+    "Optimal Transport-Based Token Weighting scheme for Enhanced Preference Optimization",
+    "PARME: Parallel Corpora for Low-ResourcedMiddleEastern Languages",
+    "Pre3: Enabling Deterministic Pushdown Automata for Faster StructuredLLMGeneration",
+    "PsyDial: A Large-scale Long-term Conversational Dataset for Mental Health Support",
+    "RAG-Critic: Leveraging Automated Critic-Guided Agentic Workflow for Retrieval Augmented Generation",
+    "RPO: Retrieval Preference Optimization for Robust Retrieval-Augmented Generation",
+    "Read it in Two Steps: Translating Extremely Low-Resource Languages with Code-Augmented Grammar Books",
+    "Retrieval-Augmented Fine-Tuning With Preference Optimization For Visual Program Generation",
+    "Reviving Cultural Heritage: A Novel Approach for Comprehensive Historical Document Restoration",
+    "Selecting and Merging: Towards Adaptable and Scalable Named Entity Recognition with Large Language Models",
+    "Stochastic Chameleons: Irrelevant Context Hallucinations Reveal Class-Based (Mis)Generalization inLLMs",
+    "The Essence of Contextual Understanding in Theory of Mind: A Study on Question Answering with Story Characters",
+    "Value Residual Learning",
+    "Generalists vs. Specialists: Evaluating LLMs on Highly-Constrained Biophysical Sequence Optimization Tasks",
+    "Gravity-Bench-v1: A Benchmark on Gravitational Physics Discovery for Agents",
+    "ReVISE: Learning to Refine at Test-Time via Intrinsic Self-Verification",
+    "AlphaVerus: Bootstrapping Formally Verified Code Generation through Self-Improving Translation and Treefinement",
+    "Self-Improving Language Models for Evolutionary Program Synthesis: A Case Study on ARC-AGI",
+    "Accelerating Large Language Model Reasoning via Speculative Search",
+    "Bootstrapping Self-Improvement of Language Model Programs for Zero-Shot Schema Matching",
+    "Evaluating LLMs Across Multi-Cognitive Levels: From Medical Knowledge Mastery to Scenario-Based Problem Solving",
+    "Reflection-Window Decoding: Text Generation with Selective Refinement",
+    "Revolve: Optimizing AI Systems by Tracking Response Evolution in Textual Optimization",
+    "SPRI: Aligning Large Language Models with Context-Situated Principles",
+    "Teaching Language Models to Critique via Reinforcement Learning",
+    "Think Twice, Act Once: A Co-Evolution Framework of LLM and RL for Large-Scale Decision Making"
+  ],
+  "paper_count": 41,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The observable process where a model identifies errors in its own generated code based on execution feedback and attempts to correct them.",
+      "paper": "Enhancing Spoken Discourse Modeling in Language Models Using Gestural Cues",
+      "original_name": "Self-debugging"
+    },
+    {
+      "text": "The observable behavior of modifying specific reasoning steps identified as incorrect while preserving earlier correct steps in an iterative manner.",
+      "paper": "Neural Incompatibility",
+      "original_name": "Stepwise revision"
+    },
+    {
+      "text": "The observable behavior of a model, after identifying an inconsistency, generating a specific suggestion for how to improve or correct the output.",
+      "paper": "PsyDial: A Large-scale Long-term Conversational Dataset for Mental Health Support",
+      "original_name": "Correction suggestion generation"
+    },
+    {
+      "text": "The observable act of a model extending its reasoning process to re-evaluate and modify its previous statements, often indicated by explicit markers like \"Wait\" or \"Alternatively\".",
+      "paper": "AnRe: Analogical Replay for Temporal Knowledge Graph Forecasting",
+      "original_name": "Self-revision"
+    },
+    {
+      "text": "Iteratively improving an initial response through self-evaluation and regeneration, either within a single model or via multi-agent debate.",
+      "paper": "GradOT: Training-free Gradient-preserving Offsite-tuning for Large Language Models",
+      "original_name": "Self-refinement"
+    },
+    {
+      "text": "The model's ability to revise or improve its own outputs upon instruction or internal reasoning, potentially reducing harmful or biased content.",
+      "paper": "ELABORATION: A Comprehensive Benchmark on Human-LLMCompetitive Programming",
+      "original_name": "Self-correction"
+    },
+    {
+      "text": "Generating an initial response and then improving it in a subsequent turn through explicit refinement instructions, creating a contrast between raw and polished outputs.",
+      "paper": "Reviving Cultural Heritage: A Novel Approach for Comprehensive Historical Document Restoration",
+      "original_name": "Response refinement"
+    },
+    {
+      "text": "Generating multiple attempts at solving a problem, where later outputs are influenced by feedback on earlier ones, either through context or parameter updates.",
+      "paper": "RPO: Retrieval Preference Optimization for Robust Retrieval-Augmented Generation",
+      "original_name": "Iterative refinement"
+    },
+    {
+      "text": "Reviewing and correcting grammar, spelling, and punctuation errors in a text without providing explanations or analysis.",
+      "paper": "D\u00e9j\u00e0 Vu? Decoding Repeated Reading from Eye Movements",
+      "original_name": "Proofreading"
+    },
+    {
+      "text": "The task of identifying, diagnosing, and correcting errors or bugs within a software codebase.",
+      "paper": "AlignDistil: Token-Level Language Model Alignment as Adaptive Policy Distillation",
+      "original_name": "Bug fixing"
+    },
+    {
+      "text": "The task of correcting an erroneous scene graph to align with a given textual description and context.",
+      "paper": "Optimal Transport-Based Token Weighting scheme for Enhanced Preference Optimization",
+      "original_name": "Error refinement"
+    },
+    {
+      "text": "An observable process where a model repeatedly refines its generated answer over multiple rounds, using its previous outputs and associated uncertainty scores as input for the next iteration.",
+      "paper": "Value Residual Learning",
+      "original_name": "Iterative self-calibration"
+    },
+    {
+      "text": "The observable process by which a model updates its claims in response to counterarguments, incorporating new reasoning or evidence to refine its position.",
+      "paper": "Bypass Back-propagation: Optimization-based Structural Pruning for Large Language Models via Policy Gradient",
+      "original_name": "Argument revision"
+    },
+    {
+      "text": "Modifying existing code based on feedback from critique agents to correct visual or structural mismatches with a reference chart.",
+      "paper": "PARME: Parallel Corpora for Low-ResourcedMiddleEastern Languages",
+      "original_name": "Code revision"
+    },
+    {
+      "text": "The observable change in an agent's response from one turn to the next, reflecting updates based on peer input.",
+      "paper": "Stochastic Chameleons: Irrelevant Context Hallucinations Reveal Class-Based (Mis)Generalization inLLMs",
+      "original_name": "Answer revision"
+    },
+    {
+      "text": "Iteratively modifying an incorrect or partially verified program using feedback from a verifier to produce a fully verified version.",
+      "paper": "AlphaVerus: Bootstrapping Formally Verified Code Generation through Self-Improving Translation and Treefinement",
+      "original_name": "Program refinement"
+    },
+    {
+      "text": "The process of filtering and prioritizing a list of potential attribute matches to create a smaller, more relevant set for final evaluation.",
+      "paper": "Bootstrapping Self-Improvement of Language Model Programs for Zero-Shot Schema Matching",
+      "original_name": "Candidate refinement"
+    },
+    {
+      "text": "The observable act of revising or correcting a segment of previously generated text before continuing with new content, triggered by a pausing criterion.",
+      "paper": "Reflection-Window Decoding: Text Generation with Selective Refinement",
+      "original_name": "Refinement during generation"
+    },
+    {
+      "text": "The process by which an LLM generates improved actions for suboptimal decisions identified in RL trajectories, validated through environment simulation.",
+      "paper": "Think Twice, Act Once: A Co-Evolution Framework of LLM and RL for Large-Scale Decision Making",
+      "original_name": "Action refinement"
+    },
+    {
+      "text": "The refinement of rejected reasoning thoughts using a large model via token-level speculative decoding to ensure output quality matches that of the large model.",
+      "paper": "Accelerating Large Language Model Reasoning via Speculative Search",
+      "original_name": "Thought correction"
+    },
+    {
+      "text": "Modifying an existing code solution based on feedback to improve correctness or efficiency.",
+      "paper": "Teaching Language Models to Critique via Reinforcement Learning",
+      "original_name": "Solution revision"
+    },
+    {
+      "text": "The iterative refinement of answers to complex scientific or technical questions through self-evaluation and critique, aiming to improve accuracy over multiple steps.",
+      "paper": "Revolve: Optimizing AI Systems by Tracking Response Evolution in Textual Optimization",
+      "original_name": "Solution optimization"
+    },
+    {
+      "text": "Correcting an incorrect answer to a medical question by first identifying its inaccuracy and then providing the correct response from remaining options, simulating sequential clinical reasoning.",
+      "paper": "Evaluating LLMs Across Multi-Cognitive Levels: From Medical Knowledge Mastery to Scenario-Based Problem Solving",
+      "original_name": "Multi-step rectification"
+    },
+    {
+      "text": "An observable multi-step process where a critic model provides feedback on a solution, which a generator model then uses to produce a revised solution.",
+      "paper": "Teaching Language Models to Critique via Reinforcement Learning",
+      "original_name": "Iterative critique-revision"
+    }
+  ],
+  "definition_count": 24,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Response quality",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Mixture-of-Agents Enhances Large Language Model Capabilities",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Mixture-of-Agents Enhances Large Language Model Capabilities"
+        ],
+        "icml25": [
+          "Federated In-Context Learning: Iterative Refinement for Improved Answer Quality"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Self-reflection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Retroformer: Retrospective Large Language Agents with Policy Gradient Optimization",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Retroformer: Retrospective Large Language Agents with Policy Gradient Optimization"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Self-correction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Articulate-Anything:  Automatic Modeling of Articulated Objects via a Vision-Language Foundation Model",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Articulate-Anything:  Automatic Modeling of Articulated Objects via a Vision-Language Foundation Model"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Uncertainty awareness",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Value Residual Learning",
+      "evidence": "we reconstruct the input by including the content and uncertainty scores of documents alongside the primary answers... enabling the answer to be calibrated iteratively based on the given documents and the previously generated answers.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Value Residual Learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GPQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Revolve: Optimizing AI Systems by Tracking Response Evolution in Textual Optimization",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Revolve: Optimizing AI Systems by Tracking Response Evolution in Textual Optimization"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Revolve: Optimizing AI Systems by Tracking Response Evolution in Textual Optimization",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Revolve: Optimizing AI Systems by Tracking Response Evolution in Textual Optimization"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Schema linking",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Bootstrapping Self-Improvement of Language Model Programs for Zero-Shot Schema Matching",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Bootstrapping Self-Improvement of Language Model Programs for Zero-Shot Schema Matching"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Complex reasoning",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Think Twice, Act Once: A Co-Evolution Framework of LLM and RL for Large-Scale Decision Making",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Think Twice, Act Once: A Co-Evolution Framework of LLM and RL for Large-Scale Decision Making"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 8,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 5,
+  "characterization": "Iterative refinement is a widely studied behavior, consistently defined as a multi-step process where a model improves an initial output based on some form of feedback. The mechanism for improvement varies across papers: it can be driven by internal processes like self-evaluation and uncertainty monitoring, as in \"iterative self-calibration,\" or by external feedback. This external feedback includes execution results for code (\"self-debugging\"), explicit user instructions (\"response refinement\"), input from other models (\"iterative critique-revision\"), or feedback from a formal verifier (\"program refinement\"). The behavior is operationalized across numerous domains, most frequently in code-related tasks like \"bug fixing\" and \"solution revision,\" but also in modifying reasoning steps (\"stepwise revision\"), arguments (\"argument revision\"), and general text (\"proofreading\"). Some research identifies this behavior through explicit linguistic markers, noting that models may use phrases like \"Wait\" or \"Alternatively\" to signal a \"self-revision\" of their reasoning. The effectiveness of this behavior is measured using benchmarks such as GPQA and MMLU. It is studied in relation to code generation and self-correction, and some work posits that it is driven by constructs like uncertainty awareness.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "AlignDistil: Token-Level Language Model Alignment as Adaptive Policy Distillation",
+      "AnRe: Analogical Replay for Temporal Knowledge Graph Forecasting",
+      "Building a Long Text Privacy Policy Corpus with Multi-Class Labels",
+      "Bypass Back-propagation: Optimization-based Structural Pruning for Large Language Models via Policy Gradient",
+      "Decoding on Graphs: Faithful and Sound Reasoning on Knowledge Graphs through Generation of Well-Formed Chains",
+      "D\u00e9j\u00e0 Vu? Decoding Repeated Reading from Eye Movements",
+      "ELABORATION: A Comprehensive Benchmark on Human-LLMCompetitive Programming",
+      "ERU-KG: Efficient Reference-aligned Unsupervised Keyphrase Generation",
+      "Enhancing Spoken Discourse Modeling in Language Models Using Gestural Cues",
+      "GradOT: Training-free Gradient-preserving Offsite-tuning for Large Language Models",
+      "GrammaMT: Improving Machine Translation with Grammar-Informed In-Context Learning",
+      "Insight Over Sight: Exploring the Vision-Knowledge Conflicts in MultimodalLLMs",
+      "Locate-and-Focus: Enhancing Terminology Translation in Speech Language Models",
+      "MaXIFE: Multilingual and Cross-lingual Instruction Following Evaluation",
+      "Neural Incompatibility",
+      "Optimal Transport-Based Token Weighting scheme for Enhanced Preference Optimization",
+      "PARME: Parallel Corpora for Low-ResourcedMiddleEastern Languages",
+      "Pre3: Enabling Deterministic Pushdown Automata for Faster StructuredLLMGeneration",
+      "PsyDial: A Large-scale Long-term Conversational Dataset for Mental Health Support",
+      "RAG-Critic: Leveraging Automated Critic-Guided Agentic Workflow for Retrieval Augmented Generation",
+      "RPO: Retrieval Preference Optimization for Robust Retrieval-Augmented Generation",
+      "Read it in Two Steps: Translating Extremely Low-Resource Languages with Code-Augmented Grammar Books",
+      "Retrieval-Augmented Fine-Tuning With Preference Optimization For Visual Program Generation",
+      "Reviving Cultural Heritage: A Novel Approach for Comprehensive Historical Document Restoration",
+      "Selecting and Merging: Towards Adaptable and Scalable Named Entity Recognition with Large Language Models",
+      "Stochastic Chameleons: Irrelevant Context Hallucinations Reveal Class-Based (Mis)Generalization inLLMs",
+      "The Essence of Contextual Understanding in Theory of Mind: A Study on Question Answering with Story Characters",
+      "Value Residual Learning"
+    ],
+    "icml25": [
+      "Generalists vs. Specialists: Evaluating LLMs on Highly-Constrained Biophysical Sequence Optimization Tasks",
+      "Gravity-Bench-v1: A Benchmark on Gravitational Physics Discovery for Agents",
+      "ReVISE: Learning to Refine at Test-Time via Intrinsic Self-Verification",
+      "AlphaVerus: Bootstrapping Formally Verified Code Generation through Self-Improving Translation and Treefinement",
+      "Self-Improving Language Models for Evolutionary Program Synthesis: A Case Study on ARC-AGI",
+      "Accelerating Large Language Model Reasoning via Speculative Search",
+      "Bootstrapping Self-Improvement of Language Model Programs for Zero-Shot Schema Matching",
+      "Evaluating LLMs Across Multi-Cognitive Levels: From Medical Knowledge Mastery to Scenario-Based Problem Solving",
+      "Reflection-Window Decoding: Text Generation with Selective Refinement",
+      "Revolve: Optimizing AI Systems by Tracking Response Evolution in Textual Optimization",
+      "SPRI: Aligning Large Language Models with Context-Situated Principles",
+      "Teaching Language Models to Critique via Reinforcement Learning",
+      "Think Twice, Act Once: A Co-Evolution Framework of LLM and RL for Large-Scale Decision Making"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 28,
+    "icml25": 13
+  },
+  "conferences": [
+    "acl25",
+    "icml25"
+  ]
+}

@@ -1,0 +1,257 @@
+{
+  "canonical_name": "Time series forecasting",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, time series forecasting is consistently defined as the task of predicting future data points in a sequence based on historical observations. This behavior is operationalized and evaluated using several real-world datasets, with papers frequently citing the use of `Weather`, `ETTh1`, `ETTm1`, and `Traffic` benchmarks. The general task is further specified into several sub-types, including `long-term` and `short-term` forecasting, which differ by their prediction horizons, as well as `probabilistic forecasting`, which aims to produce a distribution over future values rather than a single point estimate. A few papers also define more specialized variants, such as `binary forecasting` for events with True/False outcomes and `degradation trend inference` for analyzing system trajectories. In the context of large language models, this task is often framed as a sequence continuation problem, where a model is prompted to \"continue the following sequence\" (Enhancing LLM Reasoning via Vision-Augmented Prompting) or \"forecast the next value\" (TEST: Text Prototype Aligned Embedding to Activate LLM's Ability for Time Series). Some papers propose that successful performance on this task is influenced by underlying constructs, with `commonsense knowledge`, `logical reasoning`, and `structural understanding` being reported as causes of forecasting ability. The task is also studied in the context of `few-shot learning`.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Time series forecasting",
+    "Binary forecasting",
+    "Time-series forecasting",
+    "Long-term forecasting",
+    "Probabilistic forecasting",
+    "Short-term forecasting",
+    "Degradation trend inference"
+  ],
+  "papers": [
+    "TEMPO: Prompt-based Generative Pre-trained Transformer for Time Series Forecasting",
+    "TEST: Text Prototype Aligned Embedding to Activate LLM's Ability for Time Series",
+    "Time-LLM: Time Series Forecasting by Reprogramming Large Language Models",
+    "Consistency Checks for Language Model Forecasters",
+    "Context-Alignment: Activating and Enhancing LLMs Capabilities in Time Series",
+    "Density estimation with LLMs: a geometric investigation of in-context learning trajectories",
+    "Filtered not Mixed: Filtering-Based Online Gating for Mixture of Large Language Models",
+    "ForecastBench: A Dynamic Benchmark of AI Forecasting Capabilities",
+    "Fourier Head: Helping Large Language Models Learn Complex Probability Distributions",
+    "Zero-shot Model-based Reinforcement Learning using Large Language Models",
+    "Zero-shot forecasting of chaotic systems",
+    "Context is Key: A Benchmark for Forecasting with Essential Textual Information",
+    "Enhancing Foundation Models for Time Series Forecasting via Wavelet-based Tokenization",
+    "FSTLLM: Spatio-Temporal LLM for Few Shot Time Series Forecasting",
+    "ITFormer: Bridging Time Series and Natural Language for Multi-Modal QA with Large-Scale Multitask Dataset",
+    "LangTime: A Language-Guided Unified Model for Time Series Forecasting with Proximal Policy Optimization",
+    "Lightweight Online Adaption for Time Series Foundation Model Forecasts",
+    "Are Language Models Actually Useful for Time Series Forecasting?",
+    "AutoTimes: Autoregressive Time Series Forecasters via Large Language Models",
+    "Enhancing LLM Reasoning via Vision-Augmented Prompting",
+    "From News to Forecast: Integrating Event Analysis in LLM-Based Time Series Forecasting with Reflection",
+    "Time-FFM: Towards LM-Empowered Federated Foundation Model for Time Series Forecasting"
+  ],
+  "paper_count": 22,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The observable task of predicting future data points in a sequence based on historical observations.",
+      "paper": "TEMPO: Prompt-based Generative Pre-trained Transformer for Time Series Forecasting",
+      "original_name": "Time series forecasting"
+    },
+    {
+      "text": "The task of predicting future values in a sequence of numerical data points based on past observations provided in context.",
+      "paper": "Density estimation with LLMs: a geometric investigation of in-context learning trajectories",
+      "original_name": "Time-series forecasting"
+    },
+    {
+      "text": "The observable task of assigning a probability between 0 and 1 to a question about a future event that has a binary (True/False) outcome.",
+      "paper": "Consistency Checks for Language Model Forecasters",
+      "original_name": "Binary forecasting"
+    },
+    {
+      "text": "Producing a distribution over future numerical values in a time series rather than a single point estimate.",
+      "paper": "Fourier Head: Helping Large Language Models Learn Complex Probability Distributions",
+      "original_name": "Probabilistic forecasting"
+    },
+    {
+      "text": "The task of predicting time series values over a long future horizon based on a historical sequence.",
+      "paper": "Context-Alignment: Activating and Enhancing LLMs Capabilities in Time Series",
+      "original_name": "Long-term forecasting"
+    },
+    {
+      "text": "The task of predicting time series values over a short future horizon based on a historical sequence.",
+      "paper": "Context-Alignment: Activating and Enhancing LLMs Capabilities in Time Series",
+      "original_name": "Short-term forecasting"
+    },
+    {
+      "text": "The task of analyzing signal variations across multiple time periods to infer the trajectory of system degradation.",
+      "paper": "ITFormer: Bridging Time Series and Natural Language for Multi-Modal QA with Large-Scale Multitask Dataset",
+      "original_name": "Degradation trend inference"
+    }
+  ],
+  "definition_count": 7,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Weather",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Time-LLM: Time Series Forecasting by Reprogramming Large Language Models",
+      "evidence": "\u201cThe datasets we evaluate on are ETTh1, ETTh2, ETTm1, ETTm2, Weather, Traffic, ECL, Solar and US Weather\u201d",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "iclr24": [
+          "Time-LLM: Time Series Forecasting by Reprogramming Large Language Models"
+        ],
+        "neurips24": [
+          "Time-FFM: Towards LM-Empowered Federated Foundation Model for Time Series Forecasting",
+          "Are Language Models Actually Useful for Time Series Forecasting?"
+        ],
+        "icml25": [
+          "LangTime: A Language-Guided Unified Model for Time Series Forecasting with Proximal Policy Optimization"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ETTh1",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Time-LLM: Time Series Forecasting by Reprogramming Large Language Models",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr24": [
+          "Time-LLM: Time Series Forecasting by Reprogramming Large Language Models"
+        ],
+        "neurips24": [
+          "Time-FFM: Towards LM-Empowered Federated Foundation Model for Time Series Forecasting"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ETTm1",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Time-LLM: Time Series Forecasting by Reprogramming Large Language Models",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr24": [
+          "Time-LLM: Time Series Forecasting by Reprogramming Large Language Models"
+        ],
+        "neurips24": [
+          "Time-FFM: Towards LM-Empowered Federated Foundation Model for Time Series Forecasting"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Time-LLM: Time Series Forecasting by Reprogramming Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Time-LLM: Time Series Forecasting by Reprogramming Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Traffic",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Time-LLM: Time Series Forecasting by Reprogramming Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Time-LLM: Time Series Forecasting by Reprogramming Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Few-shot learning",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "TEST: Text Prototype Aligned Embedding to Activate LLM's Ability for Time Series",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "TEST: Text Prototype Aligned Embedding to Activate LLM's Ability for Time Series"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Logical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Context-Alignment: Activating and Enhancing LLMs Capabilities in Time Series",
+      "evidence": "FSCA can be flexibly and repeatedly integrated into various layers of pre-trained LLMs to improve awareness of logic and structure, thereby enhancing performance.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Context-Alignment: Activating and Enhancing LLMs Capabilities in Time Series"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Structural understanding",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Context-Alignment: Activating and Enhancing LLMs Capabilities in Time Series",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Context-Alignment: Activating and Enhancing LLMs Capabilities in Time Series"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 8,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 4,
+  "characterization": "Across the provided literature, time series forecasting is consistently defined as the task of predicting future data points in a sequence based on historical observations. This behavior is operationalized and evaluated using several real-world datasets, with papers frequently citing the use of `Weather`, `ETTh1`, `ETTm1`, and `Traffic` benchmarks. The general task is further specified into several sub-types, including `long-term` and `short-term` forecasting, which differ by their prediction horizons, as well as `probabilistic forecasting`, which aims to produce a distribution over future values rather than a single point estimate. A few papers also define more specialized variants, such as `binary forecasting` for events with True/False outcomes and `degradation trend inference` for analyzing system trajectories. In the context of large language models, this task is often framed as a sequence continuation problem, where a model is prompted to \"continue the following sequence\" (Enhancing LLM Reasoning via Vision-Augmented Prompting) or \"forecast the next value\" (TEST: Text Prototype Aligned Embedding to Activate LLM's Ability for Time Series). Some papers propose that successful performance on this task is influenced by underlying constructs, with `commonsense knowledge`, `logical reasoning`, and `structural understanding` being reported as causes of forecasting ability. The task is also studied in the context of `few-shot learning`.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "TEMPO: Prompt-based Generative Pre-trained Transformer for Time Series Forecasting",
+      "TEST: Text Prototype Aligned Embedding to Activate LLM's Ability for Time Series",
+      "Time-LLM: Time Series Forecasting by Reprogramming Large Language Models"
+    ],
+    "neurips24": [
+      "Are Language Models Actually Useful for Time Series Forecasting?",
+      "AutoTimes: Autoregressive Time Series Forecasters via Large Language Models",
+      "Enhancing LLM Reasoning via Vision-Augmented Prompting",
+      "From News to Forecast: Integrating Event Analysis in LLM-Based Time Series Forecasting with Reflection",
+      "Time-FFM: Towards LM-Empowered Federated Foundation Model for Time Series Forecasting"
+    ],
+    "iclr25": [
+      "Consistency Checks for Language Model Forecasters",
+      "Context-Alignment: Activating and Enhancing LLMs Capabilities in Time Series",
+      "Density estimation with LLMs: a geometric investigation of in-context learning trajectories",
+      "Filtered not Mixed: Filtering-Based Online Gating for Mixture of Large Language Models",
+      "ForecastBench: A Dynamic Benchmark of AI Forecasting Capabilities",
+      "Fourier Head: Helping Large Language Models Learn Complex Probability Distributions",
+      "Zero-shot Model-based Reinforcement Learning using Large Language Models",
+      "Zero-shot forecasting of chaotic systems"
+    ],
+    "icml25": [
+      "Context is Key: A Benchmark for Forecasting with Essential Textual Information",
+      "Enhancing Foundation Models for Time Series Forecasting via Wavelet-based Tokenization",
+      "FSTLLM: Spatio-Temporal LLM for Few Shot Time Series Forecasting",
+      "ITFormer: Bridging Time Series and Natural Language for Multi-Modal QA with Large-Scale Multitask Dataset",
+      "LangTime: A Language-Guided Unified Model for Time Series Forecasting with Proximal Policy Optimization",
+      "Lightweight Online Adaption for Time Series Foundation Model Forecasts"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 3,
+    "neurips24": 5,
+    "iclr25": 8,
+    "icml25": 6
+  },
+  "conferences": [
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

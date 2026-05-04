@@ -1,0 +1,110 @@
+{
+  "canonical_name": "RM-Bench",
+  "type": "measurement",
+  "canonical_definition": "RM-Bench is consistently described as a benchmark for evaluating reward models. The prevailing usage across the provided literature is to assess a model's sensitivity to subtle variations in content, operationalized through the use of \"preference pairs with subtle differences.\" One common framing states that the benchmark measures a reward model's \"resistance to style biases,\" while another specifies it is designed to correlate with downstream performance on chat, math, code, and safety tasks. In practice, papers use RM-Bench to measure the constructs of `Safety` and `Faithfulness`. One study notes a specific metric called \"'Hard Acc'\" associated with its evaluation. The benchmark is also explicitly contrasted with `RewardBench`, with one paper claiming it \"achieves higher correlation against actual use cases,\" and is also related to `HumanEvalPack`.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "RM-Bench"
+  ],
+  "papers": [
+    "CanLLMWatermarks Robustly Prevent Unauthorized Knowledge Distillation?",
+    "Computation Mechanism BehindLLMPosition Generalization",
+    "Quantifying Lexical Semantic Shift via Unbalanced Optimal Transport",
+    "Learning to Plan & Reason for Evaluation with Thinking-LLM-as-a-Judge",
+    "On the Robustness of Reward Models for Language Model Alignment"
+  ],
+  "paper_count": 5,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A benchmark that evaluates reward models by assessing their sensitivity to subtle content variations and resistance to style biases.",
+      "paper": "CanLLMWatermarks Robustly Prevent Unauthorized Knowledge Distillation?",
+      "original_name": "RM-Bench"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reward-Bench",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "RM-Bench: Benchmarking Reward Models of Language Models with Subtlety and Style",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "RM-Bench: Benchmarking Reward Models of Language Models with Subtlety and Style"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "HumanEvalPack",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "RM-Bench: Benchmarking Reward Models of Language Models with Subtlety and Style",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "RM-Bench: Benchmarking Reward Models of Language Models with Subtlety and Style"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Factuality",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Quantifying Lexical Semantic Shift via Unbalanced Optimal Transport",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Quantifying Lexical Semantic Shift via Unbalanced Optimal Transport"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Robustness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Learning to Plan & Reason for Evaluation with Thinking-LLM-as-a-Judge",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Learning to Plan & Reason for Evaluation with Thinking-LLM-as-a-Judge"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 1,
+  "characterization": "RM-Bench is consistently described as a benchmark for evaluating reward models. The prevailing usage across the provided literature is to assess a model's sensitivity to subtle variations in content, operationalized through the use of \"preference pairs with subtle differences.\" One common framing states that the benchmark measures a reward model's \"resistance to style biases,\" while another specifies it is designed to correlate with downstream performance on chat, math, code, and safety tasks. In practice, papers use RM-Bench to measure the constructs of `Safety` and `Faithfulness`. One study notes a specific metric called \"'Hard Acc'\" associated with its evaluation. The benchmark is also explicitly contrasted with `RewardBench`, with one paper claiming it \"achieves higher correlation against actual use cases,\" and is also related to `HumanEvalPack`.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "CanLLMWatermarks Robustly Prevent Unauthorized Knowledge Distillation?",
+      "Computation Mechanism BehindLLMPosition Generalization",
+      "Quantifying Lexical Semantic Shift via Unbalanced Optimal Transport"
+    ],
+    "icml25": [
+      "Learning to Plan & Reason for Evaluation with Thinking-LLM-as-a-Judge",
+      "On the Robustness of Reward Models for Language Model Alignment"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 3,
+    "icml25": 2
+  },
+  "conferences": [
+    "acl25",
+    "icml25"
+  ]
+}

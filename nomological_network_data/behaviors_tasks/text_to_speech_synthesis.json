@@ -1,0 +1,173 @@
+{
+  "canonical_name": "Text-to-speech synthesis",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, text-to-speech synthesis is most commonly defined as the task of generating human-like, audible speech from written text. While the core task involves converting a text transcript into speech, some definitions also incorporate generating speech that matches specific \"acoustic style\" instructions or is \"contextually appropriate for interactive, multi-turn dialogues.\" A smaller set of papers frames the task more broadly as \"text-to-audio generation,\" which can include non-speech sounds, or more specifically as \"speech continuation,\" which focuses on extending an existing speech prompt. The behavior is frequently operationalized using LLM-based systems, which are noted for enabling \"prompt-based customization\" and producing speech with \"human-like intonation.\" To evaluate performance on this task, researchers use benchmarks such as AudioCaps, and in some cases, human raters to assess the naturalness of generated speech. Text-to-speech synthesis is studied in relation to voice cloning and multimodal reasoning. A recurring challenge discussed in the context of LLM-based systems is hallucination, which is described as a \"prominent issue\" for this behavior.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Conversational speech synthesis",
+    "Text-to-speech synthesis",
+    "Speech generation",
+    "Text-to-speech generation",
+    "Text-to-speech",
+    "Spoken dialogue generation",
+    "Text-to-audio generation",
+    "Text-to-sound generation"
+  ],
+  "papers": [
+    "AFRIDOC-MT: Document-levelMTCorpus forAfrican Languages",
+    "BSFA: Leveraging the Subspace Dichotomy to Accelerate Neural Network Training",
+    "CIKT: A Collaborative and Iterative Knowledge Tracing Framework with Large Language Models",
+    "Exploring Changes in Nation Perception with Nationality-Assigned Personas inLLMs",
+    "Improving Context Fidelity via Native Retrieval-Augmented Reasoning",
+    "InMind: EvaluatingLLMs in Capturing and Applying Individual Human Reasoning Styles",
+    "TACO: Enhancing Multimodal In-context Learning via Task Mapping-Guided Sequence Configuration",
+    "A Variational Framework for Improving Naturalness in Generative Spoken Language Models",
+    "ALMTokenizer: A Low-bitrate and Semantic-rich Audio Codec Tokenizer for Audio Language Modeling",
+    "DiTAR: Diffusion Transformer Autoregressive Modeling for Speech Generation",
+    "Generative Audio Language Modeling with Continuous-valued Tokens and Masked Next-Token Prediction",
+    "Long-Form Speech Generation with Spoken Language Models",
+    "NTPP: Generative Speech Language Modeling for Dual-Channel Spoken Dialogue via Next-Token-Pair Prediction"
+  ],
+  "paper_count": 13,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The task of generating speech that is contextually appropriate for interactive, multi-turn dialogues.",
+      "paper": "TACO: Enhancing Multimodal In-context Learning via Task Mapping-Guided Sequence Configuration",
+      "original_name": "Conversational speech synthesis"
+    },
+    {
+      "text": "The task of generating human-like speech from a given text input.",
+      "paper": "TACO: Enhancing Multimodal In-context Learning via Task Mapping-Guided Sequence Configuration",
+      "original_name": "Text-to-speech synthesis"
+    },
+    {
+      "text": "The observable task of converting textual content and style instructions into an audible speech signal.",
+      "paper": "Exploring Changes in Nation Perception with Nationality-Assigned Personas inLLMs",
+      "original_name": "Speech generation"
+    },
+    {
+      "text": "The observable task of synthesizing audible speech from a given text transcript.",
+      "paper": "Improving Context Fidelity via Native Retrieval-Augmented Reasoning",
+      "original_name": "Text-to-speech generation"
+    },
+    {
+      "text": "The task of synthesizing audible speech from written text.",
+      "paper": "AFRIDOC-MT: Document-levelMTCorpus forAfrican Languages",
+      "original_name": "Text-to-speech"
+    },
+    {
+      "text": "The task of generating a coherent and natural-sounding continuation of a given speech prompt.",
+      "paper": "A Variational Framework for Improving Naturalness in Generative Spoken Language Models",
+      "original_name": "Speech continuation"
+    },
+    {
+      "text": "Generating spoken conversational responses in a dialogue setting from prior speech context.",
+      "paper": "NTPP: Generative Speech Language Modeling for Dual-Channel Spoken Dialogue via Next-Token-Pair Prediction",
+      "original_name": "Spoken dialogue generation"
+    },
+    {
+      "text": "The task of generating a relevant audio waveform or spectrogram based on a given natural language text prompt.",
+      "paper": "Generative Audio Language Modeling with Continuous-valued Tokens and Masked Next-Token Prediction",
+      "original_name": "Text-to-audio generation"
+    },
+    {
+      "text": "Generating non-speech audio (e.g., environmental sounds) from textual descriptions using an audio language model.",
+      "paper": "ALMTokenizer: A Low-bitrate and Semantic-rich Audio Codec Tokenizer for Audio Language Modeling",
+      "original_name": "Text-to-sound generation"
+    }
+  ],
+  "definition_count": 9,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "UniAudio 1.5: Large Language Model-Driven Audio Codec is A Few-Shot Audio Task Learner",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "UniAudio 1.5: Large Language Model-Driven Audio Codec is A Few-Shot Audio Task Learner"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Voice cloning",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "DiTAR: Diffusion Transformer Autoregressive Modeling for Speech Generation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "DiTAR: Diffusion Transformer Autoregressive Modeling for Speech Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AudioCaps",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Generative Audio Language Modeling with Continuous-valued Tokens and Masked Next-Token Prediction",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Generative Audio Language Modeling with Continuous-valued Tokens and Masked Next-Token Prediction"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Improving Context Fidelity via Native Retrieval-Augmented Reasoning",
+      "evidence": "LLM-based TTS systems face challenges, with hallucinations being a prominent issue (Sahoo et al., 2024; Song et al., 2024; Neekhara et al., 2024a; Borsos et al., 2023).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Improving Context Fidelity via Native Retrieval-Augmented Reasoning"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 2,
+  "characterization": "Across the surveyed literature, text-to-speech synthesis is most commonly defined as the task of generating human-like, audible speech from written text. While the core task involves converting a text transcript into speech, some definitions also incorporate generating speech that matches specific \"acoustic style\" instructions or is \"contextually appropriate for interactive, multi-turn dialogues.\" A smaller set of papers frames the task more broadly as \"text-to-audio generation,\" which can include non-speech sounds, or more specifically as \"speech continuation,\" which focuses on extending an existing speech prompt. The behavior is frequently operationalized using LLM-based systems, which are noted for enabling \"prompt-based customization\" and producing speech with \"human-like intonation.\" To evaluate performance on this task, researchers use benchmarks such as AudioCaps, and in some cases, human raters to assess the naturalness of generated speech. Text-to-speech synthesis is studied in relation to voice cloning and multimodal reasoning. A recurring challenge discussed in the context of LLM-based systems is hallucination, which is described as a \"prominent issue\" for this behavior.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "AFRIDOC-MT: Document-levelMTCorpus forAfrican Languages",
+      "BSFA: Leveraging the Subspace Dichotomy to Accelerate Neural Network Training",
+      "CIKT: A Collaborative and Iterative Knowledge Tracing Framework with Large Language Models",
+      "Exploring Changes in Nation Perception with Nationality-Assigned Personas inLLMs",
+      "Improving Context Fidelity via Native Retrieval-Augmented Reasoning",
+      "InMind: EvaluatingLLMs in Capturing and Applying Individual Human Reasoning Styles",
+      "TACO: Enhancing Multimodal In-context Learning via Task Mapping-Guided Sequence Configuration"
+    ],
+    "icml25": [
+      "A Variational Framework for Improving Naturalness in Generative Spoken Language Models",
+      "ALMTokenizer: A Low-bitrate and Semantic-rich Audio Codec Tokenizer for Audio Language Modeling",
+      "DiTAR: Diffusion Transformer Autoregressive Modeling for Speech Generation",
+      "Generative Audio Language Modeling with Continuous-valued Tokens and Masked Next-Token Prediction",
+      "Long-Form Speech Generation with Spoken Language Models",
+      "NTPP: Generative Speech Language Modeling for Dual-Channel Spoken Dialogue via Next-Token-Pair Prediction"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 7,
+    "icml25": 6
+  },
+  "conferences": [
+    "emnlp25",
+    "icml25"
+  ]
+}

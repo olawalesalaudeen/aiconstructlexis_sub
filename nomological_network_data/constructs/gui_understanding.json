@@ -1,0 +1,168 @@
+{
+  "canonical_name": "GUI understanding",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, GUI understanding is predominantly characterized in two interrelated ways, with authors using the terms \"GUI\" and \"UI\" interchangeably. The first and broader framing defines it as the capability to comprehend the structure, content, and function of graphical user interfaces from visual inputs. The second, more specific framing, frequently referred to as \"GUI grounding,\" focuses on the ability to transform natural language instructions into executable, coordinate-based actions. Some work treats these as distinct concepts, while other definitions of understanding encompass grounding, such as the capacity to \"interpret complex mobile interface layouts and identify relevant on-screen information for action selection\" (SPA-BENCH: A COMPREHENSIVE BENCHMARK FOR SMARTPHONE AGENT EVALUATION). The more action-oriented \"grounding\" is described as converting instructions into \"actions and associated parameters (e.g., element coordinates)\" (OS-ATLAS: Foundation Action Model for Generalist GUI Agents). This construct is operationalized and measured using various benchmarks. Among the provided sources, `ScreenSpot` is a commonly mentioned instrument for assessing \"single-step GUI grounding capabilities.\" Other benchmarks used to evaluate the construct include `WebSRC` and `GUI-WORLD`. Some research reports that GUI understanding enhances downstream tasks like `Code generation`, and that pre-training for grounding is linked to improved `Out-of-distribution generalization`.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "GUI grounding",
+    "UI grounding",
+    "GUI understanding",
+    "GUI Understanding",
+    "UI understanding"
+  ],
+  "papers": [
+    "AgentStudio: A Toolkit for Building General Virtual Agents",
+    "Ferret-UI 2: Mastering Universal User Interface Understanding Across Platforms",
+    "GUI-World: A Video Benchmark and Dataset for Multimodal GUI-oriented Understanding",
+    "Grounding Multimodal Large Language Model in GUI World",
+    "Harnessing Webpage UIs for Text-Rich Visual Understanding",
+    "OS-ATLAS: Foundation Action Model for Generalist GUI Agents",
+    "OSCAR: Operating System Control via State-Aware Reasoning and Re-Planning",
+    "SPA-BENCH: A COMPREHENSIVE BENCHMARK FOR SMARTPHONE AGENT EVALUATION"
+  ],
+  "paper_count": 8,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The model's ability to transform natural language instructions into executable actions, such as coordinate-based operations, within a graphical user interface.",
+      "paper": "OS-ATLAS: Foundation Action Model for Generalist GUI Agents",
+      "original_name": "GUI grounding"
+    },
+    {
+      "text": "The ability to accurately map a natural language instruction to the specific coordinates of the corresponding graphical user interface (GUI) element on a screen.",
+      "paper": "AgentStudio: A Toolkit for Building General Virtual Agents",
+      "original_name": "UI grounding"
+    },
+    {
+      "text": "The capability to comprehend the structure, content, and function of graphical user interfaces from visual inputs.",
+      "paper": "Harnessing Webpage UIs for Text-Rich Visual Understanding",
+      "original_name": "GUI understanding"
+    },
+    {
+      "text": "The latent capability to interpret visual screen information and accurately identify interactive UI elements.",
+      "paper": "OSCAR: Operating System Control via State-Aware Reasoning and Re-Planning",
+      "original_name": "GUI Understanding"
+    },
+    {
+      "text": "The capacity to interpret complex mobile interface layouts and identify relevant on-screen information for action selection.",
+      "paper": "SPA-BENCH: A COMPREHENSIVE BENCHMARK FOR SMARTPHONE AGENT EVALUATION",
+      "original_name": "UI understanding"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ScreenSpot",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Harnessing Webpage UIs for Text-Rich Visual Understanding",
+      "evidence": "\u201cWe begin by conducting a comprehensive evaluation of the GUI grounding performance of OS-Atlas-Base. Our evaluation utilizes ScreenSpot (Cheng et al., 2024), which assesses single-step GUI grounding capabilities across multiple platforms.\u201d",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr25": [
+          "Harnessing Webpage UIs for Text-Rich Visual Understanding",
+          "OS-ATLAS: Foundation Action Model for Generalist GUI Agents"
+        ],
+        "emnlp25": [
+          "Reverse Prompt Engineering: A Zero-Shot, Genetic Algorithm Approach to Language Model Inversion"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WebSRC",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Harnessing Webpage UIs for Text-Rich Visual Understanding",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Harnessing Webpage UIs for Text-Rich Visual Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GUI-WORLD",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "GUI-World: A Video Benchmark and Dataset for Multimodal GUI-oriented Understanding",
+      "evidence": "Likewise, we also establish a comprehensive benchmark for GUI understanding, which encompasses nine mainstream MLLMs (e.g., GPT-4o (OpenAI, 2024) and Gemini-1.5-Pro (Team et al., 2023)), five keyframe selection strategies (e.g., UVD (Zhang et al., 2024d)), and six GUI scenarios, aiming to provide a thorough evaluation of the GUI-oriented understanding capabilities of MLLMs. (Section 1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "GUI-World: A Video Benchmark and Dataset for Multimodal GUI-oriented Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Code generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "GUI-World: A Video Benchmark and Dataset for Multimodal GUI-oriented Understanding",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "GUI-World: A Video Benchmark and Dataset for Multimodal GUI-oriented Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Out-of-distribution generalization",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "OS-ATLAS: Foundation Action Model for Generalist GUI Agents",
+      "evidence": "omitting the pre-training stage significantly degrades performance... These results highlight the critical importance of the data infrastructure for grounding data synthesis; with this infrastructure in place, we can easily improve OOD downstream performance simply by scaling the pre-training corpus. (Section 5.3)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "OS-ATLAS: Foundation Action Model for Generalist GUI Agents"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Action grounding",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "SPA-BENCH: A COMPREHENSIVE BENCHMARK FOR SMARTPHONE AGENT EVALUATION",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "SPA-BENCH: A COMPREHENSIVE BENCHMARK FOR SMARTPHONE AGENT EVALUATION"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 6,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 5,
+  "characterization": "Across the surveyed literature, GUI understanding is predominantly characterized in two interrelated ways, with authors using the terms \"GUI\" and \"UI\" interchangeably. The first and broader framing defines it as the capability to comprehend the structure, content, and function of graphical user interfaces from visual inputs. The second, more specific framing, frequently referred to as \"GUI grounding,\" focuses on the ability to transform natural language instructions into executable, coordinate-based actions. Some work treats these as distinct concepts, while other definitions of understanding encompass grounding, such as the capacity to \"interpret complex mobile interface layouts and identify relevant on-screen information for action selection\" (SPA-BENCH: A COMPREHENSIVE BENCHMARK FOR SMARTPHONE AGENT EVALUATION). The more action-oriented \"grounding\" is described as converting instructions into \"actions and associated parameters (e.g., element coordinates)\" (OS-ATLAS: Foundation Action Model for Generalist GUI Agents). This construct is operationalized and measured using various benchmarks. Among the provided sources, `ScreenSpot` is a commonly mentioned instrument for assessing \"single-step GUI grounding capabilities.\" Other benchmarks used to evaluate the construct include `WebSRC` and `GUI-WORLD`. Some research reports that GUI understanding enhances downstream tasks like `Code generation`, and that pre-training for grounding is linked to improved `Out-of-distribution generalization`.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "AgentStudio: A Toolkit for Building General Virtual Agents",
+      "Ferret-UI 2: Mastering Universal User Interface Understanding Across Platforms",
+      "GUI-World: A Video Benchmark and Dataset for Multimodal GUI-oriented Understanding",
+      "Grounding Multimodal Large Language Model in GUI World",
+      "Harnessing Webpage UIs for Text-Rich Visual Understanding",
+      "OS-ATLAS: Foundation Action Model for Generalist GUI Agents",
+      "OSCAR: Operating System Control via State-Aware Reasoning and Re-Planning",
+      "SPA-BENCH: A COMPREHENSIVE BENCHMARK FOR SMARTPHONE AGENT EVALUATION"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 8
+  },
+  "conferences": [
+    "iclr25"
+  ]
+}

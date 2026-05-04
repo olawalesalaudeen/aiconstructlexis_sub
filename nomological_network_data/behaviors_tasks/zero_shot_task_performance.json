@@ -1,0 +1,286 @@
+{
+  "canonical_name": "Zero-shot task performance",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, Zero-shot task performance is consistently defined as the observable ability of a model to complete language understanding, question answering, or commonsense reasoning tasks when given no in-context examples. The operationalization of this behavior appears highly standardized in the provided papers. Performance is almost universally measured using the `LLM Evaluation Harness` framework, which facilitates evaluation on a variety of downstream tasks. The primary metric reported is accuracy, which one study specifies is calculated as the \"average accuracy over five runs in each table\" (Quamba2: A Robust and Scalable Post-training Quantization Framework for Selective State Space Models). This evaluation is conducted on a suite of standardized benchmarks, with `HellaSwag`, `PIQA`, and `ARC` appearing as frequently used examples. Other datasets such as `WinoGrande`, `BoolQ`, and `MMLU` are also commonly part of the evaluation set to assess this capability.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Zero-shot task performance"
+  ],
+  "papers": [
+    "CBQ: Cross-Block Quantization for Large Language Models",
+    "Dynamic Low-Rank Sparse Adaptation for Large Language Models",
+    "Model Editing as a Robust and Denoised variant of DPO: A Case Study on Toxicity",
+    "OSTQuant: Refining Large Language Model Quantization with Orthogonal and Scaling Transformations for Better Distribution Fitting",
+    "On the Role of Attention Heads in Large Language Model Safety",
+    "SLoPe: Double-Pruned Sparse Plus Lazy Low-Rank Adapter Pretraining of LLMs",
+    "TokenFormer: Rethinking Transformer Scaling with Tokenized Model Parameters",
+    "Two Sparse Matrices are Better than One: Sparsifying Neural Networks with Double Sparse Factorization",
+    "Determining Layer-wise Sparsity for Large Language Models Through a Theoretical Perspective",
+    "GANQ: GPU-Adaptive Non-Uniform Quantization for Large Language Models",
+    "Quamba2: A Robust and Scalable Post-training Quantization Framework for Selective State Space Models",
+    "Scaling Sparse Feature Circuits For Studying In-Context Learning",
+    "SliM-LLM: Salience-Driven Mixed-Precision Quantization for Large Language Models"
+  ],
+  "paper_count": 13,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The observable performance of a model on various language understanding tasks, such as question answering and commonsense reasoning, when given no in-context examples.",
+      "paper": "CBQ: Cross-Block Quantization for Large Language Models",
+      "original_name": "Zero-shot task performance"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM Evaluation Harness",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "A Simple and Effective Pruning Approach for Large Language Models",
+      "evidence": "zero-shot tasks implemented in Language Model Evaluation Harness (18)",
+      "paper_count": 6,
+      "papers_by_conference": {
+        "iclr24": [
+          "A Simple and Effective Pruning Approach for Large Language Models",
+          "SpQR: A Sparse-Quantized Representation for Near-Lossless LLM Weight Compression"
+        ],
+        "iclr25": [
+          "Dynamic Low-Rank Sparse Adaptation for Large Language Models"
+        ],
+        "acl25": [
+          "DeepReview: ImprovingLLM-based Paper Review with Human-like Deep Thinking Process"
+        ],
+        "icml25": [
+          "Quamba2: A Robust and Scalable Post-training Quantization Framework for Selective State Space Models",
+          "GANQ: GPU-Adaptive Non-Uniform Quantization for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HellaSwag",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "SpQR: A Sparse-Quantized Representation for Near-Lossless LLM Weight Compression",
+      "evidence": "The other is reported by the accuracy metric of zero-shot language tasks (Gao et al. (2021)) on PIQA (Bisk et al. (2020a)), HellaSwag (Clark et al. (2018)), ARC (Clark et al. (2018)), Mutual (Cui et al. (2020)) and Ehics (Hendrycks et al. (2020a)). (Section 5.1)",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "iclr24": [
+          "SpQR: A Sparse-Quantized Representation for Near-Lossless LLM Weight Compression",
+          "Plug-and-Play: An Efficient Post-training Pruning Method for Large Language Models"
+        ],
+        "iclr25": [
+          "Dynamic Low-Rank Sparse Adaptation for Large Language Models",
+          "CBQ: Cross-Block Quantization for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "SpQR: A Sparse-Quantized Representation for Near-Lossless LLM Weight Compression",
+      "evidence": "The other is reported by the accuracy metric of zero-shot language tasks (Gao et al. (2021)) on PIQA (Bisk et al. (2020a)), HellaSwag (Clark et al. (2018)), ARC (Clark et al. (2018)), Mutual (Cui et al. (2020)) and Ehics (Hendrycks et al. (2020a)). (Section 5.1)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr24": [
+          "SpQR: A Sparse-Quantized Representation for Near-Lossless LLM Weight Compression"
+        ],
+        "iclr25": [
+          "CBQ: Cross-Block Quantization for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-Challenge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "SpQR: A Sparse-Quantized Representation for Near-Lossless LLM Weight Compression",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr24": [
+          "SpQR: A Sparse-Quantized Representation for Near-Lossless LLM Weight Compression",
+          "Plug-and-Play: An Efficient Post-training Pruning Method for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "SpQR: A Sparse-Quantized Representation for Near-Lossless LLM Weight Compression",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "SpQR: A Sparse-Quantized Representation for Near-Lossless LLM Weight Compression"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-Easy",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "SpQR: A Sparse-Quantized Representation for Near-Lossless LLM Weight Compression",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "SpQR: A Sparse-Quantized Representation for Near-Lossless LLM Weight Compression"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "CBQ: Cross-Block Quantization for Large Language Models",
+      "evidence": "The other is reported by the accuracy metric of zero-shot language tasks (Gao et al. (2021)) on PIQA (Bisk et al. (2020a)), HellaSwag (Clark et al. (2018)), ARC (Clark et al. (2018)), Mutual (Cui et al. (2020)) and Ehics (Hendrycks et al. (2020a)). (Section 5.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "CBQ: Cross-Block Quantization for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BoolQ",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Plug-and-Play: An Efficient Post-training Pruning Method for Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Plug-and-Play: An Efficient Post-training Pruning Method for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MNLI",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Plug-and-Play: An Efficient Post-training Pruning Method for Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Plug-and-Play: An Efficient Post-training Pruning Method for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "RTE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Plug-and-Play: An Efficient Post-training Pruning Method for Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Plug-and-Play: An Efficient Post-training Pruning Method for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "LLM Evaluation Harness",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "SliceGPT: Compress Large Language Models by Deleting Rows and Columns",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "SliceGPT: Compress Large Language Models by Deleting Rows and Columns"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "SLoPe: Double-Pruned Sparse Plus Lazy Low-Rank Adapter Pretraining of LLMs",
+      "evidence": "For a fair comparison, we evaluate the models on MMLU (23), Arc Challenge (6), and OpenBookQA (35) zero-shot tasks implemented in Language Model Evaluation Harness (18).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "SLoPe: Double-Pruned Sparse Plus Lazy Low-Rank Adapter Pretraining of LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mutual",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "CBQ: Cross-Block Quantization for Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "CBQ: Cross-Block Quantization for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ETHICS",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "CBQ: Cross-Block Quantization for Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "CBQ: Cross-Block Quantization for Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 14,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 13,
+  "characterization": "Across the surveyed literature, Zero-shot task performance is consistently defined as the observable ability of a model to complete language understanding, question answering, or commonsense reasoning tasks when given no in-context examples. The operationalization of this behavior appears highly standardized in the provided papers. Performance is almost universally measured using the `LLM Evaluation Harness` framework, which facilitates evaluation on a variety of downstream tasks. The primary metric reported is accuracy, which one study specifies is calculated as the \"average accuracy over five runs in each table\" (Quamba2: A Robust and Scalable Post-training Quantization Framework for Selective State Space Models). This evaluation is conducted on a suite of standardized benchmarks, with `HellaSwag`, `PIQA`, and `ARC` appearing as frequently used examples. Other datasets such as `WinoGrande`, `BoolQ`, and `MMLU` are also commonly part of the evaluation set to assess this capability.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "CBQ: Cross-Block Quantization for Large Language Models",
+      "Dynamic Low-Rank Sparse Adaptation for Large Language Models",
+      "Model Editing as a Robust and Denoised variant of DPO: A Case Study on Toxicity",
+      "OSTQuant: Refining Large Language Model Quantization with Orthogonal and Scaling Transformations for Better Distribution Fitting",
+      "On the Role of Attention Heads in Large Language Model Safety",
+      "SLoPe: Double-Pruned Sparse Plus Lazy Low-Rank Adapter Pretraining of LLMs",
+      "TokenFormer: Rethinking Transformer Scaling with Tokenized Model Parameters",
+      "Two Sparse Matrices are Better than One: Sparsifying Neural Networks with Double Sparse Factorization"
+    ],
+    "icml25": [
+      "Determining Layer-wise Sparsity for Large Language Models Through a Theoretical Perspective",
+      "GANQ: GPU-Adaptive Non-Uniform Quantization for Large Language Models",
+      "Quamba2: A Robust and Scalable Post-training Quantization Framework for Selective State Space Models",
+      "Scaling Sparse Feature Circuits For Studying In-Context Learning",
+      "SliM-LLM: Salience-Driven Mixed-Precision Quantization for Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 8,
+    "icml25": 5
+  },
+  "conferences": [
+    "iclr25",
+    "icml25"
+  ]
+}

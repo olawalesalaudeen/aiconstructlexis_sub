@@ -1,0 +1,1015 @@
+{
+  "canonical_name": "Knowledge forgetting",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, knowledge forgetting is most commonly characterized as the degradation of a model's performance on previously learned tasks or data after it has been updated with new information, a phenomenon frequently termed \"catastrophic forgetting.\" This degradation is often attributed to direct weight updates during adaptation, which can cause models to \"lose previously acquired knowledge\" (\"Prompt Tuning Strikes Back: Customizing Foundation Models with Low-Rank Prompt Adaptation\"). Some work distinguishes this from \"spurious forgetting,\" where performance loss stems from a \"misalignment of internal representations\" rather than a complete loss of knowledge (\"Cost-Optimal Grouped-Query Attention for Long-Context Modeling\"). A smaller body of work examines specific manifestations, such as \"text-only forgetting\" in multimodal models or \"language attrition\" after fine-tuning on a new language. The concept is also used to describe a distinct set of biases related to information presentation, including \"positional bias,\" where a model's comprehension is influenced by the location of information within its context, often struggling with content \"in the middle of inputs\" (\"SLM-Mod: Small Language Models SurpassLLMs at Content Moderation\"). This positional sensitivity is further specified as \"primacy bias\" (favoring the beginning), \"recency bias\" (favoring the end), and \"order bias\" (favoring certain answer positions). The field operationalizes this construct by measuring performance degradation on a wide array of benchmarks, including MMLU, HellaSwag, WinoGrande, SQuAD v1.1, and NaturalQA. Knowledge forgetting is studied in relation to `machine unlearning` and `overfitting`, and some papers report that it can negatively affect model `safety` and `faithfulness`.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Catastrophic forgetting",
+    "Text-only forgetting",
+    "Catastrophic Forgetting",
+    "Model forgetting",
+    "Forgetting",
+    "Factual retention",
+    "Language attrition",
+    "Knowledge forgetting",
+    "Recency bias",
+    "Spurious forgetting",
+    "Graceful forgetting",
+    "Positional Bias",
+    "Primacy bias",
+    "Ordering bias",
+    "Position bias",
+    "Primacy effect",
+    "Recency effect",
+    "Middle bias",
+    "Order bias",
+    "Spatial bias"
+  ],
+  "papers": [
+    "A Dual-PerspectiveNLGMeta-Evaluation Framework with Automatic Benchmark and Better Interpretability",
+    "AfroCS-xs: Creating a Compact, High-Quality, Human-Validated Code-Switched Dataset forAfrican Languages",
+    "Beyond Demographics: Fine-tuning Large Language Models to Predict Individuals\u2019 Subjective Text Perceptions",
+    "Can Large Language Models Detect Errors in Long Chain-of-Thought Reasoning?",
+    "ChainEdit: Propagating Ripple Effects inLLMKnowledge Editing through Logical Rule-Guided Chains",
+    "Comparison-based Active Preference Learning for Multi-dimensional Personalization",
+    "ELBA-Bench: An Efficient Learning Backdoor Attacks Benchmark for Large Language Models",
+    "Entailment-Preserving First-order Logic Representations in Natural Language Entailment",
+    "Make Imagination Clearer! Stable Diffusion-based Visual Imagination for Multimodal Machine Translation",
+    "MuSC: Improving Complex Instruction Following with Multi-granularity Self-Contrastive Training",
+    "Multilingual Arbitration: Optimizing Data Pools to Accelerate Multilingual Progress",
+    "Sheep\u2019s Skin, Wolf\u2019s Deeds: AreLLMs Ready for Metaphorical Implicit Hate Speech?",
+    "Synthesizing Post-Training Data forLLMs through Multi-Agent Simulation",
+    "Interpret and Improve In-Context Learning via the Lens of Input-Label Mappings",
+    "The Tug of War Within: Mitigating the Fairness-Privacy Conflicts in Large Language Models",
+    "2025.emnlp-main.1108.checklist",
+    "2025.emnlp-main.666.checklist",
+    "A Generative Pre-Trained Language Model for Channel Prediction in Wireless Communications Systems",
+    "Beyond Human Labels: A Multi-Linguistic Auto-Generated Benchmark for Evaluating Large Language Models on Resume Parsing",
+    "CLIP-MoE: Towards Building Mixture of Experts forCLIPwith Diversified Multiplet Upcycling",
+    "Can Large Language Models Be Good Language Teachers?",
+    "Cost-Optimal Grouped-Query Attention for Long-Context Modeling",
+    "Demystifying optimized prompts in language models",
+    "Dynamic Model-Bank Test-Time Adaptation for Automatic Speech Recognition",
+    "Evaluating Behavioral Alignment in Conflict Dialogue: A Multi-Dimensional Comparison ofLLMAgents and Humans",
+    "FUSE-EVAL",
+    "From Shortcuts to Balance: Attribution Analysis of Speech-Text Feature Utilization in Distinguishing Original from Machine-Translated Texts",
+    "Jigsaw-Puzzles: From Seeing to Understanding to Reasoning in Vision-Language Models",
+    "Let\u2019s Play Across Cultures: A Large Multilingual, Multicultural Benchmark for Assessing Language Models\u2019 Understanding of Sports",
+    "LogiCoL: Logically-Informed Contrastive Learning for Set-based Dense Retrieval",
+    "MPRF: Interpretable Stance Detection through Multi-Path Reasoning Framework",
+    "Measuring and Mitigating Media Outlet Name Bias in Large Language Models",
+    "Merge then Realign: Simple and Effective Modality-Incremental Continual Learning for MultimodalLLMs",
+    "Mixture of Languages: Improved Multilingual Encoders Through Language Grouping",
+    "NovelHopQA: Diagnosing Multi-Hop Reasoning Failures in Long Narrative Contexts",
+    "PAKTON: A Multi-Agent Framework for Question Answering in Long Legal Agreements",
+    "Personality Matters: User Traits PredictLLMPreferences in Multi-Turn Collaborative Tasks",
+    "RTQA: Recursive Thinking for Complex Temporal Knowledge Graph Question Answering with Large Language Models",
+    "SensorLLM: Aligning Large Language Models with Motion Sensors for Human Activity Recognition",
+    "Step-level Verifier-guided Hybrid Test-Time Scaling for Large Language Models",
+    "Syntax-Aware Retrieval Augmentation for Neural Symbolic Regression",
+    "Video Compression Commander: Plug-and-Play Inference Acceleration for Video Large Language Models",
+    "2025.emnlp-main.404.checklist",
+    "AIArgues Differently: Distinct Argumentative and Linguistic Patterns ofLLMs in Persuasive Contexts",
+    "CoMMIT: Coordinated Multimodal Instruction Tuning",
+    "Detecting Legal Citations inUnitedKingdom Court Judgments",
+    "Do Large Language Models Understand Word Senses?",
+    "EcoTune: Token-Efficient Multi-Fidelity Hyperparameter Optimization for Large Language Model Inference",
+    "From perception to production: how acoustic invariance facilitates articulatory learning in a self-supervised vocal imitation model",
+    "Grounding Multilingual MultimodalLLMs With Cultural Knowledge",
+    "It\u2019s All About In-Context Learning! Teaching Extremely Low-Resource Languages toLLMs",
+    "KGECalibrator: An Efficient Probability Calibration Method of Knowledge Graph Embedding Models for Trustworthy Link Prediction",
+    "MEBench: Benchmarking Large Language Models for Cross-Document Multi-Entity Question Answering",
+    "MemeReaCon: Probing Contextual Meme Understanding in Large Vision-Language Models",
+    "NESTFUL: A Benchmark for EvaluatingLLMs on Nested Sequences ofAPICalls",
+    "Not All Parameters Are Created Equal: Smart Isolation Boosts Fine-Tuning Performance",
+    "Pre-trained Models Perform the Best When Token Distributions FollowZipf\u2019s Law",
+    "Randomly Removing 50% of Dimensions in Text Embeddings has Minimal Impact on Retrieval and Classification Tasks",
+    "S",
+    "SwiftKV: Fast Prefill-Optimized Inference with Knowledge-Preserving Model Transformation",
+    "Towards Automated Error Discovery: A Study in ConversationalAI",
+    "We Politely Insist: YourLLMMust Learn thePersian Art of Taarof",
+    "WebInject: Prompt Injection Attack to Web Agents",
+    "WojoodRelations:Arabic Relation Extraction Corpus and Modeling",
+    "ALLaM: Large Language Models for Arabic and English",
+    "Adapt-$\\infty$: Scalable Continual Multimodal Instruction Tuning via Dynamic Data Selection",
+    "Agent Skill Acquisition for Large Language Models via CycleQD",
+    "Bootstrapping Language Models with DPO Implicit Rewards",
+    "CollabEdit: Towards Non-destructive Collaborative Knowledge Editing",
+    "Data Mixing Laws: Optimizing Data Mixtures by Predicting Language Modeling Performance",
+    "LOIRE: LifelOng learning on Incremental data via pre-trained language model gRowth Efficiently",
+    "LiNeS: Post-training Layer Scaling Prevents Forgetting and Enhances Model Merging",
+    "Mix-CPT: A Domain Adaptation Framework via Decoupling Knowledge Learning and Format Alignment",
+    "On the Modeling Capabilities of Large Language Models for Sequential Decision Making",
+    "Scalable Bayesian Learning with posteriors",
+    "Spurious Forgetting in Continual Learning of Language Models",
+    "TPO: Aligning Large Language Models with Multi-branch & Multi-step Preference Trees",
+    "Teaching LLMs How to Learn with Contextual Fine-Tuning",
+    "Unlocking the Power of Function Vectors for Characterizing and Mitigating Catastrophic Forgetting in Continual Instruction Tuning",
+    "Unveiling the Secret Recipe: A Guide For Supervised Fine-Tuning Small LLMs",
+    "BOND: Aligning LLMs with Best-of-N Distillation",
+    "Hierarchical Autoregressive Transformers: Combining Byte- and Word-Level Processing for Robust, Adaptable Language Models",
+    "Knowledge Entropy Decay during Language Model Pretraining Hinders New Knowledge Acquisition",
+    "Preserving Diversity in Supervised Fine-Tuning of Large Language Models",
+    "Q-Adapter: Customizing Pre-trained LLMs to New Preferences with Forgetting Mitigation",
+    "Self-MoE: Towards Compositional Large Language Models with Self-Specialized Experts",
+    "Unveiling the Magic of Code Reasoning through Hypothesis Decomposition and Amendment",
+    "VideoWebArena:  Evaluating Long Context Multimodal Agents with Video Understanding Web Tasks",
+    "Cheating Automatic LLM Benchmarks: Null Models Achieve High Win Rates",
+    "Eliminating Position Bias of Language Models: A Mechanistic Approach",
+    "Follow My Instruction and Spill the Beans: Scalable Data Extraction from Retrieval-Augmented Generation Systems",
+    "From Artificial Needles to Real Haystacks: Improving Retrieval Capabilities in LLMs by Finetuning on Synthetic Data",
+    "JudgeLM: Fine-tuned Large Language Models are Scalable Judges",
+    "Justice or Prejudice? Quantifying Biases in LLM-as-a-Judge",
+    "ReCogLab: a framework testing relational reasoning & cognitive hypotheses on LLMs",
+    "RevisEval: Improving LLM-as-a-Judge via Response-Adapted References",
+    "Revisiting In-context Learning Inference Circuit in Large Language Models",
+    "RocketEval: Efficient automated LLM evaluation via grading checklist",
+    "Scaling Stick-Breaking Attention: An Efficient Implementation and In-depth Study",
+    "Understanding and Mitigating Bottlenecks of State Space Models through the Lens of Recency and Over-smoothing",
+    "Visual Haystacks: A Vision-Centric Needle-In-A-Haystack Benchmark",
+    "Aligning with Logic: Measuring, Evaluating and Improving Logical Preference Consistency in Large Language Models",
+    "Investigating Non-Transitivity in LLM-as-a-Judge",
+    "On the Emergence of Position Bias in Transformers",
+    "On-the-Fly Adaptive Distillation of Transformer to Dual-State Linear Attention for Long-Context LLM Serving",
+    "ParallelComp: Parallel Long-Context Compressor for Length Extrapolation",
+    "Tuning LLM Judge Design Decisions for 1/1000 of the Cost",
+    "Adaptive Prompting: Ad-hoc Prompt Composition for Social Bias Detection",
+    "BPO: Towards Balanced Preference Optimization between Knowledge Breadth and Depth in Alignment",
+    "Iterative Self-TuningLLMs for Enhanced Jailbreaking Capabilities",
+    "Learning to Solve Domain-Specific Calculation Problems with Knowledge-Intensive Programs Generator",
+    "One Unified Model for Diverse Tasks: Emotion Cause Analysis via Self-Promote Cognitive Structure Modeling",
+    "Rationale-Guided Retrieval Augmented Generation for Medical Question Answering",
+    "Soft Prompting for Unlearning in Large Language Models",
+    "AnaScore: Understanding Semantic Parallelism in Proportional Analogies",
+    "SLM-Mod: Small Language Models SurpassLLMs at Content Moderation",
+    "UnifyingAITutor Evaluation: An Evaluation Taxonomy for Pedagogical Ability Assessment ofLLM-PoweredAITutors",
+    "Vision-Language Models Can Self-Improve Reasoning via Reflection",
+    "BackdoorAlign: Mitigating Fine-tuning based Jailbreak Attack with Backdoor Enhanced Safety Alignment",
+    "CoIN: A Benchmark of Continual Instruction Tuning for Multimodel Large Language Models",
+    "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+    "CultureLLM: Incorporating Cultural Differences into Large Language Models",
+    "D-CPT Law: Domain-specific Continual Pre-Training Scaling Law for Large Language Models",
+    "DoFIT: Domain-aware Federated Instruction Tuning with Alleviated Catastrophic Forgetting",
+    "FouRA: Fourier Low-Rank Adaptation",
+    "LLMs Can Evolve Continually on Modality for $\\mathbb{X}$-Modal Reasoning",
+    "Micro-Bench: A Microscopy Benchmark for Vision-Language Understanding",
+    "OccamLLM: Fast and Exact Language Model Arithmetic in a Single Step",
+    "Prompt Tuning Strikes Back: Customizing Foundation Models with Low-Rank Prompt Adaptation",
+    "Reasons and Solutions for the Decline in Model Performance after Editing",
+    "SaulLM-54B & SaulLM-141B: Scaling Up Domain Adaptation for the Legal Domain",
+    "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+    "TAIA: Large Language Models are Out-of-Distribution Data Learners",
+    "Text-space Graph Foundation Models: Comprehensive Benchmarks and New Insights",
+    "Unveiling Encoder-Free Vision-Language Models",
+    "Vaccine: Perturbation-aware Alignment for Large Language Models against Harmful Fine-tuning Attack",
+    "Voila-A: Aligning Vision-Language Models with User's Gaze Attention",
+    "Wings: Learning Multimodal LLMs without Text-only Forgetting",
+    "Yo'LLaVA: Your Personalized Language and Vision Assistant",
+    "Exploring the Role of Large Language Models in Prompt Encoding for Diffusion Models",
+    "Order-Independence Without Fine Tuning"
+  ],
+  "paper_count": 141,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The tendency of direct weight updates to cause a model to lose previously acquired knowledge when adapting to new tasks.",
+      "paper": "Prompt Tuning Strikes Back: Customizing Foundation Models with Low-Rank Prompt Adaptation",
+      "original_name": "Catastrophic forgetting"
+    },
+    {
+      "text": "A phenomenon where a Multimodal Large Language Model's performance on text-only tasks degrades significantly after being fine-tuned on multimodal instructions.",
+      "paper": "Wings: Learning Multimodal LLMs without Text-only Forgetting",
+      "original_name": "Text-only forgetting"
+    },
+    {
+      "text": "The latent risk of the model losing knowledge or capabilities from the initial policy during continual fine-tuning.",
+      "paper": "Bootstrapping Language Models with DPO Implicit Rewards",
+      "original_name": "Catastrophic Forgetting"
+    },
+    {
+      "text": "The latent tendency of a model to lose previously modified or learned knowledge after subsequent updates, despite successful initial editing.",
+      "paper": "Sheep\u2019s Skin, Wolf\u2019s Deeds: AreLLMs Ready for Metaphorical Implicit Hate Speech?",
+      "original_name": "Model forgetting"
+    },
+    {
+      "text": "The degradation of a model's performance on previously learned data or tasks after it has been updated with new information.",
+      "paper": "Towards Style Alignment in Cross-Cultural Translation",
+      "original_name": "Forgetting"
+    },
+    {
+      "text": "The ability of an agent to locate and retrieve specific, instruction-relevant pieces of information from within a video to complete a task, even if the information is incidental to the video's main focus.",
+      "paper": "VideoWebArena:  Evaluating Long Context Multimodal Agents with Video Understanding Web Tasks",
+      "original_name": "Factual retention"
+    },
+    {
+      "text": "The ability of a model to preserve its performance on previously learned tasks and languages after being further trained on new data.",
+      "paper": "Hierarchical Autoregressive Transformers: Combining Byte- and Word-Level Processing for Robust, Adaptable Language Models",
+      "original_name": "Knowledge retention"
+    },
+    {
+      "text": "The degradation of a model's ability to generate definitions in languages not included in fine-tuning, despite prior competence in those languages.",
+      "paper": "Jigsaw-Puzzles: From Seeing to Understanding to Reasoning in Vision-Language Models",
+      "original_name": "Language attrition"
+    },
+    {
+      "text": "The degradation of a model's previously acquired knowledge and capabilities after being fine-tuned on a new task or dataset.",
+      "paper": "NovelHopQA: Diagnosing Multi-Hop Reasoning Failures in Long Narrative Contexts",
+      "original_name": "Knowledge forgetting"
+    },
+    {
+      "text": "The tendency of a model, particularly its routing mechanism in a Mixture-of-Experts architecture, to preferentially use its most recently added components or knowledge while neglecting older ones.",
+      "paper": "SensorLLM: Aligning Large Language Models with Motion Sensors for Human Activity Recognition",
+      "original_name": "Recency bias"
+    },
+    {
+      "text": "A phenomenon where a model's performance on a previously learned task degrades after training on a new task, not due to a complete loss of knowledge but due to a misalignment of internal representations.",
+      "paper": "Cost-Optimal Grouped-Query Attention for Long-Context Modeling",
+      "original_name": "Spurious forgetting"
+    },
+    {
+      "text": "The ability to enhance learning on a new task by selectively discarding irrelevant or outdated knowledge.",
+      "paper": "Merge then Realign: Simple and Effective Modality-Incremental Continual Learning for MultimodalLLMs",
+      "original_name": "Graceful forgetting"
+    },
+    {
+      "text": "An intrinsic property of decoder-only models where the ability to comprehend and represent information degrades for tokens appearing later in a sequence, due to the causal attention mechanism.",
+      "paper": "Exploring the Role of Large Language Models in Prompt Encoding for Diffusion Models",
+      "original_name": "Positional bias"
+    },
+    {
+      "text": "A form of positional bias where a model is more accurate at retrieving information located at the beginning of the input context.",
+      "paper": "From Artificial Needles to Real Haystacks: Improving Retrieval Capabilities in LLMs by Finetuning on Synthetic Data",
+      "original_name": "Primacy bias"
+    },
+    {
+      "text": "A systematic error where evaluation outcomes depend on the order of presentation rather than content quality.",
+      "paper": "RevisEval: Improving LLM-as-a-Judge via Response-Adapted References",
+      "original_name": "Positional Bias"
+    },
+    {
+      "text": "A tendency for performance to vary depending on the presentation order of premises or statements.",
+      "paper": "ReCogLab: a framework testing relational reasoning & cognitive hypotheses on LLMs",
+      "original_name": "Ordering bias"
+    },
+    {
+      "text": "A model's latent tendency to give disproportionate weight to information based on its position within the context window, such as favoring content at the beginning or end.",
+      "paper": "Follow My Instruction and Spill the Beans: Scalable Data Extraction from Retrieval-Augmented Generation Systems",
+      "original_name": "Position bias"
+    },
+    {
+      "text": "The latent tendency for a model to give greater weight to tokens presented at the beginning of a sequence, influencing later outputs due to early positional salience.",
+      "paper": "Vision-Language Models Can Self-Improve Reasoning via Reflection",
+      "original_name": "Primacy effect"
+    },
+    {
+      "text": "The latent tendency for a model to give greater weight to recently presented tokens when generating subsequent outputs, analogous to human short-term memory recall patterns.",
+      "paper": "Vision-Language Models Can Self-Improve Reasoning via Reflection",
+      "original_name": "Recency effect"
+    },
+    {
+      "text": "The latent tendency of the model to focus disproportionately on a subset of tokens located in the middle of the input sequence, forming a non-uniform attention pattern distinct from sink or recency effects.",
+      "paper": "ParallelComp: Parallel Long-Context Compressor for Length Extrapolation",
+      "original_name": "Middle bias"
+    },
+    {
+      "text": "The tendency of a model to favor certain answer positions (e.g., A, B, C, D) regardless of content, indicating a vulnerability to the presentation order of options rather than genuine comprehension.",
+      "paper": "MemeReaCon: Probing Contextual Meme Understanding in Large Vision-Language Models",
+      "original_name": "Order bias"
+    },
+    {
+      "text": "The tendency of models to systematically favor predictions in certain geographic regions\u2014particularly high-density or well-represented urban centers\u2014over others, reflecting uneven learning or data distribution.",
+      "paper": "Not All Parameters Are Created Equal: Smart Isolation Boosts Fine-Tuning Performance",
+      "original_name": "Spatial bias"
+    },
+    {
+      "text": "The tendency of a reward model or judge to systematically prefer longer responses, irrespective of their quality.",
+      "paper": "CoMMIT: Coordinated Multimodal Instruction Tuning",
+      "original_name": "Length bias"
+    }
+  ],
+  "definition_count": 23,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Selection bias",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Large Language Models Are Not Robust Multiple Choice Selectors",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr24": [
+          "Large Language Models Are Not Robust Multiple Choice Selectors"
+        ],
+        "emnlp25": [
+          "NESTFUL: A Benchmark for EvaluatingLLMs on Nested Sequences ofAPICalls"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Robustness",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Understanding and Mitigating Bottlenecks of State Space Models through the Lens of Recency and Over-smoothing",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Understanding and Mitigating Bottlenecks of State Space Models through the Lens of Recency and Over-smoothing",
+          "Eliminating Position Bias of Language Models: A Mechanistic Approach"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multiple-choice question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Order-Independence Without Fine Tuning",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "Order-Independence Without Fine Tuning"
+        ],
+        "acl25": [
+          "Interpret and Improve In-Context Learning via the Lens of Input-Label Mappings"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Q-Adapter: Customizing Pre-trained LLMs to New Preferences with Forgetting Mitigation",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Q-Adapter: Customizing Pre-trained LLMs to New Preferences with Forgetting Mitigation"
+        ],
+        "acl25": [
+          "Interpret and Improve In-Context Learning via the Lens of Input-Label Mappings"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Information retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Eliminating Position Bias of Language Models: A Mechanistic Approach",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Eliminating Position Bias of Language Models: A Mechanistic Approach",
+          "VideoWebArena:  Evaluating Long Context Multimodal Agents with Video Understanding Web Tasks"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PoSum-Bench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "PAKTON: A Multi-Agent Framework for Question Answering in Long Legal Agreements",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "emnlp25": [
+          "PAKTON: A Multi-Agent Framework for Question Answering in Long Legal Agreements",
+          "2025.emnlp-main.404.checklist"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Pairwise comparison",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "RevisEval: Improving LLM-as-a-Judge via Response-Adapted References",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "RevisEval: Improving LLM-as-a-Judge via Response-Adapted References"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Positional bias",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "On the Emergence of Position Bias in Transformers",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "On the Emergence of Position Bias in Transformers"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Task alignment",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Spurious Forgetting in Continual Learning of Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Spurious Forgetting in Continual Learning of Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Catastrophic forgetting",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Spurious Forgetting in Continual Learning of Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Spurious Forgetting in Continual Learning of Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reliability",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Eliminating Position Bias of Language Models: A Mechanistic Approach",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Eliminating Position Bias of Language Models: A Mechanistic Approach"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Evaluation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Eliminating Position Bias of Language Models: A Mechanistic Approach",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Eliminating Position Bias of Language Models: A Mechanistic Approach"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual perception",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "VideoWebArena:  Evaluating Long Context Multimodal Agents with Video Understanding Web Tasks",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "VideoWebArena:  Evaluating Long Context Multimodal Agents with Video Understanding Web Tasks"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Audio perception",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "VideoWebArena:  Evaluating Long Context Multimodal Agents with Video Understanding Web Tasks",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "VideoWebArena:  Evaluating Long Context Multimodal Agents with Video Understanding Web Tasks"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Temporal reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "VideoWebArena:  Evaluating Long Context Multimodal Agents with Video Understanding Web Tasks",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "VideoWebArena:  Evaluating Long Context Multimodal Agents with Video Understanding Web Tasks"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HellaSwag",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "RaSA: Rank-Sharing Low-Rank Adaptation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "RaSA: Rank-Sharing Low-Rank Adaptation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "RaSA: Rank-Sharing Low-Rank Adaptation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "RaSA: Rank-Sharing Low-Rank Adaptation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-Challenge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "RaSA: Rank-Sharing Low-Rank Adaptation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "RaSA: Rank-Sharing Low-Rank Adaptation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Privacy",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Follow My Instruction and Spill the Beans: Scalable Data Extraction from Retrieval-Augmented Generation Systems",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Follow My Instruction and Spill the Beans: Scalable Data Extraction from Retrieval-Augmented Generation Systems"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Biography",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Spurious Forgetting in Continual Learning of Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Spurious Forgetting in Continual Learning of Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Information retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Understanding and Mitigating Bottlenecks of State Space Models through the Lens of Recency and Over-smoothing",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Understanding and Mitigating Bottlenecks of State Space Models through the Lens of Recency and Over-smoothing"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Utility preservation",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Communication Makes Perfect: Persuasion Dataset Construction via Multi-LLMCommunication",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Communication Makes Perfect: Persuasion Dataset Construction via Multi-LLMCommunication"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Machine unlearning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Communication Makes Perfect: Persuasion Dataset Construction via Multi-LLMCommunication",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Communication Makes Perfect: Persuasion Dataset Construction via Multi-LLMCommunication"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "SLM-Mod: Small Language Models SurpassLLMs at Content Moderation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "SLM-Mod: Small Language Models SurpassLLMs at Content Moderation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "correlates",
+      "paper": "SLM-Mod: Small Language Models SurpassLLMs at Content Moderation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "SLM-Mod: Small Language Models SurpassLLMs at Content Moderation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Knowledge recall",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Vision-Language Models Can Self-Improve Reasoning via Reflection",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Vision-Language Models Can Self-Improve Reasoning via Reflection"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Preference consistency",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Investigating Non-Transitivity in LLM-as-a-Judge",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Investigating Non-Transitivity in LLM-as-a-Judge"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Parameter sensitivity",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Overtrained Language Models Are Harder to Fine-Tune",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Overtrained Language Models Are Harder to Fine-Tune"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Overfitting",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Overtrained Language Models Are Harder to Fine-Tune",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Overtrained Language Models Are Harder to Fine-Tune"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Overfitting",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Understanding Overadaptation in Supervised Fine-Tuning: The Role of Ensemble Methods",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Understanding Overadaptation in Supervised Fine-Tuning: The Role of Ensemble Methods"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Attention sink",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "ParallelComp: Parallel Long-Context Compressor for Length Extrapolation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "ParallelComp: Parallel Long-Context Compressor for Length Extrapolation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Catastrophic forgetting",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Scaling Laws for Forgetting during Finetuning with Pretraining Data Injection",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Scaling Laws for Forgetting during Finetuning with Pretraining Data Injection"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Cognitive bias",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "ParallelComp: Parallel Long-Context Compressor for Length Extrapolation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "ParallelComp: Parallel Long-Context Compressor for Length Extrapolation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Conversational summarization",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "2025.emnlp-main.404.checklist",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "2025.emnlp-main.404.checklist"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multimodal understanding",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Cost-Optimal Grouped-Query Attention for Long-Context Modeling",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Cost-Optimal Grouped-Query Attention for Long-Context Modeling"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Task interference",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Merge then Realign: Simple and Effective Modality-Incremental Continual Learning for MultimodalLLMs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Merge then Realign: Simple and Effective Modality-Incremental Continual Learning for MultimodalLLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Long-context processing",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "MEBench: Benchmarking Large Language Models for Cross-Document Multi-Entity Question Answering",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "MEBench: Benchmarking Large Language Models for Cross-Document Multi-Entity Question Answering"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Word sense disambiguation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "MicroEdit: Neuron-level Knowledge Disentanglement and Localization in Lifelong Model Editing",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "MicroEdit: Neuron-level Knowledge Disentanglement and Localization in Lifelong Model Editing"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 38,
+  "incoming_relationship_count": 13,
+  "outgoing_relationship_count": 25,
+  "characterization": "Across the surveyed literature, knowledge forgetting is most commonly characterized as the degradation of a model's performance on previously learned tasks or data after it has been updated with new information, a phenomenon frequently termed \"catastrophic forgetting.\" This degradation is often attributed to direct weight updates during adaptation, which can cause models to \"lose previously acquired knowledge\" (\"Prompt Tuning Strikes Back: Customizing Foundation Models with Low-Rank Prompt Adaptation\"). Some work distinguishes this from \"spurious forgetting,\" where performance loss stems from a \"misalignment of internal representations\" rather than a complete loss of knowledge (\"Cost-Optimal Grouped-Query Attention for Long-Context Modeling\"). A smaller body of work examines specific manifestations, such as \"text-only forgetting\" in multimodal models or \"language attrition\" after fine-tuning on a new language. The concept is also used to describe a distinct set of biases related to information presentation, including \"positional bias,\" where a model's comprehension is influenced by the location of information within its context, often struggling with content \"in the middle of inputs\" (\"SLM-Mod: Small Language Models SurpassLLMs at Content Moderation\"). This positional sensitivity is further specified as \"primacy bias\" (favoring the beginning), \"recency bias\" (favoring the end), and \"order bias\" (favoring certain answer positions). The field operationalizes this construct by measuring performance degradation on a wide array of benchmarks, including MMLU, HellaSwag, WinoGrande, SQuAD v1.1, and NaturalQA. Knowledge forgetting is studied in relation to `machine unlearning` and `overfitting`, and some papers report that it can negatively affect model `safety` and `faithfulness`.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "BackdoorAlign: Mitigating Fine-tuning based Jailbreak Attack with Backdoor Enhanced Safety Alignment",
+      "CoIN: A Benchmark of Continual Instruction Tuning for Multimodel Large Language Models",
+      "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+      "CultureLLM: Incorporating Cultural Differences into Large Language Models",
+      "D-CPT Law: Domain-specific Continual Pre-Training Scaling Law for Large Language Models",
+      "DoFIT: Domain-aware Federated Instruction Tuning with Alleviated Catastrophic Forgetting",
+      "FouRA: Fourier Low-Rank Adaptation",
+      "LLMs Can Evolve Continually on Modality for $\\mathbb{X}$-Modal Reasoning",
+      "Micro-Bench: A Microscopy Benchmark for Vision-Language Understanding",
+      "OccamLLM: Fast and Exact Language Model Arithmetic in a Single Step",
+      "Prompt Tuning Strikes Back: Customizing Foundation Models with Low-Rank Prompt Adaptation",
+      "Reasons and Solutions for the Decline in Model Performance after Editing",
+      "SaulLM-54B & SaulLM-141B: Scaling Up Domain Adaptation for the Legal Domain",
+      "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "TAIA: Large Language Models are Out-of-Distribution Data Learners",
+      "Text-space Graph Foundation Models: Comprehensive Benchmarks and New Insights",
+      "Unveiling Encoder-Free Vision-Language Models",
+      "Vaccine: Perturbation-aware Alignment for Large Language Models against Harmful Fine-tuning Attack",
+      "Voila-A: Aligning Vision-Language Models with User's Gaze Attention",
+      "Wings: Learning Multimodal LLMs without Text-only Forgetting",
+      "Yo'LLaVA: Your Personalized Language and Vision Assistant",
+      "Exploring the Role of Large Language Models in Prompt Encoding for Diffusion Models",
+      "Order-Independence Without Fine Tuning"
+    ],
+    "iclr25": [
+      "ALLaM: Large Language Models for Arabic and English",
+      "Adapt-$\\infty$: Scalable Continual Multimodal Instruction Tuning via Dynamic Data Selection",
+      "Agent Skill Acquisition for Large Language Models via CycleQD",
+      "Bootstrapping Language Models with DPO Implicit Rewards",
+      "CollabEdit: Towards Non-destructive Collaborative Knowledge Editing",
+      "Data Mixing Laws: Optimizing Data Mixtures by Predicting Language Modeling Performance",
+      "LOIRE: LifelOng learning on Incremental data via pre-trained language model gRowth Efficiently",
+      "LiNeS: Post-training Layer Scaling Prevents Forgetting and Enhances Model Merging",
+      "Mix-CPT: A Domain Adaptation Framework via Decoupling Knowledge Learning and Format Alignment",
+      "On the Modeling Capabilities of Large Language Models for Sequential Decision Making",
+      "Scalable Bayesian Learning with posteriors",
+      "Spurious Forgetting in Continual Learning of Language Models",
+      "TPO: Aligning Large Language Models with Multi-branch & Multi-step Preference Trees",
+      "Teaching LLMs How to Learn with Contextual Fine-Tuning",
+      "Unlocking the Power of Function Vectors for Characterizing and Mitigating Catastrophic Forgetting in Continual Instruction Tuning",
+      "Unveiling the Secret Recipe: A Guide For Supervised Fine-Tuning Small LLMs",
+      "BOND: Aligning LLMs with Best-of-N Distillation",
+      "Hierarchical Autoregressive Transformers: Combining Byte- and Word-Level Processing for Robust, Adaptable Language Models",
+      "Knowledge Entropy Decay during Language Model Pretraining Hinders New Knowledge Acquisition",
+      "Preserving Diversity in Supervised Fine-Tuning of Large Language Models",
+      "Q-Adapter: Customizing Pre-trained LLMs to New Preferences with Forgetting Mitigation",
+      "Self-MoE: Towards Compositional Large Language Models with Self-Specialized Experts",
+      "Unveiling the Magic of Code Reasoning through Hypothesis Decomposition and Amendment",
+      "VideoWebArena:  Evaluating Long Context Multimodal Agents with Video Understanding Web Tasks",
+      "Cheating Automatic LLM Benchmarks: Null Models Achieve High Win Rates",
+      "Eliminating Position Bias of Language Models: A Mechanistic Approach",
+      "Follow My Instruction and Spill the Beans: Scalable Data Extraction from Retrieval-Augmented Generation Systems",
+      "From Artificial Needles to Real Haystacks: Improving Retrieval Capabilities in LLMs by Finetuning on Synthetic Data",
+      "JudgeLM: Fine-tuned Large Language Models are Scalable Judges",
+      "Justice or Prejudice? Quantifying Biases in LLM-as-a-Judge",
+      "ReCogLab: a framework testing relational reasoning & cognitive hypotheses on LLMs",
+      "RevisEval: Improving LLM-as-a-Judge via Response-Adapted References",
+      "Revisiting In-context Learning Inference Circuit in Large Language Models",
+      "RocketEval: Efficient automated LLM evaluation via grading checklist",
+      "Scaling Stick-Breaking Attention: An Efficient Implementation and In-depth Study",
+      "Understanding and Mitigating Bottlenecks of State Space Models through the Lens of Recency and Over-smoothing",
+      "Visual Haystacks: A Vision-Centric Needle-In-A-Haystack Benchmark"
+    ],
+    "naacl25": [
+      "Adaptive Prompting: Ad-hoc Prompt Composition for Social Bias Detection",
+      "BPO: Towards Balanced Preference Optimization between Knowledge Breadth and Depth in Alignment",
+      "Iterative Self-TuningLLMs for Enhanced Jailbreaking Capabilities",
+      "Learning to Solve Domain-Specific Calculation Problems with Knowledge-Intensive Programs Generator",
+      "One Unified Model for Diverse Tasks: Emotion Cause Analysis via Self-Promote Cognitive Structure Modeling",
+      "Rationale-Guided Retrieval Augmented Generation for Medical Question Answering",
+      "Soft Prompting for Unlearning in Large Language Models",
+      "AnaScore: Understanding Semantic Parallelism in Proportional Analogies",
+      "SLM-Mod: Small Language Models SurpassLLMs at Content Moderation",
+      "UnifyingAITutor Evaluation: An Evaluation Taxonomy for Pedagogical Ability Assessment ofLLM-PoweredAITutors",
+      "Vision-Language Models Can Self-Improve Reasoning via Reflection"
+    ],
+    "acl25": [
+      "A Dual-PerspectiveNLGMeta-Evaluation Framework with Automatic Benchmark and Better Interpretability",
+      "AfroCS-xs: Creating a Compact, High-Quality, Human-Validated Code-Switched Dataset forAfrican Languages",
+      "Beyond Demographics: Fine-tuning Large Language Models to Predict Individuals\u2019 Subjective Text Perceptions",
+      "Can Large Language Models Detect Errors in Long Chain-of-Thought Reasoning?",
+      "ChainEdit: Propagating Ripple Effects inLLMKnowledge Editing through Logical Rule-Guided Chains",
+      "Comparison-based Active Preference Learning for Multi-dimensional Personalization",
+      "ELBA-Bench: An Efficient Learning Backdoor Attacks Benchmark for Large Language Models",
+      "Entailment-Preserving First-order Logic Representations in Natural Language Entailment",
+      "Make Imagination Clearer! Stable Diffusion-based Visual Imagination for Multimodal Machine Translation",
+      "MuSC: Improving Complex Instruction Following with Multi-granularity Self-Contrastive Training",
+      "Multilingual Arbitration: Optimizing Data Pools to Accelerate Multilingual Progress",
+      "Sheep\u2019s Skin, Wolf\u2019s Deeds: AreLLMs Ready for Metaphorical Implicit Hate Speech?",
+      "Synthesizing Post-Training Data forLLMs through Multi-Agent Simulation",
+      "Interpret and Improve In-Context Learning via the Lens of Input-Label Mappings",
+      "The Tug of War Within: Mitigating the Fairness-Privacy Conflicts in Large Language Models"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.1108.checklist",
+      "2025.emnlp-main.666.checklist",
+      "A Generative Pre-Trained Language Model for Channel Prediction in Wireless Communications Systems",
+      "Beyond Human Labels: A Multi-Linguistic Auto-Generated Benchmark for Evaluating Large Language Models on Resume Parsing",
+      "CLIP-MoE: Towards Building Mixture of Experts forCLIPwith Diversified Multiplet Upcycling",
+      "Can Large Language Models Be Good Language Teachers?",
+      "Cost-Optimal Grouped-Query Attention for Long-Context Modeling",
+      "Demystifying optimized prompts in language models",
+      "Dynamic Model-Bank Test-Time Adaptation for Automatic Speech Recognition",
+      "Evaluating Behavioral Alignment in Conflict Dialogue: A Multi-Dimensional Comparison ofLLMAgents and Humans",
+      "FUSE-EVAL",
+      "From Shortcuts to Balance: Attribution Analysis of Speech-Text Feature Utilization in Distinguishing Original from Machine-Translated Texts",
+      "Jigsaw-Puzzles: From Seeing to Understanding to Reasoning in Vision-Language Models",
+      "Let\u2019s Play Across Cultures: A Large Multilingual, Multicultural Benchmark for Assessing Language Models\u2019 Understanding of Sports",
+      "LogiCoL: Logically-Informed Contrastive Learning for Set-based Dense Retrieval",
+      "MPRF: Interpretable Stance Detection through Multi-Path Reasoning Framework",
+      "Measuring and Mitigating Media Outlet Name Bias in Large Language Models",
+      "Merge then Realign: Simple and Effective Modality-Incremental Continual Learning for MultimodalLLMs",
+      "Mixture of Languages: Improved Multilingual Encoders Through Language Grouping",
+      "NovelHopQA: Diagnosing Multi-Hop Reasoning Failures in Long Narrative Contexts",
+      "PAKTON: A Multi-Agent Framework for Question Answering in Long Legal Agreements",
+      "Personality Matters: User Traits PredictLLMPreferences in Multi-Turn Collaborative Tasks",
+      "RTQA: Recursive Thinking for Complex Temporal Knowledge Graph Question Answering with Large Language Models",
+      "SensorLLM: Aligning Large Language Models with Motion Sensors for Human Activity Recognition",
+      "Step-level Verifier-guided Hybrid Test-Time Scaling for Large Language Models",
+      "Syntax-Aware Retrieval Augmentation for Neural Symbolic Regression",
+      "Video Compression Commander: Plug-and-Play Inference Acceleration for Video Large Language Models",
+      "2025.emnlp-main.404.checklist",
+      "AIArgues Differently: Distinct Argumentative and Linguistic Patterns ofLLMs in Persuasive Contexts",
+      "CoMMIT: Coordinated Multimodal Instruction Tuning",
+      "Detecting Legal Citations inUnitedKingdom Court Judgments",
+      "Do Large Language Models Understand Word Senses?",
+      "EcoTune: Token-Efficient Multi-Fidelity Hyperparameter Optimization for Large Language Model Inference",
+      "From perception to production: how acoustic invariance facilitates articulatory learning in a self-supervised vocal imitation model",
+      "Grounding Multilingual MultimodalLLMs With Cultural Knowledge",
+      "It\u2019s All About In-Context Learning! Teaching Extremely Low-Resource Languages toLLMs",
+      "KGECalibrator: An Efficient Probability Calibration Method of Knowledge Graph Embedding Models for Trustworthy Link Prediction",
+      "MEBench: Benchmarking Large Language Models for Cross-Document Multi-Entity Question Answering",
+      "MemeReaCon: Probing Contextual Meme Understanding in Large Vision-Language Models",
+      "NESTFUL: A Benchmark for EvaluatingLLMs on Nested Sequences ofAPICalls",
+      "Not All Parameters Are Created Equal: Smart Isolation Boosts Fine-Tuning Performance",
+      "Pre-trained Models Perform the Best When Token Distributions FollowZipf\u2019s Law",
+      "Randomly Removing 50% of Dimensions in Text Embeddings has Minimal Impact on Retrieval and Classification Tasks",
+      "S",
+      "SwiftKV: Fast Prefill-Optimized Inference with Knowledge-Preserving Model Transformation",
+      "Towards Automated Error Discovery: A Study in ConversationalAI",
+      "We Politely Insist: YourLLMMust Learn thePersian Art of Taarof",
+      "WebInject: Prompt Injection Attack to Web Agents",
+      "WojoodRelations:Arabic Relation Extraction Corpus and Modeling"
+    ],
+    "icml25": [
+      "Aligning with Logic: Measuring, Evaluating and Improving Logical Preference Consistency in Large Language Models",
+      "Investigating Non-Transitivity in LLM-as-a-Judge",
+      "On the Emergence of Position Bias in Transformers",
+      "On-the-Fly Adaptive Distillation of Transformer to Dual-State Linear Attention for Long-Context LLM Serving",
+      "ParallelComp: Parallel Long-Context Compressor for Length Extrapolation",
+      "Tuning LLM Judge Design Decisions for 1/1000 of the Cost"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 23,
+    "iclr25": 37,
+    "naacl25": 11,
+    "acl25": 15,
+    "emnlp25": 49,
+    "icml25": 6
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

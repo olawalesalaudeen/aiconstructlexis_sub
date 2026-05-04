@@ -1,0 +1,121 @@
+{
+  "canonical_name": "Action generation",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, action generation is most commonly defined as the behavior of producing a structured output that specifies an action to be taken, such as 'click' or 'type text', along with its parameters. This behavior is operationalized in diverse settings, including GUI interaction where the output is a structured object, navigation tasks where an agent generates its next control action, and embodied robotics where models produce sequences of low-level actions autoregressively. A frequent focus is on generating not just single actions but sequences of *executable* actions required to complete a task, particularly in web environments. The distinction between valid and invalid actions is noted, with one paper highlighting that models may generate non-executable outputs like \"attempting to retrieve objects from a closed container\" ('CiteEval: Principle-Driven Citation Evaluation for Source Attribution'). A more specialized framing, 'action-to-reaction generation', is described in one paper as the task of generating human reaction motions in response to observed actions without text prompts. Regarding evaluation, the quality of generated actions is sometimes measured using `Human evaluation` via user studies. Furthermore, one study suggests that the action generation stage can be manipulated to cause `Harmful content generation` in the form of privacy leakage.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Action generation",
+    "Action-to-reaction generation",
+    "Executable action generation"
+  ],
+  "papers": [
+    "CiteEval: Principle-Driven Citation Evaluation for Source Attribution",
+    "LETS-C: Leveraging Text Embedding for Time Series Classification",
+    "FinRAGBench-V: A Benchmark for MultimodalRAGwith Visual Citation in the Financial Domain",
+    "UNCERTAINTY-LINE: Length-Invariant Estimation of Uncertainty for Large Language Models",
+    "BALROG: Benchmarking Agentic LLM and VLM Reasoning On Games",
+    "Discriminator-Guided Embodied Planning for LLM Agent",
+    "EIA: ENVIRONMENTAL INJECTION ATTACK ON GENERALIST WEB AGENTS FOR PRIVACY LEAKAGE",
+    "Grounding Multimodal Large Language Model in GUI World",
+    "On the Modeling Capabilities of Large Language Models for Sequential Decision Making",
+    "Think Then React: Towards Unconstrained Action-to-Reaction Motion Generation",
+    "AdvAgent: Controllable Blackbox Red-teaming on Web Agents",
+    "UP-VLA: A Unified Understanding and Prediction Model for Embodied Agent"
+  ],
+  "paper_count": 12,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Producing a structured output that specifies an action to be taken (e.g., 'click', 'type text') and its associated parameters, such as position or value.",
+      "paper": "Grounding Multimodal Large Language Model in GUI World",
+      "original_name": "Action generation"
+    },
+    {
+      "text": "The observable task of generating a sequence of human reaction motions in response to an input sequence of human action motions without explicit text prompts.",
+      "paper": "Think Then React: Towards Unconstrained Action-to-Reaction Motion Generation",
+      "original_name": "Action-to-reaction generation"
+    },
+    {
+      "text": "Producing actions that are valid and can be successfully executed within the environment, as opposed to invalid or nonsensical actions.",
+      "paper": "CiteEval: Principle-Driven Citation Evaluation for Source Attribution",
+      "original_name": "Executable action generation"
+    },
+    {
+      "text": "Producing a sequence of executable actions to complete a website task from the current state and user request.",
+      "paper": "AdvAgent: Controllable Blackbox Red-teaming on Web Agents",
+      "original_name": "Action sequence generation"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Think Then React: Towards Unconstrained Action-to-Reaction Motion Generation",
+      "evidence": "To further evaluate our model qualitatively, we conduct a user study on TTR vs. the latest SOTA method ReGenNet, and the results are shown in Figure 7 (Section 4.7).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Think Then React: Towards Unconstrained Action-to-Reaction Motion Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Harmful content generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "EIA: ENVIRONMENTAL INJECTION ATTACK ON GENERALIST WEB AGENTS FOR PRIVACY LEAKAGE",
+      "evidence": "\"we propose the approach to relax the opacity constraint by setting \u03b1 to a low, non-zero value to affect the action generation stage, termed as Relaxed-EIA\"",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "EIA: ENVIRONMENTAL INJECTION ATTACK ON GENERALIST WEB AGENTS FOR PRIVACY LEAKAGE"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 2,
+  "characterization": "Across the surveyed literature, action generation is most commonly defined as the behavior of producing a structured output that specifies an action to be taken, such as 'click' or 'type text', along with its parameters. This behavior is operationalized in diverse settings, including GUI interaction where the output is a structured object, navigation tasks where an agent generates its next control action, and embodied robotics where models produce sequences of low-level actions autoregressively. A frequent focus is on generating not just single actions but sequences of *executable* actions required to complete a task, particularly in web environments. The distinction between valid and invalid actions is noted, with one paper highlighting that models may generate non-executable outputs like \"attempting to retrieve objects from a closed container\" ('CiteEval: Principle-Driven Citation Evaluation for Source Attribution'). A more specialized framing, 'action-to-reaction generation', is described in one paper as the task of generating human reaction motions in response to observed actions without text prompts. Regarding evaluation, the quality of generated actions is sometimes measured using `Human evaluation` via user studies. Furthermore, one study suggests that the action generation stage can be manipulated to cause `Harmful content generation` in the form of privacy leakage.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "BALROG: Benchmarking Agentic LLM and VLM Reasoning On Games",
+      "Discriminator-Guided Embodied Planning for LLM Agent",
+      "EIA: ENVIRONMENTAL INJECTION ATTACK ON GENERALIST WEB AGENTS FOR PRIVACY LEAKAGE",
+      "Grounding Multimodal Large Language Model in GUI World",
+      "On the Modeling Capabilities of Large Language Models for Sequential Decision Making",
+      "Think Then React: Towards Unconstrained Action-to-Reaction Motion Generation"
+    ],
+    "acl25": [
+      "CiteEval: Principle-Driven Citation Evaluation for Source Attribution",
+      "LETS-C: Leveraging Text Embedding for Time Series Classification"
+    ],
+    "icml25": [
+      "AdvAgent: Controllable Blackbox Red-teaming on Web Agents",
+      "UP-VLA: A Unified Understanding and Prediction Model for Embodied Agent"
+    ],
+    "emnlp25": [
+      "FinRAGBench-V: A Benchmark for MultimodalRAGwith Visual Citation in the Financial Domain",
+      "UNCERTAINTY-LINE: Length-Invariant Estimation of Uncertainty for Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 6,
+    "acl25": 2,
+    "icml25": 2,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25"
+  ]
+}

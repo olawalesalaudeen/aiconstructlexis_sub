@@ -1,0 +1,194 @@
+{
+  "canonical_name": "Backtracking",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, backtracking is predominantly characterized as a behavior where a model or agent returns to a previous state to correct an error or explore an alternative path. The most common framing presents it as an autonomous error-correction mechanism during complex reasoning, where a model \u201cexplores multiple paths (branching) and reverts to earlier points if a particular path proves wrong\u201d (Demystifying Long Chain-of-Thought Reasoning). A more specialized line of work defines backtracking as a safety-oriented behavior, operationalized by the model emitting a special `[RESET]` token to \u201cundo\u201d and recover from its own unsafe generation. A few papers also describe it as an interactive feature, termed \u201cstate rollback\u201d or \u201cdialog backtracking,\u201d which allows a human user to revert the system to a prior state for correction. Backtracking is consistently studied in the context of advanced reasoning and is frequently associated with Chain-of-thought and Long Chain-of-Thought reasoning, with some papers suggesting these reasoning strategies enable or encourage the behavior. The function of this behavior is often to mitigate error propagation; one paper notes that its absence means \u201can early misstep... cannot be corrected, resulting in deteriorated performance.\u201d The behavior is also studied alongside Planning and Non-monotonic reasoning and is reported to contribute to model Safety.",
+  "expert_reviewed": false,
+  "expert_removed": true,
+  "expert_removed_reason": "method/technique \u2014 not a construct/measurement/behavior of LLM ability",
+  "names": [
+    "Backtracking",
+    "Branching and backtracking",
+    "State traceback",
+    "State rollback"
+  ],
+  "papers": [
+    "ChartMind: A Comprehensive Benchmark for Complex Real-world Multimodal Chart Question Answering",
+    "FinRAGBench-V: A Benchmark for MultimodalRAGwith Visual Citation in the Financial Domain",
+    "FlashAdventure: A Benchmark forGUIAgents Solving Full Story Arcs in Diverse Adventure Games",
+    "From Automation to Autonomy: A Survey on Large Language Models in Scientific Discovery",
+    "Identifying Unlearned Data inLLMs via Membership Inference Attacks",
+    "Token-level Proximal Policy Optimization for Query Generation",
+    "Backtracking Improves Generation Safety",
+    "ExACT: Teaching AI Agents to Explore with Reflective-MCTS and Exploratory Learning",
+    "LLMs Can Plan Only If We Tell Them",
+    "SWE-Search: Enhancing Software Agents with Monte Carlo Tree Search and Iterative Refinement",
+    "Can Transformers Reason Logically? A Study in SAT Solving",
+    "Demystifying Long Chain-of-Thought Reasoning",
+    "MetaAgent: Automatically Constructing Multi-Agent Systems Based on Finite State Machines",
+    "Position: We Need An Algorithmic Understanding of Generative AI"
+  ],
+  "paper_count": 14,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The observable behavior of a model first generating a partial unsafe response, then emitting a special [RESET] token, and finally re-generating a safe response from scratch.",
+      "paper": "Backtracking Improves Generation Safety",
+      "original_name": "Backtracking"
+    },
+    {
+      "text": "An observable reasoning pattern where the model explores multiple solution paths (branching) and returns to an earlier point upon identifying a flawed path (backtracking).",
+      "paper": "Demystifying Long Chain-of-Thought Reasoning",
+      "original_name": "Branching and backtracking"
+    },
+    {
+      "text": "Returning to a previous step or state to correct earlier mistakes or refine intermediate outputs.",
+      "paper": "MetaAgent: Automatically Constructing Multi-Agent Systems Based on Finite State Machines",
+      "original_name": "State traceback"
+    },
+    {
+      "text": "The observable behavior of reverting the agent system to a prior execution state upon user intervention, allowing resumption from that point without full restart.",
+      "paper": "ChartMind: A Comprehensive Benchmark for Complex Real-world Multimodal Chart Question Answering",
+      "original_name": "State rollback"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Chain-of-thought reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Can Transformers Reason Logically? A Study in SAT Solving",
+      "evidence": "The Transformer model simulates logical assumption, deduction, and backtracking by generating new tokens and ultimately outputs a SAT/UNSAT label as the result of the 3-SAT decision problem.",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "icml25": [
+          "Can Transformers Reason Logically? A Study in SAT Solving",
+          "Demystifying Long Chain-of-Thought Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Chain-of-thought reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Demystifying Long Chain-of-Thought Reasoning",
+      "evidence": "The backtrack operation involves multiple actions, as the policy specifies how many steps to backtrack.",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "icml25": [
+          "Demystifying Long Chain-of-Thought Reasoning",
+          "Can Transformers Reason Logically? A Study in SAT Solving"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Planning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "LLMs Can Plan Only If We Tell Them",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "LLMs Can Plan Only If We Tell Them"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Non-monotonic reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "ZebraLogic: On the Scaling Limits of LLMs for Logical Reasoning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "ZebraLogic: On the Scaling Limits of LLMs for Logical Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Error propagation",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "End-to-End Learnable Psychiatric Scale Guided Risky Post Screening for Depression Detection on Social Media",
+      "evidence": "The performance drop highlights the importance of backtracking in mitigating error propagation, where an early misstep without backtracking cannot be corrected, resulting in deteriorated performance. (Section 5.3)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "End-to-End Learnable Psychiatric Scale Guided Risky Post Screening for Depression Detection on Social Media"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Interpretability and explainability",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "End-to-End Learnable Psychiatric Scale Guided Risky Post Screening for Depression Detection on Social Media",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "End-to-End Learnable Psychiatric Scale Guided Risky Post Screening for Depression Detection on Social Media"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Robustness",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "End-to-End Learnable Psychiatric Scale Guided Risky Post Screening for Depression Detection on Social Media",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "End-to-End Learnable Psychiatric Scale Guided Risky Post Screening for Depression Detection on Social Media"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 7,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 6,
+  "characterization": "Across the provided literature, backtracking is predominantly characterized as a behavior where a model or agent returns to a previous state to correct an error or explore an alternative path. The most common framing presents it as an autonomous error-correction mechanism during complex reasoning, where a model \u201cexplores multiple paths (branching) and reverts to earlier points if a particular path proves wrong\u201d (Demystifying Long Chain-of-Thought Reasoning). A more specialized line of work defines backtracking as a safety-oriented behavior, operationalized by the model emitting a special `[RESET]` token to \u201cundo\u201d and recover from its own unsafe generation. A few papers also describe it as an interactive feature, termed \u201cstate rollback\u201d or \u201cdialog backtracking,\u201d which allows a human user to revert the system to a prior state for correction. Backtracking is consistently studied in the context of advanced reasoning and is frequently associated with Chain-of-thought and Long Chain-of-Thought reasoning, with some papers suggesting these reasoning strategies enable or encourage the behavior. The function of this behavior is often to mitigate error propagation; one paper notes that its absence means \u201can early misstep... cannot be corrected, resulting in deteriorated performance.\u201d The behavior is also studied alongside Planning and Non-monotonic reasoning and is reported to contribute to model Safety.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Backtracking Improves Generation Safety",
+      "ExACT: Teaching AI Agents to Explore with Reflective-MCTS and Exploratory Learning",
+      "LLMs Can Plan Only If We Tell Them",
+      "SWE-Search: Enhancing Software Agents with Monte Carlo Tree Search and Iterative Refinement"
+    ],
+    "icml25": [
+      "Can Transformers Reason Logically? A Study in SAT Solving",
+      "Demystifying Long Chain-of-Thought Reasoning",
+      "MetaAgent: Automatically Constructing Multi-Agent Systems Based on Finite State Machines",
+      "Position: We Need An Algorithmic Understanding of Generative AI"
+    ],
+    "emnlp25": [
+      "ChartMind: A Comprehensive Benchmark for Complex Real-world Multimodal Chart Question Answering",
+      "FinRAGBench-V: A Benchmark for MultimodalRAGwith Visual Citation in the Financial Domain",
+      "FlashAdventure: A Benchmark forGUIAgents Solving Full Story Arcs in Diverse Adventure Games",
+      "From Automation to Autonomy: A Survey on Large Language Models in Scientific Discovery",
+      "Identifying Unlearned Data inLLMs via Membership Inference Attacks",
+      "Token-level Proximal Policy Optimization for Query Generation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 4,
+    "icml25": 4,
+    "emnlp25": 6
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "icml25"
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "canonical_name": "WildGuard",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, the term 'WildGuard' refers to two distinct but related measurement instruments: a dataset of prompts and a classifier-based evaluation procedure, with the latter being the more prevalent usage. In its most common framing, WildGuard is a classifier or harmfulness detection model used as an external safety evaluator. It is operationalized to automatically judge model outputs, either by classifying them as compliance or refusal to a harmful query or by assigning a \"harmfulness probability\" to a response, as one paper notes. A smaller set of papers refers to 'WildGuardTest,' an evaluation dataset containing prompts designed to assess model safety and \"moderation robustness\" ('SafetyAnalyst...'). The composition of this dataset is described with some variation; one source states it contains 863 harmful persuasion prompts and 862 safe prompts, while another characterizes it as having \"960 vanilla and 796 adversarial prompts\" ('SafetyAnalyst...'). Both the dataset and the classifier are used to evaluate model safety, and the instrument is cited as a measure for the construct of 'Content moderation'.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "WildGuardTest",
+    "WildGuard"
+  ],
+  "papers": [
+    "Correct-Detect: Balancing Performance and Ambiguity Through the Lens of Coreference Resolution inLLMs",
+    "EQA-RM: A Generative Embodied Reward Model with Test-time Scaling",
+    "EstimatingLLMConsistency: A User Baseline vs Surrogate Metrics",
+    "Less is More: The Effectiveness of Compact Typological Language Representations",
+    "MuseScorer: Idea Originality Scoring At Scale",
+    "Beyond Mere Token Analysis: A Hypergraph Metric Space Framework for Defending Against Socially Engineered LLM Attacks",
+    "BingoGuard: LLM Content Moderation Tools with Risk Levels",
+    "SORRY-Bench: Systematically Evaluating Large Language Model Safety Refusal",
+    "Surgical, Cheap, and Flexible: Mitigating False Refusal in Language Models via Single Vector Ablation",
+    "Emoji Attack: Enhancing Jailbreak Attacks Against Judge LLM Detection",
+    "SafetyAnalyst: Interpretable, Transparent, and Steerable Safety Moderation for AI Behavior",
+    "Test-Time Preference Optimization: On-the-Fly Alignment via Iterative Textual Feedback"
+  ],
+  "paper_count": 12,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "An evaluation dataset consisting of 1725 prompts, with 863 harmful persuasion prompts and 862 safe prompts.",
+      "paper": "Beyond Mere Token Analysis: A Hypergraph Metric Space Framework for Defending Against Socially Engineered LLM Attacks",
+      "original_name": "WildGuardTest"
+    },
+    {
+      "text": "WildGuard, a classifier-based evaluation procedure used to judge whether model responses fully comply with harmful test queries.",
+      "paper": "Surgical, Cheap, and Flexible: Mitigating False Refusal in Language Models via Single Vector Ablation",
+      "original_name": "WildGuard"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Content moderation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Uncovering Bias in Large Vision-Language Models at Scale with Counterfactuals",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Uncovering Bias in Large Vision-Language Models at Scale with Counterfactuals"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, the term 'WildGuard' refers to two distinct but related measurement instruments: a dataset of prompts and a classifier-based evaluation procedure, with the latter being the more prevalent usage. In its most common framing, WildGuard is a classifier or harmfulness detection model used as an external safety evaluator. It is operationalized to automatically judge model outputs, either by classifying them as compliance or refusal to a harmful query or by assigning a \"harmfulness probability\" to a response, as one paper notes. A smaller set of papers refers to 'WildGuardTest,' an evaluation dataset containing prompts designed to assess model safety and \"moderation robustness\" ('SafetyAnalyst...'). The composition of this dataset is described with some variation; one source states it contains 863 harmful persuasion prompts and 862 safe prompts, while another characterizes it as having \"960 vanilla and 796 adversarial prompts\" ('SafetyAnalyst...'). Both the dataset and the classifier are used to evaluate model safety, and the instrument is cited as a measure for the construct of 'Content moderation'.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Beyond Mere Token Analysis: A Hypergraph Metric Space Framework for Defending Against Socially Engineered LLM Attacks",
+      "BingoGuard: LLM Content Moderation Tools with Risk Levels",
+      "SORRY-Bench: Systematically Evaluating Large Language Model Safety Refusal",
+      "Surgical, Cheap, and Flexible: Mitigating False Refusal in Language Models via Single Vector Ablation"
+    ],
+    "icml25": [
+      "Emoji Attack: Enhancing Jailbreak Attacks Against Judge LLM Detection",
+      "SafetyAnalyst: Interpretable, Transparent, and Steerable Safety Moderation for AI Behavior",
+      "Test-Time Preference Optimization: On-the-Fly Alignment via Iterative Textual Feedback"
+    ],
+    "emnlp25": [
+      "Correct-Detect: Balancing Performance and Ambiguity Through the Lens of Coreference Resolution inLLMs",
+      "EQA-RM: A Generative Embodied Reward Model with Test-time Scaling",
+      "EstimatingLLMConsistency: A User Baseline vs Surrogate Metrics",
+      "Less is More: The Effectiveness of Compact Typological Language Representations",
+      "MuseScorer: Idea Originality Scoring At Scale"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 4,
+    "icml25": 3,
+    "emnlp25": 5
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "icml25"
+  ]
+}

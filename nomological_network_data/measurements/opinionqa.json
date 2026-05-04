@@ -1,0 +1,94 @@
+{
+  "canonical_name": "OpinionQA",
+  "type": "measurement",
+  "canonical_definition": "OpinionQA is consistently described across the provided literature as a benchmark or dataset derived from public opinion surveys, specifically from Pew Research\u2019s American Trends Panel. Its most prevalent application is to evaluate the \"distributional alignment\" of large language models by comparing the distribution of their responses to those of US citizens. In addition to this primary framing, the dataset is also used to measure constructs like \"Representativeness\" and \"Personalization\". A smaller line of work defines its purpose as measuring the \"steerability of LLMs for specific users or social groups\" or evaluating \"LLM simulation of public opinion.\" The benchmark is structured as a multiple-choice question-answering dataset containing responses from the US population on topics such as science, politics, and health. As an operational detail, one study notes using a specific split of the data consisting of \"10.5k and 15.8k training and test QA pairs across 525 users and 15 topics.\"",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "OpinionQA"
+  ],
+  "papers": [
+    "Adaptive Elicitation of Latent Information Using Natural Language",
+    "Uncertainty Quantification for LLM-Based Survey Simulations",
+    "FollowIR: Evaluating and Teaching Information Retrieval Models to Follow Instructions",
+    "Understanding Figurative Meaning through Explainable Visual Entailment"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A survey-based benchmark using PEW public opinion questions and demographic-group response distributions to evaluate distributional alignment.",
+      "paper": "FollowIR: Evaluating and Teaching Information Retrieval Models to Follow Instructions",
+      "original_name": "OpinionQA"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Representativeness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "PersonalLLM: Tailoring LLMs to Individual Preferences",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "PersonalLLM: Tailoring LLMs to Individual Preferences"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Distribution alignment",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Understanding Figurative Meaning through Explainable Visual Entailment",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Understanding Figurative Meaning through Explainable Visual Entailment"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Personalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "FollowIR: Evaluating and Teaching Information Retrieval Models to Follow Instructions",
+      "evidence": "For OpinionQA, we use a subsampled split released by Hwang et al. (2023), which consists of 10.5k and 15.8k training and test QA pairs across 525 users and 15 topics, respectively. For GlobalOpinionQA, since the dataset originally included the answer distribution by multiple respondents in the same country, we converted it to have a single answer by selecting the choice with the highest probability. It results in 920 training and 1,317 test QA pairs across 46 countries. We consider each country as a specific user. (Section 4.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "FollowIR: Evaluating and Teaching Information Retrieval Models to Follow Instructions"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization": "OpinionQA is consistently described across the provided literature as a benchmark or dataset derived from public opinion surveys, specifically from Pew Research\u2019s American Trends Panel. Its most prevalent application is to evaluate the \"distributional alignment\" of large language models by comparing the distribution of their responses to those of US citizens. In addition to this primary framing, the dataset is also used to measure constructs like \"Representativeness\" and \"Personalization\". A smaller line of work defines its purpose as measuring the \"steerability of LLMs for specific users or social groups\" or evaluating \"LLM simulation of public opinion.\" The benchmark is structured as a multiple-choice question-answering dataset containing responses from the US population on topics such as science, politics, and health. As an operational detail, one study notes using a specific split of the data consisting of \"10.5k and 15.8k training and test QA pairs across 525 users and 15 topics.\"",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "naacl25": [
+      "FollowIR: Evaluating and Teaching Information Retrieval Models to Follow Instructions",
+      "Understanding Figurative Meaning through Explainable Visual Entailment"
+    ],
+    "icml25": [
+      "Adaptive Elicitation of Latent Information Using Natural Language",
+      "Uncertainty Quantification for LLM-Based Survey Simulations"
+    ]
+  },
+  "paper_count_by_conference": {
+    "naacl25": 2,
+    "icml25": 2
+  },
+  "conferences": [
+    "icml25",
+    "naacl25"
+  ]
+}

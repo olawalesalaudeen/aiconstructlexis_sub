@@ -1,0 +1,175 @@
+{
+  "canonical_name": "AlpacaEval 2",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, AlpacaEval 2 is consistently characterized as a benchmark for evaluating instruction-following capabilities in language models, with some papers specifying it as a \"general\" or \"open-ended\" instruction-following benchmark. It is described as containing 805 questions or instructions, which are sourced from user interactions or other datasets. The evaluation procedure common to all descriptions involves using a GPT-based judge, such as GPT-4, to perform an automatic pairwise comparison between a model's output and a baseline response. The primary metrics reported from this evaluation are the \"win rate\" and the \"length-controlled win rate (LC)\". The most frequently stated application of AlpacaEval 2 is to measure `Instruction following`, and it is also described as one of the \"widely accepted alignment benchmarks\" used to assess `Human preference alignment`. The provided data also shows it is used to evaluate a broader set of constructs including `Commonsense knowledge`, `Conversational ability`, and `Faithfulness`.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "AlpacaEval 2"
+  ],
+  "papers": [
+    "DeCAP: Context-Adaptive Prompt Generation for Debiasing Zero-shot Question Answering in Large Language Models",
+    "Harnessing and Evaluating the Intrinsic Extrapolation Ability of Large Language Models for Vehicle Trajectory Prediction",
+    "On the Impact of Fine-Tuning on Chain-of-Thought Reasoning",
+    "Tricking Retrievers with Influential Tokens: An Efficient Black-Box Corpus Poisoning Attack"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "General instruction-following benchmark using 805 questions evaluated via length-controlled win rate with GPT-based judges.",
+      "paper": "DeCAP: Context-Adaptive Prompt Generation for Debiasing Zero-shot Question Answering in Large Language Models",
+      "original_name": "AlpacaEval 2"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction following",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "evidence": "\u201cAlpacaEval 2 (Li et al., 2023), Arena-Hard (Li et al., 2024b) and WildBench v2 (Lin et al., 2024) are general instruction-following benchmarks.\u201d",
+      "paper_count": 11,
+      "papers_by_conference": {
+        "neurips24": [
+          "SimPO: Simple Preference Optimization with a Reference-Free Reward"
+        ],
+        "iclr25": [
+          "SimPER: A Minimalist Approach to Preference  Alignment without Hyperparameters",
+          "Bridging and Modeling Correlations in Pairwise Data for Direct Preference Optimization",
+          "Weak-to-Strong Preference Optimization: Stealing Reward from Weak Aligned Model"
+        ],
+        "naacl25": [
+          "On the Impact of Fine-Tuning on Chain-of-Thought Reasoning",
+          "DeCAP: Context-Adaptive Prompt Generation for Debiasing Zero-shot Question Answering in Large Language Models",
+          "Tricking Retrievers with Influential Tokens: An Efficient Black-Box Corpus Poisoning Attack"
+        ],
+        "icml25": [
+          "Larger or Smaller Reward Margins to Select Preferences for LLM Alignment?",
+          "Test-Time Preference Optimization: On-the-Fly Alignment via Iterative Textual Feedback",
+          "AlphaDPO: Adaptive Reward Margin for Direct Preference Optimization",
+          "TGDPO: Harnessing Token-Level Reward Guidance for Enhancing Direct Preference Optimization"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Human preference alignment",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Earlier Tokens Contribute More: Learning Direct Preference Optimization From Temporal Decay Perspective",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr25": [
+          "Earlier Tokens Contribute More: Learning Direct Preference Optimization From Temporal Decay Perspective",
+          "Bootstrapping Language Models with DPO Implicit Rewards"
+        ],
+        "icml25": [
+          "ConfPO: Exploiting Policy Model Confidence for Critical Token Selection in Preference Optimization"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Conversational ability",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "SimPO: Simple Preference Optimization with a Reference-Free Reward"
+        ],
+        "icml25": [
+          "DPO Meets PPO: Reinforced Token Optimization for RLHF"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Alignment",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "DeCAP: Context-Adaptive Prompt Generation for Debiasing Zero-shot Question Answering in Large Language Models",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "naacl25": [
+          "DeCAP: Context-Adaptive Prompt Generation for Debiasing Zero-shot Question Answering in Large Language Models"
+        ],
+        "icml25": [
+          "Principled Data Selection for Alignment: The Hidden Risks of Difficult Examples"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense knowledge",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Harnessing and Evaluating the Intrinsic Extrapolation Ability of Large Language Models for Vehicle Trajectory Prediction",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "naacl25": [
+          "Harnessing and Evaluating the Intrinsic Extrapolation Ability of Large Language Models for Vehicle Trajectory Prediction"
+        ],
+        "icml25": [
+          "Thinking LLMs: General Instruction Following with Thought Generation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Open-ended instruction following",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "NovelHopQA: Diagnosing Multi-Hop Reasoning Failures in Long Narrative Contexts",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "NovelHopQA: Diagnosing Multi-Hop Reasoning Failures in Long Narrative Contexts"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Data Whisperer: Efficient Data Selection for Task-SpecificLLMFine-Tuning via Few-Shot In-Context Learning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Data Whisperer: Efficient Data Selection for Task-SpecificLLMFine-Tuning via Few-Shot In-Context Learning"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 7,
+  "incoming_relationship_count": 7,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, AlpacaEval 2 is consistently characterized as a benchmark for evaluating instruction-following capabilities in language models, with some papers specifying it as a \"general\" or \"open-ended\" instruction-following benchmark. It is described as containing 805 questions or instructions, which are sourced from user interactions or other datasets. The evaluation procedure common to all descriptions involves using a GPT-based judge, such as GPT-4, to perform an automatic pairwise comparison between a model's output and a baseline response. The primary metrics reported from this evaluation are the \"win rate\" and the \"length-controlled win rate (LC)\". The most frequently stated application of AlpacaEval 2 is to measure `Instruction following`, and it is also described as one of the \"widely accepted alignment benchmarks\" used to assess `Human preference alignment`. The provided data also shows it is used to evaluate a broader set of constructs including `Commonsense knowledge`, `Conversational ability`, and `Faithfulness`.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "naacl25": [
+      "DeCAP: Context-Adaptive Prompt Generation for Debiasing Zero-shot Question Answering in Large Language Models",
+      "Harnessing and Evaluating the Intrinsic Extrapolation Ability of Large Language Models for Vehicle Trajectory Prediction",
+      "On the Impact of Fine-Tuning on Chain-of-Thought Reasoning",
+      "Tricking Retrievers with Influential Tokens: An Efficient Black-Box Corpus Poisoning Attack"
+    ]
+  },
+  "paper_count_by_conference": {
+    "naacl25": 4
+  },
+  "conferences": [
+    "naacl25"
+  ]
+}

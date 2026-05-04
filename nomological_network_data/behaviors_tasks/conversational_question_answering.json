@@ -1,0 +1,129 @@
+{
+  "canonical_name": "Conversational question answering",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, conversational question answering is predominantly described as a multi-turn behavior where a model generates responses to a user's questions within a dialogue. A recurring theme is the necessity of using the conversation history as context, with one paper noting, \"Answering the current question needs to consider the context of conversation histories\" (A Multi-Agent Framework with Automated Decision Rule Optimization for Cross-Domain Misinformation Detection). While terms like \"Multi-turn QA\" and \"Dialogue question answering\" are also used, the core concept of a multi-round interaction is consistent. Some definitions add specific constraints, framing the questions as being \"not simple factoids\" and grounded in particular contexts like scientific documents, videos, or stories. A less common framing describes it as an \"interactive\" process involving \"a series of questions and clarifications to arrive at an answer for a complex initial query\" (IQA-EVAL: Automatic Evaluation of Human-Model Interactive Question Answering). This behavior is operationalized and measured using several benchmarks. The most frequently cited instrument is CoQA, which is used to evaluate \"dialogue-based question-answering systems.\" Other benchmarks mentioned for assessing this behavior include ChatRAG-Bench for RAG-based tasks and MT-Bench for challenging multi-turn questions.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Conversational question answering",
+    "Interactive question answering",
+    "Multi-turn QA",
+    "Multi-turn question answering",
+    "Dialogue question answering"
+  ],
+  "papers": [
+    "A Multi-Agent Framework with Automated Decision Rule Optimization for Cross-Domain Misinformation Detection",
+    "AdaSteer: Your AlignedLLMis Inherently an Adaptive Jailbreak Defender",
+    "EnhancingChinese Offensive Language Detection with Homophonic Perturbation",
+    "Backtracking Improves Generation Safety",
+    "Beyond Next Token Prediction: Patch-Level Training for Large Language Models",
+    "ChatQA 2: Bridging the Gap to Proprietary LLMs in Long Context and RAG Capabilities",
+    "HShare: Fast LLM Decoding by Hierarchical Key-Value Sharing",
+    "PALMBENCH: A COMPREHENSIVE BENCHMARK OF COMPRESSED LARGE LANGUAGE MODELS ON MOBILE PLATFORMS",
+    "IQA-EVAL: Automatic Evaluation of Human-Model Interactive Question Answering",
+    "Instruction Tuning With Loss Over Instructions",
+    "SIRIUS : Contexual Sparisty with Correction for Efficient LLMs",
+    "SlowFocus: Enhancing Fine-grained Temporal Understanding in Video LLM",
+    "cPAPERS: A Dataset of Situated and Multimodal Interactive Conversations in Scientific Papers"
+  ],
+  "paper_count": 13,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Generating a natural language response to a user's question in a conversational context, where the questions are not simple factoids but part of a dialogue.",
+      "paper": "cPAPERS: A Dataset of Situated and Multimodal Interactive Conversations in Scientific Papers",
+      "original_name": "Conversational question answering"
+    },
+    {
+      "text": "A multi-turn process where a user interacts with an AI model through a series of questions and clarifications to arrive at an answer for a complex initial query.",
+      "paper": "IQA-EVAL: Automatic Evaluation of Human-Model Interactive Question Answering",
+      "original_name": "Interactive question answering"
+    },
+    {
+      "text": "Engaging in multi-round question-answer dialogue about a video, including questions about content, timing, and action sequences.",
+      "paper": "SlowFocus: Enhancing Fine-grained Temporal Understanding in Video LLM",
+      "original_name": "Multi-turn QA"
+    },
+    {
+      "text": "The behavior of engaging in a conversational dialogue over several turns to answer a user's questions.",
+      "paper": "Backtracking Improves Generation Safety",
+      "original_name": "Multi-turn question answering"
+    },
+    {
+      "text": "Answering questions grounded in conversational or story-based dialogue context.",
+      "paper": "HShare: Fast LLM Decoding by Hierarchical Key-Value Sharing",
+      "original_name": "Dialogue question answering"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CoQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "SIRIUS : Contexual Sparisty with Correction for Efficient LLMs",
+      "evidence": "\u201cConversational Q&A (CoQA) (Reddy et al., 2019): Short-answer questions based on conversational text.\u201d",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "SIRIUS : Contexual Sparisty with Correction for Efficient LLMs"
+        ],
+        "emnlp25": [
+          "EnhancingChinese Offensive Language Detection with Homophonic Perturbation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ChatRAG-Bench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "ChatQA 2: Bridging the Gap to Proprietary LLMs in Long Context and RAG Capabilities",
+      "evidence": "the RAG benchmark for conversational QA tasks within a 4K context window. (Section 1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "ChatQA 2: Bridging the Gap to Proprietary LLMs in Long Context and RAG Capabilities"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 2,
+  "characterization": "Across the surveyed literature, conversational question answering is predominantly described as a multi-turn behavior where a model generates responses to a user's questions within a dialogue. A recurring theme is the necessity of using the conversation history as context, with one paper noting, \"Answering the current question needs to consider the context of conversation histories\" (A Multi-Agent Framework with Automated Decision Rule Optimization for Cross-Domain Misinformation Detection). While terms like \"Multi-turn QA\" and \"Dialogue question answering\" are also used, the core concept of a multi-round interaction is consistent. Some definitions add specific constraints, framing the questions as being \"not simple factoids\" and grounded in particular contexts like scientific documents, videos, or stories. A less common framing describes it as an \"interactive\" process involving \"a series of questions and clarifications to arrive at an answer for a complex initial query\" (IQA-EVAL: Automatic Evaluation of Human-Model Interactive Question Answering). This behavior is operationalized and measured using several benchmarks. The most frequently cited instrument is CoQA, which is used to evaluate \"dialogue-based question-answering systems.\" Other benchmarks mentioned for assessing this behavior include ChatRAG-Bench for RAG-based tasks and MT-Bench for challenging multi-turn questions.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "IQA-EVAL: Automatic Evaluation of Human-Model Interactive Question Answering",
+      "Instruction Tuning With Loss Over Instructions",
+      "SIRIUS : Contexual Sparisty with Correction for Efficient LLMs",
+      "SlowFocus: Enhancing Fine-grained Temporal Understanding in Video LLM",
+      "cPAPERS: A Dataset of Situated and Multimodal Interactive Conversations in Scientific Papers"
+    ],
+    "iclr25": [
+      "Backtracking Improves Generation Safety",
+      "Beyond Next Token Prediction: Patch-Level Training for Large Language Models",
+      "ChatQA 2: Bridging the Gap to Proprietary LLMs in Long Context and RAG Capabilities",
+      "HShare: Fast LLM Decoding by Hierarchical Key-Value Sharing",
+      "PALMBENCH: A COMPREHENSIVE BENCHMARK OF COMPRESSED LARGE LANGUAGE MODELS ON MOBILE PLATFORMS"
+    ],
+    "emnlp25": [
+      "A Multi-Agent Framework with Automated Decision Rule Optimization for Cross-Domain Misinformation Detection",
+      "AdaSteer: Your AlignedLLMis Inherently an Adaptive Jailbreak Defender",
+      "EnhancingChinese Offensive Language Detection with Homophonic Perturbation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 5,
+    "iclr25": 5,
+    "emnlp25": 3
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "neurips24"
+  ]
+}

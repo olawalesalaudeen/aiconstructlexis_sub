@@ -1,0 +1,297 @@
+{
+  "canonical_name": "MedQA",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, MedQA is consistently described as a benchmark dataset for medical question answering, composed of multiple-choice questions from or styled after the United States Medical Licensing Examination (USMLE). Its most prevalent use is to evaluate model capabilities in the medical domain, with papers frequently using it to measure `Medical question answering`, `Medical reasoning`, and `Domain-specific knowledge`. The operationalization of these constructs involves assessing model performance on the dataset's questions, which one paper describes as \"clinical vignettes paired with multiple choice diagnosis questions\" used to test the diagnostic reasoning construct. A smaller body of work employs MedQA to assess more general abilities like `Chain-of-thought reasoning` or specific methods such as `Retrieval-augmented generation` and `Zero-shot generalization`. Beyond direct evaluation, the dataset is also used as a source of few-shot examples for generation tasks and as a baseline for establishing the difficulty of other medical datasets. The data also indicates MedQA is included within the MIRAGE benchmark and its performance is tracked on the Open Medical LLM Leaderboard.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "MedQA"
+  ],
+  "papers": [
+    "CodeTool: Enhancing Programmatic Tool Invocation ofLLMs via Process Supervision",
+    "FactBench: A Dynamic Benchmark for In-the-Wild Language Model Factuality Evaluation",
+    "From Information to Insight: LeveragingLLMs for Open Aspect-Based Educational Summarization",
+    "KRISTEVA: Close Reading as a Novel Task for Benchmarking Interpretive Reasoning",
+    "Ontology-Guided Reverse Thinking Makes Large Language Models Stronger on Knowledge Graph Question Answering",
+    "CompassVerifier: A Unified and Robust Verifier forLLMs Evaluation and Outcome Reward",
+    "Dynamic Model-Bank Test-Time Adaptation for Automatic Speech Recognition",
+    "Expectation Preference Optimization: Reliable Preference Estimation for Improving the Reasoning Capability of Large Language Models",
+    "Learning Like Humans: AdvancingLLMReasoning Capabilities via Adaptive Difficulty Curriculum Learning and Expert-Guided Self-Reformulation",
+    "MentalGLMSeries: Explainable Large Language Models for Mental Health Analysis onChinese Social Media",
+    "NEXUS: Network Exploration for eXploiting Unsafe Sequences in Multi-TurnLLMJailbreaks",
+    "PricingLogic: EvaluatingLLMs Reasoning on Complex Tourism Pricing Tasks",
+    "Probing Narrative Morals: A New Character-FocusedMFTFramework for Use with Large Language Models",
+    "Reliable and Cost-Effective Exploratory Data Analysis via Graph-GuidedRAG",
+    "SQUiD: Synthesizing Relational Databases from Unstructured Text",
+    "Sentence Smith: Controllable Edits for Evaluating Text Embeddings",
+    "Social Bias in Multilingual Language Models: A Survey",
+    "TRUST-VL: An Explainable News Assistant for General Multimodal Misinformation Detection",
+    "[CLS]",
+    "From Models to Microtheories: Distilling a Model's Topical Knowledge for Grounded Question-Answering",
+    "Knowledge Graph Finetuning Enhances Knowledge Manipulation in Large Language Models",
+    "Reliable and Diverse Evaluation of LLM Medical Knowledge Mastery",
+    "Teaching LLMs How to Learn with Contextual Fine-Tuning",
+    "Walk the Talk? Measuring the Faithfulness of Large Language Model Explanations",
+    "Evaluating LLMs Across Multi-Cognitive Levels: From Medical Knowledge Mastery to Scenario-Based Problem Solving",
+    "Graph-constrained Reasoning: Faithful Reasoning on Knowledge Graphs with Large Language Models",
+    "Learning to Route LLMs with Confidence Tokens",
+    "Model Swarms: Collaborative Search to Adapt LLM Experts via Swarm Intelligence",
+    "Position: AI Evaluation Should Learn from How We Test Humans",
+    "Position: Medical Large Language Model Benchmarks Should Prioritize Construct Validity",
+    "Characterizing the Role of Similarity in the Property Inferences of Language Models",
+    "Ihquin tlahtouah in Tetelahtzincocah: An annotated, multi-purpose audio and text corpus of Western SierraPueblaNahuatl",
+    "LBC: Language-Based-Classifier for Out-Of-Variable Generalization",
+    "Prototypical Extreme Multi-label Classification with a Dynamic Margin Loss",
+    "SALAD: Improving Robustness and Generalization through Contrastive Learning with Structure-Aware andLLM-Driven Augmented Data"
+  ],
+  "paper_count": 35,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A dataset containing US Medical Licensing Examination (USMLE) questions used to evaluate model knowledge and reasoning in the medical domain.",
+      "paper": "From Models to Microtheories: Distilling a Model's Topical Knowledge for Grounded Question-Answering",
+      "original_name": "MedQA"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Medical question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "DoFIT: Domain-aware Federated Instruction Tuning with Alleviated Catastrophic Forgetting",
+      "evidence": "\"MedQA (Jin et al., 2021) ... is a medical QA dataset from professional exams\"",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "neurips24": [
+          "DoFIT: Domain-aware Federated Instruction Tuning with Alleviated Catastrophic Forgetting"
+        ],
+        "naacl25": [
+          "SALAD: Improving Robustness and Generalization through Contrastive Learning with Structure-Aware andLLM-Driven Augmented Data"
+        ],
+        "emnlp25": [
+          "Expectation Preference Optimization: Reliable Preference Estimation for Improving the Reasoning Capability of Large Language Models",
+          "CompassVerifier: A Unified and Robust Verifier forLLMs Evaluation and Outcome Reward"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multiple-choice question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Teaching LLMs How to Learn with Contextual Fine-Tuning",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr25": [
+          "Teaching LLMs How to Learn with Contextual Fine-Tuning",
+          "Knowledge Graph Finetuning Enhances Knowledge Manipulation in Large Language Models"
+        ],
+        "naacl25": [
+          "Ihquin tlahtouah in Tetelahtzincocah: An annotated, multi-purpose audio and text corpus of Western SierraPueblaNahuatl"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Domain-specific knowledge",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "UltraMedical: Building Specialized Generalists in Biomedicine",
+      "evidence": "\u201cwe define five fundamental LLM capabilities, namely Mathematical Reasoning, Reading Comprehension, Commonsense Reasoning, Scientific Reasoning, and Professional Expertise\u201d",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "UltraMedical: Building Specialized Generalists in Biomedicine"
+        ],
+        "emnlp25": [
+          "Probing Narrative Morals: A New Character-FocusedMFTFramework for Use with Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Medical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Position: Medical Large Language Model Benchmarks Should Prioritize Construct Validity",
+      "evidence": "Suppose we focus on diagnostic reasoning as the LLM capability of interest and use a benchmark like MedQA, which comprises clinical vignettes paired with multiple choice diagnosis questions, to test the diagnostic reasoning construct. (Section 3.1)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "icml25": [
+          "Position: Medical Large Language Model Benchmarks Should Prioritize Construct Validity"
+        ],
+        "emnlp25": [
+          "TRUST-VL: An Explainable News Assistant for General Multimodal Misinformation Detection"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Domain knowledge",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "EHRNoteQA: An LLM Benchmark for Real-World Clinical Practice Using Discharge Summaries",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "EHRNoteQA: An LLM Benchmark for Real-World Clinical Practice Using Discharge Summaries"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Retrieval-augmented generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "From Models to Microtheories: Distilling a Model's Topical Knowledge for Grounded Question-Answering",
+      "evidence": "Figure 6: % of test hypotheses fully groundable after adding various microtheories (n-sized Random, Usage, QC, & PC Mts) to a base Corpus. ... MedQA Grounding Rate (%) of Test Hypotheses",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "From Models to Microtheories: Distilling a Model's Topical Knowledge for Grounded Question-Answering"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Walk the Talk? Measuring the Faithfulness of Large Language Model Explanations",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Walk the Talk? Measuring the Faithfulness of Large Language Model Explanations"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Chain-of-thought reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "LBC: Language-Based-Classifier for Out-Of-Variable Generalization",
+      "evidence": "We use one dataset from each of these categories for fine-tuning the LLM and we use all the datasets to evaluate the effect of fine-tuning on the given dataset... i) MedQA (Jin et al., 2021): Multiple choice question answers from the United States Medical License Exams (USMLE)... (Section 4)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "LBC: Language-Based-Classifier for Out-Of-Variable Generalization"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Zero-shot generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Graph-constrained Reasoning: Faithful Reasoning on Knowledge Graphs with Large Language Models",
+      "evidence": "To evaluate the generalizability of GCR, we conduct zero-shot transfer experiments on three unseen KGQA datasets: FreebaseQA (Jiang et al., 2019), CSQA (Talmor et al., 2019) and MedQA (Jin et al., 2021). (Section 5.4)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Graph-constrained Reasoning: Faithful Reasoning on Knowledge Graphs with Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge acquisition",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Evaluating LLMs Across Multi-Cognitive Levels: From Medical Knowledge Mastery to Scenario-Based Problem Solving",
+      "evidence": "most medical benchmarks (Jin et al., 2021; Pal et al., 2022; Wang et al., 2024; Cai et al., 2024; Qiu et al., 2024) evaluate LLMs\u2019 capabilities through question-answering (QA) tasks, which mainly focus on assessing LLMs\u2019 preliminary knowledge grasp (Section 1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Evaluating LLMs Across Multi-Cognitive Levels: From Medical Knowledge Mastery to Scenario-Based Problem Solving"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge graph question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Social Bias in Multilingual Language Models: A Survey",
+      "evidence": "We evaluate KGQA benchmarks spanning different backbone KGs. ... MedQA (Jin et al., 2021) consists of questions extracted from USMLE exams. (Section 4.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Social Bias in Multilingual Language Models: A Survey"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 11,
+  "incoming_relationship_count": 11,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, MedQA is consistently described as a benchmark dataset for medical question answering, composed of multiple-choice questions from or styled after the United States Medical Licensing Examination (USMLE). Its most prevalent use is to evaluate model capabilities in the medical domain, with papers frequently using it to measure `Medical question answering`, `Medical reasoning`, and `Domain-specific knowledge`. The operationalization of these constructs involves assessing model performance on the dataset's questions, which one paper describes as \"clinical vignettes paired with multiple choice diagnosis questions\" used to test the diagnostic reasoning construct. A smaller body of work employs MedQA to assess more general abilities like `Chain-of-thought reasoning` or specific methods such as `Retrieval-augmented generation` and `Zero-shot generalization`. Beyond direct evaluation, the dataset is also used as a source of few-shot examples for generation tasks and as a baseline for establishing the difficulty of other medical datasets. The data also indicates MedQA is included within the MIRAGE benchmark and its performance is tracked on the Open Medical LLM Leaderboard.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "From Models to Microtheories: Distilling a Model's Topical Knowledge for Grounded Question-Answering",
+      "Knowledge Graph Finetuning Enhances Knowledge Manipulation in Large Language Models",
+      "Reliable and Diverse Evaluation of LLM Medical Knowledge Mastery",
+      "Teaching LLMs How to Learn with Contextual Fine-Tuning",
+      "Walk the Talk? Measuring the Faithfulness of Large Language Model Explanations"
+    ],
+    "naacl25": [
+      "Characterizing the Role of Similarity in the Property Inferences of Language Models",
+      "Ihquin tlahtouah in Tetelahtzincocah: An annotated, multi-purpose audio and text corpus of Western SierraPueblaNahuatl",
+      "LBC: Language-Based-Classifier for Out-Of-Variable Generalization",
+      "Prototypical Extreme Multi-label Classification with a Dynamic Margin Loss",
+      "SALAD: Improving Robustness and Generalization through Contrastive Learning with Structure-Aware andLLM-Driven Augmented Data"
+    ],
+    "acl25": [
+      "CodeTool: Enhancing Programmatic Tool Invocation ofLLMs via Process Supervision",
+      "FactBench: A Dynamic Benchmark for In-the-Wild Language Model Factuality Evaluation",
+      "From Information to Insight: LeveragingLLMs for Open Aspect-Based Educational Summarization",
+      "KRISTEVA: Close Reading as a Novel Task for Benchmarking Interpretive Reasoning",
+      "Ontology-Guided Reverse Thinking Makes Large Language Models Stronger on Knowledge Graph Question Answering"
+    ],
+    "icml25": [
+      "Evaluating LLMs Across Multi-Cognitive Levels: From Medical Knowledge Mastery to Scenario-Based Problem Solving",
+      "Graph-constrained Reasoning: Faithful Reasoning on Knowledge Graphs with Large Language Models",
+      "Learning to Route LLMs with Confidence Tokens",
+      "Model Swarms: Collaborative Search to Adapt LLM Experts via Swarm Intelligence",
+      "Position: AI Evaluation Should Learn from How We Test Humans",
+      "Position: Medical Large Language Model Benchmarks Should Prioritize Construct Validity"
+    ],
+    "emnlp25": [
+      "CompassVerifier: A Unified and Robust Verifier forLLMs Evaluation and Outcome Reward",
+      "Dynamic Model-Bank Test-Time Adaptation for Automatic Speech Recognition",
+      "Expectation Preference Optimization: Reliable Preference Estimation for Improving the Reasoning Capability of Large Language Models",
+      "Learning Like Humans: AdvancingLLMReasoning Capabilities via Adaptive Difficulty Curriculum Learning and Expert-Guided Self-Reformulation",
+      "MentalGLMSeries: Explainable Large Language Models for Mental Health Analysis onChinese Social Media",
+      "NEXUS: Network Exploration for eXploiting Unsafe Sequences in Multi-TurnLLMJailbreaks",
+      "PricingLogic: EvaluatingLLMs Reasoning on Complex Tourism Pricing Tasks",
+      "Probing Narrative Morals: A New Character-FocusedMFTFramework for Use with Large Language Models",
+      "Reliable and Cost-Effective Exploratory Data Analysis via Graph-GuidedRAG",
+      "SQUiD: Synthesizing Relational Databases from Unstructured Text",
+      "Sentence Smith: Controllable Edits for Evaluating Text Embeddings",
+      "Social Bias in Multilingual Language Models: A Survey",
+      "TRUST-VL: An Explainable News Assistant for General Multimodal Misinformation Detection",
+      "[CLS]"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 5,
+    "naacl25": 5,
+    "acl25": 5,
+    "icml25": 6,
+    "emnlp25": 14
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "naacl25"
+  ]
+}

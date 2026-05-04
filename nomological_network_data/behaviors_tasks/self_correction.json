@@ -1,0 +1,1658 @@
+{
+  "canonical_name": "Self-correction",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, self-correction is broadly characterized as the observable behavior of a model identifying and rectifying errors in its own generated artifacts. This process is applied to a wide array of outputs, including code, mathematical proofs, SQL queries, reasoning chains, and natural language text, and is most commonly described as an iterative or multi-round refinement. The correction is frequently triggered by feedback from various sources, such as execution results, environmental error messages, user input, or other AI agents acting as critics. A smaller line of work distinguishes this from \"intrinsic self-correction,\" where a model revises its output without any external feedback or hints. This behavior is operationalized and measured using instruments like the HyPoradise and EvalPlus benchmarks, as well as through Human evaluation. Self-correction is often studied alongside latent capabilities thought to enable it, such as \"self-reflection\" (analyzing past failures), \"self-critique\" (evaluating one's own output), and the broader capacity for \"self-improvement.\" The behavior is frequently investigated for its reported influence on downstream capabilities like problem-solving, mathematical reasoning, and generalization. Finally, a few papers also define specific failure modes of this process, including \"over-correction,\" where correct parts of an input are erroneously altered, and \"undercorrection,\" where errors are left unfixed.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Self-correction and refinement",
+    "Noise correction",
+    "Spelling correction",
+    "Error correction",
+    "Typo correction",
+    "Correcting errors",
+    "Mistake correction",
+    "Student mistake correction",
+    "Fact refinement",
+    "Iterative hypothesis refinement",
+    "Patch refinement",
+    "Bug fixing",
+    "Answer refinement",
+    "Natural language refinement",
+    "Self-correction",
+    "Self-refinement",
+    "Text correction",
+    "Assessment refinement",
+    "Chain-of-thought correction",
+    "Thought refinement",
+    "Hallucination correction",
+    "Multi-round self-correction",
+    "Invalid SMILES correction",
+    "Code fixing",
+    "Response refinement",
+    "Iterative self-correction",
+    "Self-checking",
+    "Iterative chart refinement",
+    "Over-correction",
+    "Grammar correction",
+    "Chinese spelling correction",
+    "Overcorrection",
+    "Undercorrection",
+    "Generative error correction",
+    "Intrinsic self-correction",
+    "Response correction",
+    "Iterative sequence editing",
+    "Self-enhancement",
+    "Reflection generation",
+    "Iterative sequence optimization",
+    "Artifact refinement",
+    "Iterative response refinement",
+    "Iterative editing",
+    "Critique and refinement",
+    "Iterative revision",
+    "Iterative self-improvement",
+    "Hypothesis refinement",
+    "Output editing",
+    "Cross-refinement",
+    "Rationale refinement",
+    "Description revision",
+    "Failure correction",
+    "Answer correction",
+    "Token correction",
+    "Conditional weak-to-strong correction",
+    "Discrimination",
+    "Evaluation capability",
+    "Fine-grained evaluation capability",
+    "Reflection",
+    "Self-critique",
+    "Self-debugging",
+    "Self-repair",
+    "Self-refinement capability",
+    "Self-correction ability",
+    "Self-correction capability",
+    "Refinement capability",
+    "Progressive refinement",
+    "Self-repair capability",
+    "Error recovery",
+    "Self-critique ability",
+    "Self-revision capability",
+    "Self-repair ability",
+    "Debugging capability",
+    "Debugging ability",
+    "Bug localization",
+    "Debuggability",
+    "Self-debugging capability",
+    "Self-verification",
+    "Self-evolution",
+    "Self-improvement",
+    "Continuous improvement",
+    "Self-improvement capability",
+    "Policy improvement",
+    "Iterative reflection capability",
+    "Learning from mistakes",
+    "Self-Reflection",
+    "Reflection capability",
+    "Introspection",
+    "Current reflection",
+    "Metacognitive monitoring",
+    "Meta-reflection",
+    "Mistake detection",
+    "Refinement",
+    "Solution refinement",
+    "Action evaluation",
+    "Reasoning quality evaluation",
+    "Self-assessment",
+    "Critiquing ability",
+    "Judging ability"
+  ],
+  "papers": [
+    "AnRe: Analogical Replay for Temporal Knowledge Graph Forecasting",
+    "Maximizing the Effectiveness of LargerBERTModels for Compression",
+    "OASIS: Order-Augmented Strategy for Improved Code Search",
+    "Pixel-Level Reasoning Segmentation via Multi-turn Conversations",
+    "Read it in Two Steps: Translating Extremely Low-Resource Languages with Code-Augmented Grammar Books",
+    "Beyond Surface Simplicity: Revealing Hidden Reasoning Attributes for Precise Commonsense Diagnosis",
+    "CADReview: Automatically ReviewingCADPrograms with Error Detection and Correction",
+    "Contrastive Perplexity for Controlled Generation: An Application in Detoxifying Large Language Models",
+    "HalluLens:LLMHallucination Benchmark",
+    "Multi-level Association Refinement Network for Dialogue Aspect-based Sentiment Quadruple Analysis",
+    "Past Meets Present: Creating Historical Analogy with Large Language Models",
+    "RPO: Retrieval Preference Optimization for Robust Retrieval-Augmented Generation",
+    "TheoremExplainAgent: Towards Video-based Multimodal Explanations forLLMTheorem Understanding",
+    "Evaluating Sequence Labeling on the basis of Information Theory",
+    "SeaKR: Self-aware Knowledge Retrieval for Adaptive Retrieval Augmented Generation",
+    "2025.emnlp-main.1443.checklist",
+    "2025.emnlp-main.202.checklist",
+    "2025.emnlp-main.72.checklist",
+    "2025.emnlp-main.977.checklist",
+    "32.3%",
+    "A Fully Probabilistic Perspective on Large Language Model Unlearning: Evaluation and Optimization",
+    "AFRIDOC-MT: Document-levelMTCorpus forAfrican Languages",
+    "AdaRewriter: Unleashing the Power of Prompting-based Conversational Query Reformulation via Test-Time Adaptation",
+    "AdaSteer: Your AlignedLLMis Inherently an Adaptive Jailbreak Defender",
+    "AlignX: Advancing Multilingual Large Language Models with Multilingual Representation Alignment",
+    "Answer Convergence as a Signal for Early Stopping in Reasoning",
+    "BeyondWER: Probing Whisper\u2019s Sub\u2010token Decoder Across Diverse Language Resource Levels",
+    "COUNTDOWN: Contextually Sparse Activation Filtering Out Unnecessary Weights in Down Projection",
+    "Can Prompts Rewind Time forLLMs? Evaluating the Effectiveness of Prompted Knowledge Cutoffs",
+    "Chat-Driven Text Generation and Interaction for Person Retrieval",
+    "CoMAT: Chain of Mathematically Annotated Thought Improves Mathematical Reasoning",
+    "Confidence-guided Refinement Reasoning for Zero-shot Question Answering",
+    "ConvSearch-R1: Enhancing Query Reformulation for Conversational Search with Reasoning via Reinforcement Learning",
+    "Do Large Language Models Truly Grasp Addition? A Rule-Focused Diagnostic Using Two-Integer Arithmetic",
+    "Dynamic Collaboration of Multi-Language Models based on Minimal Complete Semantic Units",
+    "DynamicNER: A Dynamic, Multilingual, and Fine-Grained Dataset forLLM-based Named Entity Recognition",
+    "EasyRec: Simple yet Effective Language Models for Recommendation",
+    "EquiBench: Benchmarking Large Language Models\u2019 Reasoning about Program Semantics via Equivalence Checking",
+    "Few-Shot Learning Translation from New Languages",
+    "Financial Risk Relation Identification through Dual-view Adaptation",
+    "From General Reward to Targeted Reward: Improving Open-ended Long-context Generation Models",
+    "From Shortcuts to Balance: Attribution Analysis of Speech-Text Feature Utilization in Distinguishing Original from Machine-Translated Texts",
+    "GATEAU: Selecting Influential Samples for Long Context Alignment",
+    "GUI-Bee: AlignGUIAction Grounding to Novel Environments via Autonomous Exploration",
+    "Glider: Global and Local Instruction-Driven Expert Router",
+    "Gradient-Attention Guided Dual-Masking Synergetic Framework for Robust Text-based Person Retrieval",
+    "Hanfu-Bench: A Multimodal Benchmark on Cross-Temporal Cultural Understanding and Transcreation",
+    "Identifying Unlearned Data inLLMs via Membership Inference Attacks",
+    "Improving Large Language Model Safety with Contrastive Representation Learning",
+    "Is the Top Still Spinning? Evaluating Subjectivity in Narrative Understanding",
+    "KRETA: A Benchmark forKorean Reading and Reasoning in Text-RichVQAAttuned to Diverse Visual Contexts",
+    "Language Mixing in Reasoning Language Models: Patterns, Impact, and Internal Causes",
+    "Look Again, Think Slowly: Enhancing Visual Reflection in Vision-Language Models",
+    "MMLU-ProX: A Multilingual Benchmark for Advanced Large Language Model Evaluation",
+    "Meta-Rewarding Language Models: Self-Improving Alignment withLLM-as-a-Meta-Judge",
+    "Mind the Value-Action Gap: DoLLMs Act in Alignment with Their Values?",
+    "Mitigating Hallucinations in Vision-Language Models through Image-Guided Head Suppression",
+    "Mitigating Hallucinations inLM-BasedTTSModels via Distribution Alignment UsingGFlowNets",
+    "Model-based Large Language Model Customization as Service",
+    "Multi-Document Event Extraction Using Large and Small Language Models",
+    "OMS: On-the-fly, Multi-Objective, Self-Reflective Ad Keyword Generation viaLLMAgent",
+    "OpenTuringBench: An Open-Model-based Benchmark and Framework for Machine-Generated Text Detection and Attribution",
+    "Principled Personas: Defining and Measuring the Intended Effects of Persona Prompting on Task Performance",
+    "RD-MCSA: A Multi-Class Sentiment Analysis Approach Integrating In-Context Classification Rationales and Demonstrations",
+    "REACT: Representation Extraction And Controllable Tuning to Overcome Overfitting inLLMKnowledge Editing",
+    "RareSyn: Health Record Synthesis for Rare Disease Diagnosis",
+    "RethinkMCTS: Refining Erroneous Thoughts inMonteCarlo Tree Search for Code Generation",
+    "RuCCoD: Towards AutomatedICDCoding inRussian",
+    "Rule Discovery for Natural Language Inference Data Generation Using Out-of-Distribution Detection",
+    "SciNLP: A Domain-Specific Benchmark for Full-Text Scientific Entity and Relation Extraction inNLP",
+    "Semantic Inversion, Identical Replies: Revisiting Negation Blindness in Large Language Models",
+    "Social Bias in Multilingual Language Models: A Survey",
+    "TS-CLIP: Time Series Understanding byCLIP",
+    "The Good, the Bad and the Constructive: Automatically Measuring Peer Review\u2019s Utility for Authors",
+    "The Impact of Negated Text on Hallucination with Large Language Models",
+    "Think, Verbalize, then Speak: Bridging Complex Thoughts and Comprehensible Speech",
+    "ThinkSLM",
+    "ToDi: Token-wise Distillation via Fine-Grained Divergence Control",
+    "Towards a Unified Paradigm of Concept Editing in Large Language Models",
+    "Tree-of-Quote Prompting Improves Factuality and Attribution in Multi-Hop and Medical Reasoning",
+    "UI-Hawk: Unleashing the Screen Stream Understanding for MobileGUIAgents",
+    "VisCRA: A Visual Chain Reasoning Attack for Jailbreaking Multimodal Large Language Models",
+    "Warm Up Before You Train: Unlocking General Reasoning in Resource-Constrained Settings",
+    "Where Confabulation Lives: Latent Feature Discovery inLLMs",
+    "Words Like Knives: Backstory-Personalized Modeling and Detection of Violent Communication",
+    "Graders Should Cheat: Privileged Information Enables Expert-Level Automated Evaluations",
+    "It's Never Too Late: Fusing Acoustic Information into Large Language Models for Automatic Speech Recognition",
+    "Large Language Models are Efficient Learners of Noise-Robust Speech Recognition",
+    "Boosting of Thoughts: Trial-and-Error Problem Solving with Large Language Models",
+    "CRITIC: Large Language Models Can Self-Correct with Tool-Interactive Critiquing",
+    "Chain of Hindsight aligns Language Models with Feedback",
+    "Chain-of-Experts: When LLMs Meet Complex Operations Research Problems",
+    "DiLu: A Knowledge-Driven Approach to Autonomous Driving with Large Language Models",
+    "Gaining Wisdom from Setbacks: Aligning Large Language Models via Mistake Analysis",
+    "L2MAC: Large Language Model Automatic Computer for Extensive Code Generation",
+    "Lemur: Harmonizing Natural Language and Code for Language Agents",
+    "MUSTARD: Mastering Uniform Synthesis of Theorem and Proof Data",
+    "Prometheus: Inducing Fine-Grained Evaluation Capability in Language Models",
+    "PromptAgent: Strategic Planning with Language Models Enables Expert-level Prompt Optimization",
+    "Retroformer: Retrospective Large Language Agents with Policy Gradient Optimization",
+    "Solving Challenging Math Word Problems Using GPT-4 Code Interpreter with Code-based Self-Verification",
+    "Teaching Large Language Models to Self-Debug",
+    "MathVista: Evaluating Mathematical Reasoning of Foundation Models in Visual Contexts",
+    "Advancing Mathematical Reasoning in Language Models: The Impact of Problem-Solving Data, Data Synthesis Methods, and Training Stages",
+    "Efficient Perplexity Bound and Ratio Matching in Discrete Diffusion Language Models",
+    "ImProver: Agent-Based Automated Proof Optimization",
+    "LiveBench: A Challenging, Contamination-Limited LLM Benchmark",
+    "MrT5: Dynamic Token Merging for Efficient Byte-level Language Models",
+    "ROUTE: Robust Multitask Tuning and Collaboration for Text-to-SQL",
+    "Think while You Generate: Discrete Diffusion with Planned Denoising",
+    "AgentHarm: A Benchmark for Measuring Harmfulness of LLM Agents",
+    "Articulate-Anything:  Automatic Modeling of Articulated Objects via a Vision-Language Foundation Model",
+    "BIRD: A Trustworthy Bayesian Inference Framework for Large Language Models",
+    "Bayesian Optimization of Antibodies Informed by a Generative Model of Evolving Sequences",
+    "ChartMimic: Evaluating LMM's Cross-Modal Reasoning Capability via Chart-to-Code Generation",
+    "Data Distillation for extrapolative protein design through exact preference optimization",
+    "DataGen: Unified Synthetic Dataset Generation via Large Language Models",
+    "Evaluating Large Language Models through Role-Guide and Self-Reflection: A Comparative Study",
+    "FlexCAD: Unified and Versatile Controllable CAD Generation with Fine-tuned Large Language Models",
+    "Interleaved Scene Graphs for Interleaved Text-and-Image Generation Assessment",
+    "It Helps to Take a Second Opinion: Teaching Smaller LLMs To Deliberate Mutually via Selective Rationale Optimisation",
+    "KOR-Bench: Benchmarking Language Models on Knowledge-Orthogonal Reasoning Tasks",
+    "LLMOPT: Learning to Define and Solve General Optimization Problems from Scratch",
+    "MOOSE-Chem: Large Language Models for Rediscovering Unseen Chemistry Scientific Hypotheses",
+    "MetaDesigner: Advancing Artistic Typography through AI-Driven, User-Centric, and Multilingual WordArt Synthesis",
+    "Mind the Gap: Examining the Self-Improvement Capabilities of Large Language Models",
+    "Mixture-of-Agents Enhances Large Language Model Capabilities",
+    "Monte Carlo Planning with Large Language Model for Text-Based Game Agents",
+    "Multiagent Finetuning: Self Improvement with Diverse Reasoning Chains",
+    "PathGen-1.6M: 1.6 Million Pathology Image-text Pairs Generation through Multi-agent Collaboration",
+    "Physics of Language Models: Part 2.2, How to Learn From Mistakes on Grade-School Math Problems",
+    "Regressing the Relative Future: Efficient Policy Optimization for Multi-turn RLHF",
+    "RevisEval: Improving LLM-as-a-Judge via Response-Adapted References",
+    "SPaR: Self-Play with Tree-Search Refinement to Improve Instruction-Following in Large Language Models",
+    "Scaling LLM Test-Time Compute Optimally Can be More Effective than Scaling Parameters for Reasoning",
+    "Scaling Large Language Model-based Multi-Agent Collaboration",
+    "Self-Boosting Large Language Models with  Synthetic Preference Data",
+    "SuperCorrect: Advancing Small LLM Reasoning with Thought Template Distillation and Self-Correction",
+    "TLDR: Token-Level Detective Reward Model for Large Vision Language Models",
+    "Think Thrice Before You Act: Progressive Thought Refinement in Large Language Models",
+    "Training Language Models to Self-Correct via Reinforcement Learning",
+    "Training Large Language Models for Retrieval-Augmented Question Answering through Backtracking Correction",
+    "Triples as the Key: Structuring Makes Decomposition and Verification Easier in LLM-based TableQA",
+    "Uncovering Gaps in How Humans and LLMs Interpret Subjective Language",
+    "Unified Parameter-Efficient Unlearning for LLMs",
+    "AgentRefine: Enhancing Agent Generalization through Refinement Tuning",
+    "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code",
+    "Automated Proof Generation for Rust Code via Self-Evolution",
+    "CodeMMLU: A Multi-Task Benchmark for Assessing Code Understanding & Reasoning Capabilities of CodeLLMs",
+    "Concept Bottleneck Language Models For Protein Design",
+    "Anyprefer: An Agentic Framework for Preference Data Synthesis",
+    "Better than Your Teacher: LLM Agents that learn from Privileged AI Feedback",
+    "Distilling Reinforcement Learning Algorithms for In-Context Model-Based Planning",
+    "Mutual Reasoning Makes Smaller LLMs Stronger Problem-Solver",
+    "SELF-EVOLVED REWARD LEARNING FOR LLMS",
+    "Self-Improvement in Language Models: The Sharpening Mechanism",
+    "Self-Improving Robust Preference Optimization",
+    "REvolve: Reward Evolution with Large Language Models using Human Feedback",
+    "SPA-BENCH: A COMPREHENSIVE BENCHMARK FOR SMARTPHONE AGENT EVALUATION",
+    "A Mathematical Framework for AI-Human Integration in Work",
+    "Demystifying Long Chain-of-Thought Reasoning",
+    "On the Resilience of LLM-Based Multi-Agent Collaboration with Faulty Agents",
+    "Position: LLMs Need a Bayesian Meta-Reasoning Framework for More Robust and Generalizable Reasoning",
+    "RATE: Causal Explainability of Reward Models with Imperfect Counterfactuals",
+    "Adaptive Self-improvement LLM Agentic System for ML Library Development",
+    "Cradle: Empowering Foundation Agents towards General Computer Control",
+    "In-Context Reinforcement Learning From Suboptimal Historical Data",
+    "Position: Truly Self-Improving Agents Require Intrinsic Metacognitive Learning",
+    "Training Software Engineering Agents and Verifiers with SWE-Gym",
+    "Are Large Language Models Ready for Multi-Turn Tabular Data Analysis?",
+    "CodeSteer: Symbolic-Augmented Language Models via Code/Text Guidance",
+    "ELEMENTAL: Interactive Learning from Demonstrations and Vision-Language Models for Reward Design in Robotics",
+    "Improving Rationality in the Reasoning Process of Language Models through Self-playing Game",
+    "MAGELLAN: Metacognitive predictions of learning progress guide autotelic LLM agents in large goal spaces",
+    "MME-CoT: Benchmarking Chain-of-Thought in Large Multimodal Models for Reasoning Quality, Robustness, and Efficiency",
+    "Otter: Generating Tests from Issues to Validate SWE Patches",
+    "RZ-NAS: Enhancing LLM-guided Neural Architecture Search via Reflective Zero-Cost Strategy",
+    "Reflection-Bench: Evaluating Epistemic Agency in Large Language Models",
+    "Reinforce LLM Reasoning through Multi-Agent Reflection",
+    "Satori: Reinforcement Learning with Chain-of-Action-Thought Enhances LLM Reasoning via Autoregressive Search",
+    "Which Agent Causes Task Failures and When? On Automated Failure Attribution of LLM Multi-Agent Systems",
+    "B-score: Detecting biases in large language models using response history",
+    "Closed-Loop Long-Horizon Robotic Planning via Equilibrium Sequence Modeling",
+    "Evaluating Judges as Evaluators: The JETTS Benchmark of LLM-as-Judges as Test-Time Scaling Evaluators",
+    "Forest-of-Thought: Scaling Test-Time Compute for Enhancing LLM Reasoning",
+    "Generalized Interpolating Discrete Diffusion",
+    "Mastering Board Games by External and Internal Planning with Language Models",
+    "Position: Formal Mathematical Reasoning\u2014A New Frontier in AI",
+    "ReVISE: Learning to Refine at Test-Time via Intrinsic Self-Verification",
+    "Reasoning-as-Logic-Units: Scaling Test-Time Reasoning in Large Language Models Through Logic Unit Alignment",
+    "Revolve: Optimizing AI Systems by Tracking Response Evolution in Textual Optimization",
+    "SPRI: Aligning Large Language Models with Context-Situated Principles",
+    "Teaching Language Models to Critique via Reinforcement Learning",
+    "The Diffusion Duality",
+    "Think Smarter not Harder: Adaptive Reasoning with Inference Aware Optimization",
+    "Towards Practical Defect-Focused Automated Code Review",
+    "VersaPRM: Multi-Domain Process Reward Model via Synthetic Reasoning Data",
+    "ACCORD: Closing the Commonsense Measurability Gap",
+    "Enhancing Multimodal Entity Linking withJaccard Distance-based Conditional Contrastive Learning and Contextual Visual Augmentation",
+    "Investigating Hallucinations in Simultaneous Machine Translation: Knowledge Distillation Solution and Components Analysis",
+    "PROMPTEVALS: A Dataset of Assertions and Guardrails for Custom Production Large Language Model Pipelines",
+    "Prototypical Extreme Multi-label Classification with a Dynamic Margin Loss",
+    "Towards SustainableNLP: Insights from Benchmarking Inference Energy in Large Language Models",
+    "TurkingBench: A Challenge Benchmark for Web Agents",
+    "DCE-LLM: Dead Code Elimination with Large Language Models",
+    "Hephaestus: Improving Fundamental Agent Capabilities of Large Language Models through Continual Pre-Training",
+    "Improving and Assessing the Fidelity of Large Language Models Alignment to Online Communities",
+    "Kill two birds with one stone: generalized and robustAI-generated text detection via dynamic perturbations",
+    "PICLe: Pseudo-annotations for In-Context Learning in Low-Resource Named Entity Detection",
+    "S2-MAD: Breaking the Token Barrier to Enhance Multi-Agent Debate Efficiency",
+    "Aligner: Efficient Alignment by Learning to Correct",
+    "Bias Amplification in Language Model Evolution: An Iterated Learning Perspective",
+    "CriticEval: Evaluating Large-scale Language Model as Critic",
+    "DACO: Towards Application-Driven and Comprehensive Data Analysis via Code Generation",
+    "DARG: Dynamic Evaluation of Large Language Models via Adaptive Reasoning Graph",
+    "EHRCon: Dataset for Checking Consistency between Unstructured Notes and Structured Tables in Electronic Health Records",
+    "FVEL: Interactive Formal Verification Environment with Large Language Models via Theorem Proving",
+    "IDGen: Item Discrimination Induced Prompt Generation for LLM Evaluation",
+    "Long-Horizon Planning for Multi-Agent Robots in Partially Observable Environments",
+    "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+    "Mind's Eye of LLMs: Visualization-of-Thought Elicits Spatial Reasoning in Large Language Models",
+    "Recursive Introspection: Teaching Language Model Agents How to Self-Improve",
+    "SIRIUS : Contexual Sparisty with Correction for Efficient LLMs",
+    "SciInstruct: a Self-Reflective Instruction Annotated Dataset for Training Scientific Language Models",
+    "SemCoder: Training Code Language Models with Comprehensive Semantics Reasoning",
+    "StreamBench: Towards Benchmarking Continuous Improvement of Language Agents",
+    "WISE: Rethinking the Knowledge Memory for Lifelong Model Editing of Large Language Models",
+    "A Theoretical Understanding of Self-Correction through In-context Alignment",
+    "Can Language Models Perform Robust Reasoning in Chain-of-thought Prompting with Noisy Rationales?",
+    "Diffusion of Thought: Chain-of-Thought Reasoning in Diffusion Language Models",
+    "LLM Circuit Analyses Are Consistent Across Training and Scale",
+    "MR-Ben: A Meta-Reasoning Benchmark for Evaluating System-2 Thinking in LLMs",
+    "Plan-on-Graph: Self-Correcting Adaptive Planning of Large Language Model on Knowledge Graphs",
+    "RL-GPT: Integrating Reinforcement Learning and Code-as-policy",
+    "Generating Code World Models with Large Language Models Guided by Monte Carlo Tree Search",
+    "MACM: Utilizing a Multi-Agent System for Condition Mining in Solving Complex Mathematical Problems",
+    "Trace is the Next AutoDiff: Generative Optimization with Rich Feedback, Execution Traces, and LLMs",
+    "kGym: A Platform and Dataset to Benchmark Large Language Models on Linux Kernel Crash Resolution",
+    "AlphaMath Almost Zero: Process Supervision without Process",
+    "Richelieu: Self-Evolving LLM-Based Agents for AI Diplomacy",
+    "A Decision-Language Model (DLM) for Dynamic Restless Multi-Armed Bandit Tasks in Public Health",
+    "AGILE: A Novel Reinforcement Learning Framework of LLM Agents",
+    "AgentBoard: An Analytical Evaluation Board of Multi-turn LLM Agents",
+    "Me, Myself, and AI: The Situational Awareness Dataset (SAD) for LLMs",
+    "Mobile-Agent-v2: Mobile Device Operation Assistant with Effective Navigation via Multi-Agent Collaboration",
+    "Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks",
+    "Reflective Multi-Agent Collaboration based on Large Language Models",
+    "RoleAgent: Building, Interacting, and Benchmarking High-quality Role-Playing Agents from Scripts"
+  ],
+  "paper_count": 248,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The task of evaluating a given SQL query against a question and database, determining if it is correct, and providing a revised query if it is not.",
+      "paper": "ROUTE: Robust Multitask Tuning and Collaboration for Text-to-SQL",
+      "original_name": "Noise correction"
+    },
+    {
+      "text": "The task of identifying and correcting spelling errors in a given text at the character level.",
+      "paper": "Efficient Perplexity Bound and Ratio Matching in Discrete Diffusion Language Models",
+      "original_name": "Spelling correction"
+    },
+    {
+      "text": "The process of identifying and fixing errors in a generated proof, often through an iterative refinement process that uses feedback from a verifier.",
+      "paper": "ImProver: Agent-Based Automated Proof Optimization",
+      "original_name": "Error correction"
+    },
+    {
+      "text": "The task of identifying and fixing misspellings in a text while preserving all other stylistic and formatting elements.",
+      "paper": "LiveBench: A Challenging, Contamination-Limited LLM Benchmark",
+      "original_name": "Typo correction"
+    },
+    {
+      "text": "The observable task of identifying and rectifying mistakes in a given artifact, such as code or text.",
+      "paper": "A Mathematical Framework for AI-Human Integration in Work",
+      "original_name": "Correcting errors"
+    },
+    {
+      "text": "The observable task of generating a correct reasoning chain and final answer for a problem, even when conditioned on a dialogue history containing an incorrect solution from the student.",
+      "paper": "Is the Top Still Spinning? Evaluating Subjectivity in Narrative Understanding",
+      "original_name": "Student mistake correction"
+    },
+    {
+      "text": "The task of providing feedback or guidance to help a student fix an identified error in their work.",
+      "paper": "Gradient-Attention Guided Dual-Masking Synergetic Framework for Robust Text-based Person Retrieval",
+      "original_name": "Mistake correction"
+    },
+    {
+      "text": "The observable process of progressively improving a scientific hypothesis through repeated cycles of evaluation and modification.",
+      "paper": "EasyRec: Simple yet Effective Language Models for Recommendation",
+      "original_name": "Iterative hypothesis refinement"
+    },
+    {
+      "text": "The process of revising incomplete or missing facts by incorporating omitted conditions, comparanda, or relational context to make them self-contained and verifiable.",
+      "paper": "Answer Convergence as a Signal for Early Stopping in Reasoning",
+      "original_name": "Fact refinement"
+    },
+    {
+      "text": "Evaluating a generated patch for correctness, performance, or maintainability and producing an improved version or detailed analysis report.",
+      "paper": "UI-Hawk: Unleashing the Screen Stream Understanding for MobileGUIAgents",
+      "original_name": "Patch refinement"
+    },
+    {
+      "text": "The observable act of reviewing an initial response and generating an updated one.",
+      "paper": "Chat-Driven Text Generation and Interaction for Person Retrieval",
+      "original_name": "Response revision"
+    },
+    {
+      "text": "Revising failing code snippets to remove defects identified by test failures or execution traces.",
+      "paper": "Tree-of-Quote Prompting Improves Factuality and Attribution in Multi-Hop and Medical Reasoning",
+      "original_name": "Bug fixing"
+    },
+    {
+      "text": "The observable task of editing or improving an existing answer to enhance its quality, accuracy, or clarity.",
+      "paper": "2025.emnlp-main.72.checklist",
+      "original_name": "Answer refinement"
+    },
+    {
+      "text": "A multi-step process where a model progressively improves an output, such as code or a natural language plan, based on feedback or further analysis.",
+      "paper": "MMLU-ProX: A Multilingual Benchmark for Advanced Large Language Model Evaluation",
+      "original_name": "Iterative refinement"
+    },
+    {
+      "text": "The observable act of modifying a natural language description of code logic to correct errors, based on execution feedback and analysis.",
+      "paper": "MMLU-ProX: A Multilingual Benchmark for Advanced Large Language Model Evaluation",
+      "original_name": "Natural language refinement"
+    },
+    {
+      "text": "Iteratively improving generated code or reasoning by analyzing execution feedback and revising outputs accordingly.",
+      "paper": "RuCCoD: Towards AutomatedICDCoding inRussian",
+      "original_name": "Self-correction"
+    },
+    {
+      "text": "The observable behavior of a model updating its own response in a subsequent turn based on user feedback, even if the improvement is limited.",
+      "paper": "Language Mixing in Reasoning Language Models: Patterns, Impact, and Internal Causes",
+      "original_name": "Self-refinement"
+    },
+    {
+      "text": "The observable act of revising an initial assessment and its rationale in response to critical feedback.",
+      "paper": "Mind the Value-Action Gap: DoLLMs Act in Alignment with Their Values?",
+      "original_name": "Assessment refinement"
+    },
+    {
+      "text": "Detecting and correcting errors in text, including typos and other modifications needed to match a reference answer.",
+      "paper": "AdaRewriter: Unleashing the Power of Prompting-based Conversational Query Reformulation via Test-Time Adaptation",
+      "original_name": "Text correction"
+    },
+    {
+      "text": "The process of analyzing an initial reasoning trace (chain-of-thought) and refining it to improve accuracy or format compliance.",
+      "paper": "Confidence-guided Refinement Reasoning for Zero-shot Question Answering",
+      "original_name": "Chain-of-thought correction"
+    },
+    {
+      "text": "Regenerating or revising a prior reasoning step based on execution feedback to correct logical errors and improve the reasoning trajectory.",
+      "paper": "ToDi: Token-wise Distillation via Fine-Grained Divergence Control",
+      "original_name": "Thought refinement"
+    },
+    {
+      "text": "The observable process where a model iteratively refines a sequence of answers for a given question, with each new answer being a correction of the previous one.",
+      "paper": "The Impact of Negated Text on Hallucination with Large Language Models",
+      "original_name": "Multi-round self-correction"
+    },
+    {
+      "text": "Reducing or eliminating factually incorrect statements in model outputs by applying knowledge edits.",
+      "paper": "SciNLP: A Domain-Specific Benchmark for Full-Text Scientific Entity and Relation Extraction inNLP",
+      "original_name": "Hallucination correction"
+    },
+    {
+      "text": "Editing existing code to correct errors such as indentation or syntax issues.",
+      "paper": "Financial Risk Relation Identification through Dual-view Adaptation",
+      "original_name": "Code fixing"
+    },
+    {
+      "text": "Modifying a syntactically or semantically invalid SMILES string to produce a valid one, either through iterative refinement or structural transformation.",
+      "paper": "ConvSearch-R1: Enhancing Query Reformulation for Conversational Search with Reasoning via Reinforcement Learning",
+      "original_name": "Invalid SMILES correction"
+    },
+    {
+      "text": "Improving a selected response by evaluating its consistency with the conversation, alignment with the chosen strategy, and effectiveness in alleviating emotional stress.",
+      "paper": "TS-CLIP: Time Series Understanding byCLIP",
+      "original_name": "Response refinement"
+    },
+    {
+      "text": "Revising generated constraint model code over multiple rounds using feedback from a symbolic solver and retrieved correction exemplars.",
+      "paper": "32.3%",
+      "original_name": "Iterative self-correction"
+    },
+    {
+      "text": "An iterative process where the model refines its solution over multiple rounds to improve correctness and verify results.",
+      "paper": "Multi-Document Event Extraction Using Large and Small Language Models",
+      "original_name": "Self-checking"
+    },
+    {
+      "text": "The observable process of modifying chart code and visual output across multiple steps based on feedback from evaluation agents.",
+      "paper": "Semantic Inversion, Identical Replies: Revisiting Negation Blindness in Large Language Models",
+      "original_name": "Iterative chart refinement"
+    },
+    {
+      "text": "An observable failure mode where the model introduces errors by altering correct parts of the input hypothesis, particularly under strict correctness constraints in ASR.",
+      "paper": "Glider: Global and Local Instruction-Driven Expert Router",
+      "original_name": "Over-correction"
+    },
+    {
+      "text": "Identifying and generating the correct form of a given input that contains grammatical errors.",
+      "paper": "Principled Personas: Defining and Measuring the Intended Effects of Persona Prompting on Task Performance",
+      "original_name": "Grammar correction"
+    },
+    {
+      "text": "The task of detecting and correcting erroneous characters within Chinese sentences.",
+      "paper": "The Good, the Bad and the Constructive: Automatically Measuring Peer Review\u2019s Utility for Authors",
+      "original_name": "Chinese spelling correction"
+    },
+    {
+      "text": "The observable behavior of making excessive, unnecessary changes to input text during correction, including altering correct parts or adding redundant content.",
+      "paper": "Improving Large Language Model Safety with Contrastive Representation Learning",
+      "original_name": "Overcorrection"
+    },
+    {
+      "text": "Failing to make all needed edits, leaving some grammatical errors uncorrected.",
+      "paper": "Improving Large Language Model Safety with Contrastive Representation Learning",
+      "original_name": "Undercorrection"
+    },
+    {
+      "text": "The process by which an LLM corrects ASR output by mapping an N-best list of hypotheses to a final predicted transcription in an auto-regressive manner.",
+      "paper": "It's Never Too Late: Fusing Acoustic Information into Large Language Models for Automatic Speech Recognition",
+      "original_name": "Generative error correction"
+    },
+    {
+      "text": "The observable action of an agent modifying and improving a piece of work (an artifact) based on instructions or feedback from another agent.",
+      "paper": "Scaling Large Language Model-based Multi-Agent Collaboration",
+      "original_name": "Artifact refinement"
+    },
+    {
+      "text": "Producing a revised answer over multiple attempts that improves on earlier outputs.",
+      "paper": "Think Thrice Before You Act: Progressive Thought Refinement in Large Language Models",
+      "original_name": "Iterative response refinement"
+    },
+    {
+      "text": "The observable process of engaging in a multi-step loop of proposing a sequence, receiving a measurement of its quality, and using that feedback to inform the next proposal.",
+      "paper": "Bayesian Optimization of Antibodies Informed by a Generative Model of Evolving Sequences",
+      "original_name": "Iterative sequence optimization"
+    },
+    {
+      "text": "The process where the model analyzes a failed trajectory and produces a natural language summary explaining the reason for failure to guide future attempts.",
+      "paper": "Monte Carlo Planning with Large Language Model for Text-Based Game Agents",
+      "original_name": "Reflection generation"
+    },
+    {
+      "text": "Revising an initial answer without external feedback or oracle hints, based only on the problem and the model's own prior attempt.",
+      "paper": "Training Language Models to Self-Correct via Reinforcement Learning",
+      "original_name": "Intrinsic self-correction"
+    },
+    {
+      "text": "The observable action of rectifying the model's output response, including updating outdated answers or incorrect classifications.",
+      "paper": "Unified Parameter-Efficient Unlearning for LLMs",
+      "original_name": "Response correction"
+    },
+    {
+      "text": "The observable behavior of a model re-generating a data item to produce an improved version, using its own prior self-reflection as guidance.",
+      "paper": "DataGen: Unified Synthetic Dataset Generation via Large Language Models",
+      "original_name": "Self-enhancement"
+    },
+    {
+      "text": "The observable process where a model proposes modifications to a given protein sequence to generate a new sequence with a predicted higher fitness value.",
+      "paper": "Data Distillation for extrapolative protein design through exact preference optimization",
+      "original_name": "Iterative sequence editing"
+    },
+    {
+      "text": "The process of progressively modifying a CAD model through a sequence of edits, where each step refines the design to better match user specifications.",
+      "paper": "FlexCAD: Unified and Versatile Controllable CAD Generation with Fine-tuned Large Language Models",
+      "original_name": "Iterative editing"
+    },
+    {
+      "text": "The observable behavior of generating a sequence of answers, where each new answer is conditioned on the model's previous attempts.",
+      "paper": "Scaling LLM Test-Time Compute Optimally Can be More Effective than Scaling Parameters for Reasoning",
+      "original_name": "Iterative revision"
+    },
+    {
+      "text": "The observable behavior of a critic agent evaluating responses from other agents and then generating an updated, improved response based on that evaluation.",
+      "paper": "Multiagent Finetuning: Self Improvement with Diverse Reasoning Chains",
+      "original_name": "Critique and refinement"
+    },
+    {
+      "text": "Improving generated hypotheses based on feedback regarding validness, novelty, clarity, and significance.",
+      "paper": "MOOSE-Chem: Large Language Models for Rediscovering Unseen Chemistry Scientific Hypotheses",
+      "original_name": "Hypothesis refinement"
+    },
+    {
+      "text": "The observable, multi-round process where a model repeatedly generates data, verifies it, and fine-tunes on the filtered results, leading to changes in its performance and output distribution over time.",
+      "paper": "Mind the Gap: Examining the Self-Improvement Capabilities of Large Language Models",
+      "original_name": "Iterative self-improvement"
+    },
+    {
+      "text": "The observable act of modifying a previously generated rationale to improve its quality, which can be done by the same model (self-refinement) or a different model (cross-refinement).",
+      "paper": "It Helps to Take a Second Opinion: Teaching Smaller LLMs To Deliberate Mutually via Selective Rationale Optimisation",
+      "original_name": "Rationale refinement"
+    },
+    {
+      "text": "Improving a rationale using a different model variant than the one that generated it.",
+      "paper": "It Helps to Take a Second Opinion: Teaching Smaller LLMs To Deliberate Mutually via Selective Rationale Optimisation",
+      "original_name": "Cross-refinement"
+    },
+    {
+      "text": "The observable task where an LLM revises its own previously generated text to better align with a specified subjective quality or constitutional principle.",
+      "paper": "Uncovering Gaps in How Humans and LLMs Interpret Subjective Language",
+      "original_name": "Output editing"
+    },
+    {
+      "text": "The observable task of editing a given textual description to improve its accuracy or quality with respect to an associated image.",
+      "paper": "PathGen-1.6M: 1.6 Million Pathology Image-text Pairs Generation through Multi-agent Collaboration",
+      "original_name": "Description revision"
+    },
+    {
+      "text": "Revising an action choice after a failed execution by proposing a more suitable next action.",
+      "paper": "Long-Horizon Planning for Multi-Agent Robots in Partially Observable Environments",
+      "original_name": "Failure correction"
+    },
+    {
+      "text": "Editing or rewriting an initial model answer into a revised answer that better satisfies the desired criteria.",
+      "paper": "Aligner: Efficient Alignment by Learning to Correct",
+      "original_name": "Answer correction"
+    },
+    {
+      "text": "Replacing or rewriting selected generated tokens using the full model during decoding.",
+      "paper": "SIRIUS : Contexual Sparisty with Correction for Efficient LLMs",
+      "original_name": "Token correction"
+    },
+    {
+      "text": "The observable process of taking a 'weak' (less preferred) model output as input and generating a 'strong' (more preferred) output that is better aligned with specified objectives.",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "original_name": "Conditional weak-to-strong correction"
+    },
+    {
+      "text": "The model's capacity to identify and correct errors in its own generated code based on feedback from code execution.",
+      "paper": "Lemur: Harmonizing Natural Language and Code for Language Agents",
+      "original_name": "Self-debugging"
+    },
+    {
+      "text": "The ability of an agent to analyze its past actions and failures to generate insights for future improvement.",
+      "paper": "Chain-of-Experts: When LLMs Meet Complex Operations Research Problems",
+      "original_name": "Self-reflection"
+    },
+    {
+      "text": "The observable process where a language model assesses its own generated text against a given criterion, such as harmlessness, to produce a score.",
+      "paper": "Boosting of Thoughts: Trial-and-Error Problem Solving with Large Language Models",
+      "original_name": "Self-evaluation"
+    },
+    {
+      "text": "The ability to judge text quality using detailed, user-defined criteria rather than only coarse or generic preferences.",
+      "paper": "Prometheus: Inducing Fine-Grained Evaluation Capability in Language Models",
+      "original_name": "Fine-grained evaluation capability"
+    },
+    {
+      "text": "The latent ability of a language model to assess the quality of generated text according to customized, fine-grained criteria provided via score rubrics and reference materials.",
+      "paper": "Prometheus: Inducing Fine-Grained Evaluation Capability in Language Models",
+      "original_name": "Evaluation capability"
+    },
+    {
+      "text": "The ability of the model to evaluate past decision sequences, identify errors, and generate corrected reasoning to improve future performance.",
+      "paper": "DiLu: A Knowledge-Driven Approach to Autonomous Driving with Large Language Models",
+      "original_name": "Reflection"
+    },
+    {
+      "text": "The latent ability of a model to identify and analyze potential mistakes, errors, or harmful elements within a given response.",
+      "paper": "Gaining Wisdom from Setbacks: Aligning Large Language Models via Mistake Analysis",
+      "original_name": "Discrimination"
+    },
+    {
+      "text": "The capability of a model to evaluate, identify flaws in, and analyze its own generated outputs without external feedback.",
+      "paper": "Gaining Wisdom from Setbacks: Aligning Large Language Models via Mistake Analysis",
+      "original_name": "Self-critique"
+    },
+    {
+      "text": "A latent mechanism by which a model compensates for changes or losses in individual functional components to maintain stable task performance.",
+      "paper": "LLM Circuit Analyses Are Consistent Across Training and Scale",
+      "original_name": "Self-repair"
+    },
+    {
+      "text": "The ability to iteratively improve generated code by identifying and fixing its own errors based on internal analysis or feedback.",
+      "paper": "SemCoder: Training Code Language Models with Comprehensive Semantics Reasoning",
+      "original_name": "Self-refinement capability"
+    },
+    {
+      "text": "The latent capacity of a model to independently identify and rectify errors within its own generated reasoning process.",
+      "paper": "SuperCorrect: Advancing Small LLM Reasoning with Thought Template Distillation and Self-Correction",
+      "original_name": "Self-correction ability"
+    },
+    {
+      "text": "The latent ability of a model to identify and rectify its own errors in reasoning or generation without external corrective feedback.",
+      "paper": "Training Large Language Models for Retrieval-Augmented Question Answering through Backtracking Correction",
+      "original_name": "Self-correction capability"
+    },
+    {
+      "text": "The latent ability of a model to correct or improve a response that fails to follow an instruction, ideally with minimal irrelevant revisions.",
+      "paper": "SPaR: Self-Play with Tree-Search Refinement to Improve Instruction-Following in Large Language Models",
+      "original_name": "Refinement capability"
+    },
+    {
+      "text": "The ability of a model to iteratively improve the accuracy, depth, and quality of its responses starting from an initial thought or approximate solution.",
+      "paper": "Think Thrice Before You Act: Progressive Thought Refinement in Large Language Models",
+      "original_name": "Progressive refinement"
+    },
+    {
+      "text": "The latent ability to use error feedback to revise an initially flawed program into a correct solution.",
+      "paper": "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code",
+      "original_name": "Self-repair capability"
+    },
+    {
+      "text": "The ability of an LLM agent to adjust its strategy and correct its course of action based on feedback from the environment, such as error messages.",
+      "paper": "ACCORD: Closing the Commonsense Measurability Gap",
+      "original_name": "Error recovery"
+    },
+    {
+      "text": "The latent capacity of a model to accurately evaluate and identify errors in its own reasoning process, as opposed to evaluating others' reasoning.",
+      "paper": "OASIS: Order-Augmented Strategy for Improved Code Search",
+      "original_name": "Self-critique ability"
+    },
+    {
+      "text": "The latent ability of a model to effectively correct its own incorrect reasoning or answers during iterative refinement, without external feedback.",
+      "paper": "AnRe: Analogical Replay for Temporal Knowledge Graph Forecasting",
+      "original_name": "Self-revision capability"
+    },
+    {
+      "text": "The capacity of LLMs to detect and correct their own errors in formal specification generation when provided with feedback or targeted prompts, indicating metacognitive reasoning and adaptability.",
+      "paper": "Maximizing the Effectiveness of LargerBERTModels for Compression",
+      "original_name": "Self-repair ability"
+    },
+    {
+      "text": "The latent ability to identify, analyze, and correct errors in source code.",
+      "paper": "SemCoder: Training Code Language Models with Comprehensive Semantics Reasoning",
+      "original_name": "Debugging capability"
+    },
+    {
+      "text": "The latent capability of a large language model to identify, analyze, and correct errors in source code or computational workflows.",
+      "paper": "Trace is the Next AutoDiff: Generative Optimization with Rich Feedback, Execution Traces, and LLMs",
+      "original_name": "Debugging ability"
+    },
+    {
+      "text": "The ability to infer which code files or functions are responsible for a reported crash from limited diagnostic information.",
+      "paper": "kGym: A Platform and Dataset to Benchmark Large Language Models on Linux Kernel Crash Resolution",
+      "original_name": "Bug localization"
+    },
+    {
+      "text": "The capacity to easily identify, diagnose, and correct unwanted behaviors or errors in the model by inspecting its internal concept-based representations.",
+      "paper": "Concept Bottleneck Language Models For Protein Design",
+      "original_name": "Debuggability"
+    },
+    {
+      "text": "The latent ability of a model to repair incorrect proofs or outputs based on feedback from a verification system.",
+      "paper": "Automated Proof Generation for Rust Code via Self-Evolution",
+      "original_name": "Self-debugging capability"
+    },
+    {
+      "text": "The inherent ability of a model to assess the correctness of its own generated solutions or reasoning steps, particularly by generating and executing code to validate an answer.",
+      "paper": "CRITIC: Large Language Models Can Self-Correct with Tool-Interactive Critiquing",
+      "original_name": "Self-verification"
+    },
+    {
+      "text": "The ability of a model to autonomously improve its capabilities and reinforce its knowledge utilization through iterative self-generated training, without external process supervision.",
+      "paper": "AlphaMath Almost Zero: Process Supervision without Process",
+      "original_name": "Self-evolution"
+    },
+    {
+      "text": "The latent capacity of a model to effectively analyze and correct flaws in its own or others' responses, facilitated by critique ability.",
+      "paper": "CriticEval: Evaluating Large-scale Language Model as Critic",
+      "original_name": "Self-improvement"
+    },
+    {
+      "text": "The ability of an LLM agent to enhance its performance on a task over time by learning from a continuous sequence of inputs and feedback.",
+      "paper": "StreamBench: Towards Benchmarking Continuous Improvement of Language Agents",
+      "original_name": "Continuous improvement"
+    },
+    {
+      "text": "The latent ability of a large language model to improve its performance by generating outputs, verifying them, and then updating itself based on the verified data.",
+      "paper": "Mind the Gap: Examining the Self-Improvement Capabilities of Large Language Models",
+      "original_name": "Self-improvement capability"
+    },
+    {
+      "text": "The latent process of refining a strategy or policy in-context to maximize cumulative rewards based on new information discovered through interaction.",
+      "paper": "Distilling Reinforcement Learning Algorithms for In-Context Model-Based Planning",
+      "original_name": "Policy improvement"
+    },
+    {
+      "text": "The model's capacity to improve its reasoning by analyzing and correcting flawed rationales, treating errors as opportunities for self-improvement.",
+      "paper": "Kill two birds with one stone: generalized and robustAI-generated text detection via dynamic perturbations",
+      "original_name": "Learning from mistakes"
+    },
+    {
+      "text": "The latent ability of a model to effectively refine its responses over multiple cycles of self-evaluation and revision, avoiding degradation due to redundancy, drift, or stubbornness.",
+      "paper": "DCE-LLM: Dead Code Elimination with Large Language Models",
+      "original_name": "Iterative reflection capability"
+    },
+    {
+      "text": "A reflection-based evaluation procedure in which the model iteratively revises its own answer using feedback.",
+      "paper": "DCE-LLM: Dead Code Elimination with Large Language Models",
+      "original_name": "Self-Reflection"
+    },
+    {
+      "text": "The degree of an agent's proficiency in generating useful verbal feedback from prior experiences to improve subsequent task performance.",
+      "paper": "Reflective Multi-Agent Collaboration based on Large Language Models",
+      "original_name": "Reflection capability"
+    },
+    {
+      "text": "The ability to access information about internal representations or predict one's own behavior in hypothetical scenarios, using mechanisms that do not depend solely on learning from the training distribution.",
+      "paper": "Me, Myself, and AI: The Situational Awareness Dataset (SAD) for LLMs",
+      "original_name": "Introspection"
+    },
+    {
+      "text": "The ability of a persona update process to adapt to recent user behaviors by incorporating dynamic changes and correcting errors in the existing persona.",
+      "paper": "HalluLens:LLMHallucination Benchmark",
+      "original_name": "Current reflection"
+    },
+    {
+      "text": "The latent ability of an LLM agent to model its own competence and learning progress across goals by leveraging semantic relationships, enabling self-directed curriculum learning.",
+      "paper": "MAGELLAN: Metacognitive predictions of learning progress guide autotelic LLM agents in large goal spaces",
+      "original_name": "Metacognitive monitoring"
+    },
+    {
+      "text": "The higher-order capacity to recognize and anticipate global patterns across multiple cycles of prediction, action, and feedback, enabling regulation beyond local adaptation.",
+      "paper": "Reflection-Bench: Evaluating Epistemic Agency in Large Language Models",
+      "original_name": "Meta-reflection"
+    },
+    {
+      "text": "The latent ability to identify incorrect or flawed reasoning steps within a chain of thought, even when the final answer may appear plausible.",
+      "paper": "SeaKR: Self-aware Knowledge Retrieval for Adaptive Retrieval Augmented Generation",
+      "original_name": "Mistake detection"
+    },
+    {
+      "text": "The ability of a model to iteratively improve its output based on feedback or further instructions.",
+      "paper": "SPRI: Aligning Large Language Models with Context-Situated Principles",
+      "original_name": "Refinement"
+    },
+    {
+      "text": "The latent ability of an LLM to dynamically improve its answers to complex scientific or technical questions through iterative self-evaluation and critique.",
+      "paper": "Revolve: Optimizing AI Systems by Tracking Response Evolution in Textual Optimization",
+      "original_name": "Solution refinement"
+    },
+    {
+      "text": "The internal capacity of an LLM to assess the quality or likely success of candidate actions based on simulated outcomes and reasoning, serving as a critic in decision-making.",
+      "paper": "Enhancing Decision-Making of Large Language Models via Actor-Critic",
+      "original_name": "Action evaluation"
+    },
+    {
+      "text": "The model's underlying capability to recognize inaccuracies in reasoning steps, including both inherent errors and those arising from flawed dependencies.",
+      "paper": "Premise-Augmented Reasoning Chains Improve Error Identification in Math reasoning with LLMs",
+      "original_name": "Error detection"
+    },
+    {
+      "text": "The ability to judge whether intermediate reasoning steps are correct, logical, and supported by prior steps.",
+      "paper": "VersaPRM: Multi-Domain Process Reward Model via Synthetic Reasoning Data",
+      "original_name": "Reasoning quality evaluation"
+    },
+    {
+      "text": "The ability of an agent to accurately evaluate its own knowledge, skills, strengths, and weaknesses.",
+      "paper": "Position: Truly Self-Improving Agents Require Intrinsic Metacognitive Learning",
+      "original_name": "Self-assessment"
+    },
+    {
+      "text": "The capacity to generate feedback that both accurately assesses a solution and helps improve it in subsequent revisions.",
+      "paper": "Teaching Language Models to Critique via Reinforcement Learning",
+      "original_name": "Critiquing ability"
+    },
+    {
+      "text": "The latent capacity of an LLM to accurately assess the quality of model-generated responses, particularly in guiding test-time computation through reranking, beam search, or refinement.",
+      "paper": "Evaluating Judges as Evaluators: The JETTS Benchmark of LLM-as-Judges as Test-Time Scaling Evaluators",
+      "original_name": "Judging ability"
+    }
+  ],
+  "definition_count": 103,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Self-reflection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Evaluating Large Language Models through Role-Guide and Self-Reflection: A Comparative Study",
+      "evidence": "",
+      "paper_count": 5,
+      "papers_by_conference": {
+        "iclr25": [
+          "Evaluating Large Language Models through Role-Guide and Self-Reflection: A Comparative Study"
+        ],
+        "icml25": [
+          "MME-CoT: Benchmarking Chain-of-Thought in Large Multimodal Models for Reasoning Quality, Robustness, and Efficiency",
+          "ReVISE: Learning to Refine at Test-Time via Intrinsic Self-Verification",
+          "Satori: Reinforcement Learning with Chain-of-Action-Thought Enhances LLM Reasoning via Autoregressive Search"
+        ],
+        "emnlp25": [
+          "BeyondWER: Probing Whisper\u2019s Sub\u2010token Decoder Across Diverse Language Resource Levels"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Self-reflection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Chain-of-Experts: When LLMs Meet Complex Operations Research Problems",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr24": [
+          "Chain-of-Experts: When LLMs Meet Complex Operations Research Problems"
+        ],
+        "iclr25": [
+          "DataGen: Unified Synthetic Dataset Generation via Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Recursive Introspection: Teaching Language Model Agents How to Self-Improve",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "Recursive Introspection: Teaching Language Model Agents How to Self-Improve"
+        ],
+        "icml25": [
+          "Cradle: Empowering Foundation Agents towards General Computer Control"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HyPoradise",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "It's Never Too Late: Fusing Acoustic Information into Large Language Models for Automatic Speech Recognition",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "It's Never Too Late: Fusing Acoustic Information into Large Language Models for Automatic Speech Recognition"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Evaluation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "ReVISE: Learning to Refine at Test-Time via Intrinsic Self-Verification",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "ReVISE: Learning to Refine at Test-Time via Intrinsic Self-Verification"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code execution",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Solving Challenging Math Word Problems Using GPT-4 Code Interpreter with Code-based Self-Verification",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Solving Challenging Math Word Problems Using GPT-4 Code Interpreter with Code-based Self-Verification"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Critique",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "CriticEval: Evaluating Large-scale Language Model as Critic",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "CriticEval: Evaluating Large-scale Language Model as Critic"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Critique",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Think Thrice Before You Act: Progressive Thought Refinement in Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Think Thrice Before You Act: Progressive Thought Refinement in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "SeaKR: Self-aware Knowledge Retrieval for Adaptive Retrieval Augmented Generation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "SeaKR: Self-aware Knowledge Retrieval for Adaptive Retrieval Augmented Generation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Chain-of-thought reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Think Smarter not Harder: Adaptive Reasoning with Inference Aware Optimization",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Think Smarter not Harder: Adaptive Reasoning with Inference Aware Optimization"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mathematical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "AlphaMath Almost Zero: Process Supervision without Process",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "AlphaMath Almost Zero: Process Supervision without Process"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Memory management",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Richelieu: Self-Evolving LLM-Based Agents for AI Diplomacy",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Richelieu: Self-Evolving LLM-Based Agents for AI Diplomacy"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "EvalPlus",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "SemCoder: Training Code Language Models with Comprehensive Semantics Reasoning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "SemCoder: Training Code Language Models with Comprehensive Semantics Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "DACO: Towards Application-Driven and Comprehensive Data Analysis via Code Generation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "DACO: Towards Application-Driven and Comprehensive Data Analysis via Code Generation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense knowledge",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Mind the Gap: Examining the Self-Improvement Capabilities of Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Mind the Gap: Examining the Self-Improvement Capabilities of Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Commonsense knowledge",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Recursive Introspection: Teaching Language Model Agents How to Self-Improve",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Recursive Introspection: Teaching Language Model Agents How to Self-Improve"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "LLMOPT: Learning to Define and Solve General Optimization Problems from Scratch",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "LLMOPT: Learning to Define and Solve General Optimization Problems from Scratch"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Planning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Mind the Gap: Examining the Self-Improvement Capabilities of Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Mind the Gap: Examining the Self-Improvement Capabilities of Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction following",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Mind the Gap: Examining the Self-Improvement Capabilities of Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Mind the Gap: Examining the Self-Improvement Capabilities of Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Iterative refinement",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Articulate-Anything:  Automatic Modeling of Articulated Objects via a Vision-Language Foundation Model",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Articulate-Anything:  Automatic Modeling of Articulated Objects via a Vision-Language Foundation Model"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8k",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Financial Risk Relation Identification through Dual-view Adaptation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Financial Risk Relation Identification through Dual-view Adaptation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Problem-solving",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Progress or Regress? Self-Improvement Reversal in Post-training",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Progress or Regress? Self-Improvement Reversal in Post-training"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Decision-making",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Better than Your Teacher: LLM Agents that learn from Privileged AI Feedback",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Better than Your Teacher: LLM Agents that learn from Privileged AI Feedback"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Output diversity",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Progress or Regress? Self-Improvement Reversal in Post-training",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Progress or Regress? Self-Improvement Reversal in Post-training"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Specialization",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Multiagent Finetuning: Self Improvement with Diverse Reasoning Chains",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Multiagent Finetuning: Self Improvement with Diverse Reasoning Chains"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "STAR",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Multiagent Finetuning: Self Improvement with Diverse Reasoning Chains",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Multiagent Finetuning: Self Improvement with Diverse Reasoning Chains"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hypothesis generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "MOOSE-Chem: Large Language Models for Rediscovering Unseen Chemistry Scientific Hypotheses",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "MOOSE-Chem: Large Language Models for Rediscovering Unseen Chemistry Scientific Hypotheses"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Complex reasoning",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Pay More Attention to Images: Numerous Images-Oriented Multimodal Summarization",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Pay More Attention to Images: Numerous Images-Oriented Multimodal Summarization"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Critique generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Are explicit belief representations necessary? A comparison between Large Language Models andBayesian probabilistic models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Are explicit belief representations necessary? A comparison between Large Language Models andBayesian probabilistic models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Complex reasoning",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Adaptive Self-improvement LLM Agentic System for ML Library Development",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Adaptive Self-improvement LLM Agentic System for ML Library Development"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "UniRAG: Unified Query Understanding Method for Retrieval Augmented Generation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "UniRAG: Unified Query Understanding Method for Retrieval Augmented Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "System 2 thinking",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "MaXIFE: Multilingual and Cross-lingual Instruction Following Evaluation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "MaXIFE: Multilingual and Cross-lingual Instruction Following Evaluation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-context reinforcement learning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "In-Context Reinforcement Learning From Suboptimal Historical Data",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "In-Context Reinforcement Learning From Suboptimal Historical Data"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Meta-learning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Position: Truly Self-Improving Agents Require Intrinsic Metacognitive Learning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Position: Truly Self-Improving Agents Require Intrinsic Metacognitive Learning"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 34,
+  "incoming_relationship_count": 21,
+  "outgoing_relationship_count": 13,
+  "characterization": "Across the surveyed literature, self-correction is broadly characterized as the observable behavior of a model identifying and rectifying errors in its own generated artifacts. This process is applied to a wide array of outputs, including code, mathematical proofs, SQL queries, reasoning chains, and natural language text, and is most commonly described as an iterative or multi-round refinement. The correction is frequently triggered by feedback from various sources, such as execution results, environmental error messages, user input, or other AI agents acting as critics. A smaller line of work distinguishes this from \"intrinsic self-correction,\" where a model revises its output without any external feedback or hints. This behavior is operationalized and measured using instruments like the HyPoradise and EvalPlus benchmarks, as well as through Human evaluation. Self-correction is often studied alongside latent capabilities thought to enable it, such as \"self-reflection\" (analyzing past failures), \"self-critique\" (evaluating one's own output), and the broader capacity for \"self-improvement.\" The behavior is frequently investigated for its reported influence on downstream capabilities like problem-solving, mathematical reasoning, and generalization. Finally, a few papers also define specific failure modes of this process, including \"over-correction,\" where correct parts of an input are erroneously altered, and \"undercorrection,\" where errors are left unfixed.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Advancing Mathematical Reasoning in Language Models: The Impact of Problem-Solving Data, Data Synthesis Methods, and Training Stages",
+      "Efficient Perplexity Bound and Ratio Matching in Discrete Diffusion Language Models",
+      "ImProver: Agent-Based Automated Proof Optimization",
+      "LiveBench: A Challenging, Contamination-Limited LLM Benchmark",
+      "MrT5: Dynamic Token Merging for Efficient Byte-level Language Models",
+      "ROUTE: Robust Multitask Tuning and Collaboration for Text-to-SQL",
+      "Think while You Generate: Discrete Diffusion with Planned Denoising",
+      "AgentHarm: A Benchmark for Measuring Harmfulness of LLM Agents",
+      "Articulate-Anything:  Automatic Modeling of Articulated Objects via a Vision-Language Foundation Model",
+      "BIRD: A Trustworthy Bayesian Inference Framework for Large Language Models",
+      "Bayesian Optimization of Antibodies Informed by a Generative Model of Evolving Sequences",
+      "ChartMimic: Evaluating LMM's Cross-Modal Reasoning Capability via Chart-to-Code Generation",
+      "Data Distillation for extrapolative protein design through exact preference optimization",
+      "DataGen: Unified Synthetic Dataset Generation via Large Language Models",
+      "Evaluating Large Language Models through Role-Guide and Self-Reflection: A Comparative Study",
+      "FlexCAD: Unified and Versatile Controllable CAD Generation with Fine-tuned Large Language Models",
+      "Interleaved Scene Graphs for Interleaved Text-and-Image Generation Assessment",
+      "It Helps to Take a Second Opinion: Teaching Smaller LLMs To Deliberate Mutually via Selective Rationale Optimisation",
+      "KOR-Bench: Benchmarking Language Models on Knowledge-Orthogonal Reasoning Tasks",
+      "LLMOPT: Learning to Define and Solve General Optimization Problems from Scratch",
+      "MOOSE-Chem: Large Language Models for Rediscovering Unseen Chemistry Scientific Hypotheses",
+      "MetaDesigner: Advancing Artistic Typography through AI-Driven, User-Centric, and Multilingual WordArt Synthesis",
+      "Mind the Gap: Examining the Self-Improvement Capabilities of Large Language Models",
+      "Mixture-of-Agents Enhances Large Language Model Capabilities",
+      "Monte Carlo Planning with Large Language Model for Text-Based Game Agents",
+      "Multiagent Finetuning: Self Improvement with Diverse Reasoning Chains",
+      "PathGen-1.6M: 1.6 Million Pathology Image-text Pairs Generation through Multi-agent Collaboration",
+      "Physics of Language Models: Part 2.2, How to Learn From Mistakes on Grade-School Math Problems",
+      "Regressing the Relative Future: Efficient Policy Optimization for Multi-turn RLHF",
+      "RevisEval: Improving LLM-as-a-Judge via Response-Adapted References",
+      "SPaR: Self-Play with Tree-Search Refinement to Improve Instruction-Following in Large Language Models",
+      "Scaling LLM Test-Time Compute Optimally Can be More Effective than Scaling Parameters for Reasoning",
+      "Scaling Large Language Model-based Multi-Agent Collaboration",
+      "Self-Boosting Large Language Models with  Synthetic Preference Data",
+      "SuperCorrect: Advancing Small LLM Reasoning with Thought Template Distillation and Self-Correction",
+      "TLDR: Token-Level Detective Reward Model for Large Vision Language Models",
+      "Think Thrice Before You Act: Progressive Thought Refinement in Large Language Models",
+      "Training Language Models to Self-Correct via Reinforcement Learning",
+      "Training Large Language Models for Retrieval-Augmented Question Answering through Backtracking Correction",
+      "Triples as the Key: Structuring Makes Decomposition and Verification Easier in LLM-based TableQA",
+      "Uncovering Gaps in How Humans and LLMs Interpret Subjective Language",
+      "Unified Parameter-Efficient Unlearning for LLMs",
+      "AgentRefine: Enhancing Agent Generalization through Refinement Tuning",
+      "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code",
+      "Automated Proof Generation for Rust Code via Self-Evolution",
+      "CodeMMLU: A Multi-Task Benchmark for Assessing Code Understanding & Reasoning Capabilities of CodeLLMs",
+      "Concept Bottleneck Language Models For Protein Design",
+      "Anyprefer: An Agentic Framework for Preference Data Synthesis",
+      "Better than Your Teacher: LLM Agents that learn from Privileged AI Feedback",
+      "Distilling Reinforcement Learning Algorithms for In-Context Model-Based Planning",
+      "Mutual Reasoning Makes Smaller LLMs Stronger Problem-Solver",
+      "SELF-EVOLVED REWARD LEARNING FOR LLMS",
+      "Self-Improvement in Language Models: The Sharpening Mechanism",
+      "Self-Improving Robust Preference Optimization",
+      "REvolve: Reward Evolution with Large Language Models using Human Feedback",
+      "SPA-BENCH: A COMPREHENSIVE BENCHMARK FOR SMARTPHONE AGENT EVALUATION"
+    ],
+    "icml25": [
+      "A Mathematical Framework for AI-Human Integration in Work",
+      "Demystifying Long Chain-of-Thought Reasoning",
+      "On the Resilience of LLM-Based Multi-Agent Collaboration with Faulty Agents",
+      "Position: LLMs Need a Bayesian Meta-Reasoning Framework for More Robust and Generalizable Reasoning",
+      "RATE: Causal Explainability of Reward Models with Imperfect Counterfactuals",
+      "Adaptive Self-improvement LLM Agentic System for ML Library Development",
+      "Cradle: Empowering Foundation Agents towards General Computer Control",
+      "In-Context Reinforcement Learning From Suboptimal Historical Data",
+      "Position: Truly Self-Improving Agents Require Intrinsic Metacognitive Learning",
+      "Training Software Engineering Agents and Verifiers with SWE-Gym",
+      "Are Large Language Models Ready for Multi-Turn Tabular Data Analysis?",
+      "CodeSteer: Symbolic-Augmented Language Models via Code/Text Guidance",
+      "ELEMENTAL: Interactive Learning from Demonstrations and Vision-Language Models for Reward Design in Robotics",
+      "Improving Rationality in the Reasoning Process of Language Models through Self-playing Game",
+      "MAGELLAN: Metacognitive predictions of learning progress guide autotelic LLM agents in large goal spaces",
+      "MME-CoT: Benchmarking Chain-of-Thought in Large Multimodal Models for Reasoning Quality, Robustness, and Efficiency",
+      "Otter: Generating Tests from Issues to Validate SWE Patches",
+      "RZ-NAS: Enhancing LLM-guided Neural Architecture Search via Reflective Zero-Cost Strategy",
+      "Reflection-Bench: Evaluating Epistemic Agency in Large Language Models",
+      "Reinforce LLM Reasoning through Multi-Agent Reflection",
+      "Satori: Reinforcement Learning with Chain-of-Action-Thought Enhances LLM Reasoning via Autoregressive Search",
+      "Which Agent Causes Task Failures and When? On Automated Failure Attribution of LLM Multi-Agent Systems",
+      "B-score: Detecting biases in large language models using response history",
+      "Closed-Loop Long-Horizon Robotic Planning via Equilibrium Sequence Modeling",
+      "Evaluating Judges as Evaluators: The JETTS Benchmark of LLM-as-Judges as Test-Time Scaling Evaluators",
+      "Forest-of-Thought: Scaling Test-Time Compute for Enhancing LLM Reasoning",
+      "Generalized Interpolating Discrete Diffusion",
+      "Mastering Board Games by External and Internal Planning with Language Models",
+      "Position: Formal Mathematical Reasoning\u2014A New Frontier in AI",
+      "ReVISE: Learning to Refine at Test-Time via Intrinsic Self-Verification",
+      "Reasoning-as-Logic-Units: Scaling Test-Time Reasoning in Large Language Models Through Logic Unit Alignment",
+      "Revolve: Optimizing AI Systems by Tracking Response Evolution in Textual Optimization",
+      "SPRI: Aligning Large Language Models with Context-Situated Principles",
+      "Teaching Language Models to Critique via Reinforcement Learning",
+      "The Diffusion Duality",
+      "Think Smarter not Harder: Adaptive Reasoning with Inference Aware Optimization",
+      "Towards Practical Defect-Focused Automated Code Review",
+      "VersaPRM: Multi-Domain Process Reward Model via Synthetic Reasoning Data"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.1443.checklist",
+      "2025.emnlp-main.202.checklist",
+      "2025.emnlp-main.72.checklist",
+      "2025.emnlp-main.977.checklist",
+      "32.3%",
+      "A Fully Probabilistic Perspective on Large Language Model Unlearning: Evaluation and Optimization",
+      "AFRIDOC-MT: Document-levelMTCorpus forAfrican Languages",
+      "AdaRewriter: Unleashing the Power of Prompting-based Conversational Query Reformulation via Test-Time Adaptation",
+      "AdaSteer: Your AlignedLLMis Inherently an Adaptive Jailbreak Defender",
+      "AlignX: Advancing Multilingual Large Language Models with Multilingual Representation Alignment",
+      "Answer Convergence as a Signal for Early Stopping in Reasoning",
+      "BeyondWER: Probing Whisper\u2019s Sub\u2010token Decoder Across Diverse Language Resource Levels",
+      "COUNTDOWN: Contextually Sparse Activation Filtering Out Unnecessary Weights in Down Projection",
+      "Can Prompts Rewind Time forLLMs? Evaluating the Effectiveness of Prompted Knowledge Cutoffs",
+      "Chat-Driven Text Generation and Interaction for Person Retrieval",
+      "CoMAT: Chain of Mathematically Annotated Thought Improves Mathematical Reasoning",
+      "Confidence-guided Refinement Reasoning for Zero-shot Question Answering",
+      "ConvSearch-R1: Enhancing Query Reformulation for Conversational Search with Reasoning via Reinforcement Learning",
+      "Do Large Language Models Truly Grasp Addition? A Rule-Focused Diagnostic Using Two-Integer Arithmetic",
+      "Dynamic Collaboration of Multi-Language Models based on Minimal Complete Semantic Units",
+      "DynamicNER: A Dynamic, Multilingual, and Fine-Grained Dataset forLLM-based Named Entity Recognition",
+      "EasyRec: Simple yet Effective Language Models for Recommendation",
+      "EquiBench: Benchmarking Large Language Models\u2019 Reasoning about Program Semantics via Equivalence Checking",
+      "Few-Shot Learning Translation from New Languages",
+      "Financial Risk Relation Identification through Dual-view Adaptation",
+      "From General Reward to Targeted Reward: Improving Open-ended Long-context Generation Models",
+      "From Shortcuts to Balance: Attribution Analysis of Speech-Text Feature Utilization in Distinguishing Original from Machine-Translated Texts",
+      "GATEAU: Selecting Influential Samples for Long Context Alignment",
+      "GUI-Bee: AlignGUIAction Grounding to Novel Environments via Autonomous Exploration",
+      "Glider: Global and Local Instruction-Driven Expert Router",
+      "Gradient-Attention Guided Dual-Masking Synergetic Framework for Robust Text-based Person Retrieval",
+      "Hanfu-Bench: A Multimodal Benchmark on Cross-Temporal Cultural Understanding and Transcreation",
+      "Identifying Unlearned Data inLLMs via Membership Inference Attacks",
+      "Improving Large Language Model Safety with Contrastive Representation Learning",
+      "Is the Top Still Spinning? Evaluating Subjectivity in Narrative Understanding",
+      "KRETA: A Benchmark forKorean Reading and Reasoning in Text-RichVQAAttuned to Diverse Visual Contexts",
+      "Language Mixing in Reasoning Language Models: Patterns, Impact, and Internal Causes",
+      "Look Again, Think Slowly: Enhancing Visual Reflection in Vision-Language Models",
+      "MMLU-ProX: A Multilingual Benchmark for Advanced Large Language Model Evaluation",
+      "Meta-Rewarding Language Models: Self-Improving Alignment withLLM-as-a-Meta-Judge",
+      "Mind the Value-Action Gap: DoLLMs Act in Alignment with Their Values?",
+      "Mitigating Hallucinations in Vision-Language Models through Image-Guided Head Suppression",
+      "Mitigating Hallucinations inLM-BasedTTSModels via Distribution Alignment UsingGFlowNets",
+      "Model-based Large Language Model Customization as Service",
+      "Multi-Document Event Extraction Using Large and Small Language Models",
+      "OMS: On-the-fly, Multi-Objective, Self-Reflective Ad Keyword Generation viaLLMAgent",
+      "OpenTuringBench: An Open-Model-based Benchmark and Framework for Machine-Generated Text Detection and Attribution",
+      "Principled Personas: Defining and Measuring the Intended Effects of Persona Prompting on Task Performance",
+      "RD-MCSA: A Multi-Class Sentiment Analysis Approach Integrating In-Context Classification Rationales and Demonstrations",
+      "REACT: Representation Extraction And Controllable Tuning to Overcome Overfitting inLLMKnowledge Editing",
+      "RareSyn: Health Record Synthesis for Rare Disease Diagnosis",
+      "RethinkMCTS: Refining Erroneous Thoughts inMonteCarlo Tree Search for Code Generation",
+      "RuCCoD: Towards AutomatedICDCoding inRussian",
+      "Rule Discovery for Natural Language Inference Data Generation Using Out-of-Distribution Detection",
+      "SciNLP: A Domain-Specific Benchmark for Full-Text Scientific Entity and Relation Extraction inNLP",
+      "Semantic Inversion, Identical Replies: Revisiting Negation Blindness in Large Language Models",
+      "Social Bias in Multilingual Language Models: A Survey",
+      "TS-CLIP: Time Series Understanding byCLIP",
+      "The Good, the Bad and the Constructive: Automatically Measuring Peer Review\u2019s Utility for Authors",
+      "The Impact of Negated Text on Hallucination with Large Language Models",
+      "Think, Verbalize, then Speak: Bridging Complex Thoughts and Comprehensible Speech",
+      "ThinkSLM",
+      "ToDi: Token-wise Distillation via Fine-Grained Divergence Control",
+      "Towards a Unified Paradigm of Concept Editing in Large Language Models",
+      "Tree-of-Quote Prompting Improves Factuality and Attribution in Multi-Hop and Medical Reasoning",
+      "UI-Hawk: Unleashing the Screen Stream Understanding for MobileGUIAgents",
+      "VisCRA: A Visual Chain Reasoning Attack for Jailbreaking Multimodal Large Language Models",
+      "Warm Up Before You Train: Unlocking General Reasoning in Resource-Constrained Settings",
+      "Where Confabulation Lives: Latent Feature Discovery inLLMs",
+      "Words Like Knives: Backstory-Personalized Modeling and Detection of Violent Communication",
+      "Graders Should Cheat: Privileged Information Enables Expert-Level Automated Evaluations"
+    ],
+    "iclr24": [
+      "It's Never Too Late: Fusing Acoustic Information into Large Language Models for Automatic Speech Recognition",
+      "Large Language Models are Efficient Learners of Noise-Robust Speech Recognition",
+      "Boosting of Thoughts: Trial-and-Error Problem Solving with Large Language Models",
+      "CRITIC: Large Language Models Can Self-Correct with Tool-Interactive Critiquing",
+      "Chain of Hindsight aligns Language Models with Feedback",
+      "Chain-of-Experts: When LLMs Meet Complex Operations Research Problems",
+      "DiLu: A Knowledge-Driven Approach to Autonomous Driving with Large Language Models",
+      "Gaining Wisdom from Setbacks: Aligning Large Language Models via Mistake Analysis",
+      "L2MAC: Large Language Model Automatic Computer for Extensive Code Generation",
+      "Lemur: Harmonizing Natural Language and Code for Language Agents",
+      "MUSTARD: Mastering Uniform Synthesis of Theorem and Proof Data",
+      "Prometheus: Inducing Fine-Grained Evaluation Capability in Language Models",
+      "PromptAgent: Strategic Planning with Language Models Enables Expert-level Prompt Optimization",
+      "Retroformer: Retrospective Large Language Agents with Policy Gradient Optimization",
+      "Solving Challenging Math Word Problems Using GPT-4 Code Interpreter with Code-based Self-Verification",
+      "Teaching Large Language Models to Self-Debug",
+      "MathVista: Evaluating Mathematical Reasoning of Foundation Models in Visual Contexts"
+    ],
+    "neurips24": [
+      "Aligner: Efficient Alignment by Learning to Correct",
+      "Bias Amplification in Language Model Evolution: An Iterated Learning Perspective",
+      "CriticEval: Evaluating Large-scale Language Model as Critic",
+      "DACO: Towards Application-Driven and Comprehensive Data Analysis via Code Generation",
+      "DARG: Dynamic Evaluation of Large Language Models via Adaptive Reasoning Graph",
+      "EHRCon: Dataset for Checking Consistency between Unstructured Notes and Structured Tables in Electronic Health Records",
+      "FVEL: Interactive Formal Verification Environment with Large Language Models via Theorem Proving",
+      "IDGen: Item Discrimination Induced Prompt Generation for LLM Evaluation",
+      "Long-Horizon Planning for Multi-Agent Robots in Partially Observable Environments",
+      "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "Mind's Eye of LLMs: Visualization-of-Thought Elicits Spatial Reasoning in Large Language Models",
+      "Recursive Introspection: Teaching Language Model Agents How to Self-Improve",
+      "SIRIUS : Contexual Sparisty with Correction for Efficient LLMs",
+      "SciInstruct: a Self-Reflective Instruction Annotated Dataset for Training Scientific Language Models",
+      "SemCoder: Training Code Language Models with Comprehensive Semantics Reasoning",
+      "StreamBench: Towards Benchmarking Continuous Improvement of Language Agents",
+      "WISE: Rethinking the Knowledge Memory for Lifelong Model Editing of Large Language Models",
+      "A Theoretical Understanding of Self-Correction through In-context Alignment",
+      "Can Language Models Perform Robust Reasoning in Chain-of-thought Prompting with Noisy Rationales?",
+      "Diffusion of Thought: Chain-of-Thought Reasoning in Diffusion Language Models",
+      "LLM Circuit Analyses Are Consistent Across Training and Scale",
+      "MR-Ben: A Meta-Reasoning Benchmark for Evaluating System-2 Thinking in LLMs",
+      "Plan-on-Graph: Self-Correcting Adaptive Planning of Large Language Model on Knowledge Graphs",
+      "RL-GPT: Integrating Reinforcement Learning and Code-as-policy",
+      "Generating Code World Models with Large Language Models Guided by Monte Carlo Tree Search",
+      "MACM: Utilizing a Multi-Agent System for Condition Mining in Solving Complex Mathematical Problems",
+      "Trace is the Next AutoDiff: Generative Optimization with Rich Feedback, Execution Traces, and LLMs",
+      "kGym: A Platform and Dataset to Benchmark Large Language Models on Linux Kernel Crash Resolution",
+      "AlphaMath Almost Zero: Process Supervision without Process",
+      "Richelieu: Self-Evolving LLM-Based Agents for AI Diplomacy",
+      "A Decision-Language Model (DLM) for Dynamic Restless Multi-Armed Bandit Tasks in Public Health",
+      "AGILE: A Novel Reinforcement Learning Framework of LLM Agents",
+      "AgentBoard: An Analytical Evaluation Board of Multi-turn LLM Agents",
+      "Me, Myself, and AI: The Situational Awareness Dataset (SAD) for LLMs",
+      "Mobile-Agent-v2: Mobile Device Operation Assistant with Effective Navigation via Multi-Agent Collaboration",
+      "Optimus-1: Hybrid Multimodal Memory Empowered Agents Excel in Long-Horizon Tasks",
+      "Reflective Multi-Agent Collaboration based on Large Language Models",
+      "RoleAgent: Building, Interacting, and Benchmarking High-quality Role-Playing Agents from Scripts"
+    ],
+    "naacl25": [
+      "ACCORD: Closing the Commonsense Measurability Gap",
+      "Enhancing Multimodal Entity Linking withJaccard Distance-based Conditional Contrastive Learning and Contextual Visual Augmentation",
+      "Investigating Hallucinations in Simultaneous Machine Translation: Knowledge Distillation Solution and Components Analysis",
+      "PROMPTEVALS: A Dataset of Assertions and Guardrails for Custom Production Large Language Model Pipelines",
+      "Prototypical Extreme Multi-label Classification with a Dynamic Margin Loss",
+      "Towards SustainableNLP: Insights from Benchmarking Inference Energy in Large Language Models",
+      "TurkingBench: A Challenge Benchmark for Web Agents",
+      "DCE-LLM: Dead Code Elimination with Large Language Models",
+      "Hephaestus: Improving Fundamental Agent Capabilities of Large Language Models through Continual Pre-Training",
+      "Improving and Assessing the Fidelity of Large Language Models Alignment to Online Communities",
+      "Kill two birds with one stone: generalized and robustAI-generated text detection via dynamic perturbations",
+      "PICLe: Pseudo-annotations for In-Context Learning in Low-Resource Named Entity Detection",
+      "S2-MAD: Breaking the Token Barrier to Enhance Multi-Agent Debate Efficiency"
+    ],
+    "acl25": [
+      "AnRe: Analogical Replay for Temporal Knowledge Graph Forecasting",
+      "Maximizing the Effectiveness of LargerBERTModels for Compression",
+      "OASIS: Order-Augmented Strategy for Improved Code Search",
+      "Pixel-Level Reasoning Segmentation via Multi-turn Conversations",
+      "Read it in Two Steps: Translating Extremely Low-Resource Languages with Code-Augmented Grammar Books",
+      "Beyond Surface Simplicity: Revealing Hidden Reasoning Attributes for Precise Commonsense Diagnosis",
+      "CADReview: Automatically ReviewingCADPrograms with Error Detection and Correction",
+      "Contrastive Perplexity for Controlled Generation: An Application in Detoxifying Large Language Models",
+      "HalluLens:LLMHallucination Benchmark",
+      "Multi-level Association Refinement Network for Dialogue Aspect-based Sentiment Quadruple Analysis",
+      "Past Meets Present: Creating Historical Analogy with Large Language Models",
+      "RPO: Retrieval Preference Optimization for Robust Retrieval-Augmented Generation",
+      "TheoremExplainAgent: Towards Video-based Multimodal Explanations forLLMTheorem Understanding",
+      "Evaluating Sequence Labeling on the basis of Information Theory",
+      "SeaKR: Self-aware Knowledge Retrieval for Adaptive Retrieval Augmented Generation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 56,
+    "icml25": 38,
+    "emnlp25": 71,
+    "iclr24": 17,
+    "neurips24": 38,
+    "naacl25": 13,
+    "acl25": 15
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

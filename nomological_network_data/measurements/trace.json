@@ -1,0 +1,130 @@
+{
+  "canonical_name": "TRACE",
+  "type": "measurement",
+  "canonical_definition": "Across the provided sources, TRACE is consistently characterized as a public benchmark for continual learning and continual instruction tuning. Its primary function is to evaluate model performance across a sequence of diverse tasks, particularly in the context of multi-round or sequential fine-tuning. The benchmark is most frequently stated to measure abilities like `code generation` and `mathematical reasoning`, with multi-choice QA and summarization also listed as component tasks. A less common framing, found in one paper, describes TRACE as being designed to evaluate broader capabilities, including `general ability`, `instruction following`, and `safety`. The provided data also indicates that TRACE is used to measure `commonsense knowledge` and `complex instruction following`, although specific evidence for these connections is not present in the source snippets.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "TRACE"
+  ],
+  "papers": [
+    "Aligned but Blind: Alignment Increases Implicit Bias by Reducing Awareness of Race",
+    "SCAR: Data Selection via Style Consistency-Aware Response Ranking for Efficient Instruction-Tuning of Large Language Models",
+    "Spurious Forgetting in Continual Learning of Language Models",
+    "Unlocking the Power of Function Vectors for Characterizing and Mitigating Catastrophic Forgetting in Continual Instruction Tuning",
+    "Improving Parallel Program Performance with LLM Optimizers via Agent-System Interfaces",
+    "Large Continual Instruction Assistant"
+  ],
+  "paper_count": 6,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A public benchmark for continual learning that includes a sequence of tasks such as multi-choice QA, code generation, mathematical reasoning, and summarization.",
+      "paper": "Unlocking the Power of Function Vectors for Characterizing and Mitigating Catastrophic Forgetting in Continual Instruction Tuning",
+      "original_name": "TRACE"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Spurious Forgetting in Continual Learning of Language Models",
+      "evidence": "we also addressed the effectiveness of our approach on the public benchmark TRACE Wang et al. (2023c), which includes a learning sequence comprised of multi-choice QA, code generation, mathematical reasoning, and summarization tasks. (Section 6)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Spurious Forgetting in Continual Learning of Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction following",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Large Continual Instruction Assistant",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Large Continual Instruction Assistant"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code completion",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Spurious Forgetting in Continual Learning of Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Spurious Forgetting in Continual Learning of Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Complex instruction following",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Aligned but Blind: Alignment Increases Implicit Bias by Reducing Awareness of Race",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Aligned but Blind: Alignment Increases Implicit Bias by Reducing Awareness of Race"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Safety",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Large Continual Instruction Assistant",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Large Continual Instruction Assistant"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 5,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided sources, TRACE is consistently characterized as a public benchmark for continual learning and continual instruction tuning. Its primary function is to evaluate model performance across a sequence of diverse tasks, particularly in the context of multi-round or sequential fine-tuning. The benchmark is most frequently stated to measure abilities like `code generation` and `mathematical reasoning`, with multi-choice QA and summarization also listed as component tasks. A less common framing, found in one paper, describes TRACE as being designed to evaluate broader capabilities, including `general ability`, `instruction following`, and `safety`. The provided data also indicates that TRACE is used to measure `commonsense knowledge` and `complex instruction following`, although specific evidence for these connections is not present in the source snippets.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Spurious Forgetting in Continual Learning of Language Models",
+      "Unlocking the Power of Function Vectors for Characterizing and Mitigating Catastrophic Forgetting in Continual Instruction Tuning"
+    ],
+    "acl25": [
+      "Aligned but Blind: Alignment Increases Implicit Bias by Reducing Awareness of Race",
+      "SCAR: Data Selection via Style Consistency-Aware Response Ranking for Efficient Instruction-Tuning of Large Language Models"
+    ],
+    "icml25": [
+      "Improving Parallel Program Performance with LLM Optimizers via Agent-System Interfaces",
+      "Large Continual Instruction Assistant"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "acl25": 2,
+    "icml25": 2
+  },
+  "conferences": [
+    "acl25",
+    "iclr25",
+    "icml25"
+  ]
+}

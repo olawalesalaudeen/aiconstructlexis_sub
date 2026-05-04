@@ -1,0 +1,132 @@
+{
+  "canonical_name": "Coverage",
+  "type": "construct",
+  "canonical_definition": "Across the provided literature, 'Coverage' is a multifaceted construct with several distinct definitions, most of which relate to some form of representativeness. The most frequently cited definition frames it as a statistical property of a language model, specifically measuring the probability mass it assigns to the optimal or arg-max response for a given prompt. Other work defines it more contextually, such as the extent to which offline preference data represents a policy's support in reinforcement learning, or the degree to which a condensed dataset includes \"diverse and previously underrepresented patterns\" from an original dataset. A separate line of work treats it as a quality of information extraction, referring to the capture of all verifiable information from a source text. The construct is operationalized and measured through several methods, most commonly `Human evaluation`, where annotators may rate whether a response \"comprehensively addresses all components of questions asked\" or count the number of source references covered. Papers also report using `Human annotation study` and `LLM-based evaluation` to measure it, and the construct is studied in relation to `Reward overoptimization`.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Coverage"
+  ],
+  "papers": [
+    "ConceptCarve: Dynamic Realization of Evidence",
+    "PIC: Unlocking Long-Form Text Generation Capabilities of Large Language Models via PositionIDCompression",
+    "DoLLMs Adhere to Label Definitions? Examining Their Receptivity to External Label Definitions",
+    "Drivel-ology: ChallengingLLMs with Interpreting Nonsense with Depth",
+    "Introducing Spotlight: A Novel Approach for Generating Captivating Key Information from Documents",
+    "Skeletons Matter: Dynamic Data Augmentation for Text-to-Query",
+    "TinySQL: A Progressive Text-to-SQLDataset for Mechanistic Interpretability Research",
+    "Correcting the Mythos of KL-Regularization: Direct Alignment without Overoptimization via Chi-Squared Preference Optimization",
+    "Self-Improvement in Language Models: The Sharpening Mechanism",
+    "Design Considerations in Offline Preference-based RL",
+    "Is Best-of-N the Best of Them? Coverage, Scaling, and Optimality in Inference-Time Alignment",
+    "Toward Robust Hyper-Detailed Image Captioning: A Multiagent Approach and Dual Evaluation Metrics for Factuality and Coverage"
+  ],
+  "paper_count": 12,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A statistical property of a base model measuring how much probability mass it assigns to the optimal or arg-max response for a given prompt, on average.",
+      "paper": "Self-Improvement in Language Models: The Sharpening Mechanism",
+      "original_name": "Coverage"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reward overoptimization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Correcting the Mythos of KL-Regularization: Direct Alignment without Overoptimization via Chi-Squared Preference Optimization",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Correcting the Mythos of KL-Regularization: Direct Alignment without Overoptimization via Chi-Squared Preference Optimization"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "TinySQL: A Progressive Text-to-SQLDataset for Mechanistic Interpretability Research",
+      "evidence": "After each conversation, participants rate the model\u2019s responses on a 5-point scale ... across five criteria ...: (4) Coverage: Response comprehensively addresses all components of questions asked, including sub-questions. (Section 3.2.3)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "TinySQL: A Progressive Text-to-SQLDataset for Mechanistic Interpretability Research"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human annotation study",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "PIC: Unlocking Long-Form Text Generation Capabilities of Large Language Models via PositionIDCompression",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "PIC: Unlocking Long-Form Text Generation Capabilities of Large Language Models via PositionIDCompression"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-based evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Introducing Spotlight: A Novel Approach for Generating Captivating Key Information from Documents",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Introducing Spotlight: A Novel Approach for Generating Captivating Key Information from Documents"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 4,
+  "characterization": "Across the provided literature, 'Coverage' is a multifaceted construct with several distinct definitions, most of which relate to some form of representativeness. The most frequently cited definition frames it as a statistical property of a language model, specifically measuring the probability mass it assigns to the optimal or arg-max response for a given prompt. Other work defines it more contextually, such as the extent to which offline preference data represents a policy's support in reinforcement learning, or the degree to which a condensed dataset includes \"diverse and previously underrepresented patterns\" from an original dataset. A separate line of work treats it as a quality of information extraction, referring to the capture of all verifiable information from a source text. The construct is operationalized and measured through several methods, most commonly `Human evaluation`, where annotators may rate whether a response \"comprehensively addresses all components of questions asked\" or count the number of source references covered. Papers also report using `Human annotation study` and `LLM-based evaluation` to measure it, and the construct is studied in relation to `Reward overoptimization`.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Correcting the Mythos of KL-Regularization: Direct Alignment without Overoptimization via Chi-Squared Preference Optimization",
+      "Self-Improvement in Language Models: The Sharpening Mechanism"
+    ],
+    "acl25": [
+      "ConceptCarve: Dynamic Realization of Evidence",
+      "PIC: Unlocking Long-Form Text Generation Capabilities of Large Language Models via PositionIDCompression"
+    ],
+    "icml25": [
+      "Design Considerations in Offline Preference-based RL",
+      "Is Best-of-N the Best of Them? Coverage, Scaling, and Optimality in Inference-Time Alignment",
+      "Toward Robust Hyper-Detailed Image Captioning: A Multiagent Approach and Dual Evaluation Metrics for Factuality and Coverage"
+    ],
+    "emnlp25": [
+      "DoLLMs Adhere to Label Definitions? Examining Their Receptivity to External Label Definitions",
+      "Drivel-ology: ChallengingLLMs with Interpreting Nonsense with Depth",
+      "Introducing Spotlight: A Novel Approach for Generating Captivating Key Information from Documents",
+      "Skeletons Matter: Dynamic Data Augmentation for Text-to-Query",
+      "TinySQL: A Progressive Text-to-SQLDataset for Mechanistic Interpretability Research"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "acl25": 2,
+    "icml25": 3,
+    "emnlp25": 5
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25"
+  ]
+}

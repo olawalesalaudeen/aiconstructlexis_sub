@@ -1,0 +1,96 @@
+{
+  "canonical_name": "Needlebench",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, Needlebench is consistently defined as a benchmark for evaluating how well long-context models can comprehend and retrieve information from long input sequences. The prevailing usage is to test recall-intensive information finding, with papers using it to measure constructs such as information retrieval, long-context reasoning, and knowledge recall. One paper specifies that the benchmark operationalizes these assessments through three subtasks: Single-Needle Retrieval, Multi-Needle Retrieval, and Multi-Needle Reasoning. It is characterized as a synthetic benchmark, which, as one study notes, offers \"better control over variables such as sequence length and complexity\" (LongGenBench: Benchmarking Long-Form Generation in Long Context LLMs). The benchmark is used to assess and compare the retrieval capabilities of different models, with one paper describing it as \"a suite of recall-intensive tasks where recurrent models typically underperform\" (Rodimus*: Breaking the Accuracy-Efficiency Trade-Off with Efficient Attentions).",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Needlebench",
+    "NeedleBench"
+  ],
+  "papers": [
+    "CAKE: Cascading and Adaptive KV Cache Eviction with Layer Preferences",
+    "Long Context Compression with Activation Beacon",
+    "LongGenBench: Benchmarking Long-Form Generation in Long Context LLMs",
+    "Rodimus*: Breaking the Accuracy-Efficiency Trade-Off with Efficient Attentions"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A benchmark that evaluates long-context models on their ability to comprehend and retrieve information from long input sequences.",
+      "paper": "LongGenBench: Benchmarking Long-Form Generation in Long Context LLMs",
+      "original_name": "Needlebench"
+    },
+    {
+      "text": "A suite of recall-intensive tasks designed to test long-context retrieval and information finding in large language models.",
+      "paper": "Rodimus*: Breaking the Accuracy-Efficiency Trade-Off with Efficient Attentions",
+      "original_name": "NeedleBench"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Information retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "CAKE: Cascading and Adaptive KV Cache Eviction with Layer Preferences",
+      "evidence": "\u201cFor NeedleBench, both Rodimus and Rodimus+ even exceed the performance of Pythia\u201d",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "CAKE: Cascading and Adaptive KV Cache Eviction with Layer Preferences"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-context reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "CAKE: Cascading and Adaptive KV Cache Eviction with Layer Preferences",
+      "evidence": "\"NeedleBench (Li et al., 2024a): Tests retrieval and reasoning in complex contexts through three subtasks: Single-Needle Retrieval, Multi-Needle Retrieval, and Multi-Needle Reasoning.\"",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "CAKE: Cascading and Adaptive KV Cache Eviction with Layer Preferences"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge recall",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Rodimus*: Breaking the Accuracy-Efficiency Trade-Off with Efficient Attentions",
+      "evidence": "Furthermore, Rodimus* achieves a performance improvement of up to 7.21% over Mamba2, and outperforms even softmax attention-based Pythia on NeedleBench\u2014a suite of recall-intensive tasks where recurrent models typically underperform (Waleffe et al., 2024). (Section 1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Rodimus*: Breaking the Accuracy-Efficiency Trade-Off with Efficient Attentions"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, Needlebench is consistently defined as a benchmark for evaluating how well long-context models can comprehend and retrieve information from long input sequences. The prevailing usage is to test recall-intensive information finding, with papers using it to measure constructs such as information retrieval, long-context reasoning, and knowledge recall. One paper specifies that the benchmark operationalizes these assessments through three subtasks: Single-Needle Retrieval, Multi-Needle Retrieval, and Multi-Needle Reasoning. It is characterized as a synthetic benchmark, which, as one study notes, offers \"better control over variables such as sequence length and complexity\" (LongGenBench: Benchmarking Long-Form Generation in Long Context LLMs). The benchmark is used to assess and compare the retrieval capabilities of different models, with one paper describing it as \"a suite of recall-intensive tasks where recurrent models typically underperform\" (Rodimus*: Breaking the Accuracy-Efficiency Trade-Off with Efficient Attentions).",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "CAKE: Cascading and Adaptive KV Cache Eviction with Layer Preferences",
+      "Long Context Compression with Activation Beacon",
+      "LongGenBench: Benchmarking Long-Form Generation in Long Context LLMs",
+      "Rodimus*: Breaking the Accuracy-Efficiency Trade-Off with Efficient Attentions"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 4
+  },
+  "conferences": [
+    "iclr25"
+  ]
+}

@@ -1,0 +1,800 @@
+{
+  "canonical_name": "Language understanding",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, Language understanding is a broad behavior most frequently operationalized by model performance on a wide array of benchmarks. The most prevalent measurement instrument is MMLU, which is described as assessing a model's \"multitask accuracy\" across diverse domains and is \"widely used to evaluate the language understanding of real-world large language models.\" Other commonly used benchmarks for its evaluation include HellaSwag, OpenBookQA, BoolQ, and GLUE. While the dominant usage is general, with one paper defining it as performing tasks like those in SuperGLUE, some papers offer more specific definitions. These include framing it as \"text comprehension\" (integrating information from text), \"multilingual understanding,\" \"multi-party dialogue understanding,\" or \"script handling.\" The latter is concerned with correctly processing diverse writing systems, where one study notes that \"models frequently fail to handle special glyphs or non-standard writing directions\" in low-resource scripts. The behavior is also studied alongside commonsense knowledge, tabular reasoning, and textual reasoning. Finally, some work suggests that language understanding is influenced by methods like masked language modeling and question-answer pair generation.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Text comprehension",
+    "Language understanding",
+    "Script handling",
+    "Multilingual understanding",
+    "Multi-party dialogue understanding"
+  ],
+  "papers": [
+    "CCQA: Generating Question from Solution Can Improve Inference-Time Reasoning inSLMs",
+    "From Personas to Talks: Revisiting the Impact of Personas onLLM-Synthesized Emotional Support Conversations",
+    "Logit Space Constrained Fine-Tuning for Mitigating Hallucinations inLLM-Based Recommender Systems",
+    "Step-level Verifier-guided Hybrid Test-Time Scaling for Large Language Models",
+    "TCP: a Benchmark for Temporal Constraint-Based Planning"
+  ],
+  "paper_count": 5,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Answering questions or producing outputs that require understanding and integrating information from text.",
+      "paper": "From Personas to Talks: Revisiting the Impact of Personas onLLM-Synthesized Emotional Support Conversations",
+      "original_name": "Text comprehension"
+    },
+    {
+      "text": "Performing a range of language understanding tasks such as those included in SuperGLUE.",
+      "paper": "TCP: a Benchmark for Temporal Constraint-Based Planning",
+      "original_name": "Language understanding"
+    },
+    {
+      "text": "Correctly processing text in diverse writing systems, including right-to-left scripts and non-standard glyphs, particularly in low-resource languages.",
+      "paper": "CCQA: Generating Question from Solution Can Improve Inference-Time Reasoning inSLMs",
+      "original_name": "Script handling"
+    },
+    {
+      "text": "Handling and understanding inputs across multiple languages.",
+      "paper": "Step-level Verifier-guided Hybrid Test-Time Scaling for Large Language Models",
+      "original_name": "Multilingual understanding"
+    },
+    {
+      "text": "Tracking and interpreting conversations involving more than two participants, including attributing utterances to correct speakers and maintaining coherent context.",
+      "paper": "Logit Space Constrained Fine-Tuning for Mitigating Hallucinations inLLM-Based Recommender Systems",
+      "original_name": "Multi-party dialogue understanding"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Debiasing Algorithm through Model Adaptation",
+      "evidence": "We have selected three datasets that measure common sense reasoning and language understanding to evaluate the possible performance loss after altering the model: ... Massive Multitask Language Understanding (MMLU) (Hendrycks et al., 2021)... (Section 2.5)",
+      "paper_count": 19,
+      "papers_by_conference": {
+        "iclr24": [
+          "Debiasing Algorithm through Model Adaptation",
+          "QA-LoRA: Quantization-Aware Low-Rank Adaptation of Large Language Models",
+          "True Knowledge Comes from Practice: Aligning Large Language Models with Embodied Environments via Reinforcement Learning",
+          "NOLA: Compressing LoRA using Linear Combination of Random Basis",
+          "Take a Step Back: Evoking Reasoning via Abstraction in Large Language Models"
+        ],
+        "neurips24": [
+          "Fractal Patterns May Illuminate the Success of Next-Token Prediction",
+          "DropBP: Accelerating Fine-Tuning of Large Language Models by Dropping Backward Propagation",
+          "BAM! Just Like That: Simple and Efficient Parameter Upcycling for Mixture of Experts"
+        ],
+        "iclr25": [
+          "Sail into the Headwind: Alignment via Robust Rewards and Dynamic Labels against Reward Hacking",
+          "Samba: Simple Hybrid State Space Models for Efficient Unlimited Context Language Modeling",
+          "Ensembles of Low-Rank Expert Adapters",
+          "TC-MoE: Augmenting Mixture of Experts with Ternary Expert Choice"
+        ],
+        "naacl25": [
+          "VisCGEC: Benchmarking the VisualChinese Grammatical Error Correction"
+        ],
+        "acl25": [
+          "Where Are We? EvaluatingLLMPerformance onAfrican Languages"
+        ],
+        "icml25": [
+          "TuCo: Measuring the Contribution of Fine-Tuning to Individual Responses of LLMs",
+          "ResQ: Mixed-Precision Quantization of Large Language Models with Low-Rank Residuals",
+          "Direct Density Ratio Optimization: A Statistically Consistent Approach to Aligning Large Language Models",
+          "What Limits Bidirectional Model\u2019s Generative Capabilities? A Uni-Bi-Directional Mixture-of-Expert Method For Bidirectional Fine-tuning"
+        ],
+        "emnlp25": [
+          "Token-Aware Editing of Internal Activations for Large Language Model Alignment"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HellaSwag",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "True Knowledge Comes from Practice: Aligning Large Language Models with Embodied Environments via Reinforcement Learning",
+      "evidence": "The four benchmarks are ARC_C, HellaSwag, PIQA and MMLU... Results of the zero-shot performance are displayed in Table 1, which demonstrates that there is no significant loss of the ability of the language understanding of LLMs after the aligning with embodied environments (Section 5.5)",
+      "paper_count": 10,
+      "papers_by_conference": {
+        "iclr24": [
+          "True Knowledge Comes from Practice: Aligning Large Language Models with Embodied Environments via Reinforcement Learning"
+        ],
+        "neurips24": [
+          "Dataset Decomposition: Faster LLM Training with Variable Sequence Length Curriculum",
+          "fMRI predictors based on language models of increasing complexity recover brain left lateralization",
+          "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models"
+        ],
+        "iclr25": [
+          "Samba: Simple Hybrid State Space Models for Efficient Unlimited Context Language Modeling",
+          "ALLaM: Large Language Models for Arabic and English"
+        ],
+        "icml25": [
+          "Generalized Interpolating Discrete Diffusion",
+          "EncryptedLLM: Privacy-Preserving Large Language Model Inference via GPU-Accelerated Fully Homomorphic Encryption",
+          "Retraining-free Merging of Sparse MoE via Hierarchical Clustering"
+        ],
+        "emnlp25": [
+          "Understanding and Leveraging the Expert Specialization of Context Faithfulness in Mixture-of-ExpertsLLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OpenBookQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Debiasing Algorithm through Model Adaptation",
+      "evidence": "We have selected three datasets that measure common sense reasoning and language understanding to evaluate the possible performance loss after altering the model: OpenBookQA (OBQA) (Mihaylov et al., 2018)... (Section 2.5)",
+      "paper_count": 5,
+      "papers_by_conference": {
+        "iclr24": [
+          "Debiasing Algorithm through Model Adaptation"
+        ],
+        "neurips24": [
+          "Wings: Learning Multimodal LLMs without Text-only Forgetting"
+        ],
+        "iclr25": [
+          "Samba: Simple Hybrid State Space Models for Efficient Unlimited Context Language Modeling"
+        ],
+        "icml25": [
+          "Generalized Interpolating Discrete Diffusion",
+          "Retraining-free Merging of Sparse MoE via Hierarchical Clustering"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BoolQ",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Samba: Simple Hybrid State Space Models for Efficient Unlimited Context Language Modeling",
+      "evidence": "We evaluated these models on six different benchmarks ... including PIQA (Bisk et al., 2020), hellaswag (Zellers et al., 2019), BoolQ (Clark et al., 2019), ARC (Clark et al., 2018), winogrande (Sakaguchi et al., 2021) and SIQA (Sap et al., 2019). These tasks examine models\u2019 language understanding, logical reasoning, knowledge utilization, and social awareness capabilities.",
+      "paper_count": 5,
+      "papers_by_conference": {
+        "iclr25": [
+          "Samba: Simple Hybrid State Space Models for Efficient Unlimited Context Language Modeling",
+          "TC-MoE: Augmenting Mixture of Experts with Ternary Expert Choice"
+        ],
+        "icml25": [
+          "Generalized Interpolating Discrete Diffusion",
+          "Retraining-free Merging of Sparse MoE via Hierarchical Clustering"
+        ],
+        "emnlp25": [
+          "Understanding and Leveraging the Expert Specialization of Context Faithfulness in Mixture-of-ExpertsLLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GLUE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Representation Deficiency in Masked Language Modeling",
+      "evidence": "We first evaluate the language understanding tasks from the GLUE benchmark(Wang et al., 2018) including MNLI, SST2, QNLI and QQP using the RoBERTa model.",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "iclr24": [
+          "Representation Deficiency in Masked Language Modeling"
+        ],
+        "iclr25": [
+          "CAMEx: Curvature-aware Merging of Experts",
+          "Quantum-PEFT: Ultra parameter-efficient fine-tuning",
+          "Masked Diffusion Models are Secretly Time-Agnostic Masked Models and Exploit Inaccurate Categorical Sampling"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM Evaluation Harness",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "True Knowledge Comes from Practice: Aligning Large Language Models with Embodied Environments via Reinforcement Learning",
+      "evidence": "",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "iclr24": [
+          "True Knowledge Comes from Practice: Aligning Large Language Models with Embodied Environments via Reinforcement Learning"
+        ],
+        "neurips24": [
+          "MambaTree: Tree Topology is All You Need in State Space Model",
+          "Multi-Head Mixture-of-Experts"
+        ],
+        "iclr25": [
+          "Scaling up Masked Diffusion Models on Text"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-Challenge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "True Knowledge Comes from Practice: Aligning Large Language Models with Embodied Environments via Reinforcement Learning",
+      "evidence": "",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "iclr24": [
+          "True Knowledge Comes from Practice: Aligning Large Language Models with Embodied Environments via Reinforcement Learning"
+        ],
+        "neurips24": [
+          "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models"
+        ],
+        "iclr25": [
+          "Sail into the Headwind: Alignment via Robust Rewards and Dynamic Labels against Reward Hacking"
+        ],
+        "icml25": [
+          "Generalized Interpolating Discrete Diffusion"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "True Knowledge Comes from Practice: Aligning Large Language Models with Embodied Environments via Reinforcement Learning",
+      "evidence": "The four benchmarks are ARC_C, HellaSwag, PIQA and MMLU... Results of the zero-shot performance are displayed in Table 1, which demonstrates that there is no significant loss of the ability of the language understanding of LLMs after the aligning with embodied environments (Section 5.5)",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "iclr24": [
+          "True Knowledge Comes from Practice: Aligning Large Language Models with Embodied Environments via Reinforcement Learning"
+        ],
+        "neurips24": [
+          "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models"
+        ],
+        "icml25": [
+          "Generalized Interpolating Discrete Diffusion"
+        ],
+        "emnlp25": [
+          "Understanding and Leveraging the Expert Specialization of Context Faithfulness in Mixture-of-ExpertsLLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Dataset Decomposition: Faster LLM Training with Variable Sequence Length Curriculum",
+      "evidence": "",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "neurips24": [
+          "Dataset Decomposition: Faster LLM Training with Variable Sequence Length Curriculum",
+          "Wings: Learning Multimodal LLMs without Text-only Forgetting",
+          "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models"
+        ],
+        "icml25": [
+          "Generalized Interpolating Discrete Diffusion"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SuperGLUE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "BERTs are Generative In-Context Learners",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "BERTs are Generative In-Context Learners"
+        ],
+        "icml25": [
+          "GaussMark: A Practical Approach for Structural Watermarking of Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Lambada-OpenAI",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Dataset Decomposition: Faster LLM Training with Variable Sequence Length Curriculum",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "Dataset Decomposition: Faster LLM Training with Variable Sequence Length Curriculum"
+        ],
+        "icml25": [
+          "Parameters vs FLOPs: Scaling Laws for Optimal Sparsity for Mixture-of-Experts Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU-Pro",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Sail into the Headwind: Alignment via Robust Rewards and Dynamic Labels against Reward Hacking",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Sail into the Headwind: Alignment via Robust Rewards and Dynamic Labels against Reward Hacking",
+          "Samba: Simple Hybrid State Space Models for Efficient Unlimited Context Language Modeling"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-Easy",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models"
+        ],
+        "icml25": [
+          "Generalized Interpolating Discrete Diffusion"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Masked language modeling",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Representation Deficiency in Masked Language Modeling",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Representation Deficiency in Masked Language Modeling"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction following",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Compressing LLMs: The Truth is Rarely Pure and Never Simple",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Compressing LLMs: The Truth is Rarely Pure and Never Simple"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HotpotQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "From Personas to Talks: Revisiting the Impact of Personas onLLM-Synthesized Emotional Support Conversations",
+      "evidence": "\u201cExperiments are conducted on five widely used benchmarks: GSM8K (Cobbe et al., 2021), MATH, HumanEval, Trivia Creative Writing, and HotpotQA\u201d",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "From Personas to Talks: Revisiting the Impact of Personas onLLM-Synthesized Emotional Support Conversations"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LACA: Improving Cross-lingual Aspect-Based Sentiment Analysis withLLMData Augmentation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "LACA: Improving Cross-lingual Aspect-Based Sentiment Analysis withLLMData Augmentation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Beemo: Benchmark of Expert-edited Machine-generated Outputs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Beemo: Benchmark of Expert-edited Machine-generated Outputs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HumanEval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "RouterDC: Query-Based Router by Dual Contrastive Learning for Assembling Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "RouterDC: Query-Based Router by Dual Contrastive Learning for Assembling Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Winograd",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Dataset Decomposition: Faster LLM Training with Variable Sequence Length Curriculum",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Dataset Decomposition: Faster LLM Training with Variable Sequence Length Curriculum"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LAMBADA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "RACE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Wings: Learning Multimodal LLMs without Text-only Forgetting",
+      "evidence": "RACE is a reading comprehension benchmark introduced in Lai et al. (2017) collected from English examinations of middle and high school students. (Section 3)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Wings: Learning Multimodal LLMs without Text-only Forgetting"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "XNLI",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MindMerger: Efficiently Boosting LLM Reasoning in non-English Languages",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "MindMerger: Efficiently Boosting LLM Reasoning in non-English Languages"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Question-answer pair generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Web-Scale Visual Entity Recognition: An LLM-Driven Data Approach",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Web-Scale Visual Entity Recognition: An LLM-Driven Data Approach"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TACT",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "TACT: Advancing Complex Aggregative Reasoning with Information Extraction Tools",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "TACT: Advancing Complex Aggregative Reasoning with Information Extraction Tools"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "XQuAD",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "How do Large Language Models Handle Multilingualism?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "How do Large Language Models Handle Multilingualism?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CEval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Step-level Verifier-guided Hybrid Test-Time Scaling for Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Step-level Verifier-guided Hybrid Test-Time Scaling for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BBH",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Fractal Patterns May Illuminate the Success of Next-Token Prediction",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Fractal Patterns May Illuminate the Success of Next-Token Prediction"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Belebele",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Layer Swapping for Zero-Shot Cross-Lingual Transfer in Large Language Models",
+      "evidence": "We evaluate understanding capabilities using MMLU (Hendrycks et al., 2021), HellaSwag (Zellers et al., 2019), and Belebele (Bandarkar et al., 2024) benchmarks, each adapted to both EGY and MOR dialects. (Section 4.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Layer Swapping for Zero-Shot Cross-Lingual Transfer in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MNLI",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Collaborative Discrete-Continuous Black-Box Prompt Learning for Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Collaborative Discrete-Continuous Black-Box Prompt Learning for Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "QNLI",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Collaborative Discrete-Continuous Black-Box Prompt Learning for Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Collaborative Discrete-Continuous Black-Box Prompt Learning for Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SNLI",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Collaborative Discrete-Continuous Black-Box Prompt Learning for Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Collaborative Discrete-Continuous Black-Box Prompt Learning for Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WNLI",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Collaborative Discrete-Continuous Black-Box Prompt Learning for Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Collaborative Discrete-Continuous Black-Box Prompt Learning for Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Exploration",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Monte Carlo Planning with Large Language Model for Text-Based Game Agents",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Monte Carlo Planning with Large Language Model for Text-Based Game Agents"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SQuAD v1.1",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Samba: Simple Hybrid State Space Models for Efficient Unlimited Context Language Modeling",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Samba: Simple Hybrid State Space Models for Efficient Unlimited Context Language Modeling"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GPQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Samba: Simple Hybrid State Space Models for Efficient Unlimited Context Language Modeling",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Samba: Simple Hybrid State Space Models for Efficient Unlimited Context Language Modeling"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MT-Bench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "PALMBENCH: A COMPREHENSIVE BENCHMARK OF COMPRESSED LARGE LANGUAGE MODELS ON MOBILE PLATFORMS",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "PALMBENCH: A COMPREHENSIVE BENCHMARK OF COMPRESSED LARGE LANGUAGE MODELS ON MOBILE PLATFORMS"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Adversarial attacks",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "One Model Transfer to All: On Robust Jailbreak Prompts Generation against LLMs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "One Model Transfer to All: On Robust Jailbreak Prompts Generation against LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LiveBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "PicPersona-TOD: A Dataset for Personalizing Utterance Style in Task-Oriented Dialogue with Image Persona",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "PicPersona-TOD: A Dataset for Personalizing Utterance Style in Task-Oriented Dialogue with Image Persona"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Tabular reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "UNDIAL: Self-Distillation with Adjusted Logits for Robust Unlearning in Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "UNDIAL: Self-Distillation with Adjusted Logits for Robust Unlearning in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Textual reasoning",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "UNDIAL: Self-Distillation with Adjusted Logits for Robust Unlearning in Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "UNDIAL: Self-Distillation with Adjusted Logits for Robust Unlearning in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AlpacaEval v1.0",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LACA: Improving Cross-lingual Aspect-Based Sentiment Analysis withLLMData Augmentation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "LACA: Improving Cross-lingual Aspect-Based Sentiment Analysis withLLMData Augmentation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CSRT",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MMLU-CF: A Contamination-free Multi-task Language Understanding Benchmark",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "MMLU-CF: A Contamination-free Multi-task Language Understanding Benchmark"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TweetEval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Steering off Course: Reliability Challenges in Steering Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Steering off Course: Reliability Challenges in Steering Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 44,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 41,
+  "characterization": "Across the surveyed literature, Language understanding is a broad behavior most frequently operationalized by model performance on a wide array of benchmarks. The most prevalent measurement instrument is MMLU, which is described as assessing a model's \"multitask accuracy\" across diverse domains and is \"widely used to evaluate the language understanding of real-world large language models.\" Other commonly used benchmarks for its evaluation include HellaSwag, OpenBookQA, BoolQ, and GLUE. While the dominant usage is general, with one paper defining it as performing tasks like those in SuperGLUE, some papers offer more specific definitions. These include framing it as \"text comprehension\" (integrating information from text), \"multilingual understanding,\" \"multi-party dialogue understanding,\" or \"script handling.\" The latter is concerned with correctly processing diverse writing systems, where one study notes that \"models frequently fail to handle special glyphs or non-standard writing directions\" in low-resource scripts. The behavior is also studied alongside commonsense knowledge, tabular reasoning, and textual reasoning. Finally, some work suggests that language understanding is influenced by methods like masked language modeling and question-answer pair generation.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "CCQA: Generating Question from Solution Can Improve Inference-Time Reasoning inSLMs",
+      "From Personas to Talks: Revisiting the Impact of Personas onLLM-Synthesized Emotional Support Conversations",
+      "Logit Space Constrained Fine-Tuning for Mitigating Hallucinations inLLM-Based Recommender Systems",
+      "Step-level Verifier-guided Hybrid Test-Time Scaling for Large Language Models",
+      "TCP: a Benchmark for Temporal Constraint-Based Planning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 5
+  },
+  "conferences": [
+    "emnlp25"
+  ]
+}

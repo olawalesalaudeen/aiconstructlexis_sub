@@ -1,0 +1,80 @@
+{
+  "canonical_name": "ROCStories",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, ROCStories is consistently described as a dataset composed of five-sentence stories, but it is operationalized for different evaluation purposes. A prevalent application is for story generation, where it is used to assess a model's ability to produce coherent narratives. This is framed in one paper as a \"title-to-story generation\" task and in another as a more general evaluation of \"open-ended conditional generation.\" In contrast, a separate line of work uses ROCStories to measure text infilling performance. This is operationalized by masking a middle sentence and evaluating the generated replacement, with one study specifically mentioning the use of perplexity (PPL) for this evaluation. This application is further supported by its documented use as a measurement instrument for the behavior of \"Text infilling.\" Thus, while the dataset's core content of short, commonsense stories is agreed upon, it is used to evaluate distinct model capabilities ranging from conditional generation to story completion.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "ROCStories",
+    "ROC Stories",
+    "RocStories"
+  ],
+  "papers": [
+    "Benchmarking Long-Context Language Models on Long Code Understanding",
+    "ComparingLLM-generated and human-authored news text using formal syntactic theory",
+    "The Impact of Token Granularity on the Predictive Power of Language Model Surprisal",
+    "Judging Quality Across Languages: A Multilingual Approach to Pretraining Data Filtering with Language Models",
+    "Word Salad Chopper: Reasoning Models Waste A Ton Of Decoding Budget On Useless Repetitions, Self-Knowingly"
+  ],
+  "paper_count": 5,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A dataset for title-to-story generation, used to evaluate a model's ability to generate coherent, five-sentence narrative stories from a given title.",
+      "paper": "The Impact of Token Granularity on the Predictive Power of Language Model Surprisal",
+      "original_name": "ROCStories"
+    },
+    {
+      "text": "Story completion dataset used to evaluate infilling performance by masking a middle sentence and assessing coherence of generated replacements.",
+      "paper": "Benchmarking Long-Context Language Models on Long Code Understanding",
+      "original_name": "ROC Stories"
+    },
+    {
+      "text": "A dataset for story generation, consisting of five-sentence commonsense stories, used to evaluate open-ended conditional generation.",
+      "paper": "Judging Quality Across Languages: A Multilingual Approach to Pretraining Data Filtering with Language Models",
+      "original_name": "RocStories"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text infilling",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Amortizing intractable inference in large language models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Amortizing intractable inference in large language models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, ROCStories is consistently described as a dataset composed of five-sentence stories, but it is operationalized for different evaluation purposes. A prevalent application is for story generation, where it is used to assess a model's ability to produce coherent narratives. This is framed in one paper as a \"title-to-story generation\" task and in another as a more general evaluation of \"open-ended conditional generation.\" In contrast, a separate line of work uses ROCStories to measure text infilling performance. This is operationalized by masking a middle sentence and evaluating the generated replacement, with one study specifically mentioning the use of perplexity (PPL) for this evaluation. This application is further supported by its documented use as a measurement instrument for the behavior of \"Text infilling.\" Thus, while the dataset's core content of short, commonsense stories is agreed upon, it is used to evaluate distinct model capabilities ranging from conditional generation to story completion.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Benchmarking Long-Context Language Models on Long Code Understanding",
+      "ComparingLLM-generated and human-authored news text using formal syntactic theory",
+      "The Impact of Token Granularity on the Predictive Power of Language Model Surprisal"
+    ],
+    "emnlp25": [
+      "Judging Quality Across Languages: A Multilingual Approach to Pretraining Data Filtering with Language Models",
+      "Word Salad Chopper: Reasoning Models Waste A Ton Of Decoding Budget On Useless Repetitions, Self-Knowingly"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 3,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25"
+  ]
+}

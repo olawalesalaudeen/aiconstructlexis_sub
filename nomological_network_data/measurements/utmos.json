@@ -1,0 +1,91 @@
+{
+  "canonical_name": "UTMOS",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, UTMOS is consistently used as an automated evaluation instrument for synthesized speech, with its full name given as Universal Text-to-Speech Model-based Objective Scorer. The instrument is used to measure the construct of \"Speech quality,\" and in one case, the more general \"Generation quality.\" The specific aspect of quality being assessed is variously described as \"overall speech quality,\" \"naturalness,\" or \"perceptual quality.\" The most common operationalization involves using UTMOS as a pre-trained model to predict a Mean Opinion Score (MOS). As one paper states, its purpose is \"to predict the mean opinion score (MOS) of the generated speech\" to assess its naturalness (\"DNASpeech: A Contextualized and Situated Text-to-Speech Dataset with Dialogues, Narratives and Actions\"). Another study incorporates the \"quality score evaluated by the UTMOS model\" as a component in a reward function (\"Exploring Changes in Nation Perception with Nationality-Assigned Personas inLLMs\"). The provided sources are in agreement, framing UTMOS as a model-based objective scorer for the quality of generated speech.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "UTMOS"
+  ],
+  "papers": [
+    "DNASpeech: A Contextualized and Situated Text-to-Speech Dataset with Dialogues, Narratives and Actions",
+    "Hidden in Plain Sight: Evaluation of the Deception Detection Capabilities ofLLMs in Multimodal Settings",
+    "Exploring Changes in Nation Perception with Nationality-Assigned Personas inLLMs",
+    "Mind the Gap: A Closer Look at Tokenization for Multiple-Choice Question Answering withLLMs",
+    "GenSE: Generative Speech Enhancement via Language Models using Hierarchical Modeling",
+    "LLaMA-Omni: Seamless Speech Interaction with Large Language Models",
+    "Scaling Speech-Text Pre-training with Synthetic Interleaved Data"
+  ],
+  "paper_count": 7,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A system (Universal Text-to-Speech Model-based Objective Scorer) used to automatically evaluate the overall quality of synthesized speech.",
+      "paper": "Scaling Speech-Text Pre-training with Synthetic Interleaved Data",
+      "original_name": "UTMOS"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Speech quality",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Scaling Speech-Text Pre-training with Synthetic Interleaved Data",
+      "evidence": "\u201cwe measured ASR-WER to assess the alignment between generated speech and text, as well as UTMOS (Saeki et al., 2022) to evaluate overall speech quality\u201d",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Scaling Speech-Text Pre-training with Synthetic Interleaved Data",
+          "LLaMA-Omni: Seamless Speech Interaction with Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generation quality",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "GenSE: Generative Speech Enhancement via Language Models using Hierarchical Modeling",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "GenSE: Generative Speech Enhancement via Language Models using Hierarchical Modeling"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, UTMOS is consistently used as an automated evaluation instrument for synthesized speech, with its full name given as Universal Text-to-Speech Model-based Objective Scorer. The instrument is used to measure the construct of \"Speech quality,\" and in one case, the more general \"Generation quality.\" The specific aspect of quality being assessed is variously described as \"overall speech quality,\" \"naturalness,\" or \"perceptual quality.\" The most common operationalization involves using UTMOS as a pre-trained model to predict a Mean Opinion Score (MOS). As one paper states, its purpose is \"to predict the mean opinion score (MOS) of the generated speech\" to assess its naturalness (\"DNASpeech: A Contextualized and Situated Text-to-Speech Dataset with Dialogues, Narratives and Actions\"). Another study incorporates the \"quality score evaluated by the UTMOS model\" as a component in a reward function (\"Exploring Changes in Nation Perception with Nationality-Assigned Personas inLLMs\"). The provided sources are in agreement, framing UTMOS as a model-based objective scorer for the quality of generated speech.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "GenSE: Generative Speech Enhancement via Language Models using Hierarchical Modeling",
+      "LLaMA-Omni: Seamless Speech Interaction with Large Language Models",
+      "Scaling Speech-Text Pre-training with Synthetic Interleaved Data"
+    ],
+    "acl25": [
+      "DNASpeech: A Contextualized and Situated Text-to-Speech Dataset with Dialogues, Narratives and Actions",
+      "Hidden in Plain Sight: Evaluation of the Deception Detection Capabilities ofLLMs in Multimodal Settings"
+    ],
+    "emnlp25": [
+      "Exploring Changes in Nation Perception with Nationality-Assigned Personas inLLMs",
+      "Mind the Gap: A Closer Look at Tokenization for Multiple-Choice Question Answering withLLMs"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3,
+    "acl25": 2,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25"
+  ]
+}

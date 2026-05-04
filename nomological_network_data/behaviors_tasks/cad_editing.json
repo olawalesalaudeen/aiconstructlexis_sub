@@ -1,0 +1,63 @@
+{
+  "canonical_name": "CAD editing",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, \"CAD editing\" is a behavior centered on generating or modifying Computer-Aided Design (CAD) models from natural language instructions, with several distinct operationalizations presented. One common framing is \"Text-to-CAD generation,\" defined as the end-to-end task of converting a textual description into a complete CAD model, often represented as a \"CAD parametric sequence.\" A different approach, termed \"Modeling command generation,\" focuses more narrowly on producing specific, executable CAD commands from instructions, which one paper describes as translating an \"intention\" into a \"sequence of modeling commands.\" A more specific, two-stage operationalization of editing is also proposed in a single study. In this framework, a model first performs \"Masked CAD sequence generation\" to identify and mask the parts of a CAD sequence that require modification. Subsequently, the model engages in \"CAD sequence infilling\" to generate the precise modifications for these masked regions, resulting in the final edited model.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Masked CAD sequence generation",
+    "Modeling command generation",
+    "Text-to-CAD generation",
+    "CAD sequence infilling"
+  ],
+  "papers": [
+    "CAD-Editor: A Locate-then-Infill Framework with Automated Training Data Synthesis for Text-Based CAD Editing",
+    "Targeted control of fast prototyping through domain-specific interface",
+    "Text-to-CAD Generation Through Infusing Visual Feedback in Large Language Models"
+  ],
+  "paper_count": 3,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The production of executable CAD modeling commands (e.g., Boolean union, surface lofting) from interpreted natural language instructions.",
+      "paper": "Targeted control of fast prototyping through domain-specific interface",
+      "original_name": "Modeling command generation"
+    },
+    {
+      "text": "The end-to-end task of converting a natural language textual description into a complete Computer-Aided Design (CAD) model.",
+      "paper": "Text-to-CAD Generation Through Infusing Visual Feedback in Large Language Models",
+      "original_name": "Text-to-CAD generation"
+    },
+    {
+      "text": "Identifying regions in a CAD sequence that require modification by replacing them with <mask> tokens while preserving unmodified parts.",
+      "paper": "CAD-Editor: A Locate-then-Infill Framework with Automated Training Data Synthesis for Text-Based CAD Editing",
+      "original_name": "Masked CAD sequence generation"
+    },
+    {
+      "text": "Generating precise modifications to fill in masked regions of a CAD sequence to produce a fully edited CAD model.",
+      "paper": "CAD-Editor: A Locate-then-Infill Framework with Automated Training Data Synthesis for Text-Based CAD Editing",
+      "original_name": "CAD sequence infilling"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, \"CAD editing\" is a behavior centered on generating or modifying Computer-Aided Design (CAD) models from natural language instructions, with several distinct operationalizations presented. One common framing is \"Text-to-CAD generation,\" defined as the end-to-end task of converting a textual description into a complete CAD model, often represented as a \"CAD parametric sequence.\" A different approach, termed \"Modeling command generation,\" focuses more narrowly on producing specific, executable CAD commands from instructions, which one paper describes as translating an \"intention\" into a \"sequence of modeling commands.\" A more specific, two-stage operationalization of editing is also proposed in a single study. In this framework, a model first performs \"Masked CAD sequence generation\" to identify and mask the parts of a CAD sequence that require modification. Subsequently, the model engages in \"CAD sequence infilling\" to generate the precise modifications for these masked regions, resulting in the final edited model.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "icml25": [
+      "CAD-Editor: A Locate-then-Infill Framework with Automated Training Data Synthesis for Text-Based CAD Editing",
+      "Targeted control of fast prototyping through domain-specific interface",
+      "Text-to-CAD Generation Through Infusing Visual Feedback in Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "icml25": 3
+  },
+  "conferences": [
+    "icml25"
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "canonical_name": "Stereotype recognition",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, stereotype recognition is consistently framed as a task requiring a model to identify or distinguish stereotypical content from other statements. The most common definitions describe it as a classification or distinction task, such as the ability to 'distinguish between stereotypical and anti-stereotypical statements' or to identify which of multiple sentences expresses a stereotype. A slightly different framing presents it as an ability to not only recognize but also 'critically explain the presence of stereotypes' in response to specific prompts. To operationalize this behavior, researchers use the StereoSet benchmark, and one study also mentions adapting the EspanStereo dataset for a 'stereotype detection format'. The prevalent use of this task, as stated in the data, is as a measure of a model's fairness. As one paper specifies, the task is performed 'To evaluate the alignment of fairness'.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Stereotype identification",
+    "Stereotype recognition",
+    "Stereotype detection"
+  ],
+  "papers": [
+    "Does quantization affect models\u2019 performance on long-context tasks?",
+    "Graph-R1: Incentivizing the Zero-Shot Graph Learning Capability inLLMs via Explicit Reasoning",
+    "Lemmatization as a Classification Task: Results fromArabic across Multiple Genres",
+    "REALM: Recursive Relevance Modeling forLLM-based Document Re-Ranking",
+    "SMART: Simulated Students Aligned with Item Response Theory for Question Difficulty Prediction"
+  ],
+  "paper_count": 5,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A task designed to assess fairness by requiring the model to distinguish between stereotypical and anti-stereotypical statements.",
+      "paper": "Does quantization affect models\u2019 performance on long-context tasks?",
+      "original_name": "Stereotype recognition"
+    },
+    {
+      "text": "The observable ability to recognize and critically explain stereotypical content in input prompts.",
+      "paper": "REALM: Recursive Relevance Modeling forLLM-based Document Re-Ranking",
+      "original_name": "Stereotype identification"
+    },
+    {
+      "text": "The task of classifying or identifying which of two or more sentences expresses a stereotype, given a context.",
+      "paper": "Graph-R1: Incentivizing the Zero-Shot Graph Learning Capability inLLMs via Explicit Reasoning",
+      "original_name": "Stereotype detection"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "StereoSet",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "EAI: Emotional Decision-Making of LLMs in Strategic Games and Ethical Dilemmas",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "EAI: Emotional Decision-Making of LLMs in Strategic Games and Ethical Dilemmas"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Fairness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Does quantization affect models\u2019 performance on long-context tasks?",
+      "evidence": "\"To evaluate the alignment of fairness, we perform stereotype recognition task (Sun et al., 2024) based on benchmark StereoSet (Nadeem et al., 2021) with Stereotype Score (SS) and Accuracy (Acc).\"",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Does quantization affect models\u2019 performance on long-context tasks?"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the provided literature, stereotype recognition is consistently framed as a task requiring a model to identify or distinguish stereotypical content from other statements. The most common definitions describe it as a classification or distinction task, such as the ability to 'distinguish between stereotypical and anti-stereotypical statements' or to identify which of multiple sentences expresses a stereotype. A slightly different framing presents it as an ability to not only recognize but also 'critically explain the presence of stereotypes' in response to specific prompts. To operationalize this behavior, researchers use the StereoSet benchmark, and one study also mentions adapting the EspanStereo dataset for a 'stereotype detection format'. The prevalent use of this task, as stated in the data, is as a measure of a model's fairness. As one paper specifies, the task is performed 'To evaluate the alignment of fairness'.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Does quantization affect models\u2019 performance on long-context tasks?",
+      "Graph-R1: Incentivizing the Zero-Shot Graph Learning Capability inLLMs via Explicit Reasoning",
+      "Lemmatization as a Classification Task: Results fromArabic across Multiple Genres",
+      "REALM: Recursive Relevance Modeling forLLM-based Document Re-Ranking",
+      "SMART: Simulated Students Aligned with Item Response Theory for Question Difficulty Prediction"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 5
+  },
+  "conferences": [
+    "emnlp25"
+  ]
+}

@@ -1,0 +1,260 @@
+{
+  "canonical_name": "Anthropic HHH",
+  "type": "measurement",
+  "canonical_definition": "Anthropic HHH, also referred to as HH-RLHF and Anthropic-HH, is consistently described across the provided literature as a dataset of human-assistant dialogues containing human preference labels. The instrument's most prevalent application is to measure the constructs of `Helpfulness` and `Harmlessness`, assessing how well models align with human values on these dimensions. Papers operationalize this measurement using the dataset's \"binary preference labels based on response helpfulness in human-assistant conversations\" (\"MMDEND: Dendrite-Inspired Multi-Branch Multi-Compartment Parallel Spiking Neuron for Sequence Modeling\"), where annotators select the \"better\" response. Beyond evaluation, the dataset is also frequently used for training, particularly for reinforcement learning from human feedback (RLHF) and to train reward models. While its primary focus is on helpfulness and harmlessness, some work also uses it to assess `Human preference alignment`, `Dialogue generation`, and, less commonly, `Humor understanding` and `Safety`. One analysis of the dataset, which calls it a \"popular choice in the field,\" noted potential data quality issues, finding that \"over 40% of the answers in the sampled dataset is incorrect\" (\"Jailbreak Large Vision-Language Models Through Multi-Modal Linkage\"). Overall, it is presented as an instrument for both training and evaluating models on their alignment with human preferences.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "HH-RLHF",
+    "Anthropic HHH",
+    "Anthropic-HH"
+  ],
+  "papers": [
+    "Addressing Blind Guessing: Calibration of Selection Bias in Multiple-Choice Question Answering by Video Language Models",
+    "AgentRM: Enhancing Agent Generalization with Reward Modeling",
+    "CEAES: Bidirectional Reinforcement Learning Optimization for Consistent and Explainable Essay Assessment",
+    "CULEMO: Cultural Lenses on Emotion - BenchmarkingLLMs for Cross-Cultural Emotion Understanding",
+    "Evaluating Multimodal Language Models as Visual Assistants for Visually Impaired Users",
+    "GIFT-SW:Gaussian noise Injected Fine-Tuning of Salient Weights forLLMs",
+    "Improving Factuality with Explicit Working Memory",
+    "Inferring from Logits: Exploring Best Practices for Decoding-Free Generative Candidate Selection",
+    "Jailbreak Large Vision-Language Models Through Multi-Modal Linkage",
+    "MMDEND: Dendrite-Inspired Multi-Branch Multi-Compartment Parallel Spiking Neuron for Sequence Modeling",
+    "MakingFETCH! Happen: Finding Emergent Dog Whistles Through Common Habitats",
+    "OmniCharacter: Towards Immersive Role-Playing Agents with Seamless Speech-Language Personality Interaction",
+    "Retrieve to Explain: Evidence-driven Predictions for Explainable Drug Target Identification",
+    "SHARE: AnSLM-based Hierarchical ActionCorREction Assistant for Text-to-SQL",
+    "ToolHop: A Query-Driven Benchmark for Evaluating Large Language Models in Multi-Hop Tool Use",
+    "\ud835\udc9c3: Automatic Alignment Framework for Attributed Text Generation"
+  ],
+  "paper_count": 16,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A human preference dataset used for reinforcement learning from human feedback, analyzed in this study for annotation errors that may propagate instruction-following biases into models.",
+      "paper": "Jailbreak Large Vision-Language Models Through Multi-Modal Linkage",
+      "original_name": "HH-RLHF"
+    },
+    {
+      "text": "A dialogue dataset with human inputs and assistant responses from real conversations, used to evaluate helpfulness, honesty, and harmlessness.",
+      "paper": "Retrieve to Explain: Evidence-driven Predictions for Explainable Drug Target Identification",
+      "original_name": "Anthropic HHH"
+    },
+    {
+      "text": "A human feedback dataset containing binary preference labels on helpfulness in human-assistant conversations, used to train and evaluate reward models in RLHF.",
+      "paper": "MMDEND: Dendrite-Inspired Multi-Branch Multi-Compartment Parallel Spiking Neuron for Sequence Modeling",
+      "original_name": "Anthropic-HH"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "An Emulator for Fine-tuning Large Language Models using Small Language Models",
+      "evidence": "For HH-RLHF, we assess our model on helpfulness and harmlessness using GPT-4-1106-preview as an initial evaluator (Zheng et al., 2024), with human annotators providing a final verification for precise results, following (Chen et al., 2023b) and (Dai et al., 2023).",
+      "paper_count": 17,
+      "papers_by_conference": {
+        "iclr24": [
+          "An Emulator for Fine-tuning Large Language Models using Small Language Models",
+          "ARGS: Alignment as Reward-Guided Search"
+        ],
+        "neurips24": [
+          "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+          "Aligning Large Language Models with Representation Editing: A Control Perspective"
+        ],
+        "iclr25": [
+          "Q-Adapter: Customizing Pre-trained LLMs to New Preferences with Forgetting Mitigation",
+          "TIS-DPO: Token-level Importance Sampling for Direct Preference Optimization With Estimated Weights",
+          "On a Connection Between Imitation Learning and RLHF",
+          "On-the-fly Preference Alignment via Principle-Guided Decoding",
+          "Learn Your Reference Model for Real Good Alignment",
+          "MACPO: Weak-to-Strong Alignment via Multi-Agent Contrastive Preference Optimization",
+          "Super(ficial)-alignment: Strong Models May Deceive Weak Models in Weak-to-Strong Generalization"
+        ],
+        "naacl25": [
+          "PromptRefine: Enhancing Few-Shot Performance on Low-ResourceIndic Languages with Example Selection from related Example Banks",
+          "DeCAP: Context-Adaptive Prompt Generation for Debiasing Zero-shot Question Answering in Large Language Models"
+        ],
+        "acl25": [
+          "Improving Factuality with Explicit Working Memory",
+          "CEAES: Bidirectional Reinforcement Learning Optimization for Consistent and Explainable Essay Assessment"
+        ],
+        "icml25": [
+          "Tokenized Bandit for LLM Decoding and Alignment",
+          "Bounded Rationality for LLMs: Satisficing Alignment at Inference-Time"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmlessness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "An Emulator for Fine-tuning Large Language Models using Small Language Models",
+      "evidence": "",
+      "paper_count": 15,
+      "papers_by_conference": {
+        "iclr24": [
+          "An Emulator for Fine-tuning Large Language Models using Small Language Models",
+          "ARGS: Alignment as Reward-Guided Search"
+        ],
+        "neurips24": [
+          "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+          "Aligning Large Language Models with Representation Editing: A Control Perspective",
+          "Transfer Q-star : Principled Decoding for LLM Alignment"
+        ],
+        "iclr25": [
+          "Q-Adapter: Customizing Pre-trained LLMs to New Preferences with Forgetting Mitigation",
+          "TIS-DPO: Token-level Importance Sampling for Direct Preference Optimization With Estimated Weights",
+          "On a Connection Between Imitation Learning and RLHF",
+          "On-the-fly Preference Alignment via Principle-Guided Decoding",
+          "Learn Your Reference Model for Real Good Alignment",
+          "MACPO: Weak-to-Strong Alignment via Multi-Agent Contrastive Preference Optimization"
+        ],
+        "naacl25": [
+          "PromptRefine: Enhancing Few-Shot Performance on Low-ResourceIndic Languages with Example Selection from related Example Banks"
+        ],
+        "acl25": [
+          "Improving Factuality with Explicit Working Memory",
+          "CEAES: Bidirectional Reinforcement Learning Optimization for Consistent and Explainable Essay Assessment"
+        ],
+        "icml25": [
+          "Tokenized Bandit for LLM Decoding and Alignment"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Dialogue generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "SimPER: A Minimalist Approach to Preference  Alignment without Hyperparameters",
+      "evidence": "",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "iclr25": [
+          "SimPER: A Minimalist Approach to Preference  Alignment without Hyperparameters",
+          "MA-RLHF: Reinforcement Learning from Human Feedback with Macro Actions"
+        ],
+        "naacl25": [
+          "On the Impact of Fine-Tuning on Chain-of-Thought Reasoning"
+        ],
+        "acl25": [
+          "AgentRM: Enhancing Agent Generalization with Reward Modeling"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Alignment",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "SeRA: Self-Reviewing and Alignment of LLMs using Implicit Reward Margins",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr25": [
+          "SeRA: Self-Reviewing and Alignment of LLMs using Implicit Reward Margins",
+          "Joint Reward and Policy Learning with Demonstrations and Human Feedback Improves Alignment"
+        ],
+        "icml25": [
+          "RLTHF: Targeted Human Feedback for LLM Alignment"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Humor understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models"
+        ],
+        "icml25": [
+          "Bounded Rationality for LLMs: Satisficing Alignment at Inference-Time"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Human preference alignment",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Test-Time Preference Optimization: On-the-Fly Alignment via Iterative Textual Feedback",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Test-Time Preference Optimization: On-the-Fly Alignment via Iterative Textual Feedback"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Safety alignment",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "SimPER: A Minimalist Approach to Preference  Alignment without Hyperparameters",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "SimPER: A Minimalist Approach to Preference  Alignment without Hyperparameters"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Safety",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Forewarned is Forearmed:  Harnessing LLMs for Data Synthesis via Failure-induced Exploration",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Forewarned is Forearmed:  Harnessing LLMs for Data Synthesis via Failure-induced Exploration"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 8,
+  "incoming_relationship_count": 8,
+  "outgoing_relationship_count": 0,
+  "characterization": "Anthropic HHH, also referred to as HH-RLHF and Anthropic-HH, is consistently described across the provided literature as a dataset of human-assistant dialogues containing human preference labels. The instrument's most prevalent application is to measure the constructs of `Helpfulness` and `Harmlessness`, assessing how well models align with human values on these dimensions. Papers operationalize this measurement using the dataset's \"binary preference labels based on response helpfulness in human-assistant conversations\" (\"MMDEND: Dendrite-Inspired Multi-Branch Multi-Compartment Parallel Spiking Neuron for Sequence Modeling\"), where annotators select the \"better\" response. Beyond evaluation, the dataset is also frequently used for training, particularly for reinforcement learning from human feedback (RLHF) and to train reward models. While its primary focus is on helpfulness and harmlessness, some work also uses it to assess `Human preference alignment`, `Dialogue generation`, and, less commonly, `Humor understanding` and `Safety`. One analysis of the dataset, which calls it a \"popular choice in the field,\" noted potential data quality issues, finding that \"over 40% of the answers in the sampled dataset is incorrect\" (\"Jailbreak Large Vision-Language Models Through Multi-Modal Linkage\"). Overall, it is presented as an instrument for both training and evaluating models on their alignment with human preferences.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Addressing Blind Guessing: Calibration of Selection Bias in Multiple-Choice Question Answering by Video Language Models",
+      "AgentRM: Enhancing Agent Generalization with Reward Modeling",
+      "CEAES: Bidirectional Reinforcement Learning Optimization for Consistent and Explainable Essay Assessment",
+      "CULEMO: Cultural Lenses on Emotion - BenchmarkingLLMs for Cross-Cultural Emotion Understanding",
+      "Evaluating Multimodal Language Models as Visual Assistants for Visually Impaired Users",
+      "GIFT-SW:Gaussian noise Injected Fine-Tuning of Salient Weights forLLMs",
+      "Improving Factuality with Explicit Working Memory",
+      "Inferring from Logits: Exploring Best Practices for Decoding-Free Generative Candidate Selection",
+      "Jailbreak Large Vision-Language Models Through Multi-Modal Linkage",
+      "MMDEND: Dendrite-Inspired Multi-Branch Multi-Compartment Parallel Spiking Neuron for Sequence Modeling",
+      "MakingFETCH! Happen: Finding Emergent Dog Whistles Through Common Habitats",
+      "OmniCharacter: Towards Immersive Role-Playing Agents with Seamless Speech-Language Personality Interaction",
+      "Retrieve to Explain: Evidence-driven Predictions for Explainable Drug Target Identification",
+      "SHARE: AnSLM-based Hierarchical ActionCorREction Assistant for Text-to-SQL",
+      "ToolHop: A Query-Driven Benchmark for Evaluating Large Language Models in Multi-Hop Tool Use",
+      "\ud835\udc9c3: Automatic Alignment Framework for Attributed Text Generation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 16
+  },
+  "conferences": [
+    "acl25"
+  ]
+}

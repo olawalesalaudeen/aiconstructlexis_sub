@@ -1,0 +1,2380 @@
+{
+  "canonical_name": "In-context learning",
+  "type": "construct",
+  "canonical_definition": "Across the provided literature, In-context learning (ICL) is overwhelmingly defined as a model's ability to adapt to a new task by conditioning on a few input-output examples, or demonstrations, provided in the prompt. A near-universal characteristic is that this adaptation occurs at inference time without any parameter updates, distinguishing it from conventional fine-tuning. While this core definition is consistent, some papers offer more specific framings, such as \"task learning\" to emphasize inferring new input-label mappings, or \"in-context improvement\" which focuses on iterative refinement based on feedback. The underlying mechanism is described as a subject of debate, with some papers viewing it as a form of meta-learning or implicit Bayesian inference. The construct is operationalized and measured through model performance on various downstream tasks, including question-answering, summarization, and time series forecasting, using benchmarks such as MINT, MATH, and HELMET. In-context learning is reported to be related to a model's \"prompt steerability\" and is sometimes contrasted with instruction following, with one study noting that instruction tuning can suppress it. Some studies propose that this ability enables other behaviors; for instance, one paper reports that few-shot Chain-of-Thought prompting, a form of ICL, facilitates compositional reasoning.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Few-shot learning",
+    "Few-shot learning ability",
+    "In-context improvement",
+    "In-context learning",
+    "Leveraging natural language feedback",
+    "In-context learning capability",
+    "In-context learning ability",
+    "In-Context Learning ability",
+    "In-context learnability",
+    "In-context causal structure selection",
+    "Test-time learning",
+    "Few-shot capability",
+    "Few-shot learning capability",
+    "Few-shot ability",
+    "Few-shot baseline",
+    "Few-shot Chain-of-Thought prompting",
+    "Zero-shot instruction prompting",
+    "Few-shot prompting",
+    "Zero-shot prompting",
+    "Zero-shot evaluation",
+    "Few-shot evaluation",
+    "In-Context Learning",
+    "FEW-SHOT",
+    "In-context few-shot demonstration",
+    "Few-shot benchmarking protocols",
+    "Zero-shot",
+    "In-Context Prompting",
+    "In-context learning evaluation",
+    "Few-shot prediction",
+    "Many-shot in-context learning",
+    "Zero-shot prediction",
+    "Few-shot forecasting",
+    "Few-shot reasoning",
+    "Context-based prediction",
+    "Zero-shot Evaluation",
+    "Zero-shot forecasting",
+    "One-shot adaptation",
+    "Few-shot adaptation",
+    "Few-shot inference",
+    "Few-shot range estimation"
+  ],
+  "papers": [
+    "A Spatio-Temporal Point Process for Fine-Grained Modeling of Reading Behavior",
+    "ActiView: Evaluating Active Perception Ability for Multimodal Large Language Models",
+    "Beyond Text Compression: Evaluating Tokenizers Across Scales",
+    "Bilingual Zero-Shot Stance Detection",
+    "Can Language Models Replace Programmers for Coding?REPOCODSays \u2018Not Yet\u2019",
+    "Conformity in Large Language Models",
+    "Debiasing the Fine-Grained Classification Task inLLMs with Bias-AwarePEFT",
+    "EAGLE: Expert-Guided Self-Enhancement for Preference Alignment in Pathology Large Vision-Language Model",
+    "EPO: Explicit Policy Optimization for Strategic Reasoning inLLMs via Reinforcement Learning",
+    "Employing Discourse Coherence Enhancement to Improve Cross-Document Event and Entity Coreference Resolution",
+    "Finding A Voice: Exploring the Potential ofAfricanAmerican Dialect and Voice Generation for Chatbots",
+    "Gender Inclusivity Fairness Index (GIFI): A Multilevel Framework for Evaluating Gender Diversity in Large Language Models",
+    "Generating Plausible Distractors for Multiple-Choice Questions via Student Choice Prediction",
+    "Incorporating Domain Knowledge into Materials Tokenization",
+    "Large Language and Protein Assistant for Protein-Protein Interactions Prediction",
+    "M2S: Multi-turn to Single-turn jailbreak in Red Teaming forLLMs",
+    "Mind the Gap: Static and Interactive Evaluations of Large Audio Models",
+    "OmniCharacter: Towards Immersive Role-Playing Agents with Seamless Speech-Language Personality Interaction",
+    "Refining Salience-Aware Sparse Fine-Tuning Strategies for Language Models",
+    "SafeRAG: Benchmarking Security in Retrieval-Augmented Generation of Large Language Model",
+    "SocialEval: Evaluating Social Intelligence of Large Language Models",
+    "TUNA: Comprehensive Fine-grained Temporal Understanding Evaluation on Dense Dynamic Videos",
+    "Using Information Theory to Characterize Prosodic Typology: The Case of Tone, Pitch-Accent and Stress-Accent",
+    "Where Are We? EvaluatingLLMPerformance onAfrican Languages",
+    "ACECODER: Acing CoderRLvia Automated Test-Case Synthesis",
+    "Improving Dialogue State Tracking through Combinatorial Search for In-Context Examples",
+    "Logic-Regularized Verifier Elicits Reasoning fromLLMs",
+    "PlanningArena: A Modular Benchmark for Multidimensional Evaluation of Planning and Tool Learning",
+    "RuleArena: A Benchmark for Rule-Guided Reasoning withLLMs in Real-World Scenarios",
+    "SoRFT: Issue Resolving with Subtask-oriented Reinforced Fine-Tuning",
+    "WET: Overcoming Paraphrasing Vulnerabilities in Embeddings-as-a-Service with Linear Transformation Watermarks",
+    "2025.emnlp-main.1304.checklist",
+    "Enhanced Noun-Noun Compound Interpretation through Textual Enrichment",
+    "Evaluating Robustness of Large Audio Language Models to Audio Injection: An Empirical Study",
+    "Lemmatization ofPolish Multi-word Expressions",
+    "Weight-Aware Activation Sparsity with ConstrainedBayesian Optimization Scheduling for Large Language Models",
+    "2025.emnlp-main.1007.checklist",
+    "2025.emnlp-main.1316.checklist",
+    "2025.emnlp-main.1441.checklist",
+    "2025.emnlp-main.929.checklist",
+    "32.3%",
+    "AISees YourLocation\u2014But With A Bias Toward The Wealthy World",
+    "Analyzing values about gendered language reform inLLMs\u2019 revisions",
+    "Beyond Demographics: Enhancing Cultural Value Survey Simulation with Multi-Stage Personality-Driven Cognitive Reasoning",
+    "Building Trust in ClinicalLLMs: Bias Analysis and Dataset Transparency",
+    "CogDual: Enhancing Dual Cognition ofLLMs via Reinforcement Learning with Implicit Rule-Based Rewards",
+    "Compositional Generalisation for Explainable Hate Speech Detection",
+    "Constructions are Revealed in Word Distributions",
+    "Culture Cartography: Mapping the Landscape of Cultural Knowledge",
+    "Discourse-Driven Code-Switching: Analyzing the Role of Content and Communicative Function inSpanish-English Bilingual Speech",
+    "Flaw or Artifact? Rethinking Prompt Sensitivity in EvaluatingLLMs",
+    "GeoEdit: Geometric Knowledge Editing for Large Language Models",
+    "How DoesDPOReduce Toxicity? A Mechanistic Neuron-Level Analysis",
+    "Improving Online Job Advertisement Analysis via Compositional Entity Extraction",
+    "It\u2019s All About In-Context Learning! Teaching Extremely Low-Resource Languages toLLMs",
+    "Learning Subjective Label Distributions via Sociocultural Descriptors",
+    "M2Edit: Locate and Edit Multi-Granularity Knowledge in Multimodal Large Language Model",
+    "M3Retrieve: Benchmarking Multimodal Retrieval for Medicine",
+    "Mapping semantic networks toDutch word embeddings as a diagnostic tool for cognitive decline",
+    "Measuring and Mitigating Media Outlet Name Bias in Large Language Models",
+    "MemeIntel: Explainable Detection of Propagandistic and Hateful Memes",
+    "Memorization or Reasoning? Exploring the Idiom Understanding ofLLMs",
+    "Multi-Frequency Contrastive Decoding: Alleviating Hallucinations for Large Vision-Language Models",
+    "OG-RAG: Ontology-grounded retrieval-augmented generation for large language models",
+    "PoseStitch-SLT: Linguistically Inspired Pose-Stitching for End-to-End Sign Language Translation",
+    "Pragmatic Inference Chain (PIC) ImprovingLLMs\u2019 Reasoning of Authentic Implicit Toxic Language",
+    "PrimeX: A Dataset of Worldview, Opinion, and Explanation",
+    "RAG+: Enhancing Retrieval-Augmented Generation with Application-Aware Reasoning",
+    "RAVEN: Query-Guided Representation Alignment for Question Answering over Audio, Video, Embedded Sensors, and Natural Language",
+    "Real-time Ad Retrieval viaLLM-generative Commercial Intention for Sponsored Search Advertising",
+    "Seeing the Same Story Differently:Framing\u2010Divergent Event Coreference for Computational Framing Analysis",
+    "SolEval: Benchmarking Large Language Models for Repository-level Solidity Smart Contract Generation",
+    "Structure-Conditional MinimumBayes Risk Decoding",
+    "Structured Preference Optimization for Vision-Language Long-Horizon Task Planning",
+    "Synthetic Socratic Debates: Examining Persona Effects on Moral Decision and Persuasion Dynamics",
+    "Toward Multi-Session Personalized Conversation: A Large-Scale Dataset and Hierarchical Tree Framework for Implicit Reasoning",
+    "Translationese-index: Using Likelihood Ratios for Graded and Generalizable Measurement of Translationese",
+    "XQuant: Achieving Ultra-Low BitKVCache Quantization with Cross-Layer Compression",
+    "A Systematic Analysis of Base Model Choice for Reward Modeling",
+    "Improving Rule-based Reasoning inLLMs using Neurosymbolic Representations",
+    "Multi-LMentry: Can MultilingualLLMs Solve Elementary Tasks Across Languages?",
+    "A Benchmark for Learning to Translate a New Language from One Grammar Book",
+    "Are Human-generated Demonstrations Necessary for In-context Learning?",
+    "BadChain: Backdoor Chain-of-Thought Prompting for Large Language Models",
+    "Batch Calibration: Rethinking Calibration for In-Context Learning and Prompt Engineering",
+    "CausalLM is not optimal for in-context learning",
+    "Context is Environment",
+    "DQ-LoRe: Dual Queries with Low Rank Approximation Re-ranking for In-Context Learning",
+    "Democratizing Fine-grained Visual Recognition with Large Language Models",
+    "Emu: Generative Pretraining in Multimodality",
+    "Eureka: Human-Level Reward Design via Coding Large Language Models",
+    "Gen-Z: Generative Zero-Shot Text Classification with Contextualized Label Descriptions",
+    "Grounding Multimodal Large Language Models to the World",
+    "How Do Transformers Learn In-Context Beyond Simple Functions? A Case Study on Learning with Representations",
+    "How Many Pretraining Tasks Are Needed for In-Context Learning of Linear Regression?",
+    "IDEAL: Influence-Driven Selective Annotations Empower In-Context Learners in Large Language Models",
+    "In-Context Learning Learns Label Relationships but Is Not Conventional Learning",
+    "In-Context Learning through the Bayesian Prism",
+    "In-Context Pretraining: Language Modeling Beyond Document Boundaries",
+    "Is attention required for ICL? Exploring the Relationship Between Model Architecture and In-Context Learning Ability",
+    "Language Modeling Is Compression",
+    "Language-Interfaced Tabular Oversampling via Progressive Imputation and Self-Authentication",
+    "Large Language Models as Analogical Reasoners",
+    "Large Language Models as Tool Makers",
+    "Large Language Models to Enhance Bayesian Optimization",
+    "LoTa-Bench: Benchmarking Language-oriented Task Planners for Embodied Agents",
+    "Looped Transformers are Better at Learning Learning Algorithms",
+    "MEND: Meta Demonstration Distillation for Efficient and Effective In-Context Learning",
+    "MINT: Evaluating LLMs in Multi-turn Interaction with Tools and Language Feedback",
+    "One Step of Gradient Descent is Provably the Optimal In-Context Learner with One Layer of Linear Self-Attention",
+    "Privacy-Preserving In-Context Learning for Large Language Models",
+    "Privacy-Preserving In-Context Learning with Differentially Private Few-Shot Generation",
+    "Retrieval meets Long Context Large Language Models",
+    "Supervised Knowledge Makes Large Language Models Better In-context Learners",
+    "TEST: Text Prototype Aligned Embedding to Activate LLM's Ability for Time Series",
+    "The Cost of Scaling Down Large Language Models: Reducing Model Size Affects Memory before In-context Learning",
+    "The mechanistic basis of data dependence and abrupt learning in an in-context classification task",
+    "Two-stage LLM Fine-tuning with Less Specialization and More Generalization",
+    "Understanding Catastrophic Forgetting in Language Models via Implicit Inference",
+    "Understanding In-Context Learning from Repetitions",
+    "Understanding In-Context Learning in Transformers and LLMs by Learning to Learn Discrete Functions",
+    "Unleashing the Power of Pre-trained Language Models for Offline Reinforcement Learning",
+    "YaRN: Efficient Context Window Extension of Large Language Models",
+    "Chain-of-Thought Provably Enables Learning the (Otherwise) Unlearnable",
+    "PEARL: Towards Permutation-Resilient LLMs",
+    "Personalized Visual Instruction Tuning",
+    "Selective induction Heads: How Transformers Select Causal Structures in Context",
+    "Training Nonlinear Transformers for Chain-of-Thought Inference:  A Theoretical Generalization Analysis",
+    "Unlocking the Power of Function Vectors for Characterizing and Mitigating Catastrophic Forgetting in Continual Instruction Tuning",
+    "AI Sandbagging: Language Models can Strategically Underperform on Evaluations",
+    "Are Transformers Able to Reason by Connecting Separated Knowledge in Training Data?",
+    "Can LLMs Understand Time Series Anomalies?",
+    "DeLLMa: Decision Making Under Uncertainty with Large Language Models",
+    "Logical Consistency of Large Language Models in Fact-Checking",
+    "Physics of Language Models: Part 2.1, Grade-School Math and the Hidden Reasoning Process",
+    "TypedThinker: Diversify Large Language Model Reasoning with Typed Thinking",
+    "APE: Faster and Longer Context-Augmented Generation via Adaptive Parallel Encoding",
+    "Adaptive Transformer Programs: Bridging the Gap Between Performance and Interpretability in Transformers",
+    "Block-Attention for Efficient Prefilling",
+    "CAKE: Cascading and Adaptive KV Cache Eviction with Layer Preferences",
+    "Collaborative Discrete-Continuous Black-Box Prompt Learning for Language Models",
+    "Context-Alignment: Activating and Enhancing LLMs Capabilities in Time Series",
+    "DeFT: Decoding with Flash Tree-attention for Efficient Tree-structured LLM Inference",
+    "Diffusion-based Neural Network Weights Generation",
+    "Dynamic Loss-Based Sample Reweighting for Improved Large Language Model Pretraining",
+    "Explaining Modern Gated-Linear RNNs via a Unified Implicit Attention Formulation",
+    "Gated Delta Networks: Improving Mamba2 with Delta Rule",
+    "HELMET: How to Evaluate Long-context Models Effectively and Thoroughly",
+    "Harnessing Diversity for Important Data Selection in Pretraining Large Language Models",
+    "Human-inspired Episodic Memory for Infinite Context LLMs",
+    "Long Context Compression with Activation Beacon",
+    "LongMamba: Enhancing Mamba's Long-Context Capabilities via Training-Free Receptive Field Enlargement",
+    "Metalic: Meta-Learning In-Context with Protein Language Models",
+    "Not All LLM-Generated Data Are Equal: Rethinking Data Weighting in Text Classification",
+    "On the Crucial Role of Initialization for Matrix Factorization",
+    "Quest: Query-centric Data Synthesis Approach for Long-context Scaling of Large Language Model",
+    "Radar: Fast Long-Context Decoding for Any Transformer",
+    "Revisit Large-Scale Image-Caption Data in Pre-training Multimodal Foundation Models",
+    "SCBench: A KV Cache-Centric Analysis of Long-Context Methods",
+    "ThinK: Thinner Key Cache by Query-Driven Pruning",
+    "Toward Understanding In-context vs. In-weight Learning",
+    "What is Wrong with Perplexity for Long-context Language Modeling?",
+    "Why In-Context Learning Models are Good Few-Shot Learners?",
+    "Catch Your Emotion: Sharpening Emotion Perception in Multimodal Large Language Models",
+    "EVOLvE: Evaluating and Optimizing LLMs For In-Context Exploration",
+    "EditLord: Learning Code Transformation Rules for Code Editing",
+    "FunBO: Discovering Acquisition Functions for Bayesian Optimization with FunSearch",
+    "Iterative Vectors: In-Context Gradient Steering without Backpropagation",
+    "PhantomWiki: On-Demand Datasets for Reasoning and Retrieval Evaluation",
+    "Synthetic Text Generation for Training Large Language Models via Gradient Matching",
+    "The Elicitation Game: Evaluating Capability Elicitation Techniques",
+    "Vision-Language Models Create Cross-Modal Task Representations",
+    "Cache Me If You Must: Adaptive Key-Value Quantization for Large Language Models",
+    "Core Context Aware Transformers for Long Context Language Modeling",
+    "Fast Exact Unlearning for In-Context Learning Data for LLMs",
+    "LaCache: Ladder-Shaped KV Caching for Efficient Long-Context Modeling of Large Language Models",
+    "LongRoPE2: Near-Lossless LLM Context Window Scaling",
+    "Position: AI Scaling: From Up to Down and Out",
+    "SpeCache: Speculative Key-Value Caching for Efficient Generation of LLMs",
+    "What Makes In-context Learning Effective for Mathematical Reasoning",
+    "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs",
+    "Benchmarking and Building Zero-ShotHindi Retrieval Model withHindi-BEIRandNLLB-E5",
+    "CAMIEval: EnhancingNLGEvaluation through Multidimensional Comparative Instruction-Following Analysis",
+    "CRMArena: Understanding the Capacity ofLLMAgents to Perform ProfessionalCRMTasks in Realistic Environments",
+    "CodexGraph: Bridging Large Language Models and Code Repositories via Code Graph Databases",
+    "ConQRet: A New Benchmark for Fine-Grained Automatic Evaluation of Retrieval Augmented Computational Argumentation",
+    "Continual Learning in Multilingual Sign Language Translation",
+    "DETQUS: Decomposition-Enhanced Transformers forQUery-focused Summarization",
+    "DREAM: Disentangling Risks to Enhance Safety Alignment in Multimodal Large Language Models",
+    "Few-shot Personalization ofLLMs with Mis-aligned Responses",
+    "Fine-Tuning Large Language Models with Sequential Instructions",
+    "Getting More Juice Out of Your Data: Hard Pair Refinement Enhances Visual-Language Models Without Extra Data",
+    "Ihquin tlahtouah in Tetelahtzincocah: An annotated, multi-purpose audio and text corpus of Western SierraPueblaNahuatl",
+    "InfoPO: On Mutual Information Maximization for Large Language Model Alignment",
+    "LegalViz: Legal Text Visualization by Text To Diagram Generation",
+    "Lost in Inference: Rediscovering the Role of Natural Language Inference for Large Language Models",
+    "Mastering the Craft of Data Synthesis forCodeLLMs",
+    "Measuring and Benchmarking Large Language Models\u2019 Capabilities to Generate Persuasive Language",
+    "Multimodal Cognitive Reframing Therapy via Multi-hop Psychotherapeutic Reasoning",
+    "Option Symbol Matters: Investigating and Mitigating Multiple-Choice Option Symbol Bias of Large Language Models",
+    "Padding Tone: A Mechanistic Analysis of Padding Tokens inT2IModels",
+    "ReasVQA: AdvancingVideoQAwith Imperfect Reasoning Process",
+    "Soft Language Prompts for Language Transfer",
+    "The Impact of Visual Information inChinese Characters: Evaluating Large Models\u2019 Ability to Recognize and Utilize Radicals",
+    "Towards Operationalizing Right to Data Protection",
+    "Vision-Language Models Can Self-Improve Reasoning via Reflection",
+    "Yeah, Un, Oh: Continuous and Real-time Backchannel Prediction with Fine-tuning of Voice Activity Projection",
+    "tRAG: Term-level Retrieval-Augmented Generation for Domain-Adaptive Retrieval",
+    "AdaCAD: Adaptively Decoding to Balance Conflicts between Contextual and Parametric Knowledge",
+    "Entity Decomposition with Filtering: A Zero-Shot Clinical Named Entity Recognition Framework",
+    "FactCG: Enhancing Fact Checkers with Graph-Based Multi-Hop Data",
+    "MeNTi: Bridging Medical Calculator andLLMAgent with Nested Tool Calling",
+    "Upsample or Upweight? Balanced Training on Heavily Imbalanced Datasets",
+    "Bridging the Gap between Expert and Language Models: Concept-guided Chess Commentary Generation and Evaluation",
+    "Language Models Can Infer Action Semantics for Symbolic Planners from Environment Feedback",
+    "A Theoretical Understanding of Self-Correction through In-context Alignment",
+    "AP-Adapter: Improving Generalization of Automatic Prompts on Unseen Text-to-Image Diffusion Models",
+    "AutoTimes: Autoregressive Time Series Forecasters via Large Language Models",
+    "BERTs are Generative In-Context Learners",
+    "Can Language Models Perform Robust Reasoning in Chain-of-thought Prompting with Noisy Rationales?",
+    "Can large language models explore in-context?",
+    "Chain of Thoughtlessness? An Analysis of CoT in Planning",
+    "Coevolving with the Other You: Fine-Tuning LLM with Sequential Cooperative Multi-Agent Reinforcement Learning",
+    "ConvBench: A Multi-Turn Conversation Evaluation Benchmark with Hierarchical Ablation Capability for Large Vision-Language Models",
+    "DETAIL: Task DEmonsTration Attribution for Interpretable In-context Learning",
+    "EHRCon: Dataset for Checking Consistency between Unstructured Notes and Structured Tables in Electronic Health Records",
+    "EPIC: Effective Prompting for Imbalanced-Class Data Synthesis in Tabular Data Classification via Large Language Models",
+    "Enhancing In-Context Learning Performance with just SVD-Based Weight Pruning: A Theoretical Perspective",
+    "Fine-grained Analysis of In-context Linear Estimation: Data, Architecture, and Beyond",
+    "From Unstructured Data to In-Context Learning: Exploring What Tasks Can Be Learned and When",
+    "Gated Slot Attention for Efficient Linear-Time Sequence Modeling",
+    "HARMONIC: Harnessing LLMs for Tabular Data Synthesis and Privacy Protection",
+    "Hidden in Plain Sight: Evaluating Abstract Shape Recognition in Vision-Language Models",
+    "How Transformers Utilize Multi-Head Attention in In-Context Learning? A Case Study on Sparse Linear Regression",
+    "Knowledge Circuits in Pretrained Transformers",
+    "Learning to grok: Emergence of in-context learning and skill composition in modular arithmetic tasks",
+    "Linking In-context Learning in Transformers to Human Episodic Memory",
+    "LogiCity: Advancing Neuro-Symbolic AI with Abstract Urban Simulation",
+    "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens",
+    "Many-Shot In-Context Learning",
+    "MedCalc-Bench: Evaluating Large Language Models for Medical Calculations",
+    "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+    "Mixture of Demonstrations for In-Context Learning",
+    "On Giant's Shoulders: Effortless Weak to Strong by Dynamic Logits Fusion",
+    "Orchid: Flexible and Data-Dependent Convolution for Sequence Modeling",
+    "Probing the Decision Boundaries of In-context Learning in Large Language Models",
+    "Prompt Optimization with EASE? Efficient Ordering-aware Automated Selection of Exemplars",
+    "Provably Transformers Harness Multi-Concept Word Semantics for Efficient In-Context Learning",
+    "SG-Bench: Evaluating LLM Safety Generalization Across Diverse Tasks and Prompt Types",
+    "Shopping MMLU: A Massive Multi-Task Online Shopping Benchmark for Large Language Models",
+    "Symbolic Regression with a Learned Concept Library",
+    "Tackling Uncertain Correspondences for Multi-Modal Entity Alignment",
+    "Text-space Graph Foundation Models: Comprehensive Benchmarks and New Insights",
+    "The Closeness of In-Context Learning and Weight Shifting for Softmax Regression",
+    "Theoretical Foundations of Deep Selective State-Space Models",
+    "Towards Understanding How Transformers Learn In-context Through a Representation Learning Lens",
+    "Towards a Theoretical Understanding of the 'Reversal Curse' via Training Dynamics",
+    "Transformers are Minimax Optimal Nonparametric In-Context Learners",
+    "UniAudio 1.5: Large Language Model-Driven Audio Codec is A Few-Shot Audio Task Learner",
+    "Unveiling Causal Reasoning in Large Language Models: Reality or Mirage?",
+    "VLM Agents Generate Their Own Memories: Distilling Experience into Embodied Programs of Thought",
+    "Are Language Models Actually Useful for Time Series Forecasting?",
+    "Data-Driven Discovery of Dynamical Systems in Pharmacology using Large Language Models",
+    "From News to Forecast: Integrating Event Analysis in LLM-Based Time Series Forecasting with Reflection",
+    "HLM-Cite: Hybrid Language Model Workflow for Text-based Scientific Citation Prediction",
+    "HYSYNTH: Context-Free LLM Approximation for Guiding Program Synthesis",
+    "Mobility-LLM: Learning Visiting Intentions and Travel Preference from Human Mobility Data with Large Language Models",
+    "Prompt Tuning Strikes Back: Customizing Foundation Models with Low-Rank Prompt Adaptation",
+    "SGLang: Efficient Execution of Structured Language Model Programs",
+    "TAIA: Large Language Models are Out-of-Distribution Data Learners",
+    "Time-FFM: Towards LM-Empowered Federated Foundation Model for Time Series Forecasting",
+    "Can LLMs Learn by Teaching for Better Reasoning? A Preliminary Study",
+    "Continuously Learning, Adapting, and Improving: A Dual-Process Approach to Autonomous Driving",
+    "Limits of Transformer Language Models on Learning to Compose Algorithms",
+    "Stress-Testing Long-Context Language Models with Lifelong ICL and Task Haystack",
+    "An Efficient Recipe for Long Context Extension via Middle-Focused Positional Encoding",
+    "Combining Observational Data and Language for Species Range Estimation",
+    "PACE: Marrying generalization in PArameter-efficient fine-tuning with Consistency rEgularization"
+  ],
+  "paper_count": 278,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The ability of a language model to adapt to a new task by conditioning on a few input-label demonstrations provided in the prompt, without parameter updates.",
+      "paper": "A Benchmark for Learning to Translate a New Language from One Grammar Book",
+      "original_name": "In-context learning"
+    },
+    {
+      "text": "Performing tasks based on a small number of in-context examples provided in the input, requiring generalization and pattern recognition within long contexts.",
+      "paper": "CLEX: Continuous  Length Extrapolation for Large Language Models",
+      "original_name": "Few-shot learning"
+    },
+    {
+      "text": "The ability of the LLM to refine and enhance previously generated outputs based on feedback or reflection provided within the context window, enabling iterative optimization without parameter updates.",
+      "paper": "Eureka: Human-Level Reward Design via Coding Large Language Models",
+      "original_name": "In-context improvement"
+    },
+    {
+      "text": "The latent ability of an LLM to adapt and improve its outputs in response to natural language feedback from a user or simulated user across multiple interaction turns.",
+      "paper": "MINT: Evaluating LLMs in Multi-turn Interaction with Tools and Language Feedback",
+      "original_name": "Leveraging natural language feedback"
+    },
+    {
+      "text": "The latent capacity to learn effective policies from very small amounts of task-specific data, leveraging prior knowledge from language model pre-training.",
+      "paper": "Unleashing the Power of Pre-trained Language Models for Offline Reinforcement Learning",
+      "original_name": "Few-shot learning ability"
+    },
+    {
+      "text": "The ability to infer task rules and answer new questions from a small set of demonstrations provided in the prompt.",
+      "paper": "LogiCity: Advancing Neuro-Symbolic AI with Abstract Urban Simulation",
+      "original_name": "In-context learning capability"
+    },
+    {
+      "text": "The model's capacity to perform evaluation tasks when conditioned on example input-output pairs in the prompt.",
+      "paper": "Unlocking the Power of Function Vectors for Characterizing and Mitigating Catastrophic Forgetting in Continual Instruction Tuning",
+      "original_name": "In-context learning ability"
+    },
+    {
+      "text": "The latent capability of a model to perform a task by conditioning on a few input-output examples provided in the prompt, without explicit intermediate reasoning steps.",
+      "paper": "Training Nonlinear Transformers for Chain-of-Thought Inference:  A Theoretical Generalization Analysis",
+      "original_name": "In-Context Learning ability"
+    },
+    {
+      "text": "The ability of a model to dynamically identify the correct underlying causal relationship between tokens, such as the lag in a Markov chain, from the context and use it for prediction.",
+      "paper": "Selective induction Heads: How Transformers Select Causal Structures in Context",
+      "original_name": "In-context causal structure selection"
+    },
+    {
+      "text": "A formal property of a task, indicating whether a model can successfully learn to solve it with high probability given a sufficient number of in-context examples.",
+      "paper": "Chain-of-Thought Provably Enables Learning the (Otherwise) Unlearnable",
+      "original_name": "In-context learnability"
+    },
+    {
+      "text": "The latent ability of a model to improve its performance through interaction, feedback, and reflection during test time by discovering and applying generalizable strategies beyond memorization.",
+      "paper": "Evaluating Robustness of Large Audio Language Models to Audio Injection: An Empirical Study",
+      "original_name": "Test-time learning"
+    },
+    {
+      "text": "The latent ability of a model to infer and apply new input-label mappings from in-context demonstrations that were not encountered during pre-training, reflecting on-the-fly generalization rather than retrieval of memorized patterns.",
+      "paper": "Enhanced Noun-Noun Compound Interpretation through Textual Enrichment",
+      "original_name": "Task learning"
+    },
+    {
+      "text": "The model's capacity to reason and solve problems based on the information provided within the current context or prompt.",
+      "paper": "Weight-Aware Activation Sparsity with ConstrainedBayesian Optimization Scheduling for Large Language Models",
+      "original_name": "In-context reasoning"
+    },
+    {
+      "text": "The ability of a pre-trained model to perform tasks effectively with only a small number of examples, without requiring extensive fine-tuning.",
+      "paper": "From News to Forecast: Integrating Event Analysis in LLM-Based Time Series Forecasting with Reflection",
+      "original_name": "Few-shot capability"
+    },
+    {
+      "text": "The model's ability to learn and perform a task based on a small number of examples provided within the prompt's context.",
+      "paper": "Multi-Frequency Contrastive Decoding: Alleviating Hallucinations for Large Vision-Language Models",
+      "original_name": "Few-shot learning capability"
+    },
+    {
+      "text": "The model's capability to adapt to new prediction tasks with minimal fine-tuning samples, indicating efficient learning from limited data.",
+      "paper": "GeoEdit: Geometric Knowledge Editing for Large Language Models",
+      "original_name": "Few-shot ability"
+    },
+    {
+      "text": "The capacity to apply learned knowledge about a new word consistently and flexibly across structurally different but semantically related contexts.",
+      "paper": "RAG+: Enhancing Retrieval-Augmented Generation with Application-Aware Reasoning",
+      "original_name": "Systematic generalization"
+    },
+    {
+      "text": "An evaluation procedure where an LLM is given a prompt with explicit instructions on how to perform a task, without any task-specific examples, to assess its performance as a baseline against fine-tuning.",
+      "paper": "Logical Consistency of Large Language Models in Fact-Checking",
+      "original_name": "Zero-shot instruction prompting"
+    },
+    {
+      "text": "An evaluation procedure where a model's input prompt is augmented with a small number of example problems that include explicit, intermediate step-by-step reasoning to guide the model's own reasoning process.",
+      "paper": "Are Transformers Able to Reason by Connecting Separated Knowledge in Training Data?",
+      "original_name": "Few-shot Chain-of-Thought prompting"
+    },
+    {
+      "text": "A few-shot prompting evaluation procedure using three in-context examples to solve benchmark problems.",
+      "paper": "TypedThinker: Diversify Large Language Model Reasoning with Typed Thinking",
+      "original_name": "Few-shot baseline"
+    },
+    {
+      "text": "An evaluation procedure in which the model must detect anomalies without any labeled examples in the prompt.",
+      "paper": "Can LLMs Understand Time Series Anomalies?",
+      "original_name": "Zero-shot prompting"
+    },
+    {
+      "text": "An evaluation procedure in which the model detects anomalies after being shown a small number of labeled examples.",
+      "paper": "Can LLMs Understand Time Series Anomalies?",
+      "original_name": "Few-shot prompting"
+    },
+    {
+      "text": "Evaluation protocol assessing model performance on tasks without fine-tuning, measuring generalization capability.",
+      "paper": "CREMA: Generalizable and Efficient Video-Language Reasoning via Multimodal Modular Fusion",
+      "original_name": "Zero-shot evaluation"
+    },
+    {
+      "text": "An evaluation procedure where a model is prompted with a small number of task examples (e.g., 5-shot) in its context before being asked to solve a new problem instance.",
+      "paper": "Physics of Language Models: Part 2.1, Grade-School Math and the Hidden Reasoning Process",
+      "original_name": "Few-shot evaluation"
+    },
+    {
+      "text": "A prompting technique that provides examples within the input to guide the LLM in performing knowledge checking tasks, used here as a baseline for comparison with representation methods.",
+      "paper": "Entity Decomposition with Filtering: A Zero-Shot Clinical Named Entity Recognition Framework",
+      "original_name": "In-Context Learning"
+    },
+    {
+      "text": "Evaluation setup for fast adaptation of acquisition functions using only a small number (e.g., 5) of examples from a target function class.",
+      "paper": "FunBO: Discovering Acquisition Functions for Bayesian Optimization with FunSearch",
+      "original_name": "FEW-SHOT"
+    },
+    {
+      "text": "A standard evaluation procedure for few-shot classification in which episodes are formed from support examples and a query, then used to assess model predictions.",
+      "paper": "Iterative Vectors: In-Context Gradient Steering without Backpropagation",
+      "original_name": "Few-shot benchmarking protocols"
+    },
+    {
+      "text": "An inference-time evaluation method where optimal exploration trajectories from an oracle algorithm are provided as few-shot examples to guide the LLM\u2019s decision-making.",
+      "paper": "EVOLvE: Evaluating and Optimizing LLMs For In-Context Exploration",
+      "original_name": "In-context few-shot demonstration"
+    },
+    {
+      "text": "A direct inference evaluation procedure in which the model answers emotion classification prompts without additional training.",
+      "paper": "Catch Your Emotion: Sharpening Emotion Perception in Multimodal Large Language Models",
+      "original_name": "Zero-shot"
+    },
+    {
+      "text": "Evaluation method where the full document corpus is included in the model's prompt, either directly (ZEROSHOT) or with chain-of-thought examples (COT), to test reasoning within context limits.",
+      "paper": "PhantomWiki: On-Demand Datasets for Reasoning and Retrieval Evaluation",
+      "original_name": "In-Context Prompting"
+    },
+    {
+      "text": "An evaluation setup where a model's performance is tested by providing it with a few examples (2 or 4) of the moderation task within the prompt.",
+      "paper": "Bridging the Gap between Expert and Language Models: Concept-guided Chess Commentary Generation and Evaluation",
+      "original_name": "In-context learning evaluation"
+    },
+    {
+      "text": "The task of making predictions based on a small number of examples (shots) provided in the context or prompt.",
+      "paper": "Not All LLM-Generated Data Are Equal: Rethinking Data Weighting in Text Classification",
+      "original_name": "Few-shot prediction"
+    },
+    {
+      "text": "Making fitness predictions without any support-set examples for the target task.",
+      "paper": "Metalic: Meta-Learning In-Context with Protein Language Models",
+      "original_name": "Zero-shot prediction"
+    },
+    {
+      "text": "The observable task of learning a new task from a large number of examples provided within the context and then applying that learned skill to a new query.",
+      "paper": "SCBench: A KV Cache-Centric Analysis of Long-Context Methods",
+      "original_name": "Many-shot in-context learning"
+    },
+    {
+      "text": "The observable behavior of performing reasoning tasks when provided with only a small number of examples (e.g., 5-shot) in the prompt.",
+      "paper": "Dynamic Loss-Based Sample Reweighting for Improved Large Language Model Pretraining",
+      "original_name": "Few-shot reasoning"
+    },
+    {
+      "text": "The task of performing time series forecasting using only a small fraction of the available training data.",
+      "paper": "Context-Alignment: Activating and Enhancing LLMs Capabilities in Time Series",
+      "original_name": "Few-shot forecasting"
+    },
+    {
+      "text": "Producing the correct output by using labels or information present in the surrounding context rather than relying on stored associations.",
+      "paper": "Toward Understanding In-context vs. In-weight Learning",
+      "original_name": "Context-based prediction"
+    },
+    {
+      "text": "The observable behavior of performing tasks without any task-specific fine-tuning or examples provided in the prompt.",
+      "paper": "Harnessing Diversity for Important Data Selection in Pretraining Large Language Models",
+      "original_name": "Zero-shot Evaluation"
+    },
+    {
+      "text": "The task of performing time series forecasting on a target dataset without having been trained on any of its data, typically by training on a different source dataset.",
+      "paper": "Context-Alignment: Activating and Enhancing LLMs Capabilities in Time Series",
+      "original_name": "Zero-shot forecasting"
+    },
+    {
+      "text": "Performing a task without any task-specific fine-tuning, relying solely on the model's pre-existing knowledge.",
+      "paper": "Diffusion-based Neural Network Weights Generation",
+      "original_name": "Zero-shot learning"
+    },
+    {
+      "text": "The observable behavior of inferring the dynamics of a system and making predictions for a new query after being provided with only a single example trajectory from that system.",
+      "paper": "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs",
+      "original_name": "One-shot adaptation"
+    },
+    {
+      "text": "Learning contextually from demonstrations in a few-shot setting to improve performance on new tasks.",
+      "paper": "TAIA: Large Language Models are Out-of-Distribution Data Learners",
+      "original_name": "Few-shot adaptation"
+    },
+    {
+      "text": "Making predictions on downstream tasks using only a small number of labeled examples per class.",
+      "paper": "Text-space Graph Foundation Models: Comprehensive Benchmarks and New Insights",
+      "original_name": "Few-shot inference"
+    },
+    {
+      "text": "The behavior of estimating species range maps using a small number of location observations combined with textual priors.",
+      "paper": "Combining Observational Data and Language for Species Range Estimation",
+      "original_name": "Few-shot range estimation"
+    }
+  ],
+  "definition_count": 44,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Probing the Decision Boundaries of In-context Learning in Large Language Models",
+      "evidence": "In standard ICL (which we will refer to as prequential ICL), the query xq is a novel input that does not appear in the context. In the alternative form of ICL (which we will call train-risk ICL), the query xq is a randomly-selected input that appeared previously in the context x1:j.",
+      "paper_count": 8,
+      "papers_by_conference": {
+        "neurips24": [
+          "Probing the Decision Boundaries of In-context Learning in Large Language Models",
+          "Verified Code Transpilation with LLMs"
+        ],
+        "iclr25": [
+          "Making Text Embedders Few-Shot Learners",
+          "In-Context Editing: Learning Knowledge from Self-Induced Distributions",
+          "LICO: Large Language Models for In-Context Molecular Optimization"
+        ],
+        "icml25": [
+          "In-Context Learning and Occam\u2019s Razor"
+        ],
+        "emnlp25": [
+          "AISees YourLocation\u2014But With A Bias Toward The Wealthy World",
+          "Analyzing values about gendered language reform inLLMs\u2019 revisions"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Towards Understanding How Transformers Learn In-context Through a Representation Learning Lens",
+      "evidence": "",
+      "paper_count": 6,
+      "papers_by_conference": {
+        "neurips24": [
+          "Towards Understanding How Transformers Learn In-context Through a Representation Learning Lens",
+          "Transformers are Minimax Optimal Nonparametric In-Context Learners",
+          "Fine-grained Analysis of In-context Linear Estimation: Data, Architecture, and Beyond",
+          "Enhancing In-Context Learning Performance with just SVD-Based Weight Pruning: A Theoretical Perspective"
+        ],
+        "iclr25": [
+          "Why In-Context Learning Models are Good Few-Shot Learners?",
+          "Differential learning kinetics govern the transition from memorization to generalization during in-context learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Tool use",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Large Language Models as Tool Makers",
+      "evidence": "",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "iclr24": [
+          "Large Language Models as Tool Makers"
+        ],
+        "naacl25": [
+          "Towards Operationalizing Right to Data Protection"
+        ],
+        "icml25": [
+          "Beyond Induction Heads: In-Context Meta Learning Induces Multi-Phase Circuit Emergence",
+          "On Understanding Attention-Based In-Context Learning for Categorical Data"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "CausalLM is not optimal for in-context learning",
+      "evidence": "",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "iclr24": [
+          "CausalLM is not optimal for in-context learning",
+          "Understanding In-Context Learning from Repetitions"
+        ],
+        "iclr25": [
+          "Scaling Stick-Breaking Attention: An Efficient Implementation and In-depth Study",
+          "APE: Faster and Longer Context-Augmented Generation via Adaptive Parallel Encoding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8k",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Understanding In-Context Learning from Repetitions",
+      "evidence": "",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "iclr24": [
+          "Understanding In-Context Learning from Repetitions"
+        ],
+        "iclr25": [
+          "Scaling Stick-Breaking Attention: An Efficient Implementation and In-depth Study",
+          "APE: Faster and Longer Context-Augmented Generation via Adaptive Parallel Encoding"
+        ],
+        "acl25": [
+          "Improving Dialogue State Tracking through Combinatorial Search for In-Context Examples"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Parametric knowledge",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "The mechanistic basis of data dependence and abrupt learning in an in-context classification task",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr24": [
+          "The mechanistic basis of data dependence and abrupt learning in an in-context classification task"
+        ],
+        "iclr25": [
+          "MLPs Learn In-Context on Regression and Classification Tasks",
+          "Toward Understanding In-context vs. In-weight Learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MetaICL",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MEND: Meta Demonstration Distillation for Efficient and Effective In-Context Learning",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr24": [
+          "MEND: Meta Demonstration Distillation for Efficient and Effective In-Context Learning"
+        ],
+        "iclr25": [
+          "Rethinking Invariance in In-context Learning",
+          "Generative Adapter: Contextualizing Language Models in Parameters with A Single Forward Pass"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Knowledge recall",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Is attention required for ICL? Exploring the Relationship Between Model Architecture and In-Context Learning Ability",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr24": [
+          "Is attention required for ICL? Exploring the Relationship Between Model Architecture and In-Context Learning Ability"
+        ],
+        "icml25": [
+          "Position: Enough of Scaling LLMs! Lets Focus on Downscaling"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Re-ranking Reasoning Context with Tree Search Makes Large Vision-Language Models Stronger",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "icml25": [
+          "Re-ranking Reasoning Context with Tree Search Makes Large Vision-Language Models Stronger",
+          "MAPLE: Many-Shot Adaptive Pseudo-Labeling for In-Context Learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Text classification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "In-Context Pretraining: Language Modeling Beyond Document Boundaries",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr24": [
+          "In-Context Pretraining: Language Modeling Beyond Document Boundaries"
+        ],
+        "icml25": [
+          "Demonstration Selection for In-Context Learning via Reinforcement Learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Instruction following",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Understanding Catastrophic Forgetting in Language Models via Implicit Inference",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr24": [
+          "Understanding Catastrophic Forgetting in Language Models via Implicit Inference"
+        ],
+        "acl25": [
+          "Mind the Gap: Static and Interactive Evaluations of Large Audio Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Emergent abilities",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Lines of Thought in Large Language Models",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Lines of Thought in Large Language Models"
+        ],
+        "icml25": [
+          "MUDDFormer: Breaking Residual Bottlenecks in Transformers via Multiway Dynamic Dense Connections"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Zero-shot learning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Making Text Embedders Few-Shot Learners",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Making Text Embedders Few-Shot Learners",
+          "Zero-shot forecasting of chaotic systems"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Instruction following",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Beyond task performance: evaluating and reducing the flaws of large multimodal models with in-context-learning",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr24": [
+          "Beyond task performance: evaluating and reducing the flaws of large multimodal models with in-context-learning"
+        ],
+        "naacl25": [
+          "Multimodal Cognitive Reframing Therapy via Multi-hop Psychotherapeutic Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HellaSwag",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "IDEAL: Influence-Driven Selective Annotations Empower In-Context Learners in Large Language Models",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr24": [
+          "IDEAL: Influence-Driven Selective Annotations Empower In-Context Learners in Large Language Models"
+        ],
+        "iclr25": [
+          "Unlocking the Power of Function Vectors for Characterizing and Mitigating Catastrophic Forgetting in Continual Instruction Tuning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Representation learning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "How Do Transformers Learn In-Context Beyond Simple Functions? A Case Study on Learning with Representations",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr24": [
+          "How Do Transformers Learn In-Context Beyond Simple Functions? A Case Study on Learning with Representations"
+        ],
+        "neurips24": [
+          "Towards Understanding How Transformers Learn In-context Through a Representation Learning Lens"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense knowledge",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Beyond Induction Heads: In-Context Meta Learning Induces Multi-Phase Circuit Emergence",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "icml25": [
+          "Beyond Induction Heads: In-Context Meta Learning Induces Multi-Phase Circuit Emergence",
+          "Does learning the right latent variables necessarily improve in-context learning?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Out-of-distribution generalization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Can In-context Learning Really Generalize to Out-of-distribution Tasks?",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Can In-context Learning Really Generalize to Out-of-distribution Tasks?"
+        ],
+        "icml25": [
+          "When can in-context learning generalize out of task distribution?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM Evaluation Harness",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "APE: Faster and Longer Context-Augmented Generation via Adaptive Parallel Encoding",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "APE: Faster and Longer Context-Augmented Generation via Adaptive Parallel Encoding",
+          "DataMan: Data Manager for Pre-training Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Robustness",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "AdaCAD: Adaptively Decoding to Balance Conflicts between Contextual and Parametric Knowledge",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "naacl25": [
+          "AdaCAD: Adaptively Decoding to Balance Conflicts between Contextual and Parametric Knowledge"
+        ],
+        "icml25": [
+          "Iterative Vectors: In-Context Gradient Steering without Backpropagation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Gen-Z: Generative Zero-Shot Text Classification with Contextualized Label Descriptions",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Gen-Z: Generative Zero-Shot Text Classification with Contextualized Label Descriptions"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Robustness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Mixture of Demonstrations for In-Context Learning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Mixture of Demonstrations for In-Context Learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Code generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Symbolic Regression with a Learned Concept Library",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Symbolic Regression with a Learned Concept Library"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Task planning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "LoTa-Bench: Benchmarking Language-oriented Task Planners for Embodied Agents",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "LoTa-Bench: Benchmarking Language-oriented Task Planners for Embodied Agents"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Consistency",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Is attention required for ICL? Exploring the Relationship Between Model Architecture and In-Context Learning Ability",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Is attention required for ICL? Exploring the Relationship Between Model Architecture and In-Context Learning Ability"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction following",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Understanding Catastrophic Forgetting in Language Models via Implicit Inference",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Understanding Catastrophic Forgetting in Language Models via Implicit Inference"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MINT",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MINT: Evaluating LLMs in Multi-turn Interaction with Tools and Language Feedback",
+      "evidence": "It is a benchmark for LLMs that measures their performance during multi-turn interaction, focusing on two particular capabilities (\u00a72.1): ... (2) leveraging natural language feedback. (Section 1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "MINT: Evaluating LLMs in Multi-turn Interaction with Tools and Language Feedback"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SST-2",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Improving Dialogue State Tracking through Combinatorial Search for In-Context Examples",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Improving Dialogue State Tracking through Combinatorial Search for In-Context Examples"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "DBPedia",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "IDEAL: Influence-Driven Selective Annotations Empower In-Context Learners in Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "IDEAL: Influence-Driven Selective Annotations Empower In-Context Learners in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SST-5",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "IDEAL: Influence-Driven Selective Annotations Empower In-Context Learners in Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "IDEAL: Influence-Driven Selective Annotations Empower In-Context Learners in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MNLI",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "IDEAL: Influence-Driven Selective Annotations Empower In-Context Learners in Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "IDEAL: Influence-Driven Selective Annotations Empower In-Context Learners in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Problem-solving",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Looped Transformers are Better at Learning Learning Algorithms",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Looped Transformers are Better at Learning Learning Algorithms"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Factuality",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Supervised Knowledge Makes Large Language Models Better In-context Learners",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Supervised Knowledge Makes Large Language Models Better In-context Learners"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BBH",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "CausalLM is not optimal for in-context learning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "CausalLM is not optimal for in-context learning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-context classification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "On the Training Convergence of Transformers for In-Context Classification of Gaussian Mixtures",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "On the Training Convergence of Transformers for In-Context Classification of Gaussian Mixtures"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Privacy",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Can In-context Learning Really Generalize to Out-of-distribution Tasks?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Can In-context Learning Really Generalize to Out-of-distribution Tasks?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Zero-shot inference",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Large (Vision) Language Models are Unsupervised In-Context Learners",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Large (Vision) Language Models are Unsupervised In-Context Learners"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Out-of-distribution generalization",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Learning to grok: Emergence of in-context learning and skill composition in modular arithmetic tasks",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Learning to grok: Emergence of in-context learning and skill composition in modular arithmetic tasks"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Abstract reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Large Language Models as Analogical Reasoners",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Large Language Models as Analogical Reasoners"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Chain-of-thought reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Synthetic Socratic Debates: Examining Persona Effects on Moral Decision and Persuasion Dynamics",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Synthetic Socratic Debates: Examining Persona Effects on Moral Decision and Persuasion Dynamics"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Refusal to answer",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Beyond task performance: evaluating and reducing the flaws of large multimodal models with in-context-learning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Beyond task performance: evaluating and reducing the flaws of large multimodal models with in-context-learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Weather",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Time-FFM: Towards LM-Empowered Federated Foundation Model for Time Series Forecasting",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Time-FFM: Towards LM-Empowered Federated Foundation Model for Time Series Forecasting"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MRPC",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "IDEAL: Influence-Driven Selective Annotations Empower In-Context Learners in Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "IDEAL: Influence-Driven Selective Annotations Empower In-Context Learners in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "RTE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "IDEAL: Influence-Driven Selective Annotations Empower In-Context Learners in Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "IDEAL: Influence-Driven Selective Annotations Empower In-Context Learners in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "XSum",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "IDEAL: Influence-Driven Selective Annotations Empower In-Context Learners in Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "IDEAL: Influence-Driven Selective Annotations Empower In-Context Learners in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Knowledge recall",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Orchid: Flexible and Data-Dependent Convolution for Sequence Modeling",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Orchid: Flexible and Data-Dependent Convolution for Sequence Modeling"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Image classification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Bridging Compressed Image Latents and Multimodal Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Bridging Compressed Image Latents and Multimodal Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQA-v2",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VizWiz",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Selectivity",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Theoretical Foundations of Deep Selective State-Space Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Theoretical Foundations of Deep Selective State-Space Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Representation learning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Transformers are Minimax Optimal Nonparametric In-Context Learners",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Transformers are Minimax Optimal Nonparametric In-Context Learners"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Tool use",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "From Exploration to Mastery: Enabling LLMs to Master Tools via Self-Driven Interactions",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "From Exploration to Mastery: Enabling LLMs to Master Tools via Self-Driven Interactions"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge transferability",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Time-FFM: Towards LM-Empowered Federated Foundation Model for Time Series Forecasting",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Time-FFM: Towards LM-Empowered Federated Foundation Model for Time Series Forecasting"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Language modeling",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Linking In-context Learning in Transformers to Human Episodic Memory",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Linking In-context Learning in Transformers to Human Episodic Memory"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Logical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "From Unstructured Data to In-Context Learning: Exploring What Tasks Can Be Learned and When",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "From Unstructured Data to In-Context Learning: Exploring What Tasks Can Be Learned and When"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "COCO",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OK-VQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TextVQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mathematical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "What Makes In-context Learning Effective for Mathematical Reasoning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "What Makes In-context Learning Effective for Mathematical Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Logical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "DETAIL: Task DEmonsTration Attribution for Interpretable In-context Learning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "DETAIL: Task DEmonsTration Attribution for Interpretable In-context Learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Knowledge transferability",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "DETAIL: Task DEmonsTration Attribution for Interpretable In-context Learning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "DETAIL: Task DEmonsTration Attribution for Interpretable In-context Learning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-context understanding",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "What is Wrong with Perplexity for Long-context Language Modeling?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "What is Wrong with Perplexity for Long-context Language Modeling?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "M4",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "AutoTimes: Autoregressive Time Series Forecasters via Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "AutoTimes: Autoregressive Time Series Forecasters via Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Mixture of In-Context Experts Enhance LLMs' Long Context Awareness",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Mixture of In-Context Experts Enhance LLMs' Long Context Awareness"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Long-context understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Efficient Multi-modal Long Context Learning for Training-free Adaptation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Efficient Multi-modal Long Context Learning for Training-free Adaptation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Information retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Look Before You Leap: Universal Emergent Mechanism for Retrieval in Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Look Before You Leap: Universal Emergent Mechanism for Retrieval in Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Federated In-Context Learning: Iterative Refinement for Improved Answer Quality",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Federated In-Context Learning: Iterative Refinement for Improved Answer Quality"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "TAIA: Large Language Models are Out-of-Distribution Data Learners",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "TAIA: Large Language Models are Out-of-Distribution Data Learners"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Expressive power",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Why In-Context Learning Models are Good Few-Shot Learners?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Why In-Context Learning Models are Good Few-Shot Learners?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Verbosity",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Padding Tone: A Mechanistic Analysis of Padding Tokens inT2IModels",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Padding Tone: A Mechanistic Analysis of Padding Tokens inT2IModels"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Catastrophic forgetting",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Unlocking the Power of Function Vectors for Characterizing and Mitigating Catastrophic Forgetting in Continual Instruction Tuning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Unlocking the Power of Function Vectors for Characterizing and Mitigating Catastrophic Forgetting in Continual Instruction Tuning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CommonsenseQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Unlocking the Power of Function Vectors for Characterizing and Mitigating Catastrophic Forgetting in Continual Instruction Tuning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Unlocking the Power of Function Vectors for Characterizing and Mitigating Catastrophic Forgetting in Continual Instruction Tuning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Alpaca instruction dataset",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Unlocking the Power of Function Vectors for Characterizing and Mitigating Catastrophic Forgetting in Continual Instruction Tuning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Unlocking the Power of Function Vectors for Characterizing and Mitigating Catastrophic Forgetting in Continual Instruction Tuning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BIG-Bench Hard",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Unlocking the Power of Function Vectors for Characterizing and Mitigating Catastrophic Forgetting in Continual Instruction Tuning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Unlocking the Power of Function Vectors for Characterizing and Mitigating Catastrophic Forgetting in Continual Instruction Tuning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Compositional generalization",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Attention as a Hypernetwork",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Attention as a Hypernetwork"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MAWPS",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Scaling Diffusion Language Models via Adaptation from Autoregressive Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Scaling Diffusion Language Models via Adaptation from Autoregressive Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HELMET",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "NExtLong: Toward Effective Long-Context Training without Long Documents",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "NExtLong: Toward Effective Long-Context Training without Long Documents"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Long-context processing",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "CAMIEval: EnhancingNLGEvaluation through Multidimensional Comparative Instruction-Following Analysis",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "CAMIEval: EnhancingNLGEvaluation through Multidimensional Comparative Instruction-Following Analysis"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Towards Auto-Regressive Next-Token Prediction: In-context Learning Emerges from Generalization",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Towards Auto-Regressive Next-Token Prediction: In-context Learning Emerges from Generalization"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Contextual understanding",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Context-Alignment: Activating and Enhancing LLMs Capabilities in Time Series",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Context-Alignment: Activating and Enhancing LLMs Capabilities in Time Series"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Memorization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Zero-shot forecasting of chaotic systems",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Zero-shot forecasting of chaotic systems"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Adaptability",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Memorization",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Toward Understanding In-context vs. In-weight Learning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Toward Understanding In-context vs. In-weight Learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TriviaQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "APE: Faster and Longer Context-Augmented Generation via Adaptive Parallel Encoding",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "APE: Faster and Longer Context-Augmented Generation via Adaptive Parallel Encoding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Zero-shot inference",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Large (Vision) Language Models are Unsupervised In-Context Learners",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Large (Vision) Language Models are Unsupervised In-Context Learners"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Compositional reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Are Transformers Able to Reason by Connecting Separated Knowledge in Training Data?",
+      "evidence": "Our findings demonstrate that few-shot Chain-of-Thought prompting enables Transformers to perform compositional reasoning on FTCT by revealing correct combinations of fragments, even if such combinations were absent in training data. (ABSTRACT)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Are Transformers Able to Reason by Connecting Separated Knowledge in Training Data?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Tabular classification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "TabFlex: Scaling Tabular Learning to Millions with Linear Attention",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "TabFlex: Scaling Tabular Learning to Millions with Linear Attention"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multi-image reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "MM1.5: Methods, Analysis & Insights from Multimodal LLM Fine-tuning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "MM1.5: Methods, Analysis & Insights from Multimodal LLM Fine-tuning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Length generalization",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Towards Auto-Regressive Next-Token Prediction: In-context Learning Emerges from Generalization",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Towards Auto-Regressive Next-Token Prediction: In-context Learning Emerges from Generalization"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Grammatical error correction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Multimodal Cognitive Reframing Therapy via Multi-hop Psychotherapeutic Reasoning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Multimodal Cognitive Reframing Therapy via Multi-hop Psychotherapeutic Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Controllability",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Getting More Juice Out of Your Data: Hard Pair Refinement Enhances Visual-Language Models Without Extra Data",
+      "evidence": "The prompt steerability of a model is related to how well a model can learn from in-context examples (Brown, 2020; Wies et al., 2024). (Section 1.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Getting More Juice Out of Your Data: Hard Pair Refinement Enhances Visual-Language Models Without Extra Data"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Knowledge retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Towards Operationalizing Right to Data Protection",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Towards Operationalizing Right to Data Protection"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Semantic understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Benchmarking and Building Zero-ShotHindi Retrieval Model withHindi-BEIRandNLLB-E5",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Benchmarking and Building Zero-ShotHindi Retrieval Model withHindi-BEIRandNLLB-E5"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Text summarization",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "MAPLE: Many-Shot Adaptive Pseudo-Labeling for In-Context Learning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "MAPLE: Many-Shot Adaptive Pseudo-Labeling for In-Context Learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WSC",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Improving Dialogue State Tracking through Combinatorial Search for In-Context Examples",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Improving Dialogue State Tracking through Combinatorial Search for In-Context Examples"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Scalability",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Iterative Vectors: In-Context Gradient Steering without Backpropagation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Iterative Vectors: In-Context Gradient Steering without Backpropagation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Stability",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "What Makes In-context Learning Effective for Mathematical Reasoning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "What Makes In-context Learning Effective for Mathematical Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Code debugging",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "AuPair: Golden Example Pairs for Code Repair",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "AuPair: Golden Example Pairs for Code Repair"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Previous-token attention",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Strategy Coopetition Explains the Emergence and Transience of In-Context Learning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Strategy Coopetition Explains the Emergence and Transience of In-Context Learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AIME 2025",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Evaluating Robustness of Large Audio Language Models to Audio Injection: An Empirical Study",
+      "evidence": "\u201cAIME 2025 ... We leverage this most recent mathematics benchmark to examine the test-time learning capabilities of large language models in solving high-level mathematical problems.\u201d",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Evaluating Robustness of Large Audio Language Models to Audio Injection: An Empirical Study"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Information retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "AISees YourLocation\u2014But With A Bias Toward The Wealthy World",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "AISees YourLocation\u2014But With A Bias Toward The Wealthy World"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Task alignment",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Lemmatization ofPolish Multi-word Expressions",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Lemmatization ofPolish Multi-word Expressions"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 102,
+  "incoming_relationship_count": 21,
+  "outgoing_relationship_count": 81,
+  "characterization": "Across the provided literature, In-context learning (ICL) is overwhelmingly defined as a model's ability to adapt to a new task by conditioning on a few input-output examples, or demonstrations, provided in the prompt. A near-universal characteristic is that this adaptation occurs at inference time without any parameter updates, distinguishing it from conventional fine-tuning. While this core definition is consistent, some papers offer more specific framings, such as \"task learning\" to emphasize inferring new input-label mappings, or \"in-context improvement\" which focuses on iterative refinement based on feedback. The underlying mechanism is described as a subject of debate, with some papers viewing it as a form of meta-learning or implicit Bayesian inference. The construct is operationalized and measured through model performance on various downstream tasks, including question-answering, summarization, and time series forecasting, using benchmarks such as MINT, MATH, and HELMET. In-context learning is reported to be related to a model's \"prompt steerability\" and is sometimes contrasted with instruction following, with one study noting that instruction tuning can suppress it. Some studies propose that this ability enables other behaviors; for instance, one paper reports that few-shot Chain-of-Thought prompting, a form of ICL, facilitates compositional reasoning.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "A Benchmark for Learning to Translate a New Language from One Grammar Book",
+      "Are Human-generated Demonstrations Necessary for In-context Learning?",
+      "BadChain: Backdoor Chain-of-Thought Prompting for Large Language Models",
+      "Batch Calibration: Rethinking Calibration for In-Context Learning and Prompt Engineering",
+      "CausalLM is not optimal for in-context learning",
+      "Context is Environment",
+      "DQ-LoRe: Dual Queries with Low Rank Approximation Re-ranking for In-Context Learning",
+      "Democratizing Fine-grained Visual Recognition with Large Language Models",
+      "Emu: Generative Pretraining in Multimodality",
+      "Eureka: Human-Level Reward Design via Coding Large Language Models",
+      "Gen-Z: Generative Zero-Shot Text Classification with Contextualized Label Descriptions",
+      "Grounding Multimodal Large Language Models to the World",
+      "How Do Transformers Learn In-Context Beyond Simple Functions? A Case Study on Learning with Representations",
+      "How Many Pretraining Tasks Are Needed for In-Context Learning of Linear Regression?",
+      "IDEAL: Influence-Driven Selective Annotations Empower In-Context Learners in Large Language Models",
+      "In-Context Learning Learns Label Relationships but Is Not Conventional Learning",
+      "In-Context Learning through the Bayesian Prism",
+      "In-Context Pretraining: Language Modeling Beyond Document Boundaries",
+      "Is attention required for ICL? Exploring the Relationship Between Model Architecture and In-Context Learning Ability",
+      "Language Modeling Is Compression",
+      "Language-Interfaced Tabular Oversampling via Progressive Imputation and Self-Authentication",
+      "Large Language Models as Analogical Reasoners",
+      "Large Language Models as Tool Makers",
+      "Large Language Models to Enhance Bayesian Optimization",
+      "LoTa-Bench: Benchmarking Language-oriented Task Planners for Embodied Agents",
+      "Looped Transformers are Better at Learning Learning Algorithms",
+      "MEND: Meta Demonstration Distillation for Efficient and Effective In-Context Learning",
+      "MINT: Evaluating LLMs in Multi-turn Interaction with Tools and Language Feedback",
+      "One Step of Gradient Descent is Provably the Optimal In-Context Learner with One Layer of Linear Self-Attention",
+      "Privacy-Preserving In-Context Learning for Large Language Models",
+      "Privacy-Preserving In-Context Learning with Differentially Private Few-Shot Generation",
+      "Retrieval meets Long Context Large Language Models",
+      "Supervised Knowledge Makes Large Language Models Better In-context Learners",
+      "TEST: Text Prototype Aligned Embedding to Activate LLM's Ability for Time Series",
+      "The Cost of Scaling Down Large Language Models: Reducing Model Size Affects Memory before In-context Learning",
+      "The mechanistic basis of data dependence and abrupt learning in an in-context classification task",
+      "Two-stage LLM Fine-tuning with Less Specialization and More Generalization",
+      "Understanding Catastrophic Forgetting in Language Models via Implicit Inference",
+      "Understanding In-Context Learning from Repetitions",
+      "Understanding In-Context Learning in Transformers and LLMs by Learning to Learn Discrete Functions",
+      "Unleashing the Power of Pre-trained Language Models for Offline Reinforcement Learning",
+      "YaRN: Efficient Context Window Extension of Large Language Models"
+    ],
+    "neurips24": [
+      "A Theoretical Understanding of Self-Correction through In-context Alignment",
+      "AP-Adapter: Improving Generalization of Automatic Prompts on Unseen Text-to-Image Diffusion Models",
+      "AutoTimes: Autoregressive Time Series Forecasters via Large Language Models",
+      "BERTs are Generative In-Context Learners",
+      "Can Language Models Perform Robust Reasoning in Chain-of-thought Prompting with Noisy Rationales?",
+      "Can large language models explore in-context?",
+      "Chain of Thoughtlessness? An Analysis of CoT in Planning",
+      "Coevolving with the Other You: Fine-Tuning LLM with Sequential Cooperative Multi-Agent Reinforcement Learning",
+      "ConvBench: A Multi-Turn Conversation Evaluation Benchmark with Hierarchical Ablation Capability for Large Vision-Language Models",
+      "DETAIL: Task DEmonsTration Attribution for Interpretable In-context Learning",
+      "EHRCon: Dataset for Checking Consistency between Unstructured Notes and Structured Tables in Electronic Health Records",
+      "EPIC: Effective Prompting for Imbalanced-Class Data Synthesis in Tabular Data Classification via Large Language Models",
+      "Enhancing In-Context Learning Performance with just SVD-Based Weight Pruning: A Theoretical Perspective",
+      "Fine-grained Analysis of In-context Linear Estimation: Data, Architecture, and Beyond",
+      "From Unstructured Data to In-Context Learning: Exploring What Tasks Can Be Learned and When",
+      "Gated Slot Attention for Efficient Linear-Time Sequence Modeling",
+      "HARMONIC: Harnessing LLMs for Tabular Data Synthesis and Privacy Protection",
+      "Hidden in Plain Sight: Evaluating Abstract Shape Recognition in Vision-Language Models",
+      "How Transformers Utilize Multi-Head Attention in In-Context Learning? A Case Study on Sparse Linear Regression",
+      "Knowledge Circuits in Pretrained Transformers",
+      "Learning to grok: Emergence of in-context learning and skill composition in modular arithmetic tasks",
+      "Linking In-context Learning in Transformers to Human Episodic Memory",
+      "LogiCity: Advancing Neuro-Symbolic AI with Abstract Urban Simulation",
+      "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens",
+      "Many-Shot In-Context Learning",
+      "MedCalc-Bench: Evaluating Large Language Models for Medical Calculations",
+      "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "Mixture of Demonstrations for In-Context Learning",
+      "On Giant's Shoulders: Effortless Weak to Strong by Dynamic Logits Fusion",
+      "Orchid: Flexible and Data-Dependent Convolution for Sequence Modeling",
+      "Probing the Decision Boundaries of In-context Learning in Large Language Models",
+      "Prompt Optimization with EASE? Efficient Ordering-aware Automated Selection of Exemplars",
+      "Provably Transformers Harness Multi-Concept Word Semantics for Efficient In-Context Learning",
+      "SG-Bench: Evaluating LLM Safety Generalization Across Diverse Tasks and Prompt Types",
+      "Shopping MMLU: A Massive Multi-Task Online Shopping Benchmark for Large Language Models",
+      "Symbolic Regression with a Learned Concept Library",
+      "Tackling Uncertain Correspondences for Multi-Modal Entity Alignment",
+      "Text-space Graph Foundation Models: Comprehensive Benchmarks and New Insights",
+      "The Closeness of In-Context Learning and Weight Shifting for Softmax Regression",
+      "Theoretical Foundations of Deep Selective State-Space Models",
+      "Towards Understanding How Transformers Learn In-context Through a Representation Learning Lens",
+      "Towards a Theoretical Understanding of the 'Reversal Curse' via Training Dynamics",
+      "Transformers are Minimax Optimal Nonparametric In-Context Learners",
+      "UniAudio 1.5: Large Language Model-Driven Audio Codec is A Few-Shot Audio Task Learner",
+      "Unveiling Causal Reasoning in Large Language Models: Reality or Mirage?",
+      "VLM Agents Generate Their Own Memories: Distilling Experience into Embodied Programs of Thought",
+      "Are Language Models Actually Useful for Time Series Forecasting?",
+      "Data-Driven Discovery of Dynamical Systems in Pharmacology using Large Language Models",
+      "From News to Forecast: Integrating Event Analysis in LLM-Based Time Series Forecasting with Reflection",
+      "HLM-Cite: Hybrid Language Model Workflow for Text-based Scientific Citation Prediction",
+      "HYSYNTH: Context-Free LLM Approximation for Guiding Program Synthesis",
+      "Mobility-LLM: Learning Visiting Intentions and Travel Preference from Human Mobility Data with Large Language Models",
+      "Prompt Tuning Strikes Back: Customizing Foundation Models with Low-Rank Prompt Adaptation",
+      "SGLang: Efficient Execution of Structured Language Model Programs",
+      "TAIA: Large Language Models are Out-of-Distribution Data Learners",
+      "Time-FFM: Towards LM-Empowered Federated Foundation Model for Time Series Forecasting",
+      "Can LLMs Learn by Teaching for Better Reasoning? A Preliminary Study",
+      "Continuously Learning, Adapting, and Improving: A Dual-Process Approach to Autonomous Driving",
+      "Limits of Transformer Language Models on Learning to Compose Algorithms",
+      "Stress-Testing Long-Context Language Models with Lifelong ICL and Task Haystack",
+      "An Efficient Recipe for Long Context Extension via Middle-Focused Positional Encoding",
+      "Combining Observational Data and Language for Species Range Estimation",
+      "PACE: Marrying generalization in PArameter-efficient fine-tuning with Consistency rEgularization"
+    ],
+    "iclr25": [
+      "Chain-of-Thought Provably Enables Learning the (Otherwise) Unlearnable",
+      "PEARL: Towards Permutation-Resilient LLMs",
+      "Personalized Visual Instruction Tuning",
+      "Selective induction Heads: How Transformers Select Causal Structures in Context",
+      "Training Nonlinear Transformers for Chain-of-Thought Inference:  A Theoretical Generalization Analysis",
+      "Unlocking the Power of Function Vectors for Characterizing and Mitigating Catastrophic Forgetting in Continual Instruction Tuning",
+      "AI Sandbagging: Language Models can Strategically Underperform on Evaluations",
+      "Are Transformers Able to Reason by Connecting Separated Knowledge in Training Data?",
+      "Can LLMs Understand Time Series Anomalies?",
+      "DeLLMa: Decision Making Under Uncertainty with Large Language Models",
+      "Logical Consistency of Large Language Models in Fact-Checking",
+      "Physics of Language Models: Part 2.1, Grade-School Math and the Hidden Reasoning Process",
+      "TypedThinker: Diversify Large Language Model Reasoning with Typed Thinking",
+      "APE: Faster and Longer Context-Augmented Generation via Adaptive Parallel Encoding",
+      "Adaptive Transformer Programs: Bridging the Gap Between Performance and Interpretability in Transformers",
+      "Block-Attention for Efficient Prefilling",
+      "CAKE: Cascading and Adaptive KV Cache Eviction with Layer Preferences",
+      "Collaborative Discrete-Continuous Black-Box Prompt Learning for Language Models",
+      "Context-Alignment: Activating and Enhancing LLMs Capabilities in Time Series",
+      "DeFT: Decoding with Flash Tree-attention for Efficient Tree-structured LLM Inference",
+      "Diffusion-based Neural Network Weights Generation",
+      "Dynamic Loss-Based Sample Reweighting for Improved Large Language Model Pretraining",
+      "Explaining Modern Gated-Linear RNNs via a Unified Implicit Attention Formulation",
+      "Gated Delta Networks: Improving Mamba2 with Delta Rule",
+      "HELMET: How to Evaluate Long-context Models Effectively and Thoroughly",
+      "Harnessing Diversity for Important Data Selection in Pretraining Large Language Models",
+      "Human-inspired Episodic Memory for Infinite Context LLMs",
+      "Long Context Compression with Activation Beacon",
+      "LongMamba: Enhancing Mamba's Long-Context Capabilities via Training-Free Receptive Field Enlargement",
+      "Metalic: Meta-Learning In-Context with Protein Language Models",
+      "Not All LLM-Generated Data Are Equal: Rethinking Data Weighting in Text Classification",
+      "On the Crucial Role of Initialization for Matrix Factorization",
+      "Quest: Query-centric Data Synthesis Approach for Long-context Scaling of Large Language Model",
+      "Radar: Fast Long-Context Decoding for Any Transformer",
+      "Revisit Large-Scale Image-Caption Data in Pre-training Multimodal Foundation Models",
+      "SCBench: A KV Cache-Centric Analysis of Long-Context Methods",
+      "ThinK: Thinner Key Cache by Query-Driven Pruning",
+      "Toward Understanding In-context vs. In-weight Learning",
+      "What is Wrong with Perplexity for Long-context Language Modeling?",
+      "Why In-Context Learning Models are Good Few-Shot Learners?"
+    ],
+    "naacl25": [
+      "Benchmarking and Building Zero-ShotHindi Retrieval Model withHindi-BEIRandNLLB-E5",
+      "CAMIEval: EnhancingNLGEvaluation through Multidimensional Comparative Instruction-Following Analysis",
+      "CRMArena: Understanding the Capacity ofLLMAgents to Perform ProfessionalCRMTasks in Realistic Environments",
+      "CodexGraph: Bridging Large Language Models and Code Repositories via Code Graph Databases",
+      "ConQRet: A New Benchmark for Fine-Grained Automatic Evaluation of Retrieval Augmented Computational Argumentation",
+      "Continual Learning in Multilingual Sign Language Translation",
+      "DETQUS: Decomposition-Enhanced Transformers forQUery-focused Summarization",
+      "DREAM: Disentangling Risks to Enhance Safety Alignment in Multimodal Large Language Models",
+      "Few-shot Personalization ofLLMs with Mis-aligned Responses",
+      "Fine-Tuning Large Language Models with Sequential Instructions",
+      "Getting More Juice Out of Your Data: Hard Pair Refinement Enhances Visual-Language Models Without Extra Data",
+      "Ihquin tlahtouah in Tetelahtzincocah: An annotated, multi-purpose audio and text corpus of Western SierraPueblaNahuatl",
+      "InfoPO: On Mutual Information Maximization for Large Language Model Alignment",
+      "LegalViz: Legal Text Visualization by Text To Diagram Generation",
+      "Lost in Inference: Rediscovering the Role of Natural Language Inference for Large Language Models",
+      "Mastering the Craft of Data Synthesis forCodeLLMs",
+      "Measuring and Benchmarking Large Language Models\u2019 Capabilities to Generate Persuasive Language",
+      "Multimodal Cognitive Reframing Therapy via Multi-hop Psychotherapeutic Reasoning",
+      "Option Symbol Matters: Investigating and Mitigating Multiple-Choice Option Symbol Bias of Large Language Models",
+      "Padding Tone: A Mechanistic Analysis of Padding Tokens inT2IModels",
+      "ReasVQA: AdvancingVideoQAwith Imperfect Reasoning Process",
+      "Soft Language Prompts for Language Transfer",
+      "The Impact of Visual Information inChinese Characters: Evaluating Large Models\u2019 Ability to Recognize and Utilize Radicals",
+      "Towards Operationalizing Right to Data Protection",
+      "Vision-Language Models Can Self-Improve Reasoning via Reflection",
+      "Yeah, Un, Oh: Continuous and Real-time Backchannel Prediction with Fine-tuning of Voice Activity Projection",
+      "tRAG: Term-level Retrieval-Augmented Generation for Domain-Adaptive Retrieval",
+      "AdaCAD: Adaptively Decoding to Balance Conflicts between Contextual and Parametric Knowledge",
+      "Entity Decomposition with Filtering: A Zero-Shot Clinical Named Entity Recognition Framework",
+      "FactCG: Enhancing Fact Checkers with Graph-Based Multi-Hop Data",
+      "MeNTi: Bridging Medical Calculator andLLMAgent with Nested Tool Calling",
+      "Upsample or Upweight? Balanced Training on Heavily Imbalanced Datasets",
+      "Bridging the Gap between Expert and Language Models: Concept-guided Chess Commentary Generation and Evaluation",
+      "Language Models Can Infer Action Semantics for Symbolic Planners from Environment Feedback"
+    ],
+    "acl25": [
+      "A Spatio-Temporal Point Process for Fine-Grained Modeling of Reading Behavior",
+      "ActiView: Evaluating Active Perception Ability for Multimodal Large Language Models",
+      "Beyond Text Compression: Evaluating Tokenizers Across Scales",
+      "Bilingual Zero-Shot Stance Detection",
+      "Can Language Models Replace Programmers for Coding?REPOCODSays \u2018Not Yet\u2019",
+      "Conformity in Large Language Models",
+      "Debiasing the Fine-Grained Classification Task inLLMs with Bias-AwarePEFT",
+      "EAGLE: Expert-Guided Self-Enhancement for Preference Alignment in Pathology Large Vision-Language Model",
+      "EPO: Explicit Policy Optimization for Strategic Reasoning inLLMs via Reinforcement Learning",
+      "Employing Discourse Coherence Enhancement to Improve Cross-Document Event and Entity Coreference Resolution",
+      "Finding A Voice: Exploring the Potential ofAfricanAmerican Dialect and Voice Generation for Chatbots",
+      "Gender Inclusivity Fairness Index (GIFI): A Multilevel Framework for Evaluating Gender Diversity in Large Language Models",
+      "Generating Plausible Distractors for Multiple-Choice Questions via Student Choice Prediction",
+      "Incorporating Domain Knowledge into Materials Tokenization",
+      "Large Language and Protein Assistant for Protein-Protein Interactions Prediction",
+      "M2S: Multi-turn to Single-turn jailbreak in Red Teaming forLLMs",
+      "Mind the Gap: Static and Interactive Evaluations of Large Audio Models",
+      "OmniCharacter: Towards Immersive Role-Playing Agents with Seamless Speech-Language Personality Interaction",
+      "Refining Salience-Aware Sparse Fine-Tuning Strategies for Language Models",
+      "SafeRAG: Benchmarking Security in Retrieval-Augmented Generation of Large Language Model",
+      "SocialEval: Evaluating Social Intelligence of Large Language Models",
+      "TUNA: Comprehensive Fine-grained Temporal Understanding Evaluation on Dense Dynamic Videos",
+      "Using Information Theory to Characterize Prosodic Typology: The Case of Tone, Pitch-Accent and Stress-Accent",
+      "Where Are We? EvaluatingLLMPerformance onAfrican Languages",
+      "ACECODER: Acing CoderRLvia Automated Test-Case Synthesis",
+      "Improving Dialogue State Tracking through Combinatorial Search for In-Context Examples",
+      "Logic-Regularized Verifier Elicits Reasoning fromLLMs",
+      "PlanningArena: A Modular Benchmark for Multidimensional Evaluation of Planning and Tool Learning",
+      "RuleArena: A Benchmark for Rule-Guided Reasoning withLLMs in Real-World Scenarios",
+      "SoRFT: Issue Resolving with Subtask-oriented Reinforced Fine-Tuning",
+      "WET: Overcoming Paraphrasing Vulnerabilities in Embeddings-as-a-Service with Linear Transformation Watermarks"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.1304.checklist",
+      "Enhanced Noun-Noun Compound Interpretation through Textual Enrichment",
+      "Evaluating Robustness of Large Audio Language Models to Audio Injection: An Empirical Study",
+      "Lemmatization ofPolish Multi-word Expressions",
+      "Weight-Aware Activation Sparsity with ConstrainedBayesian Optimization Scheduling for Large Language Models",
+      "2025.emnlp-main.1007.checklist",
+      "2025.emnlp-main.1316.checklist",
+      "2025.emnlp-main.1441.checklist",
+      "2025.emnlp-main.929.checklist",
+      "32.3%",
+      "AISees YourLocation\u2014But With A Bias Toward The Wealthy World",
+      "Analyzing values about gendered language reform inLLMs\u2019 revisions",
+      "Beyond Demographics: Enhancing Cultural Value Survey Simulation with Multi-Stage Personality-Driven Cognitive Reasoning",
+      "Building Trust in ClinicalLLMs: Bias Analysis and Dataset Transparency",
+      "CogDual: Enhancing Dual Cognition ofLLMs via Reinforcement Learning with Implicit Rule-Based Rewards",
+      "Compositional Generalisation for Explainable Hate Speech Detection",
+      "Constructions are Revealed in Word Distributions",
+      "Culture Cartography: Mapping the Landscape of Cultural Knowledge",
+      "Discourse-Driven Code-Switching: Analyzing the Role of Content and Communicative Function inSpanish-English Bilingual Speech",
+      "Flaw or Artifact? Rethinking Prompt Sensitivity in EvaluatingLLMs",
+      "GeoEdit: Geometric Knowledge Editing for Large Language Models",
+      "How DoesDPOReduce Toxicity? A Mechanistic Neuron-Level Analysis",
+      "Improving Online Job Advertisement Analysis via Compositional Entity Extraction",
+      "It\u2019s All About In-Context Learning! Teaching Extremely Low-Resource Languages toLLMs",
+      "Learning Subjective Label Distributions via Sociocultural Descriptors",
+      "M2Edit: Locate and Edit Multi-Granularity Knowledge in Multimodal Large Language Model",
+      "M3Retrieve: Benchmarking Multimodal Retrieval for Medicine",
+      "Mapping semantic networks toDutch word embeddings as a diagnostic tool for cognitive decline",
+      "Measuring and Mitigating Media Outlet Name Bias in Large Language Models",
+      "MemeIntel: Explainable Detection of Propagandistic and Hateful Memes",
+      "Memorization or Reasoning? Exploring the Idiom Understanding ofLLMs",
+      "Multi-Frequency Contrastive Decoding: Alleviating Hallucinations for Large Vision-Language Models",
+      "OG-RAG: Ontology-grounded retrieval-augmented generation for large language models",
+      "PoseStitch-SLT: Linguistically Inspired Pose-Stitching for End-to-End Sign Language Translation",
+      "Pragmatic Inference Chain (PIC) ImprovingLLMs\u2019 Reasoning of Authentic Implicit Toxic Language",
+      "PrimeX: A Dataset of Worldview, Opinion, and Explanation",
+      "RAG+: Enhancing Retrieval-Augmented Generation with Application-Aware Reasoning",
+      "RAVEN: Query-Guided Representation Alignment for Question Answering over Audio, Video, Embedded Sensors, and Natural Language",
+      "Real-time Ad Retrieval viaLLM-generative Commercial Intention for Sponsored Search Advertising",
+      "Seeing the Same Story Differently:Framing\u2010Divergent Event Coreference for Computational Framing Analysis",
+      "SolEval: Benchmarking Large Language Models for Repository-level Solidity Smart Contract Generation",
+      "Structure-Conditional MinimumBayes Risk Decoding",
+      "Structured Preference Optimization for Vision-Language Long-Horizon Task Planning",
+      "Synthetic Socratic Debates: Examining Persona Effects on Moral Decision and Persuasion Dynamics",
+      "Toward Multi-Session Personalized Conversation: A Large-Scale Dataset and Hierarchical Tree Framework for Implicit Reasoning",
+      "Translationese-index: Using Likelihood Ratios for Graded and Generalizable Measurement of Translationese",
+      "XQuant: Achieving Ultra-Low BitKVCache Quantization with Cross-Layer Compression",
+      "A Systematic Analysis of Base Model Choice for Reward Modeling",
+      "Improving Rule-based Reasoning inLLMs using Neurosymbolic Representations",
+      "Multi-LMentry: Can MultilingualLLMs Solve Elementary Tasks Across Languages?"
+    ],
+    "icml25": [
+      "Catch Your Emotion: Sharpening Emotion Perception in Multimodal Large Language Models",
+      "EVOLvE: Evaluating and Optimizing LLMs For In-Context Exploration",
+      "EditLord: Learning Code Transformation Rules for Code Editing",
+      "FunBO: Discovering Acquisition Functions for Bayesian Optimization with FunSearch",
+      "Iterative Vectors: In-Context Gradient Steering without Backpropagation",
+      "PhantomWiki: On-Demand Datasets for Reasoning and Retrieval Evaluation",
+      "Synthetic Text Generation for Training Large Language Models via Gradient Matching",
+      "The Elicitation Game: Evaluating Capability Elicitation Techniques",
+      "Vision-Language Models Create Cross-Modal Task Representations",
+      "Cache Me If You Must: Adaptive Key-Value Quantization for Large Language Models",
+      "Core Context Aware Transformers for Long Context Language Modeling",
+      "Fast Exact Unlearning for In-Context Learning Data for LLMs",
+      "LaCache: Ladder-Shaped KV Caching for Efficient Long-Context Modeling of Large Language Models",
+      "LongRoPE2: Near-Lossless LLM Context Window Scaling",
+      "Position: AI Scaling: From Up to Down and Out",
+      "SpeCache: Speculative Key-Value Caching for Efficient Generation of LLMs",
+      "What Makes In-context Learning Effective for Mathematical Reasoning",
+      "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 42,
+    "neurips24": 63,
+    "iclr25": 40,
+    "naacl25": 34,
+    "acl25": 31,
+    "emnlp25": 50,
+    "icml25": 18
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

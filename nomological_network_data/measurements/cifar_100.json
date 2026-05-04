@@ -1,0 +1,210 @@
+{
+  "canonical_name": "CIFAR-100",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, CIFAR-100 is consistently characterized as an image dataset with 100 object classes used for evaluation. Its most prevalent application is to measure and benchmark model performance on the task of `image classification`. Several papers explicitly frame it as a more complex or challenging vision task compared to CIFAR-10, sometimes describing its 100 classes as \"fine-grained\". While its primary use is for standard image classification, a smaller set of studies employs it to assess more specific behaviors. For instance, some papers use it to evaluate `generalization`, particularly for prompt-based methods, while others use it for `zero-shot image classification` experiments. The dataset also serves as a testbed for a variety of other evaluations, including text-conditioned clustering, automated accuracy prediction under data shifts, neural compression techniques, and `memory efficiency`.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "CIFAR-100",
+    "CIFAR100"
+  ],
+  "papers": [
+    "GiFT:Gibbs Fine-Tuning for Code Generation",
+    "Improved Unbiased Watermark for Large Language Models",
+    "LED-Merging: Mitigating Safety-Utility Conflicts in Model Merging with Location-Election-Disjoint",
+    "Cross-MoE: An Efficient Temporal Prediction Framework Integrating Textual Modality",
+    "Efficient Unstructured Pruning of Mamba State-Space Models for Resource-Constrained Environments",
+    "Hanfu-Bench: A Multimodal Benchmark on Cross-Temporal Cultural Understanding and Transcreation",
+    "SPECS: Specificity-EnhancedCLIP-Score for Long Image Caption Evaluation",
+    "Bootstrapping Variational Information Pursuit with Large Language and Vision Models for Interpretable Image Classification",
+    "Energy-based Automated Model Evaluation",
+    "Faithful Vision-Language Interpretation via Concept Bottleneck Models",
+    "Image Clustering Conditioned on Text Criteria",
+    "Understanding prompt engineering may not require rethinking generalization",
+    "A Multi-Level Framework for Accelerating Training Transformer Models",
+    "Repeated Random Sampling for Minimizing the Time-to-Accuracy of Learning",
+    "Entropy-based Activation Function Optimization: A Method on Searching Better Activation Functions",
+    "Large (Vision) Language Models are Unsupervised In-Context Learners",
+    "MCNC: Manifold-Constrained Reparameterization for Neural Compression",
+    "Mitigate the Gap: Improving Cross-Modal Alignment in CLIP",
+    "Privacy-Preserving Personalized Federated Prompt Learning for Multimodal Large Language Models",
+    "TAID: Temporally Adaptive Interpolated Distillation for Efficient Knowledge Transfer in Language Models",
+    "Causal Graphical Models for Vision-Language Compositional Understanding",
+    "Forget the Data and Fine-Tuning! Just Fold the Network to Compress",
+    "Disentangling and Integrating Relational and Sensory Information in Transformer Architectures",
+    "Dynamic Sparse Training of Diagonally Sparse Networks",
+    "From Weight-Based to State-Based Fine-Tuning: Further Memory Reduction on LoRA with Parallel Control",
+    "On Exact Bit-level Reversible Transformers Without Changing Architecture",
+    "SAFE: Finding Sparse and Flat Minima to Improve Pruning",
+    "Self-Consuming Generative Models with Adversarially Curated Data"
+  ],
+  "paper_count": 28,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "An image dataset with 100 object classes, used to evaluate the proposed text-conditioned clustering method in a more complex setting compared to classical methods.",
+      "paper": "Bootstrapping Variational Information Pursuit with Large Language and Vision Models for Interpretable Image Classification",
+      "original_name": "CIFAR-100"
+    },
+    {
+      "text": "An image classification dataset similar to CIFAR10 but with 100 fine-grained classes, presenting a more challenging vision task.",
+      "paper": "Dynamic Sparse Training of Diagonally Sparse Networks",
+      "original_name": "CIFAR100"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Image classification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "NOLA: Compressing LoRA using Linear Combination of Random Basis",
+      "evidence": "We compare MCNC on CIFAR-10 and CIFAR-100 (Krizhevsky et al., 2009) with both pruning methods as well as PRANC (Nooralinejad et al., 2023) and NOLA (Koohpayegani et al., 2024) under extreme compression rates. (Section 4.1)",
+      "paper_count": 13,
+      "papers_by_conference": {
+        "iclr24": [
+          "NOLA: Compressing LoRA using Linear Combination of Random Basis",
+          "A Multi-Level Framework for Accelerating Training Transformer Models"
+        ],
+        "neurips24": [
+          "Sparse High Rank Adapters",
+          "Learning from Teaching Regularization: Generalizable Correlations Should be Easy to Imitate",
+          "SVFT: Parameter-Efficient Fine-Tuning with Singular Vectors"
+        ],
+        "iclr25": [
+          "MCNC: Manifold-Constrained Reparameterization for Neural Compression",
+          "Causal Graphical Models for Vision-Language Compositional Understanding",
+          "Entropy-based Activation Function Optimization: A Method on Searching Better Activation Functions"
+        ],
+        "naacl25": [
+          "A Grounded Typology of Word Classes"
+        ],
+        "icml25": [
+          "On Exact Bit-level Reversible Transformers Without Changing Architecture",
+          "Dynamic Sparse Training of Diagonally Sparse Networks",
+          "SAFE: Finding Sparse and Flat Minima to Improve Pruning"
+        ],
+        "emnlp25": [
+          "Efficient Unstructured Pruning of Mamba State-Space Models for Resource-Constrained Environments"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Understanding prompt engineering may not require rethinking generalization",
+      "evidence": "In this section, we evaluate the generalization of discrete prompts generated by Greedy on CIFAR-10, CIFAR-100, ImageNet as well as domain generalization datasets fMoW (Christie et al., 2018) and OfficeHome (Venkateswara et al., 2017) (Section 5)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Understanding prompt engineering may not require rethinking generalization"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Mitigate the Gap: Improving Cross-Modal Alignment in CLIP",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Mitigate the Gap: Improving Cross-Modal Alignment in CLIP"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Zero-shot image classification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Mitigate the Gap: Improving Cross-Modal Alignment in CLIP",
+      "evidence": "We conduct zero-shot classification experiments on ImageNet-1K (Russakovsky et al., 2015), CIFAR-100, CIFAR-10 (Krizhevsky et al., 2009)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Mitigate the Gap: Improving Cross-Modal Alignment in CLIP"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Memory efficiency",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "From Weight-Based to State-Based Fine-Tuning: Further Memory Reduction on LoRA with Parallel Control",
+      "evidence": "We begin our evaluation with a toy example using the CIFAR-100 dataset... The parallel control approach proves to be an effective fine-tuning method, offering lower memory consumption and reduced training time while maintaining competitive performance. (Section 5.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "From Weight-Based to State-Based Fine-Tuning: Further Memory Reduction on LoRA with Parallel Control"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 5,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, CIFAR-100 is consistently characterized as an image dataset with 100 object classes used for evaluation. Its most prevalent application is to measure and benchmark model performance on the task of `image classification`. Several papers explicitly frame it as a more complex or challenging vision task compared to CIFAR-10, sometimes describing its 100 classes as \"fine-grained\". While its primary use is for standard image classification, a smaller set of studies employs it to assess more specific behaviors. For instance, some papers use it to evaluate `generalization`, particularly for prompt-based methods, while others use it for `zero-shot image classification` experiments. The dataset also serves as a testbed for a variety of other evaluations, including text-conditioned clustering, automated accuracy prediction under data shifts, neural compression techniques, and `memory efficiency`.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Bootstrapping Variational Information Pursuit with Large Language and Vision Models for Interpretable Image Classification",
+      "Energy-based Automated Model Evaluation",
+      "Faithful Vision-Language Interpretation via Concept Bottleneck Models",
+      "Image Clustering Conditioned on Text Criteria",
+      "Understanding prompt engineering may not require rethinking generalization",
+      "A Multi-Level Framework for Accelerating Training Transformer Models",
+      "Repeated Random Sampling for Minimizing the Time-to-Accuracy of Learning"
+    ],
+    "iclr25": [
+      "Entropy-based Activation Function Optimization: A Method on Searching Better Activation Functions",
+      "Large (Vision) Language Models are Unsupervised In-Context Learners",
+      "MCNC: Manifold-Constrained Reparameterization for Neural Compression",
+      "Mitigate the Gap: Improving Cross-Modal Alignment in CLIP",
+      "Privacy-Preserving Personalized Federated Prompt Learning for Multimodal Large Language Models",
+      "TAID: Temporally Adaptive Interpolated Distillation for Efficient Knowledge Transfer in Language Models",
+      "Causal Graphical Models for Vision-Language Compositional Understanding",
+      "Forget the Data and Fine-Tuning! Just Fold the Network to Compress"
+    ],
+    "acl25": [
+      "GiFT:Gibbs Fine-Tuning for Code Generation",
+      "Improved Unbiased Watermark for Large Language Models",
+      "LED-Merging: Mitigating Safety-Utility Conflicts in Model Merging with Location-Election-Disjoint"
+    ],
+    "icml25": [
+      "Disentangling and Integrating Relational and Sensory Information in Transformer Architectures",
+      "Dynamic Sparse Training of Diagonally Sparse Networks",
+      "From Weight-Based to State-Based Fine-Tuning: Further Memory Reduction on LoRA with Parallel Control",
+      "On Exact Bit-level Reversible Transformers Without Changing Architecture",
+      "SAFE: Finding Sparse and Flat Minima to Improve Pruning",
+      "Self-Consuming Generative Models with Adversarially Curated Data"
+    ],
+    "emnlp25": [
+      "Cross-MoE: An Efficient Temporal Prediction Framework Integrating Textual Modality",
+      "Efficient Unstructured Pruning of Mamba State-Space Models for Resource-Constrained Environments",
+      "Hanfu-Bench: A Multimodal Benchmark on Cross-Temporal Cultural Understanding and Transcreation",
+      "SPECS: Specificity-EnhancedCLIP-Score for Long Image Caption Evaluation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 7,
+    "iclr25": 8,
+    "acl25": 3,
+    "icml25": 6,
+    "emnlp25": 4
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25"
+  ]
+}

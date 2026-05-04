@@ -1,0 +1,156 @@
+{
+  "canonical_name": "Usefulness",
+  "type": "construct",
+  "canonical_definition": "Across the provided literature, \"Usefulness,\" often termed \"model utility,\" is predominantly characterized as a model's ability to maintain its general performance and capabilities after undergoing some form of modification. The most frequent contexts for this construct are procedures like unlearning, model compression, or the application of safety mechanisms, where usefulness must be preserved. This is commonly framed as a balancing act, with one paper noting \"a trade-off between unlearning effectiveness and model utility\" (\"KMMLU: Measuring Massive Multitask Language Understanding inKorean\"). The prevailing definitions describe it as performance on tasks and data that were not targeted for modification or the ability to remain effective on legitimate tasks. Operationalization of this construct varies: some work measures it as the \"aggregated performance of the model on retained data\" (\"Evaluating Morphological Compositional Generalization in Large Language Models\"), while others assess it via performance on a range of downstream tasks after model compression. A distinct line of work defines \"utility\" in the context of synthetic data, where it refers to the data's value for a downstream task, often weighed against privacy guarantees. Less common are broader definitions, such as the general capability to satisfy human instructions, or highly specific ones, like the effectiveness of a diagram description as a textual aid for blind and low-vision users.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Downstream task performance",
+    "Model usefulness",
+    "Model utility",
+    "Utility",
+    "Usefulness",
+    "General utility"
+  ],
+  "papers": [
+    "Addressing Blind Guessing: Calibration of Selection Bias in Multiple-Choice Question Answering by Video Language Models",
+    "Answering Complex Geographic Questions by Adaptive Reasoning with Visual Context and External Commonsense Knowledge",
+    "Enhancing Unsupervised Sentence Embeddings via Knowledge-Driven Data Augmentation andGaussian-Decayed Contrastive Learning",
+    "FOCUS: Evaluating Pre-trained Vision-Language Models on Underspecification Reasoning",
+    "Knowledge Graph Retrieval-Augmented Generation forLLM-based Recommendation",
+    "StrucText-Eval: Evaluating Large Language Model\u2019s Reasoning Ability in Structure-Rich Text",
+    "Beyond Correctness: Confidence-Aware Reward Modeling for Enhancing Large Language Model Reasoning",
+    "TinySQL: A Progressive Text-to-SQLDataset for Mechanistic Interpretability Research",
+    "AutoEval-ToD: Automated Evaluation of Task-oriented Dialog Systems",
+    "BPO: Towards Balanced Preference Optimization between Knowledge Breadth and Depth in Alignment",
+    "Causally Modeling the Linguistic and Social Factors that Predict Email Response",
+    "Evaluating Morphological Compositional Generalization in Large Language Models",
+    "From Evidence to Belief: ABayesian Epistemology Approach to Language Models",
+    "KMMLU: Measuring Massive Multitask Language Understanding inKorean",
+    "Language Models Largely Exhibit Human-like Constituent Ordering Preferences",
+    "REFFLY: Melody-Constrained Lyrics Editing Model",
+    "Through the Lens of History: Methods for Analyzing Temporal Variation in Content and Framing of State-runChinese Newspapers",
+    "Using Text-Based Causal Inference to Disentangle Factors Influencing Online Review Ratings"
+  ],
+  "paper_count": 18,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The overall performance and general capabilities of a model on tasks and data that were not targeted for unlearning.",
+      "paper": "Evaluating Morphological Compositional Generalization in Large Language Models",
+      "original_name": "Model utility"
+    },
+    {
+      "text": "The latent capacity of a model to maintain general language understanding and generation quality during and after unlearning procedures.",
+      "paper": "BPO: Towards Balanced Preference Optimization between Knowledge Breadth and Depth in Alignment",
+      "original_name": "Model usefulness"
+    },
+    {
+      "text": "The ability of a language model to maintain its effectiveness on a range of evaluation tasks after undergoing compression techniques like quantization or pruning.",
+      "paper": "AutoEval-ToD: Automated Evaluation of Task-oriented Dialog Systems",
+      "original_name": "Downstream task performance"
+    },
+    {
+      "text": "The degree to which synthetically generated data is useful for a downstream task, often evaluated in contrast to the privacy guarantees provided.",
+      "paper": "Causally Modeling the Linguistic and Social Factors that Predict Email Response",
+      "original_name": "Utility"
+    },
+    {
+      "text": "The degree to which a diagram description serves as an effective textual aid for BLV users in educational contexts, particularly in summarization, multiple-choice question solving, and open-ended question answering.",
+      "paper": "FOCUS: Evaluating Pre-trained Vision-Language Models on Underspecification Reasoning",
+      "original_name": "Usefulness"
+    },
+    {
+      "text": "The model's ability to maintain high performance on general tasks and benchmarks regardless of the presence or activation of the SUDO key.",
+      "paper": "Knowledge Graph Retrieval-Augmented Generation forLLM-based Recommendation",
+      "original_name": "General utility"
+    }
+  ],
+  "definition_count": 6,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Safety",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Adaptive Deployment of Untrusted LLMs Reduces Distributed Threats",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Adaptive Deployment of Untrusted LLMs Reduces Distributed Threats"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "TinySQL: A Progressive Text-to-SQLDataset for Mechanistic Interpretability Research",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "TinySQL: A Progressive Text-to-SQLDataset for Mechanistic Interpretability Research"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Refusal to answer",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "POROver: Improving Safety and Reducing Overrefusal in Large Language Models with Overgeneration and Preference Optimization",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "POROver: Improving Safety and Reducing Overrefusal in Large Language Models with Overgeneration and Preference Optimization"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the provided literature, \"Usefulness,\" often termed \"model utility,\" is predominantly characterized as a model's ability to maintain its general performance and capabilities after undergoing some form of modification. The most frequent contexts for this construct are procedures like unlearning, model compression, or the application of safety mechanisms, where usefulness must be preserved. This is commonly framed as a balancing act, with one paper noting \"a trade-off between unlearning effectiveness and model utility\" (\"KMMLU: Measuring Massive Multitask Language Understanding inKorean\"). The prevailing definitions describe it as performance on tasks and data that were not targeted for modification or the ability to remain effective on legitimate tasks. Operationalization of this construct varies: some work measures it as the \"aggregated performance of the model on retained data\" (\"Evaluating Morphological Compositional Generalization in Large Language Models\"), while others assess it via performance on a range of downstream tasks after model compression. A distinct line of work defines \"utility\" in the context of synthetic data, where it refers to the data's value for a downstream task, often weighed against privacy guarantees. Less common are broader definitions, such as the general capability to satisfy human instructions, or highly specific ones, like the effectiveness of a diagram description as a textual aid for blind and low-vision users.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "naacl25": [
+      "AutoEval-ToD: Automated Evaluation of Task-oriented Dialog Systems",
+      "BPO: Towards Balanced Preference Optimization between Knowledge Breadth and Depth in Alignment",
+      "Causally Modeling the Linguistic and Social Factors that Predict Email Response",
+      "Evaluating Morphological Compositional Generalization in Large Language Models",
+      "From Evidence to Belief: ABayesian Epistemology Approach to Language Models",
+      "KMMLU: Measuring Massive Multitask Language Understanding inKorean",
+      "Language Models Largely Exhibit Human-like Constituent Ordering Preferences",
+      "REFFLY: Melody-Constrained Lyrics Editing Model",
+      "Through the Lens of History: Methods for Analyzing Temporal Variation in Content and Framing of State-runChinese Newspapers",
+      "Using Text-Based Causal Inference to Disentangle Factors Influencing Online Review Ratings"
+    ],
+    "acl25": [
+      "Addressing Blind Guessing: Calibration of Selection Bias in Multiple-Choice Question Answering by Video Language Models",
+      "Answering Complex Geographic Questions by Adaptive Reasoning with Visual Context and External Commonsense Knowledge",
+      "Enhancing Unsupervised Sentence Embeddings via Knowledge-Driven Data Augmentation andGaussian-Decayed Contrastive Learning",
+      "FOCUS: Evaluating Pre-trained Vision-Language Models on Underspecification Reasoning",
+      "Knowledge Graph Retrieval-Augmented Generation forLLM-based Recommendation",
+      "StrucText-Eval: Evaluating Large Language Model\u2019s Reasoning Ability in Structure-Rich Text"
+    ],
+    "emnlp25": [
+      "Beyond Correctness: Confidence-Aware Reward Modeling for Enhancing Large Language Model Reasoning",
+      "TinySQL: A Progressive Text-to-SQLDataset for Mechanistic Interpretability Research"
+    ]
+  },
+  "paper_count_by_conference": {
+    "naacl25": 10,
+    "acl25": 6,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "naacl25"
+  ]
+}

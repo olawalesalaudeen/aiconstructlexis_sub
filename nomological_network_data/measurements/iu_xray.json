@@ -1,0 +1,111 @@
+{
+  "canonical_name": "IU-Xray",
+  "type": "measurement",
+  "canonical_definition": "Across the provided sources, IU-Xray is consistently described as a dataset containing chest X-ray images paired with their associated medical or radiology reports. The prevailing usage of this dataset is to evaluate the task of medical report generation, a purpose cited across multiple papers and definitions. Some sources specify this task further as \"English report generation\" or \"radiology report generation.\" A less common application, mentioned in a smaller subset of the literature, is using IU-Xray to evaluate medical visual question answering. In practice, it is frequently used alongside the MIMIC-CXR dataset for these evaluation purposes. One paper notes a specific operationalization, mentioning the \"IU-Xray (Demner-Fushman et al., 2016) dataset containing 590 test samples.\"",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "IU-Xray"
+  ],
+  "papers": [
+    "Forward Knows Efficient Backward Path: Saliency-Guided Memory-Efficient Fine-tuning of Large Language Models",
+    "Weaving Context Across Images: Improving Vision-Language Models through Focus-Centric Visual Chains",
+    "2025.emnlp-main.939.checklist",
+    "OMS: On-the-fly, Multi-Objective, Self-Reflective Ad Keyword Generation viaLLMAgent",
+    "Anyprefer: An Agentic Framework for Preference Data Synthesis",
+    "Interpretable Bilingual Multimodal Large Language Model for Diverse Biomedical Tasks",
+    "MMed-RAG: Versatile Multimodal RAG System for Medical Vision Language Models"
+  ],
+  "paper_count": 7,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A dataset of chest X-ray images and associated reports used for evaluating medical report generation.",
+      "paper": "Interpretable Bilingual Multimodal Large Language Model for Diverse Biomedical Tasks",
+      "original_name": "IU-Xray"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Medical report generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "MMed-RAG: Versatile Multimodal RAG System for Medical Vision Language Models",
+      "evidence": "For English report generation, we evaluate our model on the report generation task for chest X-ray datasets MIMIC-CXR (Johnson et al., 2019) and IU-Xray (Demner-Fushman et al., 2016). (Section 5.1)",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "iclr25": [
+          "MMed-RAG: Versatile Multimodal RAG System for Medical Vision Language Models",
+          "Interpretable Bilingual Multimodal Large Language Model for Diverse Biomedical Tasks"
+        ],
+        "icml25": [
+          "MMedPO: Aligning Medical Vision-Language Models with Clinical-Aware Multimodal Preference Optimization"
+        ],
+        "emnlp25": [
+          "OMS: On-the-fly, Multi-Objective, Self-Reflective Ad Keyword Generation viaLLMAgent"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Medical visual question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "MMed-RAG: Versatile Multimodal RAG System for Medical Vision Language Models",
+      "evidence": "\"We utilize five medical vision-language datasets for medical VQA and report generation tasks, i.e., MIMIC-CXR (Johnson et al., 2019), IU-Xray (Demner-Fushman et al., 2016), Harvard-FairVLMed (Luo et al., 2024), PMC-OA (Lin et al., 2023a) (we only select the pathology part) and Quilt-1M (Ikezogwo et al., 2024).\"",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "MMed-RAG: Versatile Multimodal RAG System for Medical Vision Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Radiology report generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Weaving Context Across Images: Improving Vision-Language Models through Focus-Centric Visual Chains",
+      "evidence": "We evaluate our method on two public datasets, MIMIC-CXR (Johnson et al., 2019) and IU-Xray (Demner-Fushman et al., 2016). (Section 5.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Weaving Context Across Images: Improving Vision-Language Models through Focus-Centric Visual Chains"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided sources, IU-Xray is consistently described as a dataset containing chest X-ray images paired with their associated medical or radiology reports. The prevailing usage of this dataset is to evaluate the task of medical report generation, a purpose cited across multiple papers and definitions. Some sources specify this task further as \"English report generation\" or \"radiology report generation.\" A less common application, mentioned in a smaller subset of the literature, is using IU-Xray to evaluate medical visual question answering. In practice, it is frequently used alongside the MIMIC-CXR dataset for these evaluation purposes. One paper notes a specific operationalization, mentioning the \"IU-Xray (Demner-Fushman et al., 2016) dataset containing 590 test samples.\"",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Anyprefer: An Agentic Framework for Preference Data Synthesis",
+      "Interpretable Bilingual Multimodal Large Language Model for Diverse Biomedical Tasks",
+      "MMed-RAG: Versatile Multimodal RAG System for Medical Vision Language Models"
+    ],
+    "acl25": [
+      "Forward Knows Efficient Backward Path: Saliency-Guided Memory-Efficient Fine-tuning of Large Language Models",
+      "Weaving Context Across Images: Improving Vision-Language Models through Focus-Centric Visual Chains"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.939.checklist",
+      "OMS: On-the-fly, Multi-Objective, Self-Reflective Ad Keyword Generation viaLLMAgent"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3,
+    "acl25": 2,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25"
+  ]
+}

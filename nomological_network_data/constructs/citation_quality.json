@@ -1,0 +1,75 @@
+{
+  "canonical_name": "Citation quality",
+  "type": "construct",
+  "canonical_definition": "Across the provided literature, citation quality is consistently framed as a model's latent ability to correctly identify and reference source passages that support its generated claims, reflecting concepts like grounding, traceability, and faithfulness. The goal is to enable a model to \"cite documents related to the claim correctly and to avoid citing irrelevant documents,\" as one paper puts it. This construct is commonly operationalized using recall and precision-based metrics, such as Recall@k, MAP@k, and citation recall and precision calculated at the level of atomic claims. Some work also introduces more specific metrics like the Coefficient of Variation of Citation Positions. A prevalent evaluation strategy involves using a Natural Language Inference (NLI) model to assess the relationship between claims and cited sources. Specifically, multiple papers report using the TRUE model for \"the judgement of entailment in citation quality.\" One paper also proposes that the Best-of-N method influences this construct.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Citation quality"
+  ],
+  "papers": [
+    "KS-Lottery: Finding Certified Lottery Tickets for Multilingual Transfer in Large Language Models",
+    "PRACTIQ: A Practical Conversational Text-to-SQLdataset with Ambiguous and Unanswerable Queries",
+    "PeerQA: A Scientific Question Answering Dataset from Peer Reviews"
+  ],
+  "paper_count": 3,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The latent ability of a model to correctly identify and reference relevant source passages when generating a response, reflecting its grounding and traceability.",
+      "paper": "KS-Lottery: Finding Certified Lottery Tickets for Multilingual Transfer in Large Language Models",
+      "original_name": "Citation quality"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TRUE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "PeerQA: A Scientific Question Answering Dataset from Peer Reviews",
+      "evidence": "We use TRUE3, a fine-tuned T5-11B (Raffel et al., 2020) model as the NLI model for the judgement of entailment in citation quality. (Section 4)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "naacl25": [
+          "PeerQA: A Scientific Question Answering Dataset from Peer Reviews",
+          "KS-Lottery: Finding Certified Lottery Tickets for Multilingual Transfer in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Best-of-N",
+      "other_type": "measurements",
+      "relationship_type": "causes",
+      "paper": "SelfCite: Self-Supervised Alignment for Context Attribution in Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "SelfCite: Self-Supervised Alignment for Context Attribution in Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the provided literature, citation quality is consistently framed as a model's latent ability to correctly identify and reference source passages that support its generated claims, reflecting concepts like grounding, traceability, and faithfulness. The goal is to enable a model to \"cite documents related to the claim correctly and to avoid citing irrelevant documents,\" as one paper puts it. This construct is commonly operationalized using recall and precision-based metrics, such as Recall@k, MAP@k, and citation recall and precision calculated at the level of atomic claims. Some work also introduces more specific metrics like the Coefficient of Variation of Citation Positions. A prevalent evaluation strategy involves using a Natural Language Inference (NLI) model to assess the relationship between claims and cited sources. Specifically, multiple papers report using the TRUE model for \"the judgement of entailment in citation quality.\" One paper also proposes that the Best-of-N method influences this construct.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "naacl25": [
+      "KS-Lottery: Finding Certified Lottery Tickets for Multilingual Transfer in Large Language Models",
+      "PRACTIQ: A Practical Conversational Text-to-SQLdataset with Ambiguous and Unanswerable Queries",
+      "PeerQA: A Scientific Question Answering Dataset from Peer Reviews"
+    ]
+  },
+  "paper_count_by_conference": {
+    "naacl25": 3
+  },
+  "conferences": [
+    "naacl25"
+  ]
+}

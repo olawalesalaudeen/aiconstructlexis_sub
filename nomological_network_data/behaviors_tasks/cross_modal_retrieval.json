@@ -1,0 +1,572 @@
+{
+  "canonical_name": "Cross-modal retrieval",
+  "type": "behavior",
+  "canonical_definition": "Cross-modal retrieval is a widely studied behavior predominantly defined as retrieving content from one modality based on a query from another. The most common operationalization involves image and text pairs\u2014in both text-to-image and image-to-text directions\u2014though the concept also extends to video, audio, and knowledge graphs. The task is framed in several ways, from general image-text matching that produces a similarity score to more specific binary choice tasks like image-caption matching. Some work focuses on compositional challenges, using distractors to test beyond simple \"bag of words\" behavior, while a less common framing defines it as locating a specific fact or image within a long multimodal document. To measure this behavior, researchers employ a variety of benchmarks, with Flickr30k and MS-COCO appearing most frequently in the provided data; other datasets like AudioCaps and MSRVTT are used for audio and video retrieval respectively. Performance on these tasks is often used as a measure for broader constructs such as `Multimodal understanding` and `Long-context understanding`. The behavior is also studied alongside `Modality bias`, and one paper reports that `Ranking` can be used to improve retrieval accuracy by reranking candidates.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Cross-modal retrieval",
+    "Image-text matching",
+    "Image-caption matching",
+    "Multimodal retrieval",
+    "Compositional image-text matching",
+    "Audio-to-text retrieval",
+    "Text-to-audio retrieval",
+    "Image-text retrieval",
+    "Text-image retrieval",
+    "Text-to-image retrieval",
+    "Text-to-video retrieval",
+    "Video-to-text retrieval",
+    "Video retrieval",
+    "Composed image retrieval",
+    "Visual question answering retrieval",
+    "Image retrieval",
+    "Image-to-text retrieval",
+    "Long-text-image retrieval",
+    "Short-text-image retrieval"
+  ],
+  "papers": [
+    "BrailleLLM:Braille Instruction Tuning with Large Language Models forBraille Domain Tasks",
+    "How to inject knowledge efficiently? Knowledge Infusion Scaling Law for Pre-training Large Language Models",
+    "Process-Supervised Reinforcement Learning for Code Generation",
+    "BioBridge: Bridging Biomedical Foundation Models via Knowledge Graphs",
+    "Bridging Vision and Language Spaces with Assignment Prediction",
+    "Vision-by-Language for Training-Free Compositional Image Retrieval",
+    "Causal Graphical Models for Vision-Language Compositional Understanding",
+    "LLM-wrapper: Black-Box Semantic-Aware Adaptation of Vision-Language Models for Referring Expression Comprehension",
+    "MM-EMBED: UNIVERSAL MULTIMODAL RETRIEVAL WITH MULTIMODAL LLMS",
+    "MMIU: Multimodal Multi-image Understanding for Evaluating Large Vision-Language Models",
+    "Mitigate the Gap: Improving Cross-Modal Alignment in CLIP",
+    "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding",
+    "Natural Language Inference Improves Compositionality in Vision-Language Models",
+    "PathGen-1.6M: 1.6 Million Pathology Image-text Pairs Generation through Multi-agent Collaboration",
+    "Revisit Large-Scale Image-Caption Data in Pre-training Multimodal Foundation Models",
+    "TIGeR: Unifying Text-to-Image Generation and Retrieval with Large Multimodal Models",
+    "Youku Dense Caption: A Large-scale Chinese Video Dense Caption Dataset and Benchmarks",
+    "DS-VLM: Diffusion Supervision Vision Language Model",
+    "Privacy-Shielded Image Compression: Defending Against Exploitation from Vision-Language Pretrained Models",
+    "X-Transfer Attacks: Towards Super Transferable Adversarial Attacks on CLIP",
+    "4M-21: An Any-to-Any Vision Model for Tens of Tasks and Modalities",
+    "DevBench: A multimodal developmental benchmark for language learning",
+    "IMPACT: A Large-scale Integrated Multimodal Patent Analysis and Creation Dataset for Design Patents",
+    "JourneyBench: A Challenging One-Stop Vision-Language Understanding Benchmark of Generated Images",
+    "Learning Spatially-Aware Language and Audio Embeddings",
+    "Needle In A Multimodal Haystack",
+    "Procedure-Aware Surgical Video-language Pretraining with Hierarchical Knowledge Augmentation",
+    "TripletCLIP:  Improving Compositional Reasoning of CLIP via Synthetic Vision-Language Negatives",
+    "UniBench: Visual Reasoning Requires Rethinking Vision-Language Beyond Scaling",
+    "VisMin: Visual Minimal-Change Understanding",
+    "Aligning Vision Models with Human Aesthetics in Retrieval: Benchmarks and Algorithms",
+    "AvaTaR: Optimizing LLM Agents for Tool Usage via Contrastive Reasoning",
+    "Beyond Accuracy: Ensuring Correct Predictions With Correct Rationales",
+    "FineCLIP: Self-distilled Region-based CLIP for Better Fine-grained Understanding",
+    "INQUIRE: A Natural World Text-to-Image Retrieval Benchmark",
+    "Interfacing Foundation Models' Embeddings",
+    "LG-VQ: Language-Guided Codebook Learning",
+    "LoTLIP: Improving Language-Image Pre-training for Long Text Understanding",
+    "NaturalBench: Evaluating Vision-Language Models on Natural Adversarial Samples",
+    "Unified Generative and Discriminative Training for Multi-modal Large Language Models"
+  ],
+  "paper_count": 40,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Retrieving content from one modality (e.g., image) based on input from another modality (e.g., text), including both image-to-text and text-to-image directions.",
+      "paper": "BioBridge: Bridging Biomedical Foundation Models via Knowledge Graphs",
+      "original_name": "Cross-modal retrieval"
+    },
+    {
+      "text": "The general task of determining the correspondence or similarity between a given image and a piece of text, often by producing a score.",
+      "paper": "DevBench: A multimodal developmental benchmark for language learning",
+      "original_name": "Image-text matching"
+    },
+    {
+      "text": "Selecting the correct caption for an image or the correct image for a caption from two alternatives.",
+      "paper": "VisMin: Visual Minimal-Change Understanding",
+      "original_name": "Image-caption matching"
+    },
+    {
+      "text": "Answering questions by locating a specific inserted fact, statement, or image within a long multimodal document.",
+      "paper": "Needle In A Multimodal Haystack",
+      "original_name": "Multimodal retrieval"
+    },
+    {
+      "text": "The task of correctly identifying the matching image-text pair from a set of distractors that involve compositional changes in objects, attributes, or relations.",
+      "paper": "TripletCLIP:  Improving Compositional Reasoning of CLIP via Synthetic Vision-Language Negatives",
+      "original_name": "Compositional image-text matching"
+    },
+    {
+      "text": "Given an audio input, the model retrieves the matching text caption from a candidate set.",
+      "paper": "Learning Spatially-Aware Language and Audio Embeddings",
+      "original_name": "Audio-to-text retrieval"
+    },
+    {
+      "text": "Given a text caption, the model retrieves the matching audio sample from a candidate set.",
+      "paper": "Learning Spatially-Aware Language and Audio Embeddings",
+      "original_name": "Text-to-audio retrieval"
+    },
+    {
+      "text": "The task of selecting and returning an existing image from a database that best matches a given textual description.",
+      "paper": "TIGeR: Unifying Text-to-Image Generation and Retrieval with Large Multimodal Models",
+      "original_name": "Text-to-image retrieval"
+    },
+    {
+      "text": "Ranking videos given a textual query.",
+      "paper": "Youku Dense Caption: A Large-scale Chinese Video Dense Caption Dataset and Benchmarks",
+      "original_name": "Text-to-video retrieval"
+    },
+    {
+      "text": "Retrieving relevant text descriptions from a collection based on a video query.",
+      "paper": "Youku Dense Caption: A Large-scale Chinese Video Dense Caption Dataset and Benchmarks",
+      "original_name": "Video-to-text retrieval"
+    },
+    {
+      "text": "Retrieving videos that are relevant to a textual query, including partially relevant videos from a larger collection.",
+      "paper": "Youku Dense Caption: A Large-scale Chinese Video Dense Caption Dataset and Benchmarks",
+      "original_name": "Video retrieval"
+    },
+    {
+      "text": "The task of selecting the most relevant text caption for a given image from a set of candidates, or vice-versa.",
+      "paper": "Causal Graphical Models for Vision-Language Compositional Understanding",
+      "original_name": "Image-text retrieval"
+    },
+    {
+      "text": "Retrieving images or text items based on cross-modal similarity between text and images.",
+      "paper": "LLM-wrapper: Black-Box Semantic-Aware Adaptation of Vision-Language Models for Referring Expression Comprehension",
+      "original_name": "Text-image retrieval"
+    },
+    {
+      "text": "The observable task of retrieving a target image based on a query that combines a source image with a textual description of desired modifications.",
+      "paper": "MM-EMBED: UNIVERSAL MULTIMODAL RETRIEVAL WITH MULTIMODAL LLMS",
+      "original_name": "Composed image retrieval"
+    },
+    {
+      "text": "The observable task of retrieving a document (e.g., text or an image-description pair) that contains the answer to a question posed about a given image.",
+      "paper": "MM-EMBED: UNIVERSAL MULTIMODAL RETRIEVAL WITH MULTIMODAL LLMS",
+      "original_name": "Visual question answering retrieval"
+    },
+    {
+      "text": "The task of finding and selecting a correct target image from a set of candidates based on a query, such as matching a sketch to a natural image.",
+      "paper": "MMIU: Multimodal Multi-image Understanding for Evaluating Large Vision-Language Models",
+      "original_name": "Image retrieval"
+    },
+    {
+      "text": "Given an image, finding the most semantically similar text description from a collection of candidate texts.",
+      "paper": "LG-VQ: Language-Guided Codebook Learning",
+      "original_name": "Image-to-text retrieval"
+    },
+    {
+      "text": "The task of retrieving the correct image from a set given a long, detailed text query, or retrieving the correct text given an image.",
+      "paper": "LoTLIP: Improving Language-Image Pre-training for Long Text Understanding",
+      "original_name": "Long-text-image retrieval"
+    },
+    {
+      "text": "The task of retrieving the correct image from a set given a short, concise text query, or retrieving the correct text given an image.",
+      "paper": "LoTLIP: Improving Language-Image Pre-training for Long Text Understanding",
+      "original_name": "Short-text-image retrieval"
+    }
+  ],
+  "definition_count": 19,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Flickr30k",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Making LLaMA SEE and Draw with SEED Tokenizer",
+      "evidence": "",
+      "paper_count": 8,
+      "papers_by_conference": {
+        "iclr24": [
+          "Making LLaMA SEE and Draw with SEED Tokenizer"
+        ],
+        "neurips24": [
+          "LoTLIP: Improving Language-Image Pre-training for Long Text Understanding",
+          "JourneyBench: A Challenging One-Stop Vision-Language Understanding Benchmark of Generated Images",
+          "TripletCLIP:  Improving Compositional Reasoning of CLIP via Synthetic Vision-Language Negatives",
+          "4M-21: An Any-to-Any Vision Model for Tens of Tasks and Modalities",
+          "Aligning Vision Models with Human Aesthetics in Retrieval: Benchmarks and Algorithms"
+        ],
+        "iclr25": [
+          "Mitigate the Gap: Improving Cross-Modal Alignment in CLIP",
+          "TIGeR: Unifying Text-to-Image Generation and Retrieval with Large Multimodal Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MS-COCO",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LoTLIP: Improving Language-Image Pre-training for Long Text Understanding",
+      "evidence": "",
+      "paper_count": 8,
+      "papers_by_conference": {
+        "neurips24": [
+          "LoTLIP: Improving Language-Image Pre-training for Long Text Understanding",
+          "JourneyBench: A Challenging One-Stop Vision-Language Understanding Benchmark of Generated Images",
+          "TripletCLIP:  Improving Compositional Reasoning of CLIP via Synthetic Vision-Language Negatives",
+          "Unified Generative and Discriminative Training for Multi-modal Large Language Models",
+          "Aligning Vision Models with Human Aesthetics in Retrieval: Benchmarks and Algorithms",
+          "An End-To-End Graph Attention Network Hashing for Cross-Modal Retrieval"
+        ],
+        "iclr25": [
+          "Mitigate the Gap: Improving Cross-Modal Alignment in CLIP",
+          "TIGeR: Unifying Text-to-Image Generation and Retrieval with Large Multimodal Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "COCO",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Making LLaMA SEE and Draw with SEED Tokenizer",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Making LLaMA SEE and Draw with SEED Tokenizer"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual dialogue",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Bridging Vision and Language Spaces with Assignment Prediction",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Bridging Vision and Language Spaces with Assignment Prediction"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WINOGROUND",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Natural Language Inference Improves Compositionality in Vision-Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Natural Language Inference Improves Compositionality in Vision-Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Clotho",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Learning Spatially-Aware Language and Audio Embeddings",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Learning Spatially-Aware Language and Audio Embeddings"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AudioCaps",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Learning Spatially-Aware Language and Audio Embeddings",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Learning Spatially-Aware Language and Audio Embeddings"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Procedure-Aware Surgical Video-language Pretraining with Hierarchical Knowledge Augmentation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Procedure-Aware Surgical Video-language Pretraining with Hierarchical Knowledge Augmentation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Flickr30k Entities",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "AvaTaR: Optimizing LLM Agents for Tool Usage via Contrastive Reasoning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "AvaTaR: Optimizing LLM Agents for Tool Usage via Contrastive Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-context understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "LoTLIP: Improving Language-Image Pre-training for Long Text Understanding",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "LoTLIP: Improving Language-Image Pre-training for Long Text Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Ranking",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "MM-EMBED: UNIVERSAL MULTIMODAL RETRIEVAL WITH MULTIMODAL LLMS",
+      "evidence": "We find that MLLMs can be used as zero-shot rerankers to further boost retrieval accuracy in challenging tasks that require the understanding of multimodal queries, such as ... composed image retrieval. (Section 6)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "MM-EMBED: UNIVERSAL MULTIMODAL RETRIEVAL WITH MULTIMODAL LLMS"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CUB-200-2011",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LG-VQ: Language-Guided Codebook Learning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "LG-VQ: Language-Guided Codebook Learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ImageNet-1k",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "4M-21: An Any-to-Any Vision Model for Tens of Tasks and Modalities",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "4M-21: An Any-to-Any Vision Model for Tens of Tasks and Modalities"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Video captioning",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "IMPACT: A Large-scale Integrated Multimodal Patent Analysis and Creation Dataset for Design Patents",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "IMPACT: A Large-scale Integrated Multimodal Patent Analysis and Creation Dataset for Design Patents"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Modality bias",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "MM-EMBED: UNIVERSAL MULTIMODAL RETRIEVAL WITH MULTIMODAL LLMS",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "MM-EMBED: UNIVERSAL MULTIMODAL RETRIEVAL WITH MULTIMODAL LLMS"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Decision-making",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "3D Question Answering via only 2D Vision-Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "3D Question Answering via only 2D Vision-Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MUIRBENCH",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multiple-choice question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Natural Language Inference Improves Compositionality in Vision-Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Natural Language Inference Improves Compositionality in Vision-Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MSRVTT",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "A Multilingual, Culture-First Approach to Addressing Misgendering inLLMApplications",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "A Multilingual, Culture-First Approach to Addressing Misgendering inLLMApplications"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MSVD",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "A Multilingual, Culture-First Approach to Addressing Misgendering inLLMApplications",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "A Multilingual, Culture-First Approach to Addressing Misgendering inLLMApplications"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LSMDC",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "A Multilingual, Culture-First Approach to Addressing Misgendering inLLMApplications",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "A Multilingual, Culture-First Approach to Addressing Misgendering inLLMApplications"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "DiDeMo",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "A Multilingual, Culture-First Approach to Addressing Misgendering inLLMApplications",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "A Multilingual, Culture-First Approach to Addressing Misgendering inLLMApplications"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 22,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 18,
+  "characterization": "Cross-modal retrieval is a widely studied behavior predominantly defined as retrieving content from one modality based on a query from another. The most common operationalization involves image and text pairs\u2014in both text-to-image and image-to-text directions\u2014though the concept also extends to video, audio, and knowledge graphs. The task is framed in several ways, from general image-text matching that produces a similarity score to more specific binary choice tasks like image-caption matching. Some work focuses on compositional challenges, using distractors to test beyond simple \"bag of words\" behavior, while a less common framing defines it as locating a specific fact or image within a long multimodal document. To measure this behavior, researchers employ a variety of benchmarks, with Flickr30k and MS-COCO appearing most frequently in the provided data; other datasets like AudioCaps and MSRVTT are used for audio and video retrieval respectively. Performance on these tasks is often used as a measure for broader constructs such as `Multimodal understanding` and `Long-context understanding`. The behavior is also studied alongside `Modality bias`, and one paper reports that `Ranking` can be used to improve retrieval accuracy by reranking candidates.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "BioBridge: Bridging Biomedical Foundation Models via Knowledge Graphs",
+      "Bridging Vision and Language Spaces with Assignment Prediction",
+      "Vision-by-Language for Training-Free Compositional Image Retrieval"
+    ],
+    "neurips24": [
+      "4M-21: An Any-to-Any Vision Model for Tens of Tasks and Modalities",
+      "DevBench: A multimodal developmental benchmark for language learning",
+      "IMPACT: A Large-scale Integrated Multimodal Patent Analysis and Creation Dataset for Design Patents",
+      "JourneyBench: A Challenging One-Stop Vision-Language Understanding Benchmark of Generated Images",
+      "Learning Spatially-Aware Language and Audio Embeddings",
+      "Needle In A Multimodal Haystack",
+      "Procedure-Aware Surgical Video-language Pretraining with Hierarchical Knowledge Augmentation",
+      "TripletCLIP:  Improving Compositional Reasoning of CLIP via Synthetic Vision-Language Negatives",
+      "UniBench: Visual Reasoning Requires Rethinking Vision-Language Beyond Scaling",
+      "VisMin: Visual Minimal-Change Understanding",
+      "Aligning Vision Models with Human Aesthetics in Retrieval: Benchmarks and Algorithms",
+      "AvaTaR: Optimizing LLM Agents for Tool Usage via Contrastive Reasoning",
+      "Beyond Accuracy: Ensuring Correct Predictions With Correct Rationales",
+      "FineCLIP: Self-distilled Region-based CLIP for Better Fine-grained Understanding",
+      "INQUIRE: A Natural World Text-to-Image Retrieval Benchmark",
+      "Interfacing Foundation Models' Embeddings",
+      "LG-VQ: Language-Guided Codebook Learning",
+      "LoTLIP: Improving Language-Image Pre-training for Long Text Understanding",
+      "NaturalBench: Evaluating Vision-Language Models on Natural Adversarial Samples",
+      "Unified Generative and Discriminative Training for Multi-modal Large Language Models"
+    ],
+    "iclr25": [
+      "Causal Graphical Models for Vision-Language Compositional Understanding",
+      "LLM-wrapper: Black-Box Semantic-Aware Adaptation of Vision-Language Models for Referring Expression Comprehension",
+      "MM-EMBED: UNIVERSAL MULTIMODAL RETRIEVAL WITH MULTIMODAL LLMS",
+      "MMIU: Multimodal Multi-image Understanding for Evaluating Large Vision-Language Models",
+      "Mitigate the Gap: Improving Cross-Modal Alignment in CLIP",
+      "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding",
+      "Natural Language Inference Improves Compositionality in Vision-Language Models",
+      "PathGen-1.6M: 1.6 Million Pathology Image-text Pairs Generation through Multi-agent Collaboration",
+      "Revisit Large-Scale Image-Caption Data in Pre-training Multimodal Foundation Models",
+      "TIGeR: Unifying Text-to-Image Generation and Retrieval with Large Multimodal Models",
+      "Youku Dense Caption: A Large-scale Chinese Video Dense Caption Dataset and Benchmarks"
+    ],
+    "emnlp25": [
+      "BrailleLLM:Braille Instruction Tuning with Large Language Models forBraille Domain Tasks",
+      "How to inject knowledge efficiently? Knowledge Infusion Scaling Law for Pre-training Large Language Models",
+      "Process-Supervised Reinforcement Learning for Code Generation"
+    ],
+    "icml25": [
+      "DS-VLM: Diffusion Supervision Vision Language Model",
+      "Privacy-Shielded Image Compression: Defending Against Exploitation from Vision-Language Pretrained Models",
+      "X-Transfer Attacks: Towards Super Transferable Adversarial Attacks on CLIP"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 3,
+    "neurips24": 20,
+    "iclr25": 11,
+    "emnlp25": 3,
+    "icml25": 3
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

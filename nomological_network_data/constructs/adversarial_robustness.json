@@ -1,0 +1,644 @@
+{
+  "canonical_name": "Adversarial robustness",
+  "type": "construct",
+  "canonical_definition": "The most prevalent framing of adversarial robustness across the surveyed literature is a model's latent property to maintain its performance and make correct predictions when faced with small, intentionally crafted perturbations to its input. This general concept is applied to various contexts, including maintaining factual accuracy against misleading examples and resisting character-level typos. A substantial and frequently discussed sub-type is \"jailbreak robustness,\" which specifically concerns a model's ability to resist prompts designed to bypass its safety mechanisms and elicit harmful content. A smaller line of work defines robustness in the specific context of watermarking, distinguishing between \"attack robustness\" (detectability after modification) and \"security robustness\" (difficulty of reverse-engineering the watermark). The field operationalizes this construct, particularly its jailbreaking dimension, by measuring model performance on benchmarks like AdvBench, Harmbench, and JailbreakBench, and by evaluating its resilience to specific attack methods such as the GCG attack and AutoDAN. General adversarial robustness is also commonly assessed by applying perturbations to standard NLP tasks and measuring performance on datasets including SST-2, GLUE, and AG News. Across the provided work, adversarial robustness is frequently studied in relation to safety alignment, as adversarial attacks are often framed as attempts to circumvent these safeguards.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Adversarial robustness",
+    "Attack robustness",
+    "Security robustness",
+    "Adversarial Vulnerability",
+    "Attack resistance",
+    "Jailbreak robustness",
+    "Adversarial susceptibility",
+    "Robustness to jailbreaking",
+    "Adversarial vulnerability",
+    "Robustness to phonetic attacks",
+    "Jailbreak effectiveness",
+    "Susceptibility to jailbreaking",
+    "Jailbreaking resistance",
+    "Jailbreak vulnerability",
+    "Ethical risk",
+    "Jailbreak susceptibility"
+  ],
+  "papers": [
+    "Byte Latent Transformer: Patches Scale Better Than Tokens",
+    "CKnowEdit: A NewChinese Knowledge Editing Dataset for Linguistics, Facts, and Logic Error Correction inLLMs",
+    "Improving Clustering with Positive Pairs Generated fromLLM-Driven Labels",
+    "Language Models Can be Efficiently Steered via Minimal Embedding Layer Transformations",
+    "Leaky Thoughts: Large Reasoning Models Are Not Private Thinkers",
+    "MiLQ: BenchmarkingIRModels for Bilingual Web Search with Mixed Language Queries",
+    "2025.emnlp-main.1235.checklist",
+    "2025.emnlp-main.669.checklist",
+    "Automating Steering for Safe Multimodal Large Language Models",
+    "CIE: Controlling Language Model Text Generations Using Continuous Signals",
+    "Direct Value Optimization: Improving Chain-of-Thought Reasoning inLLMs with Refined Values",
+    "Emotion Transfer with Enhanced Prototype for Unseen Emotion Recognition in Conversation",
+    "From General Reward to Targeted Reward: Improving Open-ended Long-context Generation Models",
+    "MuseScorer: Idea Originality Scoring At Scale",
+    "TCPO: Thought-Centric Preference Optimization for Effective Embodied Decision-making",
+    "Targeted Distillation for Sentiment Analysis",
+    "A Semantic Invariant Robust Watermark for Large Language Models",
+    "An Image Is Worth 1000 Lies: Transferability of Adversarial Images across Prompts on Vision-Language Models",
+    "An LLM can Fool Itself: A Prompt-Based Adversarial Attack",
+    "Evoke: Evoking Critical Thinking Abilities in LLMs via Reviewer-Author Prompt Editing",
+    "RAIN: Your Language Models Can Align Themselves without Finetuning",
+    "Towards Understanding Factual Knowledge of Large Language Models",
+    "Distributional Preference Learning: Understanding and Accounting for Hidden Context in RLHF",
+    "Multilingual Jailbreak Challenges in Large Language Models",
+    "Aligned LLMs Are Not Aligned Browser Agents",
+    "Backtracking Improves Generation Safety",
+    "Concept-ROT: Poisoning Concepts in Large Language Models with Model Editing",
+    "Confidence Elicitation: A New Attack Vector for Large Language Models",
+    "Cut the Crap: An Economical Communication Pipeline for LLM-based Multi-Agent Systems",
+    "Dissecting Adversarial Robustness of Multimodal LM Agents",
+    "Failures to Find Transferable Image Jailbreaks Between Vision-Language Models",
+    "HarmAug: Effective Data Augmentation for Knowledge Distillation of Safety Guard Models",
+    "Jailbreaking Leading Safety-Aligned LLMs with Simple Adaptive Attacks",
+    "Learn Your Reference Model for Real Good Alignment",
+    "MMDT: Decoding the Trustworthiness and Safety of Multimodal Foundation Models",
+    "Robust LLM safeguarding via refusal feature adversarial training",
+    "RobustKV: Defending Large Language Models against Jailbreak Attacks via KV Eviction",
+    "Scaling Laws for Adversarial Attacks on Language Model Activations and Tokens",
+    "Shh, don't say that! Domain Certification in LLMs",
+    "Tracking the Copyright of Large Vision-Language Models through Parameter Learning Adversarial Images",
+    "Adversarial Reasoning at Jailbreaking Time",
+    "An Interpretable N-gram Perplexity Threat Model for Large Language Model Jailbreaks",
+    "AxBench: Steering LLMs? Even Simple Baselines Outperform Sparse Autoencoders",
+    "G-Designer: Architecting Multi-agent Communication Topologies via Graph Neural Networks",
+    "Learning Safety Constraints for Large Language Models",
+    "On the Vulnerability of Applying Retrieval-Augmented Generation within Knowledge-Intensive Application Domains",
+    "POROver: Improving Safety and Reducing Overrefusal in Large Language Models with Overgeneration and Preference Optimization",
+    "Scaling Trends in Language Model Robustness",
+    "Testing the Limits of Fine-Tuning for Improving Visual Cognition in Vision Language Models",
+    "Weak-to-Strong Jailbreaking on Large Language Models",
+    "X-Transfer Attacks: Towards Super Transferable Adversarial Attacks on CLIP",
+    "Achieving Domain-Independent Certified Robustness via Knowledge Continuity",
+    "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents",
+    "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models",
+    "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+    "Text-Guided Attention is All You Need for Zero-Shot Robustness in Vision-Language Models",
+    "A StrongREJECT for Empty Jailbreaks",
+    "CARES: A Comprehensive Benchmark of Trustworthiness in Medical Vision Language Models",
+    "Fight Back Against Jailbreaking via Prompt Adversarial Tuning",
+    "Tree of Attacks: Jailbreaking Black-Box LLMs Automatically"
+  ],
+  "paper_count": 60,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The latent property of a model to maintain its performance and make correct predictions when faced with small, intentionally crafted perturbations to its input.",
+      "paper": "An Image Is Worth 1000 Lies: Transferability of Adversarial Images across Prompts on Vision-Language Models",
+      "original_name": "Adversarial robustness"
+    },
+    {
+      "text": "The degree to which a watermark remains detectable after semantically invariant modifications to the generated text, such as paraphrasing or synonym substitution.",
+      "paper": "A Semantic Invariant Robust Watermark for Large Language Models",
+      "original_name": "Attack robustness"
+    },
+    {
+      "text": "The difficulty of inferring the watermarking rules from watermarked text, such that adversaries cannot easily reverse-engineer and remove the watermark.",
+      "paper": "A Semantic Invariant Robust Watermark for Large Language Models",
+      "original_name": "Security robustness"
+    },
+    {
+      "text": "The latent susceptibility of a model to adversarial perturbations, inferred from attack success rates.",
+      "paper": "Achieving Domain-Independent Certified Robustness via Knowledge Continuity",
+      "original_name": "Adversarial Vulnerability"
+    },
+    {
+      "text": "The model's latent ability to resist attacks that use specially crafted prompts to circumvent its safety mechanisms and elicit harmful responses.",
+      "paper": "RobustKV: Defending Large Language Models against Jailbreak Attacks via KV Eviction",
+      "original_name": "Jailbreak robustness"
+    },
+    {
+      "text": "The degree to which a model's outputs can be manipulated by small, targeted perturbations to its inputs or internal states.",
+      "paper": "Scaling Laws for Adversarial Attacks on Language Model Activations and Tokens",
+      "original_name": "Adversarial susceptibility"
+    },
+    {
+      "text": "A model property representing the number of bits the attacker must control on the input to exert a single bit of control on the output.",
+      "paper": "Scaling Laws for Adversarial Attacks on Language Model Activations and Tokens",
+      "original_name": "Attack resistance"
+    },
+    {
+      "text": "The model's ability to resist attempts to bypass its safety mechanisms and refuse to generate harmful content, even when subjected to adversarial attacks.",
+      "paper": "Concept-ROT: Poisoning Concepts in Large Language Models with Model Editing",
+      "original_name": "Robustness to jailbreaking"
+    },
+    {
+      "text": "The degree to which a model's performance degrades or its outputs can be manipulated by small, maliciously crafted input perturbations.",
+      "paper": "X-Transfer Attacks: Towards Super Transferable Adversarial Attacks on CLIP",
+      "original_name": "Adversarial vulnerability"
+    },
+    {
+      "text": "The model's ability to maintain performance in detecting offensive language when faced with inputs that have been intentionally altered with homophonic substitutions to evade detection.",
+      "paper": "MiLQ: BenchmarkingIRModels for Bilingual Web Search with Mixed Language Queries",
+      "original_name": "Robustness to phonetic attacks"
+    },
+    {
+      "text": "The degree to which a jailbreak elicits useful harmful information from a victim model rather than merely a non-refusal or irrelevant response.",
+      "paper": "A StrongREJECT for Empty Jailbreaks",
+      "original_name": "Jailbreak effectiveness"
+    },
+    {
+      "text": "The model's vulnerability to adversarial prompts designed to bypass its safety mechanisms and elicit prohibited information.",
+      "paper": "Tree of Attacks: Jailbreaking Black-Box LLMs Automatically",
+      "original_name": "Susceptibility to jailbreaking"
+    },
+    {
+      "text": "The model's ability to adhere to its intended functions and restrictions when prompted with inputs designed to manipulate or exploit it.",
+      "paper": "CARES: A Comprehensive Benchmark of Trustworthiness in Medical Vision Language Models",
+      "original_name": "Jailbreaking resistance"
+    },
+    {
+      "text": "The susceptibility of an LLM to adversarial inputs that bypass its safety mechanisms and elicit harmful content generation, particularly when non-English or multilingual prompts are used.",
+      "paper": "Distributional Preference Learning: Understanding and Accounting for Hidden Context in RLHF",
+      "original_name": "Jailbreak vulnerability"
+    },
+    {
+      "text": "The latent tendency of a model to produce harmful content when exposed to manipulative or adversarial role prompts, reflecting vulnerability in safety alignment.",
+      "paper": "Automating Steering for Safe Multimodal Large Language Models",
+      "original_name": "Ethical risk"
+    },
+    {
+      "text": "The latent tendency of a model to bypass its safety guardrails when exposed to specific fine-tuning or inference-time triggers, reflecting an acquired vulnerability to compliance with harmful requests.",
+      "paper": "Direct Value Optimization: Improving Chain-of-Thought Reasoning inLLMs with Refined Values",
+      "original_name": "Jailbreak susceptibility"
+    }
+  ],
+  "definition_count": 16,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AdvBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Fight Back Against Jailbreaking via Prompt Adversarial Tuning",
+      "evidence": "For robustness evaluations, we take harmful requests from two harmful instruction datasets: HarmBench (Mazeika et al., 2024) and AdvBench (Zou et al., 2023b). (Section 5)",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "neurips24": [
+          "Fight Back Against Jailbreaking via Prompt Adversarial Tuning"
+        ],
+        "iclr25": [
+          "RobustKV: Defending Large Language Models against Jailbreak Attacks via KV Eviction",
+          "Robust LLM safeguarding via refusal feature adversarial training"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GCG attack",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "RobustKV: Defending Large Language Models against Jailbreak Attacks via KV Eviction",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr25": [
+          "RobustKV: Defending Large Language Models against Jailbreak Attacks via KV Eviction",
+          "Robust LLM safeguarding via refusal feature adversarial training"
+        ],
+        "icml25": [
+          "Scaling Trends in Language Model Robustness"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Harmbench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+      "evidence": "For robustness evaluations, we take harmful requests from two harmful instruction datasets: HarmBench (Mazeika et al., 2024) and AdvBench (Zou et al., 2023b). (Section 5)",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "neurips24": [
+          "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+          "A StrongREJECT for Empty Jailbreaks"
+        ],
+        "iclr25": [
+          "Robust LLM safeguarding via refusal feature adversarial training"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "JailbreakBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Robust Prompt Optimization for Defending Language Models Against Jailbreaking Attacks",
+      "evidence": "\u201cWe additionally evaluate on Adaptive Attack (Andriushchenko et al., 2024), a state-of-the-art adversarial attack method, on JailBreakBench (Chao et al., 2024).\u201d",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "neurips24": [
+          "Robust Prompt Optimization for Defending Language Models Against Jailbreaking Attacks",
+          "Navigating the Safety Landscape: Measuring Risks in Finetuning Large Language Models"
+        ],
+        "icml25": [
+          "POROver: Improving Safety and Reducing Overrefusal in Large Language Models with Overgeneration and Preference Optimization"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SST-2",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Evoke: Evoking Critical Thinking Abilities in LLMs via Reviewer-Author Prompt Editing",
+      "evidence": "To evaluate whether Evoke can improve LLMs\u2019 robustness, we add typos to the datasets. Specifically, we perform character-level adversarial attacks for each sample. (Section 4.2)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr24": [
+          "Evoke: Evoking Critical Thinking Abilities in LLMs via Reviewer-Author Prompt Editing"
+        ],
+        "iclr25": [
+          "Confidence Elicitation: A New Attack Vector for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AutoDAN",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "RobustKV: Defending Large Language Models against Jailbreak Attacks via KV Eviction",
+      "evidence": "Table 1: General model capability metrics and adversarial robustness (measured as ASR) of three LLMs trained using various safety fine-tuning methods. ... GCG ... PAIR ... AutoDAN ... HumanJailbreaks",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "RobustKV: Defending Large Language Models against Jailbreak Attacks via KV Eviction",
+          "Robust LLM safeguarding via refusal feature adversarial training"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Harmful content generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "CausalEval: Towards Better Causal Reasoning in Language Models",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "naacl25": [
+          "CausalEval: Towards Better Causal Reasoning in Language Models"
+        ],
+        "emnlp25": [
+          "Targeted Distillation for Sentiment Analysis"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Safety alignment",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "RobustKV: Defending Large Language Models against Jailbreak Attacks via KV Eviction",
+      "evidence": "RobustKV creates an intriguing evasiveness dilemma for adversaries, forcing them to balance between evading RobustKV and circumventing the LLM\u2019s built-in safeguards. (Section 5.3.2)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "RobustKV: Defending Large Language Models against Jailbreak Attacks via KV Eviction",
+          "Jailbreaking Leading Safety-Aligned LLMs with Simple Adaptive Attacks"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reliability",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "An LLM can Fool Itself: A Prompt-Based Adversarial Attack",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "An LLM can Fool Itself: A Prompt-Based Adversarial Attack"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GLUE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "An LLM can Fool Itself: A Prompt-Based Adversarial Attack",
+      "evidence": "\u201cExisting research evaluates adversarial robustness of LLMs on the GLUE dataset (Wang et al., 2018)\u201d",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "An LLM can Fool Itself: A Prompt-Based Adversarial Attack"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "DIPPER",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "A Semantic Invariant Robust Watermark for Large Language Models",
+      "evidence": "\u201cIn Table 1, we list the detection accuracy of our watermark algorithm and various baseline algorithms under the no-attack setting and when texts are rewritten using GPT3.5, two different DIPPER settings (Krishna et al., 2023)\u201d",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "A Semantic Invariant Robust Watermark for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Copy-paste attack",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "A Semantic Invariant Robust Watermark for Large Language Models",
+      "evidence": "In Table 1, we list the detection accuracy of our watermark algorithm and various baseline algorithms under the no-attack setting and when texts are rewritten using GPT3.5, two different DIPPER settings (Krishna et al., 2023) and the copy-paste attack Kirchenbauer et al. (2023b). (Section 6.2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "A Semantic Invariant Robust Watermark for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "QQP",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Evoke: Evoking Critical Thinking Abilities in LLMs via Reviewer-Author Prompt Editing",
+      "evidence": "\"Datasets. We adopt two datasets: SST-2 (Socher et al., 2013) is a sentiment classification task ... and QQP (Wang et al., 2019) is a task where we need to determine whether two sentences are paraphrases of each other.\"",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Evoke: Evoking Critical Thinking Abilities in LLMs via Reviewer-Author Prompt Editing"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "FM2",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Towards Understanding Factual Knowledge of Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Towards Understanding Factual Knowledge of Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "A StrongREJECT for Empty Jailbreaks",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "A StrongREJECT for Empty Jailbreaks"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Robustness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AgentDojo",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "StrongReject",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "A StrongREJECT for Empty Jailbreaks",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "A StrongREJECT for Empty Jailbreaks"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MM-SafetyBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "From General Reward to Targeted Reward: Improving Open-ended Long-context Generation Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "From General Reward to Targeted Reward: Improving Open-ended Long-context Generation Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AG News",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Confidence Elicitation: A New Attack Vector for Large Language Models",
+      "evidence": "We conducted our confidence elicitation attacks on Meta-Llama-3-8B-Instruct (Touvron et al., 2023) and Mistral-7B-Instruct-v0.2 (Jiang et al., 2023) while performing classification on two common datasets to evaluate adversarial robustness: SST-2, AG-News and one modern dataset: StrategyQA (Geva et al., 2021). (Section 4)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Confidence Elicitation: A New Attack Vector for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "StrategyQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Confidence Elicitation: A New Attack Vector for Large Language Models",
+      "evidence": "We conducted our confidence elicitation attacks on Meta-Llama-3-8B-Instruct (Touvron et al., 2023) and Mistral-7B-Instruct-v0.2 (Jiang et al., 2023) while performing classification on two common datasets to evaluate adversarial robustness: SST-2, AG-News and one modern dataset: StrategyQA (Geva et al., 2021). (Section 4)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Confidence Elicitation: A New Attack Vector for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MixEval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Learn Your Reference Model for Real Good Alignment",
+      "evidence": "We also evaluate on the MixEval (Ni et al., 2024) benchmark, which contains downstream tasks, and assess jailbreak robustness; additional details are provided in Appendices F and G.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Learn Your Reference Model for Real Good Alignment"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Machine unlearning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Leaky Thoughts: Large Reasoning Models Are Not Private Thinkers",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Leaky Thoughts: Large Reasoning Models Are Not Private Thinkers"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "FigStep",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "From General Reward to Targeted Reward: Improving Open-ended Long-context Generation Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "From General Reward to Targeted Reward: Improving Open-ended Long-context Generation Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "JailbreakV",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "From General Reward to Targeted Reward: Improving Open-ended Long-context Generation Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "From General Reward to Targeted Reward: Improving Open-ended Long-context Generation Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 25,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 25,
+  "characterization": "The most prevalent framing of adversarial robustness across the surveyed literature is a model's latent property to maintain its performance and make correct predictions when faced with small, intentionally crafted perturbations to its input. This general concept is applied to various contexts, including maintaining factual accuracy against misleading examples and resisting character-level typos. A substantial and frequently discussed sub-type is \"jailbreak robustness,\" which specifically concerns a model's ability to resist prompts designed to bypass its safety mechanisms and elicit harmful content. A smaller line of work defines robustness in the specific context of watermarking, distinguishing between \"attack robustness\" (detectability after modification) and \"security robustness\" (difficulty of reverse-engineering the watermark). The field operationalizes this construct, particularly its jailbreaking dimension, by measuring model performance on benchmarks like AdvBench, Harmbench, and JailbreakBench, and by evaluating its resilience to specific attack methods such as the GCG attack and AutoDAN. General adversarial robustness is also commonly assessed by applying perturbations to standard NLP tasks and measuring performance on datasets including SST-2, GLUE, and AG News. Across the provided work, adversarial robustness is frequently studied in relation to safety alignment, as adversarial attacks are often framed as attempts to circumvent these safeguards.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "A Semantic Invariant Robust Watermark for Large Language Models",
+      "An Image Is Worth 1000 Lies: Transferability of Adversarial Images across Prompts on Vision-Language Models",
+      "An LLM can Fool Itself: A Prompt-Based Adversarial Attack",
+      "Evoke: Evoking Critical Thinking Abilities in LLMs via Reviewer-Author Prompt Editing",
+      "RAIN: Your Language Models Can Align Themselves without Finetuning",
+      "Towards Understanding Factual Knowledge of Large Language Models",
+      "Distributional Preference Learning: Understanding and Accounting for Hidden Context in RLHF",
+      "Multilingual Jailbreak Challenges in Large Language Models"
+    ],
+    "neurips24": [
+      "Achieving Domain-Independent Certified Robustness via Knowledge Continuity",
+      "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents",
+      "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models",
+      "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+      "Text-Guided Attention is All You Need for Zero-Shot Robustness in Vision-Language Models",
+      "A StrongREJECT for Empty Jailbreaks",
+      "CARES: A Comprehensive Benchmark of Trustworthiness in Medical Vision Language Models",
+      "Fight Back Against Jailbreaking via Prompt Adversarial Tuning",
+      "Tree of Attacks: Jailbreaking Black-Box LLMs Automatically"
+    ],
+    "iclr25": [
+      "Aligned LLMs Are Not Aligned Browser Agents",
+      "Backtracking Improves Generation Safety",
+      "Concept-ROT: Poisoning Concepts in Large Language Models with Model Editing",
+      "Confidence Elicitation: A New Attack Vector for Large Language Models",
+      "Cut the Crap: An Economical Communication Pipeline for LLM-based Multi-Agent Systems",
+      "Dissecting Adversarial Robustness of Multimodal LM Agents",
+      "Failures to Find Transferable Image Jailbreaks Between Vision-Language Models",
+      "HarmAug: Effective Data Augmentation for Knowledge Distillation of Safety Guard Models",
+      "Jailbreaking Leading Safety-Aligned LLMs with Simple Adaptive Attacks",
+      "Learn Your Reference Model for Real Good Alignment",
+      "MMDT: Decoding the Trustworthiness and Safety of Multimodal Foundation Models",
+      "Robust LLM safeguarding via refusal feature adversarial training",
+      "RobustKV: Defending Large Language Models against Jailbreak Attacks via KV Eviction",
+      "Scaling Laws for Adversarial Attacks on Language Model Activations and Tokens",
+      "Shh, don't say that! Domain Certification in LLMs",
+      "Tracking the Copyright of Large Vision-Language Models through Parameter Learning Adversarial Images"
+    ],
+    "acl25": [
+      "Byte Latent Transformer: Patches Scale Better Than Tokens",
+      "CKnowEdit: A NewChinese Knowledge Editing Dataset for Linguistics, Facts, and Logic Error Correction inLLMs"
+    ],
+    "icml25": [
+      "Adversarial Reasoning at Jailbreaking Time",
+      "An Interpretable N-gram Perplexity Threat Model for Large Language Model Jailbreaks",
+      "AxBench: Steering LLMs? Even Simple Baselines Outperform Sparse Autoencoders",
+      "G-Designer: Architecting Multi-agent Communication Topologies via Graph Neural Networks",
+      "Learning Safety Constraints for Large Language Models",
+      "On the Vulnerability of Applying Retrieval-Augmented Generation within Knowledge-Intensive Application Domains",
+      "POROver: Improving Safety and Reducing Overrefusal in Large Language Models with Overgeneration and Preference Optimization",
+      "Scaling Trends in Language Model Robustness",
+      "Testing the Limits of Fine-Tuning for Improving Visual Cognition in Vision Language Models",
+      "Weak-to-Strong Jailbreaking on Large Language Models",
+      "X-Transfer Attacks: Towards Super Transferable Adversarial Attacks on CLIP"
+    ],
+    "emnlp25": [
+      "Improving Clustering with Positive Pairs Generated fromLLM-Driven Labels",
+      "Language Models Can be Efficiently Steered via Minimal Embedding Layer Transformations",
+      "Leaky Thoughts: Large Reasoning Models Are Not Private Thinkers",
+      "MiLQ: BenchmarkingIRModels for Bilingual Web Search with Mixed Language Queries",
+      "2025.emnlp-main.1235.checklist",
+      "2025.emnlp-main.669.checklist",
+      "Automating Steering for Safe Multimodal Large Language Models",
+      "CIE: Controlling Language Model Text Generations Using Continuous Signals",
+      "Direct Value Optimization: Improving Chain-of-Thought Reasoning inLLMs with Refined Values",
+      "Emotion Transfer with Enhanced Prototype for Unseen Emotion Recognition in Conversation",
+      "From General Reward to Targeted Reward: Improving Open-ended Long-context Generation Models",
+      "MuseScorer: Idea Originality Scoring At Scale",
+      "TCPO: Thought-Centric Preference Optimization for Effective Embodied Decision-making",
+      "Targeted Distillation for Sentiment Analysis"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 8,
+    "neurips24": 9,
+    "iclr25": 16,
+    "acl25": 2,
+    "icml25": 11,
+    "emnlp25": 14
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

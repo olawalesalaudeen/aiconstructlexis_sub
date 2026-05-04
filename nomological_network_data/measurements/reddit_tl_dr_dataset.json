@@ -1,0 +1,233 @@
+{
+  "canonical_name": "Reddit TL;DR dataset",
+  "type": "measurement",
+  "canonical_definition": "The Reddit TL;DR dataset is predominantly characterized across the provided literature as a benchmark for evaluating text summarization. It is consistently defined as a collection of Reddit posts paired with human-written, concise summaries, which are sometimes noted to have been judged by human evaluators for quality and informativeness. Its most frequent application is to measure text summarization capabilities, with some papers specifying its use for evaluating abstractive summarization. A smaller body of work also employs the dataset to assess human preference alignment and general generation quality, while one study uses a subset of its subreddits to evaluate model generalization. Operationally, the dataset is used throughout the model development lifecycle for tasks including supervised fine-tuning, reward modeling, and reinforcement learning optimization. It also serves as a common testbed for evaluating the training dynamics and performance of various preference optimization algorithms and offline RLHF methods.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "TL;DR dataset",
+    "Reddit TL;DR dataset",
+    "Reddit TL;DR",
+    "Reddit summarization dataset",
+    "TL;DR summarization",
+    "TL;DR comparison data",
+    "Reddit TL;DR Summarization"
+  ],
+  "papers": [
+    "A Common Pitfall of Margin-based Language Model Alignment: Gradient Entanglement",
+    "Correcting the Mythos of KL-Regularization: Direct Alignment without Overoptimization via Chi-Squared Preference Optimization",
+    "Learn Your Reference Model for Real Good Alignment",
+    "MA-RLHF: Reinforcement Learning from Human Feedback with Macro Actions",
+    "On a Connection Between Imitation Learning and RLHF",
+    "SeRA: Self-Reviewing and Alignment of LLMs using Implicit Reward Margins",
+    "TIS-DPO: Token-level Importance Sampling for Direct Preference Optimization With Estimated Weights",
+    "Towards Federated RLHF with Aggregated Client Preference for LLMs",
+    "Trust or Escalate: LLM Judges with Provable Guarantees for Human Agreement",
+    "Value-Incentivized Preference Optimization: A Unified Approach to Online and Offline RLHF",
+    "Variational Best-of-N Alignment",
+    "Your Weak LLM is Secretly a Strong Teacher for Alignment",
+    "Design Considerations in Offline Preference-based RL",
+    "GRAM: A Generative Foundation Reward Model for Reward Generalization",
+    "InfAlign: Inference-aware language model alignment",
+    "Progressively Label Enhancement for Large Language Model Alignment",
+    "RLTHF: Targeted Human Feedback for LLM Alignment",
+    "ROPO: Robust Preference Optimization for Large Language Models",
+    "RoSTE: An Efficient Quantization-Aware Supervised Fine-Tuning Approach for Large Language Models",
+    "Symmetric Reinforcement Learning Loss for Robust Learning on Diverse Tasks and Model Scales",
+    "The Energy Loss Phenomenon in RLHF: A New Perspective on Mitigating Reward Hacking",
+    "Towards Cost-Effective Reward Guided Text Generation",
+    "CodeTree: Agent-guided Tree Search for Code Generation with Large Language Models",
+    "NormAd: A Framework for Measuring the Cultural Adaptability of Large Language Models",
+    "On the Impact of Fine-Tuning on Chain-of-Thought Reasoning"
+  ],
+  "paper_count": 25,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A benchmark dataset used for evaluating the quality of text summarization.",
+      "paper": "Trust or Escalate: LLM Judges with Provable Guarantees for Human Agreement",
+      "original_name": "TL;DR"
+    },
+    {
+      "text": "A dataset consisting of Reddit posts and their summaries, used in this paper to evaluate the training dynamics of various preference optimization algorithms. The full name is 'Too Long; Didn't Read'.",
+      "paper": "A Common Pitfall of Margin-based Language Model Alignment: Gradient Entanglement",
+      "original_name": "TL;DR dataset"
+    },
+    {
+      "text": "A summarization dataset consisting of Reddit posts and several corresponding short summaries, which have been judged for quality and informativeness by human evaluators.",
+      "paper": "Your Weak LLM is Secretly a Strong Teacher for Alignment",
+      "original_name": "Reddit TL;DR"
+    },
+    {
+      "text": "A dataset consisting of Reddit posts and their human-written summaries (Stiennon et al., 2020), used for training and evaluating summarization models.",
+      "paper": "Variational Best-of-N Alignment",
+      "original_name": "Reddit TL;DR dataset"
+    },
+    {
+      "text": "A dataset also known as the TL;DR dataset, containing Reddit posts and their corresponding human-written summaries, used for training and evaluating text summarization models.",
+      "paper": "InfAlign: Inference-aware language model alignment",
+      "original_name": "Reddit summarization dataset"
+    },
+    {
+      "text": "Summarization task requiring models to generate concise summaries of Reddit posts, used here as an RLHF benchmark with a learned reward model.",
+      "paper": "Symmetric Reinforcement Learning Loss for Robust Learning on Diverse Tasks and Model Scales",
+      "original_name": "TL;DR summarization"
+    },
+    {
+      "text": "A dataset composed of summarization response pairs used for domain-specific pre-training of a reward model.",
+      "paper": "GRAM: A Generative Foundation Reward Model for Reward Generalization",
+      "original_name": "TL;DR comparison data"
+    },
+    {
+      "text": "A summarization benchmark based on the Reddit TL;DR dataset used to evaluate fine-tuned LLMs on generating concise summaries of posts.",
+      "paper": "RoSTE: An Efficient Quantization-Aware Supervised Fine-Tuning Approach for Large Language Models",
+      "original_name": "Reddit TL;DR Summarization"
+    }
+  ],
+  "definition_count": 8,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text summarization",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Improving Generalization of Alignment with Human Preferences through Group Invariant Learning",
+      "evidence": "We evaluate MA-RLHF on three different datasets for open-ended generation tasks: TL;DR (Stiennon et al., 2020) dataset for text summarization, Anthropic Helpful and Harmless (HH-RLHF) (Bai et al., 2022) for dialogue generation, and WebGPT Comparison (Nakano et al., 2021) for question answering.",
+      "paper_count": 12,
+      "papers_by_conference": {
+        "iclr24": [
+          "Improving Generalization of Alignment with Human Preferences through Group Invariant Learning",
+          "CPPO: Continual Learning for Reinforcement Learning with Human Feedback",
+          "Privately Aligning Language Models with Reinforcement Learning"
+        ],
+        "neurips24": [
+          "Geometric-Averaged Preference Optimization for Soft Preference Labels"
+        ],
+        "iclr25": [
+          "Self-Improving Robust Preference Optimization",
+          "Learn Your Reference Model for Real Good Alignment",
+          "Variational Best-of-N Alignment",
+          "On a Connection Between Imitation Learning and RLHF"
+        ],
+        "naacl25": [
+          "CodeTree: Agent-guided Tree Search for Code Generation with Large Language Models",
+          "On the Impact of Fine-Tuning on Chain-of-Thought Reasoning"
+        ],
+        "acl25": [
+          "AgentRM: Enhancing Agent Generalization with Reward Modeling"
+        ],
+        "icml25": [
+          "Towards Cost-Effective Reward Guided Text Generation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Alignment",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Geometric-Averaged Preference Optimization for Soft Preference Labels",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "Geometric-Averaged Preference Optimization for Soft Preference Labels"
+        ],
+        "iclr25": [
+          "Your Weak LLM is Secretly a Strong Teacher for Alignment"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generation quality",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "InfAlign: Inference-aware language model alignment",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "InfAlign: Inference-aware language model alignment"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Variational Best-of-N Alignment",
+      "evidence": "To evaluate the generalization ability of the aligned models on out-of-distribution data, we fine-tune the models using only posts from the relationship and relationship advice subreddits of the Reddit TL;DR (Stiennon et al., 2020) dataset. (Section 6)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Variational Best-of-N Alignment"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Abstractive summarization",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Progressively Label Enhancement for Large Language Model Alignment",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Progressively Label Enhancement for Large Language Model Alignment"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 5,
+  "outgoing_relationship_count": 0,
+  "characterization": "The Reddit TL;DR dataset is predominantly characterized across the provided literature as a benchmark for evaluating text summarization. It is consistently defined as a collection of Reddit posts paired with human-written, concise summaries, which are sometimes noted to have been judged by human evaluators for quality and informativeness. Its most frequent application is to measure text summarization capabilities, with some papers specifying its use for evaluating abstractive summarization. A smaller body of work also employs the dataset to assess human preference alignment and general generation quality, while one study uses a subset of its subreddits to evaluate model generalization. Operationally, the dataset is used throughout the model development lifecycle for tasks including supervised fine-tuning, reward modeling, and reinforcement learning optimization. It also serves as a common testbed for evaluating the training dynamics and performance of various preference optimization algorithms and offline RLHF methods.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "A Common Pitfall of Margin-based Language Model Alignment: Gradient Entanglement",
+      "Correcting the Mythos of KL-Regularization: Direct Alignment without Overoptimization via Chi-Squared Preference Optimization",
+      "Learn Your Reference Model for Real Good Alignment",
+      "MA-RLHF: Reinforcement Learning from Human Feedback with Macro Actions",
+      "On a Connection Between Imitation Learning and RLHF",
+      "SeRA: Self-Reviewing and Alignment of LLMs using Implicit Reward Margins",
+      "TIS-DPO: Token-level Importance Sampling for Direct Preference Optimization With Estimated Weights",
+      "Towards Federated RLHF with Aggregated Client Preference for LLMs",
+      "Trust or Escalate: LLM Judges with Provable Guarantees for Human Agreement",
+      "Value-Incentivized Preference Optimization: A Unified Approach to Online and Offline RLHF",
+      "Variational Best-of-N Alignment",
+      "Your Weak LLM is Secretly a Strong Teacher for Alignment"
+    ],
+    "icml25": [
+      "Design Considerations in Offline Preference-based RL",
+      "GRAM: A Generative Foundation Reward Model for Reward Generalization",
+      "InfAlign: Inference-aware language model alignment",
+      "Progressively Label Enhancement for Large Language Model Alignment",
+      "RLTHF: Targeted Human Feedback for LLM Alignment",
+      "ROPO: Robust Preference Optimization for Large Language Models",
+      "RoSTE: An Efficient Quantization-Aware Supervised Fine-Tuning Approach for Large Language Models",
+      "Symmetric Reinforcement Learning Loss for Robust Learning on Diverse Tasks and Model Scales",
+      "The Energy Loss Phenomenon in RLHF: A New Perspective on Mitigating Reward Hacking",
+      "Towards Cost-Effective Reward Guided Text Generation"
+    ],
+    "naacl25": [
+      "CodeTree: Agent-guided Tree Search for Code Generation with Large Language Models",
+      "NormAd: A Framework for Measuring the Cultural Adaptability of Large Language Models",
+      "On the Impact of Fine-Tuning on Chain-of-Thought Reasoning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 12,
+    "icml25": 10,
+    "naacl25": 3
+  },
+  "conferences": [
+    "iclr25",
+    "icml25",
+    "naacl25"
+  ]
+}

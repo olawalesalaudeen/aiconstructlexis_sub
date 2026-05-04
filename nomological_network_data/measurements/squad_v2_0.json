@@ -1,0 +1,109 @@
+{
+  "canonical_name": "SQuAD v2.0",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, SQuAD v2.0 is consistently described as a benchmark dataset used to measure model capabilities. The most prevalent applications are for evaluating `Reading comprehension` and `Question answering`, with multiple papers using it for these purposes. The core task, as defined in the sources, presents a model with a question and a corresponding Wikipedia article, from which it must derive an answer. One definition specifies that this includes the ability to identify unanswerable questions. While its primary use is for question answering, some papers adapt it for other tasks; for instance, one study uses SQuAD v2.0 to create a `Document retrieval` task where the model must select the correct document for a given query. Another paper mentions its use in evaluating downstream performance without fine-tuning.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "SQuADv2",
+    "SQuAD v2"
+  ],
+  "papers": [
+    "AttriBoT: A Bag of Tricks for Efficiently Approximating Leave-One-Out Context Attribution",
+    "DeciMamba: Exploring the Length Extrapolation Potential of Mamba",
+    "Efficient stagewise pretraining via progressive subnetworks",
+    "Faster Cascades via Speculative Decoding",
+    "Wasserstein Distances, Neuronal Entanglement, and Sparsity"
+  ],
+  "paper_count": 5,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Stanford Question Answering Dataset 2.0, a reading comprehension benchmark where a model must answer questions based on a provided Wikipedia article, including identifying unanswerable questions.",
+      "paper": "AttriBoT: A Bag of Tricks for Efficiently Approximating Leave-One-Out Context Attribution",
+      "original_name": "SQuAD 2.0"
+    },
+    {
+      "text": "A reading comprehension question answering benchmark used to evaluate downstream performance without fine-tuning.",
+      "paper": "Efficient stagewise pretraining via progressive subnetworks",
+      "original_name": "SQuADv2"
+    },
+    {
+      "text": "The Stanford Question Answering Dataset (v2), used in this paper to create a document retrieval task.",
+      "paper": "DeciMamba: Exploring the Length Extrapolation Potential of Mamba",
+      "original_name": "SQuAD v2"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Efficient stagewise pretraining via progressive subnetworks",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr25": [
+          "Efficient stagewise pretraining via progressive subnetworks"
+        ],
+        "acl25": [
+          "Who Writes What: Unveiling the Impact of Author Roles onAI-generated Text Detection"
+        ],
+        "emnlp25": [
+          "Logos as a Well-Tempered Pre-train for Sign Language Recognition"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reading comprehension",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "TAIA: Large Language Models are Out-of-Distribution Data Learners",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "TAIA: Large Language Models are Out-of-Distribution Data Learners"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Information retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "DeciMamba: Exploring the Length Extrapolation Potential of Mamba",
+      "evidence": "Document Retrieval In this task the model receives a query and Ndocs randomly assorted documents, and its objective is to return the id of the matching document. Our data is sampled from SQuAD v2 (Rajpurkar et al., 2018). (Section 5)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "DeciMamba: Exploring the Length Extrapolation Potential of Mamba"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, SQuAD v2.0 is consistently described as a benchmark dataset used to measure model capabilities. The most prevalent applications are for evaluating `Reading comprehension` and `Question answering`, with multiple papers using it for these purposes. The core task, as defined in the sources, presents a model with a question and a corresponding Wikipedia article, from which it must derive an answer. One definition specifies that this includes the ability to identify unanswerable questions. While its primary use is for question answering, some papers adapt it for other tasks; for instance, one study uses SQuAD v2.0 to create a `Document retrieval` task where the model must select the correct document for a given query. Another paper mentions its use in evaluating downstream performance without fine-tuning.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "AttriBoT: A Bag of Tricks for Efficiently Approximating Leave-One-Out Context Attribution",
+      "DeciMamba: Exploring the Length Extrapolation Potential of Mamba",
+      "Efficient stagewise pretraining via progressive subnetworks",
+      "Faster Cascades via Speculative Decoding",
+      "Wasserstein Distances, Neuronal Entanglement, and Sparsity"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 5
+  },
+  "conferences": [
+    "iclr25"
+  ]
+}

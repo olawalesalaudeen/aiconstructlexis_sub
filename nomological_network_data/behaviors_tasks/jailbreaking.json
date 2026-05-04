@@ -1,0 +1,416 @@
+{
+  "canonical_name": "Jailbreaking",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, jailbreaking is most commonly defined as the observable behavior of bypassing a model's safety mechanisms to elicit a prohibited response, typically through an adversarial prompt. Several papers frame this as an \"attack\" using specially crafted inputs, with some work specifying variants like \"multi-turn jailbreak\" where a conversation gradually shifts from benign to harmful content. The primary and consistently stated outcome of successful jailbreaking is the generation of harmful, toxic, or otherwise undesirable content. The behavior is operationalized by measuring a model's compliance with or resistance to these adversarial prompts, often quantified by an \"Attack Success Rate (ASR)\". A wide array of measurement instruments are used to evaluate jailbreaking, including benchmarks like AdvBench, Harmbench, SafeBench, MM-SafetyBench, and HADES, as well as specific attack methods such as GCG attack and AutoDAN. The study of this behavior is closely related to the concepts of safety alignment and safety mechanisms, which jailbreaking attempts to circumvent. A related but less frequent framing is \"Jailbreak detection,\" which is defined as the task of identifying malicious input prompts.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Jailbreaking",
+    "Jailbreak response generation",
+    "Multi-turn jailbreak",
+    "Jailbreak attack",
+    "Jailbreak compliance",
+    "Multi-turn jailbreak persistence",
+    "Jailbreak attack resistance",
+    "Jailbreak success",
+    "Jailbreak detection"
+  ],
+  "papers": [
+    "2025.emnlp-main.1296.checklist",
+    "2025.emnlp-main.279.checklist",
+    "2025.emnlp-main.669.checklist",
+    "CIE: Controlling Language Model Text Generations Using Continuous Signals",
+    "Cross-MoE: An Efficient Temporal Prediction Framework Integrating Textual Modality",
+    "Emotion Transfer with Enhanced Prototype for Unseen Emotion Recognition in Conversation",
+    "Fooling theLVLMJudges: Visual Biases inLVLM-Based Evaluation",
+    "Igniting Creative Writing in Small Language Models:LLM-as-a-Judge versus Multi-Agent Refined Rewards",
+    "KG-CQR: Leveraging Structured Relation Representations in Knowledge Graphs for Contextual Query Retrieval",
+    "Legal Fact Prediction: The Missing Piece in Legal Judgment Prediction",
+    "Mah\u0101n\u0101ma: A Unique Testbed for Literary Entity Discovery and Linking",
+    "Memory-QA: Answering Recall Questions Based on Multimodal Memories",
+    "Mitigating the Privacy Issues in Retrieval-Augmented Generation (RAG) via Pure Synthetic Data",
+    "MuseScorer: Idea Originality Scoring At Scale",
+    "MythTriage: Scalable Detection of Opioid Use Disorder Myths on a Video-Sharing Platform",
+    "NUTMEG: Separating Signal From Noise in Annotator Disagreement",
+    "PACHAT: Persona-Aware Speech Assistant for Multi-party Dialogue",
+    "Refining Attention for Explainable and Noise-Robust Fact-Checking with Transformers",
+    "Router-Tuning: A Simple and Effective Approach for Dynamic Depth",
+    "SQLWOZ: A Realistic Task-Oriented Dialogue Dataset withSQL-Based Dialogue State Representation for Complex User Requirements",
+    "The Enemy from Within: A Study of Political Delegitimization Discourse in Israeli Political Speech",
+    "TokenSelect: Efficient Long-Context Inference and Length Extrapolation forLLMs via Dynamic Token-LevelKVCache Selection",
+    "TurnaboutLLM: A Deductive Reasoning Benchmark from Detective Games",
+    "fLSA: Learning Semantic Structures in Document Collections Using Foundation Models",
+    "\u2018Rich Dad, Poor Lad\u2019: How do Large Language Models Contextualize Socioeconomic Factors in College Admission ?",
+    "DoRAGSystems Cover What Matters? Evaluating and Optimizing Responses with Sub-Question Coverage",
+    "Multilingual Machine Translation with Open Large Language Models at Practical Scale: An Empirical Study",
+    "uDistil-Whisper: Label-Free Data Filtering for Knowledge Distillation in Low-Data Regimes"
+  ],
+  "paper_count": 28,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The observable behavior of bypassing a model's safety mechanisms to elicit a prohibited response, typically through an adversarial prompt.",
+      "paper": "Multilingual Machine Translation with Open Large Language Models at Practical Scale: An Empirical Study",
+      "original_name": "Jailbreaking"
+    },
+    {
+      "text": "Producing unsafe or harmful answers when prompted by adversarial jailbreak instructions.",
+      "paper": "PACHAT: Persona-Aware Speech Assistant for Multi-party Dialogue",
+      "original_name": "Jailbreak response generation"
+    },
+    {
+      "text": "Responding across multiple conversational turns in a way that gradually shifts from benign to harmful content.",
+      "paper": "Router-Tuning: A Simple and Effective Approach for Dynamic Depth",
+      "original_name": "Multi-turn jailbreak"
+    },
+    {
+      "text": "The act of using specially crafted prompts to circumvent a model's safety alignment and induce it to perform forbidden actions.",
+      "paper": "CIE: Controlling Language Model Text Generations Using Continuous Signals",
+      "original_name": "Jailbreak attack"
+    },
+    {
+      "text": "Following adversarial prompts that attempt to induce the model to ignore safety rules and comply with harmful requests.",
+      "paper": "Mah\u0101n\u0101ma: A Unique Testbed for Literary Entity Discovery and Linking",
+      "original_name": "Jailbreak compliance"
+    },
+    {
+      "text": "The continuation and refinement of a successful jailbreak across multiple interaction turns, where the model updates its harmful response based on new contextual information.",
+      "paper": "Refining Attention for Explainable and Noise-Robust Fact-Checking with Transformers",
+      "original_name": "Multi-turn jailbreak persistence"
+    },
+    {
+      "text": "The model successfully resists attempts to generate harmful content through adversarial image-text pairs or typographic manipulation.",
+      "paper": "SQLWOZ: A Realistic Task-Oriented Dialogue Dataset withSQL-Based Dialogue State Representation for Complex User Requirements",
+      "original_name": "Jailbreak attack resistance"
+    },
+    {
+      "text": "The model's observable ability to maintain safety constraints even when presented with adversarial prompts designed to bypass ethical guidelines.",
+      "paper": "Igniting Creative Writing in Small Language Models:LLM-as-a-Judge versus Multi-Agent Refined Rewards",
+      "original_name": "Jailbreak resistance"
+    },
+    {
+      "text": "The observable generation of harmful content by an LLM in response to a jailbreak prompt, indicating that the model has bypassed its safety alignment.",
+      "paper": "The Enemy from Within: A Study of Political Delegitimization Discourse in Israeli Political Speech",
+      "original_name": "Jailbreak success"
+    },
+    {
+      "text": "The task of identifying whether a given input prompt is designed to bypass a model's safety filters.",
+      "paper": "Cross-MoE: An Efficient Temporal Prediction Framework Integrating Textual Modality",
+      "original_name": "Jailbreak detection"
+    }
+  ],
+  "definition_count": 10,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Harmful content generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Jailbreaking Leading Safety-Aligned LLMs with Simple Adaptive Attacks",
+      "evidence": "Cleverly crafted prompts like multi-round attacks (Wang et al., 2024c; Dong et al., 2024; Teng et al., 2024) can circumvent the safety mechanisms of LVLMs, leading them to produce harmful content.",
+      "paper_count": 7,
+      "papers_by_conference": {
+        "iclr25": [
+          "Jailbreaking Leading Safety-Aligned LLMs with Simple Adaptive Attacks",
+          "ProAdvPrompter: A Two-Stage Journey to Effective Adversarial Prompting for LLMs"
+        ],
+        "naacl25": [
+          "DoRAGSystems Cover What Matters? Evaluating and Optimizing Responses with Sub-Question Coverage"
+        ],
+        "icml25": [
+          "Cannot See the Forest for the Trees: Invoking Heuristics and Biases to Elicit Irrational Choices of LLMs",
+          "Emoji Attack: Enhancing Jailbreak Attacks Against Judge LLM Detection",
+          "Weak-to-Strong Jailbreaking on Large Language Models"
+        ],
+        "emnlp25": [
+          "CIE: Controlling Language Model Text Generations Using Continuous Signals"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Harmbench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models",
+      "evidence": "",
+      "paper_count": 5,
+      "papers_by_conference": {
+        "neurips24": [
+          "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models"
+        ],
+        "iclr25": [
+          "Concept-ROT: Poisoning Concepts in Large Language Models with Model Editing"
+        ],
+        "naacl25": [
+          "DoRAGSystems Cover What Matters? Evaluating and Optimizing Responses with Sub-Question Coverage"
+        ],
+        "icml25": [
+          "How Do Large Language Monkeys Get Their Power (Laws)?"
+        ],
+        "emnlp25": [
+          "Mah\u0101n\u0101ma: A Unique Testbed for Literary Entity Discovery and Linking"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AdvBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Personalized Steering of Large Language Models: Versatile Steering Vectors Through Bi-directional Preference Optimization",
+      "evidence": "",
+      "paper_count": 5,
+      "papers_by_conference": {
+        "neurips24": [
+          "Personalized Steering of Large Language Models: Versatile Steering Vectors Through Bi-directional Preference Optimization"
+        ],
+        "iclr25": [
+          "Jailbreaking Leading Safety-Aligned LLMs with Simple Adaptive Attacks",
+          "Durable Quantization Conditioned Misalignment Attack on Large Language Models"
+        ],
+        "naacl25": [
+          "DoRAGSystems Cover What Matters? Evaluating and Optimizing Responses with Sub-Question Coverage"
+        ],
+        "acl25": [
+          "Using Shapley interactions to understand how models use structure"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Alignment",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Tree of Attacks: Jailbreaking Black-Box LLMs Automatically",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "Tree of Attacks: Jailbreaking Black-Box LLMs Automatically",
+          "Adversarial Representation Engineering: A General Model Editing Framework for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PAIR",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Fight Back Against Jailbreaking via Prompt Adversarial Tuning",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "Fight Back Against Jailbreaking via Prompt Adversarial Tuning"
+        ],
+        "iclr25": [
+          "Durable Quantization Conditioned Misalignment Attack on Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-as-a-judge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Jailbreaking Leading Safety-Aligned LLMs with Simple Adaptive Attacks",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Jailbreaking Leading Safety-Aligned LLMs with Simple Adaptive Attacks",
+          "Does Refusal Training in LLMs Generalize to the Past Tense?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GCG attack",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Fight Back Against Jailbreaking via Prompt Adversarial Tuning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Fight Back Against Jailbreaking via Prompt Adversarial Tuning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AutoDAN",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Fight Back Against Jailbreaking via Prompt Adversarial Tuning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Fight Back Against Jailbreaking via Prompt Adversarial Tuning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "In-context attack",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Fight Back Against Jailbreaking via Prompt Adversarial Tuning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Fight Back Against Jailbreaking via Prompt Adversarial Tuning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "AutoDAN",
+      "other_type": "measurements",
+      "relationship_type": "causes",
+      "paper": "Robust LLM safeguarding via refusal feature adversarial training",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Robust LLM safeguarding via refusal feature adversarial training"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Rule-based judge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Does Refusal Training in LLMs Generalize to the Past Tense?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Does Refusal Training in LLMs Generalize to the Past Tense?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PAIR",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Breach By A Thousand Leaks: Unsafe Information Leakage in 'Safe' AI Responses",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Breach By A Thousand Leaks: Unsafe Information Leakage in 'Safe' AI Responses"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "AdvBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Jailbreaking as a Reward Misspecification Problem",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Jailbreaking as a Reward Misspecification Problem"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CipherChat",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "HarmAug: Effective Data Augmentation for Knowledge Distillation of Safety Guard Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "HarmAug: Effective Data Augmentation for Knowledge Distillation of Safety Guard Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Safety mechanism",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "DoRAGSystems Cover What Matters? Evaluating and Optimizing Responses with Sub-Question Coverage",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "DoRAGSystems Cover What Matters? Evaluating and Optimizing Responses with Sub-Question Coverage"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Robustness",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "LLM-Based Explicit Models of Opponents for Multi-Agent Games",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "LLM-Based Explicit Models of Opponents for Multi-Agent Games"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 16,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 12,
+  "characterization": "Across the provided literature, jailbreaking is most commonly defined as the observable behavior of bypassing a model's safety mechanisms to elicit a prohibited response, typically through an adversarial prompt. Several papers frame this as an \"attack\" using specially crafted inputs, with some work specifying variants like \"multi-turn jailbreak\" where a conversation gradually shifts from benign to harmful content. The primary and consistently stated outcome of successful jailbreaking is the generation of harmful, toxic, or otherwise undesirable content. The behavior is operationalized by measuring a model's compliance with or resistance to these adversarial prompts, often quantified by an \"Attack Success Rate (ASR)\". A wide array of measurement instruments are used to evaluate jailbreaking, including benchmarks like AdvBench, Harmbench, SafeBench, MM-SafetyBench, and HADES, as well as specific attack methods such as GCG attack and AutoDAN. The study of this behavior is closely related to the concepts of safety alignment and safety mechanisms, which jailbreaking attempts to circumvent. A related but less frequent framing is \"Jailbreak detection,\" which is defined as the task of identifying malicious input prompts.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "naacl25": [
+      "DoRAGSystems Cover What Matters? Evaluating and Optimizing Responses with Sub-Question Coverage",
+      "Multilingual Machine Translation with Open Large Language Models at Practical Scale: An Empirical Study",
+      "uDistil-Whisper: Label-Free Data Filtering for Knowledge Distillation in Low-Data Regimes"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.1296.checklist",
+      "2025.emnlp-main.279.checklist",
+      "2025.emnlp-main.669.checklist",
+      "CIE: Controlling Language Model Text Generations Using Continuous Signals",
+      "Cross-MoE: An Efficient Temporal Prediction Framework Integrating Textual Modality",
+      "Emotion Transfer with Enhanced Prototype for Unseen Emotion Recognition in Conversation",
+      "Fooling theLVLMJudges: Visual Biases inLVLM-Based Evaluation",
+      "Igniting Creative Writing in Small Language Models:LLM-as-a-Judge versus Multi-Agent Refined Rewards",
+      "KG-CQR: Leveraging Structured Relation Representations in Knowledge Graphs for Contextual Query Retrieval",
+      "Legal Fact Prediction: The Missing Piece in Legal Judgment Prediction",
+      "Mah\u0101n\u0101ma: A Unique Testbed for Literary Entity Discovery and Linking",
+      "Memory-QA: Answering Recall Questions Based on Multimodal Memories",
+      "Mitigating the Privacy Issues in Retrieval-Augmented Generation (RAG) via Pure Synthetic Data",
+      "MuseScorer: Idea Originality Scoring At Scale",
+      "MythTriage: Scalable Detection of Opioid Use Disorder Myths on a Video-Sharing Platform",
+      "NUTMEG: Separating Signal From Noise in Annotator Disagreement",
+      "PACHAT: Persona-Aware Speech Assistant for Multi-party Dialogue",
+      "Refining Attention for Explainable and Noise-Robust Fact-Checking with Transformers",
+      "Router-Tuning: A Simple and Effective Approach for Dynamic Depth",
+      "SQLWOZ: A Realistic Task-Oriented Dialogue Dataset withSQL-Based Dialogue State Representation for Complex User Requirements",
+      "The Enemy from Within: A Study of Political Delegitimization Discourse in Israeli Political Speech",
+      "TokenSelect: Efficient Long-Context Inference and Length Extrapolation forLLMs via Dynamic Token-LevelKVCache Selection",
+      "TurnaboutLLM: A Deductive Reasoning Benchmark from Detective Games",
+      "fLSA: Learning Semantic Structures in Document Collections Using Foundation Models",
+      "\u2018Rich Dad, Poor Lad\u2019: How do Large Language Models Contextualize Socioeconomic Factors in College Admission ?"
+    ]
+  },
+  "paper_count_by_conference": {
+    "naacl25": 3,
+    "emnlp25": 25
+  },
+  "conferences": [
+    "emnlp25",
+    "naacl25"
+  ]
+}

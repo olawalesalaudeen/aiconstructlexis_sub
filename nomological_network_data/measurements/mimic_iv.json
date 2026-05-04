@@ -1,0 +1,119 @@
+{
+  "canonical_name": "MIMIC-IV",
+  "type": "measurement",
+  "canonical_definition": "MIMIC-IV is consistently described in the provided literature as a large-scale multimodal clinical dataset. Its primary application, as represented in these sources, is to evaluate models on a range of clinical prediction tasks. The most frequently cited applications involve patient outcome prediction, specifically length of stay (LOS), in-hospital mortality, and readmission. Beyond these, papers also use MIMIC-IV to assess performance on phenotype prediction, drug recommendation, and predicting medical codes for future patient visits. Some work frames its use more broadly, applying it to the \"full-path clinical diagnosis task\" and to evaluate \"multimodal fusion strategies.\" The dataset is also reported to measure capabilities in time series classification, disease diagnosis, and multimodal understanding.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "MIMIC-IV"
+  ],
+  "papers": [
+    "BoxLM: Unifying Structures and Semantics of Medical Concepts for Diagnosis Prediction in Healthcare",
+    "CLIMB: Data Foundations for Large Scale Multimodal Clinical Foundation Models",
+    "Evaluating LLMs Across Multi-Cognitive Levels: From Medical Knowledge Mastery to Scenario-Based Problem Solving",
+    "Multimodal Medical Code Tokenizer"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A large-scale multimodal clinical dataset used to evaluate multimodal fusion strategies for patient outcome prediction, including length of stay and in-hospital mortality.",
+      "paper": "CLIMB: Data Foundations for Large Scale Multimodal Clinical Foundation Models",
+      "original_name": "MIMIC-IV"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Medical diagnosis",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "BoxLM: Unifying Structures and Semantics of Medical Concepts for Diagnosis Prediction in Healthcare",
+      "evidence": "The evaluation encompasses five tasks: 1 mortality prediction (MT), 2 readmission prediction (RA), 3 length-of-stay prediction (LOS), 4 phenotype prediction (Pheno), and 5 drug recommendation (DrugRec). ... Table 3 presents the AUPRC values for each baseline and their integration with our MEDTOK for five tasks in two in-patient datasets. (Section 4)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "icml25": [
+          "BoxLM: Unifying Structures and Semantics of Medical Concepts for Diagnosis Prediction in Healthcare",
+          "Evaluating LLMs Across Multi-Cognitive Levels: From Medical Knowledge Mastery to Scenario-Based Problem Solving"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mortality prediction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Reasoning-Enhanced Healthcare Predictions with Knowledge Graph Community Retrieval",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Reasoning-Enhanced Healthcare Predictions with Knowledge Graph Community Retrieval"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Time series classification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Reasoning-Enhanced Healthcare Predictions with Knowledge Graph Community Retrieval",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Reasoning-Enhanced Healthcare Predictions with Knowledge Graph Community Retrieval"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Disease diagnosis",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "PKAG-DDI: Pairwise Knowledge-Augmented Language Model for Drug-Drug Interaction Event Text Generation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "PKAG-DDI: Pairwise Knowledge-Augmented Language Model for Drug-Drug Interaction Event Text Generation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "CLIMB: Data Foundations for Large Scale Multimodal Clinical Foundation Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "CLIMB: Data Foundations for Large Scale Multimodal Clinical Foundation Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 5,
+  "outgoing_relationship_count": 0,
+  "characterization": "MIMIC-IV is consistently described in the provided literature as a large-scale multimodal clinical dataset. Its primary application, as represented in these sources, is to evaluate models on a range of clinical prediction tasks. The most frequently cited applications involve patient outcome prediction, specifically length of stay (LOS), in-hospital mortality, and readmission. Beyond these, papers also use MIMIC-IV to assess performance on phenotype prediction, drug recommendation, and predicting medical codes for future patient visits. Some work frames its use more broadly, applying it to the \"full-path clinical diagnosis task\" and to evaluate \"multimodal fusion strategies.\" The dataset is also reported to measure capabilities in time series classification, disease diagnosis, and multimodal understanding.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "icml25": [
+      "BoxLM: Unifying Structures and Semantics of Medical Concepts for Diagnosis Prediction in Healthcare",
+      "CLIMB: Data Foundations for Large Scale Multimodal Clinical Foundation Models",
+      "Evaluating LLMs Across Multi-Cognitive Levels: From Medical Knowledge Mastery to Scenario-Based Problem Solving",
+      "Multimodal Medical Code Tokenizer"
+    ]
+  },
+  "paper_count_by_conference": {
+    "icml25": 4
+  },
+  "conferences": [
+    "icml25"
+  ]
+}

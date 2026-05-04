@@ -1,0 +1,100 @@
+{
+  "canonical_name": "LongEval",
+  "type": "measurement",
+  "canonical_definition": "The provided literature presents two distinct characterizations of the LongEval benchmark. The prevailing usage, found across multiple papers, defines LongEval as an instrument for measuring the long-context performance of language models. In this context, it is operationalized through tasks such as topic retrieval and line retrieval with varying prompt lengths, and is used to assess the construct of Information retrieval. One paper describes this version as \"one of the pioneer work which includes various long context retrieval tasks\" (CAMIEval: EnhancingNLGEvaluation through Multidimensional Comparative Instruction-Following Analysis). A different use of the name \"LONGEVAL\" appears in a smaller set of the provided work, where it is defined as a benchmark for evaluating long document summarization factuality on scientific texts. This version is used to measure the construct of Faithfulness, with performance assessed via \"summary-level correlation metrics\" such as Kendall\u2019s Tau. Additionally, the long-context retrieval version of the benchmark is noted to have \"inspired the StreamEval dataset\" (Efficient Streaming Language Models with Attention Sinks).",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "LongEval",
+    "LONGEVAL"
+  ],
+  "papers": [
+    "Efficient Streaming Language Models with Attention Sinks",
+    "IceFormer: Accelerated Inference with Long-Sequence Transformers on CPUs",
+    "CAMIEval: EnhancingNLGEvaluation through Multidimensional Comparative Instruction-Following Analysis",
+    "COVE:COntext andVEracity prediction for out-of-context images"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A benchmark designed to measure the long-context performance of language models, consisting of topic retrieval and line retrieval tasks with varying prompt lengths.",
+      "paper": "Efficient Streaming Language Models with Attention Sinks",
+      "original_name": "LongEval"
+    },
+    {
+      "text": "Evaluation benchmark for long document summarization factuality, used to assess performance on scientific texts with summary-level correlation metrics.",
+      "paper": "COVE:COntext andVEracity prediction for out-of-context images",
+      "original_name": "LONGEVAL"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-context understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "IceFormer: Accelerated Inference with Long-Sequence Transformers on CPUs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "IceFormer: Accelerated Inference with Long-Sequence Transformers on CPUs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Information retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "What is Wrong with Perplexity for Long-context Language Modeling?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "What is Wrong with Perplexity for Long-context Language Modeling?"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "COVE:COntext andVEracity prediction for out-of-context images",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "COVE:COntext andVEracity prediction for out-of-context images"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization": "The provided literature presents two distinct characterizations of the LongEval benchmark. The prevailing usage, found across multiple papers, defines LongEval as an instrument for measuring the long-context performance of language models. In this context, it is operationalized through tasks such as topic retrieval and line retrieval with varying prompt lengths, and is used to assess the construct of Information retrieval. One paper describes this version as \"one of the pioneer work which includes various long context retrieval tasks\" (CAMIEval: EnhancingNLGEvaluation through Multidimensional Comparative Instruction-Following Analysis). A different use of the name \"LONGEVAL\" appears in a smaller set of the provided work, where it is defined as a benchmark for evaluating long document summarization factuality on scientific texts. This version is used to measure the construct of Faithfulness, with performance assessed via \"summary-level correlation metrics\" such as Kendall\u2019s Tau. Additionally, the long-context retrieval version of the benchmark is noted to have \"inspired the StreamEval dataset\" (Efficient Streaming Language Models with Attention Sinks).",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Efficient Streaming Language Models with Attention Sinks",
+      "IceFormer: Accelerated Inference with Long-Sequence Transformers on CPUs"
+    ],
+    "naacl25": [
+      "CAMIEval: EnhancingNLGEvaluation through Multidimensional Comparative Instruction-Following Analysis",
+      "COVE:COntext andVEracity prediction for out-of-context images"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "naacl25": 2
+  },
+  "conferences": [
+    "iclr24",
+    "naacl25"
+  ]
+}

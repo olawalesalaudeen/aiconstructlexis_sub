@@ -1,0 +1,97 @@
+{
+  "canonical_name": "NumGLUE",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, NumGLUE is consistently presented as a benchmark used to measure mathematical and numerical reasoning abilities in models. The definitions converge on describing it as a suite of tasks requiring an understanding of numerical concepts within natural language contexts. One paper specifies that the tasks it contains \"fundamentally involve arithmetic formula evaluation\" (Cache-Efficient Posterior Sampling for Reinforcement Learning withLLM-Derived Priors Across Discrete and Continuous Domains). In practice, multiple papers use NumGLUE to operationalize and evaluate the construct of mathematical reasoning. Its application is frequently situated alongside other mathematical reasoning datasets, with several sources mentioning it in conjunction with GSM8K and MATH.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "NumGLUE"
+  ],
+  "papers": [
+    "Cache-Efficient Posterior Sampling for Reinforcement Learning withLLM-Derived Priors Across Discrete and Continuous Domains",
+    "GRAID: Synthetic Data Generation with Geometric Constraints and Multi-Agentic Reflection for Harmful Content Detection",
+    "COAT: Compressing Optimizer states and Activations for Memory-Efficient FP8 Training",
+    "Mini-batch Coresets for Memory-efficient Language Model Training on Data Mixtures",
+    "ReGenesis: LLMs can Grow into Reasoning Generalists via Self-Improvement",
+    "BAdam: A Memory Efficient Full Parameter Optimization Method for Large Language Models",
+    "SmallToLarge (S2L): Scalable Data Selection for Fine-tuning Large Language Models by Summarizing Training Trajectories of Small Models"
+  ],
+  "paper_count": 7,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A suite of mathematical reasoning tasks that require understanding of numerical concepts and language.",
+      "paper": "SmallToLarge (S2L): Scalable Data Selection for Fine-tuning Large Language Models by Summarizing Training Trajectories of Small Models",
+      "original_name": "NumGLUE"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "SmallToLarge (S2L): Scalable Data Selection for Fine-tuning Large Language Models by Summarizing Training Trajectories of Small Models",
+      "evidence": "Mathematic reasoning: GSM8K math problem dataset (Cobbe et al., 2021) and NumGLUE dataset (Mishra et al., 2022). (Section 4.1.1)",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "neurips24": [
+          "SmallToLarge (S2L): Scalable Data Selection for Fine-tuning Large Language Models by Summarizing Training Trajectories of Small Models",
+          "BAdam: A Memory Efficient Full Parameter Optimization Method for Large Language Models"
+        ],
+        "iclr25": [
+          "Mini-batch Coresets for Memory-efficient Language Model Training on Data Mixtures"
+        ],
+        "emnlp25": [
+          "GRAID: Synthetic Data Generation with Geometric Constraints and Multi-Agentic Reflection for Harmful Content Detection"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction fine-tuning",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "COAT: Compressing Optimizer states and Activations for Memory-Efficient FP8 Training",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "COAT: Compressing Optimizer states and Activations for Memory-Efficient FP8 Training"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, NumGLUE is consistently presented as a benchmark used to measure mathematical and numerical reasoning abilities in models. The definitions converge on describing it as a suite of tasks requiring an understanding of numerical concepts within natural language contexts. One paper specifies that the tasks it contains \"fundamentally involve arithmetic formula evaluation\" (Cache-Efficient Posterior Sampling for Reinforcement Learning withLLM-Derived Priors Across Discrete and Continuous Domains). In practice, multiple papers use NumGLUE to operationalize and evaluate the construct of mathematical reasoning. Its application is frequently situated alongside other mathematical reasoning datasets, with several sources mentioning it in conjunction with GSM8K and MATH.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "BAdam: A Memory Efficient Full Parameter Optimization Method for Large Language Models",
+      "SmallToLarge (S2L): Scalable Data Selection for Fine-tuning Large Language Models by Summarizing Training Trajectories of Small Models"
+    ],
+    "iclr25": [
+      "COAT: Compressing Optimizer states and Activations for Memory-Efficient FP8 Training",
+      "Mini-batch Coresets for Memory-efficient Language Model Training on Data Mixtures",
+      "ReGenesis: LLMs can Grow into Reasoning Generalists via Self-Improvement"
+    ],
+    "emnlp25": [
+      "Cache-Efficient Posterior Sampling for Reinforcement Learning withLLM-Derived Priors Across Discrete and Continuous Domains",
+      "GRAID: Synthetic Data Generation with Geometric Constraints and Multi-Agentic Reflection for Harmful Content Detection"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 2,
+    "iclr25": 3,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "neurips24"
+  ]
+}

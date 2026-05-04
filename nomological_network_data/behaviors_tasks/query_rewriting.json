@@ -1,0 +1,126 @@
+{
+  "canonical_name": "Query rewriting",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, query rewriting is a behavior where a user's input, referred to as a \"query\" or \"prompt,\" is modified, typically by a large language model. The definitions vary in their stated goals, but a common framing is the transformation of an input to make it more effective for a downstream system. For instance, some papers define it as a process to \"align with the ground truth schema semantically\" for improved retrieval or to convert a natural language description into a more structured prompt for a generative model. Other definitions focus on enriching the input by adding \"visual details, stylistic elements, and aesthetic expectations\" or modifying it based on a \"specified constraint, such as an aspect and value.\" A related task, termed \"prompt polishing,\" aims to clean up user inputs by removing \"stylistic biases, platform-specific keywords, and conflicting information.\" The operationalization of this behavior consistently involves the use of LLMs, with papers citing models like GPT-3.5-turbo and GPT-4 for the task. This behavior is reported to be influenced by in-context learning and commonsense knowledge, and it is used to affect downstream image generation. It is also studied alongside other approaches to disambiguation.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Query rephrasing",
+    "Query rewriting",
+    "Prompt rewriting",
+    "Prompt polishing"
+  ],
+  "papers": [
+    "Bitune: Leveraging Bidirectional Attention to Improve Decoder-OnlyLLMs",
+    "DINTTransformer",
+    "DSG-MCTS: A Dynamic Strategy-GuidedMonteCarlo Tree Search for Diversified Reasoning in Large Language Models",
+    "Do You Know About My Nation? Investigating Multilingual Language Models\u2019 Cultural Literacy Through Factual Knowledge",
+    "Language-Guided Temporal Token Pruning for EfficientVideoLLMProcessing",
+    "MoR: Better Handling Diverse Queries with a Mixture of Sparse, Dense, and Human Retrievers",
+    "OmniThink: Expanding Knowledge Boundaries in Machine Writing through Thinking",
+    "AP-Adapter: Improving Generalization of Automatic Prompts on Unseen Text-to-Image Diffusion Models",
+    "Aligning Vision Models with Human Aesthetics in Retrieval: Benchmarks and Algorithms",
+    "Multimodal Large Language Models Make Text-to-Image Generative Models Align Better",
+    "Shopping MMLU: A Massive Multi-Task Online Shopping Benchmark for Large Language Models"
+  ],
+  "paper_count": 11,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The task of rewriting a user's search query, typically using an LLM, to enrich it with additional visual details, stylistic elements, and aesthetic expectations.",
+      "paper": "Aligning Vision Models with Human Aesthetics in Retrieval: Benchmarks and Algorithms",
+      "original_name": "Query rephrasing"
+    },
+    {
+      "text": "The task of modifying a given user query based on a specified constraint, such as an aspect and value.",
+      "paper": "Shopping MMLU: A Massive Multi-Task Online Shopping Benchmark for Large Language Models",
+      "original_name": "Query rewriting"
+    },
+    {
+      "text": "The task of transforming a natural language description into a more effective, structured prompt (e.g., a keyword-based prompt) for a generative model.",
+      "paper": "AP-Adapter: Improving Generalization of Automatic Prompts on Unseen Text-to-Image Diffusion Models",
+      "original_name": "Prompt rewriting"
+    },
+    {
+      "text": "The task of rewriting user-written text prompts to remove stylistic biases, platform-specific keywords, and conflicting information.",
+      "paper": "Multimodal Large Language Models Make Text-to-Image Generative Models Align Better",
+      "original_name": "Prompt polishing"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense knowledge",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Aligning Vision Models with Human Aesthetics in Retrieval: Benchmarks and Algorithms",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Aligning Vision Models with Human Aesthetics in Retrieval: Benchmarks and Algorithms"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Image generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "LLMs can see and hear without any training",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "LLMs can see and hear without any training"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Disambiguation",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Bitune: Leveraging Bidirectional Attention to Improve Decoder-OnlyLLMs",
+      "evidence": "we argue existing disambiguation works fall in three major policies... Query Rewriting, Middle. Long Form Answer Generation, Right. Asking Clarifying Questions. (Section 3, Figure 2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Bitune: Leveraging Bidirectional Attention to Improve Decoder-OnlyLLMs"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the provided literature, query rewriting is a behavior where a user's input, referred to as a \"query\" or \"prompt,\" is modified, typically by a large language model. The definitions vary in their stated goals, but a common framing is the transformation of an input to make it more effective for a downstream system. For instance, some papers define it as a process to \"align with the ground truth schema semantically\" for improved retrieval or to convert a natural language description into a more structured prompt for a generative model. Other definitions focus on enriching the input by adding \"visual details, stylistic elements, and aesthetic expectations\" or modifying it based on a \"specified constraint, such as an aspect and value.\" A related task, termed \"prompt polishing,\" aims to clean up user inputs by removing \"stylistic biases, platform-specific keywords, and conflicting information.\" The operationalization of this behavior consistently involves the use of LLMs, with papers citing models like GPT-3.5-turbo and GPT-4 for the task. This behavior is reported to be influenced by in-context learning and commonsense knowledge, and it is used to affect downstream image generation. It is also studied alongside other approaches to disambiguation.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "AP-Adapter: Improving Generalization of Automatic Prompts on Unseen Text-to-Image Diffusion Models",
+      "Aligning Vision Models with Human Aesthetics in Retrieval: Benchmarks and Algorithms",
+      "Multimodal Large Language Models Make Text-to-Image Generative Models Align Better",
+      "Shopping MMLU: A Massive Multi-Task Online Shopping Benchmark for Large Language Models"
+    ],
+    "emnlp25": [
+      "Bitune: Leveraging Bidirectional Attention to Improve Decoder-OnlyLLMs",
+      "DINTTransformer",
+      "DSG-MCTS: A Dynamic Strategy-GuidedMonteCarlo Tree Search for Diversified Reasoning in Large Language Models",
+      "Do You Know About My Nation? Investigating Multilingual Language Models\u2019 Cultural Literacy Through Factual Knowledge",
+      "Language-Guided Temporal Token Pruning for EfficientVideoLLMProcessing",
+      "MoR: Better Handling Diverse Queries with a Mixture of Sparse, Dense, and Human Retrievers",
+      "OmniThink: Expanding Knowledge Boundaries in Machine Writing through Thinking"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 4,
+    "emnlp25": 7
+  },
+  "conferences": [
+    "emnlp25",
+    "neurips24"
+  ]
+}

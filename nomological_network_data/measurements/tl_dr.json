@@ -1,0 +1,97 @@
+{
+  "canonical_name": "TL;DR",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, TL;DR is characterized in two distinct ways: as a dataset and as an LM-based evaluation procedure. One framing describes it as a \"curated collection of Reddit posts\" for research, as noted in \"Through the Valley: Path to Effective LongCoTTraining for Small Language Models\". The other prevalent framing, found in works like \"The Impossibility of FairLLMs\", defines it as a benchmark where a model like GPT-4 evaluates the quality of summaries by judging the \"win-rate between model\u2019s generation and ground truth answer\". The most common application of TL;DR is to measure the behavior of Text summarization, with papers operationalizing this by either evaluating on the dataset's test set or by employing the specific judge-model protocol. A smaller set of papers also reports using TL;DR as a measurement instrument for the construct of Human preference alignment.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "TL;DR"
+  ],
+  "papers": [
+    "Marco-o1 v2: Towards Widening The Distillation Bottleneck for Reasoning Models",
+    "Text-to-ESBench: A Comprehensive Benchmark for Converting Natural Language toElasticsearch Query",
+    "The Impossibility of FairLLMs",
+    "Veracity Bias and Beyond: UncoveringLLMs\u2019 Hidden Beliefs in Problem-Solving Reasoning",
+    "PanicToCalm: A Proactive Counseling Agent for Panic Attacks",
+    "Through the Valley: Path to Effective LongCoTTraining for Small Language Models"
+  ],
+  "paper_count": 6,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A summarization benchmark where GPT-4 evaluates the quality of model-generated summaries against reference summaries using win-rate metrics.",
+      "paper": "The Impossibility of FairLLMs",
+      "original_name": "TL;DR"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text summarization",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "MA-RLHF: Reinforcement Learning from Human Feedback with Macro Actions",
+      "evidence": "For the summarization task, we follow (Rafailov et al., 2024b) and evaluate the win rate against the base model, using GPT-4o as the judge model on 256 randomly sampled test cases from the TL;DR test set.",
+      "paper_count": 5,
+      "papers_by_conference": {
+        "iclr25": [
+          "MA-RLHF: Reinforcement Learning from Human Feedback with Macro Actions",
+          "TIS-DPO: Token-level Importance Sampling for Direct Preference Optimization With Estimated Weights"
+        ],
+        "acl25": [
+          "Veracity Bias and Beyond: UncoveringLLMs\u2019 Hidden Beliefs in Problem-Solving Reasoning"
+        ],
+        "icml25": [
+          "Design Considerations in Offline Preference-based RL"
+        ],
+        "emnlp25": [
+          "Through the Valley: Path to Effective LongCoTTraining for Small Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Alignment",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "SeRA: Self-Reviewing and Alignment of LLMs using Implicit Reward Margins",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "SeRA: Self-Reviewing and Alignment of LLMs using Implicit Reward Margins"
+        ],
+        "icml25": [
+          "RLTHF: Targeted Human Feedback for LLM Alignment"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, TL;DR is characterized in two distinct ways: as a dataset and as an LM-based evaluation procedure. One framing describes it as a \"curated collection of Reddit posts\" for research, as noted in \"Through the Valley: Path to Effective LongCoTTraining for Small Language Models\". The other prevalent framing, found in works like \"The Impossibility of FairLLMs\", defines it as a benchmark where a model like GPT-4 evaluates the quality of summaries by judging the \"win-rate between model\u2019s generation and ground truth answer\". The most common application of TL;DR is to measure the behavior of Text summarization, with papers operationalizing this by either evaluating on the dataset's test set or by employing the specific judge-model protocol. A smaller set of papers also reports using TL;DR as a measurement instrument for the construct of Human preference alignment.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Marco-o1 v2: Towards Widening The Distillation Bottleneck for Reasoning Models",
+      "Text-to-ESBench: A Comprehensive Benchmark for Converting Natural Language toElasticsearch Query",
+      "The Impossibility of FairLLMs",
+      "Veracity Bias and Beyond: UncoveringLLMs\u2019 Hidden Beliefs in Problem-Solving Reasoning"
+    ],
+    "emnlp25": [
+      "PanicToCalm: A Proactive Counseling Agent for Panic Attacks",
+      "Through the Valley: Path to Effective LongCoTTraining for Small Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 4,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "canonical_name": "Key-value retrieval",
+  "type": "behavior",
+  "canonical_definition": "Key-value retrieval is presented in the provided literature as a task for evaluating a model's ability to process long contexts. It is consistently defined as the task of \"extracting the correct value corresponding to a given key from a context containing multiple key-value pairs\" (\"Mixture of In-Context Experts Enhance LLMs' Long Context Awareness\"). This behavior is operationalized using prompts that contain numerous, sometimes randomly generated, key-value string pairs. The primary application of this task is to measure constructs such as \"context awareness\" and \"context utilization\". As one paper states, its purpose is to \"evaluate the model\u2019s ability to extract the correct value corresponding to a given query from the context\" (\"Mixture of In-Context Experts Enhance LLMs' Long Context Awareness\"). Performance on the key-value retrieval task is measured using instruments like the InfiniteBench benchmark.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Key-value retrieval"
+  ],
+  "papers": [
+    "An Efficient Recipe for Long Context Extension via Middle-Focused Positional Encoding",
+    "Found in the Middle: How Language Models Use Long Contexts Better via Plug-and-Play Positional Encoding",
+    "Mixture of In-Context Experts Enhance LLMs' Long Context Awareness"
+  ],
+  "paper_count": 3,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The task of extracting the correct value corresponding to a given key from a context containing multiple key-value pairs.",
+      "paper": "Mixture of In-Context Experts Enhance LLMs' Long Context Awareness",
+      "original_name": "Key-value retrieval"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Context utilization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Found in the Middle: How Language Models Use Long Contexts Better via Plug-and-Play Positional Encoding",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Found in the Middle: How Language Models Use Long Contexts Better via Plug-and-Play Positional Encoding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "InfiniteBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Scaling Instruction-tuned LLMs to Million-token Contexts via Hierarchical Synthetic Data Generation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Scaling Instruction-tuned LLMs to Million-token Contexts via Hierarchical Synthetic Data Generation"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 1,
+  "characterization": "Key-value retrieval is presented in the provided literature as a task for evaluating a model's ability to process long contexts. It is consistently defined as the task of \"extracting the correct value corresponding to a given key from a context containing multiple key-value pairs\" (\"Mixture of In-Context Experts Enhance LLMs' Long Context Awareness\"). This behavior is operationalized using prompts that contain numerous, sometimes randomly generated, key-value string pairs. The primary application of this task is to measure constructs such as \"context awareness\" and \"context utilization\". As one paper states, its purpose is to \"evaluate the model\u2019s ability to extract the correct value corresponding to a given query from the context\" (\"Mixture of In-Context Experts Enhance LLMs' Long Context Awareness\"). Performance on the key-value retrieval task is measured using instruments like the InfiniteBench benchmark.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "An Efficient Recipe for Long Context Extension via Middle-Focused Positional Encoding",
+      "Found in the Middle: How Language Models Use Long Contexts Better via Plug-and-Play Positional Encoding",
+      "Mixture of In-Context Experts Enhance LLMs' Long Context Awareness"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 3
+  },
+  "conferences": [
+    "neurips24"
+  ]
+}

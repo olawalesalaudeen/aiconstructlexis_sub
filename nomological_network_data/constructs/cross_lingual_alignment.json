@@ -1,0 +1,170 @@
+{
+  "canonical_name": "Cross-lingual alignment",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, Cross-lingual alignment is predominantly described as a latent ability of multilingual models to transfer knowledge across languages, particularly in zero-shot settings. This is commonly understood to be achieved by mapping semantically equivalent texts from different languages to similar or \"geometrically closer\" representations within a shared semantic space. A smaller set of papers frame this as \"language-agnostic semantic processing,\" where the model processes meaning independently of the input language by converging representations. The field operationalizes and measures this construct through performance on multilingual benchmarks, with papers in this set using XNLI, MKQA, and CoVoST 2 for evaluation. This alignment is consistently positioned as the foundation for cross-lingual knowledge transfer and is also studied in the context of information retrieval. Some sources specify that this alignment is \"typically achieved by training on parallel data\" or by using \"structural and lexical cues.\" While generally presented as a desirable property, one paper suggests a potential trade-off, noting that alignment training can distort \"the optimal monolingual structure of semantic spaces of individual languages.\"",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Cross-lingual alignment",
+    "Multilingual alignment",
+    "Multilingual representation alignment",
+    "Multilingual semantic alignment",
+    "Language-agnostic semantic processing"
+  ],
+  "papers": [
+    "AfroCS-xs: Creating a Compact, High-Quality, Human-Validated Code-Switched Dataset forAfrican Languages",
+    "AndroidLab: Training and Systematic Benchmarking of Android Autonomous Agents",
+    "Inference Compute-Optimal Video Vision Language Models",
+    "SEAL: Scaling to Emphasize Attention for Long-Context Retrieval",
+    "2025.emnlp-main.328.checklist",
+    "C3: A Bilingual Benchmark for Spoken Dialogue Models Exploring Challenges in Complex Conversations",
+    "CoEvo: Coevolution ofLLMand Retrieval Model for Domain-Specific Information Retrieval",
+    "From Understanding to Generation: An Efficient Shortcut for Evaluating Language Models",
+    "HookMoE: A learnable performance compensation strategy of Mixture-of-Experts forLLMinference acceleration",
+    "Label Set Optimization via Activation Distribution Kurtosis for Zero-Shot Classification with Generative Models",
+    "LyapLock: Bounded Knowledge Preservation in Sequential Large Language Model Editing",
+    "Robust Adaptation of Large Multimodal Models for Retrieval Augmented Hateful Meme Detection",
+    "Headless Language Models: Learning without Predicting with Contrastive Weight Tying",
+    "Large Multilingual Models Pivot Zero-Shot Multimodal Learning across Languages"
+  ],
+  "paper_count": 14,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The latent ability of a multilingual model to transfer knowledge across languages, particularly in zero-shot settings.",
+      "paper": "Headless Language Models: Learning without Predicting with Contrastive Weight Tying",
+      "original_name": "Cross-lingual alignment"
+    },
+    {
+      "text": "The latent ability of a language model to produce similar representations for semantically equivalent texts across different languages, forming the foundation for cross-lingual transfer.",
+      "paper": "Large Multilingual Models Pivot Zero-Shot Multimodal Learning across Languages",
+      "original_name": "Multilingual alignment"
+    },
+    {
+      "text": "The process and resulting state of making the hidden-state representations of multilingual concepts more similar or geometrically closer within the model's semantic space.",
+      "paper": "LyapLock: Bounded Knowledge Preservation in Sequential Large Language Model Editing",
+      "original_name": "Multilingual representation alignment"
+    },
+    {
+      "text": "The latent ability to map concepts and meanings across languages using structural and lexical cues to support cross-lingual inference.",
+      "paper": "HookMoE: A learnable performance compensation strategy of Mixture-of-Experts forLLMinference acceleration",
+      "original_name": "Multilingual semantic alignment"
+    },
+    {
+      "text": "The latent ability of a multilingual LLM to process meaning independently of input language by converging representations into a shared semantic latent space where reasoning occurs.",
+      "paper": "Label Set Optimization via Activation Distribution Kurtosis for Zero-Shot Classification with Generative Models",
+      "original_name": "Language-agnostic semantic processing"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "XNLI",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Headless Language Models: Learning without Predicting with Contrastive Weight Tying",
+      "evidence": "In this section, we pretrain small multilingual MLMs and evaluate their performance on the XNLI dataset (Conneau et al., 2018). (Section 5)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Headless Language Models: Learning without Predicting with Contrastive Weight Tying"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MKQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "CoEvo: Coevolution ofLLMand Retrieval Model for Domain-Specific Information Retrieval",
+      "evidence": "Notably, it achieves significant improvements of +3.6% R@20 and +5.7% nDCG@10 over the strongest baseline (M3-Embedding), demonstrating superior cross-lingual alignment capability. (Section 4.4)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "CoEvo: Coevolution ofLLMand Retrieval Model for Domain-Specific Information Retrieval"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Information retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "C3: A Bilingual Benchmark for Spoken Dialogue Models Exploring Challenges in Complex Conversations",
+      "evidence": "Cross-lingual context retrieval (extracting contextual information in one language based on requests in another) is a fundamental aspect of cross-lingual alignment (Abstract).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "C3: A Bilingual Benchmark for Spoken Dialogue Models Exploring Challenges in Complex Conversations"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CoVoST 2",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Robust Adaptation of Large Multimodal Models for Retrieval Augmented Hateful Meme Detection",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Robust Adaptation of Large Multimodal Models for Retrieval Augmented Hateful Meme Detection"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Knowledge transfer",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "LyapLock: Bounded Knowledge Preservation in Sequential Large Language Model Editing",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "LyapLock: Bounded Knowledge Preservation in Sequential Large Language Model Editing"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 5,
+  "characterization": "Across the surveyed literature, Cross-lingual alignment is predominantly described as a latent ability of multilingual models to transfer knowledge across languages, particularly in zero-shot settings. This is commonly understood to be achieved by mapping semantically equivalent texts from different languages to similar or \"geometrically closer\" representations within a shared semantic space. A smaller set of papers frame this as \"language-agnostic semantic processing,\" where the model processes meaning independently of the input language by converging representations. The field operationalizes and measures this construct through performance on multilingual benchmarks, with papers in this set using XNLI, MKQA, and CoVoST 2 for evaluation. This alignment is consistently positioned as the foundation for cross-lingual knowledge transfer and is also studied in the context of information retrieval. Some sources specify that this alignment is \"typically achieved by training on parallel data\" or by using \"structural and lexical cues.\" While generally presented as a desirable property, one paper suggests a potential trade-off, noting that alignment training can distort \"the optimal monolingual structure of semantic spaces of individual languages.\"",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Headless Language Models: Learning without Predicting with Contrastive Weight Tying",
+      "Large Multilingual Models Pivot Zero-Shot Multimodal Learning across Languages"
+    ],
+    "acl25": [
+      "AfroCS-xs: Creating a Compact, High-Quality, Human-Validated Code-Switched Dataset forAfrican Languages",
+      "AndroidLab: Training and Systematic Benchmarking of Android Autonomous Agents",
+      "Inference Compute-Optimal Video Vision Language Models",
+      "SEAL: Scaling to Emphasize Attention for Long-Context Retrieval"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.328.checklist",
+      "C3: A Bilingual Benchmark for Spoken Dialogue Models Exploring Challenges in Complex Conversations",
+      "CoEvo: Coevolution ofLLMand Retrieval Model for Domain-Specific Information Retrieval",
+      "From Understanding to Generation: An Efficient Shortcut for Evaluating Language Models",
+      "HookMoE: A learnable performance compensation strategy of Mixture-of-Experts forLLMinference acceleration",
+      "Label Set Optimization via Activation Distribution Kurtosis for Zero-Shot Classification with Generative Models",
+      "LyapLock: Bounded Knowledge Preservation in Sequential Large Language Model Editing",
+      "Robust Adaptation of Large Multimodal Models for Retrieval Augmented Hateful Meme Detection"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "acl25": 4,
+    "emnlp25": 8
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24"
+  ]
+}

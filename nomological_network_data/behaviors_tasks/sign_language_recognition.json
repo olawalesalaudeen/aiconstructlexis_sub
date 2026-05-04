@@ -1,0 +1,140 @@
+{
+  "canonical_name": "Sign language recognition",
+  "type": "behavior",
+  "canonical_definition": "The task of classifying pre-segmented video clips of individual sign language movements into their corresponding labels.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Continuous sign language recognition",
+    "Isolated sign language recognition",
+    "Sign language identification"
+  ],
+  "papers": [
+    "Uni-Sign: Toward Unified Sign Language Understanding at Scale",
+    "YouTube-SL-25: A Large-Scale, Open-Domain Multilingual Sign Language Parallel Corpus"
+  ],
+  "paper_count": 2,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The task of classifying pre-segmented video clips of individual sign language movements into their corresponding labels.",
+      "paper": "Uni-Sign: Toward Unified Sign Language Understanding at Scale",
+      "original_name": "Isolated sign language recognition"
+    },
+    {
+      "text": "The task of transcribing a continuous, unsegmented sign language video into a sequence of corresponding sign glosses.",
+      "paper": "Uni-Sign: Toward Unified Sign Language Understanding at Scale",
+      "original_name": "Continuous sign language recognition"
+    },
+    {
+      "text": "The task of classifying which sign language is being used in a given video input.",
+      "paper": "YouTube-SL-25: A Large-Scale, Open-Domain Multilingual Sign Language Parallel Corpus",
+      "original_name": "Sign language identification"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge transfer",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "YouTube-SL-25: A Large-Scale, Open-Domain Multilingual Sign Language Parallel Corpus",
+      "evidence": "We see that on both translation and lang id, sign language pretraining is substantially better than none (as in Uthus et al. [35]) and multilingual transfer helps both the higher-resource sign language (ASL) and the lower-resource sign languages within YouTube-SL-25.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "YouTube-SL-25: A Large-Scale, Open-Domain Multilingual Sign Language Parallel Corpus"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "FLEURS-ASL",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "YouTube-SL-25: A Large-Scale, Open-Domain Multilingual Sign Language Parallel Corpus",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "YouTube-SL-25: A Large-Scale, Open-Domain Multilingual Sign Language Parallel Corpus"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "How2Sign",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "YouTube-SL-25: A Large-Scale, Open-Domain Multilingual Sign Language Parallel Corpus",
+      "evidence": "\u201cFor sign language identification, zero-shot scores mean that the model is briefly finetuned on YouTube-SL-25 rebalanced to the 4 sign languages with equal weight, and finetuned scores mean that the model is finetuned on an equally weighted mixture of the benchmarks\u2019 training sets. We don\u2019t finetune on FLEURS-ASL, so the finetuned langid scores are after finetuning on How2Sign.\u201d",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "YouTube-SL-25: A Large-Scale, Open-Domain Multilingual Sign Language Parallel Corpus"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Sign language understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Uni-Sign: Toward Unified Sign Language Understanding at Scale",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Uni-Sign: Toward Unified Sign Language Understanding at Scale"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Fine-grained understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Uni-Sign: Toward Unified Sign Language Understanding at Scale",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Uni-Sign: Toward Unified Sign Language Understanding at Scale"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Uni-Sign: Toward Unified Sign Language Understanding at Scale",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Uni-Sign: Toward Unified Sign Language Understanding at Scale"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 6,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 4,
+  "characterization": "The task of classifying pre-segmented video clips of individual sign language movements into their corresponding labels.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Uni-Sign: Toward Unified Sign Language Understanding at Scale",
+      "YouTube-SL-25: A Large-Scale, Open-Domain Multilingual Sign Language Parallel Corpus"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2
+  },
+  "conferences": [
+    "iclr25"
+  ]
+}

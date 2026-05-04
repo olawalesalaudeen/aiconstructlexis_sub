@@ -1,0 +1,106 @@
+{
+  "canonical_name": "Memory management",
+  "type": "construct",
+  "canonical_definition": "The most common framing of memory management is an agent's ability to store, retrieve, summarize, and update past experiences to inform later decisions. Some work uses the term \"sustained context management\" to emphasize maintaining relevant information across multiple conversational turns, while a more specialized view of \"context management\" focuses on filtering irrelevant data during code exploration to prevent misleading the agent. This construct is primarily operationalized and measured using the Berkeley Function Calling Leaderboard (BFCL), which assesses it through multi-turn queries. The evaluation specifically probes a model's ability to \"accurately retrieve, add, overwrite, or delete information\" from a stored snapshot, independent of the immediate chat history. This is presented as a difficult task, with one paper noting that current models achieve low accuracy. Memory management is studied alongside information retrieval and is reported in one paper to be a cause of self-correction. Within some agent frameworks, it is described as the \"foundation\" for accumulating historical experience.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Memory management",
+    "Context management",
+    "Sustained context management"
+  ],
+  "papers": [
+    "OrcaLoca: An LLM Agent Framework for Software Issue Localization",
+    "The Berkeley Function Calling Leaderboard (BFCL): From Tool Use to Agentic Evaluation of Large Language Models",
+    "Boosting the Potential of Large Language Models with an Intelligent Information Assistant",
+    "Richelieu: Self-Evolving LLM-Based Agents for AI Diplomacy"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The ability to store, retrieve, summarize, and update past experiences so they can inform later decisions.",
+      "paper": "Richelieu: Self-Evolving LLM-Based Agents for AI Diplomacy",
+      "original_name": "Memory management"
+    },
+    {
+      "text": "The ability to maintain relevant conversational or task context across multiple turns and use it correctly in later actions.",
+      "paper": "The Berkeley Function Calling Leaderboard (BFCL): From Tool Use to Agentic Evaluation of Large Language Models",
+      "original_name": "Sustained context management"
+    },
+    {
+      "text": "The ability of an LLM agent to maintain a relevant and concise working context during code exploration by filtering out irrelevant or redundant information that could mislead the localization process.",
+      "paper": "OrcaLoca: An LLM Agent Framework for Software Issue Localization",
+      "original_name": "Context management"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Self-correction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Richelieu: Self-Evolving LLM-Based Agents for AI Diplomacy",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Richelieu: Self-Evolving LLM-Based Agents for AI Diplomacy"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Information retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Boosting the Potential of Large Language Models with an Intelligent Information Assistant",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Boosting the Potential of Large Language Models with an Intelligent Information Assistant"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BFCL",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "The Berkeley Function Calling Leaderboard (BFCL): From Tool Use to Agentic Evaluation of Large Language Models",
+      "evidence": "\"the \u2018multi-turn\u2019 featuring eight curated API suites and 1000 queries, assessing sustained context management and dynamic decision-making\"",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "The Berkeley Function Calling Leaderboard (BFCL): From Tool Use to Agentic Evaluation of Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 2,
+  "characterization": "The most common framing of memory management is an agent's ability to store, retrieve, summarize, and update past experiences to inform later decisions. Some work uses the term \"sustained context management\" to emphasize maintaining relevant information across multiple conversational turns, while a more specialized view of \"context management\" focuses on filtering irrelevant data during code exploration to prevent misleading the agent. This construct is primarily operationalized and measured using the Berkeley Function Calling Leaderboard (BFCL), which assesses it through multi-turn queries. The evaluation specifically probes a model's ability to \"accurately retrieve, add, overwrite, or delete information\" from a stored snapshot, independent of the immediate chat history. This is presented as a difficult task, with one paper noting that current models achieve low accuracy. Memory management is studied alongside information retrieval and is reported in one paper to be a cause of self-correction. Within some agent frameworks, it is described as the \"foundation\" for accumulating historical experience.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "Boosting the Potential of Large Language Models with an Intelligent Information Assistant",
+      "Richelieu: Self-Evolving LLM-Based Agents for AI Diplomacy"
+    ],
+    "icml25": [
+      "OrcaLoca: An LLM Agent Framework for Software Issue Localization",
+      "The Berkeley Function Calling Leaderboard (BFCL): From Tool Use to Agentic Evaluation of Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 2,
+    "icml25": 2
+  },
+  "conferences": [
+    "icml25",
+    "neurips24"
+  ]
+}

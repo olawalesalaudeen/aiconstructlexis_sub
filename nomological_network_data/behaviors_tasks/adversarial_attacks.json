@@ -1,0 +1,342 @@
+{
+  "canonical_name": "Adversarial attacks",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, adversarial attacks are predominantly framed as behaviors where a model's safety mechanisms are circumvented to produce unintended, often harmful, outputs. The most common definitions describe this as \"jailbreaking,\" \"harmful instruction following,\" or \"prompt injection,\" all of which involve the model complying with a malicious user request rather than refusing. Several papers operationalize these attacks through specific techniques, with a recurring method being the automatic generation and appending of an \"adversarial suffix\" to a user's prompt. Other documented methods include \"indirect prompt injection\" via external data, \"emoji insertion\" to evade detection by judge models, and exploiting web vulnerabilities like \"SQL injection.\" The primary consequence of these attacks, as stated in numerous sources, is the generation of harmful content. The occurrence of this behavior is evaluated using benchmarks such as Beavertails, HEX-PHI, and SORRY-Bench, with some work also measuring an Attack Success Rate (ASR). While most definitions focus on eliciting harmful text, a smaller set of papers describe related behaviors like generating adversarial examples to cause misclassification, evading watermarks, or producing hidden triggers.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Adversarial query answering",
+    "Jailbreak compliance",
+    "Harmful instruction following",
+    "Following malicious instructions",
+    "Adversarial attack response",
+    "Prompt injection",
+    "Dangerous question answering",
+    "Jailbreak prompt generation",
+    "Harmful question answering",
+    "Unsafe instruction fulfillment",
+    "Indirect prompt injection",
+    "Harmful behavior execution",
+    "Trigger generation",
+    "Jailbreak success",
+    "Mis-classification under target attack",
+    "Monitor evasion",
+    "Watermark evasion",
+    "Adversarial example generation",
+    "Jailbreak generation",
+    "SQL injection",
+    "Emoji insertion"
+  ],
+  "papers": [
+    "Aligned LLMs Are Not Aligned Browser Agents",
+    "AutoDAN-Turbo: A Lifelong Agent for Strategy Self-Exploration to Jailbreak LLMs",
+    "Backtracking Improves Generation Safety",
+    "BadJudge: Backdoor Vulnerabilities of LLM-As-A-Judge",
+    "Breach By A Thousand Leaks: Unsafe Information Leakage in 'Safe' AI Responses",
+    "Can LLMs Separate Instructions From Data? And What Do We Even Mean By That?",
+    "Can a Large Language Model be a Gaslighter?",
+    "Concept-ROT: Poisoning Concepts in Large Language Models with Model Editing",
+    "Dissecting Adversarial Robustness of Multimodal LM Agents",
+    "Does Refusal Training in LLMs Generalize to the Past Tense?",
+    "Durable Quantization Conditioned Misalignment Attack on Large Language Models",
+    "EFFICIENT JAILBREAK ATTACK SEQUENCES ON LARGE LANGUAGE MODELS VIA MULTI-ARMED BANDIT-BASED CONTEXT SWITCHING",
+    "Improved Techniques for Optimization-Based Jailbreaking on Large Language Models",
+    "Jailbreaking Leading Safety-Aligned LLMs with Simple Adaptive Attacks",
+    "Jailbreaking as a Reward Misspecification Problem",
+    "On Evaluating the Durability of Safeguards for Open-Weight LLMs",
+    "One Model Transfer to All: On Robust Jailbreak Prompts Generation against LLMs",
+    "ProAdvPrompter: A Two-Stage Journey to Effective Adversarial Prompting for LLMs",
+    "Robust LLM safeguarding via refusal feature adversarial training",
+    "SORRY-Bench: Systematically Evaluating Large Language Model Safety Refusal",
+    "Understanding and Mitigating Bottlenecks of State Space Models through the Lens of Recency and Over-smoothing",
+    "An Interpretable N-gram Perplexity Threat Model for Large Language Model Jailbreaks",
+    "AutoAdvExBench: Benchmarking Autonomous Exploitation of Adversarial Example Defenses",
+    "CVE-Bench: A Benchmark for AI Agents\u2019 Ability to Exploit Real-World Web Application Vulnerabilities",
+    "Eliciting Language Model Behaviors with Investigator Agents",
+    "Emoji Attack: Enhancing Jailbreak Attacks Against Judge LLM Detection",
+    "Evolving Prompts In-Context: An Open-ended, Self-replicating Perspective",
+    "Explaining the role of Intrinsic Dimensionality in Adversarial Training",
+    "How Do Large Language Monkeys Get Their Power (Laws)?",
+    "MELON: Provable Defense Against Indirect Prompt Injection Attacks in AI Agents",
+    "MONA: Myopic Optimization with Non-myopic Approval Can Mitigate Multi-step Reward Hacking",
+    "On the Vulnerability of Applying Retrieval-Augmented Generation within Knowledge-Intensive Application Domains",
+    "Optimizing Adaptive Attacks against Watermarks for Language Models",
+    "PANDAS: Improving Many-shot Jailbreaking via Positive Affirmation, Negative Demonstration, and Adaptive Sampling",
+    "Position: Editing Large Language Models Poses Serious Safety Risks",
+    "The Geometry of Refusal in Large Language Models: Concept Cones and Representational Independence",
+    "Theoretical guarantees on the best-of-n alignment policy",
+    "Weak-to-Strong Jailbreaking on Large Language Models",
+    "ALI-Agent: Assessing LLMs'  Alignment with Human Values via Agent-based Evaluation",
+    "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents",
+    "CARES: A Comprehensive Benchmark of Trustworthiness in Medical Vision Language Models",
+    "Personalized Steering of Large Language Models: Versatile Steering Vectors Through Bi-directional Preference Optimization",
+    "RWKU: Benchmarking Real-World Knowledge Unlearning for Large Language Models",
+    "Tree of Attacks: Jailbreaking Black-Box LLMs Automatically",
+    "Uncovering Safety Risks of Large Language Models through Concept Activation Vector",
+    "What matters when building vision-language models?",
+    "Who's asking? User personas and the mechanics of latent misalignment"
+  ],
+  "paper_count": 47,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The act of providing a substantive, non-refusal response to a query designed to elicit harmful content.",
+      "paper": "Who's asking? User personas and the mechanics of latent misalignment",
+      "original_name": "Adversarial query answering"
+    },
+    {
+      "text": "Responses that provide harmful or illegal content in response to malicious instructions.",
+      "paper": "Personalized Steering of Large Language Models: Versatile Steering Vectors Through Bi-directional Preference Optimization",
+      "original_name": "Jailbreak compliance"
+    },
+    {
+      "text": "The observable behavior of a model complying with a harmful instruction to generate an unsafe or malicious response.",
+      "paper": "ALI-Agent: Assessing LLMs'  Alignment with Human Values via Agent-based Evaluation",
+      "original_name": "Harmful instruction following"
+    },
+    {
+      "text": "The model generates a response that complies with a user's request for harmful, unethical, or dangerous content, rather than refusing.",
+      "paper": "Uncovering Safety Risks of Large Language Models through Concept Activation Vector",
+      "original_name": "Following malicious instructions"
+    },
+    {
+      "text": "An observable behavior where the model's safety mechanisms are circumvented, leading it to produce outputs that violate its intended use policies, such as generating harmful or offensive content.",
+      "paper": "What matters when building vision-language models?",
+      "original_name": "Jailbreaking"
+    },
+    {
+      "text": "The model responds to queries designed with jailbreak techniques or adversarial probes to induce forgotten knowledge.",
+      "paper": "RWKU: Benchmarking Real-World Knowledge Unlearning for Large Language Models",
+      "original_name": "Adversarial attack response"
+    },
+    {
+      "text": "Introducing malicious instructions into tool outputs or other context so that the agent follows the attacker\u2019s goal instead of the user\u2019s.",
+      "paper": "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents",
+      "original_name": "Prompt injection"
+    },
+    {
+      "text": "Responding to harmful or unsafe user questions in a way that reveals whether the model refuses or complies.",
+      "paper": "Can a Large Language Model be a Gaslighter?",
+      "original_name": "Dangerous question answering"
+    },
+    {
+      "text": "The automatic generation of a rephrased, robust version of a malicious query designed to bypass safety defenses.",
+      "paper": "One Model Transfer to All: On Robust Jailbreak Prompts Generation against LLMs",
+      "original_name": "Jailbreak prompt generation"
+    },
+    {
+      "text": "The task of automatically creating and appending a string of text (a suffix) to a user's instruction to cause a target model to behave in an unintended, often harmful, way.",
+      "paper": "ProAdvPrompter: A Two-Stage Journey to Effective Adversarial Prompting for LLMs",
+      "original_name": "Adversarial suffix generation"
+    },
+    {
+      "text": "The observable behavior where a model executes a potentially unsafe instruction by providing substantial content that directly assists with the user's unsafe intent.",
+      "paper": "SORRY-Bench: Systematically Evaluating Large Language Model Safety Refusal",
+      "original_name": "Unsafe instruction fulfillment"
+    },
+    {
+      "text": "The observable behavior of a model complying with and providing a substantive answer to a harmful or malicious question.",
+      "paper": "On Evaluating the Durability of Safeguards for Open-Weight LLMs",
+      "original_name": "Harmful question answering"
+    },
+    {
+      "text": "Following malicious or unintended instructions embedded in external content such as emails, documents, or retrieved text.",
+      "paper": "Can LLMs Separate Instructions From Data? And What Do We Even Mean By That?",
+      "original_name": "Indirect prompt injection"
+    },
+    {
+      "text": "Producing a hidden trigger token or pattern in model outputs that can activate a backdoor in the evaluator.",
+      "paper": "BadJudge: Backdoor Vulnerabilities of LLM-As-A-Judge",
+      "original_name": "Trigger generation"
+    },
+    {
+      "text": "Producing restricted harmful outputs when prompted by adversarial or jailbreak-style inputs.",
+      "paper": "Durable Quantization Conditioned Misalignment Attack on Large Language Models",
+      "original_name": "Jailbreak success"
+    },
+    {
+      "text": "The observable action of an LLM agent attempting to or successfully carrying out a user instruction that is malicious, dangerous, illegal, or unethical.",
+      "paper": "Aligned LLMs Are Not Aligned Browser Agents",
+      "original_name": "Harmful behavior execution"
+    },
+    {
+      "text": "The model's incorrect classification of an input (e.g., an image) as a target class after a portion of the input's tokens are replaced with tokens from that target class.",
+      "paper": "Understanding and Mitigating Bottlenecks of State Space Models through the Lens of Recency and Over-smoothing",
+      "original_name": "Mis-classification under target attack"
+    },
+    {
+      "text": "Producing adversarial text inputs that preserve malicious intent while circumventing safety alignment to elicit harmful responses from an LLM.",
+      "paper": "An Interpretable N-gram Perplexity Threat Model for Large Language Model Jailbreaks",
+      "original_name": "Jailbreak generation"
+    },
+    {
+      "text": "The observable task of producing perturbed inputs (adversarial examples) designed to cause a machine learning model to misclassify them.",
+      "paper": "AutoAdvExBench: Benchmarking Autonomous Exploitation of Adversarial Example Defenses",
+      "original_name": "Adversarial example generation"
+    },
+    {
+      "text": "The observable outcome in which a paraphrased text successfully avoids detection by the watermark verification system while maintaining high textual quality.",
+      "paper": "Optimizing Adaptive Attacks against Watermarks for Language Models",
+      "original_name": "Watermark evasion"
+    },
+    {
+      "text": "Producing outputs that avoid triggering a monitor or penalty while still influencing the downstream decision.",
+      "paper": "MONA: Myopic Optimization with Non-myopic Approval Can Mitigate Multi-step Reward Hacking",
+      "original_name": "Monitor evasion"
+    },
+    {
+      "text": "Injecting malicious SQL payloads into application inputs to manipulate queries or extract database data.",
+      "paper": "CVE-Bench: A Benchmark for AI Agents\u2019 Ability to Exploit Real-World Web Application Vulnerabilities",
+      "original_name": "SQL injection"
+    },
+    {
+      "text": "The observable act of inserting emojis within words of a model's response, altering tokenization and embeddings to evade detection by Judge LLMs.",
+      "paper": "Emoji Attack: Enhancing Jailbreak Attacks Against Judge LLM Detection",
+      "original_name": "Emoji insertion"
+    }
+  ],
+  "definition_count": 23,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Harmful content generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "AutoDAN-Turbo: A Lifelong Agent for Strategy Self-Exploration to Jailbreak LLMs",
+      "evidence": "Through carefully crafted input manipulation, one can bypass the safety mechanisms of LLMs and prompt the models to generate harmful, sensitive, or false information",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "AutoDAN-Turbo: A Lifelong Agent for Strategy Self-Exploration to Jailbreak LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language understanding",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "One Model Transfer to All: On Robust Jailbreak Prompts Generation against LLMs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "One Model Transfer to All: On Robust Jailbreak Prompts Generation against LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Beavertails",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "On Evaluating the Durability of Safeguards for Open-Weight LLMs",
+      "evidence": "BeaverTails (Ji et al., 2024) is the benchmark used by Rosati et al. (2024) to evaluate RepNoise; we adopt the same evaluation setup, reporting the average harmfulness scores (ranging from 0 to 1) as assessed by their harmfulness score. (Section 2.2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "On Evaluating the Durability of Safeguards for Open-Weight LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HEX-PHI",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "On Evaluating the Durability of Safeguards for Open-Weight LLMs",
+      "evidence": "\"We also consider two additional harmfulness evaluation datasets: HEx-PHI (Qi et al., 2023) and SORRY-bench (Xie et al., 2024).\"",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "On Evaluating the Durability of Safeguards for Open-Weight LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SORRY-Bench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "On Evaluating the Durability of Safeguards for Open-Weight LLMs",
+      "evidence": "\"We also consider two additional harmfulness evaluation datasets: HEx-PHI (Qi et al., 2023) and SORRY-bench (Xie et al., 2024).\"",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "On Evaluating the Durability of Safeguards for Open-Weight LLMs"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 4,
+  "characterization": "Across the surveyed literature, adversarial attacks are predominantly framed as behaviors where a model's safety mechanisms are circumvented to produce unintended, often harmful, outputs. The most common definitions describe this as \"jailbreaking,\" \"harmful instruction following,\" or \"prompt injection,\" all of which involve the model complying with a malicious user request rather than refusing. Several papers operationalize these attacks through specific techniques, with a recurring method being the automatic generation and appending of an \"adversarial suffix\" to a user's prompt. Other documented methods include \"indirect prompt injection\" via external data, \"emoji insertion\" to evade detection by judge models, and exploiting web vulnerabilities like \"SQL injection.\" The primary consequence of these attacks, as stated in numerous sources, is the generation of harmful content. The occurrence of this behavior is evaluated using benchmarks such as Beavertails, HEX-PHI, and SORRY-Bench, with some work also measuring an Attack Success Rate (ASR). While most definitions focus on eliciting harmful text, a smaller set of papers describe related behaviors like generating adversarial examples to cause misclassification, evading watermarks, or producing hidden triggers.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "ALI-Agent: Assessing LLMs'  Alignment with Human Values via Agent-based Evaluation",
+      "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents",
+      "CARES: A Comprehensive Benchmark of Trustworthiness in Medical Vision Language Models",
+      "Personalized Steering of Large Language Models: Versatile Steering Vectors Through Bi-directional Preference Optimization",
+      "RWKU: Benchmarking Real-World Knowledge Unlearning for Large Language Models",
+      "Tree of Attacks: Jailbreaking Black-Box LLMs Automatically",
+      "Uncovering Safety Risks of Large Language Models through Concept Activation Vector",
+      "What matters when building vision-language models?",
+      "Who's asking? User personas and the mechanics of latent misalignment"
+    ],
+    "iclr25": [
+      "Aligned LLMs Are Not Aligned Browser Agents",
+      "AutoDAN-Turbo: A Lifelong Agent for Strategy Self-Exploration to Jailbreak LLMs",
+      "Backtracking Improves Generation Safety",
+      "BadJudge: Backdoor Vulnerabilities of LLM-As-A-Judge",
+      "Breach By A Thousand Leaks: Unsafe Information Leakage in 'Safe' AI Responses",
+      "Can LLMs Separate Instructions From Data? And What Do We Even Mean By That?",
+      "Can a Large Language Model be a Gaslighter?",
+      "Concept-ROT: Poisoning Concepts in Large Language Models with Model Editing",
+      "Dissecting Adversarial Robustness of Multimodal LM Agents",
+      "Does Refusal Training in LLMs Generalize to the Past Tense?",
+      "Durable Quantization Conditioned Misalignment Attack on Large Language Models",
+      "EFFICIENT JAILBREAK ATTACK SEQUENCES ON LARGE LANGUAGE MODELS VIA MULTI-ARMED BANDIT-BASED CONTEXT SWITCHING",
+      "Improved Techniques for Optimization-Based Jailbreaking on Large Language Models",
+      "Jailbreaking Leading Safety-Aligned LLMs with Simple Adaptive Attacks",
+      "Jailbreaking as a Reward Misspecification Problem",
+      "On Evaluating the Durability of Safeguards for Open-Weight LLMs",
+      "One Model Transfer to All: On Robust Jailbreak Prompts Generation against LLMs",
+      "ProAdvPrompter: A Two-Stage Journey to Effective Adversarial Prompting for LLMs",
+      "Robust LLM safeguarding via refusal feature adversarial training",
+      "SORRY-Bench: Systematically Evaluating Large Language Model Safety Refusal",
+      "Understanding and Mitigating Bottlenecks of State Space Models through the Lens of Recency and Over-smoothing"
+    ],
+    "icml25": [
+      "An Interpretable N-gram Perplexity Threat Model for Large Language Model Jailbreaks",
+      "AutoAdvExBench: Benchmarking Autonomous Exploitation of Adversarial Example Defenses",
+      "CVE-Bench: A Benchmark for AI Agents\u2019 Ability to Exploit Real-World Web Application Vulnerabilities",
+      "Eliciting Language Model Behaviors with Investigator Agents",
+      "Emoji Attack: Enhancing Jailbreak Attacks Against Judge LLM Detection",
+      "Evolving Prompts In-Context: An Open-ended, Self-replicating Perspective",
+      "Explaining the role of Intrinsic Dimensionality in Adversarial Training",
+      "How Do Large Language Monkeys Get Their Power (Laws)?",
+      "MELON: Provable Defense Against Indirect Prompt Injection Attacks in AI Agents",
+      "MONA: Myopic Optimization with Non-myopic Approval Can Mitigate Multi-step Reward Hacking",
+      "On the Vulnerability of Applying Retrieval-Augmented Generation within Knowledge-Intensive Application Domains",
+      "Optimizing Adaptive Attacks against Watermarks for Language Models",
+      "PANDAS: Improving Many-shot Jailbreaking via Positive Affirmation, Negative Demonstration, and Adaptive Sampling",
+      "Position: Editing Large Language Models Poses Serious Safety Risks",
+      "The Geometry of Refusal in Large Language Models: Concept Cones and Representational Independence",
+      "Theoretical guarantees on the best-of-n alignment policy",
+      "Weak-to-Strong Jailbreaking on Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 9,
+    "iclr25": 21,
+    "icml25": 17
+  },
+  "conferences": [
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

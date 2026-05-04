@@ -1,0 +1,192 @@
+{
+  "canonical_name": "HaluEval",
+  "type": "measurement",
+  "canonical_definition": "HaluEval is consistently described across the provided literature as a large-scale benchmark for evaluating factual hallucination in model-generated responses. Its primary and most frequent application is to measure the construct of `Hallucination`, with several papers also using it to specifically assess `Hallucination detection`. One paper notes the benchmark is built from \"synthetically generated hallucination data,\" while another specifies that its question-answering (QA) track provides a question, reference knowledge, a correct answer, and a hallucinated answer. The operationalization of HaluEval varies across studies, reflecting different facets of hallucination evaluation. A prevalent use is in QA tasks, where performance is measured by metrics such as \"Accuracy\", \"Correctness\", and \"Exact Match\". A different approach, reported by one study, uses it for a binary classification task to evaluate a model\u2019s ability \"to judge whether an answer to a question contains a hallucination or not.\" The benchmark is situated within the context of \"factual reasoning\" and is also used to validate `Generalization` in at least one paper.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "HaluEval"
+  ],
+  "papers": [
+    "Beyond Sequences: Two-dimensional Representation and Dependency Encoding for Code Generation",
+    "Self-Taught Agentic Long Context Understanding",
+    "When Harry Meets Superman: The Role of The Interlocutor in Persona-Based Dialogue Generation",
+    "Does quantization affect models\u2019 performance on long-context tasks?",
+    "Multilingual Pretraining for Pixel Language Models",
+    "START: Self-taught Reasoner with Tools",
+    "The Logical Implication Steering Method for Conditional Interventions on Transformer Generation",
+    "TruthFlow: Truthful LLM Generation via Representation Flow Correction",
+    "AgentSense: Benchmarking Social Intelligence of Language Agents through Interactive Scenarios",
+    "DREAM: Improving Video-Text Retrieval Through Relevance-Based Augmentation Using Large Foundation Models",
+    "MatViX: Multimodal Information Extraction from Visually Rich Articles"
+  ],
+  "paper_count": 11,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Large-scale benchmark for evaluating factual hallucination in model-generated responses.",
+      "paper": "AgentSense: Benchmarking Social Intelligence of Language Agents through Interactive Scenarios",
+      "original_name": "HaluEval"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+      "evidence": "TruthfulQA (Lin et al., 2022) and HaluEval (Li et al., 2023) for factual reasoning and ARC-Challenge (Clark et al., 2018) for scientific reasoning (Section 4.1, Datasets).",
+      "paper_count": 7,
+      "papers_by_conference": {
+        "neurips24": [
+          "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+          "Spectral Editing of Activations for Large Language Model Alignment",
+          "ANAH-v2: Scaling Analytical Hallucination Annotation of Large Language Models"
+        ],
+        "iclr25": [
+          "PALMBENCH: A COMPREHENSIVE BENCHMARK OF COMPRESSED LARGE LANGUAGE MODELS ON MOBILE PLATFORMS"
+        ],
+        "naacl25": [
+          "DREAM: Improving Video-Text Retrieval Through Relevance-Based Augmentation Using Large Foundation Models"
+        ],
+        "acl25": [
+          "Self-Taught Agentic Long Context Understanding"
+        ],
+        "icml25": [
+          "TruthFlow: Truthful LLM Generation via Representation Flow Correction"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination detection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "The Logical Implication Steering Method for Conditional Interventions on Transformer Generation",
+      "evidence": "\"First we evaluate a model\u2019s ability to judge whether an answer to a question contains a hallucination or not using the HaluEval dataset\"",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "icml25": [
+          "The Logical Implication Steering Method for Conditional Interventions on Transformer Generation"
+        ],
+        "emnlp25": [
+          "START: Self-taught Reasoner with Tools"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "ANAH-v2: Scaling Analytical Hallucination Annotation of Large Language Models",
+      "evidence": "\"we directly apply the directions and hyperparameters learned from TruthfulQA to HaluEval (Li et al., 2023) and TrivialQA (Joshi et al., 2017) to validate the generalizability of TAE.\"",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "ANAH-v2: Scaling Analytical Hallucination Annotation of Large Language Models"
+        ],
+        "emnlp25": [
+          "Does quantization affect models\u2019 performance on long-context tasks?"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Document summarization",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Benchmarking LLMs via Uncertainty Quantification",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Benchmarking LLMs via Uncertainty Quantification"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Spectral Editing of Activations for Large Language Model Alignment"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "DREAM: Improving Video-Text Retrieval Through Relevance-Based Augmentation Using Large Foundation Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "DREAM: Improving Video-Text Retrieval Through Relevance-Based Augmentation Using Large Foundation Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge transferability",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "TruthFlow: Truthful LLM Generation via Representation Flow Correction",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "TruthFlow: Truthful LLM Generation via Representation Flow Correction"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 7,
+  "incoming_relationship_count": 7,
+  "outgoing_relationship_count": 0,
+  "characterization": "HaluEval is consistently described across the provided literature as a large-scale benchmark for evaluating factual hallucination in model-generated responses. Its primary and most frequent application is to measure the construct of `Hallucination`, with several papers also using it to specifically assess `Hallucination detection`. One paper notes the benchmark is built from \"synthetically generated hallucination data,\" while another specifies that its question-answering (QA) track provides a question, reference knowledge, a correct answer, and a hallucinated answer. The operationalization of HaluEval varies across studies, reflecting different facets of hallucination evaluation. A prevalent use is in QA tasks, where performance is measured by metrics such as \"Accuracy\", \"Correctness\", and \"Exact Match\". A different approach, reported by one study, uses it for a binary classification task to evaluate a model\u2019s ability \"to judge whether an answer to a question contains a hallucination or not.\" The benchmark is situated within the context of \"factual reasoning\" and is also used to validate `Generalization` in at least one paper.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "naacl25": [
+      "AgentSense: Benchmarking Social Intelligence of Language Agents through Interactive Scenarios",
+      "DREAM: Improving Video-Text Retrieval Through Relevance-Based Augmentation Using Large Foundation Models",
+      "MatViX: Multimodal Information Extraction from Visually Rich Articles"
+    ],
+    "acl25": [
+      "Beyond Sequences: Two-dimensional Representation and Dependency Encoding for Code Generation",
+      "Self-Taught Agentic Long Context Understanding",
+      "When Harry Meets Superman: The Role of The Interlocutor in Persona-Based Dialogue Generation"
+    ],
+    "icml25": [
+      "The Logical Implication Steering Method for Conditional Interventions on Transformer Generation",
+      "TruthFlow: Truthful LLM Generation via Representation Flow Correction"
+    ],
+    "emnlp25": [
+      "Does quantization affect models\u2019 performance on long-context tasks?",
+      "Multilingual Pretraining for Pixel Language Models",
+      "START: Self-taught Reasoner with Tools"
+    ]
+  },
+  "paper_count_by_conference": {
+    "naacl25": 3,
+    "acl25": 3,
+    "icml25": 2,
+    "emnlp25": 3
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "icml25",
+    "naacl25"
+  ]
+}

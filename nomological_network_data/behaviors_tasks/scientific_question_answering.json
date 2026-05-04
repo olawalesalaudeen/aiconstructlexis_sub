@@ -1,0 +1,235 @@
+{
+  "canonical_name": "Scientific question answering",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, scientific question answering is predominantly framed as the task of answering questions about various scientific domains. The most common definitions describe this behavior as requiring reasoning over provided context or external knowledge, and frequently involves understanding multimodal inputs like diagrams and charts in addition to text. The difficulty of the questions varies, with some work focusing on \"subject-specific questions from school curricula\" (Matryoshka Query Transformer for Large Vision-Language Models) while other research targets \"hard (graduate-level) questions\" (Automated Design of Agentic Systems). A smaller line of work narrows the scope to specific disciplines like biology or climate science. This behavior is operationalized and measured using a number of benchmarks, including ScienceQA, SciBench, OpenBookQA, and the ARC suite (ARC, ARC-Challenge, ARC-Easy). Scientific question answering is also studied in relation to constructs such as domain-specific knowledge, numerical ability, long-context understanding, and causal reasoning.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Science question answering",
+    "Scientific question answering",
+    "Biology question answering"
+  ],
+  "papers": [
+    "Automated Design of Agentic Systems",
+    "Bi-Factorial Preference Optimization: Balancing Safety-Helpfulness in Language Models",
+    "Chain-of-region: Visual Language Models Need  Details for Diagram Analysis",
+    "ClimaQA: An Automated Evaluation Framework for Climate Question Answering Models",
+    "Determine-Then-Ensemble: Necessity of Top-k Union for Large Language Model Ensembling",
+    "STAFF: Speculative Coreset Selection for Task-Specific Fine-tuning",
+    "SciLitLLM: How to Adapt LLMs for Scientific Literature Understanding",
+    "Solving Token Gradient Conflict in Mixture-of-Experts for Large Vision-Language Model",
+    "metabench - A Sparse Benchmark of Reasoning and Knowledge in Large Language Models",
+    "Fleet of Agents: Coordinated Problem Solving with Large Language Models",
+    "Large Language Models are Demonstration Pre-Selectors for Themselves",
+    "Decompose, Analyze and Rethink: Solving Intricate Problems with Human-like Reasoning Cycle",
+    "Efficient Large Multi-modal Models via Visual Context Compression",
+    "Enhancing Large Vision Language Models with Self-Training on Image Comprehension",
+    "Matryoshka Query Transformer for Large Vision-Language Models",
+    "Meaningful Learning: Enhancing Abstract Reasoning in Large Language Models via Generic Fact Guidance"
+  ],
+  "paper_count": 16,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The task of answering multiple-choice questions about a wide range of scientific topics, often requiring reasoning over provided context or external knowledge.",
+      "paper": "Decompose, Analyze and Rethink: Solving Intricate Problems with Human-like Reasoning Cycle",
+      "original_name": "Science question answering"
+    },
+    {
+      "text": "The task of answering questions related to scientific domains, often requiring understanding of diagrams, charts, or other visual aids in addition to text.",
+      "paper": "Matryoshka Query Transformer for Large Vision-Language Models",
+      "original_name": "Scientific question answering"
+    },
+    {
+      "text": "The observable task of answering questions related to the field of biology.",
+      "paper": "STAFF: Speculative Coreset Selection for Task-Specific Fine-tuning",
+      "original_name": "Biology question answering"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-Easy",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Debiasing the Fine-Grained Classification Task inLLMs with Bias-AwarePEFT",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "acl25": [
+          "Debiasing the Fine-Grained Classification Task inLLMs with Bias-AwarePEFT"
+        ],
+        "emnlp25": [
+          "Primus: A Pioneering Collection of Open-Source Datasets for CybersecurityLLMTraining"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ScienceQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Efficient Large Multi-modal Models via Visual Context Compression",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Efficient Large Multi-modal Models via Visual Context Compression"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-Challenge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Debiasing the Fine-Grained Classification Task inLLMs with Bias-AwarePEFT",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Debiasing the Fine-Grained Classification Task inLLMs with Bias-AwarePEFT"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "metabench - A Sparse Benchmark of Reasoning and Knowledge in Large Language Models",
+      "evidence": "ARC (AI2 Reasoning Challenge, Clark et al., 2018) was designed to test the reasoning abilities of AI through a series of challenging science questions. (Section 1.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "metabench - A Sparse Benchmark of Reasoning and Knowledge in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Domain knowledge",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "How does Misinformation Affect Large Language Model Behaviors and Preferences?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "How does Misinformation Affect Large Language Model Behaviors and Preferences?"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Numerical ability",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "How does Misinformation Affect Large Language Model Behaviors and Preferences?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "How does Misinformation Affect Large Language Model Behaviors and Preferences?"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-context understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "How does Misinformation Affect Large Language Model Behaviors and Preferences?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "How does Misinformation Affect Large Language Model Behaviors and Preferences?"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Causal reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "How does Misinformation Affect Large Language Model Behaviors and Preferences?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "How does Misinformation Affect Large Language Model Behaviors and Preferences?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OpenBookQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Debiasing the Fine-Grained Classification Task inLLMs with Bias-AwarePEFT",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Debiasing the Fine-Grained Classification Task inLLMs with Bias-AwarePEFT"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SciBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Fleet of Agents: Coordinated Problem Solving with Large Language Models",
+      "evidence": "SciBench (Wang et al., 2024a) is a benchmark suite of scientific reasoning tasks, where the objective is to answer complex, multi-step scientific questions that require integrating knowledge, reasoning over evidence, and applying scientific principles. (Section 4.4. SciBench)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Fleet of Agents: Coordinated Problem Solving with Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 10,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 6,
+  "characterization": "Across the surveyed literature, scientific question answering is predominantly framed as the task of answering questions about various scientific domains. The most common definitions describe this behavior as requiring reasoning over provided context or external knowledge, and frequently involves understanding multimodal inputs like diagrams and charts in addition to text. The difficulty of the questions varies, with some work focusing on \"subject-specific questions from school curricula\" (Matryoshka Query Transformer for Large Vision-Language Models) while other research targets \"hard (graduate-level) questions\" (Automated Design of Agentic Systems). A smaller line of work narrows the scope to specific disciplines like biology or climate science. This behavior is operationalized and measured using a number of benchmarks, including ScienceQA, SciBench, OpenBookQA, and the ARC suite (ARC, ARC-Challenge, ARC-Easy). Scientific question answering is also studied in relation to constructs such as domain-specific knowledge, numerical ability, long-context understanding, and causal reasoning.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "Decompose, Analyze and Rethink: Solving Intricate Problems with Human-like Reasoning Cycle",
+      "Efficient Large Multi-modal Models via Visual Context Compression",
+      "Enhancing Large Vision Language Models with Self-Training on Image Comprehension",
+      "Matryoshka Query Transformer for Large Vision-Language Models",
+      "Meaningful Learning: Enhancing Abstract Reasoning in Large Language Models via Generic Fact Guidance"
+    ],
+    "iclr25": [
+      "Automated Design of Agentic Systems",
+      "Bi-Factorial Preference Optimization: Balancing Safety-Helpfulness in Language Models",
+      "Chain-of-region: Visual Language Models Need  Details for Diagram Analysis",
+      "ClimaQA: An Automated Evaluation Framework for Climate Question Answering Models",
+      "Determine-Then-Ensemble: Necessity of Top-k Union for Large Language Model Ensembling",
+      "STAFF: Speculative Coreset Selection for Task-Specific Fine-tuning",
+      "SciLitLLM: How to Adapt LLMs for Scientific Literature Understanding",
+      "Solving Token Gradient Conflict in Mixture-of-Experts for Large Vision-Language Model",
+      "metabench - A Sparse Benchmark of Reasoning and Knowledge in Large Language Models"
+    ],
+    "icml25": [
+      "Fleet of Agents: Coordinated Problem Solving with Large Language Models",
+      "Large Language Models are Demonstration Pre-Selectors for Themselves"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 5,
+    "iclr25": 9,
+    "icml25": 2
+  },
+  "conferences": [
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

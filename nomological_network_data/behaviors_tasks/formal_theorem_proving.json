@@ -1,0 +1,148 @@
+{
+  "canonical_name": "Formal theorem proving",
+  "type": "behavior",
+  "canonical_definition": "Based on the provided literature, formal theorem proving is defined as the task of producing a correct formal proof for a theorem within an interactive theorem prover, such as Lean. It is frequently positioned as a \"testbed for evaluating the reasoning capabilities of large language models (LLMs),\" where models are tasked with proving a theorem given access to a repository's code. The field operationalizes and measures this behavior using specific benchmarks. The most commonly cited instruments are miniF2F, which includes \"high-school level exercises and competition problems,\" and ProofNet, which pertains to \"undergraduate-level theorems.\" Both of these benchmarks are characterized as focusing on \"standalone\" or \"isolated\" problems. Formal theorem proving is also studied alongside the broader concept of theorem proving, with papers discussing strategies such as \"proof-step generation\" and \"whole-proof generation.\" Finally, it is associated with mathematical reasoning, though the provided sources do not detail the nature of this relationship.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Formal theorem proving"
+  ],
+  "papers": [
+    "Lean-STaR: Learning to Interleave Thinking and Proving",
+    "LeanAgent: Lifelong Learning for Formal Theorem Proving",
+    "miniCTX: Neural Theorem Proving with (Long-)Contexts"
+  ],
+  "paper_count": 3,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Producing a correct formal proof for a theorem in an interactive theorem prover such as Lean.",
+      "paper": "miniCTX: Neural Theorem Proving with (Long-)Contexts",
+      "original_name": "Formal theorem proving"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "miniF2F",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "DeepSeek-Prover-V1.5: Harnessing Proof Assistant Feedback for Reinforcement Learning and Monte-Carlo Tree Search",
+      "evidence": "benchmarks often focus on proving standalone competition problems (e.g., miniF2F (Zheng et al., 2022))",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr25": [
+          "DeepSeek-Prover-V1.5: Harnessing Proof Assistant Feedback for Reinforcement Learning and Monte-Carlo Tree Search",
+          "LeanAgent: Lifelong Learning for Formal Theorem Proving"
+        ],
+        "icml25": [
+          "MA-LoT: Model-Collaboration Lean-based Long Chain-of-Thought Reasoning enhances Formal Theorem Proving"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mathematical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "LeanAgent: Lifelong Learning for Formal Theorem Proving",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "LeanAgent: Lifelong Learning for Formal Theorem Proving"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Isabelle",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "STP: Self-play LLM Theorem Provers with Iterative Conjecturing and Proving",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "STP: Self-play LLM Theorem Provers with Iterative Conjecturing and Proving"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Theorem proving",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "LeanAgent: Lifelong Learning for Formal Theorem Proving",
+      "evidence": "Language models in formal theorem proving typically employ two strategies: proof-step generation (Jiang et al., 2022a; Lample et al., 2022; Yang et al., 2023; Wu et al., 2024) and whole-proof generation (Zhao et al., 2023; Wang et al., 2023a). (Section 1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "LeanAgent: Lifelong Learning for Formal Theorem Proving"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ProofNet",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "DeepSeek-Prover-V1.5: Harnessing Proof Assistant Feedback for Reinforcement Learning and Monte-Carlo Tree Search",
+      "evidence": "Unlike popular benchmarks (e.g., miniF2F (Zheng et al., 2022), ProofNet (Azerbayev et al., 2023)...) that focus on isolated competition problems",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "DeepSeek-Prover-V1.5: Harnessing Proof Assistant Feedback for Reinforcement Learning and Monte-Carlo Tree Search"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mathematical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "People who frequently useChatGPTfor writing tasks are accurate and robust detectors ofAI-generated text",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "People who frequently useChatGPTfor writing tasks are accurate and robust detectors ofAI-generated text"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense knowledge",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "STP: Self-play LLM Theorem Provers with Iterative Conjecturing and Proving",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "STP: Self-play LLM Theorem Provers with Iterative Conjecturing and Proving"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 7,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 6,
+  "characterization": "Based on the provided literature, formal theorem proving is defined as the task of producing a correct formal proof for a theorem within an interactive theorem prover, such as Lean. It is frequently positioned as a \"testbed for evaluating the reasoning capabilities of large language models (LLMs),\" where models are tasked with proving a theorem given access to a repository's code. The field operationalizes and measures this behavior using specific benchmarks. The most commonly cited instruments are miniF2F, which includes \"high-school level exercises and competition problems,\" and ProofNet, which pertains to \"undergraduate-level theorems.\" Both of these benchmarks are characterized as focusing on \"standalone\" or \"isolated\" problems. Formal theorem proving is also studied alongside the broader concept of theorem proving, with papers discussing strategies such as \"proof-step generation\" and \"whole-proof generation.\" Finally, it is associated with mathematical reasoning, though the provided sources do not detail the nature of this relationship.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Lean-STaR: Learning to Interleave Thinking and Proving",
+      "LeanAgent: Lifelong Learning for Formal Theorem Proving",
+      "miniCTX: Neural Theorem Proving with (Long-)Contexts"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3
+  },
+  "conferences": [
+    "iclr25"
+  ]
+}

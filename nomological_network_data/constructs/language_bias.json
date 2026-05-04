@@ -1,0 +1,118 @@
+{
+  "canonical_name": "Language bias",
+  "type": "construct",
+  "canonical_definition": "Across the provided literature, 'Language bias' is used to describe two distinct phenomena. The prevailing usage frames it as inequitable performance across different natural languages in multilingual models, where it is also referred to as 'Anglocentric bias' or 'language-dependent effectiveness'. This is commonly observed as a performance gap between high-resource languages like English and non-Western languages. One paper operationalizes this by quantifying it as \"the performance drop when switching from bilingual to multilingual evaluation\" ('AndroidLab: Training and Systematic Benchmarking of Android Autonomous Agents'). Another characterization describes it as a model's tendency to map sentences from the same language closer together in its embedding space, regardless of semantic similarity. A separate line of work defines 'Language bias' in the context of vision-language models (LVLMs) as a modality issue, where models \"\u2018ignore\u2019 visual inputs and generate text responses solely based on text inputs\" ('Do It Yourself (DIY): Modifying Images for Poems in a Zero-Shot Setting Using Weighted Prompt Manipulation'). This form of bias is reported to cause or be \"closely related to\" `Hallucination`. The construct is also measured by the `ScienceQA-IMG` benchmark, though the specific method is not detailed. Thus, the term's application in this set of papers is split between cross-lingual performance equity and modality preference within vision-language models.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Anglocentric bias",
+    "Language-dependent effectiveness",
+    "Cross-lingual fairness",
+    "Language bias"
+  ],
+  "papers": [
+    "An Empirical Study of Iterative Refinements for Non-autoregressive Translation",
+    "AndroidLab: Training and Systematic Benchmarking of Android Autonomous Agents",
+    "ConsistencyChecker: Tree-based Evaluation ofLLMGeneralization Capabilities",
+    "Contrastive Prompting Enhances Sentence Embeddings inLLMs through Inference-Time Steering",
+    "RePanda: Pandas-powered Tabular Verification and Reasoning",
+    "2025.emnlp-main.995.checklist",
+    "Do It Yourself (DIY): Modifying Images for Poems in a Zero-Shot Setting Using Weighted Prompt Manipulation"
+  ],
+  "paper_count": 7,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The degree to which model performance and computational efficiency are equitable across different languages, mitigating biases introduced by static tokenization.",
+      "paper": "An Empirical Study of Iterative Refinements for Non-autoregressive Translation",
+      "original_name": "Cross-lingual fairness"
+    },
+    {
+      "text": "A systemic tendency for model performance, particularly in style-sensitive tasks like translation, to be higher for English and Western languages compared to non-Western languages.",
+      "paper": "RePanda: Pandas-powered Tabular Verification and Reasoning",
+      "original_name": "Anglocentric bias"
+    },
+    {
+      "text": "The systematic variation in a model's performance that is attributable to the specific natural language it is operating on, often observed as a performance gap between high-resource and lower-resource languages.",
+      "paper": "ConsistencyChecker: Tree-based Evaluation ofLLMGeneralization Capabilities",
+      "original_name": "Language-dependent effectiveness"
+    },
+    {
+      "text": "The tendency of a multilingual model to prefer certain languages or language pairs, for instance by mapping sentences from the same language closer together in the embedding space regardless of semantic similarity.",
+      "paper": "AndroidLab: Training and Systematic Benchmarking of Android Autonomous Agents",
+      "original_name": "Language bias"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Do It Yourself (DIY): Modifying Images for Poems in a Zero-Shot Setting Using Weighted Prompt Manipulation",
+      "evidence": "LVLMs suffer from hallucinations caused by language bias, which neglects images while over-relying on text. (Abstract)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Do It Yourself (DIY): Modifying Images for Poems in a Zero-Shot Setting Using Weighted Prompt Manipulation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ScienceQA-IMG",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MMICL: Empowering Vision-language Model with Multi-Modal In-Context Learning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "MMICL: Empowering Vision-language Model with Multi-Modal In-Context Learning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Contrastive Prompting Enhances Sentence Embeddings inLLMs through Inference-Time Steering",
+      "evidence": "These findings provide statistical evidence that language bias is closely related to hallucinations in LVLMs.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Contrastive Prompting Enhances Sentence Embeddings inLLMs through Inference-Time Steering"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 2,
+  "characterization": "Across the provided literature, 'Language bias' is used to describe two distinct phenomena. The prevailing usage frames it as inequitable performance across different natural languages in multilingual models, where it is also referred to as 'Anglocentric bias' or 'language-dependent effectiveness'. This is commonly observed as a performance gap between high-resource languages like English and non-Western languages. One paper operationalizes this by quantifying it as \"the performance drop when switching from bilingual to multilingual evaluation\" ('AndroidLab: Training and Systematic Benchmarking of Android Autonomous Agents'). Another characterization describes it as a model's tendency to map sentences from the same language closer together in its embedding space, regardless of semantic similarity. A separate line of work defines 'Language bias' in the context of vision-language models (LVLMs) as a modality issue, where models \"\u2018ignore\u2019 visual inputs and generate text responses solely based on text inputs\" ('Do It Yourself (DIY): Modifying Images for Poems in a Zero-Shot Setting Using Weighted Prompt Manipulation'). This form of bias is reported to cause or be \"closely related to\" `Hallucination`. The construct is also measured by the `ScienceQA-IMG` benchmark, though the specific method is not detailed. Thus, the term's application in this set of papers is split between cross-lingual performance equity and modality preference within vision-language models.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "An Empirical Study of Iterative Refinements for Non-autoregressive Translation",
+      "AndroidLab: Training and Systematic Benchmarking of Android Autonomous Agents",
+      "ConsistencyChecker: Tree-based Evaluation ofLLMGeneralization Capabilities",
+      "Contrastive Prompting Enhances Sentence Embeddings inLLMs through Inference-Time Steering",
+      "RePanda: Pandas-powered Tabular Verification and Reasoning"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.995.checklist",
+      "Do It Yourself (DIY): Modifying Images for Poems in a Zero-Shot Setting Using Weighted Prompt Manipulation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 5,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25"
+  ]
+}

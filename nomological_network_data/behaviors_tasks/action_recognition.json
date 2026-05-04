@@ -1,0 +1,194 @@
+{
+  "canonical_name": "Action recognition",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, action recognition is most commonly defined as the task of classifying human actions within video clips. This behavior is frequently operationalized using established benchmarks; the provided data shows it is measured by Something-Something V2, ActivityNet, and UCF-101. Some work also reformulates the classification task as a multiple-choice problem for evaluation. While the general definition is prevalent, the concept is applied across numerous specialized domains, including highly specific contexts such as surgical phase recognition, where frames are classified into procedural phases, and accident recognition in traffic videos. The granularity of the recognized action also varies, from identifying individual steps in instructional videos (step recognition) to more detailed fine-grained keystep recognition. A smaller set of papers extends the concept beyond general video to include identifying activities or sports in static images, or labeling user interactions like 'click' and 'type' from screen recordings. Researchers use this task to evaluate a model's video understanding capabilities, with one paper describing it as a way to \"assess the VidLMs\u2019 capability to successfully navigate and solve simpler objectives\" (ViLMA: A Zero-Shot Benchmark for Linguistic and Temporal Grounding in Video-Language Models).",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Action recognition",
+    "Surgical phase recognition",
+    "Fine-grained keystep recognition",
+    "Step recognition",
+    "Activity recognition",
+    "Sport recognition",
+    "Sports recognition",
+    "Action labeling from video",
+    "Phase recognition",
+    "Accident recognition",
+    "Video action recognition"
+  ],
+  "papers": [
+    "Frozen Transformers in Language Models Are Effective Visual Encoder Layers",
+    "Language Model Beats Diffusion - Tokenizer is key to visual generation",
+    "Look, Remember and Reason: Grounded Reasoning in Videos with Language Models",
+    "ViLMA: A Zero-Shot Benchmark for Linguistic and Temporal Grounding in Video-Language Models",
+    "AgentStudio: A Toolkit for Building General Virtual Agents",
+    "Have the VLMs Lost Confidence? A Study of Sycophancy in VLMs",
+    "MMIU: Multimodal Multi-image Understanding for Evaluating Large Vision-Language Models",
+    "Recognize Any Surgical Object: Unleashing the Power of Weakly-Supervised Data",
+    "SPORTU: A Comprehensive Sports Understanding Benchmark for Multimodal Large Language Models",
+    "TAU-106K: A New Dataset for Comprehensive Understanding of Traffic Accident",
+    "Teaching Human Behavior Improves Content Understanding Abilities Of VLMs",
+    "Video-STaR: Self-Training Enables Video Instruction Tuning with Any Supervision",
+    "RepLoRA: Reparameterizing Low-rank Adaptation via the Perspective of Mixture of Experts",
+    "Scaling Video-Language Models to 10K Frames via Hierarchical Differential Distillation",
+    "Animal-Bench: Benchmarking Multimodal Video Models for Animal-centric Video Understanding",
+    "Constrained Human-AI Cooperation: An Inclusive Embodied Social Intelligence Challenge",
+    "MaVEn: An Effective Multi-granularity Hybrid Visual Encoding Framework for Multimodal Large Language Model",
+    "Procedure-Aware Surgical Video-language Pretraining with Hierarchical Knowledge Augmentation",
+    "SlowFocus: Enhancing Fine-grained Temporal Understanding in Video LLM",
+    "VideoLLM-MoD: Efficient Video-Language Streaming with Mixture-of-Depths Vision Computation"
+  ],
+  "paper_count": 20,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Classifying human actions in video clips using learned token representations as input or training targets.",
+      "paper": "Frozen Transformers in Language Models Are Effective Visual Encoder Layers",
+      "original_name": "Action recognition"
+    },
+    {
+      "text": "The task of classifying individual frames from a surgical video into a set of predefined procedural phases, such as 'Preparation' or 'ClippingCutting'.",
+      "paper": "Procedure-Aware Surgical Video-language Pretraining with Hierarchical Knowledge Augmentation",
+      "original_name": "Surgical phase recognition"
+    },
+    {
+      "text": "The task of identifying and labeling specific, detailed steps within a larger procedural activity shown in a video.",
+      "paper": "VideoLLM-MoD: Efficient Video-Language Streaming with Mixture-of-Depths Vision Computation",
+      "original_name": "Fine-grained keystep recognition"
+    },
+    {
+      "text": "The task of identifying the individual steps of a procedure shown in an instructional video.",
+      "paper": "VideoLLM-MoD: Efficient Video-Language Streaming with Mixture-of-Depths Vision Computation",
+      "original_name": "Step recognition"
+    },
+    {
+      "text": "The task of identifying and naming the primary action or event occurring in an image.",
+      "paper": "Have the VLMs Lost Confidence? A Study of Sycophancy in VLMs",
+      "original_name": "Activity recognition"
+    },
+    {
+      "text": "The task of identifying the specific sport being played in an image.",
+      "paper": "Have the VLMs Lost Confidence? A Study of Sycophancy in VLMs",
+      "original_name": "Sport recognition"
+    },
+    {
+      "text": "The observable task of producing a sequence of discrete action labels (e.g., 'click', 'type') that corresponds to the user interactions shown in a screen recording video.",
+      "paper": "AgentStudio: A Toolkit for Building General Virtual Agents",
+      "original_name": "Action labeling from video"
+    },
+    {
+      "text": "The task of identifying the specific sport being played in a video clip.",
+      "paper": "SPORTU: A Comprehensive Sports Understanding Benchmark for Multimodal Large Language Models",
+      "original_name": "Sports recognition"
+    },
+    {
+      "text": "Predicting the surgical phase depicted in a video or image sequence.",
+      "paper": "Recognize Any Surgical Object: Unleashing the Power of Weakly-Supervised Data",
+      "original_name": "Phase recognition"
+    },
+    {
+      "text": "The task of classifying a given image or video clip as either containing a traffic accident ('Accident') or not ('Normal').",
+      "paper": "TAU-106K: A New Dataset for Comprehensive Understanding of Traffic Accident",
+      "original_name": "Accident recognition"
+    },
+    {
+      "text": "The task of identifying and classifying human actions or activities within video clips.",
+      "paper": "RepLoRA: Reparameterizing Low-rank Adaptation via the Perspective of Mixture of Experts",
+      "original_name": "Video action recognition"
+    }
+  ],
+  "definition_count": 11,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Something-Something V2",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Scaling Video-Language Models to 10K Frames via Hierarchical Differential Distillation",
+      "evidence": "For the action recognition task, we incorporate two baselines: Adaframe (Wu et al., 2019) and MGSampler (Zhi et al., 2021), and evaluate them alongside VILAMP on three benchmarks: ActivityNet (Caba Heilbron et al., 2015), Something-Something V2 (Sth-V2) (Goyal et al., 2017), and UCF-101 (Soomro et al., 2012). (Section 5.4)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Scaling Video-Language Models to 10K Frames via Hierarchical Differential Distillation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ActivityNet",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Scaling Video-Language Models to 10K Frames via Hierarchical Differential Distillation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Scaling Video-Language Models to 10K Frames via Hierarchical Differential Distillation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "UCF-101",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Scaling Video-Language Models to 10K Frames via Hierarchical Differential Distillation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Scaling Video-Language Models to 10K Frames via Hierarchical Differential Distillation"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 3,
+  "characterization": "Across the surveyed literature, action recognition is most commonly defined as the task of classifying human actions within video clips. This behavior is frequently operationalized using established benchmarks; the provided data shows it is measured by Something-Something V2, ActivityNet, and UCF-101. Some work also reformulates the classification task as a multiple-choice problem for evaluation. While the general definition is prevalent, the concept is applied across numerous specialized domains, including highly specific contexts such as surgical phase recognition, where frames are classified into procedural phases, and accident recognition in traffic videos. The granularity of the recognized action also varies, from identifying individual steps in instructional videos (step recognition) to more detailed fine-grained keystep recognition. A smaller set of papers extends the concept beyond general video to include identifying activities or sports in static images, or labeling user interactions like 'click' and 'type' from screen recordings. Researchers use this task to evaluate a model's video understanding capabilities, with one paper describing it as a way to \"assess the VidLMs\u2019 capability to successfully navigate and solve simpler objectives\" (ViLMA: A Zero-Shot Benchmark for Linguistic and Temporal Grounding in Video-Language Models).",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Frozen Transformers in Language Models Are Effective Visual Encoder Layers",
+      "Language Model Beats Diffusion - Tokenizer is key to visual generation",
+      "Look, Remember and Reason: Grounded Reasoning in Videos with Language Models",
+      "ViLMA: A Zero-Shot Benchmark for Linguistic and Temporal Grounding in Video-Language Models"
+    ],
+    "neurips24": [
+      "Animal-Bench: Benchmarking Multimodal Video Models for Animal-centric Video Understanding",
+      "Constrained Human-AI Cooperation: An Inclusive Embodied Social Intelligence Challenge",
+      "MaVEn: An Effective Multi-granularity Hybrid Visual Encoding Framework for Multimodal Large Language Model",
+      "Procedure-Aware Surgical Video-language Pretraining with Hierarchical Knowledge Augmentation",
+      "SlowFocus: Enhancing Fine-grained Temporal Understanding in Video LLM",
+      "VideoLLM-MoD: Efficient Video-Language Streaming with Mixture-of-Depths Vision Computation"
+    ],
+    "iclr25": [
+      "AgentStudio: A Toolkit for Building General Virtual Agents",
+      "Have the VLMs Lost Confidence? A Study of Sycophancy in VLMs",
+      "MMIU: Multimodal Multi-image Understanding for Evaluating Large Vision-Language Models",
+      "Recognize Any Surgical Object: Unleashing the Power of Weakly-Supervised Data",
+      "SPORTU: A Comprehensive Sports Understanding Benchmark for Multimodal Large Language Models",
+      "TAU-106K: A New Dataset for Comprehensive Understanding of Traffic Accident",
+      "Teaching Human Behavior Improves Content Understanding Abilities Of VLMs",
+      "Video-STaR: Self-Training Enables Video Instruction Tuning with Any Supervision"
+    ],
+    "icml25": [
+      "RepLoRA: Reparameterizing Low-rank Adaptation via the Perspective of Mixture of Experts",
+      "Scaling Video-Language Models to 10K Frames via Hierarchical Differential Distillation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 4,
+    "neurips24": 6,
+    "iclr25": 8,
+    "icml25": 2
+  },
+  "conferences": [
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

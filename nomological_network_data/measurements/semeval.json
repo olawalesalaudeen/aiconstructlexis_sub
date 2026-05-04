@@ -1,0 +1,91 @@
+{
+  "canonical_name": "SemEval",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, the term \"SemEval\" refers to at least two distinct benchmark datasets used for different natural language processing tasks. One prevalent usage, identified as \"SemEval 2010 Task 8,\" is described as a standard relation extraction dataset containing 19 relation types across diverse domains. Papers use this version to evaluate model capabilities in areas such as few-shot learning and generalization. A separate line of work utilizes \"SemEval-2016,\" a benchmark for aspect-based sentiment analysis. This dataset is characterized by its content of \"real user restaurant reviews\" in multiple languages, including English, Spanish, and French, and is used to evaluate cross-lingual performance. In this context, SemEval is explicitly used as a measurement instrument for both aspect-based sentiment analysis and stance detection. Thus, the operationalization of SemEval is split, with some papers using it to assess relation extraction while others use a different version to evaluate sentiment and stance-related behaviors.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "SemEval-2016",
+    "SemEval"
+  ],
+  "papers": [
+    "ATLANTIS: Weak-to-Strong Learning via Importance Sampling",
+    "BPP-Search: Enhancing Tree of Thought Reasoning for Mathematical Modeling Problem Solving",
+    "JuStRank: BenchmarkingLLMJudges for System Ranking",
+    "AraEval: AnArabic Multi-Task Evaluation Suite for Large Language Models",
+    "AssoCiAm: A Benchmark for Evaluating Association Thinking while Circumventing Ambiguity"
+  ],
+  "paper_count": 5,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Benchmark dataset for aspect-based sentiment analysis containing restaurant reviews in multiple languages, used to evaluate cross-lingual performance in E2E-ABSA.",
+      "paper": "BPP-Search: Enhancing Tree of Thought Reasoning for Mathematical Modeling Problem Solving",
+      "original_name": "SemEval-2016"
+    },
+    {
+      "text": "Standard relation extraction dataset from SemEval 2010 Task 8, containing 19 relation types across diverse domains, used for evaluating few-shot learning and generalization.",
+      "paper": "JuStRank: BenchmarkingLLMJudges for System Ranking",
+      "original_name": "SemEval"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Stance detection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "The Power of LLM-Generated Synthetic Data for Stance Detection in Online Political Discussions",
+      "evidence": "We validate the effectiveness of our method through extensive experiments on the SemEval-2016, and VAST datasets, showing that MPVStance outperforms state-of-the-art models in zero-shot, few-shot, and challenging scenarios. (Section 1)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "The Power of LLM-Generated Synthetic Data for Stance Detection in Online Political Discussions"
+        ],
+        "acl25": [
+          "ATLANTIS: Weak-to-Strong Learning via Importance Sampling"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Aspect-based sentiment analysis",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "BPP-Search: Enhancing Tree of Thought Reasoning for Mathematical Modeling Problem Solving",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "BPP-Search: Enhancing Tree of Thought Reasoning for Mathematical Modeling Problem Solving"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, the term \"SemEval\" refers to at least two distinct benchmark datasets used for different natural language processing tasks. One prevalent usage, identified as \"SemEval 2010 Task 8,\" is described as a standard relation extraction dataset containing 19 relation types across diverse domains. Papers use this version to evaluate model capabilities in areas such as few-shot learning and generalization. A separate line of work utilizes \"SemEval-2016,\" a benchmark for aspect-based sentiment analysis. This dataset is characterized by its content of \"real user restaurant reviews\" in multiple languages, including English, Spanish, and French, and is used to evaluate cross-lingual performance. In this context, SemEval is explicitly used as a measurement instrument for both aspect-based sentiment analysis and stance detection. Thus, the operationalization of SemEval is split, with some papers using it to assess relation extraction while others use a different version to evaluate sentiment and stance-related behaviors.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "ATLANTIS: Weak-to-Strong Learning via Importance Sampling",
+      "BPP-Search: Enhancing Tree of Thought Reasoning for Mathematical Modeling Problem Solving",
+      "JuStRank: BenchmarkingLLMJudges for System Ranking"
+    ],
+    "emnlp25": [
+      "AraEval: AnArabic Multi-Task Evaluation Suite for Large Language Models",
+      "AssoCiAm: A Benchmark for Evaluating Association Thinking while Circumventing Ambiguity"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 3,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25"
+  ]
+}

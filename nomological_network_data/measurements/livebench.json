@@ -1,0 +1,297 @@
+{
+  "canonical_name": "LiveBench",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, LiveBench is characterized as a dynamic benchmark designed to mitigate data contamination by regularly updating its dataset with questions from recent sources. Several papers specify its method, noting it \"collects questions based on the latest information source, e.g., math competitions from the past 12 months, with new questions added and updated every few months\" (Reshaping Representation Space to Balance the Safety and Over-rejection in Large Audio Language Models). The benchmark is consistently defined as an evaluation from Abacus AI that uses a large test set of questions with ground truth answers. Papers use LiveBench to measure a wide range of model capabilities, including mathematical reasoning, programming ability, data analysis, natural language understanding, commonsense knowledge, faithfulness, and instruction following. It is studied alongside other evaluation tools and is reported to be \"strongly correlated\" with HELM (Style Outweighs Substance: Failure Modes of LLM Judges in Alignment Benchmarking). Additionally, its reasoning and mathematics datasets are used by JudgeBench, and it is shown to correlate with LMSYS Chatbot Arena and Arena-Hard.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "LiveBench"
+  ],
+  "papers": [
+    "Beyond Text: Unveiling Privacy Vulnerabilities in Multi-modal Retrieval-Augmented Generation",
+    "Bridging External and Parametric Knowledge: Mitigating Hallucination ofLLMs with Shared-Private Semantic Synergy in Dual-Stream Knowledge",
+    "PunMemeCN: A Benchmark to Explore Vision-Language Models\u2019 Understanding ofChinese Pun Memes",
+    "Reshaping Representation Space to Balance the Safety and Over-rejection in Large Audio Language Models",
+    "JudgeBench: A Benchmark for Evaluating LLM-Based Judges",
+    "LiveBench: A Challenging, Contamination-Limited LLM Benchmark",
+    "Style Outweighs Substance: Failure Modes of LLM Judges in Alignment Benchmarking",
+    "CodeIO: Condensing Reasoning Patterns via Code Input-Output Prediction",
+    "Copilot Arena: A Platform for Code LLM Evaluation in the Wild",
+    "DyCodeEval: Dynamic Benchmarking of Reasoning Capabilities in Code Large Language Models Under Data Contamination",
+    "Position: AI Competitions Provide the Gold Standard for Empirical Rigor in GenAI Evaluation",
+    "Position: Don\u2019t Use the CLT in LLM Evals With Fewer Than a Few Hundred Datapoints",
+    "Position: Language model developers should report train-test overlap",
+    "Prompt-to-Leaderboard: Prompt-Adaptive LLM Evaluations",
+    "Unbiased Evaluation of Large Language Models from a Causal Perspective"
+  ],
+  "paper_count": 15,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A benchmark from Abacus AI that evaluates models on a large test set of questions with ground truth answers.",
+      "paper": "Style Outweighs Substance: Failure Modes of LLM Judges in Alignment Benchmarking",
+      "original_name": "LiveBench"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "LiveBench: A Challenging, Contamination-Limited LLM Benchmark",
+      "evidence": "LiveBench... contains a wide variety of challenging tasks, spanning math, coding, reasoning, language, instruction following, and data analysis.",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "LiveBench: A Challenging, Contamination-Limited LLM Benchmark"
+        ],
+        "naacl25": [
+          "PicPersona-TOD: A Dataset for Personalizing Utterance Style in Task-Oriented Dialogue with Image Persona"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction following",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "LiveBench: A Challenging, Contamination-Limited LLM Benchmark",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "LiveBench: A Challenging, Contamination-Limited LLM Benchmark"
+        ],
+        "emnlp25": [
+          "PunMemeCN: A Benchmark to Explore Vision-Language Models\u2019 Understanding ofChinese Pun Memes"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Data analysis",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "LiveBench: A Challenging, Contamination-Limited LLM Benchmark",
+      "evidence": "LiveBench... contains a wide variety of challenging tasks, spanning math, coding, reasoning, language, instruction following, and data analysis.",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "LiveBench: A Challenging, Contamination-Limited LLM Benchmark"
+        ],
+        "naacl25": [
+          "PicPersona-TOD: A Dataset for Personalizing Utterance Style in Task-Oriented Dialogue with Image Persona"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "JudgeBench",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "JudgeBench: A Benchmark for Evaluating LLM-Based Judges",
+      "evidence": "For the Reasoning and Mathematics categories, we use the corresponding LiveBench datasets. (Section 3)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "JudgeBench: A Benchmark for Evaluating LLM-Based Judges"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "LMSYS Chatbot Arena",
+      "other_type": "measurements",
+      "relationship_type": "correlates",
+      "paper": "LiveBench: A Challenging, Contamination-Limited LLM Benchmark",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "LiveBench: A Challenging, Contamination-Limited LLM Benchmark"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Arena-Hard",
+      "other_type": "measurements",
+      "relationship_type": "correlates",
+      "paper": "LiveBench: A Challenging, Contamination-Limited LLM Benchmark",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "LiveBench: A Challenging, Contamination-Limited LLM Benchmark"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Programming",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "LiveBench: A Challenging, Contamination-Limited LLM Benchmark",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "LiveBench: A Challenging, Contamination-Limited LLM Benchmark"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "PicPersona-TOD: A Dataset for Personalizing Utterance Style in Task-Oriented Dialogue with Image Persona",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "PicPersona-TOD: A Dataset for Personalizing Utterance Style in Task-Oriented Dialogue with Image Persona"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Natural language understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "LiveBench: A Challenging, Contamination-Limited LLM Benchmark",
+      "evidence": "LiveBench... contains a wide variety of challenging tasks, spanning math, coding, reasoning, language, instruction following, and data analysis.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "LiveBench: A Challenging, Contamination-Limited LLM Benchmark"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "BBH",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "LiveBench: A Challenging, Contamination-Limited LLM Benchmark",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "LiveBench: A Challenging, Contamination-Limited LLM Benchmark"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "IFEval",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "LiveBench: A Challenging, Contamination-Limited LLM Benchmark",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "LiveBench: A Challenging, Contamination-Limited LLM Benchmark"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "HELM",
+      "other_type": "measurements",
+      "relationship_type": "correlates",
+      "paper": "Style Outweighs Substance: Failure Modes of LLM Judges in Alignment Benchmarking",
+      "evidence": "LiveBench and HELM are strongly correlated",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Style Outweighs Substance: Failure Modes of LLM Judges in Alignment Benchmarking"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language understanding",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "PicPersona-TOD: A Dataset for Personalizing Utterance Style in Task-Oriented Dialogue with Image Persona",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "PicPersona-TOD: A Dataset for Personalizing Utterance Style in Task-Oriented Dialogue with Image Persona"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Consistency",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Unbiased Evaluation of Large Language Models from a Causal Perspective",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Unbiased Evaluation of Large Language Models from a Causal Perspective"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Position: Don\u2019t Use the CLT in LLM Evals With Fewer Than a Few Hundred Datapoints",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Position: Don\u2019t Use the CLT in LLM Evals With Fewer Than a Few Hundred Datapoints"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 15,
+  "incoming_relationship_count": 15,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, LiveBench is characterized as a dynamic benchmark designed to mitigate data contamination by regularly updating its dataset with questions from recent sources. Several papers specify its method, noting it \"collects questions based on the latest information source, e.g., math competitions from the past 12 months, with new questions added and updated every few months\" (Reshaping Representation Space to Balance the Safety and Over-rejection in Large Audio Language Models). The benchmark is consistently defined as an evaluation from Abacus AI that uses a large test set of questions with ground truth answers. Papers use LiveBench to measure a wide range of model capabilities, including mathematical reasoning, programming ability, data analysis, natural language understanding, commonsense knowledge, faithfulness, and instruction following. It is studied alongside other evaluation tools and is reported to be \"strongly correlated\" with HELM (Style Outweighs Substance: Failure Modes of LLM Judges in Alignment Benchmarking). Additionally, its reasoning and mathematics datasets are used by JudgeBench, and it is shown to correlate with LMSYS Chatbot Arena and Arena-Hard.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "JudgeBench: A Benchmark for Evaluating LLM-Based Judges",
+      "LiveBench: A Challenging, Contamination-Limited LLM Benchmark",
+      "Style Outweighs Substance: Failure Modes of LLM Judges in Alignment Benchmarking"
+    ],
+    "icml25": [
+      "CodeIO: Condensing Reasoning Patterns via Code Input-Output Prediction",
+      "Copilot Arena: A Platform for Code LLM Evaluation in the Wild",
+      "DyCodeEval: Dynamic Benchmarking of Reasoning Capabilities in Code Large Language Models Under Data Contamination",
+      "Position: AI Competitions Provide the Gold Standard for Empirical Rigor in GenAI Evaluation",
+      "Position: Don\u2019t Use the CLT in LLM Evals With Fewer Than a Few Hundred Datapoints",
+      "Position: Language model developers should report train-test overlap",
+      "Prompt-to-Leaderboard: Prompt-Adaptive LLM Evaluations",
+      "Unbiased Evaluation of Large Language Models from a Causal Perspective"
+    ],
+    "emnlp25": [
+      "Beyond Text: Unveiling Privacy Vulnerabilities in Multi-modal Retrieval-Augmented Generation",
+      "Bridging External and Parametric Knowledge: Mitigating Hallucination ofLLMs with Shared-Private Semantic Synergy in Dual-Stream Knowledge",
+      "PunMemeCN: A Benchmark to Explore Vision-Language Models\u2019 Understanding ofChinese Pun Memes",
+      "Reshaping Representation Space to Balance the Safety and Over-rejection in Large Audio Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3,
+    "icml25": 8,
+    "emnlp25": 4
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "icml25"
+  ]
+}

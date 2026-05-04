@@ -1,0 +1,582 @@
+{
+  "canonical_name": "BBH",
+  "type": "measurement",
+  "canonical_definition": "Across the surveyed literature, BBH (Big-Bench Hard) is consistently defined as a benchmark derived from the BIG-Bench suite, composed of tasks selected for being challenging for language models. The most prevalent application of BBH is to measure reasoning capabilities, with papers explicitly using it to evaluate general, complex, and multi-step reasoning. Beyond this primary focus, the benchmark is also employed to assess a wide array of other constructs, including language and commonsense understanding, instruction following, and faithfulness. A smaller number of studies use it to measure more specific behaviors like locality after model editing. Operationally, BBH is most often evaluated in a \"few-shot\" context, with some papers specifying a \"3-shot\" setting and using metrics like exact match. The provided data shows that BBH is frequently used as part of a larger suite of evaluation tools, appearing alongside other benchmarks like MMLU, GSM8k, and DROP to assess general model performance.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "BBH",
+    "Big-Bench Hard",
+    "BigBench-Hard"
+  ],
+  "papers": [
+    "2025.emnlp-main.1723.checklist",
+    "Alignment with Fill-In-the-Middle for Enhancing Code Generation",
+    "Analysing Chain of Thought Dynamics: Active Guidance or Unfaithful Post-hoc Rationalisation?",
+    "BannerAgency: Advertising Banner Design with MultimodalLLMAgents",
+    "Beyond Correctness: Confidence-Aware Reward Modeling for Enhancing Large Language Model Reasoning",
+    "Beyond Task-Oriented and Chitchat Dialogues: Proactive and Transition-Aware Conversational Agents",
+    "Beyond Text: Unveiling Privacy Vulnerabilities in Multi-modal Retrieval-Augmented Generation",
+    "CMedCalc-Bench: A Fine-Grained Benchmark forChinese Medical Calculations inLLM",
+    "Does Context Matter? A Prosodic Comparison ofEnglish andSpanish in Monolingual and Multilingual Discourse Settings",
+    "Dual-Path Dynamic Fusion with Learnable Query for Multimodal Sentiment Analysis",
+    "Improving Rule-based Reasoning inLLMs using Neurosymbolic Representations",
+    "Judge and Improve: Towards a Better Reasoning of Knowledge Graphs with Large Language Models",
+    "Layered Insights: Generalizable Analysis of Human Authorial Style by Leveraging All Transformer Layers",
+    "LeTS: Learning to Think-and-Search via Process-and-Outcome Reward Hybridization",
+    "MMAPG: A Training-Free Framework for Multimodal Multi-hop Question Answering via Adaptive Planning Graphs",
+    "Memorization\u2260Understanding: Do Large Language Models Have the Ability of Scenario Cognition?",
+    "Proactive Hearing Assistants that Isolate Egocentric Conversations",
+    "Probing Narrative Morals: A New Character-FocusedMFTFramework for Use with Large Language Models",
+    "Probing for Arithmetic Errors in Language Models",
+    "PunMemeCN: A Benchmark to Explore Vision-Language Models\u2019 Understanding ofChinese Pun Memes",
+    "Rethinking Backdoor Detection Evaluation for Language Models",
+    "Retrieval Enhanced Feedback via In-context Neural Error-book",
+    "Route Sparse Autoencoder to Interpret Large Language Models",
+    "SATER: A Self-Aware and Token-Efficient Approach to Routing and Cascading",
+    "Structured Moral Reasoning in Language Models: A Value-Grounded Evaluation Framework",
+    "TRIAL: Token Relations and Importance Aware Late-interaction for Accurate Text Retrieval",
+    "Unveiling the Response of Large Vision-Language Models to Visually Absent Tokens",
+    "Decomposition Dilemmas: Does Claim Decomposition Boost or Burden Fact-Checking Performance?",
+    "Iterative Self-TuningLLMs for Enhanced Jailbreaking Capabilities",
+    "JRE-L: Journalist, Reader, and EditorLLMs in the Loop for Science Journalism for the General Audience",
+    "MIRAGE-Bench: Automatic Multilingual Benchmark Arena for Retrieval-Augmented Generation Systems",
+    "Option Symbol Matters: Investigating and Mitigating Multiple-Choice Option Symbol Bias of Large Language Models",
+    "PROMPTEVALS: A Dataset of Assertions and Guardrails for Custom Production Large Language Model Pipelines",
+    "Steering Knowledge Selection Behaviours inLLMs viaSAE-Based Representation Engineering"
+  ],
+  "paper_count": 34,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Big-Bench Hard benchmark consisting of challenging tasks from the BIG-Bench suite that are difficult for language models, evaluated in few-shot settings.",
+      "paper": "Decomposition Dilemmas: Does Claim Decomposition Boost or Burden Fact-Checking Performance?",
+      "original_name": "BBH"
+    },
+    {
+      "text": "A subset of the Beyond the Imitation Game benchmark focusing on challenging tasks requiring multi-step reasoning, evaluated in a 3-shot setting.",
+      "paper": "Route Sparse Autoencoder to Interpret Large Language Models",
+      "original_name": "Big-Bench Hard"
+    },
+    {
+      "text": "Subset of the Beyond the Imitation Game Benchmark focusing on challenging tasks that require complex reasoning.",
+      "paper": "Dual-Path Dynamic Fusion with Learnable Query for Multimodal Sentiment Analysis",
+      "original_name": "BigBench-Hard"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Lemur: Harmonizing Natural Language and Code for Language Agents",
+      "evidence": "\u201cBBH (Suzgun et al., 2022) and MMLU (Hendrycks et al., 2021) for multitask reasoning\u201d",
+      "paper_count": 14,
+      "papers_by_conference": {
+        "iclr24": [
+          "Lemur: Harmonizing Natural Language and Code for Language Agents"
+        ],
+        "neurips24": [
+          "SelectIT: Selective Instruction Tuning for LLMs via Uncertainty-Aware Self-Reflection",
+          "TSDS: Data Selection for Task-Specific Model Finetuning",
+          "$\\textit{Trans-LoRA}$: towards data-free Transferable Parameter Efficient Finetuning",
+          "MAmmoTH2: Scaling Instructions from the Web",
+          "Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization",
+          "Fractal Patterns May Illuminate the Success of Next-Token Prediction"
+        ],
+        "iclr25": [
+          "Ultra-Sparse Memory Network"
+        ],
+        "acl25": [
+          "Colloquial SingaporeanEnglish Style Transfer with Fine-Grained Explainable Control",
+          "MMRC: A Large-Scale Benchmark for Understanding Multimodal Large Language Model in Real-World Conversation",
+          "Beyond Logits: Aligning Feature Dynamics for Effective Knowledge Distillation",
+          "Prediction Hubs are Context-Informed Frequent Tokens inLLMs"
+        ],
+        "icml25": [
+          "Deliberation in Latent Space via Differentiable Cache Augmentation"
+        ],
+        "emnlp25": [
+          "CMedCalc-Bench: A Fine-Grained Benchmark forChinese Medical Calculations inLLM"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction following",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "MUFFIN: Curating Multi-Faceted Instructions for Improving Instruction Following",
+      "evidence": "For models trained on general instruction datasets, we follow InstructEval (Chia et al., 2023) and report accuracy (%) on MMLU (Hendrycks et al., 2020), BBH (Suzgun et al., 2022), CRASS (Frohberg and Binder, 2021), DROP (Dua et al., 2019). (Section 4.2)",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "iclr24": [
+          "MUFFIN: Curating Multi-Faceted Instructions for Improving Instruction Following"
+        ],
+        "neurips24": [
+          "TSDS: Data Selection for Task-Specific Model Finetuning"
+        ],
+        "icml25": [
+          "SeedLoRA: A Fusion Approach to Efficient LLM Fine-Tuning"
+        ],
+        "emnlp25": [
+          "LeTS: Learning to Think-and-Search via Process-and-Outcome Reward Hybridization"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Complex reasoning",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Data Pruning by Information Maximization",
+      "evidence": "Finally, we select four text-only benchmarks to evaluate text-based performance: ...BBH for complex reasoning (Suzgun et al., 2023)... (Section 4.1)",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "iclr25": [
+          "Data Pruning by Information Maximization",
+          "TPO: Aligning Large Language Models with Multi-branch & Multi-step Preference Trees"
+        ],
+        "naacl25": [
+          "Iterative Self-TuningLLMs for Enhanced Jailbreaking Capabilities"
+        ],
+        "acl25": [
+          "Fairness Beyond Performance: Revealing Reliability Disparities Across Groups in LegalNLP"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Fractal Patterns May Illuminate the Success of Next-Token Prediction",
+      "evidence": "",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "neurips24": [
+          "Fractal Patterns May Illuminate the Success of Next-Token Prediction"
+        ],
+        "naacl25": [
+          "PROMPTEVALS: A Dataset of Assertions and Guardrails for Custom Production Large Language Model Pipelines"
+        ],
+        "icml25": [
+          "Predictive Data Selection: The Data That Predicts Is the Data That Teaches"
+        ],
+        "emnlp25": [
+          "Retrieval Enhanced Feedback via In-context Neural Error-book"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense knowledge",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "TAIA: Large Language Models are Out-of-Distribution Data Learners",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "TAIA: Large Language Models are Out-of-Distribution Data Learners"
+        ],
+        "iclr25": [
+          "LiveBench: A Challenging, Contamination-Limited LLM Benchmark"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Logical deduction",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization",
+          "Fractal Patterns May Illuminate the Success of Next-Token Prediction"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Prompt optimization",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Large Language Models as Optimizers",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Large Language Models as Optimizers"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-context learning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "CausalLM is not optimal for in-context learning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "CausalLM is not optimal for in-context learning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Problem-solving",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Combatting Dimensional Collapse in LLM Pre-Training Data via Submodular File Selection",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Combatting Dimensional Collapse in LLM Pre-Training Data via Submodular File Selection"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "ACC-Collab: An Actor-Critic Approach to Multi-Agent LLM Collaboration",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "ACC-Collab: An Actor-Critic Approach to Multi-Agent LLM Collaboration"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Symbolic reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Where Are We? EvaluatingLLMPerformance onAfrican Languages",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Where Are We? EvaluatingLLMPerformance onAfrican Languages"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General capabilities",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Decomposition Dilemmas: Does Claim Decomposition Boost or Burden Fact-Checking Performance?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Decomposition Dilemmas: Does Claim Decomposition Boost or Burden Fact-Checking Performance?"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Algorithmic reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Many-Shot In-Context Learning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Many-Shot In-Context Learning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "World knowledge",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Should We Really Edit Language Models? On the Evaluation of Edited Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Should We Really Edit Language Models? On the Evaluation of Edited Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction fine-tuning",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "TAROT: Targeted Data Selection via Optimal Transport",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "TAROT: Targeted Data Selection via Optimal Transport"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "GReaTer: Gradients Over Reasoning Makes Smaller Language Models Strong Prompt Optimizers",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "GReaTer: Gradients Over Reasoning Makes Smaller Language Models Strong Prompt Optimizers"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Compute-Constrained Data Selection",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Compute-Constrained Data Selection"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language understanding",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Fractal Patterns May Illuminate the Success of Next-Token Prediction",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Fractal Patterns May Illuminate the Success of Next-Token Prediction"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Disambiguation",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Fractal Patterns May Illuminate the Success of Next-Token Prediction",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Fractal Patterns May Illuminate the Success of Next-Token Prediction"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Catastrophic forgetting",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "CultureLLM: Incorporating Cultural Differences into Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "CultureLLM: Incorporating Cultural Differences into Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM Evaluation Harness",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "QERA: an Analytical Framework for Quantization Error Reconstruction",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "QERA: an Analytical Framework for Quantization Error Reconstruction"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Logical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "TypedThinker: Diversify Large Language Model Reasoning with Typed Thinking",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "TypedThinker: Diversify Large Language Model Reasoning with Typed Thinking"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Hugging Face Open LLM Leaderboard",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "On a Connection Between Imitation Learning and RLHF",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "On a Connection Between Imitation Learning and RLHF"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OpenLLM Leaderboard",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Improving Data Efficiency via Curating LLM-Driven Rating Systems",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Improving Data Efficiency via Curating LLM-Driven Rating Systems"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LiveBench",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "LiveBench: A Challenging, Contamination-Limited LLM Benchmark",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "LiveBench: A Challenging, Contamination-Limited LLM Benchmark"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "WET: Overcoming Paraphrasing Vulnerabilities in Embeddings-as-a-Service with Linear Transformation Watermarks",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "WET: Overcoming Paraphrasing Vulnerabilities in Embeddings-as-a-Service with Linear Transformation Watermarks"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Locality",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Dual-Path Dynamic Fusion with Learnable Query for Multimodal Sentiment Analysis",
+      "evidence": "For KE, we also need to consider locality, which ensures edits do not affect unrelated knowledge and abilities. To assess this, we evaluate the model on general benchmarks, including CommonsenseQA (Talmor et al., 2019), BigBench-Hard (Suzgun et al., 2023), MMLU (Hendrycks et al., 2021), and GSM8k (Cobbe et al., 2021) (Section 4.1).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Dual-Path Dynamic Fusion with Learnable Query for Multimodal Sentiment Analysis"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 29,
+  "incoming_relationship_count": 25,
+  "outgoing_relationship_count": 4,
+  "characterization": "Across the surveyed literature, BBH (Big-Bench Hard) is consistently defined as a benchmark derived from the BIG-Bench suite, composed of tasks selected for being challenging for language models. The most prevalent application of BBH is to measure reasoning capabilities, with papers explicitly using it to evaluate general, complex, and multi-step reasoning. Beyond this primary focus, the benchmark is also employed to assess a wide array of other constructs, including language and commonsense understanding, instruction following, and faithfulness. A smaller number of studies use it to measure more specific behaviors like locality after model editing. Operationally, BBH is most often evaluated in a \"few-shot\" context, with some papers specifying a \"3-shot\" setting and using metrics like exact match. The provided data shows that BBH is frequently used as part of a larger suite of evaluation tools, appearing alongside other benchmarks like MMLU, GSM8k, and DROP to assess general model performance.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "naacl25": [
+      "Decomposition Dilemmas: Does Claim Decomposition Boost or Burden Fact-Checking Performance?",
+      "Iterative Self-TuningLLMs for Enhanced Jailbreaking Capabilities",
+      "JRE-L: Journalist, Reader, and EditorLLMs in the Loop for Science Journalism for the General Audience",
+      "MIRAGE-Bench: Automatic Multilingual Benchmark Arena for Retrieval-Augmented Generation Systems",
+      "Option Symbol Matters: Investigating and Mitigating Multiple-Choice Option Symbol Bias of Large Language Models",
+      "PROMPTEVALS: A Dataset of Assertions and Guardrails for Custom Production Large Language Model Pipelines",
+      "Steering Knowledge Selection Behaviours inLLMs viaSAE-Based Representation Engineering"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.1723.checklist",
+      "Alignment with Fill-In-the-Middle for Enhancing Code Generation",
+      "Analysing Chain of Thought Dynamics: Active Guidance or Unfaithful Post-hoc Rationalisation?",
+      "BannerAgency: Advertising Banner Design with MultimodalLLMAgents",
+      "Beyond Correctness: Confidence-Aware Reward Modeling for Enhancing Large Language Model Reasoning",
+      "Beyond Task-Oriented and Chitchat Dialogues: Proactive and Transition-Aware Conversational Agents",
+      "Beyond Text: Unveiling Privacy Vulnerabilities in Multi-modal Retrieval-Augmented Generation",
+      "CMedCalc-Bench: A Fine-Grained Benchmark forChinese Medical Calculations inLLM",
+      "Does Context Matter? A Prosodic Comparison ofEnglish andSpanish in Monolingual and Multilingual Discourse Settings",
+      "Dual-Path Dynamic Fusion with Learnable Query for Multimodal Sentiment Analysis",
+      "Improving Rule-based Reasoning inLLMs using Neurosymbolic Representations",
+      "Judge and Improve: Towards a Better Reasoning of Knowledge Graphs with Large Language Models",
+      "Layered Insights: Generalizable Analysis of Human Authorial Style by Leveraging All Transformer Layers",
+      "LeTS: Learning to Think-and-Search via Process-and-Outcome Reward Hybridization",
+      "MMAPG: A Training-Free Framework for Multimodal Multi-hop Question Answering via Adaptive Planning Graphs",
+      "Memorization\u2260Understanding: Do Large Language Models Have the Ability of Scenario Cognition?",
+      "Proactive Hearing Assistants that Isolate Egocentric Conversations",
+      "Probing Narrative Morals: A New Character-FocusedMFTFramework for Use with Large Language Models",
+      "Probing for Arithmetic Errors in Language Models",
+      "PunMemeCN: A Benchmark to Explore Vision-Language Models\u2019 Understanding ofChinese Pun Memes",
+      "Rethinking Backdoor Detection Evaluation for Language Models",
+      "Retrieval Enhanced Feedback via In-context Neural Error-book",
+      "Route Sparse Autoencoder to Interpret Large Language Models",
+      "SATER: A Self-Aware and Token-Efficient Approach to Routing and Cascading",
+      "Structured Moral Reasoning in Language Models: A Value-Grounded Evaluation Framework",
+      "TRIAL: Token Relations and Importance Aware Late-interaction for Accurate Text Retrieval",
+      "Unveiling the Response of Large Vision-Language Models to Visually Absent Tokens"
+    ]
+  },
+  "paper_count_by_conference": {
+    "naacl25": 7,
+    "emnlp25": 27
+  },
+  "conferences": [
+    "emnlp25",
+    "naacl25"
+  ]
+}

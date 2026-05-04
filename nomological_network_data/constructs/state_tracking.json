@@ -1,0 +1,284 @@
+{
+  "canonical_name": "State tracking",
+  "type": "construct",
+  "canonical_definition": "The prevailing definition across the provided papers characterizes state tracking as a model's ability to maintain and update an internal representation of a system's state based on a sequence of inputs, updates, or actions. This general construct is specified in several ways, including tracking the values of variables (\"Variable tracking\"), the properties of objects after actions (\"Fluent tracking\"), the progress of a task (\"Task tracking\"), or a running total of items (\"Quantity tracking\"). The field operationalizes this ability through various measurement tasks, such as \"Variable Assignment,\" which requires a model to recall the latest value of a variable, and \"Board state prediction,\" which involves reconstructing a game state from a sequence of moves. The RULER benchmark is also explicitly used to measure state tracking through its variable tracking tasks. State tracking is frequently discussed in the context of complex behaviors like code generation and reasoning, where models are reported to struggle. For example, failures in task tracking are linked to observable errors like \"not completing all steps, performing them in the wrong order, or undoing completed steps\" (PARTNR: A Benchmark for Planning and Reasoning in Embodied Multi-agent Tasks). The construct is also studied alongside planning, theory of mind, mathematical reasoning, and long-context processing, and is reported by one paper to influence plan generation.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "State tracking",
+    "State Tracking",
+    "State-tracking",
+    "Fluent tracking",
+    "Task tracking",
+    "Stateful processing",
+    "Variable Assignment",
+    "Variable tracking",
+    "Tracking past actions",
+    "Board state prediction",
+    "Quantity tracking"
+  ],
+  "papers": [
+    "ActionReasoningBench: Reasoning about Actions with and without Ramification Constraints",
+    "Explore Theory of Mind: program-guided adversarial data generation for theory of mind reasoning",
+    "Gated Delta Networks: Improving Mamba2 with Delta Rule",
+    "LLMs Can Plan Only If We Tell Them",
+    "Limits of Deep Learning: Sequence Modeling through the Lens of Complexity Theory",
+    "OpenHands: An Open Platform for AI Software Developers as Generalist Agents",
+    "PARTNR: A Benchmark for Planning and Reasoning in Embodied Multi-agent Tasks",
+    "Unlocking State-Tracking in Linear RNNs Through Negative Eigenvalues",
+    "Jamba: Hybrid Transformer-Mamba Language Models",
+    "RefactorBench: Evaluating Stateful Reasoning in Language Agents Through Code",
+    "Scaling Stick-Breaking Attention: An Efficient Implementation and In-depth Study",
+    "Selective Attention Improves Transformer",
+    "Why Does the Effective Context Length of LLMs Fall Short?",
+    "(How) Do Language Models Track State?",
+    "Implicit Language Models are RNNs: Balancing Parallelization and Expressivity",
+    "Minerva: A Programmable Memory Test Benchmark for Language Models",
+    "CateKV: On Sequential Consistency for Long-Context LLM Inference Acceleration",
+    "ShadowKV: KV Cache in Shadows for High-Throughput Long-Context LLM Inference",
+    "What Has a Foundation Model Found? Using Inductive Bias to Probe for World Models",
+    "xLSTM 7B: A Recurrent LLM for Fast and Efficient Inference"
+  ],
+  "paper_count": 20,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The ability to maintain and update an internal representation of state over a sequence of inputs, crucial for complex reasoning and coding tasks.",
+      "paper": "Gated Delta Networks: Improving Mamba2 with Delta Rule",
+      "original_name": "State tracking"
+    },
+    {
+      "text": "The ability of a model to maintain and update an internal representation of a system's state based on a sequence of observed updates.",
+      "paper": "Unlocking State-Tracking in Linear RNNs Through Negative Eigenvalues",
+      "original_name": "State-tracking"
+    },
+    {
+      "text": "The ability to maintain a complete and accurate representation of all properties (fluents) in the world after a sequence of actions has occurred.",
+      "paper": "ActionReasoningBench: Reasoning about Actions with and without Ramification Constraints",
+      "original_name": "State Tracking"
+    },
+    {
+      "text": "The ability to infer which properties of an object remain valid after a sequence of actions from the changed state.",
+      "paper": "ActionReasoningBench: Reasoning about Actions with and without Ramification Constraints",
+      "original_name": "Fluent tracking"
+    },
+    {
+      "text": "The ability to maintain an internal state of task progress, including which sub-goals have been completed and which are still pending, especially in the presence of a partner's actions.",
+      "paper": "PARTNR: A Benchmark for Planning and Reasoning in Embodied Multi-agent Tasks",
+      "original_name": "Task tracking"
+    },
+    {
+      "text": "The ability to maintain and update an internal state based on a sequence of operations described in the context.",
+      "paper": "Minerva: A Programmable Memory Test Benchmark for Language Models",
+      "original_name": "Stateful processing"
+    },
+    {
+      "text": "The task of keeping track of the changing values of variables that are updated multiple times within a long context.",
+      "paper": "Scaling Stick-Breaking Attention: An Efficient Implementation and In-depth Study",
+      "original_name": "Variable tracking"
+    },
+    {
+      "text": "A synthetic task where the model must output the latest value for a named variable based on a sequence of repeated assignments.",
+      "paper": "Selective Attention Improves Transformer",
+      "original_name": "Variable Assignment"
+    },
+    {
+      "text": "The observable behavior of maintaining and reasoning about the history of actions taken during a task trajectory.",
+      "paper": "RefactorBench: Evaluating Stateful Reasoning in Language Agents Through Code",
+      "original_name": "Tracking past actions"
+    },
+    {
+      "text": "The model reconstructs the full board configuration in Othello from a sequence of moves, going beyond next-token prediction to infer latent state.",
+      "paper": "What Has a Foundation Model Found? Using Inductive Bias to Probe for World Models",
+      "original_name": "Board state prediction"
+    },
+    {
+      "text": "Maintaining and updating a running total of items through a sequence of add and subtract operations.",
+      "paper": "Minerva: A Programmable Memory Test Benchmark for Language Models",
+      "original_name": "Quantity tracking"
+    }
+  ],
+  "definition_count": 11,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Coin Flip",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Chain-of-Thought Reasoning Without Prompting",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Chain-of-Thought Reasoning Without Prompting"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Planning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "LLMs Can Plan Only If We Tell Them",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "LLMs Can Plan Only If We Tell Them"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Theory of mind",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Explore Theory of Mind: program-guided adversarial data generation for theory of mind reasoning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Explore Theory of Mind: program-guided adversarial data generation for theory of mind reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Information retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Selective Attention Improves Transformer",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Selective Attention Improves Transformer"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Unlocking State-Tracking in Linear RNNs Through Negative Eigenvalues",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Unlocking State-Tracking in Linear RNNs Through Negative Eigenvalues"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Gated Delta Networks: Improving Mamba2 with Delta Rule",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Gated Delta Networks: Improving Mamba2 with Delta Rule"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "RULER",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Jamba: Hybrid Transformer-Mamba Language Models",
+      "evidence": "\u201cThis benchmark comprises four types of synthetic tasks across variable sequence lengths (4K to 128K): Needle-in-a-haystack (NIAH) retrieval, Multi-hop Tracing with Variable Tracking (VT)\u201d",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Jamba: Hybrid Transformer-Mamba Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Plan generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "LongLeader: A Comprehensive Leaderboard for Large Language Models in Long-context Scenarios",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "LongLeader: A Comprehensive Leaderboard for Large Language Models in Long-context Scenarios"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "World modeling",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Mastering Board Games by External and Internal Planning with Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Mastering Board Games by External and Internal Planning with Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-context processing",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "xLSTM 7B: A Recurrent LLM for Fast and Efficient Inference",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "xLSTM 7B: A Recurrent LLM for Fast and Efficient Inference"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 10,
+  "incoming_relationship_count": 6,
+  "outgoing_relationship_count": 4,
+  "characterization": "The prevailing definition across the provided papers characterizes state tracking as a model's ability to maintain and update an internal representation of a system's state based on a sequence of inputs, updates, or actions. This general construct is specified in several ways, including tracking the values of variables (\"Variable tracking\"), the properties of objects after actions (\"Fluent tracking\"), the progress of a task (\"Task tracking\"), or a running total of items (\"Quantity tracking\"). The field operationalizes this ability through various measurement tasks, such as \"Variable Assignment,\" which requires a model to recall the latest value of a variable, and \"Board state prediction,\" which involves reconstructing a game state from a sequence of moves. The RULER benchmark is also explicitly used to measure state tracking through its variable tracking tasks. State tracking is frequently discussed in the context of complex behaviors like code generation and reasoning, where models are reported to struggle. For example, failures in task tracking are linked to observable errors like \"not completing all steps, performing them in the wrong order, or undoing completed steps\" (PARTNR: A Benchmark for Planning and Reasoning in Embodied Multi-agent Tasks). The construct is also studied alongside planning, theory of mind, mathematical reasoning, and long-context processing, and is reported by one paper to influence plan generation.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "ActionReasoningBench: Reasoning about Actions with and without Ramification Constraints",
+      "Explore Theory of Mind: program-guided adversarial data generation for theory of mind reasoning",
+      "Gated Delta Networks: Improving Mamba2 with Delta Rule",
+      "LLMs Can Plan Only If We Tell Them",
+      "Limits of Deep Learning: Sequence Modeling through the Lens of Complexity Theory",
+      "OpenHands: An Open Platform for AI Software Developers as Generalist Agents",
+      "PARTNR: A Benchmark for Planning and Reasoning in Embodied Multi-agent Tasks",
+      "Unlocking State-Tracking in Linear RNNs Through Negative Eigenvalues",
+      "Jamba: Hybrid Transformer-Mamba Language Models",
+      "RefactorBench: Evaluating Stateful Reasoning in Language Agents Through Code",
+      "Scaling Stick-Breaking Attention: An Efficient Implementation and In-depth Study",
+      "Selective Attention Improves Transformer",
+      "Why Does the Effective Context Length of LLMs Fall Short?"
+    ],
+    "icml25": [
+      "(How) Do Language Models Track State?",
+      "Implicit Language Models are RNNs: Balancing Parallelization and Expressivity",
+      "Minerva: A Programmable Memory Test Benchmark for Language Models",
+      "CateKV: On Sequential Consistency for Long-Context LLM Inference Acceleration",
+      "ShadowKV: KV Cache in Shadows for High-Throughput Long-Context LLM Inference",
+      "What Has a Foundation Model Found? Using Inductive Bias to Probe for World Models",
+      "xLSTM 7B: A Recurrent LLM for Fast and Efficient Inference"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 13,
+    "icml25": 7
+  },
+  "conferences": [
+    "iclr25",
+    "icml25"
+  ]
+}

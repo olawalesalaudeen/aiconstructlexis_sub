@@ -1,0 +1,164 @@
+{
+  "canonical_name": "QMSum",
+  "type": "measurement",
+  "canonical_definition": "QMSum is consistently characterized across the provided literature as a query-based, multi-domain meeting summarization dataset, and is frequently identified as part of the SCROLL benchmark. The dataset is composed of meeting transcripts from various domains, such as academic and industrial settings, which are paired with questions and their corresponding summaries. One paper provides an example of a query: \u201cWhat did the group discuss about budget balancing?\u201d. The transcripts are described as being from \"realistic multi-party meetings\". In terms of its application, QMSum is most commonly used to measure different facets of summarization, including `Text summarization`, `Dialogue summarization`, and what one study terms \"global summarization\" by using the dataset's \"general queries\". Beyond this primary function, it is also employed to assess broader capabilities like `Generalization`, `Length generalization` for long sequences, and overall `Text generation quality`. The ROUGE-1 score is mentioned as a metric used for evaluation on this benchmark. Additionally, QMSum serves as a source of data for constructing other benchmarks.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "QMSum"
+  ],
+  "papers": [
+    "CRUXEVAL-X: A Benchmark for Multilingual Code Reasoning, Understanding and Execution",
+    "MultipleLLMAgents Debate for Equitable Cultural Alignment",
+    "Theorem Prover as a Judge for Synthetic Data Generation",
+    "CanLLMs Generate and Solve Linguistic Olympiad Puzzles?",
+    "ViLBench: A Suite for Vision-Language Process Reward Modeling",
+    "VistaWise: Building Cost-Effective Agent with Cross-Modal Knowledge Graph forMinecraft",
+    "In-Context Pretraining: Language Modeling Beyond Document Boundaries",
+    "Retrieval meets Long Context Large Language Models",
+    "Teaching Language Models to Hallucinate Less with Synthetic Tasks",
+    "Accelerating Inference of Retrieval-Augmented Generation via Sparse Context Selection",
+    "DelTA: An Online Document-Level Translation Agent Based on Multi-Level Memory",
+    "Gated Delta Networks: Improving Mamba2 with Delta Rule"
+  ],
+  "paper_count": 12,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A query-based multi-domain meeting summarization dataset from the SCROLL benchmark.",
+      "paper": "In-Context Pretraining: Language Modeling Beyond Document Boundaries",
+      "original_name": "QMSum"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text summarization",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Chain of Agents: Large Language Models Collaborating on Long-Context Tasks",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "neurips24": [
+          "Chain of Agents: Large Language Models Collaborating on Long-Context Tasks"
+        ],
+        "iclr25": [
+          "Accelerating Inference of Retrieval-Augmented Generation via Sparse Context Selection",
+          "Gated Delta Networks: Improving Mamba2 with Delta Rule"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SCROLLS",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Megalodon: Efficient LLM Pretraining and Inference with Unlimited Context Length",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Megalodon: Efficient LLM Pretraining and Inference with Unlimited Context Length"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Accelerating Inference of Retrieval-Augmented Generation via Sparse Context Selection",
+      "evidence": "Moreover, the choice of the four datasets, which include short- and long-form generation, question answering, summarization, and multi-hop reasoning, demonstrates the generalizability of the Sparse RAG approach. (Section 1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Accelerating Inference of Retrieval-Augmented Generation via Sparse Context Selection"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Length generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Gated Delta Networks: Improving Mamba2 with Delta Rule",
+      "evidence": "As shown in Fig.2, we evaluate the models' capacity to extrapolate to sequences of up to 20K tokens across six long-context benchmarks.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Gated Delta Networks: Improving Mamba2 with Delta Rule"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generation quality",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Accelerating Inference of Retrieval-Augmented Generation via Sparse Context Selection",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Accelerating Inference of Retrieval-Augmented Generation via Sparse Context Selection"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Dialogue summarization",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "ResQ: Mixed-Precision Quantization of Large Language Models with Low-Rank Residuals",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "ResQ: Mixed-Precision Quantization of Large Language Models with Low-Rank Residuals"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 6,
+  "incoming_relationship_count": 5,
+  "outgoing_relationship_count": 1,
+  "characterization": "QMSum is consistently characterized across the provided literature as a query-based, multi-domain meeting summarization dataset, and is frequently identified as part of the SCROLL benchmark. The dataset is composed of meeting transcripts from various domains, such as academic and industrial settings, which are paired with questions and their corresponding summaries. One paper provides an example of a query: \u201cWhat did the group discuss about budget balancing?\u201d. The transcripts are described as being from \"realistic multi-party meetings\". In terms of its application, QMSum is most commonly used to measure different facets of summarization, including `Text summarization`, `Dialogue summarization`, and what one study terms \"global summarization\" by using the dataset's \"general queries\". Beyond this primary function, it is also employed to assess broader capabilities like `Generalization`, `Length generalization` for long sequences, and overall `Text generation quality`. The ROUGE-1 score is mentioned as a metric used for evaluation on this benchmark. Additionally, QMSum serves as a source of data for constructing other benchmarks.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "In-Context Pretraining: Language Modeling Beyond Document Boundaries",
+      "Retrieval meets Long Context Large Language Models",
+      "Teaching Language Models to Hallucinate Less with Synthetic Tasks"
+    ],
+    "iclr25": [
+      "Accelerating Inference of Retrieval-Augmented Generation via Sparse Context Selection",
+      "DelTA: An Online Document-Level Translation Agent Based on Multi-Level Memory",
+      "Gated Delta Networks: Improving Mamba2 with Delta Rule"
+    ],
+    "acl25": [
+      "CRUXEVAL-X: A Benchmark for Multilingual Code Reasoning, Understanding and Execution",
+      "MultipleLLMAgents Debate for Equitable Cultural Alignment",
+      "Theorem Prover as a Judge for Synthetic Data Generation"
+    ],
+    "emnlp25": [
+      "CanLLMs Generate and Solve Linguistic Olympiad Puzzles?",
+      "ViLBench: A Suite for Vision-Language Process Reward Modeling",
+      "VistaWise: Building Cost-Effective Agent with Cross-Modal Knowledge Graph forMinecraft"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 3,
+    "iclr25": 3,
+    "acl25": 3,
+    "emnlp25": 3
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25"
+  ]
+}

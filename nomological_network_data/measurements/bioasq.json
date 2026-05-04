@@ -1,0 +1,99 @@
+{
+  "canonical_name": "BioASQ",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, BioASQ is consistently characterized as a dataset for question answering (QA) within the biomedical or medical domain. It is used to measure the `Question answering` capabilities of models, with one paper specifying its use for \"PubMed-based biomedical QA for specialized domains.\" The dataset is described as containing various question formats, including factoid, list, yes/no, and summary questions. While one source also lists BioASQ as a tool for measuring `Text generation`, no supporting evidence for this usage is provided in the data. The operationalization of the dataset varies across studies; some use it to evaluate retrieval-augmented systems on long-form answers, while another explicitly disregards long answers to \"assess the precision of the short responses.\" Beyond direct evaluation, BioASQ also serves as a component in other research instruments, being included in the MIRAGE benchmark and used as a source to create contexts for the FaithEval benchmark.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "BioASQ"
+  ],
+  "papers": [
+    "More is not always better? Enhancing Many-Shot In-Context Learning with Differentiated and Reweighting Objectives",
+    "Ontology-Guided Reverse Thinking Makes Large Language Models Stronger on Knowledge Graph Question Answering",
+    "FaithEval: Can Your Language Model Stay Faithful to Context, Even If \"The Moon is Made of Marshmallows\"",
+    "Provence: efficient and robust context pruning for retrieval-augmented generation",
+    "GIVE: Structured Reasoning of Large Language Models with Knowledge Graph Inspired Veracity Extrapolation",
+    "RAGGED: Towards Informed Design of Scalable and Stable RAG Systems",
+    "Characterizing the Role of Similarity in the Property Inferences of Language Models",
+    "Self-Pluralising Culture Alignment for Large Language Models"
+  ],
+  "paper_count": 8,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A dataset for biomedical semantic indexing and question answering, used as a source for creating contexts in the FaithEval benchmark.",
+      "paper": "FaithEval: Can Your Language Model Stay Faithful to Context, Even If \"The Moon is Made of Marshmallows\"",
+      "original_name": "BioASQ"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Kernel Language Entropy: Fine-grained Uncertainty Quantification for LLMs from Semantic Similarities",
+      "evidence": "We evaluate RAG performance across three datasets spanning different reasoning complexities and domain-specificity... BioASQ (Task 11B) (Krithara et al., 2023): PubMed-based biomedical QA for specialized domains. (Section 3.3)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "Kernel Language Entropy: Fine-grained Uncertainty Quantification for LLMs from Semantic Similarities"
+        ],
+        "icml25": [
+          "RAGGED: Towards Informed Design of Scalable and Stable RAG Systems"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Kernel Language Entropy: Fine-grained Uncertainty Quantification for LLMs from Semantic Similarities",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Kernel Language Entropy: Fine-grained Uncertainty Quantification for LLMs from Semantic Similarities"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, BioASQ is consistently characterized as a dataset for question answering (QA) within the biomedical or medical domain. It is used to measure the `Question answering` capabilities of models, with one paper specifying its use for \"PubMed-based biomedical QA for specialized domains.\" The dataset is described as containing various question formats, including factoid, list, yes/no, and summary questions. While one source also lists BioASQ as a tool for measuring `Text generation`, no supporting evidence for this usage is provided in the data. The operationalization of the dataset varies across studies; some use it to evaluate retrieval-augmented systems on long-form answers, while another explicitly disregards long answers to \"assess the precision of the short responses.\" Beyond direct evaluation, BioASQ also serves as a component in other research instruments, being included in the MIRAGE benchmark and used as a source to create contexts for the FaithEval benchmark.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "FaithEval: Can Your Language Model Stay Faithful to Context, Even If \"The Moon is Made of Marshmallows\"",
+      "Provence: efficient and robust context pruning for retrieval-augmented generation"
+    ],
+    "naacl25": [
+      "Characterizing the Role of Similarity in the Property Inferences of Language Models",
+      "Self-Pluralising Culture Alignment for Large Language Models"
+    ],
+    "acl25": [
+      "More is not always better? Enhancing Many-Shot In-Context Learning with Differentiated and Reweighting Objectives",
+      "Ontology-Guided Reverse Thinking Makes Large Language Models Stronger on Knowledge Graph Question Answering"
+    ],
+    "icml25": [
+      "GIVE: Structured Reasoning of Large Language Models with Knowledge Graph Inspired Veracity Extrapolation",
+      "RAGGED: Towards Informed Design of Scalable and Stable RAG Systems"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "naacl25": 2,
+    "acl25": 2,
+    "icml25": 2
+  },
+  "conferences": [
+    "acl25",
+    "iclr25",
+    "icml25",
+    "naacl25"
+  ]
+}

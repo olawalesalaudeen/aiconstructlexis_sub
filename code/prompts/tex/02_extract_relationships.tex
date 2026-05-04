@@ -1,0 +1,94 @@
+\section*{Prompt: Extract Relationships (Pass 2)}
+\begin{description}
+\item[Pipeline step:] Extraction --- Phase 2
+\item[Models:] Same 3 models
+\item[Source:] \texttt{misc/prompts.py} $\rightarrow$ \texttt{EXTRACT\_RELATIONSHIPS\_PROMPT}
+\item[Called from:] \texttt{scripts/multi\_model\_mv.py} $\rightarrow$ \texttt{scripts/batch\_majority\_vote.py:build\_relationship\_jsonl()}
+\end{description}
+\begin{tcolorbox}[colback=yellow!8,colframe=yellow!50!black,left=4pt,right=4pt,top=4pt,bottom=4pt,arc=2pt]
+\textbf{Note:} The \texttt{\{entities\_json\}} placeholder is replaced at runtime with the entities extracted in Phase 1.
+\end{tcolorbox}
+
+\begin{tcolorbox}[breakable,enhanced,colback=blue!3,colframe=blue!40!black,title={Prompt},fonttitle=\bfseries,left=8pt,right=8pt,top=6pt,bottom=6pt]
+
+Your task is to act as a research assistant. You are given an academic paper and a set of \textbf{already-extracted entities} (constructs, measurement instruments, behaviors). Extract \textbf{relationships} between these entities that are explicitly supported by the paper text.
+
+\subsection*{Already-Extracted Entities}
+
+\{entities\_json\}
+
+\subsection*{Relationship Extraction Rules}
+
+\begin{itemize}
+\item \textbf{ONLY use entities from the list above} as source and target. Do NOT introduce new entity names.
+\item **\texttt{type} must be exactly one of:**
+\begin{itemize}
+\item \texttt{causes} --- explicit or strong causal claim ("X improves Y", "X enables Y", "X leads to Y")
+\item \texttt{correlates} --- empirical association, regression, or "predicts" in the statistical sense ("X is associated with Y", "higher X corresponds to higher Y")
+\item \texttt{measured\_by} --- a construct or behavior is evaluated/operationalized by a measurement instrument ("We evaluate X using benchmark Y", "We conducted a user study to assess X")
+\item \texttt{related} --- a stated conceptual or empirical link that is NOT merely co-occurrence. The paper must describe HOW or WHY the two entities are connected.
+\end{itemize}
+\end{itemize}
+
+\subsubsection*{Evidence Quality Rules (STRICT)}
+
+\begin{itemize}
+\item **\texttt{evidence}:\textbf{ must be a }quoted substring\textbf{ from the paper that }directly describes the connection** between source and target --- not just mentions both in the same sentence.
+\item \textbf{Do NOT extract a relationship just because two entities appear in the same list, table, or sentence.} Listing instruments together (e.g. "we evaluate on MMLU, HumanEval, and GSM8K") does NOT create relationships between those instruments.
+\item \textbf{Do NOT extract a relationship if the evidence only shows co-occurrence} (e.g. "We test reasoning and code generation" does NOT mean reasoning $\rightarrow$ code generation).
+\item The evidence must answer: \textbf{"What does the paper say about how/why these two entities are connected?"} If you cannot answer that from the quote, do not include the relationship.
+\end{itemize}
+
+WRONG --- co-occurrence, no stated connection:
+  source: "Reasoning", target: "Code generation", evidence: "We conduct experiments on reasoning tasks (language understanding, code generation, and mathematical reasoning)"
+
+RIGHT --- stated connection:
+  source: "Reasoning", target: "Aesthetic understanding", evidence: "to make further development of aesthetic understanding, reasoning is essential"
+
+RIGHT --- measurement instrument relationship:
+  source: "Bias", target: "PAIRS", type: "measured\_by", evidence: "We use PAIRS to probe social biases in VLMs"
+
+RIGHT --- human evaluation relationship:
+  source: "Helpfulness", target: "User preference study", type: "measured\_by", evidence: "We conducted a user preference study with 200 participants to evaluate helpfulness"
+
+\begin{itemize}
+\item \textbf{Allowed source--target patterns} (any combination justified by the text):
+\begin{itemize}
+\item construct $\leftrightarrow$ construct
+\item construct $\leftrightarrow$ behavior
+\item construct $\rightarrow$ measurement instrument (measured\_by)
+\item measurement instrument $\rightarrow$ behavior
+\item measurement instrument $\leftrightarrow$ measurement instrument (e.g. a benchmark suite contains a sub-benchmark, or two instruments measure overlapping domains)
+\item behavior $\leftrightarrow$ behavior
+\end{itemize}
+\end{itemize}
+
+\subsection*{Self-Check}
+
+After drafting, verify:
+\begin{itemize}
+\item Every source and target name \textbf{exactly matches} an entity name from the list above.
+\item Every evidence quote \textbf{appears} in the supplied paper text.
+\item The evidence \textbf{describes a connection}, not just co-occurrence.
+\item Direction and \texttt{type} match the paper's claims.
+\item Prefer fewer, higher-quality relationships over many weak ones.
+\end{itemize}
+
+\subsection*{Output Format (JSON)}
+
+Return a single JSON object with exactly:
+\{\{
+  "relationships": [
+    \{\{
+      "source": "Entity Name (from above list)",
+      "target": "Entity Name (from above list)",
+      "type": "causes | correlates | measured\_by | related",
+      "evidence": "Quoted text from the paper that directly describes the connection (Section/Table ref)."
+    \}\}
+  ]
+\}\}
+
+If no relationships are supported, return \texttt{\{\{"relationships": []\}\}}.
+
+Return only the JSON object, no additional text.
+\end{tcolorbox}

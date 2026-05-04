@@ -1,0 +1,867 @@
+{
+  "canonical_name": "Refusal to answer",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, \"Refusal to answer\" is a multifaceted behavior predominantly framed as a model's abstention from responding to malicious or harmful instructions, often as a direct result of safety alignment. This is the most common usage, with models typically outputting explicit statements like \"I cannot fulfill your request\" to reject unsafe prompts. A second, distinct line of work treats this behavior as a mechanism for handling uncertainty, where models \"abstain\" or emit special tokens like \"[IDK]\" when confidence is low or knowledge is lacking, a behavior studied in relation to faithfulness. These desired forms of refusal are contrasted with the widely discussed failure mode of \"over-refusal,\" defined as the incorrect rejection of benign or harmless queries, which is frequently cited as an undesirable side effect of safety fine-tuning. Less common framings include \"evasive response generation\" for politically sensitive topics and \"punting\" due to over-cautiousness. The field operationalizes and measures this behavior using numerous benchmarks, including XSTEST, OR-Bench, and PHTest, to assess both appropriate rejections and over-refusals. The behavior is consistently studied alongside the constructs of safety, harmlessness, and helpfulness, highlighting a recurring trade-off between model safety and utility.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Refusal",
+    "Abstention",
+    "Abstaining from answering",
+    "Over-refusal",
+    "Task avoidance",
+    "Evasive response generation",
+    "Selective answering",
+    "Overrefusal",
+    "Harmful query rejection",
+    "Unsafe prompt rejection",
+    "Answer abstention",
+    "Staying silent",
+    "Over-rejection",
+    "Toxic prompt rejection",
+    "Avoidance",
+    "Dispreferred response rejection",
+    "Harmful content rejection",
+    "Punting",
+    "Ill-defined problem rejection",
+    "Refusal to answer"
+  ],
+  "papers": [
+    "All That Glitters is Not Novel: Plagiarism inAIGenerated Research",
+    "Document-Level Text Generation with MinimumBayes Risk Decoding using Optimal Transport",
+    "Enhancing Retrieval-Augmented Generation via Evidence Tree Search",
+    "Jailbreak Large Vision-Language Models Through Multi-Modal Linkage",
+    "2025.emnlp-main.1065.checklist",
+    "BabyLM\u2019s First Constructions: Causal interventions provide a signal of learning",
+    "Benchmarking Large Language Models Under Data Contamination: A Survey from Static to Dynamic Evaluation",
+    "Breaking Bad Tokens: Detoxification ofLLMs Using Sparse Autoencoders",
+    "Chart2Code53: A Large-Scale Diverse and Complex Dataset for Enhancing Chart-to-Code Generation",
+    "Deriving Strategic Market Insights with Large Language Models: A Benchmark for Forward Counterfactual Generation",
+    "EstimatingLLMConsistency: A User Baseline vs Surrogate Metrics",
+    "Multilingual Pretraining for Pixel Language Models",
+    "Neuron-Level Differentiation of Memorization and Generalization in Large Language Models",
+    "Non-Existent Relationship: Fact-Aware Multi-Level Machine-Generated Text Detection",
+    "Pre-trained Models Perform the Best When Token Distributions FollowZipf\u2019s Law",
+    "Recursive Training Loops inLLMs: How training data properties modulate distribution shift in generated data?",
+    "Router-Tuning: A Simple and Effective Approach for Dynamic Depth",
+    "The Enemy from Within: A Study of Political Delegitimization Discourse in Israeli Political Speech",
+    "The Illusion of Progress: Re-evaluating Hallucination Detection inLLMs",
+    "Ask Patients with Patience: EnablingLLMs for Human-Centric Medical Dialogue with Grounded Reasoning",
+    "Automated Knowledge Graph Construction using Large Language Models and Sentence Complexity Modelling",
+    "Governance in Motion: Co-evolution of Constitutions andAImodels for Scalable Safety",
+    "LATTE: Learning to Think with Vision Specialists",
+    "Scaling Rich Style-Prompted Text-to-Speech Datasets",
+    "Select-Then-Decompose: From Empirical Analysis to Adaptive Selection Strategy for Task Decomposition in Large Language Models",
+    "VerIF: Verification Engineering for Reinforcement Learning in Instruction Following",
+    "Vision-Free Retrieval: Rethinking Multimodal Search with Textual Scene Descriptions",
+    "Catastrophic Jailbreak of Open-source LLMs via Exploiting Generation",
+    "Understanding Catastrophic Forgetting in Language Models via Implicit Inference",
+    "Adaptive Chameleon  or Stubborn Sloth: Revealing the Behavior of Large Language Models in Knowledge Conflicts",
+    "Beyond task performance: evaluating and reducing the flaws of large multimodal models with in-context-learning",
+    "A Distributional Approach to Uncertainty-Aware Preference Alignment Using Offline Demonstrations",
+    "AI Sandbagging: Language Models can Strategically Underperform on Evaluations",
+    "Does Refusal Training in LLMs Generalize to the Past Tense?",
+    "Endless Jailbreaks with Bijection Learning",
+    "Evaluating Large Language Models through Role-Guide and Self-Reflection: A Comparative Study",
+    "FaithEval: Can Your Language Model Stay Faithful to Context, Even If \"The Moon is Made of Marshmallows\"",
+    "Fictitious Synthetic Data Can Improve LLM Factuality via Prerequisite Learning",
+    "Functional Homotopy: Smoothing Discrete Optimization via Continuous Parameters for LLM Jailbreak Attacks",
+    "Instructional Segment Embedding: Improving LLM Safety with Instruction Hierarchy",
+    "Is Your Multimodal Language Model Oversensitive to Safe Queries?",
+    "Jailbreaking as a Reward Misspecification Problem",
+    "KBLaM: Knowledge Base augmented Language Model",
+    "Language Model Alignment in Multilingual Trolley Problems",
+    "Measuring Non-Adversarial Reproduction of Training Data in Large Language Models",
+    "On Evaluating the Durability of Safeguards for Open-Weight LLMs",
+    "On the Role of Attention Heads in Large Language Model Safety",
+    "Proactive Agent: Shifting LLM Agents from Reactive Responses to Active Assistance",
+    "Programming Refusal with Conditional Activation Steering",
+    "QA-Calibration of Language Model Confidence Scores",
+    "Robust LLM safeguarding via refusal feature adversarial training",
+    "SaLoRA: Safety-Alignment Preserved Low-Rank Adaptation",
+    "Safety Layers in Aligned Large Language Models: The Key to LLM Security",
+    "Semantic Loss Guided Data Efficient Supervised Fine Tuning for Safe Responses in LLMs",
+    "Sufficient Context: A New Lens on Retrieval Augmented Generation Systems",
+    "X-ALMA: Plug & Play Modules and Adaptive Rejection for Quality Translation at Scale",
+    "Benchmarking Vision Language Model Unlearning via Fictitious Facial Identity Dataset",
+    "CEB: Compositional Evaluation Benchmark for Fairness in Large Language Models",
+    "Injecting Universal Jailbreak Backdoors into LLMs in Minutes",
+    "LLMs Know More Than They Show: On the Intrinsic Representation of LLM Hallucinations",
+    "MMWorld: Towards Multi-discipline Multi-faceted World Model Evaluation in Videos",
+    "PhysBench: Benchmarking and Enhancing Vision-Language Models for Physical World Understanding",
+    "Refine Knowledge of Large Language Models via Adaptive Contrastive Learning",
+    "Adversaries Can Misuse Combinations of Safe Models",
+    "CASE-Bench: Context-Aware SafEty Benchmark for Large Language Models",
+    "Diverging Preferences: When do Annotators Disagree and do Models Know?",
+    "Gandalf the Red: Adaptive Security for LLMs",
+    "HPS: Hard Preference Sampling for Human Preference Alignment",
+    "Improving LLM Safety Alignment with Dual-Objective Optimization",
+    "Learning to Route LLMs with Confidence Tokens",
+    "OR-Bench: An Over-Refusal Benchmark for Large Language Models",
+    "PANDAS: Improving Many-shot Jailbreaking via Positive Affirmation, Negative Demonstration, and Adaptive Sampling",
+    "POROver: Improving Safety and Reducing Overrefusal in Large Language Models with Overgeneration and Preference Optimization",
+    "Position: Political Neutrality in AI Is Impossible \u2014 But Here Is How to Approximate It",
+    "Safety Reasoning with Guidelines",
+    "Scaling Trends in Language Model Robustness",
+    "The Elicitation Game: Evaluating Capability Elicitation Techniques",
+    "The Geometry of Refusal in Large Language Models: Concept Cones and Representational Independence",
+    "Are LLMs Prescient? A Continuous Evaluation using Daily News as the Oracle",
+    "LaRA: Benchmarking Retrieval-Augmented Generation and Long-Context LLMs \u2013 No Silver Bullet for LC or RAG Routing",
+    "Position: LLMs Need a Bayesian Meta-Reasoning Framework for More Robust and Generalizable Reasoning",
+    "ConQRet: A New Benchmark for Fine-Grained Automatic Evaluation of Retrieval Augmented Computational Argumentation",
+    "LLM-Based Explicit Models of Opponents for Multi-Agent Games",
+    "Multilingual Machine Translation with Open Large Language Models at Practical Scale: An Empirical Study",
+    "Aggregation Artifacts in Subjective Tasks Collapse Large Language Models\u2019 Posteriors",
+    "How to MakeLLMs Forget: On Reversing In-Context Knowledge Edits",
+    "Superlatives in Context: Modeling the Implicit Semantics of Superlatives",
+    "A StrongREJECT for Empty Jailbreaks",
+    "ALI-Agent: Assessing LLMs'  Alignment with Human Values via Agent-based Evaluation",
+    "Conformal Alignment: Knowing When to Trust Foundation Models with Guarantees",
+    "Evaluating Copyright Takedown Methods for Language Models",
+    "Exploiting LLM Quantization",
+    "I Don't Know: Explicit Modeling of Uncertainty with an [IDK] Token",
+    "Improving Alignment and Robustness with Circuit Breakers",
+    "LACIE: Listener-Aware Finetuning for Calibration in Large Language Models",
+    "MMLONGBENCH-DOC: Benchmarking Long-context Document Understanding with Visualizations",
+    "MediQ: Question-Asking LLMs and a Benchmark for Reliable Interactive Clinical Reasoning",
+    "Stepwise Alignment for Constrained Language Model Policy Optimization",
+    "$\\texttt{ConflictBank}$: A Benchmark for Evaluating the Influence of Knowledge Conflicts in LLMs",
+    "Alignment for Honesty",
+    "II-Bench: An Image Implication Understanding Benchmark for Multimodal Large Language Models",
+    "Measuring Multimodal Mathematical Reasoning with MATH-Vision Dataset",
+    "Perception of Knowledge Boundary for Large Language Models through Semi-open-ended Question Answering"
+  ],
+  "paper_count": 103,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The model's observable behavior of abstaining from responding to a malicious instruction, typically by stating it cannot assist with harmful requests.",
+      "paper": "Catastrophic Jailbreak of Open-source LLMs via Exploiting Generation",
+      "original_name": "Refusal"
+    },
+    {
+      "text": "The observable behavior of refraining from providing a final answer when confidence is low, opting instead to ask a question.",
+      "paper": "MediQ: Question-Asking LLMs and a Benchmark for Reliable Interactive Clinical Reasoning",
+      "original_name": "Abstention"
+    },
+    {
+      "text": "Withholding an answer by emitting an uncertainty signal or equivalent refusal-like output instead of a substantive response.",
+      "paper": "I Don't Know: Explicit Modeling of Uncertainty with an [IDK] Token",
+      "original_name": "Abstaining from answering"
+    },
+    {
+      "text": "The behavior of refusing to answer harmless user queries, often providing a plausible but unnecessary reason for the refusal.",
+      "paper": "Exploiting LLM Quantization",
+      "original_name": "Over-refusal"
+    },
+    {
+      "text": "The model's behavior of avoiding a direct answer to a prompt, often as a safety mechanism, which can sometimes be an undesirable side effect of alignment.",
+      "paper": "A Distributional Approach to Uncertainty-Aware Preference Alignment Using Offline Demonstrations",
+      "original_name": "Evasive response generation"
+    },
+    {
+      "text": "The behavior of a model failing to provide a definitive answer to a task as instructed in the prompt.",
+      "paper": "Evaluating Large Language Models through Role-Guide and Self-Reflection: A Comparative Study",
+      "original_name": "Task avoidance"
+    },
+    {
+      "text": "The observable behavior of returning an answer only when confidence exceeds a threshold, otherwise abstaining from responding.",
+      "paper": "QA-Calibration of Language Model Confidence Scores",
+      "original_name": "Selective answering"
+    },
+    {
+      "text": "The observable behavior of a model refusing to answer a harmful or malicious query, often by outputting a canned refusal phrase.",
+      "paper": "On the Role of Attention Heads in Large Language Model Safety",
+      "original_name": "Harmful query rejection"
+    },
+    {
+      "text": "The model's incorrect refusal to answer a benign or borderline request, often as an unintended side effect of safety fine-tuning.",
+      "paper": "Does Refusal Training in LLMs Generalize to the Past Tense?",
+      "original_name": "Overrefusal"
+    },
+    {
+      "text": "The model declining or refusing to answer requests that are dangerous, unethical, or violate safety policies.",
+      "paper": "SaLoRA: Safety-Alignment Preserved Low-Rank Adaptation",
+      "original_name": "Unsafe prompt rejection"
+    },
+    {
+      "text": "The observable behavior of an agent correctly refraining from offering assistance when it determines the user does not need help.",
+      "paper": "Proactive Agent: Shifting LLM Agents from Reactive Responses to Active Assistance",
+      "original_name": "Staying silent"
+    },
+    {
+      "text": "The model's action of declining to answer a question, often by stating \"I don't know\", when it lacks the necessary knowledge.",
+      "paper": "Fictitious Synthetic Data Can Improve LLM Factuality via Prerequisite Learning",
+      "original_name": "Answer abstention"
+    },
+    {
+      "text": "An observable failure mode in preference learning for translation where the model's output style shifts significantly away from the preferred data distribution.",
+      "paper": "X-ALMA: Plug & Play Modules and Adaptive Rejection for Quality Translation at Scale",
+      "original_name": "Over-rejection"
+    },
+    {
+      "text": "The observable behavior where a model correctly refuses to respond to a harmful or dangerous user request.",
+      "paper": "OR-Bench: An Over-Refusal Benchmark for Large Language Models",
+      "original_name": "Toxic prompt rejection"
+    },
+    {
+      "text": "The observable behavior of a model refusing to generate outputs that are inappropriate, offensive, or malicious.",
+      "paper": "HPS: Hard Preference Sampling for Human Preference Alignment",
+      "original_name": "Harmful content rejection"
+    },
+    {
+      "text": "Avoiding or downweighting responses that are ranked below the preferred answer, including those that are only mildly or highly dispreferred.",
+      "paper": "HPS: Hard Preference Sampling for Human Preference Alignment",
+      "original_name": "Dispreferred response rejection"
+    },
+    {
+      "text": "The observable behavior of providing a related but non-responsive answer to a politically sensitive query, without directly addressing the input.",
+      "paper": "Position: Political Neutrality in AI Is Impossible \u2014 But Here Is How to Approximate It",
+      "original_name": "Avoidance"
+    },
+    {
+      "text": "The model's tendency to avoid answering a question altogether, often as a result of over-cautiousness induced by uncertainty prompts.",
+      "paper": "Multilingual Pretraining for Pixel Language Models",
+      "original_name": "Punting"
+    },
+    {
+      "text": "The observable behavior of a model refusing to generate a solution when presented with a mathematical problem that has missing or contradictory conditions.",
+      "paper": "Breaking Bad Tokens: Detoxification ofLLMs Using Sparse Autoencoders",
+      "original_name": "Ill-defined problem rejection"
+    },
+    {
+      "text": "The action of explicitly declining to provide an answer to a question, often by stating an inability to do so or citing knowledge limitations.",
+      "paper": "Perception of Knowledge Boundary for Large Language Models through Semi-open-ended Question Answering",
+      "original_name": "Refusal to answer"
+    }
+  ],
+  "definition_count": 20,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "XSTEST",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Robust LLM safeguarding via refusal feature adversarial training",
+      "evidence": "",
+      "paper_count": 5,
+      "papers_by_conference": {
+        "iclr25": [
+          "Robust LLM safeguarding via refusal feature adversarial training"
+        ],
+        "icml25": [
+          "Just Enough Shifts: Mitigating Over-Refusal in Aligned Language Models with Targeted Representation Fine-Tuning",
+          "The Geometry of Refusal in Large Language Models: Concept Cones and Representational Independence",
+          "Improving LLM Safety Alignment with Dual-Objective Optimization"
+        ],
+        "emnlp25": [
+          "Data to Defense: The Role of Curation in Aligning Large Language Models Against Safety Compromise"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Beyond task performance: evaluating and reducing the flaws of large multimodal models with in-context-learning",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr24": [
+          "Beyond task performance: evaluating and reducing the flaws of large multimodal models with in-context-learning"
+        ],
+        "neurips24": [
+          "Alignment for Honesty"
+        ],
+        "iclr25": [
+          "Refine Knowledge of Large Language Models via Adaptive Contrastive Learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OR-Bench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "OR-Bench: An Over-Refusal Benchmark for Large Language Models",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "icml25": [
+          "OR-Bench: An Over-Refusal Benchmark for Large Language Models",
+          "The Geometry of Refusal in Large Language Models: Concept Cones and Representational Independence"
+        ],
+        "emnlp25": [
+          "\u2018Rich Dad, Poor Lad\u2019: How do Large Language Models Contextualize Socioeconomic Factors in College Admission ?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Safety",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "On the Role of Attention Heads in Large Language Model Safety",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "On the Role of Attention Heads in Large Language Model Safety"
+        ],
+        "icml25": [
+          "POROver: Improving Safety and Reducing Overrefusal in Large Language Models with Overgeneration and Preference Optimization"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Stepwise Alignment for Constrained Language Model Policy Optimization",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "Stepwise Alignment for Constrained Language Model Policy Optimization"
+        ],
+        "icml25": [
+          "OR-Bench: An Over-Refusal Benchmark for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmlessness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Stepwise Alignment for Constrained Language Model Policy Optimization",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "Stepwise Alignment for Constrained Language Model Policy Optimization"
+        ],
+        "icml25": [
+          "HPS: Hard Preference Sampling for Human Preference Alignment"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Safety alignment",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "SaLoRA: Safety-Alignment Preserved Low-Rank Adaptation",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "SaLoRA: Safety-Alignment Preserved Low-Rank Adaptation"
+        ],
+        "icml25": [
+          "Just Enough Shifts: Mitigating Over-Refusal in Aligned Language Models with Targeted Representation Fine-Tuning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Safety alignment",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Injecting Universal Jailbreak Backdoors into LLMs in Minutes",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Injecting Universal Jailbreak Backdoors into LLMs in Minutes"
+        ],
+        "emnlp25": [
+          "Towards Transferable Personality Representation Learning based on Triplet Comparisons and Its Applications"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OR-Bench-Hard-1K",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "OR-Bench: An Over-Refusal Benchmark for Large Language Models",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "icml25": [
+          "OR-Bench: An Over-Refusal Benchmark for Large Language Models",
+          "Just Enough Shifts: Mitigating Over-Refusal in Aligned Language Models with Targeted Representation Fine-Tuning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PHTest",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Just Enough Shifts: Mitigating Over-Refusal in Aligned Language Models with Targeted Representation Fine-Tuning",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "icml25": [
+          "Just Enough Shifts: Mitigating Over-Refusal in Aligned Language Models with Targeted Representation Fine-Tuning",
+          "The Geometry of Refusal in Large Language Models: Concept Cones and Representational Independence"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TDIUC",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Beyond task performance: evaluating and reducing the flaws of large multimodal models with in-context-learning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Beyond task performance: evaluating and reducing the flaws of large multimodal models with in-context-learning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-context learning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Beyond task performance: evaluating and reducing the flaws of large multimodal models with in-context-learning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Beyond task performance: evaluating and reducing the flaws of large multimodal models with in-context-learning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Human preference alignment",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Large Language Models as Automated Aligners for  benchmarking  Vision-Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Large Language Models as Automated Aligners for  benchmarking  Vision-Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Towards Transferable Personality Representation Learning based on Triplet Comparisons and Its Applications",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Towards Transferable Personality Representation Learning based on Triplet Comparisons and Its Applications"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WildChat",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Improving Alignment and Robustness with Circuit Breakers",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Improving Alignment and Robustness with Circuit Breakers"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Databricks Dolly-15k",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LT-Defense: Searching-free Backdoor Defense via Exploiting the Long-tailed Effect",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "LT-Defense: Searching-free Backdoor Defense via Exploiting the Long-tailed Effect"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-as-a-judge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Neuron-Level Differentiation of Memorization and Generalization in Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Neuron-Level Differentiation of Memorization and Generalization in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Preference bias",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Enhancing Multiple Dimensions of Trustworthiness in LLMs via Sparse Activation Control",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Enhancing Multiple Dimensions of Trustworthiness in LLMs via Sparse Activation Control"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Safety",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Safety Layers in Aligned Large Language Models: The Key to LLM Security",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Safety Layers in Aligned Large Language Models: The Key to LLM Security"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLMEval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Sufficient Context: A New Lens on Retrieval Augmented Generation Systems",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Sufficient Context: A New Lens on Retrieval Augmented Generation Systems"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SORRY-Bench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Programming Refusal with Conditional Activation Steering",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Programming Refusal with Conditional Activation Steering"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LongMemEval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "DrawEduMath: Evaluating Vision Language Models with Expert-Annotated Students\u2019 Hand-Drawn Math Images",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "DrawEduMath: Evaluating Vision Language Models with Expert-Annotated Students\u2019 Hand-Drawn Math Images"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Specificity",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "DrawEduMath: Evaluating Vision Language Models with Expert-Annotated Students\u2019 Hand-Drawn Math Images",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "DrawEduMath: Evaluating Vision Language Models with Expert-Annotated Students\u2019 Hand-Drawn Math Images"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Factuality",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Deriving Strategic Market Insights with Large Language Models: A Benchmark for Forward Counterfactual Generation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Deriving Strategic Market Insights with Large Language Models: A Benchmark for Forward Counterfactual Generation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination detection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "LaRA: Benchmarking Retrieval-Augmented Generation and Long-Context LLMs \u2013 No Silver Bullet for LC or RAG Routing",
+      "evidence": "The hallucination detection task aims to test the model\u2019s ability to decline answering questions that are not mentioned in the given context. (Section 3.2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "LaRA: Benchmarking Retrieval-Augmented Generation and Long-Context LLMs \u2013 No Silver Bullet for LC or RAG Routing"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OKTest",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Just Enough Shifts: Mitigating Over-Refusal in Aligned Language Models with Targeted Representation Fine-Tuning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Just Enough Shifts: Mitigating Over-Refusal in Aligned Language Models with Targeted Representation Fine-Tuning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Usefulness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "POROver: Improving Safety and Reducing Overrefusal in Large Language Models with Overgeneration and Preference Optimization",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "POROver: Improving Safety and Reducing Overrefusal in Large Language Models with Overgeneration and Preference Optimization"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Fairness",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Position: Political Neutrality in AI Is Impossible \u2014 But Here Is How to Approximate It",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Position: Political Neutrality in AI Is Impossible \u2014 But Here Is How to Approximate It"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AIAH",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Towards Transferable Personality Representation Learning based on Triplet Comparisons and Its Applications",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Towards Transferable Personality Representation Learning based on Triplet Comparisons and Its Applications"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Benchmarking Large Language Models Under Data Contamination: A Survey from Static to Dynamic Evaluation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Benchmarking Large Language Models Under Data Contamination: A Survey from Static to Dynamic Evaluation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MORBENCH",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "\u2018Rich Dad, Poor Lad\u2019: How do Large Language Models Contextualize Socioeconomic Factors in College Admission ?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "\u2018Rich Dad, Poor Lad\u2019: How do Large Language Models Contextualize Socioeconomic Factors in College Admission ?"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 32,
+  "incoming_relationship_count": 11,
+  "outgoing_relationship_count": 21,
+  "characterization": "Across the surveyed literature, \"Refusal to answer\" is a multifaceted behavior predominantly framed as a model's abstention from responding to malicious or harmful instructions, often as a direct result of safety alignment. This is the most common usage, with models typically outputting explicit statements like \"I cannot fulfill your request\" to reject unsafe prompts. A second, distinct line of work treats this behavior as a mechanism for handling uncertainty, where models \"abstain\" or emit special tokens like \"[IDK]\" when confidence is low or knowledge is lacking, a behavior studied in relation to faithfulness. These desired forms of refusal are contrasted with the widely discussed failure mode of \"over-refusal,\" defined as the incorrect rejection of benign or harmless queries, which is frequently cited as an undesirable side effect of safety fine-tuning. Less common framings include \"evasive response generation\" for politically sensitive topics and \"punting\" due to over-cautiousness. The field operationalizes and measures this behavior using numerous benchmarks, including XSTEST, OR-Bench, and PHTest, to assess both appropriate rejections and over-refusals. The behavior is consistently studied alongside the constructs of safety, harmlessness, and helpfulness, highlighting a recurring trade-off between model safety and utility.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Catastrophic Jailbreak of Open-source LLMs via Exploiting Generation",
+      "Understanding Catastrophic Forgetting in Language Models via Implicit Inference",
+      "Adaptive Chameleon  or Stubborn Sloth: Revealing the Behavior of Large Language Models in Knowledge Conflicts",
+      "Beyond task performance: evaluating and reducing the flaws of large multimodal models with in-context-learning"
+    ],
+    "neurips24": [
+      "A StrongREJECT for Empty Jailbreaks",
+      "ALI-Agent: Assessing LLMs'  Alignment with Human Values via Agent-based Evaluation",
+      "Conformal Alignment: Knowing When to Trust Foundation Models with Guarantees",
+      "Evaluating Copyright Takedown Methods for Language Models",
+      "Exploiting LLM Quantization",
+      "I Don't Know: Explicit Modeling of Uncertainty with an [IDK] Token",
+      "Improving Alignment and Robustness with Circuit Breakers",
+      "LACIE: Listener-Aware Finetuning for Calibration in Large Language Models",
+      "MMLONGBENCH-DOC: Benchmarking Long-context Document Understanding with Visualizations",
+      "MediQ: Question-Asking LLMs and a Benchmark for Reliable Interactive Clinical Reasoning",
+      "Stepwise Alignment for Constrained Language Model Policy Optimization",
+      "$\\texttt{ConflictBank}$: A Benchmark for Evaluating the Influence of Knowledge Conflicts in LLMs",
+      "Alignment for Honesty",
+      "II-Bench: An Image Implication Understanding Benchmark for Multimodal Large Language Models",
+      "Measuring Multimodal Mathematical Reasoning with MATH-Vision Dataset",
+      "Perception of Knowledge Boundary for Large Language Models through Semi-open-ended Question Answering"
+    ],
+    "iclr25": [
+      "A Distributional Approach to Uncertainty-Aware Preference Alignment Using Offline Demonstrations",
+      "AI Sandbagging: Language Models can Strategically Underperform on Evaluations",
+      "Does Refusal Training in LLMs Generalize to the Past Tense?",
+      "Endless Jailbreaks with Bijection Learning",
+      "Evaluating Large Language Models through Role-Guide and Self-Reflection: A Comparative Study",
+      "FaithEval: Can Your Language Model Stay Faithful to Context, Even If \"The Moon is Made of Marshmallows\"",
+      "Fictitious Synthetic Data Can Improve LLM Factuality via Prerequisite Learning",
+      "Functional Homotopy: Smoothing Discrete Optimization via Continuous Parameters for LLM Jailbreak Attacks",
+      "Instructional Segment Embedding: Improving LLM Safety with Instruction Hierarchy",
+      "Is Your Multimodal Language Model Oversensitive to Safe Queries?",
+      "Jailbreaking as a Reward Misspecification Problem",
+      "KBLaM: Knowledge Base augmented Language Model",
+      "Language Model Alignment in Multilingual Trolley Problems",
+      "Measuring Non-Adversarial Reproduction of Training Data in Large Language Models",
+      "On Evaluating the Durability of Safeguards for Open-Weight LLMs",
+      "On the Role of Attention Heads in Large Language Model Safety",
+      "Proactive Agent: Shifting LLM Agents from Reactive Responses to Active Assistance",
+      "Programming Refusal with Conditional Activation Steering",
+      "QA-Calibration of Language Model Confidence Scores",
+      "Robust LLM safeguarding via refusal feature adversarial training",
+      "SaLoRA: Safety-Alignment Preserved Low-Rank Adaptation",
+      "Safety Layers in Aligned Large Language Models: The Key to LLM Security",
+      "Semantic Loss Guided Data Efficient Supervised Fine Tuning for Safe Responses in LLMs",
+      "Sufficient Context: A New Lens on Retrieval Augmented Generation Systems",
+      "X-ALMA: Plug & Play Modules and Adaptive Rejection for Quality Translation at Scale",
+      "Benchmarking Vision Language Model Unlearning via Fictitious Facial Identity Dataset",
+      "CEB: Compositional Evaluation Benchmark for Fairness in Large Language Models",
+      "Injecting Universal Jailbreak Backdoors into LLMs in Minutes",
+      "LLMs Know More Than They Show: On the Intrinsic Representation of LLM Hallucinations",
+      "MMWorld: Towards Multi-discipline Multi-faceted World Model Evaluation in Videos",
+      "PhysBench: Benchmarking and Enhancing Vision-Language Models for Physical World Understanding",
+      "Refine Knowledge of Large Language Models via Adaptive Contrastive Learning"
+    ],
+    "naacl25": [
+      "ConQRet: A New Benchmark for Fine-Grained Automatic Evaluation of Retrieval Augmented Computational Argumentation",
+      "LLM-Based Explicit Models of Opponents for Multi-Agent Games",
+      "Multilingual Machine Translation with Open Large Language Models at Practical Scale: An Empirical Study",
+      "Aggregation Artifacts in Subjective Tasks Collapse Large Language Models\u2019 Posteriors",
+      "How to MakeLLMs Forget: On Reversing In-Context Knowledge Edits",
+      "Superlatives in Context: Modeling the Implicit Semantics of Superlatives"
+    ],
+    "icml25": [
+      "Adversaries Can Misuse Combinations of Safe Models",
+      "CASE-Bench: Context-Aware SafEty Benchmark for Large Language Models",
+      "Diverging Preferences: When do Annotators Disagree and do Models Know?",
+      "Gandalf the Red: Adaptive Security for LLMs",
+      "HPS: Hard Preference Sampling for Human Preference Alignment",
+      "Improving LLM Safety Alignment with Dual-Objective Optimization",
+      "Learning to Route LLMs with Confidence Tokens",
+      "OR-Bench: An Over-Refusal Benchmark for Large Language Models",
+      "PANDAS: Improving Many-shot Jailbreaking via Positive Affirmation, Negative Demonstration, and Adaptive Sampling",
+      "POROver: Improving Safety and Reducing Overrefusal in Large Language Models with Overgeneration and Preference Optimization",
+      "Position: Political Neutrality in AI Is Impossible \u2014 But Here Is How to Approximate It",
+      "Safety Reasoning with Guidelines",
+      "Scaling Trends in Language Model Robustness",
+      "The Elicitation Game: Evaluating Capability Elicitation Techniques",
+      "The Geometry of Refusal in Large Language Models: Concept Cones and Representational Independence",
+      "Are LLMs Prescient? A Continuous Evaluation using Daily News as the Oracle",
+      "LaRA: Benchmarking Retrieval-Augmented Generation and Long-Context LLMs \u2013 No Silver Bullet for LC or RAG Routing",
+      "Position: LLMs Need a Bayesian Meta-Reasoning Framework for More Robust and Generalizable Reasoning"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.1065.checklist",
+      "BabyLM\u2019s First Constructions: Causal interventions provide a signal of learning",
+      "Benchmarking Large Language Models Under Data Contamination: A Survey from Static to Dynamic Evaluation",
+      "Breaking Bad Tokens: Detoxification ofLLMs Using Sparse Autoencoders",
+      "Chart2Code53: A Large-Scale Diverse and Complex Dataset for Enhancing Chart-to-Code Generation",
+      "Deriving Strategic Market Insights with Large Language Models: A Benchmark for Forward Counterfactual Generation",
+      "EstimatingLLMConsistency: A User Baseline vs Surrogate Metrics",
+      "Multilingual Pretraining for Pixel Language Models",
+      "Neuron-Level Differentiation of Memorization and Generalization in Large Language Models",
+      "Non-Existent Relationship: Fact-Aware Multi-Level Machine-Generated Text Detection",
+      "Pre-trained Models Perform the Best When Token Distributions FollowZipf\u2019s Law",
+      "Recursive Training Loops inLLMs: How training data properties modulate distribution shift in generated data?",
+      "Router-Tuning: A Simple and Effective Approach for Dynamic Depth",
+      "The Enemy from Within: A Study of Political Delegitimization Discourse in Israeli Political Speech",
+      "The Illusion of Progress: Re-evaluating Hallucination Detection inLLMs",
+      "Ask Patients with Patience: EnablingLLMs for Human-Centric Medical Dialogue with Grounded Reasoning",
+      "Automated Knowledge Graph Construction using Large Language Models and Sentence Complexity Modelling",
+      "Governance in Motion: Co-evolution of Constitutions andAImodels for Scalable Safety",
+      "LATTE: Learning to Think with Vision Specialists",
+      "Scaling Rich Style-Prompted Text-to-Speech Datasets",
+      "Select-Then-Decompose: From Empirical Analysis to Adaptive Selection Strategy for Task Decomposition in Large Language Models",
+      "VerIF: Verification Engineering for Reinforcement Learning in Instruction Following",
+      "Vision-Free Retrieval: Rethinking Multimodal Search with Textual Scene Descriptions"
+    ],
+    "acl25": [
+      "All That Glitters is Not Novel: Plagiarism inAIGenerated Research",
+      "Document-Level Text Generation with MinimumBayes Risk Decoding using Optimal Transport",
+      "Enhancing Retrieval-Augmented Generation via Evidence Tree Search",
+      "Jailbreak Large Vision-Language Models Through Multi-Modal Linkage"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 4,
+    "neurips24": 16,
+    "iclr25": 32,
+    "naacl25": 6,
+    "icml25": 18,
+    "emnlp25": 23,
+    "acl25": 4
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

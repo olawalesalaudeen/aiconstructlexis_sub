@@ -1,0 +1,72 @@
+{
+  "canonical_name": "Hallucination mitigation",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, hallucination mitigation is broadly characterized as a model's capacity to avoid generating false or unsupported content. The most prevalent definition frames this as a \"latent ability\" to refrain from producing such content, especially when faced with ambiguous or unanswerable questions and guided by demonstrations. A more specific framing, found in one paper, defines it as the \"degree to which a model avoids generating factually incorrect or unsupported medical information,\" such as \"recommending antibiotics for viral infections.\" This construct is operationalized and measured using the AMBER benchmark, which is reported to evaluate various hallucination types, including those of existence, attribute, and relation. Several techniques are associated with achieving this mitigation; for instance, retrieval-augmented generation (RAG) is described as a \"promising technology\" for grounding outputs in retrieved evidence. Other cited methods include multimodal in-context learning, which is noted to reduce hallucination over zero-shot inference, and the use of vector retrieval with a structured medical knowledge graph to improve factual consistency.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Hallucination mitigation",
+    "Hallucination reduction"
+  ],
+  "papers": [
+    "Concept-pedia: a Wide-coverage Semantically-annotated Multimodal Dataset",
+    "Quantized but Deceptive? A Multi-Dimensional Truthfulness Evaluation of QuantizedLLMs",
+    "Emergence of Episodic Memory in Transformers: Characterizing Changes in Temporal Structure of Attention Scores During Training",
+    "Smurfs: Multi-Agent System using Context-EfficientDFSDTfor Tool Planning"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The latent ability of a model to refrain from generating false or unsupported content, particularly in response to ambiguous or unanswerable queries, when guided by appropriate demonstrations.",
+      "paper": "Emergence of Episodic Memory in Transformers: Characterizing Changes in Temporal Structure of Attention Scores During Training",
+      "original_name": "Hallucination mitigation"
+    },
+    {
+      "text": "The degree to which a model avoids generating factually incorrect or unsupported medical information during consultation.",
+      "paper": "Quantized but Deceptive? A Multi-Dimensional Truthfulness Evaluation of QuantizedLLMs",
+      "original_name": "Hallucination reduction"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AMBER",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Smurfs: Multi-Agent System using Context-EfficientDFSDTfor Tool Planning",
+      "evidence": "\u201cAMBER (Wang et al., 2023) provides a discriminative way to evaluate various types of hallucination including existence, attribute and relation\u201d",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Smurfs: Multi-Agent System using Context-EfficientDFSDTfor Tool Planning"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the surveyed literature, hallucination mitigation is broadly characterized as a model's capacity to avoid generating false or unsupported content. The most prevalent definition frames this as a \"latent ability\" to refrain from producing such content, especially when faced with ambiguous or unanswerable questions and guided by demonstrations. A more specific framing, found in one paper, defines it as the \"degree to which a model avoids generating factually incorrect or unsupported medical information,\" such as \"recommending antibiotics for viral infections.\" This construct is operationalized and measured using the AMBER benchmark, which is reported to evaluate various hallucination types, including those of existence, attribute, and relation. Several techniques are associated with achieving this mitigation; for instance, retrieval-augmented generation (RAG) is described as a \"promising technology\" for grounding outputs in retrieved evidence. Other cited methods include multimodal in-context learning, which is noted to reduce hallucination over zero-shot inference, and the use of vector retrieval with a structured medical knowledge graph to improve factual consistency.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "naacl25": [
+      "Emergence of Episodic Memory in Transformers: Characterizing Changes in Temporal Structure of Attention Scores During Training",
+      "Smurfs: Multi-Agent System using Context-EfficientDFSDTfor Tool Planning"
+    ],
+    "emnlp25": [
+      "Concept-pedia: a Wide-coverage Semantically-annotated Multimodal Dataset",
+      "Quantized but Deceptive? A Multi-Dimensional Truthfulness Evaluation of QuantizedLLMs"
+    ]
+  },
+  "paper_count_by_conference": {
+    "naacl25": 2,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "naacl25"
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "canonical_name": "Code editing",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, code editing is most commonly defined as the task of modifying an existing program based on a natural-language instruction. A broader framing, found in several papers, describes it as 'code refinement' or 'code modification'\u2014the general process of improving, correcting, or altering source code to implement fixes or new features. The behavior is operationalized at various levels of granularity, from atomic actions like 'code insertion' and 'code deletion' to more complex tasks like 'code refactoring,' which involves rewriting code to improve its structure while preserving functionality. One paper highlights that 'multi-file refactoring requires comprehensive reasoning and composition of multiple smaller changes' (RefactorBench: Evaluating Stateful Reasoning in Language Agents Through Code). To measure this behavior, researchers use benchmarks such as DS-1000. Some definitions also emphasize an iterative process, such as 'program revision,' which involves updating code using feedback from execution traces or rewards. In a specialized context, the task is framed as 'CSS style adjustment,' where an agent edits styles to match a visual target. Code editing is studied alongside 'compositional reasoning,' and one paper suggests that reasoning about edits can aid in 'generalization'.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Program editing",
+    "Code editing",
+    "Code modification",
+    "Code refinement",
+    "Code deletion",
+    "Code insertion",
+    "Multi-file code refactoring",
+    "Program revision",
+    "CSS style adjustment",
+    "Code refactoring"
+  ],
+  "papers": [
+    "Generating CAD Code with Vision-Language Models for 3D Designs",
+    "Let the Code LLM Edit Itself When You Edit the Code",
+    "RefactorBench: Evaluating Stateful Reasoning in Language Agents Through Code",
+    "SWE-Search: Enhancing Software Agents with Monte Carlo Tree Search and Iterative Refinement",
+    "Synthesizing Programmatic Reinforcement Learning Policies with Large Language Model Guided Search",
+    "VisualAgentBench: Towards Large Multimodal Models as Visual Foundation Agents",
+    "EditLord: Learning Code Transformation Rules for Code Editing",
+    "NextCoder: Robust Adaptation of Code LMs to Diverse Code Edits",
+    "Position: Future Research and Challenges Remain Towards AI for Software Engineering",
+    "RLEF: Grounding Code LLMs in Execution Feedback with Reinforcement Learning",
+    "Windows Agent Arena: Evaluating Multi-Modal OS Agents at Scale",
+    "Learning to Edit Visual Programs with Self-Supervision",
+    "MAGIS: LLM-Based Multi-Agent Framework for GitHub Issue Resolution",
+    "SelfCodeAlign: Self-Alignment for Code Generation",
+    "Source Code Foundation Models are Transferable Binary Analysis Knowledge Bases"
+  ],
+  "paper_count": 15,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The task of modifying an existing program in a goal-directed manner to alter its output or correct errors.",
+      "paper": "Learning to Edit Visual Programs with Self-Supervision",
+      "original_name": "Program editing"
+    },
+    {
+      "text": "Editing an existing program according to a natural-language instruction to produce an updated code snippet.",
+      "paper": "SelfCodeAlign: Self-Alignment for Code Generation",
+      "original_name": "Code editing"
+    },
+    {
+      "text": "The observable action of altering existing source code by adding, deleting, or changing lines to implement a fix or new feature.",
+      "paper": "MAGIS: LLM-Based Multi-Agent Framework for GitHub Issue Resolution",
+      "original_name": "Code modification"
+    },
+    {
+      "text": "The task of improving or correcting an existing piece of source code.",
+      "paper": "Source Code Foundation Models are Transferable Binary Analysis Knowledge Bases",
+      "original_name": "Code refinement"
+    },
+    {
+      "text": "Editing code across multiple files to implement a specified refactor in a repository.",
+      "paper": "RefactorBench: Evaluating Stateful Reasoning in Language Agents Through Code",
+      "original_name": "Multi-file code refactoring"
+    },
+    {
+      "text": "An observable code editing task where new lines of code are inserted into an existing context before the model is required to perform a prediction.",
+      "paper": "Let the Code LLM Edit Itself When You Edit the Code",
+      "original_name": "Code insertion"
+    },
+    {
+      "text": "An observable code editing task where existing lines of code are removed from a context before the model is required to perform a prediction.",
+      "paper": "Let the Code LLM Edit Itself When You Edit the Code",
+      "original_name": "Code deletion"
+    },
+    {
+      "text": "Updating previously generated programs using feedback such as rewards or execution traces.",
+      "paper": "Synthesizing Programmatic Reinforcement Learning Policies with Large Language Model Guided Search",
+      "original_name": "Program revision"
+    },
+    {
+      "text": "The task of iteratively editing CSS style rules to make a web page's rendering match a target design.",
+      "paper": "VisualAgentBench: Towards Large Multimodal Models as Visual Foundation Agents",
+      "original_name": "CSS style adjustment"
+    },
+    {
+      "text": "The observable act of rewriting parts of a software implementation to improve its structure or quality while preserving its external functionality.",
+      "paper": "Position: Future Research and Challenges Remain Towards AI for Software Engineering",
+      "original_name": "Code refactoring"
+    }
+  ],
+  "definition_count": 10,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "DS-1000",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "WizardCoder: Empowering Code Large Language Models with Evol-Instruct",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "WizardCoder: Empowering Code Large Language Models with Evol-Instruct"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Learning to Edit Visual Programs with Self-Supervision",
+      "evidence": "Reasoning over the differences between the two states admits a more local task (as evidenced by our data efficient learning), and this property can aid in generalization. (Appendix B.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Learning to Edit Visual Programs with Self-Supervision"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Compositional reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "RefactorBench: Evaluating Stateful Reasoning in Language Agents Through Code",
+      "evidence": "Unlike isolated function-level edits, multi-file refactoring requires comprehensive reasoning and composition of multiple smaller changes. (Section 1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "RefactorBench: Evaluating Stateful Reasoning in Language Agents Through Code"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 3,
+  "characterization": "Across the surveyed literature, code editing is most commonly defined as the task of modifying an existing program based on a natural-language instruction. A broader framing, found in several papers, describes it as 'code refinement' or 'code modification'\u2014the general process of improving, correcting, or altering source code to implement fixes or new features. The behavior is operationalized at various levels of granularity, from atomic actions like 'code insertion' and 'code deletion' to more complex tasks like 'code refactoring,' which involves rewriting code to improve its structure while preserving functionality. One paper highlights that 'multi-file refactoring requires comprehensive reasoning and composition of multiple smaller changes' (RefactorBench: Evaluating Stateful Reasoning in Language Agents Through Code). To measure this behavior, researchers use benchmarks such as DS-1000. Some definitions also emphasize an iterative process, such as 'program revision,' which involves updating code using feedback from execution traces or rewards. In a specialized context, the task is framed as 'CSS style adjustment,' where an agent edits styles to match a visual target. Code editing is studied alongside 'compositional reasoning,' and one paper suggests that reasoning about edits can aid in 'generalization'.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "Learning to Edit Visual Programs with Self-Supervision",
+      "MAGIS: LLM-Based Multi-Agent Framework for GitHub Issue Resolution",
+      "SelfCodeAlign: Self-Alignment for Code Generation",
+      "Source Code Foundation Models are Transferable Binary Analysis Knowledge Bases"
+    ],
+    "iclr25": [
+      "Generating CAD Code with Vision-Language Models for 3D Designs",
+      "Let the Code LLM Edit Itself When You Edit the Code",
+      "RefactorBench: Evaluating Stateful Reasoning in Language Agents Through Code",
+      "SWE-Search: Enhancing Software Agents with Monte Carlo Tree Search and Iterative Refinement",
+      "Synthesizing Programmatic Reinforcement Learning Policies with Large Language Model Guided Search",
+      "VisualAgentBench: Towards Large Multimodal Models as Visual Foundation Agents"
+    ],
+    "icml25": [
+      "EditLord: Learning Code Transformation Rules for Code Editing",
+      "NextCoder: Robust Adaptation of Code LMs to Diverse Code Edits",
+      "Position: Future Research and Challenges Remain Towards AI for Software Engineering",
+      "RLEF: Grounding Code LLMs in Execution Feedback with Reinforcement Learning",
+      "Windows Agent Arena: Evaluating Multi-Modal OS Agents at Scale"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 4,
+    "iclr25": 6,
+    "icml25": 5
+  },
+  "conferences": [
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

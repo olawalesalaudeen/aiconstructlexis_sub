@@ -1,0 +1,164 @@
+{
+  "canonical_name": "CruxEval",
+  "type": "measurement",
+  "canonical_definition": "Across the surveyed literature, CruxEval is consistently described as a benchmark for evaluating the capabilities of large language models in the domain of code. The prevailing usage of this instrument is to measure constructs of \"code reasoning,\" \"code understanding,\" and \"code execution.\" This is operationalized through the task of code output prediction, where models are evaluated on their ability to predict the execution results of code snippets. While \"code reasoning\" is the most frequently targeted construct, a smaller set of studies uses CruxEval to assess more specific reasoning types, including deductive, abductive, and logical reasoning. In one instance, it is also used to evaluate \"commonsense knowledge.\" One paper notes that the benchmark's coverage \"remains incomplete with respect to real-world repository-scale tasks\" (RuCCoD: Towards AutomatedICDCoding inRussian).",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "CRUXEVAL",
+    "CRUXEval",
+    "CRUX",
+    "CruxEval"
+  ],
+  "papers": [
+    "Improve Safety Training of Large Language Models with Safety-Critical Singular Vectors Localization",
+    "The Essence of Contextual Understanding in Theory of Mind: A Study on Question Answering with Story Characters",
+    "RuCCoD: Towards AutomatedICDCoding inRussian",
+    "SUE: Sparsity-based Uncertainty Estimation via Sparse Dictionary Learning",
+    "As Simple as Fine-tuning: LLM Alignment via Bidirectional Negative Feedback Loss",
+    "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code",
+    "Unveiling the Magic of Code Reasoning through Hypothesis Decomposition and Amendment",
+    "CodeIO: Condensing Reasoning Patterns via Code Input-Output Prediction",
+    "Satori: Reinforcement Learning with Chain-of-Action-Thought Enhances LLM Reasoning via Autoregressive Search"
+  ],
+  "paper_count": 9,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A benchmark that measures reasoning and execution abilities through code output prediction.",
+      "paper": "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code",
+      "original_name": "CRUXEVAL"
+    },
+    {
+      "text": "A benchmark designed to evaluate code understanding and execution, used in the paper to test both deductive and abductive code reasoning.",
+      "paper": "Unveiling the Magic of Code Reasoning through Hypothesis Decomposition and Amendment",
+      "original_name": "CRUXEval"
+    },
+    {
+      "text": "A benchmark used to evaluate a model's reasoning abilities in the context of code generation and understanding.",
+      "paper": "As Simple as Fine-tuning: LLM Alignment via Bidirectional Negative Feedback Loss",
+      "original_name": "CRUX"
+    },
+    {
+      "text": "CruxEval is a benchmark for evaluating code understanding and execution-result prediction.",
+      "paper": "CodeIO: Condensing Reasoning Patterns via Code Input-Output Prediction",
+      "original_name": "CruxEval"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Prompt Tuning Strikes Back: Customizing Foundation Models with Low-Rank Prompt Adaptation",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "neurips24": [
+          "Prompt Tuning Strikes Back: Customizing Foundation Models with Low-Rank Prompt Adaptation"
+        ],
+        "acl25": [
+          "Improve Safety Training of Large Language Models with Safety-Critical Singular Vectors Localization"
+        ],
+        "emnlp25": [
+          "SUE: Sparsity-based Uncertainty Estimation via Sparse Dictionary Learning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code execution",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "SemCoder: Training Code Language Models with Comprehensive Semantics Reasoning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "SemCoder: Training Code Language Models with Comprehensive Semantics Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Abductive reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Unveiling the Magic of Code Reasoning through Hypothesis Decomposition and Amendment",
+      "evidence": "Deductive code and abductive code reasoning can be regarded as opposite processes; therefore, we selected two identical and representative datasets, CRUXEval (Gu et al., 2024) and LiveCodeBench (Jain et al., 2024), as benchmarks to validate these two capabilities.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Unveiling the Magic of Code Reasoning through Hypothesis Decomposition and Amendment"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code execution",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code",
+      "evidence": "The code execution scenario is based on the output prediction setup used in CRUXEVAL (Gu et al., 2024).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense knowledge",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "As Simple as Fine-tuning: LLM Alignment via Bidirectional Negative Feedback Loss",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "As Simple as Fine-tuning: LLM Alignment via Bidirectional Negative Feedback Loss"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 5,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the surveyed literature, CruxEval is consistently described as a benchmark for evaluating the capabilities of large language models in the domain of code. The prevailing usage of this instrument is to measure constructs of \"code reasoning,\" \"code understanding,\" and \"code execution.\" This is operationalized through the task of code output prediction, where models are evaluated on their ability to predict the execution results of code snippets. While \"code reasoning\" is the most frequently targeted construct, a smaller set of studies uses CruxEval to assess more specific reasoning types, including deductive, abductive, and logical reasoning. In one instance, it is also used to evaluate \"commonsense knowledge.\" One paper notes that the benchmark's coverage \"remains incomplete with respect to real-world repository-scale tasks\" (RuCCoD: Towards AutomatedICDCoding inRussian).",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "As Simple as Fine-tuning: LLM Alignment via Bidirectional Negative Feedback Loss",
+      "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code",
+      "Unveiling the Magic of Code Reasoning through Hypothesis Decomposition and Amendment"
+    ],
+    "acl25": [
+      "Improve Safety Training of Large Language Models with Safety-Critical Singular Vectors Localization",
+      "The Essence of Contextual Understanding in Theory of Mind: A Study on Question Answering with Story Characters"
+    ],
+    "icml25": [
+      "CodeIO: Condensing Reasoning Patterns via Code Input-Output Prediction",
+      "Satori: Reinforcement Learning with Chain-of-Action-Thought Enhances LLM Reasoning via Autoregressive Search"
+    ],
+    "emnlp25": [
+      "RuCCoD: Towards AutomatedICDCoding inRussian",
+      "SUE: Sparsity-based Uncertainty Estimation via Sparse Dictionary Learning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3,
+    "acl25": 2,
+    "icml25": 2,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25"
+  ]
+}

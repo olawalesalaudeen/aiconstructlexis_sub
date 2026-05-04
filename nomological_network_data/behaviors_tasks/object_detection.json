@@ -1,0 +1,330 @@
+{
+  "canonical_name": "Object detection",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, object detection is predominantly defined as the task of identifying and localizing objects within an image, most frequently operationalized by outputting bounding box coordinates and class labels. The performance of models on this task is commonly evaluated using datasets such as MS-COCO, COCO, and PASCAL VOC. While this general form is widely discussed, several papers define more specialized versions, including `3D detection` for localizing objects in 3D space, `tool detection` for surgical instruments, `species detection` in audio recordings, and `open-vocabulary detection` for handling arbitrary category names. Some work breaks the task down further, defining component behaviors like `bounding box prediction` for localization and `object name generation` for producing free-form textual labels. A recurring challenge noted is performance degradation when models encounter unseen data due to what one paper calls \"domain discrepancy\" (DA-Ada: Learning Domain-Aware Adapter for Domain Adaptive Object Detection). Object detection is frequently studied alongside other visual tasks such as visual perception, visual grounding, and referring expression understanding. A single source also suggests that multimodal alignment can influence its performance.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Object detection",
+    "Fine-grained detection",
+    "3D detection",
+    "Species detection",
+    "Tool detection",
+    "Face detection",
+    "Keypoint detection",
+    "Open-vocabulary detection",
+    "Object name generation"
+  ],
+  "papers": [
+    "Rethinking Text-based Protein Understanding: Retrieval orLLM?",
+    "TableRAG: A Retrieval Augmented Generation Framework for Heterogeneous Document Reasoning",
+    "Mitigating Hallucination in Large Multi-Modal Models via Robust Instruction Tuning",
+    "Octavius: Mitigating Task Interference in MLLMs via LoRA-MoE",
+    "Adapt-$\\infty$: Scalable Continual Multimodal Instruction Tuning via Dynamic Data Selection",
+    "LLM-wrapper: Black-Box Semantic-Aware Adaptation of Vision-Language Models for Referring Expression Comprehension",
+    "LLaRA: Supercharging Robot Learning Data for Vision-Language Policy",
+    "MMIU: Multimodal Multi-image Understanding for Evaluating Large Vision-Language Models",
+    "Maintaining Structural Integrity in Parameter Spaces for Parameter Efficient Fine-tuning",
+    "Multi-modal Agent Tuning: Building a VLM-Driven Agent for Efficient Tool Usage",
+    "NatureLM-audio: an Audio-Language Foundation Model for Bioacoustics",
+    "Recognize Any Surgical Object: Unleashing the Power of Weakly-Supervised Data",
+    "TaskGalaxy: Scaling Multi-modal Instruction Fine-tuning with Tens of Thousands Vision Task Types",
+    "Understanding Long Videos with Multimodal Language Models",
+    "Contrastive Localized Language-Image Pre-Training",
+    "Open-Det: An Efficient Learning Framework for Open-Ended Detection",
+    "RWKVQuant: Quantizing the RWKV Family with Proxy Guided Hybrid of Scalar and Vector Quantization",
+    "A Hitchhiker's Guide to Fine-Grained Face Forgery Detection Using Common Sense Reasoning",
+    "DA-Ada: Learning Domain-Aware Adapter for Domain Adaptive Object Detection",
+    "DeiSAM: Segment Anything with Deictic Prompting",
+    "DenseFusion-1M: Merging Vision Experts for Comprehensive Multimodal Perception",
+    "DreamClear: High-Capacity Real-World Image Restoration with Privacy-Safe Dataset Curation",
+    "Image Textualization: An Automatic Framework for Generating Rich and Detailed Image Descriptions",
+    "Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models",
+    "MambaTree: Tree Topology is All You Need in State Space Model",
+    "Micro-Bench: A Microscopy Benchmark for Vision-Language Understanding",
+    "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+    "Multi-Head Mixture-of-Experts",
+    "OW-VISCapTor: Abstractors for Open-World Video Instance Segmentation and Captioning",
+    "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding",
+    "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+    "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models"
+  ],
+  "paper_count": 32,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The task of identifying and localizing objects within an image by outputting bounding box coordinates.",
+      "paper": "Mitigating Hallucination in Large Multi-Modal Models via Robust Instruction Tuning",
+      "original_name": "Object detection"
+    },
+    {
+      "text": "The task of identifying specific, localized areas of manipulation within a forged image, rather than just making a binary real/fake judgment.",
+      "paper": "A Hitchhiker's Guide to Fine-Grained Face Forgery Detection Using Common Sense Reasoning",
+      "original_name": "Fine-grained detection"
+    },
+    {
+      "text": "Determining whether a specified species is present in an audio recording, or outputting none when absent.",
+      "paper": "NatureLM-audio: an Audio-Language Foundation Model for Bioacoustics",
+      "original_name": "Species detection"
+    },
+    {
+      "text": "The task of identifying and localizing surgical tools within an image or video frame.",
+      "paper": "Recognize Any Surgical Object: Unleashing the Power of Weakly-Supervised Data",
+      "original_name": "Tool detection"
+    },
+    {
+      "text": "The task of identifying and localizing objects within a 3D space based on visual information from multiple images.",
+      "paper": "MMIU: Multimodal Multi-image Understanding for Evaluating Large Vision-Language Models",
+      "original_name": "3D detection"
+    },
+    {
+      "text": "Detecting human faces in images and returning their bounding boxes.",
+      "paper": "Multi-modal Agent Tuning: Building a VLM-Driven Agent for Efficient Tool Usage",
+      "original_name": "Face detection"
+    },
+    {
+      "text": "The task of identifying and localizing specific key points of objects within an image.",
+      "paper": "Adapt-$\\infty$: Scalable Continual Multimodal Instruction Tuning via Dynamic Data Selection",
+      "original_name": "Keypoint detection"
+    },
+    {
+      "text": "The model produces free-form textual names for detected objects without relying on a fixed vocabulary.",
+      "paper": "Open-Det: An Efficient Learning Framework for Open-Ended Detection",
+      "original_name": "Object name generation"
+    },
+    {
+      "text": "The task of generating rectangular coordinates that localize an object within an image.",
+      "paper": "Open-Det: An Efficient Learning Framework for Open-Ended Detection",
+      "original_name": "Bounding box prediction"
+    },
+    {
+      "text": "The task of detecting objects in an image from an arbitrary, open set of category names provided as text at inference time.",
+      "paper": "Contrastive Localized Language-Image Pre-Training",
+      "original_name": "Open-vocabulary detection"
+    }
+  ],
+  "definition_count": 10,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "COCO",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+          "Multi-Head Mixture-of-Experts"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MS-COCO",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MambaTree: Tree Topology is All You Need in State Space Model",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "MambaTree: Tree Topology is All You Need in State Space Model",
+          "Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual perception",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models",
+          "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PASCAL VOC",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Octavius: Mitigating Task Interference in MLLMs via LoRA-MoE",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Octavius: Mitigating Task Interference in MLLMs via LoRA-MoE"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual grounding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual recognition",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Image restoration",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "DreamClear: High-Capacity Real-World Image Restoration with Privacy-Safe Dataset Curation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "DreamClear: High-Capacity Real-World Image Restoration with Privacy-Safe Dataset Curation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Referring expression understanding",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "LLM-wrapper: Black-Box Semantic-Aware Adaptation of Vision-Language Models for Referring Expression Comprehension",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "LLM-wrapper: Black-Box Semantic-Aware Adaptation of Vision-Language Models for Referring Expression Comprehension"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal alignment",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Open-Det: An Efficient Learning Framework for Open-Ended Detection",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Open-Det: An Efficient Learning Framework for Open-Ended Detection"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Open-vocabulary object detection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Open-Det: An Efficient Learning Framework for Open-Ended Detection",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Open-Det: An Efficient Learning Framework for Open-Ended Detection"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Localization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Contrastive Localized Language-Image Pre-Training",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Contrastive Localized Language-Image Pre-Training"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 11,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 8,
+  "characterization": "Across the provided literature, object detection is predominantly defined as the task of identifying and localizing objects within an image, most frequently operationalized by outputting bounding box coordinates and class labels. The performance of models on this task is commonly evaluated using datasets such as MS-COCO, COCO, and PASCAL VOC. While this general form is widely discussed, several papers define more specialized versions, including `3D detection` for localizing objects in 3D space, `tool detection` for surgical instruments, `species detection` in audio recordings, and `open-vocabulary detection` for handling arbitrary category names. Some work breaks the task down further, defining component behaviors like `bounding box prediction` for localization and `object name generation` for producing free-form textual labels. A recurring challenge noted is performance degradation when models encounter unseen data due to what one paper calls \"domain discrepancy\" (DA-Ada: Learning Domain-Aware Adapter for Domain Adaptive Object Detection). Object detection is frequently studied alongside other visual tasks such as visual perception, visual grounding, and referring expression understanding. A single source also suggests that multimodal alignment can influence its performance.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Mitigating Hallucination in Large Multi-Modal Models via Robust Instruction Tuning",
+      "Octavius: Mitigating Task Interference in MLLMs via LoRA-MoE"
+    ],
+    "neurips24": [
+      "A Hitchhiker's Guide to Fine-Grained Face Forgery Detection Using Common Sense Reasoning",
+      "DA-Ada: Learning Domain-Aware Adapter for Domain Adaptive Object Detection",
+      "DeiSAM: Segment Anything with Deictic Prompting",
+      "DenseFusion-1M: Merging Vision Experts for Comprehensive Multimodal Perception",
+      "DreamClear: High-Capacity Real-World Image Restoration with Privacy-Safe Dataset Curation",
+      "Image Textualization: An Automatic Framework for Generating Rich and Detailed Image Descriptions",
+      "Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models",
+      "MambaTree: Tree Topology is All You Need in State Space Model",
+      "Micro-Bench: A Microscopy Benchmark for Vision-Language Understanding",
+      "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "Multi-Head Mixture-of-Experts",
+      "OW-VISCapTor: Abstractors for Open-World Video Instance Segmentation and Captioning",
+      "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding",
+      "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models"
+    ],
+    "iclr25": [
+      "Adapt-$\\infty$: Scalable Continual Multimodal Instruction Tuning via Dynamic Data Selection",
+      "LLM-wrapper: Black-Box Semantic-Aware Adaptation of Vision-Language Models for Referring Expression Comprehension",
+      "LLaRA: Supercharging Robot Learning Data for Vision-Language Policy",
+      "MMIU: Multimodal Multi-image Understanding for Evaluating Large Vision-Language Models",
+      "Maintaining Structural Integrity in Parameter Spaces for Parameter Efficient Fine-tuning",
+      "Multi-modal Agent Tuning: Building a VLM-Driven Agent for Efficient Tool Usage",
+      "NatureLM-audio: an Audio-Language Foundation Model for Bioacoustics",
+      "Recognize Any Surgical Object: Unleashing the Power of Weakly-Supervised Data",
+      "TaskGalaxy: Scaling Multi-modal Instruction Fine-tuning with Tens of Thousands Vision Task Types",
+      "Understanding Long Videos with Multimodal Language Models"
+    ],
+    "icml25": [
+      "Contrastive Localized Language-Image Pre-Training",
+      "Open-Det: An Efficient Learning Framework for Open-Ended Detection",
+      "RWKVQuant: Quantizing the RWKV Family with Proxy Guided Hybrid of Scalar and Vector Quantization"
+    ],
+    "emnlp25": [
+      "Rethinking Text-based Protein Understanding: Retrieval orLLM?",
+      "TableRAG: A Retrieval Augmented Generation Framework for Heterogeneous Document Reasoning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "neurips24": 15,
+    "iclr25": 10,
+    "icml25": 3,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

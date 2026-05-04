@@ -1,0 +1,175 @@
+{
+  "canonical_name": "StereoSet",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, StereoSet is consistently defined as a benchmark for measuring stereotypical and social biases in language models. It is frequently used to operationalize and evaluate constructs such as `Fairness`, `Stereotyping`, and `Social bias`. The most common description of its task format is a sentence completion or cloze task, where a model is presented with a sentence containing a gap and must choose between three options: a stereotypical, an anti-stereotypical, and a meaningless or unrelated completion. Some papers specify using only the \"intrasentence subset\" of the benchmark, particularly when evaluating masked language models. A less frequent framing, found in one paper, describes the instrument as using crowdsourced \"Context Association Tests (CATs)\". In addition to bias, papers also report using StereoSet to evaluate `Language modeling` and `Stereotype recognition`. The benchmark is reported to measure stereotypical associations across domains including gender, profession, race, and religion.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "StereoSet"
+  ],
+  "papers": [
+    "Does quantization affect models\u2019 performance on long-context tasks?",
+    "Friend or Foe? A Computational Investigation of Semantic FalseFriends acrossRomance Languages",
+    "Graph-R1: Incentivizing the Zero-Shot Graph Learning Capability inLLMs via Explicit Reasoning",
+    "Invisible Entropy: Towards Safe and Efficient Low-EntropyLLMWatermarking",
+    "Large Language Models Meet Knowledge Graphs for Question Answering: Synthesis and Opportunities",
+    "Large Language Models for Automated Literature Review: An Evaluation of Reference Generation, Abstract Writing, and Review Composition",
+    "Lemmatization as a Classification Task: Results fromArabic across Multiple Genres",
+    "SMART: Simulated Students Aligned with Item Response Theory for Question Difficulty Prediction",
+    "TaCoMoE",
+    "UnderstandingLLMs\u2019 Cross-Lingual Context Retrieval: How Good It Is And Where It Comes From",
+    "Unraveling Interwoven Roles of Large Language Models in Authorship Privacy: Obfuscation, Mimicking, and Verification",
+    "Debiasing Algorithm through Model Adaptation",
+    "The Devil is in the Neurons: Interpreting and Mitigating Social Biases in Language Models",
+    "CEB: Compositional Evaluation Benchmark for Fairness in Large Language Models",
+    "Collapsed Language Models Promote Fairness"
+  ],
+  "paper_count": 15,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "StereoSet is a benchmark for measuring stereotypical bias using sentence completions that contrast stereotypical, anti-stereotypical, and meaningless options.",
+      "paper": "Debiasing Algorithm through Model Adaptation",
+      "original_name": "StereoSet"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Social bias",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "The Devil is in the Neurons: Interpreting and Mitigating Social Biases in Language Models",
+      "evidence": "We train the BiasUnlearn model on the StereoSet dataset, which is a large-scale dataset used to measure stereotypes in four domains: gender, profession, race, and religion.",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr24": [
+          "The Devil is in the Neurons: Interpreting and Mitigating Social Biases in Language Models"
+        ],
+        "emnlp25": [
+          "Unraveling Interwoven Roles of Large Language Models in Authorship Privacy: Obfuscation, Mimicking, and Verification",
+          "TaCoMoE"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Fairness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "The Devil is in the Neurons: Interpreting and Mitigating Social Biases in Language Models",
+      "evidence": "As measured by prior metrics from StereoSet, our model achieves a higher degree of fairness while maintaining language modeling ability with low cost12.",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr24": [
+          "The Devil is in the Neurons: Interpreting and Mitigating Social Biases in Language Models"
+        ],
+        "iclr25": [
+          "Collapsed Language Models Promote Fairness"
+        ],
+        "emnlp25": [
+          "Does quantization affect models\u2019 performance on long-context tasks?"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Stereotyping",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Debiasing Algorithm through Model Adaptation",
+      "evidence": "Both datasets [StereoSet and CrowS-Pairs] emerged during a similar timeframe, focus on measuring stereotypical bias in language models, and use comparable methods for data gathering and bias measurement, making them ideal candidates for comparative analysis. (Section 3.1)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr24": [
+          "Debiasing Algorithm through Model Adaptation"
+        ],
+        "emnlp25": [
+          "UnderstandingLLMs\u2019 Cross-Lingual Context Retrieval: How Good It Is And Where It Comes From"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Sentence completion",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Debiasing Algorithm through Model Adaptation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Debiasing Algorithm through Model Adaptation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language modeling",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "The Devil is in the Neurons: Interpreting and Mitigating Social Biases in Language Models",
+      "evidence": "LMS is used to evaluate the language modeling abilities of models. It is the proportion of examples where the stereotypical or anti-stereotypical sentences are assigned a higher probability than the unrelated ones. (Section 4.4)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "The Devil is in the Neurons: Interpreting and Mitigating Social Biases in Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Stereotype recognition",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "EAI: Emotional Decision-Making of LLMs in Strategic Games and Ethical Dilemmas",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "EAI: Emotional Decision-Making of LLMs in Strategic Games and Ethical Dilemmas"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 6,
+  "incoming_relationship_count": 6,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, StereoSet is consistently defined as a benchmark for measuring stereotypical and social biases in language models. It is frequently used to operationalize and evaluate constructs such as `Fairness`, `Stereotyping`, and `Social bias`. The most common description of its task format is a sentence completion or cloze task, where a model is presented with a sentence containing a gap and must choose between three options: a stereotypical, an anti-stereotypical, and a meaningless or unrelated completion. Some papers specify using only the \"intrasentence subset\" of the benchmark, particularly when evaluating masked language models. A less frequent framing, found in one paper, describes the instrument as using crowdsourced \"Context Association Tests (CATs)\". In addition to bias, papers also report using StereoSet to evaluate `Language modeling` and `Stereotype recognition`. The benchmark is reported to measure stereotypical associations across domains including gender, profession, race, and religion.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Debiasing Algorithm through Model Adaptation",
+      "The Devil is in the Neurons: Interpreting and Mitigating Social Biases in Language Models"
+    ],
+    "iclr25": [
+      "CEB: Compositional Evaluation Benchmark for Fairness in Large Language Models",
+      "Collapsed Language Models Promote Fairness"
+    ],
+    "emnlp25": [
+      "Does quantization affect models\u2019 performance on long-context tasks?",
+      "Friend or Foe? A Computational Investigation of Semantic FalseFriends acrossRomance Languages",
+      "Graph-R1: Incentivizing the Zero-Shot Graph Learning Capability inLLMs via Explicit Reasoning",
+      "Invisible Entropy: Towards Safe and Efficient Low-EntropyLLMWatermarking",
+      "Large Language Models Meet Knowledge Graphs for Question Answering: Synthesis and Opportunities",
+      "Large Language Models for Automated Literature Review: An Evaluation of Reference Generation, Abstract Writing, and Review Composition",
+      "Lemmatization as a Classification Task: Results fromArabic across Multiple Genres",
+      "SMART: Simulated Students Aligned with Item Response Theory for Question Difficulty Prediction",
+      "TaCoMoE",
+      "UnderstandingLLMs\u2019 Cross-Lingual Context Retrieval: How Good It Is And Where It Comes From",
+      "Unraveling Interwoven Roles of Large Language Models in Authorship Privacy: Obfuscation, Mimicking, and Verification"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "iclr25": 2,
+    "emnlp25": 11
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25"
+  ]
+}

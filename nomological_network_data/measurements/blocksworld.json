@@ -1,0 +1,113 @@
+{
+  "canonical_name": "Blocksworld",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, Blocksworld is consistently characterized as a classical planning benchmark used to evaluate the planning capabilities of language models. The task is most commonly defined as rearranging a stack of blocks on a table to achieve a target configuration, often with the constraint of moving only one unstacked block at a time, and is frequently formulated in PDDL. Its primary application is to operationalize and measure the construct of `Planning`, with papers referring to it as a \"symbolic planning problem\" and a standard benchmark where LLMs are reported to struggle. Some work also uses Blocksworld to specifically assess `Out-of-distribution generalization`, which is operationalized by testing models on problems requiring longer plan lengths than those seen during training. While the \"classical planning\" framing is prevalent, a smaller set of papers describe it as a \"commonsense planning benchmark\" for evaluating logical and procedural reasoning, or, less frequently, as an \"embodied environment benchmark.\"",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Blocksworld",
+    "BlocksWorld"
+  ],
+  "papers": [
+    "LLMs can be easily Confused by Instructional Distractions",
+    "Small Changes, Big Impact: How Manipulating a Few Neurons Can Drastically AlterLLMAggression",
+    "Automatic Curriculum Expert Iteration for Reliable LLM Reasoning",
+    "Empowering LLM Agents with Zero-Shot Optimal Decision-Making through Q-learning",
+    "Improving Large Language Model Planning with Action Sequence Similarity",
+    "LLMs Can Plan Only If We Tell Them",
+    "On the self-verification limitations of large language models on reasoning and planning tasks",
+    "Steering Large Language Models between Code Execution and Textual Reasoning",
+    "System 1.x: Learning to Balance Fast and Slow Planning with Language Models",
+    "Flow of Reasoning: Training LLMs for Divergent Reasoning with Minimal Examples",
+    "HyperTree Planning: Enhancing LLM Reasoning via Hierarchical Thinking",
+    "Policy Guided Tree Search for Enhanced LLM Reasoning"
+  ],
+  "paper_count": 12,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A classical planning benchmark that involves rearranging a stack of blocks into a target configuration by moving one unstacked block at a time.",
+      "paper": "System 1.x: Learning to Balance Fast and Slow Planning with Language Models",
+      "original_name": "Blocksworld"
+    },
+    {
+      "text": "A classical planning benchmark task, formulated in PDDL, that involves rearranging blocks on a table to achieve a specified goal configuration.",
+      "paper": "Improving Large Language Model Planning with Action Sequence Similarity",
+      "original_name": "BlocksWorld"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Planning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "ALPINE: Unveiling The Planning Capability of Autoregressive Learning in Language Models",
+      "evidence": "We evaluate System-1.x Planner on two classical planning tasks that are challenging for LLMs (Valmeekam et al., 2023; Lehnert et al., 2024): (1) Maze Navigation and (2) Blocksworld. (Section 3)",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "neurips24": [
+          "ALPINE: Unveiling The Planning Capability of Autoregressive Learning in Language Models"
+        ],
+        "iclr25": [
+          "LLMs Can Plan Only If We Tell Them",
+          "Automatic Curriculum Expert Iteration for Reliable LLM Reasoning"
+        ],
+        "icml25": [
+          "Policy Guided Tree Search for Enhanced LLM Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Out-of-distribution generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Improving Large Language Model Planning with Action Sequence Similarity",
+      "evidence": "reports our results on Blocksworld (BW) that studies out-of-distribution generalization to longer plan lengths. (Section 4.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Improving Large Language Model Planning with Action Sequence Similarity"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, Blocksworld is consistently characterized as a classical planning benchmark used to evaluate the planning capabilities of language models. The task is most commonly defined as rearranging a stack of blocks on a table to achieve a target configuration, often with the constraint of moving only one unstacked block at a time, and is frequently formulated in PDDL. Its primary application is to operationalize and measure the construct of `Planning`, with papers referring to it as a \"symbolic planning problem\" and a standard benchmark where LLMs are reported to struggle. Some work also uses Blocksworld to specifically assess `Out-of-distribution generalization`, which is operationalized by testing models on problems requiring longer plan lengths than those seen during training. While the \"classical planning\" framing is prevalent, a smaller set of papers describe it as a \"commonsense planning benchmark\" for evaluating logical and procedural reasoning, or, less frequently, as an \"embodied environment benchmark.\"",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Automatic Curriculum Expert Iteration for Reliable LLM Reasoning",
+      "Empowering LLM Agents with Zero-Shot Optimal Decision-Making through Q-learning",
+      "Improving Large Language Model Planning with Action Sequence Similarity",
+      "LLMs Can Plan Only If We Tell Them",
+      "On the self-verification limitations of large language models on reasoning and planning tasks",
+      "Steering Large Language Models between Code Execution and Textual Reasoning",
+      "System 1.x: Learning to Balance Fast and Slow Planning with Language Models"
+    ],
+    "acl25": [
+      "LLMs can be easily Confused by Instructional Distractions",
+      "Small Changes, Big Impact: How Manipulating a Few Neurons Can Drastically AlterLLMAggression"
+    ],
+    "icml25": [
+      "Flow of Reasoning: Training LLMs for Divergent Reasoning with Minimal Examples",
+      "HyperTree Planning: Enhancing LLM Reasoning via Hierarchical Thinking",
+      "Policy Guided Tree Search for Enhanced LLM Reasoning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 7,
+    "acl25": 2,
+    "icml25": 3
+  },
+  "conferences": [
+    "acl25",
+    "iclr25",
+    "icml25"
+  ]
+}

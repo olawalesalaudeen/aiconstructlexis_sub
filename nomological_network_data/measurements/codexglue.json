@@ -1,0 +1,83 @@
+{
+  "canonical_name": "CodeXGLUE",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, CodeXGLUE is consistently described as a benchmark suite for evaluating programming language models on various code intelligence tasks. The papers do not present a single, unified purpose, but rather use different components of the suite to measure distinct behaviors. One common application is for code-to-text tasks, where it is used to evaluate the generation of \"a natural language explanation of the code,\" a behavior also identified as code summarization. Another prevalent use is for assessing code defect detection, which is operationalized as a binary classification task to identify insecure C code and is linked to the behavior of code debugging. Additionally, CodeXGLUE is used to evaluate models on single-file code completion. The suite is noted to contain datasets such as PY150 and the Github Java Corpus, and is employed in evaluation settings like \"3-shot evaluations.\"",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "CodeXGLUE",
+    "CodeXGlue"
+  ],
+  "papers": [
+    "CODE REPRESENTATION LEARNING AT SCALE",
+    "LLM Augmented LLMs: Expanding Capabilities through Composition",
+    "RepoBench: Benchmarking Repository-Level Code Auto-Completion Systems"
+  ],
+  "paper_count": 3,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "CodeXGlue is a code-to-text benchmark used here to evaluate natural-language explanation of code snippets.",
+      "paper": "LLM Augmented LLMs: Expanding Capabilities through Composition",
+      "original_name": "CodeXGlue"
+    },
+    {
+      "text": "A benchmark suite for code intelligence that includes the task of code defect detection in the C programming language.",
+      "paper": "CODE REPRESENTATION LEARNING AT SCALE",
+      "original_name": "CodeXGLUE"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code debugging",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "ObscuraCoder: Powering Efficient Code LM Pre-Training Via Obfuscation Grounding",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "ObscuraCoder: Powering Efficient Code LM Pre-Training Via Obfuscation Grounding"
+        ],
+        "acl25": [
+          "YESciEval: RobustLLM-as-a-Judge for Scientific Question Answering"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code summarization",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "YESciEval: RobustLLM-as-a-Judge for Scientific Question Answering",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "YESciEval: RobustLLM-as-a-Judge for Scientific Question Answering"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, CodeXGLUE is consistently described as a benchmark suite for evaluating programming language models on various code intelligence tasks. The papers do not present a single, unified purpose, but rather use different components of the suite to measure distinct behaviors. One common application is for code-to-text tasks, where it is used to evaluate the generation of \"a natural language explanation of the code,\" a behavior also identified as code summarization. Another prevalent use is for assessing code defect detection, which is operationalized as a binary classification task to identify insecure C code and is linked to the behavior of code debugging. Additionally, CodeXGLUE is used to evaluate models on single-file code completion. The suite is noted to contain datasets such as PY150 and the Github Java Corpus, and is employed in evaluation settings like \"3-shot evaluations.\"",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "CODE REPRESENTATION LEARNING AT SCALE",
+      "LLM Augmented LLMs: Expanding Capabilities through Composition",
+      "RepoBench: Benchmarking Repository-Level Code Auto-Completion Systems"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 3
+  },
+  "conferences": [
+    "iclr24"
+  ]
+}

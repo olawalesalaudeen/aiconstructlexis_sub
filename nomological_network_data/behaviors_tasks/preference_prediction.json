@@ -1,0 +1,96 @@
+{
+  "canonical_name": "Preference prediction",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, preference prediction is a behavior centered on forecasting which items or responses will be favored by a user, population, or other mechanism. The most common framing of this task involves predicting a binary choice between two options, such as which of two recipes a population will rate more highly or which of two responses a reward model will select. A different line of work defines it as predicting a continuous \"scalar preference score\" that indicates the degree to which a response aligns with a specific user's preferences. This behavior is operationalized using datasets of paired items, for instance, one study created \"a set of 500 recipe pairs with similar ingredients but significantly different average ratings\" to evaluate models. The task is also approached by training a model to \"predict the decisions of a given mechanism,\" which could be a human, an LLM-as-a-judge, or a reward model. Preference prediction is studied in relation to the Bradley-Terry model and is also connected to social bias. As one study notes, model performance on recipe prediction can reflect an \"omnivore bias,\" where accuracy is lower when vegetarian options are rated higher by humans.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Recipe preference prediction",
+    "Preference score prediction",
+    "Preference prediction"
+  ],
+  "papers": [
+    "FIRE: Flexible Integration of Data Quality Ratings for Effective Pretraining",
+    "PanicToCalm: A Proactive Counseling Agent for Panic Attacks",
+    "SCRIBE: Structured Chain Reasoning for Interactive Behaviour Explanations using Tool Calling",
+    "GRAM: A Generative Foundation Reward Model for Reward Generalization",
+    "On the Robustness of Reward Models for Language Model Alignment",
+    "What can large language models do for sustainable food?"
+  ],
+  "paper_count": 6,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Predicting which recipe a target population will prefer or rate more highly.",
+      "paper": "What can large language models do for sustainable food?",
+      "original_name": "Recipe preference prediction"
+    },
+    {
+      "text": "The model's output of a scalar score indicating the degree to which a given response aligns with a specific user's preferences.",
+      "paper": "PanicToCalm: A Proactive Counseling Agent for Panic Attacks",
+      "original_name": "Preference score prediction"
+    },
+    {
+      "text": "The task of predicting which of two responses is preferred by a mechanism (human, LLM-as-a-judge, or reward model) based on concept-based representations.",
+      "paper": "FIRE: Flexible Integration of Data Quality Ratings for Effective Pretraining",
+      "original_name": "Preference prediction"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Bradley-Terry model",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Rethinking Reward Model Evaluation: Are We Barking up the Wrong Tree?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Rethinking Reward Model Evaluation: Are We Barking up the Wrong Tree?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Social bias",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "What can large language models do for sustainable food?",
+      "evidence": "Within the vegetarian vs. non-vegetarian meal comparisons, accuracy is lower when vegetarian options are rated higher, reflecting LLMs\u2019 omnivore bias, as LLMs more frequently prefer non-vegetarian options compared to ground truth human preferences. (Section 5.4)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "What can large language models do for sustainable food?"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the provided literature, preference prediction is a behavior centered on forecasting which items or responses will be favored by a user, population, or other mechanism. The most common framing of this task involves predicting a binary choice between two options, such as which of two recipes a population will rate more highly or which of two responses a reward model will select. A different line of work defines it as predicting a continuous \"scalar preference score\" that indicates the degree to which a response aligns with a specific user's preferences. This behavior is operationalized using datasets of paired items, for instance, one study created \"a set of 500 recipe pairs with similar ingredients but significantly different average ratings\" to evaluate models. The task is also approached by training a model to \"predict the decisions of a given mechanism,\" which could be a human, an LLM-as-a-judge, or a reward model. Preference prediction is studied in relation to the Bradley-Terry model and is also connected to social bias. As one study notes, model performance on recipe prediction can reflect an \"omnivore bias,\" where accuracy is lower when vegetarian options are rated higher by humans.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "icml25": [
+      "GRAM: A Generative Foundation Reward Model for Reward Generalization",
+      "On the Robustness of Reward Models for Language Model Alignment",
+      "What can large language models do for sustainable food?"
+    ],
+    "emnlp25": [
+      "FIRE: Flexible Integration of Data Quality Ratings for Effective Pretraining",
+      "PanicToCalm: A Proactive Counseling Agent for Panic Attacks",
+      "SCRIBE: Structured Chain Reasoning for Interactive Behaviour Explanations using Tool Calling"
+    ]
+  },
+  "paper_count_by_conference": {
+    "icml25": 3,
+    "emnlp25": 3
+  },
+  "conferences": [
+    "emnlp25",
+    "icml25"
+  ]
+}

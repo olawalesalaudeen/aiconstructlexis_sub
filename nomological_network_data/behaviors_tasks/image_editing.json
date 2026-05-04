@@ -1,0 +1,268 @@
+{
+  "canonical_name": "Image editing",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, the most prevalent definition of image editing is the behavior of modifying an image according to a natural-language instruction. This general framing is specified through a wide variety of sub-tasks, most commonly involving object-level manipulations such as adding, removing, replacing, or altering the color of objects. Other frequently mentioned modifications include changing an image's background or its overall artistic style. A distinct line of work operationalizes this behavior as filling in missing or corrupted parts of an image, a task referred to as \"image inpainting,\" \"image infilling,\" or \"generative fill.\" Less common framings include \"drag-based editing,\" which involves moving content via handle points, and \"visual editing,\" where one paper describes modifying an image by programmatically \"drawing boxes, highlighting sections, and masking out areas\" to guide a model's attention. To measure performance on this behavior, papers frequently use the MagicBrush benchmark, and also mention using datasets like InstructPix2Pix and DragBench. Image editing is studied as a test of model generalization, and one paper reports that visual editing actions can be used to improve performance on visual reasoning tasks.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Image editing",
+    "Image inpainting",
+    "Object creation",
+    "Object removal",
+    "Instruction-based image compositing",
+    "Identity-preserved inpainting",
+    "Identity transfer",
+    "Object replacement",
+    "Background replacement",
+    "Color alteration",
+    "Style alteration",
+    "Drag-based editing",
+    "Content dragging",
+    "Object moving",
+    "Image in-painting",
+    "Image out-painting",
+    "Image infilling",
+    "Generative fill",
+    "Visual editing"
+  ],
+  "papers": [
+    "GENOME: Generative Neuro-Symbolic Visual Reasoning by Growing and Reusing Modules",
+    "Guiding Instruction-based Image Editing via Multimodal Large Language Models",
+    "Kosmos-G: Generating Images in Context with Multimodal Large Language Models",
+    "Can Generative AI Solve Your In-Context Learning Problem?  A Martingale Perspective",
+    "Glauber Generative Model: Discrete Diffusion Models via Binary Classification",
+    "Modality-Specialized Synergizers for Interleaved Vision-Language Generalists",
+    "Multi-modal Agent Tuning: Building a VLM-Driven Agent for Efficient Tool Usage",
+    "Towards Semantic Equivalence of Tokenization in Multimodal LLM",
+    "Transfusion: Predict the Next Token and Diffuse Images with One Multi-Modal Model",
+    "Visually Guided Decoding: Gradient-Free Hard Prompt Inversion with Language Models",
+    "Cradle: Empowering Foundation Agents towards General Computer Control",
+    "Elucidating the design space of language models for image generation",
+    "Orthus: Autoregressive Interleaved Image-Text Generation with Modality-Specific Heads",
+    "ReFocus: Visual Editing as a Chain of Thought for Structured Image Understanding",
+    "$\\textit{Bifr\\\"ost}$: 3D-Aware Image Compositing with Language Instructions",
+    "GenAI Arena: An Open Evaluation Platform for Generative Models",
+    "HEMM: Holistic Evaluation of Multimodal Foundation Models",
+    "I2EBench: A Comprehensive Benchmark for Instruction-based Image Editing",
+    "Localize, Understand, Collaborate: Semantic-Aware Dragging via Intention Reasoner",
+    "Multimodal Large Language Models Make Text-to-Image Generative Models Align Better",
+    "PromptFix: You Prompt and We Fix the Photo",
+    "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+    "Visual Autoregressive Modeling: Scalable Image Generation via Next-Scale Prediction",
+    "Vitron: A Unified Pixel-level Vision LLM for Understanding, Generating, Segmenting, Editing"
+  ],
+  "paper_count": 24,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Modifying an image according to a natural-language instruction, such as replacing, hiding, or recoloring an object.",
+      "paper": "GENOME: Generative Neuro-Symbolic Visual Reasoning by Growing and Reusing Modules",
+      "original_name": "Image editing"
+    },
+    {
+      "text": "The task of filling in missing or corrupted parts of an image based on a textual instruction.",
+      "paper": "PromptFix: You Prompt and We Fix the Photo",
+      "original_name": "Image inpainting"
+    },
+    {
+      "text": "The task of adding a new object to an image based on a textual instruction.",
+      "paper": "PromptFix: You Prompt and We Fix the Photo",
+      "original_name": "Object creation"
+    },
+    {
+      "text": "The task of removing a specified object from an image and plausibly filling the background, guided by a textual instruction.",
+      "paper": "PromptFix: You Prompt and We Fix the Photo",
+      "original_name": "Object removal"
+    },
+    {
+      "text": "The task of generating a composite image by integrating a reference object into a background image according to a natural language instruction that specifies the object's location and spatial relationship.",
+      "paper": "$\\textit{Bifr\\\"ost}$: 3D-Aware Image Compositing with Language Instructions",
+      "original_name": "Instruction-based image compositing"
+    },
+    {
+      "text": "The task of modifying the pose or view of an object within an image while preserving its unique visual identity, often guided by a user-provided mask.",
+      "paper": "$\\textit{Bifr\\\"ost}$: 3D-Aware Image Compositing with Language Instructions",
+      "original_name": "Identity-preserved inpainting"
+    },
+    {
+      "text": "The task of applying the visual identity of a reference object to a different target object already present in a background scene.",
+      "paper": "$\\textit{Bifr\\\"ost}$: 3D-Aware Image Compositing with Language Instructions",
+      "original_name": "Identity transfer"
+    },
+    {
+      "text": "The task of substituting an existing object in a background image with a new reference object.",
+      "paper": "$\\textit{Bifr\\\"ost}$: 3D-Aware Image Compositing with Language Instructions",
+      "original_name": "Object replacement"
+    },
+    {
+      "text": "Changing the background of an image to match a target background described in the instruction.",
+      "paper": "I2EBench: A Comprehensive Benchmark for Instruction-based Image Editing",
+      "original_name": "Background replacement"
+    },
+    {
+      "text": "The observable task of modifying the color of a specified object in an image based on a text instruction.",
+      "paper": "I2EBench: A Comprehensive Benchmark for Instruction-based Image Editing",
+      "original_name": "Color alteration"
+    },
+    {
+      "text": "The observable task of changing the artistic or visual style of an entire image based on a text instruction.",
+      "paper": "I2EBench: A Comprehensive Benchmark for Instruction-based Image Editing",
+      "original_name": "Style alteration"
+    },
+    {
+      "text": "Editing an image by moving specified handle points toward target points within an editable region.",
+      "paper": "Localize, Understand, Collaborate: Semantic-Aware Dragging via Intention Reasoner",
+      "original_name": "Drag-based editing"
+    },
+    {
+      "text": "The task of moving or deforming the content within a specified region of an image according to drag points.",
+      "paper": "Localize, Understand, Collaborate: Semantic-Aware Dragging via Intention Reasoner",
+      "original_name": "Content dragging"
+    },
+    {
+      "text": "The task of relocating an entire object from a source position to a target position within an image.",
+      "paper": "Localize, Understand, Collaborate: Semantic-Aware Dragging via Intention Reasoner",
+      "original_name": "Object moving"
+    },
+    {
+      "text": "The task of filling in a missing or masked region within an image with plausible, contextually appropriate content.",
+      "paper": "Visual Autoregressive Modeling: Scalable Image Generation via Next-Scale Prediction",
+      "original_name": "Image in-painting"
+    },
+    {
+      "text": "The task of extending an image beyond its original boundaries by generating new content that is consistent with the existing visual context.",
+      "paper": "Visual Autoregressive Modeling: Scalable Image Generation via Next-Scale Prediction",
+      "original_name": "Image out-painting"
+    },
+    {
+      "text": "The task of generating pixels to fill in a masked or missing region of an image based on the visible parts.",
+      "paper": "Glauber Generative Model: Discrete Diffusion Models via Binary Classification",
+      "original_name": "Image infilling"
+    },
+    {
+      "text": "Completing missing parts of an image based on in-context visual examples.",
+      "paper": "Can Generative AI Solve Your In-Context Learning Problem?  A Martingale Perspective",
+      "original_name": "Generative fill"
+    },
+    {
+      "text": "The observable act of modifying an input image through operations such as drawing boxes, highlighting regions, or masking out areas to guide visual attention.",
+      "paper": "ReFocus: Visual Editing as a Chain of Thought for Structured Image Understanding",
+      "original_name": "Visual editing"
+    }
+  ],
+  "definition_count": 19,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MagicBrush",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Vitron: A Unified Pixel-level Vision LLM for Understanding, Generating, Segmenting, Editing",
+      "evidence": "We also have an additional evaluation on image editing on the full test set of MagicBrush",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "neurips24": [
+          "Vitron: A Unified Pixel-level Vision LLM for Understanding, Generating, Segmenting, Editing"
+        ],
+        "iclr25": [
+          "Towards Semantic Equivalence of Tokenization in Multimodal LLM",
+          "Modality-Specialized Synergizers for Interleaved Vision-Language Generalists"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Elucidating the design space of language models for image generation",
+      "evidence": "To further demonstrate the generalization and applicability of ELM, we evaluate its ability to generate samples from novel classes and perform image editing tasks, with the results in Appendix A.2. (Section 4.4)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Elucidating the design space of language models for image generation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "ReFocus: Visual Editing as a Chain of Thought for Structured Image Understanding",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "ReFocus: Visual Editing as a Chain of Thought for Structured Image Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "ReFocus: Visual Editing as a Chain of Thought for Structured Image Understanding",
+      "evidence": "We demonstrate that simple visual editing actions generated as Python code from multimodal LLMs\u2013such as drawing boxes, highlighting areas, or masking regions\u2013can significantly improve model performance by directing selective attention. (Section 1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "ReFocus: Visual Editing as a Chain of Thought for Structured Image Understanding"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 2,
+  "characterization": "Across the surveyed literature, the most prevalent definition of image editing is the behavior of modifying an image according to a natural-language instruction. This general framing is specified through a wide variety of sub-tasks, most commonly involving object-level manipulations such as adding, removing, replacing, or altering the color of objects. Other frequently mentioned modifications include changing an image's background or its overall artistic style. A distinct line of work operationalizes this behavior as filling in missing or corrupted parts of an image, a task referred to as \"image inpainting,\" \"image infilling,\" or \"generative fill.\" Less common framings include \"drag-based editing,\" which involves moving content via handle points, and \"visual editing,\" where one paper describes modifying an image by programmatically \"drawing boxes, highlighting sections, and masking out areas\" to guide a model's attention. To measure performance on this behavior, papers frequently use the MagicBrush benchmark, and also mention using datasets like InstructPix2Pix and DragBench. Image editing is studied as a test of model generalization, and one paper reports that visual editing actions can be used to improve performance on visual reasoning tasks.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "GENOME: Generative Neuro-Symbolic Visual Reasoning by Growing and Reusing Modules",
+      "Guiding Instruction-based Image Editing via Multimodal Large Language Models",
+      "Kosmos-G: Generating Images in Context with Multimodal Large Language Models"
+    ],
+    "neurips24": [
+      "$\\textit{Bifr\\\"ost}$: 3D-Aware Image Compositing with Language Instructions",
+      "GenAI Arena: An Open Evaluation Platform for Generative Models",
+      "HEMM: Holistic Evaluation of Multimodal Foundation Models",
+      "I2EBench: A Comprehensive Benchmark for Instruction-based Image Editing",
+      "Localize, Understand, Collaborate: Semantic-Aware Dragging via Intention Reasoner",
+      "Multimodal Large Language Models Make Text-to-Image Generative Models Align Better",
+      "PromptFix: You Prompt and We Fix the Photo",
+      "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "Visual Autoregressive Modeling: Scalable Image Generation via Next-Scale Prediction",
+      "Vitron: A Unified Pixel-level Vision LLM for Understanding, Generating, Segmenting, Editing"
+    ],
+    "iclr25": [
+      "Can Generative AI Solve Your In-Context Learning Problem?  A Martingale Perspective",
+      "Glauber Generative Model: Discrete Diffusion Models via Binary Classification",
+      "Modality-Specialized Synergizers for Interleaved Vision-Language Generalists",
+      "Multi-modal Agent Tuning: Building a VLM-Driven Agent for Efficient Tool Usage",
+      "Towards Semantic Equivalence of Tokenization in Multimodal LLM",
+      "Transfusion: Predict the Next Token and Diffuse Images with One Multi-Modal Model",
+      "Visually Guided Decoding: Gradient-Free Hard Prompt Inversion with Language Models"
+    ],
+    "icml25": [
+      "Cradle: Empowering Foundation Agents towards General Computer Control",
+      "Elucidating the design space of language models for image generation",
+      "Orthus: Autoregressive Interleaved Image-Text Generation with Modality-Specific Heads",
+      "ReFocus: Visual Editing as a Chain of Thought for Structured Image Understanding"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 3,
+    "neurips24": 10,
+    "iclr25": 7,
+    "icml25": 4
+  },
+  "conferences": [
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

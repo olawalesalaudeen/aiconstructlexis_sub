@@ -1,0 +1,180 @@
+\section*{Prompt: Extract Entities (Pass 1)}
+\begin{description}
+\item[Pipeline step:] Extraction --- Phase 1
+\item[Models:] Gemini 2.5 Pro / GPT-5.4 Mini / Qwen 3.5-397B
+\item[Source:] \texttt{misc/prompts.py} $\rightarrow$ \texttt{EXTRACT\_ENTITIES\_PROMPT}
+\item[Called from:] \texttt{scripts/multi\_model\_mv.py} $\rightarrow$ \texttt{scripts/batch\_majority\_vote.py:build\_entity\_jsonl()}
+\end{description}
+
+\begin{tcolorbox}[breakable,enhanced,colback=blue!3,colframe=blue!40!black,title={Prompt},fonttitle=\bfseries,left=8pt,right=8pt,top=6pt,bottom=6pt]
+
+Your task is to act as a research assistant. Analyze the following academic paper and extract \textbf{entities only} (no relationships yet) for a \textbf{psychometric-style nomological network} for \textbf{Large Language Models (LLMs)}: abstract constructs, measurement instruments (benchmarks, user studies, surveys, and other evaluation procedures), and observable behaviors/tasks. \textbf{Faithfulness is more important than coverage}---if you cannot tie an item to a quote from the paper text, \textbf{omit} it.
+
+\subsection*{High-Level Analysis}
+\begin{itemize}
+\item \textbf{Paper Summary:} 1--3 sentences on core topic and findings.
+\item \textbf{Notes:} Brief relevance/comments.
+\end{itemize}
+
+\subsection*{Entity Definitions}
+
+The three entity types form a layered structure: a \textbf{construct} (latent trait) manifests through one or more \textbf{behaviors} (observable tasks), and a \textbf{measurement instrument} is the procedure used to test a behavior and thereby probe a construct. The construct is \textit{why} the model can do it; the behavior is \textit{what} you see it do; the instrument is \textit{how} you test it. The same instrument can relate to both a behavior and a construct --- include both links when the paper supports them.
+
+\subsubsection*{1. Constructs --- latent traits inferred from observable evidence}
+
+A construct is an \textbf{unobservable property of the model} --- a cognitive ability, disposition, risk, or quality that persists across tasks. You never see it directly; you infer it from patterns of behavior and measurement. Analogous to intelligence or personality factors in psychometrics.
+
+\textbf{Decision rules (apply in order):}
+\begin{enumerate}
+\item \textbf{"Could I watch the model do it?"} If specific inputs and outputs directly demonstrate it $\rightarrow$ \textbf{behavior}. If you can only infer it from patterns across many tasks $\rightarrow$ \textbf{construct}.
+\item \textbf{"Does it generalize as a trait across tasks?"} A construct transfers across different evaluation settings (the way "intelligence" transfers across math, verbal, and spatial tests). If it only describes one specific task setting, it is probably a behavior.
+\item \textbf{"Is it a property of the model, or of the experimental setup?"} Only model properties count. Architectures, training methods, system/framework names, and implementation details (inference speed, memory, cost) are never constructs. Metric/scoring-function names (accuracy, F1, BLEU, MSE, etc.) are excluded entirely --- they are neither constructs nor instruments.
+\end{enumerate}
+
+\textbf{When in doubt between construct and behavior, prefer construct.} If a term names a cognitive faculty or general ability (e.g. "reasoning", "comprehension", "commonsense reasoning", "mathematical reasoning", "language understanding"), classify as construct even if the paper also evaluates tasks involving it. Only use behavior for terms defined by a specific input/output task format (e.g. "multiple-choice question answering", "code generation"). Corresponding behavior names should come from the task format (construct "Commonsense reasoning" $\rightarrow$ behavior "Commonsense question answering").
+
+\textbf{Examples to give you a flavor of construct categories} (illustrative only --- extract whatever the paper actually discusses, including things not listed here):
+\begin{itemize}
+\item \textit{Cognitive abilities:} reasoning and its facets (mathematical, logical, commonsense, causal, spatial, temporal, \dots ), language understanding, planning, creativity, abstraction
+\item \textit{Safety and alignment traits:} harmlessness, helpfulness, toxicity, bias, fairness, robustness, sycophancy, honesty, deception
+\item \textit{Model-level latent properties:} generalization, memorization, calibration, interpretability, compositionality, multilinguality, instruction-following, in-context learning
+\end{itemize}
+
+\textbf{Granularity:} split distinct facets into separate constructs when the paper treats them as distinguishable (e.g. "mathematical reasoning" vs "logical reasoning" if evaluated separately); do not over-split for passing mentions; use the most specific name the paper supports.
+
+\textbf{Naming:} concise noun phrases another researcher would recognize; drop filler suffixes like "ability"/"capability"/"skill" unless needed to disambiguate; sentence case ("Mathematical reasoning", not "Mathematical Reasoning").
+
+\textbf{Field requirements:}
+\begin{itemize}
+\item \texttt{name}: concise noun-phrase label (2--5 words typical).
+\item \texttt{description}: one sentence that \textbf{defines} the latent trait for a reader who has not seen the paper. Do NOT just restate the name --- add real explanatory content (e.g. for "Calibration": "The degree to which the model's expressed confidence matches its actual accuracy across predictions").
+\item \texttt{source\_snippets}: \textbf{non-empty list} of \textbf{verbatim quotes} from the paper, each optionally followed by a location reference like "(Sec. 3)". Keep to the relevant phrase or sentence. Do not paraphrase.
+\end{itemize}
+
+\subsubsection*{2. Behaviors --- what you can observe the model doing}
+
+A behavior is an \textbf{observable action, output, or phenomenon the model exhibits} --- both intentional task performance AND emergent/unintended behaviors. If you could write an evaluation script that directly checks whether the model is doing it, it is a behavior.
+
+\textbf{Two kinds:}
+\begin{enumerate}
+\item \textbf{Task behaviors} --- what the model is asked to do (code generation, question answering, translation); defined by input/output format.
+\item \textbf{Non-task behaviors} --- observable output patterns not defined by a task format: emergent phenomena (hallucination, sycophancy, memorization), failure modes (reward hacking, mode collapse, catastrophic forgetting), or other patterns (self-correction, verbose generation, refusal).
+\end{enumerate}
+
+\textbf{Row-vs-column heuristic:} measurement instruments assess behaviors (rows); the latent trait being probed is a construct (column). A measurement instrument that \textit{assesses} a behavior is not itself a behavior --- do not use instrument names as behavior names.
+
+\textbf{Examples to give you a flavor of behavior categories} (illustrative only --- extract whatever the paper actually discusses, including things not listed here):
+\begin{itemize}
+\item \textit{Generation:} text/code generation, translation, summarization, image captioning, dialogue
+\item \textit{Comprehension:} question answering, reading comprehension, natural language inference, sentiment analysis
+\item \textit{Structured output:} information extraction, NER, parsing, relation extraction
+\item \textit{Interactive:} instruction following, tool use, multi-turn conversation, web navigation
+\item \textit{Safety-related:} harmful-content refusal, jailbreak resistance, response under adversarial perturbation
+\item \textit{Non-task patterns:} hallucination, sycophancy, memorization, reward hacking, mode collapse, refusal, self-correction
+\end{itemize}
+
+\textbf{Naming:} use generic, reusable task names that apply across papers --- not paper-specific method names. Abstract paper framing to the community-standard name (e.g. "grade-school arithmetic solving" $\rightarrow$ "Mathematical problem solving"). Use noun/gerund form ("Code generation", not "Generates code"). Sentence case.
+
+\textbf{Field requirements:}
+\begin{itemize}
+\item \texttt{name}: concise noun-phrase label (2--5 words typical).
+\item \texttt{description}: one sentence describing what the model observably does, concrete enough that someone could design an evaluation for it. Do NOT just restate the name.
+\item \texttt{source\_snippets}: same rules as constructs --- verbatim quotes, non-empty list.
+\end{itemize}
+
+\subsubsection*{3. Measurement instruments --- how constructs and behaviors are assessed}
+
+A measurement instrument is any \textbf{named, reproducible procedure used to assess model capabilities or behaviors} --- broader than benchmarks.
+
+\textbf{Examples to give you a flavor of instrument categories} (illustrative only --- extract whatever the paper actually uses, including things not listed here):
+\begin{itemize}
+\item \textit{Benchmarks and datasets:} named test sets (MMLU, HumanEval, SQuAD, ImageNet, \dots )
+\item \textit{Human evaluation protocols:} user studies, preference studies, Likert surveys, A/B tests, expert annotation, crowdsourced ratings, inter-annotator agreement
+\item \textit{Standardized questionnaires and scales:} psychometric instruments, personality inventories, bias probes, Turing-test evaluations, red-teaming protocols
+\item \textit{Evaluation suites:} HELM, BIG-Bench, lm-eval-harness, \dots 
+\item \textit{Domain-specific procedures:} clinical vignette evaluations, legal case analysis, simulation-based assessments
+\end{itemize}
+
+\textbf{Include} any instrument the paper uses or references that has a recognizable name or well-defined protocol, concrete enough to replicate.
+
+\textbf{Exclude scoring functions/metrics entirely.} Metrics are \textit{how you score}; instruments are \textit{what you use to gather the data you score}. Exclude: accuracy, F1, BLEU, ROUGE, METEOR, BERTScore, MSE/MAE/RMSE, perplexity, pass@k, win rate, CIDEr, SPICE, EM, precision, recall, any "*-score" metric. Also exclude: evaluation settings (5-shot, zero-shot), training-only datasets, unnamed/ad-hoc test sets, and vague references ("our evaluation", "the test set").
+
+\textbf{Naming:} use the community-standard short name (often an acronym). For unnamed human evaluations, use a descriptive label ("User preference study", "Expert annotation evaluation", "Red-teaming assessment"). Put the full name in \texttt{description}. Do not embed metric names or settings in the instrument name.
+
+\textbf{Field requirements:}
+\begin{itemize}
+\item \texttt{name}: standard short name or descriptive label for the evaluation method.
+\item \texttt{description}: full name (if acronym) + one sentence on what domain/ability/task it assesses and how (format, modality, population). Self-contained.
+\item \texttt{source\_snippets}: same rules as constructs --- verbatim quotes, non-empty list.
+\end{itemize}
+
+\subsection*{Self-Check}
+
+Before finalizing:
+\begin{enumerate}
+\item \textbf{Quote check:} every \texttt{source\_snippets} entry must actually appear in the paper text. Delete or fix any that fail.
+\item \textbf{Category check:} reapply the decision rules. Move latent traits misclassified as behaviors back to constructs; remove any metrics (accuracy, F1, BLEU, etc.) listed as instruments.
+\item \textbf{Naming check:} would another researcher studying a different paper about the same ability/task use the same name? Normalize to community-standard terms.
+\end{enumerate}
+
+\subsection*{Output Format (JSON)}
+
+Return a single JSON object with keys: \texttt{Title}, \texttt{Notes}, \texttt{Paper Summary}, \texttt{Nomological Network}.
+The \texttt{Nomological Network} must have exactly:
+\begin{itemize}
+\item \texttt{"constructs": [ \{ "name", "description", "source\_snippets" \}, ... ]}
+\item \texttt{"measurements": [ \{ "name", "description", "source\_snippets" \}, ... ]}
+\item \texttt{"behaviors": [ \{ "name", "description", "source\_snippets" \}, ... ]}
+\end{itemize}
+
+**Do NOT include a \texttt{relationships} key.** Relationships will be extracted in a separate step.
+
+If the paper has no LLM-relevant content, use empty lists.
+
+Example shape (illustrative only):
+\begin{verbatim}
+{
+  "constructs": [
+    {
+      "name": "Spatial reasoning",
+      "description": "The latent ability to mentally represent and manipulate spatial relationships between objects.",
+      "source_snippets": [
+        "\"we evaluate spatial reasoning through block-placement tasks\" (Sec. 3)"
+      ]
+    },
+    {
+      "name": "Robustness",
+      "description": "The degree to which model performance is stable under input perturbations.",
+      "source_snippets": [
+        "\"robustness to adversarial rephrasings\" (Abstract)"
+      ]
+    }
+  ],
+  "measurements": [
+    {
+      "name": "BlocksWorld",
+      "description": "Planning benchmark requiring multi-step block rearrangement.",
+      "source_snippets": [
+        "\"evaluated on BlocksWorld\" (Table 1)"
+      ]
+    },
+    {
+      "name": "User preference study",
+      "description": "Human evaluation in which participants rate or rank model outputs on criteria such as helpfulness and coherence.",
+      "source_snippets": [
+        "\"we conducted a user study with 50 participants rating outputs\" (Sec. 5)"
+      ]
+    }
+  ],
+  "behaviors": [
+    {
+      "name": "Multi-step planning",
+      "description": "Producing a sequence of actions to achieve a goal state from an initial state.",
+      "source_snippets": [
+        "\"the model generates step-by-step plans\" (Sec. 4)"
+      ]
+    }
+  ]
+}
+\end{verbatim}
+\end{tcolorbox}

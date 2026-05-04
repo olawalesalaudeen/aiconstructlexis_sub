@@ -1,0 +1,126 @@
+{
+  "canonical_name": "RedPajama",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, RedPajama is consistently characterized as a large, multi-domain dataset for language models, with one paper specifying it is derived from the CommonCrawl corpus. Its application spans several stages of the model development lifecycle. A prevalent use is as an evaluation instrument; papers report using it to measure `Language modeling` performance, often by calculating perplexity on its \"general web data.\" It is also used to evaluate `Autoregressive language modeling` and `Locality`. Beyond perplexity, some work employs RedPajama to simulate and measure generation throughput. Another application is in post-training quantization, where it serves as a calibration dataset intended to represent \"typical input distributions.\" In addition to its measurement functions, RedPajama is also used as a source corpus for pre-training models and as a baseline for data selection and cleaning pipelines.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "REDPAJAMA",
+    "RedPajama",
+    "Redpajama"
+  ],
+  "papers": [
+    "AI as Humanity\u2019s Salieri: Quantifying Linguistic Creativity of Language Models via Systematic Attribution of Machine Text against Web Text",
+    "Adaptive Rank Allocation: Speeding Up Modern Transformers with RaNA Adapters",
+    "Data Mixing Laws: Optimizing Data Mixtures by Predicting Language Modeling Performance",
+    "Data Selection via Optimal Control for Language Models",
+    "Relaxed Recursive Transformers: Effective Parameter Sharing with Layer-wise LoRA",
+    "STAR: Synthesis of Tailored Architectures",
+    "Theory, Analysis, and Best Practices for Sigmoid Self-Attention",
+    "Domain2Vec: Vectorizing Datasets to Find the Optimal Data Mixture without Training",
+    "GuidedQuant: Large Language Model Quantization via Exploiting End Loss Guidance",
+    "Data Mixture Inference Attack: BPE Tokenizers Reveal Training Data Compositions",
+    "Scaling Retrieval-Based Language Models with a Trillion-Token Datastore",
+    "WISE: Rethinking the Knowledge Memory for Lifelong Model Editing of Large Language Models"
+  ],
+  "paper_count": 12,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A multi-domain pretraining corpus from which samples are used to evaluate language modeling perplexity on general web data.",
+      "paper": "Scaling Retrieval-Based Language Models with a Trillion-Token Datastore",
+      "original_name": "REDPAJAMA"
+    },
+    {
+      "text": "An open-source project to create a large, high-quality dataset for training language models, used here for simulating generation throughput.",
+      "paper": "Relaxed Recursive Transformers: Effective Parameter Sharing with Layer-wise LoRA",
+      "original_name": "RedPajama"
+    },
+    {
+      "text": "A pre-training dataset derived from the CommonCrawl corpus, used as a source and baseline for data selection.",
+      "paper": "Data Selection via Optimal Control for Language Models",
+      "original_name": "Redpajama"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Locality",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "WISE: Rethinking the Knowledge Memory for Lifelong Model Editing of Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "WISE: Rethinking the Knowledge Memory for Lifelong Model Editing of Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language modeling",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Scaling Retrieval-Based Language Models with a Trillion-Token Datastore",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Scaling Retrieval-Based Language Models with a Trillion-Token Datastore"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Autoregressive language modeling",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "STAR: Synthesis of Tailored Architectures",
+      "evidence": "We train all models using the Llama2 recipe (Touvron et al., 2023) (with ALiBi instead of RoPE) and the RedPajama (Computer, 2023) dataset in JAX... (Sec. 5.5)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "STAR: Synthesis of Tailored Architectures"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, RedPajama is consistently characterized as a large, multi-domain dataset for language models, with one paper specifying it is derived from the CommonCrawl corpus. Its application spans several stages of the model development lifecycle. A prevalent use is as an evaluation instrument; papers report using it to measure `Language modeling` performance, often by calculating perplexity on its \"general web data.\" It is also used to evaluate `Autoregressive language modeling` and `Locality`. Beyond perplexity, some work employs RedPajama to simulate and measure generation throughput. Another application is in post-training quantization, where it serves as a calibration dataset intended to represent \"typical input distributions.\" In addition to its measurement functions, RedPajama is also used as a source corpus for pre-training models and as a baseline for data selection and cleaning pipelines.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "Data Mixture Inference Attack: BPE Tokenizers Reveal Training Data Compositions",
+      "Scaling Retrieval-Based Language Models with a Trillion-Token Datastore",
+      "WISE: Rethinking the Knowledge Memory for Lifelong Model Editing of Large Language Models"
+    ],
+    "iclr25": [
+      "AI as Humanity\u2019s Salieri: Quantifying Linguistic Creativity of Language Models via Systematic Attribution of Machine Text against Web Text",
+      "Adaptive Rank Allocation: Speeding Up Modern Transformers with RaNA Adapters",
+      "Data Mixing Laws: Optimizing Data Mixtures by Predicting Language Modeling Performance",
+      "Data Selection via Optimal Control for Language Models",
+      "Relaxed Recursive Transformers: Effective Parameter Sharing with Layer-wise LoRA",
+      "STAR: Synthesis of Tailored Architectures",
+      "Theory, Analysis, and Best Practices for Sigmoid Self-Attention"
+    ],
+    "icml25": [
+      "Domain2Vec: Vectorizing Datasets to Find the Optimal Data Mixture without Training",
+      "GuidedQuant: Large Language Model Quantization via Exploiting End Loss Guidance"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 3,
+    "iclr25": 7,
+    "icml25": 2
+  },
+  "conferences": [
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

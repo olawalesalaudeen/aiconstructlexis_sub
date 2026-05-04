@@ -1,0 +1,108 @@
+{
+  "canonical_name": "MIMIC-III",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, MIMIC-III is consistently described as a large, publicly available dataset containing de-identified health data from patients who stayed in critical care units. The dataset, which includes records like discharge summaries, is frequently used for clinical NLP research and model evaluation. Papers use MIMIC-III to measure model performance on a range of healthcare-related prediction tasks, including time series classification and both disease and medical diagnosis. Specifically, it is used to evaluate mortality prediction, readmission prediction, length-of-stay prediction, phenotype prediction, and drug recommendation. One study operationalizes diagnosis prediction on this dataset as predicting \"the CCS codes for the next visit of patients\" (\"BoxLM: Unifying Structures and Semantics of Medical Concepts for Diagnosis Prediction in Healthcare\").",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "MIMIC-III"
+  ],
+  "papers": [
+    "SemCSE: Semantic Contrastive Sentence Embeddings UsingLLM-Generated Summaries For Scientific Abstracts",
+    "Text Detoxification: Data Efficiency, Semantic Preservation and Model Generalization",
+    "BoxLM: Unifying Structures and Semantics of Medical Concepts for Diagnosis Prediction in Healthcare",
+    "Multimodal Medical Code Tokenizer"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A publicly available in-patient dataset from the MIMIC (Medical Information Mart for Intensive Care) project, containing de-identified health data associated with patients who stayed in critical care units.",
+      "paper": "Multimodal Medical Code Tokenizer",
+      "original_name": "MIMIC-III"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Time series classification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Reasoning-Enhanced Healthcare Predictions with Knowledge Graph Community Retrieval",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Reasoning-Enhanced Healthcare Predictions with Knowledge Graph Community Retrieval"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mortality prediction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Reasoning-Enhanced Healthcare Predictions with Knowledge Graph Community Retrieval",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Reasoning-Enhanced Healthcare Predictions with Knowledge Graph Community Retrieval"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Disease diagnosis",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "PKAG-DDI: Pairwise Knowledge-Augmented Language Model for Drug-Drug Interaction Event Text Generation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "PKAG-DDI: Pairwise Knowledge-Augmented Language Model for Drug-Drug Interaction Event Text Generation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Medical diagnosis",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "BoxLM: Unifying Structures and Semantics of Medical Concepts for Diagnosis Prediction in Healthcare",
+      "evidence": "The evaluation encompasses five tasks: 1 mortality prediction (MT), 2 readmission prediction (RA), 3 length-of-stay prediction (LOS), 4 phenotype prediction (Pheno), and 5 drug recommendation (DrugRec). ... Table 3 presents the AUPRC values for each baseline and their integration with our MEDTOK for five tasks in two in-patient datasets. (Section 4)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "BoxLM: Unifying Structures and Semantics of Medical Concepts for Diagnosis Prediction in Healthcare"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, MIMIC-III is consistently described as a large, publicly available dataset containing de-identified health data from patients who stayed in critical care units. The dataset, which includes records like discharge summaries, is frequently used for clinical NLP research and model evaluation. Papers use MIMIC-III to measure model performance on a range of healthcare-related prediction tasks, including time series classification and both disease and medical diagnosis. Specifically, it is used to evaluate mortality prediction, readmission prediction, length-of-stay prediction, phenotype prediction, and drug recommendation. One study operationalizes diagnosis prediction on this dataset as predicting \"the CCS codes for the next visit of patients\" (\"BoxLM: Unifying Structures and Semantics of Medical Concepts for Diagnosis Prediction in Healthcare\").",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "icml25": [
+      "BoxLM: Unifying Structures and Semantics of Medical Concepts for Diagnosis Prediction in Healthcare",
+      "Multimodal Medical Code Tokenizer"
+    ],
+    "emnlp25": [
+      "SemCSE: Semantic Contrastive Sentence Embeddings UsingLLM-Generated Summaries For Scientific Abstracts",
+      "Text Detoxification: Data Efficiency, Semantic Preservation and Model Generalization"
+    ]
+  },
+  "paper_count_by_conference": {
+    "icml25": 2,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "icml25"
+  ]
+}

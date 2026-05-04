@@ -1,0 +1,86 @@
+{
+  "canonical_name": "WikiMIA",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, WikiMIA is consistently described as a benchmark dataset for evaluating pre-training data detection algorithms on large language models. The prevailing operationalization of the benchmark is temporal; it contains excerpts from Wikipedia articles that are classified as either \"seen\" or \"unseen\" based on whether their publication date precedes a model's training cutoff. This temporal separation based on the model's release timeline is its defining feature. Papers use WikiMIA to compare the performance of different detection methods, with one study noting its use to show accuracy gains over methods like \"Min-K%\" and \"Min-K%++\". However, this temporal design is also a point of contention. At least one paper criticizes the benchmark, arguing that separating data by publication date introduces \"artificial distribution shifts.\" This critique is substantiated by the finding that a \"blind baseline\u2014which predicts membership solely from text content without any model access\u2014already achieves 98.7% AUC,\" questioning the validity of the task as framed by the dataset.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "WIKIMIA",
+    "WikiMIA"
+  ],
+  "papers": [
+    "Confounding Factors in Relating Model Performance to Morphology",
+    "UltraIF: Advancing Instruction Following from the Wild",
+    "A Statistical Approach for Controlled Training Data Detection",
+    "Fine-tuning can Help Detect Pretraining Data from Large Language Models",
+    "Infilling Score: A Pretraining Data Detection Algorithm for Large Language Models",
+    "Min-K%++: Improved Baseline for Pre-Training Data Detection from Large Language Models",
+    "TDDBench: A Benchmark for Training data detection"
+  ],
+  "paper_count": 7,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A dataset specifically designed to evaluate training data detection algorithms on large language models.",
+      "paper": "TDDBench: A Benchmark for Training data detection",
+      "original_name": "WIKIMIA"
+    },
+    {
+      "text": "A temporal benchmark dataset for evaluating pretraining data detection methods, containing excerpts from Wikipedia articles classified as \"seen\" or \"unseen\" based on their publication date relative to a model's training cutoff.",
+      "paper": "Infilling Score: A Pretraining Data Detection Algorithm for Large Language Models",
+      "original_name": "WikiMIA"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Pre-training data detection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Detecting Pretraining Data from Large Language Models",
+      "evidence": "WIKIMIA is a dataset specifically designed to evaluate TDD algorithms on large language models.",
+      "paper_count": 5,
+      "papers_by_conference": {
+        "iclr24": [
+          "Detecting Pretraining Data from Large Language Models"
+        ],
+        "iclr25": [
+          "Min-K%++: Improved Baseline for Pre-Training Data Detection from Large Language Models",
+          "Infilling Score: A Pretraining Data Detection Algorithm for Large Language Models",
+          "Fine-tuning can Help Detect Pretraining Data from Large Language Models"
+        ],
+        "emnlp25": [
+          "UltraIF: Advancing Instruction Following from the Wild"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, WikiMIA is consistently described as a benchmark dataset for evaluating pre-training data detection algorithms on large language models. The prevailing operationalization of the benchmark is temporal; it contains excerpts from Wikipedia articles that are classified as either \"seen\" or \"unseen\" based on whether their publication date precedes a model's training cutoff. This temporal separation based on the model's release timeline is its defining feature. Papers use WikiMIA to compare the performance of different detection methods, with one study noting its use to show accuracy gains over methods like \"Min-K%\" and \"Min-K%++\". However, this temporal design is also a point of contention. At least one paper criticizes the benchmark, arguing that separating data by publication date introduces \"artificial distribution shifts.\" This critique is substantiated by the finding that a \"blind baseline\u2014which predicts membership solely from text content without any model access\u2014already achieves 98.7% AUC,\" questioning the validity of the task as framed by the dataset.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "A Statistical Approach for Controlled Training Data Detection",
+      "Fine-tuning can Help Detect Pretraining Data from Large Language Models",
+      "Infilling Score: A Pretraining Data Detection Algorithm for Large Language Models",
+      "Min-K%++: Improved Baseline for Pre-Training Data Detection from Large Language Models",
+      "TDDBench: A Benchmark for Training data detection"
+    ],
+    "emnlp25": [
+      "Confounding Factors in Relating Model Performance to Morphology",
+      "UltraIF: Advancing Instruction Following from the Wild"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 5,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25"
+  ]
+}

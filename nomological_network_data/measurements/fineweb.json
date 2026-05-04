@@ -1,0 +1,110 @@
+{
+  "canonical_name": "FineWeb",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, FineWeb is consistently characterized as a web-text corpus, with some sources describing it as a \"high-quality LLM pretraining dataset\" composed of \"deduplicated English web documents.\" The most prevalent application of FineWeb is for evaluation. It is used to measure model performance on tasks like `Text completion` and `Data reconstruction`, and is also used as a dataset to evaluate a model's `Generalization`. Some work specifically uses it to evaluate the negative log-likelihood of language models. Beyond evaluation, FineWeb serves as a source for generating new data; one study synthesizes prompts from it, while another samples 10,000 examples to create a new dataset. A more specific application appears in a study that uses the corpus for \"analyzing bilinear transformer feature interactions at different model sizes,\" training models referred to as \"'fw-small' and 'fw-medium'\" for this purpose.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "FineWeb"
+  ],
+  "papers": [
+    "LEO-MINI: An Efficient Multimodal Large Language Model using Conditional Token Reduction and Mixture of Multi-Modal Experts",
+    "reWordBench: Benchmarking and Improving the Robustness of Reward Models with Transformed Inputs",
+    "Adaptive Data Optimization: Dynamic Sample Selection with Scaling Laws",
+    "Bilinear MLPs enable weight-based mechanistic interpretability",
+    "Scaling up Masked Diffusion Models on Text",
+    "Train Small, Infer Large: Memory-Efficient LoRA Training for Large Language Models",
+    "Idiosyncrasies in Large Language Models",
+    "Learning Dynamics in Continual Pre-Training for Large Language Models",
+    "Programming Every Example: Lifting Pre-training Data Quality Like Experts at Scale",
+    "Robust Multi-bit Text Watermark with LLM-based Paraphrasers"
+  ],
+  "paper_count": 10,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A web-text corpus used for analyzing bilinear transformer feature interactions at different model sizes.",
+      "paper": "Bilinear MLPs enable weight-based mechanistic interpretability",
+      "original_name": "FineWeb"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text completion",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Improving Dialogue State Tracking through Combinatorial Search for In-Context Examples",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Improving Dialogue State Tracking through Combinatorial Search for In-Context Examples"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Data reconstruction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Improving Dialogue State Tracking through Combinatorial Search for In-Context Examples",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Improving Dialogue State Tracking through Combinatorial Search for In-Context Examples"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Robust Multi-bit Text Watermark with LLM-based Paraphrasers",
+      "evidence": "We evaluate our model, previously trained on the C4 dataset, on various other datasets, including Anthropic HH-RLHF (HH) (Bai et al., 2022), Synthetic instruction2(Instruct), PKU SafeRLHF (PKU) (Ji et al., 2024), Reward3, UltraFeedback(UltraF) (Cui et al., 2024), FineWeb (Penedo et al., 2024) and Pile uncopyrighted(Pile)4 datasets. (Section 4.4)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Robust Multi-bit Text Watermark with LLM-based Paraphrasers"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, FineWeb is consistently characterized as a web-text corpus, with some sources describing it as a \"high-quality LLM pretraining dataset\" composed of \"deduplicated English web documents.\" The most prevalent application of FineWeb is for evaluation. It is used to measure model performance on tasks like `Text completion` and `Data reconstruction`, and is also used as a dataset to evaluate a model's `Generalization`. Some work specifically uses it to evaluate the negative log-likelihood of language models. Beyond evaluation, FineWeb serves as a source for generating new data; one study synthesizes prompts from it, while another samples 10,000 examples to create a new dataset. A more specific application appears in a study that uses the corpus for \"analyzing bilinear transformer feature interactions at different model sizes,\" training models referred to as \"'fw-small' and 'fw-medium'\" for this purpose.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Adaptive Data Optimization: Dynamic Sample Selection with Scaling Laws",
+      "Bilinear MLPs enable weight-based mechanistic interpretability",
+      "Scaling up Masked Diffusion Models on Text",
+      "Train Small, Infer Large: Memory-Efficient LoRA Training for Large Language Models"
+    ],
+    "icml25": [
+      "Idiosyncrasies in Large Language Models",
+      "Learning Dynamics in Continual Pre-Training for Large Language Models",
+      "Programming Every Example: Lifting Pre-training Data Quality Like Experts at Scale",
+      "Robust Multi-bit Text Watermark with LLM-based Paraphrasers"
+    ],
+    "emnlp25": [
+      "LEO-MINI: An Efficient Multimodal Large Language Model using Conditional Token Reduction and Mixture of Multi-Modal Experts",
+      "reWordBench: Benchmarking and Improving the Robustness of Reward Models with Transformed Inputs"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 4,
+    "icml25": 4,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "icml25"
+  ]
+}

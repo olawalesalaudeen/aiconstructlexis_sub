@@ -1,0 +1,178 @@
+{
+  "canonical_name": "Object recognition",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, object recognition is most commonly defined as the behavior of identifying and naming specific objects present in an image. Some papers offer more specialized definitions that focus on related sub-tasks, such as determining an object's presence, identifying its attributes, or naming its color. One study explicitly treats these as distinct categories alongside object recognition when selecting questions from the TDIUC dataset. The application of this behavior also extends to specialized domains, with definitions covering the identification of GUI elements in user interfaces and the naming of anatomical structures or lesions in medical scans.\n\nTo operationalize and measure this behavior, researchers employ several instruments. The provided data shows that object recognition is measured by benchmarks such as ImageNet-1k and POPE. It is also evaluated using visual question answering tasks, where models are prompted with direct questions like \"What is on the bed?\". Additionally, the Dollar Street dataset is used to measure object identification in studies of cultural bias. The behavior is studied in the context of hallucination, where it is one of the tasks used to assess model failures, and is also described as being related to the broader construct of Perception.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Object recognition",
+    "Object presence detection",
+    "Attribute identification",
+    "Color identification",
+    "Object identification",
+    "Element identification",
+    "Lesion identification",
+    "Structure identification"
+  ],
+  "papers": [
+    "Dysca: A Dynamic and Scalable Benchmark for Evaluating Perception Ability of LVLMs",
+    "Grounding Multimodal Large Language Model in GUI World",
+    "Have the VLMs Lost Confidence? A Study of Sycophancy in VLMs",
+    "Interpretable Bilingual Multimodal Large Language Model for Diverse Biomedical Tasks",
+    "See It from My Perspective: How Language Affects Cultural Bias in Image Understanding",
+    "Teaching Human Behavior Improves Content Understanding Abilities Of VLMs",
+    "Towards Interpreting Visual Information Processing in Vision-Language Models",
+    "ZooProbe: A Data Engine for Evaluating, Exploring, and Evolving Large-scale Training Data for Multimodal LLMs",
+    "Animal-Bench: Benchmarking Multimodal Video Models for Animal-centric Video Understanding",
+    "Architect: Generating Vivid and Interactive 3D Scenes with Hierarchical 2D Inpainting",
+    "WildVision: Evaluating Vision-Language Models in the Wild with Human Preferences"
+  ],
+  "paper_count": 11,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Identifying specific objects present in the image.",
+      "paper": "WildVision: Evaluating Vision-Language Models in the Wild with Human Preferences",
+      "original_name": "Object recognition"
+    },
+    {
+      "text": "The task of determining whether a specific object exists within an image.",
+      "paper": "Have the VLMs Lost Confidence? A Study of Sycophancy in VLMs",
+      "original_name": "Object presence detection"
+    },
+    {
+      "text": "The task of identifying specific properties or characteristics of objects within an image.",
+      "paper": "Have the VLMs Lost Confidence? A Study of Sycophancy in VLMs",
+      "original_name": "Attribute identification"
+    },
+    {
+      "text": "The task of identifying and naming the colors of objects in an image.",
+      "paper": "Have the VLMs Lost Confidence? A Study of Sycophancy in VLMs",
+      "original_name": "Color identification"
+    },
+    {
+      "text": "The task of correctly naming an everyday object depicted in an image.",
+      "paper": "See It from My Perspective: How Language Affects Cultural Bias in Image Understanding",
+      "original_name": "Object identification"
+    },
+    {
+      "text": "The action of correctly selecting or pointing to a specific GUI element based on a textual description or query.",
+      "paper": "Grounding Multimodal Large Language Model in GUI World",
+      "original_name": "Element identification"
+    },
+    {
+      "text": "The specific task of identifying and naming anatomical structures, such as organs, within a specified region of a medical scan.",
+      "paper": "Interpretable Bilingual Multimodal Large Language Model for Diverse Biomedical Tasks",
+      "original_name": "Structure identification"
+    },
+    {
+      "text": "The specific task of identifying and naming abnormalities, such as tumors or cancers, within a specified region of a medical scan.",
+      "paper": "Interpretable Bilingual Multimodal Large Language Model for Diverse Biomedical Tasks",
+      "original_name": "Lesion identification"
+    }
+  ],
+  "definition_count": 8,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Perception",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "AI-Assisted Human Evaluation of Machine Translation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "AI-Assisted Human Evaluation of Machine Translation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ImageNet-1k",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "UniBench: Visual Reasoning Requires Rethinking Vision-Language Beyond Scaling",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "UniBench: Visual Reasoning Requires Rethinking Vision-Language Beyond Scaling"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "MMDT: Decoding the Trustworthiness and Safety of Multimodal Foundation Models",
+      "evidence": "Our benchmark encompasses six novel hallucination scenarios ... each covering \ufb01ve different tasks, i.e. object recognition, counting, attribute recognition, spatial reasoning, and action prediction.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "MMDT: Decoding the Trustworthiness and Safety of Multimodal Foundation Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Towards Interpreting Visual Information Processing in Vision-Language Models",
+      "evidence": "We manually curate a set of 100 images with specific questions about objects, such as \u201cWhat is on the bed?\u201d. ... We prefill the model\u2019s response with \u201cIt is a\u201d and compare the next generated token before and after ablation. (Section 3)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Towards Interpreting Visual Information Processing in Vision-Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "POPE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "SECOND: Mitigating Perceptual Hallucination in Vision-Language Models via Selective and Contrastive Decoding",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "SECOND: Mitigating Perceptual Hallucination in Vision-Language Models via Selective and Contrastive Decoding"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 4,
+  "characterization": "Across the surveyed literature, object recognition is most commonly defined as the behavior of identifying and naming specific objects present in an image. Some papers offer more specialized definitions that focus on related sub-tasks, such as determining an object's presence, identifying its attributes, or naming its color. One study explicitly treats these as distinct categories alongside object recognition when selecting questions from the TDIUC dataset. The application of this behavior also extends to specialized domains, with definitions covering the identification of GUI elements in user interfaces and the naming of anatomical structures or lesions in medical scans.\n\nTo operationalize and measure this behavior, researchers employ several instruments. The provided data shows that object recognition is measured by benchmarks such as ImageNet-1k and POPE. It is also evaluated using visual question answering tasks, where models are prompted with direct questions like \"What is on the bed?\". Additionally, the Dollar Street dataset is used to measure object identification in studies of cultural bias. The behavior is studied in the context of hallucination, where it is one of the tasks used to assess model failures, and is also described as being related to the broader construct of Perception.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "Animal-Bench: Benchmarking Multimodal Video Models for Animal-centric Video Understanding",
+      "Architect: Generating Vivid and Interactive 3D Scenes with Hierarchical 2D Inpainting",
+      "WildVision: Evaluating Vision-Language Models in the Wild with Human Preferences"
+    ],
+    "iclr25": [
+      "Dysca: A Dynamic and Scalable Benchmark for Evaluating Perception Ability of LVLMs",
+      "Grounding Multimodal Large Language Model in GUI World",
+      "Have the VLMs Lost Confidence? A Study of Sycophancy in VLMs",
+      "Interpretable Bilingual Multimodal Large Language Model for Diverse Biomedical Tasks",
+      "See It from My Perspective: How Language Affects Cultural Bias in Image Understanding",
+      "Teaching Human Behavior Improves Content Understanding Abilities Of VLMs",
+      "Towards Interpreting Visual Information Processing in Vision-Language Models",
+      "ZooProbe: A Data Engine for Evaluating, Exploring, and Evolving Large-scale Training Data for Multimodal LLMs"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 3,
+    "iclr25": 8
+  },
+  "conferences": [
+    "iclr25",
+    "neurips24"
+  ]
+}

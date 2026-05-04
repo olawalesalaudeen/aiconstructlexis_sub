@@ -1,0 +1,138 @@
+{
+  "canonical_name": "Expert specialization",
+  "type": "construct",
+  "canonical_definition": "Expert specialization is predominantly described as the tendency for individual experts within a Mixture-of-Experts (MoE) model to develop focused capabilities for specific types of tasks, data patterns, or domains. The prevailing view is that through a division of labor, \"each expert sub-network becomes adept at handling a certain type of task or data pattern\" (\"Mixture-of-Experts Meets Instruction Tuning...\"). A less common framing defines specialization based on collaboration patterns, where an expert is considered specialized if it is \"primarily co-activated with a small group of specific experts\" (\"From Distributional to Overton Pluralism...\"). The construct is commonly operationalized by observing differential expert contributions across tasks; for example, by analyzing if \"the distribution of expert weights shows distinct task preferences\" (\"Temporal-Aware Soft Prompt Tuning...\"). Several papers mention that mechanisms like dynamic routing or auxiliary loss functions are used to encourage specialization. This construct is studied alongside generalization, knowledge transferability, and multilingual ability. Some work suggests that specialization is an \"inherent and transferable\" property that aids generalization to unseen tasks (\"Pushing Mixture of Experts...\"). Additionally, at least one paper reports that load balancing can influence specialization, with a loss function designed for balanced expert selection also \"encouraging more effective specialization of experts\" (\"HMoRA...\").",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Expert specialization"
+  ],
+  "papers": [
+    "Joint Modeling of Entities and Discourse Relations for Coherence Assessment",
+    "MMAPG: A Training-Free Framework for Multimodal Multi-hop Question Answering via Adaptive Planning Graphs",
+    "SensorLLM: Aligning Large Language Models with Motion Sensors for Human Activity Recognition",
+    "The Staircase of Ethics: ProbingLLMValue Priorities through Multi-Step Induction to Complex Moral Dilemmas",
+    "Understanding and Leveraging the Expert Specialization of Context Faithfulness in Mixture-of-ExpertsLLMs",
+    "Mixture-of-Experts Meets Instruction Tuning: A Winning Combination for Large Language Models",
+    "Pushing Mixture of Experts to the Limit: Extremely Parameter Efficient MoE for Instruction Tuning",
+    "Drop-Upcycling: Training Sparse Mixture of Experts with Partial Re-initialization",
+    "Efficient Dictionary Learning with Switch Sparse Autoencoders",
+    "HMoRA: Making LLMs More Effective with Hierarchical Mixture of LoRA Experts",
+    "No Need to Talk: Asynchronous Mixture of Language Models",
+    "Tight Clusters Make Specialized Experts",
+    "From Distributional to Overton Pluralism: Investigating Large Language Model Alignment",
+    "MATO: A Model-Agnostic Training Optimization for Aspect Sentiment Triplet Extraction",
+    "Temporal-Aware Soft Prompt Tuning for Automatic Text Dating"
+  ],
+  "paper_count": 15,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The degree to which individual experts in an MoE model develop focused capabilities for specific types of tasks or data patterns, contributing to overall model adaptability through division of labor.",
+      "paper": "Mixture-of-Experts Meets Instruction Tuning: A Winning Combination for Large Language Models",
+      "original_name": "Expert specialization"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Mixture-of-Experts Meets Instruction Tuning: A Winning Combination for Large Language Models",
+      "evidence": "We also observe that after instruction-tuning, the MoE models exhibit better expert usage, which may help prevent the expert collapse for generalization after instruction-tuning as in Zuo et al. (2021). (Section 4.3)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Mixture-of-Experts Meets Instruction Tuning: A Winning Combination for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multilingual ability",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Mixture-of-Experts Meets Instruction Tuning: A Winning Combination for Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Mixture-of-Experts Meets Instruction Tuning: A Winning Combination for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Knowledge transfer",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Drop-Upcycling: Training Sparse Mixture of Experts with Partial Re-initialization",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Drop-Upcycling: Training Sparse Mixture of Experts with Partial Re-initialization"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Load balancing",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "HMoRA: Making LLMs More Effective with Hierarchical Mixture of LoRA Experts",
+      "evidence": "\"To address these issues, we propose a novel auxiliary loss function that not only ensures balanced expert selection but also promotes greater certainty in routing results, thereby encouraging more effective specialization of experts across all layers.\"",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "HMoRA: Making LLMs More Effective with Hierarchical Mixture of LoRA Experts"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 3,
+  "characterization": "Expert specialization is predominantly described as the tendency for individual experts within a Mixture-of-Experts (MoE) model to develop focused capabilities for specific types of tasks, data patterns, or domains. The prevailing view is that through a division of labor, \"each expert sub-network becomes adept at handling a certain type of task or data pattern\" (\"Mixture-of-Experts Meets Instruction Tuning...\"). A less common framing defines specialization based on collaboration patterns, where an expert is considered specialized if it is \"primarily co-activated with a small group of specific experts\" (\"From Distributional to Overton Pluralism...\"). The construct is commonly operationalized by observing differential expert contributions across tasks; for example, by analyzing if \"the distribution of expert weights shows distinct task preferences\" (\"Temporal-Aware Soft Prompt Tuning...\"). Several papers mention that mechanisms like dynamic routing or auxiliary loss functions are used to encourage specialization. This construct is studied alongside generalization, knowledge transferability, and multilingual ability. Some work suggests that specialization is an \"inherent and transferable\" property that aids generalization to unseen tasks (\"Pushing Mixture of Experts...\"). Additionally, at least one paper reports that load balancing can influence specialization, with a loss function designed for balanced expert selection also \"encouraging more effective specialization of experts\" (\"HMoRA...\").",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Mixture-of-Experts Meets Instruction Tuning: A Winning Combination for Large Language Models",
+      "Pushing Mixture of Experts to the Limit: Extremely Parameter Efficient MoE for Instruction Tuning"
+    ],
+    "iclr25": [
+      "Drop-Upcycling: Training Sparse Mixture of Experts with Partial Re-initialization",
+      "Efficient Dictionary Learning with Switch Sparse Autoencoders",
+      "HMoRA: Making LLMs More Effective with Hierarchical Mixture of LoRA Experts",
+      "No Need to Talk: Asynchronous Mixture of Language Models",
+      "Tight Clusters Make Specialized Experts"
+    ],
+    "naacl25": [
+      "From Distributional to Overton Pluralism: Investigating Large Language Model Alignment",
+      "MATO: A Model-Agnostic Training Optimization for Aspect Sentiment Triplet Extraction",
+      "Temporal-Aware Soft Prompt Tuning for Automatic Text Dating"
+    ],
+    "emnlp25": [
+      "Joint Modeling of Entities and Discourse Relations for Coherence Assessment",
+      "MMAPG: A Training-Free Framework for Multimodal Multi-hop Question Answering via Adaptive Planning Graphs",
+      "SensorLLM: Aligning Large Language Models with Motion Sensors for Human Activity Recognition",
+      "The Staircase of Ethics: ProbingLLMValue Priorities through Multi-Step Induction to Complex Moral Dilemmas",
+      "Understanding and Leveraging the Expert Specialization of Context Faithfulness in Mixture-of-ExpertsLLMs"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "iclr25": 5,
+    "naacl25": 3,
+    "emnlp25": 5
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "naacl25"
+  ]
+}

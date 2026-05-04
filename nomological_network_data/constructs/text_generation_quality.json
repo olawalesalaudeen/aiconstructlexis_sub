@@ -1,0 +1,169 @@
+{
+  "canonical_name": "Text generation quality",
+  "type": "construct",
+  "canonical_definition": "Across the provided literature, \"Text generation quality\" is predominantly framed as a latent ability or inherent capacity of a language model to produce text that is coherent, fluent, relevant, and useful. Most definitions converge on this idea of overall textual excellence, with some explicitly contrasting it with simple metric optimization and emphasizing human preference. The construct is operationalized through a combination of automated metrics, benchmark tasks, and direct human judgment. Perplexity is a frequently mentioned metric, though some sources note its limitations, as \"repetitive text also achieves low perplexity,\" while another paper uses the MAUVE score to capture \"the overall usefulness of the generated text.\" Performance on generative tasks like CommonGen is also used as a measure of this ability. More direct operationalizations include human evaluation, which assesses dimensions such as \"fluency, coherence, informativeness, and grammar,\" and evaluation using LLM-as-a-judge. The concept is often studied in contexts where it might be compromised; for instance, it is reported to be degraded by model compression and watermarking techniques. A distinct line of inquiry contrasts this construct with understanding, with one paper arguing that a model's \"generative capabilities... can therefore exceed\u2014their ability to understand those same types of outputs.\"",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Generative ability",
+    "Generative quality",
+    "Text generation ability",
+    "Text generation quality"
+  ],
+  "papers": [
+    "A Semantic Invariant Robust Watermark for Large Language Models",
+    "Branch-GAN: Improving Text Generation with (not so) Large Language Models",
+    "Bridging Vision and Language Spaces with Assignment Prediction",
+    "Closing the Curious Case of Neural Text Degeneration",
+    "Language Model Detectors Are Easily Optimized Against",
+    "Language Model Self-improvement by Reinforcement Learning Contemplation",
+    "Mixture of LoRA Experts",
+    "On the Learnability of Watermarks for Language Models",
+    "Provable Robust Watermarking for AI-Generated Text",
+    "Retrieval is Accurate Generation",
+    "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+    "SpQR: A Sparse-Quantized Representation for Near-Lossless LLM Weight Compression",
+    "The Generative AI Paradox: \u201cWhat It Can Create, It May Not Understand\u201d"
+  ],
+  "paper_count": 13,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The latent ability of a language model to produce text that is coherent, fluent, and preferred by humans over alternatives, reflecting overall textual excellence beyond simple metric optimization.",
+      "paper": "Branch-GAN: Improving Text Generation with (not so) Large Language Models",
+      "original_name": "Text generation quality"
+    },
+    {
+      "text": "The overall quality and coherence of text produced by the model in generative tasks, which can be degraded by compression.",
+      "paper": "SpQR: A Sparse-Quantized Representation for Near-Lossless LLM Weight Compression",
+      "original_name": "Generative quality"
+    },
+    {
+      "text": "The overall quality of generated text, which can be degraded by watermarking techniques and is often measured by metrics like perplexity.",
+      "paper": "A Semantic Invariant Robust Watermark for Large Language Models",
+      "original_name": "Text quality"
+    },
+    {
+      "text": "The overall quality of a model's generated output, encompassing aspects like coherence, relevance, and usefulness.",
+      "paper": "On the Learnability of Watermarks for Language Models",
+      "original_name": "Generation quality"
+    },
+    {
+      "text": "The inherent ability of a language model to produce high-quality, diverse, and contextually appropriate text, which can be better surfaced through improved sampling strategies.",
+      "paper": "Closing the Curious Case of Neural Text Degeneration",
+      "original_name": "Generative capability"
+    },
+    {
+      "text": "The capacity of an LLM to produce fluent text outputs conditioned on prompts and multimodal inputs.",
+      "paper": "Bridging Vision and Language Spaces with Assignment Prediction",
+      "original_name": "Generative ability"
+    },
+    {
+      "text": "The latent capacity to produce coherent, accurate, and contextually appropriate text in response to a given prompt or task.",
+      "paper": "Language Model Self-improvement by Reinforcement Learning Contemplation",
+      "original_name": "Text generation ability"
+    }
+  ],
+  "definition_count": 7,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Branch-GAN: Improving Text Generation with (not so) Large Language Models",
+      "evidence": "\u201cwe find a similar-sized effect in the opposite direction, suggesting model quality according to humans may have slightly degraded.\u201d",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Branch-GAN: Improving Text Generation with (not so) Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language modeling",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "SpQR: A Sparse-Quantized Representation for Near-Lossless LLM Weight Compression",
+      "evidence": "While we believe that perplexity measurements and generation quality are strongly related, this is a hypothesis we aim to investigate in future work. (Section 6)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "SpQR: A Sparse-Quantized Representation for Near-Lossless LLM Weight Compression"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Critique",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Language Model Self-improvement by Reinforcement Learning Contemplation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Language Model Self-improvement by Reinforcement Learning Contemplation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CommonGen",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Language Model Self-improvement by Reinforcement Learning Contemplation",
+      "evidence": "We conduct experiments to compare the text generation and evaluation abilities of LLMs using the CommonGen (Lin et al., 2020) task, which involves generating a sentence that describes an everyday scenario based on a given set of common concepts (Section 4.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Language Model Self-improvement by Reinforcement Learning Contemplation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-as-a-judge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "To Code or Not To Code? Exploring Impact of Code in Pre-training",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "To Code or Not To Code? Exploring Impact of Code in Pre-training"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 3,
+  "characterization": "Across the provided literature, \"Text generation quality\" is predominantly framed as a latent ability or inherent capacity of a language model to produce text that is coherent, fluent, relevant, and useful. Most definitions converge on this idea of overall textual excellence, with some explicitly contrasting it with simple metric optimization and emphasizing human preference. The construct is operationalized through a combination of automated metrics, benchmark tasks, and direct human judgment. Perplexity is a frequently mentioned metric, though some sources note its limitations, as \"repetitive text also achieves low perplexity,\" while another paper uses the MAUVE score to capture \"the overall usefulness of the generated text.\" Performance on generative tasks like CommonGen is also used as a measure of this ability. More direct operationalizations include human evaluation, which assesses dimensions such as \"fluency, coherence, informativeness, and grammar,\" and evaluation using LLM-as-a-judge. The concept is often studied in contexts where it might be compromised; for instance, it is reported to be degraded by model compression and watermarking techniques. A distinct line of inquiry contrasts this construct with understanding, with one paper arguing that a model's \"generative capabilities... can therefore exceed\u2014their ability to understand those same types of outputs.\"",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "A Semantic Invariant Robust Watermark for Large Language Models",
+      "Branch-GAN: Improving Text Generation with (not so) Large Language Models",
+      "Bridging Vision and Language Spaces with Assignment Prediction",
+      "Closing the Curious Case of Neural Text Degeneration",
+      "Language Model Detectors Are Easily Optimized Against",
+      "Language Model Self-improvement by Reinforcement Learning Contemplation",
+      "Mixture of LoRA Experts",
+      "On the Learnability of Watermarks for Language Models",
+      "Provable Robust Watermarking for AI-Generated Text",
+      "Retrieval is Accurate Generation",
+      "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+      "SpQR: A Sparse-Quantized Representation for Near-Lossless LLM Weight Compression",
+      "The Generative AI Paradox: \u201cWhat It Can Create, It May Not Understand\u201d"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 13
+  },
+  "conferences": [
+    "iclr24"
+  ]
+}

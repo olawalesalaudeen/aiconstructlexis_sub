@@ -1,0 +1,97 @@
+{
+  "canonical_name": "LLMBar",
+  "type": "measurement",
+  "canonical_definition": "LLMBar is most commonly described as a meta-evaluation benchmark or dataset designed to assess the capabilities of LLM evaluators. Across the provided sources, its primary stated purpose is to measure an evaluator's ability to distinguish instruction-following in model outputs, with one paper noting it emphasizes \"instruction-following precision.\" The data also indicates it is used to measure commonsense knowledge and critique. Papers consistently state that LLMBar is structured with both \"natural and adversarial subsets\" for this assessment, with one source specifying these include \"Neighbor, GPTInst, GPTOut, and Manual.\" The evaluation format is typically pairwise comparison, and one source highlights its use of \"high-quality human annotations with a high level of inter-annotator agreement.\" A less common usage is also documented, where LLMBar is treated as a \"referenced evaluation setup\" by providing a specific prompt template for judging model responses.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "LLMBar"
+  ],
+  "papers": [
+    "IG-Pruning: Input-Guided Block Pruning for Large Language Models",
+    "Selective Preference Optimization via Token-Level Reward Function Estimation",
+    "JudgeBench: A Benchmark for Evaluating LLM-Based Judges",
+    "RevisEval: Improving LLM-as-a-Judge via Response-Adapted References",
+    "SPaR: Self-Play with Tree-Search Refinement to Improve Instruction-Following in Large Language Models",
+    "SaMer: A Scenario-aware Multi-dimensional Evaluator for Large Language Models",
+    "Faithful, Unfaithful or Ambiguous? Multi-Agent Debate with Initial Stance for Summary Evaluation",
+    "FiNE: Filtering and Improving Noisy Data Elaborately with Large Language Models"
+  ],
+  "paper_count": 8,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A meta-evaluation benchmark for assessing LLM evaluators' ability to distinguish instruction-following outputs across natural and adversarial subsets.",
+      "paper": "SaMer: A Scenario-aware Multi-dimensional Evaluator for Large Language Models",
+      "original_name": "LLMBar"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction following",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Evaluating Large Language Models at Evaluating Instruction Following",
+      "evidence": "LLMBar (Zeng et al., 2023): meta-evaluation benchmark aimed at assessing LLM evaluators\u2019 ability to distinguish instruction-following outputs.",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "iclr24": [
+          "Evaluating Large Language Models at Evaluating Instruction Following"
+        ],
+        "iclr25": [
+          "SaMer: A Scenario-aware Multi-dimensional Evaluator for Large Language Models",
+          "JudgeBench: A Benchmark for Evaluating LLM-Based Judges",
+          "RevisEval: Improving LLM-as-a-Judge via Response-Adapted References"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Critique",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "SPaR: Self-Play with Tree-Search Refinement to Improve Instruction-Following in Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "SPaR: Self-Play with Tree-Search Refinement to Improve Instruction-Following in Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "LLMBar is most commonly described as a meta-evaluation benchmark or dataset designed to assess the capabilities of LLM evaluators. Across the provided sources, its primary stated purpose is to measure an evaluator's ability to distinguish instruction-following in model outputs, with one paper noting it emphasizes \"instruction-following precision.\" The data also indicates it is used to measure commonsense knowledge and critique. Papers consistently state that LLMBar is structured with both \"natural and adversarial subsets\" for this assessment, with one source specifying these include \"Neighbor, GPTInst, GPTOut, and Manual.\" The evaluation format is typically pairwise comparison, and one source highlights its use of \"high-quality human annotations with a high level of inter-annotator agreement.\" A less common usage is also documented, where LLMBar is treated as a \"referenced evaluation setup\" by providing a specific prompt template for judging model responses.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "JudgeBench: A Benchmark for Evaluating LLM-Based Judges",
+      "RevisEval: Improving LLM-as-a-Judge via Response-Adapted References",
+      "SPaR: Self-Play with Tree-Search Refinement to Improve Instruction-Following in Large Language Models",
+      "SaMer: A Scenario-aware Multi-dimensional Evaluator for Large Language Models"
+    ],
+    "naacl25": [
+      "Faithful, Unfaithful or Ambiguous? Multi-Agent Debate with Initial Stance for Summary Evaluation",
+      "FiNE: Filtering and Improving Noisy Data Elaborately with Large Language Models"
+    ],
+    "emnlp25": [
+      "IG-Pruning: Input-Guided Block Pruning for Large Language Models",
+      "Selective Preference Optimization via Token-Level Reward Function Estimation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 4,
+    "naacl25": 2,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "naacl25"
+  ]
+}

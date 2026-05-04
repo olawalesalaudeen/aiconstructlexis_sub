@@ -1,0 +1,179 @@
+{
+  "canonical_name": "QQP",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, QQP is consistently defined as a benchmark for evaluating whether two questions are semantically equivalent. Its primary and most common application is to measure the behavior of `paraphrase identification`, a task also referred to as duplicate question detection or recognition. The dataset, identified as the Quora Question Pairs dataset, is described as consisting of question pairs annotated with a binary value indicating if they are paraphrases. A recurring point across the sources is that QQP is a component of the GLUE benchmark, where it is frequently evaluated alongside other language understanding tasks. While its main use is for paraphrase detection, a few papers also employ QQP to measure other constructs. For instance, it is used to assess `adversarial robustness`, sometimes in an \"adversarially perturbed form,\" and to evaluate model `generalization` on NLU tasks. The benchmark is applied in diverse evaluation settings, including the assessment of fine-tuned models, in-context learning, and language model distillation.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "QQP"
+  ],
+  "papers": [
+    "Conformity in Large Language Models",
+    "KG-Agent: An Efficient Autonomous Agent Framework for Complex Reasoning over Knowledge Graph",
+    "The MaleCEOand the Female Assistant: Evaluation and Mitigation of Gender Biases in Text-To-Image Generation of Dual Subjects",
+    "Computational Analysis of Character Development in Holocaust Testimonies",
+    "DiplomacyAgent: DoLLMs Balance Interests and Ethical Principles in International Events?",
+    "MA-DPR: Manifold-aware Distance Metrics for Dense Passage Retrieval",
+    "MR. Judge: Multimodal Reasoner as a Judge",
+    "Skip-Thinking: Chunk-wise Chain-of-Thought Distillation Enable Smaller Language Models to Reason Better and Faster",
+    "An LLM can Fool Itself: A Prompt-Based Adversarial Attack",
+    "Batch Calibration: Rethinking Calibration for In-Context Learning and Prompt Engineering",
+    "BatchPrompt: Accomplish more with less",
+    "Evoke: Evoking Critical Thinking Abilities in LLMs via Reviewer-Author Prompt Editing",
+    "Improving LoRA in Privacy-preserving Federated Learning",
+    "Linear Log-Normal Attention with Unbiased Concentration",
+    "ReLoRA: High-Rank Training Through Low-Rank Updates",
+    "Stable Anisotropic Regularization",
+    "DS-LLM: Leveraging Dynamical Systems to Enhance Both Training and Inference of Large Language Models",
+    "Improving Language Model Distillation through Hidden State Matching",
+    "Joint Fine-tuning and Conversion of Pretrained Speech and Language Models towards Linear Complexity",
+    "RegMix: Data Mixture as Regression for Language Model Pre-training",
+    "Does Low Rank Adaptation Lead to Lower Robustness against Training-Time Attacks?",
+    "Invariance Makes LLM Unlearning Resilient Even to Unanticipated Downstream Fine-Tuning"
+  ],
+  "paper_count": 22,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A paraphrase identification benchmark used to evaluate whether two questions are semantically equivalent.",
+      "paper": "An LLM can Fool Itself: A Prompt-Based Adversarial Attack",
+      "original_name": "QQP"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "GLUE",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Improving LoRA in Privacy-preserving Federated Learning",
+      "evidence": "we consider the following five challenging tasks in GLUE dataset (Wang et al., 2018): Sentiment Analysis (SST-2), Duplicate Question Detection (QQP)...",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr24": [
+          "Improving LoRA in Privacy-preserving Federated Learning"
+        ],
+        "neurips24": [
+          "Prompt Tuning Strikes Back: Customizing Foundation Models with Low-Rank Prompt Adaptation"
+        ],
+        "iclr25": [
+          "DS-LLM: Leveraging Dynamical Systems to Enhance Both Training and Inference of Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Paraphrase identification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "DS-LLM: Leveraging Dynamical Systems to Enhance Both Training and Inference of Large Language Models",
+      "evidence": "(5) Paraphrase Identification (QQP): determine if two questions are \u201cequivalent\u201d or \u201cnot equivalent\u201d (Section 4.6)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "DS-LLM: Leveraging Dynamical Systems to Enhance Both Training and Inference of Large Language Models"
+        ],
+        "emnlp25": [
+          "Skip-Thinking: Chunk-wise Chain-of-Thought Distillation Enable Smaller Language Models to Reason Better and Faster"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Paraphrase detection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Invariance Makes LLM Unlearning Resilient Even to Unanticipated Downstream Fine-Tuning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Invariance Makes LLM Unlearning Resilient Even to Unanticipated Downstream Fine-Tuning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Adversarial robustness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Evoke: Evoking Critical Thinking Abilities in LLMs via Reviewer-Author Prompt Editing",
+      "evidence": "\"Datasets. We adopt two datasets: SST-2 (Socher et al., 2013) is a sentiment classification task ... and QQP (Wang et al., 2019) is a task where we need to determine whether two sentences are paraphrases of each other.\"",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Evoke: Evoking Critical Thinking Abilities in LLMs via Reviewer-Author Prompt Editing"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "MA-DPR: Manifold-aware Distance Metrics for Dense Passage Retrieval",
+      "evidence": "The first five datasets are used to evaluate performance against SSL baselines, while the remaining three assess generalization on NLU tasks. (Section 4.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "MA-DPR: Manifold-aware Distance Metrics for Dense Passage Retrieval"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 5,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, QQP is consistently defined as a benchmark for evaluating whether two questions are semantically equivalent. Its primary and most common application is to measure the behavior of `paraphrase identification`, a task also referred to as duplicate question detection or recognition. The dataset, identified as the Quora Question Pairs dataset, is described as consisting of question pairs annotated with a binary value indicating if they are paraphrases. A recurring point across the sources is that QQP is a component of the GLUE benchmark, where it is frequently evaluated alongside other language understanding tasks. While its main use is for paraphrase detection, a few papers also employ QQP to measure other constructs. For instance, it is used to assess `adversarial robustness`, sometimes in an \"adversarially perturbed form,\" and to evaluate model `generalization` on NLU tasks. The benchmark is applied in diverse evaluation settings, including the assessment of fine-tuned models, in-context learning, and language model distillation.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "An LLM can Fool Itself: A Prompt-Based Adversarial Attack",
+      "Batch Calibration: Rethinking Calibration for In-Context Learning and Prompt Engineering",
+      "BatchPrompt: Accomplish more with less",
+      "Evoke: Evoking Critical Thinking Abilities in LLMs via Reviewer-Author Prompt Editing",
+      "Improving LoRA in Privacy-preserving Federated Learning",
+      "Linear Log-Normal Attention with Unbiased Concentration",
+      "ReLoRA: High-Rank Training Through Low-Rank Updates",
+      "Stable Anisotropic Regularization"
+    ],
+    "iclr25": [
+      "DS-LLM: Leveraging Dynamical Systems to Enhance Both Training and Inference of Large Language Models",
+      "Improving Language Model Distillation through Hidden State Matching",
+      "Joint Fine-tuning and Conversion of Pretrained Speech and Language Models towards Linear Complexity",
+      "RegMix: Data Mixture as Regression for Language Model Pre-training"
+    ],
+    "acl25": [
+      "Conformity in Large Language Models",
+      "KG-Agent: An Efficient Autonomous Agent Framework for Complex Reasoning over Knowledge Graph",
+      "The MaleCEOand the Female Assistant: Evaluation and Mitigation of Gender Biases in Text-To-Image Generation of Dual Subjects"
+    ],
+    "icml25": [
+      "Does Low Rank Adaptation Lead to Lower Robustness against Training-Time Attacks?",
+      "Invariance Makes LLM Unlearning Resilient Even to Unanticipated Downstream Fine-Tuning"
+    ],
+    "emnlp25": [
+      "Computational Analysis of Character Development in Holocaust Testimonies",
+      "DiplomacyAgent: DoLLMs Balance Interests and Ethical Principles in International Events?",
+      "MA-DPR: Manifold-aware Distance Metrics for Dense Passage Retrieval",
+      "MR. Judge: Multimodal Reasoner as a Judge",
+      "Skip-Thinking: Chunk-wise Chain-of-Thought Distillation Enable Smaller Language Models to Reason Better and Faster"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 8,
+    "iclr25": 4,
+    "acl25": 3,
+    "icml25": 2,
+    "emnlp25": 5
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25"
+  ]
+}

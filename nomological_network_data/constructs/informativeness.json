@@ -1,0 +1,226 @@
+{
+  "canonical_name": "Informativeness",
+  "type": "construct",
+  "canonical_definition": "Across the provided literature, Informativeness is a construct primarily defined by the extent to which a model's output contains relevant, detailed, and useful information. The most common framing centers on capturing all essential or key details without omission, while a subset of papers also stresses the importance of avoiding redundancy, with one study noting that an informative step \"introduces new information and does not repeat or provide redundant details\" (\"Correcting Negative Bias in Large Language Models through Negative Attention Score Alignment\"). Some framings extend this to include the quality of the information, describing it in terms of \"insightful explanations\" (\"Not All Adapters Matter...\") or \"meaningful, non-trivial, and useful insights\" (\"Lived Experience Not Found...\"). A more specialized usage appears in the context of data augmentation, where it refers to the density of \"critical training information\" in a synthetic sample (\"Skeletons Matter...\"). The construct is commonly operationalized through human evaluation, where annotators assess generated text on Likert scales. It is also measured using automated methods, including the TruthfulQA benchmark, which has a dedicated informativeness metric, as well as the FreshWiki and QuestEval benchmarks. Additionally, several papers report using an LLM-as-a-judge approach to score outputs for informativeness. The construct is frequently studied alongside other text quality attributes like Faithfulness, Fluency, and Coherence, and is sometimes positioned as a related objective to Bias mitigation.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Informativeness"
+  ],
+  "papers": [
+    "Direct Prompt Optimization with Continuous Representations",
+    "FOCUS: Evaluating Pre-trained Vision-Language Models on Underspecification Reasoning",
+    "Subtle Errors in Reasoning: Preference Learning via Error-injected Self-editing",
+    "Tree-of-Debate: Multi-Persona Debate Trees Elicit Critical Thinking for Scientific Comparative Analysis",
+    "A Systematic Survey of Automatic Prompt Optimization Techniques",
+    "Expanding before Inferring: Enhancing Factuality in Large Language Models through Premature Layers Interpolation",
+    "Measuring and Mitigating Media Outlet Name Bias in Large Language Models",
+    "Model-Based Ranking of Source Languages for Zero-Shot Cross-Lingual Transfer",
+    "Power doesn\u2019t reside in size: A Low Parameter Hybrid Language Model (HLM) for Sentiment Analysis in Code-mixed data",
+    "Reading Between the Prompts: How Stereotypes ShapeLLM\u2019s Implicit Personalization",
+    "SATBench: BenchmarkingLLMs\u2019 Logical Reasoning via Automated Puzzle Generation fromSATFormulas",
+    "Skeletons Matter: Dynamic Data Augmentation for Text-to-Query",
+    "Static or Dynamic: Towards Query-Adaptive Token Selection for Video Question Answering",
+    "Unleashing the Reasoning Potential ofLLMs by Critique Fine-Tuning on One Problem",
+    "VoiceBBQ: Investigating Effect of Content and Acoustics in Social Bias of Spoken Language Model",
+    "You Are What You Train: Effects of Data Composition on Training Context-aware Machine Translation Models",
+    "Language Model Decoding as Direct Metrics Optimization",
+    "Self-contradictory Hallucinations of Large Language Models: Evaluation, Detection and Mitigation",
+    "Selective Prompt Anchoring for Code Generation",
+    "Speak Easy: Eliciting Harmful Jailbreaks from LLMs with Simple Interactions",
+    "TruthFlow: Truthful LLM Generation via Representation Flow Correction",
+    "Correcting Negative Bias in Large Language Models through Negative Attention Score Alignment",
+    "Lived Experience Not Found:LLMs Struggle to Align with Experts on Addressing Adverse Drug Reactions from Psychiatric Medication Use",
+    "Not All Adapters Matter: Selective Adapter Freezing for Memory-Efficient Fine-Tuning of Language Models",
+    "Style Transfer with Multi-iteration Preference Optimization",
+    "CODE: Contrasting Self-generated Description to Combat Hallucination in Large Multi-modal Models",
+    "KG-FIT: Knowledge Graph Fine-Tuning Upon Open-World Knowledge",
+    "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models"
+  ],
+  "paper_count": 28,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The extent to which generated text provides adequate, engaging detail in a coherent plot according to human judgment.",
+      "paper": "Language Model Decoding as Direct Metrics Optimization",
+      "original_name": "Informativeness"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Subtle Errors in Reasoning: Preference Learning via Error-injected Self-editing",
+      "evidence": "Three independent annotators are asked to review the source video and evaluate corresponding model outputs (and the human upper bound) on a 1\u20135 Likert scale for Faithfulness, Relevance, Informativeness, Conciseness, and Coherence (higher scores indicate better quality). (Section 7)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "acl25": [
+          "Subtle Errors in Reasoning: Preference Learning via Error-injected Self-editing"
+        ],
+        "emnlp25": [
+          "VoiceBBQ: Investigating Effect of Content and Acoustics in Social Bias of Spoken Language Model"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Subtle Errors in Reasoning: Preference Learning via Error-injected Self-editing",
+      "evidence": "In TruthfulQA, factuality is evaluated by two fine-tuned GPT-3 models, each focusing on truthfulness and informativeness (Section 4.3).",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "acl25": [
+          "Subtle Errors in Reasoning: Preference Learning via Error-injected Self-editing"
+        ],
+        "icml25": [
+          "Selective Prompt Anchoring for Code Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Subtle Errors in Reasoning: Preference Learning via Error-injected Self-editing",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "acl25": [
+          "Subtle Errors in Reasoning: Preference Learning via Error-injected Self-editing"
+        ],
+        "icml25": [
+          "TruthFlow: Truthful LLM Generation via Representation Flow Correction"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-as-a-judge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Subtle Errors in Reasoning: Preference Learning via Error-injected Self-editing",
+      "evidence": "We also train several judge models for informativeness following the same procedure as for truthfulness. (Section 3.2.4)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "acl25": [
+          "Subtle Errors in Reasoning: Preference Learning via Error-injected Self-editing"
+        ],
+        "icml25": [
+          "TruthFlow: Truthful LLM Generation via Representation Flow Correction"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "FreshWiki",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Tree-of-Debate: Multi-Persona Debate Trees Elicit Critical Thinking for Scientific Comparative Analysis",
+      "evidence": "We conduct extensive experiments on the FreshWiki dataset and our newly constructed WikiStart dataset, demonstrating that MOG achieves state-of-the-art performance in both informativeness and verifiability. (Section 1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Tree-of-Debate: Multi-Persona Debate Trees Elicit Critical Thinking for Scientific Comparative Analysis"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "QuestEval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Direct Prompt Optimization with Continuous Representations",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Direct Prompt Optimization with Continuous Representations"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Bias mitigation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Skeletons Matter: Dynamic Data Augmentation for Text-to-Query",
+      "evidence": "From this perspective, we identify two unique objectives: (1) Informativeness\u2014maximizing the training information available for data-scarce learning, and (2) Bias Mitigation\u2014minimizing potential biases that may arise from limited data (Section 2.3).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Skeletons Matter: Dynamic Data Augmentation for Text-to-Query"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 7,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 6,
+  "characterization": "Across the provided literature, Informativeness is a construct primarily defined by the extent to which a model's output contains relevant, detailed, and useful information. The most common framing centers on capturing all essential or key details without omission, while a subset of papers also stresses the importance of avoiding redundancy, with one study noting that an informative step \"introduces new information and does not repeat or provide redundant details\" (\"Correcting Negative Bias in Large Language Models through Negative Attention Score Alignment\"). Some framings extend this to include the quality of the information, describing it in terms of \"insightful explanations\" (\"Not All Adapters Matter...\") or \"meaningful, non-trivial, and useful insights\" (\"Lived Experience Not Found...\"). A more specialized usage appears in the context of data augmentation, where it refers to the density of \"critical training information\" in a synthetic sample (\"Skeletons Matter...\"). The construct is commonly operationalized through human evaluation, where annotators assess generated text on Likert scales. It is also measured using automated methods, including the TruthfulQA benchmark, which has a dedicated informativeness metric, as well as the FreshWiki and QuestEval benchmarks. Additionally, several papers report using an LLM-as-a-judge approach to score outputs for informativeness. The construct is frequently studied alongside other text quality attributes like Faithfulness, Fluency, and Coherence, and is sometimes positioned as a related objective to Bias mitigation.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Language Model Decoding as Direct Metrics Optimization",
+      "Self-contradictory Hallucinations of Large Language Models: Evaluation, Detection and Mitigation"
+    ],
+    "neurips24": [
+      "CODE: Contrasting Self-generated Description to Combat Hallucination in Large Multi-modal Models",
+      "KG-FIT: Knowledge Graph Fine-Tuning Upon Open-World Knowledge",
+      "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models"
+    ],
+    "naacl25": [
+      "Correcting Negative Bias in Large Language Models through Negative Attention Score Alignment",
+      "Lived Experience Not Found:LLMs Struggle to Align with Experts on Addressing Adverse Drug Reactions from Psychiatric Medication Use",
+      "Not All Adapters Matter: Selective Adapter Freezing for Memory-Efficient Fine-Tuning of Language Models",
+      "Style Transfer with Multi-iteration Preference Optimization"
+    ],
+    "acl25": [
+      "Direct Prompt Optimization with Continuous Representations",
+      "FOCUS: Evaluating Pre-trained Vision-Language Models on Underspecification Reasoning",
+      "Subtle Errors in Reasoning: Preference Learning via Error-injected Self-editing",
+      "Tree-of-Debate: Multi-Persona Debate Trees Elicit Critical Thinking for Scientific Comparative Analysis"
+    ],
+    "icml25": [
+      "Selective Prompt Anchoring for Code Generation",
+      "Speak Easy: Eliciting Harmful Jailbreaks from LLMs with Simple Interactions",
+      "TruthFlow: Truthful LLM Generation via Representation Flow Correction"
+    ],
+    "emnlp25": [
+      "A Systematic Survey of Automatic Prompt Optimization Techniques",
+      "Expanding before Inferring: Enhancing Factuality in Large Language Models through Premature Layers Interpolation",
+      "Measuring and Mitigating Media Outlet Name Bias in Large Language Models",
+      "Model-Based Ranking of Source Languages for Zero-Shot Cross-Lingual Transfer",
+      "Power doesn\u2019t reside in size: A Low Parameter Hybrid Language Model (HLM) for Sentiment Analysis in Code-mixed data",
+      "Reading Between the Prompts: How Stereotypes ShapeLLM\u2019s Implicit Personalization",
+      "SATBench: BenchmarkingLLMs\u2019 Logical Reasoning via Automated Puzzle Generation fromSATFormulas",
+      "Skeletons Matter: Dynamic Data Augmentation for Text-to-Query",
+      "Static or Dynamic: Towards Query-Adaptive Token Selection for Video Question Answering",
+      "Unleashing the Reasoning Potential ofLLMs by Critique Fine-Tuning on One Problem",
+      "VoiceBBQ: Investigating Effect of Content and Acoustics in Social Bias of Spoken Language Model",
+      "You Are What You Train: Effects of Data Composition on Training Context-aware Machine Translation Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "neurips24": 3,
+    "naacl25": 4,
+    "acl25": 4,
+    "icml25": 3,
+    "emnlp25": 12
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

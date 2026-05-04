@@ -1,0 +1,136 @@
+{
+  "canonical_name": "Visual Genome",
+  "type": "measurement",
+  "canonical_definition": "Across the surveyed literature, Visual Genome is predominantly described as a dataset containing dense annotations of objects, attributes, and relationships within images. It is frequently used as a measurement instrument to evaluate a model's region-level image captioning ability, open-vocabulary object detection, and relation understanding. A less common framing, presented in one paper, characterizes it as a visual question-answering (VQA) dataset that \"grounds visual concepts to language\" using scene graphs. This connection to VQA is also evident in its use as a source to synthesize question-answer pairs for other models. Beyond evaluation, Visual Genome also serves as a source of training data for detection models and for creating new instruction-following examples from its existing data on \"object relationships and region captions\" (Ferret: Refer and Ground Anything Anywhere at Any Granularity). Thus, while its most common application is evaluating fine-grained visual understanding, it is also used as a versatile resource for data synthesis and model training.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Visual Genome",
+    "VISUAL GENOME"
+  ],
+  "papers": [
+    "Ferret: Refer and Ground Anything Anywhere at Any Granularity",
+    "The All-Seeing Project: Towards Panoptic Visual Recognition and Understanding of the Open World",
+    "ClawMachine: Learning to Fetch Visual Tokens for Referential Comprehension",
+    "TLDR: Token-Level Detective Reward Model for Large Vision Language Models",
+    "Open-Det: An Efficient Learning Framework for Open-Ended Detection",
+    "Why Is Spatial Reasoning Hard for VLMs? An Attention Mechanism Perspective on Focus Areas",
+    "DeiSAM: Segment Anything with Deictic Prompting",
+    "FlexCap: Describe Anything in Images in Controllable Detail",
+    "HEMM: Holistic Evaluation of Multimodal Foundation Models",
+    "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding",
+    "UniBench: Visual Reasoning Requires Rethinking Vision-Language Beyond Scaling"
+  ],
+  "paper_count": 11,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A dataset containing dense annotations of objects, attributes, and relationships within images, used here to evaluate region-level captioning ability.",
+      "paper": "Ferret: Refer and Ground Anything Anywhere at Any Granularity",
+      "original_name": "Visual Genome"
+    },
+    {
+      "text": "A visual question-answering dataset grounded in scene graphs, used to assess visual concept grounding and reasoning.",
+      "paper": "HEMM: Holistic Evaluation of Multimodal Foundation Models",
+      "original_name": "VISUAL GENOME"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Dense captioning",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "FlexCap: Describe Anything in Images in Controllable Detail",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "FlexCap: Describe Anything in Images in Controllable Detail"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Open-vocabulary object detection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "FlexCap: Describe Anything in Images in Controllable Detail",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "FlexCap: Describe Anything in Images in Controllable Detail"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Relation understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "UniBench: Visual Reasoning Requires Rethinking Vision-Language Beyond Scaling",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "UniBench: Visual Reasoning Requires Rethinking Vision-Language Beyond Scaling"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "TLDR: Token-Level Detective Reward Model for Large Vision Language Models",
+      "evidence": "\u201cFor VQA data, we synthesize hard negatives from Visual Genome (VG100K) dataset (Krishna et al., 2016), which contains 108,077 images with over 1.7 million question-answer pairs.\u201d",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "TLDR: Token-Level Detective Reward Model for Large Vision Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the surveyed literature, Visual Genome is predominantly described as a dataset containing dense annotations of objects, attributes, and relationships within images. It is frequently used as a measurement instrument to evaluate a model's region-level image captioning ability, open-vocabulary object detection, and relation understanding. A less common framing, presented in one paper, characterizes it as a visual question-answering (VQA) dataset that \"grounds visual concepts to language\" using scene graphs. This connection to VQA is also evident in its use as a source to synthesize question-answer pairs for other models. Beyond evaluation, Visual Genome also serves as a source of training data for detection models and for creating new instruction-following examples from its existing data on \"object relationships and region captions\" (Ferret: Refer and Ground Anything Anywhere at Any Granularity). Thus, while its most common application is evaluating fine-grained visual understanding, it is also used as a versatile resource for data synthesis and model training.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Ferret: Refer and Ground Anything Anywhere at Any Granularity",
+      "The All-Seeing Project: Towards Panoptic Visual Recognition and Understanding of the Open World"
+    ],
+    "neurips24": [
+      "DeiSAM: Segment Anything with Deictic Prompting",
+      "FlexCap: Describe Anything in Images in Controllable Detail",
+      "HEMM: Holistic Evaluation of Multimodal Foundation Models",
+      "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding",
+      "UniBench: Visual Reasoning Requires Rethinking Vision-Language Beyond Scaling"
+    ],
+    "iclr25": [
+      "ClawMachine: Learning to Fetch Visual Tokens for Referential Comprehension",
+      "TLDR: Token-Level Detective Reward Model for Large Vision Language Models"
+    ],
+    "icml25": [
+      "Open-Det: An Efficient Learning Framework for Open-Ended Detection",
+      "Why Is Spatial Reasoning Hard for VLMs? An Attention Mechanism Perspective on Focus Areas"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "neurips24": 5,
+    "iclr25": 2,
+    "icml25": 2
+  },
+  "conferences": [
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

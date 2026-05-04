@@ -1,0 +1,100 @@
+{
+  "canonical_name": "HiTab",
+  "type": "measurement",
+  "canonical_definition": "HiTab is consistently described across the provided literature as a benchmark dataset for evaluating model performance on complex tables. The dataset is composed of tables sourced from government reports and Wikipedia pages, with one paper specifying it contains 3,597 tables and 10,672 question-answering pairs. The prevailing framing is that HiTab's primary challenge lies in its focus on \"hierarchical tables,\" requiring models to handle \"multi-level headers,\" \"implicit relationships,\" and \"complex structural relationships.\" In practice, papers use HiTab to measure several capabilities, including `Table understanding`, `Table and chart reasoning`, and `Text generation`. These capabilities are operationalized through tasks such as question answering and table transformation. For example, one study uses the benchmark to demonstrate that a new method \"boosts QA accuracy\" on the dataset. One paper also positions HiTab as a \"widely used table reasoning dataset\" alongside others in the field.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "HiTab"
+  ],
+  "papers": [
+    "A Self-Denoising Model for Robust Few-Shot Relation Extraction",
+    "Generative Reward Modeling via Synthetic Criteria Preference Learning",
+    "LangSAMP: Language-Script Aware Multilingual Pretraining",
+    "Mitigating Lost-in-Retrieval Problems in Retrieval Augmented Multi-Hop Question Answering",
+    "R2I-Bench: Benchmarking Reasoning-Driven Text-to-Image Generation",
+    "SNaRe: Domain-aware Data Generation for Low-Resource Event Detection",
+    "Seeing More, Saying More: Lightweight Language Experts are Dynamic Video Token Compressors"
+  ],
+  "paper_count": 7,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Benchmark dataset containing complex tables from government reports and Wikipedia pages, used to evaluate table transformation and question answering involving multi-level headers and implicit relationships.",
+      "paper": "LangSAMP: Language-Script Aware Multilingual Pretraining",
+      "original_name": "HiTab"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "A Self-Denoising Model for Robust Few-Shot Relation Extraction",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "A Self-Denoising Model for Robust Few-Shot Relation Extraction"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Table question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "R2I-Bench: Benchmarking Reasoning-Driven Text-to-Image Generation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "R2I-Bench: Benchmarking Reasoning-Driven Text-to-Image Generation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Table reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Seeing More, Saying More: Lightweight Language Experts are Dynamic Video Token Compressors",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Seeing More, Saying More: Lightweight Language Experts are Dynamic Video Token Compressors"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization": "HiTab is consistently described across the provided literature as a benchmark dataset for evaluating model performance on complex tables. The dataset is composed of tables sourced from government reports and Wikipedia pages, with one paper specifying it contains 3,597 tables and 10,672 question-answering pairs. The prevailing framing is that HiTab's primary challenge lies in its focus on \"hierarchical tables,\" requiring models to handle \"multi-level headers,\" \"implicit relationships,\" and \"complex structural relationships.\" In practice, papers use HiTab to measure several capabilities, including `Table understanding`, `Table and chart reasoning`, and `Text generation`. These capabilities are operationalized through tasks such as question answering and table transformation. For example, one study uses the benchmark to demonstrate that a new method \"boosts QA accuracy\" on the dataset. One paper also positions HiTab as a \"widely used table reasoning dataset\" alongside others in the field.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "A Self-Denoising Model for Robust Few-Shot Relation Extraction",
+      "Generative Reward Modeling via Synthetic Criteria Preference Learning",
+      "LangSAMP: Language-Script Aware Multilingual Pretraining",
+      "Mitigating Lost-in-Retrieval Problems in Retrieval Augmented Multi-Hop Question Answering"
+    ],
+    "emnlp25": [
+      "R2I-Bench: Benchmarking Reasoning-Driven Text-to-Image Generation",
+      "SNaRe: Domain-aware Data Generation for Low-Resource Event Detection",
+      "Seeing More, Saying More: Lightweight Language Experts are Dynamic Video Token Compressors"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 4,
+    "emnlp25": 3
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25"
+  ]
+}

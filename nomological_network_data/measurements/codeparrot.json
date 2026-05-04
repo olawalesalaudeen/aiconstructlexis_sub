@@ -1,0 +1,82 @@
+{
+  "canonical_name": "CodeParrot",
+  "type": "measurement",
+  "canonical_definition": "CodeParrot is consistently described as a benchmark or dataset for evaluating language models on programming language sequences. The provided literature uses it to measure two related capabilities. One prevalent application is for assessing general language modeling performance, where it is defined as a \"code modeling dataset\" and performance is measured using perplexity, as shown in one study (\"MorphMark\"). A more specific framing, found in other work, presents CodeParrot as a \"code-oriented long-context benchmark\" explicitly used for \"length extrapolation evaluation\" (\"Gated Delta Networks\"). In this context, it is used to assess a model's \"capacity to extrapolate to sequences of up to 20K tokens.\" Thus, across the available data, CodeParrot serves as an instrument to evaluate how well models handle code, both in terms of standard language modeling and their ability to generalize to long sequences.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "CodeParrot"
+  ],
+  "papers": [
+    "MorphMark: Flexible Adaptive Watermarking for Large Language Models",
+    "PlanningArena: A Modular Benchmark for Multidimensional Evaluation of Planning and Tool Learning",
+    "Gated Delta Networks: Improving Mamba2 with Delta Rule",
+    "Unlocking State-Tracking in Linear RNNs Through Negative Eigenvalues",
+    "Wavelet-based Positional Representation for Long Context"
+  ],
+  "paper_count": 5,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A code-oriented long-context benchmark used in the length extrapolation evaluation.",
+      "paper": "Gated Delta Networks: Improving Mamba2 with Delta Rule",
+      "original_name": "CodeParrot"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Length generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Gated Delta Networks: Improving Mamba2 with Delta Rule",
+      "evidence": "As shown in Fig.2, we evaluate the models' capacity to extrapolate to sequences of up to 20K tokens across six long-context benchmarks.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Gated Delta Networks: Improving Mamba2 with Delta Rule"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language modeling",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "MorphMark: Flexible Adaptive Watermarking for Large Language Models",
+      "evidence": "Language modeling, for which we evaluate perplexity on PG19 (Rae et al., 2020), Proof-Pile (Zhangir Azerbayev), and CodeParrot (CodeParrot) (Section 3.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "MorphMark: Flexible Adaptive Watermarking for Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "CodeParrot is consistently described as a benchmark or dataset for evaluating language models on programming language sequences. The provided literature uses it to measure two related capabilities. One prevalent application is for assessing general language modeling performance, where it is defined as a \"code modeling dataset\" and performance is measured using perplexity, as shown in one study (\"MorphMark\"). A more specific framing, found in other work, presents CodeParrot as a \"code-oriented long-context benchmark\" explicitly used for \"length extrapolation evaluation\" (\"Gated Delta Networks\"). In this context, it is used to assess a model's \"capacity to extrapolate to sequences of up to 20K tokens.\" Thus, across the available data, CodeParrot serves as an instrument to evaluate how well models handle code, both in terms of standard language modeling and their ability to generalize to long sequences.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Gated Delta Networks: Improving Mamba2 with Delta Rule",
+      "Unlocking State-Tracking in Linear RNNs Through Negative Eigenvalues",
+      "Wavelet-based Positional Representation for Long Context"
+    ],
+    "acl25": [
+      "MorphMark: Flexible Adaptive Watermarking for Large Language Models",
+      "PlanningArena: A Modular Benchmark for Multidimensional Evaluation of Planning and Tool Learning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3,
+    "acl25": 2
+  },
+  "conferences": [
+    "acl25",
+    "iclr25"
+  ]
+}

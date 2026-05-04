@@ -1,0 +1,136 @@
+{
+  "canonical_name": "Activation steering",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, Activation steering is predominantly characterized as a causal intervention technique used to modify a language model's behavior at inference time. This is achieved by directly altering the model's internal representations, specifically by shifting or adding to the hidden activations of targeted neurons during a forward pass. The terms \"Inference-time intervention (ITI)\" and \"Model steering\" are also used to describe this process of intervening on generations to produce a \"counterfactual generation conditioned on the concept-based intervention\" (AxBench: Steering LLMs? Even Simple Baselines Outperform Sparse Autoencoders). The stated goals of this technique vary, with some work aiming to steer models toward abstract behaviors like memorization versus generalization, while other papers focus on eliciting or suppressing specific concepts in the generated output. The effectiveness of these interventions is operationalized in multiple ways, including using an LLM-as-a-judge to rate steered outputs and analyzing increases in likelihood for texts aligned with the desired behavior. Activation steering is positioned as a \"practical application of various interpretability methods\" and is studied in conjunction with concept detection. As one study notes, it has emerged as a \"potential alternative to finetuning and prompting\" due to its potential for \"lightweight and interpretable control\" (AxBench: Steering LLMs? Even Simple Baselines Outperform Sparse Autoencoders).",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Inference-time intervention (ITI)",
+    "Activation steering",
+    "Model steering"
+  ],
+  "papers": [
+    "ESC-Judge: A Framework for Comparing Emotional Support Conversational Agents",
+    "Neuron-Level Differentiation of Memorization and Generalization in Large Language Models",
+    "StepER: Step-wise Knowledge Distillation for Enhancing Reasoning Ability in Multi-Step Retrieval-Augmented Language Models",
+    "AxBench: Steering LLMs? Even Simple Baselines Outperform Sparse Autoencoders",
+    "Low-Rank Adapting Models for Sparse Autoencoders"
+  ],
+  "paper_count": 5,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "An experimental procedure where the hidden activations of specific, targeted neurons are shifted during a model's forward pass to causally steer its behavior toward a desired outcome like memorization or generalization.",
+      "paper": "ESC-Judge: A Framework for Comparing Emotional Support Conversational Agents",
+      "original_name": "Inference-time intervention (ITI)"
+    },
+    {
+      "text": "A causal intervention technique that modifies a model's hidden activations at inference time to alter its behavior along a desired direction, such as from direct answering to abstention.",
+      "paper": "Neuron-Level Differentiation of Memorization and Generalization in Large Language Models",
+      "original_name": "Activation steering"
+    },
+    {
+      "text": "The observable act of modifying a language model's internal representations during generation to produce outputs that incorporate a target concept while following instructions.",
+      "paper": "AxBench: Steering LLMs? Even Simple Baselines Outperform Sparse Autoencoders",
+      "original_name": "Model steering"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Interpretability and explainability",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "AxBench: Steering LLMs? Even Simple Baselines Outperform Sparse Autoencoders",
+      "evidence": "Since steering may enable lightweight and interpretable control over model outputs, it has emerged as a potential alternative to finetuning and prompting",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "AxBench: Steering LLMs? Even Simple Baselines Outperform Sparse Autoencoders"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-as-a-judge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "AxBench: Steering LLMs? Even Simple Baselines Outperform Sparse Autoencoders",
+      "evidence": "For the latter, we use an LLM judge to rate steered outputs on three relevant axes (see \u00a73.3). (Section 3)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "AxBench: Steering LLMs? Even Simple Baselines Outperform Sparse Autoencoders"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Concept detection",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "AxBench: Steering LLMs? Even Simple Baselines Outperform Sparse Autoencoders",
+      "evidence": "our results suggest that joint learning of concept detection and steering (as in ReFT-r1) may be the key to advancement.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "AxBench: Steering LLMs? Even Simple Baselines Outperform Sparse Autoencoders"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AlpacaEval v1.0",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "AxBench: Steering LLMs? Even Simple Baselines Outperform Sparse Autoencoders",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "AxBench: Steering LLMs? Even Simple Baselines Outperform Sparse Autoencoders"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Harmlessness",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "StepER: Step-wise Knowledge Distillation for Enhancing Reasoning Ability in Multi-Step Retrieval-Augmented Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "StepER: Step-wise Knowledge Distillation for Enhancing Reasoning Ability in Multi-Step Retrieval-Augmented Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 5,
+  "characterization": "Across the provided literature, Activation steering is predominantly characterized as a causal intervention technique used to modify a language model's behavior at inference time. This is achieved by directly altering the model's internal representations, specifically by shifting or adding to the hidden activations of targeted neurons during a forward pass. The terms \"Inference-time intervention (ITI)\" and \"Model steering\" are also used to describe this process of intervening on generations to produce a \"counterfactual generation conditioned on the concept-based intervention\" (AxBench: Steering LLMs? Even Simple Baselines Outperform Sparse Autoencoders). The stated goals of this technique vary, with some work aiming to steer models toward abstract behaviors like memorization versus generalization, while other papers focus on eliciting or suppressing specific concepts in the generated output. The effectiveness of these interventions is operationalized in multiple ways, including using an LLM-as-a-judge to rate steered outputs and analyzing increases in likelihood for texts aligned with the desired behavior. Activation steering is positioned as a \"practical application of various interpretability methods\" and is studied in conjunction with concept detection. As one study notes, it has emerged as a \"potential alternative to finetuning and prompting\" due to its potential for \"lightweight and interpretable control\" (AxBench: Steering LLMs? Even Simple Baselines Outperform Sparse Autoencoders).",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "ESC-Judge: A Framework for Comparing Emotional Support Conversational Agents",
+      "Neuron-Level Differentiation of Memorization and Generalization in Large Language Models",
+      "StepER: Step-wise Knowledge Distillation for Enhancing Reasoning Ability in Multi-Step Retrieval-Augmented Language Models"
+    ],
+    "icml25": [
+      "AxBench: Steering LLMs? Even Simple Baselines Outperform Sparse Autoencoders",
+      "Low-Rank Adapting Models for Sparse Autoencoders"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 3,
+    "icml25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "icml25"
+  ]
+}

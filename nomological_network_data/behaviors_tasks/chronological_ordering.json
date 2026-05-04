@@ -1,0 +1,116 @@
+{
+  "canonical_name": "Chronological ordering",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, chronological ordering is a behavior that involves arranging a set of items into a correct temporal or logical sequence. This task is operationalized across several modalities, including reordering shuffled sentences of a text synopsis ('Plot unscrambling'), arranging a series of images ('Image ordering' or 'Visual ordering'), and identifying the correct sequence of elements within a video. The behavior is measured by various benchmarks; for instance, VNBench evaluates chronological ordering in video, MUIRBENCH assesses the ability to order images based on textual descriptions, and the 'Plot Unscrambling' task in LiveBench measures it for text. The task is commonly framed as a form of temporal reasoning, and one paper uses a version of it, 'movie synopsis unscrambling,' as a measure of natural language understanding. In the context of video analysis, one study notes that the ordering task is 'more challenging compared to the retrieving task,' while another highlights its difficulty in the visual domain, reporting that 'GPT-4o achieves only 28% and 21.5% accuracy in temporal ordering and visual ordering tasks, respectively' (MMIU: Multimodal Multi-image Understanding for Evaluating Large Vision-Language Models).",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Ordering",
+    "Plot unscrambling",
+    "Image ordering",
+    "Visual ordering",
+    "Chronological ordering"
+  ],
+  "papers": [
+    "Episodic Memories Generation and Evaluation Benchmark for Large Language Models",
+    "LiveBench: A Challenging, Contamination-Limited LLM Benchmark",
+    "MMIU: Multimodal Multi-image Understanding for Evaluating Large Vision-Language Models",
+    "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding",
+    "Needle In A Video Haystack: A Scalable  Synthetic Evaluator for Video MLLMs"
+  ],
+  "paper_count": 5,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Reordering shuffled sentences of a plot synopsis into the original logical sequence.",
+      "paper": "LiveBench: A Challenging, Contamination-Limited LLM Benchmark",
+      "original_name": "Plot unscrambling"
+    },
+    {
+      "text": "Identifying the correct chronological order of multiple inserted needles in a video.",
+      "paper": "Needle In A Video Haystack: A Scalable  Synthetic Evaluator for Video MLLMs",
+      "original_name": "Ordering"
+    },
+    {
+      "text": "The task of arranging a set of images into a correct temporal or logical sequence.",
+      "paper": "MMIU: Multimodal Multi-image Understanding for Evaluating Large Vision-Language Models",
+      "original_name": "Image ordering"
+    },
+    {
+      "text": "Ordering images according to visual progression or sequence cues.",
+      "paper": "MMIU: Multimodal Multi-image Understanding for Evaluating Large Vision-Language Models",
+      "original_name": "Visual ordering"
+    },
+    {
+      "text": "The task of arranging a set of retrieved events or states in the correct temporal sequence, from earliest to latest.",
+      "paper": "Episodic Memories Generation and Evaluation Benchmark for Large Language Models",
+      "original_name": "Chronological ordering"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VNBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Needle In A Video Haystack: A Scalable  Synthetic Evaluator for Video MLLMs",
+      "evidence": "Utilizing VideoNIAH, we compile a video benchmark, VNBench, which includes tasks such as retrieval, ordering, and counting to evaluate three key aspects of video understanding: temporal perception, chronological ordering, and spatio-temporal coherence. (ABSTRACT)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Needle In A Video Haystack: A Scalable  Synthetic Evaluator for Video MLLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MUIRBENCH",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding",
+      "evidence": "[ORDERING] aims to evaluate the ability of models to order a series of images based on the textual description. (Section 3.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Natural language understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "LiveBench: A Challenging, Contamination-Limited LLM Benchmark",
+      "evidence": "\u201cLanguage Comprehension: Connections word puzzles, a typo-fixing task, and a movie synopsis unscrambling task\u201d",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "LiveBench: A Challenging, Contamination-Limited LLM Benchmark"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 2,
+  "characterization": "Across the provided literature, chronological ordering is a behavior that involves arranging a set of items into a correct temporal or logical sequence. This task is operationalized across several modalities, including reordering shuffled sentences of a text synopsis ('Plot unscrambling'), arranging a series of images ('Image ordering' or 'Visual ordering'), and identifying the correct sequence of elements within a video. The behavior is measured by various benchmarks; for instance, VNBench evaluates chronological ordering in video, MUIRBENCH assesses the ability to order images based on textual descriptions, and the 'Plot Unscrambling' task in LiveBench measures it for text. The task is commonly framed as a form of temporal reasoning, and one paper uses a version of it, 'movie synopsis unscrambling,' as a measure of natural language understanding. In the context of video analysis, one study notes that the ordering task is 'more challenging compared to the retrieving task,' while another highlights its difficulty in the visual domain, reporting that 'GPT-4o achieves only 28% and 21.5% accuracy in temporal ordering and visual ordering tasks, respectively' (MMIU: Multimodal Multi-image Understanding for Evaluating Large Vision-Language Models).",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Episodic Memories Generation and Evaluation Benchmark for Large Language Models",
+      "LiveBench: A Challenging, Contamination-Limited LLM Benchmark",
+      "MMIU: Multimodal Multi-image Understanding for Evaluating Large Vision-Language Models",
+      "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding",
+      "Needle In A Video Haystack: A Scalable  Synthetic Evaluator for Video MLLMs"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 5
+  },
+  "conferences": [
+    "iclr25"
+  ]
+}

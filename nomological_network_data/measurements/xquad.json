@@ -1,0 +1,111 @@
+{
+  "canonical_name": "XQuAD",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, XQuAD is consistently characterized as a benchmark dataset for evaluating question answering capabilities in multiple languages. It is most frequently used to measure the constructs of \"Multilingual question answering\" and \"Question answering,\" with one paper also linking it to \"Language understanding.\" The task is commonly specified as \"extractive\" question answering, where models answer questions from a provided context, which one source identifies as paragraphs from Wikipedia. A few papers provide more detail on its origin, describing XQuAD as a translation of the SQuAD v1.1 development set. In terms of operationalization, one paper reports using the F1-score for assessment, while another notes using the \"whole testset\" for evaluation. XQuAD is often studied alongside other multilingual benchmarks such as MLQA and TyDiQA. A less common application mentioned by one study is its use, in conjunction with MGSM, to measure \"sequential instruction-following capabilities.\"",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "XQUAD",
+    "XQuAD"
+  ],
+  "papers": [
+    "C3: A Bilingual Benchmark for Spoken Dialogue Models Exploring Challenges in Complex Conversations",
+    "CAVE: Detecting and Explaining Commonsense Anomalies in Visual Environments",
+    "CHENGYU-BENCH: Benchmarking Large Language Models forChinese Idiom Understanding and Use",
+    "Causal Representation Learning from Multimodal Clinical Records under Non-Random Modality Missingness",
+    "Beyond Logit Lens: Contextual Embeddings for Robust Hallucination Detection & Grounding inVLMs",
+    "GuideLLM: ExploringLLM-Guided Conversation with Applications in Autobiography Interviewing",
+    "Has this Fact been Edited? Detecting Knowledge Edits in Language Models",
+    "One Unified Model for Diverse Tasks: Emotion Cause Analysis via Self-Promote Cognitive Structure Modeling"
+  ],
+  "paper_count": 8,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A benchmark dataset for evaluating multilingual extractive question answering across several languages.",
+      "paper": "GuideLLM: ExploringLLM-Guided Conversation with Applications in Autobiography Interviewing",
+      "original_name": "XQuAD"
+    },
+    {
+      "text": "Cross-lingual question answering benchmark assessing reading comprehension in multiple languages using F1-score.",
+      "paper": "Beyond Logit Lens: Contextual Embeddings for Robust Hallucination Detection & Grounding inVLMs",
+      "original_name": "XQUAD"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multilingual question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "GuideLLM: ExploringLLM-Guided Conversation with Applications in Autobiography Interviewing",
+      "evidence": "However, efforts such as MLQA (Lewis et al., 2020) and XQuAD (Artetxe et al., 2019) have introduced datasets supporting multiple languages, facilitating cross-lingual evaluation of QA systems. (Section 5)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "naacl25": [
+          "GuideLLM: ExploringLLM-Guided Conversation with Applications in Autobiography Interviewing"
+        ],
+        "emnlp25": [
+          "Causal Representation Learning from Multimodal Clinical Records under Non-Random Modality Missingness"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language understanding",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "How do Large Language Models Handle Multilingualism?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "How do Large Language Models Handle Multilingualism?"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Has this Fact been Edited? Detecting Knowledge Edits in Language Models",
+      "evidence": "\u201cQuestion Answering: We focus on 3 QA datasets 1) XQUAD (Artetxe et al., 2019)\u201d (Section 4.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Has this Fact been Edited? Detecting Knowledge Edits in Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, XQuAD is consistently characterized as a benchmark dataset for evaluating question answering capabilities in multiple languages. It is most frequently used to measure the constructs of \"Multilingual question answering\" and \"Question answering,\" with one paper also linking it to \"Language understanding.\" The task is commonly specified as \"extractive\" question answering, where models answer questions from a provided context, which one source identifies as paragraphs from Wikipedia. A few papers provide more detail on its origin, describing XQuAD as a translation of the SQuAD v1.1 development set. In terms of operationalization, one paper reports using the F1-score for assessment, while another notes using the \"whole testset\" for evaluation. XQuAD is often studied alongside other multilingual benchmarks such as MLQA and TyDiQA. A less common application mentioned by one study is its use, in conjunction with MGSM, to measure \"sequential instruction-following capabilities.\"",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "naacl25": [
+      "Beyond Logit Lens: Contextual Embeddings for Robust Hallucination Detection & Grounding inVLMs",
+      "GuideLLM: ExploringLLM-Guided Conversation with Applications in Autobiography Interviewing",
+      "Has this Fact been Edited? Detecting Knowledge Edits in Language Models",
+      "One Unified Model for Diverse Tasks: Emotion Cause Analysis via Self-Promote Cognitive Structure Modeling"
+    ],
+    "emnlp25": [
+      "C3: A Bilingual Benchmark for Spoken Dialogue Models Exploring Challenges in Complex Conversations",
+      "CAVE: Detecting and Explaining Commonsense Anomalies in Visual Environments",
+      "CHENGYU-BENCH: Benchmarking Large Language Models forChinese Idiom Understanding and Use",
+      "Causal Representation Learning from Multimodal Clinical Records under Non-Random Modality Missingness"
+    ]
+  },
+  "paper_count_by_conference": {
+    "naacl25": 4,
+    "emnlp25": 4
+  },
+  "conferences": [
+    "emnlp25",
+    "naacl25"
+  ]
+}

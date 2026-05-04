@@ -1,0 +1,114 @@
+{
+  "canonical_name": "Embodied planning",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, embodied planning is predominantly defined as the task of generating a sequence of actions for an agent to execute within a simulated or physical environment. A more specific framing, termed 'action sequence prediction,' further requires that the generated action sequence aligns with a ground-truth human trajectory to be considered successful. This behavior is positioned as a complex scenario for LLM agents, studied alongside problem-solving, function calling, and tool use. To operationalize and evaluate embodied planning, researchers employ several benchmarks, including ScienceWorld, VirtualHome, and BabyAI. The evidence from one paper specifies that ScienceWorld and VirtualHome are used for 'complex embodied reasoning tasks'. The success criteria can be stringent, with one study noting that 'task-level success is achieved only if the entire sequence of steps predicted by the agent aligns with the ground-truth human trajectories' (Multi-Attribute Steering of Language Models via Targeted Intervention). The concept is also documented as being related to long-horizon planning.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Embodied planning",
+    "Action sequence prediction"
+  ],
+  "papers": [
+    "Multi-Attribute Steering of Language Models via Targeted Intervention",
+    "TunableLLM-based Proactive Recommendation Agent",
+    "Benchmarking Agentic Workflow Generation",
+    "Discriminator-Guided Embodied Planning for LLM Agent"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The task of generating a sequence of actions for an agent to execute within a simulated or physical environment.",
+      "paper": "Benchmarking Agentic Workflow Generation",
+      "original_name": "Embodied planning"
+    },
+    {
+      "text": "Generating a correct sequence of actions (element selection and operation) that aligns with the ground-truth human trajectory to achieve task success.",
+      "paper": "Multi-Attribute Steering of Language Models via Targeted Intervention",
+      "original_name": "Action sequence prediction"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Long-horizon planning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Discriminator-Guided Embodied Planning for LLM Agent",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Discriminator-Guided Embodied Planning for LLM Agent"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ScienceWorld",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Discriminator-Guided Embodied Planning for LLM Agent",
+      "evidence": "To evaluate the effectiveness of DGAP and other baseline methods in complex embodied reasoning tasks, we employ the ScienceWorld (Wang et al., 2022) and VirtualHome (Puig et al., 2018) benchmark.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Discriminator-Guided Embodied Planning for LLM Agent"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VirtualHome",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Discriminator-Guided Embodied Planning for LLM Agent",
+      "evidence": "To evaluate the effectiveness of DGAP and other baseline methods in complex embodied reasoning tasks, we employ the ScienceWorld (Wang et al., 2022) and VirtualHome (Puig et al., 2018) benchmark.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Discriminator-Guided Embodied Planning for LLM Agent"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BabyAI",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "TunableLLM-based Proactive Recommendation Agent",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "TunableLLM-based Proactive Recommendation Agent"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 4,
+  "characterization": "Across the provided literature, embodied planning is predominantly defined as the task of generating a sequence of actions for an agent to execute within a simulated or physical environment. A more specific framing, termed 'action sequence prediction,' further requires that the generated action sequence aligns with a ground-truth human trajectory to be considered successful. This behavior is positioned as a complex scenario for LLM agents, studied alongside problem-solving, function calling, and tool use. To operationalize and evaluate embodied planning, researchers employ several benchmarks, including ScienceWorld, VirtualHome, and BabyAI. The evidence from one paper specifies that ScienceWorld and VirtualHome are used for 'complex embodied reasoning tasks'. The success criteria can be stringent, with one study noting that 'task-level success is achieved only if the entire sequence of steps predicted by the agent aligns with the ground-truth human trajectories' (Multi-Attribute Steering of Language Models via Targeted Intervention). The concept is also documented as being related to long-horizon planning.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Benchmarking Agentic Workflow Generation",
+      "Discriminator-Guided Embodied Planning for LLM Agent"
+    ],
+    "acl25": [
+      "Multi-Attribute Steering of Language Models via Targeted Intervention",
+      "TunableLLM-based Proactive Recommendation Agent"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "acl25": 2
+  },
+  "conferences": [
+    "acl25",
+    "iclr25"
+  ]
+}

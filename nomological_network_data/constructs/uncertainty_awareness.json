@@ -1,0 +1,78 @@
+{
+  "canonical_name": "Uncertainty awareness",
+  "type": "construct",
+  "canonical_definition": "The latent degree to which an LLM recognizes its own lack of knowledge or confidence in generating correct content, inferred from inconsistencies in its internal states across multiple generations.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Self-aware uncertainty",
+    "Uncertainty awareness"
+  ],
+  "papers": [
+    "CoAM: Corpus of All-Type Multiword Expressions",
+    "Value Residual Learning"
+  ],
+  "paper_count": 2,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The latent degree to which an LLM recognizes its own lack of knowledge or confidence in generating correct content, inferred from inconsistencies in its internal states across multiple generations.",
+      "paper": "CoAM: Corpus of All-Type Multiword Expressions",
+      "original_name": "Self-aware uncertainty"
+    },
+    {
+      "text": "The model's sensitivity to its own confidence levels in generated answers and document relevance, allowing it to guide self-calibration processes.",
+      "paper": "Value Residual Learning",
+      "original_name": "Uncertainty awareness"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Iterative refinement",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Value Residual Learning",
+      "evidence": "we reconstruct the input by including the content and uncertainty scores of documents alongside the primary answers... enabling the answer to be calibrated iteratively based on the given documents and the previously generated answers.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Value Residual Learning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "AI-generated text detection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "2025.emnlp-main.294.checklist",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "2025.emnlp-main.294.checklist"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 1,
+  "characterization": "The latent degree to which an LLM recognizes its own lack of knowledge or confidence in generating correct content, inferred from inconsistencies in its internal states across multiple generations.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "CoAM: Corpus of All-Type Multiword Expressions",
+      "Value Residual Learning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2
+  },
+  "conferences": [
+    "acl25"
+  ]
+}

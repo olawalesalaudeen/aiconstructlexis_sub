@@ -1,0 +1,93 @@
+{
+  "canonical_name": "Table understanding",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, Table understanding is characterized as a multifaceted behavior encompassing several distinct tasks rather than a single, unified concept. The most prevalent framing is table question answering, defined as answering questions by extracting and comparing information from a table, which, as one paper notes, \"may be updated with new entries\" (\"Buffer of Thoughts: Thought-Augmented Reasoning with Large Language Models\"). A more granular perspective, offered in \"TabPedia: Towards Comprehensive Visual Table Understanding with Concept Synergy\", breaks the behavior down into visual and structural components: table detection (locating tables in a document), table structure recognition (parsing rows and columns), and table querying (parsing a table at a given location). To operationalize and measure this behavior, researchers employ a wide variety of benchmarks. The most frequently used instruments in this set are WikiTQ and FeTaQA, followed by TabFact. Other datasets such as WikiSQL, BiRdQA, BIG-Bench, HiTab, and FinQA are also used to evaluate table understanding, and one paper operationalizes it via code generation. The behavior is also studied in relation to concepts like table and chart reasoning, task decomposition, and semantic reasoning.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Table detection",
+    "Table structure recognition",
+    "Table querying"
+  ],
+  "papers": [
+    "Buffer of Thoughts: Thought-Augmented Reasoning with Large Language Models",
+    "DACO: Towards Application-Driven and Comprehensive Data Analysis via Code Generation",
+    "TabPedia: Towards Comprehensive Visual Table Understanding with Concept Synergy",
+    "TableRAG: Million-Token Table Understanding with Language Models"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Answering questions by extracting and comparing information from a table, optionally integrating additional natural-language updates.",
+      "paper": "Buffer of Thoughts: Thought-Augmented Reasoning with Large Language Models",
+      "original_name": "Table question answering"
+    },
+    {
+      "text": "The task of identifying and outputting the bounding box coordinates of all tables within a document image.",
+      "paper": "TabPedia: Towards Comprehensive Visual Table Understanding with Concept Synergy",
+      "original_name": "Table detection"
+    },
+    {
+      "text": "The task of parsing the internal structure of a given table image into its constituent elements, such as rows, columns, and cells, and their relationships.",
+      "paper": "TabPedia: Towards Comprehensive Visual Table Understanding with Concept Synergy",
+      "original_name": "Table structure recognition"
+    },
+    {
+      "text": "The task of parsing the structure of a table from an entire document image, given a specific location (bounding box) for the table.",
+      "paper": "TabPedia: Towards Comprehensive Visual Table Understanding with Concept Synergy",
+      "original_name": "Table querying"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Table reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "TabPedia: Towards Comprehensive Visual Table Understanding with Concept Synergy",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "TabPedia: Towards Comprehensive Visual Table Understanding with Concept Synergy"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Code generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Bridging the Semantic Gap Between Text and Table: A Case Study on NL2SQL",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Bridging the Semantic Gap Between Text and Table: A Case Study on NL2SQL"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the provided literature, Table understanding is characterized as a multifaceted behavior encompassing several distinct tasks rather than a single, unified concept. The most prevalent framing is table question answering, defined as answering questions by extracting and comparing information from a table, which, as one paper notes, \"may be updated with new entries\" (\"Buffer of Thoughts: Thought-Augmented Reasoning with Large Language Models\"). A more granular perspective, offered in \"TabPedia: Towards Comprehensive Visual Table Understanding with Concept Synergy\", breaks the behavior down into visual and structural components: table detection (locating tables in a document), table structure recognition (parsing rows and columns), and table querying (parsing a table at a given location). To operationalize and measure this behavior, researchers employ a wide variety of benchmarks. The most frequently used instruments in this set are WikiTQ and FeTaQA, followed by TabFact. Other datasets such as WikiSQL, BiRdQA, BIG-Bench, HiTab, and FinQA are also used to evaluate table understanding, and one paper operationalizes it via code generation. The behavior is also studied in relation to concepts like table and chart reasoning, task decomposition, and semantic reasoning.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "Buffer of Thoughts: Thought-Augmented Reasoning with Large Language Models",
+      "DACO: Towards Application-Driven and Comprehensive Data Analysis via Code Generation",
+      "TabPedia: Towards Comprehensive Visual Table Understanding with Concept Synergy",
+      "TableRAG: Million-Token Table Understanding with Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 4
+  },
+  "conferences": [
+    "neurips24"
+  ]
+}

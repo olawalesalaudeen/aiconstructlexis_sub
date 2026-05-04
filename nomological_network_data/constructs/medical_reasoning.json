@@ -1,0 +1,161 @@
+{
+  "canonical_name": "Medical reasoning",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, \"medical reasoning\" is most commonly defined as the ability to perform complex, domain-specific reasoning and inference to support medical analysis and diagnostic tasks. The terms \"clinical reasoning\" and \"diagnostic reasoning\" are also frequently used, with definitions that overlap but sometimes carry specific nuances. For instance, some work frames \"clinical reasoning\" as an interactive process involving information-seeking for medical decision-making, while other papers focus on \"diagnostic reasoning\" as the specific cognitive ability to infer a diagnosis from patient data, explicitly distinguishing it from \"mere factual recall or pattern matching\" (\"Position: Medical Large Language Model Benchmarks Should Prioritize Construct Validity\"). A smaller set of studies also describes it as a multimodal capability that integrates \"clinical visual perception with professional-level medical knowledge\" (\"Visual and Domain Knowledge for Professional-level Graph-of-Thought Medical Reasoning\"). This construct is operationalized and measured using several benchmarks. The most frequently mentioned instrument is MedQA, which is described as comprising \"clinical vignettes paired with multiple choice diagnosis questions\" and is used \"to test the diagnostic reasoning construct.\" Other benchmarks reported to measure medical reasoning include DDXPlus and MOLERR2FIX. The construct is also studied in relation to interpretability and explainability.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Medical reasoning",
+    "Diagnostic reasoning"
+  ],
+  "papers": [
+    "2025.emnlp-main.1344.checklist",
+    "2025.emnlp-main.285.checklist",
+    "CompassVerifier: A Unified and Robust Verifier forLLMs Evaluation and Outcome Reward",
+    "NEXUS: Network Exploration for eXploiting Unsafe Sequences in Multi-TurnLLMJailbreaks",
+    "Quantized but Deceptive? A Multi-Dimensional Truthfulness Evaluation of QuantizedLLMs",
+    "Reliable and Cost-Effective Exploratory Data Analysis via Graph-GuidedRAG",
+    "Sentence Smith: Controllable Edits for Evaluating Text Embeddings",
+    "TRUST-VL: An Explainable News Assistant for General Multimodal Misinformation Detection",
+    "MedRAX: Medical Reasoning Agent for Chest X-ray",
+    "MedXpertQA: Benchmarking Expert-Level Medical Reasoning and Understanding",
+    "Multimodal Medical Code Tokenizer",
+    "Position: Medical Large Language Model Benchmarks Should Prioritize Construct Validity",
+    "Visual and Domain Knowledge for Professional-level Graph-of-Thought Medical Reasoning",
+    "Biomedical Visual Instruction Tuning with Clinician Preference Alignment",
+    "DiReCT: Diagnostic Reasoning for Clinical Notes via Large Language Models",
+    "Instruction Tuning Large Language Models to Understand Electronic Health Records",
+    "MDAgents: An Adaptive Collaboration of LLMs for Medical Decision-Making",
+    "MedCalc-Bench: Evaluating Large Language Models for Medical Calculations",
+    "MedJourney: Benchmark and Evaluation of Large Language Models over Patient Clinical Journey",
+    "MediQ: Question-Asking LLMs and a Benchmark for Reliable Interactive Clinical Reasoning"
+  ],
+  "paper_count": 20,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The ability to perform complex, domain-specific reasoning and inference to support medical analysis and diagnostic tasks.",
+      "paper": "Biomedical Visual Instruction Tuning with Clinician Preference Alignment",
+      "original_name": "Medical reasoning"
+    },
+    {
+      "text": "The cognitive process of analyzing patient information, identifying knowledge gaps, and integrating new evidence to arrive at a medical diagnosis or decision.",
+      "paper": "MediQ: Question-Asking LLMs and a Benchmark for Reliable Interactive Clinical Reasoning",
+      "original_name": "Clinical reasoning"
+    },
+    {
+      "text": "The cognitive ability to analyze patient information, consider differential diagnoses, and arrive at a likely medical diagnosis.",
+      "paper": "MedJourney: Benchmark and Evaluation of Large Language Models over Patient Clinical Journey",
+      "original_name": "Diagnostic reasoning"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Interpretability and explainability",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "DiReCT: Diagnostic Reasoning for Clinical Notes via Large Language Models",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "DiReCT: Diagnostic Reasoning for Clinical Notes via Large Language Models"
+        ],
+        "acl25": [
+          "GALLa: Graph Aligned Large Language Models for Improved Source Code Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MedQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Position: Medical Large Language Model Benchmarks Should Prioritize Construct Validity",
+      "evidence": "Suppose we focus on diagnostic reasoning as the LLM capability of interest and use a benchmark like MedQA, which comprises clinical vignettes paired with multiple choice diagnosis questions, to test the diagnostic reasoning construct. (Section 3.1)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "icml25": [
+          "Position: Medical Large Language Model Benchmarks Should Prioritize Construct Validity"
+        ],
+        "emnlp25": [
+          "TRUST-VL: An Explainable News Assistant for General Multimodal Misinformation Detection"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "DDXPlus",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MDAgents: An Adaptive Collaboration of LLMs for Medical Decision-Making",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "MDAgents: An Adaptive Collaboration of LLMs for Medical Decision-Making"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MOLERR2FIX",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Mitigating Hallucinations inLM-BasedTTSModels via Distribution Alignment UsingGFlowNets",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Mitigating Hallucinations inLM-BasedTTSModels via Distribution Alignment UsingGFlowNets"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 3,
+  "characterization": "Across the surveyed literature, \"medical reasoning\" is most commonly defined as the ability to perform complex, domain-specific reasoning and inference to support medical analysis and diagnostic tasks. The terms \"clinical reasoning\" and \"diagnostic reasoning\" are also frequently used, with definitions that overlap but sometimes carry specific nuances. For instance, some work frames \"clinical reasoning\" as an interactive process involving information-seeking for medical decision-making, while other papers focus on \"diagnostic reasoning\" as the specific cognitive ability to infer a diagnosis from patient data, explicitly distinguishing it from \"mere factual recall or pattern matching\" (\"Position: Medical Large Language Model Benchmarks Should Prioritize Construct Validity\"). A smaller set of studies also describes it as a multimodal capability that integrates \"clinical visual perception with professional-level medical knowledge\" (\"Visual and Domain Knowledge for Professional-level Graph-of-Thought Medical Reasoning\"). This construct is operationalized and measured using several benchmarks. The most frequently mentioned instrument is MedQA, which is described as comprising \"clinical vignettes paired with multiple choice diagnosis questions\" and is used \"to test the diagnostic reasoning construct.\" Other benchmarks reported to measure medical reasoning include DDXPlus and MOLERR2FIX. The construct is also studied in relation to interpretability and explainability.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "Biomedical Visual Instruction Tuning with Clinician Preference Alignment",
+      "DiReCT: Diagnostic Reasoning for Clinical Notes via Large Language Models",
+      "Instruction Tuning Large Language Models to Understand Electronic Health Records",
+      "MDAgents: An Adaptive Collaboration of LLMs for Medical Decision-Making",
+      "MedCalc-Bench: Evaluating Large Language Models for Medical Calculations",
+      "MedJourney: Benchmark and Evaluation of Large Language Models over Patient Clinical Journey",
+      "MediQ: Question-Asking LLMs and a Benchmark for Reliable Interactive Clinical Reasoning"
+    ],
+    "icml25": [
+      "MedRAX: Medical Reasoning Agent for Chest X-ray",
+      "MedXpertQA: Benchmarking Expert-Level Medical Reasoning and Understanding",
+      "Multimodal Medical Code Tokenizer",
+      "Position: Medical Large Language Model Benchmarks Should Prioritize Construct Validity",
+      "Visual and Domain Knowledge for Professional-level Graph-of-Thought Medical Reasoning"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.1344.checklist",
+      "2025.emnlp-main.285.checklist",
+      "CompassVerifier: A Unified and Robust Verifier forLLMs Evaluation and Outcome Reward",
+      "NEXUS: Network Exploration for eXploiting Unsafe Sequences in Multi-TurnLLMJailbreaks",
+      "Quantized but Deceptive? A Multi-Dimensional Truthfulness Evaluation of QuantizedLLMs",
+      "Reliable and Cost-Effective Exploratory Data Analysis via Graph-GuidedRAG",
+      "Sentence Smith: Controllable Edits for Evaluating Text Embeddings",
+      "TRUST-VL: An Explainable News Assistant for General Multimodal Misinformation Detection"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 7,
+    "icml25": 5,
+    "emnlp25": 8
+  },
+  "conferences": [
+    "emnlp25",
+    "icml25",
+    "neurips24"
+  ]
+}

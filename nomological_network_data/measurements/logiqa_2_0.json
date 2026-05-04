@@ -1,0 +1,99 @@
+{
+  "canonical_name": "LogiQA 2.0",
+  "type": "measurement",
+  "canonical_definition": "Across the provided sources, LogiQA 2.0 is consistently defined as a benchmark dataset designed to evaluate the logical reasoning capabilities of language models. The benchmark is most commonly operationalized as a multiple-choice question answering task, with one paper noting its questions are derived from professional exams requiring deductive reasoning. The prevailing use of LogiQA 2.0 is to measure logical reasoning. A smaller set of papers also employs it to assess broader constructs, such as generalization beyond the pretraining distribution and cognitive ability, where it is included in an 'executive-skills' evaluation subset. Researchers apply the benchmark in various evaluation settings, including 0-shot, 5-shot, and fine-tuning contexts. One study also situates it within the common-sense reasoning domains of the LLM Evaluation Harness.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "LogiQA 2",
+    "LogiQA 2.0"
+  ],
+  "papers": [
+    "Eval",
+    "Large Language and Reasoning Models are Shallow Disjunctive Reasoners",
+    "Analysing Chain of Thought Dynamics: Active Guidance or Unfaithful Post-hoc Rationalisation?",
+    "RECALL:REpresentation-aligned Catastrophic-forgettingALLeviation via Hierarchical Model Merging",
+    "Adaptive Data Optimization: Dynamic Sample Selection with Scaling Laws",
+    "Dynamic Loss-Based Sample Reweighting for Improved Large Language Model Pretraining"
+  ],
+  "paper_count": 6,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A benchmark for logical question answering, requiring models to perform logical reasoning over text.",
+      "paper": "Adaptive Data Optimization: Dynamic Sample Selection with Scaling Laws",
+      "original_name": "LogiQA2"
+    },
+    {
+      "text": "A logical reasoning benchmark used in a 5-shot evaluation setting.",
+      "paper": "Dynamic Loss-Based Sample Reweighting for Improved Large Language Model Pretraining",
+      "original_name": "LogiQA 2"
+    },
+    {
+      "text": "LogiQA 2.0 is a benchmark dataset designed to evaluate a model's logical reasoning capabilities.",
+      "paper": "Eval",
+      "original_name": "LogiQA 2.0"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Dynamic Loss-Based Sample Reweighting for Improved Large Language Model Pretraining",
+      "evidence": "To assess generalization beyond the pretraining distribution, we evaluate models on a series of diverse reasoning tasks in a 5-shot setting, including LogiQA Liu et al. (2020), LogiQA 2 Liu et al. (2023), SciQ Welbl et al. (2017), and PiQA Bisk et al. (2020). (Section 6.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Dynamic Loss-Based Sample Reweighting for Improved Large Language Model Pretraining"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Cognitive ability",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Analysing Chain of Thought Dynamics: Active Guidance or Unfaithful Post-hoc Rationalisation?",
+      "evidence": "Executive includes LogiQA 2.0, CLadder, and WinoGrande (Table 2).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Analysing Chain of Thought Dynamics: Active Guidance or Unfaithful Post-hoc Rationalisation?"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided sources, LogiQA 2.0 is consistently defined as a benchmark dataset designed to evaluate the logical reasoning capabilities of language models. The benchmark is most commonly operationalized as a multiple-choice question answering task, with one paper noting its questions are derived from professional exams requiring deductive reasoning. The prevailing use of LogiQA 2.0 is to measure logical reasoning. A smaller set of papers also employs it to assess broader constructs, such as generalization beyond the pretraining distribution and cognitive ability, where it is included in an 'executive-skills' evaluation subset. Researchers apply the benchmark in various evaluation settings, including 0-shot, 5-shot, and fine-tuning contexts. One study also situates it within the common-sense reasoning domains of the LLM Evaluation Harness.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Adaptive Data Optimization: Dynamic Sample Selection with Scaling Laws",
+      "Dynamic Loss-Based Sample Reweighting for Improved Large Language Model Pretraining"
+    ],
+    "acl25": [
+      "Eval",
+      "Large Language and Reasoning Models are Shallow Disjunctive Reasoners"
+    ],
+    "emnlp25": [
+      "Analysing Chain of Thought Dynamics: Active Guidance or Unfaithful Post-hoc Rationalisation?",
+      "RECALL:REpresentation-aligned Catastrophic-forgettingALLeviation via Hierarchical Model Merging"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "acl25": 2,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25"
+  ]
+}

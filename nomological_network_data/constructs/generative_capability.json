@@ -1,0 +1,152 @@
+{
+  "canonical_name": "Generative capability",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, generative capability is commonly described as a latent ability of large language models to produce fluent and coherent text. While one definition presents it as a general proficiency for creating contextually appropriate text for various tasks, other framings are more specific. For instance, one line of work defines it by its contrast to multiple-choice formats, emphasizing the production of diverse, free-form outputs like code, JSON, or open-ended text. Another paper frames this ability in the context of a specific application, defining it as the capacity to generate text adaptable into robust jailbreak prompts. To measure this construct, researchers in this set use generation-based benchmarks, with performance on TruthfulQA and GSM8k being used to operationalize it. As one study on model compression notes, a score of zero on these datasets indicates that models \"totally lose their generation ability.\" The concept is also discussed alongside \"language understanding\" and \"reasoning capabilities\" and is considered susceptible to degradation or \"catastrophic forgetting\" under certain conditions.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Generation ability",
+    "Generative ability",
+    "Generative capability"
+  ],
+  "papers": [
+    "Adapt-$\\infty$: Scalable Continual Multimodal Instruction Tuning via Dynamic Data Selection",
+    "Dynamic-LLaVA: Efficient Multimodal Large Language Models via Dynamic Vision-language Context Sparsification",
+    "Generative Representational Instruction Tuning",
+    "HELM: Hierarchical Encoding for mRNA Language Modeling",
+    "MEGA-Bench: Scaling Multimodal Evaluation to over 500 Real-World Tasks",
+    "One Model Transfer to All: On Robust Jailbreak Prompts Generation against LLMs",
+    "SVD-LLM: Truncation-aware Singular Value Decomposition for Large Language Model Compression",
+    "Towards Robust and Parameter-Efficient Knowledge Unlearning for LLMs"
+  ],
+  "paper_count": 8,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The latent ability of an LLM to produce fluent, coherent text outputs that can be adapted into robust jailbreak prompts.",
+      "paper": "One Model Transfer to All: On Robust Jailbreak Prompts Generation against LLMs",
+      "original_name": "Generation ability"
+    },
+    {
+      "text": "The model's general proficiency in producing fluent, coherent, and contextually appropriate text for various generation tasks.",
+      "paper": "Towards Robust and Parameter-Efficient Knowledge Unlearning for LLMs",
+      "original_name": "Generative capability"
+    },
+    {
+      "text": "The latent ability to produce free-form or non-multiple-choice outputs in diverse formats such as numbers, phrases, code, JSON, or open-ended text.",
+      "paper": "MEGA-Bench: Scaling Multimodal Evaluation to over 500 Real-World Tasks",
+      "original_name": "Generative ability"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "The Generative AI Paradox: \u201cWhat It Can Create, It May Not Understand\u201d",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "The Generative AI Paradox: \u201cWhat It Can Create, It May Not Understand\u201d"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Text generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Closing the Curious Case of Neural Text Degeneration",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Closing the Curious Case of Neural Text Degeneration"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "SVD-LLM: Truncation-aware Singular Value Decomposition for Large Language Model Compression",
+      "evidence": "the results on two generation datasets (TruthfulQA, GSM8K) of all three baselines when compression ratios are 60% and above are zero, meaning that the compressed LLMs totally lose their generation ability. (Section 4.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "SVD-LLM: Truncation-aware Singular Value Decomposition for Large Language Model Compression"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8k",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "SVD-LLM: Truncation-aware Singular Value Decomposition for Large Language Model Compression",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "SVD-LLM: Truncation-aware Singular Value Decomposition for Large Language Model Compression"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WikiText-2",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Molecular String Representation Preferences in PretrainedLLMs: A Comparative Study in Zero- & Few-Shot Molecular Property Prediction",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Molecular String Representation Preferences in PretrainedLLMs: A Comparative Study in Zero- & Few-Shot Molecular Property Prediction"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "C4",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Molecular String Representation Preferences in PretrainedLLMs: A Comparative Study in Zero- & Few-Shot Molecular Property Prediction",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Molecular String Representation Preferences in PretrainedLLMs: A Comparative Study in Zero- & Few-Shot Molecular Property Prediction"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 6,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 6,
+  "characterization": "Across the surveyed literature, generative capability is commonly described as a latent ability of large language models to produce fluent and coherent text. While one definition presents it as a general proficiency for creating contextually appropriate text for various tasks, other framings are more specific. For instance, one line of work defines it by its contrast to multiple-choice formats, emphasizing the production of diverse, free-form outputs like code, JSON, or open-ended text. Another paper frames this ability in the context of a specific application, defining it as the capacity to generate text adaptable into robust jailbreak prompts. To measure this construct, researchers in this set use generation-based benchmarks, with performance on TruthfulQA and GSM8k being used to operationalize it. As one study on model compression notes, a score of zero on these datasets indicates that models \"totally lose their generation ability.\" The concept is also discussed alongside \"language understanding\" and \"reasoning capabilities\" and is considered susceptible to degradation or \"catastrophic forgetting\" under certain conditions.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Adapt-$\\infty$: Scalable Continual Multimodal Instruction Tuning via Dynamic Data Selection",
+      "Dynamic-LLaVA: Efficient Multimodal Large Language Models via Dynamic Vision-language Context Sparsification",
+      "Generative Representational Instruction Tuning",
+      "HELM: Hierarchical Encoding for mRNA Language Modeling",
+      "MEGA-Bench: Scaling Multimodal Evaluation to over 500 Real-World Tasks",
+      "One Model Transfer to All: On Robust Jailbreak Prompts Generation against LLMs",
+      "SVD-LLM: Truncation-aware Singular Value Decomposition for Large Language Model Compression",
+      "Towards Robust and Parameter-Efficient Knowledge Unlearning for LLMs"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 8
+  },
+  "conferences": [
+    "iclr25"
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "canonical_name": "OK-VQA",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, OK-VQA is consistently defined as a benchmark for Open-ended Knowledge-based Visual Question Answering. A recurring feature highlighted in all definitions is its requirement for external or outside knowledge, beyond what is directly depicted in the image, to answer questions correctly. The most prevalent use of OK-VQA is to evaluate the behavior of \"Visual question answering,\" with multiple papers using it to assess the \"visual perception and reasoning abilities\" of multimodal models. It is also used more broadly to measure \"Multimodal understanding.\" A smaller set of sources list it as an instrument for evaluating \"In-context and few-shot learning\" and \"Long-context processing,\" and it is also studied in relation to \"Commonsense understanding.\" In practice, OK-VQA is frequently employed alongside other VQA datasets, with papers often citing its use in conjunction with benchmarks such as VQAv2, GQA, and VizWiz.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "OK-VQA"
+  ],
+  "papers": [
+    "BOOKCOREF: Coreference Resolution at Book Scale",
+    "BenchmarkingLLMs andLLM-based Agents in Practical Vulnerability Detection for Code Repositories",
+    "FaithfulRAG: Fact-Level Conflict Modeling for Context-Faithful Retrieval-Augmented Generation",
+    "ConsistentChat: Building Skeleton-Guided Consistent Multi-Turn Dialogues for Large Language Models from Scratch",
+    "InMind: EvaluatingLLMs in Capturing and Applying Individual Human Reasoning Styles",
+    "Large Language Models Threaten Language\u2019s Epistemic and Communicative Foundations",
+    "Syntax-Aware Retrieval Augmentation for Neural Symbolic Regression",
+    "Theorem-Validated Reverse Chain-of-Thought Problem Generation for Geometric Reasoning",
+    "VideoEraser: Concept Erasure in Text-to-Video Diffusion Models",
+    "A-Bench: Are LMMs Masters at Evaluating AI-generated Images?",
+    "Backdooring Vision-Language Models with Out-Of-Distribution Data",
+    "Benchmarking Multimodal Retrieval Augmented Generation with Dynamic VQA Dataset and Self-adaptive Planning Agent",
+    "DEEM: Diffusion models serve as the eyes of large language models for image perception",
+    "MRAG-Bench: Vision-Centric Evaluation for Retrieval-Augmented Multimodal Models",
+    "Towards Semantic Equivalence of Tokenization in Multimodal LLM",
+    "mPLUG-Owl3: Towards Long Image-Sequence Understanding in Multi-Modal Large Language Models"
+  ],
+  "paper_count": 16,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Open-ended Knowledge-based Visual Question Answering, a benchmark used to assess multimodal question answering requiring external knowledge.",
+      "paper": "DEEM: Diffusion models serve as the eyes of large language models for image perception",
+      "original_name": "OK-VQA"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "CRAFT: Customizing LLMs by Creating and Retrieving from Specialized Toolsets",
+      "evidence": "In order to assess multimodal vision and language capabilities of DEEM , we conduct evaluation against current SOTA LMMs ... across several tasks, including ... visual question answering on ... OKVQA (Marino et al., 2019) (Section 3.2).",
+      "paper_count": 9,
+      "papers_by_conference": {
+        "iclr24": [
+          "CRAFT: Customizing LLMs by Creating and Retrieving from Specialized Toolsets"
+        ],
+        "neurips24": [
+          "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens",
+          "Accelerating Pre-training of Multimodal LLMs via Chain-of-Sight",
+          "Multimodal Task Vectors Enable Many-Shot Multimodal In-Context Learning"
+        ],
+        "iclr25": [
+          "DEEM: Diffusion models serve as the eyes of large language models for image perception",
+          "mPLUG-Owl3: Towards Long Image-Sequence Understanding in Multi-Modal Large Language Models",
+          "A-Bench: Are LMMs Masters at Evaluating AI-generated Images?",
+          "Backdooring Vision-Language Models with Out-Of-Distribution Data"
+        ],
+        "icml25": [
+          "DistiLLM-2: A Contrastive Approach Boosts the Distillation of LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-context learning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-context understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Leveraging Visual Tokens for Extended Text Contexts in Multi-Modal Learning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Leveraging Visual Tokens for Extended Text Contexts in Multi-Modal Learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "World knowledge",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Visual Riddles: a Commonsense and World Knowledge Challenge for Large Vision and Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Visual Riddles: a Commonsense and World Knowledge Challenge for Large Vision and Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "DEEM: Diffusion models serve as the eyes of large language models for image perception",
+      "evidence": "\u201cwe conduct evaluation against current SOTA LMMs including ... across several tasks, including image captioning on COCO ... visual question answering on VQAv2, OKVQA, GQA, VizWiz, and VisDial\u201d",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "DEEM: Diffusion models serve as the eyes of large language models for image perception"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the provided literature, OK-VQA is consistently defined as a benchmark for Open-ended Knowledge-based Visual Question Answering. A recurring feature highlighted in all definitions is its requirement for external or outside knowledge, beyond what is directly depicted in the image, to answer questions correctly. The most prevalent use of OK-VQA is to evaluate the behavior of \"Visual question answering,\" with multiple papers using it to assess the \"visual perception and reasoning abilities\" of multimodal models. It is also used more broadly to measure \"Multimodal understanding.\" A smaller set of sources list it as an instrument for evaluating \"In-context and few-shot learning\" and \"Long-context processing,\" and it is also studied in relation to \"Commonsense understanding.\" In practice, OK-VQA is frequently employed alongside other VQA datasets, with papers often citing its use in conjunction with benchmarks such as VQAv2, GQA, and VizWiz.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "A-Bench: Are LMMs Masters at Evaluating AI-generated Images?",
+      "Backdooring Vision-Language Models with Out-Of-Distribution Data",
+      "Benchmarking Multimodal Retrieval Augmented Generation with Dynamic VQA Dataset and Self-adaptive Planning Agent",
+      "DEEM: Diffusion models serve as the eyes of large language models for image perception",
+      "MRAG-Bench: Vision-Centric Evaluation for Retrieval-Augmented Multimodal Models",
+      "Towards Semantic Equivalence of Tokenization in Multimodal LLM",
+      "mPLUG-Owl3: Towards Long Image-Sequence Understanding in Multi-Modal Large Language Models"
+    ],
+    "acl25": [
+      "BOOKCOREF: Coreference Resolution at Book Scale",
+      "BenchmarkingLLMs andLLM-based Agents in Practical Vulnerability Detection for Code Repositories",
+      "FaithfulRAG: Fact-Level Conflict Modeling for Context-Faithful Retrieval-Augmented Generation"
+    ],
+    "emnlp25": [
+      "ConsistentChat: Building Skeleton-Guided Consistent Multi-Turn Dialogues for Large Language Models from Scratch",
+      "InMind: EvaluatingLLMs in Capturing and Applying Individual Human Reasoning Styles",
+      "Large Language Models Threaten Language\u2019s Epistemic and Communicative Foundations",
+      "Syntax-Aware Retrieval Augmentation for Neural Symbolic Regression",
+      "Theorem-Validated Reverse Chain-of-Thought Problem Generation for Geometric Reasoning",
+      "VideoEraser: Concept Erasure in Text-to-Video Diffusion Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 7,
+    "acl25": 3,
+    "emnlp25": 6
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25"
+  ]
+}

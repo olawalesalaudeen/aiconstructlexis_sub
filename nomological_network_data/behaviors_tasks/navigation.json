@@ -1,0 +1,155 @@
+{
+  "canonical_name": "Navigation",
+  "type": "behavior",
+  "canonical_definition": "The most prevalent usage of navigation in the provided literature describes the behavior of an agent moving through an environment to reach a target location or object. This is commonly conceptualized in spatial contexts, such as moving through a Minecraft world to find resources, or traversing a simple grid with discrete \"up, down, left, and right\" actions. A more fine-grained view defines it as \"low-level navigation,\" which involves executing precise, atomic actions like moving forward or rotating. While most definitions focus on the observable action, a smaller set of work frames it as a \"cognitive ability\" to understand spatial layouts and plan routes for tasks like \"room-to-room\" or \"object retrieval\". A distinct, less frequent application of the term extends it to non-spatial domains, where it refers to a web agent's interaction with a webpage to complete a task. To measure this behavior, researchers employ several benchmarks. The provided papers report using MineDojo to evaluate navigation alongside other behaviors, TextWorld for navigating text-based mazes, and BabyAI for testing agents across different navigation task types.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Navigation",
+    "Grid world navigation",
+    "Low-level navigation",
+    "Webpage interaction",
+    "Spatial navigation"
+  ],
+  "papers": [
+    "Direct Judgement Preference Optimization",
+    "From Tens of Hours to Tens of Thousands: Scaling Back-Translation for Speech Recognition",
+    "BALROG: Benchmarking Agentic LLM and VLM Reasoning On Games",
+    "MaestroMotif: Skill Design from Artificial Intelligence Feedback",
+    "ThinkBot: Embodied Instruction Following with Thought Chain Reasoning",
+    "Cradle: Empowering Foundation Agents towards General Computer Control",
+    "EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents",
+    "Hypo3D: Exploring Hypothetical Reasoning in 3D",
+    "LARM: Large Auto-Regressive Model for Long-Horizon Embodied Intelligence",
+    "LMAct: A Benchmark for In-Context Imitation Learning with Long Multimodal Demonstrations",
+    "World Model Implanting for Test-time Adaptation of Embodied Agents",
+    "Grounding Multimodal Large Language Models in Actions",
+    "Is A Picture Worth A Thousand Words? Delving Into Spatial Reasoning for Vision Language Models",
+    "Policy Improvement using Language Feedback Models",
+    "RL-GPT: Integrating Reinforcement Learning and Code-as-policy",
+    "AgentBoard: An Analytical Evaluation Board of Multi-turn LLM Agents",
+    "HourVideo: 1-Hour Video-Language Understanding"
+  ],
+  "paper_count": 17,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Moving through the Minecraft environment to locate targets such as trees, cows, stones, or underground resources.",
+      "paper": "RL-GPT: Integrating Reinforcement Learning and Code-as-policy",
+      "original_name": "Navigation"
+    },
+    {
+      "text": "Moving a player through a grid world with up, down, left, and right actions to reach a target location.",
+      "paper": "LMAct: A Benchmark for In-Context Imitation Learning with Long Multimodal Demonstrations",
+      "original_name": "Grid world navigation"
+    },
+    {
+      "text": "Executing precise movement and orientation adjustments in a simulated environment to reach a target location or object, using atomic actions like moving forward or rotating.",
+      "paper": "EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents",
+      "original_name": "Low-level navigation"
+    },
+    {
+      "text": "The process of a web agent taking a sequence of actions to engage with a webpage environment in order to complete a user-specified task.",
+      "paper": "Direct Judgement Preference Optimization",
+      "original_name": "Webpage interaction"
+    },
+    {
+      "text": "The ability to efficiently move within a spatial environment to reach a target location.",
+      "paper": "AgentBoard: An Analytical Evaluation Board of Multi-turn LLM Agents",
+      "original_name": "Spatial navigation"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BabyAI",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Grounding Multimodal Large Language Models in Actions",
+      "evidence": "Agents are tested across five different types of navigation tasks, see Appendix A.",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "Grounding Multimodal Large Language Models in Actions"
+        ],
+        "iclr25": [
+          "BALROG: Benchmarking Agentic LLM and VLM Reasoning On Games"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TextWorld",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "BALROG: Benchmarking Agentic LLM and VLM Reasoning On Games",
+      "evidence": "In each game, the agent needs to complete the task while navigating a maze of different rooms",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "BALROG: Benchmarking Agentic LLM and VLM Reasoning On Games"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MineDojo",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LARM: Large Auto-Regressive Model for Long-Horizon Embodied Intelligence",
+      "evidence": "\"The behaviors that can be conducted in MineDojo primarily include navigation, harvest, combat, and craft.\"",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "LARM: Large Auto-Regressive Model for Long-Horizon Embodied Intelligence"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 3,
+  "characterization": "The most prevalent usage of navigation in the provided literature describes the behavior of an agent moving through an environment to reach a target location or object. This is commonly conceptualized in spatial contexts, such as moving through a Minecraft world to find resources, or traversing a simple grid with discrete \"up, down, left, and right\" actions. A more fine-grained view defines it as \"low-level navigation,\" which involves executing precise, atomic actions like moving forward or rotating. While most definitions focus on the observable action, a smaller set of work frames it as a \"cognitive ability\" to understand spatial layouts and plan routes for tasks like \"room-to-room\" or \"object retrieval\". A distinct, less frequent application of the term extends it to non-spatial domains, where it refers to a web agent's interaction with a webpage to complete a task. To measure this behavior, researchers employ several benchmarks. The provided papers report using MineDojo to evaluate navigation alongside other behaviors, TextWorld for navigating text-based mazes, and BabyAI for testing agents across different navigation task types.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "Grounding Multimodal Large Language Models in Actions",
+      "Is A Picture Worth A Thousand Words? Delving Into Spatial Reasoning for Vision Language Models",
+      "Policy Improvement using Language Feedback Models",
+      "RL-GPT: Integrating Reinforcement Learning and Code-as-policy",
+      "AgentBoard: An Analytical Evaluation Board of Multi-turn LLM Agents",
+      "HourVideo: 1-Hour Video-Language Understanding"
+    ],
+    "iclr25": [
+      "BALROG: Benchmarking Agentic LLM and VLM Reasoning On Games",
+      "MaestroMotif: Skill Design from Artificial Intelligence Feedback",
+      "ThinkBot: Embodied Instruction Following with Thought Chain Reasoning"
+    ],
+    "icml25": [
+      "Cradle: Empowering Foundation Agents towards General Computer Control",
+      "EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents",
+      "Hypo3D: Exploring Hypothetical Reasoning in 3D",
+      "LARM: Large Auto-Regressive Model for Long-Horizon Embodied Intelligence",
+      "LMAct: A Benchmark for In-Context Imitation Learning with Long Multimodal Demonstrations",
+      "World Model Implanting for Test-time Adaptation of Embodied Agents"
+    ],
+    "emnlp25": [
+      "Direct Judgement Preference Optimization",
+      "From Tens of Hours to Tens of Thousands: Scaling Back-Translation for Speech Recognition"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 6,
+    "iclr25": 3,
+    "icml25": 6,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

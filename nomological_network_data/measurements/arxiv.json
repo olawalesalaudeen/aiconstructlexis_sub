@@ -1,0 +1,104 @@
+{
+  "canonical_name": "Arxiv",
+  "type": "measurement",
+  "canonical_definition": "The Arxiv dataset is predominantly characterized as a benchmark representing a directed citation network of Computer Science papers, and in this capacity, it is used to measure `Node classification`. A separate line of work, however, utilizes Arxiv as a text corpus for a range of natural language processing evaluations. These text-based applications include assessing zero-shot language modeling perplexity on paper abstracts and evaluating long-document summarization, with one study noting its \"extremely over-length document\" poses a challenge for certain methods. The dataset is also employed as an out-of-domain benchmark to evaluate zero-shot generalization and is listed as a measurement instrument for `Multilingual generalization`. Finally, a specific variant named \"ArxivCorpus\" is defined as a collection of paper abstracts for pretraining models and evaluating text regeneration, using a test set with a temporal split to ensure evaluation on unseen data.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Arxiv",
+    "ArxivCorpus"
+  ],
+  "papers": [
+    "Enhancing Hyperbole and Metaphor Detection with Their Bidirectional Dynamic Interaction and Emotion Knowledge",
+    "Mind the Gesture: EvaluatingAISensitivity to Culturally Offensive Non-Verbal Gestures",
+    "Energy-Based Diffusion Language Models for Text Generation",
+    "GOFA: A Generative One-For-All Model for Joint Graph Language Modeling",
+    "Latent Thought Models with Variational Bayes Inference-Time Computation",
+    "Learning Dynamics in Continual Pre-Training for Large Language Models",
+    "DAPE: Data-Adaptive Positional Encoding for Length Extrapolation",
+    "LLMs as Zero-shot Graph Learners: Alignment of GNN Representations with LLM Token Embeddings",
+    "Text-space Graph Foundation Models: Comprehensive Benchmarks and New Insights"
+  ],
+  "paper_count": 9,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A benchmark dataset representing a directed citation network of Computer Science papers from the arXiv preprint server, used for evaluating tasks like node classification.",
+      "paper": "LLMs as Zero-shot Graph Learners: Alignment of GNN Representations with LLM Token Embeddings",
+      "original_name": "Arxiv"
+    },
+    {
+      "text": "Dataset of Arxiv paper abstracts used for pretraining and evaluating text regeneration, with test sets containing texts published after January 2024 to ensure strict unseen evaluation.",
+      "paper": "Mind the Gesture: EvaluatingAISensitivity to Culturally Offensive Non-Verbal Gestures",
+      "original_name": "ArxivCorpus"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Node classification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "LLMs as Zero-shot Graph Learners: Alignment of GNN Representations with LLM Token Embeddings",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "LLMs as Zero-shot Graph Learners: Alignment of GNN Representations with LLM Token Embeddings"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Zero-shot generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Energy-Based Diffusion Language Models for Text Generation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Energy-Based Diffusion Language Models for Text Generation"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "The Arxiv dataset is predominantly characterized as a benchmark representing a directed citation network of Computer Science papers, and in this capacity, it is used to measure `Node classification`. A separate line of work, however, utilizes Arxiv as a text corpus for a range of natural language processing evaluations. These text-based applications include assessing zero-shot language modeling perplexity on paper abstracts and evaluating long-document summarization, with one study noting its \"extremely over-length document\" poses a challenge for certain methods. The dataset is also employed as an out-of-domain benchmark to evaluate zero-shot generalization and is listed as a measurement instrument for `Multilingual generalization`. Finally, a specific variant named \"ArxivCorpus\" is defined as a collection of paper abstracts for pretraining models and evaluating text regeneration, using a test set with a temporal split to ensure evaluation on unseen data.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "DAPE: Data-Adaptive Positional Encoding for Length Extrapolation",
+      "LLMs as Zero-shot Graph Learners: Alignment of GNN Representations with LLM Token Embeddings",
+      "Text-space Graph Foundation Models: Comprehensive Benchmarks and New Insights"
+    ],
+    "iclr25": [
+      "Energy-Based Diffusion Language Models for Text Generation",
+      "GOFA: A Generative One-For-All Model for Joint Graph Language Modeling"
+    ],
+    "acl25": [
+      "Enhancing Hyperbole and Metaphor Detection with Their Bidirectional Dynamic Interaction and Emotion Knowledge",
+      "Mind the Gesture: EvaluatingAISensitivity to Culturally Offensive Non-Verbal Gestures"
+    ],
+    "icml25": [
+      "Latent Thought Models with Variational Bayes Inference-Time Computation",
+      "Learning Dynamics in Continual Pre-Training for Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 3,
+    "iclr25": 2,
+    "acl25": 2,
+    "icml25": 2
+  },
+  "conferences": [
+    "acl25",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "canonical_name": "Definition generation",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, definition generation is a behavior involving the production of explanatory text for a given term, word, or entity. The most common framing is generating a natural language definition for a target word based on its usage in a specific context, with stated goals of ensuring the output is grammatical, fluent, and faithful. A related application is generating \"accessible explanations\" of specialized terminology to support non-expert users. A different operationalization, termed \"Entity description generation,\" involves producing a more structured output\u2014a title and an opening sentence\u2014for an entity by conditioning the generation on retrieved contextual passages from sources like Wikipedia. The quality of the generated text is a recurring theme, and one paper reports using an `LLM-as-a-judge` to \"provide qualitative insights into the quality of generated descriptions\" (\"Concept-pedia: a Wide-coverage Semantically-annotated Multimodal Dataset\"). This behavior is studied in relation to `Hallucination`, as errors in generation can manifest as \"gross hallucinations.\" It is also associated with `Knowledge transferability`.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Terminology explanation",
+    "Entity description generation",
+    "Definition generation"
+  ],
+  "papers": [
+    "Concept-pedia: a Wide-coverage Semantically-annotated Multimodal Dataset",
+    "Jigsaw-Puzzles: From Seeing to Understanding to Reasoning in Vision-Language Models",
+    "MicroEdit: Neuron-level Knowledge Disentanglement and Localization in Lifelong Model Editing",
+    "RAG+: Enhancing Retrieval-Augmented Generation with Application-Aware Reasoning",
+    "Towards Author-informedNLP: Mind the Social Bias"
+  ],
+  "paper_count": 5,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Producing a title and definition (opening sentence) for an entity mention by generating text conditioned on retrieved contextual passages.",
+      "paper": "Concept-pedia: a Wide-coverage Semantically-annotated Multimodal Dataset",
+      "original_name": "Entity description generation"
+    },
+    {
+      "text": "Generating accessible explanations of specialized or unfamiliar terms to support non-expert users in evaluating factual consistency.",
+      "paper": "Towards Author-informedNLP: Mind the Social Bias",
+      "original_name": "Terminology explanation"
+    },
+    {
+      "text": "Producing a natural language definition for a target word given its usage in context, ensuring grammaticality, fluency, and faithfulness to meaning.",
+      "paper": "Jigsaw-Puzzles: From Seeing to Understanding to Reasoning in Vision-Language Models",
+      "original_name": "Definition generation"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Knowledge transferability",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Jigsaw-Puzzles: From Seeing to Understanding to Reasoning in Vision-Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Jigsaw-Puzzles: From Seeing to Understanding to Reasoning in Vision-Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "MicroEdit: Neuron-level Knowledge Disentanglement and Localization in Lifelong Model Editing",
+      "evidence": "\u201cthe improved accuracy of the definitions, which helps minimize the hallucinations occasionally observed in the pre-trained model.\u201d",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "MicroEdit: Neuron-level Knowledge Disentanglement and Localization in Lifelong Model Editing"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-as-a-judge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Concept-pedia: a Wide-coverage Semantically-annotated Multimodal Dataset",
+      "evidence": "we employ a Large Language Model (LLM) as a judge (LLM-as-a-Judge) (Gu et al., 2024) to provide qualitative insights into the quality of generated descriptions (Section 5.4).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Concept-pedia: a Wide-coverage Semantically-annotated Multimodal Dataset"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 3,
+  "characterization": "Across the surveyed literature, definition generation is a behavior involving the production of explanatory text for a given term, word, or entity. The most common framing is generating a natural language definition for a target word based on its usage in a specific context, with stated goals of ensuring the output is grammatical, fluent, and faithful. A related application is generating \"accessible explanations\" of specialized terminology to support non-expert users. A different operationalization, termed \"Entity description generation,\" involves producing a more structured output\u2014a title and an opening sentence\u2014for an entity by conditioning the generation on retrieved contextual passages from sources like Wikipedia. The quality of the generated text is a recurring theme, and one paper reports using an `LLM-as-a-judge` to \"provide qualitative insights into the quality of generated descriptions\" (\"Concept-pedia: a Wide-coverage Semantically-annotated Multimodal Dataset\"). This behavior is studied in relation to `Hallucination`, as errors in generation can manifest as \"gross hallucinations.\" It is also associated with `Knowledge transferability`.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Concept-pedia: a Wide-coverage Semantically-annotated Multimodal Dataset",
+      "Jigsaw-Puzzles: From Seeing to Understanding to Reasoning in Vision-Language Models",
+      "MicroEdit: Neuron-level Knowledge Disentanglement and Localization in Lifelong Model Editing",
+      "RAG+: Enhancing Retrieval-Augmented Generation with Application-Aware Reasoning",
+      "Towards Author-informedNLP: Mind the Social Bias"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 5
+  },
+  "conferences": [
+    "emnlp25"
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "canonical_name": "Speech synthesis",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, speech synthesis is most commonly framed as the task of generating human-like speech from text, often referred to as text-to-speech (TTS). This process is frequently operationalized as translating text into sequences of discrete audio tokens, which are then used to synthesize an audible waveform. A second prevalent framing situates the behavior within conversational contexts, where it is described as spoken dialogue generation. This is typically defined as producing a spoken response to a conversational input, though one paper describes the output as a textual response to spoken audio. Less common conceptualizations include speech-to-speech translation, the broader task of text-to-audio generation, and the generation of intermediate representations like clean acoustic tokens. The behavior is evaluated using specific datasets, such as the Free Spoken Digit Dataset for text-to-speech tasks, and dedicated benchmarks for spoken dialogue generation. Additionally, one study reports a directional relationship where chain-of-thought reasoning is proposed to cause speech synthesis.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Text-to-speech generation",
+    "Spoken dialogue generation",
+    "Speech-to-speech translation",
+    "Spoken dialog generation",
+    "Spoken dialogue response generation",
+    "Text-to-audio generation",
+    "Speech synthesis",
+    "Acoustic token generation"
+  ],
+  "papers": [
+    "GenSE: Generative Speech Enhancement via Language Models using Hierarchical Modeling",
+    "HALL-E: Hierarchical Neural Codec Language Model for Minute-Long Zero-Shot Text-to-Speech Synthesis",
+    "MixEval-X: Any-to-any Evaluations from Real-world Data Mixture",
+    "Scaling Speech-Text Pre-training with Synthetic Interleaved Data",
+    "VoxDialogue: Can Spoken Dialogue Systems Understand Information Beyond Words?",
+    "Paralinguistics-Aware Speech-Empowered Large Language Models for Natural Conversation",
+    "SD-Eval: A  Benchmark Dataset for Spoken Dialogue Understanding Beyond Words",
+    "UniAudio 1.5: Large Language Model-Driven Audio Codec is A Few-Shot Audio Task Learner"
+  ],
+  "paper_count": 8,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The task of synthesizing human-like speech from a given text input.",
+      "paper": "UniAudio 1.5: Large Language Model-Driven Audio Codec is A Few-Shot Audio Task Learner",
+      "original_name": "Text-to-speech generation"
+    },
+    {
+      "text": "Generating speech audio from written text or intermediate text responses.",
+      "paper": "Paralinguistics-Aware Speech-Empowered Large Language Models for Natural Conversation",
+      "original_name": "Text-to-speech synthesis"
+    },
+    {
+      "text": "The observable task of generating a textual response based on a spoken audio input, as part of a conversation.",
+      "paper": "SD-Eval: A  Benchmark Dataset for Spoken Dialogue Understanding Beyond Words",
+      "original_name": "Spoken dialogue generation"
+    },
+    {
+      "text": "The task of translating spoken language in a source language directly into spoken language in a target language.",
+      "paper": "Paralinguistics-Aware Speech-Empowered Large Language Models for Natural Conversation",
+      "original_name": "Speech-to-speech translation"
+    },
+    {
+      "text": "Generating a spoken response to a spoken conversational input.",
+      "paper": "Paralinguistics-Aware Speech-Empowered Large Language Models for Natural Conversation",
+      "original_name": "Spoken dialog generation"
+    },
+    {
+      "text": "Producing the next assistant utterance in a multi-turn spoken conversation given prior user utterances and assistant replies.",
+      "paper": "VoxDialogue: Can Spoken Dialogue Systems Understand Information Beyond Words?",
+      "original_name": "Spoken dialogue response generation"
+    },
+    {
+      "text": "The observable task of generating a novel audio clip that corresponds to a given textual description.",
+      "paper": "MixEval-X: Any-to-any Evaluations from Real-world Data Mixture",
+      "original_name": "Text-to-audio generation"
+    },
+    {
+      "text": "The observable process of generating audible speech waveforms from an internal representation, such as discrete speech tokens.",
+      "paper": "Scaling Speech-Text Pre-training with Synthetic Interleaved Data",
+      "original_name": "Speech synthesis"
+    },
+    {
+      "text": "Generating clean acoustic tokens conditioned on semantic and noisy acoustic prompts.",
+      "paper": "GenSE: Generative Speech Enhancement via Language Models using Hierarchical Modeling",
+      "original_name": "Acoustic token generation"
+    }
+  ],
+  "definition_count": 9,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Chain-of-thought reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Paralinguistics-Aware Speech-Empowered Large Language Models for Natural Conversation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Paralinguistics-Aware Speech-Empowered Large Language Models for Natural Conversation"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, speech synthesis is most commonly framed as the task of generating human-like speech from text, often referred to as text-to-speech (TTS). This process is frequently operationalized as translating text into sequences of discrete audio tokens, which are then used to synthesize an audible waveform. A second prevalent framing situates the behavior within conversational contexts, where it is described as spoken dialogue generation. This is typically defined as producing a spoken response to a conversational input, though one paper describes the output as a textual response to spoken audio. Less common conceptualizations include speech-to-speech translation, the broader task of text-to-audio generation, and the generation of intermediate representations like clean acoustic tokens. The behavior is evaluated using specific datasets, such as the Free Spoken Digit Dataset for text-to-speech tasks, and dedicated benchmarks for spoken dialogue generation. Additionally, one study reports a directional relationship where chain-of-thought reasoning is proposed to cause speech synthesis.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "Paralinguistics-Aware Speech-Empowered Large Language Models for Natural Conversation",
+      "SD-Eval: A  Benchmark Dataset for Spoken Dialogue Understanding Beyond Words",
+      "UniAudio 1.5: Large Language Model-Driven Audio Codec is A Few-Shot Audio Task Learner"
+    ],
+    "iclr25": [
+      "GenSE: Generative Speech Enhancement via Language Models using Hierarchical Modeling",
+      "HALL-E: Hierarchical Neural Codec Language Model for Minute-Long Zero-Shot Text-to-Speech Synthesis",
+      "MixEval-X: Any-to-any Evaluations from Real-world Data Mixture",
+      "Scaling Speech-Text Pre-training with Synthetic Interleaved Data",
+      "VoxDialogue: Can Spoken Dialogue Systems Understand Information Beyond Words?"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 3,
+    "iclr25": 5
+  },
+  "conferences": [
+    "iclr25",
+    "neurips24"
+  ]
+}

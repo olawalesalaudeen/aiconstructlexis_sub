@@ -1,0 +1,88 @@
+{
+  "canonical_name": "FiQA",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, FiQA is consistently characterized as a dataset, frequently cited as part of the BEIR benchmark. The most prevalent use of FiQA is to evaluate models on information retrieval and question answering tasks, specifically within the financial domain. Papers most commonly describe it as a benchmark for `financial question answering` and as a `single-hop retrieval benchmark`. One paper notes that its corpus is composed of \"human-written responses to the search queries in the dataset\" (\"Attention in Large Language Models Yields Efficient Zero-Shot Re-Rankers\"). A smaller line of work also uses FiQA to measure `sentiment analysis`, where models predict sentiments in financial texts. In terms of operationalization, one study reports using the ROUGE-L metric for downstream evaluation with FiQA, while another uses it to generate and assess adversarial passages in corpus-poisoning experiments.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "FiQA"
+  ],
+  "papers": [
+    "PBI-Attack: Prior-Guided Bimodal Interactive Black-Box Jailbreak Attack for Toxicity Maximization",
+    "SwiftKV: Fast Prefill-Optimized Inference with Knowledge-Preserving Model Transformation",
+    "Attention in Large Language Models Yields Efficient Zero-Shot Re-Rankers",
+    "Teaching LLMs How to Learn with Contextual Fine-Tuning",
+    "AdvisorQA: Towards Helpful and Harmless Advice-seeking Question Answering with Collective Intelligence",
+    "WaterPool: A Language Model Watermark Mitigating Trade-Offs among Imperceptibility, Efficacy and Robustness"
+  ],
+  "paper_count": 6,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A BEIR dataset used as a single-hop retrieval benchmark where passages are human-written responses to search queries.",
+      "paper": "Attention in Large Language Models Yields Efficient Zero-Shot Re-Rankers",
+      "original_name": "FiQA"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Sentiment analysis",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Teaching LLMs How to Learn with Contextual Fine-Tuning",
+      "evidence": "In the financial domain, we consider (1) the sentiment analysis task FiQA (Xie et al., 2023) where LLMs predict sentiments categorized as \u2019positive\u2019, \u2019neutral\u2019, or \u2019negative\u2019 in financial texts.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Teaching LLMs How to Learn with Contextual Fine-Tuning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Financial question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "PBI-Attack: Prior-Guided Bimodal Interactive Black-Box Jailbreak Attack for Toxicity Maximization",
+      "evidence": "\u201cFiQA (Maia et al., 2018), Financial QA\u201d",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "PBI-Attack: Prior-Guided Bimodal Interactive Black-Box Jailbreak Attack for Toxicity Maximization"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, FiQA is consistently characterized as a dataset, frequently cited as part of the BEIR benchmark. The most prevalent use of FiQA is to evaluate models on information retrieval and question answering tasks, specifically within the financial domain. Papers most commonly describe it as a benchmark for `financial question answering` and as a `single-hop retrieval benchmark`. One paper notes that its corpus is composed of \"human-written responses to the search queries in the dataset\" (\"Attention in Large Language Models Yields Efficient Zero-Shot Re-Rankers\"). A smaller line of work also uses FiQA to measure `sentiment analysis`, where models predict sentiments in financial texts. In terms of operationalization, one study reports using the ROUGE-L metric for downstream evaluation with FiQA, while another uses it to generate and assess adversarial passages in corpus-poisoning experiments.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Attention in Large Language Models Yields Efficient Zero-Shot Re-Rankers",
+      "Teaching LLMs How to Learn with Contextual Fine-Tuning"
+    ],
+    "naacl25": [
+      "AdvisorQA: Towards Helpful and Harmless Advice-seeking Question Answering with Collective Intelligence",
+      "WaterPool: A Language Model Watermark Mitigating Trade-Offs among Imperceptibility, Efficacy and Robustness"
+    ],
+    "emnlp25": [
+      "PBI-Attack: Prior-Guided Bimodal Interactive Black-Box Jailbreak Attack for Toxicity Maximization",
+      "SwiftKV: Fast Prefill-Optimized Inference with Knowledge-Preserving Model Transformation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "naacl25": 2,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "naacl25"
+  ]
+}

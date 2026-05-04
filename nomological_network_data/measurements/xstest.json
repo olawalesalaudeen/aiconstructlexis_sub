@@ -1,0 +1,288 @@
+{
+  "canonical_name": "XSTEST",
+  "type": "measurement",
+  "canonical_definition": "Across the surveyed literature, XSTEST is predominantly characterized as a benchmark for evaluating exaggerated safety behaviors in language models, specifically their tendency to over-refuse benign requests. The dataset is consistently defined as comprising safe prompts that are \"benign but seemingly risky\" or contain \"trigger words,\" with multiple papers citing examples like \u201cHow can I kill a Python process?\u201d to illustrate its contents. The core purpose is to assess whether a model inappropriately refuses legitimate requests it should comply with, a phenomenon described as \"over-defenses\" or \"exaggerated safety concerns.\" Papers use XSTEST to operationalize and measure several related concepts, most frequently `Refusal to answer`, but also the broader constructs of `Safety` and `Harmlessness`. It is also used to evaluate behaviors such as `Content moderation` and `Harmful content detection`. Evaluation typically involves measuring the model's \"compliance ratio\" or \"refusal rates\" on the prompts, with one study noting a framework that classifies responses into full compliance, full refusal, or partial refusal. While most sources describe the prompts as safe, one paper defines the dataset as containing both \"safe and harmful samples\" to evaluate safety defenses. Thus, the prevailing use of XSTEST is to monitor and quantify over-cautious refusals in safety-aligned models.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "XSTEST",
+    "XSTest"
+  ],
+  "papers": [
+    "ATLAS",
+    "AfriMed-QA: A Pan-African, Multi-Specialty, Medical Question-Answering Benchmark Dataset",
+    "ChineseSafetyQA: A Safety Short-form Factuality Benchmark for Large Language Models",
+    "Diffusion Models Through a Global Lens: Are They Culturally Inclusive?",
+    "Enhancing Unsupervised Sentence Embeddings via Knowledge-Driven Data Augmentation andGaussian-Decayed Contrastive Learning",
+    "Marco-Bench-MIF: On Multilingual Instruction-Following Capability of Large Language",
+    "ToolHop: A Query-Driven Benchmark for Evaluating Large Language Models in Multi-Hop Tool Use",
+    "Towards RobustESGAnalysis Against Greenwashing Risks: Aspect-Action Analysis with Cross-Category Generalization",
+    "Data to Defense: The Role of Curation in Aligning Large Language Models Against Safety Compromise",
+    "Igniting Creative Writing in Small Language Models:LLM-as-a-Judge versus Multi-Agent Refined Rewards",
+    "Improving Clustering with Positive Pairs Generated fromLLM-Driven Labels",
+    "Improving Handshape Representations for Sign Language Processing: A Graph Neural Network Approach",
+    "Less is More: The Effectiveness of Compact Typological Language Representations",
+    "Mitigating the Privacy Issues in Retrieval-Augmented Generation (RAG) via Pure Synthetic Data",
+    "PACHAT: Persona-Aware Speech Assistant for Multi-party Dialogue",
+    "RED: Unleashing Token-Level Rewards from Holistic Feedback via Reward Redistribution",
+    "SQLWOZ: A Realistic Task-Oriented Dialogue Dataset withSQL-Based Dialogue State Representation for Complex User Requirements",
+    "TCPO: Thought-Centric Preference Optimization for Effective Embodied Decision-making",
+    "The Illusion of Progress: Re-evaluating Hallucination Detection inLLMs",
+    "fLSA: Learning Semantic Structures in Document Collections Using Foundation Models",
+    "$R^2$-Guard: Robust Reasoning Enabled LLM Guardrail via Knowledge-Enhanced Logical Reasoning",
+    "AutoBencher: Towards Declarative Benchmark Construction",
+    "BingoGuard: LLM Content Moderation Tools with Risk Levels",
+    "Do as I do (Safely): Mitigating Task-Specific Fine-tuning Risks in Large Language Models",
+    "How Does Vision-Language Adaptation Impact the Safety of Vision Language Models?",
+    "OLMoE: Open Mixture-of-Experts Language Models",
+    "On Calibration of LLM-based Guard Models for Reliable Content Moderation",
+    "RM-Bench: Benchmarking Reward Models of Language Models with Subtlety and Style",
+    "Robust LLM safeguarding via refusal feature adversarial training",
+    "Semantic Loss Guided Data Efficient Supervised Fine Tuning for Safe Responses in LLMs",
+    "Surgical, Cheap, and Flexible: Mitigating False Refusal in Language Models via Single Vector Ablation",
+    "Aligning Spoken Dialogue Models from User Interactions",
+    "Improving LLM Safety Alignment with Dual-Objective Optimization",
+    "Just Enough Shifts: Mitigating Over-Refusal in Aligned Language Models with Targeted Representation Fine-Tuning",
+    "Layer-wise Alignment: Examining Safety Alignment Across Image Encoder Layers in Vision Language Models",
+    "OR-Bench: An Over-Refusal Benchmark for Large Language Models",
+    "STAIR: Improving Safety Alignment with Introspective Reasoning",
+    "Safety Reasoning with Guidelines",
+    "Test-Time Preference Optimization: On-the-Fly Alignment via Iterative Textual Feedback",
+    "The Geometry of Refusal in Large Language Models: Concept Cones and Representational Independence",
+    "A Zero-Shot Open-Vocabulary Pipeline for Dialogue Understanding",
+    "AI-LieDar : Examine the Trade-off Between Utility and Truthfulness inLLMAgents",
+    "Language Models Largely Exhibit Human-like Constituent Ordering Preferences",
+    "Uncovering Bias in Large Vision-Language Models at Scale with Counterfactuals",
+    "Enhancing Multiple Dimensions of Trustworthiness in LLMs via Sparse Activation Control",
+    "The Art of Saying No: Contextual Noncompliance in Language Models",
+    "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback"
+  ],
+  "paper_count": 47,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A dataset comprising 200 safe prompts designed to assess exaggerated safety concerns, where the model should not hesitate to respond despite the presence of trigger words.",
+      "paper": "Enhancing Multiple Dimensions of Trustworthiness in LLMs via Sparse Activation Control",
+      "original_name": "XSTEST"
+    },
+    {
+      "text": "A benchmark of benign but seemingly risky requests used to check whether models over-refuse and to assess compliance on safe prompts.",
+      "paper": "Robust LLM safeguarding via refusal feature adversarial training",
+      "original_name": "XSTest"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Refusal to answer",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Robust LLM safeguarding via refusal feature adversarial training",
+      "evidence": "",
+      "paper_count": 5,
+      "papers_by_conference": {
+        "iclr25": [
+          "Robust LLM safeguarding via refusal feature adversarial training"
+        ],
+        "icml25": [
+          "Just Enough Shifts: Mitigating Over-Refusal in Aligned Language Models with Targeted Representation Fine-Tuning",
+          "The Geometry of Refusal in Large Language Models: Concept Cones and Representational Independence",
+          "Improving LLM Safety Alignment with Dual-Objective Optimization"
+        ],
+        "emnlp25": [
+          "Data to Defense: The Role of Curation in Aligning Large Language Models Against Safety Compromise"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Safety",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "neurips24": [
+          "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback"
+        ],
+        "icml25": [
+          "Test-Time Preference Optimization: On-the-Fly Alignment via Iterative Textual Feedback",
+          "Aligning Spoken Dialogue Models from User Interactions"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmlessness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "AI-LieDar : Examine the Trade-off Between Utility and Truthfulness inLLMAgents",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "naacl25": [
+          "AI-LieDar : Examine the Trade-off Between Utility and Truthfulness inLLMAgents"
+        ],
+        "icml25": [
+          "STAIR: Improving Safety Alignment with Introspective Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmful content detection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "$R^2$-Guard: Robust Reasoning Enabled LLM Guardrail via Knowledge-Enhanced Logical Reasoning",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "$R^2$-Guard: Robust Reasoning Enabled LLM Guardrail via Knowledge-Enhanced Logical Reasoning",
+          "On Calibration of LLM-based Guard Models for Reliable Content Moderation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmful request refusal",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "AutoBencher: Towards Declarative Benchmark Construction",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "AutoBencher: Towards Declarative Benchmark Construction"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Overrefusal",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Surgical, Cheap, and Flexible: Mitigating False Refusal in Language Models via Single Vector Ablation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Surgical, Cheap, and Flexible: Mitigating False Refusal in Language Models via Single Vector Ablation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmfulness detection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Language Models Largely Exhibit Human-like Constituent Ordering Preferences",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Language Models Largely Exhibit Human-like Constituent Ordering Preferences"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Content moderation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Uncovering Bias in Large Vision-Language Models at Scale with Counterfactuals",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Uncovering Bias in Large Vision-Language Models at Scale with Counterfactuals"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 8,
+  "incoming_relationship_count": 8,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the surveyed literature, XSTEST is predominantly characterized as a benchmark for evaluating exaggerated safety behaviors in language models, specifically their tendency to over-refuse benign requests. The dataset is consistently defined as comprising safe prompts that are \"benign but seemingly risky\" or contain \"trigger words,\" with multiple papers citing examples like \u201cHow can I kill a Python process?\u201d to illustrate its contents. The core purpose is to assess whether a model inappropriately refuses legitimate requests it should comply with, a phenomenon described as \"over-defenses\" or \"exaggerated safety concerns.\" Papers use XSTEST to operationalize and measure several related concepts, most frequently `Refusal to answer`, but also the broader constructs of `Safety` and `Harmlessness`. It is also used to evaluate behaviors such as `Content moderation` and `Harmful content detection`. Evaluation typically involves measuring the model's \"compliance ratio\" or \"refusal rates\" on the prompts, with one study noting a framework that classifies responses into full compliance, full refusal, or partial refusal. While most sources describe the prompts as safe, one paper defines the dataset as containing both \"safe and harmful samples\" to evaluate safety defenses. Thus, the prevailing use of XSTEST is to monitor and quantify over-cautious refusals in safety-aligned models.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "Enhancing Multiple Dimensions of Trustworthiness in LLMs via Sparse Activation Control",
+      "The Art of Saying No: Contextual Noncompliance in Language Models",
+      "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback"
+    ],
+    "iclr25": [
+      "$R^2$-Guard: Robust Reasoning Enabled LLM Guardrail via Knowledge-Enhanced Logical Reasoning",
+      "AutoBencher: Towards Declarative Benchmark Construction",
+      "BingoGuard: LLM Content Moderation Tools with Risk Levels",
+      "Do as I do (Safely): Mitigating Task-Specific Fine-tuning Risks in Large Language Models",
+      "How Does Vision-Language Adaptation Impact the Safety of Vision Language Models?",
+      "OLMoE: Open Mixture-of-Experts Language Models",
+      "On Calibration of LLM-based Guard Models for Reliable Content Moderation",
+      "RM-Bench: Benchmarking Reward Models of Language Models with Subtlety and Style",
+      "Robust LLM safeguarding via refusal feature adversarial training",
+      "Semantic Loss Guided Data Efficient Supervised Fine Tuning for Safe Responses in LLMs",
+      "Surgical, Cheap, and Flexible: Mitigating False Refusal in Language Models via Single Vector Ablation"
+    ],
+    "naacl25": [
+      "A Zero-Shot Open-Vocabulary Pipeline for Dialogue Understanding",
+      "AI-LieDar : Examine the Trade-off Between Utility and Truthfulness inLLMAgents",
+      "Language Models Largely Exhibit Human-like Constituent Ordering Preferences",
+      "Uncovering Bias in Large Vision-Language Models at Scale with Counterfactuals"
+    ],
+    "acl25": [
+      "ATLAS",
+      "AfriMed-QA: A Pan-African, Multi-Specialty, Medical Question-Answering Benchmark Dataset",
+      "ChineseSafetyQA: A Safety Short-form Factuality Benchmark for Large Language Models",
+      "Diffusion Models Through a Global Lens: Are They Culturally Inclusive?",
+      "Enhancing Unsupervised Sentence Embeddings via Knowledge-Driven Data Augmentation andGaussian-Decayed Contrastive Learning",
+      "Marco-Bench-MIF: On Multilingual Instruction-Following Capability of Large Language",
+      "ToolHop: A Query-Driven Benchmark for Evaluating Large Language Models in Multi-Hop Tool Use",
+      "Towards RobustESGAnalysis Against Greenwashing Risks: Aspect-Action Analysis with Cross-Category Generalization"
+    ],
+    "icml25": [
+      "Aligning Spoken Dialogue Models from User Interactions",
+      "Improving LLM Safety Alignment with Dual-Objective Optimization",
+      "Just Enough Shifts: Mitigating Over-Refusal in Aligned Language Models with Targeted Representation Fine-Tuning",
+      "Layer-wise Alignment: Examining Safety Alignment Across Image Encoder Layers in Vision Language Models",
+      "OR-Bench: An Over-Refusal Benchmark for Large Language Models",
+      "STAIR: Improving Safety Alignment with Introspective Reasoning",
+      "Safety Reasoning with Guidelines",
+      "Test-Time Preference Optimization: On-the-Fly Alignment via Iterative Textual Feedback",
+      "The Geometry of Refusal in Large Language Models: Concept Cones and Representational Independence"
+    ],
+    "emnlp25": [
+      "Data to Defense: The Role of Curation in Aligning Large Language Models Against Safety Compromise",
+      "Igniting Creative Writing in Small Language Models:LLM-as-a-Judge versus Multi-Agent Refined Rewards",
+      "Improving Clustering with Positive Pairs Generated fromLLM-Driven Labels",
+      "Improving Handshape Representations for Sign Language Processing: A Graph Neural Network Approach",
+      "Less is More: The Effectiveness of Compact Typological Language Representations",
+      "Mitigating the Privacy Issues in Retrieval-Augmented Generation (RAG) via Pure Synthetic Data",
+      "PACHAT: Persona-Aware Speech Assistant for Multi-party Dialogue",
+      "RED: Unleashing Token-Level Rewards from Holistic Feedback via Reward Redistribution",
+      "SQLWOZ: A Realistic Task-Oriented Dialogue Dataset withSQL-Based Dialogue State Representation for Complex User Requirements",
+      "TCPO: Thought-Centric Preference Optimization for Effective Embodied Decision-making",
+      "The Illusion of Progress: Re-evaluating Hallucination Detection inLLMs",
+      "fLSA: Learning Semantic Structures in Document Collections Using Foundation Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 3,
+    "iclr25": 11,
+    "naacl25": 4,
+    "acl25": 8,
+    "icml25": 9,
+    "emnlp25": 12
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

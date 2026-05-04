@@ -1,0 +1,301 @@
+{
+  "canonical_name": "Harmfulness detection",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, harmfulness detection is predominantly framed as a classification task where a model judges an input as either harmful or safe. The definitions vary in scope, encompassing the identification of content that is \"dangerous,\" \"conflict-inducing,\" \"violent,\" \"offensive,\" or \"toxic,\" with the most common operationalization being a binary classification of prompts. This behavior is measured using a wide array of benchmarks, including AdvBench, ToxicChat, Harmbench, and MultiJail. While most definitions focus on classifying the content itself, a smaller set of papers frame it as identifying \"unsafe intent\" or assessing \"potential safety risks,\" linking the behavior to the related construct of Safety awareness. The task is not limited to text; some work focuses on \"detecting harmful prompts across languages and modalities,\" using benchmarks like HADES and MM-SafetyBench for image-text combinations and AIAH for audio. In practice, this behavior is implemented through automated tools, such as \"Meta\u2019s Llama-Guard series\" and the \"Rewire API,\" to filter content, with performance commonly evaluated by classification accuracy.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Harmful request discrimination",
+    "Unsafe intent identification",
+    "Problematic turn detection",
+    "Violent communication detection",
+    "Harmfulness detection",
+    "Risk identification",
+    "Offensive content detection",
+    "Toxic content detection",
+    "Harmful prompt detection"
+  ],
+  "papers": [
+    "2025.emnlp-main.586.checklist",
+    "A Good Plan is Hard to Find: Aligning Models with Preferences is Misaligned with What Helps Users",
+    "Data-Efficient Hate Speech Detection via Cross-Lingual Nearest Neighbor Retrieval with Limited Labeled Data",
+    "Diagram-Driven Course Questions Generation",
+    "From General Reward to Targeted Reward: Improving Open-ended Long-context Generation Models",
+    "Improving Clustering with Positive Pairs Generated fromLLM-Driven Labels",
+    "PakBBQ: A Culturally Adapted Bias Benchmark forQA",
+    "RED: Unleashing Token-Level Rewards from Holistic Feedback via Reward Redistribution",
+    "Skip-Thinking: Chunk-wise Chain-of-Thought Distillation Enable Smaller Language Models to Reason Better and Faster",
+    "TheLLMAlready Knows: EstimatingLLM-Perceived Question Difficulty via Hidden Representations",
+    "Correct-Detect: Balancing Performance and Ambiguity Through the Lens of Coreference Resolution inLLMs"
+  ],
+  "paper_count": 11,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The model's explicit judgment of whether a user input constitutes a harmful or dangerous request, typically expressed in structured safety assessments.",
+      "paper": "RED: Unleashing Token-Level Rewards from Holistic Feedback via Reward Redistribution",
+      "original_name": "Harmful request discrimination"
+    },
+    {
+      "text": "The observable process of a model recognizing and articulating the potentially harmful or risky nature of a user's request.",
+      "paper": "From General Reward to Targeted Reward: Improving Open-ended Long-context Generation Models",
+      "original_name": "Unsafe intent identification"
+    },
+    {
+      "text": "Classifying whether a conversational turn is harmful or conflict-inducing based on linguistic and contextual cues.",
+      "paper": "A Good Plan is Hard to Find: Aligning Models with Preferences is Misaligned with What Helps Users",
+      "original_name": "Problematic turn detection"
+    },
+    {
+      "text": "Identifying or classifying communication that is violent in nature.",
+      "paper": "2025.emnlp-main.586.checklist",
+      "original_name": "Violent communication detection"
+    },
+    {
+      "text": "Classifying a prompt as harmful or safe.",
+      "paper": "Skip-Thinking: Chunk-wise Chain-of-Thought Distillation Enable Smaller Language Models to Reason Better and Faster",
+      "original_name": "Harmfulness detection"
+    },
+    {
+      "text": "The model's observable behavior of classifying input text as safe or unsafe based on the presence of harmful content.",
+      "paper": "Improving Clustering with Positive Pairs Generated fromLLM-Driven Labels",
+      "original_name": "Harmful content detection"
+    },
+    {
+      "text": "The model's observable output when classifying whether a given interaction is safe or unsafe, or assigning it to a specific risk category.",
+      "paper": "TheLLMAlready Knows: EstimatingLLM-Perceived Question Difficulty via Hidden Representations",
+      "original_name": "Risk identification"
+    },
+    {
+      "text": "The task of identifying harmful, inappropriate, or offensive content in text.",
+      "paper": "Data-Efficient Hate Speech Detection via Cross-Lingual Nearest Neighbor Retrieval with Limited Labeled Data",
+      "original_name": "Offensive content detection"
+    },
+    {
+      "text": "Identifying and filtering out biased, discriminatory, or violent material in generated dialogues using automated tools like Rewire API.",
+      "paper": "Diagram-Driven Course Questions Generation",
+      "original_name": "Toxic content detection"
+    },
+    {
+      "text": "The observable behavior of classifying an input prompt as harmful or benign based on its content, regardless of language or modality.",
+      "paper": "PakBBQ: A Culturally Adapted Bias Benchmark forQA",
+      "original_name": "Harmful prompt detection"
+    }
+  ],
+  "definition_count": 10,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ToxicChat",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "HarmAug: Effective Data Augmentation for Knowledge Distillation of Safety Guard Models",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "HarmAug: Effective Data Augmentation for Knowledge Distillation of Safety Guard Models"
+        ],
+        "naacl25": [
+          "Language Models Largely Exhibit Human-like Constituent Ordering Preferences"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AdvBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "PakBBQ: A Culturally Adapted Bias Benchmark forQA",
+      "evidence": "\u201cDunsafe dataset comprises harmful instructions derived from established benchmarks, including ADVBENCH\u201d",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "emnlp25": [
+          "PakBBQ: A Culturally Adapted Bias Benchmark forQA",
+          "Skip-Thinking: Chunk-wise Chain-of-Thought Distillation Enable Smaller Language Models to Reason Better and Faster"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OpenAI moderation API",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "HarmAug: Effective Data Augmentation for Knowledge Distillation of Safety Guard Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "HarmAug: Effective Data Augmentation for Knowledge Distillation of Safety Guard Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Harmbench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "HarmAug: Effective Data Augmentation for Knowledge Distillation of Safety Guard Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "HarmAug: Effective Data Augmentation for Knowledge Distillation of Safety Guard Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WildGuardMix",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "HarmAug: Effective Data Augmentation for Knowledge Distillation of Safety Guard Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "HarmAug: Effective Data Augmentation for Knowledge Distillation of Safety Guard Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "XSTEST",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Language Models Largely Exhibit Human-like Constituent Ordering Preferences",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Language Models Largely Exhibit Human-like Constituent Ordering Preferences"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Safety awareness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "From General Reward to Targeted Reward: Improving Open-ended Long-context Generation Models",
+      "evidence": "\u201cwe define two security evaluation metrics: Safety Awareness, measured by accuracy on the binary classification task, and Risk Resistance, measured by accuracy on the 11-class risk identification task\u201d",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "From General Reward to Targeted Reward: Improving Open-ended Long-context Generation Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MultiJail",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "PakBBQ: A Culturally Adapted Bias Benchmark forQA",
+      "evidence": "Table 3 compares the accuracy of detecting harmful prompts for text benchmarks. Table 3(A) shows results for multilingual benchmarks, where OMNIGUARD ... achieves new state-of-the-art performance for 3 benchmarks: MultiJail, RTP-LX, and AyaRedTeaming.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "PakBBQ: A Culturally Adapted Bias Benchmark forQA"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HADES",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "PakBBQ: A Culturally Adapted Bias Benchmark forQA",
+      "evidence": "Hades and Safebench consist of images and text queries where the text itself is harmful.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "PakBBQ: A Culturally Adapted Bias Benchmark forQA"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SafeBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "PakBBQ: A Culturally Adapted Bias Benchmark forQA",
+      "evidence": "Hades and Safebench consist of images and text queries where the text itself is harmful.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "PakBBQ: A Culturally Adapted Bias Benchmark forQA"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MM-SafetyBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "PakBBQ: A Culturally Adapted Bias Benchmark forQA",
+      "evidence": "MM-safetybench, RTVLM, and VLSBench consist of an image and a query where the text query is seemingly benign, but when combined with the respective image, it is harmful",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "PakBBQ: A Culturally Adapted Bias Benchmark forQA"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VLSBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "PakBBQ: A Culturally Adapted Bias Benchmark forQA",
+      "evidence": "MM-safetybench, RTVLM, and VLSBench consist of an image and a query where the text query is seemingly benign, but when combined with the respective image, it is harmful",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "PakBBQ: A Culturally Adapted Bias Benchmark forQA"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AIAH",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "PakBBQ: A Culturally Adapted Bias Benchmark forQA",
+      "evidence": "Table 5 shows the accuracy of detecting harmful queries in audio. OMNIGUARD is able to detect harmful audio inputs with high accuracy across all benchmarks.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "PakBBQ: A Culturally Adapted Bias Benchmark forQA"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 13,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 13,
+  "characterization": "Across the provided literature, harmfulness detection is predominantly framed as a classification task where a model judges an input as either harmful or safe. The definitions vary in scope, encompassing the identification of content that is \"dangerous,\" \"conflict-inducing,\" \"violent,\" \"offensive,\" or \"toxic,\" with the most common operationalization being a binary classification of prompts. This behavior is measured using a wide array of benchmarks, including AdvBench, ToxicChat, Harmbench, and MultiJail. While most definitions focus on classifying the content itself, a smaller set of papers frame it as identifying \"unsafe intent\" or assessing \"potential safety risks,\" linking the behavior to the related construct of Safety awareness. The task is not limited to text; some work focuses on \"detecting harmful prompts across languages and modalities,\" using benchmarks like HADES and MM-SafetyBench for image-text combinations and AIAH for audio. In practice, this behavior is implemented through automated tools, such as \"Meta\u2019s Llama-Guard series\" and the \"Rewire API,\" to filter content, with performance commonly evaluated by classification accuracy.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "2025.emnlp-main.586.checklist",
+      "A Good Plan is Hard to Find: Aligning Models with Preferences is Misaligned with What Helps Users",
+      "Data-Efficient Hate Speech Detection via Cross-Lingual Nearest Neighbor Retrieval with Limited Labeled Data",
+      "Diagram-Driven Course Questions Generation",
+      "From General Reward to Targeted Reward: Improving Open-ended Long-context Generation Models",
+      "Improving Clustering with Positive Pairs Generated fromLLM-Driven Labels",
+      "PakBBQ: A Culturally Adapted Bias Benchmark forQA",
+      "RED: Unleashing Token-Level Rewards from Holistic Feedback via Reward Redistribution",
+      "Skip-Thinking: Chunk-wise Chain-of-Thought Distillation Enable Smaller Language Models to Reason Better and Faster",
+      "TheLLMAlready Knows: EstimatingLLM-Perceived Question Difficulty via Hidden Representations",
+      "Correct-Detect: Balancing Performance and Ambiguity Through the Lens of Coreference Resolution inLLMs"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 11
+  },
+  "conferences": [
+    "emnlp25"
+  ]
+}

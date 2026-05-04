@@ -1,0 +1,170 @@
+{
+  "canonical_name": "MUIRBENCH",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, MUIRBENCH is consistently defined as a multimodal benchmark for evaluating a model's ability to reason across and integrate information from multiple images. Its primary stated purpose is to \"rigorously assess and evaluate multi-image understanding,\" as described in the paper \"MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding.\" To achieve this, the benchmark is used to measure several specific abilities, including counting objects across images, understanding diagrams, chronological ordering of images based on text, and scene understanding from multiple views. It is also used to evaluate visual grounding, which involves locating an object within multiple images, and information retrieval, such as identifying images containing the same building. While it assesses various image relationships, one paper notes that \"MUIRBENCH... does not consider spatial relationships between objects in multiple images\" (\"MMIU: Multimodal Multi-image Understanding for Evaluating Large Vision-Language Models\"). In practice, it is used to report and compare the performance of different models, as seen in the \"HSCR...\" paper.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "MUIRBENCH",
+    "MuirBench"
+  ],
+  "papers": [
+    "HSCR: Hierarchical Self-Contrastive Rewarding for Aligning Medical Vision Language Models",
+    "Lexical Diversity-aware Relevance Assessment for Retrieval-Augmented Generation",
+    "MMIU: Multimodal Multi-image Understanding for Evaluating Large Vision-Language Models",
+    "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A multi-image evaluation benchmark that assesses various image relationships but does not cover spatial relationships.",
+      "paper": "MMIU: Multimodal Multi-image Understanding for Evaluating Large Vision-Language Models",
+      "original_name": "MUIRBENCH"
+    },
+    {
+      "text": "Multimodal benchmark evaluating reasoning across multiple images, testing a model's ability to integrate information from diverse visual inputs.",
+      "paper": "HSCR: Hierarchical Self-Contrastive Rewarding for Aligning Medical Vision Language Models",
+      "original_name": "MuirBench"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multi-image understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding",
+      "evidence": "we introduce MUIRBENCH (MULTI-IMAGE UNDERSTANDING BENCHMARK), a comprehensive benchmark designed to rigorously assess and evaluate multi-image understanding by multimodal LLMs. (Section 2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Counting",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding",
+      "evidence": "[COUNTING] aims to evaluate the ability of models to count the number of specific objects across multiple images. (Section 3.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Chart and diagram understanding",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding",
+      "evidence": "[DIAGRAM UNDERSTANDING] aims to evaluate the ability of models to understand information conveyed in diagram images. (Section 3.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Cross-modal retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Chronological ordering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding",
+      "evidence": "[ORDERING] aims to evaluate the ability of models to order a series of images based on the textual description. (Section 3.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Scene understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding",
+      "evidence": "[SCENE UNDERSTANDING] aims to evaluate the ability of models to understand a scene comprised of multiple views from multiple surveillance images. (Section 3.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual grounding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding",
+      "evidence": "[VISUAL GROUNDING] aims to evaluate the ability of models to ground a specific object and seek information about it within multiple images. (Section 3.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Information retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding",
+      "evidence": "[VISUAL RETRIEVAL] aims to evaluate the ability of models to retrieval images that contain the same building. (Section 3.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 8,
+  "incoming_relationship_count": 8,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, MUIRBENCH is consistently defined as a multimodal benchmark for evaluating a model's ability to reason across and integrate information from multiple images. Its primary stated purpose is to \"rigorously assess and evaluate multi-image understanding,\" as described in the paper \"MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding.\" To achieve this, the benchmark is used to measure several specific abilities, including counting objects across images, understanding diagrams, chronological ordering of images based on text, and scene understanding from multiple views. It is also used to evaluate visual grounding, which involves locating an object within multiple images, and information retrieval, such as identifying images containing the same building. While it assesses various image relationships, one paper notes that \"MUIRBENCH... does not consider spatial relationships between objects in multiple images\" (\"MMIU: Multimodal Multi-image Understanding for Evaluating Large Vision-Language Models\"). In practice, it is used to report and compare the performance of different models, as seen in the \"HSCR...\" paper.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "MMIU: Multimodal Multi-image Understanding for Evaluating Large Vision-Language Models",
+      "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding"
+    ],
+    "acl25": [
+      "HSCR: Hierarchical Self-Contrastive Rewarding for Aligning Medical Vision Language Models",
+      "Lexical Diversity-aware Relevance Assessment for Retrieval-Augmented Generation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "acl25": 2
+  },
+  "conferences": [
+    "acl25",
+    "iclr25"
+  ]
+}

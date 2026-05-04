@@ -1,0 +1,192 @@
+{
+  "canonical_name": "Link prediction",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, Link prediction is consistently defined as the task of inferring or predicting connections between nodes in a graph. Some definitions frame this more specifically as predicting \"missing relations or entities in a knowledge graph,\" while others use the more general phrasing of predicting whether an edge exists. The behavior is operationalized and evaluated using several datasets, including Cora, CiteSeer, FB15k-237, and WN18RR. Evaluation procedures involve using removed edges as prediction targets, with performance commonly measured by metrics such as accuracy, Mean Reciprocal Rank (MRR), and Hit@N. Link prediction is frequently studied alongside Node classification and is associated with the broader task of Knowledge graph completion. Furthermore, it is described as a task that \"primarily depend[s] on the local reasoning capabilities of the graph structure\" (Improving Chemical Understanding ofLLMs viaSMILESParsing). In some contexts, Link prediction is also used as a benchmark task to assess a model's Multi-task capability.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Link prediction"
+  ],
+  "papers": [
+    "Distribution Prompting: Understanding the Expressivity of Language Models Through the Next-Token Distributions They Can Produce",
+    "GRASP: Replace Redundant Layers with Adaptive Singular Parameters for Efficient Model Compression",
+    "Improving Chemical Understanding ofLLMs viaSMILESParsing",
+    "PLLuM-Align:Polish Preference Dataset for Large Language Model Alignment",
+    "SenDetEX: Sentence-LevelAI-Generated Text Detection for Human-AIHybrid Content via Style and Context Fusion",
+    "Tool Preferences in AgenticLLMs are Unreliable",
+    "Generalization Principles for Inference over Text-Attributed Graphs with Large Language Models",
+    "Sparse Spectral Training and Inference on Euclidean and Hyperbolic Neural Networks",
+    "Can Large Language Models Analyze Graphs like Professionals? A Benchmark, Datasets and Models",
+    "GITA: Graph to Visual and Textual Integration for Vision-Language Graph Reasoning",
+    "KG-FIT: Knowledge Graph Fine-Tuning Upon Open-World Knowledge",
+    "LLMs as Zero-shot Graph Learners: Alignment of GNN Representations with LLM Token Embeddings",
+    "Large Language Models-guided Dynamic Adaptation for Temporal Knowledge Graph Reasoning",
+    "Microstructures and Accuracy of Graph Recall by Large Language Models",
+    "TEG-DB: A Comprehensive Dataset and Benchmark of Textual-Edge Graphs",
+    "Text-space Graph Foundation Models: Comprehensive Benchmarks and New Insights"
+  ],
+  "paper_count": 16,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The specific task of predicting missing relations or entities in a knowledge graph, evaluated using metrics like MRR and Hit@N.",
+      "paper": "Large Language Models-guided Dynamic Adaptation for Temporal Knowledge Graph Reasoning",
+      "original_name": "Link prediction"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "FB15k-237",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "HiDe-LLaVA: Hierarchical Decoupling for Continual Instruction Tuning of Multimodal Large Language Model",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "HiDe-LLaVA: Hierarchical Decoupling for Continual Instruction Tuning of Multimodal Large Language Model"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WN18RR",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "HiDe-LLaVA: Hierarchical Decoupling for Continual Instruction Tuning of Multimodal Large Language Model",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "HiDe-LLaVA: Hierarchical Decoupling for Continual Instruction Tuning of Multimodal Large Language Model"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multi-task capability",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "LLMs as Zero-shot Graph Learners: Alignment of GNN Representations with LLM Token Embeddings",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "LLMs as Zero-shot Graph Learners: Alignment of GNN Representations with LLM Token Embeddings"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Node classification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "LLMs as Zero-shot Graph Learners: Alignment of GNN Representations with LLM Token Embeddings",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "LLMs as Zero-shot Graph Learners: Alignment of GNN Representations with LLM Token Embeddings"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Cora",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "SenDetEX: Sentence-LevelAI-Generated Text Detection for Human-AIHybrid Content via Style and Context Fusion",
+      "evidence": "our model achieved link prediction accuracies of 95.40% on Cora and 76.14% on CiteSeer, indicating the strong generalization capability of our method. (Section 4.2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "SenDetEX: Sentence-LevelAI-Generated Text Detection for Human-AIHybrid Content via Style and Context Fusion"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CiteSeer",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "SenDetEX: Sentence-LevelAI-Generated Text Detection for Human-AIHybrid Content via Style and Context Fusion",
+      "evidence": "our model achieved link prediction accuracies of 95.40% on Cora and 76.14% on CiteSeer, indicating the strong generalization capability of our method. (Section 4.2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "SenDetEX: Sentence-LevelAI-Generated Text Detection for Human-AIHybrid Content via Style and Context Fusion"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge graph completion",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Tool Preferences in AgenticLLMs are Unreliable",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Tool Preferences in AgenticLLMs are Unreliable"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Local reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Improving Chemical Understanding ofLLMs viaSMILESParsing",
+      "evidence": "These tasks [node classification, link prediction, and subgraph classification] primarily depend on the local reasoning capabilities of the graph structure. (Abstract)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Improving Chemical Understanding ofLLMs viaSMILESParsing"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 8,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 6,
+  "characterization": "Across the provided literature, Link prediction is consistently defined as the task of inferring or predicting connections between nodes in a graph. Some definitions frame this more specifically as predicting \"missing relations or entities in a knowledge graph,\" while others use the more general phrasing of predicting whether an edge exists. The behavior is operationalized and evaluated using several datasets, including Cora, CiteSeer, FB15k-237, and WN18RR. Evaluation procedures involve using removed edges as prediction targets, with performance commonly measured by metrics such as accuracy, Mean Reciprocal Rank (MRR), and Hit@N. Link prediction is frequently studied alongside Node classification and is associated with the broader task of Knowledge graph completion. Furthermore, it is described as a task that \"primarily depend[s] on the local reasoning capabilities of the graph structure\" (Improving Chemical Understanding ofLLMs viaSMILESParsing). In some contexts, Link prediction is also used as a benchmark task to assess a model's Multi-task capability.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "Can Large Language Models Analyze Graphs like Professionals? A Benchmark, Datasets and Models",
+      "GITA: Graph to Visual and Textual Integration for Vision-Language Graph Reasoning",
+      "KG-FIT: Knowledge Graph Fine-Tuning Upon Open-World Knowledge",
+      "LLMs as Zero-shot Graph Learners: Alignment of GNN Representations with LLM Token Embeddings",
+      "Large Language Models-guided Dynamic Adaptation for Temporal Knowledge Graph Reasoning",
+      "Microstructures and Accuracy of Graph Recall by Large Language Models",
+      "TEG-DB: A Comprehensive Dataset and Benchmark of Textual-Edge Graphs",
+      "Text-space Graph Foundation Models: Comprehensive Benchmarks and New Insights"
+    ],
+    "icml25": [
+      "Generalization Principles for Inference over Text-Attributed Graphs with Large Language Models",
+      "Sparse Spectral Training and Inference on Euclidean and Hyperbolic Neural Networks"
+    ],
+    "emnlp25": [
+      "Distribution Prompting: Understanding the Expressivity of Language Models Through the Next-Token Distributions They Can Produce",
+      "GRASP: Replace Redundant Layers with Adaptive Singular Parameters for Efficient Model Compression",
+      "Improving Chemical Understanding ofLLMs viaSMILESParsing",
+      "PLLuM-Align:Polish Preference Dataset for Large Language Model Alignment",
+      "SenDetEX: Sentence-LevelAI-Generated Text Detection for Human-AIHybrid Content via Style and Context Fusion",
+      "Tool Preferences in AgenticLLMs are Unreliable"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 8,
+    "icml25": 2,
+    "emnlp25": 6
+  },
+  "conferences": [
+    "emnlp25",
+    "icml25",
+    "neurips24"
+  ]
+}

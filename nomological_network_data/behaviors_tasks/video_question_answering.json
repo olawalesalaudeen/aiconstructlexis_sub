@@ -1,0 +1,677 @@
+{
+  "canonical_name": "Video question answering",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, video question answering is predominantly defined as the task of answering natural language questions that require understanding the dynamic visual and temporal content of a video. The field operationalizes this behavior using a wide array of benchmarks, with ActivityNet-QA, MSVD-QA, MSR-VTT-QA, NExT-QA, and TGIF-QA being the most frequently cited instruments for evaluation. The task format varies across studies; it is commonly set up as either a multiple-choice selection problem or an open-ended text generation task. A specific sub-task, long-video question answering, is also identified, while a less common variant, \"Tideo question answering,\" is described in one paper as a pre-alignment task using textual representations of videos. One paper notes a common implementation strategy is to \"sample frames uniformly from a video, thereby recasting the problem as a task to understand multi-image sequences\" (\"SurveyPilot: an Agentic Framework for Automated Human Opinion Collection from Social Media\"). However, another study points out that models can \"struggle with video question answering when the question and answer correspond to different time segments\" (\"ReXTime: A Benchmark Suite for Reasoning-Across-Time in Videos\"). This behavior is studied alongside video understanding, instruction following, spatial understanding, and uncertainty handling.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Video question answering",
+    "Tideo question answering",
+    "Long-video question answering"
+  ],
+  "papers": [
+    "Dehumanizing Machines: Mitigating Anthropomorphic Behaviors in Text Generation Systems",
+    "SurveyPilot: an Agentic Framework for Automated Human Opinion Collection from Social Media",
+    "Understanding the Dark Side ofLLMs\u2019 Intrinsic Self-Correction",
+    "3DS: Medical Domain Adaptation ofLLMs via Decomposed Difficulty-based Data Selection",
+    "Charting the Landscape ofAfricanNLP: Mapping Progress and Shaping the Road Ahead",
+    "CondenseLM:LLMs-driven Text Dataset Condensation via Reward Matching",
+    "Conditional [MASK] Discrete Diffusion Language Model",
+    "Debatable Intelligence: BenchmarkingLLMJudges via Debate Speech Evaluation",
+    "Demystifying Synthetic Data inLLMPre-training: A Systematic Study of Scaling Laws, Benefits, and Pitfalls",
+    "Facilitating Cognitive Accessibility withLLMs: A Multi-Task Approach to Easy-to-Read Text Generation",
+    "InMind: EvaluatingLLMs in Capturing and Applying Individual Human Reasoning Styles",
+    "IntentionFrame: A Semi-Structured, Multi-Aspect Framework for Fine-Grained Conversational Intention Understanding",
+    "Mapping the Minds ofLLMs: A Graph-Based Analysis of ReasoningLLMs",
+    "MedFact: A Large-scaleChinese Dataset for Evidence-based Medical Fact-checking ofLLMResponses",
+    "Meta-Semantics Augmented Few-Shot Relational Learning",
+    "RaDeR: Reasoning-aware Dense Retrieval Models",
+    "SoundMind:RL-Incentivized Logic Reasoning for Audio-Language Models",
+    "Emu: Generative Pretraining in Multimodality",
+    "Making LLaMA SEE and Draw with SEED Tokenizer",
+    "AuroraCap: Efficient, Performant Video Detailed Captioning and a New Benchmark",
+    "CREMA: Generalizable and Efficient Video-Language Reasoning via Multimodal Modular Fusion",
+    "Can Video LLMs Refuse to Answer? Alignment for Answerability in Video Large Language Models",
+    "Compositional 4D Dynamic Scenes Understanding with Physics Priors for Video Question Answering",
+    "Exploring the Design Space of Visual Context Representation in Video MLLMs",
+    "Frame-Voyager: Learning to Query Frames for Video Large Language Models",
+    "Is Your Video Language Model a Reliable Judge?",
+    "LLaVA-Interleave: Tackling Multi-image, Video, and 3D in Large Multimodal Models",
+    "MMWorld: Towards Multi-discipline Multi-faceted World Model Evaluation in Videos",
+    "Oryx MLLM: On-Demand Spatial-Temporal Understanding at Arbitrary Resolution",
+    "Preble: Efficient Distributed Prompt Scheduling for LLM Serving",
+    "SafeWatch: An Efficient Safety-Policy Following Video Guardrail Model with Transparent Explanations",
+    "Sample then Identify: A General Framework for Risk Control and Assessment in Multimodal Large Language Models",
+    "TRACE: Temporal Grounding Video LLM  via Causal Event Modeling",
+    "Temporal Reasoning Transfer from Text to Video",
+    "Understanding Long Videos with Multimodal Language Models",
+    "Unhackable Temporal Reward for Scalable Video MLLMs",
+    "Video-STaR: Self-Training Enables Video Instruction Tuning with Any Supervision",
+    "World Model on Million-Length Video And Language With Blockwise RingAttention",
+    "$\\mathcalVista\\mathcalDPO$: Video Hierarchical Spatial-Temporal Direct Preference Optimization for Large Video Models",
+    "$\u221e$-Video: A Training-Free Approach to Long Video Understanding via Continuous-Time Memory Consolidation",
+    "Divide and Conquer: Exploring Language-centric Tree Reasoning for Video Question-Answering",
+    "Efficiently Serving Large Multimodal Models Using EPD Disaggregation",
+    "Improving LLM Video Understanding with 16 Frames Per Second",
+    "MMInference: Accelerating Pre-filling for Long-Context Visual Language Models via Modality-Aware Permutation Sparse Attention",
+    "Modularized Self-Reflected Video Reasoner for Multimodal LLM with Application to Video Question Answering",
+    "RepLoRA: Reparameterizing Low-rank Adaptation via the Perspective of Mixture of Experts",
+    "Scaling Video-Language Models to 10K Frames via Hierarchical Differential Distillation",
+    "SparseVLM: Visual Token Sparsification for Efficient Vision-Language Model Inference",
+    "Understanding Complexity in VideoQA via Visual Program Generation",
+    "Unifying Specialized Visual Encoders for Video Language Models",
+    "EmoDynamiX: Emotional Support Dialogue Strategy Prediction by ModellingMiXed Emotions and Discourse Dynamics",
+    "On Behalf of the Stakeholders: Trends inNLPModel Interpretability in the Era ofLLMs",
+    "Artemis:  Towards Referential Understanding in Complex Videos",
+    "Dense Connector for MLLMs",
+    "FlexCap: Describe Anything in Images in Controllable Detail",
+    "HAWK: Learning to Understand Open-World Video Anomalies",
+    "LongVideoBench: A Benchmark for Long-context Interleaved Video-Language Understanding",
+    "MMBench-Video: A Long-Form Multi-Shot Benchmark for Holistic Video Understanding",
+    "ReXTime: A Benchmark Suite for Reasoning-Across-Time in Videos",
+    "ShareGPT4Video: Improving Video Understanding and Generation with Better Captions",
+    "Streaming Long Video Understanding with Large Language Models",
+    "TOPA: Extending Large Language Models for Video Understanding via Text-Only Pre-Alignment",
+    "Task Me Anything"
+  ],
+  "paper_count": 63,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Answering questions that require understanding of dynamic visual content from videos.",
+      "paper": "Emu: Generative Pretraining in Multimodality",
+      "original_name": "Video question answering"
+    },
+    {
+      "text": "A pre-alignment task where the model answers a question based on the content of a \"textual video\" (Tideo).",
+      "paper": "TOPA: Extending Large Language Models for Video Understanding via Text-Only Pre-Alignment",
+      "original_name": "Tideo question answering"
+    },
+    {
+      "text": "Answering questions about long videos, typically by selecting among candidate answers or generating a textual response.",
+      "paper": "Understanding Long Videos with Multimodal Language Models",
+      "original_name": "Long-video question answering"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ActivityNet-QA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Dense Connector for MLLMs",
+      "evidence": "We evaluate AURORACAP on MSVD-QA (Xu et al., 2017), ActivityNet-QA (Yu et al., 2019), MSRVTT-QA (Xu et al., 2017), and iVQA (Yang et al., 2021) for video question answering tasks as shown in Table 4. (Section 2.3)",
+      "paper_count": 11,
+      "papers_by_conference": {
+        "neurips24": [
+          "Dense Connector for MLLMs",
+          "Artemis:  Towards Referential Understanding in Complex Videos"
+        ],
+        "iclr25": [
+          "Unhackable Temporal Reward for Scalable Video MLLMs",
+          "AuroraCap: Efficient, Performant Video Detailed Captioning and a New Benchmark",
+          "Frame-Voyager: Learning to Query Frames for Video Large Language Models",
+          "Video-STaR: Self-Training Enables Video Instruction Tuning with Any Supervision"
+        ],
+        "naacl25": [
+          "On Behalf of the Stakeholders: Trends inNLPModel Interpretability in the Era ofLLMs"
+        ],
+        "icml25": [
+          "SparseVLM: Visual Token Sparsification for Efficient Vision-Language Model Inference",
+          "$\\mathcalVista\\mathcalDPO$: Video Hierarchical Spatial-Temporal Direct Preference Optimization for Large Video Models"
+        ],
+        "emnlp25": [
+          "SoundMind:RL-Incentivized Logic Reasoning for Audio-Language Models",
+          "Demystifying Synthetic Data inLLMPre-training: A Systematic Study of Scaling Laws, Benefits, and Pitfalls"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MSVD-QA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Emu: Generative Pretraining in Multimodality",
+      "evidence": "We evaluate AURORACAP on MSVD-QA (Xu et al., 2017), ActivityNet-QA (Yu et al., 2019), MSRVTT-QA (Xu et al., 2017), and iVQA (Yang et al., 2021) for video question answering tasks as shown in Table 4. (Section 2.3)",
+      "paper_count": 10,
+      "papers_by_conference": {
+        "iclr24": [
+          "Emu: Generative Pretraining in Multimodality"
+        ],
+        "neurips24": [
+          "FlexCap: Describe Anything in Images in Controllable Detail",
+          "Dense Connector for MLLMs",
+          "Artemis:  Towards Referential Understanding in Complex Videos"
+        ],
+        "iclr25": [
+          "Video-STaR: Self-Training Enables Video Instruction Tuning with Any Supervision"
+        ],
+        "naacl25": [
+          "On Behalf of the Stakeholders: Trends inNLPModel Interpretability in the Era ofLLMs"
+        ],
+        "icml25": [
+          "SparseVLM: Visual Token Sparsification for Efficient Vision-Language Model Inference",
+          "$\\mathcalVista\\mathcalDPO$: Video Hierarchical Spatial-Temporal Direct Preference Optimization for Large Video Models"
+        ],
+        "emnlp25": [
+          "SoundMind:RL-Incentivized Logic Reasoning for Audio-Language Models",
+          "Demystifying Synthetic Data inLLMPre-training: A Systematic Study of Scaling Laws, Benefits, and Pitfalls"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MSRVTT-QA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Emu: Generative Pretraining in Multimodality",
+      "evidence": "We evaluate AURORACAP on MSVD-QA (Xu et al., 2017), ActivityNet-QA (Yu et al., 2019), MSRVTT-QA (Xu et al., 2017), and iVQA (Yang et al., 2021) for video question answering tasks as shown in Table 4. (Section 2.3)",
+      "paper_count": 9,
+      "papers_by_conference": {
+        "iclr24": [
+          "Emu: Generative Pretraining in Multimodality"
+        ],
+        "neurips24": [
+          "FlexCap: Describe Anything in Images in Controllable Detail",
+          "Dense Connector for MLLMs",
+          "Artemis:  Towards Referential Understanding in Complex Videos"
+        ],
+        "iclr25": [
+          "Unhackable Temporal Reward for Scalable Video MLLMs",
+          "Video-STaR: Self-Training Enables Video Instruction Tuning with Any Supervision"
+        ],
+        "naacl25": [
+          "On Behalf of the Stakeholders: Trends inNLPModel Interpretability in the Era ofLLMs"
+        ],
+        "icml25": [
+          "SparseVLM: Visual Token Sparsification for Efficient Vision-Language Model Inference"
+        ],
+        "emnlp25": [
+          "SoundMind:RL-Incentivized Logic Reasoning for Audio-Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Video-MME",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Frame-Voyager: Learning to Query Frames for Video Large Language Models",
+      "evidence": "We consider two multiple-choice VideoQA datasets: Video-MME (VMME) (Fu et al., 2024) and NExT-QA (Xiao et al., 2021)), and two open-ended VideoQA datasets (e.g., MUSIC-AVQA (Li et al., 2022a) and MSVD (Chen & Dolan, 2011))",
+      "paper_count": 7,
+      "papers_by_conference": {
+        "iclr25": [
+          "Frame-Voyager: Learning to Query Frames for Video Large Language Models",
+          "TimeSuite: Improving MLLMs for Long Video Understanding via Grounded Tuning",
+          "Sample then Identify: A General Framework for Risk Control and Assessment in Multimodal Large Language Models"
+        ],
+        "icml25": [
+          "Modularized Self-Reflected Video Reasoner for Multimodal LLM with Application to Video Question Answering",
+          "Improving LLM Video Understanding with 16 Frames Per Second"
+        ],
+        "emnlp25": [
+          "Demystifying Synthetic Data inLLMPre-training: A Systematic Study of Scaling Laws, Benefits, and Pitfalls",
+          "Conditional [MASK] Discrete Diffusion Language Model"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "NExT-QA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "CREMA: Generalizable and Efficient Video-Language Reasoning via Multimodal Modular Fusion",
+      "evidence": "We evaluate on two video question answering datasets focused on long-form videos: EgoSchema (Mangalam et al., 2023) and NExT-QA (Xiao et al., 2021). (Section 5)",
+      "paper_count": 6,
+      "papers_by_conference": {
+        "iclr25": [
+          "CREMA: Generalizable and Efficient Video-Language Reasoning via Multimodal Modular Fusion",
+          "Sample then Identify: A General Framework for Risk Control and Assessment in Multimodal Large Language Models"
+        ],
+        "naacl25": [
+          "On Behalf of the Stakeholders: Trends inNLPModel Interpretability in the Era ofLLMs"
+        ],
+        "icml25": [
+          "Modularized Self-Reflected Video Reasoner for Multimodal LLM with Application to Video Question Answering",
+          "Improving LLM Video Understanding with 16 Frames Per Second",
+          "Understanding Complexity in VideoQA via Visual Program Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TGIF-QA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Unhackable Temporal Reward for Scalable Video MLLMs",
+      "evidence": "...as well as four video QA benchmarks: MVSD-QA (Xu et al., 2017), MSRVTT-QA (Xu et al., 2016), TGIF-QA (Jang et al., 2017), and ActivityNet-QA (Caba Heilbron et al., 2015). (Section 4.2)",
+      "paper_count": 6,
+      "papers_by_conference": {
+        "iclr25": [
+          "Unhackable Temporal Reward for Scalable Video MLLMs",
+          "Video-STaR: Self-Training Enables Video Instruction Tuning with Any Supervision"
+        ],
+        "naacl25": [
+          "On Behalf of the Stakeholders: Trends inNLPModel Interpretability in the Era ofLLMs"
+        ],
+        "icml25": [
+          "SparseVLM: Visual Token Sparsification for Efficient Vision-Language Model Inference",
+          "$\\mathcalVista\\mathcalDPO$: Video Hierarchical Spatial-Temporal Direct Preference Optimization for Large Video Models"
+        ],
+        "emnlp25": [
+          "SoundMind:RL-Incentivized Logic Reasoning for Audio-Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "EgoSchema",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "TimeSuite: Improving MLLMs for Long Video Understanding via Grounded Tuning",
+      "evidence": "We evaluate on two video question answering datasets focused on long-form videos: EgoSchema (Mangalam et al., 2023) and NExT-QA (Xiao et al., 2021). (Section 5)",
+      "paper_count": 5,
+      "papers_by_conference": {
+        "iclr25": [
+          "TimeSuite: Improving MLLMs for Long Video Understanding via Grounded Tuning",
+          "Understanding Long Videos with Multimodal Language Models"
+        ],
+        "icml25": [
+          "$\u221e$-Video: A Training-Free Approach to Long Video Understanding via Continuous-Time Memory Consolidation",
+          "Modularized Self-Reflected Video Reasoner for Multimodal LLM with Application to Video Question Answering"
+        ],
+        "emnlp25": [
+          "Demystifying Synthetic Data inLLMPre-training: A Systematic Study of Scaling Laws, Benefits, and Pitfalls"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "NExTQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Emu: Generative Pretraining in Multimodality",
+      "evidence": "We evaluate Emu on a broad range of vision-language tasks including image captioning (MS-COCO (Chen et al., 2015)), image question answering (VQAv2 (Goyal et al., 2017), OKVQA (Marino et al., 2019), VizWiz (Gurari et al., 2018)), visual dialog (VisDial (Das et al., 2017)), video question answering (MSRVTTQA (Xu et al., 2017), MSVDQA (Xu et al., 2017), NextQA (Xiao et al., 2021)) and text2image generation(MS-COCO (Lin et al., 2014)).",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr24": [
+          "Emu: Generative Pretraining in Multimodality"
+        ],
+        "iclr25": [
+          "Frame-Voyager: Learning to Query Frames for Video Large Language Models"
+        ],
+        "icml25": [
+          "Efficiently Serving Large Multimodal Models Using EPD Disaggregation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MLVU",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Frame-Voyager: Learning to Query Frames for Video Large Language Models",
+      "evidence": "To evaluate FRAME-VOYAGER, we plug it into two versions of the state-of-the-art Video-LLM named VILA (VILA-8B and VILA-40B, Lin et al. (2024b)) and conduct experiments on four widely-used Video Question Answering benchmarks, Video-MME (Fu et al., 2024a), MLVU (Zhou et al., 2024), NextQA (Xiao et al., 2021) and ActivityNet-QA (Yu et al., 2019). (Section 1)",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr25": [
+          "Frame-Voyager: Learning to Query Frames for Video Large Language Models"
+        ],
+        "icml25": [
+          "Scaling Video-Language Models to 10K Frames via Hierarchical Differential Distillation"
+        ],
+        "emnlp25": [
+          "Demystifying Synthetic Data inLLMPre-training: A Systematic Study of Scaling Laws, Benefits, and Pitfalls"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Temporal reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Understanding Long Videos with Multimodal Language Models",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Understanding Long Videos with Multimodal Language Models"
+        ],
+        "naacl25": [
+          "EmoDynamiX: Emotional Support Dialogue Strategy Prediction by ModellingMiXed Emotions and Discourse Dynamics"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Causal reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Understanding Long Videos with Multimodal Language Models",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Understanding Long Videos with Multimodal Language Models"
+        ],
+        "naacl25": [
+          "EmoDynamiX: Emotional Support Dialogue Strategy Prediction by ModellingMiXed Emotions and Discourse Dynamics"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Video-ChatGPT benchmark",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Artemis:  Towards Referential Understanding in Complex Videos",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Artemis:  Towards Referential Understanding in Complex Videos"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-as-a-judge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MMWorld: Towards Multi-discipline Multi-faceted World Model Evaluation in Videos",
+      "evidence": "The second method involves models freely generating answers, which are then evaluated by GPT-4. Given the question, correct answer, and model\u2019s prediction, GPT-4 returns a True or False judgment.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "MMWorld: Towards Multi-discipline Multi-faceted World Model Evaluation in Videos"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Referring expression understanding",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "LongVideoBench: A Benchmark for Long-context Interleaved Video-Language Understanding",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "LongVideoBench: A Benchmark for Long-context Interleaved Video-Language Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Video understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Frame-Voyager: Learning to Query Frames for Video Large Language Models",
+      "evidence": "When it comes to video question answering (VideoQA), models must not only capture the static features in frames but also understand temporal dynamics, such as object movements and interactions over time, especially in 3D space. (Section 1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Frame-Voyager: Learning to Query Frames for Video Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MVSD-QA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Unhackable Temporal Reward for Scalable Video MLLMs",
+      "evidence": "...as well as four video QA benchmarks: MVSD-QA (Xu et al., 2017), MSRVTT-QA (Xu et al., 2016), TGIF-QA (Jang et al., 2017), and ActivityNet-QA (Caba Heilbron et al., 2015). (Section 4.2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Unhackable Temporal Reward for Scalable Video MLLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction following",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "AuroraCap: Efficient, Performant Video Detailed Captioning and a New Benchmark",
+      "evidence": "In some failure cases observed in the model, we found that prompting the model to generate a comprehensive caption for the video input can lead to outputs that include the correct answer. This phenomenon may be attributed to a disruption in the model's instruction-following capabilities during the training.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "AuroraCap: Efficient, Performant Video Detailed Captioning and a New Benchmark"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TempCompass",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Video-STaR: Self-Training Enables Video Instruction Tuning with Any Supervision",
+      "evidence": "Examples of several VideoQA benchmarks. We examine four existing representative benchmarks and ours: VITATECS, MVBench, TempCompass, ReXTime, and TOMATO.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Video-STaR: Self-Training Enables Video Instruction Tuning with Any Supervision"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Video summarization",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Frame-Voyager: Learning to Query Frames for Video Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Frame-Voyager: Learning to Query Frames for Video Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LongVideoBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Understanding Long Videos with Multimodal Language Models",
+      "evidence": "We also evaluate MVU on the LongVideoBench dataset which contains even longer videos (Section 5.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Understanding Long Videos with Multimodal Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MUSIC-AVQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Sample then Identify: A General Framework for Risk Control and Assessment in Multimodal Large Language Models",
+      "evidence": "We consider two multiple-choice VideoQA datasets: Video-MME (VMME) (Fu et al., 2024) and NExT-QA (Xiao et al., 2021)), and two open-ended VideoQA datasets (e.g., MUSIC-AVQA (Li et al., 2022a) and MSVD (Chen & Dolan, 2011))",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Sample then Identify: A General Framework for Risk Control and Assessment in Multimodal Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MSVD",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Sample then Identify: A General Framework for Risk Control and Assessment in Multimodal Large Language Models",
+      "evidence": "We consider two multiple-choice VideoQA datasets: Video-MME (VMME) (Fu et al., 2024) and NExT-QA (Xiao et al., 2021)), and two open-ended VideoQA datasets (e.g., MUSIC-AVQA (Li et al., 2022a) and MSVD (Chen & Dolan, 2011))",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Sample then Identify: A General Framework for Risk Control and Assessment in Multimodal Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "STAR",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Modularized Self-Reflected Video Reasoner for Multimodal LLM with Application to Video Question Answering",
+      "evidence": "We evaluate the LTR framework on 11 VideoQA benchmarks, including... STAR (Wu et al., 2023)... (Section 4.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Modularized Self-Reflected Video Reasoner for Multimodal LLM with Application to Video Question Answering"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Spatial understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Dehumanizing Machines: Mitigating Anthropomorphic Behaviors in Text Generation Systems",
+      "evidence": "We annotate 98 videos and provide 882 question-answer pairs that target three types of questions: 1) descriptive questions regarding the attributes of the objects (colour, shape, number), 2) spatial Understanding about the position of items and their relation to other items, and 3) adversarial questions about items not present in the video.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Dehumanizing Machines: Mitigating Anthropomorphic Behaviors in Text Generation Systems"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Uncertainty handling",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Dehumanizing Machines: Mitigating Anthropomorphic Behaviors in Text Generation Systems",
+      "evidence": "Adversarial questions, which cannot be answered based on the information provided in the video, help assess whether models hallucinate responses or can reliably acknowledge uncertainty\u2014a critical safety feature for assistive technologies.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Dehumanizing Machines: Mitigating Anthropomorphic Behaviors in Text Generation Systems"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MSR-VTT-QA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "$\\mathcalVista\\mathcalDPO$: Video Hierarchical Spatial-Temporal Direct Preference Optimization for Large Video Models",
+      "evidence": "We evaluate our model on a comprehensive suite of video understanding benchmarks, including the open-ended MSVD-QA (Xu et al., 2017), MSRVTT-QA (Xu et al., 2017), TGIF (Jang et al., 2017), and ActivityNet-QA (Yu et al., 2019), as well as the multiple-choice benchmarks NExT-QA (Xiao et al., 2021), VLEP (Lei et al., 2020), TVQA (Lei et al., 2018), and Perception Test (P\u0103tr\u0103ucean et al., 2023).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "$\\mathcalVista\\mathcalDPO$: Video Hierarchical Spatial-Temporal Direct Preference Optimization for Large Video Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 26,
+  "incoming_relationship_count": 6,
+  "outgoing_relationship_count": 20,
+  "characterization": "Across the provided literature, video question answering is predominantly defined as the task of answering natural language questions that require understanding the dynamic visual and temporal content of a video. The field operationalizes this behavior using a wide array of benchmarks, with ActivityNet-QA, MSVD-QA, MSR-VTT-QA, NExT-QA, and TGIF-QA being the most frequently cited instruments for evaluation. The task format varies across studies; it is commonly set up as either a multiple-choice selection problem or an open-ended text generation task. A specific sub-task, long-video question answering, is also identified, while a less common variant, \"Tideo question answering,\" is described in one paper as a pre-alignment task using textual representations of videos. One paper notes a common implementation strategy is to \"sample frames uniformly from a video, thereby recasting the problem as a task to understand multi-image sequences\" (\"SurveyPilot: an Agentic Framework for Automated Human Opinion Collection from Social Media\"). However, another study points out that models can \"struggle with video question answering when the question and answer correspond to different time segments\" (\"ReXTime: A Benchmark Suite for Reasoning-Across-Time in Videos\"). This behavior is studied alongside video understanding, instruction following, spatial understanding, and uncertainty handling.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Emu: Generative Pretraining in Multimodality",
+      "Making LLaMA SEE and Draw with SEED Tokenizer"
+    ],
+    "neurips24": [
+      "Artemis:  Towards Referential Understanding in Complex Videos",
+      "Dense Connector for MLLMs",
+      "FlexCap: Describe Anything in Images in Controllable Detail",
+      "HAWK: Learning to Understand Open-World Video Anomalies",
+      "LongVideoBench: A Benchmark for Long-context Interleaved Video-Language Understanding",
+      "MMBench-Video: A Long-Form Multi-Shot Benchmark for Holistic Video Understanding",
+      "ReXTime: A Benchmark Suite for Reasoning-Across-Time in Videos",
+      "ShareGPT4Video: Improving Video Understanding and Generation with Better Captions",
+      "Streaming Long Video Understanding with Large Language Models",
+      "TOPA: Extending Large Language Models for Video Understanding via Text-Only Pre-Alignment",
+      "Task Me Anything"
+    ],
+    "iclr25": [
+      "AuroraCap: Efficient, Performant Video Detailed Captioning and a New Benchmark",
+      "CREMA: Generalizable and Efficient Video-Language Reasoning via Multimodal Modular Fusion",
+      "Can Video LLMs Refuse to Answer? Alignment for Answerability in Video Large Language Models",
+      "Compositional 4D Dynamic Scenes Understanding with Physics Priors for Video Question Answering",
+      "Exploring the Design Space of Visual Context Representation in Video MLLMs",
+      "Frame-Voyager: Learning to Query Frames for Video Large Language Models",
+      "Is Your Video Language Model a Reliable Judge?",
+      "LLaVA-Interleave: Tackling Multi-image, Video, and 3D in Large Multimodal Models",
+      "MMWorld: Towards Multi-discipline Multi-faceted World Model Evaluation in Videos",
+      "Oryx MLLM: On-Demand Spatial-Temporal Understanding at Arbitrary Resolution",
+      "Preble: Efficient Distributed Prompt Scheduling for LLM Serving",
+      "SafeWatch: An Efficient Safety-Policy Following Video Guardrail Model with Transparent Explanations",
+      "Sample then Identify: A General Framework for Risk Control and Assessment in Multimodal Large Language Models",
+      "TRACE: Temporal Grounding Video LLM  via Causal Event Modeling",
+      "Temporal Reasoning Transfer from Text to Video",
+      "Understanding Long Videos with Multimodal Language Models",
+      "Unhackable Temporal Reward for Scalable Video MLLMs",
+      "Video-STaR: Self-Training Enables Video Instruction Tuning with Any Supervision",
+      "World Model on Million-Length Video And Language With Blockwise RingAttention"
+    ],
+    "naacl25": [
+      "EmoDynamiX: Emotional Support Dialogue Strategy Prediction by ModellingMiXed Emotions and Discourse Dynamics",
+      "On Behalf of the Stakeholders: Trends inNLPModel Interpretability in the Era ofLLMs"
+    ],
+    "acl25": [
+      "Dehumanizing Machines: Mitigating Anthropomorphic Behaviors in Text Generation Systems",
+      "SurveyPilot: an Agentic Framework for Automated Human Opinion Collection from Social Media",
+      "Understanding the Dark Side ofLLMs\u2019 Intrinsic Self-Correction"
+    ],
+    "icml25": [
+      "$\\mathcalVista\\mathcalDPO$: Video Hierarchical Spatial-Temporal Direct Preference Optimization for Large Video Models",
+      "$\u221e$-Video: A Training-Free Approach to Long Video Understanding via Continuous-Time Memory Consolidation",
+      "Divide and Conquer: Exploring Language-centric Tree Reasoning for Video Question-Answering",
+      "Efficiently Serving Large Multimodal Models Using EPD Disaggregation",
+      "Improving LLM Video Understanding with 16 Frames Per Second",
+      "MMInference: Accelerating Pre-filling for Long-Context Visual Language Models via Modality-Aware Permutation Sparse Attention",
+      "Modularized Self-Reflected Video Reasoner for Multimodal LLM with Application to Video Question Answering",
+      "RepLoRA: Reparameterizing Low-rank Adaptation via the Perspective of Mixture of Experts",
+      "Scaling Video-Language Models to 10K Frames via Hierarchical Differential Distillation",
+      "SparseVLM: Visual Token Sparsification for Efficient Vision-Language Model Inference",
+      "Understanding Complexity in VideoQA via Visual Program Generation",
+      "Unifying Specialized Visual Encoders for Video Language Models"
+    ],
+    "emnlp25": [
+      "3DS: Medical Domain Adaptation ofLLMs via Decomposed Difficulty-based Data Selection",
+      "Charting the Landscape ofAfricanNLP: Mapping Progress and Shaping the Road Ahead",
+      "CondenseLM:LLMs-driven Text Dataset Condensation via Reward Matching",
+      "Conditional [MASK] Discrete Diffusion Language Model",
+      "Debatable Intelligence: BenchmarkingLLMJudges via Debate Speech Evaluation",
+      "Demystifying Synthetic Data inLLMPre-training: A Systematic Study of Scaling Laws, Benefits, and Pitfalls",
+      "Facilitating Cognitive Accessibility withLLMs: A Multi-Task Approach to Easy-to-Read Text Generation",
+      "InMind: EvaluatingLLMs in Capturing and Applying Individual Human Reasoning Styles",
+      "IntentionFrame: A Semi-Structured, Multi-Aspect Framework for Fine-Grained Conversational Intention Understanding",
+      "Mapping the Minds ofLLMs: A Graph-Based Analysis of ReasoningLLMs",
+      "MedFact: A Large-scaleChinese Dataset for Evidence-based Medical Fact-checking ofLLMResponses",
+      "Meta-Semantics Augmented Few-Shot Relational Learning",
+      "RaDeR: Reasoning-aware Dense Retrieval Models",
+      "SoundMind:RL-Incentivized Logic Reasoning for Audio-Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "neurips24": 11,
+    "iclr25": 19,
+    "naacl25": 2,
+    "acl25": 3,
+    "icml25": 12,
+    "emnlp25": 14
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

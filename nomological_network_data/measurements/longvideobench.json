@@ -1,0 +1,159 @@
+{
+  "canonical_name": "LongVideoBench",
+  "type": "measurement",
+  "canonical_definition": "LongVideoBench is predominantly described as a benchmark dataset used to evaluate model performance on tasks involving long videos. Across the surveyed literature, it is most frequently used to measure the construct of `Video understanding`. Papers also use it to assess related capabilities such as `long-context understanding`, `multimodal understanding`, and `long-context processing`. The most common specific task it is said to evaluate is `video question answering`. A smaller set of papers offer more granular descriptions of its purpose, framing it as a benchmark for \"referred reasoning in long videos\" (\"Scaling Video-Language Models to 10K Frames via Hierarchical Differential Distillation\") or for evaluating \"temporal reasoning tasks\" across diverse domains. The definitions consistently highlight that the dataset contains \"very long videos,\" with one study noting they are \"even longer\" than those in other benchmarks. The various descriptions are largely complementary, centering on the evaluation of models' abilities to comprehend extended video content.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "LongVideo-Bench",
+    "LongVideoBench"
+  ],
+  "papers": [
+    "Just Go Parallel: Improving the Multilingual Capabilities of Large Language Models",
+    "SurveyPilot: an Agentic Framework for Automated Human Opinion Collection from Social Media",
+    "An Evolved Universal Transformer Memory",
+    "Exploring the Design Space of Visual Context Representation in Video MLLMs",
+    "LongVILA: Scaling Long-Context Visual Language Models for Long Videos",
+    "Oryx MLLM: On-Demand Spatial-Temporal Understanding at Arbitrary Resolution",
+    "Understanding Long Videos with Multimodal Language Models",
+    "mPLUG-Owl3: Towards Long Image-Sequence Understanding in Multi-Modal Large Language Models",
+    "Improving LLM Video Understanding with 16 Frames Per Second",
+    "Scaling Video-Language Models to 10K Frames via Hierarchical Differential Distillation",
+    "VideoRoPE: What Makes for Good Video Rotary Position Embedding?"
+  ],
+  "paper_count": 11,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A dataset containing very long videos used to evaluate video question answering models.",
+      "paper": "Understanding Long Videos with Multimodal Language Models",
+      "original_name": "LongVideoBench"
+    },
+    {
+      "text": "A benchmark dataset used to evaluate model performance on long video understanding tasks.",
+      "paper": "Exploring the Design Space of Visual Context Representation in Video MLLMs",
+      "original_name": "LongVideo-Bench"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Video understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "LongVILA: Scaling Long-Context Visual Language Models for Long Videos",
+      "evidence": "We also evaluate the performance of mPLUG-Owl3 on video and multi-image benchmarks (including NextQA (Xiao et al., 2021), MVBench (Li et al., 2023c) VideoMME (Fu et al., 2024a), LongVideoBench (Wu et al., 2024) and MLVU (Zhou et al., 2024)), as it is capable of processing multiple images with an interleaved format.",
+      "paper_count": 5,
+      "papers_by_conference": {
+        "iclr25": [
+          "LongVILA: Scaling Long-Context Visual Language Models for Long Videos",
+          "mPLUG-Owl3: Towards Long Image-Sequence Understanding in Multi-Modal Large Language Models"
+        ],
+        "acl25": [
+          "Just Go Parallel: Improving the Multilingual Capabilities of Large Language Models"
+        ],
+        "icml25": [
+          "VideoRoPE: What Makes for Good Video Rotary Position Embedding?"
+        ],
+        "emnlp25": [
+          "HydraRAG: Structured Cross-Source Enhanced Large Language Model Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-context understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Oryx MLLM: On-Demand Spatial-Temporal Understanding at Arbitrary Resolution",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Oryx MLLM: On-Demand Spatial-Temporal Understanding at Arbitrary Resolution"
+        ],
+        "icml25": [
+          "Scaling Video-Language Models to 10K Frames via Hierarchical Differential Distillation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-context multimodal understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "LongVideoBench: A Benchmark for Long-context Interleaved Video-Language Understanding",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "LongVideoBench: A Benchmark for Long-context Interleaved Video-Language Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "An Evolved Universal Transformer Memory",
+      "evidence": "In Table 6, we provide results zero-shot transferring to the computer vision domain, evaluating NAMMs with a Llava Next Video 7B model (Zhang et al., 2024b) on LongVideoBench (Wu et al., 2024) and Multi-Task Long Video Understanding (MLVU) (Zhou et al., 2024). (Section 4.2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "An Evolved Universal Transformer Memory"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Video question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Understanding Long Videos with Multimodal Language Models",
+      "evidence": "We also evaluate MVU on the LongVideoBench dataset which contains even longer videos (Section 5.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Understanding Long Videos with Multimodal Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 5,
+  "outgoing_relationship_count": 0,
+  "characterization": "LongVideoBench is predominantly described as a benchmark dataset used to evaluate model performance on tasks involving long videos. Across the surveyed literature, it is most frequently used to measure the construct of `Video understanding`. Papers also use it to assess related capabilities such as `long-context understanding`, `multimodal understanding`, and `long-context processing`. The most common specific task it is said to evaluate is `video question answering`. A smaller set of papers offer more granular descriptions of its purpose, framing it as a benchmark for \"referred reasoning in long videos\" (\"Scaling Video-Language Models to 10K Frames via Hierarchical Differential Distillation\") or for evaluating \"temporal reasoning tasks\" across diverse domains. The definitions consistently highlight that the dataset contains \"very long videos,\" with one study noting they are \"even longer\" than those in other benchmarks. The various descriptions are largely complementary, centering on the evaluation of models' abilities to comprehend extended video content.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "An Evolved Universal Transformer Memory",
+      "Exploring the Design Space of Visual Context Representation in Video MLLMs",
+      "LongVILA: Scaling Long-Context Visual Language Models for Long Videos",
+      "Oryx MLLM: On-Demand Spatial-Temporal Understanding at Arbitrary Resolution",
+      "Understanding Long Videos with Multimodal Language Models",
+      "mPLUG-Owl3: Towards Long Image-Sequence Understanding in Multi-Modal Large Language Models"
+    ],
+    "acl25": [
+      "Just Go Parallel: Improving the Multilingual Capabilities of Large Language Models",
+      "SurveyPilot: an Agentic Framework for Automated Human Opinion Collection from Social Media"
+    ],
+    "icml25": [
+      "Improving LLM Video Understanding with 16 Frames Per Second",
+      "Scaling Video-Language Models to 10K Frames via Hierarchical Differential Distillation",
+      "VideoRoPE: What Makes for Good Video Rotary Position Embedding?"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 6,
+    "acl25": 2,
+    "icml25": 3
+  },
+  "conferences": [
+    "acl25",
+    "iclr25",
+    "icml25"
+  ]
+}

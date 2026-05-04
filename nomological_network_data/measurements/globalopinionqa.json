@@ -1,0 +1,98 @@
+{
+  "canonical_name": "GlobalOpinionQA",
+  "type": "measurement",
+  "canonical_definition": "GlobalOpinionQA is consistently described across papers as a dataset or benchmark composed of questions and answers from cross-national surveys, specifically the World Values Survey and the PEW Global Attitudes Survey. Its prevailing use is to evaluate how opinions expressed by language models align with aggregated human opinions from different countries. The provided literature uses the instrument to measure several constructs, including `societal bias`, `distribution alignment`, and `personalization`. For example, one paper uses it to \"identify model bias in representing diverse viewpoints\" by comparing model outputs to population-level data. Another study adapts the dataset to measure `personalization` by treating each country as a distinct \"user\" and converting the survey's answer distributions into single, most-probable answers. Operationally, it is a multiple-choice question-answering dataset, and some researchers use it as a \"template for consistency\" when formatting survey data for LLM evaluation. The dataset is noted to contain approximately 2,500 questions and is also used for sampling countries to maintain geographical and GDP-level diversity.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "GLOBALOPINIONQA",
+    "GlobalOpinionQA"
+  ],
+  "papers": [
+    "FollowIR: Evaluating and Teaching Information Retrieval Models to Follow Instructions",
+    "LLMs Are Not Intelligent Thinkers: Introducing Mathematical Topic Tree Benchmark for Comprehensive Evaluation ofLLMs",
+    "ManaTTSPersian: a recipe for creatingTTSdatasets for lower resource languages",
+    "Mixture of Multimodal Adapters for Sentiment Analysis",
+    "Understanding Figurative Meaning through Explainable Visual Entailment"
+  ],
+  "paper_count": 5,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A dataset of questions and answers from cross-national surveys (World Values Survey and PEW Global Attitudes Survey) designed to capture diverse perspectives on global issues.",
+      "paper": "FollowIR: Evaluating and Teaching Information Retrieval Models to Follow Instructions",
+      "original_name": "GlobalOpinionQA"
+    },
+    {
+      "text": "Benchmark aggregating Pew Global Attitudes Survey and World Values Survey to assess alignment of model responses with human opinions across regions.",
+      "paper": "ManaTTSPersian: a recipe for creatingTTSdatasets for lower resource languages",
+      "original_name": "GLOBALOPINIONQA"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Distribution alignment",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Understanding Figurative Meaning through Explainable Visual Entailment",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Understanding Figurative Meaning through Explainable Visual Entailment"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Societal bias",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Mixture of Multimodal Adapters for Sentiment Analysis",
+      "evidence": "GlobalOpinionQA (Durmus et al., 2024) uses multiple-choice questions to assess the opinions stated by a model relative to aggregated population opinions from different countries. The goal is to identify model bias in representing diverse viewpoints. (Section 3)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Mixture of Multimodal Adapters for Sentiment Analysis"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Personalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "FollowIR: Evaluating and Teaching Information Retrieval Models to Follow Instructions",
+      "evidence": "For GlobalOpinionQA, since the dataset originally included the answer distribution by multiple respondents in the same country, we converted it to have a single answer by selecting the choice with the highest probability. It results in 920 training and 1,317 test QA pairs across 46 countries. We consider each country as a specific user. (Section 4.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "FollowIR: Evaluating and Teaching Information Retrieval Models to Follow Instructions"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization": "GlobalOpinionQA is consistently described across papers as a dataset or benchmark composed of questions and answers from cross-national surveys, specifically the World Values Survey and the PEW Global Attitudes Survey. Its prevailing use is to evaluate how opinions expressed by language models align with aggregated human opinions from different countries. The provided literature uses the instrument to measure several constructs, including `societal bias`, `distribution alignment`, and `personalization`. For example, one paper uses it to \"identify model bias in representing diverse viewpoints\" by comparing model outputs to population-level data. Another study adapts the dataset to measure `personalization` by treating each country as a distinct \"user\" and converting the survey's answer distributions into single, most-probable answers. Operationally, it is a multiple-choice question-answering dataset, and some researchers use it as a \"template for consistency\" when formatting survey data for LLM evaluation. The dataset is noted to contain approximately 2,500 questions and is also used for sampling countries to maintain geographical and GDP-level diversity.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "naacl25": [
+      "FollowIR: Evaluating and Teaching Information Retrieval Models to Follow Instructions",
+      "LLMs Are Not Intelligent Thinkers: Introducing Mathematical Topic Tree Benchmark for Comprehensive Evaluation ofLLMs",
+      "ManaTTSPersian: a recipe for creatingTTSdatasets for lower resource languages",
+      "Mixture of Multimodal Adapters for Sentiment Analysis",
+      "Understanding Figurative Meaning through Explainable Visual Entailment"
+    ]
+  },
+  "paper_count_by_conference": {
+    "naacl25": 5
+  },
+  "conferences": [
+    "naacl25"
+  ]
+}

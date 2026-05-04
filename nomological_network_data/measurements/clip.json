@@ -1,0 +1,86 @@
+{
+  "canonical_name": "CLIP",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, CLIP is predominantly characterized as a vision-language model (VLM) that aligns image and text embeddings, often through contrastive pre-training. Its most common application is as a measurement instrument to evaluate the correspondence between text and images. For instance, it is explicitly used to measure the construct of `Relevance` by quantifying \"text-image correspondence\" and to assess the correctness of image descriptions by computing cosine similarity between embeddings. The model's vision and text encoders are also frequently used independently to extract features, which then serve as a basis for calculating visual or textual similarity for tasks like demonstration retrieval or providing training guidance. Beyond evaluation, CLIP is also employed as a baseline for zero-shot classification and as an external tool to identify salient image regions. A single paper presents a conflicting definition, describing CLIP as a dataset for RBP-RNA binding prediction, a usage that diverges from the otherwise consistent framing of CLIP as a VLM.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "CLIP"
+  ],
+  "papers": [
+    "CodeMixBench: Evaluating Code-Mixing Capabilities ofLLMs Across 18 Languages",
+    "Rescorla-Wagner Steering ofLLMs for Undesired Behaviors over Disproportionate Inappropriate Context",
+    "SATBench: BenchmarkingLLMs\u2019 Logical Reasoning via Automated Puzzle Generation fromSATFormulas",
+    "Democratizing Fine-grained Visual Recognition with Large Language Models",
+    "Mixture of LoRA Experts",
+    "MLLMs Know Where to Look: Training-free Perception of Small Visual Details with Multimodal LLMs",
+    "ZooProbe: A Data Engine for Evaluating, Exploring, and Evolving Large-scale Training Data for Multimodal LLMs",
+    "Correcting Negative Bias in Large Language Models through Negative Attention Score Alignment",
+    "Smurfs: Multi-Agent System using Context-EfficientDFSDTfor Tool Planning",
+    "Typographic Attacks in a Multi-Image Setting"
+  ],
+  "paper_count": 10,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Vision-language model (e.g., ViT-B/16) used for zero-shot classification by aligning image and text embeddings, employed in FineR for multi-modal classifier construction and noisy name denoising.",
+      "paper": "Democratizing Fine-grained Visual Recognition with Large Language Models",
+      "original_name": "CLIP"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Relevance",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Rescorla-Wagner Steering ofLLMs for Undesired Behaviors over Disproportionate Inappropriate Context",
+      "evidence": "we employ CLIP (Radford et al., 2021) Score as the Relevance Score to quantify text-image correspondence. (Section 3.2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Rescorla-Wagner Steering ofLLMs for Undesired Behaviors over Disproportionate Inappropriate Context"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, CLIP is predominantly characterized as a vision-language model (VLM) that aligns image and text embeddings, often through contrastive pre-training. Its most common application is as a measurement instrument to evaluate the correspondence between text and images. For instance, it is explicitly used to measure the construct of `Relevance` by quantifying \"text-image correspondence\" and to assess the correctness of image descriptions by computing cosine similarity between embeddings. The model's vision and text encoders are also frequently used independently to extract features, which then serve as a basis for calculating visual or textual similarity for tasks like demonstration retrieval or providing training guidance. Beyond evaluation, CLIP is also employed as a baseline for zero-shot classification and as an external tool to identify salient image regions. A single paper presents a conflicting definition, describing CLIP as a dataset for RBP-RNA binding prediction, a usage that diverges from the otherwise consistent framing of CLIP as a VLM.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Democratizing Fine-grained Visual Recognition with Large Language Models",
+      "Mixture of LoRA Experts"
+    ],
+    "iclr25": [
+      "MLLMs Know Where to Look: Training-free Perception of Small Visual Details with Multimodal LLMs",
+      "ZooProbe: A Data Engine for Evaluating, Exploring, and Evolving Large-scale Training Data for Multimodal LLMs"
+    ],
+    "naacl25": [
+      "Correcting Negative Bias in Large Language Models through Negative Attention Score Alignment",
+      "Smurfs: Multi-Agent System using Context-EfficientDFSDTfor Tool Planning",
+      "Typographic Attacks in a Multi-Image Setting"
+    ],
+    "emnlp25": [
+      "CodeMixBench: Evaluating Code-Mixing Capabilities ofLLMs Across 18 Languages",
+      "Rescorla-Wagner Steering ofLLMs for Undesired Behaviors over Disproportionate Inappropriate Context",
+      "SATBench: BenchmarkingLLMs\u2019 Logical Reasoning via Automated Puzzle Generation fromSATFormulas"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "iclr25": 2,
+    "naacl25": 3,
+    "emnlp25": 3
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "naacl25"
+  ]
+}

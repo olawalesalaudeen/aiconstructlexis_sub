@@ -1,0 +1,215 @@
+{
+  "canonical_name": "TOFU",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, TOFU is consistently characterized as a synthetic benchmark dataset used to evaluate machine unlearning in large language models. It is most commonly described as consisting of question-answer pairs based on fictitious author biographies or fictional characters, with several papers specifying its scale as 200 authors and 4,000 total QA pairs. The primary application of TOFU is to operationalize and measure unlearning-related constructs; papers use it to assess \"Machine unlearning,\" \"Unlearning effectiveness,\" and \"Forget quality,\" with some using metrics like \"Forget Quality (FQ) and Model Utility (MU)\" that were proposed alongside the dataset. Its usage also extends to evaluating \"Verbatim memorization\" and \"Faithfulness.\" The benchmark is framed as simulating scenarios where personal or infringed-upon information must be removed from a model, as one paper notes it \"focuses on unlearning knowledge related to fictional characters, simulating scenarios where personal information is infringed upon by LLMs and must be removed.\" One source contrasts TOFU's synthetic data with the MUSE benchmark, which is positioned as addressing \"real-world unlearning challenges.\"",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "TOFU",
+    "TOFU dataset"
+  ],
+  "papers": [
+    "Knowledge Graph Retrieval-Augmented Generation forLLM-based Recommendation",
+    "NGQA: A Nutritional Graph Question Answering Benchmark for Personalized Health-aware Nutritional Reasoning",
+    "2025.emnlp-main.1109.checklist",
+    "Deep Associations, High Creativity: A Simple yet Effective Metric for Evaluating Large Language Models",
+    "Eliciting Implicit Acoustic Styles from Open-domain Instructions to Facilitate Fine-grained Controllable Generation of Speech",
+    "HS-STaR: Hierarchical Sampling for Self-Taught Reasoners via Difficulty Estimation and Budget Reallocation",
+    "Language-Guided Temporal Token Pruning for EfficientVideoLLMProcessing",
+    "M-BRe: Discovering Training Samples for Relation Extraction from Unlabeled Texts with Large Language Models",
+    "Mitigating Catastrophic Forgetting in Large Language Models with Forgetting-aware Pruning",
+    "Towards Statistical Factuality Guarantee for Large Vision-Language Models",
+    "A Closer Look at Machine Unlearning for Large Language Models",
+    "A Probabilistic Perspective on Unlearning and Alignment for Large Language Models",
+    "LLM Unlearning via Loss Adjustment with Only Forget Data",
+    "MUSE: Machine Unlearning Six-Way Evaluation for Language Models",
+    "On Large Language Model Continual Unlearning",
+    "Rethinking LLM Unlearning Objectives: A Gradient Perspective and Go Beyond",
+    "Towards Effective Evaluations and Comparisons for LLM Unlearning Methods",
+    "Towards Robust and Parameter-Efficient Knowledge Unlearning for LLMs",
+    "Unlearning or Obfuscating? Jogging the Memory of Unlearned LLMs via Benign Relearning",
+    "Adaptive Localization of Knowledge Negation for Continual LLM Unlearning",
+    "Exploring Criteria of Loss Reweighting to Enhance LLM Unlearning",
+    "GRU: Mitigating the Trade-off between Unlearning and Retention for LLMs",
+    "Evaluating Morphological Compositional Generalization in Large Language Models",
+    "Using Text-Based Causal Inference to Disentangle Factors Influencing Online Review Ratings"
+  ],
+  "paper_count": 24,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The TOFU benchmark, used here to evaluate recovery of unlearned author-related knowledge and keywords from fictitious QA pairs.",
+      "paper": "Unlearning or Obfuscating? Jogging the Memory of Unlearned LLMs via Benign Relearning",
+      "original_name": "TOFU"
+    },
+    {
+      "text": "A synthetic question-answering dataset focused on fictitious author biographies, designed to evaluate entity unlearning.",
+      "paper": "LLM Unlearning via Loss Adjustment with Only Forget Data",
+      "original_name": "TOFU dataset"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "A Probabilistic Perspective on Unlearning and Alignment for Large Language Models",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr25": [
+          "A Probabilistic Perspective on Unlearning and Alignment for Large Language Models"
+        ],
+        "naacl25": [
+          "Evaluating Morphological Compositional Generalization in Large Language Models",
+          "Using Text-Based Causal Inference to Disentangle Factors Influencing Online Review Ratings"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Forget quality",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "LLM Unlearning via Loss Adjustment with Only Forget Data",
+      "evidence": "To assess forget quality and model utility, we mainly use two metrics proposed alongside the TOFU dataset, Forget Quality (FQ) and Model Utility (MU) (Maini et al., 2024a). (Section 4.3)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "LLM Unlearning via Loss Adjustment with Only Forget Data"
+        ],
+        "naacl25": [
+          "Evaluating Morphological Compositional Generalization in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Unlearning effectiveness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "A Probabilistic Perspective on Unlearning and Alignment for Large Language Models",
+      "evidence": "We conduct experiments on TOFU (Maini et al., 2024), which consists of 200 fictitious author profiles split into a retain and forget set, where the retain set is used to maintain model capabilities and the forget set is used for unlearning (Section 6).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "A Probabilistic Perspective on Unlearning and Alignment for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "On Large Language Model Continual Unlearning",
+      "evidence": "The closest work to ours is TOFU (Maini et al., 2024), a benchmark featuring 200 synthetic author profiles, each with 20 question-answer pairs, divided into forget and retain sets. (Section 6)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "On Large Language Model Continual Unlearning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "MUSE",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "MUSE: Machine Unlearning Six-Way Evaluation for Language Models",
+      "evidence": "Unlike the previous benchmark TOFU (Maini et al., 2024), which evaluates unlearning on synthetic Q&A datasets, MUSE tackles real-world unlearning challenges (Table 1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "MUSE: Machine Unlearning Six-Way Evaluation for Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Machine unlearning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Adaptive Localization of Knowledge Negation for Continual LLM Unlearning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Adaptive Localization of Knowledge Negation for Continual LLM Unlearning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Verbatim memorization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Using Text-Based Causal Inference to Disentangle Factors Influencing Online Review Ratings",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Using Text-Based Causal Inference to Disentangle Factors Influencing Online Review Ratings"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 7,
+  "incoming_relationship_count": 7,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, TOFU is consistently characterized as a synthetic benchmark dataset used to evaluate machine unlearning in large language models. It is most commonly described as consisting of question-answer pairs based on fictitious author biographies or fictional characters, with several papers specifying its scale as 200 authors and 4,000 total QA pairs. The primary application of TOFU is to operationalize and measure unlearning-related constructs; papers use it to assess \"Machine unlearning,\" \"Unlearning effectiveness,\" and \"Forget quality,\" with some using metrics like \"Forget Quality (FQ) and Model Utility (MU)\" that were proposed alongside the dataset. Its usage also extends to evaluating \"Verbatim memorization\" and \"Faithfulness.\" The benchmark is framed as simulating scenarios where personal or infringed-upon information must be removed from a model, as one paper notes it \"focuses on unlearning knowledge related to fictional characters, simulating scenarios where personal information is infringed upon by LLMs and must be removed.\" One source contrasts TOFU's synthetic data with the MUSE benchmark, which is positioned as addressing \"real-world unlearning challenges.\"",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "A Closer Look at Machine Unlearning for Large Language Models",
+      "A Probabilistic Perspective on Unlearning and Alignment for Large Language Models",
+      "LLM Unlearning via Loss Adjustment with Only Forget Data",
+      "MUSE: Machine Unlearning Six-Way Evaluation for Language Models",
+      "On Large Language Model Continual Unlearning",
+      "Rethinking LLM Unlearning Objectives: A Gradient Perspective and Go Beyond",
+      "Towards Effective Evaluations and Comparisons for LLM Unlearning Methods",
+      "Towards Robust and Parameter-Efficient Knowledge Unlearning for LLMs",
+      "Unlearning or Obfuscating? Jogging the Memory of Unlearned LLMs via Benign Relearning"
+    ],
+    "naacl25": [
+      "Evaluating Morphological Compositional Generalization in Large Language Models",
+      "Using Text-Based Causal Inference to Disentangle Factors Influencing Online Review Ratings"
+    ],
+    "acl25": [
+      "Knowledge Graph Retrieval-Augmented Generation forLLM-based Recommendation",
+      "NGQA: A Nutritional Graph Question Answering Benchmark for Personalized Health-aware Nutritional Reasoning"
+    ],
+    "icml25": [
+      "Adaptive Localization of Knowledge Negation for Continual LLM Unlearning",
+      "Exploring Criteria of Loss Reweighting to Enhance LLM Unlearning",
+      "GRU: Mitigating the Trade-off between Unlearning and Retention for LLMs"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.1109.checklist",
+      "Deep Associations, High Creativity: A Simple yet Effective Metric for Evaluating Large Language Models",
+      "Eliciting Implicit Acoustic Styles from Open-domain Instructions to Facilitate Fine-grained Controllable Generation of Speech",
+      "HS-STaR: Hierarchical Sampling for Self-Taught Reasoners via Difficulty Estimation and Budget Reallocation",
+      "Language-Guided Temporal Token Pruning for EfficientVideoLLMProcessing",
+      "M-BRe: Discovering Training Samples for Relation Extraction from Unlabeled Texts with Large Language Models",
+      "Mitigating Catastrophic Forgetting in Large Language Models with Forgetting-aware Pruning",
+      "Towards Statistical Factuality Guarantee for Large Vision-Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 9,
+    "naacl25": 2,
+    "acl25": 2,
+    "icml25": 3,
+    "emnlp25": 8
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "naacl25"
+  ]
+}

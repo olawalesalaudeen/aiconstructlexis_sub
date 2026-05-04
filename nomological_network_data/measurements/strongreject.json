@@ -1,0 +1,151 @@
+{
+  "canonical_name": "StrongReject",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, 'StrongReject' refers to two related but distinct measurement instruments: a dataset of harmful prompts and a safety classifier model. The most prevalent usage is as a safety evaluation dataset containing what one paper calls \"manually constructed, more realistic and specific examples\" of harmful prompts (\"Investigating the (De)Composition Capabilities of Large Language Models in Natural-to-Formal Language Conversion\"). This dataset includes \"highly adversarial and unsafe prompts\" such as instructions on how to make a nail bomb, and is used to measure constructs like `Safety`, `Harmlessness`, and `Adversarial robustness`. Papers operationalize it to assess a model's \"safety violation rate\" and evaluate performance against jailbreak techniques. A separate line of work defines StrongReject as a \"safety classifier model based on Gemma-2B,\" which functions as an LLM-as-a-judge. In this capacity, it is used to measure the behavior of `Harmful content generation` by evaluating the harmfulness of model responses. Some sources describe it as a combined \"dataset and scoring system,\" suggesting the dataset provides the prompts while a scoring mechanism quantifies the resulting responses (\"The Hidden Dimensions of LLM Alignment: A Multi-Dimensional Analysis of Orthogonal Safety Directions\").",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "StrongReject",
+    "StrongREJECT",
+    "STRONG REJECT"
+  ],
+  "papers": [
+    "ChineseSafetyQA: A Safety Short-form Factuality Benchmark for Large Language Models",
+    "ToolHop: A Query-Driven Benchmark for Evaluating Large Language Models in Multi-Hop Tool Use",
+    "Using Shapley interactions to understand how models use structure",
+    "Backtracking Improves Generation Safety",
+    "Instructional Segment Embedding: Improving LLM Safety with Instruction Hierarchy",
+    "Robust LLM safeguarding via refusal feature adversarial training",
+    "Emergent Misalignment: Narrow finetuning can produce broadly misaligned LLMs",
+    "STAIR: Improving Safety Alignment with Introspective Reasoning",
+    "Scaling Trends in Language Model Robustness",
+    "The Hidden Dimensions of LLM Alignment: A Multi-Dimensional Analysis of Orthogonal Safety Directions",
+    "Investigating the (De)Composition Capabilities of Large Language Models in Natural-to-Formal Language Conversion",
+    "REFFLY: Melody-Constrained Lyrics Editing Model"
+  ],
+  "paper_count": 12,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A safety classifier model based on Gemma-2B, used as an LLM-as-a-judge to evaluate the harmfulness of model responses.",
+      "paper": "Robust LLM safeguarding via refusal feature adversarial training",
+      "original_name": "StrongReject"
+    },
+    {
+      "text": "An open-source safety evaluation dataset (SR) used to assess a model's safety violation rate.",
+      "paper": "Backtracking Improves Generation Safety",
+      "original_name": "StrongREJECT"
+    },
+    {
+      "text": "A dataset and scoring system used to provide toxic sample prompts for safety fine-tuning and to quantify the harmfulness of model responses during evaluation.",
+      "paper": "The Hidden Dimensions of LLM Alignment: A Multi-Dimensional Analysis of Orthogonal Safety Directions",
+      "original_name": "STRONG REJECT"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmlessness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "The Hidden Dimensions of LLM Alignment: A Multi-Dimensional Analysis of Orthogonal Safety Directions",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "icml25": [
+          "The Hidden Dimensions of LLM Alignment: A Multi-Dimensional Analysis of Orthogonal Safety Directions",
+          "STAIR: Improving Safety Alignment with Introspective Reasoning"
+        ],
+        "emnlp25": [
+          "Direct Value Optimization: Improving Chain-of-Thought Reasoning inLLMs with Refined Values"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Safety",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "REFFLY: Melody-Constrained Lyrics Editing Model",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "naacl25": [
+          "REFFLY: Melody-Constrained Lyrics Editing Model"
+        ],
+        "emnlp25": [
+          "In-Context Learning Boosts Speech Recognition via Human-like Adaptation to Speakers and Language Varieties"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Adversarial robustness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "A StrongREJECT for Empty Jailbreaks",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "A StrongREJECT for Empty Jailbreaks"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmful content generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Robust LLM safeguarding via refusal feature adversarial training",
+      "evidence": "To compute attack success rate, we use three LLM-as-a-judge models that are fine-tuned to assess output safety: ... and the Gemma-2B version of the StrongReject safety classifier (Souly et al., 2024). (Section 5)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Robust LLM safeguarding via refusal feature adversarial training"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, 'StrongReject' refers to two related but distinct measurement instruments: a dataset of harmful prompts and a safety classifier model. The most prevalent usage is as a safety evaluation dataset containing what one paper calls \"manually constructed, more realistic and specific examples\" of harmful prompts (\"Investigating the (De)Composition Capabilities of Large Language Models in Natural-to-Formal Language Conversion\"). This dataset includes \"highly adversarial and unsafe prompts\" such as instructions on how to make a nail bomb, and is used to measure constructs like `Safety`, `Harmlessness`, and `Adversarial robustness`. Papers operationalize it to assess a model's \"safety violation rate\" and evaluate performance against jailbreak techniques. A separate line of work defines StrongReject as a \"safety classifier model based on Gemma-2B,\" which functions as an LLM-as-a-judge. In this capacity, it is used to measure the behavior of `Harmful content generation` by evaluating the harmfulness of model responses. Some sources describe it as a combined \"dataset and scoring system,\" suggesting the dataset provides the prompts while a scoring mechanism quantifies the resulting responses (\"The Hidden Dimensions of LLM Alignment: A Multi-Dimensional Analysis of Orthogonal Safety Directions\").",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Backtracking Improves Generation Safety",
+      "Instructional Segment Embedding: Improving LLM Safety with Instruction Hierarchy",
+      "Robust LLM safeguarding via refusal feature adversarial training"
+    ],
+    "naacl25": [
+      "Investigating the (De)Composition Capabilities of Large Language Models in Natural-to-Formal Language Conversion",
+      "REFFLY: Melody-Constrained Lyrics Editing Model"
+    ],
+    "acl25": [
+      "ChineseSafetyQA: A Safety Short-form Factuality Benchmark for Large Language Models",
+      "ToolHop: A Query-Driven Benchmark for Evaluating Large Language Models in Multi-Hop Tool Use",
+      "Using Shapley interactions to understand how models use structure"
+    ],
+    "icml25": [
+      "Emergent Misalignment: Narrow finetuning can produce broadly misaligned LLMs",
+      "STAIR: Improving Safety Alignment with Introspective Reasoning",
+      "Scaling Trends in Language Model Robustness",
+      "The Hidden Dimensions of LLM Alignment: A Multi-Dimensional Analysis of Orthogonal Safety Directions"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3,
+    "naacl25": 2,
+    "acl25": 3,
+    "icml25": 4
+  },
+  "conferences": [
+    "acl25",
+    "iclr25",
+    "icml25",
+    "naacl25"
+  ]
+}

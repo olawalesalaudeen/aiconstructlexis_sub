@@ -1,0 +1,164 @@
+{
+  "canonical_name": "Best-of-N",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, Best-of-N is consistently described as a procedure involving two steps: generating multiple candidate outputs and then selecting the best one based on a scoring mechanism. Some papers define this in the context of question answering, where 'N candidate responses are generated, and the one with the highest predicted correctness score is selected' (\"LaMP-QA: A Benchmark for Personalized Long-form Question Answering\"), while a more general framing describes it as a 'repeated generation-and-selection procedure' for any type of candidate set (\"Skeletons Matter: Dynamic Data Augmentation for Text-to-Query\"). The procedure is positioned as a method for evaluating certain model traits, with papers using it to measure both `Sycophancy` and `Verification ability`. Furthermore, the application of Best-of-N is reported to influence several downstream outcomes, including `Output quality`, `Citation quality`, and `Commonsense knowledge`. The performance of systems using this procedure is, in turn, evaluated using benchmarks like `MT-Bench`. In the surveyed work, Best-of-N is framed as an 'adaptive reasoning strategy' and is studied alongside other techniques like `Majority voting` and concepts such as `Human preference alignment`.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Best-of-N",
+    "Best-of-N sampling"
+  ],
+  "papers": [
+    "AIMMerging: Adaptive Iterative Model Merging Using Training Trajectories for Language Model Continual Learning",
+    "Alignment-Augmented Speculative Decoding with Alignment Sampling and Conditional Verification",
+    "Are Generative Models Underconfident? Better Quality Estimation with Boosted Model Probability",
+    "Extracting Linguistic Information from Large Language Models: Syntactic Relations and Derivational Knowledge",
+    "From Parameters to Performance: A Data-Driven Study onLLMStructure and Development",
+    "LaMP-QA: A Benchmark for Personalized Long-form Question Answering",
+    "Mitigating Hallucinations in Vision-Language Models through Image-Guided Head Suppression",
+    "Not What the Doctor Ordered: SurveyingLLM-based De-identification and Quantifying Clinical Information Loss",
+    "Skeletons Matter: Dynamic Data Augmentation for Text-to-Query",
+    "Unlearning vs. Obfuscation: Are We Truly Removing Knowledge?"
+  ],
+  "paper_count": 10,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "An inference procedure where N candidate responses are generated, and the one with the highest predicted correctness score is selected as the final answer.",
+      "paper": "LaMP-QA: A Benchmark for Personalized Long-form Question Answering",
+      "original_name": "Best-of-N"
+    },
+    {
+      "text": "A repeated generation-and-selection procedure that produces multiple candidate condensed subsets and keeps the highest-scoring one.",
+      "paper": "Skeletons Matter: Dynamic Data Augmentation for Text-to-Query",
+      "original_name": "Best-of-N sampling"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Sycophancy",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Towards Understanding Sycophancy in Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Towards Understanding Sycophancy in Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Alignment",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Theoretical guarantees on the best-of-n alignment policy",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Theoretical guarantees on the best-of-n alignment policy"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Verification ability",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Process Reward Model with Q-value Rankings",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Process Reward Model with Q-value Rankings"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Response quality",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "BEST-Route: Adaptive LLM Routing with Test-Time Optimal Compute",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "BEST-Route: Adaptive LLM Routing with Test-Time Optimal Compute"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MT-Bench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Are explicit belief representations necessary? A comparison between Large Language Models andBayesian probabilistic models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Are explicit belief representations necessary? A comparison between Large Language Models andBayesian probabilistic models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Citation quality",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "SelfCite: Self-Supervised Alignment for Context Attribution in Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "SelfCite: Self-Supervised Alignment for Context Attribution in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Majority voting",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "ZebraLogic: On the Scaling Limits of LLMs for Logical Reasoning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "ZebraLogic: On the Scaling Limits of LLMs for Logical Reasoning"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 7,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 4,
+  "characterization": "Across the provided literature, Best-of-N is consistently described as a procedure involving two steps: generating multiple candidate outputs and then selecting the best one based on a scoring mechanism. Some papers define this in the context of question answering, where 'N candidate responses are generated, and the one with the highest predicted correctness score is selected' (\"LaMP-QA: A Benchmark for Personalized Long-form Question Answering\"), while a more general framing describes it as a 'repeated generation-and-selection procedure' for any type of candidate set (\"Skeletons Matter: Dynamic Data Augmentation for Text-to-Query\"). The procedure is positioned as a method for evaluating certain model traits, with papers using it to measure both `Sycophancy` and `Verification ability`. Furthermore, the application of Best-of-N is reported to influence several downstream outcomes, including `Output quality`, `Citation quality`, and `Commonsense knowledge`. The performance of systems using this procedure is, in turn, evaluated using benchmarks like `MT-Bench`. In the surveyed work, Best-of-N is framed as an 'adaptive reasoning strategy' and is studied alongside other techniques like `Majority voting` and concepts such as `Human preference alignment`.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "AIMMerging: Adaptive Iterative Model Merging Using Training Trajectories for Language Model Continual Learning",
+      "Alignment-Augmented Speculative Decoding with Alignment Sampling and Conditional Verification",
+      "Are Generative Models Underconfident? Better Quality Estimation with Boosted Model Probability",
+      "Extracting Linguistic Information from Large Language Models: Syntactic Relations and Derivational Knowledge",
+      "From Parameters to Performance: A Data-Driven Study onLLMStructure and Development",
+      "LaMP-QA: A Benchmark for Personalized Long-form Question Answering",
+      "Mitigating Hallucinations in Vision-Language Models through Image-Guided Head Suppression",
+      "Not What the Doctor Ordered: SurveyingLLM-based De-identification and Quantifying Clinical Information Loss",
+      "Skeletons Matter: Dynamic Data Augmentation for Text-to-Query",
+      "Unlearning vs. Obfuscation: Are We Truly Removing Knowledge?"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 10
+  },
+  "conferences": [
+    "emnlp25"
+  ]
+}

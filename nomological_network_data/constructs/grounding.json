@@ -1,0 +1,431 @@
+{
+  "canonical_name": "Grounding",
+  "type": "construct",
+  "canonical_definition": "Across the provided literature, the construct of Grounding is predominantly framed in two distinct ways: connecting language to visual or spatial information, and connecting language to textual evidence. The most prevalent usage defines Grounding as a model's ability to connect high-level concepts to fine-grained visual details, such as localizing objects in an image or video from a textual description. This includes producing precise spatial outputs like bounding boxes for user interface elements, as seen in definitions of 'Grounding ability' and 'Grounding capability'. A specific line of this research extends this to the temporal domain, where grounding involves identifying specific timestamps or video segments corresponding to a natural language query, a task referred to as 'Moment retrieval' or 'Temporal action localization'. This form of temporal grounding is operationalized using benchmarks like Charades-STA, which is used to measure moment retrieval performance. A separate body of work, often in the context of retrieval-augmented generation (RAG), treats Grounding as the extent to which a model's response is derived from provided documents rather than its internal parametric knowledge. In this context, also termed 'Groundedness' or 'Argument groundedness', the focus is on ensuring responses are factually supported by and consistent with retrieved evidence, with one study defining 'Attribution Groundedness' as the quality of citations supporting generated claims. The provided data also shows that Grounding is studied alongside other constructs like Temporal reasoning and Mathematical reasoning.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Grounding",
+    "Grounding ability",
+    "Grounding capability",
+    "Groundedness",
+    "Visual localization",
+    "Attribution groundedness",
+    "Grounded understanding",
+    "Argument groundedness",
+    "Evidence attribution",
+    "Factual reliability",
+    "Context utilisation",
+    "Region understanding",
+    "Framing divergence",
+    "Caption alignment",
+    "Temporal referring expression",
+    "Accident temporal localization",
+    "Temporal referring",
+    "Moment retrieval",
+    "Temporal action localization"
+  ],
+  "papers": [
+    "A Silver Bullet or a Compromise for Full Attention? A Comprehensive Study of Gist Token-based Context Compression",
+    "Adversarial Alignment with Anchor Dragging Drift (A3D2): Multimodal Domain Adaptation with Partially Shifted Modalities",
+    "BIG-Bench Extra Hard",
+    "Enhancing Lexicon-Based Text Embeddings with Large Language Models",
+    "Evaluating Personalized Tool-AugmentedLLMs from the Perspectives of Personalization and Proactivity",
+    "LoGU: Long-form Generation with Uncertainty Expressions",
+    "3DS: Medical Domain Adaptation ofLLMs via Decomposed Difficulty-based Data Selection",
+    "Ambiguity Awareness Optimization: Towards Semantic Disambiguation for Direct Preference Optimization",
+    "Bitune: Leveraging Bidirectional Attention to Improve Decoder-OnlyLLMs",
+    "ExpandR: Teaching Dense Retrievers Beyond Queries withLLMGuidance",
+    "LLaMP: Large Language Model Made Powerful for High-fidelity Materials Knowledge Retrieval",
+    "Mining the Past with Dual Criteria: Integrating Three types of Historical Information for Context-aware Event Forecasting",
+    "Morpheme Induction for Emergent Language",
+    "MuCAL: Contrastive Alignment for Preference-DrivenKG-to-Text Generation",
+    "SafeKey: Amplifying Aha-Moment Insights for Safety Reasoning",
+    "Same evaluation, more tokens: On the effect of input length for machine translation evaluation using Large Language Models",
+    "learnable soft visual prompt",
+    "Ferret: Refer and Ground Anything Anywhere at Any Granularity",
+    "Lemur: Harmonizing Natural Language and Code for Language Agents",
+    "Look, Remember and Reason: Grounded Reasoning in Videos with Language Models",
+    "Agent S: An Open Agentic Framework that Uses Computers Like a Human",
+    "Benchmarking Multimodal Retrieval Augmented Generation with Dynamic VQA Dataset and Self-adaptive Planning Agent",
+    "CogCoM: A Visual Language Model with Chain-of-Manipulations Reasoning",
+    "Ferret-UI 2: Mastering Universal User Interface Understanding Across Platforms",
+    "From Models to Microtheories: Distilling a Model's Topical Knowledge for Grounded Question-Answering",
+    "Grounding by Trying: LLMs with Reinforcement Learning-Enhanced Retrieval",
+    "MLLM as Retriever: Interactively Learning Multimodal Retrieval for Embodied Agents",
+    "MLLMs Know Where to Look: Training-free Perception of Small Visual Details with Multimodal LLMs",
+    "Measuring and Enhancing Trustworthiness of LLMs in RAG through Grounded Attributions and Learning to Refuse",
+    "TAU-106K: A New Dataset for Comprehensive Understanding of Traffic Accident",
+    "TEOChat: A Large Vision-Language Assistant for Temporal Earth Observation Data",
+    "TRACE: Temporal Grounding Video LLM  via Causal Event Modeling",
+    "Temporal Reasoning Transfer from Text to Video",
+    "Video-STaR: Self-Training Enables Video Instruction Tuning with Any Supervision",
+    "YouTube-SL-25: A Large-Scale, Open-Domain Multilingual Sign Language Parallel Corpus",
+    "Aguvis: Unified Pure Vision Agents for Autonomous GUI Interaction",
+    "CPCF: A Cross-Prompt Contrastive Framework for Referring Multimodal Large Language Models",
+    "Position: AI Should Not Be An Imitation Game: Centaur Evaluations",
+    "SPRI: Aligning Large Language Models with Context-Situated Principles",
+    "What Limits Virtual Agent Application? OmniBench: A Scalable Multi-Dimensional Benchmark for Essential Virtual Agent Capabilities",
+    "RAGLLMs are Not Safer: A Safety Analysis of Retrieval-Augmented Generation for Large Language Models",
+    "Stronger Universal and Transferable Attacks by Suppressing Refusals",
+    "Towards Quantifying Commonsense Reasoning with Mechanistic Insights",
+    "Waste Not, Want Not; RecycledGumbel Noise Improves Consistency in Natural Language Generation",
+    "AgentBoard: An Analytical Evaluation Board of Multi-turn LLM Agents",
+    "E.T. Bench: Towards Open-Ended Event-Level Video-Language Understanding",
+    "Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models",
+    "Multi-modal Situated Reasoning in 3D Scenes",
+    "On the Effects of Data Scale on UI Control Agents",
+    "PERIA: Perceive, Reason, Imagine, Act via Holistic Language and Vision Planning for Manipulation",
+    "SPIQA: A Dataset for Multimodal Question Answering on Scientific Papers",
+    "VideoGUI: A Benchmark for GUI Automation from Instructional Videos"
+  ],
+  "paper_count": 52,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The model's ability to connect high-level concepts and reasoning processes to fine-grained, low-level visual details in a video, such as object identities, motion, and interactions.",
+      "paper": "Ferret: Refer and Ground Anything Anywhere at Any Granularity",
+      "original_name": "Grounding"
+    },
+    {
+      "text": "The capacity to produce precise spatial outputs for GUI elements, such as coordinates or bounding boxes, from screenshots.",
+      "paper": "VideoGUI: A Benchmark for GUI Automation from Instructional Videos",
+      "original_name": "Grounding ability"
+    },
+    {
+      "text": "The latent ability to accurately associate textual references with specific visual locations or bounding boxes in a UI.",
+      "paper": "Ferret-UI 2: Mastering Universal User Interface Understanding Across Platforms",
+      "original_name": "Grounding capability"
+    },
+    {
+      "text": "The extent to which an LLM's response is derived solely from the information within provided documents rather than its internal parametric knowledge.",
+      "paper": "Measuring and Enhancing Trustworthiness of LLMs in RAG through Grounded Attributions and Learning to Refuse",
+      "original_name": "Groundedness"
+    },
+    {
+      "text": "The latent ability to identify where in an image the relevant subject or evidence for a question is located.",
+      "paper": "MLLMs Know Where to Look: Training-free Perception of Small Visual Details with Multimodal LLMs",
+      "original_name": "Visual localization"
+    },
+    {
+      "text": "The quality of an LLM's generated citations in a RAG context, specifically whether the citations are relevant and sufficiently support the claims they are attached to.",
+      "paper": "Measuring and Enhancing Trustworthiness of LLMs in RAG through Grounded Attributions and Learning to Refuse",
+      "original_name": "Attribution groundedness"
+    },
+    {
+      "text": "The ability to connect language expressions to specific image regions or objects with precise spatial localization.",
+      "paper": "CogCoM: A Visual Language Model with Chain-of-Manipulations Reasoning",
+      "original_name": "Grounded understanding"
+    },
+    {
+      "text": "The latent ability of a model to correctly and faithfully link statements in its explanations to the supporting source evidence, ensuring that citations reflect actual content and context from the provided passages.",
+      "paper": "RAGLLMs are Not Safer: A Safety Analysis of Retrieval-Augmented Generation for Large Language Models",
+      "original_name": "Evidence attribution"
+    },
+    {
+      "text": "The extent to which a generated argument is factually supported by and consistent with the retrieved evidence, minimizing hallucination or contradiction.",
+      "paper": "Waste Not, Want Not; RecycledGumbel Noise Improves Consistency in Natural Language Generation",
+      "original_name": "Argument groundedness"
+    },
+    {
+      "text": "The degree to which the retrieval and reasoning process avoids hallucinated or factually inaccurate content by grounding in document-derived knowledge.",
+      "paper": "LoGU: Long-form Generation with Uncertainty Expressions",
+      "original_name": "Factual reliability"
+    },
+    {
+      "text": "The latent ability of a language model to effectively leverage retrieved external information when generating responses, reflecting how well it integrates evidence into its predictions.",
+      "paper": "Adversarial Alignment with Anchor Dragging Drift (A3D2): Multimodal Domain Adaptation with Partially Shifted Modalities",
+      "original_name": "Context utilisation"
+    },
+    {
+      "text": "The latent ability of a referring MLLM to accurately interpret and generate responses based on a specific visual region indicated by a prompt, distinguishing it from surrounding or similar regions.",
+      "paper": "CPCF: A Cross-Prompt Contrastive Framework for Referring Multimodal Large Language Models",
+      "original_name": "Region understanding"
+    },
+    {
+      "text": "The latent tendency of an LLM to generate conflicting narrative interpretations of the same event when conditioned on different personas, reflecting epistemic contradictions shaped by perspective.",
+      "paper": "learnable soft visual prompt",
+      "original_name": "Framing divergence"
+    },
+    {
+      "text": "Identifying the specific image or images in a sequence where a described change occurred.",
+      "paper": "TEOChat: A Large Vision-Language Assistant for Temporal Earth Observation Data",
+      "original_name": "Temporal referring expression"
+    },
+    {
+      "text": "The task of identifying the precise start and end timestamps of a traffic accident event within a video clip.",
+      "paper": "TAU-106K: A New Dataset for Comprehensive Understanding of Traffic Accident",
+      "original_name": "Accident temporal localization"
+    },
+    {
+      "text": "The observable behavior of formulating or answering questions that refer to particular temporal positions within the content.",
+      "paper": "Temporal Reasoning Transfer from Text to Video",
+      "original_name": "Temporal referring"
+    },
+    {
+      "text": "The task of synchronizing text captions with the corresponding segments of a sign language video.",
+      "paper": "YouTube-SL-25: A Large-Scale, Open-Domain Multilingual Sign Language Parallel Corpus",
+      "original_name": "Caption alignment"
+    },
+    {
+      "text": "The task of identifying the start and end timestamps of a video segment that corresponds to a given natural language query.",
+      "paper": "TRACE: Temporal Grounding Video LLM  via Causal Event Modeling",
+      "original_name": "Moment retrieval"
+    },
+    {
+      "text": "The task of identifying the start and end times of specific actions within a longer, untrimmed video.",
+      "paper": "Video-STaR: Self-Training Enables Video Instruction Tuning with Any Supervision",
+      "original_name": "Temporal action localization"
+    }
+  ],
+  "definition_count": 19,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Temporal reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "TRACE: Temporal Grounding Video LLM  via Causal Event Modeling",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "TRACE: Temporal Grounding Video LLM  via Causal Event Modeling",
+          "Temporal Reasoning Transfer from Text to Video"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Look, Remember and Reason: Grounded Reasoning in Videos with Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Look, Remember and Reason: Grounded Reasoning in Videos with Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Instruction following",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "AgentBoard: An Analytical Evaluation Board of Multi-turn LLM Agents",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "AgentBoard: An Analytical Evaluation Board of Multi-turn LLM Agents"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Tool use",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Lemur: Harmonizing Natural Language and Code for Language Agents",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Lemur: Harmonizing Natural Language and Code for Language Agents"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Spatial understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Ferret: Refer and Ground Anything Anywhere at Any Granularity",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Ferret: Refer and Ground Anything Anywhere at Any Granularity"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Temporal video grounding",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "E.T. Bench: Towards Open-Ended Event-Level Video-Language Understanding",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "E.T. Bench: Towards Open-Ended Event-Level Video-Language Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Charades-STA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "TRACE: Temporal Grounding Video LLM  via Causal Event Modeling",
+      "evidence": "We utilize test set of Charades-STA (Gao et al., 2017) for the moment retrieval task and report the recall at IOU thresholds of 0.5 and 0.7.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "TRACE: Temporal Grounding Video LLM  via Causal Event Modeling"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "FLEURS-ASL",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Examining and Adapting Time for Multilingual Classification via Mixture of Temporal Experts",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Examining and Adapting Time for Multilingual Classification via Mixture of Temporal Experts"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ScreenSpot",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Aguvis: Unified Pure Vision Agents for Autonomous GUI Interaction",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Aguvis: Unified Pure Vision Agents for Autonomous GUI Interaction"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual grounding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Large Continual Instruction Assistant",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Large Continual Instruction Assistant"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "InfiniBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "3DS: Medical Domain Adaptation ofLLMs via Decomposed Difficulty-based Data Selection",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "3DS: Medical Domain Adaptation ofLLMs via Decomposed Difficulty-based Data Selection"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 11,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 10,
+  "characterization": "Across the provided literature, the construct of Grounding is predominantly framed in two distinct ways: connecting language to visual or spatial information, and connecting language to textual evidence. The most prevalent usage defines Grounding as a model's ability to connect high-level concepts to fine-grained visual details, such as localizing objects in an image or video from a textual description. This includes producing precise spatial outputs like bounding boxes for user interface elements, as seen in definitions of 'Grounding ability' and 'Grounding capability'. A specific line of this research extends this to the temporal domain, where grounding involves identifying specific timestamps or video segments corresponding to a natural language query, a task referred to as 'Moment retrieval' or 'Temporal action localization'. This form of temporal grounding is operationalized using benchmarks like Charades-STA, which is used to measure moment retrieval performance. A separate body of work, often in the context of retrieval-augmented generation (RAG), treats Grounding as the extent to which a model's response is derived from provided documents rather than its internal parametric knowledge. In this context, also termed 'Groundedness' or 'Argument groundedness', the focus is on ensuring responses are factually supported by and consistent with retrieved evidence, with one study defining 'Attribution Groundedness' as the quality of citations supporting generated claims. The provided data also shows that Grounding is studied alongside other constructs like Temporal reasoning and Mathematical reasoning.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Ferret: Refer and Ground Anything Anywhere at Any Granularity",
+      "Lemur: Harmonizing Natural Language and Code for Language Agents",
+      "Look, Remember and Reason: Grounded Reasoning in Videos with Language Models"
+    ],
+    "neurips24": [
+      "AgentBoard: An Analytical Evaluation Board of Multi-turn LLM Agents",
+      "E.T. Bench: Towards Open-Ended Event-Level Video-Language Understanding",
+      "Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models",
+      "Multi-modal Situated Reasoning in 3D Scenes",
+      "On the Effects of Data Scale on UI Control Agents",
+      "PERIA: Perceive, Reason, Imagine, Act via Holistic Language and Vision Planning for Manipulation",
+      "SPIQA: A Dataset for Multimodal Question Answering on Scientific Papers",
+      "VideoGUI: A Benchmark for GUI Automation from Instructional Videos"
+    ],
+    "iclr25": [
+      "Agent S: An Open Agentic Framework that Uses Computers Like a Human",
+      "Benchmarking Multimodal Retrieval Augmented Generation with Dynamic VQA Dataset and Self-adaptive Planning Agent",
+      "CogCoM: A Visual Language Model with Chain-of-Manipulations Reasoning",
+      "Ferret-UI 2: Mastering Universal User Interface Understanding Across Platforms",
+      "From Models to Microtheories: Distilling a Model's Topical Knowledge for Grounded Question-Answering",
+      "Grounding by Trying: LLMs with Reinforcement Learning-Enhanced Retrieval",
+      "MLLM as Retriever: Interactively Learning Multimodal Retrieval for Embodied Agents",
+      "MLLMs Know Where to Look: Training-free Perception of Small Visual Details with Multimodal LLMs",
+      "Measuring and Enhancing Trustworthiness of LLMs in RAG through Grounded Attributions and Learning to Refuse",
+      "TAU-106K: A New Dataset for Comprehensive Understanding of Traffic Accident",
+      "TEOChat: A Large Vision-Language Assistant for Temporal Earth Observation Data",
+      "TRACE: Temporal Grounding Video LLM  via Causal Event Modeling",
+      "Temporal Reasoning Transfer from Text to Video",
+      "Video-STaR: Self-Training Enables Video Instruction Tuning with Any Supervision",
+      "YouTube-SL-25: A Large-Scale, Open-Domain Multilingual Sign Language Parallel Corpus"
+    ],
+    "naacl25": [
+      "RAGLLMs are Not Safer: A Safety Analysis of Retrieval-Augmented Generation for Large Language Models",
+      "Stronger Universal and Transferable Attacks by Suppressing Refusals",
+      "Towards Quantifying Commonsense Reasoning with Mechanistic Insights",
+      "Waste Not, Want Not; RecycledGumbel Noise Improves Consistency in Natural Language Generation"
+    ],
+    "acl25": [
+      "A Silver Bullet or a Compromise for Full Attention? A Comprehensive Study of Gist Token-based Context Compression",
+      "Adversarial Alignment with Anchor Dragging Drift (A3D2): Multimodal Domain Adaptation with Partially Shifted Modalities",
+      "BIG-Bench Extra Hard",
+      "Enhancing Lexicon-Based Text Embeddings with Large Language Models",
+      "Evaluating Personalized Tool-AugmentedLLMs from the Perspectives of Personalization and Proactivity",
+      "LoGU: Long-form Generation with Uncertainty Expressions"
+    ],
+    "icml25": [
+      "Aguvis: Unified Pure Vision Agents for Autonomous GUI Interaction",
+      "CPCF: A Cross-Prompt Contrastive Framework for Referring Multimodal Large Language Models",
+      "Position: AI Should Not Be An Imitation Game: Centaur Evaluations",
+      "SPRI: Aligning Large Language Models with Context-Situated Principles",
+      "What Limits Virtual Agent Application? OmniBench: A Scalable Multi-Dimensional Benchmark for Essential Virtual Agent Capabilities"
+    ],
+    "emnlp25": [
+      "3DS: Medical Domain Adaptation ofLLMs via Decomposed Difficulty-based Data Selection",
+      "Ambiguity Awareness Optimization: Towards Semantic Disambiguation for Direct Preference Optimization",
+      "Bitune: Leveraging Bidirectional Attention to Improve Decoder-OnlyLLMs",
+      "ExpandR: Teaching Dense Retrievers Beyond Queries withLLMGuidance",
+      "LLaMP: Large Language Model Made Powerful for High-fidelity Materials Knowledge Retrieval",
+      "Mining the Past with Dual Criteria: Integrating Three types of Historical Information for Context-aware Event Forecasting",
+      "Morpheme Induction for Emergent Language",
+      "MuCAL: Contrastive Alignment for Preference-DrivenKG-to-Text Generation",
+      "SafeKey: Amplifying Aha-Moment Insights for Safety Reasoning",
+      "Same evaluation, more tokens: On the effect of input length for machine translation evaluation using Large Language Models",
+      "learnable soft visual prompt"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 3,
+    "neurips24": 8,
+    "iclr25": 15,
+    "naacl25": 4,
+    "acl25": 6,
+    "icml25": 5,
+    "emnlp25": 11
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

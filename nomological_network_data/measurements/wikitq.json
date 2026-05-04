@@ -1,0 +1,105 @@
+{
+  "canonical_name": "WikiTQ",
+  "type": "measurement",
+  "canonical_definition": "WikiTQ, also known as WikiTableQuestions, is a benchmark frequently used to evaluate a model's reasoning capabilities over structured data. Across the provided literature, it is consistently defined as a dataset of tables from Wikipedia paired with complex, natural-language questions. The relationships indicate that papers use WikiTQ to measure the constructs of \"Table understanding\" and \"Table and chart reasoning\". The questions are described as requiring complex operations, with several sources specifying the need for \"comparison, aggregation, and arithmetic\" to derive an answer (\"CABINET: Content Relevance-based Noise Reduction for Table Question Answering\"). The expected output is typically a short-form answer or a brief text span. One paper notes the dataset contains \"about 2100 HTML tables from Wikipedia and about 22, 033 questions\" (\"CABINET...\"), while another specifies a test set of \"4,344 table-question pairs\" (\"UNDIAL...\"). Its application is described as common, with multiple sources referring to it as a \"widely-used\" or \"commonly used\" benchmark for table-based reasoning.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "WikiTQ"
+  ],
+  "papers": [
+    "AutoMedEval: Harnessing Language Models for Automatic Medical Capability Evaluation",
+    "Mitigating Lost-in-Retrieval Problems in Retrieval Augmented Multi-Hop Question Answering",
+    "Improving the Quality of Web-mined Parallel Corpora of Low-Resource Languages using Debiasing Heuristics",
+    "Towards Robust Mathematical Reasoning",
+    "CABINET: Content Relevance-based Noise Reduction for Table Question Answering",
+    "Chain-of-Table: Evolving Tables in the Reasoning Chain for Table Understanding",
+    "DAWN-ICL: Strategic Planning of Problem-solving Trajectories for Zero-Shot In-Context Learning",
+    "Instantly Learning Preference Alignment via In-contextDPO",
+    "UNDIAL: Self-Distillation with Adjusted Logits for Robust Unlearning in Large Language Models"
+  ],
+  "paper_count": 9,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "WikiTableQuestions, a benchmark of Wikipedia tables and natural-language questions requiring table reasoning such as comparison, aggregation, and arithmetic.",
+      "paper": "CABINET: Content Relevance-based Noise Reduction for Table Question Answering",
+      "original_name": "WikiTQ"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Table question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "CABINET: Content Relevance-based Noise Reduction for Table Question Answering",
+      "evidence": "",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "iclr24": [
+          "CABINET: Content Relevance-based Noise Reduction for Table Question Answering"
+        ],
+        "acl25": [
+          "Mitigating Lost-in-Retrieval Problems in Retrieval Augmented Multi-Hop Question Answering",
+          "AutoMedEval: Harnessing Language Models for Automatic Medical Capability Evaluation"
+        ],
+        "emnlp25": [
+          "Towards Robust Mathematical Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Table reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Instantly Learning Preference Alignment via In-contextDPO",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Instantly Learning Preference Alignment via In-contextDPO"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "WikiTQ, also known as WikiTableQuestions, is a benchmark frequently used to evaluate a model's reasoning capabilities over structured data. Across the provided literature, it is consistently defined as a dataset of tables from Wikipedia paired with complex, natural-language questions. The relationships indicate that papers use WikiTQ to measure the constructs of \"Table understanding\" and \"Table and chart reasoning\". The questions are described as requiring complex operations, with several sources specifying the need for \"comparison, aggregation, and arithmetic\" to derive an answer (\"CABINET: Content Relevance-based Noise Reduction for Table Question Answering\"). The expected output is typically a short-form answer or a brief text span. One paper notes the dataset contains \"about 2100 HTML tables from Wikipedia and about 22, 033 questions\" (\"CABINET...\"), while another specifies a test set of \"4,344 table-question pairs\" (\"UNDIAL...\"). Its application is described as common, with multiple sources referring to it as a \"widely-used\" or \"commonly used\" benchmark for table-based reasoning.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "CABINET: Content Relevance-based Noise Reduction for Table Question Answering",
+      "Chain-of-Table: Evolving Tables in the Reasoning Chain for Table Understanding"
+    ],
+    "naacl25": [
+      "DAWN-ICL: Strategic Planning of Problem-solving Trajectories for Zero-Shot In-Context Learning",
+      "Instantly Learning Preference Alignment via In-contextDPO",
+      "UNDIAL: Self-Distillation with Adjusted Logits for Robust Unlearning in Large Language Models"
+    ],
+    "acl25": [
+      "AutoMedEval: Harnessing Language Models for Automatic Medical Capability Evaluation",
+      "Mitigating Lost-in-Retrieval Problems in Retrieval Augmented Multi-Hop Question Answering"
+    ],
+    "emnlp25": [
+      "Improving the Quality of Web-mined Parallel Corpora of Low-Resource Languages using Debiasing Heuristics",
+      "Towards Robust Mathematical Reasoning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "naacl25": 3,
+    "acl25": 2,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "naacl25"
+  ]
+}

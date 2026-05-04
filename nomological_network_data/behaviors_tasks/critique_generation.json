@@ -1,0 +1,80 @@
+{
+  "canonical_name": "Critique generation",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, critique generation is consistently framed as the behavior of a model producing textual feedback on another model's output. The most prevalent definition describes this as producing an explanation that identifies specific error spans in a generated sentence and suggests fixes, with one paper detailing a subtask that \"generates a critique ci detailing the error span... and suggest a fix\" (\"Palette of Language Models: A Solver for Controlled Text Generation\"). Other work offers a more structured view, defining the critique space as comprising an analysis of strengths and weaknesses, actionable suggestions, and a final judgment of correctness. A more general definition simply casts it as producing natural language feedback on the quality of a response. Operationally, this behavior is elicited by training models, sometimes referred to as \"critic models\", to generate critiques for a given input and response. The provided research also positions critique generation as having a directional relationship with other concepts; it is reported to influence Reward Modeling, Commonsense knowledge, and Self-correction.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Critique generation"
+  ],
+  "papers": [
+    "Evaluating Judges as Evaluators: The JETTS Benchmark of LLM-as-Judges as Test-Time Scaling Evaluators",
+    "Teaching Language Models to Critique via Reinforcement Learning",
+    "Are explicit belief representations necessary? A comparison between Large Language Models andBayesian probabilistic models",
+    "Palette of Language Models: A Solver for Controlled Text Generation"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The observable behavior of producing a textual explanation that identifies error spans in a generated sentence and suggests fixes.",
+      "paper": "Are explicit belief representations necessary? A comparison between Large Language Models andBayesian probabilistic models",
+      "original_name": "Critique generation"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reward Modeling",
+      "other_type": "measurements",
+      "relationship_type": "causes",
+      "paper": "Are explicit belief representations necessary? A comparison between Large Language Models andBayesian probabilistic models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Are explicit belief representations necessary? A comparison between Large Language Models andBayesian probabilistic models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Self-correction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Are explicit belief representations necessary? A comparison between Large Language Models andBayesian probabilistic models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Are explicit belief representations necessary? A comparison between Large Language Models andBayesian probabilistic models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 2,
+  "characterization": "Across the surveyed literature, critique generation is consistently framed as the behavior of a model producing textual feedback on another model's output. The most prevalent definition describes this as producing an explanation that identifies specific error spans in a generated sentence and suggests fixes, with one paper detailing a subtask that \"generates a critique ci detailing the error span... and suggest a fix\" (\"Palette of Language Models: A Solver for Controlled Text Generation\"). Other work offers a more structured view, defining the critique space as comprising an analysis of strengths and weaknesses, actionable suggestions, and a final judgment of correctness. A more general definition simply casts it as producing natural language feedback on the quality of a response. Operationally, this behavior is elicited by training models, sometimes referred to as \"critic models\", to generate critiques for a given input and response. The provided research also positions critique generation as having a directional relationship with other concepts; it is reported to influence Reward Modeling, Commonsense knowledge, and Self-correction.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "naacl25": [
+      "Are explicit belief representations necessary? A comparison between Large Language Models andBayesian probabilistic models",
+      "Palette of Language Models: A Solver for Controlled Text Generation"
+    ],
+    "icml25": [
+      "Evaluating Judges as Evaluators: The JETTS Benchmark of LLM-as-Judges as Test-Time Scaling Evaluators",
+      "Teaching Language Models to Critique via Reinforcement Learning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "naacl25": 2,
+    "icml25": 2
+  },
+  "conferences": [
+    "icml25",
+    "naacl25"
+  ]
+}

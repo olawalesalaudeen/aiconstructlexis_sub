@@ -1,0 +1,158 @@
+{
+  "canonical_name": "String manipulation",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, string manipulation is predominantly described as the transformation of character or word sequences through a variety of operations. These operations range from fundamental tasks like slicing, concatenation, reversing, and capitalization to more specific actions such as vowel removal and unscrambling randomly permuted words. A smaller set of studies conceptualizes string manipulation as a form of reasoning, where models must infer and apply rules for transformations, as in the \"String Transformation\" task from \"MIRAGE\", or select substrings based on semantic conditions. Another framing treats it as an applied process for specific goals, such as text anonymization, which involves modifying text to \"remove, obfuscate, or generalize\" personal information, or string normalization for data cleaning. In the context of anonymization, this behavior is reported to enable privacy protection and is studied alongside paraphrasing. The performance of models on string manipulation tasks is operationalized and evaluated using measurement instruments like SyGuS and metrics such as exact match.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "String manipulation",
+    "Unscrambling",
+    "Substring identification",
+    "Vowel removal",
+    "String transformation",
+    "Text anonymization",
+    "Capitalization",
+    "String normalization"
+  ],
+  "papers": [
+    "A Percolation Model of Emergence: Analyzing Transformers Trained on a Formal Language",
+    "Language Models are Advanced Anonymizers",
+    "MIRAGE: Evaluating and Explaining Inductive Reasoning Process in Language Models",
+    "MrT5: Dynamic Token Merging for Efficient Byte-level Language Models",
+    "StringLLM: Understanding the String Processing Capability of Large Language Models",
+    "Unveiling the Magic of Code Reasoning through Hypothesis Decomposition and Amendment",
+    "Heads up! Large Language Models Can Perform Tasks Without Your Instruction via Selective Attention Head Masking",
+    "Programming Every Example: Lifting Pre-training Data Quality Like Experts at Scale"
+  ],
+  "paper_count": 8,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Transforming strings by operations such as slicing, concatenation, reversing, splitting, or reordering characters.",
+      "paper": "StringLLM: Understanding the String Processing Capability of Large Language Models",
+      "original_name": "String manipulation"
+    },
+    {
+      "text": "The task of reordering a randomly permuted set of words to form a grammatically and semantically valid sentence from the formal language.",
+      "paper": "A Percolation Model of Emergence: Analyzing Transformers Trained on a Formal Language",
+      "original_name": "Unscrambling"
+    },
+    {
+      "text": "Removing vowels from an input character sequence while copying the remaining characters.",
+      "paper": "MrT5: Dynamic Token Merging for Efficient Byte-level Language Models",
+      "original_name": "Vowel removal"
+    },
+    {
+      "text": "Selecting a substring from an input string that satisfies a semantic matching condition with a definition.",
+      "paper": "MrT5: Dynamic Token Merging for Efficient Byte-level Language Models",
+      "original_name": "Substring identification"
+    },
+    {
+      "text": "An inductive reasoning task where the model must infer and apply rules to strings of characters, involving operations like concatenation and replication.",
+      "paper": "MIRAGE: Evaluating and Explaining Inductive Reasoning Process in Language Models",
+      "original_name": "String transformation"
+    },
+    {
+      "text": "The observable process of a model modifying a text to remove, obfuscate, or generalize information that could be used to infer an author's personal attributes.",
+      "paper": "Language Models are Advanced Anonymizers",
+      "original_name": "Text anonymization"
+    },
+    {
+      "text": "Transforming text to have the first letter capitalized, such as converting 'hello' to 'Hello'.",
+      "paper": "Heads up! Large Language Models Can Perform Tasks Without Your Instruction via Selective Attention Head Masking",
+      "original_name": "Capitalization"
+    },
+    {
+      "text": "Replacing noisy or inconsistent string patterns in text with clean, standardized versions.",
+      "paper": "Programming Every Example: Lifting Pre-training Data Quality Like Experts at Scale",
+      "original_name": "String normalization"
+    }
+  ],
+  "definition_count": 8,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SyGuS",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "HYSYNTH: Context-Free LLM Approximation for Guiding Program Synthesis",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "HYSYNTH: Context-Free LLM Approximation for Guiding Program Synthesis"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Paraphrasing",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Language Models are Advanced Anonymizers",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Language Models are Advanced Anonymizers"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Exact match",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "A Percolation Model of Emergence: Analyzing Transformers Trained on a Formal Language",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "A Percolation Model of Emergence: Analyzing Transformers Trained on a Formal Language"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Privacy protection",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Language Models are Advanced Anonymizers",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Language Models are Advanced Anonymizers"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 3,
+  "characterization": "Across the surveyed literature, string manipulation is predominantly described as the transformation of character or word sequences through a variety of operations. These operations range from fundamental tasks like slicing, concatenation, reversing, and capitalization to more specific actions such as vowel removal and unscrambling randomly permuted words. A smaller set of studies conceptualizes string manipulation as a form of reasoning, where models must infer and apply rules for transformations, as in the \"String Transformation\" task from \"MIRAGE\", or select substrings based on semantic conditions. Another framing treats it as an applied process for specific goals, such as text anonymization, which involves modifying text to \"remove, obfuscate, or generalize\" personal information, or string normalization for data cleaning. In the context of anonymization, this behavior is reported to enable privacy protection and is studied alongside paraphrasing. The performance of models on string manipulation tasks is operationalized and evaluated using measurement instruments like SyGuS and metrics such as exact match.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "A Percolation Model of Emergence: Analyzing Transformers Trained on a Formal Language",
+      "Language Models are Advanced Anonymizers",
+      "MIRAGE: Evaluating and Explaining Inductive Reasoning Process in Language Models",
+      "MrT5: Dynamic Token Merging for Efficient Byte-level Language Models",
+      "StringLLM: Understanding the String Processing Capability of Large Language Models",
+      "Unveiling the Magic of Code Reasoning through Hypothesis Decomposition and Amendment"
+    ],
+    "icml25": [
+      "Heads up! Large Language Models Can Perform Tasks Without Your Instruction via Selective Attention Head Masking",
+      "Programming Every Example: Lifting Pre-training Data Quality Like Experts at Scale"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 6,
+    "icml25": 2
+  },
+  "conferences": [
+    "iclr25",
+    "icml25"
+  ]
+}

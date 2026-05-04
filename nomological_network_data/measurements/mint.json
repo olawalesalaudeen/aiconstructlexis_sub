@@ -1,0 +1,80 @@
+{
+  "canonical_name": "MINT",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, MINT is consistently described as a benchmark or evaluation framework designed to assess LLM capabilities in multi-turn, interactive scenarios. Its primary function, as stated in multiple papers, is to evaluate an agent's ability to solve challenging tasks by both using tools and leveraging natural language feedback. The framework is operationalized by adapting existing datasets into feedback-rich environments, with one paper noting the use of a \"GPT-4 simulated user as a teacher to guide the model in problem-solving\" ('Lemur: Harmonizing Natural Language and Code for Language Agents'). The tasks within MINT are drawn from domains such as reasoning, code generation, and decision-making, with some studies focusing specifically on its coding and math problems. In practice, papers use MINT to measure constructs like `Dialogue` and `In-context learning`, with the latter being directly linked to the benchmark's emphasis on an LLM's ability to process natural language feedback. Other capabilities the benchmark is reported to assess include tool utilization and self-debugging.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "MINT"
+  ],
+  "papers": [
+    "Lemur: Harmonizing Natural Language and Code for Language Agents",
+    "MINT: Evaluating LLMs in Multi-turn Interaction with Tools and Language Feedback",
+    "Advancing LLM Reasoning Generalists with Preference Trees",
+    "OpenHands: An Open Platform for AI Software Developers as Generalist Agents"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Multi-turn Interactive agent evaluation framework that adapts existing datasets into interactive, feedback-rich environments for assessing agent capabilities like tool use and self-debugging.",
+      "paper": "Lemur: Harmonizing Natural Language and Code for Language Agents",
+      "original_name": "MINT"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multi-turn interaction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Advancing LLM Reasoning Generalists with Preference Trees",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Advancing LLM Reasoning Generalists with Preference Trees"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-context learning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "MINT: Evaluating LLMs in Multi-turn Interaction with Tools and Language Feedback",
+      "evidence": "It is a benchmark for LLMs that measures their performance during multi-turn interaction, focusing on two particular capabilities (\u00a72.1): ... (2) leveraging natural language feedback. (Section 1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "MINT: Evaluating LLMs in Multi-turn Interaction with Tools and Language Feedback"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, MINT is consistently described as a benchmark or evaluation framework designed to assess LLM capabilities in multi-turn, interactive scenarios. Its primary function, as stated in multiple papers, is to evaluate an agent's ability to solve challenging tasks by both using tools and leveraging natural language feedback. The framework is operationalized by adapting existing datasets into feedback-rich environments, with one paper noting the use of a \"GPT-4 simulated user as a teacher to guide the model in problem-solving\" ('Lemur: Harmonizing Natural Language and Code for Language Agents'). The tasks within MINT are drawn from domains such as reasoning, code generation, and decision-making, with some studies focusing specifically on its coding and math problems. In practice, papers use MINT to measure constructs like `Dialogue` and `In-context learning`, with the latter being directly linked to the benchmark's emphasis on an LLM's ability to process natural language feedback. Other capabilities the benchmark is reported to assess include tool utilization and self-debugging.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Lemur: Harmonizing Natural Language and Code for Language Agents",
+      "MINT: Evaluating LLMs in Multi-turn Interaction with Tools and Language Feedback"
+    ],
+    "iclr25": [
+      "Advancing LLM Reasoning Generalists with Preference Trees",
+      "OpenHands: An Open Platform for AI Software Developers as Generalist Agents"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "iclr25": 2
+  },
+  "conferences": [
+    "iclr24",
+    "iclr25"
+  ]
+}

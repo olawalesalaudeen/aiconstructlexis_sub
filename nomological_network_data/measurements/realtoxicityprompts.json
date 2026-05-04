@@ -1,0 +1,195 @@
+{
+  "canonical_name": "RealToxicityPrompts",
+  "type": "measurement",
+  "canonical_definition": "Across the surveyed literature, RealToxicityPrompts is consistently characterized as a benchmark dataset or prompt set used for evaluation. Its primary application is to measure constructs related to model safety, including `Harmful content generation`, `Harmlessness`, and general `Safety`. The prevailing definition describes it as a collection of prompts, often sourced from the web, that are specifically designed to be likely to elicit toxic generations from language models. One paper provides a more specific origin, stating it is a \"dataset of incomplete prompts designed to elicit toxic completions from GPT-2\" (\"When Bad Data Leads to Good Models\"). In practice, researchers use the instrument by sampling prompts, and several papers note that the dataset contains distinct subsets of both toxic and non-toxic prompts for controlled testing. For instance, studies report drawing \"10K toxic and 10K non-toxic prompts\" or using specific portions like the \"'challenging' split\" for their evaluations. The overarching goal reflected in the data is to assess a model's propensity for generating toxic content and to evaluate its toxicity avoidance.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "REALTOXICITYPROMPTS",
+    "RealToxicityPrompts",
+    "Real Toxicity Prompts",
+    "RealToxicity"
+  ],
+  "papers": [
+    "CRITIC: Large Language Models Can Self-Correct with Tool-Interactive Critiquing",
+    "Get more for less: Principled Data Selection for Warming Up Fine-Tuning in LLMs",
+    "Model Merging by Uncertainty-Based Gradient Matching",
+    "The False Promise of Imitating Proprietary Language Models",
+    "An Auditing Test to Detect Behavioral Shift in Language Models",
+    "Bi-Factorial Preference Optimization: Balancing Safety-Helpfulness in Language Models",
+    "Controllable Generation via Locally Constrained Resampling",
+    "Controlled LLM Decoding via Discrete Auto-regressive Biasing",
+    "Controlling Language and Diffusion Models by Transporting Activations",
+    "Jamba: Hybrid Transformer-Mamba Language Models",
+    "Large Language Models can Become Strong Self-Detoxifiers",
+    "Model Editing as a Robust and Denoised variant of DPO: A Case Study on Toxicity",
+    "Monet: Mixture of Monosemantic Experts for Transformers",
+    "More RLHF, More Trust? On The Impact of Preference Alignment On Trustworthiness",
+    "On Targeted Manipulation and Deception when Optimizing LLMs for User Feedback",
+    "Semantics-Adaptive Activation Intervention for LLMs via Dynamic Steering Vectors",
+    "Conformal Tail Risk Control for Large Language Model Alignment",
+    "Model Swarms: Collaborative Search to Adapt LLM Experts via Swarm Intelligence",
+    "Raising the Bar: Investigating the Values of Large Language Models via Generative Evolving Testing",
+    "TRACE Back from the Future: A Probabilistic Reasoning Approach to Controllable Language Generation",
+    "When Bad Data Leads to Good Models"
+  ],
+  "paper_count": 21,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A prompt set used to elicit toxic generations from language models for toxicity evaluation.",
+      "paper": "Get more for less: Principled Data Selection for Warming Up Fine-Tuning in LLMs",
+      "original_name": "RealToxicityPrompts"
+    },
+    {
+      "text": "A dataset of text prompts designed to be likely to elicit toxic generations from language models.",
+      "paper": "CRITIC: Large Language Models Can Self-Correct with Tool-Interactive Critiquing",
+      "original_name": "REALTOXICITYPROMPTS"
+    },
+    {
+      "text": "A dataset used to evaluate the toxicity of generated text, providing a score based on the likelihood of the text being perceived as toxic.",
+      "paper": "Jamba: Hybrid Transformer-Mamba Language Models",
+      "original_name": "RealToxicity"
+    },
+    {
+      "text": "A dataset of prompts from the web that are likely to elicit toxic generations from language models.",
+      "paper": "Bi-Factorial Preference Optimization: Balancing Safety-Helpfulness in Language Models",
+      "original_name": "Real Toxicity Prompts"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmlessness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Model Merging by Uncertainty-Based Gradient Matching",
+      "evidence": "",
+      "paper_count": 14,
+      "papers_by_conference": {
+        "iclr24": [
+          "Model Merging by Uncertainty-Based Gradient Matching"
+        ],
+        "neurips24": [
+          "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models"
+        ],
+        "iclr25": [
+          "An Auditing Test to Detect Behavioral Shift in Language Models",
+          "Model Editing as a Robust and Denoised variant of DPO: A Case Study on Toxicity",
+          "Controllable Generation via Locally Constrained Resampling",
+          "On Targeted Manipulation and Deception when Optimizing LLMs for User Feedback",
+          "More RLHF, More Trust? On The Impact of Preference Alignment On Trustworthiness"
+        ],
+        "naacl25": [
+          "Decomposition Dilemmas: Does Claim Decomposition Boost or Burden Fact-Checking Performance?"
+        ],
+        "acl25": [
+          "Exploiting Contextual Knowledge inLLMs through\ud835\udcb1-usable Information based Layer Enhancement"
+        ],
+        "icml25": [
+          "Raising the Bar: Investigating the Values of Large Language Models via Generative Evolving Testing",
+          "When Bad Data Leads to Good Models"
+        ],
+        "emnlp25": [
+          "EvaluatingLLM-Generated Diagrams as Graphs",
+          "Multimedia Event Extraction withLLMKnowledge Editing",
+          "Does quantization affect models\u2019 performance on long-context tasks?"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmful content generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "CRITIC: Large Language Models Can Self-Correct with Tool-Interactive Critiquing",
+      "evidence": "Existing approaches mostly rely on static benchmarks, e.g., REALTOXICITYPROMPTS (Gehman et al., 2020) and HARM-BENCH (Mazeika et al., 2024) targeting harmfulness... (Introduction)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr24": [
+          "CRITIC: Large Language Models Can Self-Correct with Tool-Interactive Critiquing"
+        ],
+        "icml25": [
+          "When Bad Data Leads to Good Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Safety",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Jamba: Hybrid Transformer-Mamba Language Models",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Jamba: Hybrid Transformer-Mamba Language Models"
+        ],
+        "icml25": [
+          "Model Swarms: Collaborative Search to Adapt LLM Experts via Swarm Intelligence"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Harmful content generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Controlling Language and Diffusion Models by Transporting Activations",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Controlling Language and Diffusion Models by Transporting Activations"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the surveyed literature, RealToxicityPrompts is consistently characterized as a benchmark dataset or prompt set used for evaluation. Its primary application is to measure constructs related to model safety, including `Harmful content generation`, `Harmlessness`, and general `Safety`. The prevailing definition describes it as a collection of prompts, often sourced from the web, that are specifically designed to be likely to elicit toxic generations from language models. One paper provides a more specific origin, stating it is a \"dataset of incomplete prompts designed to elicit toxic completions from GPT-2\" (\"When Bad Data Leads to Good Models\"). In practice, researchers use the instrument by sampling prompts, and several papers note that the dataset contains distinct subsets of both toxic and non-toxic prompts for controlled testing. For instance, studies report drawing \"10K toxic and 10K non-toxic prompts\" or using specific portions like the \"'challenging' split\" for their evaluations. The overarching goal reflected in the data is to assess a model's propensity for generating toxic content and to evaluate its toxicity avoidance.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "CRITIC: Large Language Models Can Self-Correct with Tool-Interactive Critiquing",
+      "Get more for less: Principled Data Selection for Warming Up Fine-Tuning in LLMs",
+      "Model Merging by Uncertainty-Based Gradient Matching",
+      "The False Promise of Imitating Proprietary Language Models"
+    ],
+    "iclr25": [
+      "An Auditing Test to Detect Behavioral Shift in Language Models",
+      "Bi-Factorial Preference Optimization: Balancing Safety-Helpfulness in Language Models",
+      "Controllable Generation via Locally Constrained Resampling",
+      "Controlled LLM Decoding via Discrete Auto-regressive Biasing",
+      "Controlling Language and Diffusion Models by Transporting Activations",
+      "Jamba: Hybrid Transformer-Mamba Language Models",
+      "Large Language Models can Become Strong Self-Detoxifiers",
+      "Model Editing as a Robust and Denoised variant of DPO: A Case Study on Toxicity",
+      "Monet: Mixture of Monosemantic Experts for Transformers",
+      "More RLHF, More Trust? On The Impact of Preference Alignment On Trustworthiness",
+      "On Targeted Manipulation and Deception when Optimizing LLMs for User Feedback",
+      "Semantics-Adaptive Activation Intervention for LLMs via Dynamic Steering Vectors"
+    ],
+    "icml25": [
+      "Conformal Tail Risk Control for Large Language Model Alignment",
+      "Model Swarms: Collaborative Search to Adapt LLM Experts via Swarm Intelligence",
+      "Raising the Bar: Investigating the Values of Large Language Models via Generative Evolving Testing",
+      "TRACE Back from the Future: A Probabilistic Reasoning Approach to Controllable Language Generation",
+      "When Bad Data Leads to Good Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 4,
+    "iclr25": 12,
+    "icml25": 5
+  },
+  "conferences": [
+    "iclr24",
+    "iclr25",
+    "icml25"
+  ]
+}

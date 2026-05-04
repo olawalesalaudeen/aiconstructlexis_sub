@@ -1,0 +1,132 @@
+{
+  "canonical_name": "Polysemanticity",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, polysemanticity is most commonly defined as the phenomenon where individual neurons in a neural network activate in multiple, semantically distinct and unrelated contexts. This concept is sometimes extended beyond neurons to other model components, with one study identifying an \"interpretably polysemantic attention head\" that implements multiple functions (Successor Heads: Recurring, Interpretable Attention Heads In The Wild). The most frequently cited consequence of polysemanticity is that it hinders mechanistic interpretability, with multiple papers framing it as a \"central obstacle\" to understanding model internals and identifying disentangled features. A smaller set of papers introduces related concepts, such as \"feature superposition,\" where a model represents more features than its dimensions allow, and \"neuronal entanglement,\" described as a \"manifestation of polysemanticity\" (Wasserstein Distances, Neuronal Entanglement, and Sparsity). While direct measurement instruments for polysemanticity are not detailed, one paper proposes modeling it as an \"OR of different concepts\" (Evaluating Neuron Explanations: A Unified Framework with Sanity Checks). Beyond its widely discussed relationship with interpretability, polysemanticity is also linked to redundancy, with one source suggesting it enables efficient and robust representations that \"maximize the model\u2019s capacity\" (EmoAgent: Assessing and Safeguarding Human-AIInteraction for Mental Health Safety).",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Polysemanticity",
+    "Neuronal entanglement",
+    "Feature superposition",
+    "Semantic multimodality"
+  ],
+  "papers": [
+    "EmoAgent: Assessing and Safeguarding Human-AIInteraction for Mental Health Safety",
+    "EquiBench: Benchmarking Large Language Models\u2019 Reasoning about Program Semantics via Equivalence Checking",
+    "Sparse Autoencoders Find Highly Interpretable Features in Language Models",
+    "Successor Heads: Recurring, Interpretable Attention Heads In The Wild",
+    "Mechanistic Permutability: Match Features Across Layers",
+    "Monet: Mixture of Monosemantic Experts for Transformers",
+    "Wasserstein Distances, Neuronal Entanglement, and Sparsity",
+    "Evaluating Neuron Explanations: A Unified Framework with Sanity Checks",
+    "ExLM: Rethinking the Impact of $\\texttt[MASK]$ Tokens in Masked Language Models",
+    "Mixture of Experts Made Intrinsically Interpretable"
+  ],
+  "paper_count": 10,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The phenomenon where individual neurons in a neural network activate in multiple, semantically distinct contexts, hindering interpretability.",
+      "paper": "Sparse Autoencoders Find Highly Interpretable Features in Language Models",
+      "original_name": "Polysemanticity"
+    },
+    {
+      "text": "The latent property that a model represents more features than its hidden dimensions can uniquely encode, causing features to be entangled in a non-orthogonal basis.",
+      "paper": "Mechanistic Permutability: Match Features Across Layers",
+      "original_name": "Feature superposition"
+    },
+    {
+      "text": "The degree to which a neuron must differentiate between similar input vectors and map them to different output values, a manifestation of polysemanticity.",
+      "paper": "Wasserstein Distances, Neuronal Entanglement, and Sparsity",
+      "original_name": "Neuronal entanglement"
+    },
+    {
+      "text": "The degree to which a corrupted context leads to multiple plausible predictions for masked tokens, reflecting ambiguity in the model's learned semantic representations.",
+      "paper": "ExLM: Rethinking the Impact of $\\texttt[MASK]$ Tokens in Masked Language Models",
+      "original_name": "Semantic multimodality"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Interpretability and explainability",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Mixture of Experts Made Intrinsically Interpretable",
+      "evidence": "A central obstacle to mechanistic interpretability is polysemanticity, where individual neurons encode multiple, unrelated concepts (Olah et al., 2020). Specifically, we refer to the hidden neurons from the multi-layer perceptron (MLPs) in Transformers. Such polysemantic neurons lack clear, singular roles, making it difficult to identify disentangled features or factors in neural networks.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Mixture of Experts Made Intrinsically Interpretable"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mechanistic interpretability",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Monet: Mixture of Monosemantic Experts for Transformers",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Monet: Mixture of Monosemantic Experts for Transformers"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Redundancy",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "EmoAgent: Assessing and Safeguarding Human-AIInteraction for Mental Health Safety",
+      "evidence": "Marshall and Kirchner (2024) connect information theory with polysemanticity where polysemantic code learned by LLMs is not only efficient but also favors redundancy for robustness (Fig. 2 of their paper).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "EmoAgent: Assessing and Safeguarding Human-AIInteraction for Mental Health Safety"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the surveyed literature, polysemanticity is most commonly defined as the phenomenon where individual neurons in a neural network activate in multiple, semantically distinct and unrelated contexts. This concept is sometimes extended beyond neurons to other model components, with one study identifying an \"interpretably polysemantic attention head\" that implements multiple functions (Successor Heads: Recurring, Interpretable Attention Heads In The Wild). The most frequently cited consequence of polysemanticity is that it hinders mechanistic interpretability, with multiple papers framing it as a \"central obstacle\" to understanding model internals and identifying disentangled features. A smaller set of papers introduces related concepts, such as \"feature superposition,\" where a model represents more features than its dimensions allow, and \"neuronal entanglement,\" described as a \"manifestation of polysemanticity\" (Wasserstein Distances, Neuronal Entanglement, and Sparsity). While direct measurement instruments for polysemanticity are not detailed, one paper proposes modeling it as an \"OR of different concepts\" (Evaluating Neuron Explanations: A Unified Framework with Sanity Checks). Beyond its widely discussed relationship with interpretability, polysemanticity is also linked to redundancy, with one source suggesting it enables efficient and robust representations that \"maximize the model\u2019s capacity\" (EmoAgent: Assessing and Safeguarding Human-AIInteraction for Mental Health Safety).",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Sparse Autoencoders Find Highly Interpretable Features in Language Models",
+      "Successor Heads: Recurring, Interpretable Attention Heads In The Wild"
+    ],
+    "iclr25": [
+      "Mechanistic Permutability: Match Features Across Layers",
+      "Monet: Mixture of Monosemantic Experts for Transformers",
+      "Wasserstein Distances, Neuronal Entanglement, and Sparsity"
+    ],
+    "icml25": [
+      "Evaluating Neuron Explanations: A Unified Framework with Sanity Checks",
+      "ExLM: Rethinking the Impact of $\\texttt[MASK]$ Tokens in Masked Language Models",
+      "Mixture of Experts Made Intrinsically Interpretable"
+    ],
+    "emnlp25": [
+      "EmoAgent: Assessing and Safeguarding Human-AIInteraction for Mental Health Safety",
+      "EquiBench: Benchmarking Large Language Models\u2019 Reasoning about Program Semantics via Equivalence Checking"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "iclr25": 3,
+    "icml25": 3,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25"
+  ]
+}

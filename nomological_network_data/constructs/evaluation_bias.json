@@ -1,0 +1,86 @@
+{
+  "canonical_name": "Evaluation bias",
+  "type": "construct",
+  "canonical_definition": "Across the provided literature, 'Evaluation bias' is most commonly characterized as a systematic error that arises when a large language model acts as a judge or reviewer of other models' outputs. This is frequently defined as a tendency to unfairly favor or disfavor certain responses, which can include a self-favoring or 'affinity bias' where a judge assigns higher scores to models functionally similar to itself. A few papers offer a broader framing, defining the concept as a systematic deviation in estimated model capability due to flaws in the evaluation protocol, or as 'Bias in feedback' from either AI or humans stemming from non-representative data. The construct is operationalized quantitatively in several ways; some work defines it mathematically as the expected difference between a judge's proxy score and a ground-truth score, while other research employs the 'preference gap (PG)' to measure it. Additionally, it is studied through 'carefully designed probing tasks' in the context of 'Agents-as-an-Evaluator'. This bias is reported to 'skew model comparisons and result in misleading model rankings' and is studied in relation to 'Model bias'. One study suggests that reducing a model's confidence can help alleviate this evaluation bias.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Evaluation bias",
+    "Judge bias",
+    "Affinity bias",
+    "Bias in feedback"
+  ],
+  "papers": [
+    "Limits to scalable evaluation at the frontier: LLM as judge won\u2019t beat twice the data",
+    "PiCO: Peer Review in LLMs based on Consistency Optimization",
+    "Great Models Think Alike and this Undermines AI Oversight",
+    "Position: Challenges and Future Directions of Data-Centric AI Alignment",
+    "Unbiased Evaluation of Large Language Models from a Causal Perspective"
+  ],
+  "paper_count": 5,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A systematic tendency for a model, when acting as a reviewer, to unfairly favor or disfavor certain models' responses, including a self-favoring bias.",
+      "paper": "PiCO: Peer Review in LLMs based on Consistency Optimization",
+      "original_name": "Evaluation bias"
+    },
+    {
+      "text": "The systematic error introduced when using a model as a judge, defined as the expected difference between the judge's proxy score and the ground-truth score.",
+      "paper": "Limits to scalable evaluation at the frontier: LLM as judge won\u2019t beat twice the data",
+      "original_name": "Judge bias"
+    },
+    {
+      "text": "The tendency of an LLM judge to assign higher scores to models whose predictions are functionally similar to its own, independent of actual performance.",
+      "paper": "Great Models Think Alike and this Undermines AI Oversight",
+      "original_name": "Affinity bias"
+    },
+    {
+      "text": "Systematic distortions in human or AI-generated feedback that favor certain perspectives, demographics, or values due to non-representative data or model limitations.",
+      "paper": "Position: Challenges and Future Directions of Data-Centric AI Alignment",
+      "original_name": "Bias in feedback"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Model bias",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Unbiased Evaluation of Large Language Models from a Causal Perspective",
+      "evidence": "In this paper, we present a theoretical formulation of evaluation bias, providing valuable insights into designing unbiased evaluation protocols. Furthermore, we identify two type of bias in Agents-as-an-Evaluator through carefully designed probing tasks on a minimal Agents-as-an-Evaluator setup.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Unbiased Evaluation of Large Language Models from a Causal Perspective"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the provided literature, 'Evaluation bias' is most commonly characterized as a systematic error that arises when a large language model acts as a judge or reviewer of other models' outputs. This is frequently defined as a tendency to unfairly favor or disfavor certain responses, which can include a self-favoring or 'affinity bias' where a judge assigns higher scores to models functionally similar to itself. A few papers offer a broader framing, defining the concept as a systematic deviation in estimated model capability due to flaws in the evaluation protocol, or as 'Bias in feedback' from either AI or humans stemming from non-representative data. The construct is operationalized quantitatively in several ways; some work defines it mathematically as the expected difference between a judge's proxy score and a ground-truth score, while other research employs the 'preference gap (PG)' to measure it. Additionally, it is studied through 'carefully designed probing tasks' in the context of 'Agents-as-an-Evaluator'. This bias is reported to 'skew model comparisons and result in misleading model rankings' and is studied in relation to 'Model bias'. One study suggests that reducing a model's confidence can help alleviate this evaluation bias.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Limits to scalable evaluation at the frontier: LLM as judge won\u2019t beat twice the data",
+      "PiCO: Peer Review in LLMs based on Consistency Optimization"
+    ],
+    "icml25": [
+      "Great Models Think Alike and this Undermines AI Oversight",
+      "Position: Challenges and Future Directions of Data-Centric AI Alignment",
+      "Unbiased Evaluation of Large Language Models from a Causal Perspective"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "icml25": 3
+  },
+  "conferences": [
+    "iclr25",
+    "icml25"
+  ]
+}

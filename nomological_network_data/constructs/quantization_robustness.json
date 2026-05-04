@@ -1,0 +1,82 @@
+{
+  "canonical_name": "Quantization robustness",
+  "type": "construct",
+  "canonical_definition": "Across the provided literature, quantization robustness is consistently defined as the degree to which a model maintains its performance when its weights and activations are represented in low-precision formats. The concept is most frequently discussed in the context of extreme, low-bitwidth scenarios, such as 4-bit or 8-bit quantization, where models often suffer from what one paper calls \"significant performance degradation.\" This construct is operationalized by measuring the change in model accuracy or performance after quantization, with one study noting a successful outcome as \"less than 1% accuracy loss.\" The motivation for studying this property is to \"reduce model size and computational latency.\" A specific challenge to achieving robustness is the presence of \"activation outliers,\" which are identified as a \"performance bottleneck.\" While the core definition is shared, one paper frames it more abstractly as a \"latent ability\" of a model, emphasizing resilience across diverse quantization settings.",
+  "expert_reviewed": false,
+  "expert_removed": true,
+  "expert_removed_reason": "method/engineering \u2014 not a construct/measurement/behavior of LLM ability",
+  "names": [
+    "Quantization robustness"
+  ],
+  "papers": [
+    "OmniQuant: Omnidirectionally Calibrated Quantization for Large Language Models",
+    "QLLM: Accurate and Efficient Low-Bitwidth Quantization for Large Language Models",
+    "From Attention to Activation: Unraveling the Enigmas of Large Language Models",
+    "MambaQuant: Quantizing the Mamba Family with Variance Aligned Rotation Methods",
+    "NV-Embed: Improved Techniques for Training LLMs as Generalist Embedding Models"
+  ],
+  "paper_count": 5,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The degree to which a model maintains performance when weights and activations are represented in low-precision formats, particularly under extreme conditions like 4-bit quantization.",
+      "paper": "OmniQuant: Omnidirectionally Calibrated Quantization for Large Language Models",
+      "original_name": "Quantization robustness"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "C4",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "SKIM: Any-bit Quantization Pushing The Limits of Post-Training Quantization",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "SKIM: Any-bit Quantization Pushing The Limits of Post-Training Quantization"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WikiText-2",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "SKIM: Any-bit Quantization Pushing The Limits of Post-Training Quantization",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "SKIM: Any-bit Quantization Pushing The Limits of Post-Training Quantization"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 2,
+  "characterization": "Across the provided literature, quantization robustness is consistently defined as the degree to which a model maintains its performance when its weights and activations are represented in low-precision formats. The concept is most frequently discussed in the context of extreme, low-bitwidth scenarios, such as 4-bit or 8-bit quantization, where models often suffer from what one paper calls \"significant performance degradation.\" This construct is operationalized by measuring the change in model accuracy or performance after quantization, with one study noting a successful outcome as \"less than 1% accuracy loss.\" The motivation for studying this property is to \"reduce model size and computational latency.\" A specific challenge to achieving robustness is the presence of \"activation outliers,\" which are identified as a \"performance bottleneck.\" While the core definition is shared, one paper frames it more abstractly as a \"latent ability\" of a model, emphasizing resilience across diverse quantization settings.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "OmniQuant: Omnidirectionally Calibrated Quantization for Large Language Models",
+      "QLLM: Accurate and Efficient Low-Bitwidth Quantization for Large Language Models"
+    ],
+    "iclr25": [
+      "From Attention to Activation: Unraveling the Enigmas of Large Language Models",
+      "MambaQuant: Quantizing the Mamba Family with Variance Aligned Rotation Methods",
+      "NV-Embed: Improved Techniques for Training LLMs as Generalist Embedding Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "iclr25": 3
+  },
+  "conferences": [
+    "iclr24",
+    "iclr25"
+  ]
+}

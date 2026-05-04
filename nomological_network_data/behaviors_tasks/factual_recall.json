@@ -1,0 +1,186 @@
+{
+  "canonical_name": "Factual recall",
+  "type": "behavior",
+  "canonical_definition": "In the provided literature, factual recall is characterized as the observable task of answering factual questions, with a common distinction made between single-hop and multi-hop variants. Single-hop recall is defined as answering a direct question where only one fact needs to be retrieved, such as \"What is the capital city of Spain?\". In contrast, multi-hop factual recall is a more complex task requiring the model to chain together two or more pieces of information. This multi-hop variant is specifically discussed in the context of knowledge editing, where it assesses if a model can \"leverage the updated knowledge for reasoning\". One paper notes that models often \"struggle with multi-hop factual recall tasks involving newly edited knowledge\" even while they \"perform well on single-hop fact recall tasks\". To operationalize and evaluate this behavior, researchers employ a range of question-answering benchmarks. The provided sources indicate that factual recall is measured using datasets such as TriviaQA, Natural Questions, WebQuestions, CounterFact, MMLU, and ARC. The concept is also studied in relation to the construct of factuality and the topics of in-context reasoning and language modeling.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Multi-hop factual recall",
+    "Single-hop factual recall"
+  ],
+  "papers": [
+    "Locate-then-edit for Multi-hop Factual Recall under Knowledge Editing",
+    "Representation Shattering in Transformers: A Synthetic Study with Knowledge Editing",
+    "Taming Knowledge Conflicts in Language Models",
+    "Vision-Language Models Create Cross-Modal Task Representations"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The observable task of answering a question that requires chaining together two or more pieces of factual information, particularly after one of the facts in the chain has been edited.",
+      "paper": "Locate-then-edit for Multi-hop Factual Recall under Knowledge Editing",
+      "original_name": "Multi-hop factual recall"
+    },
+    {
+      "text": "Correctly answering a direct factual question where the subject is explicitly stated and only one fact needs to be retrieved.",
+      "paper": "Locate-then-edit for Multi-hop Factual Recall under Knowledge Editing",
+      "original_name": "Single-hop factual recall"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CounterFact",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Language Model Council: Democratically Benchmarking Foundation Models on Highly Subjective Tasks",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "naacl25": [
+          "Language Model Council: Democratically Benchmarking Foundation Models on Highly Subjective Tasks"
+        ],
+        "icml25": [
+          "Mechanistic Unlearning: Robust Knowledge Unlearning and Editing via Mechanistic Localization"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TriviaQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Scaling Retrieval-Based Language Models with a Trillion-Token Datastore",
+      "evidence": "\u201cWe plot the accuracy versus sparsity for the OPT-13B, OPT-30B, LLaMA-13B, and LLaMA-33B models on TriviaQA dataset for fact recall evaluation (left)\u201d",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "Scaling Retrieval-Based Language Models with a Trillion-Token Datastore"
+        ],
+        "naacl25": [
+          "Language Model Council: Democratically Benchmarking Foundation Models on Highly Subjective Tasks"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Factuality",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Long-form factuality in large language models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Long-form factuality in large language models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Natural Questions",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Scaling Retrieval-Based Language Models with a Trillion-Token Datastore",
+      "evidence": "We consider nine varied downstream tasks: ... (f) fact recall (WebQuestions (Berant et al., 2013), Natural Questions (Kwiatkowski et al., 2019))",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Scaling Retrieval-Based Language Models with a Trillion-Token Datastore"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "In-context reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Distributional Associations vs In-Context Reasoning: A Study of Feed-forward and Attention Layers",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Distributional Associations vs In-Context Reasoning: A Study of Feed-forward and Attention Layers"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Language modeling",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Understanding Factual Recall in Transformers via Associative Memories",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Understanding Factual Recall in Transformers via Associative Memories"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Language Model Council: Democratically Benchmarking Foundation Models on Highly Subjective Tasks",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Language Model Council: Democratically Benchmarking Foundation Models on Highly Subjective Tasks"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Language Model Council: Democratically Benchmarking Foundation Models on Highly Subjective Tasks",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Language Model Council: Democratically Benchmarking Foundation Models on Highly Subjective Tasks"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WebQuestions",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Language Model Council: Democratically Benchmarking Foundation Models on Highly Subjective Tasks",
+      "evidence": "We consider nine varied downstream tasks: ... (f) fact recall (WebQuestions (Berant et al., 2013), Natural Questions (Kwiatkowski et al., 2019))",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Language Model Council: Democratically Benchmarking Foundation Models on Highly Subjective Tasks"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 9,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 9,
+  "characterization": "In the provided literature, factual recall is characterized as the observable task of answering factual questions, with a common distinction made between single-hop and multi-hop variants. Single-hop recall is defined as answering a direct question where only one fact needs to be retrieved, such as \"What is the capital city of Spain?\". In contrast, multi-hop factual recall is a more complex task requiring the model to chain together two or more pieces of information. This multi-hop variant is specifically discussed in the context of knowledge editing, where it assesses if a model can \"leverage the updated knowledge for reasoning\". One paper notes that models often \"struggle with multi-hop factual recall tasks involving newly edited knowledge\" even while they \"perform well on single-hop fact recall tasks\". To operationalize and evaluate this behavior, researchers employ a range of question-answering benchmarks. The provided sources indicate that factual recall is measured using datasets such as TriviaQA, Natural Questions, WebQuestions, CounterFact, MMLU, and ARC. The concept is also studied in relation to the construct of factuality and the topics of in-context reasoning and language modeling.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "icml25": [
+      "Locate-then-edit for Multi-hop Factual Recall under Knowledge Editing",
+      "Representation Shattering in Transformers: A Synthetic Study with Knowledge Editing",
+      "Taming Knowledge Conflicts in Language Models",
+      "Vision-Language Models Create Cross-Modal Task Representations"
+    ]
+  },
+  "paper_count_by_conference": {
+    "icml25": 4
+  },
+  "conferences": [
+    "icml25"
+  ]
+}

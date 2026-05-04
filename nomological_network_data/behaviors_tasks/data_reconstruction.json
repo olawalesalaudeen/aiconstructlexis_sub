@@ -1,0 +1,107 @@
+{
+  "canonical_name": "Data reconstruction",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, data reconstruction is most commonly described as the behavior of regenerating original data\u2014such as text, speech, or audio\u2014from an intermediate or altered representation. A frequent application is as a training objective, where models learn to reconstruct original text from noisy embeddings or pseudo-labeled counterparts, or to regenerate speech signals from learned latent features. In this context, reconstruction performance is also used as a metric to evaluate how much information is preserved in these intermediate representations, as one paper notes that reconstruction metrics \"indicate how much information is preserved in the extracted representations\" (A Variational Framework for Improving Naturalness in Generative Spoken Language Models). A different line of work frames data reconstruction as an adversarial behavior, where an attacker aims to recover unlearned text by analyzing differences in model weights after an unlearning procedure. The behavior is operationalized and evaluated using datasets for different modalities, including LibriSpeech for speech and FineWeb for text. The quality of the reconstruction, particularly for audio, is assessed using metrics like ViSQOL.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Data reconstruction",
+    "Text reconstruction",
+    "Audio reconstruction"
+  ],
+  "papers": [
+    "An Interdisciplinary Approach to Human-Centered Machine Translation",
+    "LeTS: Learning to Think-and-Search via Process-and-Outcome Reward Hybridization",
+    "Proactive Hearing Assistants that Isolate Egocentric Conversations",
+    "A Variational Framework for Improving Naturalness in Generative Spoken Language Models",
+    "Open-Det: An Efficient Learning Framework for Open-Ended Detection",
+    "Textual Unlearning Gives a False Sense of Unlearning",
+    "ALMTokenizer: A Low-bitrate and Semantic-rich Audio Codec Tokenizer for Audio Language Modeling",
+    "LangTime: A Language-Guided Unified Model for Time Series Forecasting with Proximal Policy Optimization",
+    "Learning to (Learn at Test Time): RNNs with Expressive Hidden States"
+  ],
+  "paper_count": 9,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The observable behavior of generating a close approximation of the original unlearned text by exploiting differences in model weights before and after unlearning.",
+      "paper": "Textual Unlearning Gives a False Sense of Unlearning",
+      "original_name": "Data reconstruction"
+    },
+    {
+      "text": "The task of regenerating the original speech signal from its intermediate representations, such as semantic tokens and learned variational features.",
+      "paper": "A Variational Framework for Improving Naturalness in Generative Spoken Language Models",
+      "original_name": "Speech reconstruction"
+    },
+    {
+      "text": "The training task of regenerating original text from its noisy embedding representation.",
+      "paper": "Open-Det: An Efficient Learning Framework for Open-Ended Detection",
+      "original_name": "Text reconstruction"
+    },
+    {
+      "text": "Recovering a waveform or perceptually similar audio signal from compressed discrete tokens.",
+      "paper": "ALMTokenizer: A Low-bitrate and Semantic-rich Audio Codec Tokenizer for Audio Language Modeling",
+      "original_name": "Audio reconstruction"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Information preservation",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Vector-ICL: In-context Learning with Continuous Vector Representations",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Vector-ICL: In-context Learning with Continuous Vector Representations"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "FineWeb",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Improving Dialogue State Tracking through Combinatorial Search for In-Context Examples",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Improving Dialogue State Tracking through Combinatorial Search for In-Context Examples"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the provided literature, data reconstruction is most commonly described as the behavior of regenerating original data\u2014such as text, speech, or audio\u2014from an intermediate or altered representation. A frequent application is as a training objective, where models learn to reconstruct original text from noisy embeddings or pseudo-labeled counterparts, or to regenerate speech signals from learned latent features. In this context, reconstruction performance is also used as a metric to evaluate how much information is preserved in these intermediate representations, as one paper notes that reconstruction metrics \"indicate how much information is preserved in the extracted representations\" (A Variational Framework for Improving Naturalness in Generative Spoken Language Models). A different line of work frames data reconstruction as an adversarial behavior, where an attacker aims to recover unlearned text by analyzing differences in model weights after an unlearning procedure. The behavior is operationalized and evaluated using datasets for different modalities, including LibriSpeech for speech and FineWeb for text. The quality of the reconstruction, particularly for audio, is assessed using metrics like ViSQOL.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "icml25": [
+      "A Variational Framework for Improving Naturalness in Generative Spoken Language Models",
+      "Open-Det: An Efficient Learning Framework for Open-Ended Detection",
+      "Textual Unlearning Gives a False Sense of Unlearning",
+      "ALMTokenizer: A Low-bitrate and Semantic-rich Audio Codec Tokenizer for Audio Language Modeling",
+      "LangTime: A Language-Guided Unified Model for Time Series Forecasting with Proximal Policy Optimization",
+      "Learning to (Learn at Test Time): RNNs with Expressive Hidden States"
+    ],
+    "emnlp25": [
+      "An Interdisciplinary Approach to Human-Centered Machine Translation",
+      "LeTS: Learning to Think-and-Search via Process-and-Outcome Reward Hybridization",
+      "Proactive Hearing Assistants that Isolate Egocentric Conversations"
+    ]
+  },
+  "paper_count_by_conference": {
+    "icml25": 6,
+    "emnlp25": 3
+  },
+  "conferences": [
+    "emnlp25",
+    "icml25"
+  ]
+}

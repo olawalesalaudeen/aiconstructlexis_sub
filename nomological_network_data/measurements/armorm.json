@@ -1,0 +1,205 @@
+{
+  "canonical_name": "ArmoRM",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, ArmoRM is predominantly characterized as a multi-dimension reward model that functions as an automated judge to evaluate the alignment of large language model (LLM) responses. Its prevailing application is to score or rank model outputs, which is frequently done to create preference pairs for alignment training or to act as a proxy evaluator. As a measurement instrument, ArmoRM is used to assess a range of constructs, including `Helpfulness`, `Harmlessness`, and `Humor understanding`. One study specifically leverages its `instruction-following` dimension, while another selects five attributes for analysis: \"complexity, instruction following, honesty, helpfulness, and intelligence depth.\" A less frequent but noted use is for filtering synthetic preference data, where one paper states it \"effectively mitigates erroneous responses\" (\"Self-Boosting Large Language Models with  Synthetic Preference Data\"). The instrument appears in several specific versions, such as the publicly-available `ArmoRM-Llama3-8B`, and is described as a \"state-of-the-art\" model whose performance is associated with the `Reward-Bench` benchmark. Some work also uses it to assign \"ground truth labels\" to responses for evaluation purposes.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "ArmoRM-Llama3-8B-v0.1",
+    "ArmoRM-8B",
+    "ArmoRM",
+    "ArmoRM-Llama3-8B"
+  ],
+  "papers": [
+    "CompKBQA: Component-wise Task Decomposition for Knowledge Base Question Answering",
+    "Do Large Language Models Understand Word Senses?",
+    "Amulet: ReAlignment During Test Time for Personalized Preference Adaptation of LLMs",
+    "PAD: Personalized Alignment of LLMs at Decoding-time",
+    "RainbowPO: A Unified Framework for Combining Improvements in Preference Optimization",
+    "Self-Boosting Large Language Models with  Synthetic Preference Data",
+    "Weighted-Reward Preference Optimization for Implicit Model Fusion",
+    "AlphaPO: Reward Shape Matters for LLM Alignment",
+    "BEST-Route: Adaptive LLM Routing with Test-Time Optimal Compute",
+    "Larger or Smaller Reward Margins to Select Preferences for LLM Alignment?",
+    "POROver: Improving Safety and Reducing Overrefusal in Large Language Models with Overgeneration and Preference Optimization",
+    "R.I.P.: Better Models by Survival of the Fittest Prompts",
+    "Reward-Augmented Data Enhances Direct Preference Alignment of LLMs",
+    "Self-Consistency Preference Optimization",
+    "The Best of Both Worlds: Bridging Quality and Diversity in Data Selection with Bipartite Graph",
+    "Thinking LLMs: General Instruction Following with Thought Generation"
+  ],
+  "paper_count": 16,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "ArmoRM-Llama3-8B-v0.1, a scoring model used for filtering synthetic preference data in the Llama3 setting.",
+      "paper": "Self-Boosting Large Language Models with  Synthetic Preference Data",
+      "original_name": "ArmoRM-Llama3-8B-v0.1"
+    },
+    {
+      "text": "An 8-billion parameter reward model used as an automated evaluator, specifically leveraging its instruction-following dimension to score model outputs.",
+      "paper": "Amulet: ReAlignment During Test Time for Personalized Preference Adaptation of LLMs",
+      "original_name": "ArmoRM-8B"
+    },
+    {
+      "text": "A state-of-the-art multi-dimension reward model used as an automated judge to evaluate the alignment of LLM responses from various perspectives.",
+      "paper": "PAD: Personalized Alignment of LLMs at Decoding-time",
+      "original_name": "ArmoRM"
+    },
+    {
+      "text": "A specific, publicly-available reward model used as an external judge to score model-generated responses and create preference pairs for baseline training.",
+      "paper": "Self-Consistency Preference Optimization",
+      "original_name": "ArmoRM-Llama3-8B"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction following",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Amulet: ReAlignment During Test Time for Personalized Preference Adaptation of LLMs",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Amulet: ReAlignment During Test Time for Personalized Preference Adaptation of LLMs"
+        ],
+        "icml25": [
+          "Reward-Augmented Data Enhances Direct Preference Alignment of LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "PAD: Personalized Alignment of LLMs at Decoding-time",
+      "evidence": "For the evaluation of 'harmless', 'helpful', and 'humor' dimensions... Additionally, we employ the ArmoRM (Wang et al., 2024b), a multi-dimension reward model... For these reward models, we report their scores assessing LLM responses from various perspectives.",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "PAD: Personalized Alignment of LLMs at Decoding-time"
+        ],
+        "icml25": [
+          "Reward-Augmented Data Enhances Direct Preference Alignment of LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Response quality",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Harnessing and Evaluating the Intrinsic Extrapolation Ability of Large Language Models for Vehicle Trajectory Prediction",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "naacl25": [
+          "Harnessing and Evaluating the Intrinsic Extrapolation Ability of Large Language Models for Vehicle Trajectory Prediction"
+        ],
+        "icml25": [
+          "BEST-Route: Adaptive LLM Routing with Test-Time Optimal Compute"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reward-Bench",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Amulet: ReAlignment During Test Time for Personalized Preference Adaptation of LLMs",
+      "evidence": "Additionally, we employ the ArmoRM (Wang et al., 2024b), a multi-dimension reward model known for its state-of-the-art performance on the Reward-Bench benchmark (Lambert et al., 2024).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Amulet: ReAlignment During Test Time for Personalized Preference Adaptation of LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmlessness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "PAD: Personalized Alignment of LLMs at Decoding-time",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "PAD: Personalized Alignment of LLMs at Decoding-time"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Humor understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "PAD: Personalized Alignment of LLMs at Decoding-time",
+      "evidence": "For the evaluation of 'harmless', 'helpful', and 'humor' dimensions... Additionally, we employ the ArmoRM (Wang et al., 2024b), a multi-dimension reward model... For these reward models, we report their scores assessing LLM responses from various perspectives.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "PAD: Personalized Alignment of LLMs at Decoding-time"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Preference ranking",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Weighted-Reward Preference Optimization for Implicit Model Fusion",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Weighted-Reward Preference Optimization for Implicit Model Fusion"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 7,
+  "incoming_relationship_count": 6,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the provided literature, ArmoRM is predominantly characterized as a multi-dimension reward model that functions as an automated judge to evaluate the alignment of large language model (LLM) responses. Its prevailing application is to score or rank model outputs, which is frequently done to create preference pairs for alignment training or to act as a proxy evaluator. As a measurement instrument, ArmoRM is used to assess a range of constructs, including `Helpfulness`, `Harmlessness`, and `Humor understanding`. One study specifically leverages its `instruction-following` dimension, while another selects five attributes for analysis: \"complexity, instruction following, honesty, helpfulness, and intelligence depth.\" A less frequent but noted use is for filtering synthetic preference data, where one paper states it \"effectively mitigates erroneous responses\" (\"Self-Boosting Large Language Models with  Synthetic Preference Data\"). The instrument appears in several specific versions, such as the publicly-available `ArmoRM-Llama3-8B`, and is described as a \"state-of-the-art\" model whose performance is associated with the `Reward-Bench` benchmark. Some work also uses it to assign \"ground truth labels\" to responses for evaluation purposes.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Amulet: ReAlignment During Test Time for Personalized Preference Adaptation of LLMs",
+      "PAD: Personalized Alignment of LLMs at Decoding-time",
+      "RainbowPO: A Unified Framework for Combining Improvements in Preference Optimization",
+      "Self-Boosting Large Language Models with  Synthetic Preference Data",
+      "Weighted-Reward Preference Optimization for Implicit Model Fusion"
+    ],
+    "icml25": [
+      "AlphaPO: Reward Shape Matters for LLM Alignment",
+      "BEST-Route: Adaptive LLM Routing with Test-Time Optimal Compute",
+      "Larger or Smaller Reward Margins to Select Preferences for LLM Alignment?",
+      "POROver: Improving Safety and Reducing Overrefusal in Large Language Models with Overgeneration and Preference Optimization",
+      "R.I.P.: Better Models by Survival of the Fittest Prompts",
+      "Reward-Augmented Data Enhances Direct Preference Alignment of LLMs",
+      "Self-Consistency Preference Optimization",
+      "The Best of Both Worlds: Bridging Quality and Diversity in Data Selection with Bipartite Graph",
+      "Thinking LLMs: General Instruction Following with Thought Generation"
+    ],
+    "emnlp25": [
+      "CompKBQA: Component-wise Task Decomposition for Knowledge Base Question Answering",
+      "Do Large Language Models Understand Word Senses?"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 5,
+    "icml25": 9,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "icml25"
+  ]
+}

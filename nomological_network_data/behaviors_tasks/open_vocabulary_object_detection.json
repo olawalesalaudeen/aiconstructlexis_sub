@@ -1,0 +1,88 @@
+{
+  "canonical_name": "Open-vocabulary object detection",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, open-vocabulary object detection is a behavior centered on identifying objects from categories not seen during training. While this is the common thread, the provided papers offer distinct framings. The most specific definition, termed 'open-vocabulary object detection,' requires using textual descriptions to detect these novel objects. A related framing, 'open-ended object detection,' is described as a more general task of discovering unseen objects without any predefined categories provided at inference. A third variant, 'open-world object detection,' adds a temporal learning component, defining the task as detecting both known and novel objects and then having the 'ability to incrementally learn the new categories over time' (UMB: Understanding Model Behavior for Open-World Object Detection). This behavior is situated within the broader context of object detection. To operationalize this task, the Visual Genome dataset is used as a measurement instrument.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Open-vocabulary object detection",
+    "Open-ended object detection",
+    "Open-world object detection"
+  ],
+  "papers": [
+    "FineCLIP: Self-distilled Region-based CLIP for Better Fine-grained Understanding",
+    "FlexCap: Describe Anything in Images in Controllable Detail",
+    "Training-Free Open-Ended Object Detection and Segmentation via Attention as Prompts",
+    "UMB: Understanding Model Behavior for Open-World Object Detection"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Detecting objects in an image belonging to categories not seen during training, using textual descriptions.",
+      "paper": "FineCLIP: Self-distilled Region-based CLIP for Better Fine-grained Understanding",
+      "original_name": "Open-vocabulary object detection"
+    },
+    {
+      "text": "The task of identifying and locating objects in an image without being provided with a predefined set of object categories during inference.",
+      "paper": "Training-Free Open-Ended Object Detection and Segmentation via Attention as Prompts",
+      "original_name": "Open-ended object detection"
+    },
+    {
+      "text": "The task of detecting objects from both known, annotated categories and identifying objects from novel, unknown categories in an image, with the ability to incrementally learn the new categories over time.",
+      "paper": "UMB: Understanding Model Behavior for Open-World Object Detection",
+      "original_name": "Open-world object detection"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual Genome",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "FlexCap: Describe Anything in Images in Controllable Detail",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "FlexCap: Describe Anything in Images in Controllable Detail"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Object detection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Open-Det: An Efficient Learning Framework for Open-Ended Detection",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Open-Det: An Efficient Learning Framework for Open-Ended Detection"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the surveyed literature, open-vocabulary object detection is a behavior centered on identifying objects from categories not seen during training. While this is the common thread, the provided papers offer distinct framings. The most specific definition, termed 'open-vocabulary object detection,' requires using textual descriptions to detect these novel objects. A related framing, 'open-ended object detection,' is described as a more general task of discovering unseen objects without any predefined categories provided at inference. A third variant, 'open-world object detection,' adds a temporal learning component, defining the task as detecting both known and novel objects and then having the 'ability to incrementally learn the new categories over time' (UMB: Understanding Model Behavior for Open-World Object Detection). This behavior is situated within the broader context of object detection. To operationalize this task, the Visual Genome dataset is used as a measurement instrument.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "FineCLIP: Self-distilled Region-based CLIP for Better Fine-grained Understanding",
+      "FlexCap: Describe Anything in Images in Controllable Detail",
+      "Training-Free Open-Ended Object Detection and Segmentation via Attention as Prompts",
+      "UMB: Understanding Model Behavior for Open-World Object Detection"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 4
+  },
+  "conferences": [
+    "neurips24"
+  ]
+}

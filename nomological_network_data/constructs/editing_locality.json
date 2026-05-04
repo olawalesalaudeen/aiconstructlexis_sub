@@ -1,0 +1,95 @@
+{
+  "canonical_name": "Editing locality",
+  "type": "construct",
+  "canonical_definition": "The prevailing usage of \"Editing locality\" in the provided literature frames it as a property of knowledge editing methods, defined as the ability to modify targeted knowledge without affecting unrelated information. This dominant view is captured in definitions describing it as the extent to which \"unrelated knowledge remains unchanged in the edited model\" (\"MMKE-Bench...\") or the property of an edit to not influence \"other unrelated knowledge\" (\"Precise Localization of Memories...\"). This construct is operationalized by comparing a model's outputs before and after an edit to assess changes in unrelated knowledge. Poor locality is described as a limitation that can cause the \"persistence of irrelevant or inaccurate facts\" (\"Precise Localization of Memories...\"). A different line of work uses \"locality\" to refer to a constraint on token distance, where relevant tokens for a prediction are within a bounded range of each other (\"The Role of Sparsity...\"). Yet another paper introduces \"semantic locality\" to describe the shared semantics between consecutive tokens or user queries (\"Oracle-MoE...\"). Finally, editing locality is reported to influence both Faithfulness and Consistency.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Editing Locality",
+    "Semantic locality"
+  ],
+  "papers": [
+    "Can Knowledge Editing Really Correct Hallucinations?",
+    "In-Context Editing: Learning Knowledge from Self-Induced Distributions",
+    "MMKE-Bench: A Multimodal Editing Benchmark for Diverse Visual Knowledge",
+    "MQuAKE-Remastered: Multi-Hop Knowledge Editing Can Only Be Advanced with Reliable Evaluations",
+    "Precise Localization of Memories: A Fine-grained Neuron-level Knowledge Editing Technique for LLMs",
+    "Unlocking Efficient, Scalable, and Continual Knowledge Editing with Basis-Level Representation Fine-Tuning",
+    "BalancEdit: Dynamically Balancing the Generality-Locality Trade-off in Multi-modal Model Editing",
+    "Mitigating Heterogeneous Token Overfitting in LLM Knowledge Editing",
+    "Oracle-MoE: Locality-preserving Routing in the Oracle Space for Memory-constrained Large Language Model Inference",
+    "Resolving Lexical Bias in Model Editing",
+    "The Role of Sparsity for Length Generalization in LLMs",
+    "Towards Global-level Mechanistic Interpretability: A Perspective of Modular Circuits of Large Language Models",
+    "WikiBigEdit: Understanding the Limits of Lifelong Knowledge Editing in LLMs"
+  ],
+  "paper_count": 13,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The latent property of an editing method to modify targeted knowledge without influencing unrelated knowledge or model capabilities.",
+      "paper": "Precise Localization of Memories: A Fine-grained Neuron-level Knowledge Editing Technique for LLMs",
+      "original_name": "Editing Locality"
+    },
+    {
+      "text": "The extent to which unrelated knowledge remains unchanged in the edited model compared to its outputs before editing.",
+      "paper": "MMKE-Bench: A Multimodal Editing Benchmark for Diverse Visual Knowledge",
+      "original_name": "Locality"
+    },
+    {
+      "text": "The degree to which consecutive tokens or user interactions share similar high-level semantics, making their representations and routing decisions stable across nearby time steps.",
+      "paper": "Oracle-MoE: Locality-preserving Routing in the Oracle Space for Memory-constrained Large Language Model Inference",
+      "original_name": "Semantic locality"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Consistency",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Oracle-MoE: Locality-preserving Routing in the Oracle Space for Memory-constrained Large Language Model Inference",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Oracle-MoE: Locality-preserving Routing in the Oracle Space for Memory-constrained Large Language Model Inference"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization": "The prevailing usage of \"Editing locality\" in the provided literature frames it as a property of knowledge editing methods, defined as the ability to modify targeted knowledge without affecting unrelated information. This dominant view is captured in definitions describing it as the extent to which \"unrelated knowledge remains unchanged in the edited model\" (\"MMKE-Bench...\") or the property of an edit to not influence \"other unrelated knowledge\" (\"Precise Localization of Memories...\"). This construct is operationalized by comparing a model's outputs before and after an edit to assess changes in unrelated knowledge. Poor locality is described as a limitation that can cause the \"persistence of irrelevant or inaccurate facts\" (\"Precise Localization of Memories...\"). A different line of work uses \"locality\" to refer to a constraint on token distance, where relevant tokens for a prediction are within a bounded range of each other (\"The Role of Sparsity...\"). Yet another paper introduces \"semantic locality\" to describe the shared semantics between consecutive tokens or user queries (\"Oracle-MoE...\"). Finally, editing locality is reported to influence both Faithfulness and Consistency.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Can Knowledge Editing Really Correct Hallucinations?",
+      "In-Context Editing: Learning Knowledge from Self-Induced Distributions",
+      "MMKE-Bench: A Multimodal Editing Benchmark for Diverse Visual Knowledge",
+      "MQuAKE-Remastered: Multi-Hop Knowledge Editing Can Only Be Advanced with Reliable Evaluations",
+      "Precise Localization of Memories: A Fine-grained Neuron-level Knowledge Editing Technique for LLMs",
+      "Unlocking Efficient, Scalable, and Continual Knowledge Editing with Basis-Level Representation Fine-Tuning"
+    ],
+    "icml25": [
+      "BalancEdit: Dynamically Balancing the Generality-Locality Trade-off in Multi-modal Model Editing",
+      "Mitigating Heterogeneous Token Overfitting in LLM Knowledge Editing",
+      "Oracle-MoE: Locality-preserving Routing in the Oracle Space for Memory-constrained Large Language Model Inference",
+      "Resolving Lexical Bias in Model Editing",
+      "The Role of Sparsity for Length Generalization in LLMs",
+      "Towards Global-level Mechanistic Interpretability: A Perspective of Modular Circuits of Large Language Models",
+      "WikiBigEdit: Understanding the Limits of Lifelong Knowledge Editing in LLMs"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 6,
+    "icml25": 7
+  },
+  "conferences": [
+    "iclr25",
+    "icml25"
+  ]
+}

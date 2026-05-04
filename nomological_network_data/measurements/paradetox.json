@@ -1,0 +1,76 @@
+{
+  "canonical_name": "ParaDetox",
+  "type": "measurement",
+  "canonical_definition": "Based on the available data, ParaDetox is characterized as a dataset for evaluating language models. The single provided source defines it as containing pairs of \"toxic\" and \"non-toxic\" sentences generated through paraphrasing. This dataset is described as being used to identify toxicity-related features within a model's internal activations. In terms of its application as a measurement instrument, the data indicates ParaDetox is used to assess both `Conditional text generation` and `Semantic preservation`. In the context of measuring semantic preservation, the concept of semantic similarity is mentioned as a means to evaluate how well generated text preserves the meaning of the original input.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "ParaDetox"
+  ],
+  "papers": [
+    "EvaluatingLLM-Generated Diagrams as Graphs",
+    "Judging Quality Across Languages: A Multilingual Approach to Pretraining Data Filtering with Language Models",
+    "Measuring scalar constructs in social science withLLMs",
+    "Multilingual Dialogue Generation and Localization with Dialogue Act Scripting"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A dataset containing pairs of toxic and non-toxic paraphrased sentences, used to identify toxicity-related features in a model's activations.",
+      "paper": "EvaluatingLLM-Generated Diagrams as Graphs",
+      "original_name": "ParaDetox"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Semantic preservation",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Measuring scalar constructs in social science withLLMs",
+      "evidence": "Semantic Similarity (SIM) measures to what extent the generated text preserves the meaning of the original input. (Section 4.1.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Measuring scalar constructs in social science withLLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Conditional text generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Judging Quality Across Languages: A Multilingual Approach to Pretraining Data Filtering with Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Judging Quality Across Languages: A Multilingual Approach to Pretraining Data Filtering with Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "Based on the available data, ParaDetox is characterized as a dataset for evaluating language models. The single provided source defines it as containing pairs of \"toxic\" and \"non-toxic\" sentences generated through paraphrasing. This dataset is described as being used to identify toxicity-related features within a model's internal activations. In terms of its application as a measurement instrument, the data indicates ParaDetox is used to assess both `Conditional text generation` and `Semantic preservation`. In the context of measuring semantic preservation, the concept of semantic similarity is mentioned as a means to evaluate how well generated text preserves the meaning of the original input.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "EvaluatingLLM-Generated Diagrams as Graphs",
+      "Judging Quality Across Languages: A Multilingual Approach to Pretraining Data Filtering with Language Models",
+      "Measuring scalar constructs in social science withLLMs",
+      "Multilingual Dialogue Generation and Localization with Dialogue Act Scripting"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 4
+  },
+  "conferences": [
+    "emnlp25"
+  ]
+}

@@ -1,0 +1,215 @@
+{
+  "canonical_name": "BigCodeBench",
+  "type": "measurement",
+  "canonical_definition": "Across the surveyed literature, BigCodeBench is a benchmark predominantly used to evaluate the code generation capabilities of large language models, particularly in Python. The most common framing is its use for assessing a model's ability to generate code that correctly utilizes diverse library APIs and function calls, with one paper specifying it contains \"1,140 fine-grained tasks\" from \"139 libraries and 7 domains\". The benchmark is operationalized in multiple ways to target different programming scenarios: `BigCodeBench-Complete` evaluates generation from structured docstrings, while `BigCodeBench-Instruct` focuses on generating code from short, natural-language instructions. A variant named `BigCodeBench-Full-Instruct` is also described as a large-scale, single-turn code generation benchmark. Beyond general code generation, several papers state that BigCodeBench measures a model's capacity for `tool use`, specifically its ability to call external functions. A single paper also suggests it assesses `compositional reasoning`, as its tasks frequently require a sequence of function calls for a solution.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "BigCodeBench",
+    "BigCodeBench-Full-Instruct",
+    "BigCodeBench-Complete",
+    "BigCodeBench-Instruct"
+  ],
+  "papers": [
+    "Beyond Dialogue: A Profile-Dialogue Alignment Framework Towards General Role-Playing Language Model",
+    "Comparison-based Active Preference Learning for Multi-dimensional Personalization",
+    "Improve Safety Training of Large Language Models with Safety-Critical Singular Vectors Localization",
+    "SpeechFake: A Large-Scale Multilingual Speech Deepfake Dataset Incorporating Cutting-Edge Generation Methods",
+    "A Rigorous Evaluation ofLLMData Generation Strategies for Low-Resource Languages",
+    "Code to Think, Think to Code: A Survey on Code-Enhanced Reasoning and Reasoning-Driven Code Intelligence inLLMs",
+    "Transparent and Coherent Procedural Mistake Detection",
+    "Tree-of-Quote Prompting Improves Factuality and Attribution in Multi-Hop and Medical Reasoning",
+    "Zero-shot Multimodal Document Retrieval via Cross-modal Question Generation",
+    "Agent Skill Acquisition for Large Language Models via CycleQD",
+    "BigCodeBench: Benchmarking Code Generation with Diverse Function Calls and Complex Instructions",
+    "ConvCodeWorld: Benchmarking Conversational Code Generation in Reproducible Feedback Environments",
+    "ObscuraCoder: Powering Efficient Code LM Pre-Training Via Obfuscation Grounding",
+    "Training Language Models on Synthetic Edit Sequences Improves Code Synthesis",
+    "Copilot Arena: A Platform for Code LLM Evaluation in the Wild",
+    "EpiCoder: Encompassing Diversity and Complexity in Code Generation",
+    "Evaluating Judges as Evaluators: The JETTS Benchmark of LLM-as-Judges as Test-Time Scaling Evaluators",
+    "PAK-UCB Contextual Bandit: An Online Learning Approach to Prompt-Aware Selection of Generative Models and LLMs",
+    "Revisiting Chain-of-Thought in Code Generation: Do Language Models Need to Learn Reasoning before Coding?",
+    "Selective Prompt Anchoring for Code Generation",
+    "The Elicitation Game: Evaluating Capability Elicitation Techniques",
+    "EmoCharacter: Evaluating the Emotional Fidelity of Role-Playing Agents in Dialogues",
+    "PicPersona-TOD: A Dataset for Personalizing Utterance Style in Task-Oriented Dialogue with Image Persona"
+  ],
+  "paper_count": 23,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A benchmark designed to evaluate a code model's ability to generate code that correctly utilizes various library APIs in a completion setting.",
+      "paper": "ObscuraCoder: Powering Efficient Code LM Pre-Training Via Obfuscation Grounding",
+      "original_name": "BigCodeBench"
+    },
+    {
+      "text": "A large-scale, single-turn Python code generation benchmark with challenging problem sets and comprehensive test coverage, used as the basis for CONVCODEWORLD.",
+      "paper": "ConvCodeWorld: Benchmarking Conversational Code Generation in Reproducible Feedback Environments",
+      "original_name": "BigCodeBench-Full-Instruct"
+    },
+    {
+      "text": "The structured-docstring version of BigCodeBench used to evaluate code generation from verbose programming prompts.",
+      "paper": "BigCodeBench: Benchmarking Code Generation with Diverse Function Calls and Complex Instructions",
+      "original_name": "BigCodeBench-Complete"
+    },
+    {
+      "text": "A variant of BigCodeBench that evaluates instruction-to-code generation, where models generate code from short, natural-language-oriented instructions.",
+      "paper": "BigCodeBench: Benchmarking Code Generation with Diverse Function Calls and Complex Instructions",
+      "original_name": "BigCodeBench-Instruct"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "BigCodeBench: Benchmarking Code Generation with Diverse Function Calls and Complex Instructions",
+      "evidence": "",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "iclr25": [
+          "BigCodeBench: Benchmarking Code Generation with Diverse Function Calls and Complex Instructions"
+        ],
+        "icml25": [
+          "Selective Prompt Anchoring for Code Generation",
+          "The Elicitation Game: Evaluating Capability Elicitation Techniques",
+          "Evaluating Judges as Evaluators: The JETTS Benchmark of LLM-as-Judges as Test-Time Scaling Evaluators"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Tool use",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "BigCodeBench: Benchmarking Code Generation with Diverse Function Calls and Complex Instructions",
+      "evidence": "We introduce BigCodeBench, a new high-quality programming benchmark constructed via the collaboration between human experts and LLMs, assessing the capability of tool use and complex instruction following. (Section 6)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "BigCodeBench: Benchmarking Code Generation with Diverse Function Calls and Complex Instructions"
+        ],
+        "icml25": [
+          "Selective Prompt Anchoring for Code Generation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction following",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "BigCodeBench: Benchmarking Code Generation with Diverse Function Calls and Complex Instructions",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "BigCodeBench: Benchmarking Code Generation with Diverse Function Calls and Complex Instructions"
+        ],
+        "icml25": [
+          "Selective Prompt Anchoring for Code Generation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Compositional reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "BigCodeBench: Benchmarking Code Generation with Diverse Function Calls and Complex Instructions",
+      "evidence": "BigCodeBench frequently invokes a sequence of function calls from multiple libraries to solve a single task, requiring significant compositional reasoning ability for task-solving. (Section 3)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "BigCodeBench: Benchmarking Code Generation with Diverse Function Calls and Complex Instructions"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Programming",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "BigCodeBench: Benchmarking Code Generation with Diverse Function Calls and Complex Instructions",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "BigCodeBench: Benchmarking Code Generation with Diverse Function Calls and Complex Instructions"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "EpiCoder: Encompassing Diversity and Complexity in Code Generation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "EpiCoder: Encompassing Diversity and Complexity in Code Generation"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 6,
+  "incoming_relationship_count": 6,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the surveyed literature, BigCodeBench is a benchmark predominantly used to evaluate the code generation capabilities of large language models, particularly in Python. The most common framing is its use for assessing a model's ability to generate code that correctly utilizes diverse library APIs and function calls, with one paper specifying it contains \"1,140 fine-grained tasks\" from \"139 libraries and 7 domains\". The benchmark is operationalized in multiple ways to target different programming scenarios: `BigCodeBench-Complete` evaluates generation from structured docstrings, while `BigCodeBench-Instruct` focuses on generating code from short, natural-language instructions. A variant named `BigCodeBench-Full-Instruct` is also described as a large-scale, single-turn code generation benchmark. Beyond general code generation, several papers state that BigCodeBench measures a model's capacity for `tool use`, specifically its ability to call external functions. A single paper also suggests it assesses `compositional reasoning`, as its tasks frequently require a sequence of function calls for a solution.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Agent Skill Acquisition for Large Language Models via CycleQD",
+      "BigCodeBench: Benchmarking Code Generation with Diverse Function Calls and Complex Instructions",
+      "ConvCodeWorld: Benchmarking Conversational Code Generation in Reproducible Feedback Environments",
+      "ObscuraCoder: Powering Efficient Code LM Pre-Training Via Obfuscation Grounding",
+      "Training Language Models on Synthetic Edit Sequences Improves Code Synthesis"
+    ],
+    "naacl25": [
+      "EmoCharacter: Evaluating the Emotional Fidelity of Role-Playing Agents in Dialogues",
+      "PicPersona-TOD: A Dataset for Personalizing Utterance Style in Task-Oriented Dialogue with Image Persona"
+    ],
+    "acl25": [
+      "Beyond Dialogue: A Profile-Dialogue Alignment Framework Towards General Role-Playing Language Model",
+      "Comparison-based Active Preference Learning for Multi-dimensional Personalization",
+      "Improve Safety Training of Large Language Models with Safety-Critical Singular Vectors Localization",
+      "SpeechFake: A Large-Scale Multilingual Speech Deepfake Dataset Incorporating Cutting-Edge Generation Methods"
+    ],
+    "icml25": [
+      "Copilot Arena: A Platform for Code LLM Evaluation in the Wild",
+      "EpiCoder: Encompassing Diversity and Complexity in Code Generation",
+      "Evaluating Judges as Evaluators: The JETTS Benchmark of LLM-as-Judges as Test-Time Scaling Evaluators",
+      "PAK-UCB Contextual Bandit: An Online Learning Approach to Prompt-Aware Selection of Generative Models and LLMs",
+      "Revisiting Chain-of-Thought in Code Generation: Do Language Models Need to Learn Reasoning before Coding?",
+      "Selective Prompt Anchoring for Code Generation",
+      "The Elicitation Game: Evaluating Capability Elicitation Techniques"
+    ],
+    "emnlp25": [
+      "A Rigorous Evaluation ofLLMData Generation Strategies for Low-Resource Languages",
+      "Code to Think, Think to Code: A Survey on Code-Enhanced Reasoning and Reasoning-Driven Code Intelligence inLLMs",
+      "Transparent and Coherent Procedural Mistake Detection",
+      "Tree-of-Quote Prompting Improves Factuality and Attribution in Multi-Hop and Medical Reasoning",
+      "Zero-shot Multimodal Document Retrieval via Cross-modal Question Generation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 5,
+    "naacl25": 2,
+    "acl25": 4,
+    "icml25": 7,
+    "emnlp25": 5
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "naacl25"
+  ]
+}

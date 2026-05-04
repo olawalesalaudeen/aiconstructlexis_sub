@@ -1,0 +1,129 @@
+{
+  "canonical_name": "Ambiguity handling",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, ambiguity handling is predominantly framed as a model's capacity to manage user inputs that are open to multiple interpretations. Definitions vary slightly in focus, describing it as \"ambiguity awareness\"\u2014the ability to recognize when a situation \"admits multiple plausible interpretations\"\u2014or \"ambiguity understanding,\" which involves correctly interpreting vague or incomplete instructions. A more technical and less common framing defines ambiguity at the tokenization level, where \"multiple token sequences can correspond to the same text.\" The construct is operationalized through several behaviors; one paper suggests that an effective response to ambiguity is to \"ask clarifying questions\" rather than assuming a single interpretation. Another line of work measures this ability by evaluating whether models can \"correctly understand the instructions and produce the right answers\" on benchmarks like VISUAL-O1, which was designed to test the disambiguation of instructions. One paper notes that \"weak reasoning abilities of disambiguation can lead to catastrophic errors.\" The construct is studied alongside `Uncertainty quantification` and is proposed to be caused by `Commonsense knowledge`.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Ambiguity awareness",
+    "Ambiguity understanding",
+    "Ambiguity handling",
+    "Task ambiguity"
+  ],
+  "papers": [
+    "CertainlyUncertain: A Benchmark and Metric for Multimodal Epistemic and Aleatoric Awareness",
+    "Eliciting Human Preferences with Language Models",
+    "Modeling Future Conversation Turns to Teach LLMs to Ask Clarifying Questions",
+    "The Foundations of Tokenization: Statistical and Computational Concerns",
+    "Visual-O1: Understanding Ambiguous Instructions via Multi-modal Multi-turn Chain-of-thoughts Reasoning"
+  ],
+  "paper_count": 5,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The ability to recognize when a question, object, or situation admits multiple plausible interpretations and therefore cannot be answered with certainty.",
+      "paper": "CertainlyUncertain: A Benchmark and Metric for Multimodal Epistemic and Aleatoric Awareness",
+      "original_name": "Ambiguity awareness"
+    },
+    {
+      "text": "The ability of a model to correctly interpret language instructions that are vague, incomplete, or contain colloquialisms by integrating visual context and common sense.",
+      "paper": "Visual-O1: Understanding Ambiguous Instructions via Multi-modal Multi-turn Chain-of-thoughts Reasoning",
+      "original_name": "Ambiguity understanding"
+    },
+    {
+      "text": "The general capacity of a model to respond effectively to highly ambiguous user requests rather than presupposing a single interpretation.",
+      "paper": "Modeling Future Conversation Turns to Teach LLMs to Ask Clarifying Questions",
+      "original_name": "Ambiguity handling"
+    },
+    {
+      "text": "The extent to which multiple token sequences can correspond to the same text, creating uncertainty in decoding or in the induced language model.",
+      "paper": "The Foundations of Tokenization: Statistical and Computational Concerns",
+      "original_name": "Ambiguity"
+    },
+    {
+      "text": "The degree to which a user's intended task specification is underspecified or open to multiple interpretations.",
+      "paper": "Eliciting Human Preferences with Language Models",
+      "original_name": "Task ambiguity"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Prompt engineering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Modeling Future Conversation Turns to Teach LLMs to Ask Clarifying Questions",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Modeling Future Conversation Turns to Teach LLMs to Ask Clarifying Questions"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Uncertainty quantification",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "CertainlyUncertain: A Benchmark and Metric for Multimodal Epistemic and Aleatoric Awareness",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "CertainlyUncertain: A Benchmark and Metric for Multimodal Epistemic and Aleatoric Awareness"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Same evaluation, more tokens: On the effect of input length for machine translation evaluation using Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Same evaluation, more tokens: On the effect of input length for machine translation evaluation using Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "G-Eval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Same evaluation, more tokens: On the effect of input length for machine translation evaluation using Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Same evaluation, more tokens: On the effect of input length for machine translation evaluation using Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 4,
+  "characterization": "Across the surveyed literature, ambiguity handling is predominantly framed as a model's capacity to manage user inputs that are open to multiple interpretations. Definitions vary slightly in focus, describing it as \"ambiguity awareness\"\u2014the ability to recognize when a situation \"admits multiple plausible interpretations\"\u2014or \"ambiguity understanding,\" which involves correctly interpreting vague or incomplete instructions. A more technical and less common framing defines ambiguity at the tokenization level, where \"multiple token sequences can correspond to the same text.\" The construct is operationalized through several behaviors; one paper suggests that an effective response to ambiguity is to \"ask clarifying questions\" rather than assuming a single interpretation. Another line of work measures this ability by evaluating whether models can \"correctly understand the instructions and produce the right answers\" on benchmarks like VISUAL-O1, which was designed to test the disambiguation of instructions. One paper notes that \"weak reasoning abilities of disambiguation can lead to catastrophic errors.\" The construct is studied alongside `Uncertainty quantification` and is proposed to be caused by `Commonsense knowledge`.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "CertainlyUncertain: A Benchmark and Metric for Multimodal Epistemic and Aleatoric Awareness",
+      "Eliciting Human Preferences with Language Models",
+      "Modeling Future Conversation Turns to Teach LLMs to Ask Clarifying Questions",
+      "The Foundations of Tokenization: Statistical and Computational Concerns",
+      "Visual-O1: Understanding Ambiguous Instructions via Multi-modal Multi-turn Chain-of-thoughts Reasoning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 5
+  },
+  "conferences": [
+    "iclr25"
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "canonical_name": "Multi-task capability",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, \"Multi-task capability\" is framed in several distinct ways, with no single dominant definition. One perspective treats it as the ability of a merged model to retain the functionalities of its specialist components, allowing it to \"perform multiple tasks\" effectively (\"UNComp: Can Matrix Entropy Uncover Sparsity? \u2014 A Compressor Design from an Uncertainty-Aware Perspective\"). Another view, labeled \"cross-task generalization,\" focuses on a model's ability to handle unseen or diverse task types, such as generating instruction data for both open-book and closed-book QA. A third, more specific framing is \"compositional multi-tasking,\" defined as the latent ability for \"simultaneous execution of multiple tasks\" within a single inference pass (\"Video-RTS: Rethinking Reinforcement Learning and Test-Time Scaling for Efficient and Enhanced Video Reasoning\"). To assess this construct, papers operationalize it using performance on benchmarks like `Super-NaturalInstructions` and tasks such as `Link prediction`. The concept is studied in relation to `Zero-shot learning`, `Commonsense knowledge`, and question-answering behaviors. Furthermore, some research suggests that constructs like `Planning` and `Self-reflection` may be causes of multi-task capability.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Multi-task capability",
+    "Cross-task generalization",
+    "Compositional multi-tasking"
+  ],
+  "papers": [
+    "OmniEval: An Omnidirectional and AutomaticRAGEvaluation Benchmark in Financial Domain",
+    "SNaRe: Domain-aware Data Generation for Low-Resource Event Detection",
+    "Stop Looking for \u201cImportant Tokens\u201d in Multimodal Language Models: Duplication Matters More",
+    "UNComp: Can Matrix Entropy Uncover Sparsity? \u2014 A Compressor Design from an Uncertainty-Aware Perspective",
+    "Video-RTS: Rethinking Reinforcement Learning and Test-Time Scaling for Efficient and Enhanced Video Reasoning"
+  ],
+  "paper_count": 5,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The latent ability of a merged model to retain and perform multiple tasks effectively after combining specialist models.",
+      "paper": "UNComp: Can Matrix Entropy Uncover Sparsity? \u2014 A Compressor Design from an Uncertainty-Aware Perspective",
+      "original_name": "Multi-task capability"
+    },
+    {
+      "text": "The ability of the data synthesis model to generate high-quality instruction data for unseen or diverse task types by leveraging flexible task definitions such as open-book and closed-book QA.",
+      "paper": "OmniEval: An Omnidirectional and AutomaticRAGEvaluation Benchmark in Financial Domain",
+      "original_name": "Cross-task generalization"
+    },
+    {
+      "text": "The latent ability of a model to simultaneously execute multiple distinct tasks (e.g., summarization and translation) in a single inference pass, integrating their requirements into a coherent output.",
+      "paper": "Video-RTS: Rethinking Reinforcement Learning and Test-Time Scaling for Efficient and Enhanced Video Reasoning",
+      "original_name": "Compositional multi-tasking"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Zero-shot learning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "From Instance Training to Instruction Learning: Task Adapters Generation from Instructions",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "From Instance Training to Instruction Learning: Task Adapters Generation from Instructions"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Link prediction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "LLMs as Zero-shot Graph Learners: Alignment of GNN Representations with LLM Token Embeddings",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "LLMs as Zero-shot Graph Learners: Alignment of GNN Representations with LLM Token Embeddings"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction following",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "From Instance Training to Instruction Learning: Task Adapters Generation from Instructions",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "From Instance Training to Instruction Learning: Task Adapters Generation from Instructions"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Planning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "CodePlan: Unlocking Reasoning Potential in Large Language Models by Scaling Code-form Planning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "CodePlan: Unlocking Reasoning Potential in Large Language Models by Scaling Code-form Planning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Super-NaturalInstructions",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Neuron-Level Sequential Editing for Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Neuron-Level Sequential Editing for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Self-reflection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Position: LLMs Need a Bayesian Meta-Reasoning Framework for More Robust and Generalizable Reasoning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Position: LLMs Need a Bayesian Meta-Reasoning Framework for More Robust and Generalizable Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Closed-book question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "OmniEval: An Omnidirectional and AutomaticRAGEvaluation Benchmark in Financial Domain",
+      "evidence": "AQuilt achieves better task generalization by incorporating Chinese data and defining more flexible task types. Specifically, AQuilt assigns the task type as closed/open-book QA and uses task requirements as question prefixes. (Section 4.3)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "OmniEval: An Omnidirectional and AutomaticRAGEvaluation Benchmark in Financial Domain"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Document question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "OmniEval: An Omnidirectional and AutomaticRAGEvaluation Benchmark in Financial Domain",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "OmniEval: An Omnidirectional and AutomaticRAGEvaluation Benchmark in Financial Domain"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 8,
+  "incoming_relationship_count": 5,
+  "outgoing_relationship_count": 3,
+  "characterization": "Across the surveyed literature, \"Multi-task capability\" is framed in several distinct ways, with no single dominant definition. One perspective treats it as the ability of a merged model to retain the functionalities of its specialist components, allowing it to \"perform multiple tasks\" effectively (\"UNComp: Can Matrix Entropy Uncover Sparsity? \u2014 A Compressor Design from an Uncertainty-Aware Perspective\"). Another view, labeled \"cross-task generalization,\" focuses on a model's ability to handle unseen or diverse task types, such as generating instruction data for both open-book and closed-book QA. A third, more specific framing is \"compositional multi-tasking,\" defined as the latent ability for \"simultaneous execution of multiple tasks\" within a single inference pass (\"Video-RTS: Rethinking Reinforcement Learning and Test-Time Scaling for Efficient and Enhanced Video Reasoning\"). To assess this construct, papers operationalize it using performance on benchmarks like `Super-NaturalInstructions` and tasks such as `Link prediction`. The concept is studied in relation to `Zero-shot learning`, `Commonsense knowledge`, and question-answering behaviors. Furthermore, some research suggests that constructs like `Planning` and `Self-reflection` may be causes of multi-task capability.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "OmniEval: An Omnidirectional and AutomaticRAGEvaluation Benchmark in Financial Domain",
+      "SNaRe: Domain-aware Data Generation for Low-Resource Event Detection",
+      "Stop Looking for \u201cImportant Tokens\u201d in Multimodal Language Models: Duplication Matters More",
+      "UNComp: Can Matrix Entropy Uncover Sparsity? \u2014 A Compressor Design from an Uncertainty-Aware Perspective",
+      "Video-RTS: Rethinking Reinforcement Learning and Test-Time Scaling for Efficient and Enhanced Video Reasoning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 5
+  },
+  "conferences": [
+    "emnlp25"
+  ]
+}

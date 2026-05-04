@@ -1,0 +1,290 @@
+{
+  "canonical_name": "BERTScore",
+  "type": "measurement",
+  "canonical_definition": "Across the provided data, BERTScore is consistently described as a reference-based, embedding-driven metric for evaluating semantic similarity between a candidate and a reference text. The prevailing operationalization involves computing token-level similarity using contextual embeddings from BERT, with several sources specifying the use of cosine similarity or the F1 score variant. Papers use this instrument to measure a range of constructs and task outcomes, including the quality of text summarization, relevance, faithfulness, semantic preservation in paraphrase generation, and the quality of radiology report generation. It is frequently positioned as a semantic or contextual evaluation metric, often used alongside or as a more nuanced alternative to overlap-based metrics like ROUGE and BLEU, and is noted in some sources to correlate with human judgments. While its dominant application is evaluating text generation, a smaller line of work treats it as a \"model-agnostic attribution procedure\" for assessing demonstration relevance in in-context learning. The metric is also studied in relation to other model-based approaches, with one paper citing that BARTScore outperforms it. The applications cited are diverse, spanning machine translation, dialogue summarization, and the evaluation of generated lyrics and code review comments.",
+  "expert_reviewed": false,
+  "expert_removed": true,
+  "expert_removed_reason": "metric/method/tool \u2014 not a benchmark or LLM ability",
+  "names": [
+    "BERTSCORE",
+    "BertScore",
+    "BERT-Score",
+    "BERT-SCORE",
+    "BERTScore",
+    "BERTScore-F1",
+    "Bert-Score"
+  ],
+  "papers": [
+    "CrafText Benchmark: Advancing Instruction Following in Complex Multimodal Open-Ended World",
+    "LLM\u00d7MapReduce: Simplified Long-Sequence Processing using Large Language Models",
+    "Language Models, Graph Searching, and Supervision Adulteration: When More Supervision is Less and How to Make More More",
+    "2025.emnlp-main.1626.checklist",
+    "AesBiasBench: Evaluating Bias and Alignment in Multimodal Language Models for Personalized Image Aesthetic Assessment",
+    "AraEval: AnArabic Multi-Task Evaluation Suite for Large Language Models",
+    "Are Language Models Consequentialist or Deontological Moral Reasoners?",
+    "Automated Knowledge Graph Construction using Large Language Models and Sentence Complexity Modelling",
+    "CEMTM: Contextual Embedding-based Multimodal Topic Modeling",
+    "Can Large Language Models Outperform Non-Experts in Poetry Evaluation? A Comparative Study Using the Consensual Assessment Technique",
+    "Connecting the Knowledge Dots: Retrieval-augmented Knowledge Connection for Commonsense Reasoning",
+    "EduVidQA: Generating and Evaluating Long-form Answers to Student Questions based on Lecture Videos",
+    "EmpoweringGraphRAGwith Knowledge Filtering and Integration",
+    "Frequency & Compositionality in Emergent Communication",
+    "Graph-Based Multi-Trait Essay Scoring",
+    "Jigsaw-Puzzles: From Seeing to Understanding to Reasoning in Vision-Language Models",
+    "LiTEx: A Linguistic Taxonomy of Explanations for Understanding Within-Label Variation in Natural Language Inference",
+    "MobiZO: Enabling EfficientLLMFine-Tuning at the Edge via Inference Engines",
+    "Mondrian: A Framework for Logical Abstract (Re)Structuring",
+    "Noise, Adaptation, and Strategy: AssessingLLMFidelity in Decision-Making",
+    "Quantized but Deceptive? A Multi-Dimensional Truthfulness Evaluation of QuantizedLLMs",
+    "ReEvalMed: Rethinking Medical Report Evaluation by Aligning Metrics with Real-World Clinical Judgment",
+    "Reasoning-to-Defend: Safety-Aware Reasoning Can Defend Large Language Models from Jailbreaking",
+    "Training compute-optimal transformer encoder models",
+    "VeriLocc: End-to-End Cross-Architecture Register Allocation viaLLM",
+    "Viability of Machine Translation for Healthcare in Low-Resourced Languages",
+    "VisBias: Measuring Explicit and Implicit Social Biases in Vision Language Models",
+    "Will It Still Be True Tomorrow? Multilingual Evergreen Question Classification to Improve TrustworthyQA",
+    "Does Writing with Language Models Reduce Content Diversity?",
+    "MT-Ranker: Reference-free machine translation evaluation by inter-system ranking",
+    "A Picture is Worth A Thousand Numbers: EnablingLLMs Reason about Time Series via Visualization",
+    "A Unified Supervised and Unsupervised Dialogue Topic Segmentation Framework Based on Utterance Pair Modeling",
+    "Diverse In-Context Example Selection After Decomposing Programs and Aligned Utterances Improves Semantic Parsing",
+    "Fine-grained Fallacy Detection with Human Label Variation",
+    "From Redundancy to Relevance: Information Flow inLVLMs Across Reasoning Tasks",
+    "HMT: Hierarchical Memory Transformer for Efficient Long Context Language Processing",
+    "High-Dimension Human Value Representation in Large Language Models",
+    "IHEval: Evaluating Language Models on Following the Instruction Hierarchy",
+    "Is a Peeled Apple Still Red? EvaluatingLLMs\u2019 Ability for Conceptual Combination with Property Type",
+    "Is your benchmark truly adversarial?AdvScore: Evaluating Human-Grounded Adversarialness",
+    "Learning to Summarize fromLLM-generated Feedback",
+    "ProMQA: Question Answering Dataset for Multimodal Procedural Activity Understanding",
+    "ScalingLLMInference Efficiently with Optimized Sample Compute Allocation",
+    "SimRAG: Self-Improving Retrieval-Augmented Generation for Adapting Large Language Models to Specialized Domains",
+    "Smurfs: Multi-Agent System using Context-EfficientDFSDTfor Tool Planning",
+    "The Stochastic Parrot onLLM\u2019s Shoulder: A Summative Assessment of Physical Concept Understanding",
+    "Unlearning as multi-task optimization: A normalized gradient difference approach with an adaptive learning rate",
+    "VisDoM: Multi-DocumentQAwith Visually Rich Elements Using Multimodal Retrieval-Augmented Generation",
+    "A Hitchhiker's Guide to Fine-Grained Face Forgery Detection Using Common Sense Reasoning",
+    "DETAIL: Task DEmonsTration Attribution for Interpretable In-context Learning"
+  ],
+  "paper_count": 50,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Embedding-based metric that evaluates text similarity using contextual embeddings, used to measure homogenization across essays.",
+      "paper": "Does Writing with Language Models Reduce Content Diversity?",
+      "original_name": "BertScore"
+    },
+    {
+      "text": "A reference-based, unsupervised evaluation metric that measures the similarity between a candidate and reference translation using contextual embeddings from BERT.",
+      "paper": "MT-Ranker: Reference-free machine translation evaluation by inter-system ranking",
+      "original_name": "BERTSCORE"
+    },
+    {
+      "text": "A model-agnostic attribution procedure that uses similarity scores from a pre-trained sentence transformer (BERT) to evaluate demonstration relevance, used as a baseline.",
+      "paper": "DETAIL: Task DEmonsTration Attribution for Interpretable In-context Learning",
+      "original_name": "BERT-Score"
+    },
+    {
+      "text": "A semantic similarity metric that evaluates non-clinical sentence-level similarity between generated and reference radiology reports using contextual embeddings.",
+      "paper": "A Picture is Worth A Thousand Numbers: EnablingLLMs Reason about Time Series via Visualization",
+      "original_name": "BERTScore"
+    },
+    {
+      "text": "Automatic evaluation metric that computes token-level similarity between texts using contextual embeddings, used here to measure semantic similarity in the Leak-Rate calculation.",
+      "paper": "Fine-grained Fallacy Detection with Human Label Variation",
+      "original_name": "BERT-SCORE"
+    },
+    {
+      "text": "Semantic evaluation metric that uses contextual embeddings from BERT to compute similarity between predicted and reference answers, providing a more nuanced assessment than exact string matching.",
+      "paper": "Learning to Summarize fromLLM-generated Feedback",
+      "original_name": "BERTScore-F1"
+    },
+    {
+      "text": "A contextual metric that evaluates summary quality by comparing contextual embeddings of sentences between generated and reference summaries.",
+      "paper": "High-Dimension Human Value Representation in Large Language Models",
+      "original_name": "Bert-Score"
+    }
+  ],
+  "definition_count": 7,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text summarization",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Can RLHF be More Efficient with Imperfect Reward Models? A Policy Coverage Perspective",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Can RLHF be More Efficient with Imperfect Reward Models? A Policy Coverage Perspective"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "BARTScore",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "SimRAG: Self-Improving Retrieval-Augmented Generation for Adapting Large Language Models to Specialized Domains",
+      "evidence": "It has been shown that BARTScore outperforms other metrics such as BERTScore and BLEURT (Yuan et al., 2021) (Section 3.1).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "SimRAG: Self-Improving Retrieval-Augmented Generation for Adapting Large Language Models to Specialized Domains"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Relevance",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "A Unified Supervised and Unsupervised Dialogue Topic Segmentation Framework Based on Utterance Pair Modeling",
+      "evidence": "BertScore is a robust semantic similarity metric designed to assess the quality of the generated text and achieves the best correlation in Table 1. It compares the embeddings of candidate and reference sentences through contextualized word representations from BERT (Devlin et al., 2019). It can measure how well the summary captures key information (relevance) and maintains logical flow (coherence).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "A Unified Supervised and Unsupervised Dialogue Topic Segmentation Framework Based on Utterance Pair Modeling"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Coherence",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "A Unified Supervised and Unsupervised Dialogue Topic Segmentation Framework Based on Utterance Pair Modeling",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "A Unified Supervised and Unsupervised Dialogue Topic Segmentation Framework Based on Utterance Pair Modeling"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Paraphrase generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "A Picture is Worth A Thousand Numbers: EnablingLLMs Reason about Time Series via Visualization",
+      "evidence": "For paraphrase plagiarism, we perform an evaluation of LLM-paraphrased documents through the lens of semantic equivalence, consistency, and language quality. [...] \u2022 Semantic equivalence \u2192BERTScore (Zhang et al., 2019a) (Section 3.2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "A Picture is Worth A Thousand Numbers: EnablingLLMs Reason about Time Series via Visualization"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Semantic preservation",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Are Language Models Consequentialist or Deontological Moral Reasoners?",
+      "evidence": "\"Evaluation metrics Our evaluation spans detection performance (AUC and accuracy), text quality (PPL and BLEU), semantic alignment (STS and BertScore)\"",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Are Language Models Consequentialist or Deontological Moral Reasoners?"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Radiology report generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "LLM\u00d7MapReduce: Simplified Long-Sequence Processing using Large Language Models",
+      "evidence": "Since we have radiologist-written reference available, it is possible to employ standard, general domain, NLG metrics such as BLEU (Papineni et al., 2002), ROUGE (Lin, 2004), and the BERTScore (Zhang et al., 2019). (Section 3.2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "LLM\u00d7MapReduce: Simplified Long-Sequence Processing using Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 7,
+  "incoming_relationship_count": 7,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided data, BERTScore is consistently described as a reference-based, embedding-driven metric for evaluating semantic similarity between a candidate and a reference text. The prevailing operationalization involves computing token-level similarity using contextual embeddings from BERT, with several sources specifying the use of cosine similarity or the F1 score variant. Papers use this instrument to measure a range of constructs and task outcomes, including the quality of text summarization, relevance, faithfulness, semantic preservation in paraphrase generation, and the quality of radiology report generation. It is frequently positioned as a semantic or contextual evaluation metric, often used alongside or as a more nuanced alternative to overlap-based metrics like ROUGE and BLEU, and is noted in some sources to correlate with human judgments. While its dominant application is evaluating text generation, a smaller line of work treats it as a \"model-agnostic attribution procedure\" for assessing demonstration relevance in in-context learning. The metric is also studied in relation to other model-based approaches, with one paper citing that BARTScore outperforms it. The applications cited are diverse, spanning machine translation, dialogue summarization, and the evaluation of generated lyrics and code review comments.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Does Writing with Language Models Reduce Content Diversity?",
+      "MT-Ranker: Reference-free machine translation evaluation by inter-system ranking"
+    ],
+    "neurips24": [
+      "A Hitchhiker's Guide to Fine-Grained Face Forgery Detection Using Common Sense Reasoning",
+      "DETAIL: Task DEmonsTration Attribution for Interpretable In-context Learning"
+    ],
+    "naacl25": [
+      "A Picture is Worth A Thousand Numbers: EnablingLLMs Reason about Time Series via Visualization",
+      "A Unified Supervised and Unsupervised Dialogue Topic Segmentation Framework Based on Utterance Pair Modeling",
+      "Diverse In-Context Example Selection After Decomposing Programs and Aligned Utterances Improves Semantic Parsing",
+      "Fine-grained Fallacy Detection with Human Label Variation",
+      "From Redundancy to Relevance: Information Flow inLVLMs Across Reasoning Tasks",
+      "HMT: Hierarchical Memory Transformer for Efficient Long Context Language Processing",
+      "High-Dimension Human Value Representation in Large Language Models",
+      "IHEval: Evaluating Language Models on Following the Instruction Hierarchy",
+      "Is a Peeled Apple Still Red? EvaluatingLLMs\u2019 Ability for Conceptual Combination with Property Type",
+      "Is your benchmark truly adversarial?AdvScore: Evaluating Human-Grounded Adversarialness",
+      "Learning to Summarize fromLLM-generated Feedback",
+      "ProMQA: Question Answering Dataset for Multimodal Procedural Activity Understanding",
+      "ScalingLLMInference Efficiently with Optimized Sample Compute Allocation",
+      "SimRAG: Self-Improving Retrieval-Augmented Generation for Adapting Large Language Models to Specialized Domains",
+      "Smurfs: Multi-Agent System using Context-EfficientDFSDTfor Tool Planning",
+      "The Stochastic Parrot onLLM\u2019s Shoulder: A Summative Assessment of Physical Concept Understanding",
+      "Unlearning as multi-task optimization: A normalized gradient difference approach with an adaptive learning rate",
+      "VisDoM: Multi-DocumentQAwith Visually Rich Elements Using Multimodal Retrieval-Augmented Generation"
+    ],
+    "acl25": [
+      "CrafText Benchmark: Advancing Instruction Following in Complex Multimodal Open-Ended World",
+      "LLM\u00d7MapReduce: Simplified Long-Sequence Processing using Large Language Models",
+      "Language Models, Graph Searching, and Supervision Adulteration: When More Supervision is Less and How to Make More More"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.1626.checklist",
+      "AesBiasBench: Evaluating Bias and Alignment in Multimodal Language Models for Personalized Image Aesthetic Assessment",
+      "AraEval: AnArabic Multi-Task Evaluation Suite for Large Language Models",
+      "Are Language Models Consequentialist or Deontological Moral Reasoners?",
+      "Automated Knowledge Graph Construction using Large Language Models and Sentence Complexity Modelling",
+      "CEMTM: Contextual Embedding-based Multimodal Topic Modeling",
+      "Can Large Language Models Outperform Non-Experts in Poetry Evaluation? A Comparative Study Using the Consensual Assessment Technique",
+      "Connecting the Knowledge Dots: Retrieval-augmented Knowledge Connection for Commonsense Reasoning",
+      "EduVidQA: Generating and Evaluating Long-form Answers to Student Questions based on Lecture Videos",
+      "EmpoweringGraphRAGwith Knowledge Filtering and Integration",
+      "Frequency & Compositionality in Emergent Communication",
+      "Graph-Based Multi-Trait Essay Scoring",
+      "Jigsaw-Puzzles: From Seeing to Understanding to Reasoning in Vision-Language Models",
+      "LiTEx: A Linguistic Taxonomy of Explanations for Understanding Within-Label Variation in Natural Language Inference",
+      "MobiZO: Enabling EfficientLLMFine-Tuning at the Edge via Inference Engines",
+      "Mondrian: A Framework for Logical Abstract (Re)Structuring",
+      "Noise, Adaptation, and Strategy: AssessingLLMFidelity in Decision-Making",
+      "Quantized but Deceptive? A Multi-Dimensional Truthfulness Evaluation of QuantizedLLMs",
+      "ReEvalMed: Rethinking Medical Report Evaluation by Aligning Metrics with Real-World Clinical Judgment",
+      "Reasoning-to-Defend: Safety-Aware Reasoning Can Defend Large Language Models from Jailbreaking",
+      "Training compute-optimal transformer encoder models",
+      "VeriLocc: End-to-End Cross-Architecture Register Allocation viaLLM",
+      "Viability of Machine Translation for Healthcare in Low-Resourced Languages",
+      "VisBias: Measuring Explicit and Implicit Social Biases in Vision Language Models",
+      "Will It Still Be True Tomorrow? Multilingual Evergreen Question Classification to Improve TrustworthyQA"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "neurips24": 2,
+    "naacl25": 18,
+    "acl25": 3,
+    "emnlp25": 25
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "naacl25",
+    "neurips24"
+  ]
+}

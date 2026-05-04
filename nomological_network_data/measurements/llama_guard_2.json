@@ -1,0 +1,104 @@
+{
+  "canonical_name": "Llama Guard 2",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, Llama Guard 2 is predominantly characterized as an automated safety evaluation tool, frequently employed as an \"LLM-as-a-judge.\" It is consistently defined as a safety classifier fine-tuned from Llama-3-8B. The instrument is used to measure constructs such as `Safety` and the behavior of `Harmful content generation`. Papers operationalize this by having Llama Guard 2 classify the harmfulness, toxicity, or safety of various outputs, including model responses, conversations, and documents. This classification is then used to compute metrics like Attack Success Rate, as noted in one study, or the percentage of unsafe responses. Its application appears in contexts like safety red-teaming evaluations, data filtering, and alignment training, where it is sometimes used alongside other evaluators like GPT-4. A less common application mentioned in one paper is using its feature layer as a source for semantic embeddings.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Llama Guard 2",
+    "Llama-Guard-2",
+    "Llama-Guard-2-8B"
+  ],
+  "papers": [
+    "Backtracking Improves Generation Safety",
+    "Broaden your SCOPE! Efficient Multi-turn Conversation Planning for LLMs with Semantic Space",
+    "Forewarned is Forearmed:  Harnessing LLMs for Data Synthesis via Failure-induced Exploration",
+    "Persistent Pre-training Poisoning of LLMs",
+    "Robust LLM safeguarding via refusal feature adversarial training",
+    "SORRY-Bench: Systematically Evaluating Large Language Model Safety Refusal",
+    "A Zero-Shot Open-Vocabulary Pipeline for Dialogue Understanding",
+    "Multilingual Machine Translation with Open Large Language Models at Practical Scale: An Empirical Study"
+  ],
+  "paper_count": 8,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A safety classifier model fine-tuned from Llama-3-8B, used as an LLM-as-a-judge to evaluate the harmfulness of model responses.",
+      "paper": "Robust LLM safeguarding via refusal feature adversarial training",
+      "original_name": "Llama-Guard-2"
+    },
+    {
+      "text": "A model used as the semantic embedding source and to measure how safe or harmful a conversation is.",
+      "paper": "Broaden your SCOPE! Efficient Multi-turn Conversation Planning for LLMs with Semantic Space",
+      "original_name": "Llama Guard 2"
+    },
+    {
+      "text": "A specialized language model used as an automated judge to classify the toxicity of model outputs for safety red-teaming evaluations.",
+      "paper": "Forewarned is Forearmed:  Harnessing LLMs for Data Synthesis via Failure-induced Exploration",
+      "original_name": "Llama-Guard-2-8B"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Safety",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Broaden your SCOPE! Efficient Multi-turn Conversation Planning for LLMs with Semantic Space",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr25": [
+          "Broaden your SCOPE! Efficient Multi-turn Conversation Planning for LLMs with Semantic Space",
+          "Forewarned is Forearmed:  Harnessing LLMs for Data Synthesis via Failure-induced Exploration"
+        ],
+        "naacl25": [
+          "Multilingual Machine Translation with Open Large Language Models at Practical Scale: An Empirical Study"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmful content generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Robust LLM safeguarding via refusal feature adversarial training",
+      "evidence": "To compute attack success rate, we use three LLM-as-a-judge models that are fine-tuned to assess output safety: ... the Llama-Guard-2 safety classifier... (Section 5)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Robust LLM safeguarding via refusal feature adversarial training"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, Llama Guard 2 is predominantly characterized as an automated safety evaluation tool, frequently employed as an \"LLM-as-a-judge.\" It is consistently defined as a safety classifier fine-tuned from Llama-3-8B. The instrument is used to measure constructs such as `Safety` and the behavior of `Harmful content generation`. Papers operationalize this by having Llama Guard 2 classify the harmfulness, toxicity, or safety of various outputs, including model responses, conversations, and documents. This classification is then used to compute metrics like Attack Success Rate, as noted in one study, or the percentage of unsafe responses. Its application appears in contexts like safety red-teaming evaluations, data filtering, and alignment training, where it is sometimes used alongside other evaluators like GPT-4. A less common application mentioned in one paper is using its feature layer as a source for semantic embeddings.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Backtracking Improves Generation Safety",
+      "Broaden your SCOPE! Efficient Multi-turn Conversation Planning for LLMs with Semantic Space",
+      "Forewarned is Forearmed:  Harnessing LLMs for Data Synthesis via Failure-induced Exploration",
+      "Persistent Pre-training Poisoning of LLMs",
+      "Robust LLM safeguarding via refusal feature adversarial training",
+      "SORRY-Bench: Systematically Evaluating Large Language Model Safety Refusal"
+    ],
+    "naacl25": [
+      "A Zero-Shot Open-Vocabulary Pipeline for Dialogue Understanding",
+      "Multilingual Machine Translation with Open Large Language Models at Practical Scale: An Empirical Study"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 6,
+    "naacl25": 2
+  },
+  "conferences": [
+    "iclr25",
+    "naacl25"
+  ]
+}

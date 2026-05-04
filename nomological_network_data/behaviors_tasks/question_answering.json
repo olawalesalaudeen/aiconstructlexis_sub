@@ -1,0 +1,2296 @@
+{
+  "canonical_name": "Question answering",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, question answering (QA) is consistently defined as the observable behavior of a model producing answers to natural language questions. The prevailing usage frames this task in a context-dependent manner, where models generate answers based on provided information such as Wikipedia articles, structured tables, or retrieved documents. A smaller but common line of work treats QA as a test of a model's internal general knowledge, evaluating its ability to answer factual questions without a given context. The expected answer format varies widely, from direct, short-form responses and span extraction to multiple-choice selections and, as one paper specifies, \"Yes/No/Don\u2019t Know\" answers (\"Teaching Models to Balance Resisting and Accepting Persuasion\").\n\nThis behavior is operationalized and measured using a vast array of benchmarks. Among the most frequently cited instruments are TriviaQA and Natural Questions for open-domain knowledge, SQuAD for reading comprehension from a given passage, HotpotQA for multi-hop reasoning, and MMLU for assessing knowledge across a massive set of tasks. Papers also evaluate QA in specialized domains like medicine and law, and in both standard and adversarial settings. Question answering is commonly studied alongside hallucination, where the factuality of generated answers is a primary concern, and is also frequently associated with complex reasoning and long-context processing.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Question answering",
+    "Retain query answering"
+  ],
+  "papers": [
+    "A Modular Approach for ClinicalSLMs Driven by Synthetic Data with Pre-Instruction Tuning, Model Merging, and Clinical-Tasks Alignment",
+    "A Spatio-Temporal Point Process for Fine-Grained Modeling of Reading Behavior",
+    "All That Glitters is Not Novel: Plagiarism inAIGenerated Research",
+    "AnalyzingLLMs\u2019 Knowledge Boundary Cognition Across Languages Through the Lens of Internal Representations",
+    "BIPro: Zero-shotChinese Poem Generation via Block Inverse Prompting Constrained Generation Framework",
+    "Between Circuits andChomsky: Pre-pretraining on Formal Languages Imparts Linguistic Biases",
+    "Bridging the Language Gaps in Large Language Models with Inference-Time Cross-Lingual Intervention",
+    "CC-Tuning: A Cross-Lingual Connection Mechanism for Improving Joint Multilingual Supervised Fine-Tuning",
+    "CodeTool: Enhancing Programmatic Tool Invocation ofLLMs via Process Supervision",
+    "Conspiracy Theories and Where to Find Them onTikTok",
+    "Defense Against Prompt Injection Attack by Leveraging Attack Techniques",
+    "Did Translation Models Get More Robust Without AnyoneEven Noticing?",
+    "Document-Level Text Generation with MinimumBayes Risk Decoding using Optimal Transport",
+    "D\u00e9j\u00e0 Vu? Decoding Repeated Reading from Eye Movements",
+    "Energy Considerations of Large Language Model Inference and Efficiency Optimizations",
+    "Enhancing Lexicon-Based Text Embeddings with Large Language Models",
+    "Extending Complex Logical Queries on Uncertain Knowledge Graphs",
+    "Gender Inclusivity Fairness Index (GIFI): A Multilevel Framework for Evaluating Gender Diversity in Large Language Models",
+    "Global Eye: Breaking the \u201cFixed Thinking Pattern\u201d during the Instruction Expansion Process",
+    "HELIOS: Harmonizing Early Fusion, Late Fusion, andLLMReasoning for Multi-Granular Table-Text Retrieval",
+    "Have We Designed Generalizable Structural Knowledge Promptings? Systematic Evaluation and Rethinking",
+    "Help Me Write a Story: EvaluatingLLMs\u2019 Ability to Generate Writing Feedback",
+    "Instance-Selection-Inspired Undersampling Strategies for Bias Reduction in Small and Large Language Models for Binary Text Classification",
+    "Jailbreaking? One Step Is Enough!",
+    "L4Q: Parameter Efficient Quantization-Aware Fine-Tuning on Large Language Models",
+    "Language Model Fine-Tuning on Scaled Survey Data for Predicting Distributions of Public Opinions",
+    "Locate-and-Focus: Enhancing Terminology Translation in Speech Language Models",
+    "LongSafety: Evaluating Long-Context Safety of Large Language Models",
+    "MMBoundary: AdvancingMLLMKnowledge Boundary Awareness through Reasoning Step Confidence Calibration",
+    "MadaKV: Adaptive Modality-PerceptionKVCache Eviction for Efficient Multimodal Long-Context Inference",
+    "Measuring Data Diversity for Instruction Tuning: A Systematic Analysis and A Reliable Metric",
+    "Mind the Gesture: EvaluatingAISensitivity to Culturally Offensive Non-Verbal Gestures",
+    "Multi-Facet Blending for Faceted Query-by-Example Retrieval",
+    "NGQA: A Nutritional Graph Question Answering Benchmark for Personalized Health-aware Nutritional Reasoning",
+    "On the Mutual Influence of Gender and Occupation inLLMRepresentations",
+    "PlanningArena: A Modular Benchmark for Multidimensional Evaluation of Planning and Tool Learning",
+    "Predicting Through Generation: Why Generation Is Better for Prediction",
+    "Refining Salience-Aware Sparse Fine-Tuning Strategies for Language Models",
+    "Revisiting Compositional Generalization Capability of Large Language Models Considering Instruction Following Ability",
+    "SEUF: Is Unlearning One Expert Enough for Mixture-of-ExpertsLLMs?",
+    "Self-Error-Instruct: Generalizing from Errors forLLMs Mathematical Reasoning",
+    "TETRIS: Optimal Draft Token Selection for Batch Speculative Decoding",
+    "TableLoRA: Low-rank Adaptation on Table Structure Understanding for Large Language Models",
+    "The Hidden Attention of Mamba Models",
+    "The Role of Visual Modality in Multimodal Mathematical Reasoning: Challenges and Insights",
+    "Towards a More Generalized Approach in Open Relation Extraction",
+    "VITAL: A New Dataset for Benchmarking Pluralistic Alignment in Healthcare",
+    "Who Writes What: Unveiling the Impact of Author Roles onAI-generated Text Detection",
+    "\u201cWhat do you call a dog that is incontrovertibly true? Dogma\u201d: TestingLLMGeneralization through Humor",
+    "2025.emnlp-main.1095.checklist",
+    "2025.emnlp-main.1103.checklist",
+    "2025.emnlp-main.1155.checklist",
+    "2025.emnlp-main.1736.checklist",
+    "2025.emnlp-main.233.checklist",
+    "2025.emnlp-main.365.checklist",
+    "2025.emnlp-main.818.checklist",
+    "A Systematic Analysis of Base Model Choice for Reward Modeling",
+    "AFRIDOC-MT: Document-levelMTCorpus forAfrican Languages",
+    "AdaSteer: Your AlignedLLMis Inherently an Adaptive Jailbreak Defender",
+    "Alignment for Efficient Tool Calling of Large Language Models",
+    "Assay2Mol: Large Language Model-based Drug Design UsingBioAssay Context",
+    "Attention Eclipse: Manipulating Attention to BypassLLMSafety-Alignment",
+    "Automated Knowledge Graph Construction using Large Language Models and Sentence Complexity Modelling",
+    "BTS: Harmonizing Specialized Experts into a GeneralistLLM",
+    "Beyond Demonstrations: Dynamic Vector Construction from Latent Representations",
+    "Beyond Input Activations: Identifying Influential Latents by Gradient Sparse Autoencoders",
+    "Beyond the Surface: Measuring Self-Preference inLLMJudgments",
+    "CARMA: Enhanced Compositionality inLLMs via Advanced Regularisation and Mutual Information Alignment",
+    "CMHG: A Dataset and Benchmark for Headline Generation of Minority Languages inChina",
+    "CODI: Compressing Chain-of-Thought into Continuous Space via Self-Distillation",
+    "Can Large Language Models Tackle Graph Partitioning?",
+    "Can Prompts Rewind Time forLLMs? Evaluating the Effectiveness of Prompted Knowledge Cutoffs",
+    "CanLLMs Generate and Solve Linguistic Olympiad Puzzles?",
+    "Chinese Toxic Language Mitigation via Sentiment Polarity Consistent Rewrites",
+    "Computational Analysis of Character Development in Holocaust Testimonies",
+    "Continuous-Time Attention:PDE-Guided Mechanisms for Long-Sequence Transformers",
+    "CopySpec: AcceleratingLLMs with Speculative Copy-and-Paste",
+    "Cross-MoE: An Efficient Temporal Prediction Framework Integrating Textual Modality",
+    "DCP: Dual-Cue Pruning for Efficient Large Vision-Language Models",
+    "DMDTEval: An Evaluation and Analysis ofLLMs on Disambiguation in Multi-domain Translation",
+    "DSMoE: Matrix-Partitioned Experts with Dynamic Routing for Computation-Efficient DenseLLMs",
+    "DiscoSG: Towards Discourse-Level Text Scene Graph Parsing through Iterative Graph Refinement",
+    "Discrepancy Detection at the Data Level: Toward Consistent Multilingual Question Answering",
+    "Dynamic Model-Bank Test-Time Adaptation for Automatic Speech Recognition",
+    "Editing Across Languages: A Survey of Multilingual Knowledge Editing",
+    "EduVidQA: Generating and Evaluating Long-form Answers to Student Questions based on Lecture Videos",
+    "EmoAgent: Assessing and Safeguarding Human-AIInteraction for Mental Health Safety",
+    "Enhancing Chain-of-Thought Reasoning via Neuron Activation Differential Analysis",
+    "EuroGEST: Investigating gender stereotypes in multilingual language models",
+    "Evaluating Behavioral Alignment in Conflict Dialogue: A Multi-Dimensional Comparison ofLLMAgents and Humans",
+    "Evaluating Spatiotemporal Consistency in Automatically Generated Sewing Instructions",
+    "Exploring Large Language Models for Detecting Mental Disorders",
+    "Financial Risk Relation Identification through Dual-view Adaptation",
+    "Flaw or Artifact? Rethinking Prompt Sensitivity in EvaluatingLLMs",
+    "Friend or Foe? A Computational Investigation of Semantic FalseFriends acrossRomance Languages",
+    "HICode: Hierarchical Inductive Coding withLLMs",
+    "HS-STaR: Hierarchical Sampling for Self-Taught Reasoners via Difficulty Estimation and Budget Reallocation",
+    "How Do Large Vision-Language Models See Text in Image? Unveiling the Distinctive Role ofOCRHeads",
+    "How Much DoLLMs Hallucinate across Languages? On Realistic Multilingual Estimation ofLLMHallucination",
+    "IG-Pruning: Input-Guided Block Pruning for Large Language Models",
+    "Improving Online Job Advertisement Analysis via Compositional Entity Extraction",
+    "InfiniBench: A Benchmark for Large Multi-Modal Models in Long-Form Movies andTVShows",
+    "Interpretable Mnemonic Generation for Kanji Learning via Expectation-Maximization",
+    "Intrinsic Test of Unlearning Using Parametric Knowledge Traces",
+    "It\u2019s All About In-Context Learning! Teaching Extremely Low-Resource Languages toLLMs",
+    "Joint Modeling of Entities and Discourse Relations for Coherence Assessment",
+    "Koel-TTS: EnhancingLLMbased Speech Generation with Preference Alignment and Classifier Free Guidance",
+    "LLM-Guided Co-Training for Text Classification",
+    "LVLMs are Bad at Overhearing Human Referential Communication",
+    "LaMP-QA: A Benchmark for Personalized Long-form Question Answering",
+    "Large Language Models Badly Generalize across Option Length, Problem Types, and Irrelevant Noun Replacements",
+    "LogiDynamics: Unraveling the Dynamics of Inductive, Abductive and Deductive Logical Inferences inLLMReasoning",
+    "Logos as a Well-Tempered Pre-train for Sign Language Recognition",
+    "Look Beyond Feeling: Unveiling Latent Needs from Implicit Expressions for Proactive Emotional Support",
+    "Measuring Bias or Measuring the Task: Understanding the Brittle Nature ofLLMGender Biases",
+    "Membership and Memorization inLLMKnowledge Distillation",
+    "Merge then Realign: Simple and Effective Modality-Incremental Continual Learning for MultimodalLLMs",
+    "Mixture of Weight-shared Heterogeneous Group Attention Experts for Dynamic Token-wiseKVOptimization",
+    "Model Consistency as a Cheap yet Predictive Proxy forLLMElo Scores",
+    "MultiDocFusion : Hierarchical and Multimodal Chunking Pipeline for EnhancedRAGon Long Industrial Documents",
+    "PBI-Attack: Prior-Guided Bimodal Interactive Black-Box Jailbreak Attack for Toxicity Maximization",
+    "PERSEVAL: A Framework for Perspectivist Classification Evaluation",
+    "Pre-trained Models Perform the Best When Token Distributions FollowZipf\u2019s Law",
+    "Primus: A Pioneering Collection of Open-Source Datasets for CybersecurityLLMTraining",
+    "Principled Personas: Defining and Measuring the Intended Effects of Persona Prompting on Task Performance",
+    "ProbingLLMWorld Models: Enhancing Guesstimation with Wisdom of Crowds Decoding",
+    "RECALL:REpresentation-aligned Catastrophic-forgettingALLeviation via Hierarchical Model Merging",
+    "RecGPT: A Foundation Model for Sequential Recommendation",
+    "Recursive Training Loops inLLMs: How training data properties modulate distribution shift in generated data?",
+    "Resource-Rational Noisy-Channel Language Processing: Testing the Effect of Algorithmic Constraints on Inferences",
+    "SAFE-SQL: Self-Augmented In-Context Learning with Fine-grained Example Selection for Text-to-SQL",
+    "SSA-COMET: DoLLMs Outperform Learned Metrics in EvaluatingMTfor Under-ResourcedAfrican Languages?",
+    "STAREat the Structure: SteeringICLExemplar Selection with Structural Alignment",
+    "START: Self-taught Reasoner with Tools",
+    "SciNLP: A Domain-Specific Benchmark for Full-Text Scientific Entity and Relation Extraction inNLP",
+    "Seeing Culture: A Benchmark for Visual Reasoning and Grounding",
+    "Seeing Through Words, Speaking Through Pixels: Deep Representational Alignment Between Vision and Language Models",
+    "SinhalaMMLU: A Comprehensive Benchmark for Evaluating Multitask Language Understanding inSinhala",
+    "SportReason: Evaluating Retrieval-Augmented Reasoning across Tables and Text for Sports Question Answering",
+    "SteeringLLMReasoning Through Bias-Only Adaptation",
+    "Step-level Verifier-guided Hybrid Test-Time Scaling for Large Language Models",
+    "Stimulate the Critical Thinking ofLLMs via Debiasing Discussion",
+    "TRUST-VL: An Explainable News Assistant for General Multimodal Misinformation Detection",
+    "TaCoMoE",
+    "TableEval: A Real-World Benchmark for Complex, Multilingual, and Multi-Structured Table Question Answering",
+    "Tailoring Table Retrieval from a Field-aware Hybrid Matching Perspective",
+    "The Emperor\u2019s New Reasoning: Format Imitation Overshadows Genuine Mathematical Understanding inSFT",
+    "The Sound of Syntax: Finetuning and Comprehensive Evaluation of Language Models for Speech Pathology",
+    "Threading the Needle: Reweaving Chain-of-Thought Reasoning to Explain Human Label Variation",
+    "Through the Valley: Path to Effective LongCoTTraining for Small Language Models",
+    "TokenSkip: Controllable Chain-of-Thought Compression inLLMs",
+    "UNComp: Can Matrix Entropy Uncover Sparsity? \u2014 A Compressor Design from an Uncertainty-Aware Perspective",
+    "Unveiling the Response of Large Vision-Language Models to Visually Absent Tokens",
+    "VELA: AnLLM-Hybrid-as-a-Judge Approach for Evaluating Long Image Captions",
+    "ViLBench: A Suite for Vision-Language Process Reward Modeling",
+    "What\u2019s in a prompt? Language models encode literary style in prompt embeddings",
+    "Who Holds the Pen? Caricature and Perspective inLLMRetellings of History",
+    "Words Like Knives: Backstory-Personalized Modeling and Detection of Violent Communication",
+    "XAutoLM: Efficient Fine-Tuning of Language Models via Meta-Learning andAutoML",
+    "Your Language Model Can Secretly Write Like Humans: Contrastive Paraphrase Attacks onLLM-Generated Text Detectors",
+    "iTool: Reinforced Fine-Tuning with Dynamic Deficiency Calibration for Advanced Tool Use",
+    "slow-reconvergence phase",
+    "xCoRe: Cross-context Coreference Resolution",
+    "$\\mathrm\u03bc$nit Scaling: Simple and Scalable FP8 LLM Training",
+    "A Lens into Interpretable Transformer Mistakes via Semantic Dependency",
+    "A Memory Efficient Randomized Subspace Optimization Method for Training Large Language Models",
+    "A Stronger Mixture of Low-Rank Experts for Fine-Tuning Foundation Models",
+    "An Analysis for Reasoning Bias of Language Models with Small Initialization",
+    "Attention-Level Speculation",
+    "BEST-Route: Adaptive LLM Routing with Test-Time Optimal Compute",
+    "BackSlash: Rate Constrained Optimized Training of Large Language Models",
+    "CABS: Conflict-Aware and Balanced Sparsification for Enhancing Model Merging",
+    "CLIMB: Data Foundations for Large Scale Multimodal Clinical Foundation Models",
+    "Contrastive Private Data Synthesis via Weighted Multi-PLM Fusion",
+    "Curse of High Dimensionality Issue in Transformer for Long Context Modeling",
+    "Direct Density Ratio Optimization: A Statistically Consistent Approach to Aligning Large Language Models",
+    "EPIC: Efficient Position-Independent Caching for Serving Large Language Models",
+    "EncryptedLLM: Privacy-Preserving Large Language Model Inference via GPU-Accelerated Fully Homomorphic Encryption",
+    "ExLM: Rethinking the Impact of $\\texttt[MASK]$ Tokens in Masked Language Models",
+    "FactTest: Factuality Testing in Large Language Models with Finite-Sample and Distribution-Free Guarantees",
+    "Federated In-Context Learning: Iterative Refinement for Improved Answer Quality",
+    "Forest-of-Thought: Scaling Test-Time Compute for Enhancing LLM Reasoning",
+    "From Black Boxes to Transparent Minds: Evaluating and Enhancing the Theory of Mind in Multimodal Large Language Models",
+    "GIVE: Structured Reasoning of Large Language Models with Knowledge Graph Inspired Veracity Extrapolation",
+    "GRU: Mitigating the Trade-off between Unlearning and Retention for LLMs",
+    "Gumiho: A Hybrid Architecture to Prioritize Early Tokens in Speculative Decoding",
+    "HashAttention: Semantic Sparsity for Faster Inference",
+    "Instruction-Following Pruning for Large Language Models",
+    "LAuReL: Learned Augmented Residual Layer",
+    "LIFT the Veil for the Truth: Principal Weights Emerge after Rank Reduction for Reasoning-Focused Supervised Fine-Tuning",
+    "Large Continual Instruction Assistant",
+    "Learning to Route LLMs with Confidence Tokens",
+    "LoRA-Gen: Specializing Large Language Model via Online LoRA Generation",
+    "Long-Short Alignment for Effective Long-Context Modeling in LLMs",
+    "M+: Extending MemoryLLM with Scalable Long-Term Memory",
+    "MoEQuant: Enhancing Quantization for Mixture-of-Experts Large Language Models via Expert-Balanced Sampling and Affinity Guidance",
+    "MoH: Multi-Head Attention as Mixture-of-Head Attention",
+    "Neutral residues: revisiting adapters for model extension",
+    "Oracle-MoE: Locality-preserving Routing in the Oracle Space for Memory-constrained Large Language Model Inference",
+    "Organize the Web: Constructing Domains Enhances Pre-Training Data Curation",
+    "Overtrained Language Models Are Harder to Fine-Tune",
+    "PhantomWiki: On-Demand Datasets for Reasoning and Retrieval Evaluation",
+    "Position: AI Evaluation Should Learn from How We Test Humans",
+    "Position: AI Should Not Be An Imitation Game: Centaur Evaluations",
+    "Position: Don\u2019t Use the CLT in LLM Evals With Fewer Than a Few Hundred Datapoints",
+    "Position: Human Baselines in Model Evaluations Need Rigor and Transparency (With Recommendations & Reporting Checklist)",
+    "Position: LLMs Need a Bayesian Meta-Reasoning Framework for More Robust and Generalizable Reasoning",
+    "Predictive Data Selection: The Data That Predicts Is the Data That Teaches",
+    "RAGGED: Towards Informed Design of Scalable and Stable RAG Systems",
+    "Radio: Rate\u2013Distortion Optimization for Large Language Model Compression",
+    "Reliable and Efficient Amortized Model-based Evaluation",
+    "Rethinking Addressing in Language Models via Contextualized Equivariant Positional Encoding",
+    "Sample Efficient Demonstration Selection for In-Context Learning",
+    "Soup-of-Experts: Pretraining Specialist Models via Parameters Averaging",
+    "Star Attention: Efficient LLM Inference over Long Sequences",
+    "Targeted Low-rank Refinement: Enhancing Sparse Language Models with Precision",
+    "The Logical Implication Steering Method for Conditional Interventions on Transformer Generation",
+    "Tokenized Bandit for LLM Decoding and Alignment",
+    "Tool Unlearning for Tool-Augmented LLMs",
+    "What Limits Bidirectional Model\u2019s Generative Capabilities? A Uni-Bi-Directional Mixture-of-Expert Method For Bidirectional Fine-tuning",
+    "polybasic Speculative Decoding Through a Theoretical Perspective",
+    "xLSTM 7B: A Recurrent LLM for Fast and Efficient Inference",
+    "A Survey ofNLPProgress inSino-Tibetan Low-Resource Languages",
+    "AID: Adaptive Integration of Detectors for SafeAIwith Language Models",
+    "Afrispeech-Dialog: A Benchmark Dataset for SpontaneousEnglish Conversations in Healthcare and Beyond",
+    "Anticipating Future with Large Language Model for Simultaneous Machine Translation",
+    "AreLLM-Judges Robust to Expressions of Uncertainty? Investigating the effect of Epistemic Markers onLLM-based Evaluation",
+    "BPO: Towards Balanced Preference Optimization between Knowledge Breadth and Depth in Alignment",
+    "Beyond Logit Lens: Contextual Embeddings for Robust Hallucination Detection & Grounding inVLMs",
+    "CAST: Corpus-Aware Self-similarity Enhanced Topic modelling",
+    "CAVE: Controllable Authorship Verification Explanations",
+    "Characterizing the Role of Similarity in the Property Inferences of Language Models",
+    "Decomposition Dilemmas: Does Claim Decomposition Boost or Burden Fact-Checking Performance?",
+    "Efficient One-shot Compression via Low-Rank Local Feature Distillation",
+    "Efficient and Effective Prompt Tuning via Prompt Decomposition and Compressed Outer Product",
+    "Emergence of Episodic Memory in Transformers: Characterizing Changes in Temporal Structure of Attention Scores During Training",
+    "Entity Decomposition with Filtering: A Zero-Shot Clinical Named Entity Recognition Framework",
+    "Ethical Concern Identification inNLP: A Corpus ofACLAnthology Ethics Statements",
+    "Evaluating Input Feature Explanations through a Unified Diagnostic Evaluation Framework",
+    "Evaluating Morphological Compositional Generalization in Large Language Models",
+    "Evaluating Small Language Models for News Summarization: Implications and Factors Influencing Performance",
+    "Few-shot Personalization ofLLMs with Mis-aligned Responses",
+    "From Allies to Adversaries: ManipulatingLLMTool-Calling through Adversarial Injection",
+    "GLiREL- Generalist Model for Zero-Shot Relation Extraction",
+    "Guiding Medical Vision-Language Models with Diverse Visual Prompts: Framework Design and Comprehensive Exploration of Prompt Variations",
+    "Has this Fact been Edited? Detecting Knowledge Edits in Language Models",
+    "IMRRF: Integrating Multi-Source Retrieval and Redundancy Filtering forLLM-based Fake News Detection",
+    "ITALIC: AnItalian Culture-Aware Natural Language Benchmark",
+    "Improving Data Annotation for Low-Resource Relation Extraction with Logical Rule-Augmented Collaborative Language Models",
+    "Investigating Human Values in Online Communities",
+    "KS-Lottery: Finding Certified Lottery Tickets for Multilingual Transfer in Large Language Models",
+    "Knowledge Graph-Guided Retrieval Augmented Generation",
+    "Knowledge-Aware Query Expansion with Large Language Models for Textual and Relational Retrieval",
+    "Language Model Council: Democratically Benchmarking Foundation Models on Highly Subjective Tasks",
+    "Learning to Solve Domain-Specific Calculation Problems with Knowledge-Intensive Programs Generator",
+    "LiPO: Listwise Preference Optimization through Learning-to-Rank",
+    "Lost in Inference: Rediscovering the Role of Natural Language Inference for Large Language Models",
+    "ManaTTSPersian: a recipe for creatingTTSdatasets for lower resource languages",
+    "Multilingual Needle in a Haystack: Investigating Long-Context Behavior of Multilingual Large Language Models",
+    "One Unified Model for Diverse Tasks: Emotion Cause Analysis via Self-Promote Cognitive Structure Modeling",
+    "Patent-CR: A Dataset for Patent Claim Revision",
+    "PerCul: A Story-Driven Cultural Evaluation ofLLMs inPersian",
+    "Prompt Compression for Large Language Models: A Survey",
+    "Prototypical Extreme Multi-label Classification with a Dynamic Margin Loss",
+    "Rationale-Guided Retrieval Augmented Generation for Medical Question Answering",
+    "Reading between the Lines: CanLLMs Identify Cross-Cultural Communication Gaps?",
+    "S2-MAD: Breaking the Token Barrier to Enhance Multi-Agent Debate Efficiency",
+    "Soft Syntactic Reinforcement for Neural Event Extraction",
+    "StyleDistance: Stronger Content-Independent Style Embeddings with Synthetic Parallel Examples",
+    "Take the essence and discard the dross: A Rethinking on Data Selection for Fine-Tuning Large Language Models",
+    "Teaching Models to Balance Resisting and Accepting Persuasion",
+    "UFO: AUI-Focused Agent for WindowsOSInteraction",
+    "Unfamiliar Finetuning Examples Control How Language Models Hallucinate",
+    "Yeah, Un, Oh: Continuous and Real-time Backchannel Prediction with Fine-tuning of Voice Activity Projection"
+  ],
+  "paper_count": 274,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Producing answers to natural language questions, evaluated in both standard and adversarial settings.",
+      "paper": "A Survey ofNLPProgress inSino-Tibetan Low-Resource Languages",
+      "original_name": "Question answering"
+    },
+    {
+      "text": "The model's observable ability to correctly answer questions about information it was instructed to retain, even when those questions appear alongside forget queries.",
+      "paper": "HS-STaR: Hierarchical Sampling for Self-Taught Reasoners via Difficulty Estimation and Budget Reallocation",
+      "original_name": "Retain query answering"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TriviaQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Conformal Alignment: Knowing When to Trust Foundation Models with Guarantees",
+      "evidence": "\u201c\u2022 TRIVIAQA (Joshi et al., 2017): Assesses the model\u2019s question-answering capability.\u201d",
+      "paper_count": 16,
+      "papers_by_conference": {
+        "neurips24": [
+          "Conformal Alignment: Knowing When to Trust Foundation Models with Guarantees",
+          "LoFiT: Localized Fine-tuning on LLM Representations",
+          "On Giant's Shoulders: Effortless Weak to Strong by Dynamic Logits Fusion",
+          "Gated Slot Attention for Efficient Linear-Time Sequence Modeling",
+          "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+          "Kernel Language Entropy: Fine-grained Uncertainty Quantification for LLMs from Semantic Similarities",
+          "Alignment for Honesty"
+        ],
+        "iclr25": [
+          "Speculative RAG: Enhancing Retrieval Augmented Generation through Drafting",
+          "Longhorn: State Space Models are Amortized Online Learners",
+          "Efficient stagewise pretraining via progressive subnetworks",
+          "Accelerating Inference of Retrieval-Augmented Generation via Sparse Context Selection"
+        ],
+        "naacl25": [
+          "Ethical Concern Identification inNLP: A Corpus ofACLAnthology Ethics Statements",
+          "KS-Lottery: Finding Certified Lottery Tickets for Multilingual Transfer in Large Language Models"
+        ],
+        "emnlp25": [
+          "Step-level Verifier-guided Hybrid Test-Time Scaling for Large Language Models",
+          "Measuring Bias or Measuring the Task: Understanding the Brittle Nature ofLLMGender Biases",
+          "Logos as a Well-Tempered Pre-train for Sign Language Recognition"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Natural Questions",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LoFiT: Localized Fine-tuning on LLM Representations",
+      "evidence": "The questions used for constructing our training data are sourced from the ASQA (Stelmakh et al., 2022), WebQuestions (Berant et al., 2013), and Natural Questions (Kwiatkowski et al., 2019) training splits. (Section 4.1.1)",
+      "paper_count": 16,
+      "papers_by_conference": {
+        "neurips24": [
+          "LoFiT: Localized Fine-tuning on LLM Representations",
+          "Nearest Neighbor Speculative Decoding for LLM Generation and Attribution",
+          "Gated Slot Attention for Efficient Linear-Time Sequence Modeling",
+          "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+          "Kernel Language Entropy: Fine-grained Uncertainty Quantification for LLMs from Semantic Similarities"
+        ],
+        "iclr25": [
+          "Provence: efficient and robust context pruning for retrieval-augmented generation",
+          "SePer: Measure Retrieval Utility Through The Lens Of Semantic Perplexity Reduction",
+          "SWIFT: On-the-Fly Self-Speculative Decoding for LLM Inference Acceleration",
+          "PALMBENCH: A COMPREHENSIVE BENCHMARK OF COMPRESSED LARGE LANGUAGE MODELS ON MOBILE PLATFORMS"
+        ],
+        "naacl25": [
+          "Investigating Human Values in Online Communities",
+          "Ethical Concern Identification inNLP: A Corpus ofACLAnthology Ethics Statements",
+          "KS-Lottery: Finding Certified Lottery Tickets for Multilingual Transfer in Large Language Models"
+        ],
+        "icml25": [
+          "RAGGED: Towards Informed Design of Scalable and Stable RAG Systems"
+        ],
+        "emnlp25": [
+          "PBI-Attack: Prior-Guided Bimodal Interactive Black-Box Jailbreak Attack for Toxicity Maximization",
+          "Measuring Bias or Measuring the Task: Understanding the Brittle Nature ofLLMGender Biases",
+          "Logos as a Well-Tempered Pre-train for Sign Language Recognition"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SQuAD v1.1",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Increasing Model Capacity for Free: A Simple Strategy for Parameter Efficient Fine-tuning",
+      "evidence": "We apply our evaluation method to the Stanford Question Answering Dataset (SQuAD) 1.1 (Rajpurkar et al., 2016), which comprises context paragraphs extracted from Wikipedia articles, along with manually crafted questions and their corresponding correct answers.",
+      "paper_count": 13,
+      "papers_by_conference": {
+        "iclr24": [
+          "Increasing Model Capacity for Free: A Simple Strategy for Parameter Efficient Fine-tuning",
+          "Think before you speak: Training Language Models With Pause Tokens"
+        ],
+        "neurips24": [
+          "Gated Slot Attention for Efficient Linear-Time Sequence Modeling",
+          "Kernel Language Entropy: Fine-grained Uncertainty Quantification for LLMs from Semantic Similarities"
+        ],
+        "iclr25": [
+          "SePer: Measure Retrieval Utility Through The Lens Of Semantic Perplexity Reduction",
+          "CAMEx: Curvature-aware Merging of Experts",
+          "Longhorn: State Space Models are Amortized Online Learners",
+          "PALMBENCH: A COMPREHENSIVE BENCHMARK OF COMPRESSED LARGE LANGUAGE MODELS ON MOBILE PLATFORMS",
+          "DELIFT: Data Efficient Language model Instruction Fine-Tuning"
+        ],
+        "naacl25": [
+          "AID: Adaptive Integration of Detectors for SafeAIwith Language Models",
+          "Soft Syntactic Reinforcement for Neural Event Extraction"
+        ],
+        "acl25": [
+          "Who Writes What: Unveiling the Impact of Author Roles onAI-generated Text Detection"
+        ],
+        "emnlp25": [
+          "Beyond the Surface: Measuring Self-Preference inLLMJudgments"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HotpotQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "StreamBench: Towards Benchmarking Continuous Improvement of Language Agents",
+      "evidence": "\u201cComplex Reasoning (HotpotQA (Yang et al., 2018)) is a multi-turn QA dataset.\u201d",
+      "paper_count": 12,
+      "papers_by_conference": {
+        "neurips24": [
+          "StreamBench: Towards Benchmarking Continuous Improvement of Language Agents",
+          "AvaTaR: Optimizing LLM Agents for Tool Usage via Contrastive Reasoning",
+          "Information Re-Organization Improves Reasoning in Large Language Models",
+          "Chain of Preference Optimization: Improving Chain-of-Thought Reasoning in LLMs"
+        ],
+        "iclr25": [
+          "Provence: efficient and robust context pruning for retrieval-augmented generation",
+          "Accelerating Inference of Retrieval-Augmented Generation via Sparse Context Selection"
+        ],
+        "naacl25": [
+          "Ethical Concern Identification inNLP: A Corpus ofACLAnthology Ethics Statements"
+        ],
+        "icml25": [
+          "FactTest: Factuality Testing in Large Language Models with Finite-Sample and Distribution-Free Guarantees",
+          "RAGGED: Towards Informed Design of Scalable and Stable RAG Systems"
+        ],
+        "emnlp25": [
+          "PBI-Attack: Prior-Guided Bimodal Interactive Black-Box Jailbreak Attack for Toxicity Maximization",
+          "DCP: Dual-Cue Pruning for Efficient Large Vision-Language Models",
+          "Measuring Bias or Measuring the Task: Understanding the Brittle Nature ofLLMGender Biases"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Benchmarking LLMs via Uncertainty Quantification",
+      "evidence": "We then evaluate it on question answering tasks: MMLU, ARC-Easy and ARC-Challenge. (Section 3.2)",
+      "paper_count": 10,
+      "papers_by_conference": {
+        "neurips24": [
+          "Benchmarking LLMs via Uncertainty Quantification",
+          "LoFiT: Localized Fine-tuning on LLM Representations",
+          "RouterDC: Query-Based Router by Dual Contrastive Learning for Assembling Large Language Models",
+          "Alignment for Honesty"
+        ],
+        "iclr25": [
+          "The Unreasonable Ineffectiveness of the Deeper Layers",
+          "Composable Interventions for Language Models",
+          "ACC-Collab: An Actor-Critic Approach to Multi-Agent LLM Collaboration",
+          "Limits to scalable evaluation at the frontier: LLM as judge won\u2019t beat twice the data",
+          "UniDetox: Universal Detoxification of Large Language Models via Dataset Distillation"
+        ],
+        "icml25": [
+          "Neutral residues: revisiting adapters for model extension"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OpenBookQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MiniCache: KV Cache Compression in Depth Dimension for Large Language Models",
+      "evidence": "\u201cwe evaluate the proposed MoEQuant on various reasoning tasks, including MMLU (Hendrycks et al., 2020), BoolQ (Clark et al., 2019), HellaSwag (Zellers et al., 2019), Openbookqa (Mihaylov et al., 2018), and MathQA (Amini et al., 2019).\u201d",
+      "paper_count": 7,
+      "papers_by_conference": {
+        "neurips24": [
+          "MiniCache: KV Cache Compression in Depth Dimension for Large Language Models",
+          "Diff-eRank: A Novel Rank-Based Metric for Evaluating Large Language Models",
+          "The FineWeb Datasets: Decanting the Web for the Finest Text Data at Scale",
+          "MambaTree: Tree Topology is All You Need in State Space Model"
+        ],
+        "iclr25": [
+          "Bridging and Modeling Correlations in Pairwise Data for Direct Preference Optimization",
+          "On Large Language Model Continual Unlearning"
+        ],
+        "icml25": [
+          "A Stronger Mixture of Low-Rank Experts for Fine-Tuning Foundation Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BoolQ",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "DHA: Learning Decoupled-Head Attention from Transformer Checkpoints via Adaptive Heads Fusion",
+      "evidence": "\u201cwe evaluate the proposed MoEQuant on various reasoning tasks, including MMLU (Hendrycks et al., 2020), BoolQ (Clark et al., 2019), HellaSwag (Zellers et al., 2019), Openbookqa (Mihaylov et al., 2018), and MathQA (Amini et al., 2019).\u201d",
+      "paper_count": 7,
+      "papers_by_conference": {
+        "neurips24": [
+          "DHA: Learning Decoupled-Head Attention from Transformer Checkpoints via Adaptive Heads Fusion",
+          "LoFiT: Localized Fine-tuning on LLM Representations"
+        ],
+        "iclr25": [
+          "The Unreasonable Ineffectiveness of the Deeper Layers",
+          "ACC-Collab: An Actor-Critic Approach to Multi-Agent LLM Collaboration",
+          "HeadMap: Locating and Enhancing Knowledge Circuits in LLMs",
+          "PortLLM: Personalizing Evolving Large Language Models with Training-Free and Portable Model Patches"
+        ],
+        "icml25": [
+          "LAuReL: Learned Augmented Residual Layer"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "On the Humanity of Conversational AI: Evaluating the Psychological Portrayal of LLMs",
+      "evidence": "For short-form Q&A scenarios evaluation, we adopt the open-ended generation task of TruthfulQA (Lin et al., 2022), Entity Questions (Sciavolino et al., 2021), SciQ(Welbl et al., 2017) and StrategyQA (Geva et al., 2021). (Section 4.1)",
+      "paper_count": 6,
+      "papers_by_conference": {
+        "iclr24": [
+          "On the Humanity of Conversational AI: Evaluating the Psychological Portrayal of LLMs"
+        ],
+        "neurips24": [
+          "MiniCache: KV Cache Compression in Depth Dimension for Large Language Models",
+          "On Giant's Shoulders: Effortless Weak to Strong by Dynamic Logits Fusion"
+        ],
+        "iclr25": [
+          "Calibrating Expressions of Certainty",
+          "Amulet: ReAlignment During Test Time for Personalized Preference Adaptation of LLMs"
+        ],
+        "emnlp25": [
+          "Logos as a Well-Tempered Pre-train for Sign Language Recognition"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "NarrativeQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval",
+      "evidence": "",
+      "paper_count": 5,
+      "papers_by_conference": {
+        "iclr24": [
+          "RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval"
+        ],
+        "neurips24": [
+          "Chain of Agents: Large Language Models Collaborating on Long-Context Tasks",
+          "Megalodon: Efficient LLM Pretraining and Inference with Unlimited Context Length"
+        ],
+        "iclr25": [
+          "SqueezeAttention: 2D Management of KV-Cache in LLM Inference via Layer-wise Optimal Budget"
+        ],
+        "naacl25": [
+          "AID: Adaptive Integration of Detectors for SafeAIwith Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LongBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "CLEX: Continuous  Length Extrapolation for Large Language Models",
+      "evidence": "",
+      "paper_count": 5,
+      "papers_by_conference": {
+        "iclr24": [
+          "CLEX: Continuous  Length Extrapolation for Large Language Models"
+        ],
+        "iclr25": [
+          "CAKE: Cascading and Adaptive KV Cache Eviction with Layer Preferences",
+          "Scaling Instruction-tuned LLMs to Million-token Contexts via Hierarchical Synthetic Data Generation",
+          "Forgetting Transformer: Softmax Attention with a Forget Gate"
+        ],
+        "emnlp25": [
+          "DCP: Dual-Cue Pruning for Efficient Large Vision-Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Qasper",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval",
+      "evidence": "",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "iclr24": [
+          "RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval"
+        ],
+        "neurips24": [
+          "Chain of Agents: Large Language Models Collaborating on Long-Context Tasks",
+          "AutoMix: Automatically Mixing Language Models",
+          "Megalodon: Efficient LLM Pretraining and Inference with Unlimited Context Length"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "QuALITY",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval",
+      "evidence": "",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "iclr24": [
+          "RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval"
+        ],
+        "neurips24": [
+          "Chain of Agents: Large Language Models Collaborating on Long-Context Tasks"
+        ],
+        "iclr25": [
+          "Language Models Learn to Mislead Humans via RLHF"
+        ],
+        "naacl25": [
+          "Take the essence and discard the dross: A Rethinking on Data Selection for Fine-Tuning Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "zs-RE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Massive Editing for Large Language Models via Meta Learning",
+      "evidence": "\"ZsRE is a closed-book question answering (QA) dataset derived from zero-shot relation extraction.\"",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "iclr24": [
+          "Massive Editing for Large Language Models via Meta Learning"
+        ],
+        "neurips24": [
+          "WISE: Rethinking the Knowledge Memory for Lifelong Model Editing of Large Language Models"
+        ],
+        "iclr25": [
+          "Composable Interventions for Language Models"
+        ],
+        "emnlp25": [
+          "SciNLP: A Domain-Specific Benchmark for Full-Text Scientific Entity and Relation Extraction inNLP"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "StrategyQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "AgentPoison: Red-teaming LLM Agents via Poisoning Memory or Knowledge Bases",
+      "evidence": "We employ Web Questions (WebQA) (Berant et al., 2013; Chang et al., 2021), MultiModalQA (Talmor et al.), ManyModalQA (Hannan et al., 2020) and StrategyQA (Geva et al., 2021a) dataset for experiments. (Section 5.1)",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "neurips24": [
+          "AgentPoison: Red-teaming LLM Agents via Poisoning Memory or Knowledge Bases",
+          "Information Re-Organization Improves Reasoning in Large Language Models"
+        ],
+        "iclr25": [
+          "Bridging and Modeling Correlations in Pairwise Data for Direct Preference Optimization"
+        ],
+        "icml25": [
+          "LIFT the Veil for the Truth: Principal Weights Emerge after Rank Reduction for Reasoning-Focused Supervised Fine-Tuning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-as-a-judge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "WONDERBREAD: A Benchmark for Evaluating Multimodal Foundation Models on Business Process Management Tasks",
+      "evidence": "",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "neurips24": [
+          "WONDERBREAD: A Benchmark for Evaluating Multimodal Foundation Models on Business Process Management Tasks",
+          "OmniJARVIS: Unified Vision-Language-Action Tokenization Enables Open-World Instruction Following Agents",
+          "UDA: A Benchmark Suite for Retrieval Augmented Generation in Real-World Document Analysis"
+        ],
+        "iclr25": [
+          "Provence: efficient and robust context pruning for retrieval-augmented generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CommonsenseQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "TAIA: Large Language Models are Out-of-Distribution Data Learners",
+      "evidence": "\"We evaluate our proposed method on several question-answering benchmarks, including ScienceQA (Lu et al., 2022), CommonsenseQA (Talmor et al., 2019), OpenBookQA (Mihaylov et al., 2018) and SIQA (Sap et al., 2019).\"",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "neurips24": [
+          "TAIA: Large Language Models are Out-of-Distribution Data Learners"
+        ],
+        "iclr25": [
+          "On Large Language Model Continual Unlearning"
+        ],
+        "icml25": [
+          "A Stronger Mixture of Low-Rank Experts for Fine-Tuning Foundation Models",
+          "Neutral residues: revisiting adapters for model extension"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-Challenge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "RouterDC: Query-Based Router by Dual Contrastive Learning for Assembling Large Language Models",
+      "evidence": "We then evaluate it on question answering tasks: MMLU, ARC-Easy and ARC-Challenge. (Section 3.2)",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "neurips24": [
+          "RouterDC: Query-Based Router by Dual Contrastive Learning for Assembling Large Language Models",
+          "Stacking Your Transformers: A Closer Look at Model Growth for Efficient LLM Pre-Training"
+        ],
+        "icml25": [
+          "Neutral residues: revisiting adapters for model extension"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PopQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Speculative RAG: Enhancing Retrieval Augmented Generation through Drafting",
+      "evidence": "We demonstrate ADACAD\u2019s effectiveness on a diverse range of tasks, covering question-answering (QA) and summarization, with six QA datasets (Natural Question (NQ; Kwiatkowski et al., 2019), NQ-SWAP (Longpre et al., 2021), TriviaQA (Joshi et al., 2017), PopQA (Mallen et al., 2023), HotpotQA (Yang et al., 2018), TabMWP (Lu et al., 2023)) (Section 1).",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr25": [
+          "Speculative RAG: Enhancing Retrieval Augmented Generation through Drafting",
+          "Accelerating Inference of Retrieval-Augmented Generation via Sparse Context Selection"
+        ],
+        "naacl25": [
+          "Ethical Concern Identification inNLP: A Corpus ofACLAnthology Ethics Statements"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "QASC",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Bridging and Modeling Correlations in Pairwise Data for Direct Preference Optimization",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr25": [
+          "Bridging and Modeling Correlations in Pairwise Data for Direct Preference Optimization"
+        ],
+        "emnlp25": [
+          "UNComp: Can Matrix Entropy Uncover Sparsity? \u2014 A Compressor Design from an Uncertainty-Aware Perspective",
+          "Can Large Language Models Tackle Graph Partitioning?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "ACC-Collab: An Actor-Critic Approach to Multi-Agent LLM Collaboration",
+      "evidence": "We evaluate each method on a wide range of reasoning tasks. These tasks include [...] ARC (ARCe for the easier dataset and ARCc for the challenging dataset) for multiple-choice science QA [...] (Section 4.1)",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr25": [
+          "ACC-Collab: An Actor-Critic Approach to Multi-Agent LLM Collaboration"
+        ],
+        "acl25": [
+          "Instance-Selection-Inspired Undersampling Strategies for Bias Reduction in Small and Large Language Models for Binary Text Classification"
+        ],
+        "emnlp25": [
+          "LogiDynamics: Unraveling the Dynamics of Inductive, Abductive and Deductive Logical Inferences inLLMReasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WikiQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "CAMEx: Curvature-aware Merging of Experts",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr25": [
+          "CAMEx: Curvature-aware Merging of Experts"
+        ],
+        "emnlp25": [
+          "UNComp: Can Matrix Entropy Uncover Sparsity? \u2014 A Compressor Design from an Uncertainty-Aware Perspective",
+          "Can Large Language Models Tackle Graph Partitioning?"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Complex reasoning",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Information Re-Organization Improves Reasoning in Large Language Models",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "neurips24": [
+          "Information Re-Organization Improves Reasoning in Large Language Models"
+        ],
+        "emnlp25": [
+          "Mixture of Weight-shared Heterogeneous Group Attention Experts for Dynamic Token-wiseKVOptimization",
+          "AdaSteer: Your AlignedLLMis Inherently an Adaptive Jailbreak Defender"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "2WikiMultihopQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Information Re-Organization Improves Reasoning in Large Language Models",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "neurips24": [
+          "Information Re-Organization Improves Reasoning in Large Language Models"
+        ],
+        "naacl25": [
+          "Take the essence and discard the dross: A Rethinking on Data Selection for Fine-Tuning Large Language Models"
+        ],
+        "emnlp25": [
+          "Measuring Bias or Measuring the Task: Understanding the Brittle Nature ofLLMGender Biases"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MuSiQue",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Information Re-Organization Improves Reasoning in Large Language Models",
+      "evidence": "We measure all the methods on four different QA datasets, including multi-hop Wikipedia reasoning datasets: (1) MuSiQue (Trivedi et al., 2022)... (Section 4.1)",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "neurips24": [
+          "Information Re-Organization Improves Reasoning in Large Language Models"
+        ],
+        "iclr25": [
+          "Speculative RAG: Enhancing Retrieval Augmented Generation through Drafting"
+        ],
+        "naacl25": [
+          "Take the essence and discard the dross: A Rethinking on Data Selection for Fine-Tuning Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SQuAD v2.0",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Efficient stagewise pretraining via progressive subnetworks",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr25": [
+          "Efficient stagewise pretraining via progressive subnetworks"
+        ],
+        "acl25": [
+          "Who Writes What: Unveiling the Impact of Author Roles onAI-generated Text Detection"
+        ],
+        "emnlp25": [
+          "Logos as a Well-Tempered Pre-train for Sign Language Recognition"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CoQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MiniCache: KV Cache Compression in Depth Dimension for Large Language Models",
+      "evidence": "\u201cfor the Independent setting, where the questions are not related to each other, we use the CoQA (Reddy et al., 2019)\u201d",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "MiniCache: KV Cache Compression in Depth Dimension for Large Language Models"
+        ],
+        "emnlp25": [
+          "Logos as a Well-Tempered Pre-train for Sign Language Recognition"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-Easy",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Mixture of Tokens: Continuous MoE through Cross-Example Aggregation",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "Mixture of Tokens: Continuous MoE through Cross-Example Aggregation",
+          "Stacking Your Transformers: A Closer Look at Model Growth for Efficient LLM Pre-Training"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BioASQ",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Kernel Language Entropy: Fine-grained Uncertainty Quantification for LLMs from Semantic Similarities",
+      "evidence": "We evaluate RAG performance across three datasets spanning different reasoning complexities and domain-specificity... BioASQ (Task 11B) (Krithara et al., 2023): PubMed-based biomedical QA for specialized domains. (Section 3.3)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "Kernel Language Entropy: Fine-grained Uncertainty Quantification for LLMs from Semantic Similarities"
+        ],
+        "icml25": [
+          "RAGGED: Towards Informed Design of Scalable and Stable RAG Systems"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM Evaluation Harness",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MiniCache: KV Cache Compression in Depth Dimension for Large Language Models",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "MiniCache: KV Cache Compression in Depth Dimension for Large Language Models"
+        ],
+        "iclr25": [
+          "EmbedLLM: Learning Compact Representations of Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-context understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "SV-RAG: LoRA-Contextualizing Adaptation of  MLLMs for Long Document Understanding",
+      "evidence": "...achieving substantial progress on tasks such as summarization and question answering that emphasize the effective utilization and understanding of long inputs.",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "SV-RAG: LoRA-Contextualizing Adaptation of  MLLMs for Long Document Understanding"
+        ],
+        "emnlp25": [
+          "Slim-SC: Thought Pruning for Efficient Scaling with Self-Consistency"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SciQ",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Calibrating Expressions of Certainty",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Calibrating Expressions of Certainty",
+          "ACC-Collab: An Actor-Critic Approach to Multi-Agent LLM Collaboration"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SQuAD 1.1",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Accelerating Blockwise Parallel Language Models with Draft Refinement",
+      "evidence": "We used SQuAD v1.1 (Rajpurkar et al., 2016) for QA tasks (Section 4.1)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "Accelerating Blockwise Parallel Language Models with Draft Refinement"
+        ],
+        "icml25": [
+          "A Lens into Interpretable Transformer Mistakes via Semantic Dependency"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TyDiQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "TSDS: Data Selection for Task-Specific Model Finetuning",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "TSDS: Data Selection for Task-Specific Model Finetuning"
+        ],
+        "naacl25": [
+          "Decomposition Dilemmas: Does Claim Decomposition Boost or Burden Fact-Checking Performance?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "DROP",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Gated Slot Attention for Efficient Linear-Time Sequence Modeling",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "Gated Slot Attention for Efficient Linear-Time Sequence Modeling"
+        ],
+        "iclr25": [
+          "Longhorn: State Space Models are Amortized Online Learners"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GPQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Many-Shot In-Context Learning",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "Many-Shot In-Context Learning"
+        ],
+        "iclr25": [
+          "Diffusion-based Neural Network Weights Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "InfiniteBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "InfLLM: Training-Free Long-Context Extrapolation for LLMs with an Efficient Context Memory",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "InfLLM: Training-Free Long-Context Extrapolation for LLMs with an Efficient Context Memory"
+        ],
+        "iclr25": [
+          "Scaling Instruction-tuned LLMs to Million-token Contexts via Hierarchical Synthetic Data Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ScienceQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "On Large Language Model Continual Unlearning",
+      "evidence": "\u201cwe follow the datasets and tuning orders of the CoIN benchmark ... including ScienceQA\u201d",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "On Large Language Model Continual Unlearning"
+        ],
+        "icml25": [
+          "A Stronger Mixture of Low-Rank Experts for Fine-Tuning Foundation Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TyDi QA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LAuReL: Learned Augmented Residual Layer",
+      "evidence": "For example, multilingual datasets like TyDi QA (Clark et al., 2020), which includes only Swahili from Africa, AfriQA (Ogundepo et al., 2023), NaijaRC (Aremu et al., 2024), and AfriMed-QA (Nimo et al., 2025). (Section 4.3)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "icml25": [
+          "LAuReL: Learned Augmented Residual Layer"
+        ],
+        "emnlp25": [
+          "AFRIDOC-MT: Document-levelMTCorpus forAfrican Languages"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BBQ",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Prompting Fairness: Integrating Causality to Debias Large Language Models",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Prompting Fairness: Integrating Causality to Debias Large Language Models"
+        ],
+        "emnlp25": [
+          "Editing Across Languages: A Survey of Multilingual Knowledge Editing"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SIQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Overtrained Language Models Are Harder to Fine-Tune",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "icml25": [
+          "Overtrained Language Models Are Harder to Fine-Tune",
+          "A Stronger Mixture of Low-Rank Experts for Fine-Tuning Foundation Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "RULER",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MagicDec: Breaking the Latency-Throughput Tradeoff for Long Context Generation with Speculative Decoding",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "MagicDec: Breaking the Latency-Throughput Tradeoff for Long Context Generation with Speculative Decoding",
+          "Scaling Long Context Training Data by Long-Distance Referrals"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ELI5",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Investigating Human Values in Online Communities",
+      "evidence": "We run experiments on two question- answering datasets, namely NQ-Open and ELI5. (Section 3.1)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "naacl25": [
+          "Investigating Human Values in Online Communities"
+        ],
+        "emnlp25": [
+          "PBI-Attack: Prior-Guided Bimodal Interactive Black-Box Jailbreak Attack for Toxicity Maximization"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "2025.emnlp-main.365.checklist",
+      "evidence": "This paper focuses on fundamental research of ambiguity-caused hallucination in question answering.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "2025.emnlp-main.365.checklist"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SQuAD 2.0",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Supervised Knowledge Makes Large Language Models Better In-context Learners",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Supervised Knowledge Makes Large Language Models Better In-context Learners"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "WONDERBREAD: A Benchmark for Evaluating Multimodal Foundation Models on Business Process Management Tasks",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "WONDERBREAD: A Benchmark for Evaluating Multimodal Foundation Models on Business Process Management Tasks"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ZeroSCROLLS",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Found in the Middle: How Language Models Use Long Contexts Better via Plug-and-Play Positional Encoding",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Found in the Middle: How Language Models Use Long Contexts Better via Plug-and-Play Positional Encoding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PubMedQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Shh, don't say that! Domain Certification in LLMs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Shh, don't say that! Domain Certification in LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LAMBADA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "DHA: Learning Decoupled-Head Attention from Transformer Checkpoints via Adaptive Heads Fusion",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "DHA: Learning Decoupled-Head Attention from Transformer Checkpoints via Adaptive Heads Fusion"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GLUE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Improving Data Annotation for Low-Resource Relation Extraction with Logical Rule-Augmented Collaborative Language Models",
+      "evidence": "We finetune the pretrained RoBERTa-base model (Liu et al., 2019) on the GLUE benchmark, a widely used suite for evaluating NLP models across various tasks, including sentiment analysis and question answering (Wang et al., 2019). (Section 4.2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Improving Data Annotation for Low-Resource Relation Extraction with Logical Rule-Augmented Collaborative Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BBH",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "ACC-Collab: An Actor-Critic Approach to Multi-Agent LLM Collaboration",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "ACC-Collab: An Actor-Critic Approach to Multi-Agent LLM Collaboration"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Relevance",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Decoding-Time Language Model Alignment with Multiple Objectives",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Decoding-Time Language Model Alignment with Multiple Objectives"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Verbosity",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Decoding-Time Language Model Alignment with Multiple Objectives",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Decoding-Time Language Model Alignment with Multiple Objectives"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Completeness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Decoding-Time Language Model Alignment with Multiple Objectives",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Decoding-Time Language Model Alignment with Multiple Objectives"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MedMCQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "AGILE: A Novel Reinforcement Learning Framework of LLM Agents",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "AGILE: A Novel Reinforcement Learning Framework of LLM Agents"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ArXivQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "AvaTaR: Optimizing LLM Agents for Tool Usage via Contrastive Reasoning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "AvaTaR: Optimizing LLM Agents for Tool Usage via Contrastive Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ToolQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "AvaTaR: Optimizing LLM Agents for Tool Usage via Contrastive Reasoning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "AvaTaR: Optimizing LLM Agents for Tool Usage via Contrastive Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MedQA-USMLE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "KnowGPT: Knowledge Graph based Prompting for Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "KnowGPT: Knowledge Graph based Prompting for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LogiQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "DHA: Learning Decoupled-Head Attention from Transformer Checkpoints via Adaptive Heads Fusion",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "DHA: Learning Decoupled-Head Attention from Transformer Checkpoints via Adaptive Heads Fusion"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Diff-eRank: A Novel Rank-Based Metric for Evaluating Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Diff-eRank: A Novel Rank-Based Metric for Evaluating Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MS MARCO",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "SePer: Measure Retrieval Utility Through The Lens Of Semantic Perplexity Reduction",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "SePer: Measure Retrieval Utility Through The Lens Of Semantic Perplexity Reduction"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Bamboogle",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Chain of Preference Optimization: Improving Chain-of-Thought Reasoning in LLMs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Chain of Preference Optimization: Improving Chain-of-Thought Reasoning in LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "World knowledge",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "CorDA: Context-Oriented Decomposition Adaptation of Large Language Models for Task-Aware Parameter-Efficient Fine-tuning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Information retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "UDA: A Benchmark Suite for Retrieval Augmented Generation in Real-World Document Analysis",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "UDA: A Benchmark Suite for Retrieval Augmented Generation in Real-World Document Analysis"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Alpaca instruction dataset",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SAMSum",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Spec-Bench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Block Verification Accelerates Speculative Decoding",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Block Verification Accelerates Speculative Decoding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8k",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MiniCache: KV Cache Compression in Depth Dimension for Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "MiniCache: KV Cache Compression in Depth Dimension for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WebQuestions",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "KS-Lottery: Finding Certified Lottery Tickets for Multilingual Transfer in Large Language Models",
+      "evidence": "The questions used for constructing our training data are sourced from the ASQA (Stelmakh et al., 2022), WebQuestions (Berant et al., 2013), and Natural Questions (Kwiatkowski et al., 2019) training splits. (Section 4.1.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "KS-Lottery: Finding Certified Lottery Tickets for Multilingual Transfer in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "NewsQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Evaluating Copyright Takedown Methods for Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Evaluating Copyright Takedown Methods for Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "OpenBookQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Learning to Route LLMs with Confidence Tokens",
+      "evidence": "The OpenBookQA dataset is a question-answering dataset designed to test deep understanding through multi-step reasoning, common knowledge, and text comprehension, similar to open-book exams. (Section 4.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Learning to Route LLMs with Confidence Tokens"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-context learning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Federated In-Context Learning: Iterative Refinement for Improved Answer Quality",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Federated In-Context Learning: Iterative Refinement for Improved Answer Quality"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination detection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "START: Self-taught Reasoner with Tools",
+      "evidence": "We demonstrate that the influence of negated text on hallucination detection extends across multiple tasks, including question answering (QA), dialogue, summarization, and completion, indicating its task-agnostic.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "START: Self-taught Reasoner with Tools"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SocialIQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Can Large Language Models Tackle Graph Partitioning?",
+      "evidence": "OLMo-30M models trained on various pre-training token budgets are fine-tuned on downstream tasks using fixed hyperparameters: math (GSM8k), code (Starcoder-Python), and QA (SIQA). (Figure 4)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Can Large Language Models Tackle Graph Partitioning?"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Prompt engineering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Characterizing the Role of Similarity in the Property Inferences of Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Characterizing the Role of Similarity in the Property Inferences of Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Learning to Route LLMs with Confidence Tokens",
+      "evidence": "We evaluate the impact of data contamination using a mix of seven different benchmarks: ARC-Easy (Clark et al., 2018), Social-I-QA (Sap et al., 2019), WinoGrande (Sakaguchi et al., 2021), PiQA (Bisk et al., 2020), BoolQ (Clark et al., 2019), MMLU (Hendrycks et al., 2021), and HellaSwag (Zellers et al., 2019).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Learning to Route LLMs with Confidence Tokens"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Coreference resolution",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Bridging Context Gaps: Leveraging Coreference Resolution for Long Contextual Understanding",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Bridging Context Gaps: Leveraging Coreference Resolution for Long Contextual Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Retention",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Self-Updatable Large Language Models by Integrating Context into Model Parameters",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Self-Updatable Large Language Models by Integrating Context into Model Parameters"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AlpacaEval 2.0",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Towards Federated RLHF with Aggregated Client Preference for LLMs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Towards Federated RLHF with Aggregated Client Preference for LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MM-Hal-Bench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "CHiP: Cross-modal Hierarchical Direct Preference Optimization for Multimodal LLMs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "CHiP: Cross-modal Hierarchical Direct Preference Optimization for Multimodal LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LoCoMo",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "SeCom: On Memory Construction and Retrieval for Personalized Conversational Agents",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "SeCom: On Memory Construction and Retrieval for Personalized Conversational Agents"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ECQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Bridging and Modeling Correlations in Pairwise Data for Direct Preference Optimization",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Bridging and Modeling Correlations in Pairwise Data for Direct Preference Optimization"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "EVOUNA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MetaMetrics: Calibrating Metrics for Generation Tasks Using Human Preferences",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "MetaMetrics: Calibrating Metrics for Generation Tasks Using Human Preferences"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SST-2",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "PortLLM: Personalizing Evolving Large Language Models with Training-Free and Portable Model Patches",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "PortLLM: Personalizing Evolving Large Language Models with Training-Free and Portable Model Patches"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Ranking",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Attention in Large Language Models Yields Efficient Zero-Shot Re-Rankers",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Attention in Large Language Models Yields Efficient Zero-Shot Re-Rankers"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Arena-Hard",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "As Simple as Fine-tuning: LLM Alignment via Bidirectional Negative Feedback Loss",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "As Simple as Fine-tuning: LLM Alignment via Bidirectional Negative Feedback Loss"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WildBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "As Simple as Fine-tuning: LLM Alignment via Bidirectional Negative Feedback Loss",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "As Simple as Fine-tuning: LLM Alignment via Bidirectional Negative Feedback Loss"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ASQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "KS-Lottery: Finding Certified Lottery Tickets for Multilingual Transfer in Large Language Models",
+      "evidence": "The questions used for constructing our training data are sourced from the ASQA (Stelmakh et al., 2022), WebQuestions (Berant et al., 2013), and Natural Questions (Kwiatkowski et al., 2019) training splits. (Section 4.1.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "KS-Lottery: Finding Certified Lottery Tickets for Multilingual Transfer in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "XQuAD",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Has this Fact been Edited? Detecting Knowledge Edits in Language Models",
+      "evidence": "\u201cQuestion Answering: We focus on 3 QA datasets 1) XQUAD (Artetxe et al., 2019)\u201d (Section 4.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Has this Fact been Edited? Detecting Knowledge Edits in Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MLQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "iTool: Reinforced Fine-Tuning with Dynamic Deficiency Calibration for Advanced Tool Use",
+      "evidence": "\u201cFor the question-answering task, we fine-tune Qwen2.5-1.5B... We evaluate LMTransplant on five established benchmarks: \u2022 MLQA ... A question-answering benchmark\u201d",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "iTool: Reinforced Fine-Tuning with Dynamic Deficiency Calibration for Advanced Tool Use"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "NQ-Swap",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Ethical Concern Identification inNLP: A Corpus ofACLAnthology Ethics Statements",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Ethical Concern Identification inNLP: A Corpus ofACLAnthology Ethics Statements"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Entity disambiguation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Multilingual Needle in a Haystack: Investigating Long-Context Behavior of Multilingual Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Multilingual Needle in a Haystack: Investigating Long-Context Behavior of Multilingual Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "IIRC",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Take the essence and discard the dross: A Rethinking on Data Selection for Fine-Tuning Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Take the essence and discard the dross: A Rethinking on Data Selection for Fine-Tuning Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Dialogue state tracking",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "CAST: Corpus-Aware Self-similarity Enhanced Topic modelling",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "CAST: Corpus-Aware Self-similarity Enhanced Topic modelling"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TabMWP",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Ethical Concern Identification inNLP: A Corpus ofACLAnthology Ethics Statements",
+      "evidence": "\"Lastly, we also test on a popular tabular question-answering dataset, TabMWP (Lu et al., 2023), that requires LLMs to use reasoning skills over tabular contexts.\"",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Ethical Concern Identification inNLP: A Corpus ofACLAnthology Ethics Statements"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Belebele",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Neutral residues: revisiting adapters for model extension",
+      "evidence": "\"We use the following datasets: ARC challenge (Clark et al., 2018), HellaSwag (Zellers et al., 2019), MMLU (Hendrycks et al., 2020), CommonSense QA (Talmor et al., 2018) and Belebele (Bandarkar et al., 2023).\"",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Neutral residues: revisiting adapters for model extension"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge conflict resolution",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Measuring Data Diversity for Instruction Tuning: A Systematic Analysis and A Reliable Metric",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Measuring Data Diversity for Instruction Tuning: A Systematic Analysis and A Reliable Metric"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ParaRel",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "FactTest: Factuality Testing in Large Language Models with Finite-Sample and Distribution-Free Guarantees",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "FactTest: Factuality Testing in Large Language Models with Finite-Sample and Distribution-Free Guarantees"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CosmosQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Can Large Language Models Tackle Graph Partitioning?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Can Large Language Models Tackle Graph Partitioning?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Nectar",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Through the Valley: Path to Effective LongCoTTraining for Small Language Models",
+      "evidence": "We began our experiments using the Nectar (Zhu et al., 2023) dataset, which includes human-labeled responses categorized into seven distinct rankings. (Section 4.2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Through the Valley: Path to Effective LongCoTTraining for Small Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "QNLI",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "The Sound of Syntax: Finetuning and Comprehensive Evaluation of Language Models for Speech Pathology",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "The Sound of Syntax: Finetuning and Comprehensive Evaluation of Language Models for Speech Pathology"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "EDUADAPT",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "2025.emnlp-main.1736.checklist",
+      "evidence": "Paper title: \"EduAdapt: A Question Answer Benchmark Dataset for Evaluating Grade-Level Adaptability in LLMs\"",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "2025.emnlp-main.1736.checklist"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 101,
+  "incoming_relationship_count": 15,
+  "outgoing_relationship_count": 86,
+  "characterization": "Across the surveyed literature, question answering (QA) is consistently defined as the observable behavior of a model producing answers to natural language questions. The prevailing usage frames this task in a context-dependent manner, where models generate answers based on provided information such as Wikipedia articles, structured tables, or retrieved documents. A smaller but common line of work treats QA as a test of a model's internal general knowledge, evaluating its ability to answer factual questions without a given context. The expected answer format varies widely, from direct, short-form responses and span extraction to multiple-choice selections and, as one paper specifies, \"Yes/No/Don\u2019t Know\" answers (\"Teaching Models to Balance Resisting and Accepting Persuasion\").\n\nThis behavior is operationalized and measured using a vast array of benchmarks. Among the most frequently cited instruments are TriviaQA and Natural Questions for open-domain knowledge, SQuAD for reading comprehension from a given passage, HotpotQA for multi-hop reasoning, and MMLU for assessing knowledge across a massive set of tasks. Papers also evaluate QA in specialized domains like medicine and law, and in both standard and adversarial settings. Question answering is commonly studied alongside hallucination, where the factuality of generated answers is a primary concern, and is also frequently associated with complex reasoning and long-context processing.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "naacl25": [
+      "A Survey ofNLPProgress inSino-Tibetan Low-Resource Languages",
+      "AID: Adaptive Integration of Detectors for SafeAIwith Language Models",
+      "Afrispeech-Dialog: A Benchmark Dataset for SpontaneousEnglish Conversations in Healthcare and Beyond",
+      "Anticipating Future with Large Language Model for Simultaneous Machine Translation",
+      "AreLLM-Judges Robust to Expressions of Uncertainty? Investigating the effect of Epistemic Markers onLLM-based Evaluation",
+      "BPO: Towards Balanced Preference Optimization between Knowledge Breadth and Depth in Alignment",
+      "Beyond Logit Lens: Contextual Embeddings for Robust Hallucination Detection & Grounding inVLMs",
+      "CAST: Corpus-Aware Self-similarity Enhanced Topic modelling",
+      "CAVE: Controllable Authorship Verification Explanations",
+      "Characterizing the Role of Similarity in the Property Inferences of Language Models",
+      "Decomposition Dilemmas: Does Claim Decomposition Boost or Burden Fact-Checking Performance?",
+      "Efficient One-shot Compression via Low-Rank Local Feature Distillation",
+      "Efficient and Effective Prompt Tuning via Prompt Decomposition and Compressed Outer Product",
+      "Emergence of Episodic Memory in Transformers: Characterizing Changes in Temporal Structure of Attention Scores During Training",
+      "Entity Decomposition with Filtering: A Zero-Shot Clinical Named Entity Recognition Framework",
+      "Ethical Concern Identification inNLP: A Corpus ofACLAnthology Ethics Statements",
+      "Evaluating Input Feature Explanations through a Unified Diagnostic Evaluation Framework",
+      "Evaluating Morphological Compositional Generalization in Large Language Models",
+      "Evaluating Small Language Models for News Summarization: Implications and Factors Influencing Performance",
+      "Few-shot Personalization ofLLMs with Mis-aligned Responses",
+      "From Allies to Adversaries: ManipulatingLLMTool-Calling through Adversarial Injection",
+      "GLiREL- Generalist Model for Zero-Shot Relation Extraction",
+      "Guiding Medical Vision-Language Models with Diverse Visual Prompts: Framework Design and Comprehensive Exploration of Prompt Variations",
+      "Has this Fact been Edited? Detecting Knowledge Edits in Language Models",
+      "IMRRF: Integrating Multi-Source Retrieval and Redundancy Filtering forLLM-based Fake News Detection",
+      "ITALIC: AnItalian Culture-Aware Natural Language Benchmark",
+      "Improving Data Annotation for Low-Resource Relation Extraction with Logical Rule-Augmented Collaborative Language Models",
+      "Investigating Human Values in Online Communities",
+      "KS-Lottery: Finding Certified Lottery Tickets for Multilingual Transfer in Large Language Models",
+      "Knowledge Graph-Guided Retrieval Augmented Generation",
+      "Knowledge-Aware Query Expansion with Large Language Models for Textual and Relational Retrieval",
+      "Language Model Council: Democratically Benchmarking Foundation Models on Highly Subjective Tasks",
+      "Learning to Solve Domain-Specific Calculation Problems with Knowledge-Intensive Programs Generator",
+      "LiPO: Listwise Preference Optimization through Learning-to-Rank",
+      "Lost in Inference: Rediscovering the Role of Natural Language Inference for Large Language Models",
+      "ManaTTSPersian: a recipe for creatingTTSdatasets for lower resource languages",
+      "Multilingual Needle in a Haystack: Investigating Long-Context Behavior of Multilingual Large Language Models",
+      "One Unified Model for Diverse Tasks: Emotion Cause Analysis via Self-Promote Cognitive Structure Modeling",
+      "Patent-CR: A Dataset for Patent Claim Revision",
+      "PerCul: A Story-Driven Cultural Evaluation ofLLMs inPersian",
+      "Prompt Compression for Large Language Models: A Survey",
+      "Prototypical Extreme Multi-label Classification with a Dynamic Margin Loss",
+      "Rationale-Guided Retrieval Augmented Generation for Medical Question Answering",
+      "Reading between the Lines: CanLLMs Identify Cross-Cultural Communication Gaps?",
+      "S2-MAD: Breaking the Token Barrier to Enhance Multi-Agent Debate Efficiency",
+      "Soft Syntactic Reinforcement for Neural Event Extraction",
+      "StyleDistance: Stronger Content-Independent Style Embeddings with Synthetic Parallel Examples",
+      "Take the essence and discard the dross: A Rethinking on Data Selection for Fine-Tuning Large Language Models",
+      "Teaching Models to Balance Resisting and Accepting Persuasion",
+      "UFO: AUI-Focused Agent for WindowsOSInteraction",
+      "Unfamiliar Finetuning Examples Control How Language Models Hallucinate",
+      "Yeah, Un, Oh: Continuous and Real-time Backchannel Prediction with Fine-tuning of Voice Activity Projection"
+    ],
+    "acl25": [
+      "A Modular Approach for ClinicalSLMs Driven by Synthetic Data with Pre-Instruction Tuning, Model Merging, and Clinical-Tasks Alignment",
+      "A Spatio-Temporal Point Process for Fine-Grained Modeling of Reading Behavior",
+      "All That Glitters is Not Novel: Plagiarism inAIGenerated Research",
+      "AnalyzingLLMs\u2019 Knowledge Boundary Cognition Across Languages Through the Lens of Internal Representations",
+      "BIPro: Zero-shotChinese Poem Generation via Block Inverse Prompting Constrained Generation Framework",
+      "Between Circuits andChomsky: Pre-pretraining on Formal Languages Imparts Linguistic Biases",
+      "Bridging the Language Gaps in Large Language Models with Inference-Time Cross-Lingual Intervention",
+      "CC-Tuning: A Cross-Lingual Connection Mechanism for Improving Joint Multilingual Supervised Fine-Tuning",
+      "CodeTool: Enhancing Programmatic Tool Invocation ofLLMs via Process Supervision",
+      "Conspiracy Theories and Where to Find Them onTikTok",
+      "Defense Against Prompt Injection Attack by Leveraging Attack Techniques",
+      "Did Translation Models Get More Robust Without AnyoneEven Noticing?",
+      "Document-Level Text Generation with MinimumBayes Risk Decoding using Optimal Transport",
+      "D\u00e9j\u00e0 Vu? Decoding Repeated Reading from Eye Movements",
+      "Energy Considerations of Large Language Model Inference and Efficiency Optimizations",
+      "Enhancing Lexicon-Based Text Embeddings with Large Language Models",
+      "Extending Complex Logical Queries on Uncertain Knowledge Graphs",
+      "Gender Inclusivity Fairness Index (GIFI): A Multilevel Framework for Evaluating Gender Diversity in Large Language Models",
+      "Global Eye: Breaking the \u201cFixed Thinking Pattern\u201d during the Instruction Expansion Process",
+      "HELIOS: Harmonizing Early Fusion, Late Fusion, andLLMReasoning for Multi-Granular Table-Text Retrieval",
+      "Have We Designed Generalizable Structural Knowledge Promptings? Systematic Evaluation and Rethinking",
+      "Help Me Write a Story: EvaluatingLLMs\u2019 Ability to Generate Writing Feedback",
+      "Instance-Selection-Inspired Undersampling Strategies for Bias Reduction in Small and Large Language Models for Binary Text Classification",
+      "Jailbreaking? One Step Is Enough!",
+      "L4Q: Parameter Efficient Quantization-Aware Fine-Tuning on Large Language Models",
+      "Language Model Fine-Tuning on Scaled Survey Data for Predicting Distributions of Public Opinions",
+      "Locate-and-Focus: Enhancing Terminology Translation in Speech Language Models",
+      "LongSafety: Evaluating Long-Context Safety of Large Language Models",
+      "MMBoundary: AdvancingMLLMKnowledge Boundary Awareness through Reasoning Step Confidence Calibration",
+      "MadaKV: Adaptive Modality-PerceptionKVCache Eviction for Efficient Multimodal Long-Context Inference",
+      "Measuring Data Diversity for Instruction Tuning: A Systematic Analysis and A Reliable Metric",
+      "Mind the Gesture: EvaluatingAISensitivity to Culturally Offensive Non-Verbal Gestures",
+      "Multi-Facet Blending for Faceted Query-by-Example Retrieval",
+      "NGQA: A Nutritional Graph Question Answering Benchmark for Personalized Health-aware Nutritional Reasoning",
+      "On the Mutual Influence of Gender and Occupation inLLMRepresentations",
+      "PlanningArena: A Modular Benchmark for Multidimensional Evaluation of Planning and Tool Learning",
+      "Predicting Through Generation: Why Generation Is Better for Prediction",
+      "Refining Salience-Aware Sparse Fine-Tuning Strategies for Language Models",
+      "Revisiting Compositional Generalization Capability of Large Language Models Considering Instruction Following Ability",
+      "SEUF: Is Unlearning One Expert Enough for Mixture-of-ExpertsLLMs?",
+      "Self-Error-Instruct: Generalizing from Errors forLLMs Mathematical Reasoning",
+      "TETRIS: Optimal Draft Token Selection for Batch Speculative Decoding",
+      "TableLoRA: Low-rank Adaptation on Table Structure Understanding for Large Language Models",
+      "The Hidden Attention of Mamba Models",
+      "The Role of Visual Modality in Multimodal Mathematical Reasoning: Challenges and Insights",
+      "Towards a More Generalized Approach in Open Relation Extraction",
+      "VITAL: A New Dataset for Benchmarking Pluralistic Alignment in Healthcare",
+      "Who Writes What: Unveiling the Impact of Author Roles onAI-generated Text Detection",
+      "\u201cWhat do you call a dog that is incontrovertibly true? Dogma\u201d: TestingLLMGeneralization through Humor"
+    ],
+    "icml25": [
+      "$\\mathrm\u03bc$nit Scaling: Simple and Scalable FP8 LLM Training",
+      "A Lens into Interpretable Transformer Mistakes via Semantic Dependency",
+      "A Memory Efficient Randomized Subspace Optimization Method for Training Large Language Models",
+      "A Stronger Mixture of Low-Rank Experts for Fine-Tuning Foundation Models",
+      "An Analysis for Reasoning Bias of Language Models with Small Initialization",
+      "Attention-Level Speculation",
+      "BEST-Route: Adaptive LLM Routing with Test-Time Optimal Compute",
+      "BackSlash: Rate Constrained Optimized Training of Large Language Models",
+      "CABS: Conflict-Aware and Balanced Sparsification for Enhancing Model Merging",
+      "CLIMB: Data Foundations for Large Scale Multimodal Clinical Foundation Models",
+      "Contrastive Private Data Synthesis via Weighted Multi-PLM Fusion",
+      "Curse of High Dimensionality Issue in Transformer for Long Context Modeling",
+      "Direct Density Ratio Optimization: A Statistically Consistent Approach to Aligning Large Language Models",
+      "EPIC: Efficient Position-Independent Caching for Serving Large Language Models",
+      "EncryptedLLM: Privacy-Preserving Large Language Model Inference via GPU-Accelerated Fully Homomorphic Encryption",
+      "ExLM: Rethinking the Impact of $\\texttt[MASK]$ Tokens in Masked Language Models",
+      "FactTest: Factuality Testing in Large Language Models with Finite-Sample and Distribution-Free Guarantees",
+      "Federated In-Context Learning: Iterative Refinement for Improved Answer Quality",
+      "Forest-of-Thought: Scaling Test-Time Compute for Enhancing LLM Reasoning",
+      "From Black Boxes to Transparent Minds: Evaluating and Enhancing the Theory of Mind in Multimodal Large Language Models",
+      "GIVE: Structured Reasoning of Large Language Models with Knowledge Graph Inspired Veracity Extrapolation",
+      "GRU: Mitigating the Trade-off between Unlearning and Retention for LLMs",
+      "Gumiho: A Hybrid Architecture to Prioritize Early Tokens in Speculative Decoding",
+      "HashAttention: Semantic Sparsity for Faster Inference",
+      "Instruction-Following Pruning for Large Language Models",
+      "LAuReL: Learned Augmented Residual Layer",
+      "LIFT the Veil for the Truth: Principal Weights Emerge after Rank Reduction for Reasoning-Focused Supervised Fine-Tuning",
+      "Large Continual Instruction Assistant",
+      "Learning to Route LLMs with Confidence Tokens",
+      "LoRA-Gen: Specializing Large Language Model via Online LoRA Generation",
+      "Long-Short Alignment for Effective Long-Context Modeling in LLMs",
+      "M+: Extending MemoryLLM with Scalable Long-Term Memory",
+      "MoEQuant: Enhancing Quantization for Mixture-of-Experts Large Language Models via Expert-Balanced Sampling and Affinity Guidance",
+      "MoH: Multi-Head Attention as Mixture-of-Head Attention",
+      "Neutral residues: revisiting adapters for model extension",
+      "Oracle-MoE: Locality-preserving Routing in the Oracle Space for Memory-constrained Large Language Model Inference",
+      "Organize the Web: Constructing Domains Enhances Pre-Training Data Curation",
+      "Overtrained Language Models Are Harder to Fine-Tune",
+      "PhantomWiki: On-Demand Datasets for Reasoning and Retrieval Evaluation",
+      "Position: AI Evaluation Should Learn from How We Test Humans",
+      "Position: AI Should Not Be An Imitation Game: Centaur Evaluations",
+      "Position: Don\u2019t Use the CLT in LLM Evals With Fewer Than a Few Hundred Datapoints",
+      "Position: Human Baselines in Model Evaluations Need Rigor and Transparency (With Recommendations & Reporting Checklist)",
+      "Position: LLMs Need a Bayesian Meta-Reasoning Framework for More Robust and Generalizable Reasoning",
+      "Predictive Data Selection: The Data That Predicts Is the Data That Teaches",
+      "RAGGED: Towards Informed Design of Scalable and Stable RAG Systems",
+      "Radio: Rate\u2013Distortion Optimization for Large Language Model Compression",
+      "Reliable and Efficient Amortized Model-based Evaluation",
+      "Rethinking Addressing in Language Models via Contextualized Equivariant Positional Encoding",
+      "Sample Efficient Demonstration Selection for In-Context Learning",
+      "Soup-of-Experts: Pretraining Specialist Models via Parameters Averaging",
+      "Star Attention: Efficient LLM Inference over Long Sequences",
+      "Targeted Low-rank Refinement: Enhancing Sparse Language Models with Precision",
+      "The Logical Implication Steering Method for Conditional Interventions on Transformer Generation",
+      "Tokenized Bandit for LLM Decoding and Alignment",
+      "Tool Unlearning for Tool-Augmented LLMs",
+      "What Limits Bidirectional Model\u2019s Generative Capabilities? A Uni-Bi-Directional Mixture-of-Expert Method For Bidirectional Fine-tuning",
+      "polybasic Speculative Decoding Through a Theoretical Perspective",
+      "xLSTM 7B: A Recurrent LLM for Fast and Efficient Inference"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.1095.checklist",
+      "2025.emnlp-main.1103.checklist",
+      "2025.emnlp-main.1155.checklist",
+      "2025.emnlp-main.1736.checklist",
+      "2025.emnlp-main.233.checklist",
+      "2025.emnlp-main.365.checklist",
+      "2025.emnlp-main.818.checklist",
+      "A Systematic Analysis of Base Model Choice for Reward Modeling",
+      "AFRIDOC-MT: Document-levelMTCorpus forAfrican Languages",
+      "AdaSteer: Your AlignedLLMis Inherently an Adaptive Jailbreak Defender",
+      "Alignment for Efficient Tool Calling of Large Language Models",
+      "Assay2Mol: Large Language Model-based Drug Design UsingBioAssay Context",
+      "Attention Eclipse: Manipulating Attention to BypassLLMSafety-Alignment",
+      "Automated Knowledge Graph Construction using Large Language Models and Sentence Complexity Modelling",
+      "BTS: Harmonizing Specialized Experts into a GeneralistLLM",
+      "Beyond Demonstrations: Dynamic Vector Construction from Latent Representations",
+      "Beyond Input Activations: Identifying Influential Latents by Gradient Sparse Autoencoders",
+      "Beyond the Surface: Measuring Self-Preference inLLMJudgments",
+      "CARMA: Enhanced Compositionality inLLMs via Advanced Regularisation and Mutual Information Alignment",
+      "CMHG: A Dataset and Benchmark for Headline Generation of Minority Languages inChina",
+      "CODI: Compressing Chain-of-Thought into Continuous Space via Self-Distillation",
+      "Can Large Language Models Tackle Graph Partitioning?",
+      "Can Prompts Rewind Time forLLMs? Evaluating the Effectiveness of Prompted Knowledge Cutoffs",
+      "CanLLMs Generate and Solve Linguistic Olympiad Puzzles?",
+      "Chinese Toxic Language Mitigation via Sentiment Polarity Consistent Rewrites",
+      "Computational Analysis of Character Development in Holocaust Testimonies",
+      "Continuous-Time Attention:PDE-Guided Mechanisms for Long-Sequence Transformers",
+      "CopySpec: AcceleratingLLMs with Speculative Copy-and-Paste",
+      "Cross-MoE: An Efficient Temporal Prediction Framework Integrating Textual Modality",
+      "DCP: Dual-Cue Pruning for Efficient Large Vision-Language Models",
+      "DMDTEval: An Evaluation and Analysis ofLLMs on Disambiguation in Multi-domain Translation",
+      "DSMoE: Matrix-Partitioned Experts with Dynamic Routing for Computation-Efficient DenseLLMs",
+      "DiscoSG: Towards Discourse-Level Text Scene Graph Parsing through Iterative Graph Refinement",
+      "Discrepancy Detection at the Data Level: Toward Consistent Multilingual Question Answering",
+      "Dynamic Model-Bank Test-Time Adaptation for Automatic Speech Recognition",
+      "Editing Across Languages: A Survey of Multilingual Knowledge Editing",
+      "EduVidQA: Generating and Evaluating Long-form Answers to Student Questions based on Lecture Videos",
+      "EmoAgent: Assessing and Safeguarding Human-AIInteraction for Mental Health Safety",
+      "Enhancing Chain-of-Thought Reasoning via Neuron Activation Differential Analysis",
+      "EuroGEST: Investigating gender stereotypes in multilingual language models",
+      "Evaluating Behavioral Alignment in Conflict Dialogue: A Multi-Dimensional Comparison ofLLMAgents and Humans",
+      "Evaluating Spatiotemporal Consistency in Automatically Generated Sewing Instructions",
+      "Exploring Large Language Models for Detecting Mental Disorders",
+      "Financial Risk Relation Identification through Dual-view Adaptation",
+      "Flaw or Artifact? Rethinking Prompt Sensitivity in EvaluatingLLMs",
+      "Friend or Foe? A Computational Investigation of Semantic FalseFriends acrossRomance Languages",
+      "HICode: Hierarchical Inductive Coding withLLMs",
+      "HS-STaR: Hierarchical Sampling for Self-Taught Reasoners via Difficulty Estimation and Budget Reallocation",
+      "How Do Large Vision-Language Models See Text in Image? Unveiling the Distinctive Role ofOCRHeads",
+      "How Much DoLLMs Hallucinate across Languages? On Realistic Multilingual Estimation ofLLMHallucination",
+      "IG-Pruning: Input-Guided Block Pruning for Large Language Models",
+      "Improving Online Job Advertisement Analysis via Compositional Entity Extraction",
+      "InfiniBench: A Benchmark for Large Multi-Modal Models in Long-Form Movies andTVShows",
+      "Interpretable Mnemonic Generation for Kanji Learning via Expectation-Maximization",
+      "Intrinsic Test of Unlearning Using Parametric Knowledge Traces",
+      "It\u2019s All About In-Context Learning! Teaching Extremely Low-Resource Languages toLLMs",
+      "Joint Modeling of Entities and Discourse Relations for Coherence Assessment",
+      "Koel-TTS: EnhancingLLMbased Speech Generation with Preference Alignment and Classifier Free Guidance",
+      "LLM-Guided Co-Training for Text Classification",
+      "LVLMs are Bad at Overhearing Human Referential Communication",
+      "LaMP-QA: A Benchmark for Personalized Long-form Question Answering",
+      "Large Language Models Badly Generalize across Option Length, Problem Types, and Irrelevant Noun Replacements",
+      "LogiDynamics: Unraveling the Dynamics of Inductive, Abductive and Deductive Logical Inferences inLLMReasoning",
+      "Logos as a Well-Tempered Pre-train for Sign Language Recognition",
+      "Look Beyond Feeling: Unveiling Latent Needs from Implicit Expressions for Proactive Emotional Support",
+      "Measuring Bias or Measuring the Task: Understanding the Brittle Nature ofLLMGender Biases",
+      "Membership and Memorization inLLMKnowledge Distillation",
+      "Merge then Realign: Simple and Effective Modality-Incremental Continual Learning for MultimodalLLMs",
+      "Mixture of Weight-shared Heterogeneous Group Attention Experts for Dynamic Token-wiseKVOptimization",
+      "Model Consistency as a Cheap yet Predictive Proxy forLLMElo Scores",
+      "MultiDocFusion : Hierarchical and Multimodal Chunking Pipeline for EnhancedRAGon Long Industrial Documents",
+      "PBI-Attack: Prior-Guided Bimodal Interactive Black-Box Jailbreak Attack for Toxicity Maximization",
+      "PERSEVAL: A Framework for Perspectivist Classification Evaluation",
+      "Pre-trained Models Perform the Best When Token Distributions FollowZipf\u2019s Law",
+      "Primus: A Pioneering Collection of Open-Source Datasets for CybersecurityLLMTraining",
+      "Principled Personas: Defining and Measuring the Intended Effects of Persona Prompting on Task Performance",
+      "ProbingLLMWorld Models: Enhancing Guesstimation with Wisdom of Crowds Decoding",
+      "RECALL:REpresentation-aligned Catastrophic-forgettingALLeviation via Hierarchical Model Merging",
+      "RecGPT: A Foundation Model for Sequential Recommendation",
+      "Recursive Training Loops inLLMs: How training data properties modulate distribution shift in generated data?",
+      "Resource-Rational Noisy-Channel Language Processing: Testing the Effect of Algorithmic Constraints on Inferences",
+      "SAFE-SQL: Self-Augmented In-Context Learning with Fine-grained Example Selection for Text-to-SQL",
+      "SSA-COMET: DoLLMs Outperform Learned Metrics in EvaluatingMTfor Under-ResourcedAfrican Languages?",
+      "STAREat the Structure: SteeringICLExemplar Selection with Structural Alignment",
+      "START: Self-taught Reasoner with Tools",
+      "SciNLP: A Domain-Specific Benchmark for Full-Text Scientific Entity and Relation Extraction inNLP",
+      "Seeing Culture: A Benchmark for Visual Reasoning and Grounding",
+      "Seeing Through Words, Speaking Through Pixels: Deep Representational Alignment Between Vision and Language Models",
+      "SinhalaMMLU: A Comprehensive Benchmark for Evaluating Multitask Language Understanding inSinhala",
+      "SportReason: Evaluating Retrieval-Augmented Reasoning across Tables and Text for Sports Question Answering",
+      "SteeringLLMReasoning Through Bias-Only Adaptation",
+      "Step-level Verifier-guided Hybrid Test-Time Scaling for Large Language Models",
+      "Stimulate the Critical Thinking ofLLMs via Debiasing Discussion",
+      "TRUST-VL: An Explainable News Assistant for General Multimodal Misinformation Detection",
+      "TaCoMoE",
+      "TableEval: A Real-World Benchmark for Complex, Multilingual, and Multi-Structured Table Question Answering",
+      "Tailoring Table Retrieval from a Field-aware Hybrid Matching Perspective",
+      "The Emperor\u2019s New Reasoning: Format Imitation Overshadows Genuine Mathematical Understanding inSFT",
+      "The Sound of Syntax: Finetuning and Comprehensive Evaluation of Language Models for Speech Pathology",
+      "Threading the Needle: Reweaving Chain-of-Thought Reasoning to Explain Human Label Variation",
+      "Through the Valley: Path to Effective LongCoTTraining for Small Language Models",
+      "TokenSkip: Controllable Chain-of-Thought Compression inLLMs",
+      "UNComp: Can Matrix Entropy Uncover Sparsity? \u2014 A Compressor Design from an Uncertainty-Aware Perspective",
+      "Unveiling the Response of Large Vision-Language Models to Visually Absent Tokens",
+      "VELA: AnLLM-Hybrid-as-a-Judge Approach for Evaluating Long Image Captions",
+      "ViLBench: A Suite for Vision-Language Process Reward Modeling",
+      "What\u2019s in a prompt? Language models encode literary style in prompt embeddings",
+      "Who Holds the Pen? Caricature and Perspective inLLMRetellings of History",
+      "Words Like Knives: Backstory-Personalized Modeling and Detection of Violent Communication",
+      "XAutoLM: Efficient Fine-Tuning of Language Models via Meta-Learning andAutoML",
+      "Your Language Model Can Secretly Write Like Humans: Contrastive Paraphrase Attacks onLLM-Generated Text Detectors",
+      "iTool: Reinforced Fine-Tuning with Dynamic Deficiency Calibration for Advanced Tool Use",
+      "slow-reconvergence phase",
+      "xCoRe: Cross-context Coreference Resolution"
+    ]
+  },
+  "paper_count_by_conference": {
+    "naacl25": 52,
+    "acl25": 49,
+    "icml25": 59,
+    "emnlp25": 114
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "icml25",
+    "naacl25"
+  ]
+}

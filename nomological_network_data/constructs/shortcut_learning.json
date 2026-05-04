@@ -1,0 +1,122 @@
+{
+  "canonical_name": "Shortcut learning",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, shortcut learning is most commonly defined as a model's tendency to rely on spurious correlations between input features and labels that are prevalent in training data but irrelevant to the intended task. Alternative framings describe this as developing narrow, \"task-specific heuristics that fail to generalize\" or simply as a \"reliance on spurious correlations.\" This behavior is often attributed to training objectives like Empirical Risk Minimization (ERM), which, as one paper notes, \"incentivizes models to exploit shortcuts\" (The MaleCEOand the Female Assistant...). Another study points to a more specific mechanism, suggesting models \"are likely to capture spurious correlations in mini-batches\" (Watch Out Your Album! On the Inadvertent Privacy Memorization in Multi-Modal Large Language Models). A recurring theme is that shortcut learning leads to negative outcomes, with the most frequently cited consequence being poor generalization on minority or out-of-distribution examples. As a construct, it is operationalized by observing this performance drop, such as when \"apparent task proficiency may stem from shortcut learning rather than genuine understanding\" on controlled evaluations (Core Knowledge Deficits in Multi-Modal Language Models). The provided data also indicates that shortcut learning is reported to causally affect both Generalization and Safety. While most papers focus on the model's propensity to learn these correlations, one study introduces the concept of \"spurious correlation detection\" as a latent ability to identify such patterns.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Reliance on spurious correlations",
+    "Shortcut learning",
+    "Spurious correlation capture",
+    "Spurious correlation detection",
+    "Task-specific heuristics"
+  ],
+  "papers": [
+    "KG-Agent: An Efficient Autonomous Agent Framework for Complex Reasoning over Knowledge Graph",
+    "Predicting Implicit Arguments in Procedural Video Instructions",
+    "Revisiting Scaling Laws for Language Models: The Role of Data Quality and Training Strategies",
+    "The MaleCEOand the Female Assistant: Evaluation and Mitigation of Gender Biases in Text-To-Image Generation of Dual Subjects",
+    "Measuring and Mitigating Media Outlet Name Bias in Large Language Models",
+    "X-FLoRA: Cross-modal Federated Learning with Modality-expertLoRAfor MedicalVQA",
+    "Are Sparse Autoencoders Useful? A Case Study in Sparse Probing",
+    "Core Knowledge Deficits in Multi-Modal Language Models",
+    "SCISSOR: Mitigating Semantic Bias through Cluster-Aware Siamese Networks for Robust Classification",
+    "Watch Out Your Album! On the Inadvertent Privacy Memorization in Multi-Modal Large Language Models",
+    "What Has a Foundation Model Found? Using Inductive Bias to Probe for World Models"
+  ],
+  "paper_count": 11,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The tendency of models to rely on spurious correlations between input features and labels that are prevalent in majority training data but irrelevant to the actual task, leading to poor generalization on minority or out-of-distribution examples.",
+      "paper": "The MaleCEOand the Female Assistant: Evaluation and Mitigation of Gender Biases in Text-To-Image Generation of Dual Subjects",
+      "original_name": "Shortcut learning"
+    },
+    {
+      "text": "The model's tendency to use superficial or statistically common but causally unrelated patterns in the training data to make predictions, rather than learning the intended underlying task features.",
+      "paper": "KG-Agent: An Efficient Autonomous Agent Framework for Complex Reasoning over Knowledge Graph",
+      "original_name": "Reliance on spurious correlations"
+    },
+    {
+      "text": "The model's propensity to learn and encode spurious patterns that appear correlated with the objective within a specific mini-batch, even if they are globally irrelevant.",
+      "paper": "Watch Out Your Album! On the Inadvertent Privacy Memorization in Multi-Modal Large Language Models",
+      "original_name": "Spurious correlation capture"
+    },
+    {
+      "text": "The latent ability to identify non-causal, dataset-specific patterns that appear predictive but do not reflect true semantic relationships.",
+      "paper": "Are Sparse Autoencoders Useful? A Case Study in Sparse Probing",
+      "original_name": "Spurious correlation detection"
+    },
+    {
+      "text": "The tendency of a foundation model to develop narrow, non-generalizable strategies for specific tasks rather than learning a unified, interpretable world model, leading to poor extrapolation under distribution shift.",
+      "paper": "What Has a Foundation Model Found? Using Inductive Bias to Probe for World Models",
+      "original_name": "Task-specific heuristics"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "PoisonedParrot: Subtle Data Poisoning Attacks to Elicit Copyright-Infringing Content from Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "PoisonedParrot: Subtle Data Poisoning Attacks to Elicit Copyright-Infringing Content from Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Robustness",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "PoisonedParrot: Subtle Data Poisoning Attacks to Elicit Copyright-Infringing Content from Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "PoisonedParrot: Subtle Data Poisoning Attacks to Elicit Copyright-Infringing Content from Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 2,
+  "characterization": "Across the surveyed literature, shortcut learning is most commonly defined as a model's tendency to rely on spurious correlations between input features and labels that are prevalent in training data but irrelevant to the intended task. Alternative framings describe this as developing narrow, \"task-specific heuristics that fail to generalize\" or simply as a \"reliance on spurious correlations.\" This behavior is often attributed to training objectives like Empirical Risk Minimization (ERM), which, as one paper notes, \"incentivizes models to exploit shortcuts\" (The MaleCEOand the Female Assistant...). Another study points to a more specific mechanism, suggesting models \"are likely to capture spurious correlations in mini-batches\" (Watch Out Your Album! On the Inadvertent Privacy Memorization in Multi-Modal Large Language Models). A recurring theme is that shortcut learning leads to negative outcomes, with the most frequently cited consequence being poor generalization on minority or out-of-distribution examples. As a construct, it is operationalized by observing this performance drop, such as when \"apparent task proficiency may stem from shortcut learning rather than genuine understanding\" on controlled evaluations (Core Knowledge Deficits in Multi-Modal Language Models). The provided data also indicates that shortcut learning is reported to causally affect both Generalization and Safety. While most papers focus on the model's propensity to learn these correlations, one study introduces the concept of \"spurious correlation detection\" as a latent ability to identify such patterns.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "KG-Agent: An Efficient Autonomous Agent Framework for Complex Reasoning over Knowledge Graph",
+      "Predicting Implicit Arguments in Procedural Video Instructions",
+      "Revisiting Scaling Laws for Language Models: The Role of Data Quality and Training Strategies",
+      "The MaleCEOand the Female Assistant: Evaluation and Mitigation of Gender Biases in Text-To-Image Generation of Dual Subjects"
+    ],
+    "icml25": [
+      "Are Sparse Autoencoders Useful? A Case Study in Sparse Probing",
+      "Core Knowledge Deficits in Multi-Modal Language Models",
+      "SCISSOR: Mitigating Semantic Bias through Cluster-Aware Siamese Networks for Robust Classification",
+      "Watch Out Your Album! On the Inadvertent Privacy Memorization in Multi-Modal Large Language Models",
+      "What Has a Foundation Model Found? Using Inductive Bias to Probe for World Models"
+    ],
+    "emnlp25": [
+      "Measuring and Mitigating Media Outlet Name Bias in Large Language Models",
+      "X-FLoRA: Cross-modal Federated Learning with Modality-expertLoRAfor MedicalVQA"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 4,
+    "icml25": 5,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "icml25"
+  ]
+}

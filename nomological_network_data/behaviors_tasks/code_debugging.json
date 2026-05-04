@@ -1,0 +1,524 @@
+{
+  "canonical_name": "Code debugging",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, code debugging is most commonly described as the behavior of identifying and fixing errors in code, a process also referred to as \"bug fixing\" or \"code repair.\" While this dual action is the prevailing framing, a smaller line of work isolates these as distinct sub-tasks, such as \"error localization\" or \"program repair.\" Other definitions are more specific, focusing on interactive modification based on runtime feedback or resolving system-level issues like kernel crashes. This behavior is operationalized and measured using a range of benchmarks, including InfiniteBench, CodeXGLUE, LiveCodeBench, Codeforces, APPS, and Defects4J. A recurring element in its operationalization is the use of feedback, where a model is given an \"exception message or a failing test case\" to guide its correction, a process often called \"self-repair\" or \"self-debugging\" (\"LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code\"). The behavior is studied alongside related concepts like iterative refinement, self-reflection, and code generation. Some research suggests that code debugging performance is influenced by factors such as in-context learning and model scalability.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Code debugging",
+    "Code defect detection",
+    "Bug fixing",
+    "Code repair",
+    "Debugging",
+    "Self-repair",
+    "First error step identification",
+    "Self-debugging",
+    "Automatic debugging",
+    "Runtime debugging",
+    "Bug identification",
+    "Error correction",
+    "Crash resolution",
+    "Program repair",
+    "Data science code debugging",
+    "Code refinement",
+    "Code correction",
+    "Code repair capability"
+  ],
+  "papers": [
+    "2025.emnlp-main.878.checklist",
+    "Can Large Language Models Win the International Mathematical Games?",
+    "MMLU-ProX: A Multilingual Benchmark for Advanced Large Language Model Evaluation",
+    "MrGuard: A Multilingual Reasoning Guardrail for UniversalLLMSafety",
+    "PlanGEN: A Multi-Agent Framework for Generating Planning and Reasoning Trajectories for Complex Problem Solving",
+    "SUE: Sparsity-based Uncertainty Estimation via Sparse Dictionary Learning",
+    "SynC-LLM: Generation of Large-Scale Synthetic Circuit Code with Hierarchical Language Models",
+    "Tree-of-Quote Prompting Improves Factuality and Attribution in Multi-Hop and Medical Reasoning",
+    "Weight-Aware Activation Sparsity with ConstrainedBayesian Optimization Scheduling for Large Language Models",
+    "Is Self-Repair a Silver Bullet for Code Generation?",
+    "OctoPack: Instruction Tuning Code Large Language Models",
+    "Automated Proof Generation for Rust Code via Self-Evolution",
+    "CodeMMLU: A Multi-Task Benchmark for Assessing Code Understanding & Reasoning Capabilities of CodeLLMs",
+    "CraftRTL: High-quality Synthetic Data Generation for Verilog Code Models with Correct-by-Construction Non-Textual Representations and Targeted Code Repair",
+    "DRoC: Elevating Large Language Models for Complex Vehicle Routing via Decomposed Retrieval of Constraints",
+    "DSBench: How Far Are Data Science Agents from Becoming Data Science Experts?",
+    "FlexPrefill: A Context-Aware Sparse Attention Mechanism for Efficient Long-Sequence Inference",
+    "Law of the Weakest Link: Cross Capabilities of Large Language Models",
+    "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code",
+    "MLE-bench: Evaluating Machine Learning Agents on Machine Learning Engineering",
+    "MR-GSM8K: A Meta-Reasoning Benchmark for Large Language Model Evaluation",
+    "ObscuraCoder: Powering Efficient Code LM Pre-Training Via Obfuscation Grounding",
+    "OmniKV: Dynamic Context Selection for Efficient Long-Context LLMs",
+    "OpenHands: An Open Platform for AI Software Developers as Generalist Agents",
+    "RepoGraph: Enhancing AI Software Engineering with Repository-level Code Graph",
+    "SWE-bench Multimodal: Do AI Systems Generalize to Visual Software Domains?",
+    "SuperCorrect: Advancing Small LLM Reasoning with Thought Template Distillation and Self-Correction",
+    "Training Language Models to Self-Correct via Reinforcement Learning",
+    "What Makes Large Language Models Reason in (Multi-Turn) Code Generation?",
+    "Why Does the Effective Context Length of LLMs Fall Short?",
+    "WildBench: Benchmarking LLMs with Challenging Tasks from Real Users in the Wild",
+    "A Mathematical Framework for AI-Human Integration in Work",
+    "AutoML-Agent: A Multi-Agent LLM Framework for Full-Pipeline AutoML",
+    "BanditSpec: Adaptive Speculative Decoding via Bandit Algorithms",
+    "CommVQ: Commutative Vector Quantization for KV Cache Compression",
+    "Nemotron-CORTEXA: Enhancing LLM Agents for Software Engineering Tasks via Improved Localization and Solution Diversity",
+    "NextCoder: Robust Adaptation of Code LMs to Diverse Code Edits",
+    "PINNsAgent: Automated PDE Surrogation with Large Language Models",
+    "Position: Scaling LLM Agents Requires Asymptotic Analysis with LLM Primitives",
+    "SWE-Lancer: Can Frontier LLMs Earn $1 Million from Real-World Freelance Software Engineering?",
+    "Star Attention: Efficient LLM Inference over Long Sequences",
+    "Analyze Feature Flow to Enhance Interpretation and Steering in Language Models",
+    "AuPair: Golden Example Pairs for Code Repair",
+    "Improving Retrospective Language Agents via Joint Policy Gradient Optimization",
+    "TurkingBench: A Challenge Benchmark for Web Agents",
+    "Assessing the State of the Art in Scene Segmentation",
+    "ProSE: Diffusion Priors for Speech Enhancement",
+    "Reinforcing LLM Agents via Policy Optimization with Action Decomposition",
+    "Trace is the Next AutoDiff: Generative Optimization with Rich Feedback, Execution Traces, and LLMs",
+    "A Full-duplex Speech Dialogue Scheme Based On Large Language Model",
+    "Can LLMs Learn by Teaching for Better Reasoning? A Preliminary Study",
+    "Generating Code World Models with Large Language Models Guided by Monte Carlo Tree Search",
+    "Hints-In-Browser: Benchmarking Language Models for Programming Feedback Generation",
+    "IaC-Eval: A Code Generation Benchmark for Cloud Infrastructure-as-Code Programs",
+    "Learning to Edit Visual Programs with Self-Supervision",
+    "MR-Ben: A Meta-Reasoning Benchmark for Evaluating System-2 Thinking in LLMs",
+    "SemCoder: Training Code Language Models with Comprehensive Semantics Reasoning",
+    "StackEval: Benchmarking LLMs in Coding Assistance",
+    "Understanding Information Storage and Transfer in Multi-Modal Large Language Models",
+    "kGym: A Platform and Dataset to Benchmark Large Language Models on Linux Kernel Crash Resolution"
+  ],
+  "paper_count": 60,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The process of interactively modifying and correcting code based on feedback from a runtime environment to resolve errors and achieve successful execution.",
+      "paper": "Reinforcing LLM Agents via Policy Optimization with Action Decomposition",
+      "original_name": "Code debugging"
+    },
+    {
+      "text": "The observable task of identifying and fixing errors in a provided code snippet to make it correct.",
+      "paper": "CodeMMLU: A Multi-Task Benchmark for Assessing Code Understanding & Reasoning Capabilities of CodeLLMs",
+      "original_name": "Code repair"
+    },
+    {
+      "text": "The observable task of identifying and correcting errors or unintended behaviors in a software codebase based on a problem description.",
+      "paper": "SWE-bench Multimodal: Do AI Systems Generalize to Visual Software Domains?",
+      "original_name": "Bug fixing"
+    },
+    {
+      "text": "The observable action of identifying and indicating the specific step in a reasoning chain that contains a flaw or error.",
+      "paper": "SuperCorrect: Advancing Small LLM Reasoning with Thought Template Distillation and Self-Correction",
+      "original_name": "Error localization"
+    },
+    {
+      "text": "The task of identifying whether a given code snippet contains bugs, vulnerabilities, or other defects.",
+      "paper": "ObscuraCoder: Powering Efficient Code LM Pre-Training Via Obfuscation Grounding",
+      "original_name": "Code defect detection"
+    },
+    {
+      "text": "The task of identifying and fixing errors in existing computer code.",
+      "paper": "WildBench: Benchmarking LLMs with Challenging Tasks from Real Users in the Wild",
+      "original_name": "Debugging"
+    },
+    {
+      "text": "The observable task of fixing an incorrect program after being provided with error feedback, such as an exception message or a failing test case.",
+      "paper": "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code",
+      "original_name": "Self-repair"
+    },
+    {
+      "text": "The observable sub-task of identifying the specific initial step in a flawed reasoning process where the logic first deviates from a correct path.",
+      "paper": "MR-GSM8K: A Meta-Reasoning Benchmark for Large Language Model Evaluation",
+      "original_name": "First error step identification"
+    },
+    {
+      "text": "The observable process where a model identifies errors in its own generated code or reasoning and attempts to correct them.",
+      "paper": "DSBench: How Far Are Data Science Agents from Becoming Data Science Experts?",
+      "original_name": "Self-debugging"
+    },
+    {
+      "text": "The task of inferring the state of a program, such as the value of a variable at a specific line, given only partial code.",
+      "paper": "A Mathematical Framework for AI-Human Integration in Work",
+      "original_name": "Automatic debugging"
+    },
+    {
+      "text": "Diagnosing and fixing issues that arise during code execution.",
+      "paper": "AutoML-Agent: A Multi-Agent LLM Framework for Full-Pipeline AutoML",
+      "original_name": "Runtime debugging"
+    },
+    {
+      "text": "The action of locating and describing a flaw or error within a piece of code.",
+      "paper": "Position: Scaling LLM Agents Requires Asymptotic Analysis with LLM Primitives",
+      "original_name": "Bug identification"
+    },
+    {
+      "text": "The observable task of generating a revised version of an incorrect reasoning step to rectify the identified error.",
+      "paper": "MR-Ben: A Meta-Reasoning Benchmark for Evaluating System-2 Thinking in LLMs",
+      "original_name": "Error correction"
+    },
+    {
+      "text": "Editing the kernel so that the reproducer no longer causes a crash within the allotted execution window.",
+      "paper": "kGym: A Platform and Dataset to Benchmark Large Language Models on Linux Kernel Crash Resolution",
+      "original_name": "Crash resolution"
+    },
+    {
+      "text": "Generating a repaired version of a buggy program with minimal edits that preserves the original context and style.",
+      "paper": "Hints-In-Browser: Benchmarking Language Models for Programming Feedback Generation",
+      "original_name": "Program repair"
+    },
+    {
+      "text": "The task of identifying, localizing, and explaining logical runtime errors within Python scripts that use data science libraries.",
+      "paper": "SynC-LLM: Generation of Large-Scale Synthetic Circuit Code with Hierarchical Language Models",
+      "original_name": "Data science code debugging"
+    },
+    {
+      "text": "Enhancing code readability and style by adding docstrings, comments, and standardizing conventions without changing functionality.",
+      "paper": "Tree-of-Quote Prompting Improves Factuality and Attribution in Multi-Hop and Medical Reasoning",
+      "original_name": "Code refinement"
+    },
+    {
+      "text": "The observable process of identifying an error in a generated code snippet and producing a revised version of the code to fix the error.",
+      "paper": "MrGuard: A Multilingual Reasoning Guardrail for UniversalLLMSafety",
+      "original_name": "Code correction"
+    },
+    {
+      "text": "The latent ability of an LLM to identify and correct errors in its own generated code, improving functional correctness without external fine-tuning.",
+      "paper": "AuPair: Golden Example Pairs for Code Repair",
+      "original_name": "Code repair capability"
+    }
+  ],
+  "definition_count": 19,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "InfiniteBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "FlexPrefill: A Context-Aware Sparse Attention Mechanism for Efficient Long-Sequence Inference",
+      "evidence": "\"Table 2 shows that our method preserves most of the model\u2019s performance in retrieval and QA tasks, while maintaining efficacy in complex mathematical and coding tasks.\"",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr25": [
+          "FlexPrefill: A Context-Aware Sparse Attention Mechanism for Efficient Long-Sequence Inference",
+          "Why Does the Effective Context Length of LLMs Fall Short?"
+        ],
+        "icml25": [
+          "CommVQ: Commutative Vector Quantization for KV Cache Compression"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Critique",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Is Self-Repair a Silver Bullet for Code Generation?",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr24": [
+          "Is Self-Repair a Silver Bullet for Code Generation?"
+        ],
+        "emnlp25": [
+          "Weight-Aware Activation Sparsity with ConstrainedBayesian Optimization Scheduling for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CodeXGLUE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "ObscuraCoder: Powering Efficient Code LM Pre-Training Via Obfuscation Grounding",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "ObscuraCoder: Powering Efficient Code LM Pre-Training Via Obfuscation Grounding"
+        ],
+        "acl25": [
+          "YESciEval: RobustLLM-as-a-Judge for Scientific Question Answering"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Codeforces",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "AuPair: Golden Example Pairs for Code Repair",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "icml25": [
+          "AuPair: Golden Example Pairs for Code Repair"
+        ],
+        "emnlp25": [
+          "MMLU-ProX: A Multilingual Benchmark for Advanced Large Language Model Evaluation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Feedback generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Is Self-Repair a Silver Bullet for Code Generation?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Is Self-Repair a Silver Bullet for Code Generation?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Explanation generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Hints-In-Browser: Benchmarking Language Models for Programming Feedback Generation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Hints-In-Browser: Benchmarking Language Models for Programming Feedback Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Coding",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Law of the Weakest Link: Cross Capabilities of Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Law of the Weakest Link: Cross Capabilities of Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MR-GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MR-GSM8K: A Meta-Reasoning Benchmark for Large Language Model Evaluation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "MR-GSM8K: A Meta-Reasoning Benchmark for Large Language Model Evaluation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Assessing the State of the Art in Scene Segmentation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Assessing the State of the Art in Scene Segmentation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-context learning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "AuPair: Golden Example Pairs for Code Repair",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "AuPair: Golden Example Pairs for Code Repair"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Scalability",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "AuPair: Golden Example Pairs for Code Repair",
+      "evidence": "Our algorithm yields a significant boost in performance compared to best-of-N and self-repair, and also exhibits strong generalisation across datasets and models. Moreover, our approach shows stronger scaling with inference-time compute budget compared to baselines.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "AuPair: Golden Example Pairs for Code Repair"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LiveCodeBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "AuPair: Golden Example Pairs for Code Repair",
+      "evidence": "We use 7 datasets that contain problems and test cases from competitive programming contests: 1) CodeForces (8.8k problems), 2) AtCoder (1.3k problems), 3) HackerEarth (1.2k problems), 4) CodeChef (768 problems), 5) LiveCodeBench (400 problems), 6) CodeJam (180 problems), and 7) Aizu (2.2k problems) (Li et al., 2022b; Jain et al., 2024).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "AuPair: Golden Example Pairs for Code Repair"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "AuPair: Golden Example Pairs for Code Repair",
+      "evidence": "\"Our algorithm yields a significant boost in performance compared to best-of-N and self-repair, and also exhibits strong generalisation across datasets and models.\"",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "AuPair: Golden Example Pairs for Code Repair"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Textual reasoning",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "MMLU-ProX: A Multilingual Benchmark for Advanced Large Language Model Evaluation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "MMLU-ProX: A Multilingual Benchmark for Advanced Large Language Model Evaluation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "APPS",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MMLU-ProX: A Multilingual Benchmark for Advanced Large Language Model Evaluation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "MMLU-ProX: A Multilingual Benchmark for Advanced Large Language Model Evaluation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Defects4J",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "SUE: Sparsity-based Uncertainty Estimation via Sparse Dictionary Learning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "SUE: Sparsity-based Uncertainty Estimation via Sparse Dictionary Learning"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 16,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 13,
+  "characterization": "Across the provided literature, code debugging is most commonly described as the behavior of identifying and fixing errors in code, a process also referred to as \"bug fixing\" or \"code repair.\" While this dual action is the prevailing framing, a smaller line of work isolates these as distinct sub-tasks, such as \"error localization\" or \"program repair.\" Other definitions are more specific, focusing on interactive modification based on runtime feedback or resolving system-level issues like kernel crashes. This behavior is operationalized and measured using a range of benchmarks, including InfiniteBench, CodeXGLUE, LiveCodeBench, Codeforces, APPS, and Defects4J. A recurring element in its operationalization is the use of feedback, where a model is given an \"exception message or a failing test case\" to guide its correction, a process often called \"self-repair\" or \"self-debugging\" (\"LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code\"). The behavior is studied alongside related concepts like iterative refinement, self-reflection, and code generation. Some research suggests that code debugging performance is influenced by factors such as in-context learning and model scalability.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "Reinforcing LLM Agents via Policy Optimization with Action Decomposition",
+      "Trace is the Next AutoDiff: Generative Optimization with Rich Feedback, Execution Traces, and LLMs",
+      "A Full-duplex Speech Dialogue Scheme Based On Large Language Model",
+      "Can LLMs Learn by Teaching for Better Reasoning? A Preliminary Study",
+      "Generating Code World Models with Large Language Models Guided by Monte Carlo Tree Search",
+      "Hints-In-Browser: Benchmarking Language Models for Programming Feedback Generation",
+      "IaC-Eval: A Code Generation Benchmark for Cloud Infrastructure-as-Code Programs",
+      "Learning to Edit Visual Programs with Self-Supervision",
+      "MR-Ben: A Meta-Reasoning Benchmark for Evaluating System-2 Thinking in LLMs",
+      "SemCoder: Training Code Language Models with Comprehensive Semantics Reasoning",
+      "StackEval: Benchmarking LLMs in Coding Assistance",
+      "Understanding Information Storage and Transfer in Multi-Modal Large Language Models",
+      "kGym: A Platform and Dataset to Benchmark Large Language Models on Linux Kernel Crash Resolution"
+    ],
+    "iclr25": [
+      "Automated Proof Generation for Rust Code via Self-Evolution",
+      "CodeMMLU: A Multi-Task Benchmark for Assessing Code Understanding & Reasoning Capabilities of CodeLLMs",
+      "CraftRTL: High-quality Synthetic Data Generation for Verilog Code Models with Correct-by-Construction Non-Textual Representations and Targeted Code Repair",
+      "DRoC: Elevating Large Language Models for Complex Vehicle Routing via Decomposed Retrieval of Constraints",
+      "DSBench: How Far Are Data Science Agents from Becoming Data Science Experts?",
+      "FlexPrefill: A Context-Aware Sparse Attention Mechanism for Efficient Long-Sequence Inference",
+      "Law of the Weakest Link: Cross Capabilities of Large Language Models",
+      "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code",
+      "MLE-bench: Evaluating Machine Learning Agents on Machine Learning Engineering",
+      "MR-GSM8K: A Meta-Reasoning Benchmark for Large Language Model Evaluation",
+      "ObscuraCoder: Powering Efficient Code LM Pre-Training Via Obfuscation Grounding",
+      "OmniKV: Dynamic Context Selection for Efficient Long-Context LLMs",
+      "OpenHands: An Open Platform for AI Software Developers as Generalist Agents",
+      "RepoGraph: Enhancing AI Software Engineering with Repository-level Code Graph",
+      "SWE-bench Multimodal: Do AI Systems Generalize to Visual Software Domains?",
+      "SuperCorrect: Advancing Small LLM Reasoning with Thought Template Distillation and Self-Correction",
+      "Training Language Models to Self-Correct via Reinforcement Learning",
+      "What Makes Large Language Models Reason in (Multi-Turn) Code Generation?",
+      "Why Does the Effective Context Length of LLMs Fall Short?",
+      "WildBench: Benchmarking LLMs with Challenging Tasks from Real Users in the Wild"
+    ],
+    "naacl25": [
+      "Improving Retrospective Language Agents via Joint Policy Gradient Optimization",
+      "TurkingBench: A Challenge Benchmark for Web Agents",
+      "Assessing the State of the Art in Scene Segmentation",
+      "ProSE: Diffusion Priors for Speech Enhancement"
+    ],
+    "icml25": [
+      "A Mathematical Framework for AI-Human Integration in Work",
+      "AutoML-Agent: A Multi-Agent LLM Framework for Full-Pipeline AutoML",
+      "BanditSpec: Adaptive Speculative Decoding via Bandit Algorithms",
+      "CommVQ: Commutative Vector Quantization for KV Cache Compression",
+      "Nemotron-CORTEXA: Enhancing LLM Agents for Software Engineering Tasks via Improved Localization and Solution Diversity",
+      "NextCoder: Robust Adaptation of Code LMs to Diverse Code Edits",
+      "PINNsAgent: Automated PDE Surrogation with Large Language Models",
+      "Position: Scaling LLM Agents Requires Asymptotic Analysis with LLM Primitives",
+      "SWE-Lancer: Can Frontier LLMs Earn $1 Million from Real-World Freelance Software Engineering?",
+      "Star Attention: Efficient LLM Inference over Long Sequences",
+      "Analyze Feature Flow to Enhance Interpretation and Steering in Language Models",
+      "AuPair: Golden Example Pairs for Code Repair"
+    ],
+    "iclr24": [
+      "Is Self-Repair a Silver Bullet for Code Generation?",
+      "OctoPack: Instruction Tuning Code Large Language Models"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.878.checklist",
+      "Can Large Language Models Win the International Mathematical Games?",
+      "MMLU-ProX: A Multilingual Benchmark for Advanced Large Language Model Evaluation",
+      "MrGuard: A Multilingual Reasoning Guardrail for UniversalLLMSafety",
+      "PlanGEN: A Multi-Agent Framework for Generating Planning and Reasoning Trajectories for Complex Problem Solving",
+      "SUE: Sparsity-based Uncertainty Estimation via Sparse Dictionary Learning",
+      "SynC-LLM: Generation of Large-Scale Synthetic Circuit Code with Hierarchical Language Models",
+      "Tree-of-Quote Prompting Improves Factuality and Attribution in Multi-Hop and Medical Reasoning",
+      "Weight-Aware Activation Sparsity with ConstrainedBayesian Optimization Scheduling for Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 13,
+    "iclr25": 20,
+    "naacl25": 4,
+    "icml25": 12,
+    "iclr24": 2,
+    "emnlp25": 9
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "canonical_name": "Subj",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, Subj is consistently used as a benchmark to measure a model's ability to perform subjectivity classification. The task is operationalized as a binary classification problem, requiring models to distinguish between subjective and objective sentences. Papers frequently position Subj as a tool for evaluating general natural language understanding (NLU) and text classification, often alongside other benchmarks like TREC and CB. The provided definitions describe its application in specific contexts, such as for the in-context evaluation of fine-tuned models and for assessing NLU in a low-data regime. While most descriptions are general, one definition cluster specifies that the dataset consists of movie reviews. For instance, one study reports using the benchmark to measure the \"Test accuracy (%) on SUBJ using an instruct-fine-tuned GPT-J 6B\" (Amortizing intractable inference in large language models).",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "SUBJ",
+    "Subj"
+  ],
+  "papers": [
+    "Amortizing intractable inference in large language models",
+    "Connecting Large Language Models with Evolutionary Algorithms Yields Powerful Prompt Optimizers",
+    "EMO: EARTH MOVER DISTANCE OPTIMIZATION FOR AUTO-REGRESSIVE LANGUAGE MODELING",
+    "PromptAgent: Strategic Planning with Language Models Enables Expert-level Prompt Optimization",
+    "Adaptive Transformer Programs: Bridging the Gap Between Performance and Interpretability in Transformers",
+    "Implicit In-context Learning",
+    "Large (Vision) Language Models are Unsupervised In-Context Learners",
+    "Evolving Prompts In-Context: An Open-ended, Self-replicating Perspective",
+    "Large Language Models are Demonstration Pre-Selectors for Themselves"
+  ],
+  "paper_count": 9,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A subjectivity classification benchmark used for in-context evaluation of fine-tuned models.",
+      "paper": "Connecting Large Language Models with Evolutionary Algorithms Yields Powerful Prompt Optimizers",
+      "original_name": "Subj"
+    },
+    {
+      "text": "A binary classification dataset of movie reviews, labeled as objective or subjective, used to evaluate natural language understanding in a low-data regime.",
+      "paper": "Amortizing intractable inference in large language models",
+      "original_name": "SUBJ"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text classification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "DETAIL: Task DEmonsTration Attribution for Interpretable In-context Learning",
+      "evidence": "text classification using TREC, MR, Subj, and AG News datasets (Voorhees & Tice, 2000; Pang & Lee, 2004; 2005; Zhang et al., 2015). (Section 4.1)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "DETAIL: Task DEmonsTration Attribution for Interpretable In-context Learning"
+        ],
+        "iclr25": [
+          "Adaptive Transformer Programs: Bridging the Gap Between Performance and Interpretability in Transformers"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Subjectivity classification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Amortizing intractable inference in large language models",
+      "evidence": "\u201c3 general NLU tasks, including TREC (Voorhees & Tice, 2000), Subj (Pang & Lee, 2004), and CB (De Marneffe et al., 2019)\u201d",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Amortizing intractable inference in large language models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, Subj is consistently used as a benchmark to measure a model's ability to perform subjectivity classification. The task is operationalized as a binary classification problem, requiring models to distinguish between subjective and objective sentences. Papers frequently position Subj as a tool for evaluating general natural language understanding (NLU) and text classification, often alongside other benchmarks like TREC and CB. The provided definitions describe its application in specific contexts, such as for the in-context evaluation of fine-tuned models and for assessing NLU in a low-data regime. While most descriptions are general, one definition cluster specifies that the dataset consists of movie reviews. For instance, one study reports using the benchmark to measure the \"Test accuracy (%) on SUBJ using an instruct-fine-tuned GPT-J 6B\" (Amortizing intractable inference in large language models).",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Amortizing intractable inference in large language models",
+      "Connecting Large Language Models with Evolutionary Algorithms Yields Powerful Prompt Optimizers",
+      "EMO: EARTH MOVER DISTANCE OPTIMIZATION FOR AUTO-REGRESSIVE LANGUAGE MODELING",
+      "PromptAgent: Strategic Planning with Language Models Enables Expert-level Prompt Optimization"
+    ],
+    "iclr25": [
+      "Adaptive Transformer Programs: Bridging the Gap Between Performance and Interpretability in Transformers",
+      "Implicit In-context Learning",
+      "Large (Vision) Language Models are Unsupervised In-Context Learners"
+    ],
+    "icml25": [
+      "Evolving Prompts In-Context: An Open-ended, Self-replicating Perspective",
+      "Large Language Models are Demonstration Pre-Selectors for Themselves"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 4,
+    "iclr25": 3,
+    "icml25": 2
+  },
+  "conferences": [
+    "iclr24",
+    "iclr25",
+    "icml25"
+  ]
+}

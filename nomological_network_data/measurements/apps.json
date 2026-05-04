@@ -1,0 +1,203 @@
+{
+  "canonical_name": "APPS",
+  "type": "measurement",
+  "canonical_definition": "Across the surveyed literature, APPS is consistently described as a benchmark for evaluating code generation systems, with its full name cited as both \"Algorithmic Programming Problems\" and \"Automated Programming Progress Standard\". The benchmark is composed of 10,000 programming problems, typically split evenly between training and test sets, which are presented as natural language descriptions and paired with test cases to assess the functional correctness of generated code. A recurring feature noted in the data is its structure of tiered difficulty, with problems categorized as introductory, interview, and competition level. The primary and most widely documented application of APPS is to measure the behavior of code generation, and it is frequently used alongside other benchmarks like HumanEval and CodeContests. Evaluation is commonly operationalized through metrics such as pass@k, which measures success against hidden unit tests. While its use for code generation is prevalent, a few papers also identify APPS as a tool for measuring code debugging, self-reflection, faithfulness, and few-shot prompting.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "APPS",
+    "APPs"
+  ],
+  "papers": [
+    "A Unified Agentic Framework for Evaluating Conditional Image Generation",
+    "MPVStance: Mitigating Hallucinations in Stance Detection with Multi-Perspective Verification",
+    "Quantifying Semantic Emergence in Language Models",
+    "ReinforcedIR: A Self-Boosting Framework For Domain-Adapted Information Retrieval",
+    "SpeechFake: A Large-Scale Multilingual Speech Deepfake Dataset Incorporating Cutting-Edge Generation Methods",
+    "A Rigorous Evaluation ofLLMData Generation Strategies for Low-Resource Languages",
+    "MMLU-ProX: A Multilingual Benchmark for Advanced Large Language Model Evaluation",
+    "ToDi: Token-wise Distillation via Fine-Grained Divergence Control",
+    "$\\mathcal{B}$-Coder: Value-Based Deep Reinforcement Learning for Program Synthesis",
+    "CodeChain: Towards Modular Code Generation Through Chain of Self-revisions with Representative Sub-modules",
+    "Is Self-Repair a Silver Bullet for Code Generation?",
+    "LLM-Assisted Code Cleaning For Training Accurate Code Generators",
+    "Active Task Disambiguation with LLMs",
+    "Adaptive Deployment of Untrusted LLMs Reduces Distributed Threats",
+    "B-STaR: Monitoring and Balancing Exploration and Exploitation in Self-Taught Reasoners",
+    "Copyright-Protected Language Generation via Adaptive Model Fusion",
+    "DeFT: Decoding with Flash Tree-attention for Efficient Tree-structured LLM Inference",
+    "Language Models Learn to Mislead Humans via RLHF",
+    "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code",
+    "MA-RLHF: Reinforcement Learning from Human Feedback with Macro Actions",
+    "Neural Interactive Proofs",
+    "On Speeding Up Language Model Evaluation",
+    "Preference Optimization for Reasoning with Pseudo Feedback",
+    "SFS: Smarter Code Space Search improves LLM Inference Scaling",
+    "Position: Future Research and Challenges Remain Towards AI for Software Engineering",
+    "The Elicitation Game: Evaluating Capability Elicitation Techniques"
+  ],
+  "paper_count": 26,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Algorithmic Programming Problems benchmark containing natural language problem descriptions and test cases for evaluating code generation systems.",
+      "paper": "$\\mathcal{B}$-Coder: Value-Based Deep Reinforcement Learning for Program Synthesis",
+      "original_name": "APPS"
+    },
+    {
+      "text": "A programming benchmark used to evaluate code generation across problems of varying difficulty.",
+      "paper": "Preference Optimization for Reasoning with Pseudo Feedback",
+      "original_name": "APPs"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Easy-to-Hard Generalization: Scalable Alignment Beyond Human Supervision",
+      "evidence": "",
+      "paper_count": 10,
+      "papers_by_conference": {
+        "neurips24": [
+          "Easy-to-Hard Generalization: Scalable Alignment Beyond Human Supervision",
+          "Generating Code World Models with Large Language Models Guided by Monte Carlo Tree Search",
+          "Stress-Testing Capability Elicitation With Password-Locked Models"
+        ],
+        "iclr25": [
+          "DeFT: Decoding with Flash Tree-attention for Efficient Tree-structured LLM Inference",
+          "Preference Optimization for Reasoning with Pseudo Feedback",
+          "MA-RLHF: Reinforcement Learning from Human Feedback with Macro Actions"
+        ],
+        "naacl25": [
+          "TurkingBench: A Challenge Benchmark for Web Agents"
+        ],
+        "acl25": [
+          "MPVStance: Mitigating Hallucinations in Stance Detection with Multi-Perspective Verification"
+        ],
+        "icml25": [
+          "The Elicitation Game: Evaluating Capability Elicitation Techniques"
+        ],
+        "emnlp25": [
+          "ToDi: Token-wise Distillation via Fine-Grained Divergence Control"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "CodeChain: Towards Modular Code Generation Through Chain of Self-revisions with Representative Sub-modules",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "CodeChain: Towards Modular Code Generation Through Chain of Self-revisions with Representative Sub-modules"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Critique",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Is Self-Repair a Silver Bullet for Code Generation?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Is Self-Repair a Silver Bullet for Code Generation?"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Few-shot prompting",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "DeFT: Decoding with Flash Tree-attention for Efficient Tree-structured LLM Inference",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "DeFT: Decoding with Flash Tree-attention for Efficient Tree-structured LLM Inference"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code debugging",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "MMLU-ProX: A Multilingual Benchmark for Advanced Large Language Model Evaluation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "MMLU-ProX: A Multilingual Benchmark for Advanced Large Language Model Evaluation"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 5,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the surveyed literature, APPS is consistently described as a benchmark for evaluating code generation systems, with its full name cited as both \"Algorithmic Programming Problems\" and \"Automated Programming Progress Standard\". The benchmark is composed of 10,000 programming problems, typically split evenly between training and test sets, which are presented as natural language descriptions and paired with test cases to assess the functional correctness of generated code. A recurring feature noted in the data is its structure of tiered difficulty, with problems categorized as introductory, interview, and competition level. The primary and most widely documented application of APPS is to measure the behavior of code generation, and it is frequently used alongside other benchmarks like HumanEval and CodeContests. Evaluation is commonly operationalized through metrics such as pass@k, which measures success against hidden unit tests. While its use for code generation is prevalent, a few papers also identify APPS as a tool for measuring code debugging, self-reflection, faithfulness, and few-shot prompting.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "$\\mathcal{B}$-Coder: Value-Based Deep Reinforcement Learning for Program Synthesis",
+      "CodeChain: Towards Modular Code Generation Through Chain of Self-revisions with Representative Sub-modules",
+      "Is Self-Repair a Silver Bullet for Code Generation?",
+      "LLM-Assisted Code Cleaning For Training Accurate Code Generators"
+    ],
+    "iclr25": [
+      "Active Task Disambiguation with LLMs",
+      "Adaptive Deployment of Untrusted LLMs Reduces Distributed Threats",
+      "B-STaR: Monitoring and Balancing Exploration and Exploitation in Self-Taught Reasoners",
+      "Copyright-Protected Language Generation via Adaptive Model Fusion",
+      "DeFT: Decoding with Flash Tree-attention for Efficient Tree-structured LLM Inference",
+      "Language Models Learn to Mislead Humans via RLHF",
+      "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code",
+      "MA-RLHF: Reinforcement Learning from Human Feedback with Macro Actions",
+      "Neural Interactive Proofs",
+      "On Speeding Up Language Model Evaluation",
+      "Preference Optimization for Reasoning with Pseudo Feedback",
+      "SFS: Smarter Code Space Search improves LLM Inference Scaling"
+    ],
+    "acl25": [
+      "A Unified Agentic Framework for Evaluating Conditional Image Generation",
+      "MPVStance: Mitigating Hallucinations in Stance Detection with Multi-Perspective Verification",
+      "Quantifying Semantic Emergence in Language Models",
+      "ReinforcedIR: A Self-Boosting Framework For Domain-Adapted Information Retrieval",
+      "SpeechFake: A Large-Scale Multilingual Speech Deepfake Dataset Incorporating Cutting-Edge Generation Methods"
+    ],
+    "icml25": [
+      "Position: Future Research and Challenges Remain Towards AI for Software Engineering",
+      "The Elicitation Game: Evaluating Capability Elicitation Techniques"
+    ],
+    "emnlp25": [
+      "A Rigorous Evaluation ofLLMData Generation Strategies for Low-Resource Languages",
+      "MMLU-ProX: A Multilingual Benchmark for Advanced Large Language Model Evaluation",
+      "ToDi: Token-wise Distillation via Fine-Grained Divergence Control"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 4,
+    "iclr25": 12,
+    "acl25": 5,
+    "icml25": 2,
+    "emnlp25": 3
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25"
+  ]
+}

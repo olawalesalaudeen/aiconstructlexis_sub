@@ -1,0 +1,295 @@
+{
+  "canonical_name": "Relevance",
+  "type": "construct",
+  "canonical_definition": "Across the provided literature, Relevance is predominantly framed as the degree to which a model's generated response is pertinent and on-topic with respect to a user's prompt, question, or task context. This is frequently described as the model's ability to stay focused, with one paper noting the ideal is when \"every piece of information [is] contributing to a comprehensive understanding of the topic\" (AutoSurvey: Large Language Models Can Automatically Write Surveys). While this on-topic framing is prevalent, a few papers offer more specific conceptualizations, such as \"Topic relevance\" for arguments in a debate or \"Contextual relevance\" for retrieved information beyond surface similarity. One study also defines it mathematically as a balance between two other metrics, akin to an F-score. The field operationalizes and measures this construct most commonly through human and automated judgment. A frequent approach is using \"LLM-as-a-judge,\" where models like GPT-4 are prompted to rate responses on a numerical scale for their relevance. Similarly, human evaluation is widely employed, with annotators assessing whether a response \"directly addresses the question.\" A smaller set of studies uses automated metrics, such as BERTScore to measure if a summary captures key information or CLIP Score to quantify text-image correspondence. Relevance is often studied as a dimension of instruction-following and is evaluated alongside other attributes like coherence, fluency, and accuracy.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Relevance",
+    "Relation",
+    "Contextual relevance",
+    "Topic relevance"
+  ],
+  "papers": [
+    "BoostingLLM\u2019s Molecular Structure Elucidation with Knowledge Enhanced Tree Search Reasoning",
+    "Capture the Key in Reasoning to EnhanceCoTDistillation Generalization",
+    "Delving into Multilingual Ethical Bias: TheMSQADwith Statistical Hypothesis Tests for Large Language Models",
+    "TROVE: A Challenge for Fine-Grained Text Provenance via Source Sentence Tracing and Relationship Classification",
+    "Personal Travel Solver: A Preference-DrivenLLM-Solver System for Travel Planning",
+    "T2I-FactualBench: Benchmarking the Factuality of Text-to-Image Models with Knowledge-Intensive Concepts",
+    "AIArgues Differently: Distinct Argumentative and Linguistic Patterns ofLLMs in Persuasive Contexts",
+    "Benchmarking and MitigatingMCQASelection Bias of Large Vision-Language Models",
+    "MemeArena: Automating Context-Aware Unbiased Evaluation of Harmfulness Understanding for Multimodal Large Language Models",
+    "Mining the Past with Dual Criteria: Integrating Three types of Historical Information for Context-aware Event Forecasting",
+    "Mixture of Length and Pruning Experts for Knowledge Graphs Reasoning",
+    "Power doesn\u2019t reside in size: A Low Parameter Hybrid Language Model (HLM) for Sentiment Analysis in Code-mixed data",
+    "Reading Between the Prompts: How Stereotypes ShapeLLM\u2019s Implicit Personalization",
+    "Reason to Rote: Rethinking Memorization in Reasoning",
+    "Rescorla-Wagner Steering ofLLMs for Undesired Behaviors over Disproportionate Inappropriate Context",
+    "SATBench: BenchmarkingLLMs\u2019 Logical Reasoning via Automated Puzzle Generation fromSATFormulas",
+    "Static or Dynamic: Towards Query-Adaptive Token Selection for Video Question Answering",
+    "Threading the Needle: Reweaving Chain-of-Thought Reasoning to Explain Human Label Variation",
+    "TinySQL: A Progressive Text-to-SQLDataset for Mechanistic Interpretability Research",
+    "VoiceCraft-X: Unifying Multilingual, Voice-Cloning Speech Synthesis and Speech Editing",
+    "BRSpeech-DF: A Deep Fake Synthetic Speech Dataset forPortuguese Zero-ShotTTS",
+    "MCIP: ProtectingMCPSafety via Model Contextual Integrity Protocol",
+    "Achieving Human Parity in Content-Grounded Datasets Generation",
+    "Compressing LLMs: The Truth is Rarely Pure and Never Simple",
+    "Human Feedback is not Gold Standard",
+    "Collab: Controlled Decoding using Mixture of Agents for LLM Alignment",
+    "MA-RLHF: Reinforcement Learning from Human Feedback with Macro Actions",
+    "A Unified Supervised and Unsupervised Dialogue Topic Segmentation Framework Based on Utterance Pair Modeling",
+    "ALERT: AnLLM-powered Benchmark for Automatic Evaluation of Recommendation Explanations",
+    "AnLLM-Based Approach for Insight Generation in Data Analysis",
+    "FiNE: Filtering and Improving Noisy Data Elaborately with Large Language Models",
+    "Is a Peeled Apple Still Red? EvaluatingLLMs\u2019 Ability for Conceptual Combination with Property Type",
+    "Query-focused Referentiability Learning for Zero-shot Retrieval",
+    "AutoSurvey: Large Language Models Can Automatically Write Surveys",
+    "Decoding-Time Language Model Alignment with Multiple Objectives",
+    "MediQ: Question-Asking LLMs and a Benchmark for Reliable Interactive Clinical Reasoning",
+    "Transfer Q-star : Principled Decoding for LLM Alignment"
+  ],
+  "paper_count": 37,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The degree to which a model's generated response is pertinent and on-topic with respect to the user's prompt or question.",
+      "paper": "Achieving Human Parity in Content-Grounded Datasets Generation",
+      "original_name": "Relevance"
+    },
+    {
+      "text": "The latent tendency of a model to produce contributions that are relevant to the shared task goal during human-model interaction.",
+      "paper": "Capture the Key in Reasoning to EnhanceCoTDistillation Generalization",
+      "original_name": "Relation"
+    },
+    {
+      "text": "The latent trait reflecting how well a retrieved chunk aligns with the broader context of the user's query and document structure, beyond surface-level semantic similarity.",
+      "paper": "MCIP: ProtectingMCPSafety via Model Contextual Integrity Protocol",
+      "original_name": "Contextual relevance"
+    },
+    {
+      "text": "The degree to which the model's arguments directly address and align with the core debate topic, avoiding digression or irrelevance.",
+      "paper": "T2I-FactualBench: Benchmarking the Factuality of Text-to-Image Models with Knowledge-Intensive Concepts",
+      "original_name": "Topic relevance"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-as-a-judge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Transfer Q-star : Principled Decoding for LLM Alignment",
+      "evidence": "We prompt GPT-4 to rate responses from various decoding strategies on relevance, accuracy, and insightfulness, scoring them from 1 to 10.",
+      "paper_count": 5,
+      "papers_by_conference": {
+        "neurips24": [
+          "Transfer Q-star : Principled Decoding for LLM Alignment"
+        ],
+        "iclr25": [
+          "Collab: Controlled Decoding using Mixture of Agents for LLM Alignment"
+        ],
+        "acl25": [
+          "TROVE: A Challenge for Fine-Grained Text Provenance via Source Sentence Tracing and Relationship Classification"
+        ],
+        "emnlp25": [
+          "MemeArena: Automating Context-Aware Unbiased Evaluation of Harmfulness Understanding for Multimodal Large Language Models",
+          "TinySQL: A Progressive Text-to-SQLDataset for Mechanistic Interpretability Research"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "A Unified Supervised and Unsupervised Dialogue Topic Segmentation Framework Based on Utterance Pair Modeling",
+      "evidence": "To further validate the effectiveness of our metrics, we performed a small-scale human evaluation, referencing existing studies (Fabbri et al., 2021). Specifically, six highly educated annotators evaluated the relevance of news summaries generated by five SLMs based on the original news articles (scored on a 1-5 scale, with higher scores indicating greater relevance).",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "naacl25": [
+          "A Unified Supervised and Unsupervised Dialogue Topic Segmentation Framework Based on Utterance Pair Modeling"
+        ],
+        "acl25": [
+          "BoostingLLM\u2019s Molecular Structure Elucidation with Knowledge Enhanced Tree Search Reasoning"
+        ],
+        "emnlp25": [
+          "TinySQL: A Progressive Text-to-SQLDataset for Mechanistic Interpretability Research"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "G-Eval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Threading the Needle: Reweaving Chain-of-Thought Reasoning to Explain Human Label Variation",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Threading the Needle: Reweaving Chain-of-Thought Reasoning to Explain Human Label Variation",
+          "Reading Between the Prompts: How Stereotypes ShapeLLM\u2019s Implicit Personalization"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Decoding-Time Language Model Alignment with Multiple Objectives",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Decoding-Time Language Model Alignment with Multiple Objectives"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction following",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "FiNE: Filtering and Improving Noisy Data Elaborately with Large Language Models",
+      "evidence": "Specifically, we define three fundamental dimensions of instruction-following: relevance, factuality, and adherence. (Section 1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "FiNE: Filtering and Improving Noisy Data Elaborately with Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BERTScore",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "A Unified Supervised and Unsupervised Dialogue Topic Segmentation Framework Based on Utterance Pair Modeling",
+      "evidence": "BertScore is a robust semantic similarity metric designed to assess the quality of the generated text and achieves the best correlation in Table 1. It compares the embeddings of candidate and reference sentences through contextualized word representations from BERT (Devlin et al., 2019). It can measure how well the summary captures key information (relevance) and maintains logical flow (coherence).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "A Unified Supervised and Unsupervised Dialogue Topic Segmentation Framework Based on Utterance Pair Modeling"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Consistency",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Delving into Multilingual Ethical Bias: TheMSQADwith Statistical Hypothesis Tests for Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Delving into Multilingual Ethical Bias: TheMSQADwith Statistical Hypothesis Tests for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reward hacking",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "The Energy Loss Phenomenon in RLHF: A New Perspective on Mitigating Reward Hacking",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "The Energy Loss Phenomenon in RLHF: A New Perspective on Mitigating Reward Hacking"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CLIP",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Rescorla-Wagner Steering ofLLMs for Undesired Behaviors over Disproportionate Inappropriate Context",
+      "evidence": "we employ CLIP (Radford et al., 2021) Score as the Relevance Score to quantify text-image correspondence. (Section 3.2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Rescorla-Wagner Steering ofLLMs for Undesired Behaviors over Disproportionate Inappropriate Context"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 9,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 6,
+  "characterization": "Across the provided literature, Relevance is predominantly framed as the degree to which a model's generated response is pertinent and on-topic with respect to a user's prompt, question, or task context. This is frequently described as the model's ability to stay focused, with one paper noting the ideal is when \"every piece of information [is] contributing to a comprehensive understanding of the topic\" (AutoSurvey: Large Language Models Can Automatically Write Surveys). While this on-topic framing is prevalent, a few papers offer more specific conceptualizations, such as \"Topic relevance\" for arguments in a debate or \"Contextual relevance\" for retrieved information beyond surface similarity. One study also defines it mathematically as a balance between two other metrics, akin to an F-score. The field operationalizes and measures this construct most commonly through human and automated judgment. A frequent approach is using \"LLM-as-a-judge,\" where models like GPT-4 are prompted to rate responses on a numerical scale for their relevance. Similarly, human evaluation is widely employed, with annotators assessing whether a response \"directly addresses the question.\" A smaller set of studies uses automated metrics, such as BERTScore to measure if a summary captures key information or CLIP Score to quantify text-image correspondence. Relevance is often studied as a dimension of instruction-following and is evaluated alongside other attributes like coherence, fluency, and accuracy.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Achieving Human Parity in Content-Grounded Datasets Generation",
+      "Compressing LLMs: The Truth is Rarely Pure and Never Simple",
+      "Human Feedback is not Gold Standard"
+    ],
+    "neurips24": [
+      "AutoSurvey: Large Language Models Can Automatically Write Surveys",
+      "Decoding-Time Language Model Alignment with Multiple Objectives",
+      "MediQ: Question-Asking LLMs and a Benchmark for Reliable Interactive Clinical Reasoning",
+      "Transfer Q-star : Principled Decoding for LLM Alignment"
+    ],
+    "iclr25": [
+      "Collab: Controlled Decoding using Mixture of Agents for LLM Alignment",
+      "MA-RLHF: Reinforcement Learning from Human Feedback with Macro Actions"
+    ],
+    "naacl25": [
+      "A Unified Supervised and Unsupervised Dialogue Topic Segmentation Framework Based on Utterance Pair Modeling",
+      "ALERT: AnLLM-powered Benchmark for Automatic Evaluation of Recommendation Explanations",
+      "AnLLM-Based Approach for Insight Generation in Data Analysis",
+      "FiNE: Filtering and Improving Noisy Data Elaborately with Large Language Models",
+      "Is a Peeled Apple Still Red? EvaluatingLLMs\u2019 Ability for Conceptual Combination with Property Type",
+      "Query-focused Referentiability Learning for Zero-shot Retrieval"
+    ],
+    "acl25": [
+      "BoostingLLM\u2019s Molecular Structure Elucidation with Knowledge Enhanced Tree Search Reasoning",
+      "Capture the Key in Reasoning to EnhanceCoTDistillation Generalization",
+      "Delving into Multilingual Ethical Bias: TheMSQADwith Statistical Hypothesis Tests for Large Language Models",
+      "TROVE: A Challenge for Fine-Grained Text Provenance via Source Sentence Tracing and Relationship Classification",
+      "Personal Travel Solver: A Preference-DrivenLLM-Solver System for Travel Planning",
+      "T2I-FactualBench: Benchmarking the Factuality of Text-to-Image Models with Knowledge-Intensive Concepts"
+    ],
+    "emnlp25": [
+      "AIArgues Differently: Distinct Argumentative and Linguistic Patterns ofLLMs in Persuasive Contexts",
+      "Benchmarking and MitigatingMCQASelection Bias of Large Vision-Language Models",
+      "MemeArena: Automating Context-Aware Unbiased Evaluation of Harmfulness Understanding for Multimodal Large Language Models",
+      "Mining the Past with Dual Criteria: Integrating Three types of Historical Information for Context-aware Event Forecasting",
+      "Mixture of Length and Pruning Experts for Knowledge Graphs Reasoning",
+      "Power doesn\u2019t reside in size: A Low Parameter Hybrid Language Model (HLM) for Sentiment Analysis in Code-mixed data",
+      "Reading Between the Prompts: How Stereotypes ShapeLLM\u2019s Implicit Personalization",
+      "Reason to Rote: Rethinking Memorization in Reasoning",
+      "Rescorla-Wagner Steering ofLLMs for Undesired Behaviors over Disproportionate Inappropriate Context",
+      "SATBench: BenchmarkingLLMs\u2019 Logical Reasoning via Automated Puzzle Generation fromSATFormulas",
+      "Static or Dynamic: Towards Query-Adaptive Token Selection for Video Question Answering",
+      "Threading the Needle: Reweaving Chain-of-Thought Reasoning to Explain Human Label Variation",
+      "TinySQL: A Progressive Text-to-SQLDataset for Mechanistic Interpretability Research",
+      "VoiceCraft-X: Unifying Multilingual, Voice-Cloning Speech Synthesis and Speech Editing",
+      "BRSpeech-DF: A Deep Fake Synthetic Speech Dataset forPortuguese Zero-ShotTTS",
+      "MCIP: ProtectingMCPSafety via Model Contextual Integrity Protocol"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 3,
+    "neurips24": 4,
+    "iclr25": 2,
+    "naacl25": 6,
+    "acl25": 6,
+    "emnlp25": 16
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "naacl25",
+    "neurips24"
+  ]
+}

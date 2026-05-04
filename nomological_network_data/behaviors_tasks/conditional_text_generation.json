@@ -1,0 +1,144 @@
+{
+  "canonical_name": "Conditional text generation",
+  "type": "behavior",
+  "canonical_definition": "Across the provided sources, conditional text generation is consistently defined as the behavior of producing fluent and coherent text completions based on given input contexts. This behavior is operationalized through several tasks, including text summarization, data-to-text generation, and text infilling, where the goal is to generate remaining tokens when some are provided in advance. To evaluate performance on this behavior, researchers use instruments such as the MAUVE and ParaDetox benchmarks, as well as datasets like WikiText-103, with one study specifically using its validation set. A recurring theme in the data is the connection between this behavior and model failure; one paper reports that conditional text generation by Large Language Models often causes hallucinations, where the output is unfaithful to the source context.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Conditional text generation"
+  ],
+  "papers": [
+    "Beyond Autoregression: Fast LLMs via Self-Distillation Through Time",
+    "Discrete Copula Diffusion",
+    "SCOPE: A Self-supervised Framework for Improving Faithfulness in Conditional Text Generation"
+  ],
+  "paper_count": 3,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Producing fluent and coherent text completions based on provided input contexts.",
+      "paper": "SCOPE: A Self-supervised Framework for Improving Faithfulness in Conditional Text Generation",
+      "original_name": "Conditional text generation"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "SCOPE: A Self-supervised Framework for Improving Faithfulness in Conditional Text Generation",
+      "evidence": "Large Language Models (LLMs), when used for conditional text generation, often produce hallucinations, i.e., information that is unfaithful or not grounded in the input context. (ABSTRACT)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "SCOPE: A Self-supervised Framework for Improving Faithfulness in Conditional Text Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Text summarization",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "SCOPE: A Self-supervised Framework for Improving Faithfulness in Conditional Text Generation",
+      "evidence": "This issue arises in typical conditional text generation tasks, such as text summarization and data-to-text generation, where the goal is to produce fluent text based on contextual input. (ABSTRACT)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "SCOPE: A Self-supervised Framework for Improving Faithfulness in Conditional Text Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Data-to-text generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "SCOPE: A Self-supervised Framework for Improving Faithfulness in Conditional Text Generation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "SCOPE: A Self-supervised Framework for Improving Faithfulness in Conditional Text Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MAUVE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Beyond Autoregression: Fast LLMs via Self-Distillation Through Time",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Beyond Autoregression: Fast LLMs via Self-Distillation Through Time"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WikiText-103",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Discrete Copula Diffusion",
+      "evidence": "For all methods, we use the same set of 2,000 text sequences from the validation set of WikiText-103 (Merity et al., 2022). (Section 6.2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Discrete Copula Diffusion"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Text infilling",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Discrete Copula Diffusion",
+      "evidence": "We now move on to conditional text generation, where certain tokens are provided in advance, and the task is to generate the remaining tokens. (Section 6.2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Discrete Copula Diffusion"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ParaDetox",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Judging Quality Across Languages: A Multilingual Approach to Pretraining Data Filtering with Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Judging Quality Across Languages: A Multilingual Approach to Pretraining Data Filtering with Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 7,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 7,
+  "characterization": "Across the provided sources, conditional text generation is consistently defined as the behavior of producing fluent and coherent text completions based on given input contexts. This behavior is operationalized through several tasks, including text summarization, data-to-text generation, and text infilling, where the goal is to generate remaining tokens when some are provided in advance. To evaluate performance on this behavior, researchers use instruments such as the MAUVE and ParaDetox benchmarks, as well as datasets like WikiText-103, with one study specifically using its validation set. A recurring theme in the data is the connection between this behavior and model failure; one paper reports that conditional text generation by Large Language Models often causes hallucinations, where the output is unfaithful to the source context.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Beyond Autoregression: Fast LLMs via Self-Distillation Through Time",
+      "Discrete Copula Diffusion",
+      "SCOPE: A Self-supervised Framework for Improving Faithfulness in Conditional Text Generation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3
+  },
+  "conferences": [
+    "iclr25"
+  ]
+}

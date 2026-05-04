@@ -1,0 +1,150 @@
+{
+  "canonical_name": "Masked language modeling",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, Masked language modeling (MLM) is predominantly characterized as a self-supervised pre-training objective for language models. The task is consistently defined as predicting original tokens at positions that have been randomly masked in an input sequence, with some definitions specifying the use of a special `[MASK]` symbol and bidirectional context. One paper notes a common implementation of \"masking 15% tokens for training\" (\"Get more for less: Principled Data Selection for Warming Up Fine-Tuning in LLMs\"). The primary stated purpose of this pre-training is to learn robust representations, and one paper suggests this task leads to language understanding. The downstream performance of models trained with this objective is evaluated using the GLUE benchmark. While its main application is pre-training, where it is often contrasted with \"next token prediction\", a smaller body of work applies MLM to other problems, such as reformulating relation extraction or computing loss on specific probe sentences. The behavior is also studied in relation to `Adaptability` and is considered a form of `Language modeling`.",
+  "expert_reviewed": false,
+  "expert_removed": true,
+  "expert_removed_reason": "method/engineering \u2014 not a construct/measurement/behavior of LLM ability",
+  "names": [
+    "Masked language modeling",
+    "Masked token prediction"
+  ],
+  "papers": [
+    "Enhancing Study-Level Inference from Clinical Trial Papers via Reinforcement Learning-Based Numeric Reasoning",
+    "OG-RAG: Ontology-grounded retrieval-augmented generation for large language models",
+    "The Sound of Syntax: Finetuning and Comprehensive Evaluation of Language Models for Speech Pathology",
+    "Which Word Orders Facilitate Length Generalization inLMs? An Investigation withGCG-Based Artificial Languages",
+    "Benchmarking Large Language Models Under Data Contamination: A Survey from Static to Dynamic Evaluation",
+    "Enhancing Efficiency and Exploration in Reinforcement Learning forLLMs",
+    "Order Doesn\u2019t Matter, But Reasoning Does: TrainingLLMs with Order-Centric Augmentation",
+    "A Multi-Level Framework for Accelerating Training Transformer Models",
+    "BayesPrompt: Prompting Large-Scale Pre-Trained Language Models on Few-shot Inference via Debiased Domain Abstraction",
+    "Fast-ELECTRA for Efficient Pre-training",
+    "Get more for less: Principled Data Selection for Warming Up Fine-Tuning in LLMs",
+    "Scaling Laws for Sparsely-Connected Foundation Models",
+    "CODE REPRESENTATION LEARNING AT SCALE",
+    "Representation Deficiency in Masked Language Modeling",
+    "LASER: Attention with Exponential Transformation",
+    "Scaling Laws for Differentially Private Language Models",
+    "Model Decides How to Tokenize: Adaptive DNA Sequence Tokenization with MxDNA",
+    "SLTrain: a sparse plus low rank approach for parameter and memory efficient pretraining"
+  ],
+  "paper_count": 18,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Predicting original tokens at masked positions in an input sequence.",
+      "paper": "A Multi-Level Framework for Accelerating Training Transformer Models",
+      "original_name": "Masked language modeling"
+    },
+    {
+      "text": "The observable pretraining task of predicting the original identity of a token that has been replaced by a special [MASK] symbol, based on its surrounding bidirectional context.",
+      "paper": "CODE REPRESENTATION LEARNING AT SCALE",
+      "original_name": "Masked token prediction"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Language understanding",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Representation Deficiency in Masked Language Modeling",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Representation Deficiency in Masked Language Modeling"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Adaptability",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Get more for less: Principled Data Selection for Warming Up Fine-Tuning in LLMs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Get more for less: Principled Data Selection for Warming Up Fine-Tuning in LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GLUE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Headless Language Models: Learning without Predicting with Contrastive Weight Tying",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Headless Language Models: Learning without Predicting with Contrastive Weight Tying"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language modeling",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Enhancing Efficiency and Exploration in Reinforcement Learning forLLMs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Enhancing Efficiency and Exploration in Reinforcement Learning forLLMs"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 2,
+  "characterization": "Across the surveyed literature, Masked language modeling (MLM) is predominantly characterized as a self-supervised pre-training objective for language models. The task is consistently defined as predicting original tokens at positions that have been randomly masked in an input sequence, with some definitions specifying the use of a special `[MASK]` symbol and bidirectional context. One paper notes a common implementation of \"masking 15% tokens for training\" (\"Get more for less: Principled Data Selection for Warming Up Fine-Tuning in LLMs\"). The primary stated purpose of this pre-training is to learn robust representations, and one paper suggests this task leads to language understanding. The downstream performance of models trained with this objective is evaluated using the GLUE benchmark. While its main application is pre-training, where it is often contrasted with \"next token prediction\", a smaller body of work applies MLM to other problems, such as reformulating relation extraction or computing loss on specific probe sentences. The behavior is also studied in relation to `Adaptability` and is considered a form of `Language modeling`.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "A Multi-Level Framework for Accelerating Training Transformer Models",
+      "BayesPrompt: Prompting Large-Scale Pre-Trained Language Models on Few-shot Inference via Debiased Domain Abstraction",
+      "Fast-ELECTRA for Efficient Pre-training",
+      "Get more for less: Principled Data Selection for Warming Up Fine-Tuning in LLMs",
+      "Scaling Laws for Sparsely-Connected Foundation Models",
+      "CODE REPRESENTATION LEARNING AT SCALE",
+      "Representation Deficiency in Masked Language Modeling"
+    ],
+    "neurips24": [
+      "Model Decides How to Tokenize: Adaptive DNA Sequence Tokenization with MxDNA",
+      "SLTrain: a sparse plus low rank approach for parameter and memory efficient pretraining"
+    ],
+    "icml25": [
+      "LASER: Attention with Exponential Transformation",
+      "Scaling Laws for Differentially Private Language Models"
+    ],
+    "emnlp25": [
+      "Enhancing Study-Level Inference from Clinical Trial Papers via Reinforcement Learning-Based Numeric Reasoning",
+      "OG-RAG: Ontology-grounded retrieval-augmented generation for large language models",
+      "The Sound of Syntax: Finetuning and Comprehensive Evaluation of Language Models for Speech Pathology",
+      "Which Word Orders Facilitate Length Generalization inLMs? An Investigation withGCG-Based Artificial Languages",
+      "Benchmarking Large Language Models Under Data Contamination: A Survey from Static to Dynamic Evaluation",
+      "Enhancing Efficiency and Exploration in Reinforcement Learning forLLMs",
+      "Order Doesn\u2019t Matter, But Reasoning Does: TrainingLLMs with Order-Centric Augmentation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 7,
+    "neurips24": 2,
+    "icml25": 2,
+    "emnlp25": 7
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "icml25",
+    "neurips24"
+  ]
+}

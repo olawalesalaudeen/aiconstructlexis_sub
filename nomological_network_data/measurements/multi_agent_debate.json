@@ -1,0 +1,100 @@
+{
+  "canonical_name": "Multi-Agent Debate",
+  "type": "measurement",
+  "canonical_definition": "Across the surveyed literature, Multi-Agent Debate is most commonly described as a collaborative evaluation setting or reasoning method where multiple language model agents interact to solve a problem. The typical process involves agents engaging in a multi-round dialogue, proposing individual reasoning, and exchanging arguments to reach a consensus answer. While most definitions emphasize collaboration, one paper frames it as a framework where a judge determines the final solution after agents present arguments and counterarguments (\"CFinBench: A ComprehensiveChinese Financial Benchmark for Large Language Models\"). This procedure is used for several purposes, including measuring team performance, promoting \"divergent thinking to overcome biases and rigid reasoning,\" and alleviating specific model failures. A smaller line of work treats it as a baseline protocol, referred to as \"Natural Language Debate,\" where agents iteratively refine responses by considering peers' outputs to serve as a comparison for other methods. To operationalize this evaluation, papers in this set apply the Multi-Agent Debate procedure to assess model performance on benchmarks such as GSM8k and MMLU.",
+  "expert_reviewed": false,
+  "expert_removed": true,
+  "expert_removed_reason": "method/engineering \u2014 not a construct/measurement/behavior of LLM ability",
+  "names": [
+    "Multi-Agent Debate",
+    "Multi-agent debate",
+    "Natural Language Debate"
+  ],
+  "papers": [
+    "NEXUS: Network Exploration for eXploiting Unsafe Sequences in Multi-TurnLLMJailbreaks",
+    "PLAN-TUNING: Post-Training Language Models to Learn Step-by-Step Planning for Complex Problem Solving",
+    "Communicating Activations Between Language Model Agents",
+    "From Debate to Equilibrium: Belief-Driven Multi-Agent LLM Reasoning via Bayesian Nash Equilibrium",
+    "CFinBench: A ComprehensiveChinese Financial Benchmark for Large Language Models",
+    "Faux Polyglot: A Study on Information Disparity in Multilingual Large Language Models"
+  ],
+  "paper_count": 6,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Framework where multiple agents debate a problem, presenting arguments and counterarguments, with a judge determining the final solution.",
+      "paper": "CFinBench: A ComprehensiveChinese Financial Benchmark for Large Language Models",
+      "original_name": "Multi-Agent Debate"
+    },
+    {
+      "text": "Collaborative evaluation setting where two models engage in a dialogue to answer a question, used to measure team performance and order dependence.",
+      "paper": "Automatically Discovering How Misogyny is Framed on Social Media",
+      "original_name": "Multi-agent debate"
+    },
+    {
+      "text": "Baseline protocol where multiple LLMs iteratively refine responses by considering peers' outputs in natural language, serving as a state-of-the-art comparison for activation communication.",
+      "paper": "Communicating Activations Between Language Model Agents",
+      "original_name": "Natural Language Debate"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8k",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Communicating Activations Between Language Model Agents",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Communicating Activations Between Language Model Agents"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Communicating Activations Between Language Model Agents",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Communicating Activations Between Language Model Agents"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 2,
+  "characterization": "Across the surveyed literature, Multi-Agent Debate is most commonly described as a collaborative evaluation setting or reasoning method where multiple language model agents interact to solve a problem. The typical process involves agents engaging in a multi-round dialogue, proposing individual reasoning, and exchanging arguments to reach a consensus answer. While most definitions emphasize collaboration, one paper frames it as a framework where a judge determines the final solution after agents present arguments and counterarguments (\"CFinBench: A ComprehensiveChinese Financial Benchmark for Large Language Models\"). This procedure is used for several purposes, including measuring team performance, promoting \"divergent thinking to overcome biases and rigid reasoning,\" and alleviating specific model failures. A smaller line of work treats it as a baseline protocol, referred to as \"Natural Language Debate,\" where agents iteratively refine responses by considering peers' outputs to serve as a comparison for other methods. To operationalize this evaluation, papers in this set apply the Multi-Agent Debate procedure to assess model performance on benchmarks such as GSM8k and MMLU.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "naacl25": [
+      "CFinBench: A ComprehensiveChinese Financial Benchmark for Large Language Models",
+      "Faux Polyglot: A Study on Information Disparity in Multilingual Large Language Models"
+    ],
+    "icml25": [
+      "Communicating Activations Between Language Model Agents",
+      "From Debate to Equilibrium: Belief-Driven Multi-Agent LLM Reasoning via Bayesian Nash Equilibrium"
+    ],
+    "emnlp25": [
+      "NEXUS: Network Exploration for eXploiting Unsafe Sequences in Multi-TurnLLMJailbreaks",
+      "PLAN-TUNING: Post-Training Language Models to Learn Step-by-Step Planning for Complex Problem Solving"
+    ]
+  },
+  "paper_count_by_conference": {
+    "naacl25": 2,
+    "icml25": 2,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "icml25",
+    "naacl25"
+  ]
+}

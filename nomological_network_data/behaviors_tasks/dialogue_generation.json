@@ -1,0 +1,236 @@
+{
+  "canonical_name": "Dialogue generation",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, dialogue generation is most commonly defined as the behavior of generating responses within a multi-turn conversational setting. A less frequent definition expands this to include single-turn interactions and explicitly adds the goal of balancing helpfulness and harmlessness. Operationally, the task is described as an agent receiving a \"snippet of conversation\" and predicting the \"next utterance,\" often in the context of an AI assistant or chatbot interacting with a human. The field measures this behavior using a wide array of benchmarks and datasets, including Anthropic HHH, MT-Bench, Anthropic HH (RLHF), Wizard-of-Wikipedia, Databricks Dolly-15k, UltraFeedback, and ConvAI2. Evaluation is also conducted using methods such as LLM-as-a-judge. The provided materials connect this behavior to the RLHF training pipeline and note that it is sometimes used as a task to evaluate the broader construct of generalization. A recurring concern mentioned in the context of this behavior is the presence of hallucinations in model outputs.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Dialogue generation",
+    "Dialogue response generation"
+  ],
+  "papers": [
+    "Diagram-Driven Course Questions Generation",
+    "In Benchmarks We Trust ... Or Not?",
+    "LGA:LLM-GNNAggregation for Temporal Evolution Attribute Graph Prediction",
+    "MERMAID: Multi-perspective Self-reflective Agents with Generative Augmentation for Emotion Recognition",
+    "PBI-Attack: Prior-Guided Bimodal Interactive Black-Box Jailbreak Attack for Toxicity Maximization",
+    "PerspectiveMod: A Perspectivist Resource for Deliberative Moderation",
+    "Reinforcement Learning for Large Language Models via Group Preference Reward Shaping",
+    "SteeringLLMReasoning Through Bias-Only Adaptation",
+    "Extractive Fact Decomposition for Interpretable Natural Language Inference in one Forward Pass",
+    "Probabilistic Soundness Guarantees inLLMReasoning Chains",
+    "Chain of Hindsight aligns Language Models with Feedback",
+    "Confronting Reward Model Overoptimization with Constrained RLHF",
+    "Improving Generalization of Alignment with Human Preferences through Group Invariant Learning",
+    "Language Model Detectors Are Easily Optimized Against",
+    "Model Merging by Uncertainty-Based Gradient Matching",
+    "Statistical Rejection Sampling Improves Preference Optimization",
+    "An Emulator for Fine-tuning Large Language Models using Small Language Models",
+    "ChatEval: Towards Better LLM-based Evaluators through Multi-Agent Debate",
+    "Flat-LoRA: Low-Rank Adaptation over a Flat Loss Landscape",
+    "Make LoRA Great Again: Boosting LoRA with Adaptive Singular Values and Mixture-of-Experts Optimization Alignment",
+    "Towards Cost-Effective Reward Guided Text Generation"
+  ],
+  "paper_count": 21,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Generating responses in a multi-turn conversational setting.",
+      "paper": "Chain of Hindsight aligns Language Models with Feedback",
+      "original_name": "Dialogue generation"
+    },
+    {
+      "text": "Producing conversational responses in multi-turn or single-turn dialogue settings that address user queries while balancing helpfulness and harmlessness.",
+      "paper": "An Emulator for Fine-tuning Large Language Models using Small Language Models",
+      "original_name": "Dialogue response generation"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Anthropic HHH",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "SimPER: A Minimalist Approach to Preference  Alignment without Hyperparameters",
+      "evidence": "",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "iclr25": [
+          "SimPER: A Minimalist Approach to Preference  Alignment without Hyperparameters",
+          "MA-RLHF: Reinforcement Learning from Human Feedback with Macro Actions"
+        ],
+        "naacl25": [
+          "On the Impact of Fine-Tuning on Chain-of-Thought Reasoning"
+        ],
+        "acl25": [
+          "AgentRM: Enhancing Agent Generalization with Reward Modeling"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MT-Bench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LoRA-Pro: Are Low-Rank Adapters Properly Optimized?",
+      "evidence": "We evaluate its performance on dialogue (Zheng et al., 2023), math (Cobbe et al., 2021) and coding (Chen et al., 2021) following Wang et al. (2024d)",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr25": [
+          "LoRA-Pro: Are Low-Rank Adapters Properly Optimized?"
+        ],
+        "icml25": [
+          "Make LoRA Great Again: Boosting LoRA with Adaptive Singular Values and Mixture-of-Experts Optimization Alignment",
+          "Flat-LoRA: Low-Rank Adaptation over a Flat Loss Landscape"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Anthropic HH (RLHF)",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Chain of Hindsight aligns Language Models with Feedback",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr24": [
+          "Chain of Hindsight aligns Language Models with Feedback"
+        ],
+        "iclr25": [
+          "MallowsPO: Fine-Tune Your LLM with Preference Dispersions"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Wizard-of-Wikipedia",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Model Merging by Uncertainty-Based Gradient Matching",
+      "evidence": "train a dialogue model on Wizard-of-Wikipedia (Dinan et al., 2019) which we then train further on synthetic data containing hallucinations",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Model Merging by Uncertainty-Based Gradient Matching"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Improving Generalization of Alignment with Human Preferences through Group Invariant Learning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Improving Generalization of Alignment with Human Preferences through Group Invariant Learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-as-a-judge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Cal-DPO: Calibrated Direct Preference Optimization for Language Model Alignment",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Cal-DPO: Calibrated Direct Preference Optimization for Language Model Alignment"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Databricks Dolly-15k",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Beyond Interpretability: The Gains of Feature Monosemanticity on Model Robustness",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Beyond Interpretability: The Gains of Feature Monosemanticity on Model Robustness"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "UltraFeedback",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MallowsPO: Fine-Tune Your LLM with Preference Dispersions",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "MallowsPO: Fine-Tune Your LLM with Preference Dispersions"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ConvAI2",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "HiRA: Parameter-Efficient Hadamard High-Rank Adaptation for Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "HiRA: Parameter-Efficient Hadamard High-Rank Adaptation for Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 9,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 8,
+  "characterization": "Across the provided literature, dialogue generation is most commonly defined as the behavior of generating responses within a multi-turn conversational setting. A less frequent definition expands this to include single-turn interactions and explicitly adds the goal of balancing helpfulness and harmlessness. Operationally, the task is described as an agent receiving a \"snippet of conversation\" and predicting the \"next utterance,\" often in the context of an AI assistant or chatbot interacting with a human. The field measures this behavior using a wide array of benchmarks and datasets, including Anthropic HHH, MT-Bench, Anthropic HH (RLHF), Wizard-of-Wikipedia, Databricks Dolly-15k, UltraFeedback, and ConvAI2. Evaluation is also conducted using methods such as LLM-as-a-judge. The provided materials connect this behavior to the RLHF training pipeline and note that it is sometimes used as a task to evaluate the broader construct of generalization. A recurring concern mentioned in the context of this behavior is the presence of hallucinations in model outputs.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Chain of Hindsight aligns Language Models with Feedback",
+      "Confronting Reward Model Overoptimization with Constrained RLHF",
+      "Improving Generalization of Alignment with Human Preferences through Group Invariant Learning",
+      "Language Model Detectors Are Easily Optimized Against",
+      "Model Merging by Uncertainty-Based Gradient Matching",
+      "Statistical Rejection Sampling Improves Preference Optimization",
+      "An Emulator for Fine-tuning Large Language Models using Small Language Models",
+      "ChatEval: Towards Better LLM-based Evaluators through Multi-Agent Debate"
+    ],
+    "icml25": [
+      "Flat-LoRA: Low-Rank Adaptation over a Flat Loss Landscape",
+      "Make LoRA Great Again: Boosting LoRA with Adaptive Singular Values and Mixture-of-Experts Optimization Alignment",
+      "Towards Cost-Effective Reward Guided Text Generation"
+    ],
+    "emnlp25": [
+      "Diagram-Driven Course Questions Generation",
+      "In Benchmarks We Trust ... Or Not?",
+      "LGA:LLM-GNNAggregation for Temporal Evolution Attribute Graph Prediction",
+      "MERMAID: Multi-perspective Self-reflective Agents with Generative Augmentation for Emotion Recognition",
+      "PBI-Attack: Prior-Guided Bimodal Interactive Black-Box Jailbreak Attack for Toxicity Maximization",
+      "PerspectiveMod: A Perspectivist Resource for Deliberative Moderation",
+      "Reinforcement Learning for Large Language Models via Group Preference Reward Shaping",
+      "SteeringLLMReasoning Through Bias-Only Adaptation",
+      "Extractive Fact Decomposition for Interpretable Natural Language Inference in one Forward Pass",
+      "Probabilistic Soundness Guarantees inLLMReasoning Chains"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 8,
+    "icml25": 3,
+    "emnlp25": 10
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "icml25"
+  ]
+}

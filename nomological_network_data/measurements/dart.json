@@ -1,0 +1,80 @@
+{
+  "canonical_name": "DART",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, DART is consistently characterized as a dataset or benchmark for evaluating language models on generation tasks. It is explicitly used to measure both `Text generation` and, more specifically, `Data-to-text generation`. The core task is described with slight variations in terminology, including 'struct-to-text' and 'graph-to-text', but the prevailing usage involves converting structured data into natural language. The input data is specified as structured information such as 'RDF triples', 'tables', or 'knowledge graphs'. The required output is a textual summary, with one paper describing the task as generating a description in 'one or two sentences'. The dataset is noted to be large, containing 82,191 examples, and open-domain. While most sources frame the task as generating text from data, one recurring definition also refers to it as a dataset for 'text-to-data generation'. In experimental contexts, DART is sometimes used alongside other benchmarks like WebNLG17 and WebNLG20.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "DART"
+  ],
+  "papers": [
+    "Mixture of LoRA Experts",
+    "NOLA: Compressing LoRA using Linear Combination of Random Basis",
+    "DAWN-ICL: Strategic Planning of Problem-solving Trajectories for Zero-Shot In-Context Learning",
+    "QAVA: Query-Agnostic Visual Attack to Large Vision-Language Models"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A dataset for text-to-data generation, containing 82,191 examples from various domains to evaluate structured data-to-text tasks.",
+      "paper": "Mixture of LoRA Experts",
+      "original_name": "DART"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "NOLA: Compressing LoRA using Linear Combination of Random Basis",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "NOLA: Compressing LoRA using Linear Combination of Random Basis"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Data-to-text generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Parameter-Efficient Fine-Tuning of State Space Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Parameter-Efficient Fine-Tuning of State Space Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, DART is consistently characterized as a dataset or benchmark for evaluating language models on generation tasks. It is explicitly used to measure both `Text generation` and, more specifically, `Data-to-text generation`. The core task is described with slight variations in terminology, including 'struct-to-text' and 'graph-to-text', but the prevailing usage involves converting structured data into natural language. The input data is specified as structured information such as 'RDF triples', 'tables', or 'knowledge graphs'. The required output is a textual summary, with one paper describing the task as generating a description in 'one or two sentences'. The dataset is noted to be large, containing 82,191 examples, and open-domain. While most sources frame the task as generating text from data, one recurring definition also refers to it as a dataset for 'text-to-data generation'. In experimental contexts, DART is sometimes used alongside other benchmarks like WebNLG17 and WebNLG20.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Mixture of LoRA Experts",
+      "NOLA: Compressing LoRA using Linear Combination of Random Basis"
+    ],
+    "naacl25": [
+      "DAWN-ICL: Strategic Planning of Problem-solving Trajectories for Zero-Shot In-Context Learning",
+      "QAVA: Query-Agnostic Visual Attack to Large Vision-Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "naacl25": 2
+  },
+  "conferences": [
+    "iclr24",
+    "naacl25"
+  ]
+}

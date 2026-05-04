@@ -1,0 +1,166 @@
+{
+  "canonical_name": "MSVD-QA",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, MSVD-QA is consistently characterized as a benchmark for measuring video question answering and the related construct of video understanding. The prevailing usage, as reflected in multiple definitions and relationship evidence, is to assess a model's ability to answer questions about video content. Several sources specify that it is an \"open-ended\" task that requires models to generate accurate natural language responses. It is frequently employed for zero-shot evaluation, with one definition describing it as a \"benchmark used for zero-shot video understanding evaluation.\" In practice, MSVD-QA is almost always used as part of a larger suite of evaluation tools, commonly appearing alongside MSRVTT-QA, ActivityNet-QA, and TGIF-QA. While the dominant framing connects it to video-specific tasks, a single paper also situates it within the broader category of visual question answering. The benchmark is also identified as being based on the Microsoft Video Description dataset.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "MSVD-QA",
+    "MSVDQA"
+  ],
+  "papers": [
+    "Demystifying Synthetic Data inLLMPre-training: A Systematic Study of Scaling Laws, Benefits, and Pitfalls",
+    "Facilitating Cognitive Accessibility withLLMs: A Multi-Task Approach to Easy-to-Read Text Generation",
+    "Mapping the Minds ofLLMs: A Graph-Based Analysis of ReasoningLLMs",
+    "SoundMind:RL-Incentivized Logic Reasoning for Audio-Language Models",
+    "Syntax-Aware Retrieval Augmentation for Neural Symbolic Regression",
+    "Unstructured Evidence Attribution for Long Context Query Focused Summarization",
+    "Emu: Generative Pretraining in Multimodality",
+    "Making LLaMA SEE and Draw with SEED Tokenizer",
+    "Aligned Better, Listen Better for Audio-Visual Large Language Models",
+    "AuroraCap: Efficient, Performant Video Detailed Captioning and a New Benchmark",
+    "LLaVA-Mini: Efficient Image and Video Large Multimodal Models with One Vision Token",
+    "Matryoshka Multimodal Models",
+    "Streaming Video Understanding and Multi-round Interaction with Memory-enhanced Knowledge",
+    "Teaching Human Behavior Improves Content Understanding Abilities Of VLMs",
+    "Video-STaR: Self-Training Enables Video Instruction Tuning with Any Supervision",
+    "$\\mathcalVista\\mathcalDPO$: Video Hierarchical Spatial-Temporal Direct Preference Optimization for Large Video Models",
+    "CoreMatching: A Co-adaptive Sparse Inference Framework with Token and Neuron Pruning for Comprehensive Acceleration of Vision-Language Models",
+    "Divide and Conquer: Exploring Language-centric Tree Reasoning for Video Question-Answering",
+    "SparseVLM: Visual Token Sparsification for Efficient Vision-Language Model Inference",
+    "Unifying Specialized Visual Encoders for Video Language Models"
+  ],
+  "paper_count": 20,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A video question-answering benchmark used for zero-shot video understanding evaluation.",
+      "paper": "Aligned Better, Listen Better for Audio-Visual Large Language Models",
+      "original_name": "MSVD-QA"
+    },
+    {
+      "text": "MSVD-QA benchmark used to assess answering questions about video content.",
+      "paper": "Emu: Generative Pretraining in Multimodality",
+      "original_name": "MSVDQA"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Video question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Emu: Generative Pretraining in Multimodality",
+      "evidence": "We evaluate AURORACAP on MSVD-QA (Xu et al., 2017), ActivityNet-QA (Yu et al., 2019), MSRVTT-QA (Xu et al., 2017), and iVQA (Yang et al., 2021) for video question answering tasks as shown in Table 4. (Section 2.3)",
+      "paper_count": 10,
+      "papers_by_conference": {
+        "iclr24": [
+          "Emu: Generative Pretraining in Multimodality"
+        ],
+        "neurips24": [
+          "FlexCap: Describe Anything in Images in Controllable Detail",
+          "Dense Connector for MLLMs",
+          "Artemis:  Towards Referential Understanding in Complex Videos"
+        ],
+        "iclr25": [
+          "Video-STaR: Self-Training Enables Video Instruction Tuning with Any Supervision"
+        ],
+        "naacl25": [
+          "On Behalf of the Stakeholders: Trends inNLPModel Interpretability in the Era ofLLMs"
+        ],
+        "icml25": [
+          "SparseVLM: Visual Token Sparsification for Efficient Vision-Language Model Inference",
+          "$\\mathcalVista\\mathcalDPO$: Video Hierarchical Spatial-Temporal Direct Preference Optimization for Large Video Models"
+        ],
+        "emnlp25": [
+          "SoundMind:RL-Incentivized Logic Reasoning for Audio-Language Models",
+          "Demystifying Synthetic Data inLLMPre-training: A Systematic Study of Scaling Laws, Benefits, and Pitfalls"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Video understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Dense Connector for MLLMs",
+      "evidence": "Specifically, we showcased Dolphin\u2019s comparison with various methods on MSR-VTT-QA, MSVD-QA, and ActivityNet-QA benchmarks. (Section 5.2)",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "neurips24": [
+          "Dense Connector for MLLMs"
+        ],
+        "iclr25": [
+          "LLaVA-Mini: Efficient Image and Video Large Multimodal Models with One Vision Token",
+          "Matryoshka Multimodal Models"
+        ],
+        "icml25": [
+          "Unifying Specialized Visual Encoders for Video Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Teaching Human Behavior Improves Content Understanding Abilities Of VLMs",
+      "evidence": "Visual Question Answering (VQA): We evaluate the performance of visual question answering on the following benchmark datasets:... We also use MSVD-QA",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Teaching Human Behavior Improves Content Understanding Abilities Of VLMs"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, MSVD-QA is consistently characterized as a benchmark for measuring video question answering and the related construct of video understanding. The prevailing usage, as reflected in multiple definitions and relationship evidence, is to assess a model's ability to answer questions about video content. Several sources specify that it is an \"open-ended\" task that requires models to generate accurate natural language responses. It is frequently employed for zero-shot evaluation, with one definition describing it as a \"benchmark used for zero-shot video understanding evaluation.\" In practice, MSVD-QA is almost always used as part of a larger suite of evaluation tools, commonly appearing alongside MSRVTT-QA, ActivityNet-QA, and TGIF-QA. While the dominant framing connects it to video-specific tasks, a single paper also situates it within the broader category of visual question answering. The benchmark is also identified as being based on the Microsoft Video Description dataset.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Aligned Better, Listen Better for Audio-Visual Large Language Models",
+      "AuroraCap: Efficient, Performant Video Detailed Captioning and a New Benchmark",
+      "LLaVA-Mini: Efficient Image and Video Large Multimodal Models with One Vision Token",
+      "Matryoshka Multimodal Models",
+      "Streaming Video Understanding and Multi-round Interaction with Memory-enhanced Knowledge",
+      "Teaching Human Behavior Improves Content Understanding Abilities Of VLMs",
+      "Video-STaR: Self-Training Enables Video Instruction Tuning with Any Supervision"
+    ],
+    "icml25": [
+      "$\\mathcalVista\\mathcalDPO$: Video Hierarchical Spatial-Temporal Direct Preference Optimization for Large Video Models",
+      "CoreMatching: A Co-adaptive Sparse Inference Framework with Token and Neuron Pruning for Comprehensive Acceleration of Vision-Language Models",
+      "Divide and Conquer: Exploring Language-centric Tree Reasoning for Video Question-Answering",
+      "SparseVLM: Visual Token Sparsification for Efficient Vision-Language Model Inference",
+      "Unifying Specialized Visual Encoders for Video Language Models"
+    ],
+    "emnlp25": [
+      "Demystifying Synthetic Data inLLMPre-training: A Systematic Study of Scaling Laws, Benefits, and Pitfalls",
+      "Facilitating Cognitive Accessibility withLLMs: A Multi-Task Approach to Easy-to-Read Text Generation",
+      "Mapping the Minds ofLLMs: A Graph-Based Analysis of ReasoningLLMs",
+      "SoundMind:RL-Incentivized Logic Reasoning for Audio-Language Models",
+      "Syntax-Aware Retrieval Augmentation for Neural Symbolic Regression",
+      "Unstructured Evidence Attribution for Long Context Query Focused Summarization"
+    ],
+    "iclr24": [
+      "Emu: Generative Pretraining in Multimodality",
+      "Making LLaMA SEE and Draw with SEED Tokenizer"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 7,
+    "icml25": 5,
+    "emnlp25": 6,
+    "iclr24": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25"
+  ]
+}

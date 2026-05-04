@@ -1,0 +1,163 @@
+{
+  "canonical_name": "Utility preservation",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, utility preservation is a construct referring to a model's ability to maintain its general performance and core capabilities after undergoing a targeted intervention. While the core idea is consistent, its specific framing varies by context, appearing as 'utility preservation' in machine unlearning, 'capability preservation' in alignment and steering, 'model performance preservation' in pruning, and 'text quality preservation' in watermarking. The prevailing goal described across these applications is to ensure that modifications\u2014such as removing data, aligning for safety, or editing knowledge\u2014do not degrade the model's performance on general, downstream tasks or data not intended for the intervention. The field operationalizes this construct using a variety of measurement instruments, with papers reporting the use of general-purpose benchmarks like GLUE and metrics like perplexity. More specialized evaluations are also employed, such as the MUSE benchmark, which explicitly measures performance on a 'retain set' using a knowledge memorization metric. One paper on alignment suggests that a small KL divergence between the modified and original models implies that capabilities are preserved. Utility preservation is sometimes presented in a tradeoff with other goals; for instance, one paper on model steering notes a 'tradeoff between model control and capabilities preservation'. It is also used as a dependent measure to evaluate other properties, such as the scalability of unlearning algorithms.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Utility preservation",
+    "General capability preservation",
+    "Model performance preservation",
+    "Capabilities preservation",
+    "Capability preservation"
+  ],
+  "papers": [
+    "Catastrophic Failure of LLM Unlearning via Quantization",
+    "MUSE: Machine Unlearning Six-Way Evaluation for Language Models",
+    "On Large Language Model Continual Unlearning",
+    "AxBench: Steering LLMs? Even Simple Baselines Outperform Sparse Autoencoders",
+    "BiMark: Unbiased Multilayer Watermarking for Large Language Models",
+    "DLP: Dynamic Layerwise Pruning in Large Language Models",
+    "MELON: Provable Defense Against Indirect Prompt Injection Attacks in AI Agents",
+    "ProSec: Fortifying Code LLMs with Proactive Security Alignment",
+    "Reinforced Lifelong Editing for Language Models",
+    "Theoretical guarantees on the best-of-n alignment policy"
+  ],
+  "paper_count": 10,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The extent to which an unlearned model maintains its general performance on data not intended for removal.",
+      "paper": "MUSE: Machine Unlearning Six-Way Evaluation for Language Models",
+      "original_name": "Utility preservation"
+    },
+    {
+      "text": "The extent to which an aligned model retains the core abilities and knowledge of the original reference model from which it was derived.",
+      "paper": "Theoretical guarantees on the best-of-n alignment policy",
+      "original_name": "Capability preservation"
+    },
+    {
+      "text": "The ability of a pruned model to retain its original language modeling and downstream task performance despite high sparsity.",
+      "paper": "DLP: Dynamic Layerwise Pruning in Large Language Models",
+      "original_name": "Model performance preservation"
+    },
+    {
+      "text": "The degree to which a watermarking method maintains the fluency, coherence, and functional utility of the original language model's output, such that downstream performance is not degraded.",
+      "paper": "BiMark: Unbiased Multilayer Watermarking for Large Language Models",
+      "original_name": "Text quality preservation"
+    },
+    {
+      "text": "The ability of a model editing method to maintain the LLM's performance on general downstream tasks while performing targeted knowledge updates.",
+      "paper": "Reinforced Lifelong Editing for Language Models",
+      "original_name": "General capability preservation"
+    },
+    {
+      "text": "The extent to which a steering intervention avoids degrading the model's underlying general abilities while controlling a target concept.",
+      "paper": "AxBench: Steering LLMs? Even Simple Baselines Outperform Sparse Autoencoders",
+      "original_name": "Capabilities preservation"
+    }
+  ],
+  "definition_count": 6,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MUSE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MUSE: Machine Unlearning Six-Way Evaluation for Language Models",
+      "evidence": "We address this issue by proposing MUSE, a comprehensive machine unlearning evaluation benchmark that enumerates six diverse desirable properties for unlearned models: (1) no verbatim memorization, (2) no knowledge memorization, (3) no privacy leakage, (4) utility preservation on data not intended for removal, (5) scalability with respect to the size of removal requests, and (6) sustainability over sequential unlearning requests. (Section 1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "MUSE: Machine Unlearning Six-Way Evaluation for Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Knowledge memorization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "MUSE: Machine Unlearning Six-Way Evaluation for Language Models",
+      "evidence": "To quantify this, we evaluate the unlearned model\u2019s performance on the retain set using the knowledge memorization metric KnowMem(funlearn, Dretain). (Section 3.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "MUSE: Machine Unlearning Six-Way Evaluation for Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Scalability",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "MUSE: Machine Unlearning Six-Way Evaluation for Language Models",
+      "evidence": "The performance of GA, NPO, and their regularized variants, measured by utility preservation, degrades with larger forget set sizes (a) and sequential unlearning requests (b). (Figure 6)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "MUSE: Machine Unlearning Six-Way Evaluation for Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge forgetting",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Communication Makes Perfect: Persuasion Dataset Construction via Multi-LLMCommunication",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Communication Makes Perfect: Persuasion Dataset Construction via Multi-LLMCommunication"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GLUE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Reinforced Lifelong Editing for Language Models",
+      "evidence": "For General Capability, we measure that using the average of six GLUE metrics in Section 4.5. (Figure 3 caption)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Reinforced Lifelong Editing for Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 3,
+  "characterization": "Across the surveyed literature, utility preservation is a construct referring to a model's ability to maintain its general performance and core capabilities after undergoing a targeted intervention. While the core idea is consistent, its specific framing varies by context, appearing as 'utility preservation' in machine unlearning, 'capability preservation' in alignment and steering, 'model performance preservation' in pruning, and 'text quality preservation' in watermarking. The prevailing goal described across these applications is to ensure that modifications\u2014such as removing data, aligning for safety, or editing knowledge\u2014do not degrade the model's performance on general, downstream tasks or data not intended for the intervention. The field operationalizes this construct using a variety of measurement instruments, with papers reporting the use of general-purpose benchmarks like GLUE and metrics like perplexity. More specialized evaluations are also employed, such as the MUSE benchmark, which explicitly measures performance on a 'retain set' using a knowledge memorization metric. One paper on alignment suggests that a small KL divergence between the modified and original models implies that capabilities are preserved. Utility preservation is sometimes presented in a tradeoff with other goals; for instance, one paper on model steering notes a 'tradeoff between model control and capabilities preservation'. It is also used as a dependent measure to evaluate other properties, such as the scalability of unlearning algorithms.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Catastrophic Failure of LLM Unlearning via Quantization",
+      "MUSE: Machine Unlearning Six-Way Evaluation for Language Models",
+      "On Large Language Model Continual Unlearning"
+    ],
+    "icml25": [
+      "AxBench: Steering LLMs? Even Simple Baselines Outperform Sparse Autoencoders",
+      "BiMark: Unbiased Multilayer Watermarking for Large Language Models",
+      "DLP: Dynamic Layerwise Pruning in Large Language Models",
+      "MELON: Provable Defense Against Indirect Prompt Injection Attacks in AI Agents",
+      "ProSec: Fortifying Code LLMs with Proactive Security Alignment",
+      "Reinforced Lifelong Editing for Language Models",
+      "Theoretical guarantees on the best-of-n alignment policy"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3,
+    "icml25": 7
+  },
+  "conferences": [
+    "iclr25",
+    "icml25"
+  ]
+}

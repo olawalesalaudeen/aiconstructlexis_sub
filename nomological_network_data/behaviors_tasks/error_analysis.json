@@ -1,0 +1,78 @@
+{
+  "canonical_name": "Error analysis",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, error analysis is a behavior with several distinct framings, most commonly involving the examination of discrepancies between expected and actual model outputs to identify failures. One prevalent usage applies this to code generation, where models \"comprehensively compare the execution results and logic differences between the two pieces of code\" to find bugs (\"Quantifying Semantic Emergence in Language Models\"). Another approach treats error analysis as a qualitative method for understanding model weaknesses by categorizing failure modes like hallucination and misunderstanding on benchmark instances (\"Seeing More, Saying More\"). A more specific variant, termed \"granular error diagnosis,\" focuses on diagnosing reasoning errors at the step level across multiple dimensions such as \"Simplicity, Soundness, and Sensitivity\" (\"AIMMerging...\"). This form of error analysis is operationalized and measured by the PRMBench benchmark. A different application frames the behavior as classifying \"learners\u2019 missteps\" to generate corrective guidance, such as clarifying grammatical rules or providing remediation exercises (\"Structured Preference Optimization for Vision-Language Long-Horizon Task Planning\").",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Error analysis",
+    "Granular error diagnosis"
+  ],
+  "papers": [
+    "A Unified Agentic Framework for Evaluating Conditional Image Generation",
+    "Quantifying Semantic Emergence in Language Models",
+    "AIMMerging: Adaptive Iterative Model Merging Using Training Trajectories for Language Model Continual Learning",
+    "Is Cognition Consistent with Perception? Assessing and Mitigating Multimodal Knowledge Conflicts in Document Understanding",
+    "Structured Preference Optimization for Vision-Language Long-Horizon Task Planning",
+    "ChartMind: A Comprehensive Benchmark for Complex Real-world Multimodal Chart Question Answering",
+    "Seeing More, Saying More: Lightweight Language Experts are Dynamic Video Token Compressors"
+  ],
+  "paper_count": 7,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Examining discrepancies between expected and actual execution results to identify bugs or inefficiencies in code, often through comparison with alternative implementations.",
+      "paper": "Quantifying Semantic Emergence in Language Models",
+      "original_name": "Error analysis"
+    },
+    {
+      "text": "Diagnosing specific kinds of reasoning errors at the step level across multiple error dimensions.",
+      "paper": "AIMMerging: Adaptive Iterative Model Merging Using Training Trajectories for Language Model Continual Learning",
+      "original_name": "Granular error diagnosis"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PRMBENCH",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "AIMMerging: Adaptive Iterative Model Merging Using Training Trajectories for Language Model Continual Learning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "AIMMerging: Adaptive Iterative Model Merging Using Training Trajectories for Language Model Continual Learning"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the surveyed literature, error analysis is a behavior with several distinct framings, most commonly involving the examination of discrepancies between expected and actual model outputs to identify failures. One prevalent usage applies this to code generation, where models \"comprehensively compare the execution results and logic differences between the two pieces of code\" to find bugs (\"Quantifying Semantic Emergence in Language Models\"). Another approach treats error analysis as a qualitative method for understanding model weaknesses by categorizing failure modes like hallucination and misunderstanding on benchmark instances (\"Seeing More, Saying More\"). A more specific variant, termed \"granular error diagnosis,\" focuses on diagnosing reasoning errors at the step level across multiple dimensions such as \"Simplicity, Soundness, and Sensitivity\" (\"AIMMerging...\"). This form of error analysis is operationalized and measured by the PRMBench benchmark. A different application frames the behavior as classifying \"learners\u2019 missteps\" to generate corrective guidance, such as clarifying grammatical rules or providing remediation exercises (\"Structured Preference Optimization for Vision-Language Long-Horizon Task Planning\").",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "A Unified Agentic Framework for Evaluating Conditional Image Generation",
+      "Quantifying Semantic Emergence in Language Models"
+    ],
+    "emnlp25": [
+      "AIMMerging: Adaptive Iterative Model Merging Using Training Trajectories for Language Model Continual Learning",
+      "Is Cognition Consistent with Perception? Assessing and Mitigating Multimodal Knowledge Conflicts in Document Understanding",
+      "Structured Preference Optimization for Vision-Language Long-Horizon Task Planning",
+      "ChartMind: A Comprehensive Benchmark for Complex Real-world Multimodal Chart Question Answering",
+      "Seeing More, Saying More: Lightweight Language Experts are Dynamic Video Token Compressors"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "emnlp25": 5
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25"
+  ]
+}

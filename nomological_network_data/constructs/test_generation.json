@@ -1,0 +1,64 @@
+{
+  "canonical_name": "Test generation",
+  "type": "construct",
+  "canonical_definition": "The overall latent capability of a model to produce effective and high-quality software tests that cover code paths and detect bugs.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Test generation capability",
+    "Test generation performance"
+  ],
+  "papers": [
+    "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code",
+    "TestGenEval: A Real World Unit Test Generation and Test Completion Benchmark"
+  ],
+  "paper_count": 2,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The overall latent capability of a model to produce effective and high-quality software tests that cover code paths and detect bugs.",
+      "paper": "TestGenEval: A Real World Unit Test Generation and Test Completion Benchmark",
+      "original_name": "Test generation performance"
+    },
+    {
+      "text": "The model's ability to reason about a problem's requirements to produce valid test cases, specifically the expected output for a given input.",
+      "paper": "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code",
+      "original_name": "Test generation capability"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code execution",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "TestGenEval: A Real World Unit Test Generation and Test Completion Benchmark",
+      "evidence": "This is primarily due to models struggling to reason about execution, and their frequent assertion errors when addressing complex code paths.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "TestGenEval: A Real World Unit Test Generation and Test Completion Benchmark"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization": "The overall latent capability of a model to produce effective and high-quality software tests that cover code paths and detect bugs.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code",
+      "TestGenEval: A Real World Unit Test Generation and Test Completion Benchmark"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2
+  },
+  "conferences": [
+    "iclr25"
+  ]
+}

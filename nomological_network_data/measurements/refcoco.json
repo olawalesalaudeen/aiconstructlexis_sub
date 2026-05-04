@@ -1,0 +1,246 @@
+{
+  "canonical_name": "RefCOCO",
+  "type": "measurement",
+  "canonical_definition": "Across the surveyed literature, RefCOCO and its variants (RefCOCO+, RefCOCOg) are a suite of well-established benchmarks used to evaluate a model's ability to connect natural language descriptions to visual content. The most prevalent application is to measure the constructs of `visual grounding` and `referring expression understanding`. Papers operationalize this evaluation in two main ways: as referring expression comprehension (REC), where a model must predict an object's bounding box, or as referring expression segmentation, which requires generating a pixel-level mask for the described object. While the general RefCOCO dataset is described as assessing the understanding of \"fine-grained spatial and semantic relationships\" (\"GENOME: Generative Neuro-Symbolic Visual Reasoning by Growing and Reusing Modules\"), the RefCOCO+ variant is specifically defined as excluding spatial relations to focus on appearance-based descriptions. This suite is frequently used to assess a model's capacity for `object localization` based on language.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "RefCOCO",
+    "RefCOCO+",
+    "refcoco",
+    "refCOCO",
+    "refCOCO+"
+  ],
+  "papers": [
+    "FlightGPT: Towards Generalizable and InterpretableUAVVision-and-Language Navigation with Vision-Language Models",
+    "LogiCoL: Logically-Informed Contrastive Learning for Set-based Dense Retrieval",
+    "MuCAL: Contrastive Alignment for Preference-DrivenKG-to-Text Generation",
+    "CoVLM: Composing Visual Entities and Relationships in Large Language Models Via Communicative Decoding",
+    "Ferret: Refer and Ground Anything Anywhere at Any Granularity",
+    "GENOME: Generative Neuro-Symbolic Visual Reasoning by Growing and Reusing Modules",
+    "Grounding Multimodal Large Language Models to the World",
+    "ClawMachine: Learning to Fetch Visual Tokens for Referential Comprehension",
+    "CogCoM: A Visual Language Model with Chain-of-Manipulations Reasoning",
+    "Harnessing Webpage UIs for Text-Rich Visual Understanding",
+    "LLM-wrapper: Black-Box Semantic-Aware Adaptation of Vision-Language Models for Referring Expression Comprehension",
+    "Locality Alignment Improves Vision-Language Models",
+    "MM1.5: Methods, Analysis & Insights from Multimodal LLM Fine-tuning",
+    "MMR: A Large-scale Benchmark Dataset for Multi-target and Multi-granularity Reasoning Segmentation",
+    "Matryoshka Multimodal Models",
+    "SegLLM: Multi-round Reasoning Segmentation with Large Language Models",
+    "Text4Seg: Reimagining Image Segmentation as Text Generation",
+    "Towards Semantic Equivalence of Tokenization in Multimodal LLM",
+    "Visual Agents as Fast and Slow Thinkers",
+    "Contrastive Localized Language-Image Pre-Training",
+    "Streamline Without Sacrifice - Squeeze out Computation Redundancy in LMM",
+    "Accelerating Pre-training of Multimodal LLMs via Chain-of-Sight",
+    "Boosting Weakly Supervised Referring Image Segmentation via Progressive Comprehension",
+    "CoIN: A Benchmark of Continual Instruction Tuning for Multimodel Large Language Models",
+    "CogVLM: Visual Expert for Pretrained Language Models",
+    "DeiSAM: Segment Anything with Deictic Prompting",
+    "Instruction-Guided Visual Masking",
+    "LG-VQ: Language-Guided Codebook Learning",
+    "Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models",
+    "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+    "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+    "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+    "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding",
+    "One Token to Seg Them All: Language Instructed Reasoning Segmentation in Videos",
+    "ReMI: A Dataset for Reasoning with Multiple Images",
+    "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+    "Visual CoT: Advancing Multi-Modal Language Models with a Comprehensive Dataset and Benchmark for Chain-of-Thought Reasoning",
+    "Vitron: A Unified Pixel-level Vision LLM for Understanding, Generating, Segmenting, Editing"
+  ],
+  "paper_count": 38,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Visual grounding dataset evaluating a model's ability to localize objects based on referring expressions in images.",
+      "paper": "Ferret: Refer and Ground Anything Anywhere at Any Granularity",
+      "original_name": "RefCOCO"
+    },
+    {
+      "text": "Referring expression comprehension benchmark similar to RefCOCO but excluding spatial relations in annotations, focusing on appearance-based descriptions.",
+      "paper": "CoVLM: Composing Visual Entities and Relationships in Large Language Models Via Communicative Decoding",
+      "original_name": "RefCOCO+"
+    },
+    {
+      "text": "A referring-expression grounding dataset used here to evaluate prediction of object bounding boxes from image-text inputs.",
+      "paper": "LG-VQ: Language-Guided Codebook Learning",
+      "original_name": "refcoco"
+    },
+    {
+      "text": "A referring expression segmentation benchmark that evaluates whether a model can localize the object described by a natural-language expression in an image.",
+      "paper": "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+      "original_name": "refCOCO"
+    },
+    {
+      "text": "An extension of the refCOCO dataset for referring expression segmentation, featuring more complex language.",
+      "paper": "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+      "original_name": "refCOCO+"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Referring expression understanding",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "GENOME: Generative Neuro-Symbolic Visual Reasoning by Growing and Reusing Modules",
+      "evidence": "For referring expression segmentation (RES), we follow standard evaluation protocols (Lai et al., 2024; Xia et al., 2024) and assess our method using the refCOCO series. (Section 4.2)",
+      "paper_count": 13,
+      "papers_by_conference": {
+        "iclr24": [
+          "GENOME: Generative Neuro-Symbolic Visual Reasoning by Growing and Reusing Modules",
+          "Grounding Multimodal Large Language Models to the World"
+        ],
+        "neurips24": [
+          "Accelerating Pre-training of Multimodal LLMs via Chain-of-Sight",
+          "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+          "Vitron: A Unified Pixel-level Vision LLM for Understanding, Generating, Segmenting, Editing",
+          "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding",
+          "CogVLM: Visual Expert for Pretrained Language Models"
+        ],
+        "iclr25": [
+          "MMR: A Large-scale Benchmark Dataset for Multi-target and Multi-granularity Reasoning Segmentation",
+          "Text4Seg: Reimagining Image Segmentation as Text Generation",
+          "LLM-wrapper: Black-Box Semantic-Aware Adaptation of Vision-Language Models for Referring Expression Comprehension",
+          "Towards Semantic Equivalence of Tokenization in Multimodal LLM",
+          "Visual Agents as Fast and Slow Thinkers"
+        ],
+        "emnlp25": [
+          "MuCAL: Contrastive Alignment for Preference-DrivenKG-to-Text Generation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual grounding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "To thoroughly assess our model\u2019s understanding of pixel-level instances, we evaluate its performance on referring segmentation and grounding benchmarks, including refCOCO (Kazemzadeh et al., 2014), refCOCO+ (Kazemzadeh et al., 2014), and refCOCOg (Caesar et al., 2018).",
+      "paper_count": 11,
+      "papers_by_conference": {
+        "neurips24": [
+          "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+          "CogVLM: Visual Expert for Pretrained Language Models",
+          "LG-VQ: Language-Guided Codebook Learning",
+          "Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models",
+          "Instruction-Guided Visual Masking",
+          "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks"
+        ],
+        "iclr25": [
+          "Matryoshka Multimodal Models",
+          "ClawMachine: Learning to Fetch Visual Tokens for Referential Comprehension",
+          "CogCoM: A Visual Language Model with Chain-of-Manipulations Reasoning"
+        ],
+        "icml25": [
+          "Streamline Without Sacrifice - Squeeze out Computation Redundancy in LMM"
+        ],
+        "emnlp25": [
+          "FlightGPT: Towards Generalizable and InterpretableUAVVision-and-Language Navigation with Vision-Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Object localization",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "CoVLM: Composing Visual Entities and Relationships in Large Language Models Via Communicative Decoding",
+      "evidence": "RefCOCO is a typical visual grounding dataset, evaluating models\u2019 ability to localize objects and understand fine-grained spatial and semantic relationships. (Section 4)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "CoVLM: Composing Visual Entities and Relationships in Large Language Models Via Communicative Decoding"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Spatial reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "ReMI: A Dataset for Reasoning with Multiple Images",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "ReMI: A Dataset for Reasoning with Multiple Images"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the surveyed literature, RefCOCO and its variants (RefCOCO+, RefCOCOg) are a suite of well-established benchmarks used to evaluate a model's ability to connect natural language descriptions to visual content. The most prevalent application is to measure the constructs of `visual grounding` and `referring expression understanding`. Papers operationalize this evaluation in two main ways: as referring expression comprehension (REC), where a model must predict an object's bounding box, or as referring expression segmentation, which requires generating a pixel-level mask for the described object. While the general RefCOCO dataset is described as assessing the understanding of \"fine-grained spatial and semantic relationships\" (\"GENOME: Generative Neuro-Symbolic Visual Reasoning by Growing and Reusing Modules\"), the RefCOCO+ variant is specifically defined as excluding spatial relations to focus on appearance-based descriptions. This suite is frequently used to assess a model's capacity for `object localization` based on language.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "CoVLM: Composing Visual Entities and Relationships in Large Language Models Via Communicative Decoding",
+      "Ferret: Refer and Ground Anything Anywhere at Any Granularity",
+      "GENOME: Generative Neuro-Symbolic Visual Reasoning by Growing and Reusing Modules",
+      "Grounding Multimodal Large Language Models to the World"
+    ],
+    "neurips24": [
+      "Accelerating Pre-training of Multimodal LLMs via Chain-of-Sight",
+      "Boosting Weakly Supervised Referring Image Segmentation via Progressive Comprehension",
+      "CoIN: A Benchmark of Continual Instruction Tuning for Multimodel Large Language Models",
+      "CogVLM: Visual Expert for Pretrained Language Models",
+      "DeiSAM: Segment Anything with Deictic Prompting",
+      "Instruction-Guided Visual Masking",
+      "LG-VQ: Language-Guided Codebook Learning",
+      "Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models",
+      "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+      "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+      "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding",
+      "One Token to Seg Them All: Language Instructed Reasoning Segmentation in Videos",
+      "ReMI: A Dataset for Reasoning with Multiple Images",
+      "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "Visual CoT: Advancing Multi-Modal Language Models with a Comprehensive Dataset and Benchmark for Chain-of-Thought Reasoning",
+      "Vitron: A Unified Pixel-level Vision LLM for Understanding, Generating, Segmenting, Editing"
+    ],
+    "iclr25": [
+      "ClawMachine: Learning to Fetch Visual Tokens for Referential Comprehension",
+      "CogCoM: A Visual Language Model with Chain-of-Manipulations Reasoning",
+      "Harnessing Webpage UIs for Text-Rich Visual Understanding",
+      "LLM-wrapper: Black-Box Semantic-Aware Adaptation of Vision-Language Models for Referring Expression Comprehension",
+      "Locality Alignment Improves Vision-Language Models",
+      "MM1.5: Methods, Analysis & Insights from Multimodal LLM Fine-tuning",
+      "MMR: A Large-scale Benchmark Dataset for Multi-target and Multi-granularity Reasoning Segmentation",
+      "Matryoshka Multimodal Models",
+      "SegLLM: Multi-round Reasoning Segmentation with Large Language Models",
+      "Text4Seg: Reimagining Image Segmentation as Text Generation",
+      "Towards Semantic Equivalence of Tokenization in Multimodal LLM",
+      "Visual Agents as Fast and Slow Thinkers"
+    ],
+    "icml25": [
+      "Contrastive Localized Language-Image Pre-Training",
+      "Streamline Without Sacrifice - Squeeze out Computation Redundancy in LMM"
+    ],
+    "emnlp25": [
+      "FlightGPT: Towards Generalizable and InterpretableUAVVision-and-Language Navigation with Vision-Language Models",
+      "LogiCoL: Logically-Informed Contrastive Learning for Set-based Dense Retrieval",
+      "MuCAL: Contrastive Alignment for Preference-DrivenKG-to-Text Generation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 4,
+    "neurips24": 17,
+    "iclr25": 12,
+    "icml25": 2,
+    "emnlp25": 3
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "canonical_name": "Answer generation",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, answer generation is most commonly described as the behavior of producing a summarized response to a query based on provided context passages. Some work specifies that this output should be structured with distinct 'reason' and 'answer' sections, while other research focuses on 'free-form answer generation' in unconstrained natural language. A smaller set of papers defines more specific variants, such as 'direct solution generation,' which produces only a final answer without reasoning traces, or 'final answer generation,' which is the conclusive response following a sequence of function calls. This behavior is often positioned as a downstream step in a larger process, with `Information retrieval` reported to precede it. Answer generation is frequently studied alongside `Chain-of-thought reasoning`, with some research stating that reasoning is used to ensure the final answer is 'logically derived from the evidence.' The behavior is operationalized and measured using benchmarks such as `VQA-v2` and `GQA`.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Answer generation",
+    "Final answer generation",
+    "Direct solution generation",
+    "Free-form answer generation"
+  ],
+  "papers": [
+    "Amulet: Putting Complex Multi-Turn Conversations on the Stand withLLMJuries",
+    "In-Context Learning Boosts Speech Recognition via Human-like Adaptation to Speakers and Language Varieties",
+    "Measuring the Effect of Disfluency in Multilingual Knowledge Probing Benchmarks",
+    "When Big Models Train Small Ones: Label-Free Model Parity Alignment for Efficient Visual Question Answering using SmallVLMs",
+    "Dualformer: Controllable Fast and Slow Thinking by Learning with Randomized Reasoning Traces",
+    "Facilitating Multi-turn Function Calling for LLMs via Compositional Instruction Tuning",
+    "Characterizing the Role of Similarity in the Property Inferences of Language Models",
+    "Guiding Medical Vision-Language Models with Diverse Visual Prompts: Framework Design and Comprehensive Exploration of Prompt Variations",
+    "HMT: Hierarchical Memory Transformer for Efficient Long Context Language Processing",
+    "ImgTrojan: Jailbreaking Vision-Language Models withONEImage",
+    "PRACTIQ: A Practical Conversational Text-to-SQLdataset with Ambiguous and Unanswerable Queries",
+    "Rethinking Word Similarity: Semantic Similarity through Classification Confusion",
+    "SUNAR: Semantic Uncertainty based Neighborhood Aware Retrieval for ComplexQA",
+    "TinyThinker: Distilling Reasoning through Coarse-to-Fine Knowledge Internalization with Self-Reflection",
+    "You Only Read Once (YORO): Learning to Internalize Database Knowledge for Text-to-SQL",
+    "Aligning Sentence Simplification withESLLearner\u2019s Proficiency for Language Acquisition",
+    "Tonguescape: Exploring Language Models Understanding of Vowel Articulation"
+  ],
+  "paper_count": 17,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Producing a summarized response to a query based on provided context passages, including citations and structured output with reason and answer sections.",
+      "paper": "HMT: Hierarchical Memory Transformer for Efficient Long Context Language Processing",
+      "original_name": "Answer generation"
+    },
+    {
+      "text": "The observable behavior of producing a conclusive response to the user's initial query after completing a sequence of function calls.",
+      "paper": "Facilitating Multi-turn Function Calling for LLMs via Compositional Instruction Tuning",
+      "original_name": "Final answer generation"
+    },
+    {
+      "text": "Producing only the final answer or plan without any intermediate reasoning steps or traces.",
+      "paper": "Dualformer: Controllable Fast and Slow Thinking by Learning with Randomized Reasoning Traces",
+      "original_name": "Direct solution generation"
+    },
+    {
+      "text": "The task of generating a natural language, free-form answer to a question based on a provided context.",
+      "paper": "Aligning Sentence Simplification withESLLearner\u2019s Proficiency for Language Acquisition",
+      "original_name": "Free-form answer generation"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Chain-of-thought reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "LBC: Language-Based-Classifier for Out-Of-Variable Generalization",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "LBC: Language-Based-Classifier for Out-Of-Variable Generalization"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQA-v2",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Do Vision & Language Decoders use Images and Text equally? How Self-consistent are their Explanations?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Do Vision & Language Decoders use Images and Text equally? How Self-consistent are their Explanations?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Do Vision & Language Decoders use Images and Text equally? How Self-consistent are their Explanations?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Do Vision & Language Decoders use Images and Text equally? How Self-consistent are their Explanations?"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Information retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Aligning Sentence Simplification withESLLearner\u2019s Proficiency for Language Acquisition",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Aligning Sentence Simplification withESLLearner\u2019s Proficiency for Language Acquisition"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Chain-of-thought reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "TinyThinker: Distilling Reasoning through Coarse-to-Fine Knowledge Internalization with Self-Reflection",
+      "evidence": "We utilize Chain-of-Thought (CoT) (Wei et al., 2022) reasoning to link individual pieces of evidence that form a coherent step-by-step narrative, ensuring that the answer is not only accurate but also logically derived from the evidence, leading to more robust and reliable responses. (Section 5.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "TinyThinker: Distilling Reasoning through Coarse-to-Fine Knowledge Internalization with Self-Reflection"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 3,
+  "characterization": "Across the provided literature, answer generation is most commonly described as the behavior of producing a summarized response to a query based on provided context passages. Some work specifies that this output should be structured with distinct 'reason' and 'answer' sections, while other research focuses on 'free-form answer generation' in unconstrained natural language. A smaller set of papers defines more specific variants, such as 'direct solution generation,' which produces only a final answer without reasoning traces, or 'final answer generation,' which is the conclusive response following a sequence of function calls. This behavior is often positioned as a downstream step in a larger process, with `Information retrieval` reported to precede it. Answer generation is frequently studied alongside `Chain-of-thought reasoning`, with some research stating that reasoning is used to ensure the final answer is 'logically derived from the evidence.' The behavior is operationalized and measured using benchmarks such as `VQA-v2` and `GQA`.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "naacl25": [
+      "Characterizing the Role of Similarity in the Property Inferences of Language Models",
+      "Guiding Medical Vision-Language Models with Diverse Visual Prompts: Framework Design and Comprehensive Exploration of Prompt Variations",
+      "HMT: Hierarchical Memory Transformer for Efficient Long Context Language Processing",
+      "ImgTrojan: Jailbreaking Vision-Language Models withONEImage",
+      "PRACTIQ: A Practical Conversational Text-to-SQLdataset with Ambiguous and Unanswerable Queries",
+      "Rethinking Word Similarity: Semantic Similarity through Classification Confusion",
+      "SUNAR: Semantic Uncertainty based Neighborhood Aware Retrieval for ComplexQA",
+      "TinyThinker: Distilling Reasoning through Coarse-to-Fine Knowledge Internalization with Self-Reflection",
+      "You Only Read Once (YORO): Learning to Internalize Database Knowledge for Text-to-SQL",
+      "Aligning Sentence Simplification withESLLearner\u2019s Proficiency for Language Acquisition",
+      "Tonguescape: Exploring Language Models Understanding of Vowel Articulation"
+    ],
+    "iclr25": [
+      "Dualformer: Controllable Fast and Slow Thinking by Learning with Randomized Reasoning Traces",
+      "Facilitating Multi-turn Function Calling for LLMs via Compositional Instruction Tuning"
+    ],
+    "emnlp25": [
+      "Amulet: Putting Complex Multi-Turn Conversations on the Stand withLLMJuries",
+      "In-Context Learning Boosts Speech Recognition via Human-like Adaptation to Speakers and Language Varieties",
+      "Measuring the Effect of Disfluency in Multilingual Knowledge Probing Benchmarks",
+      "When Big Models Train Small Ones: Label-Free Model Parity Alignment for Efficient Visual Question Answering using SmallVLMs"
+    ]
+  },
+  "paper_count_by_conference": {
+    "naacl25": 11,
+    "iclr25": 2,
+    "emnlp25": 4
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "naacl25"
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "canonical_name": "Helpful response generation",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, this behavior is most frequently defined as 'Safe response generation,' which involves producing non-toxic and ethically appropriate responses to harmful prompts. This is commonly operationalized as the model either rejecting the premise of a harmful query or offering constructive alternatives. Examples of this include explicit refusals like \"I cannot help you with that\" or \"I am sorry, but I cannot fulfill your request\u2026\", and this focus is reflected in its documented relationship with 'Refusal behavior'. A less frequent but distinct framing, labeled 'Helpful response generation,' defines the behavior as producing relevant and useful content rather than generic refusals. Similarly, 'Harmless response generation' is used in one paper to describe outputs that avoid promoting violence or illegal acts. The interplay between being helpful and being harmless is a recurring theme; some work aims to produce a \"harmless, helpful answer to the original question,\" while other research treats 'helpful' and 'harmless' as separate objectives to be optimized. The behavior is assessed through various methods, including manual review for appropriateness and automated judgments by reward models or GPT-4. The behavior is also studied in relation to the underlying construct of 'Helpfulness'.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Helpful response generation",
+    "Safe response generation"
+  ],
+  "papers": [
+    "BRSpeech-DF: A Deep Fake Synthetic Speech Dataset forPortuguese Zero-ShotTTS",
+    "DeepWell-Adol: A Scalable Expert-Based Dialogue Corpus for Adolescent Positive Mental Health and Wellbeing Promotion",
+    "MuseScorer: Idea Originality Scoring At Scale",
+    "SQLWOZ: A Realistic Task-Oriented Dialogue Dataset withSQL-Based Dialogue State Representation for Complex User Requirements",
+    "TokenSelect: Efficient Long-Context Inference and Length Extrapolation forLLMs via Dynamic Token-LevelKVCache Selection",
+    "Safety-Tuned LLaMAs: Lessons From Improving the Safety of Large Language Models that Follow Instructions",
+    "Universal Jailbreak Backdoors from Poisoned Human Feedback",
+    "Controllable Safety Alignment: Inference-Time Adaptation to Diverse Safety Requirements",
+    "ETA: Evaluating Then Aligning Safety of Vision Language Models at Inference Time",
+    "Emerging Safety Attack and Defense in Federated Instruction Tuning of Large Language Models",
+    "Can a Large Language Model be a Gaslighter?",
+    "Does Safety Training of LLMs Generalize to Semantically Related Natural Prompts?",
+    "Semantic Loss Guided Data Efficient Supervised Fine Tuning for Safe Responses in LLMs",
+    "Bounded Rationality for LLMs: Satisficing Alignment at Inference-Time",
+    "MPO: An Efficient Post-Processing Framework for Mixing Diverse Preference Alignment",
+    "Prompt Compression for Large Language Models: A Survey",
+    "Single Ground Truth Is Not Enough: Adding Flexibility to Aspect-Based Sentiment Analysis Evaluation"
+  ],
+  "paper_count": 17,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Producing responses that remain relevant and useful to the input rather than generic refusals or disconnected content.",
+      "paper": "ETA: Evaluating Then Aligning Safety of Vision Language Models at Inference Time",
+      "original_name": "Helpful response generation"
+    },
+    {
+      "text": "Producing non-toxic, ethically appropriate responses to harmful prompts by rejecting the premise or offering constructive alternatives.",
+      "paper": "Safety-Tuned LLaMAs: Lessons From Improving the Safety of Large Language Models that Follow Instructions",
+      "original_name": "Safe response generation"
+    },
+    {
+      "text": "Producing outputs that avoid promoting violence, illegal acts, or harmful behavior, as judged by reward models or GPT-4 evaluation.",
+      "paper": "Bounded Rationality for LLMs: Satisficing Alignment at Inference-Time",
+      "original_name": "Harmless response generation"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "RLCD: Reinforcement Learning from Contrastive Distillation for LM Alignment",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr24": [
+          "RLCD: Reinforcement Learning from Contrastive Distillation for LM Alignment"
+        ],
+        "iclr25": [
+          "Controllable Safety Alignment: Inference-Time Adaptation to Diverse Safety Requirements"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Refusal behavior",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Prompt Compression for Large Language Models: A Survey",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Prompt Compression for Large Language Models: A Survey"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 2,
+  "characterization": "Across the provided literature, this behavior is most frequently defined as 'Safe response generation,' which involves producing non-toxic and ethically appropriate responses to harmful prompts. This is commonly operationalized as the model either rejecting the premise of a harmful query or offering constructive alternatives. Examples of this include explicit refusals like \"I cannot help you with that\" or \"I am sorry, but I cannot fulfill your request\u2026\", and this focus is reflected in its documented relationship with 'Refusal behavior'. A less frequent but distinct framing, labeled 'Helpful response generation,' defines the behavior as producing relevant and useful content rather than generic refusals. Similarly, 'Harmless response generation' is used in one paper to describe outputs that avoid promoting violence or illegal acts. The interplay between being helpful and being harmless is a recurring theme; some work aims to produce a \"harmless, helpful answer to the original question,\" while other research treats 'helpful' and 'harmless' as separate objectives to be optimized. The behavior is assessed through various methods, including manual review for appropriateness and automated judgments by reward models or GPT-4. The behavior is also studied in relation to the underlying construct of 'Helpfulness'.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Controllable Safety Alignment: Inference-Time Adaptation to Diverse Safety Requirements",
+      "ETA: Evaluating Then Aligning Safety of Vision Language Models at Inference Time",
+      "Emerging Safety Attack and Defense in Federated Instruction Tuning of Large Language Models",
+      "Can a Large Language Model be a Gaslighter?",
+      "Does Safety Training of LLMs Generalize to Semantically Related Natural Prompts?",
+      "Semantic Loss Guided Data Efficient Supervised Fine Tuning for Safe Responses in LLMs"
+    ],
+    "iclr24": [
+      "Safety-Tuned LLaMAs: Lessons From Improving the Safety of Large Language Models that Follow Instructions",
+      "Universal Jailbreak Backdoors from Poisoned Human Feedback"
+    ],
+    "naacl25": [
+      "Prompt Compression for Large Language Models: A Survey",
+      "Single Ground Truth Is Not Enough: Adding Flexibility to Aspect-Based Sentiment Analysis Evaluation"
+    ],
+    "emnlp25": [
+      "BRSpeech-DF: A Deep Fake Synthetic Speech Dataset forPortuguese Zero-ShotTTS",
+      "DeepWell-Adol: A Scalable Expert-Based Dialogue Corpus for Adolescent Positive Mental Health and Wellbeing Promotion",
+      "MuseScorer: Idea Originality Scoring At Scale",
+      "SQLWOZ: A Realistic Task-Oriented Dialogue Dataset withSQL-Based Dialogue State Representation for Complex User Requirements",
+      "TokenSelect: Efficient Long-Context Inference and Length Extrapolation forLLMs via Dynamic Token-LevelKVCache Selection"
+    ],
+    "icml25": [
+      "Bounded Rationality for LLMs: Satisficing Alignment at Inference-Time",
+      "MPO: An Efficient Post-Processing Framework for Mixing Diverse Preference Alignment"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 6,
+    "iclr24": 2,
+    "naacl25": 2,
+    "emnlp25": 5,
+    "icml25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25"
+  ]
+}

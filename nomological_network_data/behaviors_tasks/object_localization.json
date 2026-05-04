@@ -1,0 +1,205 @@
+{
+  "canonical_name": "Object localization",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, object localization is most commonly defined as the task of identifying the position of one or more objects within an image. The behavior is almost universally operationalized by having a model output bounding boxes, which one paper describes as a \"4-tuple of the x and y coordinates of the upper left and lower right corners\" (Look, Remember and Reason: Grounded Reasoning in Videos with Language Models). To evaluate this capability, researchers use visual grounding datasets such as RefCOCO and RefCOCOg, where a model must locate an object specified by a language description. While this general framing is prevalent, a number of papers investigate more specific forms of this behavior, such as 'building localization' in earth-observation data, 'defect localization' for industrial anomaly detection, and the localization of UI elements like text and widgets. Other specified variants include 'instance localization', which uses a reference image to find a specific object. Object localization is studied alongside other fine-grained visual tasks like counting and positioning, and is also related to spatial reasoning, with one paper noting that \"spatial object localization... helps models learn spatial reasoning\" (Cognitive Linguistic Identity Fusion Score (CLIFS): A ScalableCognition\u2010Informed Approach to Quantifying Identity Fusion from Text). Additionally, one study reports that the Logit lens technique \"enables spatially localizing objects\" (Interpreting and Editing Vision-Language Representations to Mitigate Hallucinations).",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Object localization",
+    "Building localization",
+    "Defect localization",
+    "UI element localization",
+    "Instance localization",
+    "Text localization",
+    "Widget localization",
+    "Positioning"
+  ],
+  "papers": [
+    "Cognitive Linguistic Identity Fusion Score (CLIFS): A ScalableCognition\u2010Informed Approach to Quantifying Identity Fusion from Text",
+    "FlightGPT: Towards Generalizable and InterpretableUAVVision-and-Language Navigation with Vision-Language Models",
+    "GENOME: Generative Neuro-Symbolic Visual Reasoning by Growing and Reusing Modules",
+    "Look, Remember and Reason: Grounded Reasoning in Videos with Language Models",
+    "AgentStudio: A Toolkit for Building General Virtual Agents",
+    "Feast Your Eyes:  Mixture-of-Resolution Adaptation for Multimodal Large Language Models",
+    "Ferret-UI 2: Mastering Universal User Interface Understanding Across Platforms",
+    "IDA-VLM: Towards Movie Understanding via ID-Aware Large Vision-Language Model",
+    "Interpreting and Editing Vision-Language Representations to Mitigate Hallucinations",
+    "LLaRA: Supercharging Robot Learning Data for Vision-Language Policy",
+    "Locality Alignment Improves Vision-Language Models",
+    "MMAD: A Comprehensive Benchmark for Multimodal Large Language Models in Industrial Anomaly Detection",
+    "Multi-modal Agent Tuning: Building a VLM-Driven Agent for Efficient Tool Usage",
+    "TEOChat: A Large Vision-Language Assistant for Temporal Earth Observation Data",
+    "ThinkBot: Embodied Instruction Following with Thought Chain Reasoning",
+    "Instruction-Guided Visual Masking",
+    "Prism: A Framework for Decoupling and Assessing the Capabilities of VLMs",
+    "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks"
+  ],
+  "paper_count": 18,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The task of identifying the position of one or more objects within an image, typically by outputting bounding boxes.",
+      "paper": "GENOME: Generative Neuro-Symbolic Visual Reasoning by Growing and Reusing Modules",
+      "original_name": "Object localization"
+    },
+    {
+      "text": "Predicting bounding boxes for buildings visible in an earth-observation image region.",
+      "paper": "TEOChat: A Large Vision-Language Assistant for Temporal Earth Observation Data",
+      "original_name": "Building localization"
+    },
+    {
+      "text": "Producing coordinate boxes that localize a referred region in an image.",
+      "paper": "Feast Your Eyes:  Mixture-of-Resolution Adaptation for Multimodal Large Language Models",
+      "original_name": "Bounding box prediction"
+    },
+    {
+      "text": "The observable task of identifying the spatial position of a defect within an image, typically expressed through textual description.",
+      "paper": "MMAD: A Comprehensive Benchmark for Multimodal Large Language Models in Industrial Anomaly Detection",
+      "original_name": "Defect localization"
+    },
+    {
+      "text": "The observable behavior of generating the precise screen coordinates corresponding to a UI element described in a natural language instruction.",
+      "paper": "AgentStudio: A Toolkit for Building General Virtual Agents",
+      "original_name": "UI element localization"
+    },
+    {
+      "text": "The observable task of identifying and providing the bounding box coordinates for a specific instance within a test image, based on a provided reference image of that instance.",
+      "paper": "IDA-VLM: Towards Movie Understanding via ID-Aware Large Vision-Language Model",
+      "original_name": "Instance localization"
+    },
+    {
+      "text": "The task of finding the location (i.e., bounding box) of a piece of text specified in a query.",
+      "paper": "Ferret-UI 2: Mastering Universal User Interface Understanding Across Platforms",
+      "original_name": "Text localization"
+    },
+    {
+      "text": "The task of finding the location (i.e., bounding box) of a UI widget based on a textual description of it.",
+      "paper": "Ferret-UI 2: Mastering Universal User Interface Understanding Across Platforms",
+      "original_name": "Widget localization"
+    },
+    {
+      "text": "The observable task of determining the spatial location or arrangement of objects in an image.",
+      "paper": "FlightGPT: Towards Generalizable and InterpretableUAVVision-and-Language Navigation with Vision-Language Models",
+      "original_name": "Positioning"
+    }
+  ],
+  "definition_count": 9,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "RefCOCO",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "CoVLM: Composing Visual Entities and Relationships in Large Language Models Via Communicative Decoding",
+      "evidence": "RefCOCO is a typical visual grounding dataset, evaluating models\u2019 ability to localize objects and understand fine-grained spatial and semantic relationships. (Section 4)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "CoVLM: Composing Visual Entities and Relationships in Large Language Models Via Communicative Decoding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "RefCOCOg",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "CoVLM: Composing Visual Entities and Relationships in Large Language Models Via Communicative Decoding",
+      "evidence": "This task requires a model to locate the bounding box of an object specified by language description. We follow KOSMOS-2 (Peng et al., 2023) to use three well-established benchmarks namely RefCOCOg (Mao et al., 2016), RefCOCO+ (Yu et al., 2016) and RefCOCO (Yu et al., 2016).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "CoVLM: Composing Visual Entities and Relationships in Large Language Models Via Communicative Decoding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning segmentation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Instruction-Guided Visual Masking",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Instruction-Guided Visual Masking"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Logit lens",
+      "other_type": "measurements",
+      "relationship_type": "causes",
+      "paper": "Interpreting and Editing Vision-Language Representations to Mitigate Hallucinations",
+      "evidence": "Moreover, the logit lens enables spatially localizing objects within the input image. (Section 1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Interpreting and Editing Vision-Language Representations to Mitigate Hallucinations"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Spatial reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Cognitive Linguistic Identity Fusion Score (CLIFS): A ScalableCognition\u2010Informed Approach to Quantifying Identity Fusion from Text",
+      "evidence": "\"It includes two task types: spatial object localization (2,361 samples), which helps models learn spatial reasoning\"",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Cognitive Linguistic Identity Fusion Score (CLIFS): A ScalableCognition\u2010Informed Approach to Quantifying Identity Fusion from Text"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 4,
+  "characterization": "Across the surveyed literature, object localization is most commonly defined as the task of identifying the position of one or more objects within an image. The behavior is almost universally operationalized by having a model output bounding boxes, which one paper describes as a \"4-tuple of the x and y coordinates of the upper left and lower right corners\" (Look, Remember and Reason: Grounded Reasoning in Videos with Language Models). To evaluate this capability, researchers use visual grounding datasets such as RefCOCO and RefCOCOg, where a model must locate an object specified by a language description. While this general framing is prevalent, a number of papers investigate more specific forms of this behavior, such as 'building localization' in earth-observation data, 'defect localization' for industrial anomaly detection, and the localization of UI elements like text and widgets. Other specified variants include 'instance localization', which uses a reference image to find a specific object. Object localization is studied alongside other fine-grained visual tasks like counting and positioning, and is also related to spatial reasoning, with one paper noting that \"spatial object localization... helps models learn spatial reasoning\" (Cognitive Linguistic Identity Fusion Score (CLIFS): A ScalableCognition\u2010Informed Approach to Quantifying Identity Fusion from Text). Additionally, one study reports that the Logit lens technique \"enables spatially localizing objects\" (Interpreting and Editing Vision-Language Representations to Mitigate Hallucinations).",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "GENOME: Generative Neuro-Symbolic Visual Reasoning by Growing and Reusing Modules",
+      "Look, Remember and Reason: Grounded Reasoning in Videos with Language Models"
+    ],
+    "neurips24": [
+      "Instruction-Guided Visual Masking",
+      "Prism: A Framework for Decoupling and Assessing the Capabilities of VLMs",
+      "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks"
+    ],
+    "iclr25": [
+      "AgentStudio: A Toolkit for Building General Virtual Agents",
+      "Feast Your Eyes:  Mixture-of-Resolution Adaptation for Multimodal Large Language Models",
+      "Ferret-UI 2: Mastering Universal User Interface Understanding Across Platforms",
+      "IDA-VLM: Towards Movie Understanding via ID-Aware Large Vision-Language Model",
+      "Interpreting and Editing Vision-Language Representations to Mitigate Hallucinations",
+      "LLaRA: Supercharging Robot Learning Data for Vision-Language Policy",
+      "Locality Alignment Improves Vision-Language Models",
+      "MMAD: A Comprehensive Benchmark for Multimodal Large Language Models in Industrial Anomaly Detection",
+      "Multi-modal Agent Tuning: Building a VLM-Driven Agent for Efficient Tool Usage",
+      "TEOChat: A Large Vision-Language Assistant for Temporal Earth Observation Data",
+      "ThinkBot: Embodied Instruction Following with Thought Chain Reasoning"
+    ],
+    "emnlp25": [
+      "Cognitive Linguistic Identity Fusion Score (CLIFS): A ScalableCognition\u2010Informed Approach to Quantifying Identity Fusion from Text",
+      "FlightGPT: Towards Generalizable and InterpretableUAVVision-and-Language Navigation with Vision-Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "neurips24": 3,
+    "iclr25": 11,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "neurips24"
+  ]
+}

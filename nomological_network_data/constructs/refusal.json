@@ -1,0 +1,169 @@
+{
+  "canonical_name": "Refusal",
+  "type": "construct",
+  "canonical_definition": "Across the provided literature, the construct of Refusal is predominantly framed in two distinct ways: as a model's capability to identify and abstain from answering when information is insufficient, or as a tendency to decline queries based on safety and sensitivity constraints. The most common conceptualization is the former, where refusal is defined as the ability to determine that a query cannot be answered from the provided context, such as when retrieved documents in RAG lack necessary information, a question exceeds a video's content, or no available tool can fulfill a user's intent. This capability is operationalized and measured using benchmarks including ASQA, QAMPARI, and ELI5. A separate line of work defines refusal as a model's reluctance to answer queries it deems sensitive, often as a result of safety alignment. This framing is frequently studied alongside the concept of \"over-refusal,\" which is described as an undesirable side effect where models inappropriately reject safe and answerable prompts. A less common framing, termed \"collaboration willingness,\" treats the construct as an agent's disposition to proactively seek help when faced with a problem. The construct is also studied in relation to Tool use.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Abstention",
+    "Alignment for answerability",
+    "Irrelevance detection",
+    "Refusal",
+    "Refusal capability",
+    "Over-refusal",
+    "Collaboration willingness"
+  ],
+  "papers": [
+    "A",
+    "Quaff: Quantized Parameter-Efficient Fine-Tuning under Outlier Spatial Stability Hypothesis",
+    "Can Video LLMs Refuse to Answer? Alignment for Answerability in Video Large Language Models",
+    "Differentially Private Steering for Large Language Model Alignment",
+    "LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory",
+    "Measuring and Enhancing Trustworthiness of LLMs in RAG through Grounded Attributions and Learning to Refuse",
+    "Robust Function-Calling for On-Device Language Model via Function Masking",
+    "CASE-Bench: Context-Aware SafEty Benchmark for Large Language Models",
+    "Just Enough Shifts: Mitigating Over-Refusal in Aligned Language Models with Targeted Representation Fine-Tuning",
+    "OR-Bench: An Over-Refusal Benchmark for Large Language Models",
+    "POROver: Improving Safety and Reducing Overrefusal in Large Language Models with Overgeneration and Preference Optimization",
+    "SyncMind: Measuring Agent Out-of-Sync Recovery in Collaborative Software Engineering"
+  ],
+  "paper_count": 12,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The model's ability to correctly determine when no available function or tool can satisfy the user's intent and to decline the task accordingly.",
+      "paper": "Robust Function-Calling for On-Device Language Model via Function Masking",
+      "original_name": "Irrelevance detection"
+    },
+    {
+      "text": "The latent capability of a model to evaluate the relevance of user queries in relation to video content and appropriately decline to answer when questions exceed the video's informational boundaries.",
+      "paper": "Can Video LLMs Refuse to Answer? Alignment for Answerability in Video Large Language Models",
+      "original_name": "Alignment for answerability"
+    },
+    {
+      "text": "The ability to identify when a question seeks information that was not provided in the interaction history and to correctly respond by indicating the information is unknown.",
+      "paper": "LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory",
+      "original_name": "Abstention"
+    },
+    {
+      "text": "The model's tendency to demonstrate reluctance or unwillingness to answer user queries, particularly those it deems sensitive or outside its designated function.",
+      "paper": "Differentially Private Steering for Large Language Model Alignment",
+      "original_name": "Refusal"
+    },
+    {
+      "text": "The tendency of an LLM to abstain from answering when the retrieved documents do not contain sufficient information.",
+      "paper": "Measuring and Enhancing Trustworthiness of LLMs in RAG through Grounded Attributions and Learning to Refuse",
+      "original_name": "Refusal capability"
+    },
+    {
+      "text": "The latent tendency of a model to refuse to answer safe and answerable prompts, often as a side effect of safety alignment, even when a helpful response is possible.",
+      "paper": "OR-Bench: An Over-Refusal Benchmark for Large Language Models",
+      "original_name": "Over-refusal"
+    },
+    {
+      "text": "The disposition of an agent to proactively seek help and engage in productive interactions with collaborators when faced with a problem.",
+      "paper": "SyncMind: Measuring Agent Out-of-Sync Recovery in Collaborative Software Engineering",
+      "original_name": "Collaboration willingness"
+    },
+    {
+      "text": "The latent tendency of a model to inappropriately refuse benign or safe user prompts due to overgeneralization of safety constraints.",
+      "paper": "POROver: Improving Safety and Reducing Overrefusal in Large Language Models with Overgeneration and Preference Optimization",
+      "original_name": "Overrefusal"
+    }
+  ],
+  "definition_count": 8,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Tool use",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Robust Function-Calling for On-Device Language Model via Function Masking",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Robust Function-Calling for On-Device Language Model via Function Masking"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ASQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Measuring and Enhancing Trustworthiness of LLMs in RAG through Grounded Attributions and Learning to Refuse",
+      "evidence": "TRUST-ALIGN improves models' refusal capability. Across all 27 configurations, TRUST-ALIGN yields substantial improvements in F1GR. In LLaMA-3-8b, TRUST-ALIGN outperforms FRONT by 23.87% (ASQA), 47.95% (QAMPARI), and 45.72% (ELI5).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Measuring and Enhancing Trustworthiness of LLMs in RAG through Grounded Attributions and Learning to Refuse"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "QAMPARI",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Measuring and Enhancing Trustworthiness of LLMs in RAG through Grounded Attributions and Learning to Refuse",
+      "evidence": "TRUST-ALIGN improves models' refusal capability. Across all 27 configurations, TRUST-ALIGN yields substantial improvements in F1GR. In LLaMA-3-8b, TRUST-ALIGN outperforms FRONT by 23.87% (ASQA), 47.95% (QAMPARI), and 45.72% (ELI5).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Measuring and Enhancing Trustworthiness of LLMs in RAG through Grounded Attributions and Learning to Refuse"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ELI5",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Measuring and Enhancing Trustworthiness of LLMs in RAG through Grounded Attributions and Learning to Refuse",
+      "evidence": "TRUST-ALIGN improves models' refusal capability. Across all 27 configurations, TRUST-ALIGN yields substantial improvements in F1GR. In LLaMA-3-8b, TRUST-ALIGN outperforms FRONT by 23.87% (ASQA), 47.95% (QAMPARI), and 45.72% (ELI5).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Measuring and Enhancing Trustworthiness of LLMs in RAG through Grounded Attributions and Learning to Refuse"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 4,
+  "characterization": "Across the provided literature, the construct of Refusal is predominantly framed in two distinct ways: as a model's capability to identify and abstain from answering when information is insufficient, or as a tendency to decline queries based on safety and sensitivity constraints. The most common conceptualization is the former, where refusal is defined as the ability to determine that a query cannot be answered from the provided context, such as when retrieved documents in RAG lack necessary information, a question exceeds a video's content, or no available tool can fulfill a user's intent. This capability is operationalized and measured using benchmarks including ASQA, QAMPARI, and ELI5. A separate line of work defines refusal as a model's reluctance to answer queries it deems sensitive, often as a result of safety alignment. This framing is frequently studied alongside the concept of \"over-refusal,\" which is described as an undesirable side effect where models inappropriately reject safe and answerable prompts. A less common framing, termed \"collaboration willingness,\" treats the construct as an agent's disposition to proactively seek help when faced with a problem. The construct is also studied in relation to Tool use.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Can Video LLMs Refuse to Answer? Alignment for Answerability in Video Large Language Models",
+      "Differentially Private Steering for Large Language Model Alignment",
+      "LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory",
+      "Measuring and Enhancing Trustworthiness of LLMs in RAG through Grounded Attributions and Learning to Refuse",
+      "Robust Function-Calling for On-Device Language Model via Function Masking"
+    ],
+    "acl25": [
+      "A",
+      "Quaff: Quantized Parameter-Efficient Fine-Tuning under Outlier Spatial Stability Hypothesis"
+    ],
+    "icml25": [
+      "CASE-Bench: Context-Aware SafEty Benchmark for Large Language Models",
+      "Just Enough Shifts: Mitigating Over-Refusal in Aligned Language Models with Targeted Representation Fine-Tuning",
+      "OR-Bench: An Over-Refusal Benchmark for Large Language Models",
+      "POROver: Improving Safety and Reducing Overrefusal in Large Language Models with Overgeneration and Preference Optimization",
+      "SyncMind: Measuring Agent Out-of-Sync Recovery in Collaborative Software Engineering"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 5,
+    "acl25": 2,
+    "icml25": 5
+  },
+  "conferences": [
+    "acl25",
+    "iclr25",
+    "icml25"
+  ]
+}

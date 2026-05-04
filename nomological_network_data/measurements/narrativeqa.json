@@ -1,0 +1,187 @@
+{
+  "canonical_name": "NarrativeQA",
+  "type": "measurement",
+  "canonical_definition": "NarrativeQA is a benchmark consistently used to evaluate question answering, with a prevalent focus on long-context scenarios. Across the provided literature, it is defined as a dataset where the task is to generate free-form answers based on long narrative texts, which are specified as \"entire books... and movie scripts\" or \"full-length novels.\" Papers use NarrativeQA to measure several capabilities, including `Question answering`, `Long-context processing`, `Open-domain question answering`, and `Length generalization`. The challenge is frequently framed as requiring models to synthesize information and achieve a \"cohesive understanding\" of these long documents. For instance, some work uses it to \"test the model\u2019s ability to leverage long context in zero-shot learning settings\" (\"Functional Interpolation for Relative Positions improves Long Context Transformers\"). Several sources identify NarrativeQA as part of the SCROLLS benchmark, and it is often evaluated alongside other QA datasets such as QASPER and QuALITY.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "NarrativeQA"
+  ],
+  "papers": [
+    "Behavioural vs. Representational Systematicity in End-to-End Models: An Opinionated Survey",
+    "Enhancing Transformers for Generalizable First-Order Logical Entailment",
+    "MadaKV: Adaptive Modality-PerceptionKVCache Eviction for Efficient Multimodal Long-Context Inference",
+    "Sample-Efficient Human Evaluation of Large Language Models via Maximum Discrepancy Competition",
+    "CanLLMs Generate and Solve Linguistic Olympiad Puzzles?",
+    "DIWALI- Diversity and Inclusivity aWare cuLture specific Items forIndia: Dataset and Assessment ofLLMs for Cultural Text Adaptation inIndian Context",
+    "Hope vs. Hate: Understanding User Interactions withLGBTQ+ News Content in MainstreamUSNews Media through the Lens of Hope Speech",
+    "LiTEx: A Linguistic Taxonomy of Explanations for Understanding Within-Label Variation in Natural Language Inference",
+    "VISaGE: Understanding Visual Generics and Exceptions",
+    "Functional Interpolation for Relative Positions improves Long Context Transformers",
+    "In-Context Pretraining: Language Modeling Beyond Document Boundaries",
+    "RA-DIT: Retrieval-Augmented Dual Instruction Tuning",
+    "RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval",
+    "Retrieval meets Long Context Large Language Models",
+    "Vanishing Gradients in Reinforcement Finetuning of Language Models",
+    "ChatQA 2: Bridging the Gap to Proprietary LLMs in Long Context and RAG Capabilities",
+    "Gated Delta Networks: Improving Mamba2 with Delta Rule",
+    "HELMET: How to Evaluate Long-context Models Effectively and Thoroughly",
+    "NovelQA: Benchmarking Question Answering on Documents Exceeding 200K Tokens",
+    "SqueezeAttention: 2D Management of KV-Cache in LLM Inference via Layer-wise Optimal Budget",
+    "Compute or Load KV Cache? Why Not Both?",
+    "From RAG to Memory: Non-Parametric Continual Learning for Large Language Models",
+    "LaRA: Benchmarking Retrieval-Augmented Generation and Long-Context LLMs \u2013 No Silver Bullet for LC or RAG Routing",
+    "ParallelComp: Parallel Long-Context Compressor for Length Extrapolation"
+  ],
+  "paper_count": 24,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A question-answering dataset where the task is to generate free-form answers based on provided text segments, such as stories or book chapters.",
+      "paper": "Functional Interpolation for Relative Positions improves Long Context Transformers",
+      "original_name": "NarrativeQA"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval",
+      "evidence": "",
+      "paper_count": 5,
+      "papers_by_conference": {
+        "iclr24": [
+          "RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval"
+        ],
+        "neurips24": [
+          "Chain of Agents: Large Language Models Collaborating on Long-Context Tasks",
+          "Megalodon: Efficient LLM Pretraining and Inference with Unlimited Context Length"
+        ],
+        "iclr25": [
+          "SqueezeAttention: 2D Management of KV-Cache in LLM Inference via Layer-wise Optimal Budget"
+        ],
+        "naacl25": [
+          "AID: Adaptive Integration of Detectors for SafeAIwith Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Open-domain question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "HELMET: How to Evaluate Long-context Models Effectively and Thoroughly",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "HELMET: How to Evaluate Long-context Models Effectively and Thoroughly"
+        ],
+        "acl25": [
+          "Enhancing Transformers for Generalizable First-Order Logical Entailment"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SCROLLS",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Megalodon: Efficient LLM Pretraining and Inference with Unlimited Context Length",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Megalodon: Efficient LLM Pretraining and Inference with Unlimited Context Length"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-context processing",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "AID: Adaptive Integration of Detectors for SafeAIwith Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "AID: Adaptive Integration of Detectors for SafeAIwith Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Length generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Gated Delta Networks: Improving Mamba2 with Delta Rule",
+      "evidence": "As shown in Fig.2, we evaluate the models' capacity to extrapolate to sequences of up to 20K tokens across six long-context benchmarks.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Gated Delta Networks: Improving Mamba2 with Delta Rule"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 1,
+  "characterization": "NarrativeQA is a benchmark consistently used to evaluate question answering, with a prevalent focus on long-context scenarios. Across the provided literature, it is defined as a dataset where the task is to generate free-form answers based on long narrative texts, which are specified as \"entire books... and movie scripts\" or \"full-length novels.\" Papers use NarrativeQA to measure several capabilities, including `Question answering`, `Long-context processing`, `Open-domain question answering`, and `Length generalization`. The challenge is frequently framed as requiring models to synthesize information and achieve a \"cohesive understanding\" of these long documents. For instance, some work uses it to \"test the model\u2019s ability to leverage long context in zero-shot learning settings\" (\"Functional Interpolation for Relative Positions improves Long Context Transformers\"). Several sources identify NarrativeQA as part of the SCROLLS benchmark, and it is often evaluated alongside other QA datasets such as QASPER and QuALITY.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Functional Interpolation for Relative Positions improves Long Context Transformers",
+      "In-Context Pretraining: Language Modeling Beyond Document Boundaries",
+      "RA-DIT: Retrieval-Augmented Dual Instruction Tuning",
+      "RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval",
+      "Retrieval meets Long Context Large Language Models",
+      "Vanishing Gradients in Reinforcement Finetuning of Language Models"
+    ],
+    "iclr25": [
+      "ChatQA 2: Bridging the Gap to Proprietary LLMs in Long Context and RAG Capabilities",
+      "Gated Delta Networks: Improving Mamba2 with Delta Rule",
+      "HELMET: How to Evaluate Long-context Models Effectively and Thoroughly",
+      "NovelQA: Benchmarking Question Answering on Documents Exceeding 200K Tokens",
+      "SqueezeAttention: 2D Management of KV-Cache in LLM Inference via Layer-wise Optimal Budget"
+    ],
+    "acl25": [
+      "Behavioural vs. Representational Systematicity in End-to-End Models: An Opinionated Survey",
+      "Enhancing Transformers for Generalizable First-Order Logical Entailment",
+      "MadaKV: Adaptive Modality-PerceptionKVCache Eviction for Efficient Multimodal Long-Context Inference",
+      "Sample-Efficient Human Evaluation of Large Language Models via Maximum Discrepancy Competition"
+    ],
+    "icml25": [
+      "Compute or Load KV Cache? Why Not Both?",
+      "From RAG to Memory: Non-Parametric Continual Learning for Large Language Models",
+      "LaRA: Benchmarking Retrieval-Augmented Generation and Long-Context LLMs \u2013 No Silver Bullet for LC or RAG Routing",
+      "ParallelComp: Parallel Long-Context Compressor for Length Extrapolation"
+    ],
+    "emnlp25": [
+      "CanLLMs Generate and Solve Linguistic Olympiad Puzzles?",
+      "DIWALI- Diversity and Inclusivity aWare cuLture specific Items forIndia: Dataset and Assessment ofLLMs for Cultural Text Adaptation inIndian Context",
+      "Hope vs. Hate: Understanding User Interactions withLGBTQ+ News Content in MainstreamUSNews Media through the Lens of Hope Speech",
+      "LiTEx: A Linguistic Taxonomy of Explanations for Understanding Within-Label Variation in Natural Language Inference",
+      "VISaGE: Understanding Visual Generics and Exceptions"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 6,
+    "iclr25": 5,
+    "acl25": 4,
+    "icml25": 4,
+    "emnlp25": 5
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25"
+  ]
+}

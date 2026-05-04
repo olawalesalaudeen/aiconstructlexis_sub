@@ -1,0 +1,84 @@
+{
+  "canonical_name": "Clustering",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, Clustering is most commonly defined as the task of grouping a set of texts such that texts within the same group are more similar to each other than to those in other groups. It is frequently positioned as one of several core text embedding tasks, studied alongside classification, retrieval, and reranking. The behavior is primarily operationalized and measured using the MTEB benchmark, which, as one paper notes, evaluates performance by \"computing the v-measure score... on text embeddings clustered using k-means.\" Specific datasets used to evaluate this task include TwentyNewsgroups-Clustering and collections from sources like Arxiv and Reddit. A less common framing, termed \"Category induction,\" describes a similar process of grouping entities into meaningful sets based on shared properties. A completely divergent usage appears in one source where \"Code-switching\" is defined as alternating between languages, a concept unrelated to grouping by similarity. The data also indicates a correlation between Clustering and Commonsense knowledge, but provides no evidence to elaborate on this relationship.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Clustering",
+    "Category induction",
+    "Code-switching"
+  ],
+  "papers": [
+    "AccessEval: Benchmarking Disability Bias in Large Language Models",
+    "Chart2Code53: A Large-Scale Diverse and Complex Dataset for Enhancing Chart-to-Code Generation",
+    "CoEvo: Coevolution ofLLMand Retrieval Model for Domain-Specific Information Retrieval",
+    "RecBase: Generative Foundation Model Pretraining for Zero-Shot Recommendation",
+    "MMTEB: Massive Multilingual Text Embedding Benchmark",
+    "Making Text Embedders Few-Shot Learners",
+    "Repetition Improves Language Model Embeddings"
+  ],
+  "paper_count": 7,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The task of grouping a set of texts in such a way that texts in the same group are more similar to each other than to those in other groups.",
+      "paper": "Making Text Embedders Few-Shot Learners",
+      "original_name": "Clustering"
+    },
+    {
+      "text": "The process of grouping entities into meaningful sets based on shared properties or clustered embeddings, allowing for overlapping and incomplete categorization.",
+      "paper": "RecBase: Generative Foundation Model Pretraining for Zero-Shot Recommendation",
+      "original_name": "Category induction"
+    },
+    {
+      "text": "The observable linguistic behavior of alternating between two or more languages within a single conversation or utterance, which can be used to bypass safety filters.",
+      "paper": "Chart2Code53: A Large-Scale Diverse and Complex Dataset for Enhancing Chart-to-Code Generation",
+      "original_name": "Code-switching"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MTEB",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Making Text Embedders Few-Shot Learners",
+      "evidence": "It includes data for various tasks including Retrieval, Reranking, Clustering, Classification, and STS. (Section 4.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Making Text Embedders Few-Shot Learners"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the provided literature, Clustering is most commonly defined as the task of grouping a set of texts such that texts within the same group are more similar to each other than to those in other groups. It is frequently positioned as one of several core text embedding tasks, studied alongside classification, retrieval, and reranking. The behavior is primarily operationalized and measured using the MTEB benchmark, which, as one paper notes, evaluates performance by \"computing the v-measure score... on text embeddings clustered using k-means.\" Specific datasets used to evaluate this task include TwentyNewsgroups-Clustering and collections from sources like Arxiv and Reddit. A less common framing, termed \"Category induction,\" describes a similar process of grouping entities into meaningful sets based on shared properties. A completely divergent usage appears in one source where \"Code-switching\" is defined as alternating between languages, a concept unrelated to grouping by similarity. The data also indicates a correlation between Clustering and Commonsense knowledge, but provides no evidence to elaborate on this relationship.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "MMTEB: Massive Multilingual Text Embedding Benchmark",
+      "Making Text Embedders Few-Shot Learners",
+      "Repetition Improves Language Model Embeddings"
+    ],
+    "emnlp25": [
+      "AccessEval: Benchmarking Disability Bias in Large Language Models",
+      "Chart2Code53: A Large-Scale Diverse and Complex Dataset for Enhancing Chart-to-Code Generation",
+      "CoEvo: Coevolution ofLLMand Retrieval Model for Domain-Specific Information Retrieval",
+      "RecBase: Generative Foundation Model Pretraining for Zero-Shot Recommendation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3,
+    "emnlp25": 4
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25"
+  ]
+}

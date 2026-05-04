@@ -1,0 +1,231 @@
+{
+  "canonical_name": "Error handling",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, error handling is most commonly framed as a latent capability of an agent or model to recover from mistakes and continue toward a goal. This prevailing usage encompasses detecting and rectifying errors in a sequence of thought, adjusting plans after invalid actions, or resynchronizing an internal state with an external environment. As one paper notes, this involves mechanisms like \"error identification, recovery loops, self-correction, and fallback strategies\" (SPA-BENCH: A COMPREHENSIVE BENCHMARK FOR SMARTPHONE AGENT EVALUATION). Some work treats this as a distinct skill that can be taught, arguing that \"error correction can be very different from the original error-free reasoning\" (Physics of Language Models: Part 2.2, How to Learn From Mistakes on Grade-School Math Problems). A few papers present more specialized definitions. One line of work treats it as \"Error resilience,\" the stability of model outputs when computations are approximated (Progressive Mixed-Precision Decoding for Efficient LLM Inference). Another defines it as \"Error mitigation,\" the reduction of incorrect predictions on supervised tasks (To Steer or Not to Steer? Mechanistic Error Reduction with Abstention for Language Models). A third specific usage, \"Performance recovery,\" operationalizes the construct by measuring a pruned model's ability to regain capabilities, using benchmarks such as WikiText-2, TruthfulQA, MMLU, ARC-Challenge, and GSM8k. The concept is also studied alongside other model properties like Hallucination, Fairness, and Harmlessness.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Error correction",
+    "Failure recovery",
+    "Error tolerance",
+    "Error handling",
+    "Error resilience",
+    "Error mitigation",
+    "Out-of-sync recovery",
+    "Performance recovery"
+  ],
+  "papers": [
+    "OpenRCA: Can Large Language Models Locate the Root Cause of Software Failures?",
+    "Progressive Mixed-Precision Decoding for Efficient LLM Inference",
+    "Robotouille: An Asynchronous Planning Benchmark for LLM Agents",
+    "SPA-BENCH: A COMPREHENSIVE BENCHMARK FOR SMARTPHONE AGENT EVALUATION",
+    "Divide and Conquer: Exploring Language-centric Tree Reasoning for Video Question-Answering",
+    "Targeted Low-rank Refinement: Enhancing Sparse Language Models with Precision",
+    "To Steer or Not to Steer? Mechanistic Error Reduction with Abstention for Language Models"
+  ],
+  "paper_count": 7,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The ability to recover from mistakes in perception, skill execution, or partner actions and continue toward task completion.",
+      "paper": "PARTNR: A Benchmark for Planning and Reasoning in Embodied Multi-agent Tasks",
+      "original_name": "Error recovery"
+    },
+    {
+      "text": "The latent skill of identifying and rectifying a mistake within a generated sequence of thought, which can be taught through pretraining.",
+      "paper": "Physics of Language Models: Part 2.2, How to Learn From Mistakes on Grade-School Math Problems",
+      "original_name": "Error correction"
+    },
+    {
+      "text": "The ability of an agent to effectively adjust its plan and continue making progress toward a goal after encountering an invalid action or unexpected state change.",
+      "paper": "Robotouille: An Asynchronous Planning Benchmark for LLM Agents",
+      "original_name": "Failure recovery"
+    },
+    {
+      "text": "The capability of a model to effectively handle and recover from errors, such as by revising its code or adjusting its reasoning based on execution feedback.",
+      "paper": "OpenRCA: Can Large Language Models Locate the Root Cause of Software Failures?",
+      "original_name": "Error tolerance"
+    },
+    {
+      "text": "The degree to which an LLM's outputs remain stable when its computations are approximated or quantized.",
+      "paper": "Progressive Mixed-Precision Decoding for Efficient LLM Inference",
+      "original_name": "Error resilience"
+    },
+    {
+      "text": "The latent capability of an agent to detect, recover from, and manage execution errors or unexpected situations during task performance.",
+      "paper": "SPA-BENCH: A COMPREHENSIVE BENCHMARK FOR SMARTPHONE AGENT EVALUATION",
+      "original_name": "Error handling"
+    },
+    {
+      "text": "The ability of an agent to detect that its internal understanding of a system state has diverged from the true state, diagnose the cause of the mismatch, and update its understanding to resynchronize.",
+      "paper": "SyncMind: Measuring Agent Out-of-Sync Recovery in Collaborative Software Engineering",
+      "original_name": "Out-of-sync recovery"
+    },
+    {
+      "text": "The ability of a model or intervention to reduce the frequency of incorrect predictions or outputs on supervised tasks.",
+      "paper": "To Steer or Not to Steer? Mechanistic Error Reduction with Abstention for Language Models",
+      "original_name": "Error mitigation"
+    },
+    {
+      "text": "The latent ability of a pruned model to regain the functional capabilities of its original dense counterpart after compression, inferred from improvements in metrics like perplexity across tasks and sparsity levels.",
+      "paper": "Targeted Low-rank Refinement: Enhancing Sparse Language Models with Precision",
+      "original_name": "Performance recovery"
+    }
+  ],
+  "definition_count": 9,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Harmlessness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "To Steer or Not to Steer? Mechanistic Error Reduction with Abstention for Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "To Steer or Not to Steer? Mechanistic Error Reduction with Abstention for Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "To Steer or Not to Steer? Mechanistic Error Reduction with Abstention for Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "To Steer or Not to Steer? Mechanistic Error Reduction with Abstention for Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "To Steer or Not to Steer? Mechanistic Error Reduction with Abstention for Language Models",
+      "evidence": "An emerging line of research explores alternative steering techniques for error-related properties like truthfulness, and hallucination (Li et al., 2023; Qiu et al., 2024; Wang et al., 2025; Bhattacharjee et al., 2024). (Section 1).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "To Steer or Not to Steer? Mechanistic Error Reduction with Abstention for Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Fairness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "To Steer or Not to Steer? Mechanistic Error Reduction with Abstention for Language Models",
+      "evidence": "While our current focus is error mitigation, by adapting the target signal with labeled inputs, MERA could steer LMs toward diverse specialised objectives (e.g., harmlessness, honesty, and fairness etc). (Section 1).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "To Steer or Not to Steer? Mechanistic Error Reduction with Abstention for Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WikiText-2",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Targeted Low-rank Refinement: Enhancing Sparse Language Models with Precision",
+      "evidence": "\u201cFollowing pruning, we evaluate model perplexity on the WikiText-2 dataset\u201d",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Targeted Low-rank Refinement: Enhancing Sparse Language Models with Precision"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Targeted Low-rank Refinement: Enhancing Sparse Language Models with Precision",
+      "evidence": "We evaluate our method on LLMs and show significant perplexity improvements over baselines. This is particularly noteworthy at high sparsity levels, maintaining robust improvements even as high as 70% sparsity. Benchmark results. In Table 3, we evaluate the performance of our method on several benchmark datasets.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Targeted Low-rank Refinement: Enhancing Sparse Language Models with Precision"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8k",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Targeted Low-rank Refinement: Enhancing Sparse Language Models with Precision",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Targeted Low-rank Refinement: Enhancing Sparse Language Models with Precision"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-Challenge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Targeted Low-rank Refinement: Enhancing Sparse Language Models with Precision",
+      "evidence": "We evaluate our method on LLMs and show significant perplexity improvements over baselines. This is particularly noteworthy at high sparsity levels, maintaining robust improvements even as high as 70% sparsity. Benchmark results. In Table 3, we evaluate the performance of our method on several benchmark datasets.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Targeted Low-rank Refinement: Enhancing Sparse Language Models with Precision"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Targeted Low-rank Refinement: Enhancing Sparse Language Models with Precision",
+      "evidence": "We evaluate our method on LLMs and show significant perplexity improvements over baselines. This is particularly noteworthy at high sparsity levels, maintaining robust improvements even as high as 70% sparsity. Benchmark results. In Table 3, we evaluate the performance of our method on several benchmark datasets.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Targeted Low-rank Refinement: Enhancing Sparse Language Models with Precision"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 9,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 9,
+  "characterization": "Across the surveyed literature, error handling is most commonly framed as a latent capability of an agent or model to recover from mistakes and continue toward a goal. This prevailing usage encompasses detecting and rectifying errors in a sequence of thought, adjusting plans after invalid actions, or resynchronizing an internal state with an external environment. As one paper notes, this involves mechanisms like \"error identification, recovery loops, self-correction, and fallback strategies\" (SPA-BENCH: A COMPREHENSIVE BENCHMARK FOR SMARTPHONE AGENT EVALUATION). Some work treats this as a distinct skill that can be taught, arguing that \"error correction can be very different from the original error-free reasoning\" (Physics of Language Models: Part 2.2, How to Learn From Mistakes on Grade-School Math Problems). A few papers present more specialized definitions. One line of work treats it as \"Error resilience,\" the stability of model outputs when computations are approximated (Progressive Mixed-Precision Decoding for Efficient LLM Inference). Another defines it as \"Error mitigation,\" the reduction of incorrect predictions on supervised tasks (To Steer or Not to Steer? Mechanistic Error Reduction with Abstention for Language Models). A third specific usage, \"Performance recovery,\" operationalizes the construct by measuring a pruned model's ability to regain capabilities, using benchmarks such as WikiText-2, TruthfulQA, MMLU, ARC-Challenge, and GSM8k. The concept is also studied alongside other model properties like Hallucination, Fairness, and Harmlessness.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "OpenRCA: Can Large Language Models Locate the Root Cause of Software Failures?",
+      "Progressive Mixed-Precision Decoding for Efficient LLM Inference",
+      "Robotouille: An Asynchronous Planning Benchmark for LLM Agents",
+      "SPA-BENCH: A COMPREHENSIVE BENCHMARK FOR SMARTPHONE AGENT EVALUATION"
+    ],
+    "icml25": [
+      "Divide and Conquer: Exploring Language-centric Tree Reasoning for Video Question-Answering",
+      "Targeted Low-rank Refinement: Enhancing Sparse Language Models with Precision",
+      "To Steer or Not to Steer? Mechanistic Error Reduction with Abstention for Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 4,
+    "icml25": 3
+  },
+  "conferences": [
+    "iclr25",
+    "icml25"
+  ]
+}

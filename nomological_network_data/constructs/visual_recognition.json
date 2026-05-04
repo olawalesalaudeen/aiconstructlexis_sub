@@ -1,0 +1,200 @@
+{
+  "canonical_name": "Visual recognition",
+  "type": "construct",
+  "canonical_definition": "The most common framing of visual recognition in the provided literature is as a general ability to identify and classify elements such as objects and text within an image. Some work offers more specific definitions, focusing on the latent ability to distinguish objects in scenes, identify object properties like color and shape (termed \"attribute recognition\"), or recognize relevant landmarks before performing a task. This construct is operationalized and measured using several instruments; papers report using the AMBER, VTAB-1k, and FGVC benchmarks to evaluate it. One study provides a concrete operationalization, measuring visual recognition accuracy by a model's ability to recognize \"the 4 cards from the input image\" (\"SFT Memorizes, RL Generalizes: A Comparative Study of Foundation Model Post-training\"). Across the surveyed work, models are often described as having strong object and attribute recognition abilities, although one paper notes that \"GPT4O struggles more with distinguishing colors than other attributes\" (\"Task Me Anything\"). Visual recognition is frequently studied in relation to other concepts like visual grounding, object detection, and visual perception. One paper proposes a directional relationship, suggesting that visual recognition contributes to the broader capability of visual understanding.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Visual recognition",
+    "Object recognition",
+    "Attribute recognition"
+  ],
+  "papers": [
+    "SFT Memorizes, RL Generalizes: A Comparative Study of Foundation Model Post-training",
+    "WeGeFT: Weight-Generative Fine-Tuning for Multi-Faceted Efficient Adaptation of Large Models",
+    "Fine-Tuning Large Vision-Language Models as Decision-Making Agents via Reinforcement Learning",
+    "Measuring Multimodal Mathematical Reasoning with MATH-Vision Dataset",
+    "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding",
+    "Task Me Anything",
+    "Unveiling Encoder-Free Vision-Language Models",
+    "Visual Riddles: a Commonsense and World Knowledge Challenge for Large Vision and Language Models",
+    "WildVision: Evaluating Vision-Language Models in the Wild with Human Preferences"
+  ],
+  "paper_count": 9,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The general ability to identify and classify objects, text, and other elements within an image.",
+      "paper": "WildVision: Evaluating Vision-Language Models in the Wild with Human Preferences",
+      "original_name": "Visual recognition"
+    },
+    {
+      "text": "The latent ability to identify and distinguish objects in visual scenes.",
+      "paper": "VisMin: Visual Minimal-Change Understanding",
+      "original_name": "Object recognition"
+    },
+    {
+      "text": "The latent ability of a model to identify the properties of objects, such as their color, material, shape, or state.",
+      "paper": "Task Me Anything",
+      "original_name": "Attribute recognition"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual grounding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual understanding",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Object detection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Referring expression understanding",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual perception",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Visual Description Grounding Reduces Hallucinations and Boosts Reasoning in LVLMs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Visual Description Grounding Reduces Hallucinations and Boosts Reasoning in LVLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AMBER",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Visual Description Grounding Reduces Hallucinations and Boosts Reasoning in LVLMs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Visual Description Grounding Reduces Hallucinations and Boosts Reasoning in LVLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Information retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Needle In A Video Haystack: A Scalable  Synthetic Evaluator for Video MLLMs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Needle In A Video Haystack: A Scalable  Synthetic Evaluator for Video MLLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VTAB-1k",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "WeGeFT: Weight-Generative Fine-Tuning for Multi-Faceted Efficient Adaptation of Large Models",
+      "evidence": "We evaluate WeGeFT on the VTAB-1k benchmark (Zhai et al., 2019) and the fine-grained visual classification (FGVC) benchmark...",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "WeGeFT: Weight-Generative Fine-Tuning for Multi-Faceted Efficient Adaptation of Large Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "FGVC",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "WeGeFT: Weight-Generative Fine-Tuning for Multi-Faceted Efficient Adaptation of Large Models",
+      "evidence": "We evaluate WeGeFT on the VTAB-1k benchmark (Zhai et al., 2019) and the fine-grained visual classification (FGVC) benchmark...",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "WeGeFT: Weight-Generative Fine-Tuning for Multi-Faceted Efficient Adaptation of Large Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 9,
+  "incoming_relationship_count": 5,
+  "outgoing_relationship_count": 4,
+  "characterization": "The most common framing of visual recognition in the provided literature is as a general ability to identify and classify elements such as objects and text within an image. Some work offers more specific definitions, focusing on the latent ability to distinguish objects in scenes, identify object properties like color and shape (termed \"attribute recognition\"), or recognize relevant landmarks before performing a task. This construct is operationalized and measured using several instruments; papers report using the AMBER, VTAB-1k, and FGVC benchmarks to evaluate it. One study provides a concrete operationalization, measuring visual recognition accuracy by a model's ability to recognize \"the 4 cards from the input image\" (\"SFT Memorizes, RL Generalizes: A Comparative Study of Foundation Model Post-training\"). Across the surveyed work, models are often described as having strong object and attribute recognition abilities, although one paper notes that \"GPT4O struggles more with distinguishing colors than other attributes\" (\"Task Me Anything\"). Visual recognition is frequently studied in relation to other concepts like visual grounding, object detection, and visual perception. One paper proposes a directional relationship, suggesting that visual recognition contributes to the broader capability of visual understanding.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "Fine-Tuning Large Vision-Language Models as Decision-Making Agents via Reinforcement Learning",
+      "Measuring Multimodal Mathematical Reasoning with MATH-Vision Dataset",
+      "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding",
+      "Task Me Anything",
+      "Unveiling Encoder-Free Vision-Language Models",
+      "Visual Riddles: a Commonsense and World Knowledge Challenge for Large Vision and Language Models",
+      "WildVision: Evaluating Vision-Language Models in the Wild with Human Preferences"
+    ],
+    "icml25": [
+      "SFT Memorizes, RL Generalizes: A Comparative Study of Foundation Model Post-training",
+      "WeGeFT: Weight-Generative Fine-Tuning for Multi-Faceted Efficient Adaptation of Large Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 7,
+    "icml25": 2
+  },
+  "conferences": [
+    "icml25",
+    "neurips24"
+  ]
+}

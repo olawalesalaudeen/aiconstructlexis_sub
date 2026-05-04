@@ -1,0 +1,229 @@
+{
+  "canonical_name": "Naturalness",
+  "type": "construct",
+  "canonical_definition": "Across the provided literature, Naturalness is a construct concerned with the human-like quality of model-generated outputs, with definitions varying based on whether the output is speech or text. In speech synthesis research, the prevailing usage defines it by perceptual qualities like fluency, prosody, and being indistinguishable from a human speaker. For generated text and dialogues, the focus shifts to resembling human-written language in style, coherence, and phrasing, with one paper specifying linguistic components like grammar and pronoun usage. A less common framing defines it at a corpus level, asking if a set of generated texts could plausibly have been produced by native speakers. The construct is predominantly operationalized and measured through human evaluation, where annotators often use 5-point Likert scales. Some studies also use automated approaches, including LLM-as-a-judge systems, and specific audio metrics like NISQA and Mean Opinion Scores (MOS). Naturalness is frequently evaluated alongside other qualities such as coherence, accuracy, and helpfulness. It is also presented as a component of broader concepts like conversational ability and as a guiding principle in machine translation.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Naturalness"
+  ],
+  "papers": [
+    "CLAIM: Mitigating Multilingual Object Hallucination in Large Vision-Language Models with Cross-Lingual Attention Intervention",
+    "Establishing TrustworthyLLMEvaluation via Shortcut Neuron Analysis",
+    "What Makes a Good Natural Language Prompt?",
+    "Astra: Efficient Transformer Architecture and Contrastive Dynamics Learning for Embodied Instruction Following",
+    "Dynamic Collaboration of Multi-Language Models based on Minimal Complete Semantic Units",
+    "Examining False Positives under Inference Scaling for Mathematical Reasoning",
+    "Improving Context Fidelity via Native Retrieval-Augmented Reasoning",
+    "SHARP: Steering Hallucination inLVLMs via Representation Engineering",
+    "SurveyGen: Quality-Aware Scientific Survey Generation with Large Language Models",
+    "TACO: Enhancing Multimodal In-context Learning via Task Mapping-Guided Sequence Configuration",
+    "The State of MultilingualLLMSafety Research: From Measuring The Language Gap To Mitigating It",
+    "TurnaboutLLM: A Deductive Reasoning Benchmark from Detective Games",
+    "Achieving Human Parity in Content-Grounded Datasets Generation",
+    "CLaM-TTS: Improving Neural Codec Language Model for Zero-Shot Text-to-Speech",
+    "PolyVoice: Language Models for Speech to Speech Translation",
+    "A Variational Framework for Improving Naturalness in Generative Spoken Language Models",
+    "DiTAR: Diffusion Transformer Autoregressive Modeling for Speech Generation",
+    "Long-Form Speech Generation with Spoken Language Models",
+    "NTPP: Generative Speech Language Modeling for Dual-Channel Spoken Dialogue via Next-Token-Pair Prediction",
+    "To Steer or Not to Steer? Mechanistic Error Reduction with Abstention for Language Models",
+    "CROPE: Evaluating In-Context Adaptation of Vision and Language Models to Culture-Specific Concepts",
+    "How to Align Multiple Signed Language Corpora for Better Sign-to-Sign Translations?",
+    "MAMM-Refine: A Recipe for Improving Faithfulness in Generation with Multi-Agent Collaboration",
+    "PROMPTEVALS: A Dataset of Assertions and Guardrails for Custom Production Large Language Model Pipelines",
+    "TheRussian-focused embedders\u2019 exploration: ruMTEBbenchmark andRussian embedding model design",
+    "Paralinguistics-Aware Speech-Empowered Large Language Models for Natural Conversation",
+    "SongCreator: Lyrics-based Universal Song Generation",
+    "YouDream: Generating Anatomically Controllable Consistent Text-to-3D Animals"
+  ],
+  "paper_count": 28,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The degree to which synthesized speech is perceived as fluent, human-like, and perceptually smooth, beyond mere intelligibility or accuracy.",
+      "paper": "Achieving Human Parity in Content-Grounded Datasets Generation",
+      "original_name": "Naturalness"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Achieving Human Parity in Content-Grounded Datasets Generation",
+      "evidence": "We perform human evaluation at the conversation and utterance levels to examine the quality of the dialogues. The metrics are summarized in Table 2. For conversation-level evaluations, judges are asked to score each conversation on a 5-point Likert scale. ... Overall naturalness Overall subjective impression of the conversation and whether it sounds natural. (Table 2)",
+      "paper_count": 5,
+      "papers_by_conference": {
+        "iclr24": [
+          "Achieving Human Parity in Content-Grounded Datasets Generation"
+        ],
+        "neurips24": [
+          "YouDream: Generating Anatomically Controllable Consistent Text-to-3D Animals"
+        ],
+        "acl25": [
+          "CLAIM: Mitigating Multilingual Object Hallucination in Large Vision-Language Models with Cross-Lingual Attention Intervention"
+        ],
+        "icml25": [
+          "NTPP: Generative Speech Language Modeling for Dual-Channel Spoken Dialogue via Next-Token-Pair Prediction"
+        ],
+        "emnlp25": [
+          "SHARP: Steering Hallucination inLVLMs via Representation Engineering"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-as-a-judge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "PROMPTEVALS: A Dataset of Assertions and Guardrails for Custom Production Large Language Model Pipelines",
+      "evidence": "\"we used GPT-4 (OpenAI et al., 2024) to carefully evaluate each dialogue based on four dimensions: naturalness (NAT), coherence (COH), helpfulness (HELP), and accuracy (ACC).\"",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "naacl25": [
+          "PROMPTEVALS: A Dataset of Assertions and Guardrails for Custom Production Large Language Model Pipelines"
+        ],
+        "emnlp25": [
+          "TACO: Enhancing Multimodal In-context Learning via Task Mapping-Guided Sequence Configuration"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-based evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Simulating Human-like Daily Activities with Desire-driven Autonomy",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Simulating Human-like Daily Activities with Desire-driven Autonomy"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Machine translation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Astra: Efficient Transformer Architecture and Contrastive Dynamics Learning for Embodied Instruction Following",
+      "evidence": "Early frameworks propose strategies ranging from literal translation to complete adaptation, guided by the \u201cPentathlon Principle\u201d (singability, sense, naturalness, rhythm, and rhyme). (Section 2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Astra: Efficient Transformer Architecture and Contrastive Dynamics Learning for Embodied Instruction Following"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Fluency",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "To Steer or Not to Steer? Mechanistic Error Reduction with Abstention for Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "To Steer or Not to Steer? Mechanistic Error Reduction with Abstention for Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Conversational ability",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "NTPP: Generative Speech Language Modeling for Dual-Channel Spoken Dialogue via Next-Token-Pair Prediction",
+      "evidence": "empirical results show that our proposed method, NTPP, significantly improves the conversational abilities of SLMs in terms of turn-taking prediction, response coherence, and naturalness. (Abstract)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "NTPP: Generative Speech Language Modeling for Dual-Channel Spoken Dialogue via Next-Token-Pair Prediction"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "G-Eval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Dynamic Collaboration of Multi-Language Models based on Minimal Complete Semantic Units",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Dynamic Collaboration of Multi-Language Models based on Minimal Complete Semantic Units"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 7,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 4,
+  "characterization": "Across the provided literature, Naturalness is a construct concerned with the human-like quality of model-generated outputs, with definitions varying based on whether the output is speech or text. In speech synthesis research, the prevailing usage defines it by perceptual qualities like fluency, prosody, and being indistinguishable from a human speaker. For generated text and dialogues, the focus shifts to resembling human-written language in style, coherence, and phrasing, with one paper specifying linguistic components like grammar and pronoun usage. A less common framing defines it at a corpus level, asking if a set of generated texts could plausibly have been produced by native speakers. The construct is predominantly operationalized and measured through human evaluation, where annotators often use 5-point Likert scales. Some studies also use automated approaches, including LLM-as-a-judge systems, and specific audio metrics like NISQA and Mean Opinion Scores (MOS). Naturalness is frequently evaluated alongside other qualities such as coherence, accuracy, and helpfulness. It is also presented as a component of broader concepts like conversational ability and as a guiding principle in machine translation.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Achieving Human Parity in Content-Grounded Datasets Generation",
+      "CLaM-TTS: Improving Neural Codec Language Model for Zero-Shot Text-to-Speech",
+      "PolyVoice: Language Models for Speech to Speech Translation"
+    ],
+    "neurips24": [
+      "Paralinguistics-Aware Speech-Empowered Large Language Models for Natural Conversation",
+      "SongCreator: Lyrics-based Universal Song Generation",
+      "YouDream: Generating Anatomically Controllable Consistent Text-to-3D Animals"
+    ],
+    "naacl25": [
+      "CROPE: Evaluating In-Context Adaptation of Vision and Language Models to Culture-Specific Concepts",
+      "How to Align Multiple Signed Language Corpora for Better Sign-to-Sign Translations?",
+      "MAMM-Refine: A Recipe for Improving Faithfulness in Generation with Multi-Agent Collaboration",
+      "PROMPTEVALS: A Dataset of Assertions and Guardrails for Custom Production Large Language Model Pipelines",
+      "TheRussian-focused embedders\u2019 exploration: ruMTEBbenchmark andRussian embedding model design"
+    ],
+    "acl25": [
+      "CLAIM: Mitigating Multilingual Object Hallucination in Large Vision-Language Models with Cross-Lingual Attention Intervention",
+      "Establishing TrustworthyLLMEvaluation via Shortcut Neuron Analysis",
+      "What Makes a Good Natural Language Prompt?"
+    ],
+    "icml25": [
+      "A Variational Framework for Improving Naturalness in Generative Spoken Language Models",
+      "DiTAR: Diffusion Transformer Autoregressive Modeling for Speech Generation",
+      "Long-Form Speech Generation with Spoken Language Models",
+      "NTPP: Generative Speech Language Modeling for Dual-Channel Spoken Dialogue via Next-Token-Pair Prediction",
+      "To Steer or Not to Steer? Mechanistic Error Reduction with Abstention for Language Models"
+    ],
+    "emnlp25": [
+      "Astra: Efficient Transformer Architecture and Contrastive Dynamics Learning for Embodied Instruction Following",
+      "Dynamic Collaboration of Multi-Language Models based on Minimal Complete Semantic Units",
+      "Examining False Positives under Inference Scaling for Mathematical Reasoning",
+      "Improving Context Fidelity via Native Retrieval-Augmented Reasoning",
+      "SHARP: Steering Hallucination inLVLMs via Representation Engineering",
+      "SurveyGen: Quality-Aware Scientific Survey Generation with Large Language Models",
+      "TACO: Enhancing Multimodal In-context Learning via Task Mapping-Guided Sequence Configuration",
+      "The State of MultilingualLLMSafety Research: From Measuring The Language Gap To Mitigating It",
+      "TurnaboutLLM: A Deductive Reasoning Benchmark from Detective Games"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 3,
+    "neurips24": 3,
+    "naacl25": 5,
+    "acl25": 3,
+    "icml25": 5,
+    "emnlp25": 9
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

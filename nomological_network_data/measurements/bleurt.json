@@ -1,0 +1,104 @@
+{
+  "canonical_name": "BLEURT",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, BLEURT is consistently defined as a learned, reference-based evaluation metric for text generation. It is widely used to measure constructs such as `Translation quality` and `Faithfulness`, with some papers specifying its role in gauging \"semantic relevance and fluency\" or \"fluency and adequacy\". While often used for general evaluation, some work applies it in more specific contexts, such as a utility function for MBR decoding where it is reported to \"significantly outperform[s] beam search decoding\" (\"MBR and QE Finetuning: Training-time Distillation of the Best and Most Expensive Decoding Methods\"). Another specific application is to judge whether a generated text is semantically closer to a correct reference than an incorrect one. In evaluation setups, BLEURT is frequently used in conjunction with other metrics like ROUGE-L, COMET, and BLEU. The provided papers also note the use of specific versions, including BLEURT v0.2 and BLEURT-20, and its relation to other metrics like BARTScore.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "BLEURT"
+  ],
+  "papers": [
+    "A Case Against Implicit Standards: Homophone Normalization in Machine Translation for Languages that use theGe\u2019ez Script.",
+    "Measuring Risk of Bias in Biomedical Reports: TheRoBBRBenchmark",
+    "Mondrian: A Framework for Logical Abstract (Re)Structuring",
+    "MBR and QE Finetuning: Training-time Distillation of the Best and Most Expensive Decoding Methods",
+    "Time Travel in LLMs: Tracing Data Contamination in Large Language Models",
+    "Learning from others\u2019 mistakes: Finetuning machine translation models with span-level error annotations",
+    "TruthFlow: Truthful LLM Generation via Representation Flow Correction"
+  ],
+  "paper_count": 7,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A learned, reference-based evaluation metric for text generation, used in this paper as a utility function for MBR decoding and as an evaluation metric.",
+      "paper": "MBR and QE Finetuning: Training-time Distillation of the Best and Most Expensive Decoding Methods",
+      "original_name": "BLEURT"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "BARTScore",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "SimRAG: Self-Improving Retrieval-Augmented Generation for Adapting Large Language Models to Specialized Domains",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "SimRAG: Self-Improving Retrieval-Augmented Generation for Adapting Large Language Models to Specialized Domains"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Translation quality",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Learning from others\u2019 mistakes: Finetuning machine translation models with span-level error annotations",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Learning from others\u2019 mistakes: Finetuning machine translation models with span-level error annotations"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "TruthFlow: Truthful LLM Generation via Representation Flow Correction",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "TruthFlow: Truthful LLM Generation via Representation Flow Correction"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, BLEURT is consistently defined as a learned, reference-based evaluation metric for text generation. It is widely used to measure constructs such as `Translation quality` and `Faithfulness`, with some papers specifying its role in gauging \"semantic relevance and fluency\" or \"fluency and adequacy\". While often used for general evaluation, some work applies it in more specific contexts, such as a utility function for MBR decoding where it is reported to \"significantly outperform[s] beam search decoding\" (\"MBR and QE Finetuning: Training-time Distillation of the Best and Most Expensive Decoding Methods\"). Another specific application is to judge whether a generated text is semantically closer to a correct reference than an incorrect one. In evaluation setups, BLEURT is frequently used in conjunction with other metrics like ROUGE-L, COMET, and BLEU. The provided papers also note the use of specific versions, including BLEURT v0.2 and BLEURT-20, and its relation to other metrics like BARTScore.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "MBR and QE Finetuning: Training-time Distillation of the Best and Most Expensive Decoding Methods",
+      "Time Travel in LLMs: Tracing Data Contamination in Large Language Models"
+    ],
+    "icml25": [
+      "Learning from others\u2019 mistakes: Finetuning machine translation models with span-level error annotations",
+      "TruthFlow: Truthful LLM Generation via Representation Flow Correction"
+    ],
+    "emnlp25": [
+      "A Case Against Implicit Standards: Homophone Normalization in Machine Translation for Languages that use theGe\u2019ez Script.",
+      "Measuring Risk of Bias in Biomedical Reports: TheRoBBRBenchmark",
+      "Mondrian: A Framework for Logical Abstract (Re)Structuring"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "icml25": 2,
+    "emnlp25": 3
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "icml25"
+  ]
+}

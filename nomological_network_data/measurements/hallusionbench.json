@@ -1,0 +1,150 @@
+{
+  "canonical_name": "HallusionBench",
+  "type": "measurement",
+  "canonical_definition": "HallusionBench is consistently defined and used as a benchmark for assessing hallucination in multimodal and vision-language models. Its primary application is to measure several specific forms of this phenomenon, with papers stating that it evaluates \"object illusion,\" \"visual hallucinations,\" \"language hallucinations,\" and \"knowledge hallucinations.\" One paper specifies its focus is on \"understanding visually misleading figures.\" The benchmark is operationalized as a visual question answering (VQA) task, with one source noting it contains 346 images and 1129 questions, while another mentions it evaluates across dimensions like question type and difficulty. While its main purpose is hallucination detection, a smaller number of papers also employ HallusionBench to evaluate broader capabilities such as \"Visual question answering\" and \"Visual reasoning.\" In practice, it is frequently used in evaluation suites alongside other hallucination-focused instruments like POPE and CHAIR.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "HallusionBench"
+  ],
+  "papers": [
+    "Improving Cross Lingual Transfer by Pretraining with Active Forgetting",
+    "SQLWOZ: A Realistic Task-Oriented Dialogue Dataset withSQL-Based Dialogue State Representation for Complex User Requirements",
+    "When Big Models Train Small Ones: Label-Free Model Parity Alignment for Efficient Visual Question Answering using SmallVLMs",
+    "CHiP: Cross-modal Hierarchical Direct Preference Optimization for Multimodal LLMs",
+    "EMMA: Empowering Multi-modal Mamba with Structural and Hierarchical Alignment",
+    "MIA-Bench: Towards Better Instruction Following Evaluation of Multimodal LLMs",
+    "Mini-Monkey: Alleviating the Semantic Sawtooth Effect for Lightweight MLLMs via Complementary Image Pyramid",
+    "Mitigating Object Hallucination in MLLMs via Data-augmented Phrase-level Alignment",
+    "Painting with Words: Elevating Detailed Image Captioning with Benchmark and Alignment Learning",
+    "PerturboLLaVA: Reducing Multimodal Hallucinations with Perturbative Visual Training",
+    "Reconstructive Visual Instruction Tuning",
+    "TaskGalaxy: Scaling Multi-modal Instruction Fine-tuning with Tens of Thousands Vision Task Types",
+    "Visual Description Grounding Reduces Hallucinations and Boosts Reasoning in LVLMs",
+    "DS-VLM: Diffusion Supervision Vision Language Model",
+    "Diffusion Instruction Tuning",
+    "Look Twice Before You Answer: Memory-Space Visual Retracing for Hallucination Mitigation in Multimodal Large Language Models",
+    "Perception in Reflection",
+    "Probing Visual Language Priors in VLMs",
+    "Robust Multimodal Large Language Models Against Modality Conflict",
+    "Towards Rationale-Answer Alignment of LVLMs via Self-Rationale Calibration"
+  ],
+  "paper_count": 20,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "HallusionBench is a benchmark for assessing hallucination in multimodal models.",
+      "paper": "Reconstructive Visual Instruction Tuning",
+      "original_name": "HallusionBench"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "EMMA: Empowering Multi-modal Mamba with Structural and Hierarchical Alignment",
+      "evidence": "We evaluate our each variant of ROSS mainly on (i) hallucination: POPE (Li et al., 2023c) and HallusionBench (Guan et al., 2024) (Section 5.1)",
+      "paper_count": 5,
+      "papers_by_conference": {
+        "iclr25": [
+          "EMMA: Empowering Multi-modal Mamba with Structural and Hierarchical Alignment",
+          "CHiP: Cross-modal Hierarchical Direct Preference Optimization for Multimodal LLMs",
+          "PerturboLLaVA: Reducing Multimodal Hallucinations with Perturbative Visual Training",
+          "Reconstructive Visual Instruction Tuning"
+        ],
+        "icml25": [
+          "Look Twice Before You Answer: Memory-Space Visual Retracing for Hallucination Mitigation in Multimodal Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Factuality",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "EMMA: Empowering Multi-modal Mamba with Structural and Hierarchical Alignment",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "EMMA: Empowering Multi-modal Mamba with Structural and Hierarchical Alignment"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Towards Rationale-Answer Alignment of LVLMs via Self-Rationale Calibration",
+      "evidence": "\u201cAdditionally, we evaluate performance on specific-domain VQA tasks, which include ChartQA (Masry et al., 2022), LLaVABench (Liu et al., 2024c), and HallusionBench (Guan et al., 2023).\u201d (Section 4.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Towards Rationale-Answer Alignment of LVLMs via Self-Rationale Calibration"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "When Big Models Train Small Ones: Label-Free Model Parity Alignment for Efficient Visual Question Answering using SmallVLMs",
+      "evidence": "\"we conduct experiments across four benchmarks: Multi-modal Large Language Model Evaluation (MME) (Yin et al., 2023) , Massive Multi-discipline Multi-modal Understanding and Reasoning (MMMU) (Yue et al., 2023), MathVista (Wang et al., 2024), and HallusionBench (Liu et al., 2023a)\"",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "When Big Models Train Small Ones: Label-Free Model Parity Alignment for Efficient Visual Question Answering using SmallVLMs"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 0,
+  "characterization": "HallusionBench is consistently defined and used as a benchmark for assessing hallucination in multimodal and vision-language models. Its primary application is to measure several specific forms of this phenomenon, with papers stating that it evaluates \"object illusion,\" \"visual hallucinations,\" \"language hallucinations,\" and \"knowledge hallucinations.\" One paper specifies its focus is on \"understanding visually misleading figures.\" The benchmark is operationalized as a visual question answering (VQA) task, with one source noting it contains 346 images and 1129 questions, while another mentions it evaluates across dimensions like question type and difficulty. While its main purpose is hallucination detection, a smaller number of papers also employ HallusionBench to evaluate broader capabilities such as \"Visual question answering\" and \"Visual reasoning.\" In practice, it is frequently used in evaluation suites alongside other hallucination-focused instruments like POPE and CHAIR.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "CHiP: Cross-modal Hierarchical Direct Preference Optimization for Multimodal LLMs",
+      "EMMA: Empowering Multi-modal Mamba with Structural and Hierarchical Alignment",
+      "MIA-Bench: Towards Better Instruction Following Evaluation of Multimodal LLMs",
+      "Mini-Monkey: Alleviating the Semantic Sawtooth Effect for Lightweight MLLMs via Complementary Image Pyramid",
+      "Mitigating Object Hallucination in MLLMs via Data-augmented Phrase-level Alignment",
+      "Painting with Words: Elevating Detailed Image Captioning with Benchmark and Alignment Learning",
+      "PerturboLLaVA: Reducing Multimodal Hallucinations with Perturbative Visual Training",
+      "Reconstructive Visual Instruction Tuning",
+      "TaskGalaxy: Scaling Multi-modal Instruction Fine-tuning with Tens of Thousands Vision Task Types",
+      "Visual Description Grounding Reduces Hallucinations and Boosts Reasoning in LVLMs"
+    ],
+    "icml25": [
+      "DS-VLM: Diffusion Supervision Vision Language Model",
+      "Diffusion Instruction Tuning",
+      "Look Twice Before You Answer: Memory-Space Visual Retracing for Hallucination Mitigation in Multimodal Large Language Models",
+      "Perception in Reflection",
+      "Probing Visual Language Priors in VLMs",
+      "Robust Multimodal Large Language Models Against Modality Conflict",
+      "Towards Rationale-Answer Alignment of LVLMs via Self-Rationale Calibration"
+    ],
+    "emnlp25": [
+      "Improving Cross Lingual Transfer by Pretraining with Active Forgetting",
+      "SQLWOZ: A Realistic Task-Oriented Dialogue Dataset withSQL-Based Dialogue State Representation for Complex User Requirements",
+      "When Big Models Train Small Ones: Label-Free Model Parity Alignment for Efficient Visual Question Answering using SmallVLMs"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 10,
+    "icml25": 7,
+    "emnlp25": 3
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "icml25"
+  ]
+}

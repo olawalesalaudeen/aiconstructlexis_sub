@@ -1,0 +1,51 @@
+\section*{Prompt: Characterize Entities}
+\begin{description}
+\item[Pipeline step:] Characterization
+\item[Models:] Gemini 2.5 Flash
+\item[Source:] \texttt{misc/prompts.py} $\rightarrow$ \texttt{CHARACTERIZE\_ENTITIES\_PROMPT}
+\item[Called from:] \texttt{scripts/synthesize\_definitions.py}
+\end{description}
+\begin{tcolorbox}[colback=yellow!8,colframe=yellow!50!black,left=4pt,right=4pt,top=4pt,bottom=4pt,arc=2pt]
+\textbf{Note:} The \texttt{\{entities\_json\}} placeholder is replaced at runtime with a batch of entities and their paper-sourced definitions.
+\end{tcolorbox}
+
+\begin{tcolorbox}[breakable,enhanced,colback=blue!3,colframe=blue!40!black,title={Prompt},fonttitle=\bfseries,left=8pt,right=8pt,top=6pt,bottom=6pt]
+
+You are given a batch of entities from a nomological network of LLM research.
+For each entity, you receive:
+\begin{itemize}
+\item its \textbf{canonical name} and \textbf{type} (construct, measurement instrument, or behavior/task)
+\item every \textbf{original definition} extracted from different papers (with paper titles)
+\item every \textbf{source snippet} (verbatim quotes from papers)
+\item every \textbf{relationship} this entity participates in, with evidence quotes
+\end{itemize}
+
+Your task: write a rich \textbf{summary of use} (4-8 sentences) for each entity that reads as a mini literature review --- synthesizing how the field defines, operationalizes, and relates to this concept across the provided papers.
+
+\textbf{Writing style:}
+\begin{itemize}
+\item Write as a field synthesis, NOT as a dictionary definition. Use language like "most commonly described as\dots ", "some authors define it as\dots , though the prevailing usage\dots ", "in the literature, this is typically operationalized via\dots ", "across the surveyed work\dots "
+\item \textbf{Tone: descriptive and neutral --- HARD CONSTRAINT.} NEVER use the words "crucial", "important", "essential", "significant", or "key" --- even when paraphrasing a paper. Replace with frequency-based alternatives: "commonly", "widely", "frequently", "prevalent", "a recurring theme", "a popular instrument". If a paper says something is "crucial", paraphrase as "widely discussed" or "commonly targeted"
+\item Highlight agreement, disagreement, and dominant framings across papers
+\item Weave in \textbf{specific evidence}: quote or paraphrase key findings from the source snippets when they illuminate how the concept is used (e.g. "As one study notes, '\dots ' (Paper Title)")
+\item Name \textbf{specific measurement instruments} (benchmarks, user studies, etc.) used to measure or operationalize the concept
+\item Describe the entity's \textbf{role in the broader network}: what it influences, what influences it, and what it is measured by --- referencing the relationship evidence
+\item For entities with only one source paper, still provide a rich description drawing on all available definitions, snippets, and relationships
+\item Do NOT start with "X is\dots " as a flat definition. Start with how the field treats the concept.
+\end{itemize}
+
+Be precise and grounded in the evidence. Do not invent information not present in the inputs.
+
+\textbf{Output format --- JSON object mapping entity name to characterization string:}
+\begin{verbatim}
+{{
+  "Entity A": "Characterization text...",
+  "Entity B": "Characterization text..."
+}}
+\end{verbatim}
+
+Return ONLY the JSON object.
+
+\textbf{Entities to characterize:}
+\{entities\_json\}
+\end{tcolorbox}

@@ -1,0 +1,331 @@
+{
+  "canonical_name": "Knowledge editing",
+  "type": "behavior",
+  "canonical_definition": "Knowledge editing is most commonly framed as the process of updating a model's stored factual or commonsense knowledge by modifying a small number of its parameters, often to correct \"incorrect or outdated knowledge\" efficiently. A recurring objective across the literature is to perform these updates surgically, ensuring that unrelated knowledge is preserved. While most definitions center on direct parameter modification, a smaller line of work explores editing \"without modifying model weights, relying solely on forward passes\". The scope of this behavior is broad, encompassing specific actions like \"knowledge update\" (adding new facts), \"knowledge erasure\" (removing facts), and even \"domain-specific knowledge unlearning\". The concept also extends beyond text to include \"visual entity editing\" and \"user-specific editing\". To operationalize and measure this behavior, researchers employ a range of benchmarks, with zs-RE, CounterFact, WikiDatacounterfact, WikiDatarecent, and WikiBio being frequently used. The quality of an edit is also assessed based on associated properties such as \"Locality\" (preserving unrelated knowledge) and \"Portability,\" which one paper defines as ensuring \"relevant knowledge... should be updated as well.\"",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Knowledge editing",
+    "Knowledge injection",
+    "Knowledge erasure",
+    "Domain-specific knowledge unlearning",
+    "Knowledge update",
+    "User-specific editing",
+    "Visual entity editing",
+    "Visual semantic editing",
+    "Model editing",
+    "Targeted knowledge removal",
+    "Knowledge refinement",
+    "Factual knowledge updating"
+  ],
+  "papers": [
+    "Adaptive and Robust Translation from Natural Language to Multi-model Query Languages",
+    "Lexical Recall or Logical Reasoning: Probing the Limits of Reasoning Abilities in Large Language Models",
+    "EvolvingChinese Spelling Correction with Corrector-Verifier Collaboration",
+    "Identification of Multiple Logical Interpretations in Counter-Arguments",
+    "Implicit Values Embedded in How Humans andLLMs Complete Subjective Everyday Tasks",
+    "Investigating Pedagogical Teacher and StudentLLMAgents: Genetic Adaptation Meets Retrieval-Augmented Generation Across Learning Styles",
+    "ProbingLLMWorld Models: Enhancing Guesstimation with Wisdom of Crowds Decoding",
+    "2025.emnlp-main.848.checklist",
+    "Efficient Model Editing with Task-Localized Sparse Fine-tuning",
+    "Gumbel Counterfactual Generation From Language Models",
+    "Is Factuality Enhancement a Free Lunch For LLMs? Better Factuality Can Lead to Worse Context-Faithfulness",
+    "Knowledge Localization: Mission Not Accomplished? Enter Query Localization!",
+    "MMKE-Bench: A Multimodal Editing Benchmark for Diverse Visual Knowledge",
+    "Monet: Mixture of Monosemantic Experts for Transformers",
+    "NeSyC: A Neuro-symbolic Continual Learner For Complex Embodied Tasks in Open Domains",
+    "Rethinking LLM Unlearning Objectives: A Gradient Perspective and Go Beyond",
+    "Unlocking Efficient, Scalable, and Continual Knowledge Editing with Basis-Level Representation Fine-Tuning",
+    "BalancEdit: Dynamically Balancing the Generality-Locality Trade-off in Multi-modal Model Editing",
+    "Locate-then-edit for Multi-hop Factual Recall under Knowledge Editing",
+    "Mitigating Heterogeneous Token Overfitting in LLM Knowledge Editing",
+    "Towards Lifelong Model Editing via Simulating Ideal Editor",
+    "Reasons and Solutions for the Decline in Model Performance after Editing",
+    "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models"
+  ],
+  "paper_count": 23,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Updating a model's stored factual or commonsense knowledge by modifying a small number of parameters.",
+      "paper": "Reasons and Solutions for the Decline in Model Performance after Editing",
+      "original_name": "Knowledge editing"
+    },
+    {
+      "text": "Incorporating external facts or references into generated responses during inference.",
+      "paper": "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models",
+      "original_name": "Knowledge injection"
+    },
+    {
+      "text": "Removing or suppressing knowledge associated with a target subject domain while leaving other domains relatively intact.",
+      "paper": "Monet: Mixture of Monosemantic Experts for Transformers",
+      "original_name": "Domain-specific knowledge unlearning"
+    },
+    {
+      "text": "The observable outcome of a model ceasing to produce a specific fact in response to relevant queries after its parameters have been modified.",
+      "paper": "Knowledge Localization: Mission Not Accomplished? Enter Query Localization!",
+      "original_name": "Knowledge erasure"
+    },
+    {
+      "text": "The observable outcome of a model producing a new, updated fact in response to relevant queries after its parameters have been modified to replace an old fact.",
+      "paper": "Knowledge Localization: Mission Not Accomplished? Enter Query Localization!",
+      "original_name": "Knowledge update"
+    },
+    {
+      "text": "The observable task of modifying a model's knowledge about a specific visual entity, such as updating its attributes or associated facts.",
+      "paper": "MMKE-Bench: A Multimodal Editing Benchmark for Diverse Visual Knowledge",
+      "original_name": "Visual entity editing"
+    },
+    {
+      "text": "The observable task of modifying a model's understanding of complex visual semantics, such as actions, body gestures, or object relationships.",
+      "paper": "MMKE-Bench: A Multimodal Editing Benchmark for Diverse Visual Knowledge",
+      "original_name": "Visual semantic editing"
+    },
+    {
+      "text": "The observable task of incorporating new, personalized user information into a model, such as details about owned items or personal relationships.",
+      "paper": "MMKE-Bench: A Multimodal Editing Benchmark for Diverse Visual Knowledge",
+      "original_name": "User-specific editing"
+    },
+    {
+      "text": "The general practice of modifying a pre-trained model's parameters to add, remove, or alter its knowledge and capabilities in a targeted manner.",
+      "paper": "Efficient Model Editing with Task-Localized Sparse Fine-tuning",
+      "original_name": "Model editing"
+    },
+    {
+      "text": "The observable behavior of a model failing to reproduce or respond correctly to information designated for unlearning.",
+      "paper": "Rethinking LLM Unlearning Objectives: A Gradient Perspective and Go Beyond",
+      "original_name": "Targeted knowledge removal"
+    },
+    {
+      "text": "Re-entering the reformulation phase to update generalized knowledge after failures or detected inconsistencies.",
+      "paper": "NeSyC: A Neuro-symbolic Continual Learner For Complex Embodied Tasks in Open Domains",
+      "original_name": "Knowledge refinement"
+    },
+    {
+      "text": "The observable process of modifying model parameters to reflect new factual associations in the form of subject-relation-object triples, such as updating \"Beats Music is owned by Apple.\"",
+      "paper": "Identification of Multiple Logical Interpretations in Counter-Arguments",
+      "original_name": "Factual knowledge updating"
+    }
+  ],
+  "definition_count": 12,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "zs-RE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Unlocking Efficient, Scalable, and Continual Knowledge Editing with Basis-Level Representation Fine-Tuning",
+      "evidence": "\"We adopted two representative benchmarks in the field of model editing: Counterfact(Meng et al., 2022) and ZsRE(Levy et al., 2017).\" (Section 4.1) and \"we adopt the metrics for evaluating knowledge updating ability: Efficacy (efficiency success) and Generalization (paraphrase success)\" (Section 4.1)",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr25": [
+          "Unlocking Efficient, Scalable, and Continual Knowledge Editing with Basis-Level Representation Fine-Tuning"
+        ],
+        "emnlp25": [
+          "Implicit Values Embedded in How Humans andLLMs Complete Subjective Everyday Tasks",
+          "Identification of Multiple Logical Interpretations in Counter-Arguments"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Locality",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Unlocking Efficient, Scalable, and Continual Knowledge Editing with Basis-Level Representation Fine-Tuning",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Unlocking Efficient, Scalable, and Continual Knowledge Editing with Basis-Level Representation Fine-Tuning",
+          "In-Context Editing: Learning Knowledge from Self-Induced Distributions"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CounterFact",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Implicit Values Embedded in How Humans andLLMs Complete Subjective Everyday Tasks",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Implicit Values Embedded in How Humans andLLMs Complete Subjective Everyday Tasks",
+          "Identification of Multiple Logical Interpretations in Counter-Arguments"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WikiDatacounterfact",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Unlocking Efficient, Scalable, and Continual Knowledge Editing with Basis-Level Representation Fine-Tuning",
+      "evidence": "\"We select three datasets including knowledge insertion and knowledge modification in our experiments: WikiDatacounterfact (Cohen et al., 2024), WikiDatarecent (Cohen et al., 2024) and ZsRE (Levy et al., 2017).\"",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Unlocking Efficient, Scalable, and Continual Knowledge Editing with Basis-Level Representation Fine-Tuning"
+        ],
+        "emnlp25": [
+          "Implicit Values Embedded in How Humans andLLMs Complete Subjective Everyday Tasks"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "In-Context Editing: Learning Knowledge from Self-Induced Distributions",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "In-Context Editing: Learning Knowledge from Self-Induced Distributions"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generality",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Unlocking Efficient, Scalable, and Continual Knowledge Editing with Basis-Level Representation Fine-Tuning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Unlocking Efficient, Scalable, and Continual Knowledge Editing with Basis-Level Representation Fine-Tuning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Portability",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Unlocking Efficient, Scalable, and Continual Knowledge Editing with Basis-Level Representation Fine-Tuning",
+      "evidence": "Knowledge editing seeks to maximize the chance of an LLM responding with y given x, while satisfying the following additional criteria at the same time...: (2) Portability: relevant knowledge such as the first lady of United States should be updated as well. (Section 2.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Unlocking Efficient, Scalable, and Continual Knowledge Editing with Basis-Level Representation Fine-Tuning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WikiDatarecent",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Unlocking Efficient, Scalable, and Continual Knowledge Editing with Basis-Level Representation Fine-Tuning",
+      "evidence": "\"We select three datasets including knowledge insertion and knowledge modification in our experiments: WikiDatacounterfact (Cohen et al., 2024), WikiDatarecent (Cohen et al., 2024) and ZsRE (Levy et al., 2017).\"",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Unlocking Efficient, Scalable, and Continual Knowledge Editing with Basis-Level Representation Fine-Tuning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WikiBio",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Unlocking Efficient, Scalable, and Continual Knowledge Editing with Basis-Level Representation Fine-Tuning",
+      "evidence": "we edit different kinds of knowledge: WikiDatarecent, WikiDatacounterfact (Cohen et al., 2024), WikiBio (Hartvigsen et al., 2024), ConvSent (Mitchell et al., 2022), and ZsRE (Yao et al., 2023). (Section 3.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Unlocking Efficient, Scalable, and Continual Knowledge Editing with Basis-Level Representation Fine-Tuning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Monet: Mixture of Monosemantic Experts for Transformers",
+      "evidence": "Using the MMLU Pro (Wang et al., 2024) benchmark taxonomy, which divides question-answer sets into 14 distinct domains, we investigated the effects of domain-specific knowledge unlearning on MMLU (Hendrycks et al., 2021).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Monet: Mixture of Monosemantic Experts for Transformers"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Linguistic quality",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "In-Context Editing: Learning Knowledge from Self-Induced Distributions",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "In-Context Editing: Learning Knowledge from Self-Induced Distributions"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 11,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 9,
+  "characterization": "Knowledge editing is most commonly framed as the process of updating a model's stored factual or commonsense knowledge by modifying a small number of its parameters, often to correct \"incorrect or outdated knowledge\" efficiently. A recurring objective across the literature is to perform these updates surgically, ensuring that unrelated knowledge is preserved. While most definitions center on direct parameter modification, a smaller line of work explores editing \"without modifying model weights, relying solely on forward passes\". The scope of this behavior is broad, encompassing specific actions like \"knowledge update\" (adding new facts), \"knowledge erasure\" (removing facts), and even \"domain-specific knowledge unlearning\". The concept also extends beyond text to include \"visual entity editing\" and \"user-specific editing\". To operationalize and measure this behavior, researchers employ a range of benchmarks, with zs-RE, CounterFact, WikiDatacounterfact, WikiDatarecent, and WikiBio being frequently used. The quality of an edit is also assessed based on associated properties such as \"Locality\" (preserving unrelated knowledge) and \"Portability,\" which one paper defines as ensuring \"relevant knowledge... should be updated as well.\"",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "Reasons and Solutions for the Decline in Model Performance after Editing",
+      "Reference Trustable Decoding: A Training-Free Augmentation Paradigm for Large Language Models"
+    ],
+    "iclr25": [
+      "Efficient Model Editing with Task-Localized Sparse Fine-tuning",
+      "Gumbel Counterfactual Generation From Language Models",
+      "Is Factuality Enhancement a Free Lunch For LLMs? Better Factuality Can Lead to Worse Context-Faithfulness",
+      "Knowledge Localization: Mission Not Accomplished? Enter Query Localization!",
+      "MMKE-Bench: A Multimodal Editing Benchmark for Diverse Visual Knowledge",
+      "Monet: Mixture of Monosemantic Experts for Transformers",
+      "NeSyC: A Neuro-symbolic Continual Learner For Complex Embodied Tasks in Open Domains",
+      "Rethinking LLM Unlearning Objectives: A Gradient Perspective and Go Beyond",
+      "Unlocking Efficient, Scalable, and Continual Knowledge Editing with Basis-Level Representation Fine-Tuning"
+    ],
+    "acl25": [
+      "Adaptive and Robust Translation from Natural Language to Multi-model Query Languages",
+      "Lexical Recall or Logical Reasoning: Probing the Limits of Reasoning Abilities in Large Language Models"
+    ],
+    "icml25": [
+      "BalancEdit: Dynamically Balancing the Generality-Locality Trade-off in Multi-modal Model Editing",
+      "Locate-then-edit for Multi-hop Factual Recall under Knowledge Editing",
+      "Mitigating Heterogeneous Token Overfitting in LLM Knowledge Editing",
+      "Towards Lifelong Model Editing via Simulating Ideal Editor"
+    ],
+    "emnlp25": [
+      "EvolvingChinese Spelling Correction with Corrector-Verifier Collaboration",
+      "Identification of Multiple Logical Interpretations in Counter-Arguments",
+      "Implicit Values Embedded in How Humans andLLMs Complete Subjective Everyday Tasks",
+      "Investigating Pedagogical Teacher and StudentLLMAgents: Genetic Adaptation Meets Retrieval-Augmented Generation Across Learning Styles",
+      "ProbingLLMWorld Models: Enhancing Guesstimation with Wisdom of Crowds Decoding",
+      "2025.emnlp-main.848.checklist"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 2,
+    "iclr25": 9,
+    "acl25": 2,
+    "icml25": 4,
+    "emnlp25": 6
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

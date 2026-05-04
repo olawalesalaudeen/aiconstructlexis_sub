@@ -1,0 +1,113 @@
+{
+  "canonical_name": "Zero-shot image classification",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, zero-shot image classification is consistently defined as the task of classifying an image into categories for which the model has seen no training examples. This behavior is operationalized and measured using a wide array of datasets. Several papers report conducting experiments on ImageNet-1k, CIFAR-100, and CIFAR-10. One study, focused on multi-task model merging, evaluates performance across a suite of eight distinct datasets, including SUN397, Cars, GTSRB, MNIST, EuroSAT, SVHN, DTD, and RESISC45. The task is presented as an evaluation method in different contexts, for instance, as an additional benchmark alongside video understanding tasks, as noted in one paper. The available data frames it as an observable task used to assess model capabilities under novel conditions.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Zero-shot image classification"
+  ],
+  "papers": [
+    "MAP: Low-compute Model Merging with Amortized Pareto Fronts via Quadratic Approximation",
+    "Mitigate the Gap: Improving Cross-Modal Alignment in CLIP",
+    "PathGen-1.6M: 1.6 Million Pathology Image-text Pairs Generation through Multi-agent Collaboration",
+    "TripletCLIP:  Improving Compositional Reasoning of CLIP via Synthetic Vision-Language Negatives",
+    "VisMin: Visual Minimal-Change Understanding"
+  ],
+  "paper_count": 5,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The task of classifying an image into one of several categories without having seen any training examples for those specific categories.",
+      "paper": "VisMin: Visual Minimal-Change Understanding",
+      "original_name": "Zero-shot image classification"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ImageNet-1k",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "TripletCLIP:  Improving Compositional Reasoning of CLIP via Synthetic Vision-Language Negatives",
+      "evidence": "We conduct zero-shot classification experiments on ImageNet-1K (Russakovsky et al., 2015)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "TripletCLIP:  Improving Compositional Reasoning of CLIP via Synthetic Vision-Language Negatives"
+        ],
+        "iclr25": [
+          "Mitigate the Gap: Improving Cross-Modal Alignment in CLIP"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal understanding",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Mitigate the Gap: Improving Cross-Modal Alignment in CLIP",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Mitigate the Gap: Improving Cross-Modal Alignment in CLIP"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CIFAR-100",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Mitigate the Gap: Improving Cross-Modal Alignment in CLIP",
+      "evidence": "We conduct zero-shot classification experiments on ImageNet-1K (Russakovsky et al., 2015), CIFAR-100, CIFAR-10 (Krizhevsky et al., 2009)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Mitigate the Gap: Improving Cross-Modal Alignment in CLIP"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CIFAR-10",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Mitigate the Gap: Improving Cross-Modal Alignment in CLIP",
+      "evidence": "We conduct zero-shot classification experiments on ImageNet-1K (Russakovsky et al., 2015), CIFAR-100, CIFAR-10 (Krizhevsky et al., 2009)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Mitigate the Gap: Improving Cross-Modal Alignment in CLIP"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 3,
+  "characterization": "Across the provided literature, zero-shot image classification is consistently defined as the task of classifying an image into categories for which the model has seen no training examples. This behavior is operationalized and measured using a wide array of datasets. Several papers report conducting experiments on ImageNet-1k, CIFAR-100, and CIFAR-10. One study, focused on multi-task model merging, evaluates performance across a suite of eight distinct datasets, including SUN397, Cars, GTSRB, MNIST, EuroSAT, SVHN, DTD, and RESISC45. The task is presented as an evaluation method in different contexts, for instance, as an additional benchmark alongside video understanding tasks, as noted in one paper. The available data frames it as an observable task used to assess model capabilities under novel conditions.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "TripletCLIP:  Improving Compositional Reasoning of CLIP via Synthetic Vision-Language Negatives",
+      "VisMin: Visual Minimal-Change Understanding"
+    ],
+    "iclr25": [
+      "MAP: Low-compute Model Merging with Amortized Pareto Fronts via Quadratic Approximation",
+      "Mitigate the Gap: Improving Cross-Modal Alignment in CLIP",
+      "PathGen-1.6M: 1.6 Million Pathology Image-text Pairs Generation through Multi-agent Collaboration"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 2,
+    "iclr25": 3
+  },
+  "conferences": [
+    "iclr25",
+    "neurips24"
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "canonical_name": "PKU-SafeRLHF",
+  "type": "measurement",
+  "canonical_definition": "Across the surveyed literature, PKU-SafeRLHF is predominantly used as a dataset to evaluate and train large language models on safety and alignment with human preferences. The most common application is to measure `Harmlessness`, with many papers using it to assess model responses to harmful queries. A frequent secondary application is the measurement of `Helpfulness`, with several sources noting the dataset is annotated for both dimensions, enabling the study of trade-offs between them. A single paper also uses it to measure `Generalization`. The dataset is consistently described as containing prompt-response pairs, often with two responses per prompt and human preference labels indicating which is more harmful or helpful. Its content is characterized as human-curated and covering dimensions such as \"insults, immorality, crime, emotional harm, and privacy\" (Gaining Wisdom from Setbacks: Aligning Large Language Models via Mistake Analysis). Papers operationalize PKU-SafeRLHF in several ways: it is frequently employed as a benchmark for out-of-distribution evaluation, sometimes with \"red-teaming instructions\"; it is also used for model training, including safety alignment via reinforcement learning and fine-tuning. A less common but noted use is as a benchmark to evaluate the performance of \"generative judges on safety-related preference judgments\" (Learning LLM-as-a-Judge for Preference Alignment).",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "PKU SafeRLHF",
+    "PKU-SafeRLHF"
+  ],
+  "papers": [
+    "CoE: A Clue of Emotion Framework for Emotion Recognition in Conversations",
+    "Diffusion Models Through a Global Lens: Are They Culturally Inclusive?",
+    "Improving Factuality with Explicit Working Memory",
+    "M\u00b3GQA: A Multi-Entity Multi-Hop Multi-Setting Graph Question Answering Benchmark",
+    "ScaleBiO: Scalable Bilevel Optimization forLLMData Reweighting",
+    "Gaining Wisdom from Setbacks: Aligning Large Language Models via Mistake Analysis",
+    "Improving Generalization of Alignment with Human Preferences through Group Invariant Learning",
+    "Unmasking and Improving Data Credibility: A Study with Datasets for Training Harmless Language Models",
+    "Bi-Factorial Preference Optimization: Balancing Safety-Helpfulness in Language Models",
+    "Learning LLM-as-a-Judge for Preference Alignment",
+    "MACPO: Weak-to-Strong Alignment via Multi-Agent Contrastive Preference Optimization",
+    "Magnetic Preference Optimization: Achieving Last-iterate Convergence for Language Model Alignment",
+    "REEF: Representation Encoding Fingerprints for Large Language Models",
+    "Bounded Rationality for LLMs: Satisficing Alignment at Inference-Time",
+    "HPS: Hard Preference Sampling for Human Preference Alignment"
+  ],
+  "paper_count": 15,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A dataset used for out-of-distribution evaluation of model performance on harmful queries.",
+      "paper": "Gaining Wisdom from Setbacks: Aligning Large Language Models via Mistake Analysis",
+      "original_name": "PKU-SafeRLHF"
+    },
+    {
+      "text": "A dataset of over 300k instances with prompt-response pairs and safety labels, derived from human preferences, used for reinforcement learning with human feedback in safety alignment.",
+      "paper": "Unmasking and Improving Data Credibility: A Study with Datasets for Training Harmless Language Models",
+      "original_name": "PKU SafeRLHF"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmlessness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Improving Generalization of Alignment with Human Preferences through Group Invariant Learning",
+      "evidence": "",
+      "paper_count": 5,
+      "papers_by_conference": {
+        "iclr24": [
+          "Improving Generalization of Alignment with Human Preferences through Group Invariant Learning",
+          "Gaining Wisdom from Setbacks: Aligning Large Language Models via Mistake Analysis"
+        ],
+        "iclr25": [
+          "MACPO: Weak-to-Strong Alignment via Multi-Agent Contrastive Preference Optimization"
+        ],
+        "acl25": [
+          "Improving Factuality with Explicit Working Memory"
+        ],
+        "icml25": [
+          "Bounded Rationality for LLMs: Satisficing Alignment at Inference-Time"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "MACPO: Weak-to-Strong Alignment via Multi-Agent Contrastive Preference Optimization",
+      "evidence": "\"Experimental results on the HH-RLHF and PKU-SafeRLHF datasets, evaluated using both automatic metrics and human judgments\"",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr25": [
+          "MACPO: Weak-to-Strong Alignment via Multi-Agent Contrastive Preference Optimization"
+        ],
+        "acl25": [
+          "Improving Factuality with Explicit Working Memory"
+        ],
+        "icml25": [
+          "Bounded Rationality for LLMs: Satisficing Alignment at Inference-Time"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Robust Multi-bit Text Watermark with LLM-based Paraphrasers",
+      "evidence": "We evaluate our model, previously trained on the C4 dataset, on various other datasets, including Anthropic HH-RLHF (HH) (Bai et al., 2022), Synthetic instruction2(Instruct), PKU SafeRLHF (PKU) (Ji et al., 2024), Reward3, UltraFeedback(UltraF) (Cui et al., 2024), FineWeb (Penedo et al., 2024) and Pile uncopyrighted(Pile)4 datasets. (Section 4.4)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Robust Multi-bit Text Watermark with LLM-based Paraphrasers"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the surveyed literature, PKU-SafeRLHF is predominantly used as a dataset to evaluate and train large language models on safety and alignment with human preferences. The most common application is to measure `Harmlessness`, with many papers using it to assess model responses to harmful queries. A frequent secondary application is the measurement of `Helpfulness`, with several sources noting the dataset is annotated for both dimensions, enabling the study of trade-offs between them. A single paper also uses it to measure `Generalization`. The dataset is consistently described as containing prompt-response pairs, often with two responses per prompt and human preference labels indicating which is more harmful or helpful. Its content is characterized as human-curated and covering dimensions such as \"insults, immorality, crime, emotional harm, and privacy\" (Gaining Wisdom from Setbacks: Aligning Large Language Models via Mistake Analysis). Papers operationalize PKU-SafeRLHF in several ways: it is frequently employed as a benchmark for out-of-distribution evaluation, sometimes with \"red-teaming instructions\"; it is also used for model training, including safety alignment via reinforcement learning and fine-tuning. A less common but noted use is as a benchmark to evaluate the performance of \"generative judges on safety-related preference judgments\" (Learning LLM-as-a-Judge for Preference Alignment).",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Gaining Wisdom from Setbacks: Aligning Large Language Models via Mistake Analysis",
+      "Improving Generalization of Alignment with Human Preferences through Group Invariant Learning",
+      "Unmasking and Improving Data Credibility: A Study with Datasets for Training Harmless Language Models"
+    ],
+    "iclr25": [
+      "Bi-Factorial Preference Optimization: Balancing Safety-Helpfulness in Language Models",
+      "Learning LLM-as-a-Judge for Preference Alignment",
+      "MACPO: Weak-to-Strong Alignment via Multi-Agent Contrastive Preference Optimization",
+      "Magnetic Preference Optimization: Achieving Last-iterate Convergence for Language Model Alignment",
+      "REEF: Representation Encoding Fingerprints for Large Language Models"
+    ],
+    "acl25": [
+      "CoE: A Clue of Emotion Framework for Emotion Recognition in Conversations",
+      "Diffusion Models Through a Global Lens: Are They Culturally Inclusive?",
+      "Improving Factuality with Explicit Working Memory",
+      "M\u00b3GQA: A Multi-Entity Multi-Hop Multi-Setting Graph Question Answering Benchmark",
+      "ScaleBiO: Scalable Bilevel Optimization forLLMData Reweighting"
+    ],
+    "icml25": [
+      "Bounded Rationality for LLMs: Satisficing Alignment at Inference-Time",
+      "HPS: Hard Preference Sampling for Human Preference Alignment"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 3,
+    "iclr25": 5,
+    "acl25": 5,
+    "icml25": 2
+  },
+  "conferences": [
+    "acl25",
+    "iclr24",
+    "iclr25",
+    "icml25"
+  ]
+}

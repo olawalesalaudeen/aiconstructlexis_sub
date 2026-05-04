@@ -1,0 +1,114 @@
+{
+  "canonical_name": "TempCompass",
+  "type": "measurement",
+  "canonical_definition": "TempCompass is a benchmark predominantly used to assess temporal and video understanding in models. Across the provided sources, it is most frequently described as a tool for \"diagnosing multi-facet basic video temporal understanding abilities\" and evaluating the \"temporal understanding capabilities of video language models.\" The benchmark is also used more broadly to measure general video understanding and is categorized as a video question answering (VideoQA) benchmark. According to its definition, TempCompass operationalizes these assessments through a diverse set of tasks, including multiple-choice QA, yes/no QA, caption matching, and caption generation. This design is noted as a response to a perceived \"lack of tasks diversity\" in other instruments. While the data also associates TempCompass with mathematical reasoning, no specific evidence is provided to describe how it measures this construct. The prevailing use of TempCompass is to evaluate models on fine-grained comprehension through these varied formats.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "TempCompass"
+  ],
+  "papers": [
+    "TOMATO: Assessing Visual Temporal Reasoning Capabilities in Multimodal Foundation Models",
+    "Temporal Reasoning Transfer from Text to Video",
+    "Unhackable Temporal Reward for Scalable Video MLLMs",
+    "Video-STaR: Self-Training Enables Video Instruction Tuning with Any Supervision"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A benchmark for visual temporal reasoning that expands task types to include multiple-choice QA, yes/no QA, caption matching, and caption generation.",
+      "paper": "TOMATO: Assessing Visual Temporal Reasoning Capabilities in Multimodal Foundation Models",
+      "original_name": "TempCompass"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Temporal understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "ShareGPT4Video: Improving Video Understanding and Generation with Better Captions",
+      "evidence": "MVBench (Li et al., 2023d), TempCompass (Liu et al., 2024c) centers on temporal understanding",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "neurips24": [
+          "ShareGPT4Video: Improving Video Understanding and Generation with Better Captions"
+        ],
+        "iclr25": [
+          "Video-STaR: Self-Training Enables Video Instruction Tuning with Any Supervision",
+          "Temporal Reasoning Transfer from Text to Video"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Video understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "ShareGPT4Video: Improving Video Understanding and Generation with Better Captions",
+      "evidence": "we adopt the fine-grained temporal understanding benchmark, TempCompass (Liu et al., 2024b) (Multiple-Choice subset), diagnosing multi-facet basic video temporal understanding abilities. (Section 4.1)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "ShareGPT4Video: Improving Video Understanding and Generation with Better Captions"
+        ],
+        "iclr25": [
+          "Unhackable Temporal Reward for Scalable Video MLLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Temporal reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Temporal Reasoning Transfer from Text to Video",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Temporal Reasoning Transfer from Text to Video"
+        ],
+        "emnlp25": [
+          "HydraRAG: Structured Cross-Source Enhanced Large Language Model Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Video question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Video-STaR: Self-Training Enables Video Instruction Tuning with Any Supervision",
+      "evidence": "Examples of several VideoQA benchmarks. We examine four existing representative benchmarks and ours: VITATECS, MVBench, TempCompass, ReXTime, and TOMATO.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Video-STaR: Self-Training Enables Video Instruction Tuning with Any Supervision"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 0,
+  "characterization": "TempCompass is a benchmark predominantly used to assess temporal and video understanding in models. Across the provided sources, it is most frequently described as a tool for \"diagnosing multi-facet basic video temporal understanding abilities\" and evaluating the \"temporal understanding capabilities of video language models.\" The benchmark is also used more broadly to measure general video understanding and is categorized as a video question answering (VideoQA) benchmark. According to its definition, TempCompass operationalizes these assessments through a diverse set of tasks, including multiple-choice QA, yes/no QA, caption matching, and caption generation. This design is noted as a response to a perceived \"lack of tasks diversity\" in other instruments. While the data also associates TempCompass with mathematical reasoning, no specific evidence is provided to describe how it measures this construct. The prevailing use of TempCompass is to evaluate models on fine-grained comprehension through these varied formats.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "TOMATO: Assessing Visual Temporal Reasoning Capabilities in Multimodal Foundation Models",
+      "Temporal Reasoning Transfer from Text to Video",
+      "Unhackable Temporal Reward for Scalable Video MLLMs",
+      "Video-STaR: Self-Training Enables Video Instruction Tuning with Any Supervision"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 4
+  },
+  "conferences": [
+    "iclr25"
+  ]
+}

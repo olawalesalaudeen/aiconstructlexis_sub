@@ -1,0 +1,78 @@
+{
+  "canonical_name": "Zero-shot evaluation",
+  "type": "measurement",
+  "canonical_definition": "Across the surveyed literature, Zero-shot evaluation is predominantly described as an evaluation setting or protocol designed to test a model's performance without any task-specific examples or demonstrations. The central operational characteristic, mentioned in nearly all sources, is that models are prompted to perform a task without any in-context examples, forcing them to rely on their pre-existing knowledge. As one paper puts it, \"The models generate responses based solely on their pre-training\" (Predicate-Guided Generation for Mathematical Reasoning). The most frequently stated purpose of this method is to assess a model's generalization ability and intrinsic knowledge. This is operationalized by measuring performance on tasks in \"unseen domains without any fine-tuning\" (FactCG: Enhancing Fact Checkers with Graph-Based Multi-Hop Data), through cross-lingual transfer, or by evaluating inherent capabilities such as temporal reasoning and Emotion analysis. A less common framing, from a single paper, treats it as a \"prompting method where the model generates responses directly without additional guidance\" (Dynamic Collaboration of Multi-Language Models based on Minimal Complete Semantic Units). The approach is used across various tasks, including toxicity detection, ScreenQA, and query-focused summarization.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Zero-shot evaluation",
+    "Zero-Shot"
+  ],
+  "papers": [
+    "Current Semantic-change Quantification Methods Struggle with Discovery in the Wild",
+    "Dynamic Collaboration of Multi-Language Models based on Minimal Complete Semantic Units",
+    "Orchestrating Audio: Multi-Agent Framework for Long-Video Audio Synthesis",
+    "DETQUS: Decomposition-Enhanced Transformers forQUery-focused Summarization",
+    "FactCG: Enhancing Fact Checkers with Graph-Based Multi-Hop Data",
+    "MASTER: A Multi-Agent System withLLMSpecializedMCTS",
+    "On the Role of Speech Data in Reducing Toxicity Detection Bias"
+  ],
+  "paper_count": 7,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "An evaluation setting in which models are prompted to answer questions without any prior examples, testing their intrinsic knowledge and generalization ability.",
+      "paper": "DETQUS: Decomposition-Enhanced Transformers forQUery-focused Summarization",
+      "original_name": "Zero-shot evaluation"
+    },
+    {
+      "text": "A prompting method where the model generates responses directly from a query without additional examples or structured guidance.",
+      "paper": "Dynamic Collaboration of Multi-Language Models based on Minimal Complete Semantic Units",
+      "original_name": "Zero-Shot"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Emotion analysis",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Catch Your Emotion: Sharpening Emotion Perception in Multimodal Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Catch Your Emotion: Sharpening Emotion Perception in Multimodal Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the surveyed literature, Zero-shot evaluation is predominantly described as an evaluation setting or protocol designed to test a model's performance without any task-specific examples or demonstrations. The central operational characteristic, mentioned in nearly all sources, is that models are prompted to perform a task without any in-context examples, forcing them to rely on their pre-existing knowledge. As one paper puts it, \"The models generate responses based solely on their pre-training\" (Predicate-Guided Generation for Mathematical Reasoning). The most frequently stated purpose of this method is to assess a model's generalization ability and intrinsic knowledge. This is operationalized by measuring performance on tasks in \"unseen domains without any fine-tuning\" (FactCG: Enhancing Fact Checkers with Graph-Based Multi-Hop Data), through cross-lingual transfer, or by evaluating inherent capabilities such as temporal reasoning and Emotion analysis. A less common framing, from a single paper, treats it as a \"prompting method where the model generates responses directly without additional guidance\" (Dynamic Collaboration of Multi-Language Models based on Minimal Complete Semantic Units). The approach is used across various tasks, including toxicity detection, ScreenQA, and query-focused summarization.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "naacl25": [
+      "DETQUS: Decomposition-Enhanced Transformers forQUery-focused Summarization",
+      "FactCG: Enhancing Fact Checkers with Graph-Based Multi-Hop Data",
+      "MASTER: A Multi-Agent System withLLMSpecializedMCTS",
+      "On the Role of Speech Data in Reducing Toxicity Detection Bias"
+    ],
+    "emnlp25": [
+      "Current Semantic-change Quantification Methods Struggle with Discovery in the Wild",
+      "Dynamic Collaboration of Multi-Language Models based on Minimal Complete Semantic Units",
+      "Orchestrating Audio: Multi-Agent Framework for Long-Video Audio Synthesis"
+    ]
+  },
+  "paper_count_by_conference": {
+    "naacl25": 4,
+    "emnlp25": 3
+  },
+  "conferences": [
+    "emnlp25",
+    "naacl25"
+  ]
+}

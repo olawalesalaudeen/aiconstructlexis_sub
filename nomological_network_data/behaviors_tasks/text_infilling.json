@@ -1,0 +1,164 @@
+{
+  "canonical_name": "Text infilling",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, text infilling is most commonly defined as the task of generating text to fill a missing portion of a document given the surrounding context, such as a prefix and suffix. This behavior is positioned as a form of `conditional text generation` and is related to the broader category of `text generation`. The general task is operationalized in different ways, with one paper specifying an approach to \"infill the middle 512 tokens given the first and last 256 tokens,\" while another mentions work on \"flexible-length text infilling.\" To evaluate performance, papers report using datasets such as `ROCStories` and `WikiText-103`, with one study noting the use of the MAUVE score.\n\nBeyond this general definition, the task is frequently adapted to specialized domains. These include `story infilling` for narrative completion, `code infilling` for missing lines of code, and `antibody sequence infilling` for generating amino-acid regions. A smaller set of studies uses text infilling to probe model properties. For example, some papers use it to analyze cultural adaptation by examining a model's \"preference for Arab vs. Western entities as [MASK] token fillings.\" Another paper describes a `fill-in-the-blank completion` task designed for a localized medical context. This behavior is also described as `masked token infilling`, which is used as a proxy to evaluate the difficulty of reconstructing a full prompt.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Code infilling",
+    "Sequence infilling",
+    "Story infilling",
+    "Text infilling",
+    "Antibody sequence infilling",
+    "Masked token infilling",
+    "Fill-in-the-blank completion"
+  ],
+  "papers": [
+    "Pluralistic Alignment for Healthcare: A Role-Driven Framework",
+    "Reasoning under Uncertainty: EfficientLLMInference via Unsupervised Confidence Dilution and Convergent Adaptive Sampling",
+    "Discrete Copula Diffusion",
+    "Efficient Perplexity Bound and Ratio Matching in Discrete Diffusion Language Models",
+    "Glauber Generative Model: Discrete Diffusion Models via Binary Classification",
+    "Scaling Diffusion Language Models via Adaptation from Autoregressive Models",
+    "Hidden No More: Attacking and Defending Private Third-Party LLM Inference",
+    "Tractable Transformers for Flexible Conditional Generation",
+    "CoME: An Unlearning-based Approach to Conflict-free Model Editing",
+    "ManaTTSPersian: a recipe for creatingTTSdatasets for lower resource languages"
+  ],
+  "paper_count": 10,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The specific infilling task of generating a coherent narrative segment to complete a story.",
+      "paper": "Scaling Diffusion Language Models via Adaptation from Autoregressive Models",
+      "original_name": "Story infilling"
+    },
+    {
+      "text": "The specific infilling task of generating a missing line or block of code within an existing code snippet.",
+      "paper": "Scaling Diffusion Language Models via Adaptation from Autoregressive Models",
+      "original_name": "Code infilling"
+    },
+    {
+      "text": "The task of generating text to fill in a missing portion of a document given the surrounding context (prefix and suffix).",
+      "paper": "Glauber Generative Model: Discrete Diffusion Models via Binary Classification",
+      "original_name": "Text infilling"
+    },
+    {
+      "text": "Filling in missing parts of a sequence non-sequentially during discrete diffusion generation.",
+      "paper": "Efficient Perplexity Bound and Ratio Matching in Discrete Diffusion Language Models",
+      "original_name": "Sequence infilling"
+    },
+    {
+      "text": "Generating missing amino-acid regions in an antibody sequence given the remaining observed regions.",
+      "paper": "Discrete Copula Diffusion",
+      "original_name": "Antibody sequence infilling"
+    },
+    {
+      "text": "The task of predicting missing tokens in a sequence given the surrounding context, used as a proxy to evaluate the difficulty of reconstructing a full prompt from a partial one.",
+      "paper": "Hidden No More: Attacking and Defending Private Third-Party LLM Inference",
+      "original_name": "Masked token infilling"
+    },
+    {
+      "text": "Generating or selecting a treatment completion for a medical scenario when presented with a prompt and two candidate responses\u2014one traditional and one allopathic.",
+      "paper": "Reasoning under Uncertainty: EfficientLLMInference via Unsupervised Confidence Dilution and Convergent Adaptive Sampling",
+      "original_name": "Fill-in-the-blank completion"
+    }
+  ],
+  "definition_count": 7,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ROCStories",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Amortizing intractable inference in large language models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Amortizing intractable inference in large language models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "EvoCodeBench: An Evolving Code Generation Benchmark with Domain-Specific Evaluations",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "EvoCodeBench: An Evolving Code Generation Benchmark with Domain-Specific Evaluations"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WikiText-103",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Discrete Copula Diffusion",
+      "evidence": "Evaluation of text infilling performance using the MAUVE score (\u2191) with 5 prompt masks... For all methods, we use the same set of 2,000 text sequences from the validation set of WikiText-103",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Discrete Copula Diffusion"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Conditional text generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Discrete Copula Diffusion",
+      "evidence": "We now move on to conditional text generation, where certain tokens are provided in advance, and the task is to generate the remaining tokens. (Section 6.2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Discrete Copula Diffusion"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 2,
+  "characterization": "Across the provided literature, text infilling is most commonly defined as the task of generating text to fill a missing portion of a document given the surrounding context, such as a prefix and suffix. This behavior is positioned as a form of `conditional text generation` and is related to the broader category of `text generation`. The general task is operationalized in different ways, with one paper specifying an approach to \"infill the middle 512 tokens given the first and last 256 tokens,\" while another mentions work on \"flexible-length text infilling.\" To evaluate performance, papers report using datasets such as `ROCStories` and `WikiText-103`, with one study noting the use of the MAUVE score.\n\nBeyond this general definition, the task is frequently adapted to specialized domains. These include `story infilling` for narrative completion, `code infilling` for missing lines of code, and `antibody sequence infilling` for generating amino-acid regions. A smaller set of studies uses text infilling to probe model properties. For example, some papers use it to analyze cultural adaptation by examining a model's \"preference for Arab vs. Western entities as [MASK] token fillings.\" Another paper describes a `fill-in-the-blank completion` task designed for a localized medical context. This behavior is also described as `masked token infilling`, which is used as a proxy to evaluate the difficulty of reconstructing a full prompt.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Discrete Copula Diffusion",
+      "Efficient Perplexity Bound and Ratio Matching in Discrete Diffusion Language Models",
+      "Glauber Generative Model: Discrete Diffusion Models via Binary Classification",
+      "Scaling Diffusion Language Models via Adaptation from Autoregressive Models"
+    ],
+    "naacl25": [
+      "CoME: An Unlearning-based Approach to Conflict-free Model Editing",
+      "ManaTTSPersian: a recipe for creatingTTSdatasets for lower resource languages"
+    ],
+    "icml25": [
+      "Hidden No More: Attacking and Defending Private Third-Party LLM Inference",
+      "Tractable Transformers for Flexible Conditional Generation"
+    ],
+    "emnlp25": [
+      "Pluralistic Alignment for Healthcare: A Role-Driven Framework",
+      "Reasoning under Uncertainty: EfficientLLMInference via Unsupervised Confidence Dilution and Convergent Adaptive Sampling"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 4,
+    "naacl25": 2,
+    "icml25": 2,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "naacl25"
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "canonical_name": "COCO",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, COCO is consistently defined and used as a benchmark to evaluate image-to-text description generation. Its most prevalent application, supported by extensive evidence, is to measure model performance on the `Image captioning` task. Papers frequently cite its use for the \"COCO captioning task\" and position it as a standard instrument for this purpose. A more specialized use is also documented, where its validation set is employed to measure `Object hallucination` within visual captions. While its primary role centers on text generation from images, COCO is also reported as a measurement instrument for a wider array of behaviors, including `Semantic segmentation`, `Object detection`, `Pose estimation`, `Image generation`, `Cross-modal retrieval`, and `Multimodal alignment`, although the provided data lacks specific evidence detailing these applications.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "COCO"
+  ],
+  "papers": [
+    "Backdooring Vision-Language Models with Out-Of-Distribution Data",
+    "DEEM: Diffusion models serve as the eyes of large language models for image perception",
+    "OmniCorpus: A Unified Multimodal Corpus of 10 Billion-Level Images Interleaved with Text",
+    "REMEDY: Recipe Merging Dynamics in Large Vision-Language Models",
+    "Revisit Large-Scale Image-Caption Data in Pre-training Multimodal Foundation Models",
+    "Understanding and Mitigating Hallucination in Large Vision-Language Models via Modular Attribution and Intervention",
+    "VibeCheck: Discover and Quantify Qualitative Differences in Large Language Models"
+  ],
+  "paper_count": 7,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The MS COCO image captioning benchmark used to evaluate image-to-text description generation.",
+      "paper": "OmniCorpus: A Unified Multimodal Corpus of 10 Billion-Level Images Interleaved with Text",
+      "original_name": "COCO"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Image captioning",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens",
+      "evidence": "We evaluate our models on VQA benchmarks (Goyal et al., 2017; Singh et al., 2019; Gurari et al., 2018; Marino et al., 2019) and image captioning benchmarks (Chen et al., 2015; Young et al., 2014). (Section 5.1)",
+      "paper_count": 12,
+      "papers_by_conference": {
+        "neurips24": [
+          "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens",
+          "Accelerating Pre-training of Multimodal LLMs via Chain-of-Sight",
+          "Leveraging Visual Tokens for Extended Text Contexts in Multi-Modal Learning",
+          "What matters when building vision-language models?",
+          "CogVLM: Visual Expert for Pretrained Language Models"
+        ],
+        "iclr25": [
+          "DEEM: Diffusion models serve as the eyes of large language models for image perception",
+          "VibeCheck: Discover and Quantify Qualitative Differences in Large Language Models",
+          "Backdooring Vision-Language Models with Out-Of-Distribution Data",
+          "REMEDY: Recipe Merging Dynamics in Large Vision-Language Models",
+          "OmniCorpus: A Unified Multimodal Corpus of 10 Billion-Level Images Interleaved with Text"
+        ],
+        "icml25": [
+          "CoMemo: LVLMs Need Image Context with Image Memory",
+          "Diffusion Instruction Tuning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Semantic segmentation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "neurips24": [
+          "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+          "Multi-Head Mixture-of-Experts",
+          "4M-21: An Any-to-Any Vision Model for Tens of Tasks and Modalities"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Object detection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+          "Multi-Head Mixture-of-Experts"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Image generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Making LLaMA SEE and Draw with SEED Tokenizer",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Making LLaMA SEE and Draw with SEED Tokenizer"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Object hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Understanding and Mitigating Hallucination in Large Vision-Language Models via Modular Attribution and Intervention",
+      "evidence": "To evaluate object hallucination in visual caption, we use images from the COCO validation and Nocaps (Agrawal et al., 2019) datasets (Section 5.1).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Understanding and Mitigating Hallucination in Large Vision-Language Models via Modular Attribution and Intervention"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Cross-modal retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Making LLaMA SEE and Draw with SEED Tokenizer",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Making LLaMA SEE and Draw with SEED Tokenizer"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal alignment",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "VisMin: Visual Minimal-Change Understanding",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "VisMin: Visual Minimal-Change Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Pose estimation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-context learning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 9,
+  "incoming_relationship_count": 9,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, COCO is consistently defined and used as a benchmark to evaluate image-to-text description generation. Its most prevalent application, supported by extensive evidence, is to measure model performance on the `Image captioning` task. Papers frequently cite its use for the \"COCO captioning task\" and position it as a standard instrument for this purpose. A more specialized use is also documented, where its validation set is employed to measure `Object hallucination` within visual captions. While its primary role centers on text generation from images, COCO is also reported as a measurement instrument for a wider array of behaviors, including `Semantic segmentation`, `Object detection`, `Pose estimation`, `Image generation`, `Cross-modal retrieval`, and `Multimodal alignment`, although the provided data lacks specific evidence detailing these applications.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Backdooring Vision-Language Models with Out-Of-Distribution Data",
+      "DEEM: Diffusion models serve as the eyes of large language models for image perception",
+      "OmniCorpus: A Unified Multimodal Corpus of 10 Billion-Level Images Interleaved with Text",
+      "REMEDY: Recipe Merging Dynamics in Large Vision-Language Models",
+      "Revisit Large-Scale Image-Caption Data in Pre-training Multimodal Foundation Models",
+      "Understanding and Mitigating Hallucination in Large Vision-Language Models via Modular Attribution and Intervention",
+      "VibeCheck: Discover and Quantify Qualitative Differences in Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 7
+  },
+  "conferences": [
+    "iclr25"
+  ]
+}

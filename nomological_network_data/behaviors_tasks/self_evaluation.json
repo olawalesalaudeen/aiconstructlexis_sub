@@ -1,0 +1,100 @@
+{
+  "canonical_name": "Self-evaluation",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, self-evaluation is a behavior where a model assesses its own generated output, though it is operationalized in several distinct ways. One framing defines it as an LLM scoring the quality of its own summary, with a focus on measuring potential \"self-evaluation bias,\" calculated as \"the difference between an LLM\u2019s evaluation score for its own summaries and the average score assigned by other evaluators\" (KazMMLU: Evaluating Language Models onKazakh,Russian, and Regional Knowledge ofKazakhstan). Another approach, termed \"inconsistency identification,\" operationalizes this behavior by prompting a model to \"reflect on the discrepancies between generated responses and dialogue contexts\" and explicitly categorize any inconsistencies it finds (PsyDial: A Large-scale Long-term Conversational Dataset for Mental Health Support). A third conceptualization, called \"self-review,\" treats it as a final check where an agent assesses the novelty of a generated abstract by comparing it against a database of existing papers (Parameter-Aware Contrastive Knowledge Editing: Tracing and Rectifying based on Critical Transmission Paths). In each case, the model's analytical capabilities are directed inward at its own productions, whether for quality scoring, consistency checking, or novelty assessment.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Self-evaluation",
+    "Inconsistency identification",
+    "Self-review"
+  ],
+  "papers": [
+    "KazMMLU: Evaluating Language Models onKazakh,Russian, and Regional Knowledge ofKazakhstan",
+    "Parameter-Aware Contrastive Knowledge Editing: Tracing and Rectifying based on Critical Transmission Paths",
+    "PsyDial: A Large-scale Long-term Conversational Dataset for Mental Health Support"
+  ],
+  "paper_count": 3,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "An LLM assessing the quality of its own generated summary, potentially exhibiting bias in scoring.",
+      "paper": "KazMMLU: Evaluating Language Models onKazakh,Russian, and Regional Knowledge ofKazakhstan",
+      "original_name": "Self-evaluation"
+    },
+    {
+      "text": "The observable behavior of a model analyzing its own output against a context and explicitly identifying and categorizing types of inconsistencies.",
+      "paper": "PsyDial: A Large-scale Long-term Conversational Dataset for Mental Health Support",
+      "original_name": "Inconsistency identification"
+    },
+    {
+      "text": "A final check where an agent assesses the novelty of a generated abstract by comparing it against a database of existing papers.",
+      "paper": "Parameter-Aware Contrastive Knowledge Editing: Tracing and Rectifying based on Critical Transmission Paths",
+      "original_name": "Self-review"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Text generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Language Model Self-improvement by Reinforcement Learning Contemplation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Language Model Self-improvement by Reinforcement Learning Contemplation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Evaluation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Do LLMs estimate uncertainty well in instruction-following?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Do LLMs estimate uncertainty well in instruction-following?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Entropy",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "AROMA: Autonomous Rank-one Matrix Adaptation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "AROMA: Autonomous Rank-one Matrix Adaptation"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 2,
+  "characterization": "Across the provided literature, self-evaluation is a behavior where a model assesses its own generated output, though it is operationalized in several distinct ways. One framing defines it as an LLM scoring the quality of its own summary, with a focus on measuring potential \"self-evaluation bias,\" calculated as \"the difference between an LLM\u2019s evaluation score for its own summaries and the average score assigned by other evaluators\" (KazMMLU: Evaluating Language Models onKazakh,Russian, and Regional Knowledge ofKazakhstan). Another approach, termed \"inconsistency identification,\" operationalizes this behavior by prompting a model to \"reflect on the discrepancies between generated responses and dialogue contexts\" and explicitly categorize any inconsistencies it finds (PsyDial: A Large-scale Long-term Conversational Dataset for Mental Health Support). A third conceptualization, called \"self-review,\" treats it as a final check where an agent assesses the novelty of a generated abstract by comparing it against a database of existing papers (Parameter-Aware Contrastive Knowledge Editing: Tracing and Rectifying based on Critical Transmission Paths). In each case, the model's analytical capabilities are directed inward at its own productions, whether for quality scoring, consistency checking, or novelty assessment.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "KazMMLU: Evaluating Language Models onKazakh,Russian, and Regional Knowledge ofKazakhstan",
+      "Parameter-Aware Contrastive Knowledge Editing: Tracing and Rectifying based on Critical Transmission Paths",
+      "PsyDial: A Large-scale Long-term Conversational Dataset for Mental Health Support"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 3
+  },
+  "conferences": [
+    "acl25"
+  ]
+}

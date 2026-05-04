@@ -1,0 +1,108 @@
+{
+  "canonical_name": "Radiology report generation",
+  "type": "behavior",
+  "canonical_definition": "Radiology report generation is defined in the provided literature as the task of creating a descriptive and clinically relevant text report from one or more radiology images and their associated context. This behavior is most commonly operationalized and evaluated using the MIMIC-CXR dataset, which is cited across multiple papers in this set. Other datasets mentioned for measuring this task include IU-Xray, and the GREEN benchmark is also listed as an evaluation tool. The quality of the generated reports is assessed using standard Natural Language Generation (NLG) metrics. Specifically, one paper notes the use of BERTScore, alongside BLEU and ROUGE, by comparing a model's output to references written by radiologists. The task is described as playing a role in chest X-ray interpretation, and some work focuses on enhancing it through methods like supplementary knowledge injection.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Radiology report generation"
+  ],
+  "papers": [
+    "Balancing Diversity and Risk inLLMSampling: How to Select Your Method and Parameter for Open-Ended Text Generation",
+    "LLM\u00d7MapReduce: Simplified Long-Sequence Processing using Large Language Models",
+    "Weaving Context Across Images: Improving Vision-Language Models through Focus-Centric Visual Chains"
+  ],
+  "paper_count": 3,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The task of generating a descriptive, clinically relevant text report based on one or more radiology images and associated clinical context.",
+      "paper": "Balancing Diversity and Risk inLLMSampling: How to Select Your Method and Parameter for Open-Ended Text Generation",
+      "original_name": "Radiology report generation"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MIMIC-CXR",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Conformal Alignment: Knowing When to Trust Foundation Models with Guarantees",
+      "evidence": "We evaluate our model using three publicly available radiology report generation datasets: MIMIC-CXR, CHEXPERT PLUS, and IU X-RAY (Section 4.1)",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "neurips24": [
+          "Conformal Alignment: Knowing When to Trust Foundation Models with Guarantees"
+        ],
+        "iclr25": [
+          "Conformal Generative Modeling with Improved Sample Efficiency through Sequential Greedy Filtering"
+        ],
+        "acl25": [
+          "Weaving Context Across Images: Improving Vision-Language Models through Focus-Centric Visual Chains"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "IU-Xray",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Weaving Context Across Images: Improving Vision-Language Models through Focus-Centric Visual Chains",
+      "evidence": "We evaluate our method on two public datasets, MIMIC-CXR (Johnson et al., 2019) and IU-Xray (Demner-Fushman et al., 2016). (Section 5.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Weaving Context Across Images: Improving Vision-Language Models through Focus-Centric Visual Chains"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GREEN",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LLM\u00d7MapReduce: Simplified Long-Sequence Processing using Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "LLM\u00d7MapReduce: Simplified Long-Sequence Processing using Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BERTScore",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LLM\u00d7MapReduce: Simplified Long-Sequence Processing using Large Language Models",
+      "evidence": "Since we have radiologist-written reference available, it is possible to employ standard, general domain, NLG metrics such as BLEU (Papineni et al., 2002), ROUGE (Lin, 2004), and the BERTScore (Zhang et al., 2019). (Section 3.2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "LLM\u00d7MapReduce: Simplified Long-Sequence Processing using Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 4,
+  "characterization": "Radiology report generation is defined in the provided literature as the task of creating a descriptive and clinically relevant text report from one or more radiology images and their associated context. This behavior is most commonly operationalized and evaluated using the MIMIC-CXR dataset, which is cited across multiple papers in this set. Other datasets mentioned for measuring this task include IU-Xray, and the GREEN benchmark is also listed as an evaluation tool. The quality of the generated reports is assessed using standard Natural Language Generation (NLG) metrics. Specifically, one paper notes the use of BERTScore, alongside BLEU and ROUGE, by comparing a model's output to references written by radiologists. The task is described as playing a role in chest X-ray interpretation, and some work focuses on enhancing it through methods like supplementary knowledge injection.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Balancing Diversity and Risk inLLMSampling: How to Select Your Method and Parameter for Open-Ended Text Generation",
+      "LLM\u00d7MapReduce: Simplified Long-Sequence Processing using Large Language Models",
+      "Weaving Context Across Images: Improving Vision-Language Models through Focus-Centric Visual Chains"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 3
+  },
+  "conferences": [
+    "acl25"
+  ]
+}

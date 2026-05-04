@@ -1,0 +1,130 @@
+{
+  "canonical_name": "Text simplification",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, text simplification is most commonly defined as the behavior of revising text to reduce its complexity and enhance readability, with most definitions stipulating that the original meaning should be preserved. This behavior is operationalized through several distinct actions, including lexical simplification (replacing complex words), sentence decomposition (breaking down complex syntactic structures), and shortening sentences. While 'text simplification' is the general term, a few papers focus on more granular versions of this task, such as 'claim simplification' for easier verification of assertions or 'sentence simplification' which converts compound-complex sentences into simpler forms. One paper operationalizes sentence simplification using 'hybrid chain-of-thought and few-shot prompting,' while another notes that lexical simplification can be guided by LCP scores. This behavior is frequently studied for its downstream effects; papers report that it causes improvements in `Readability`, `Translation quality`, and `Information extraction`. Although often presented as a beneficial process, one study suggests that a model's tendency to simplify can be a drawback in certain contexts, noting it as a 'possible reason that GPT-4 achieves low scores on lexical evaluation' in a specialized task.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Text simplification",
+    "Claim simplification",
+    "Sentence decomposition",
+    "Sentence simplification",
+    "Lexical simplification"
+  ],
+  "papers": [
+    "Complex Numerical Reasoning with Numerical Semantic Pre-training Framework",
+    "Context andPOSin Action: A Comparative Study ofChinese Homonym Disambiguation in Human and Language Models",
+    "Large Language Models as Realistic Microservice Trace Generators",
+    "Polysemantic Dropout: ConformalOODDetection for SpecializedLLMs",
+    "Self-Critique and Refinement for Faithful Natural Language Explanations",
+    "\u201cFeels Feminine to Me\u201d: Understanding Perceived Gendered Style through Human Annotations",
+    "From Redundancy to Relevance: Information Flow inLVLMs Across Reasoning Tasks",
+    "KMI: A Dataset ofKorean Motivational Interviewing Dialogues for Psychotherapy",
+    "On The Origin of Cultural Biases in Language Models: From Pre-training Data to Linguistic Phenomena",
+    "VisDoM: Multi-DocumentQAwith Visually Rich Elements Using Multimodal Retrieval-Augmented Generation"
+  ],
+  "paper_count": 10,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "An observable behavior where a model revises text in a way that reduces its complexity or increases its readability, which may be contrary to the goals of a specialized task like patent revision.",
+      "paper": "From Redundancy to Relevance: Information Flow inLVLMs Across Reasoning Tasks",
+      "original_name": "Text simplification"
+    },
+    {
+      "text": "The task of breaking down complex assertions into simpler, more easily verifiable components.",
+      "paper": "Self-Critique and Refinement for Faithful Natural Language Explanations",
+      "original_name": "Claim simplification"
+    },
+    {
+      "text": "The process of breaking down syntactically complex, compound, or compound-complex sentences into simpler, more easily parsable forms.",
+      "paper": "Complex Numerical Reasoning with Numerical Semantic Pre-training Framework",
+      "original_name": "Sentence decomposition"
+    },
+    {
+      "text": "The task of converting sentences with complex syntactic structures (complex, compound, compound-complex) into one or more simple sentences.",
+      "paper": "Complex Numerical Reasoning with Numerical Semantic Pre-training Framework",
+      "original_name": "Sentence simplification"
+    },
+    {
+      "text": "The observable task of replacing complex words in a text with simpler alternatives while preserving the original meaning.",
+      "paper": "\u201cFeels Feminine to Me\u201d: Understanding Perceived Gendered Style through Human Annotations",
+      "original_name": "Lexical simplification"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Translation quality",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "KMI: A Dataset ofKorean Motivational Interviewing Dialogues for Psychotherapy",
+      "evidence": "Simplification with TOWER-INSTRUCT distinguishes itself by improving translation quality based on XCOMET(s, t, r) scores and maintaining it according to the METRICX(t, r) scores. (\u00a74.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "KMI: A Dataset ofKorean Motivational Interviewing Dialogues for Psychotherapy"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Readability",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "KMI: A Dataset ofKorean Motivational Interviewing Dialogues for Psychotherapy",
+      "evidence": "This refinement greatly improves the readability of documents, making them more accessible to diverse audiences... (Section 1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "KMI: A Dataset ofKorean Motivational Interviewing Dialogues for Psychotherapy"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Information extraction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Complex Numerical Reasoning with Numerical Semantic Pre-training Framework",
+      "evidence": "Ablation studies demonstrate that integrating coreference and decomposition increases recall on rare relations by over 20%. (Abstract)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Complex Numerical Reasoning with Numerical Semantic Pre-training Framework"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 3,
+  "characterization": "Across the surveyed literature, text simplification is most commonly defined as the behavior of revising text to reduce its complexity and enhance readability, with most definitions stipulating that the original meaning should be preserved. This behavior is operationalized through several distinct actions, including lexical simplification (replacing complex words), sentence decomposition (breaking down complex syntactic structures), and shortening sentences. While 'text simplification' is the general term, a few papers focus on more granular versions of this task, such as 'claim simplification' for easier verification of assertions or 'sentence simplification' which converts compound-complex sentences into simpler forms. One paper operationalizes sentence simplification using 'hybrid chain-of-thought and few-shot prompting,' while another notes that lexical simplification can be guided by LCP scores. This behavior is frequently studied for its downstream effects; papers report that it causes improvements in `Readability`, `Translation quality`, and `Information extraction`. Although often presented as a beneficial process, one study suggests that a model's tendency to simplify can be a drawback in certain contexts, noting it as a 'possible reason that GPT-4 achieves low scores on lexical evaluation' in a specialized task.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "naacl25": [
+      "From Redundancy to Relevance: Information Flow inLVLMs Across Reasoning Tasks",
+      "KMI: A Dataset ofKorean Motivational Interviewing Dialogues for Psychotherapy",
+      "On The Origin of Cultural Biases in Language Models: From Pre-training Data to Linguistic Phenomena",
+      "VisDoM: Multi-DocumentQAwith Visually Rich Elements Using Multimodal Retrieval-Augmented Generation"
+    ],
+    "emnlp25": [
+      "Complex Numerical Reasoning with Numerical Semantic Pre-training Framework",
+      "Context andPOSin Action: A Comparative Study ofChinese Homonym Disambiguation in Human and Language Models",
+      "Large Language Models as Realistic Microservice Trace Generators",
+      "Polysemantic Dropout: ConformalOODDetection for SpecializedLLMs",
+      "Self-Critique and Refinement for Faithful Natural Language Explanations",
+      "\u201cFeels Feminine to Me\u201d: Understanding Perceived Gendered Style through Human Annotations"
+    ]
+  },
+  "paper_count_by_conference": {
+    "naacl25": 4,
+    "emnlp25": 6
+  },
+  "conferences": [
+    "emnlp25",
+    "naacl25"
+  ]
+}

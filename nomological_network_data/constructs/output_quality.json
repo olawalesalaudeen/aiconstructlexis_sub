@@ -1,0 +1,83 @@
+{
+  "canonical_name": "Output quality",
+  "type": "construct",
+  "canonical_definition": "Across the provided literature, Output quality is consistently framed as a holistic, latent construct representing the overall effectiveness of a model's generated text. While some definitions describe it broadly in terms of correctness and coherence, others specify more granular criteria such as structure, relevance, coverage, and logical linkage. A recurring theme is the difficulty of direct assessment, with one paper noting that \"Quantitatively assessing output quality is challenging\" (\"PrivaCI-Bench: Evaluating Privacy with Contextual Integrity and Legal Compliance\"). Consequently, the construct is operationalized through a wide array of proxy methods. The most prevalent approaches involve using other models for evaluation, as seen with `LLM-as-a-judge`, reward models like `ArmoRM`, and automated benchmarks including `AlpacaEval`, `MT-Bench`, and `Arena-Hard`. Additionally, it is measured through performance on standard question-answering and reasoning benchmarks like `MMLU`, `BoolQ`, and `PIQA`, as well as through `Human evaluation` and automated metrics like `BARTScore`. The construct is studied alongside `Faithfulness` and `Commonsense knowledge`, and several papers report that it is influenced by methods such as `Chain-of-thought reasoning` and `Best-of-N`.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Overall quality",
+    "Output quality",
+    "Content quality"
+  ],
+  "papers": [
+    "Adaptive Retrieval Without Self-Knowledge? Bringing Uncertainty Back Home",
+    "FinanceReasoning: Benchmarking Financial Numerical Reasoning More Credible, Comprehensive and Challenging",
+    "KokoroChat: AJapanese Psychological Counseling Dialogue Dataset Collected via Role-Playing by Trained Counselors",
+    "LLMBraces: Straightening OutLLMPredictions with Relevant Sub-Updates",
+    "PrivaCI-Bench: Evaluating Privacy with Contextual Integrity and Legal Compliance",
+    "UTBoost: Rigorous Evaluation of Coding Agents onSWE-Bench"
+  ],
+  "paper_count": 6,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A holistic latent trait reflecting the combined effectiveness of a model in generating patent claims that meet professional standards across multiple evaluation dimensions.",
+      "paper": "UTBoost: Rigorous Evaluation of Coding Agents onSWE-Bench",
+      "original_name": "Overall quality"
+    },
+    {
+      "text": "The latent property of a model's generated responses reflecting their correctness, coherence, and alignment with high-quality expectations, as judged by external evaluators or reward models.",
+      "paper": "Adaptive Retrieval Without Self-Knowledge? Bringing Uncertainty Back Home",
+      "original_name": "Response quality"
+    },
+    {
+      "text": "The latent quality of a model's generated text, which is challenging to assess directly and is instead measured using proxy methods like reward models.",
+      "paper": "PrivaCI-Bench: Evaluating Privacy with Contextual Integrity and Legal Compliance",
+      "original_name": "Output quality"
+    },
+    {
+      "text": "The overall quality of the generated survey's text, assessed on its structure, relevance to the topic, and comprehensive coverage of key information.",
+      "paper": "KokoroChat: AJapanese Psychological Counseling Dialogue Dataset Collected via Role-Playing by Trained Counselors",
+      "original_name": "Content quality"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-as-a-judge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LongWriter: Unleashing 10,000+ Word Generation from Long Context LLMs",
+      "evidence": "Response Quality : We measure the quality of Ri given Ii. First, we use LLM-as-a-Judge where we prompt an LM to return a discrete score between 1 and 5 that represents the quality of Ri. (Section 5.2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "LongWriter: Unleashing 10,000+ Word Generation from Long Context LLMs"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the provided literature, Output quality is consistently framed as a holistic, latent construct representing the overall effectiveness of a model's generated text. While some definitions describe it broadly in terms of correctness and coherence, others specify more granular criteria such as structure, relevance, coverage, and logical linkage. A recurring theme is the difficulty of direct assessment, with one paper noting that \"Quantitatively assessing output quality is challenging\" (\"PrivaCI-Bench: Evaluating Privacy with Contextual Integrity and Legal Compliance\"). Consequently, the construct is operationalized through a wide array of proxy methods. The most prevalent approaches involve using other models for evaluation, as seen with `LLM-as-a-judge`, reward models like `ArmoRM`, and automated benchmarks including `AlpacaEval`, `MT-Bench`, and `Arena-Hard`. Additionally, it is measured through performance on standard question-answering and reasoning benchmarks like `MMLU`, `BoolQ`, and `PIQA`, as well as through `Human evaluation` and automated metrics like `BARTScore`. The construct is studied alongside `Faithfulness` and `Commonsense knowledge`, and several papers report that it is influenced by methods such as `Chain-of-thought reasoning` and `Best-of-N`.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Adaptive Retrieval Without Self-Knowledge? Bringing Uncertainty Back Home",
+      "FinanceReasoning: Benchmarking Financial Numerical Reasoning More Credible, Comprehensive and Challenging",
+      "KokoroChat: AJapanese Psychological Counseling Dialogue Dataset Collected via Role-Playing by Trained Counselors",
+      "LLMBraces: Straightening OutLLMPredictions with Relevant Sub-Updates",
+      "PrivaCI-Bench: Evaluating Privacy with Contextual Integrity and Legal Compliance",
+      "UTBoost: Rigorous Evaluation of Coding Agents onSWE-Bench"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 6
+  },
+  "conferences": [
+    "acl25"
+  ]
+}

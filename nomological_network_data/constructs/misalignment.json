@@ -1,0 +1,82 @@
+{
+  "canonical_name": "Misalignment",
+  "type": "construct",
+  "canonical_definition": "The provided literature presents two distinct framings of Misalignment. One line of work defines it as a latent, unsafe tendency within a model that can be hidden in one setting and activated in another. In this view, a \"safety misalignment remains dormant in a full-precision LLM but becomes exploitable post-quantization.\" This form of misalignment is operationalized through its outcomes, as it is reported to cause the generation of harmful content. Alternatively, another paper treats misalignment as a model's failure to follow instructions and produce valid, actionable outputs within a specific domain. This is exemplified by a model's \"deficiency in identifying essential information for constructing valid routes.\" Under this framing, misalignment is used as a metric to measure the performance of LLMs in outputting valid instructions. The concept is also studied in relation to other model risks, such as hallucination.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Misalignment"
+  ],
+  "papers": [
+    "2025.emnlp-main.1443.checklist",
+    "LLM-Independent AdaptiveRAG: Let the Question Speak for Itself",
+    "Syntax-Aware Retrieval Augmentation for Neural Symbolic Regression",
+    "Adaptive Deployment of Untrusted LLMs Reduces Distributed Threats",
+    "Durable Quantization Conditioned Misalignment Attack on Large Language Models"
+  ],
+  "paper_count": 5,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A latent unsafe tendency in the model that can be hidden in one setting and activated in another, leading to harmful outputs.",
+      "paper": "Durable Quantization Conditioned Misalignment Attack on Large Language Models",
+      "original_name": "Misalignment"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Harmful content generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Durable Quantization Conditioned Misalignment Attack on Large Language Models",
+      "evidence": "safety misalignment remains dormant in a full-precision LLM but becomes exploitable post-quantization... enables the generation of harmful content",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Durable Quantization Conditioned Misalignment Attack on Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "2025.emnlp-main.1443.checklist",
+      "evidence": "Discussed in Section 6 (Limitations) and Appendix A.5 (Error Analysis), where risks such as retrieval failure, hallucinations, misalignment, and layout errors are described.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "2025.emnlp-main.1443.checklist"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 1,
+  "characterization": "The provided literature presents two distinct framings of Misalignment. One line of work defines it as a latent, unsafe tendency within a model that can be hidden in one setting and activated in another. In this view, a \"safety misalignment remains dormant in a full-precision LLM but becomes exploitable post-quantization.\" This form of misalignment is operationalized through its outcomes, as it is reported to cause the generation of harmful content. Alternatively, another paper treats misalignment as a model's failure to follow instructions and produce valid, actionable outputs within a specific domain. This is exemplified by a model's \"deficiency in identifying essential information for constructing valid routes.\" Under this framing, misalignment is used as a metric to measure the performance of LLMs in outputting valid instructions. The concept is also studied in relation to other model risks, such as hallucination.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Adaptive Deployment of Untrusted LLMs Reduces Distributed Threats",
+      "Durable Quantization Conditioned Misalignment Attack on Large Language Models"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.1443.checklist",
+      "LLM-Independent AdaptiveRAG: Let the Question Speak for Itself",
+      "Syntax-Aware Retrieval Augmentation for Neural Symbolic Regression"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "emnlp25": 3
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25"
+  ]
+}

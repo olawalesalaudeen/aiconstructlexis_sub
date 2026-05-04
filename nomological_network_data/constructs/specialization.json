@@ -1,0 +1,103 @@
+{
+  "canonical_name": "Specialization",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, Specialization is characterized in two distinct ways: most commonly as a deliberate training objective, and less frequently as an undesirable side effect of optimization. The prevailing usage frames specialization as the process of developing models with distinct functionalities or expertise, such as generation versus critique, through targeted finetuning. This is operationalized by training models on independent data sets to create 'specialist language models' that perform well on a narrow target domain, or by designing systems that retrieve the correct expert module for a given task. A smaller line of work defines 'skill specialization' as a model's tendency to develop high competency in a few skills 'at the expense of others,' often driven by flawed evaluation metrics. A recurring theme is the trade-off between Specialization and Generalization, with multiple papers aiming to strike a balance between the two. As one study notes, 'Specialization trades generality for inference efficiency,' highlighting a common motivation for pursuing it. Finally, Specialization is reported in one paper to cause Self-correction, though the mechanism is not detailed in the provided evidence.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Skill specialization",
+    "Specialization"
+  ],
+  "papers": [
+    "Expectation Preference Optimization: Reliable Preference Estimation for Improving the Reasoning Capability of Large Language Models",
+    "Rethinking Backdoor Detection Evaluation for Language Models",
+    "Lawma: The Power of Specialization for Legal Annotation",
+    "Multiagent Finetuning: Self Improvement with Diverse Reasoning Chains",
+    "Re-evaluating Open-ended Evaluation of Large Language Models",
+    "Efficient Personalized Adaptation for Physiological Signal Foundation Model",
+    "Learn from Downstream and Be Yourself in Multimodal Large Language Models Fine-Tuning",
+    "Soup-of-Experts: Pretraining Specialist Models via Parameters Averaging",
+    "When can in-context learning generalize out of task distribution?"
+  ],
+  "paper_count": 9,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The tendency of a model to develop high competency in a few specific skills, potentially at the expense of other, less-represented skills, often as a result of optimizing for a flawed evaluation metric.",
+      "paper": "Re-evaluating Open-ended Evaluation of Large Language Models",
+      "original_name": "Skill specialization"
+    },
+    {
+      "text": "The process by which individual models within a multiagent system develop distinct functionalities or expertise, such as generation or critique, through targeted finetuning.",
+      "paper": "Multiagent Finetuning: Self Improvement with Diverse Reasoning Chains",
+      "original_name": "Specialization"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Efficient Personalized Adaptation for Physiological Signal Foundation Model",
+      "evidence": "Specialization trades generality for inference efficiency: a small model trained on data close to the targeted domain can be strong on this domain. (Section 4)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "icml25": [
+          "Efficient Personalized Adaptation for Physiological Signal Foundation Model"
+        ],
+        "emnlp25": [
+          "Expectation Preference Optimization: Reliable Preference Estimation for Improving the Reasoning Capability of Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Self-correction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Multiagent Finetuning: Self Improvement with Diverse Reasoning Chains",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Multiagent Finetuning: Self Improvement with Diverse Reasoning Chains"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the surveyed literature, Specialization is characterized in two distinct ways: most commonly as a deliberate training objective, and less frequently as an undesirable side effect of optimization. The prevailing usage frames specialization as the process of developing models with distinct functionalities or expertise, such as generation versus critique, through targeted finetuning. This is operationalized by training models on independent data sets to create 'specialist language models' that perform well on a narrow target domain, or by designing systems that retrieve the correct expert module for a given task. A smaller line of work defines 'skill specialization' as a model's tendency to develop high competency in a few skills 'at the expense of others,' often driven by flawed evaluation metrics. A recurring theme is the trade-off between Specialization and Generalization, with multiple papers aiming to strike a balance between the two. As one study notes, 'Specialization trades generality for inference efficiency,' highlighting a common motivation for pursuing it. Finally, Specialization is reported in one paper to cause Self-correction, though the mechanism is not detailed in the provided evidence.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Lawma: The Power of Specialization for Legal Annotation",
+      "Multiagent Finetuning: Self Improvement with Diverse Reasoning Chains",
+      "Re-evaluating Open-ended Evaluation of Large Language Models"
+    ],
+    "icml25": [
+      "Efficient Personalized Adaptation for Physiological Signal Foundation Model",
+      "Learn from Downstream and Be Yourself in Multimodal Large Language Models Fine-Tuning",
+      "Soup-of-Experts: Pretraining Specialist Models via Parameters Averaging",
+      "When can in-context learning generalize out of task distribution?"
+    ],
+    "emnlp25": [
+      "Expectation Preference Optimization: Reliable Preference Estimation for Improving the Reasoning Capability of Large Language Models",
+      "Rethinking Backdoor Detection Evaluation for Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3,
+    "icml25": 4,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "icml25"
+  ]
+}

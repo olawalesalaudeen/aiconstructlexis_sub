@@ -1,0 +1,66 @@
+{
+  "canonical_name": "Modality gap",
+  "type": "construct",
+  "canonical_definition": "The term \"Modality gap\" is used in the provided literature to describe two related but distinct concepts. The more general framing, found in work on cross-modality prompt transfer, defines it as a discrepancy between source and target modalities that arises from differences in their data distributions and model architectures. As one paper notes, this gap is \"the distribution difference between source and target data that comes from different data types\" (\"Release the Powers of Prompt Tuning...\"). A different usage treats the concept more specifically as a performance disparity between speech and text inputs within the same model, which is attributed to suboptimal alignment between the modalities. This latter framing is explicitly operationalized as a measurable performance drop. The gap is quantified by the formula `GAP = Mt \u2212 Ms`, representing the difference in overall benchmark scores between text (`Mt`) and speech (`Ms`) inputs. To conduct this measurement, the `VoiceBench` dataset is used to assess this drop in scores. Thus, the concept is treated both as a general distributional difference and as a specific, measurable performance deficit between speech and text.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Modality gap"
+  ],
+  "papers": [
+    "MoLoRAG: Bootstrapping Document Understanding via Multi-modal Logic-aware Retrieval",
+    "Think in Safety: Unveiling and Mitigating Safety Alignment Collapse in Multimodal Large Reasoning Model",
+    "Mitigate the Gap: Improving Cross-Modal Alignment in CLIP",
+    "Release the Powers of Prompt Tuning: Cross-Modality Prompt Transfer"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The discrepancy between a source and target modality arising from differences in their data distributions and underlying model architectures.",
+      "paper": "Release the Powers of Prompt Tuning: Cross-Modality Prompt Transfer",
+      "original_name": "Modality gap"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VoiceBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Think in Safety: Unveiling and Mitigating Safety Alignment Collapse in Multimodal Large Reasoning Model",
+      "evidence": "We quantify the modality gap as the drop in benchmark scores between text and speech inputs... For evaluation, we adopt five subsets of the VoiceBench dataset (Chen et al., 2024)\u2014AdvBench, IFEval, OBQA, MMSU, and sd-qa (Sections 4.3 & 3.2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Think in Safety: Unveiling and Mitigating Safety Alignment Collapse in Multimodal Large Reasoning Model"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization": "The term \"Modality gap\" is used in the provided literature to describe two related but distinct concepts. The more general framing, found in work on cross-modality prompt transfer, defines it as a discrepancy between source and target modalities that arises from differences in their data distributions and model architectures. As one paper notes, this gap is \"the distribution difference between source and target data that comes from different data types\" (\"Release the Powers of Prompt Tuning...\"). A different usage treats the concept more specifically as a performance disparity between speech and text inputs within the same model, which is attributed to suboptimal alignment between the modalities. This latter framing is explicitly operationalized as a measurable performance drop. The gap is quantified by the formula `GAP = Mt \u2212 Ms`, representing the difference in overall benchmark scores between text (`Mt`) and speech (`Ms`) inputs. To conduct this measurement, the `VoiceBench` dataset is used to assess this drop in scores. Thus, the concept is treated both as a general distributional difference and as a specific, measurable performance deficit between speech and text.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Mitigate the Gap: Improving Cross-Modal Alignment in CLIP",
+      "Release the Powers of Prompt Tuning: Cross-Modality Prompt Transfer"
+    ],
+    "emnlp25": [
+      "MoLoRAG: Bootstrapping Document Understanding via Multi-modal Logic-aware Retrieval",
+      "Think in Safety: Unveiling and Mitigating Safety Alignment Collapse in Multimodal Large Reasoning Model"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25"
+  ]
+}

@@ -1,0 +1,240 @@
+{
+  "canonical_name": "Fact checking",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, fact checking is most commonly defined as the task of judging whether a given claim is supported or contradicted by available knowledge or evidence. While many papers frame this as a binary true/false or supported/unsupported determination, a notable variation treats it as a three-way classification that includes a 'not enough information' category. The process of verification is operationalized against various evidence sources, including provided documents, knowledge graphs, and tables. To measure this behavior, researchers employ several benchmarks, with the provided data citing the use of LongBench, SciFact, and PubHealth. Other datasets frequently mentioned in the context of fact checking tasks include FEVER, Creak, Counterfact, FactKG, HoVer, and VitaminC. Some work also frames fact checking as an entailment task or focuses on specific domains, such as verifying medical statements. The behavior is studied alongside the construct of Faithfulness and is frequently discussed in the context of retrieval-augmented language models and as a method for evaluating the veracity of individual claims within longer model generations.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Fact checking",
+    "Fact verification",
+    "Fact-checking",
+    "Truthfulness prediction",
+    "Statement verification",
+    "Statement validation"
+  ],
+  "papers": [
+    "BTR: Binary Token Representations for Efficient Retrieval Augmented Language Models",
+    "BadEdit: Backdooring Large Language Models by Model Editing",
+    "Think-on-Graph: Deep and Responsible Reasoning of Large Language Model on Knowledge Graph",
+    "GameArena: Evaluating LLM Reasoning through Live Computer Games",
+    "Grounding by Trying: LLMs with Reinforcement Learning-Enhanced Retrieval",
+    "Logical Consistency of Large Language Models in Fact-Checking",
+    "Reliable and Diverse Evaluation of LLM Medical Knowledge Mastery",
+    "Scaling Instruction-tuned LLMs to Million-token Contexts via Hierarchical Synthetic Data Generation",
+    "SciLitLLM: How to Adapt LLMs for Scientific Literature Understanding",
+    "Think-on-Graph 2.0: Deep and Faithful Large Language Model Reasoning with Knowledge-guided Retrieval Augmented Generation",
+    "Triples as the Key: Structuring Makes Decomposition and Verification Easier in LLM-based TableQA",
+    "Evaluating LLMs Across Multi-Cognitive Levels: From Medical Knowledge Mastery to Scenario-Based Problem Solving",
+    "LongRoPE2: Near-Lossless LLM Context Window Scaling",
+    "Position: LLMs Need a Bayesian Meta-Reasoning Framework for More Robust and Generalizable Reasoning",
+    "Cascading Large Language Models for Salient Event Graph Generation",
+    "Continual Learning in Multilingual Sign Language Translation",
+    "DAWN-ICL: Strategic Planning of Problem-solving Trajectories for Zero-Shot In-Context Learning",
+    "Instantly Learning Preference Alignment via In-contextDPO",
+    "Mitigating Tail Narrowing inLLMSelf-Improvement via Socratic-Guided Sampling",
+    "REL-A.I.: An Interaction-Centered Approach To Measuring Human-LMReliance",
+    "UNDIAL: Self-Distillation with Adjusted Logits for Robust Unlearning in Large Language Models",
+    "Chain of Preference Optimization: Improving Chain-of-Thought Reasoning in LLMs",
+    "Long-form factuality in large language models",
+    "Nearest Neighbor Speculative Decoding for LLM Generation and Attribution",
+    "xRAG: Extreme Context Compression for Retrieval-augmented Generation with One Token"
+  ],
+  "paper_count": 25,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Judging whether a claim is supported or contradicted by available knowledge.",
+      "paper": "BTR: Binary Token Representations for Efficient Retrieval Augmented Language Models",
+      "original_name": "Fact checking"
+    },
+    {
+      "text": "The task of determining whether a given textual claim is true or false based on evidence.",
+      "paper": "Chain of Preference Optimization: Improving Chain-of-Thought Reasoning in LLMs",
+      "original_name": "Fact verification"
+    },
+    {
+      "text": "The observable task of verifying a queried fact against a provided knowledge base, such as a knowledge graph, and producing a binary response indicating its validity.",
+      "paper": "Logical Consistency of Large Language Models in Fact-Checking",
+      "original_name": "Fact-checking"
+    },
+    {
+      "text": "Predicting whether a human statement is true or false after questioning.",
+      "paper": "GameArena: Evaluating LLM Reasoning through Live Computer Games",
+      "original_name": "Truthfulness prediction"
+    },
+    {
+      "text": "The task of determining whether a given textual statement is true or false based on underlying factual knowledge.",
+      "paper": "Reliable and Diverse Evaluation of LLM Medical Knowledge Mastery",
+      "original_name": "Statement verification"
+    },
+    {
+      "text": "Determining whether a given medical statement is true or false, requiring precise discrimination of knowledge without the aid of multiple-choice options.",
+      "paper": "Evaluating LLMs Across Multi-Cognitive Levels: From Medical Knowledge Mastery to Scenario-Based Problem Solving",
+      "original_name": "Statement validation"
+    }
+  ],
+  "definition_count": 6,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "FEVER",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "BTR: Binary Token Representations for Efficient Retrieval Augmented Language Models",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr24": [
+          "BTR: Binary Token Representations for Efficient Retrieval Augmented Language Models"
+        ],
+        "emnlp25": [
+          "PBI-Attack: Prior-Guided Bimodal Interactive Black-Box Jailbreak Attack for Toxicity Maximization"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SciFact",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "CanLLMs Ground when they (Don\u2019t) Know: A Study on Direct and Loaded Political Questions",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "acl25": [
+          "CanLLMs Ground when they (Don\u2019t) Know: A Study on Direct and Loaded Political Questions"
+        ],
+        "emnlp25": [
+          "PBI-Attack: Prior-Guided Bimodal Interactive Black-Box Jailbreak Attack for Toxicity Maximization"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LongBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Scaling Instruction-tuned LLMs to Million-token Contexts via Hierarchical Synthetic Data Generation",
+      "evidence": "LongBench (Bai et al., 2024): Focused on medium-context tasks (10K tokens), it assesses summarization, QA, and fact-checking across multiple domains...",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Scaling Instruction-tuned LLMs to Million-token Contexts via Hierarchical Synthetic Data Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "CanLLMs Ground when they (Don\u2019t) Know: A Study on Direct and Loaded Political Questions",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "CanLLMs Ground when they (Don\u2019t) Know: A Study on Direct and Loaded Political Questions"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PubHealth",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "CanLLMs Ground when they (Don\u2019t) Know: A Study on Direct and Loaded Political Questions",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "CanLLMs Ground when they (Don\u2019t) Know: A Study on Direct and Loaded Political Questions"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Climate-FEVER",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "PBI-Attack: Prior-Guided Bimodal Interactive Black-Box Jailbreak Attack for Toxicity Maximization",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "PBI-Attack: Prior-Guided Bimodal Interactive Black-Box Jailbreak Attack for Toxicity Maximization"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "CounterFact",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "The Validation Gap: A Mechanistic Analysis of How Language Models Compute Arithmetic but Fail to Validate It",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "The Validation Gap: A Mechanistic Analysis of How Language Models Compute Arithmetic but Fail to Validate It"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 7,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 6,
+  "characterization": "Across the provided literature, fact checking is most commonly defined as the task of judging whether a given claim is supported or contradicted by available knowledge or evidence. While many papers frame this as a binary true/false or supported/unsupported determination, a notable variation treats it as a three-way classification that includes a 'not enough information' category. The process of verification is operationalized against various evidence sources, including provided documents, knowledge graphs, and tables. To measure this behavior, researchers employ several benchmarks, with the provided data citing the use of LongBench, SciFact, and PubHealth. Other datasets frequently mentioned in the context of fact checking tasks include FEVER, Creak, Counterfact, FactKG, HoVer, and VitaminC. Some work also frames fact checking as an entailment task or focuses on specific domains, such as verifying medical statements. The behavior is studied alongside the construct of Faithfulness and is frequently discussed in the context of retrieval-augmented language models and as a method for evaluating the veracity of individual claims within longer model generations.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "BTR: Binary Token Representations for Efficient Retrieval Augmented Language Models",
+      "BadEdit: Backdooring Large Language Models by Model Editing",
+      "Think-on-Graph: Deep and Responsible Reasoning of Large Language Model on Knowledge Graph"
+    ],
+    "neurips24": [
+      "Chain of Preference Optimization: Improving Chain-of-Thought Reasoning in LLMs",
+      "Long-form factuality in large language models",
+      "Nearest Neighbor Speculative Decoding for LLM Generation and Attribution",
+      "xRAG: Extreme Context Compression for Retrieval-augmented Generation with One Token"
+    ],
+    "iclr25": [
+      "GameArena: Evaluating LLM Reasoning through Live Computer Games",
+      "Grounding by Trying: LLMs with Reinforcement Learning-Enhanced Retrieval",
+      "Logical Consistency of Large Language Models in Fact-Checking",
+      "Reliable and Diverse Evaluation of LLM Medical Knowledge Mastery",
+      "Scaling Instruction-tuned LLMs to Million-token Contexts via Hierarchical Synthetic Data Generation",
+      "SciLitLLM: How to Adapt LLMs for Scientific Literature Understanding",
+      "Think-on-Graph 2.0: Deep and Faithful Large Language Model Reasoning with Knowledge-guided Retrieval Augmented Generation",
+      "Triples as the Key: Structuring Makes Decomposition and Verification Easier in LLM-based TableQA"
+    ],
+    "icml25": [
+      "Evaluating LLMs Across Multi-Cognitive Levels: From Medical Knowledge Mastery to Scenario-Based Problem Solving",
+      "LongRoPE2: Near-Lossless LLM Context Window Scaling",
+      "Position: LLMs Need a Bayesian Meta-Reasoning Framework for More Robust and Generalizable Reasoning"
+    ],
+    "naacl25": [
+      "Cascading Large Language Models for Salient Event Graph Generation",
+      "Continual Learning in Multilingual Sign Language Translation",
+      "DAWN-ICL: Strategic Planning of Problem-solving Trajectories for Zero-Shot In-Context Learning",
+      "Instantly Learning Preference Alignment via In-contextDPO",
+      "Mitigating Tail Narrowing inLLMSelf-Improvement via Socratic-Guided Sampling",
+      "REL-A.I.: An Interaction-Centered Approach To Measuring Human-LMReliance",
+      "UNDIAL: Self-Distillation with Adjusted Logits for Robust Unlearning in Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 3,
+    "neurips24": 4,
+    "iclr25": 8,
+    "icml25": 3,
+    "naacl25": 7
+  },
+  "conferences": [
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "canonical_name": "DIPPER",
+  "type": "measurement",
+  "canonical_definition": "Across the surveyed literature, DIPPER is most commonly characterized as a paraphrase-based text rewriting procedure or model used to generate adversarial attacks. Its prevailing application is to test the robustness of watermarking algorithms and machine-generated text detectors against semantic-preserving modifications. In this context, it is explicitly used to measure `Adversarial robustness`. Several papers note that its paraphrasing can be controlled through specific settings, such as \"lexical diversity\" and \"order diversity\". One source specifies that the model is based on a fine-tuned T5-XXL and has been \"widely adopted in recent watermark research\" for this evaluation purpose. A less frequent framing, found in a single paper, describes DIPPER as a state-of-the-art 11B parameter model used as a baseline to measure the anonymizing effect of text paraphrasing, an application distinct from adversarial testing.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "DIPPER",
+    "Dipper"
+  ],
+  "papers": [
+    "A Semantic Invariant Robust Watermark for Large Language Models",
+    "Few-Shot Detection of Machine-Generated Text using Style Representations",
+    "Glimpse: Enabling White-Box Methods to Use Proprietary Models for Zero-Shot LLM-Generated Text Detection",
+    "Language Models are Advanced Anonymizers",
+    "Optimizing Adaptive Attacks against Watermarks for Language Models",
+    "Revealing Weaknesses in Text Watermarking Through Self-Information Rewrite Attacks",
+    "StealthInk: A Multi-bit and Stealthy Watermark for Large Language Models"
+  ],
+  "paper_count": 7,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A paraphrase-based text rewriting procedure used to test watermark robustness under semantic-preserving modifications.",
+      "paper": "A Semantic Invariant Robust Watermark for Large Language Models",
+      "original_name": "DIPPER"
+    },
+    {
+      "text": "A state-of-the-art 11B parameter transformer-based model for text paraphrasing, used as a baseline to measure the anonymizing effect of rewriting text without a specific focus on privacy.",
+      "paper": "Language Models are Advanced Anonymizers",
+      "original_name": "Dipper"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Adversarial robustness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "A Semantic Invariant Robust Watermark for Large Language Models",
+      "evidence": "\u201cIn Table 1, we list the detection accuracy of our watermark algorithm and various baseline algorithms under the no-attack setting and when texts are rewritten using GPT3.5, two different DIPPER settings (Krishna et al., 2023)\u201d",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "A Semantic Invariant Robust Watermark for Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the surveyed literature, DIPPER is most commonly characterized as a paraphrase-based text rewriting procedure or model used to generate adversarial attacks. Its prevailing application is to test the robustness of watermarking algorithms and machine-generated text detectors against semantic-preserving modifications. In this context, it is explicitly used to measure `Adversarial robustness`. Several papers note that its paraphrasing can be controlled through specific settings, such as \"lexical diversity\" and \"order diversity\". One source specifies that the model is based on a fine-tuned T5-XXL and has been \"widely adopted in recent watermark research\" for this evaluation purpose. A less frequent framing, found in a single paper, describes DIPPER as a state-of-the-art 11B parameter model used as a baseline to measure the anonymizing effect of text paraphrasing, an application distinct from adversarial testing.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "A Semantic Invariant Robust Watermark for Large Language Models",
+      "Few-Shot Detection of Machine-Generated Text using Style Representations"
+    ],
+    "iclr25": [
+      "Glimpse: Enabling White-Box Methods to Use Proprietary Models for Zero-Shot LLM-Generated Text Detection",
+      "Language Models are Advanced Anonymizers"
+    ],
+    "icml25": [
+      "Optimizing Adaptive Attacks against Watermarks for Language Models",
+      "Revealing Weaknesses in Text Watermarking Through Self-Information Rewrite Attacks",
+      "StealthInk: A Multi-bit and Stealthy Watermark for Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "iclr25": 2,
+    "icml25": 3
+  },
+  "conferences": [
+    "iclr24",
+    "iclr25",
+    "icml25"
+  ]
+}

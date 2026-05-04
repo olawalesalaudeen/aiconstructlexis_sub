@@ -1,0 +1,329 @@
+{
+  "canonical_name": "Semantic segmentation",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, semantic segmentation is most commonly defined as the task of partitioning an image into multiple segments, typically by classifying each pixel into a predefined set of semantic categories or generating pixel-level masks for objects. While this general framing is prevalent, the literature also describes several specialized sub-tasks. A recurring distinction is made between semantic segmentation and instance segmentation, with the latter focused on delineating each distinct object instance. Other variants include \"open-vocabulary segmentation\" for handling labels not seen during training, \"medical image segmentation\" for identifying pathological areas, and \"affordance segmentation\" for marking an object's functional regions. Some work extends the task's complexity, introducing \"multi-target\" or \"multi-object referring segmentation\" to generate masks for multiple objects from a single instruction, and \"part-level segmentation\" for specific parts of an object. This behavior is operationalized and evaluated using a variety of benchmarks, with ADE20K and COCO being the most frequently cited datasets for this purpose, alongside LVIS, PASCAL VOC, Pascal Context, and ScanNet. One paper proposes a different operationalization, framing \"image segmentation as a text generation problem\" (\"Text4Seg: Reimagining Image Segmentation as Text Generation\"). Conceptually, semantic segmentation is studied in the context of broader capabilities like \"Visual perception\" and \"Semantic understanding,\" and is also related to \"Visual grounding\" and \"Image restoration.\"",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Semantic segmentation",
+    "Object segmentation",
+    "Segmentation",
+    "Instance segmentation",
+    "Medical image segmentation",
+    "Open-vocabulary segmentation",
+    "Visual segmentation",
+    "Affordance segmentation",
+    "Multi-object referring segmentation",
+    "Multi-target segmentation",
+    "Part-level segmentation"
+  ],
+  "papers": [
+    "3D-AffordanceLLM: Harnessing Large Language Models for Open-Vocabulary Affordance Detection in 3D Worlds",
+    "Agent Skill Acquisition for Large Language Models via CycleQD",
+    "ClawMachine: Learning to Fetch Visual Tokens for Referential Comprehension",
+    "Explaining Modern Gated-Linear RNNs via a Unified Implicit Attention Formulation",
+    "LLM-wrapper: Black-Box Semantic-Aware Adaptation of Vision-Language Models for Referring Expression Comprehension",
+    "MMR: A Large-scale Benchmark Dataset for Multi-target and Multi-granularity Reasoning Segmentation",
+    "Maintaining Structural Integrity in Parameter Spaces for Parameter Efficient Fine-tuning",
+    "MedTrinity-25M: A Large-scale Multimodal Dataset with Multigranular Annotations for Medicine",
+    "Multi-modal Agent Tuning: Building a VLM-Driven Agent for Efficient Tool Usage",
+    "Text4Seg: Reimagining Image Segmentation as Text Generation",
+    "Transformer Meets Twicing: Harnessing Unattended Residual Information",
+    "4M-21: An Any-to-Any Vision Model for Tens of Tasks and Modalities",
+    "DeiSAM: Segment Anything with Deictic Prompting",
+    "DreamClear: High-Capacity Real-World Image Restoration with Privacy-Safe Dataset Curation",
+    "EAGLE: Efficient Adaptive Geometry-based Learning in Cross-view Understanding",
+    "Fast yet Safe: Early-Exiting with Risk Control",
+    "Image Textualization: An Automatic Framework for Generating Rich and Detailed Image Descriptions",
+    "Interfacing Foundation Models' Embeddings",
+    "Lexicon3D: Probing Visual Foundation Models for Complex 3D Scene Understanding",
+    "Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models",
+    "MambaTree: Tree Topology is All You Need in State Space Model",
+    "Micro-Bench: A Microscopy Benchmark for Vision-Language Understanding",
+    "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+    "Multi-Head Mixture-of-Experts",
+    "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+    "SeafloorAI: A Large-scale Vision-Language Dataset for Seafloor Geological Survey",
+    "Training-Free Open-Ended Object Detection and Segmentation via Attention as Prompts",
+    "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+    "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models"
+  ],
+  "paper_count": 29,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The task of classifying each pixel in an image into a predefined set of semantic categories.",
+      "paper": "EAGLE: Efficient Adaptive Geometry-based Learning in Cross-view Understanding",
+      "original_name": "Semantic segmentation"
+    },
+    {
+      "text": "The action of generating pixel-level masks for specific objects within a visual input.",
+      "paper": "DeiSAM: Segment Anything with Deictic Prompting",
+      "original_name": "Object segmentation"
+    },
+    {
+      "text": "Partitioning an image into object masks or regions corresponding to specific objects.",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "original_name": "Image segmentation"
+    },
+    {
+      "text": "Delineating biological structures in microscopy images at the instance or semantic level.",
+      "paper": "Micro-Bench: A Microscopy Benchmark for Vision-Language Understanding",
+      "original_name": "Segmentation"
+    },
+    {
+      "text": "The task of detecting and delineating each distinct object instance in an image with a pixel-level mask.",
+      "paper": "Training-Free Open-Ended Object Detection and Segmentation via Attention as Prompts",
+      "original_name": "Instance segmentation"
+    },
+    {
+      "text": "The task of segmenting image regions corresponding to a set of textual labels that were not necessarily seen during training.",
+      "paper": "Text4Seg: Reimagining Image Segmentation as Text Generation",
+      "original_name": "Open-vocabulary segmentation"
+    },
+    {
+      "text": "Identifying and delineating regions of interest or pathological areas in medical images.",
+      "paper": "MedTrinity-25M: A Large-scale Multimodal Dataset with Multigranular Annotations for Medicine",
+      "original_name": "Medical image segmentation"
+    },
+    {
+      "text": "The task of partitioning a digital image into multiple segments to simplify its representation or locate specific objects.",
+      "paper": "Multi-modal Agent Tuning: Building a VLM-Driven Agent for Efficient Tool Usage",
+      "original_name": "Visual segmentation"
+    },
+    {
+      "text": "The observable task of generating instance segmentation masks for multiple referred objects in an image.",
+      "paper": "ClawMachine: Learning to Fetch Visual Tokens for Referential Comprehension",
+      "original_name": "Multi-object referring segmentation"
+    },
+    {
+      "text": "Predicting a binary mask that marks the functional regions of an object relevant to a query.",
+      "paper": "3D-AffordanceLLM: Harnessing Large Language Models for Open-Vocabulary Affordance Detection in 3D Worlds",
+      "original_name": "Affordance segmentation"
+    },
+    {
+      "text": "The observable behavior of simultaneously generating distinct segmentation masks for multiple target entities within a single image based on one instruction.",
+      "paper": "MMR: A Large-scale Benchmark Dataset for Multi-target and Multi-granularity Reasoning Segmentation",
+      "original_name": "Multi-target segmentation"
+    },
+    {
+      "text": "The task of generating a segmentation mask for a specific part of an object, rather than the entire object.",
+      "paper": "MMR: A Large-scale Benchmark Dataset for Multi-target and Multi-granularity Reasoning Segmentation",
+      "original_name": "Part-level segmentation"
+    }
+  ],
+  "definition_count": 12,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ADE20K",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "DreamClear: High-Capacity Real-World Image Restoration with Privacy-Safe Dataset Curation",
+      "evidence": "We evaluate the model\u2019s performance on ADE20K (A-150) (Zhou et al., 2019), PASCAL Context 59 (PC-59) (Mottaghi et al., 2014), and PASCAL VOC 20 (PAS-20) (Everingham, 2009) datasets, using mIoU as the evaluation metric. (Section 4.5)",
+      "paper_count": 5,
+      "papers_by_conference": {
+        "neurips24": [
+          "DreamClear: High-Capacity Real-World Image Restoration with Privacy-Safe Dataset Curation",
+          "MambaTree: Tree Topology is All You Need in State Space Model",
+          "4M-21: An Any-to-Any Vision Model for Tens of Tasks and Modalities",
+          "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks"
+        ],
+        "iclr25": [
+          "Text4Seg: Reimagining Image Segmentation as Text Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "COCO",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "neurips24": [
+          "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+          "Multi-Head Mixture-of-Experts",
+          "4M-21: An Any-to-Any Vision Model for Tens of Tasks and Modalities"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PASCAL VOC",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Leveraging Hallucinations to Reduce Manual Prompt Dependency in Promptable Segmentation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Leveraging Hallucinations to Reduce Manual Prompt Dependency in Promptable Segmentation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Pascal Context",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Leveraging Hallucinations to Reduce Manual Prompt Dependency in Promptable Segmentation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Leveraging Hallucinations to Reduce Manual Prompt Dependency in Promptable Segmentation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Hypersim",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "4M-21: An Any-to-Any Vision Model for Tens of Tasks and Modalities",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "4M-21: An Any-to-Any Vision Model for Tens of Tasks and Modalities"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Semantic understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Lexicon3D: Probing Visual Foundation Models for Complex 3D Scene Understanding",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Lexicon3D: Probing Visual Foundation Models for Complex 3D Scene Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ScanNet",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Lexicon3D: Probing Visual Foundation Models for Complex 3D Scene Understanding",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Lexicon3D: Probing Visual Foundation Models for Complex 3D Scene Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LVIS",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Training-Free Open-Ended Object Detection and Segmentation via Attention as Prompts",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Training-Free Open-Ended Object Detection and Segmentation via Attention as Prompts"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual perception",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Image restoration",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "DreamClear: High-Capacity Real-World Image Restoration with Privacy-Safe Dataset Curation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "DreamClear: High-Capacity Real-World Image Restoration with Privacy-Safe Dataset Curation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual grounding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Text4Seg: Reimagining Image Segmentation as Text Generation",
+      "evidence": "flexible switching between referring expression segmentation, open-vocabulary segmentation, and other visual grounding tasks. (Section 1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Text4Seg: Reimagining Image Segmentation as Text Generation"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 11,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 10,
+  "characterization": "Across the provided literature, semantic segmentation is most commonly defined as the task of partitioning an image into multiple segments, typically by classifying each pixel into a predefined set of semantic categories or generating pixel-level masks for objects. While this general framing is prevalent, the literature also describes several specialized sub-tasks. A recurring distinction is made between semantic segmentation and instance segmentation, with the latter focused on delineating each distinct object instance. Other variants include \"open-vocabulary segmentation\" for handling labels not seen during training, \"medical image segmentation\" for identifying pathological areas, and \"affordance segmentation\" for marking an object's functional regions. Some work extends the task's complexity, introducing \"multi-target\" or \"multi-object referring segmentation\" to generate masks for multiple objects from a single instruction, and \"part-level segmentation\" for specific parts of an object. This behavior is operationalized and evaluated using a variety of benchmarks, with ADE20K and COCO being the most frequently cited datasets for this purpose, alongside LVIS, PASCAL VOC, Pascal Context, and ScanNet. One paper proposes a different operationalization, framing \"image segmentation as a text generation problem\" (\"Text4Seg: Reimagining Image Segmentation as Text Generation\"). Conceptually, semantic segmentation is studied in the context of broader capabilities like \"Visual perception\" and \"Semantic understanding,\" and is also related to \"Visual grounding\" and \"Image restoration.\"",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "4M-21: An Any-to-Any Vision Model for Tens of Tasks and Modalities",
+      "DeiSAM: Segment Anything with Deictic Prompting",
+      "DreamClear: High-Capacity Real-World Image Restoration with Privacy-Safe Dataset Curation",
+      "EAGLE: Efficient Adaptive Geometry-based Learning in Cross-view Understanding",
+      "Fast yet Safe: Early-Exiting with Risk Control",
+      "Image Textualization: An Automatic Framework for Generating Rich and Detailed Image Descriptions",
+      "Interfacing Foundation Models' Embeddings",
+      "Lexicon3D: Probing Visual Foundation Models for Complex 3D Scene Understanding",
+      "Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models",
+      "MambaTree: Tree Topology is All You Need in State Space Model",
+      "Micro-Bench: A Microscopy Benchmark for Vision-Language Understanding",
+      "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "Multi-Head Mixture-of-Experts",
+      "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+      "SeafloorAI: A Large-scale Vision-Language Dataset for Seafloor Geological Survey",
+      "Training-Free Open-Ended Object Detection and Segmentation via Attention as Prompts",
+      "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models"
+    ],
+    "iclr25": [
+      "3D-AffordanceLLM: Harnessing Large Language Models for Open-Vocabulary Affordance Detection in 3D Worlds",
+      "Agent Skill Acquisition for Large Language Models via CycleQD",
+      "ClawMachine: Learning to Fetch Visual Tokens for Referential Comprehension",
+      "Explaining Modern Gated-Linear RNNs via a Unified Implicit Attention Formulation",
+      "LLM-wrapper: Black-Box Semantic-Aware Adaptation of Vision-Language Models for Referring Expression Comprehension",
+      "MMR: A Large-scale Benchmark Dataset for Multi-target and Multi-granularity Reasoning Segmentation",
+      "Maintaining Structural Integrity in Parameter Spaces for Parameter Efficient Fine-tuning",
+      "MedTrinity-25M: A Large-scale Multimodal Dataset with Multigranular Annotations for Medicine",
+      "Multi-modal Agent Tuning: Building a VLM-Driven Agent for Efficient Tool Usage",
+      "Text4Seg: Reimagining Image Segmentation as Text Generation",
+      "Transformer Meets Twicing: Harnessing Unattended Residual Information"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 18,
+    "iclr25": 11
+  },
+  "conferences": [
+    "iclr25",
+    "neurips24"
+  ]
+}

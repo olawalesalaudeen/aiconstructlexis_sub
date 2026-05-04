@@ -1,0 +1,207 @@
+{
+  "canonical_name": "SWE-bench",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, SWE-bench is consistently described as a benchmark for evaluating language models and autonomous agents on their ability to perform real-world software engineering tasks. The benchmark is composed of tasks derived from actual GitHub activity, with multiple sources specifying it contains 2,294 issues, often paired with pull requests, from 12 popular Python repositories. The primary task for an evaluated system is to resolve a given GitHub issue, which can be a bug report or a feature request, by generating a code patch. Papers use SWE-bench to measure constructs such as `Code generation` and `Programming ability`. The success of a generated patch is typically determined by whether it passes the repository's existing unit tests, with one paper mentioning the metric \"% Resolved (Pass@1)\". While its main purpose is issue resolution, one paper notes that its code repositories and environments were adapted to create another benchmark, TESTGENEVAL, focused on software testing. Overall, the prevailing usage of SWE-bench is as an evaluation framework for repository-level code editing and problem-solving capabilities.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "SWE-bench",
+    "SWE-BENCH",
+    "SWE-Bench",
+    "SWEBench"
+  ],
+  "papers": [
+    "Influences onLLMCalibration: A Study of Response Agreement, Loss Functions, and Prompt Styles",
+    "Value Portrait: Assessing Language Models\u2019 Values through Psychometrically and Ecologically Valid Items",
+    "Reshaping Representation Space to Balance the Safety and Over-rejection in Large Audio Language Models",
+    "RuCCoD: Towards AutomatedICDCoding inRussian",
+    "BigCodeBench: Benchmarking Code Generation with Diverse Function Calls and Complex Instructions",
+    "Commit0: Library Generation from Scratch",
+    "Diversity Empowers Intelligence: Integrating Expertise of Software Engineering Agents",
+    "Learn-by-interact: A Data-Centric Framework For Self-Adaptive Agents in Realistic Environments",
+    "OpenHands: An Open Platform for AI Software Developers as Generalist Agents",
+    "RefactorBench: Evaluating Stateful Reasoning in Language Agents Through Code",
+    "RepoGraph: Enhancing AI Software Engineering with Repository-level Code Graph",
+    "SWE-bench Multimodal: Do AI Systems Generalize to Visual Software Domains?",
+    "TestGenEval: A Real World Unit Test Generation and Test Completion Benchmark",
+    "A Unified Approach to Routing and Cascading for LLMs",
+    "Automated Benchmark Generation for Repository-Level Coding Tasks",
+    "Nemotron-CORTEXA: Enhancing LLM Agents for Software Engineering Tasks via Improved Localization and Solution Diversity",
+    "OrcaLoca: An LLM Agent Framework for Software Issue Localization",
+    "Otter: Generating Tests from Issues to Validate SWE Patches",
+    "PatchPilot: A Cost-Efficient Software Engineering Agent with Early Attempts on Formal Verification",
+    "Position: AI Competitions Provide the Gold Standard for Empirical Rigor in GenAI Evaluation",
+    "Position: Future Research and Challenges Remain Towards AI for Software Engineering",
+    "Synthesizing Software Engineering Data in a Test-Driven Manner",
+    "Training Software Engineering Agents and Verifiers with SWE-Gym",
+    "Improving Retrospective Language Agents via Joint Policy Gradient Optimization",
+    "PicPersona-TOD: A Dataset for Personalizing Utterance Style in Task-Oriented Dialogue with Image Persona",
+    "MAGIS: LLM-Based Multi-Agent Framework for GitHub Issue Resolution",
+    "StackEval: Benchmarking LLMs in Coding Assistance",
+    "kGym: A Platform and Dataset to Benchmark Large Language Models on Linux Kernel Crash Resolution"
+  ],
+  "paper_count": 28,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A benchmark dataset comprising 2,294 real-world issues from 12 popular Python repositories, designed to evaluate a model's ability to perform GitHub issue resolution.",
+      "paper": "MAGIS: LLM-Based Multi-Agent Framework for GitHub Issue Resolution",
+      "original_name": "SWE-bench"
+    },
+    {
+      "text": "A benchmark for evaluating language models on real-world software engineering tasks, using GitHub issues and pull requests to test code editing capabilities.",
+      "paper": "StackEval: Benchmarking LLMs in Coding Assistance",
+      "original_name": "SWE-BENCH"
+    },
+    {
+      "text": "A benchmark designed to assess an agent's ability to resolve real-world GitHub issues, such as bug reports or feature requests, within a code repository.",
+      "paper": "OpenHands: An Open Platform for AI Software Developers as Generalist Agents",
+      "original_name": "SWE-Bench"
+    },
+    {
+      "text": "A benchmark dataset of real-world software engineering tasks from which the code repositories and execution environments for TESTGENEVAL are derived.",
+      "paper": "TestGenEval: A Real World Unit Test Generation and Test Completion Benchmark",
+      "original_name": "SWEBench"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "RepoGraph: Enhancing AI Software Engineering with Repository-level Code Graph",
+      "evidence": "A notable example is SWE-bench (Jimenez et al., 2024), which assesses the ability of agents to generate patches to resolve real-world GitHub issues. (Section 1)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "RepoGraph: Enhancing AI Software Engineering with Repository-level Code Graph"
+        ],
+        "naacl25": [
+          "TurkingBench: A Challenge Benchmark for Web Agents"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "IT service management",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "MAGIS: LLM-Based Multi-Agent Framework for GitHub Issue Resolution",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "MAGIS: LLM-Based Multi-Agent Framework for GitHub Issue Resolution"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SWE-bench Lite",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Diversity Empowers Intelligence: Integrating Expertise of Software Engineering Agents",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Diversity Empowers Intelligence: Integrating Expertise of Software Engineering Agents"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Programming",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "OpenHands: An Open Platform for AI Software Developers as Generalist Agents",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "OpenHands: An Open Platform for AI Software Developers as Generalist Agents"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Evaluation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "SWE-bench Multimodal: Do AI Systems Generalize to Visual Software Domains?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "SWE-bench Multimodal: Do AI Systems Generalize to Visual Software Domains?"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the provided literature, SWE-bench is consistently described as a benchmark for evaluating language models and autonomous agents on their ability to perform real-world software engineering tasks. The benchmark is composed of tasks derived from actual GitHub activity, with multiple sources specifying it contains 2,294 issues, often paired with pull requests, from 12 popular Python repositories. The primary task for an evaluated system is to resolve a given GitHub issue, which can be a bug report or a feature request, by generating a code patch. Papers use SWE-bench to measure constructs such as `Code generation` and `Programming ability`. The success of a generated patch is typically determined by whether it passes the repository's existing unit tests, with one paper mentioning the metric \"% Resolved (Pass@1)\". While its main purpose is issue resolution, one paper notes that its code repositories and environments were adapted to create another benchmark, TESTGENEVAL, focused on software testing. Overall, the prevailing usage of SWE-bench is as an evaluation framework for repository-level code editing and problem-solving capabilities.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "MAGIS: LLM-Based Multi-Agent Framework for GitHub Issue Resolution",
+      "StackEval: Benchmarking LLMs in Coding Assistance",
+      "kGym: A Platform and Dataset to Benchmark Large Language Models on Linux Kernel Crash Resolution"
+    ],
+    "iclr25": [
+      "BigCodeBench: Benchmarking Code Generation with Diverse Function Calls and Complex Instructions",
+      "Commit0: Library Generation from Scratch",
+      "Diversity Empowers Intelligence: Integrating Expertise of Software Engineering Agents",
+      "Learn-by-interact: A Data-Centric Framework For Self-Adaptive Agents in Realistic Environments",
+      "OpenHands: An Open Platform for AI Software Developers as Generalist Agents",
+      "RefactorBench: Evaluating Stateful Reasoning in Language Agents Through Code",
+      "RepoGraph: Enhancing AI Software Engineering with Repository-level Code Graph",
+      "SWE-bench Multimodal: Do AI Systems Generalize to Visual Software Domains?",
+      "TestGenEval: A Real World Unit Test Generation and Test Completion Benchmark"
+    ],
+    "naacl25": [
+      "Improving Retrospective Language Agents via Joint Policy Gradient Optimization",
+      "PicPersona-TOD: A Dataset for Personalizing Utterance Style in Task-Oriented Dialogue with Image Persona"
+    ],
+    "acl25": [
+      "Influences onLLMCalibration: A Study of Response Agreement, Loss Functions, and Prompt Styles",
+      "Value Portrait: Assessing Language Models\u2019 Values through Psychometrically and Ecologically Valid Items"
+    ],
+    "icml25": [
+      "A Unified Approach to Routing and Cascading for LLMs",
+      "Automated Benchmark Generation for Repository-Level Coding Tasks",
+      "Nemotron-CORTEXA: Enhancing LLM Agents for Software Engineering Tasks via Improved Localization and Solution Diversity",
+      "OrcaLoca: An LLM Agent Framework for Software Issue Localization",
+      "Otter: Generating Tests from Issues to Validate SWE Patches",
+      "PatchPilot: A Cost-Efficient Software Engineering Agent with Early Attempts on Formal Verification",
+      "Position: AI Competitions Provide the Gold Standard for Empirical Rigor in GenAI Evaluation",
+      "Position: Future Research and Challenges Remain Towards AI for Software Engineering",
+      "Synthesizing Software Engineering Data in a Test-Driven Manner",
+      "Training Software Engineering Agents and Verifiers with SWE-Gym"
+    ],
+    "emnlp25": [
+      "Reshaping Representation Space to Balance the Safety and Over-rejection in Large Audio Language Models",
+      "RuCCoD: Towards AutomatedICDCoding inRussian"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 3,
+    "iclr25": 9,
+    "naacl25": 2,
+    "acl25": 2,
+    "icml25": 10,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

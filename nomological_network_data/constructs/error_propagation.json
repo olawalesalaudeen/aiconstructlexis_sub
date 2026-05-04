@@ -1,0 +1,96 @@
+{
+  "canonical_name": "Error propagation",
+  "type": "construct",
+  "canonical_definition": "Across the provided literature, \"Error propagation\" is conceptualized in two distinct contexts: as an internal failure mode in sequential reasoning and as a communication breakdown in multi-agent systems. The first framing, also termed \"Error accumulation,\" describes the tendency for mistakes in early reasoning steps to compound and lead to an incorrect final answer. This effect is reported to be exacerbated as reasoning chains grow longer, with one paper noting that \"the accumulation of intermediate mistakes increasingly undermines final output accuracy\" (\"Improving Reasoning Capabilities...\"). In this context, the construct is operationalized through evaluation on benchmarks like ARES, which is used to detect propagated errors in long reasoning chains. Furthermore, the absence of mechanisms like Backtracking is reported to worsen error propagation by preventing the correction of early missteps. A second line of work defines error propagation in multi-agent systems, where it refers to erroneous information from one agent spreading through a communication network to negatively influence the system's output. This perspective is concerned with network topology, with denser communication structures being described as \"more susceptible to error spreading\" (\"CMHG...\"). Within this multi-agent framing, error propagation is also studied in relation to the concept of Safety.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Error accumulation",
+    "Error propagation"
+  ],
+  "papers": [
+    "Coarse-to-Fine Grounded Memory forLLMAgent Planning",
+    "Improving Reasoning Capabilities in Small Models through Mixture-of-layers Distillation with Stepwise Attention on Key Information",
+    "CMHG: A Dataset and Benchmark for Headline Generation of Minority Languages inChina",
+    "Exploring Large Language Models for Detecting Mental Disorders"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The tendency for mistakes made in early steps of a sequential reasoning process to propagate and compound, leading to an incorrect final answer.",
+      "paper": "Improving Reasoning Capabilities in Small Models through Mixture-of-layers Distillation with Stepwise Attention on Key Information",
+      "original_name": "Error accumulation"
+    },
+    {
+      "text": "The tendency for erroneous information from one agent to spread through the communication network and negatively influence the final output of the multi-agent system.",
+      "paper": "CMHG: A Dataset and Benchmark for Headline Generation of Minority Languages inChina",
+      "original_name": "Error propagation"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARES",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Avoidance Decoding for Diverse Multi-Branch Story Generation",
+      "evidence": "\"ARES achieves state-of-the-art performance across four benchmarks ... and demonstrates superior robustness on very long synthetic reasoning chains, where it excels at detecting propagated errors\"",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Avoidance Decoding for Diverse Multi-Branch Story Generation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Backtracking",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "End-to-End Learnable Psychiatric Scale Guided Risky Post Screening for Depression Detection on Social Media",
+      "evidence": "The performance drop highlights the importance of backtracking in mitigating error propagation, where an early misstep without backtracking cannot be corrected, resulting in deteriorated performance. (Section 5.3)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "End-to-End Learnable Psychiatric Scale Guided Risky Post Screening for Depression Detection on Social Media"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Robustness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "CMHG: A Dataset and Benchmark for Headline Generation of Minority Languages inChina",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "CMHG: A Dataset and Benchmark for Headline Generation of Minority Languages inChina"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 2,
+  "characterization": "Across the provided literature, \"Error propagation\" is conceptualized in two distinct contexts: as an internal failure mode in sequential reasoning and as a communication breakdown in multi-agent systems. The first framing, also termed \"Error accumulation,\" describes the tendency for mistakes in early reasoning steps to compound and lead to an incorrect final answer. This effect is reported to be exacerbated as reasoning chains grow longer, with one paper noting that \"the accumulation of intermediate mistakes increasingly undermines final output accuracy\" (\"Improving Reasoning Capabilities...\"). In this context, the construct is operationalized through evaluation on benchmarks like ARES, which is used to detect propagated errors in long reasoning chains. Furthermore, the absence of mechanisms like Backtracking is reported to worsen error propagation by preventing the correction of early missteps. A second line of work defines error propagation in multi-agent systems, where it refers to erroneous information from one agent spreading through a communication network to negatively influence the system's output. This perspective is concerned with network topology, with denser communication structures being described as \"more susceptible to error spreading\" (\"CMHG...\"). Within this multi-agent framing, error propagation is also studied in relation to the concept of Safety.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Coarse-to-Fine Grounded Memory forLLMAgent Planning",
+      "Improving Reasoning Capabilities in Small Models through Mixture-of-layers Distillation with Stepwise Attention on Key Information",
+      "CMHG: A Dataset and Benchmark for Headline Generation of Minority Languages inChina",
+      "Exploring Large Language Models for Detecting Mental Disorders"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 4
+  },
+  "conferences": [
+    "emnlp25"
+  ]
+}

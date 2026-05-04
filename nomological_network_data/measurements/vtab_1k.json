@@ -1,0 +1,137 @@
+{
+  "canonical_name": "VTAB-1k",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, VTAB-1k is consistently defined as the Visual Task Adaptation Benchmark, a suite of 19 diverse visual tasks. It is predominantly used to evaluate the fine-tuning and transfer learning capabilities of vision models, particularly for the behavior of `Image classification`. As one paper notes, it has been \"extensively used to evaluate parameter-efficient transfer learning algorithms.\" A smaller number of sources also report its use for measuring the constructs of `Generalization` and `Visual recognition`. The benchmark's 19 tasks are consistently organized into three domains: Natural, Specialized, and Structured. One source specifies this breakdown as seven natural, four specialized, and eight structured datasets, while another provides examples such as \"remote sensing and medical images\" for specialized tasks and \"depth and orientation prediction\" for structured ones. The \"-1k\" in its name is noted by one source to refer to the 1000 training examples provided for each task. In practice, papers report using VTAB-1k to evaluate pre-trained models like ViT-B/16.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "VTAB-1K",
+    "VTAB-1k"
+  ],
+  "papers": [
+    "Increasing Model Capacity for Free: A Simple Strategy for Parameter Efficient Fine-tuning",
+    "LLaMA-Adapter: Efficient Fine-tuning of Large Language Models with Zero-initialized Attention",
+    "Parameter-Efficient Orthogonal Finetuning via Butterfly Factorization",
+    "Maintaining Structural Integrity in Parameter Spaces for Parameter Efficient Fine-tuning",
+    "Release the Powers of Prompt Tuning: Cross-Modality Prompt Transfer",
+    "Revisiting Prefix-tuning: Statistical Benefits of Reparameterization among Prompts",
+    "Promoting Ensemble Diversity with Interactive Bayesian Distributional Robustness for Fine-tuning Foundation Models",
+    "RepLoRA: Reparameterizing Low-rank Adaptation via the Perspective of Mixture of Experts",
+    "SAN: Hypothesizing Long-Term Synaptic Development and Neural Engram Mechanism in Scalable Model\u2019s Parameter-Efficient Fine-Tuning",
+    "WeGeFT: Weight-Generative Fine-Tuning for Multi-Faceted Efficient Adaptation of Large Models"
+  ],
+  "paper_count": 10,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A diverse vision benchmark consisting of 19 image classification tasks across natural, specialized, and structured domains for evaluating transfer learning methods.",
+      "paper": "Parameter-Efficient Orthogonal Finetuning via Butterfly Factorization",
+      "original_name": "VTAB-1K"
+    },
+    {
+      "text": "The Visual Task Adaptation Benchmark (VTAB-1k) is a suite of 19 diverse visual tasks across Natural, Specialized, and Structured domains, used to evaluate the fine-tuning performance of vision models.",
+      "paper": "Increasing Model Capacity for Free: A Simple Strategy for Parameter Efficient Fine-tuning",
+      "original_name": "VTAB-1k"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Image classification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Increasing Model Capacity for Free: A Simple Strategy for Parameter Efficient Fine-tuning",
+      "evidence": "We evaluate the finetuning performance of BOFT on the VTAB-1K benchmark [94], which has been extensively used to evaluate parameter-efficient transfer learning algorithms. VTAB-1K consists of 19 image classification tasks (Section 6.2).",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "iclr24": [
+          "Increasing Model Capacity for Free: A Simple Strategy for Parameter Efficient Fine-tuning"
+        ],
+        "neurips24": [
+          "PACE: Marrying generalization in PArameter-efficient fine-tuning with Consistency rEgularization"
+        ],
+        "icml25": [
+          "Promoting Ensemble Diversity with Interactive Bayesian Distributional Robustness for Fine-tuning Foundation Models",
+          "RepLoRA: Reparameterizing Low-rank Adaptation via the Perspective of Mixture of Experts"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "LLaMA-Adapter: Efficient Fine-tuning of Large Language Models with Zero-initialized Attention",
+      "evidence": "We select a pre-trained ViT/16 (Dosovitskiy et al., 2020) as the vision model and evaluate on VTAB-1k (Zhai et al., 2019) benchmark, which contains 19 visual tasks with three domains: Natural, Specialized, and Structured. (Section 4.4)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "LLaMA-Adapter: Efficient Fine-tuning of Large Language Models with Zero-initialized Attention"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Image classification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Release the Powers of Prompt Tuning: Cross-Modality Prompt Transfer",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Release the Powers of Prompt Tuning: Cross-Modality Prompt Transfer"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual recognition",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "WeGeFT: Weight-Generative Fine-Tuning for Multi-Faceted Efficient Adaptation of Large Models",
+      "evidence": "We evaluate WeGeFT on the VTAB-1k benchmark (Zhai et al., 2019) and the fine-grained visual classification (FGVC) benchmark...",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "WeGeFT: Weight-Generative Fine-Tuning for Multi-Faceted Efficient Adaptation of Large Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the provided literature, VTAB-1k is consistently defined as the Visual Task Adaptation Benchmark, a suite of 19 diverse visual tasks. It is predominantly used to evaluate the fine-tuning and transfer learning capabilities of vision models, particularly for the behavior of `Image classification`. As one paper notes, it has been \"extensively used to evaluate parameter-efficient transfer learning algorithms.\" A smaller number of sources also report its use for measuring the constructs of `Generalization` and `Visual recognition`. The benchmark's 19 tasks are consistently organized into three domains: Natural, Specialized, and Structured. One source specifies this breakdown as seven natural, four specialized, and eight structured datasets, while another provides examples such as \"remote sensing and medical images\" for specialized tasks and \"depth and orientation prediction\" for structured ones. The \"-1k\" in its name is noted by one source to refer to the 1000 training examples provided for each task. In practice, papers report using VTAB-1k to evaluate pre-trained models like ViT-B/16.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Increasing Model Capacity for Free: A Simple Strategy for Parameter Efficient Fine-tuning",
+      "LLaMA-Adapter: Efficient Fine-tuning of Large Language Models with Zero-initialized Attention",
+      "Parameter-Efficient Orthogonal Finetuning via Butterfly Factorization"
+    ],
+    "iclr25": [
+      "Maintaining Structural Integrity in Parameter Spaces for Parameter Efficient Fine-tuning",
+      "Release the Powers of Prompt Tuning: Cross-Modality Prompt Transfer",
+      "Revisiting Prefix-tuning: Statistical Benefits of Reparameterization among Prompts"
+    ],
+    "icml25": [
+      "Promoting Ensemble Diversity with Interactive Bayesian Distributional Robustness for Fine-tuning Foundation Models",
+      "RepLoRA: Reparameterizing Low-rank Adaptation via the Perspective of Mixture of Experts",
+      "SAN: Hypothesizing Long-Term Synaptic Development and Neural Engram Mechanism in Scalable Model\u2019s Parameter-Efficient Fine-Tuning",
+      "WeGeFT: Weight-Generative Fine-Tuning for Multi-Faceted Efficient Adaptation of Large Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 3,
+    "iclr25": 3,
+    "icml25": 4
+  },
+  "conferences": [
+    "iclr24",
+    "iclr25",
+    "icml25"
+  ]
+}

@@ -1,0 +1,392 @@
+{
+  "canonical_name": "Out-of-distribution generalization",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, out-of-distribution (OOD) generalization is most commonly defined as a model's ability to maintain performance on data drawn from distributions, domains, or environments not seen during training. This concept appears under various names, including \"domain generalization\" and \"out-of-domain generalization,\" all pointing to the same core capacity for performance transfer to novel contexts. The construct is frequently framed as requiring more than simple pattern matching, with one paper describing it as a need for \"truly structural generalization rather than partial memorization\" (\"Grokking in the Wild: Data Augmentation for Real-World Multi-Hop Reasoning with Transformers\"). While most definitions treat it as a latent ability, a minority framing presents \"out-of-distribution prediction\" as the observable performance itself. The prevailing method for operationalizing this construct is to evaluate models on held-out test sets that have an explicit distributional shift from the training data. For instance, studies measure OOD generalization by testing a summarization model on the `CNN/DailyMail` dataset after training on a different corpus, or by evaluating a planning model on `Blocksworld` problems with longer plan lengths than those in the training set. Other benchmarks used to assess this construct include `AlpacaEval v1.0`, `SHP`, and `IMDb`. Out-of-distribution generalization is frequently studied in relation to \"in-context learning\", \"output diversity\", and is often contrasted with \"memorization\". Some work also reports that it is influenced by constructs such as \"compositionality\" and \"GUI understanding\".",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Domain generalization",
+    "Out-of-distribution generalisation",
+    "Out-of-distribution generalization",
+    "Out-of-Distribution Generalization",
+    "OOD generalization",
+    "Out-of-domain generalization",
+    "Open-set generalization",
+    "Domain generalizability",
+    "Cross-category generalization",
+    "Policy transferability",
+    "Out-of-distribution prediction"
+  ],
+  "papers": [
+    "Batayan: AFilipinoNLPbenchmark for evaluating Large Language Models",
+    "Bridging the Language Gaps in Large Language Models with Inference-Time Cross-Lingual Intervention",
+    "Can a Single Model Master Both Multi-turn Conversations and Tool Use?CoALM: A Unified Conversational Agentic Language Model",
+    "Just a Scratch: EnhancingLLMCapabilities for Self-harm Detection through Intent Differentiation and Emoji Interpretation",
+    "LAQuer: Localized Attribution Queries in Content-grounded Generation",
+    "Limited Generalizability in Argument Mining: State-Of-The-Art Models Learn Datasets, Not Arguments",
+    "M2S: Multi-turn to Single-turn jailbreak in Red Teaming forLLMs",
+    "Make Imagination Clearer! Stable Diffusion-based Visual Imagination for Multimodal Machine Translation",
+    "Opt-Out: Investigating Entity-Level Unlearning for Large Language Models via Optimal Transport",
+    "RecLM: Recommendation Instruction Tuning",
+    "The MaleCEOand the Female Assistant: Evaluation and Mitigation of Gender Biases in Text-To-Image Generation of Dual Subjects",
+    "Towards Objective Fine-tuning: HowLLMs\u2019 Prior Knowledge Causes Potential Poor Calibration?",
+    "DA-Pred: Performance Prediction for Text Summarization under Domain-Shift and Instruct-Tuning",
+    "STEER-BENCH: A Benchmark for Evaluating the Steerability of Large Language Models",
+    "UNComp: Can Matrix Entropy Uncover Sparsity? \u2014 A Compressor Design from an Uncertainty-Aware Perspective",
+    "Context is Environment",
+    "Let's Verify Step by Step",
+    "Nemesis: Normalizing the Soft-prompt Vectors of Vision-Language Models",
+    "Understanding the Effects of RLHF on LLM Generalisation and Diversity",
+    "3D-Properties: Identifying Challenges in DPO and Charting a Path Forward",
+    "A new framework for evaluating model out-of-distribution generalisation for the biochemical domain",
+    "Can In-context Learning Really Generalize to Out-of-distribution Tasks?",
+    "Causally Motivated Sycophancy Mitigation for Large Language Models",
+    "Competition Dynamics Shape Algorithmic Phases of In-Context Learning",
+    "Generalizing Reasoning Problems to Longer Lengths",
+    "Improving Large Language Model Planning with Action Sequence Similarity",
+    "LiNeS: Post-training Layer Scaling Prevents Forgetting and Enhances Model Merging",
+    "OS-ATLAS: Foundation Action Model for Generalist GUI Agents",
+    "Rethinking Invariance in In-context Learning",
+    "Rethinking and Improving Autoformalization: Towards a Faithful Metric and a Dependency Retrieval-based Approach",
+    "Transformers Learn to Implement Multi-step Gradient Descent with Chain of Thought",
+    "VisualPredicator: Learning Abstract World Models with Neuro-Symbolic Predicates for Robot Planning",
+    "When is Task Vector Provably Effective for Model Editing? A Generalization Analysis of Nonlinear Transformers",
+    "Adapting Multi-modal Large Language Model to Concept Drift From Pre-training Onwards",
+    "Can Transformers Do Enumerative Geometry?",
+    "LLM-SR: Scientific Equation Discovery via Programming with Large Language Models",
+    "Can Transformers Reason Logically? A Study in SAT Solving",
+    "Does learning the right latent variables necessarily improve in-context learning?",
+    "Grokking in the Wild: Data Augmentation for Real-World Multi-Hop Reasoning with Transformers",
+    "Improving LLM Safety Alignment with Dual-Objective Optimization",
+    "The Missing Alignment Link of In-context Learning on Sequences",
+    "VersaPRM: Multi-Domain Process Reward Model via Synthetic Reasoning Data",
+    "When can in-context learning generalize out of task distribution?",
+    "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs",
+    "ControlMLLM: Training-Free Visual Prompt Learning for Multimodal Large Language Models",
+    "Hidden in Plain Sight: Evaluating Abstract Shape Recognition in Vision-Language Models",
+    "How Far Can Transformers Reason? The Globality Barrier and Inductive Scratchpad",
+    "Initialization is Critical to Whether Transformers Fit Composite Functions by Reasoning or Memorizing",
+    "Is Programming by Example Solved by LLMs?",
+    "Learning to grok: Emergence of in-context learning and skill composition in modular arithmetic tasks",
+    "No Free Delivery Service: Epistemic limits of passive data collection in complex social systems",
+    "On the Effects of Data Scale on UI Control Agents",
+    "Provably Transformers Harness Multi-Concept Word Semantics for Efficient In-Context Learning",
+    "Tri-Level Navigator: LLM-Empowered Tri-Level Learning for Time Series OOD Generalization",
+    "WISE: Rethinking the Knowledge Memory for Lifelong Model Editing of Large Language Models"
+  ],
+  "paper_count": 55,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The ability of a vision-language model to maintain or transfer performance from a source domain (e.g., ImageNet) to unseen or shifted target domains (e.g., ImageNet-V2, ImageNet-Sketch).",
+      "paper": "Nemesis: Normalizing the Soft-prompt Vectors of Vision-Language Models",
+      "original_name": "Domain generalization"
+    },
+    {
+      "text": "The model's ability to perform well on test data drawn from environments or distributions not seen during training, by leveraging contextual information to adapt dynamically.",
+      "paper": "Context is Environment",
+      "original_name": "Out-of-distribution generalization"
+    },
+    {
+      "text": "The ability of a model to maintain performance on inputs drawn from a different distribution than its training data.",
+      "paper": "Understanding the Effects of RLHF on LLM Generalisation and Diversity",
+      "original_name": "Out-of-distribution generalisation"
+    },
+    {
+      "text": "The latent capacity to perform accurately on data distributions not encountered during training.",
+      "paper": "Competition Dynamics Shape Algorithmic Phases of In-Context Learning",
+      "original_name": "Out-of-Distribution Generalization"
+    },
+    {
+      "text": "The ability to perform well on formalization problems drawn from distributions different from the training or in-domain benchmark data.",
+      "paper": "Rethinking and Improving Autoformalization: Towards a Faithful Metric and a Dependency Retrieval-based Approach",
+      "original_name": "OOD generalization"
+    },
+    {
+      "text": "The ability to perform effectively on new tasks or data distributions that were not seen during fine-tuning, achieved by forming a linear combination of existing task vectors.",
+      "paper": "When is Task Vector Provably Effective for Model Editing? A Generalization Analysis of Nonlinear Transformers",
+      "original_name": "Out-of-domain generalization"
+    },
+    {
+      "text": "The latent ability to recognize and process multimodal entities that were not present during training, leveraging broad multimodal knowledge.",
+      "paper": "DA-Pred: Performance Prediction for Text Summarization under Domain-Shift and Instruct-Tuning",
+      "original_name": "Open-set generalization"
+    },
+    {
+      "text": "The ability of a model to maintain or improve performance when applied to unseen domains or datasets different from its training domain.",
+      "paper": "Bridging the Language Gaps in Large Language Models with Inference-Time Cross-Lingual Intervention",
+      "original_name": "Domain generalizability"
+    },
+    {
+      "text": "The ability of a model to extract aspect-action pairs in sustainability categories not seen during training, reflecting robustness to intra-domain distribution shifts.",
+      "paper": "Towards Objective Fine-tuning: HowLLMs\u2019 Prior Knowledge Causes Potential Poor Calibration?",
+      "original_name": "Cross-category generalization"
+    },
+    {
+      "text": "The extent to which a model's learned strategies can be successfully applied to new, unseen domains or scenarios.",
+      "paper": "LAQuer: Localized Attribution Queries in Content-grounded Generation",
+      "original_name": "Policy transferability"
+    },
+    {
+      "text": "The latent ability of a model to maintain performance when applied to document types or domains not seen during training, despite differences in layout, fonts, templates, and background.",
+      "paper": "Can a Single Model Master Both Multi-turn Conversations and Tool Use?CoALM: A Unified Conversational Agentic Language Model",
+      "original_name": "Cross-domain generalization"
+    },
+    {
+      "text": "The observable performance of the model when tested on data from a different distribution than the training data, such as higher genera or unseen numbers of marked points.",
+      "paper": "Can Transformers Do Enumerative Geometry?",
+      "original_name": "Out-of-distribution prediction"
+    }
+  ],
+  "definition_count": 12,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-context learning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Can In-context Learning Really Generalize to Out-of-distribution Tasks?",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Can In-context Learning Really Generalize to Out-of-distribution Tasks?"
+        ],
+        "icml25": [
+          "When can in-context learning generalize out of task distribution?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Output diversity",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Understanding the Effects of RLHF on LLM Generalisation and Diversity",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Understanding the Effects of RLHF on LLM Generalisation and Diversity"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CNN/DailyMail",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Understanding the Effects of RLHF on LLM Generalisation and Diversity",
+      "evidence": "For summarisation, the ID test set is the original TL;DR test set from (Stiennon et al., 2022), and the OOD test set is the CNN/DailyMail test set, a dataset of news articles and corresponding summaries (Nallapati et al., 2016). This tests the ability of the model to have learnt the more general skill of summarisation and to apply it in a very different domain. (Section 5.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Understanding the Effects of RLHF on LLM Generalisation and Diversity"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AlpacaEval v1.0",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Understanding the Effects of RLHF on LLM Generalisation and Diversity",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Understanding the Effects of RLHF on LLM Generalisation and Diversity"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-context learning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Learning to grok: Emergence of in-context learning and skill composition in modular arithmetic tasks",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Learning to grok: Emergence of in-context learning and skill composition in modular arithmetic tasks"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Compositionality",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Learning to grok: Emergence of in-context learning and skill composition in modular arithmetic tasks",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Learning to grok: Emergence of in-context learning and skill composition in modular arithmetic tasks"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Memorization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Learning to grok: Emergence of in-context learning and skill composition in modular arithmetic tasks",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Learning to grok: Emergence of in-context learning and skill composition in modular arithmetic tasks"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Blocksworld",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Improving Large Language Model Planning with Action Sequence Similarity",
+      "evidence": "reports our results on Blocksworld (BW) that studies out-of-distribution generalization to longer plan lengths. (Section 4.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Improving Large Language Model Planning with Action Sequence Similarity"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "GUI understanding",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "OS-ATLAS: Foundation Action Model for Generalist GUI Agents",
+      "evidence": "omitting the pre-training stage significantly degrades performance... These results highlight the critical importance of the data infrastructure for grounding data synthesis; with this infrastructure in place, we can easily improve OOD downstream performance simply by scaling the pre-training corpus. (Section 5.3)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "OS-ATLAS: Foundation Action Model for Generalist GUI Agents"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SHP",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Are explicit belief representations necessary? A comparison between Large Language Models andBayesian probabilistic models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Are explicit belief representations necessary? A comparison between Large Language Models andBayesian probabilistic models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "IMDb",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Bridging the Language Gaps in Large Language Models with Inference-Time Cross-Lingual Intervention",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Bridging the Language Gaps in Large Language Models with Inference-Time Cross-Lingual Intervention"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 11,
+  "incoming_relationship_count": 5,
+  "outgoing_relationship_count": 6,
+  "characterization": "Across the surveyed literature, out-of-distribution (OOD) generalization is most commonly defined as a model's ability to maintain performance on data drawn from distributions, domains, or environments not seen during training. This concept appears under various names, including \"domain generalization\" and \"out-of-domain generalization,\" all pointing to the same core capacity for performance transfer to novel contexts. The construct is frequently framed as requiring more than simple pattern matching, with one paper describing it as a need for \"truly structural generalization rather than partial memorization\" (\"Grokking in the Wild: Data Augmentation for Real-World Multi-Hop Reasoning with Transformers\"). While most definitions treat it as a latent ability, a minority framing presents \"out-of-distribution prediction\" as the observable performance itself. The prevailing method for operationalizing this construct is to evaluate models on held-out test sets that have an explicit distributional shift from the training data. For instance, studies measure OOD generalization by testing a summarization model on the `CNN/DailyMail` dataset after training on a different corpus, or by evaluating a planning model on `Blocksworld` problems with longer plan lengths than those in the training set. Other benchmarks used to assess this construct include `AlpacaEval v1.0`, `SHP`, and `IMDb`. Out-of-distribution generalization is frequently studied in relation to \"in-context learning\", \"output diversity\", and is often contrasted with \"memorization\". Some work also reports that it is influenced by constructs such as \"compositionality\" and \"GUI understanding\".",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Context is Environment",
+      "Let's Verify Step by Step",
+      "Nemesis: Normalizing the Soft-prompt Vectors of Vision-Language Models",
+      "Understanding the Effects of RLHF on LLM Generalisation and Diversity"
+    ],
+    "iclr25": [
+      "3D-Properties: Identifying Challenges in DPO and Charting a Path Forward",
+      "A new framework for evaluating model out-of-distribution generalisation for the biochemical domain",
+      "Can In-context Learning Really Generalize to Out-of-distribution Tasks?",
+      "Causally Motivated Sycophancy Mitigation for Large Language Models",
+      "Competition Dynamics Shape Algorithmic Phases of In-Context Learning",
+      "Generalizing Reasoning Problems to Longer Lengths",
+      "Improving Large Language Model Planning with Action Sequence Similarity",
+      "LiNeS: Post-training Layer Scaling Prevents Forgetting and Enhances Model Merging",
+      "OS-ATLAS: Foundation Action Model for Generalist GUI Agents",
+      "Rethinking Invariance in In-context Learning",
+      "Rethinking and Improving Autoformalization: Towards a Faithful Metric and a Dependency Retrieval-based Approach",
+      "Transformers Learn to Implement Multi-step Gradient Descent with Chain of Thought",
+      "VisualPredicator: Learning Abstract World Models with Neuro-Symbolic Predicates for Robot Planning",
+      "When is Task Vector Provably Effective for Model Editing? A Generalization Analysis of Nonlinear Transformers",
+      "Adapting Multi-modal Large Language Model to Concept Drift From Pre-training Onwards",
+      "Can Transformers Do Enumerative Geometry?",
+      "LLM-SR: Scientific Equation Discovery via Programming with Large Language Models"
+    ],
+    "icml25": [
+      "Can Transformers Reason Logically? A Study in SAT Solving",
+      "Does learning the right latent variables necessarily improve in-context learning?",
+      "Grokking in the Wild: Data Augmentation for Real-World Multi-Hop Reasoning with Transformers",
+      "Improving LLM Safety Alignment with Dual-Objective Optimization",
+      "The Missing Alignment Link of In-context Learning on Sequences",
+      "VersaPRM: Multi-Domain Process Reward Model via Synthetic Reasoning Data",
+      "When can in-context learning generalize out of task distribution?",
+      "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs"
+    ],
+    "emnlp25": [
+      "DA-Pred: Performance Prediction for Text Summarization under Domain-Shift and Instruct-Tuning",
+      "STEER-BENCH: A Benchmark for Evaluating the Steerability of Large Language Models",
+      "UNComp: Can Matrix Entropy Uncover Sparsity? \u2014 A Compressor Design from an Uncertainty-Aware Perspective"
+    ],
+    "neurips24": [
+      "ControlMLLM: Training-Free Visual Prompt Learning for Multimodal Large Language Models",
+      "Hidden in Plain Sight: Evaluating Abstract Shape Recognition in Vision-Language Models",
+      "How Far Can Transformers Reason? The Globality Barrier and Inductive Scratchpad",
+      "Initialization is Critical to Whether Transformers Fit Composite Functions by Reasoning or Memorizing",
+      "Is Programming by Example Solved by LLMs?",
+      "Learning to grok: Emergence of in-context learning and skill composition in modular arithmetic tasks",
+      "No Free Delivery Service: Epistemic limits of passive data collection in complex social systems",
+      "On the Effects of Data Scale on UI Control Agents",
+      "Provably Transformers Harness Multi-Concept Word Semantics for Efficient In-Context Learning",
+      "Tri-Level Navigator: LLM-Empowered Tri-Level Learning for Time Series OOD Generalization",
+      "WISE: Rethinking the Knowledge Memory for Lifelong Model Editing of Large Language Models"
+    ],
+    "acl25": [
+      "Batayan: AFilipinoNLPbenchmark for evaluating Large Language Models",
+      "Bridging the Language Gaps in Large Language Models with Inference-Time Cross-Lingual Intervention",
+      "Can a Single Model Master Both Multi-turn Conversations and Tool Use?CoALM: A Unified Conversational Agentic Language Model",
+      "Just a Scratch: EnhancingLLMCapabilities for Self-harm Detection through Intent Differentiation and Emoji Interpretation",
+      "LAQuer: Localized Attribution Queries in Content-grounded Generation",
+      "Limited Generalizability in Argument Mining: State-Of-The-Art Models Learn Datasets, Not Arguments",
+      "M2S: Multi-turn to Single-turn jailbreak in Red Teaming forLLMs",
+      "Make Imagination Clearer! Stable Diffusion-based Visual Imagination for Multimodal Machine Translation",
+      "Opt-Out: Investigating Entity-Level Unlearning for Large Language Models via Optimal Transport",
+      "RecLM: Recommendation Instruction Tuning",
+      "The MaleCEOand the Female Assistant: Evaluation and Mitigation of Gender Biases in Text-To-Image Generation of Dual Subjects",
+      "Towards Objective Fine-tuning: HowLLMs\u2019 Prior Knowledge Causes Potential Poor Calibration?"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 4,
+    "iclr25": 17,
+    "icml25": 8,
+    "emnlp25": 3,
+    "neurips24": 11,
+    "acl25": 12
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

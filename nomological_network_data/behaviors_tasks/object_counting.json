@@ -1,0 +1,148 @@
+{
+  "canonical_name": "Object counting",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, object counting is defined in two distinct modalities, though the most frequent formal definition describes a vision-based task: \"Determining the number of instances of a specific object category present in an image.\" This visual behavior is operationalized and measured using benchmarks such as CV-Bench, MME, MME-RealWorld, and Waste-Bench. For instance, the MME benchmark is used to \"measure object-level hallucination\" through subsets focused on object count. In contrast, a subset of the literature operationalizes object counting as a purely textual task, defined as \"counting the number of objects described in a textual context\" and exemplified by queries like \"I have a chicken, a frog... How many animals do I have?\" This text-based version is associated with BBH Object Counting and the BIG-Bench suite. The task is also studied alongside `Multimodal reasoning` and is employed as a method to measure the construct of `Faithfulness`.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Object counting"
+  ],
+  "papers": [
+    "A-Bench: Are LMMs Masters at Evaluating AI-generated Images?",
+    "Can Textual Gradient Work in Federated Learning?",
+    "CogCoM: A Visual Language Model with Chain-of-Manipulations Reasoning",
+    "Do You Keep an Eye on What I Ask? Mitigating Multimodal Hallucination via Attention-Guided Ensemble Decoding",
+    "MME-RealWorld: Could Your Multimodal LLM Challenge High-Resolution Real-World Scenarios that are Difficult for Humans?",
+    "Needle In A Video Haystack: A Scalable  Synthetic Evaluator for Video MLLMs",
+    "VL-ICL Bench: The Devil in the Details of Multimodal In-Context Learning",
+    "Hyperband-based Bayesian Optimization for Black-box Prompt Selection",
+    "Revolve: Optimizing AI Systems by Tracking Response Evolution in Textual Optimization",
+    "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+    "Is A Picture Worth A Thousand Words? Delving Into Spatial Reasoning for Vision Language Models",
+    "LOVA3: Learning to Visual Question Answering, Asking and Assessment",
+    "Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models",
+    "Multi-modal Situated Reasoning in 3D Scenes",
+    "Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization"
+  ],
+  "paper_count": 15,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Determining the number of instances of a specific object category present in an image.",
+      "paper": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+      "original_name": "Object counting"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "LLaMA-Adapter: Efficient Fine-tuning of Large Language Models with Zero-initialized Attention",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "LLaMA-Adapter: Efficient Fine-tuning of Large Language Models with Zero-initialized Attention"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MME",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Do You Keep an Eye on What I Ask? Mitigating Multimodal Hallucination via Attention-Guided Ensemble Decoding",
+      "evidence": "Following Yin et al. (2023), we evaluate hallucination using four subtasks: Existence, Count, Position, and Color, with performance measured by the combined metric of accuracy and accuracy+ (Section 4.1).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Do You Keep an Eye on What I Ask? Mitigating Multimodal Hallucination via Attention-Guided Ensemble Decoding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MME-RealWorld",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MME-RealWorld: Could Your Multimodal LLM Challenge High-Resolution Real-World Scenarios that are Difficult for Humans?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "MME-RealWorld: Could Your Multimodal LLM Challenge High-Resolution Real-World Scenarios that are Difficult for Humans?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Waste-Bench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Program of Thoughts for Financial Reasoning: Leveraging Dynamic In-Context Examples and Generative Retrieval",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Program of Thoughts for Financial Reasoning: Leveraging Dynamic In-Context Examples and Generative Retrieval"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "BIG-Bench",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "The Validation Gap: A Mechanistic Analysis of How Language Models Compute Arithmetic but Fail to Validate It",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "The Validation Gap: A Mechanistic Analysis of How Language Models Compute Arithmetic but Fail to Validate It"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 3,
+  "characterization": "Across the surveyed literature, object counting is defined in two distinct modalities, though the most frequent formal definition describes a vision-based task: \"Determining the number of instances of a specific object category present in an image.\" This visual behavior is operationalized and measured using benchmarks such as CV-Bench, MME, MME-RealWorld, and Waste-Bench. For instance, the MME benchmark is used to \"measure object-level hallucination\" through subsets focused on object count. In contrast, a subset of the literature operationalizes object counting as a purely textual task, defined as \"counting the number of objects described in a textual context\" and exemplified by queries like \"I have a chicken, a frog... How many animals do I have?\" This text-based version is associated with BBH Object Counting and the BIG-Bench suite. The task is also studied alongside `Multimodal reasoning` and is employed as a method to measure the construct of `Faithfulness`.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+      "Is A Picture Worth A Thousand Words? Delving Into Spatial Reasoning for Vision Language Models",
+      "LOVA3: Learning to Visual Question Answering, Asking and Assessment",
+      "Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models",
+      "Multi-modal Situated Reasoning in 3D Scenes",
+      "Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization"
+    ],
+    "iclr25": [
+      "A-Bench: Are LMMs Masters at Evaluating AI-generated Images?",
+      "Can Textual Gradient Work in Federated Learning?",
+      "CogCoM: A Visual Language Model with Chain-of-Manipulations Reasoning",
+      "Do You Keep an Eye on What I Ask? Mitigating Multimodal Hallucination via Attention-Guided Ensemble Decoding",
+      "MME-RealWorld: Could Your Multimodal LLM Challenge High-Resolution Real-World Scenarios that are Difficult for Humans?",
+      "Needle In A Video Haystack: A Scalable  Synthetic Evaluator for Video MLLMs",
+      "VL-ICL Bench: The Devil in the Details of Multimodal In-Context Learning"
+    ],
+    "icml25": [
+      "Hyperband-based Bayesian Optimization for Black-box Prompt Selection",
+      "Revolve: Optimizing AI Systems by Tracking Response Evolution in Textual Optimization"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 6,
+    "iclr25": 7,
+    "icml25": 2
+  },
+  "conferences": [
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

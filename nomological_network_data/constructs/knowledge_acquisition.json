@@ -1,0 +1,200 @@
+{
+  "canonical_name": "Knowledge acquisition",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, knowledge acquisition is most commonly defined as a latent ability for models to retrieve and utilize factual or contextual knowledge to support decision-making. This framing positions it as a core capability, evaluated alongside logical reasoning and coding. A smaller set of papers offers more process-oriented definitions, such as \"fact learning,\" which describes the encoding of information into model weights during training, or \"knowledge internalization,\" the incorporation of knowledge from external tools. In a domain-specific context, it is also framed as \"preliminary knowledge grasp,\" the memorization of foundational facts without complex application. This construct is operationalized and measured using benchmarks like AgentBench, while its foundational aspect is assessed in the medical domain via question-answering tasks on MedQA and MedMCQA. The ability is described as involving the learning of \"simple associations\" like \"capital cities of countries,\" though one paper notes this process can be \"data-inefficient.\" Knowledge acquisition is studied in relation to faithfulness, text generation, and scientific reasoning, and is reported in some work to be influenced by self-reflection and to influence commonsense knowledge.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Background Knowledge",
+    "Knowledge acquisition",
+    "Preliminary knowledge grasp",
+    "Knowledge internalization",
+    "Fact learning"
+  ],
+  "papers": [
+    "AgentBench: Evaluating LLMs as Agents",
+    "FLASK: Fine-grained Language Model Evaluation based on Alignment Skill Sets",
+    "Knowledge Entropy Decay during Language Model Pretraining Hinders New Knowledge Acquisition",
+    "Synthetic continued pretraining",
+    "Adapting While Learning: Grounding LLMs for Scientific Problems with Tool Usage Adaptation",
+    "Evaluating LLMs Across Multi-Cognitive Levels: From Medical Knowledge Mastery to Scenario-Based Problem Solving",
+    "Extractive Structures Learned in Pretraining Enable Generalization on Finetuned Facts",
+    "Memory Layers at Scale"
+  ],
+  "paper_count": 8,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The latent ability to retrieve and utilize relevant factual or contextual knowledge from external sources or internal representations to support decision-making.",
+      "paper": "AgentBench: Evaluating LLMs as Agents",
+      "original_name": "Knowledge acquisition"
+    },
+    {
+      "text": "The capacity to generate responses by accessing a broad repository of general and domain-specific factual and commonsense information.",
+      "paper": "FLASK: Fine-grained Language Model Evaluation based on Alignment Skill Sets",
+      "original_name": "Background Knowledge"
+    },
+    {
+      "text": "The process by which a language model encodes and stores factual information from training data into its weights.",
+      "paper": "Extractive Structures Learned in Pretraining Enable Generalization on Finetuned Facts",
+      "original_name": "Fact learning"
+    },
+    {
+      "text": "The process by which a model incorporates external, tool-generated solutions into its parametric knowledge, allowing it to solve problems without relying on tool calls.",
+      "paper": "Adapting While Learning: Grounding LLMs for Scientific Problems with Tool Usage Adaptation",
+      "original_name": "Knowledge internalization"
+    },
+    {
+      "text": "The latent ability to memorize and initially understand foundational medical knowledge, such as facts and definitions, without requiring complex reasoning or application.",
+      "paper": "Evaluating LLMs Across Multi-Cognitive Levels: From Medical Knowledge Mastery to Scenario-Based Problem Solving",
+      "original_name": "Preliminary knowledge grasp"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AgentBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "AgentBench: Evaluating LLMs as Agents",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "AgentBench: Evaluating LLMs as Agents"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Hephaestus: Improving Fundamental Agent Capabilities of Large Language Models through Continual Pre-Training",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Hephaestus: Improving Fundamental Agent Capabilities of Large Language Models through Continual Pre-Training"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Self-reflection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Hephaestus: Improving Fundamental Agent Capabilities of Large Language Models through Continual Pre-Training",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Hephaestus: Improving Fundamental Agent Capabilities of Large Language Models through Continual Pre-Training"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multiple-choice question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Evaluating LLMs Across Multi-Cognitive Levels: From Medical Knowledge Mastery to Scenario-Based Problem Solving",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Evaluating LLMs Across Multi-Cognitive Levels: From Medical Knowledge Mastery to Scenario-Based Problem Solving"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MedQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Evaluating LLMs Across Multi-Cognitive Levels: From Medical Knowledge Mastery to Scenario-Based Problem Solving",
+      "evidence": "most medical benchmarks (Jin et al., 2021; Pal et al., 2022; Wang et al., 2024; Cai et al., 2024; Qiu et al., 2024) evaluate LLMs\u2019 capabilities through question-answering (QA) tasks, which mainly focus on assessing LLMs\u2019 preliminary knowledge grasp (Section 1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Evaluating LLMs Across Multi-Cognitive Levels: From Medical Knowledge Mastery to Scenario-Based Problem Solving"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MedMCQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Evaluating LLMs Across Multi-Cognitive Levels: From Medical Knowledge Mastery to Scenario-Based Problem Solving",
+      "evidence": "most medical benchmarks (Jin et al., 2021; Pal et al., 2022; Wang et al., 2024; Cai et al., 2024; Qiu et al., 2024) evaluate LLMs\u2019 capabilities through question-answering (QA) tasks, which mainly focus on assessing LLMs\u2019 preliminary knowledge grasp (Section 1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Evaluating LLMs Across Multi-Cognitive Levels: From Medical Knowledge Mastery to Scenario-Based Problem Solving"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Factuality",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Memory Layers at Scale",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Memory Layers at Scale"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Scientific reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Adapting While Learning: Grounding LLMs for Scientific Problems with Tool Usage Adaptation",
+      "evidence": "suggesting a successful internalization of scientific reasoning processes and domain-specific knowledge, primarily through the WKL component (Section 5.4).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Adapting While Learning: Grounding LLMs for Scientific Problems with Tool Usage Adaptation"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 8,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 6,
+  "characterization": "Across the surveyed literature, knowledge acquisition is most commonly defined as a latent ability for models to retrieve and utilize factual or contextual knowledge to support decision-making. This framing positions it as a core capability, evaluated alongside logical reasoning and coding. A smaller set of papers offers more process-oriented definitions, such as \"fact learning,\" which describes the encoding of information into model weights during training, or \"knowledge internalization,\" the incorporation of knowledge from external tools. In a domain-specific context, it is also framed as \"preliminary knowledge grasp,\" the memorization of foundational facts without complex application. This construct is operationalized and measured using benchmarks like AgentBench, while its foundational aspect is assessed in the medical domain via question-answering tasks on MedQA and MedMCQA. The ability is described as involving the learning of \"simple associations\" like \"capital cities of countries,\" though one paper notes this process can be \"data-inefficient.\" Knowledge acquisition is studied in relation to faithfulness, text generation, and scientific reasoning, and is reported in some work to be influenced by self-reflection and to influence commonsense knowledge.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "AgentBench: Evaluating LLMs as Agents",
+      "FLASK: Fine-grained Language Model Evaluation based on Alignment Skill Sets"
+    ],
+    "iclr25": [
+      "Knowledge Entropy Decay during Language Model Pretraining Hinders New Knowledge Acquisition",
+      "Synthetic continued pretraining"
+    ],
+    "icml25": [
+      "Adapting While Learning: Grounding LLMs for Scientific Problems with Tool Usage Adaptation",
+      "Evaluating LLMs Across Multi-Cognitive Levels: From Medical Knowledge Mastery to Scenario-Based Problem Solving",
+      "Extractive Structures Learned in Pretraining Enable Generalization on Finetuned Facts",
+      "Memory Layers at Scale"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "iclr25": 2,
+    "icml25": 4
+  },
+  "conferences": [
+    "iclr24",
+    "iclr25",
+    "icml25"
+  ]
+}

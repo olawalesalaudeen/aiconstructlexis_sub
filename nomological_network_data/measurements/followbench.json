@@ -1,0 +1,130 @@
+{
+  "canonical_name": "FollowBench",
+  "type": "measurement",
+  "canonical_definition": "FollowBench is consistently characterized as a benchmark for evaluating instruction-following performance in large language models. The prevailing usage is to assess **complex instruction following**, with papers noting its instructions often consist of \"multiple constraints.\" The benchmark is defined as having \"five levels of difficulty\" and containing \"diverse and open-ended instructions.\" A recurring feature is its evaluation methodology, which requires strong LLMs like GPT-4 for judgment because the tasks are not verifiable by simple code executions. One paper states this design allows it to \"fully examine the generalization... to more general instructions\" (Self-play with Execution Feedback: Improving Instruction-following Capabilities of Large Language Models). Beyond complex instruction following and **generalization**, FollowBench is also used to measure **conversational ability** as part of a suite of human-preference benchmarks, and is listed as an instrument for assessing **commonsense knowledge**.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "FollowBench"
+  ],
+  "papers": [
+    "DAPEV2: Process Attention Score as Feature Map for Length Extrapolation",
+    "Improving Dialogue Discourse Parsing through Discourse-aware Utterance Clarification",
+    "TableLoRA: Low-rank Adaptation on Table Structure Understanding for Large Language Models",
+    "Orthogonal Finetuning Made Scalable",
+    "PunMemeCN: A Benchmark to Explore Vision-Language Models\u2019 Understanding ofChinese Pun Memes",
+    "Structured Moral Reasoning in Language Models: A Value-Grounded Evaluation Framework",
+    "SPaR: Self-Play with Tree-Search Refinement to Improve Instruction-Following in Large Language Models",
+    "Self-play with Execution Feedback: Improving Instruction-following Capabilities of Large Language Models"
+  ],
+  "paper_count": 8,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A fine-grained constraint-following benchmark with five levels of difficulty, containing diverse and open-ended instructions that require evaluation by strong LLMs.",
+      "paper": "Self-play with Execution Feedback: Improving Instruction-following Capabilities of Large Language Models",
+      "original_name": "FollowBench"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction following",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "SPaR: Self-Play with Tree-Search Refinement to Improve Instruction-Following in Large Language Models",
+      "evidence": "",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "iclr25": [
+          "SPaR: Self-Play with Tree-Search Refinement to Improve Instruction-Following in Large Language Models"
+        ],
+        "naacl25": [
+          "MMEvalPro: Calibrating Multimodal Benchmarks Towards Trustworthy and Efficient Evaluation"
+        ],
+        "emnlp25": [
+          "PunMemeCN: A Benchmark to Explore Vision-Language Models\u2019 Understanding ofChinese Pun Memes",
+          "Structured Moral Reasoning in Language Models: A Value-Grounded Evaluation Framework"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Complex instruction following",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "DAPEV2: Process Attention Score as Feature Map for Length Extrapolation",
+      "evidence": "We mainly conduct evaluations on two complex instruction-following benchmarks, CFBench (Zhang et al., 2024) and FollowBench (Jiang et al., 2023), where instructions consist of multiple constraints.",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "acl25": [
+          "DAPEV2: Process Attention Score as Feature Map for Length Extrapolation"
+        ],
+        "emnlp25": [
+          "Orthogonal Finetuning Made Scalable"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Self-play with Execution Feedback: Improving Instruction-following Capabilities of Large Language Models",
+      "evidence": "FollowBench is a fine-grained constraint-following benchmark with five levels of difficulty. It contains diverse and open-ended instructions requiring evaluation by strong LLMs, such as GPT-4, which can fully examine the generalization of AUTOIF to more general instructions not verifiable by simple code executions. (Section 4).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Self-play with Execution Feedback: Improving Instruction-following Capabilities of Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Conversational ability",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "TableLoRA: Low-rank Adaptation on Table Structure Understanding for Large Language Models",
+      "evidence": "We select 8 human-preference benchmarks for evaluation of the chat capabilities and reports the average normalized score at the percentage scale. Additionally, due to the high cost of conducting subjective evaluations with a paid API model, we use GPT4o as the Judge Model for main results only, and we judge with the open-source CompassJudger-1-32B (Cao et al., 2024) in ablation study and scaling experiments. (Section 4.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "TableLoRA: Low-rank Adaptation on Table Structure Understanding for Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 0,
+  "characterization": "FollowBench is consistently characterized as a benchmark for evaluating instruction-following performance in large language models. The prevailing usage is to assess **complex instruction following**, with papers noting its instructions often consist of \"multiple constraints.\" The benchmark is defined as having \"five levels of difficulty\" and containing \"diverse and open-ended instructions.\" A recurring feature is its evaluation methodology, which requires strong LLMs like GPT-4 for judgment because the tasks are not verifiable by simple code executions. One paper states this design allows it to \"fully examine the generalization... to more general instructions\" (Self-play with Execution Feedback: Improving Instruction-following Capabilities of Large Language Models). Beyond complex instruction following and **generalization**, FollowBench is also used to measure **conversational ability** as part of a suite of human-preference benchmarks, and is listed as an instrument for assessing **commonsense knowledge**.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "SPaR: Self-Play with Tree-Search Refinement to Improve Instruction-Following in Large Language Models",
+      "Self-play with Execution Feedback: Improving Instruction-following Capabilities of Large Language Models"
+    ],
+    "acl25": [
+      "DAPEV2: Process Attention Score as Feature Map for Length Extrapolation",
+      "Improving Dialogue Discourse Parsing through Discourse-aware Utterance Clarification",
+      "TableLoRA: Low-rank Adaptation on Table Structure Understanding for Large Language Models"
+    ],
+    "emnlp25": [
+      "Orthogonal Finetuning Made Scalable",
+      "PunMemeCN: A Benchmark to Explore Vision-Language Models\u2019 Understanding ofChinese Pun Memes",
+      "Structured Moral Reasoning in Language Models: A Value-Grounded Evaluation Framework"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "acl25": 3,
+    "emnlp25": 3
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25"
+  ]
+}

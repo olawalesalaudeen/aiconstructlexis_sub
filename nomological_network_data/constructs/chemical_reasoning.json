@@ -1,0 +1,122 @@
+{
+  "canonical_name": "Chemical reasoning",
+  "type": "construct",
+  "canonical_definition": "The prevailing definition of chemical reasoning across the provided literature is the latent ability to integrate and apply chemistry principles to deduce molecular properties and structures from evidence like spectral data and molecular formulas. A related framing, termed 'molecular reasoning,' focuses more broadly on inferring properties from the underlying structure of molecular data, while other definitions describe it as the ability to make inferences about molecular structures when represented as text. This construct is operationalized and measured using specific evaluation instruments. Papers report using the SciBench and MOLERR2FIX benchmarks to assess chemical reasoning, with one paper describing MOLERR2FIX as providing a \"fine-grained and progressive framework\" for this purpose. Chemical reasoning is studied in conjunction with Molecule understanding and Chain-of-thought reasoning. Some work also presents it as an \"intertwined assessment of chemistry reasoning and visual understanding,\" highlighting a multimodal aspect. There is discussion regarding the proficiency of LLMs in this area; some sources state that models \"struggle with chemical reasoning,\" while others find them to be \"promising tools\" capable of reasoning over molecular structures in natural language. One paper notes that proficiency in \"multi-step chemical reasoning\" in particular remains an underexplored area.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Chemical reasoning",
+    "Molecular reasoning"
+  ],
+  "papers": [
+    "Mitigating Hallucinations inLM-BasedTTSModels via Distribution Alignment UsingGFlowNets",
+    "SEA: Supervised Embedding Alignment for Token-Level Visual-Textual Integration inMLLMs",
+    "ChemAgent: Self-updating Memories in Large Language Models Improves Chemical Reasoning",
+    "Efficient Evolutionary Search Over Chemical Space with Large Language Models",
+    "Can LLMs Solve Molecule Puzzles? A Multimodal Benchmark for Molecular Structure Elucidation",
+    "On the Scalability of GNNs for Molecular Graphs"
+  ],
+  "paper_count": 6,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The latent ability to integrate and apply principles of chemistry to deduce molecular properties and structures from various forms of evidence, such as spectral data and molecular formulas.",
+      "paper": "Can LLMs Solve Molecule Puzzles? A Multimodal Benchmark for Molecular Structure Elucidation",
+      "original_name": "Chemical reasoning"
+    },
+    {
+      "text": "The latent ability to infer properties and relationships based on the underlying structure of molecular data.",
+      "paper": "On the Scalability of GNNs for Molecular Graphs",
+      "original_name": "Molecular reasoning"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Molecule understanding",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Can LLMs Solve Molecule Puzzles? A Multimodal Benchmark for Molecular Structure Elucidation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Can LLMs Solve Molecule Puzzles? A Multimodal Benchmark for Molecular Structure Elucidation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SciBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "ChemAgent: Self-updating Memories in Large Language Models Improves Chemical Reasoning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "ChemAgent: Self-updating Memories in Large Language Models Improves Chemical Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Chain-of-thought reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Foundation Molecular Grammar: Multi-Modal Foundation Models Induce Interpretable Molecular Graph Languages",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Foundation Molecular Grammar: Multi-Modal Foundation Models Induce Interpretable Molecular Graph Languages"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MOLERR2FIX",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Mitigating Hallucinations inLM-BasedTTSModels via Distribution Alignment UsingGFlowNets",
+      "evidence": "MOLERR2FIX introduces a structured chain-like, four-stage Error-to-Fix evaluation pipeline\u2014detection, localization, explanation, and revision\u2014offering a fine-grained and progressive framework for assessing LLMs in chemical reasoning. (Section 1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Mitigating Hallucinations inLM-BasedTTSModels via Distribution Alignment UsingGFlowNets"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 3,
+  "characterization": "The prevailing definition of chemical reasoning across the provided literature is the latent ability to integrate and apply chemistry principles to deduce molecular properties and structures from evidence like spectral data and molecular formulas. A related framing, termed 'molecular reasoning,' focuses more broadly on inferring properties from the underlying structure of molecular data, while other definitions describe it as the ability to make inferences about molecular structures when represented as text. This construct is operationalized and measured using specific evaluation instruments. Papers report using the SciBench and MOLERR2FIX benchmarks to assess chemical reasoning, with one paper describing MOLERR2FIX as providing a \"fine-grained and progressive framework\" for this purpose. Chemical reasoning is studied in conjunction with Molecule understanding and Chain-of-thought reasoning. Some work also presents it as an \"intertwined assessment of chemistry reasoning and visual understanding,\" highlighting a multimodal aspect. There is discussion regarding the proficiency of LLMs in this area; some sources state that models \"struggle with chemical reasoning,\" while others find them to be \"promising tools\" capable of reasoning over molecular structures in natural language. One paper notes that proficiency in \"multi-step chemical reasoning\" in particular remains an underexplored area.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "Can LLMs Solve Molecule Puzzles? A Multimodal Benchmark for Molecular Structure Elucidation",
+      "On the Scalability of GNNs for Molecular Graphs"
+    ],
+    "iclr25": [
+      "ChemAgent: Self-updating Memories in Large Language Models Improves Chemical Reasoning",
+      "Efficient Evolutionary Search Over Chemical Space with Large Language Models"
+    ],
+    "emnlp25": [
+      "Mitigating Hallucinations inLM-BasedTTSModels via Distribution Alignment UsingGFlowNets",
+      "SEA: Supervised Embedding Alignment for Token-Level Visual-Textual Integration inMLLMs"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 2,
+    "iclr25": 2,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "neurips24"
+  ]
+}

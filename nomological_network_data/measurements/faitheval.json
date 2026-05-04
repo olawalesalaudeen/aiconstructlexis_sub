@@ -1,0 +1,102 @@
+{
+  "canonical_name": "FaithEval",
+  "type": "measurement",
+  "canonical_definition": "FaithEval is characterized in the provided literature as an evaluation benchmark designed to measure model hallucination and faithfulness. According to its definition, it assesses model performance across \"different challenging scenarios\" with the goal of both measuring and ultimately reducing hallucination. The relationships show it is explicitly used to operationalize the constructs of Hallucination and Faithfulness. For example, one paper uses FaithEval in an ablation study to show that a new method \"reduces hallucinations as a valuable secondary benefit\" (\"MadaKV: Adaptive Modality-PerceptionKVCache Eviction for Efficient Multimodal Long-Context Inference\"). The benchmark is also studied alongside other assessment methods, including LLM-as-a-judge and Human evaluation.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "FaithEval"
+  ],
+  "papers": [
+    "ECLM: Entity Level Language Model for Spoken Language Understanding with Chain of Intent",
+    "MaCP: Minimal yet Mighty Adaptation via Hierarchical Cosine Projection",
+    "MadaKV: Adaptive Modality-PerceptionKVCache Eviction for Efficient Multimodal Long-Context Inference"
+  ],
+  "paper_count": 3,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "An evaluation benchmark designed to measure and reduce model hallucination across different challenging scenarios.",
+      "paper": "MadaKV: Adaptive Modality-PerceptionKVCache Eviction for Efficient Multimodal Long-Context Inference",
+      "original_name": "FaithEval"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "FaithEval: Can Your Language Model Stay Faithful to Context, Even If \"The Moon is Made of Marshmallows\"",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "FaithEval: Can Your Language Model Stay Faithful to Context, Even If \"The Moon is Made of Marshmallows\""
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-as-a-judge",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "FaithEval: Can Your Language Model Stay Faithful to Context, Even If \"The Moon is Made of Marshmallows\"",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "FaithEval: Can Your Language Model Stay Faithful to Context, Even If \"The Moon is Made of Marshmallows\""
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human evaluation",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "FaithEval: Can Your Language Model Stay Faithful to Context, Even If \"The Moon is Made of Marshmallows\"",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "FaithEval: Can Your Language Model Stay Faithful to Context, Even If \"The Moon is Made of Marshmallows\""
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "MadaKV: Adaptive Modality-PerceptionKVCache Eviction for Efficient Multimodal Long-Context Inference",
+      "evidence": "As shown in Table 5, the ablation study on FaithEval (Ming et al., 2024) demonstrates that OpAmp not only enhances robustness to noisy contexts but also reduces hallucinations as a valuable secondary benefit. (Section 3.4)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "MadaKV: Adaptive Modality-PerceptionKVCache Eviction for Efficient Multimodal Long-Context Inference"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 2,
+  "characterization": "FaithEval is characterized in the provided literature as an evaluation benchmark designed to measure model hallucination and faithfulness. According to its definition, it assesses model performance across \"different challenging scenarios\" with the goal of both measuring and ultimately reducing hallucination. The relationships show it is explicitly used to operationalize the constructs of Hallucination and Faithfulness. For example, one paper uses FaithEval in an ablation study to show that a new method \"reduces hallucinations as a valuable secondary benefit\" (\"MadaKV: Adaptive Modality-PerceptionKVCache Eviction for Efficient Multimodal Long-Context Inference\"). The benchmark is also studied alongside other assessment methods, including LLM-as-a-judge and Human evaluation.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "ECLM: Entity Level Language Model for Spoken Language Understanding with Chain of Intent",
+      "MaCP: Minimal yet Mighty Adaptation via Hierarchical Cosine Projection",
+      "MadaKV: Adaptive Modality-PerceptionKVCache Eviction for Efficient Multimodal Long-Context Inference"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 3
+  },
+  "conferences": [
+    "acl25"
+  ]
+}

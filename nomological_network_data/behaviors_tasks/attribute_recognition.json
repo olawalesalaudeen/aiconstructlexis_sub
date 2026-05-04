@@ -1,0 +1,74 @@
+{
+  "canonical_name": "Attribute recognition",
+  "type": "behavior",
+  "canonical_definition": "Based on the provided data, attribute recognition is defined as the task of identifying visual attributes from an image, with position and color cited as specific examples. This behavior is primarily studied in the context of model failures, particularly what one paper calls \"attribute-level hallucinations.\" To operationalize and measure this capability, the field uses the MM-Hal-Bench benchmark. This instrument is explicitly reported to evaluate large vision-language models on several question types, including \"object attributes.\" The available sources consistently frame attribute recognition as a specific sub-task for assessing vision-language models, and its study is shown to be related to the broader topic of hallucination.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Attribute recognition"
+  ],
+  "papers": [
+    "Mitigating Object Hallucination in MLLMs via Data-augmented Phrase-level Alignment",
+    "Reducing Hallucinations in Large Vision-Language Models via Latent Space Steering",
+    "Self-Correcting Decoding with Generative Feedback for Mitigating Hallucinations in Large Vision-Language Models"
+  ],
+  "paper_count": 3,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Identifying visual attributes such as position and color from an image.",
+      "paper": "Self-Correcting Decoding with Generative Feedback for Mitigating Hallucinations in Large Vision-Language Models",
+      "original_name": "Attribute recognition"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "MMDT: Decoding the Trustworthiness and Safety of Multimodal Foundation Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "MMDT: Decoding the Trustworthiness and Safety of Multimodal Foundation Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MM-Hal-Bench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Reducing Hallucinations in Large Vision-Language Models via Latent Space Steering",
+      "evidence": "\"MMHAL-Bench (Sun et al., 2023): This benchmark evaluates LVLMs beyond object hallucination and contains eight question types: object attributes, adversarial objects, comparisons, counting, spatial relations, environment, holistic description, and others.\"",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Reducing Hallucinations in Large Vision-Language Models via Latent Space Steering"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 2,
+  "characterization": "Based on the provided data, attribute recognition is defined as the task of identifying visual attributes from an image, with position and color cited as specific examples. This behavior is primarily studied in the context of model failures, particularly what one paper calls \"attribute-level hallucinations.\" To operationalize and measure this capability, the field uses the MM-Hal-Bench benchmark. This instrument is explicitly reported to evaluate large vision-language models on several question types, including \"object attributes.\" The available sources consistently frame attribute recognition as a specific sub-task for assessing vision-language models, and its study is shown to be related to the broader topic of hallucination.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Mitigating Object Hallucination in MLLMs via Data-augmented Phrase-level Alignment",
+      "Reducing Hallucinations in Large Vision-Language Models via Latent Space Steering",
+      "Self-Correcting Decoding with Generative Feedback for Mitigating Hallucinations in Large Vision-Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3
+  },
+  "conferences": [
+    "iclr25"
+  ]
+}

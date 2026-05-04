@@ -1,0 +1,124 @@
+{
+  "canonical_name": "Few-shot prompting",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, few-shot prompting is predominantly defined as a method for a model to learn a task from a small number of input-output examples provided directly in the prompt, without any updates to the model's weights. This technique is also referred to as \"in-context learning (ICL)\" in some work. It is most commonly operationalized as an evaluation procedure where task demonstrations, such as \"(question, SQL) pairs,\" are prepended to the input to guide the model's response. The number of examples varies across studies, with papers mentioning the use of one, two, three, five, and up to fifty examples. The method is used to elicit task performance in areas like arithmetic, classification, and reasoning, and to assess a model's in-context learning capability. Few-shot prompting is frequently studied in contrast to zero-shot and chain-of-thought prompting. While most papers frame it as an evaluation method, a less common perspective treats it as an \"interactive behavior\" where models use in-context analogies to guide reasoning. The provided data also indicates it is related to iterative refinement and is reported to cause both generalization and input regurgitation.",
+  "expert_reviewed": false,
+  "expert_removed": true,
+  "expert_removed_reason": "method/training pipeline \u2014 not a construct/measurement/behavior of LLM ability",
+  "names": [
+    "Few-shot prompting"
+  ],
+  "papers": [
+    "AcT2I: Evaluating and Improving Action Depiction in Text-to-Image Models",
+    "Are Vision-Language Models Safe in the Wild? A Meme-Based Benchmark Study",
+    "Evaluating Cognitive-Behavioral Fixation via Multimodal User Viewing Patterns on Social Media",
+    "M-Wanda: Improving One-Shot Pruning for MultilingualLLMs",
+    "Who is in the Spotlight: The Hidden Bias Undermining Multimodal Retrieval-Augmented Generation",
+    "Amortizing intractable inference in large language models",
+    "Teaching Arithmetic to Small Transformers",
+    "Teaching Large Language Models to Self-Debug",
+    "Mitigating Tail Narrowing inLLMSelf-Improvement via Socratic-Guided Sampling",
+    "VisCGEC: Benchmarking the VisualChinese Grammatical Error Correction"
+  ],
+  "paper_count": 10,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Attempting to learn a task from a few input-output examples provided in the prompt, without updating model weights.",
+      "paper": "Amortizing intractable inference in large language models",
+      "original_name": "Few-shot prompting"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Critique",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Teaching Large Language Models to Self-Debug",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Teaching Large Language Models to Self-Debug"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Continuously Learning, Adapting, and Improving: A Dual-Process Approach to Autonomous Driving",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Continuously Learning, Adapting, and Improving: A Dual-Process Approach to Autonomous Driving"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "APPS",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "DeFT: Decoding with Flash Tree-attention for Efficient Tree-structured LLM Inference",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "DeFT: Decoding with Flash Tree-attention for Efficient Tree-structured LLM Inference"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Input regurgitation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Vision-Language Models Create Cross-Modal Task Representations",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Vision-Language Models Create Cross-Modal Task Representations"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 3,
+  "characterization": "Across the provided literature, few-shot prompting is predominantly defined as a method for a model to learn a task from a small number of input-output examples provided directly in the prompt, without any updates to the model's weights. This technique is also referred to as \"in-context learning (ICL)\" in some work. It is most commonly operationalized as an evaluation procedure where task demonstrations, such as \"(question, SQL) pairs,\" are prepended to the input to guide the model's response. The number of examples varies across studies, with papers mentioning the use of one, two, three, five, and up to fifty examples. The method is used to elicit task performance in areas like arithmetic, classification, and reasoning, and to assess a model's in-context learning capability. Few-shot prompting is frequently studied in contrast to zero-shot and chain-of-thought prompting. While most papers frame it as an evaluation method, a less common perspective treats it as an \"interactive behavior\" where models use in-context analogies to guide reasoning. The provided data also indicates it is related to iterative refinement and is reported to cause both generalization and input regurgitation.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Amortizing intractable inference in large language models",
+      "Teaching Arithmetic to Small Transformers",
+      "Teaching Large Language Models to Self-Debug"
+    ],
+    "naacl25": [
+      "Mitigating Tail Narrowing inLLMSelf-Improvement via Socratic-Guided Sampling",
+      "VisCGEC: Benchmarking the VisualChinese Grammatical Error Correction"
+    ],
+    "emnlp25": [
+      "AcT2I: Evaluating and Improving Action Depiction in Text-to-Image Models",
+      "Are Vision-Language Models Safe in the Wild? A Meme-Based Benchmark Study",
+      "Evaluating Cognitive-Behavioral Fixation via Multimodal User Viewing Patterns on Social Media",
+      "M-Wanda: Improving One-Shot Pruning for MultilingualLLMs",
+      "Who is in the Spotlight: The Hidden Bias Undermining Multimodal Retrieval-Augmented Generation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 3,
+    "naacl25": 2,
+    "emnlp25": 5
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "naacl25"
+  ]
+}

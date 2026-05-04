@@ -1,0 +1,210 @@
+{
+  "canonical_name": "Semantic textual similarity",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, semantic textual similarity is predominantly characterized as the task of assessing the degree to which two pieces of text are similar in meaning. The most common framing involves predicting a continuous similarity score, as seen in definitions like \"quantifying the degree of semantic similarity between two sentences, often on a continuous scale.\" A smaller body of work treats it as a classification or judgment task, such as determining whether two sentences are paraphrases, convey the same meaning, or are semantically related. Specific applications mentioned include \"sentence alignment\" between abstracts and summaries and \"text pair classification\" in the financial domain. The behavior is most frequently operationalized and measured using the Massive Text Embedding Benchmark (MTEB), with specific datasets like STS-Benchmark, STS12, QQP, and MRPC also cited. Alternative measurement approaches are also described, including the use of algorithms like BM25, prompting models like GPT-4o for judgment, and human evaluation. This behavior is frequently evaluated alongside other embedding tasks like classification, clustering, and retrieval, and is also documented as being related to the construct of Consistency.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Semantic equivalence detection",
+    "Text similarity prediction",
+    "Text pair classification",
+    "Semantic similarity",
+    "Sentence similarity estimation",
+    "Sentence similarity",
+    "Sentence alignment",
+    "Text similarity computation",
+    "Semantic similarity judgment",
+    "Semantic textual similarity",
+    "Semantic text similarity"
+  ],
+  "papers": [
+    "Analyzing values about gendered language reform inLLMs\u2019 revisions",
+    "CoVoGER: A Multilingual Multitask Benchmark for Speech-to-text Generative Error Correction with Large Language Models",
+    "DIDS: Domain Impact-aware Data Sampling for Large Language Model Training",
+    "DetectingLLMHallucination Through Layer-wise Information Deficiency: Analysis of Ambiguous Prompts and Unanswerable Questions",
+    "Dialect-SQL: An Adaptive Framework for Bridging the Dialect Gap in Text-to-SQL",
+    "LiteASR: Efficient Automatic Speech Recognition with Low-Rank Approximation",
+    "Textual Aesthetics in Large Language Models",
+    "EmoAgent: Assessing and Safeguarding Human-AIInteraction for Mental Health Safety",
+    "Not What the Doctor Ordered: SurveyingLLM-based De-identification and Quantifying Clinical Information Loss",
+    "BacktrackAgent: EnhancingGUIAgent with Error Detection and Backtracking Mechanism",
+    "CoEvo: Coevolution ofLLMand Retrieval Model for Domain-Specific Information Retrieval",
+    "SURE: Safety Understanding and Reasoning Enhancement for Multimodal Large Language Models",
+    "Which Word Orders Facilitate Length Generalization inLMs? An Investigation withGCG-Based Artificial Languages",
+    "MMTEB: Massive Multilingual Text Embedding Benchmark",
+    "Making Text Embedders Few-Shot Learners",
+    "NV-Embed: Improved Techniques for Training LLMs as Generalist Embedding Models",
+    "Repetition Improves Language Model Embeddings",
+    "Your Mixture-of-Experts LLM Is Secretly an Embedding Model for Free",
+    "PiSSA: Principal Singular Values and Singular Vectors Adaptation of Large Language Models",
+    "SUGARCREPE++ Dataset: Vision-Language Model Sensitivity to Semantic and Lexical Alterations"
+  ],
+  "paper_count": 20,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The task of determining whether two sentences convey the same meaning, potentially despite differences in their lexical and syntactic structure.",
+      "paper": "SUGARCREPE++ Dataset: Vision-Language Model Sensitivity to Semantic and Lexical Alterations",
+      "original_name": "Semantic equivalence detection"
+    },
+    {
+      "text": "Predicting the semantic similarity score between two text sentences.",
+      "paper": "PiSSA: Principal Singular Values and Singular Vectors Adaptation of Large Language Models",
+      "original_name": "Text similarity prediction"
+    },
+    {
+      "text": "The observable task of assessing the degree to which two pieces of text are similar in meaning.",
+      "paper": "LiteASR: Efficient Automatic Speech Recognition with Low-Rank Approximation",
+      "original_name": "Semantic similarity"
+    },
+    {
+      "text": "The observable behavior of determining whether two financial texts are semantically related, such as assessing if a headline matches a news article or if a query matches user intent.",
+      "paper": "Dialect-SQL: An Adaptive Framework for Bridging the Dialect Gap in Text-to-SQL",
+      "original_name": "Text pair classification"
+    },
+    {
+      "text": "The task of quantifying the degree of semantic similarity between two sentences, often on a continuous scale.",
+      "paper": "DIDS: Domain Impact-aware Data Sampling for Large Language Model Training",
+      "original_name": "Sentence similarity estimation"
+    },
+    {
+      "text": "Judging whether two sentences are semantically similar or paraphrases.",
+      "paper": "CoVoGER: A Multilingual Multitask Benchmark for Speech-to-text Generative Error Correction with Large Language Models",
+      "original_name": "Sentence similarity"
+    },
+    {
+      "text": "Matching a sentence in a plain language summary to one or zero semantically similar sentences in the parallel abstract.",
+      "paper": "Textual Aesthetics in Large Language Models",
+      "original_name": "Sentence alignment"
+    },
+    {
+      "text": "The use of algorithms like BM25 or Sentence-BERT to compute similarity scores between text segments for retrieval and sampling decisions.",
+      "paper": "Analyzing values about gendered language reform inLLMs\u2019 revisions",
+      "original_name": "Text similarity computation"
+    },
+    {
+      "text": "The observable behavior of comparing two text responses to determine whether their meaning is preserved, used here to detect changes in model output after neuron dropout.",
+      "paper": "EmoAgent: Assessing and Safeguarding Human-AIInteraction for Mental Health Safety",
+      "original_name": "Semantic similarity judgment"
+    },
+    {
+      "text": "The task of measuring the degree of semantic equivalence between two texts, typically on a continuous scale.",
+      "paper": "Making Text Embedders Few-Shot Learners",
+      "original_name": "Semantic textual similarity"
+    },
+    {
+      "text": "The task of determining how similar two pieces of text are in meaning, typically by assigning a continuous score.",
+      "paper": "MMTEB: Massive Multilingual Text Embedding Benchmark",
+      "original_name": "Semantic text similarity"
+    }
+  ],
+  "definition_count": 11,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MTEB",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Making Text Embedders Few-Shot Learners",
+      "evidence": "It includes data for various tasks including Retrieval, Reranking, Clustering, Classification, and STS. (Section 4.1)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Making Text Embedders Few-Shot Learners"
+        ],
+        "emnlp25": [
+          "BacktrackAgent: EnhancingGUIAgent with Error Detection and Backtracking Mechanism"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "STS12",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Your Mixture-of-Experts LLM Is Secretly an Embedding Model for Free",
+      "evidence": "Semantic Textual Similarity (STS): Directly measures the ability of embeddings to capture fine-grained semantic similarity. We use STSB, STS12 (both from MTEB (Muennighoff et al., 2023)) and SICK (from (Marelli et al., 2014)). (Section 4.1)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Your Mixture-of-Experts LLM Is Secretly an Embedding Model for Free"
+        ],
+        "emnlp25": [
+          "SURE: Safety Understanding and Reasoning Enhancement for Multimodal Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "SUGARCREPE++ Dataset: Vision-Language Model Sensitivity to Semantic and Lexical Alterations",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "SUGARCREPE++ Dataset: Vision-Language Model Sensitivity to Semantic and Lexical Alterations"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Consistency",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Cape: Context-Aware Prompt Perturbation Mechanism with Differential Privacy",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Cape: Context-Aware Prompt Perturbation Mechanism with Differential Privacy"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 3,
+  "characterization": "Across the provided literature, semantic textual similarity is predominantly characterized as the task of assessing the degree to which two pieces of text are similar in meaning. The most common framing involves predicting a continuous similarity score, as seen in definitions like \"quantifying the degree of semantic similarity between two sentences, often on a continuous scale.\" A smaller body of work treats it as a classification or judgment task, such as determining whether two sentences are paraphrases, convey the same meaning, or are semantically related. Specific applications mentioned include \"sentence alignment\" between abstracts and summaries and \"text pair classification\" in the financial domain. The behavior is most frequently operationalized and measured using the Massive Text Embedding Benchmark (MTEB), with specific datasets like STS-Benchmark, STS12, QQP, and MRPC also cited. Alternative measurement approaches are also described, including the use of algorithms like BM25, prompting models like GPT-4o for judgment, and human evaluation. This behavior is frequently evaluated alongside other embedding tasks like classification, clustering, and retrieval, and is also documented as being related to the construct of Consistency.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "PiSSA: Principal Singular Values and Singular Vectors Adaptation of Large Language Models",
+      "SUGARCREPE++ Dataset: Vision-Language Model Sensitivity to Semantic and Lexical Alterations"
+    ],
+    "emnlp25": [
+      "Analyzing values about gendered language reform inLLMs\u2019 revisions",
+      "CoVoGER: A Multilingual Multitask Benchmark for Speech-to-text Generative Error Correction with Large Language Models",
+      "DIDS: Domain Impact-aware Data Sampling for Large Language Model Training",
+      "DetectingLLMHallucination Through Layer-wise Information Deficiency: Analysis of Ambiguous Prompts and Unanswerable Questions",
+      "Dialect-SQL: An Adaptive Framework for Bridging the Dialect Gap in Text-to-SQL",
+      "LiteASR: Efficient Automatic Speech Recognition with Low-Rank Approximation",
+      "Textual Aesthetics in Large Language Models",
+      "EmoAgent: Assessing and Safeguarding Human-AIInteraction for Mental Health Safety",
+      "Not What the Doctor Ordered: SurveyingLLM-based De-identification and Quantifying Clinical Information Loss",
+      "BacktrackAgent: EnhancingGUIAgent with Error Detection and Backtracking Mechanism",
+      "CoEvo: Coevolution ofLLMand Retrieval Model for Domain-Specific Information Retrieval",
+      "SURE: Safety Understanding and Reasoning Enhancement for Multimodal Large Language Models",
+      "Which Word Orders Facilitate Length Generalization inLMs? An Investigation withGCG-Based Artificial Languages"
+    ],
+    "iclr25": [
+      "MMTEB: Massive Multilingual Text Embedding Benchmark",
+      "Making Text Embedders Few-Shot Learners",
+      "NV-Embed: Improved Techniques for Training LLMs as Generalist Embedding Models",
+      "Repetition Improves Language Model Embeddings",
+      "Your Mixture-of-Experts LLM Is Secretly an Embedding Model for Free"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 2,
+    "emnlp25": 13,
+    "iclr25": 5
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "neurips24"
+  ]
+}

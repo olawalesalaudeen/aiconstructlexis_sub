@@ -1,0 +1,72 @@
+{
+  "canonical_name": "Watermark removal",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, watermark removal is consistently defined as an adversarial behavior aimed at eliminating or neutralizing embedded statistical signals from a language model or its output. The stated goal is to revert a watermarked model to an unwatermarked state or, in the context of knowledge distillation, to enable \"untraceable knowledge distillation.\" This behavior is operationalized through several distinct methods. One paper proposes a taxonomy of approaches, distinguishing between \"pre-distillation removal\" via data paraphrasing and \"post-distillation removal\" through techniques like \"inference-time watermark neutralization,\" which applies inverse rules to the model's logits. Another paper discusses a method named DE-MARK for performing this task. The behavior is studied in relation to the robustness of watermarking schemes, where it is described as a \"critical vulnerability\" that can \"strip or alter the embedded watermark, undermining its intended protection\" in adversarial settings.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Watermark neutralization",
+    "Watermark removal"
+  ],
+  "papers": [
+    "The Task Shield: Enforcing Task Alignment to Defend Against Indirect Prompt Injection inLLMAgents",
+    "\ud835\udf19-Decoding: Adaptive Foresight Sampling for Balanced Inference-Time Exploration and Exploitation",
+    "De-mark: Watermark Removal in Large Language Models",
+    "Revealing Weaknesses in Text Watermarking Through Self-Information Rewrite Attacks"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The act of eliminating or neutralizing watermark signals from training data or model outputs to prevent detection during knowledge distillation.",
+      "paper": "\ud835\udf19-Decoding: Adaptive Foresight Sampling for Balanced Inference-Time Exploration and Exploitation",
+      "original_name": "Watermark removal"
+    },
+    {
+      "text": "A post-distillation watermark removal method that counteracts an inherited watermark by applying inverted watermark rules directly to the student model's logits during its decoding phase.",
+      "paper": "\ud835\udf19-Decoding: Adaptive Foresight Sampling for Balanced Inference-Time Exploration and Exploitation",
+      "original_name": "Watermark neutralization"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Watermark robustness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "De-mark: Watermark Removal in Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "De-mark: Watermark Removal in Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the provided literature, watermark removal is consistently defined as an adversarial behavior aimed at eliminating or neutralizing embedded statistical signals from a language model or its output. The stated goal is to revert a watermarked model to an unwatermarked state or, in the context of knowledge distillation, to enable \"untraceable knowledge distillation.\" This behavior is operationalized through several distinct methods. One paper proposes a taxonomy of approaches, distinguishing between \"pre-distillation removal\" via data paraphrasing and \"post-distillation removal\" through techniques like \"inference-time watermark neutralization,\" which applies inverse rules to the model's logits. Another paper discusses a method named DE-MARK for performing this task. The behavior is studied in relation to the robustness of watermarking schemes, where it is described as a \"critical vulnerability\" that can \"strip or alter the embedded watermark, undermining its intended protection\" in adversarial settings.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "The Task Shield: Enforcing Task Alignment to Defend Against Indirect Prompt Injection inLLMAgents",
+      "\ud835\udf19-Decoding: Adaptive Foresight Sampling for Balanced Inference-Time Exploration and Exploitation"
+    ],
+    "icml25": [
+      "De-mark: Watermark Removal in Large Language Models",
+      "Revealing Weaknesses in Text Watermarking Through Self-Information Rewrite Attacks"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "icml25": 2
+  },
+  "conferences": [
+    "acl25",
+    "icml25"
+  ]
+}

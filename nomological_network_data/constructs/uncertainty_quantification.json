@@ -1,0 +1,388 @@
+{
+  "canonical_name": "Uncertainty quantification",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, uncertainty quantification is most commonly framed as a model's ability to represent its own lack of knowledge, where expressed confidence aligns with the probability of being correct. A prevailing distinction is made between epistemic uncertainty, which arises from the model's lack of knowledge and can be reduced with more data, and aleatoric uncertainty, which stems from inherent ambiguity or noise in the data itself. The construct is frequently operationalized by quantifying ambiguity in a model's internal states\u2014using metrics like token probabilities, perplexity, and entropy\u2014or by modeling uncertainty over model parameters, such as through weight distributions or ensemble variance. A distinct line of work treats it as an observable behavior, where the model explicitly conveys uncertainty through natural language phrases like \"I am not sure,\" which is directly assessed by the UNCLE benchmark. This concept is applied in various contexts, including the assessment of reward models (\"Reward uncertainty\"), the stability of LLM evaluators (\"Evaluation uncertainty\"), and the reliability of reasoning processes (\"Reasoning uncertainty\"). Several papers suggest that improving uncertainty quantification can reduce hallucinations, with one study noting that \"predictive uncertainty is one of the main causes of hallucinations,\" and it is also linked to faithfulness and safety. The construct is also studied alongside generation diversity, knowledge boundary awareness, and ambiguity handling.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Uncertainty quantification",
+    "Aleatoric uncertainty awareness",
+    "Epistemic uncertainty awareness",
+    "Multimodal Uncertainty Awareness",
+    "Epistemic uncertainty",
+    "Epistemic Uncertainty",
+    "Aleatoric semantic uncertainty",
+    "Reward uncertainty",
+    "Weight uncertainty",
+    "Evaluation uncertainty",
+    "Response uncertainty",
+    "Prediction uncertainty",
+    "Reasoning uncertainty",
+    "Output uncertainty",
+    "Underspecification uncertainty",
+    "Uncertainty expression",
+    "Uncertainty signaling"
+  ],
+  "papers": [
+    "2025.emnlp-main.1543.checklist",
+    "2025.emnlp-main.1809.checklist",
+    "2025.emnlp-main.294.checklist",
+    "Chinese Toxic Language Mitigation via Sentiment Polarity Consistent Rewrites",
+    "Grammar Pruning: Enabling Low-Latency Zero-Shot Task-Oriented Language Models for EdgeAI",
+    "Reflective Agreement: Combining Self-Mixture of Agents with a Sequence Tagger for Robust Event Extraction",
+    "Seeing Through Words, Speaking Through Pixels: Deep Representational Alignment Between Vision and Language Models",
+    "T",
+    "VerIF: Verification Engineering for Reinforcement Learning in Instruction Following",
+    "WojoodRelations:Arabic Relation Extraction Corpus and Modeling",
+    "Adaptive Transformer Programs: Bridging the Gap Between Performance and Interpretability in Transformers",
+    "An Empirical Analysis of Uncertainty in Large Language Model Evaluations",
+    "Calibrating LLMs with Information-Theoretic Evidential Deep Learning",
+    "CertainlyUncertain: A Benchmark and Metric for Multimodal Epistemic and Aleatoric Awareness",
+    "Confidence Elicitation: A New Attack Vector for Large Language Models",
+    "Do I Know This Entity? Knowledge Awareness and Hallucinations in Language Models",
+    "Efficiently Learning at Test-Time: Active Fine-Tuning of LLMs",
+    "HaDeMiF: Hallucination Detection and Mitigation in Large Language Models",
+    "Improving Uncertainty Estimation through Semantically Diverse Language Generation",
+    "Latent Space Chain-of-Embedding Enables Output-free LLM Self-Evaluation",
+    "LiFT: Learning to Fine-Tune via Bayesian Parameter Efficient Meta Fine-Tuning",
+    "RocketEval: Efficient automated LLM evaluation via grading checklist",
+    "Sample then Identify: A General Framework for Risk Control and Assessment in Multimodal Large Language Models",
+    "Scalable Bayesian Learning with posteriors",
+    "Uncertainty and Influence aware Reward Model Refinement for Reinforcement Learning from Human Feedback",
+    "Uncertainty-Aware Decoding with Minimum Bayes Risk",
+    "Active Evaluation Acquisition for Efficient LLM Benchmarking",
+    "Active Reward Modeling: Adaptive Preference Labeling for Large Language Model Alignment",
+    "Adaptive Elicitation of Latent Information Using Natural Language",
+    "Bayesian Neural Scaling Law Extrapolation with Prior-Data Fitted Networks",
+    "FactTest: Factuality Testing in Large Language Models with Finite-Sample and Distribution-Free Guarantees",
+    "Is Your Model Fairly Certain? Uncertainty-Aware Fairness Evaluation for LLMs",
+    "Learning to Route LLMs with Confidence Tokens",
+    "Position: Future Research and Challenges Remain Towards AI for Software Engineering",
+    "Position: LLMs Need a Bayesian Meta-Reasoning Framework for More Robust and Generalizable Reasoning",
+    "Position: Uncertainty Quantification Needs Reassessment for Large Language Model Agents",
+    "Promoting Ensemble Diversity with Interactive Bayesian Distributional Robustness for Fine-tuning Foundation Models",
+    "Prune \u2019n Predict: Optimizing LLM Decision-making with Conformal Prediction",
+    "Ranked from Within: Ranking Large Multimodal Models Without Labels",
+    "Rethinking Chain-of-Thought from the Perspective of Self-Training",
+    "Token Signature: Predicting Chain-of-Thought Gains with Token Decoding Feature in Large Language Models",
+    "Towards Rationale-Answer Alignment of LVLMs via Self-Rationale Calibration",
+    "Uncertainty Quantification for LLM-Based Survey Simulations",
+    "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs"
+  ],
+  "paper_count": 44,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Uncertainty arising from inherent ambiguity or noise in the data itself, rather than from uncertainty about the model parameters.",
+      "paper": "Scalable Bayesian Learning with posteriors",
+      "original_name": "Aleatoric uncertainty"
+    },
+    {
+      "text": "The latent ability of a model to recognize situations where a definitive answer cannot be provided due to information limitations or inherent unpredictability in vision-language tasks.",
+      "paper": "CertainlyUncertain: A Benchmark and Metric for Multimodal Epistemic and Aleatoric Awareness",
+      "original_name": "Multimodal Uncertainty Awareness"
+    },
+    {
+      "text": "The tendency to recognize uncertainty caused by missing information or incomplete evidence, where additional knowledge could reduce uncertainty.",
+      "paper": "CertainlyUncertain: A Benchmark and Metric for Multimodal Epistemic and Aleatoric Awareness",
+      "original_name": "Epistemic uncertainty awareness"
+    },
+    {
+      "text": "The tendency to recognize uncertainty caused by inherent unpredictability that cannot be eliminated by gathering more information.",
+      "paper": "CertainlyUncertain: A Benchmark and Metric for Multimodal Epistemic and Aleatoric Awareness",
+      "original_name": "Aleatoric uncertainty awareness"
+    },
+    {
+      "text": "The model's ability to accurately represent its own uncertainty, where expressed confidence aligns with the actual probability of being correct.",
+      "paper": "LiFT: Learning to Fine-Tune via Bayesian Parameter Efficient Meta Fine-Tuning",
+      "original_name": "Uncertainty quantification"
+    },
+    {
+      "text": "The model's uncertainty about its own prediction that reflects ambiguity or lack of knowledge rather than token-level likelihood alone.",
+      "paper": "Confidence Elicitation: A New Attack Vector for Large Language Models",
+      "original_name": "Epistemic uncertainty"
+    },
+    {
+      "text": "Uncertainty in the model parameters that diminishes with more data, serving as an indicator of model uncertainty in predictions.",
+      "paper": "Scalable Bayesian Learning with posteriors",
+      "original_name": "Epistemic Uncertainty"
+    },
+    {
+      "text": "The degree to which an LLM evaluator lacks confidence in its judgments, often operationalized through the probabilities of its output tokens.",
+      "paper": "An Empirical Analysis of Uncertainty in Large Language Model Evaluations",
+      "original_name": "Uncertainty"
+    },
+    {
+      "text": "The ability to quantify ambiguity in attention or prediction distributions and use that estimate to adapt model processing.",
+      "paper": "Adaptive Transformer Programs: Bridging the Gap Between Performance and Interpretability in Transformers",
+      "original_name": "Uncertainty estimation"
+    },
+    {
+      "text": "The uncertainty arising from inherent ambiguity in which semantically distinct output meaning the model will generate for a given input.",
+      "paper": "Improving Uncertainty Estimation through Semantically Diverse Language Generation",
+      "original_name": "Aleatoric semantic uncertainty"
+    },
+    {
+      "text": "The degree of confidence or ambiguity in a reward model's prediction of human preference, often estimated using ensembles.",
+      "paper": "Uncertainty and Influence aware Reward Model Refinement for Reinforcement Learning from Human Feedback",
+      "original_name": "Reward uncertainty"
+    },
+    {
+      "text": "The uncertainty in the model's output predictions, as opposed to uncertainty in the parameters themselves.",
+      "paper": "Uncertainty-Aware Decoding with Minimum Bayes Risk",
+      "original_name": "Predictive uncertainty"
+    },
+    {
+      "text": "The uncertainty associated with the model's parameter estimates, modeled as a posterior distribution over the weights.",
+      "paper": "Uncertainty-Aware Decoding with Minimum Bayes Risk",
+      "original_name": "Weight uncertainty"
+    },
+    {
+      "text": "The degree of instability or indecision in an LLM evaluator's judgments across inputs, settings, or domains.",
+      "paper": "An Empirical Analysis of Uncertainty in Large Language Model Evaluations",
+      "original_name": "Evaluation uncertainty"
+    },
+    {
+      "text": "The degree of ambiguity or lack of confidence in the model's predicted probability distribution for a response to a given prompt.",
+      "paper": "Efficiently Learning at Test-Time: Active Fine-Tuning of LLMs",
+      "original_name": "Response uncertainty"
+    },
+    {
+      "text": "The degree of uncertainty in the model's reasoning process, especially when token probability trends suggest weaker alignment with successful reasoning.",
+      "paper": "Token Signature: Predicting Chain-of-Thought Gains with Token Decoding Feature in Large Language Models",
+      "original_name": "Reasoning uncertainty"
+    },
+    {
+      "text": "The degree of uncertainty in the model's preference predictions, especially around comparisons that are near the decision boundary.",
+      "paper": "Active Reward Modeling: Adaptive Preference Labeling for Large Language Model Alignment",
+      "original_name": "Model uncertainty"
+    },
+    {
+      "text": "The degree of confidence a model has in its own predictions, which can be quantified and used to guide iterative reasoning processes.",
+      "paper": "Rethinking Chain-of-Thought from the Perspective of Self-Training",
+      "original_name": "Prediction uncertainty"
+    },
+    {
+      "text": "The latent uncertainty arising when a user's input does not fully specify the task or provide sufficient context, leading to ambiguity in the model's response generation.",
+      "paper": "Position: Uncertainty Quantification Needs Reassessment for Large Language Model Agents",
+      "original_name": "Underspecification uncertainty"
+    },
+    {
+      "text": "The latent capacity of an LLM agent to express uncertainty not as a scalar value but through rich linguistic means such as natural language explanations, verbal qualifiers, or speech prosody to convey ambiguity, competing possibilities, and reasoning.",
+      "paper": "Position: Uncertainty Quantification Needs Reassessment for Large Language Model Agents",
+      "original_name": "Output uncertainty"
+    },
+    {
+      "text": "The degree to which a model accounts for or expresses uncertainty when making detection decisions.",
+      "paper": "2025.emnlp-main.294.checklist",
+      "original_name": "Uncertainty awareness"
+    },
+    {
+      "text": "The latent ability of a model to recognize gaps in its knowledge and explicitly convey that uncertainty through natural language phrases (e.g., 'it is unclear' or 'I am not sure') rather than generating false or overconfident statements.",
+      "paper": "VerIF: Verification Engineering for Reinforcement Learning in Instruction Following",
+      "original_name": "Uncertainty expression"
+    },
+    {
+      "text": "The latent ability of a model to recognize ambiguity or inconsistency in its input and express doubt, refusal, or non-commitment in its response.",
+      "paper": "WojoodRelations:Arabic Relation Extraction Corpus and Modeling",
+      "original_name": "Uncertainty signaling"
+    }
+  ],
+  "definition_count": 23,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Uncertainty-Aware Decoding with Minimum Bayes Risk",
+      "evidence": "Overall, we find strong evidence that accounting for weight uncertainty can improve decoding and reduce hallucinations when finetuning and pretraining from scratch, even without computational overhead. (Introduction)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Uncertainty-Aware Decoding with Minimum Bayes Risk"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Uncertainty-Aware Decoding with Minimum Bayes Risk",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Uncertainty-Aware Decoding with Minimum Bayes Risk"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Robustness",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Uncertainty-Aware Decoding with Minimum Bayes Risk",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Uncertainty-Aware Decoding with Minimum Bayes Risk"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generation diversity",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Uncertainty-Aware Decoding with Minimum Bayes Risk",
+      "evidence": "\u201cWe find that improvements trend with the expressiveness of the posterior. Likely related to this, the performance of uncertainty-aware MBR is highly correlated with the prediction diversity across the combined models.\u201d",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Uncertainty-Aware Decoding with Minimum Bayes Risk"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge awareness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "CertainlyUncertain: A Benchmark and Metric for Multimodal Epistemic and Aleatoric Awareness",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "CertainlyUncertain: A Benchmark and Metric for Multimodal Epistemic and Aleatoric Awareness"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Temporal understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "CertainlyUncertain: A Benchmark and Metric for Multimodal Epistemic and Aleatoric Awareness",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "CertainlyUncertain: A Benchmark and Metric for Multimodal Epistemic and Aleatoric Awareness"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Ambiguity handling",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "CertainlyUncertain: A Benchmark and Metric for Multimodal Epistemic and Aleatoric Awareness",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "CertainlyUncertain: A Benchmark and Metric for Multimodal Epistemic and Aleatoric Awareness"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Trustworthiness",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "VerIF: Verification Engineering for Reinforcement Learning in Instruction Following",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "VerIF: Verification Engineering for Reinforcement Learning in Instruction Following"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "UNCLE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "VerIF: Verification Engineering for Reinforcement Learning in Instruction Following",
+      "evidence": "we first introduce UNCLE, a benchmark designed to evaluate uncertainty expression in both long- and short-form question answering (QA). (Abstract)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "VerIF: Verification Engineering for Reinforcement Learning in Instruction Following"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 9,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 5,
+  "characterization": "Across the surveyed literature, uncertainty quantification is most commonly framed as a model's ability to represent its own lack of knowledge, where expressed confidence aligns with the probability of being correct. A prevailing distinction is made between epistemic uncertainty, which arises from the model's lack of knowledge and can be reduced with more data, and aleatoric uncertainty, which stems from inherent ambiguity or noise in the data itself. The construct is frequently operationalized by quantifying ambiguity in a model's internal states\u2014using metrics like token probabilities, perplexity, and entropy\u2014or by modeling uncertainty over model parameters, such as through weight distributions or ensemble variance. A distinct line of work treats it as an observable behavior, where the model explicitly conveys uncertainty through natural language phrases like \"I am not sure,\" which is directly assessed by the UNCLE benchmark. This concept is applied in various contexts, including the assessment of reward models (\"Reward uncertainty\"), the stability of LLM evaluators (\"Evaluation uncertainty\"), and the reliability of reasoning processes (\"Reasoning uncertainty\"). Several papers suggest that improving uncertainty quantification can reduce hallucinations, with one study noting that \"predictive uncertainty is one of the main causes of hallucinations,\" and it is also linked to faithfulness and safety. The construct is also studied alongside generation diversity, knowledge boundary awareness, and ambiguity handling.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Adaptive Transformer Programs: Bridging the Gap Between Performance and Interpretability in Transformers",
+      "An Empirical Analysis of Uncertainty in Large Language Model Evaluations",
+      "Calibrating LLMs with Information-Theoretic Evidential Deep Learning",
+      "CertainlyUncertain: A Benchmark and Metric for Multimodal Epistemic and Aleatoric Awareness",
+      "Confidence Elicitation: A New Attack Vector for Large Language Models",
+      "Do I Know This Entity? Knowledge Awareness and Hallucinations in Language Models",
+      "Efficiently Learning at Test-Time: Active Fine-Tuning of LLMs",
+      "HaDeMiF: Hallucination Detection and Mitigation in Large Language Models",
+      "Improving Uncertainty Estimation through Semantically Diverse Language Generation",
+      "Latent Space Chain-of-Embedding Enables Output-free LLM Self-Evaluation",
+      "LiFT: Learning to Fine-Tune via Bayesian Parameter Efficient Meta Fine-Tuning",
+      "RocketEval: Efficient automated LLM evaluation via grading checklist",
+      "Sample then Identify: A General Framework for Risk Control and Assessment in Multimodal Large Language Models",
+      "Scalable Bayesian Learning with posteriors",
+      "Uncertainty and Influence aware Reward Model Refinement for Reinforcement Learning from Human Feedback",
+      "Uncertainty-Aware Decoding with Minimum Bayes Risk"
+    ],
+    "icml25": [
+      "Active Evaluation Acquisition for Efficient LLM Benchmarking",
+      "Active Reward Modeling: Adaptive Preference Labeling for Large Language Model Alignment",
+      "Adaptive Elicitation of Latent Information Using Natural Language",
+      "Bayesian Neural Scaling Law Extrapolation with Prior-Data Fitted Networks",
+      "FactTest: Factuality Testing in Large Language Models with Finite-Sample and Distribution-Free Guarantees",
+      "Is Your Model Fairly Certain? Uncertainty-Aware Fairness Evaluation for LLMs",
+      "Learning to Route LLMs with Confidence Tokens",
+      "Position: Future Research and Challenges Remain Towards AI for Software Engineering",
+      "Position: LLMs Need a Bayesian Meta-Reasoning Framework for More Robust and Generalizable Reasoning",
+      "Position: Uncertainty Quantification Needs Reassessment for Large Language Model Agents",
+      "Promoting Ensemble Diversity with Interactive Bayesian Distributional Robustness for Fine-tuning Foundation Models",
+      "Prune \u2019n Predict: Optimizing LLM Decision-making with Conformal Prediction",
+      "Ranked from Within: Ranking Large Multimodal Models Without Labels",
+      "Rethinking Chain-of-Thought from the Perspective of Self-Training",
+      "Token Signature: Predicting Chain-of-Thought Gains with Token Decoding Feature in Large Language Models",
+      "Towards Rationale-Answer Alignment of LVLMs via Self-Rationale Calibration",
+      "Uncertainty Quantification for LLM-Based Survey Simulations",
+      "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.1543.checklist",
+      "2025.emnlp-main.1809.checklist",
+      "2025.emnlp-main.294.checklist",
+      "Chinese Toxic Language Mitigation via Sentiment Polarity Consistent Rewrites",
+      "Grammar Pruning: Enabling Low-Latency Zero-Shot Task-Oriented Language Models for EdgeAI",
+      "Reflective Agreement: Combining Self-Mixture of Agents with a Sequence Tagger for Robust Event Extraction",
+      "Seeing Through Words, Speaking Through Pixels: Deep Representational Alignment Between Vision and Language Models",
+      "T",
+      "VerIF: Verification Engineering for Reinforcement Learning in Instruction Following",
+      "WojoodRelations:Arabic Relation Extraction Corpus and Modeling"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 16,
+    "icml25": 18,
+    "emnlp25": 10
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "icml25"
+  ]
+}

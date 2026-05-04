@@ -1,0 +1,189 @@
+{
+  "canonical_name": "Document summarization",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, document summarization is most frequently defined as the task of generating a concise summary from one or more long documents. A smaller body of work offers more specific framings, such as comprehending a document's substance to produce a \"succinct and cohesive summary\" (Benchmarking LLMs via Uncertainty Quantification), or generating summaries from a context containing multiple concatenated documents. As an observable behavior, this task is operationalized and measured using several benchmarks. Papers in this set use LongBench, ZeroSCROLLS, HaluEval, CNN/DailyMail, and XSum to evaluate document summarization performance. For instance, LongBench is described as a tool for assessing \"long-context understanding\" that includes a dedicated summarization task category. The types of inputs mentioned for these tasks include academic papers, government reports, manuals, and loan agreements. The behavior is often framed as a task \"requiring extensive context retention\" (Dialogue Without Limits: Constant-Sized KV Caches for Extended Response in LLMs) and is studied alongside long-context processing.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Document summarization",
+    "Document Summarization"
+  ],
+  "papers": [
+    "AdaRewriter: Unleashing the Power of Prompting-based Conversational Query Reformulation via Test-Time Adaptation",
+    "Beyond Seen Data: ImprovingKBQAGeneralization Through Schema-Guided Logical Form Generation",
+    "CanLLMs Generate and Solve Linguistic Olympiad Puzzles?",
+    "Multi-LMentry: Can MultilingualLLMs Solve Elementary Tasks Across Languages?",
+    "Reading Between the Prompts: How Stereotypes ShapeLLM\u2019s Implicit Personalization",
+    "VistaWise: Building Cost-Effective Agent with Cross-Modal Knowledge Graph forMinecraft",
+    "$\\text{D}_{2}\\text{O}$: Dynamic Discriminative Operations for Efficient Long-Context Inference of Large Language Models",
+    "CAKE: Cascading and Adaptive KV Cache Eviction with Layer Preferences",
+    "PALMBENCH: A COMPREHENSIVE BENCHMARK OF COMPRESSED LARGE LANGUAGE MODELS ON MOBILE PLATFORMS",
+    "SCBench: A KV Cache-Centric Analysis of Long-Context Methods",
+    "What is Wrong with Perplexity for Long-context Language Modeling?",
+    "Curse of High Dimensionality Issue in Transformer for Long Context Modeling",
+    "Dialogue Without Limits: Constant-Sized KV Caches for Extended Response in LLMs",
+    "ShadowKV: KV Cache in Shadows for High-Throughput Long-Context LLM Inference",
+    "Benchmarking LLMs via Uncertainty Quantification",
+    "Found in the Middle: How Language Models Use Long Contexts Better via Plug-and-Play Positional Encoding"
+  ],
+  "paper_count": 16,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The task of generating a concise summary of one or more long documents.",
+      "paper": "Found in the Middle: How Language Models Use Long Contexts Better via Plug-and-Play Positional Encoding",
+      "original_name": "Document summarization"
+    },
+    {
+      "text": "Comprehending the substance and context of a given document and producing a succinct and cohesive summary.",
+      "paper": "Benchmarking LLMs via Uncertainty Quantification",
+      "original_name": "Document Summarization"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LongBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "$\\text{D}_{2}\\text{O}$: Dynamic Discriminative Operations for Efficient Long-Context Inference of Large Language Models",
+      "evidence": "ZeroSCROLLS (Shaham et al., 2023) and LongBench (Bai et al., 2023) tackle tasks like long-document QA and query-based summarization. (Section 5)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "$\\text{D}_{2}\\text{O}$: Dynamic Discriminative Operations for Efficient Long-Context Inference of Large Language Models",
+          "CAKE: Cascading and Adaptive KV Cache Eviction with Layer Preferences"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HaluEval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Benchmarking LLMs via Uncertainty Quantification",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Benchmarking LLMs via Uncertainty Quantification"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ZeroSCROLLS",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Found in the Middle: How Language Models Use Long Contexts Better via Plug-and-Play Positional Encoding",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Found in the Middle: How Language Models Use Long Contexts Better via Plug-and-Play Positional Encoding"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-context understanding",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "What is Wrong with Perplexity for Long-context Language Modeling?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "What is Wrong with Perplexity for Long-context Language Modeling?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CNN/DailyMail",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Reading Between the Prompts: How Stereotypes ShapeLLM\u2019s Implicit Personalization",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Reading Between the Prompts: How Stereotypes ShapeLLM\u2019s Implicit Personalization"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Long-context understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "CanLLMs Generate and Solve Linguistic Olympiad Puzzles?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "CanLLMs Generate and Solve Linguistic Olympiad Puzzles?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "XSum",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Reading Between the Prompts: How Stereotypes ShapeLLM\u2019s Implicit Personalization",
+      "evidence": "We evaluate PbT on three tasks with five benchmarks: ...document summarization (XSum (Narayan et al., 2018) and CNNDM (Hermann et al., 2015))... (Section 4)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Reading Between the Prompts: How Stereotypes ShapeLLM\u2019s Implicit Personalization"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 7,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 6,
+  "characterization": "Across the provided literature, document summarization is most frequently defined as the task of generating a concise summary from one or more long documents. A smaller body of work offers more specific framings, such as comprehending a document's substance to produce a \"succinct and cohesive summary\" (Benchmarking LLMs via Uncertainty Quantification), or generating summaries from a context containing multiple concatenated documents. As an observable behavior, this task is operationalized and measured using several benchmarks. Papers in this set use LongBench, ZeroSCROLLS, HaluEval, CNN/DailyMail, and XSum to evaluate document summarization performance. For instance, LongBench is described as a tool for assessing \"long-context understanding\" that includes a dedicated summarization task category. The types of inputs mentioned for these tasks include academic papers, government reports, manuals, and loan agreements. The behavior is often framed as a task \"requiring extensive context retention\" (Dialogue Without Limits: Constant-Sized KV Caches for Extended Response in LLMs) and is studied alongside long-context processing.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "Benchmarking LLMs via Uncertainty Quantification",
+      "Found in the Middle: How Language Models Use Long Contexts Better via Plug-and-Play Positional Encoding"
+    ],
+    "iclr25": [
+      "$\\text{D}_{2}\\text{O}$: Dynamic Discriminative Operations for Efficient Long-Context Inference of Large Language Models",
+      "CAKE: Cascading and Adaptive KV Cache Eviction with Layer Preferences",
+      "PALMBENCH: A COMPREHENSIVE BENCHMARK OF COMPRESSED LARGE LANGUAGE MODELS ON MOBILE PLATFORMS",
+      "SCBench: A KV Cache-Centric Analysis of Long-Context Methods",
+      "What is Wrong with Perplexity for Long-context Language Modeling?"
+    ],
+    "icml25": [
+      "Curse of High Dimensionality Issue in Transformer for Long Context Modeling",
+      "Dialogue Without Limits: Constant-Sized KV Caches for Extended Response in LLMs",
+      "ShadowKV: KV Cache in Shadows for High-Throughput Long-Context LLM Inference"
+    ],
+    "emnlp25": [
+      "AdaRewriter: Unleashing the Power of Prompting-based Conversational Query Reformulation via Test-Time Adaptation",
+      "Beyond Seen Data: ImprovingKBQAGeneralization Through Schema-Guided Logical Form Generation",
+      "CanLLMs Generate and Solve Linguistic Olympiad Puzzles?",
+      "Multi-LMentry: Can MultilingualLLMs Solve Elementary Tasks Across Languages?",
+      "Reading Between the Prompts: How Stereotypes ShapeLLM\u2019s Implicit Personalization",
+      "VistaWise: Building Cost-Effective Agent with Cross-Modal Knowledge Graph forMinecraft"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 2,
+    "iclr25": 5,
+    "icml25": 3,
+    "emnlp25": 6
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

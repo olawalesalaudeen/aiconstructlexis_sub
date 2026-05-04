@@ -1,0 +1,247 @@
+{
+  "canonical_name": "Action prediction",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, 'Action prediction' is most commonly defined as the task of determining and generating the next appropriate action in a sequence to accomplish a larger goal, particularly within web navigation and user interface (UI) contexts. In this prevalent framing, an action consists of identifying a 'target element to interact with, along with the operation, such as click, type, or select an option' (\"A Real-World WebAgent with Planning, Long Context Understanding, and Program Synthesis\"). This behavior is frequently operationalized and measured using benchmarks like Mind2Web and MME-RealWorld, with some work also citing the GUIDE benchmark for next-action prediction. However, the term is applied across a wide range of domains, leading to several specialized definitions. A notable line of work treats it as predicting the next move in board games like chess, sometimes with a specific focus on 'legal move prediction.' Other applications include forecasting the future movements of agents in autonomous driving scenarios ('intention prediction'), predicting conversational turns in spoken dialogue ('turn-taking prediction'), and selecting the next speaker in multi-character conversations. In reinforcement learning contexts, it is framed as predicting an action from a sequence of states and returns. The concept is studied alongside GUI automation, commonsense knowledge, and conversational ability, and one paper suggests that spatiotemporal reasoning can facilitate action prediction.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Action prediction",
+    "Chess move prediction",
+    "Intention prediction",
+    "Next-action prediction",
+    "High-level behavior prediction",
+    "Legal move prediction",
+    "Next speaker prediction",
+    "Turn-taking prediction"
+  ],
+  "papers": [
+    "A Real-World WebAgent with Planning, Long Context Understanding, and Program Synthesis",
+    "Multimodal Web Navigation with Instruction-Finetuned Foundation Models",
+    "Ferret-UI 2: Mastering Universal User Interface Understanding Across Platforms",
+    "Harnessing Webpage UIs for Text-Rich Visual Understanding",
+    "Intelligence at the Edge of Chaos",
+    "LLaRA: Supercharging Robot Learning Data for Vision-Language Policy",
+    "Learn-by-interact: A Data-Centric Framework For Self-Adaptive Agents in Realistic Environments",
+    "Learning to Contextualize Web Pages for Enhanced Decision Making by LLM Agents",
+    "MMDT: Decoding the Trustworthiness and Safety of Multimodal Foundation Models",
+    "MME-RealWorld: Could Your Multimodal LLM Challenge High-Resolution Real-World Scenarios that are Difficult for Humans?",
+    "On the Modeling Capabilities of Large Language Models for Sequential Decision Making",
+    "Sparse Autoencoders Reveal Temporal Difference Learning in Large Language Models",
+    "TraceVLA: Visual Trace Prompting Enhances Spatial-Temporal Awareness for Generalist Robotic Policies",
+    "CoSER: Coordinating LLM-Based Persona Simulation of Established Roles",
+    "In-Context Reinforcement Learning From Suboptimal Historical Data",
+    "Mastering Board Games by External and Internal Planning with Language Models",
+    "Mixture of Experts Made Intrinsically Interpretable",
+    "NTPP: Generative Speech Language Modeling for Dual-Channel Spoken Dialogue via Next-Token-Pair Prediction",
+    "Position: Theory of Mind Benchmarks are Broken for Large Language Models",
+    "SafeAuto: Knowledge-Enhanced Safe Autonomous Driving with Multimodal Foundation Models",
+    "Animal-Bench: Benchmarking Multimodal Video Models for Animal-centric Video Understanding",
+    "Decomposed Prompt Decision Transformer for Efficient Unseen Task Generalization",
+    "MARPLE: A Benchmark for Long-Horizon Inference",
+    "MaVEn: An Effective Multi-granularity Hybrid Visual Encoding Framework for Multimodal Large Language Model",
+    "PIVOT-R: Primitive-Driven Waypoint-Aware World Model for Robotic Manipulation",
+    "Policy Improvement using Language Feedback Models",
+    "TOPA: Extending Large Language Models for Video Understanding via Text-Only Pre-Alignment"
+  ],
+  "paper_count": 27,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The task of determining and generating the next appropriate action (e.g., which element to click, what text to type) in a sequence to accomplish a larger goal.",
+      "paper": "A Real-World WebAgent with Planning, Long Context Understanding, and Program Synthesis",
+      "original_name": "Action prediction"
+    },
+    {
+      "text": "The task of predicting the next move in a chess game given a sequence of previous moves in Standard Algebraic Notation.",
+      "paper": "Intelligence at the Edge of Chaos",
+      "original_name": "Chess move prediction"
+    },
+    {
+      "text": "The task of forecasting the future actions or movements of a dynamic agent, such as a vehicle or pedestrian, based on an image.",
+      "paper": "MME-RealWorld: Could Your Multimodal LLM Challenge High-Resolution Real-World Scenarios that are Difficult for Humans?",
+      "original_name": "Intention prediction"
+    },
+    {
+      "text": "The task of predicting the next user action on a UI, given the screen and a history of previous actions.",
+      "paper": "Ferret-UI 2: Mastering Universal User Interface Understanding Across Platforms",
+      "original_name": "Next-action prediction"
+    },
+    {
+      "text": "Generating only valid moves according to the rules of the game, filtering out impossible or illegal actions during decision-making.",
+      "paper": "Mastering Board Games by External and Internal Planning with Language Models",
+      "original_name": "Legal move prediction"
+    },
+    {
+      "text": "The observable generation of speech tokens that align with appropriate conversational transitions, such as when to speak, pause, overlap, or interrupt, based on dual-channel input dynamics.",
+      "paper": "NTPP: Generative Speech Language Modeling for Dual-Channel Spoken Dialogue via Next-Token-Pair Prediction",
+      "original_name": "Turn-taking prediction"
+    },
+    {
+      "text": "Selecting which character should speak next in a multi-character conversation.",
+      "paper": "CoSER: Coordinating LLM-Based Persona Simulation of Established Roles",
+      "original_name": "Next speaker prediction"
+    },
+    {
+      "text": "Answering multiple-choice driving questions about high-level behavior such as speed and steering actions.",
+      "paper": "SafeAuto: Knowledge-Enhanced Safe Autonomous Driving with Multimodal Foundation Models",
+      "original_name": "High-level behavior prediction"
+    }
+  ],
+  "definition_count": 8,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mind2Web",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "A Real-World WebAgent with Planning, Long Context Understanding, and Program Synthesis",
+      "evidence": "\u201cIn the action prediction tasks, we transfer WebGUM finetuned for MiniWoB++ with 401K dataset into real-world Mind2Web\u201d",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr24": [
+          "A Real-World WebAgent with Planning, Long Context Understanding, and Program Synthesis",
+          "Multimodal Web Navigation with Instruction-Finetuned Foundation Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "MMDT: Decoding the Trustworthiness and Safety of Multimodal Foundation Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "MMDT: Decoding the Trustworthiness and Safety of Multimodal Foundation Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MME-RealWorld",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MME-RealWorld: Could Your Multimodal LLM Challenge High-Resolution Real-World Scenarios that are Difficult for Humans?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "MME-RealWorld: Could Your Multimodal LLM Challenge High-Resolution Real-World Scenarios that are Difficult for Humans?"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Spatiotemporal reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "TraceVLA: Visual Trace Prompting Enhances Spatial-Temporal Awareness for Generalist Robotic Policies",
+      "evidence": "we introduce visual trace prompting, a simple yet effective approach to facilitate VLA models\u2019 spatial-temporal awareness for action prediction by encoding state-action trajectories visually. (ABSTRACT)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "TraceVLA: Visual Trace Prompting Enhances Spatial-Temporal Awareness for Generalist Robotic Policies"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GUI automation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "UI-Vision: A Desktop-centric GUI Benchmark for Visual Perception and Interaction",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "UI-Vision: A Desktop-centric GUI Benchmark for Visual Perception and Interaction"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "World modeling",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Mastering Board Games by External and Internal Planning with Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Mastering Board Games by External and Internal Planning with Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Conversational ability",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "NTPP: Generative Speech Language Modeling for Dual-Channel Spoken Dialogue via Next-Token-Pair Prediction",
+      "evidence": "empirical results show that our proposed method, NTPP, significantly improves the conversational abilities of SLMs in terms of turn-taking prediction, response coherence, and naturalness. (Abstract)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "NTPP: Generative Speech Language Modeling for Dual-Channel Spoken Dialogue via Next-Token-Pair Prediction"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 7,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 6,
+  "characterization": "Across the surveyed literature, 'Action prediction' is most commonly defined as the task of determining and generating the next appropriate action in a sequence to accomplish a larger goal, particularly within web navigation and user interface (UI) contexts. In this prevalent framing, an action consists of identifying a 'target element to interact with, along with the operation, such as click, type, or select an option' (\"A Real-World WebAgent with Planning, Long Context Understanding, and Program Synthesis\"). This behavior is frequently operationalized and measured using benchmarks like Mind2Web and MME-RealWorld, with some work also citing the GUIDE benchmark for next-action prediction. However, the term is applied across a wide range of domains, leading to several specialized definitions. A notable line of work treats it as predicting the next move in board games like chess, sometimes with a specific focus on 'legal move prediction.' Other applications include forecasting the future movements of agents in autonomous driving scenarios ('intention prediction'), predicting conversational turns in spoken dialogue ('turn-taking prediction'), and selecting the next speaker in multi-character conversations. In reinforcement learning contexts, it is framed as predicting an action from a sequence of states and returns. The concept is studied alongside GUI automation, commonsense knowledge, and conversational ability, and one paper suggests that spatiotemporal reasoning can facilitate action prediction.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "A Real-World WebAgent with Planning, Long Context Understanding, and Program Synthesis",
+      "Multimodal Web Navigation with Instruction-Finetuned Foundation Models"
+    ],
+    "neurips24": [
+      "Animal-Bench: Benchmarking Multimodal Video Models for Animal-centric Video Understanding",
+      "Decomposed Prompt Decision Transformer for Efficient Unseen Task Generalization",
+      "MARPLE: A Benchmark for Long-Horizon Inference",
+      "MaVEn: An Effective Multi-granularity Hybrid Visual Encoding Framework for Multimodal Large Language Model",
+      "PIVOT-R: Primitive-Driven Waypoint-Aware World Model for Robotic Manipulation",
+      "Policy Improvement using Language Feedback Models",
+      "TOPA: Extending Large Language Models for Video Understanding via Text-Only Pre-Alignment"
+    ],
+    "iclr25": [
+      "Ferret-UI 2: Mastering Universal User Interface Understanding Across Platforms",
+      "Harnessing Webpage UIs for Text-Rich Visual Understanding",
+      "Intelligence at the Edge of Chaos",
+      "LLaRA: Supercharging Robot Learning Data for Vision-Language Policy",
+      "Learn-by-interact: A Data-Centric Framework For Self-Adaptive Agents in Realistic Environments",
+      "Learning to Contextualize Web Pages for Enhanced Decision Making by LLM Agents",
+      "MMDT: Decoding the Trustworthiness and Safety of Multimodal Foundation Models",
+      "MME-RealWorld: Could Your Multimodal LLM Challenge High-Resolution Real-World Scenarios that are Difficult for Humans?",
+      "On the Modeling Capabilities of Large Language Models for Sequential Decision Making",
+      "Sparse Autoencoders Reveal Temporal Difference Learning in Large Language Models",
+      "TraceVLA: Visual Trace Prompting Enhances Spatial-Temporal Awareness for Generalist Robotic Policies"
+    ],
+    "icml25": [
+      "CoSER: Coordinating LLM-Based Persona Simulation of Established Roles",
+      "In-Context Reinforcement Learning From Suboptimal Historical Data",
+      "Mastering Board Games by External and Internal Planning with Language Models",
+      "Mixture of Experts Made Intrinsically Interpretable",
+      "NTPP: Generative Speech Language Modeling for Dual-Channel Spoken Dialogue via Next-Token-Pair Prediction",
+      "Position: Theory of Mind Benchmarks are Broken for Large Language Models",
+      "SafeAuto: Knowledge-Enhanced Safe Autonomous Driving with Multimodal Foundation Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "neurips24": 7,
+    "iclr25": 11,
+    "icml25": 7
+  },
+  "conferences": [
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

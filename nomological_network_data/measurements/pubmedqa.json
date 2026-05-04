@@ -1,0 +1,248 @@
+{
+  "canonical_name": "PubMedQA",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, PubMedQA is consistently characterized as a question-answering dataset designed for the biomedical domain, often based on research abstracts from PubMed. The instrument is most frequently used to measure `Medical question answering`, but also serves to evaluate `Text generation`, `Natural language inference`, `Contextual reasoning`, and general `Domain knowledge`. There is some variation in how the task format is described; the prevailing definition specifies answers are \"yes/no/maybe and may require a long-form explanation,\" while a smaller number of papers describe it as requiring \"long free-form answers\" or as a \"multiple-choice\" task. Papers commonly employ PubMedQA as a held-out evaluation benchmark, particularly for assessing model performance on domain-specific or out-of-distribution data. Its application extends to testing the detection of machine-generated text in technical contexts. Additionally, it is used as a source for creating other benchmarks, as seen with the MedHallu dataset which is \"derived from the established PubMedQA dataset\".",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "PubMedQA",
+    "PubmedQA",
+    "Pubmedqa"
+  ],
+  "papers": [
+    "KRISTEVA: Close Reading as a Novel Task for Benchmarking Interpretive Reasoning",
+    "Learning to Reason Over Time: Timeline Self-Reflection for Improved Temporal Reasoning in Language Models",
+    "Ontology-Guided Reverse Thinking Makes Large Language Models Stronger on Knowledge Graph Question Answering",
+    "S3- Semantic Signal Separation",
+    "Ask Patients with Patience: EnablingLLMs for Human-Centric Medical Dialogue with Grounded Reasoning",
+    "BannerAgency: Advertising Banner Design with MultimodalLLMAgents",
+    "ConCISE",
+    "E2LLM: Encoder Elongated Large Language Models for Long-Context Understanding and Reasoning",
+    "Language-to-Space Programming for Training-Free 3DVisual Grounding",
+    "Look Beyond Feeling: Unveiling Latent Needs from Implicit Expressions for Proactive Emotional Support",
+    "MentalGLMSeries: Explainable Large Language Models for Mental Health Analysis onChinese Social Media",
+    "NEXUS: Network Exploration for eXploiting Unsafe Sequences in Multi-TurnLLMJailbreaks",
+    "OmniEval: An Omnidirectional and AutomaticRAGEvaluation Benchmark in Financial Domain",
+    "Reliable and Cost-Effective Exploratory Data Analysis via Graph-GuidedRAG",
+    "Sentence Smith: Controllable Edits for Evaluating Text Embeddings",
+    "Adapting Large Language Models via Reading Comprehension",
+    "DNA-GPT: Divergent N-Gram Analysis for Training-Free Detection of GPT-Generated Text",
+    "Fast-DetectGPT: Efficient Zero-Shot Detection of Machine-Generated Text via Conditional Probability Curvature",
+    "Mixture-of-Experts Meets Instruction Tuning: A Winning Combination for Large Language Models",
+    "PandaLM: An Automatic Evaluation Benchmark for LLM Instruction Tuning Optimization",
+    "RA-DIT: Retrieval-Augmented Dual Instruction Tuning",
+    "Humanizing the Machine: Proxy Attacks to Mislead LLM Detectors",
+    "KGARevion: An AI Agent for Knowledge-Intensive Biomedical QA",
+    "Mix-CPT: A Domain Adaptation Framework via Decoupling Knowledge Learning and Format Alignment",
+    "OCEAN: Offline Chain-of-thought Evaluation and Alignment in Large Language Models",
+    "Shh, don't say that! Domain Certification in LLMs",
+    "Data Mixing Optimization for Supervised Fine-Tuning of Large Language Models",
+    "GIVE: Structured Reasoning of Large Language Models with Knowledge Graph Inspired Veracity Extrapolation",
+    "On the Vulnerability of Applying Retrieval-Augmented Generation within Knowledge-Intensive Application Domains",
+    "Position: Medical Large Language Model Benchmarks Should Prioritize Construct Validity",
+    "Prompt-based Depth Pruning of Large Language Models",
+    "AreLLM-Judges Robust to Expressions of Uncertainty? Investigating the effect of Epistemic Markers onLLM-based Evaluation",
+    "BPO: Towards Balanced Preference Optimization between Knowledge Breadth and Depth in Alignment",
+    "Cascading Large Language Models for Salient Event Graph Generation",
+    "Characterizing the Role of Similarity in the Property Inferences of Language Models",
+    "Reading between the Lines: CanLLMs Identify Cross-Cultural Communication Gaps?"
+  ],
+  "paper_count": 36,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A held-out question-answering benchmark used in the paper\u2019s single-task finetuning comparisons.",
+      "paper": "Mixture-of-Experts Meets Instruction Tuning: A Winning Combination for Large Language Models",
+      "original_name": "PubmedQA"
+    },
+    {
+      "text": "A question answering dataset designed for biomedical research questions, where answers are yes/no/maybe and may require a long-form explanation.",
+      "paper": "Adapting Large Language Models via Reading Comprehension",
+      "original_name": "PubMedQA"
+    },
+    {
+      "text": "Biomedical multiple-choice question-answering dataset used to evaluate LLM performance on domain-specific long-tail knowledge in the medical field.",
+      "paper": "AreLLM-Judges Robust to Expressions of Uncertainty? Investigating the effect of Epistemic Markers onLLM-based Evaluation",
+      "original_name": "Pubmedqa"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Medical question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning",
+      "evidence": "\"General IF data are sampled from Alpaca-GPT42, and medical data are sampled from PubMedQA (Jin et al., 2019) 3. The validation and testing datasets are derived from the validation and testing sets of PubMedQA.\"",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "neurips24": [
+          "LISA: Layerwise Importance Sampling for Memory-Efficient Large Language Model Fine-Tuning"
+        ],
+        "icml25": [
+          "Data Mixing Optimization for Supervised Fine-Tuning of Large Language Models"
+        ],
+        "emnlp25": [
+          "ConCISE"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "OCEAN: Offline Chain-of-thought Evaluation and Alignment in Large Language Models",
+      "evidence": "Medical QA. We apply our method to medical question answering as target domain T... We use... PubMedQA (Jin et al., 2019), which contains approximately 200K QA pairs",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "OCEAN: Offline Chain-of-thought Evaluation and Alignment in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Domain knowledge",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "EHRNoteQA: An LLM Benchmark for Real-World Clinical Practice Using Discharge Summaries",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "EHRNoteQA: An LLM Benchmark for Real-World Clinical Practice Using Discharge Summaries"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Shh, don't say that! Domain Certification in LLMs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Shh, don't say that! Domain Certification in LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Contextual reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Reading between the Lines: CanLLMs Identify Cross-Cultural Communication Gaps?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Reading between the Lines: CanLLMs Identify Cross-Cultural Communication Gaps?"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "MedHallu",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Ask Patients with Patience: EnablingLLMs for Human-Centric Medical Dialogue with Grounded Reasoning",
+      "evidence": "MedHallu comprises 10,000 high-quality question-answer pairs derived from the established PubMedQA dataset.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Ask Patients with Patience: EnablingLLMs for Human-Centric Medical Dialogue with Grounded Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Natural language inference",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "OmniEval: An Omnidirectional and AutomaticRAGEvaluation Benchmark in Financial Domain",
+      "evidence": "For yes/no QA, we select PubMedQA (Jin et al., 2019), an English natural language inference task related to medical research papers. (Section 4.2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "OmniEval: An Omnidirectional and AutomaticRAGEvaluation Benchmark in Financial Domain"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 7,
+  "incoming_relationship_count": 7,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, PubMedQA is consistently characterized as a question-answering dataset designed for the biomedical domain, often based on research abstracts from PubMed. The instrument is most frequently used to measure `Medical question answering`, but also serves to evaluate `Text generation`, `Natural language inference`, `Contextual reasoning`, and general `Domain knowledge`. There is some variation in how the task format is described; the prevailing definition specifies answers are \"yes/no/maybe and may require a long-form explanation,\" while a smaller number of papers describe it as requiring \"long free-form answers\" or as a \"multiple-choice\" task. Papers commonly employ PubMedQA as a held-out evaluation benchmark, particularly for assessing model performance on domain-specific or out-of-distribution data. Its application extends to testing the detection of machine-generated text in technical contexts. Additionally, it is used as a source for creating other benchmarks, as seen with the MedHallu dataset which is \"derived from the established PubMedQA dataset\".",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Adapting Large Language Models via Reading Comprehension",
+      "DNA-GPT: Divergent N-Gram Analysis for Training-Free Detection of GPT-Generated Text",
+      "Fast-DetectGPT: Efficient Zero-Shot Detection of Machine-Generated Text via Conditional Probability Curvature",
+      "Mixture-of-Experts Meets Instruction Tuning: A Winning Combination for Large Language Models",
+      "PandaLM: An Automatic Evaluation Benchmark for LLM Instruction Tuning Optimization",
+      "RA-DIT: Retrieval-Augmented Dual Instruction Tuning"
+    ],
+    "iclr25": [
+      "Humanizing the Machine: Proxy Attacks to Mislead LLM Detectors",
+      "KGARevion: An AI Agent for Knowledge-Intensive Biomedical QA",
+      "Mix-CPT: A Domain Adaptation Framework via Decoupling Knowledge Learning and Format Alignment",
+      "OCEAN: Offline Chain-of-thought Evaluation and Alignment in Large Language Models",
+      "Shh, don't say that! Domain Certification in LLMs"
+    ],
+    "naacl25": [
+      "AreLLM-Judges Robust to Expressions of Uncertainty? Investigating the effect of Epistemic Markers onLLM-based Evaluation",
+      "BPO: Towards Balanced Preference Optimization between Knowledge Breadth and Depth in Alignment",
+      "Cascading Large Language Models for Salient Event Graph Generation",
+      "Characterizing the Role of Similarity in the Property Inferences of Language Models",
+      "Reading between the Lines: CanLLMs Identify Cross-Cultural Communication Gaps?"
+    ],
+    "acl25": [
+      "KRISTEVA: Close Reading as a Novel Task for Benchmarking Interpretive Reasoning",
+      "Learning to Reason Over Time: Timeline Self-Reflection for Improved Temporal Reasoning in Language Models",
+      "Ontology-Guided Reverse Thinking Makes Large Language Models Stronger on Knowledge Graph Question Answering",
+      "S3- Semantic Signal Separation"
+    ],
+    "icml25": [
+      "Data Mixing Optimization for Supervised Fine-Tuning of Large Language Models",
+      "GIVE: Structured Reasoning of Large Language Models with Knowledge Graph Inspired Veracity Extrapolation",
+      "On the Vulnerability of Applying Retrieval-Augmented Generation within Knowledge-Intensive Application Domains",
+      "Position: Medical Large Language Model Benchmarks Should Prioritize Construct Validity",
+      "Prompt-based Depth Pruning of Large Language Models"
+    ],
+    "emnlp25": [
+      "Ask Patients with Patience: EnablingLLMs for Human-Centric Medical Dialogue with Grounded Reasoning",
+      "BannerAgency: Advertising Banner Design with MultimodalLLMAgents",
+      "ConCISE",
+      "E2LLM: Encoder Elongated Large Language Models for Long-Context Understanding and Reasoning",
+      "Language-to-Space Programming for Training-Free 3DVisual Grounding",
+      "Look Beyond Feeling: Unveiling Latent Needs from Implicit Expressions for Proactive Emotional Support",
+      "MentalGLMSeries: Explainable Large Language Models for Mental Health Analysis onChinese Social Media",
+      "NEXUS: Network Exploration for eXploiting Unsafe Sequences in Multi-TurnLLMJailbreaks",
+      "OmniEval: An Omnidirectional and AutomaticRAGEvaluation Benchmark in Financial Domain",
+      "Reliable and Cost-Effective Exploratory Data Analysis via Graph-GuidedRAG",
+      "Sentence Smith: Controllable Edits for Evaluating Text Embeddings"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 6,
+    "iclr25": 5,
+    "naacl25": 5,
+    "acl25": 4,
+    "icml25": 5,
+    "emnlp25": 11
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25"
+  ]
+}

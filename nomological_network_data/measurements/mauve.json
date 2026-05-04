@@ -1,0 +1,108 @@
+{
+  "canonical_name": "MAUVE",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, MAUVE is consistently used as an automatic metric to evaluate text generation by comparing the distribution of machine-generated text to that of human-written or reference text. The most prevalent definition describes it as a non-parametric method that compares embedding distributions using a mixture of forward and reverse KL divergences. A few papers provide a more specific mechanism, stating that it calculates the \"area under the KL divergence curve\" to measure this similarity. The primary application of MAUVE is to assess the \"distributional similarity\" between generated and ground-truth text, which is often framed as a measure of overall generation quality. The relationships data confirms its use for evaluating both general \"Text generation\" and \"Conditional text generation\". In addition to this general use, some studies employ MAUVE to quantify more specific attributes, such as \"fluency\" or \"style consistency\" between training data and model outputs.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "MAUVE",
+    "Mauve"
+  ],
+  "papers": [
+    "Don\u2019t Sweat the Small Stuff: Segment-Level Meta-Evaluation Based on Pairwise Difference Correlation",
+    "Judging Quality Across Languages: A Multilingual Approach to Pretraining Data Filtering with Language Models",
+    "SemCSE: Semantic Contrastive Sentence Embeddings UsingLLM-Generated Summaries For Scientific Abstracts",
+    "Closing the Curious Case of Neural Text Degeneration",
+    "EMO: EARTH MOVER DISTANCE OPTIMIZATION FOR AUTO-REGRESSIVE LANGUAGE MODELING",
+    "Language Model Decoding as Direct Metrics Optimization",
+    "SequenceMatch: Imitation Learning for Autoregressive Sequence Modelling with Backtracking",
+    "Latent Thought Models with Variational Bayes Inference-Time Computation",
+    "Measuring Diversity in Synthetic Datasets",
+    "PeerQA: A Scientific Question Answering Dataset from Peer Reviews",
+    "Through the Lens of History: Methods for Analyzing Temporal Variation in Content and Framing of State-runChinese Newspapers"
+  ],
+  "paper_count": 11,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A non-parametric method for evaluating generative models by comparing the embedding distributions of generated and real text using a mixture of forward and reverse KL divergences.",
+      "paper": "Closing the Curious Case of Neural Text Degeneration",
+      "original_name": "MAUVE"
+    },
+    {
+      "text": "Mauve is a metric that compares generated text to human text by computing the area under the curve of KL divergences between the two distributions, used to assess distributional similarity in open-ended text generation.",
+      "paper": "EMO: EARTH MOVER DISTANCE OPTIMIZATION FOR AUTO-REGRESSIVE LANGUAGE MODELING",
+      "original_name": "Mauve"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "EMO: EARTH MOVER DISTANCE OPTIMIZATION FOR AUTO-REGRESSIVE LANGUAGE MODELING",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "EMO: EARTH MOVER DISTANCE OPTIMIZATION FOR AUTO-REGRESSIVE LANGUAGE MODELING"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Conditional text generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Beyond Autoregression: Fast LLMs via Self-Distillation Through Time",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Beyond Autoregression: Fast LLMs via Self-Distillation Through Time"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, MAUVE is consistently used as an automatic metric to evaluate text generation by comparing the distribution of machine-generated text to that of human-written or reference text. The most prevalent definition describes it as a non-parametric method that compares embedding distributions using a mixture of forward and reverse KL divergences. A few papers provide a more specific mechanism, stating that it calculates the \"area under the KL divergence curve\" to measure this similarity. The primary application of MAUVE is to assess the \"distributional similarity\" between generated and ground-truth text, which is often framed as a measure of overall generation quality. The relationships data confirms its use for evaluating both general \"Text generation\" and \"Conditional text generation\". In addition to this general use, some studies employ MAUVE to quantify more specific attributes, such as \"fluency\" or \"style consistency\" between training data and model outputs.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Closing the Curious Case of Neural Text Degeneration",
+      "EMO: EARTH MOVER DISTANCE OPTIMIZATION FOR AUTO-REGRESSIVE LANGUAGE MODELING",
+      "Language Model Decoding as Direct Metrics Optimization",
+      "SequenceMatch: Imitation Learning for Autoregressive Sequence Modelling with Backtracking"
+    ],
+    "naacl25": [
+      "PeerQA: A Scientific Question Answering Dataset from Peer Reviews",
+      "Through the Lens of History: Methods for Analyzing Temporal Variation in Content and Framing of State-runChinese Newspapers"
+    ],
+    "icml25": [
+      "Latent Thought Models with Variational Bayes Inference-Time Computation",
+      "Measuring Diversity in Synthetic Datasets"
+    ],
+    "emnlp25": [
+      "Don\u2019t Sweat the Small Stuff: Segment-Level Meta-Evaluation Based on Pairwise Difference Correlation",
+      "Judging Quality Across Languages: A Multilingual Approach to Pretraining Data Filtering with Language Models",
+      "SemCSE: Semantic Contrastive Sentence Embeddings UsingLLM-Generated Summaries For Scientific Abstracts"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 4,
+    "naacl25": 2,
+    "icml25": 2,
+    "emnlp25": 3
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "icml25",
+    "naacl25"
+  ]
+}

@@ -1,0 +1,251 @@
+{
+  "canonical_name": "Overconfidence",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, Overconfidence is predominantly characterized as a dispositional trait where a model's predicted confidence is systematically higher than its actual accuracy. This phenomenon is frequently noted to occur after fine-tuning, particularly on small datasets, and can be exacerbated by mechanisms like auto-regressive decoding. The construct is operationalized by comparing a model's confidence scores to its accuracy, with one study observing that \"the accuracy within each bin is much lower than its corresponding confidence\" (\"Can LLMs Express Their Uncertainty? An Empirical Evaluation of Confidence Elicitation in LLMs\"). It is also identified through behaviors such as producing \"assertive but incorrect responses\" when addressing topics beyond the model's knowledge (\"GradOT: Training-free Gradient-preserving Offsite-tuning for Large Language Models\"). While this framing is most common, a smaller body of work defines it more narrowly as \"probability overestimation\"\u2014assigning excessive probability to unlikely tokens\u2014or, in a game-theoretic context, as overlooking risks to pursue rewards. Several papers report that overconfidence can cause or promote Hallucination. The construct is also studied alongside Faithfulness, with which it appears to have a complex, potentially bidirectional causal relationship, and is a recurring topic in model Evaluation.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Over-confidence",
+    "Overconfidence",
+    "Overconfident generation",
+    "Probability overestimation"
+  ],
+  "papers": [
+    "ChemActor: Enhancing Automated Extraction of Chemical Synthesis Actions withLLM-Generated Data",
+    "Crab: A Novel Configurable Role-PlayingLLMwith Assessing Benchmark",
+    "FEA-Bench: A Benchmark for Evaluating Repository-Level Code Generation for Feature Implementation",
+    "GradOT: Training-free Gradient-preserving Offsite-tuning for Large Language Models",
+    "LIFBench: Evaluating the Instruction Following Performance and Stability of Large Language Models in Long-Context Scenarios",
+    "P",
+    "ZIPA: A family of efficient models for multilingual phone recognition",
+    "DnDScore: Decontextualization and Decomposition for Factuality Verification in Long-Form Text Generation",
+    "Does Acceleration Cause Hidden Instability in Vision Language Models? Uncovering Instance-Level Divergence Through a Large-Scale Empirical Study",
+    "Interdisciplinary Research in Conversation: A Case Study in Computational Morphology for Language Documentation",
+    "Not What the Doctor Ordered: SurveyingLLM-based De-identification and Quantifying Clinical Information Loss",
+    "ViPE: Visual Perception in Parameter Space for Efficient Video-Language Understanding",
+    "What\u2019s in a prompt? Language models encode literary style in prompt embeddings",
+    "Bayesian Low-rank Adaptation for Large Language Models",
+    "Can LLMs Express Their Uncertainty? An Empirical Evaluation of Confidence Elicitation in LLMs",
+    "Closing the Curious Case of Neural Text Degeneration",
+    "Energy-based Automated Model Evaluation",
+    "INSIDE: LLMs' Internal States Retain the Power of Hallucination Detection",
+    "It's Never Too Late: Fusing Acoustic Information into Large Language Models for Automatic Speech Recognition",
+    "Out-of-Distribution Detection by Leveraging Between-Layer Transformation Smoothness",
+    "CREAM: Consistency Regularized Self-Rewarding Language Models",
+    "Calibrating LLMs with Information-Theoretic Evidential Deep Learning",
+    "Is Factuality Enhancement a Free Lunch For LLMs? Better Factuality Can Lead to Worse Context-Faithfulness",
+    "Not All LLM-Generated Data Are Equal: Rethinking Data Weighting in Text Classification",
+    "On Calibration of LLM-based Guard Models for Reliable Content Moderation",
+    "Steering Large Language Models between Code Execution and Textual Reasoning",
+    "Taming Overconfidence in LLMs: Reward Calibration in RLHF",
+    "Weak to Strong Generalization for Large Language Models with Multi-capabilities",
+    "Calibrated Language Models and How to Find Them with Label Smoothing",
+    "Prune \u2019n Predict: Optimizing LLM Decision-making with Conformal Prediction",
+    "Restoring Calibration for Aligned Large Language Models: A Calibration-Aware Fine-Tuning Approach",
+    "CARES: A Comprehensive Benchmark of Trustworthiness in Medical Vision Language Models",
+    "GTBench: Uncovering the Strategic Reasoning Capabilities of LLMs via Game-Theoretic Evaluations",
+    "LACIE: Listener-Aware Finetuning for Calibration in Large Language Models",
+    "Perception of Knowledge Boundary for Large Language Models through Semi-open-ended Question Answering"
+  ],
+  "paper_count": 35,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A latent property where the model's confidence in its predictions exceeds its actual accuracy, particularly exacerbated during auto-regressive decoding due to exposure bias.",
+      "paper": "It's Never Too Late: Fusing Acoustic Information into Large Language Models for Automatic Speech Recognition",
+      "original_name": "Over-confidence"
+    },
+    {
+      "text": "A dispositional trait where a model's predicted confidence is systematically higher than its actual accuracy, particularly after fine-tuning.",
+      "paper": "Bayesian Low-rank Adaptation for Large Language Models",
+      "original_name": "Overconfidence"
+    },
+    {
+      "text": "A latent tendency of a model to produce highly confident but incorrect outputs, particularly in cases where multiple consistent hallucinations are generated, evading standard consistency checks.",
+      "paper": "INSIDE: LLMs' Internal States Retain the Power of Hallucination Detection",
+      "original_name": "Overconfident generation"
+    },
+    {
+      "text": "The model's tendency to assign excessive probability to tokens that should have a true probability of zero or near-zero.",
+      "paper": "Closing the Curious Case of Neural Text Degeneration",
+      "original_name": "Probability overestimation"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Evaluation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "CARES: A Comprehensive Benchmark of Trustworthiness in Medical Vision Language Models",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "CARES: A Comprehensive Benchmark of Trustworthiness in Medical Vision Language Models"
+        ],
+        "emnlp25": [
+          "WISE: Weak-Supervision-Guided Step-by-Step Explanations for MultimodalLLMs in Image Classification"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Restoring Calibration for Aligned Large Language Models: A Calibration-Aware Fine-Tuning Approach",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "icml25": [
+          "Restoring Calibration for Aligned Large Language Models: A Calibration-Aware Fine-Tuning Approach",
+          "Calibrated Language Models and How to Find Them with Label Smoothing"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Is Factuality Enhancement a Free Lunch For LLMs? Better Factuality Can Lead to Worse Context-Faithfulness",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Is Factuality Enhancement a Free Lunch For LLMs? Better Factuality Can Lead to Worse Context-Faithfulness",
+          "Calibrating LLMs with Information-Theoretic Evidential Deep Learning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Confidence calibration",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "On Calibration of LLM-based Guard Models for Reliable Content Moderation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "On Calibration of LLM-based Guard Models for Reliable Content Moderation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Factuality",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Is Factuality Enhancement a Free Lunch For LLMs? Better Factuality Can Lead to Worse Context-Faithfulness",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Is Factuality Enhancement a Free Lunch For LLMs? Better Factuality Can Lead to Worse Context-Faithfulness"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "LIFBench: Evaluating the Instruction Following Performance and Stability of Large Language Models in Long-Context Scenarios",
+      "evidence": "Overconfidence on Unknown Knowledge LLMs often show overconfidence when addressing topics beyond their knowledge, delivering assertive but incorrect responses. ... LLMs perform poorly on unfamiliar topics while maintaining high confidence (Agarwal et al., 2023; Deng et al., 2024). (Section 3.2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "LIFBench: Evaluating the Instruction Following Performance and Stability of Large Language Models in Long-Context Scenarios"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Prior knowledge",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "P",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "P"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 7,
+  "incoming_relationship_count": 5,
+  "outgoing_relationship_count": 2,
+  "characterization": "Across the surveyed literature, Overconfidence is predominantly characterized as a dispositional trait where a model's predicted confidence is systematically higher than its actual accuracy. This phenomenon is frequently noted to occur after fine-tuning, particularly on small datasets, and can be exacerbated by mechanisms like auto-regressive decoding. The construct is operationalized by comparing a model's confidence scores to its accuracy, with one study observing that \"the accuracy within each bin is much lower than its corresponding confidence\" (\"Can LLMs Express Their Uncertainty? An Empirical Evaluation of Confidence Elicitation in LLMs\"). It is also identified through behaviors such as producing \"assertive but incorrect responses\" when addressing topics beyond the model's knowledge (\"GradOT: Training-free Gradient-preserving Offsite-tuning for Large Language Models\"). While this framing is most common, a smaller body of work defines it more narrowly as \"probability overestimation\"\u2014assigning excessive probability to unlikely tokens\u2014or, in a game-theoretic context, as overlooking risks to pursue rewards. Several papers report that overconfidence can cause or promote Hallucination. The construct is also studied alongside Faithfulness, with which it appears to have a complex, potentially bidirectional causal relationship, and is a recurring topic in model Evaluation.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Bayesian Low-rank Adaptation for Large Language Models",
+      "Can LLMs Express Their Uncertainty? An Empirical Evaluation of Confidence Elicitation in LLMs",
+      "Closing the Curious Case of Neural Text Degeneration",
+      "Energy-based Automated Model Evaluation",
+      "INSIDE: LLMs' Internal States Retain the Power of Hallucination Detection",
+      "It's Never Too Late: Fusing Acoustic Information into Large Language Models for Automatic Speech Recognition",
+      "Out-of-Distribution Detection by Leveraging Between-Layer Transformation Smoothness"
+    ],
+    "neurips24": [
+      "CARES: A Comprehensive Benchmark of Trustworthiness in Medical Vision Language Models",
+      "GTBench: Uncovering the Strategic Reasoning Capabilities of LLMs via Game-Theoretic Evaluations",
+      "LACIE: Listener-Aware Finetuning for Calibration in Large Language Models",
+      "Perception of Knowledge Boundary for Large Language Models through Semi-open-ended Question Answering"
+    ],
+    "iclr25": [
+      "CREAM: Consistency Regularized Self-Rewarding Language Models",
+      "Calibrating LLMs with Information-Theoretic Evidential Deep Learning",
+      "Is Factuality Enhancement a Free Lunch For LLMs? Better Factuality Can Lead to Worse Context-Faithfulness",
+      "Not All LLM-Generated Data Are Equal: Rethinking Data Weighting in Text Classification",
+      "On Calibration of LLM-based Guard Models for Reliable Content Moderation",
+      "Steering Large Language Models between Code Execution and Textual Reasoning",
+      "Taming Overconfidence in LLMs: Reward Calibration in RLHF",
+      "Weak to Strong Generalization for Large Language Models with Multi-capabilities"
+    ],
+    "acl25": [
+      "ChemActor: Enhancing Automated Extraction of Chemical Synthesis Actions withLLM-Generated Data",
+      "Crab: A Novel Configurable Role-PlayingLLMwith Assessing Benchmark",
+      "FEA-Bench: A Benchmark for Evaluating Repository-Level Code Generation for Feature Implementation",
+      "GradOT: Training-free Gradient-preserving Offsite-tuning for Large Language Models",
+      "LIFBench: Evaluating the Instruction Following Performance and Stability of Large Language Models in Long-Context Scenarios",
+      "P",
+      "ZIPA: A family of efficient models for multilingual phone recognition"
+    ],
+    "icml25": [
+      "Calibrated Language Models and How to Find Them with Label Smoothing",
+      "Prune \u2019n Predict: Optimizing LLM Decision-making with Conformal Prediction",
+      "Restoring Calibration for Aligned Large Language Models: A Calibration-Aware Fine-Tuning Approach"
+    ],
+    "emnlp25": [
+      "DnDScore: Decontextualization and Decomposition for Factuality Verification in Long-Form Text Generation",
+      "Does Acceleration Cause Hidden Instability in Vision Language Models? Uncovering Instance-Level Divergence Through a Large-Scale Empirical Study",
+      "Interdisciplinary Research in Conversation: A Case Study in Computational Morphology for Language Documentation",
+      "Not What the Doctor Ordered: SurveyingLLM-based De-identification and Quantifying Clinical Information Loss",
+      "ViPE: Visual Perception in Parameter Space for Efficient Video-Language Understanding",
+      "What\u2019s in a prompt? Language models encode literary style in prompt embeddings"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 7,
+    "neurips24": 4,
+    "iclr25": 8,
+    "acl25": 7,
+    "icml25": 3,
+    "emnlp25": 6
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "canonical_name": "Structural understanding",
+  "type": "construct",
+  "canonical_definition": "Across the provided literature, 'structural understanding' is consistently framed as a latent ability of models to comprehend and utilize the organization of various data formats. The specific focus varies, with definitions encompassing the hierarchical and semantic information in documents (termed 'structural awareness'), the alignment of natural language to database schemas, the interpretation of complex table layouts, and the comprehension of knowledge graph embeddings. The most common application appears to be in the context of tables and databases, with one paper noting that \"Understanding complex table structures remains a fundamental challenge,\" especially for \"nested/hierarchical tables\" ('ExeCoder: Empowering Large Language Models with Executability Representation for Code Translation'). This construct is operationalized and measured through performance on specific benchmarks; for example, the TableEval benchmark is used to evaluate the \"understanding of table structures.\" Other operationalizations are implied through tasks like schema linking for SQL generation and reasoning over subgraphs. Some research suggests that specialized training, such as contrastive learning, can enable models to \"better encode semantic hierarchies\" ('The Psychology of Falsehood: A Human-Centric Survey of Misinformation Detection'). The construct is also positioned as being related to 'long-context understanding' and is reported to influence 'time series forecasting'.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Structural awareness",
+    "Structural understanding",
+    "Table structure understanding",
+    "Graph structure understanding"
+  ],
+  "papers": [
+    "Distribution Prompting: Understanding the Expressivity of Language Models Through the Next-Token Distributions They Can Produce",
+    "ExeCoder: Empowering Large Language Models with Executability Representation for Code Translation",
+    "MrGuard: A Multilingual Reasoning Guardrail for UniversalLLMSafety",
+    "PhonoThink: Improving Large Language Models\u2019 Reasoning onChinese Phonological Ambiguities",
+    "The Psychology of Falsehood: A Human-Centric Survey of Misinformation Detection",
+    "Tool Preferences in AgenticLLMs are Unreliable",
+    "UniformInformationDensity and Syntactic Reduction: Revisiting *that*-Mentioning inEnglish Complement Clauses"
+  ],
+  "paper_count": 7,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The model's latent ability to comprehend and utilize the hierarchical and semantic information embedded in document structures, such as HTML tags, to improve representation quality.",
+      "paper": "The Psychology of Falsehood: A Human-Centric Survey of Misinformation Detection",
+      "original_name": "Structural awareness"
+    },
+    {
+      "text": "The latent ability to align natural language questions with the structural components of a database schema, including tables, columns, and their relationships, to generate syntactically and semantically valid SQL.",
+      "paper": "PhonoThink: Improving Large Language Models\u2019 Reasoning onChinese Phonological Ambiguities",
+      "original_name": "Structural understanding"
+    },
+    {
+      "text": "The latent ability of an LLM to interpret and reason over complex table layouts, including hierarchical, nested, and concise structures, beyond simple flat tables.",
+      "paper": "ExeCoder: Empowering Large Language Models with Executability Representation for Code Translation",
+      "original_name": "Table structure understanding"
+    },
+    {
+      "text": "The degree to which an LLM comprehends the semantic and topological meaning of graph embeddings derived from knowledge graphs, enabling effective reasoning over subgraphs and neighborhoods.",
+      "paper": "Tool Preferences in AgenticLLMs are Unreliable",
+      "original_name": "Graph structure understanding"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Time series forecasting",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Context-Alignment: Activating and Enhancing LLMs Capabilities in Time Series",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Context-Alignment: Activating and Enhancing LLMs Capabilities in Time Series"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-context understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "The Tug of War Within: Mitigating the Fairness-Privacy Conflicts in Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "The Tug of War Within: Mitigating the Fairness-Privacy Conflicts in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TableEval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "ExeCoder: Empowering Large Language Models with Executability Representation for Code Translation",
+      "evidence": "This approach accommodates various task types within diverse real-world industrial scenarios, including information retrieval, numerical analysis, table reasoning, data analysis, multi-turn dialogue, and understanding of table structures. (Section 3.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "ExeCoder: Empowering Large Language Models with Executability Representation for Code Translation"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 2,
+  "characterization": "Across the provided literature, 'structural understanding' is consistently framed as a latent ability of models to comprehend and utilize the organization of various data formats. The specific focus varies, with definitions encompassing the hierarchical and semantic information in documents (termed 'structural awareness'), the alignment of natural language to database schemas, the interpretation of complex table layouts, and the comprehension of knowledge graph embeddings. The most common application appears to be in the context of tables and databases, with one paper noting that \"Understanding complex table structures remains a fundamental challenge,\" especially for \"nested/hierarchical tables\" ('ExeCoder: Empowering Large Language Models with Executability Representation for Code Translation'). This construct is operationalized and measured through performance on specific benchmarks; for example, the TableEval benchmark is used to evaluate the \"understanding of table structures.\" Other operationalizations are implied through tasks like schema linking for SQL generation and reasoning over subgraphs. Some research suggests that specialized training, such as contrastive learning, can enable models to \"better encode semantic hierarchies\" ('The Psychology of Falsehood: A Human-Centric Survey of Misinformation Detection'). The construct is also positioned as being related to 'long-context understanding' and is reported to influence 'time series forecasting'.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Distribution Prompting: Understanding the Expressivity of Language Models Through the Next-Token Distributions They Can Produce",
+      "ExeCoder: Empowering Large Language Models with Executability Representation for Code Translation",
+      "MrGuard: A Multilingual Reasoning Guardrail for UniversalLLMSafety",
+      "PhonoThink: Improving Large Language Models\u2019 Reasoning onChinese Phonological Ambiguities",
+      "The Psychology of Falsehood: A Human-Centric Survey of Misinformation Detection",
+      "Tool Preferences in AgenticLLMs are Unreliable",
+      "UniformInformationDensity and Syntactic Reduction: Revisiting *that*-Mentioning inEnglish Complement Clauses"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 7
+  },
+  "conferences": [
+    "emnlp25"
+  ]
+}

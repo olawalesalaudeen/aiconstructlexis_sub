@@ -1,0 +1,188 @@
+{
+  "canonical_name": "Context utilization",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, \"Context utilization\" is most commonly described as the extent to which a model incorporates relevant information from a provided context\u2014such as retrieved documents, dialog history, or prior reasoning steps\u2014into its final response. A related framing emphasizes using the full available input context rather than a small portion, while another, termed \"Context reliance,\" focuses on the model's ability to base answers on the context even when it conflicts with pretrained knowledge. The concept is also adapted to specific domains, including \"Graph structure utilization\" for processing topological data and \"Utilization of execution feedback\" for multi-turn code generation. This construct is operationalized in several ways: one paper measures it as a ratio of used information chunks, another designs tasks with fictional facts to test reliance on context over parametric knowledge, and a third proposes \"Effective State-Size (ESS)\" as a proxy for what it calls \"memory utilization.\" To assess this capability, papers use tasks like \"Key-value retrieval\" and metrics such as \"Effective rank.\" \"Context utilization\" is studied alongside \"Faithfulness\" and \"Positional bias\" and is reported to influence \"Text generation quality.\" A recurring finding is that current models often struggle with this ability; as one paper notes, \"contemporary models struggle to effectively utilize additional information from the context window\" (\"Reasoning Limitations of Multimodal Large Language Models. A case study of Bongard Problems\").",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Context utilization",
+    "Effective context utilization",
+    "Context reliance",
+    "Utilization of execution feedback",
+    "Graph structure utilization",
+    "Memory utilization"
+  ],
+  "papers": [
+    "Context-Parametric Inversion: Why Instruction Finetuning May Not Actually Improve Context Reliance",
+    "Follow My Instruction and Spill the Beans: Scalable Data Extraction from Retrieval-Augmented Generation Systems",
+    "Forgetting Transformer: Softmax Attention with a Forget Gate",
+    "Radar: Fast Long-Context Decoding for Any Transformer",
+    "Attention Mechanisms Perspective: Exploring LLM Processing of Graph-Structured Data",
+    "Minerva: A Programmable Memory Test Benchmark for Language Models",
+    "Multi-Turn Code Generation Through Single-Step Rewards",
+    "Quantifying Memory Utilization with Effective State-Size",
+    "Reasoning Limitations of Multimodal Large Language Models. A case study of Bongard Problems",
+    "BABILong: Testing the Limits of LLMs with Long Context Reasoning-in-a-Haystack",
+    "Found in the Middle: How Language Models Use Long Contexts Better via Plug-and-Play Positional Encoding",
+    "RAGChecker: A Fine-grained Framework for Diagnosing Retrieval-Augmented Generation",
+    "Stress-Testing Long-Context Language Models with Lifelong ICL and Task Haystack"
+  ],
+  "paper_count": 13,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The extent to which a generator effectively incorporates relevant information from retrieved documents into its final response.",
+      "paper": "RAGChecker: A Fine-grained Framework for Diagnosing Retrieval-Augmented Generation",
+      "original_name": "Context utilization"
+    },
+    {
+      "text": "The degree to which a model makes use of the full available input context rather than relying on only a small portion of it.",
+      "paper": "BABILong: Testing the Limits of LLMs with Long Context Reasoning-in-a-Haystack",
+      "original_name": "Effective context utilization"
+    },
+    {
+      "text": "The model's ability and tendency to base its answers on information provided in the input context, especially when it conflicts with pretrained knowledge.",
+      "paper": "Context-Parametric Inversion: Why Instruction Finetuning May Not Actually Improve Context Reliance",
+      "original_name": "Context reliance"
+    },
+    {
+      "text": "The extent to which a model effectively leverages the topological connectivity information of a graph to perform a task.",
+      "paper": "Attention Mechanisms Perspective: Exploring LLM Processing of Graph-Structured Data",
+      "original_name": "Graph structure utilization"
+    },
+    {
+      "text": "The latent ability of a model to effectively incorporate execution outcomes from public tests to improve subsequent code generations across turns.",
+      "paper": "Multi-Turn Code Generation Through Single-Step Rewards",
+      "original_name": "Utilization of execution feedback"
+    },
+    {
+      "text": "The internal mechanism by which a model stores and leverages past information to generate future outputs, distinct from its total memory capacity.",
+      "paper": "Quantifying Memory Utilization with Effective State-Size",
+      "original_name": "Memory utilization"
+    }
+  ],
+  "definition_count": 6,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "RAGChecker: A Fine-grained Framework for Diagnosing Retrieval-Augmented Generation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "RAGChecker: A Fine-grained Framework for Diagnosing Retrieval-Augmented Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Positional bias",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Found in the Middle: How Language Models Use Long Contexts Better via Plug-and-Play Positional Encoding",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Found in the Middle: How Language Models Use Long Contexts Better via Plug-and-Play Positional Encoding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Key-value retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Found in the Middle: How Language Models Use Long Contexts Better via Plug-and-Play Positional Encoding",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Found in the Middle: How Language Models Use Long Contexts Better via Plug-and-Play Positional Encoding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generation quality",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Radar: Fast Long-Context Decoding for Any Transformer",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Radar: Fast Long-Context Decoding for Any Transformer"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Information retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Minerva: A Programmable Memory Test Benchmark for Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Minerva: A Programmable Memory Test Benchmark for Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Effective rank",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Quantifying Memory Utilization with Effective State-Size",
+      "evidence": "we propose effective state-size (ESS) \u2013 a metric computed by taking the rank of Ti:,:i\u22121 \u2013 as a proxy for memory utilization in LIVs (Section 3).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Quantifying Memory Utilization with Effective State-Size"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 6,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 6,
+  "characterization": "Across the surveyed literature, \"Context utilization\" is most commonly described as the extent to which a model incorporates relevant information from a provided context\u2014such as retrieved documents, dialog history, or prior reasoning steps\u2014into its final response. A related framing emphasizes using the full available input context rather than a small portion, while another, termed \"Context reliance,\" focuses on the model's ability to base answers on the context even when it conflicts with pretrained knowledge. The concept is also adapted to specific domains, including \"Graph structure utilization\" for processing topological data and \"Utilization of execution feedback\" for multi-turn code generation. This construct is operationalized in several ways: one paper measures it as a ratio of used information chunks, another designs tasks with fictional facts to test reliance on context over parametric knowledge, and a third proposes \"Effective State-Size (ESS)\" as a proxy for what it calls \"memory utilization.\" To assess this capability, papers use tasks like \"Key-value retrieval\" and metrics such as \"Effective rank.\" \"Context utilization\" is studied alongside \"Faithfulness\" and \"Positional bias\" and is reported to influence \"Text generation quality.\" A recurring finding is that current models often struggle with this ability; as one paper notes, \"contemporary models struggle to effectively utilize additional information from the context window\" (\"Reasoning Limitations of Multimodal Large Language Models. A case study of Bongard Problems\").",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "BABILong: Testing the Limits of LLMs with Long Context Reasoning-in-a-Haystack",
+      "Found in the Middle: How Language Models Use Long Contexts Better via Plug-and-Play Positional Encoding",
+      "RAGChecker: A Fine-grained Framework for Diagnosing Retrieval-Augmented Generation",
+      "Stress-Testing Long-Context Language Models with Lifelong ICL and Task Haystack"
+    ],
+    "iclr25": [
+      "Context-Parametric Inversion: Why Instruction Finetuning May Not Actually Improve Context Reliance",
+      "Follow My Instruction and Spill the Beans: Scalable Data Extraction from Retrieval-Augmented Generation Systems",
+      "Forgetting Transformer: Softmax Attention with a Forget Gate",
+      "Radar: Fast Long-Context Decoding for Any Transformer"
+    ],
+    "icml25": [
+      "Attention Mechanisms Perspective: Exploring LLM Processing of Graph-Structured Data",
+      "Minerva: A Programmable Memory Test Benchmark for Language Models",
+      "Multi-Turn Code Generation Through Single-Step Rewards",
+      "Quantifying Memory Utilization with Effective State-Size",
+      "Reasoning Limitations of Multimodal Large Language Models. A case study of Bongard Problems"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 4,
+    "iclr25": 4,
+    "icml25": 5
+  },
+  "conferences": [
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "canonical_name": "Out-of-distribution detection",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, out-of-distribution (OOD) detection is consistently defined as the task of identifying input samples that originate from a data distribution different from the one a model was trained on. The most common operationalization described is assigning a higher uncertainty score to OOD samples compared to in-distribution (ID) ones. In this context, OOD detection is framed as a \"key benchmark for assessing the performance of uncertainty-aware methods\" (\"Calibrating LLMs with Information-Theoretic Evidential Deep Learning\"). This behavior is measured by training a model on an ID dataset and then evaluating its ability to identify samples from designated OOD datasets. For example, studies use ARC-Challenge and ARC-Easy as OOD datasets after training on OBQA, or use SVHN after training on CIFAR100-LT. Another measurement approach involves using an out-of-distribution language, such as evaluating on Samoan translations of the TQA dataset. A model's capacity for OOD detection is reported to be influenced by its visual interpretation abilities, with one paper stating that \"high interpretability of visual features contributes to stronger OoDD capabilities.\"",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Out-of-distribution detection",
+    "OOD detection"
+  ],
+  "papers": [
+    "Adapting Multi-modal Large Language Model to Concept Drift From Pre-training Onwards",
+    "Calibrating LLMs with Information-Theoretic Evidential Deep Learning",
+    "Scalable Bayesian Learning with posteriors"
+  ],
+  "paper_count": 3,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The observable task of identifying whether a given input sample comes from a different data distribution than the one the model was trained on, typically by assigning it a higher uncertainty score.",
+      "paper": "Calibrating LLMs with Information-Theoretic Evidential Deep Learning",
+      "original_name": "Out-of-distribution detection"
+    },
+    {
+      "text": "The task of identifying input samples that do not belong to the training distribution.",
+      "paper": "Adapting Multi-modal Large Language Model to Concept Drift From Pre-training Onwards",
+      "original_name": "OOD detection"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-Challenge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Calibrating LLMs with Information-Theoretic Evidential Deep Learning",
+      "evidence": "We fine-tune the LLMs on OBQA (as the ID dataset) and test them on ARC-C, ARC-E, and CSQA (as OOD dataset).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Calibrating LLMs with Information-Theoretic Evidential Deep Learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-Easy",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Calibrating LLMs with Information-Theoretic Evidential Deep Learning",
+      "evidence": "We fine-tune the LLMs on OBQA (as the ID dataset) and test them on ARC-C, ARC-E, and CSQA (as OOD dataset).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Calibrating LLMs with Information-Theoretic Evidential Deep Learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CommonsenseQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Calibrating LLMs with Information-Theoretic Evidential Deep Learning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Calibrating LLMs with Information-Theoretic Evidential Deep Learning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual interpretation",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Reflexive Guidance: Improving OoDD in Vision-Language Models via Self-Guided Image-Adaptive Concept Generation",
+      "evidence": "We found that one of the reasons for this discrepancy is the insufficient image interpretation capabilities of these models, which limits their ability to accurately distinguish between ID and OoD inputs. (Section 1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Reflexive Guidance: Improving OoDD in Vision-Language Models via Self-Guided Image-Adaptive Concept Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SVHN",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Adapting Multi-modal Large Language Model to Concept Drift From Pre-training Onwards",
+      "evidence": "The model is trained on CIFAR100-LT Krizhevsky & Hinton (2009) with an imbalance ratio of 100, and validated on external OOD datasets including SVHN Netzer et al. (2011), Places365 Zhou et al. (2017), LSUN Yu et al., iSUN Xu et al. and Texture Cimpoi et al. (2014). (Section 3)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Adapting Multi-modal Large Language Model to Concept Drift From Pre-training Onwards"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Scalable Bayesian Learning with posteriors",
+      "evidence": "We then repeat the experiment with the statements translated into Samoan, an out-of-distribution language for TQA (Kembhavi et al., 2017).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Scalable Bayesian Learning with posteriors"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Uncertainty estimation",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Scalable Bayesian Learning with posteriors",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Scalable Bayesian Learning with posteriors"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 7,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 5,
+  "characterization": "Across the provided literature, out-of-distribution (OOD) detection is consistently defined as the task of identifying input samples that originate from a data distribution different from the one a model was trained on. The most common operationalization described is assigning a higher uncertainty score to OOD samples compared to in-distribution (ID) ones. In this context, OOD detection is framed as a \"key benchmark for assessing the performance of uncertainty-aware methods\" (\"Calibrating LLMs with Information-Theoretic Evidential Deep Learning\"). This behavior is measured by training a model on an ID dataset and then evaluating its ability to identify samples from designated OOD datasets. For example, studies use ARC-Challenge and ARC-Easy as OOD datasets after training on OBQA, or use SVHN after training on CIFAR100-LT. Another measurement approach involves using an out-of-distribution language, such as evaluating on Samoan translations of the TQA dataset. A model's capacity for OOD detection is reported to be influenced by its visual interpretation abilities, with one paper stating that \"high interpretability of visual features contributes to stronger OoDD capabilities.\"",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Adapting Multi-modal Large Language Model to Concept Drift From Pre-training Onwards",
+      "Calibrating LLMs with Information-Theoretic Evidential Deep Learning",
+      "Scalable Bayesian Learning with posteriors"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3
+  },
+  "conferences": [
+    "iclr25"
+  ]
+}

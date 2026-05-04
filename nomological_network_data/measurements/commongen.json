@@ -1,0 +1,146 @@
+{
+  "canonical_name": "CommonGen",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, CommonGen is consistently characterized as a dataset for commonsense-guided text generation. The core task requires a model to generate a coherent sentence describing a scenario from a given set of concepts, which some papers refer to as \"keywords.\" One source specifies that each instance contains three to five such keywords. The prevailing use of CommonGen is to measure the behavior of `Text generation` and the construct of `Text generation quality`, with one study specifically labeling the task \"concept-to-sentence generation.\" A common alternative framing describes it as a benchmark for `generative commonsense reasoning`. Additionally, some work uses the dataset to assess more specific constructs like `conceptual coherence` and `generative fluency`. A smaller number of papers frame it as a \"struct-to-text\" task or employ it to evaluate model adaptation under concept-based distribution shifts.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "CommonGen"
+  ],
+  "papers": [
+    "CEAES: Bidirectional Reinforcement Learning Optimization for Consistent and Explainable Essay Assessment",
+    "I0T: Embedding Standardization Method Towards Zero Modality Gap",
+    "Language Model Self-improvement by Reinforcement Learning Contemplation",
+    "Mixture of LoRA Experts",
+    "Vanishing Gradients in Reinforcement Finetuning of Language Models",
+    "Joint Localization and Activation Editing for Low-Resource Fine-Tuning",
+    "Logits are All We Need to Adapt Closed Models"
+  ],
+  "paper_count": 7,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A commonsense-guided text generation dataset that requires models to generate a sentence describing a scenario using a given set of concepts.",
+      "paper": "Language Model Self-improvement by Reinforcement Learning Contemplation",
+      "original_name": "CommonGen"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text generation quality",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Language Model Self-improvement by Reinforcement Learning Contemplation",
+      "evidence": "We conduct experiments to compare the text generation and evaluation abilities of LLMs using the CommonGen (Lin et al., 2020) task, which involves generating a sentence that describes an everyday scenario based on a given set of common concepts (Section 4.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Language Model Self-improvement by Reinforcement Learning Contemplation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Critique",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Language Model Self-improvement by Reinforcement Learning Contemplation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Language Model Self-improvement by Reinforcement Learning Contemplation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Logits are All We Need to Adapt Closed Models",
+      "evidence": "We evaluate Plugin on four text generation benchmarks: (a) E2E NLG (Du\u02c7sek et al., 2020), (b) Web NLG (Gardent et al., 2017), (c) CommonGen (Lin et al., 2020), and (d) the Adidas product description dataset (adi, 2023). (Section 7)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Logits are All We Need to Adapt Closed Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Adaptable Logical Control for Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Adaptable Logical Control for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Constraint satisfaction",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Diversity Helps Jailbreak Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Diversity Helps Jailbreak Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Constrained decoding",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "CEAES: Bidirectional Reinforcement Learning Optimization for Consistent and Explainable Essay Assessment",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "CEAES: Bidirectional Reinforcement Learning Optimization for Consistent and Explainable Essay Assessment"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 6,
+  "incoming_relationship_count": 6,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, CommonGen is consistently characterized as a dataset for commonsense-guided text generation. The core task requires a model to generate a coherent sentence describing a scenario from a given set of concepts, which some papers refer to as \"keywords.\" One source specifies that each instance contains three to five such keywords. The prevailing use of CommonGen is to measure the behavior of `Text generation` and the construct of `Text generation quality`, with one study specifically labeling the task \"concept-to-sentence generation.\" A common alternative framing describes it as a benchmark for `generative commonsense reasoning`. Additionally, some work uses the dataset to assess more specific constructs like `conceptual coherence` and `generative fluency`. A smaller number of papers frame it as a \"struct-to-text\" task or employ it to evaluate model adaptation under concept-based distribution shifts.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Language Model Self-improvement by Reinforcement Learning Contemplation",
+      "Mixture of LoRA Experts",
+      "Vanishing Gradients in Reinforcement Finetuning of Language Models"
+    ],
+    "acl25": [
+      "CEAES: Bidirectional Reinforcement Learning Optimization for Consistent and Explainable Essay Assessment",
+      "I0T: Embedding Standardization Method Towards Zero Modality Gap"
+    ],
+    "icml25": [
+      "Joint Localization and Activation Editing for Low-Resource Fine-Tuning",
+      "Logits are All We Need to Adapt Closed Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 3,
+    "acl25": 2,
+    "icml25": 2
+  },
+  "conferences": [
+    "acl25",
+    "iclr24",
+    "icml25"
+  ]
+}

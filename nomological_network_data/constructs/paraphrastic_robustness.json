@@ -1,0 +1,80 @@
+{
+  "canonical_name": "Paraphrastic robustness",
+  "type": "construct",
+  "canonical_definition": "Across the provided literature, paraphrastic robustness is most commonly defined as a model's ability to maintain stable performance or produce consistent behavior when an input like a question or instruction is rephrased without changing its underlying semantic meaning. A related but broader conceptualization, termed 'robustness to spurious features' in one paper, extends this to include stability against any meaning-preserving variations, such as changes in prompt formatting. The construct is operationalized by evaluating whether a model can produce the same correct output or behavior across multiple linguistic variations of the same prompt. For instance, one study measures this by using the CounterFact dataset and \"computing the percentage of datapoints where the model gets all paraphrases of a given question correct.\" This form of robustness is treated as a specific type of generalization, with another paper using \"unseen instruction datasets\" for its measurement. The stability of model behavior under these variations is presented as a consideration when making claims about a model's general abilities.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Paraphrastic robustness",
+    "Robustness to paraphrases",
+    "Robustness to spurious features"
+  ],
+  "papers": [
+    "Large Language Models as Generalizable Policies for Embodied Tasks",
+    "Quantifying Language Models' Sensitivity to Spurious Features in Prompt Design or: How I learned to start worrying about prompt formatting",
+    "The Truth is in There: Improving Reasoning in Language Models with Layer-Selective Rank Reduction",
+    "Grounding Multimodal Large Language Models in Actions",
+    "KALM: Knowledgeable Agents by Offline Reinforcement Learning from Large Language Model Rollouts"
+  ],
+  "paper_count": 5,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The stability of a model's performance when a question or prompt is rephrased without changing its semantic meaning.",
+      "paper": "The Truth is in There: Improving Reasoning in Language Models with Layer-Selective Rank Reduction",
+      "original_name": "Robustness to paraphrases"
+    },
+    {
+      "text": "The ability of a model to maintain stable performance despite the presence of irrelevant or meaning-preserving variations in the input, such as prompt formatting.",
+      "paper": "Quantifying Language Models' Sensitivity to Spurious Features in Prompt Design or: How I learned to start worrying about prompt formatting",
+      "original_name": "Robustness to spurious features"
+    },
+    {
+      "text": "The latent ability of a model to produce consistent, correct behavior despite linguistic variations in task instructions, such as rephrasing or indirect object references, when the underlying intention remains unchanged.",
+      "paper": "Large Language Models as Generalizable Policies for Embodied Tasks",
+      "original_name": "Paraphrastic robustness"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CounterFact",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "The Truth is in There: Improving Reasoning in Language Models with Layer-Selective Rank Reduction",
+      "evidence": "We evaluate the model\u2019s robustness to paraphrases by computing the percentage of datapoints where the model gets all paraphrases of a given question correct. (Section 5.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "The Truth is in There: Improving Reasoning in Language Models with Layer-Selective Rank Reduction"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the provided literature, paraphrastic robustness is most commonly defined as a model's ability to maintain stable performance or produce consistent behavior when an input like a question or instruction is rephrased without changing its underlying semantic meaning. A related but broader conceptualization, termed 'robustness to spurious features' in one paper, extends this to include stability against any meaning-preserving variations, such as changes in prompt formatting. The construct is operationalized by evaluating whether a model can produce the same correct output or behavior across multiple linguistic variations of the same prompt. For instance, one study measures this by using the CounterFact dataset and \"computing the percentage of datapoints where the model gets all paraphrases of a given question correct.\" This form of robustness is treated as a specific type of generalization, with another paper using \"unseen instruction datasets\" for its measurement. The stability of model behavior under these variations is presented as a consideration when making claims about a model's general abilities.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Large Language Models as Generalizable Policies for Embodied Tasks",
+      "Quantifying Language Models' Sensitivity to Spurious Features in Prompt Design or: How I learned to start worrying about prompt formatting",
+      "The Truth is in There: Improving Reasoning in Language Models with Layer-Selective Rank Reduction"
+    ],
+    "neurips24": [
+      "Grounding Multimodal Large Language Models in Actions",
+      "KALM: Knowledgeable Agents by Offline Reinforcement Learning from Large Language Model Rollouts"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 3,
+    "neurips24": 2
+  },
+  "conferences": [
+    "iclr24",
+    "neurips24"
+  ]
+}

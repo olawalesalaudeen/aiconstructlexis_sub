@@ -1,0 +1,477 @@
+{
+  "canonical_name": "Anthropic HH (RLHF)",
+  "type": "measurement",
+  "canonical_definition": "Across the surveyed literature, Anthropic HH (RLHF) is a dataset used for training and evaluating language models on alignment with human preferences. The dataset is consistently described as containing human-AI conversations, often in a multi-turn dialogue format, where two model-generated responses to a prompt are compared and one is labeled as preferred by human annotators. The primary criteria for these preference judgments are consistently cited as helpfulness and harmlessness. Papers in this set use the dataset to measure these two constructs directly, as well as related concepts like `Human preference alignment` and `Safety alignment`. The data is also used to assess behaviors such as `Dialogue generation` and phenomena like `Reward overoptimization`. While the core dataset focuses on helpfulness and harmlessness, some studies utilize distinct subsets like `HH-RLHF-helpful` and `HH-RLHF-harmless` to isolate these criteria. A few papers also mention other variations, including a version that adds \"honesty\" as a criterion (`Anthropic HHH`) and a modified version with higher-quality preferred responses (`HH-Golden dataset`). One paper notes that while the data can be multi-turn, it is \"common to first convert from multi-turn into a single-turn format\" (\"Regressing the Relative Future: Efficient Policy Optimization for Multi-turn RLHF\").",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Anthropic-RLHF-HH",
+    "Anthropic/HH-RLHF",
+    "HH-RLHF",
+    "HH-RLHF*",
+    "hh-rlhf",
+    "Anthropic HH",
+    "ANTHROPIC HH",
+    "Anthropic-HH",
+    "HH-rlhf",
+    "HH-RLHF-harmless",
+    "HH-RLHF-helpful",
+    "Anthropic HH dataset",
+    "Anthropic harmless data",
+    "HH",
+    "HH-Golden dataset",
+    "Anthropic Harmlessness dataset",
+    "Anthropic Helpfulness dataset",
+    "Anthropic Helpfulness and Harmlessness (HH)",
+    "Helpful & Harmless",
+    "Anthropic Helpfulness-Harmlessness dataset",
+    "Helpful-Harmless dataset"
+  ],
+  "papers": [
+    "Accelerated Test-Time Scaling with Model-Free Speculative Sampling",
+    "Unlearning vs. Obfuscation: Are We Truly Removing Knowledge?",
+    "ARGS: Alignment as Reward-Guided Search",
+    "Beyond Imitation: Leveraging Fine-grained Quality Signals for Alignment",
+    "Compositional Preference Models for Aligning LMs",
+    "Enabling Lanuguage Models to Implicitly Learn Self-Improvement",
+    "Improving Generalization of Alignment with Human Preferences through Group Invariant Learning",
+    "Tool-Augmented Reward Modeling",
+    "Towards Understanding Sycophancy in Language Models",
+    "An Emulator for Fine-tuning Large Language Models using Small Language Models",
+    "Language Model Inversion",
+    "Training Socially Aligned Language Models on Simulated Social Interactions",
+    "3D-Properties: Identifying Challenges in DPO and Charting a Path Forward",
+    "Diverse Preference Learning for Capabilities and Alignment",
+    "Entropy-based Activation Function Optimization: A Method on Searching Better Activation Functions",
+    "Failures to Find Transferable Image Jailbreaks Between Vision-Language Models",
+    "Forewarned is Forearmed:  Harnessing LLMs for Data Synthesis via Failure-induced Exploration",
+    "GenARM: Reward Guided Generation with Autoregressive Reward Model for Test-Time Alignment",
+    "How to Evaluate Reward Models for RLHF",
+    "Interpreting Language Reward Models via Contrastive Explanations",
+    "Joint Reward and Policy Learning with Demonstrations and Human Feedback Improves Alignment",
+    "Large Language Models can Become Strong Self-Detoxifiers",
+    "Learn Your Reference Model for Real Good Alignment",
+    "Learning Dynamics of LLM Finetuning",
+    "Learning How Hard to Think: Input-Adaptive Allocation of LM Computation",
+    "MA-RLHF: Reinforcement Learning from Human Feedback with Macro Actions",
+    "MACPO: Weak-to-Strong Alignment via Multi-Agent Contrastive Preference Optimization",
+    "MAP: Multi-Human-Value Alignment Palette",
+    "MallowsPO: Fine-Tune Your LLM with Preference Dispersions",
+    "Measuring memorization in RLHF for code completion",
+    "Model Editing as a Robust and Denoised variant of DPO: A Case Study on Toxicity",
+    "More RLHF, More Trust? On The Impact of Preference Alignment On Trustworthiness",
+    "On a Connection Between Imitation Learning and RLHF",
+    "On-the-fly Preference Alignment via Principle-Guided Decoding",
+    "Q-Adapter: Customizing Pre-trained LLMs to New Preferences with Forgetting Mitigation",
+    "Regressing the Relative Future: Efficient Policy Optimization for Multi-turn RLHF",
+    "SEAL: Safety-enhanced Aligned LLM Fine-tuning via Bilevel Data Selection",
+    "SELF-EVOLVED REWARD LEARNING FOR LLMS",
+    "SeRA: Self-Reviewing and Alignment of LLMs using Implicit Reward Margins",
+    "SimPER: A Minimalist Approach to Preference  Alignment without Hyperparameters",
+    "Super(ficial)-alignment: Strong Models May Deceive Weak Models in Weak-to-Strong Generalization",
+    "TIS-DPO: Token-level Importance Sampling for Direct Preference Optimization With Estimated Weights",
+    "Towards Robust Alignment of Language Models: Distributionally Robustifying Direct Preference Optimization",
+    "Uncertainty and Influence aware Reward Model Refinement for Reinforcement Learning from Human Feedback",
+    "Weak-to-Strong Preference Optimization: Stealing Reward from Weak Aligned Model",
+    "Bounded Rationality for LLMs: Satisficing Alignment at Inference-Time",
+    "Explaining the role of Intrinsic Dimensionality in Adversarial Training",
+    "HPS: Hard Preference Sampling for Human Preference Alignment",
+    "InfAlign: Inference-aware language model alignment",
+    "Layer-wise Alignment: Examining Safety Alignment Across Image Encoder Layers in Vision Language Models",
+    "MPO: An Efficient Post-Processing Framework for Mixing Diverse Preference Alignment",
+    "Overtrained Language Models Are Harder to Fine-Tune",
+    "PARM: Multi-Objective Test-Time Alignment via Preference-Aware Autoregressive Reward Model",
+    "Position: Challenges and Future Directions of Data-Centric AI Alignment",
+    "Preference Learning for AI Alignment: a Causal Perspective",
+    "Preference learning made easy: Everything should be understood through win rate",
+    "Projection Optimization: A General Framework for Multi-Objective and Multi-Group RLHF",
+    "RLTHF: Targeted Human Feedback for LLM Alignment",
+    "Right Now, Wrong Then: Non-Stationary Direct Preference Optimization under Preference Drift",
+    "RuleAdapter: Dynamic Rules for training Safety Reward Models in RLHF",
+    "Test-Time Preference Optimization: On-the-Fly Alignment via Iterative Textual Feedback",
+    "Tokenized Bandit for LLM Decoding and Alignment",
+    "TuCo: Measuring the Contribution of Fine-Tuning to Individual Responses of LLMs",
+    "CodexGraph: Bridging Large Language Models and Code Repositories via Code Graph Databases",
+    "DeCAP: Context-Adaptive Prompt Generation for Debiasing Zero-shot Question Answering in Large Language Models",
+    "EMS-SD: Efficient Multi-sample Speculative Decoding for Accelerating Large Language Models",
+    "On Positional Bias of Faithfulness for Long-form Summarization",
+    "PromptRefine: Enhancing Few-Shot Performance on Low-ResourceIndic Languages with Example Selection from related Example Banks",
+    "In-Context Learning with Long-Context Models: An In-Depth Exploration",
+    "On the Impact of Fine-Tuning on Chain-of-Thought Reasoning",
+    "Cal-DPO: Calibrated Direct Preference Optimization for Language Model Alignment",
+    "Learning Goal-Conditioned Representations for Language Reward Models",
+    "Scaling Laws for Reward Model Overoptimization in Direct Alignment Algorithms"
+  ],
+  "paper_count": 73,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The helpfulness and harmlessness dataset from Anthropic (Bai et al., 2022a), containing human preference comparisons between model responses, used here to analyze what behaviors are incentivized.",
+      "paper": "Towards Understanding Sycophancy in Language Models",
+      "original_name": "hh-rlhf"
+    },
+    {
+      "text": "Dataset of human-AI conversation pairs used to train and evaluate helpful and harmless behavior in language models, containing preference-labeled responses for alignment evaluation.",
+      "paper": "Enabling Lanuguage Models to Implicitly Learn Self-Improvement",
+      "original_name": "Anthropic/HH-RLHF"
+    },
+    {
+      "text": "The Helpful and Harmless dataset from Anthropic, a benchmark for alignment that consists of prompts each with two responses, where one is preferred by human annotators based on helpfulness and harmlessness.",
+      "paper": "ARGS: Alignment as Reward-Guided Search",
+      "original_name": "HH-RLHF"
+    },
+    {
+      "text": "A 150-instance subset of the HH-RLHF dataset used for out-of-domain evaluation to test the model's ability to generalize its preference scoring to unseen prompts.",
+      "paper": "Tool-Augmented Reward Modeling",
+      "original_name": "HH-RLHF*"
+    },
+    {
+      "text": "A large-scale dataset of human feedback on AI assistant responses, containing preference data for both helpful and harmless conversations.",
+      "paper": "Improving Generalization of Alignment with Human Preferences through Group Invariant Learning",
+      "original_name": "Anthropic-RLHF-HH"
+    },
+    {
+      "text": "A preference dataset for evaluating helpfulness and harmlessness, consisting of prompts with two model-generated continuations ranked by human labelers.",
+      "paper": "Joint Reward and Policy Learning with Demonstrations and Human Feedback Improves Alignment",
+      "original_name": "Anthropic-HH"
+    },
+    {
+      "text": "The Anthropic Helpful and Harmless dataset, a collection of multi-turn dialogues used to train and evaluate models on their ability to be helpful while avoiding harmful responses.",
+      "paper": "Regressing the Relative Future: Efficient Policy Optimization for Multi-turn RLHF",
+      "original_name": "Anthropic HH"
+    },
+    {
+      "text": "The Anthropic Helpful and Harmless dataset, which contains pairs of multi-turn dialogues designed to evaluate a model's ability to be both helpful and safe.",
+      "paper": "SEAL: Safety-enhanced Aligned LLM Fine-tuning via Bilevel Data Selection",
+      "original_name": "ANTHROPIC HH"
+    },
+    {
+      "text": "A preference dataset used for training and evaluation in the comparison between DPO and reward-model training.",
+      "paper": "3D-Properties: Identifying Challenges in DPO and Charting a Path Forward",
+      "original_name": "HH-rlhf"
+    },
+    {
+      "text": "A binary human-preference dataset of helpfulness-oriented response comparisons used to test reward-model explanations.",
+      "paper": "Interpreting Language Reward Models via Contrastive Explanations",
+      "original_name": "HH-RLHF-helpful"
+    },
+    {
+      "text": "A binary human-preference dataset of harmlessness-oriented response comparisons used to test reward-model explanations.",
+      "paper": "Interpreting Language Reward Models via Contrastive Explanations",
+      "original_name": "HH-RLHF-harmless"
+    },
+    {
+      "text": "The test split of the Anthropic Helpful and Harmless (HH) dataset, used to evaluate model alignment by assessing responses in single-step human-assistant interactions.",
+      "paper": "Weak-to-Strong Preference Optimization: Stealing Reward from Weak Aligned Model",
+      "original_name": "Anthropic HH dataset"
+    },
+    {
+      "text": "A dataset of human preference comparisons over helpful, harmless, and honest AI responses, used here as a source of harmful prompts and responses.",
+      "paper": "Failures to Find Transferable Image Jailbreaks Between Vision-Language Models",
+      "original_name": "Anthropic HHH"
+    },
+    {
+      "text": "A dataset of human-AI conversations used as a source of prompts for evaluating alignment on conversational tasks.",
+      "paper": "MAP: Multi-Human-Value Alignment Palette",
+      "original_name": "Anthropic harmless data"
+    },
+    {
+      "text": "The Anthropic Helpful and Harmless dataset, a collection of human preference data comparing model responses to evaluate and align language models.",
+      "paper": "Entropy-based Activation Function Optimization: A Method on Searching Better Activation Functions",
+      "original_name": "HH"
+    },
+    {
+      "text": "A preference dataset, modified from HH-RLHF, used to evaluate a model's alignment with a broad spectrum of human preferences.",
+      "paper": "Model Editing as a Robust and Denoised variant of DPO: A Case Study on Toxicity",
+      "original_name": "HH-Golden dataset"
+    },
+    {
+      "text": "A dataset consisting of multi-turn dialogues between a human and a digital assistant, with human preference labels indicating which of two responses is more helpful.",
+      "paper": "InfAlign: Inference-aware language model alignment",
+      "original_name": "Anthropic Helpfulness dataset"
+    },
+    {
+      "text": "A dataset of multi-turn dialogues with human preference labels, designed to train and evaluate a model's ability to avoid generating harmful or unsafe content.",
+      "paper": "InfAlign: Inference-aware language model alignment",
+      "original_name": "Anthropic Harmlessness dataset"
+    },
+    {
+      "text": "A dataset of human preference comparisons between model responses, focused on the criteria of being helpful and harmless.",
+      "paper": "Preference learning made easy: Everything should be understood through win rate",
+      "original_name": "Anthropic Helpfulness and Harmlessness (HH)"
+    },
+    {
+      "text": "A preference dataset used to construct non-stationary preference data for LLM fine-tuning experiments.",
+      "paper": "Right Now, Wrong Then: Non-Stationary Direct Preference Optimization under Preference Drift",
+      "original_name": "Helpful & Harmless"
+    },
+    {
+      "text": "A dataset containing conversations where human labelers compare two model responses based on helpfulness and harmlessness criteria.",
+      "paper": "Scaling Laws for Reward Model Overoptimization in Direct Alignment Algorithms",
+      "original_name": "Anthropic Helpfulness-Harmlessness dataset"
+    },
+    {
+      "text": "A large-scale dataset of human preference labels used for training and evaluating models on helpfulness and harmlessness.",
+      "paper": "Learning Goal-Conditioned Representations for Language Reward Models",
+      "original_name": "Helpful-Harmless dataset"
+    }
+  ],
+  "definition_count": 22,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Prompt Risk Control: A Rigorous Framework for Responsible Deployment of Large Language Models",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr24": [
+          "Prompt Risk Control: A Rigorous Framework for Responsible Deployment of Large Language Models"
+        ],
+        "iclr25": [
+          "Your Weak LLM is Secretly a Strong Teacher for Alignment"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Dialogue generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Chain of Hindsight aligns Language Models with Feedback",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr24": [
+          "Chain of Hindsight aligns Language Models with Feedback"
+        ],
+        "iclr25": [
+          "MallowsPO: Fine-Tune Your LLM with Preference Dispersions"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmlessness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Your Weak LLM is Secretly a Strong Teacher for Alignment",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Your Weak LLM is Secretly a Strong Teacher for Alignment"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Enabling Lanuguage Models to Implicitly Learn Self-Improvement",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Enabling Lanuguage Models to Implicitly Learn Self-Improvement"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Harmlessness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Enabling Lanuguage Models to Implicitly Learn Self-Improvement",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Enabling Lanuguage Models to Implicitly Learn Self-Improvement"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Human preference alignment",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Language Models as Implicit Tree Search",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Language Models as Implicit Tree Search"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reward overoptimization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Scaling Laws for Reward Model Overoptimization in Direct Alignment Algorithms",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Scaling Laws for Reward Model Overoptimization in Direct Alignment Algorithms"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Conversational response generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "MAP: Multi-Human-Value Alignment Palette",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "MAP: Multi-Human-Value Alignment Palette"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Safety alignment",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "SEAL: Safety-enhanced Aligned LLM Fine-tuning via Bilevel Data Selection",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "SEAL: Safety-enhanced Aligned LLM Fine-tuning via Bilevel Data Selection"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Memorization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Measuring memorization in RLHF for code completion",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Measuring memorization in RLHF for code completion"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 10,
+  "incoming_relationship_count": 7,
+  "outgoing_relationship_count": 3,
+  "characterization": "Across the surveyed literature, Anthropic HH (RLHF) is a dataset used for training and evaluating language models on alignment with human preferences. The dataset is consistently described as containing human-AI conversations, often in a multi-turn dialogue format, where two model-generated responses to a prompt are compared and one is labeled as preferred by human annotators. The primary criteria for these preference judgments are consistently cited as helpfulness and harmlessness. Papers in this set use the dataset to measure these two constructs directly, as well as related concepts like `Human preference alignment` and `Safety alignment`. The data is also used to assess behaviors such as `Dialogue generation` and phenomena like `Reward overoptimization`. While the core dataset focuses on helpfulness and harmlessness, some studies utilize distinct subsets like `HH-RLHF-helpful` and `HH-RLHF-harmless` to isolate these criteria. A few papers also mention other variations, including a version that adds \"honesty\" as a criterion (`Anthropic HHH`) and a modified version with higher-quality preferred responses (`HH-Golden dataset`). One paper notes that while the data can be multi-turn, it is \"common to first convert from multi-turn into a single-turn format\" (\"Regressing the Relative Future: Efficient Policy Optimization for Multi-turn RLHF\").",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "ARGS: Alignment as Reward-Guided Search",
+      "Beyond Imitation: Leveraging Fine-grained Quality Signals for Alignment",
+      "Compositional Preference Models for Aligning LMs",
+      "Enabling Lanuguage Models to Implicitly Learn Self-Improvement",
+      "Improving Generalization of Alignment with Human Preferences through Group Invariant Learning",
+      "Tool-Augmented Reward Modeling",
+      "Towards Understanding Sycophancy in Language Models",
+      "An Emulator for Fine-tuning Large Language Models using Small Language Models",
+      "Language Model Inversion",
+      "Training Socially Aligned Language Models on Simulated Social Interactions"
+    ],
+    "iclr25": [
+      "3D-Properties: Identifying Challenges in DPO and Charting a Path Forward",
+      "Diverse Preference Learning for Capabilities and Alignment",
+      "Entropy-based Activation Function Optimization: A Method on Searching Better Activation Functions",
+      "Failures to Find Transferable Image Jailbreaks Between Vision-Language Models",
+      "Forewarned is Forearmed:  Harnessing LLMs for Data Synthesis via Failure-induced Exploration",
+      "GenARM: Reward Guided Generation with Autoregressive Reward Model for Test-Time Alignment",
+      "How to Evaluate Reward Models for RLHF",
+      "Interpreting Language Reward Models via Contrastive Explanations",
+      "Joint Reward and Policy Learning with Demonstrations and Human Feedback Improves Alignment",
+      "Large Language Models can Become Strong Self-Detoxifiers",
+      "Learn Your Reference Model for Real Good Alignment",
+      "Learning Dynamics of LLM Finetuning",
+      "Learning How Hard to Think: Input-Adaptive Allocation of LM Computation",
+      "MA-RLHF: Reinforcement Learning from Human Feedback with Macro Actions",
+      "MACPO: Weak-to-Strong Alignment via Multi-Agent Contrastive Preference Optimization",
+      "MAP: Multi-Human-Value Alignment Palette",
+      "MallowsPO: Fine-Tune Your LLM with Preference Dispersions",
+      "Measuring memorization in RLHF for code completion",
+      "Model Editing as a Robust and Denoised variant of DPO: A Case Study on Toxicity",
+      "More RLHF, More Trust? On The Impact of Preference Alignment On Trustworthiness",
+      "On a Connection Between Imitation Learning and RLHF",
+      "On-the-fly Preference Alignment via Principle-Guided Decoding",
+      "Q-Adapter: Customizing Pre-trained LLMs to New Preferences with Forgetting Mitigation",
+      "Regressing the Relative Future: Efficient Policy Optimization for Multi-turn RLHF",
+      "SEAL: Safety-enhanced Aligned LLM Fine-tuning via Bilevel Data Selection",
+      "SELF-EVOLVED REWARD LEARNING FOR LLMS",
+      "SeRA: Self-Reviewing and Alignment of LLMs using Implicit Reward Margins",
+      "SimPER: A Minimalist Approach to Preference  Alignment without Hyperparameters",
+      "Super(ficial)-alignment: Strong Models May Deceive Weak Models in Weak-to-Strong Generalization",
+      "TIS-DPO: Token-level Importance Sampling for Direct Preference Optimization With Estimated Weights",
+      "Towards Robust Alignment of Language Models: Distributionally Robustifying Direct Preference Optimization",
+      "Uncertainty and Influence aware Reward Model Refinement for Reinforcement Learning from Human Feedback",
+      "Weak-to-Strong Preference Optimization: Stealing Reward from Weak Aligned Model"
+    ],
+    "naacl25": [
+      "CodexGraph: Bridging Large Language Models and Code Repositories via Code Graph Databases",
+      "DeCAP: Context-Adaptive Prompt Generation for Debiasing Zero-shot Question Answering in Large Language Models",
+      "EMS-SD: Efficient Multi-sample Speculative Decoding for Accelerating Large Language Models",
+      "On Positional Bias of Faithfulness for Long-form Summarization",
+      "PromptRefine: Enhancing Few-Shot Performance on Low-ResourceIndic Languages with Example Selection from related Example Banks",
+      "In-Context Learning with Long-Context Models: An In-Depth Exploration",
+      "On the Impact of Fine-Tuning on Chain-of-Thought Reasoning"
+    ],
+    "icml25": [
+      "Bounded Rationality for LLMs: Satisficing Alignment at Inference-Time",
+      "Explaining the role of Intrinsic Dimensionality in Adversarial Training",
+      "HPS: Hard Preference Sampling for Human Preference Alignment",
+      "InfAlign: Inference-aware language model alignment",
+      "Layer-wise Alignment: Examining Safety Alignment Across Image Encoder Layers in Vision Language Models",
+      "MPO: An Efficient Post-Processing Framework for Mixing Diverse Preference Alignment",
+      "Overtrained Language Models Are Harder to Fine-Tune",
+      "PARM: Multi-Objective Test-Time Alignment via Preference-Aware Autoregressive Reward Model",
+      "Position: Challenges and Future Directions of Data-Centric AI Alignment",
+      "Preference Learning for AI Alignment: a Causal Perspective",
+      "Preference learning made easy: Everything should be understood through win rate",
+      "Projection Optimization: A General Framework for Multi-Objective and Multi-Group RLHF",
+      "RLTHF: Targeted Human Feedback for LLM Alignment",
+      "Right Now, Wrong Then: Non-Stationary Direct Preference Optimization under Preference Drift",
+      "RuleAdapter: Dynamic Rules for training Safety Reward Models in RLHF",
+      "Test-Time Preference Optimization: On-the-Fly Alignment via Iterative Textual Feedback",
+      "Tokenized Bandit for LLM Decoding and Alignment",
+      "TuCo: Measuring the Contribution of Fine-Tuning to Individual Responses of LLMs"
+    ],
+    "emnlp25": [
+      "Accelerated Test-Time Scaling with Model-Free Speculative Sampling",
+      "Unlearning vs. Obfuscation: Are We Truly Removing Knowledge?"
+    ],
+    "neurips24": [
+      "Cal-DPO: Calibrated Direct Preference Optimization for Language Model Alignment",
+      "Learning Goal-Conditioned Representations for Language Reward Models",
+      "Scaling Laws for Reward Model Overoptimization in Direct Alignment Algorithms"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 10,
+    "iclr25": 33,
+    "naacl25": 7,
+    "icml25": 18,
+    "emnlp25": 2,
+    "neurips24": 3
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

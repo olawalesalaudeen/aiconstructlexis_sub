@@ -1,0 +1,172 @@
+{
+  "canonical_name": "Spatiotemporal reasoning",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, spatiotemporal reasoning is most commonly defined as the ability to reason about the spatial relationships between objects and their changes over time, primarily within videos. Some work broadens this to a general \"spatial-temporal understanding\" of images, videos, and 3D scenes, while other papers apply the concept to specific domains, such as \"spatiotemporal rationality\" for generating logical travel plans or \"spatiotemporal consistency\" for creating sound assembly instructions. A distinct framing appears in robotics, where it is termed \"spatial-temporal awareness,\" focusing on a model's ability to use its history of movements to inform actions, as models can otherwise be \"more reactive to current inputs rather than informed by spatial history\" (TraceVLA: Visual Trace Prompting Enhances Spatial-Temporal Awareness for Generalist Robotic Policies). The construct is operationalized and measured using several benchmarks; for example, ActivityNet-QA is used to assess \"long-term spatiotemporal reasoning,\" and MM-ID is used for evaluating spatial and temporal comprehension, with Video-MME also being used. In the robotics context, enhancing this capability is reported to facilitate action prediction and improve generalization in manipulation tasks.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Spatial-temporal awareness",
+    "Spatial-temporal understanding",
+    "Spatiotemporal reasoning",
+    "Spatiotemporal dynamics understanding",
+    "Spatiotemporal consistency",
+    "Spatiotemporal rationality"
+  ],
+  "papers": [
+    "2025.emnlp-main.934.checklist",
+    "RRInf: Efficient Influence Function Estimation via Ridge Regression for Large Language Models and Text-to-Image Diffusion Models",
+    "Self-Augmented Preference Alignment for Sycophancy Reduction inLLMs",
+    "Oryx MLLM: On-Demand Spatial-Temporal Understanding at Arbitrary Resolution",
+    "Streaming Video Question-Answering with In-context Video KV-Cache Retrieval",
+    "TraceVLA: Visual Trace Prompting Enhances Spatial-Temporal Awareness for Generalist Robotic Policies",
+    "Unhackable Temporal Reward for Scalable Video MLLMs"
+  ],
+  "paper_count": 7,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The model's ability to understand and utilize its history of movements and the spatial relationships evolving over time to inform its actions.",
+      "paper": "TraceVLA: Visual Trace Prompting Enhances Spatial-Temporal Awareness for Generalist Robotic Policies",
+      "original_name": "Spatial-temporal awareness"
+    },
+    {
+      "text": "The latent multimodal competence to interpret visual content across both spatial detail and temporal structure, including images, videos, and 3D scenes.",
+      "paper": "Oryx MLLM: On-Demand Spatial-Temporal Understanding at Arbitrary Resolution",
+      "original_name": "Spatial-temporal understanding"
+    },
+    {
+      "text": "The ability to reason about the spatial relationships between objects and their changes over time within a video.",
+      "paper": "Streaming Video Question-Answering with In-context Video KV-Cache Retrieval",
+      "original_name": "Spatiotemporal reasoning"
+    },
+    {
+      "text": "The ability to comprehend and model the interplay of spatial relationships and their changes over time within a video.",
+      "paper": "Unhackable Temporal Reward for Scalable Video MLLMs",
+      "original_name": "Spatiotemporal dynamics understanding"
+    },
+    {
+      "text": "The quality of generated instructions being logically sound and correct with respect to the physical arrangement and temporal ordering of assembly steps.",
+      "paper": "RRInf: Efficient Influence Function Estimation via Ridge Regression for Large Language Models and Text-to-Image Diffusion Models",
+      "original_name": "Spatiotemporal consistency"
+    },
+    {
+      "text": "The ability of a model to generate travel plans that are logical and practical in terms of both spatial routes and temporal schedules.",
+      "paper": "Self-Augmented Preference Alignment for Sycophancy Reduction inLLMs",
+      "original_name": "Spatiotemporal rationality"
+    }
+  ],
+  "definition_count": 6,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ActivityNet-QA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Streaming Video Question-Answering with In-context Video KV-Cache Retrieval",
+      "evidence": "ActivityNet-QA (Yu et al., 2019) encompasses human-annotated QA pairs on 5,800 videos derived from the ActivityNet (Caba Heilbron et al., 2015) dataset. This benchmark is designed to assess the capabilities of VideoQA models in long-term spatiotemporal reasoning.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Streaming Video Question-Answering with In-context Video KV-Cache Retrieval"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MM-ID",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Unhackable Temporal Reward for Scalable Video MLLMs",
+      "evidence": "Spatial and temporal comprehension are equally important for multimodal video understanding. Here, we evaluate Video-UTR\u2019s performance in these two areas using the latest benchmark, MM-ID, in a zero-shot setting. (Section 4.4)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Unhackable Temporal Reward for Scalable Video MLLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Video-MME",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Oryx MLLM: On-Demand Spatial-Temporal Understanding at Arbitrary Resolution",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Oryx MLLM: On-Demand Spatial-Temporal Understanding at Arbitrary Resolution"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Action prediction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "TraceVLA: Visual Trace Prompting Enhances Spatial-Temporal Awareness for Generalist Robotic Policies",
+      "evidence": "we introduce visual trace prompting, a simple yet effective approach to facilitate VLA models\u2019 spatial-temporal awareness for action prediction by encoding state-action trajectories visually. (ABSTRACT)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "TraceVLA: Visual Trace Prompting Enhances Spatial-Temporal Awareness for Generalist Robotic Policies"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Robotic manipulation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "TraceVLA: Visual Trace Prompting Enhances Spatial-Temporal Awareness for Generalist Robotic Policies",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "TraceVLA: Visual Trace Prompting Enhances Spatial-Temporal Awareness for Generalist Robotic Policies"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "TraceVLA: Visual Trace Prompting Enhances Spatial-Temporal Awareness for Generalist Robotic Policies",
+      "evidence": "VLA models enhanced with visual traces exhibit improved spatial-temporal awareness. This visual trace prompting technique enables better adaptation to variations in manipulation tasks and improves overall generalization.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "TraceVLA: Visual Trace Prompting Enhances Spatial-Temporal Awareness for Generalist Robotic Policies"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 6,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 6,
+  "characterization": "Across the surveyed literature, spatiotemporal reasoning is most commonly defined as the ability to reason about the spatial relationships between objects and their changes over time, primarily within videos. Some work broadens this to a general \"spatial-temporal understanding\" of images, videos, and 3D scenes, while other papers apply the concept to specific domains, such as \"spatiotemporal rationality\" for generating logical travel plans or \"spatiotemporal consistency\" for creating sound assembly instructions. A distinct framing appears in robotics, where it is termed \"spatial-temporal awareness,\" focusing on a model's ability to use its history of movements to inform actions, as models can otherwise be \"more reactive to current inputs rather than informed by spatial history\" (TraceVLA: Visual Trace Prompting Enhances Spatial-Temporal Awareness for Generalist Robotic Policies). The construct is operationalized and measured using several benchmarks; for example, ActivityNet-QA is used to assess \"long-term spatiotemporal reasoning,\" and MM-ID is used for evaluating spatial and temporal comprehension, with Video-MME also being used. In the robotics context, enhancing this capability is reported to facilitate action prediction and improve generalization in manipulation tasks.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Oryx MLLM: On-Demand Spatial-Temporal Understanding at Arbitrary Resolution",
+      "Streaming Video Question-Answering with In-context Video KV-Cache Retrieval",
+      "TraceVLA: Visual Trace Prompting Enhances Spatial-Temporal Awareness for Generalist Robotic Policies",
+      "Unhackable Temporal Reward for Scalable Video MLLMs"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.934.checklist",
+      "RRInf: Efficient Influence Function Estimation via Ridge Regression for Large Language Models and Text-to-Image Diffusion Models",
+      "Self-Augmented Preference Alignment for Sycophancy Reduction inLLMs"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 4,
+    "emnlp25": 3
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25"
+  ]
+}

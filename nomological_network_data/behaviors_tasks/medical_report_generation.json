@@ -1,0 +1,108 @@
+{
+  "canonical_name": "Medical report generation",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, medical report generation is consistently defined as the task of generating a detailed, structured textual report describing the findings in a provided medical scan. One paper elaborates on this, specifying that for radiology reports, this includes an \"accurate description of findings, location, severity, and comparisons\" (D-CoDe: Scaling Image-PretrainedVLMs to Video via Dynamic Compression and Question Decomposition). This behavior is predominantly operationalized and measured using chest X-ray datasets. The most frequently used benchmarks for this task are MIMIC-CXR and IU-Xray, with multiple papers citing their use for evaluation. While specific evaluation methods are not detailed, one source notes that generated reports are assessed with \"standard natural language processing (NLP) metrics\" (D-CoDe: Scaling Image-PretrainedVLMs to Video via Dynamic Compression and Question Decomposition). In one study, performance on medical report generation is presented alongside visual question answering and medical image classification as an indicator of a model's Versatility.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Medical report generation"
+  ],
+  "papers": [
+    "D-CoDe: Scaling Image-PretrainedVLMs to Video via Dynamic Compression and Question Decomposition",
+    "OMS: On-the-fly, Multi-Objective, Self-Reflective Ad Keyword Generation viaLLMAgent",
+    "Interpretable Bilingual Multimodal Large Language Model for Diverse Biomedical Tasks",
+    "MMed-RAG: Versatile Multimodal RAG System for Medical Vision Language Models"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The task of generating a detailed, structured textual report describing the findings in a provided medical scan.",
+      "paper": "Interpretable Bilingual Multimodal Large Language Model for Diverse Biomedical Tasks",
+      "original_name": "Medical report generation"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MIMIC-CXR",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MMed-RAG: Versatile Multimodal RAG System for Medical Vision Language Models",
+      "evidence": "For English report generation, we evaluate our model on the report generation task for chest X-ray datasets MIMIC-CXR (Johnson et al., 2019) and IU-Xray (Demner-Fushman et al., 2016). (Section 5.1)",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "iclr25": [
+          "MMed-RAG: Versatile Multimodal RAG System for Medical Vision Language Models",
+          "Interpretable Bilingual Multimodal Large Language Model for Diverse Biomedical Tasks"
+        ],
+        "icml25": [
+          "MMedPO: Aligning Medical Vision-Language Models with Clinical-Aware Multimodal Preference Optimization"
+        ],
+        "emnlp25": [
+          "OMS: On-the-fly, Multi-Objective, Self-Reflective Ad Keyword Generation viaLLMAgent"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "IU-Xray",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MMed-RAG: Versatile Multimodal RAG System for Medical Vision Language Models",
+      "evidence": "For English report generation, we evaluate our model on the report generation task for chest X-ray datasets MIMIC-CXR (Johnson et al., 2019) and IU-Xray (Demner-Fushman et al., 2016). (Section 5.1)",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "iclr25": [
+          "MMed-RAG: Versatile Multimodal RAG System for Medical Vision Language Models",
+          "Interpretable Bilingual Multimodal Large Language Model for Diverse Biomedical Tasks"
+        ],
+        "icml25": [
+          "MMedPO: Aligning Medical Vision-Language Models with Clinical-Aware Multimodal Preference Optimization"
+        ],
+        "emnlp25": [
+          "OMS: On-the-fly, Multi-Objective, Self-Reflective Ad Keyword Generation viaLLMAgent"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Versatility",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Interpretable Bilingual Multimodal Large Language Model for Diverse Biomedical Tasks",
+      "evidence": "Our MedRegA not only enables three region-centric tasks, but also achieves the best performance for visual question answering, report generation and medical image classification over 8 modalities, showcasing significant versatility. (Abstract)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Interpretable Bilingual Multimodal Large Language Model for Diverse Biomedical Tasks"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 3,
+  "characterization": "Across the surveyed literature, medical report generation is consistently defined as the task of generating a detailed, structured textual report describing the findings in a provided medical scan. One paper elaborates on this, specifying that for radiology reports, this includes an \"accurate description of findings, location, severity, and comparisons\" (D-CoDe: Scaling Image-PretrainedVLMs to Video via Dynamic Compression and Question Decomposition). This behavior is predominantly operationalized and measured using chest X-ray datasets. The most frequently used benchmarks for this task are MIMIC-CXR and IU-Xray, with multiple papers citing their use for evaluation. While specific evaluation methods are not detailed, one source notes that generated reports are assessed with \"standard natural language processing (NLP) metrics\" (D-CoDe: Scaling Image-PretrainedVLMs to Video via Dynamic Compression and Question Decomposition). In one study, performance on medical report generation is presented alongside visual question answering and medical image classification as an indicator of a model's Versatility.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Interpretable Bilingual Multimodal Large Language Model for Diverse Biomedical Tasks",
+      "MMed-RAG: Versatile Multimodal RAG System for Medical Vision Language Models"
+    ],
+    "emnlp25": [
+      "D-CoDe: Scaling Image-PretrainedVLMs to Video via Dynamic Compression and Question Decomposition",
+      "OMS: On-the-fly, Multi-Objective, Self-Reflective Ad Keyword Generation viaLLMAgent"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25"
+  ]
+}

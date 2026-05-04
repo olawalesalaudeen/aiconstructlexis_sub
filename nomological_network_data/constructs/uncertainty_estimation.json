@@ -1,0 +1,81 @@
+{
+  "canonical_name": "Uncertainty estimation",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, uncertainty estimation is most commonly framed as a model's ability to assess the reliability of its own outputs or, relatedly, its degree of confidence in a prediction. A more specific, technical framing defines it as 'epistemic uncertainty,' reflecting a lack of knowledge within the model's parameters. The construct is operationalized in several ways, including by calculating the entropy over multiple sampled answers, inferring it from internal probability distributions, or measuring it via Conformal Prediction. This assessment is used to inform model behavior; for example, one paper uses it to 'guide adaptive decision-making in reasoning processes' by determining if more complex exploration is needed. Uncertainty estimation is frequently studied in connection with undesirable model behaviors, as it is shown to correlate with both Hallucination and Conformity. One study explicitly finds that 'LLMs are more likely to conform when they are more uncertain in their own prediction.' The construct is also studied alongside Faithfulness and Consistency and is reported to influence Out-of-distribution detection.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Uncertainty estimation",
+    "Epistemic uncertainty"
+  ],
+  "papers": [
+    "CoMet: Metaphor-Driven Covert Communication for Multi-Agent Language Games",
+    "Enhancing Character-Level Understanding inLLMs through Token Internal Structure Learning",
+    "ExtendingLLMContext Window with Adaptive Grouped Positional Encoding: A Training-Free Method",
+    "GradOT: Training-free Gradient-preserving Offsite-tuning for Large Language Models",
+    "HoH: A Dynamic Benchmark for Evaluating the Impact of Outdated Information on Retrieval-Augmented Generation",
+    "LlamaDuo:LLMOps Pipeline for Seamless Migration from ServiceLLMs to Small-Scale LocalLLMs",
+    "Stealing Training Data from Large Language Models in Decentralized Training through Activation Inversion Attack",
+    "\u201cWhat do you call a dog that is incontrovertibly true? Dogma\u201d: TestingLLMGeneralization through Humor"
+  ],
+  "paper_count": 8,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The model's ability to assess the reliability of its own reasoning outputs, typically through measures like entropy over multiple sampled answers, to guide adaptive decision-making in reasoning processes.",
+      "paper": "ExtendingLLMContext Window with Adaptive Grouped Positional Encoding: A Training-Free Method",
+      "original_name": "Uncertainty estimation"
+    },
+    {
+      "text": "The degree to which a model lacks confidence in its own prediction, inferred from its internal probability distribution or consistency across generations, which increases its susceptibility to external influence.",
+      "paper": "Enhancing Character-Level Understanding inLLMs through Token Internal Structure Learning",
+      "original_name": "Uncertainty"
+    },
+    {
+      "text": "Model-specific uncertainty reflecting the lack of knowledge within the LLM\u2019s parameters, related to the gap between parametric and universal knowledge boundaries.",
+      "paper": "GradOT: Training-free Gradient-preserving Offsite-tuning for Large Language Models",
+      "original_name": "Epistemic uncertainty"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Out-of-distribution detection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Scalable Bayesian Learning with posteriors",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Scalable Bayesian Learning with posteriors"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the surveyed literature, uncertainty estimation is most commonly framed as a model's ability to assess the reliability of its own outputs or, relatedly, its degree of confidence in a prediction. A more specific, technical framing defines it as 'epistemic uncertainty,' reflecting a lack of knowledge within the model's parameters. The construct is operationalized in several ways, including by calculating the entropy over multiple sampled answers, inferring it from internal probability distributions, or measuring it via Conformal Prediction. This assessment is used to inform model behavior; for example, one paper uses it to 'guide adaptive decision-making in reasoning processes' by determining if more complex exploration is needed. Uncertainty estimation is frequently studied in connection with undesirable model behaviors, as it is shown to correlate with both Hallucination and Conformity. One study explicitly finds that 'LLMs are more likely to conform when they are more uncertain in their own prediction.' The construct is also studied alongside Faithfulness and Consistency and is reported to influence Out-of-distribution detection.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "CoMet: Metaphor-Driven Covert Communication for Multi-Agent Language Games",
+      "Enhancing Character-Level Understanding inLLMs through Token Internal Structure Learning",
+      "ExtendingLLMContext Window with Adaptive Grouped Positional Encoding: A Training-Free Method",
+      "GradOT: Training-free Gradient-preserving Offsite-tuning for Large Language Models",
+      "HoH: A Dynamic Benchmark for Evaluating the Impact of Outdated Information on Retrieval-Augmented Generation",
+      "LlamaDuo:LLMOps Pipeline for Seamless Migration from ServiceLLMs to Small-Scale LocalLLMs",
+      "Stealing Training Data from Large Language Models in Decentralized Training through Activation Inversion Attack",
+      "\u201cWhat do you call a dog that is incontrovertibly true? Dogma\u201d: TestingLLMGeneralization through Humor"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 8
+  },
+  "conferences": [
+    "acl25"
+  ]
+}

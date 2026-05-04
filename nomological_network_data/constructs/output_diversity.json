@@ -1,0 +1,208 @@
+{
+  "canonical_name": "Output diversity",
+  "type": "construct",
+  "canonical_definition": "Across the provided literature, output diversity is most commonly framed as a latent tendency of language models to generate varied and non-repetitive responses to the same prompt. This variety is described along multiple dimensions, with papers frequently mentioning lexical, semantic, syntactic, and structural richness in the generated text. A more specialized definition, found in one paper, treats it as the exploration of diverse \"reasoning paths\" during planning to enhance problem-solving. The construct is operationalized by generating multiple responses per prompt and evaluating them with \"diversity-oriented metrics,\" with one paper specifying the use of \"average cosine similarity\" among responses. Another operationalization involves generating a set number of outputs on datasets like TL;DR and HH-RLHF. A recurring theme is the challenge of balancing diversity with other objectives, such as maintaining \"alignment quality\" or overall response quality, with one paper noting that common metrics can bias models toward shorter outputs. Output diversity is studied alongside a broad set of concepts including `Creativity`, `Model collapse`, and `Out-of-distribution generalization`. A few papers also posit that it may influence outcomes like `Knowledge forgetting` and `Alignment tax`.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Response diversity",
+    "Output diversity"
+  ],
+  "papers": [
+    "Adaptive Retrieval Without Self-Knowledge? Bringing Uncertainty Back Home",
+    "DualRAG: A Dual-Process Approach to Integrate Reasoning and Retrieval for Multi-Hop Question Answering",
+    "Marco-o1 v2: Towards Widening The Distillation Bottleneck for Reasoning Models",
+    "2025.emnlp-main.1721.checklist",
+    "Do Large Language Models Understand Word Senses?",
+    "2025.emnlp-main.1649.checklist",
+    "DoLLMs Adhere to Label Definitions? Examining Their Receptivity to External Label Definitions",
+    "ImproveLLM-as-a-Judge Ability as a General Ability",
+    "AlphaDPO: Adaptive Reward Margin for Direct Preference Optimization",
+    "Position: We Can\u2019t Understand AI Using our Existing Vocabulary"
+  ],
+  "paper_count": 10,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "An intrinsic property of a synthetic dataset measuring the semantic variety among the generated responses.",
+      "paper": "Adaptive Retrieval Without Self-Knowledge? Bringing Uncertainty Back Home",
+      "original_name": "Response diversity"
+    },
+    {
+      "text": "The latent tendency of a language model to generate varied and non-repetitive responses across different runs or completions for the same prompt, reflecting richness in lexical, syntactic, and semantic choices.",
+      "paper": "Marco-o1 v2: Towards Widening The Distillation Bottleneck for Reasoning Models",
+      "original_name": "Output diversity"
+    },
+    {
+      "text": "The extent to which a model explores diverse candidate reasoning paths during planning, reducing self-bias and increasing the likelihood of finding optimal solutions.",
+      "paper": "DualRAG: A Dual-Process Approach to Integrate Reasoning and Retrieval for Multi-Hop Question Answering",
+      "original_name": "Generation diversity"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Model collapse",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Understanding the Effects of RLHF on LLM Generalisation and Diversity",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr24": [
+          "Understanding the Effects of RLHF on LLM Generalisation and Diversity"
+        ],
+        "emnlp25": [
+          "DoLLMs Adhere to Label Definitions? Examining Their Receptivity to External Label Definitions"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Out-of-distribution generalization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Understanding the Effects of RLHF on LLM Generalisation and Diversity",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Understanding the Effects of RLHF on LLM Generalisation and Diversity"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Privacy leakage",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "A Probabilistic Perspective on Unlearning and Alignment for Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "A Probabilistic Perspective on Unlearning and Alignment for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Alignment tax",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Preserving Diversity in Supervised Fine-Tuning of Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Preserving Diversity in Supervised Fine-Tuning of Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Self-correction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Progress or Regress? Self-Improvement Reversal in Post-training",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Progress or Regress? Self-Improvement Reversal in Post-training"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Robustness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Progress or Regress? Self-Improvement Reversal in Post-training",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Progress or Regress? Self-Improvement Reversal in Post-training"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Text generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Diverse Preference Learning for Capabilities and Alignment",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Diverse Preference Learning for Capabilities and Alignment"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generation quality",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "ImproveLLM-as-a-Judge Ability as a General Ability",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "ImproveLLM-as-a-Judge Ability as a General Ability"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction following",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "ImproveLLM-as-a-Judge Ability as a General Ability",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "ImproveLLM-as-a-Judge Ability as a General Ability"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 9,
+  "incoming_relationship_count": 5,
+  "outgoing_relationship_count": 4,
+  "characterization": "Across the provided literature, output diversity is most commonly framed as a latent tendency of language models to generate varied and non-repetitive responses to the same prompt. This variety is described along multiple dimensions, with papers frequently mentioning lexical, semantic, syntactic, and structural richness in the generated text. A more specialized definition, found in one paper, treats it as the exploration of diverse \"reasoning paths\" during planning to enhance problem-solving. The construct is operationalized by generating multiple responses per prompt and evaluating them with \"diversity-oriented metrics,\" with one paper specifying the use of \"average cosine similarity\" among responses. Another operationalization involves generating a set number of outputs on datasets like TL;DR and HH-RLHF. A recurring theme is the challenge of balancing diversity with other objectives, such as maintaining \"alignment quality\" or overall response quality, with one paper noting that common metrics can bias models toward shorter outputs. Output diversity is studied alongside a broad set of concepts including `Creativity`, `Model collapse`, and `Out-of-distribution generalization`. A few papers also posit that it may influence outcomes like `Knowledge forgetting` and `Alignment tax`.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Adaptive Retrieval Without Self-Knowledge? Bringing Uncertainty Back Home",
+      "DualRAG: A Dual-Process Approach to Integrate Reasoning and Retrieval for Multi-Hop Question Answering",
+      "Marco-o1 v2: Towards Widening The Distillation Bottleneck for Reasoning Models"
+    ],
+    "icml25": [
+      "AlphaDPO: Adaptive Reward Margin for Direct Preference Optimization",
+      "Position: We Can\u2019t Understand AI Using our Existing Vocabulary"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.1721.checklist",
+      "Do Large Language Models Understand Word Senses?",
+      "2025.emnlp-main.1649.checklist",
+      "DoLLMs Adhere to Label Definitions? Examining Their Receptivity to External Label Definitions",
+      "ImproveLLM-as-a-Judge Ability as a General Ability"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 3,
+    "icml25": 2,
+    "emnlp25": 5
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "icml25"
+  ]
+}

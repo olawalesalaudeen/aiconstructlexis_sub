@@ -1,0 +1,198 @@
+{
+  "canonical_name": "Zero-shot classification",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, zero-shot classification is consistently described as the observable act of a model assigning class labels to inputs without any task-specific training or fine-tuning. This behavior is understood to rely solely on the model's pre-trained, internal knowledge, which is typically elicited through a prompt. A common element in several definitions is that the model performs this classification on categories for which it has not seen labeled examples during its training. Some work frames this as a paradigm that \"obviate[s] the need for data collection and training loops\" (\"Zero-Shot Robustification of Zero-Shot Models\"). While often applied to text, the concept is also extended to multimodal contexts, where a model might assign a label to an image by selecting the most probable option from a set of text descriptions. The performance of this behavior is operationalized and measured using a variety of benchmarks, with results commonly reported as \"zero-shot accuracy\". The provided papers use datasets such as ImageNet-1k for images, and a suite of what one paper calls \"common sense reasoning datasets\" including BoolQ, PIQA, HellaSwag, WinoGrande, ARC-Easy, ARC-Challenge, and OpenBookQA to evaluate this capability.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Zero-shot classification",
+    "Zero-shot task classification"
+  ],
+  "papers": [
+    "Harnessing Explanations: LLM-to-LM Interpreter for Enhanced Text-Attributed Graph Representation Learning",
+    "NOLA: Compressing LoRA using Linear Combination of Random Basis",
+    "Zero-Shot Robustification of Zero-Shot Models",
+    "Can We Talk Models Into Seeing the World Differently?",
+    "Mitigating Spurious Correlations in Zero-Shot Multimodal Models",
+    "Revisit Large-Scale Image-Caption Data in Pre-training Multimodal Foundation Models",
+    "A Generalization Theory for Zero-Shot Prediction",
+    "Graph4MM: Weaving Multimodal Learning with Structural Information",
+    "SlimLLM: Accurate Structured Pruning for Large Language Models",
+    "X-Transfer Attacks: Towards Super Transferable Adversarial Attacks on CLIP",
+    "ConMe: Rethinking Evaluation of Compositional Reasoning for Modern VLMs",
+    "INQUIRE: A Natural World Text-to-Image Retrieval Benchmark",
+    "Search for Efficient Large Language Models",
+    "UniBench: Visual Reasoning Requires Rethinking Vision-Language Beyond Scaling"
+  ],
+  "paper_count": 14,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The observable act of an LLM assigning class labels to input instances without any task-specific training, based solely on a prompt and its internal knowledge.",
+      "paper": "Harnessing Explanations: LLM-to-LM Interpreter for Enhanced Text-Attributed Graph Representation Learning",
+      "original_name": "Zero-shot classification"
+    },
+    {
+      "text": "The model's ability to correctly classify inputs into predefined categories without any task-specific fine-tuning, based solely on its pre-trained knowledge.",
+      "paper": "SlimLLM: Accurate Structured Pruning for Large Language Models",
+      "original_name": "Zero-shot task classification"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ImageNet-1k",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Revisit Large-Scale Image-Caption Data in Pre-training Multimodal Foundation Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Revisit Large-Scale Image-Caption Data in Pre-training Multimodal Foundation Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BoolQ",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Search for Efficient Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Search for Efficient Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Search for Efficient Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Search for Efficient Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HellaSwag",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Search for Efficient Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Search for Efficient Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Search for Efficient Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Search for Efficient Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-Easy",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Search for Efficient Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Search for Efficient Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-Challenge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Search for Efficient Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Search for Efficient Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OpenBookQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Search for Efficient Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Search for Efficient Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 8,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 8,
+  "characterization": "Across the provided literature, zero-shot classification is consistently described as the observable act of a model assigning class labels to inputs without any task-specific training or fine-tuning. This behavior is understood to rely solely on the model's pre-trained, internal knowledge, which is typically elicited through a prompt. A common element in several definitions is that the model performs this classification on categories for which it has not seen labeled examples during its training. Some work frames this as a paradigm that \"obviate[s] the need for data collection and training loops\" (\"Zero-Shot Robustification of Zero-Shot Models\"). While often applied to text, the concept is also extended to multimodal contexts, where a model might assign a label to an image by selecting the most probable option from a set of text descriptions. The performance of this behavior is operationalized and measured using a variety of benchmarks, with results commonly reported as \"zero-shot accuracy\". The provided papers use datasets such as ImageNet-1k for images, and a suite of what one paper calls \"common sense reasoning datasets\" including BoolQ, PIQA, HellaSwag, WinoGrande, ARC-Easy, ARC-Challenge, and OpenBookQA to evaluate this capability.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Harnessing Explanations: LLM-to-LM Interpreter for Enhanced Text-Attributed Graph Representation Learning",
+      "NOLA: Compressing LoRA using Linear Combination of Random Basis",
+      "Zero-Shot Robustification of Zero-Shot Models"
+    ],
+    "neurips24": [
+      "ConMe: Rethinking Evaluation of Compositional Reasoning for Modern VLMs",
+      "INQUIRE: A Natural World Text-to-Image Retrieval Benchmark",
+      "Search for Efficient Large Language Models",
+      "UniBench: Visual Reasoning Requires Rethinking Vision-Language Beyond Scaling"
+    ],
+    "iclr25": [
+      "Can We Talk Models Into Seeing the World Differently?",
+      "Mitigating Spurious Correlations in Zero-Shot Multimodal Models",
+      "Revisit Large-Scale Image-Caption Data in Pre-training Multimodal Foundation Models"
+    ],
+    "icml25": [
+      "A Generalization Theory for Zero-Shot Prediction",
+      "Graph4MM: Weaving Multimodal Learning with Structural Information",
+      "SlimLLM: Accurate Structured Pruning for Large Language Models",
+      "X-Transfer Attacks: Towards Super Transferable Adversarial Attacks on CLIP"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 3,
+    "neurips24": 4,
+    "iclr25": 3,
+    "icml25": 4
+  },
+  "conferences": [
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

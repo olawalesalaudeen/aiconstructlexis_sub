@@ -1,0 +1,139 @@
+{
+  "canonical_name": "HEX-PHI",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, HEX-PHI is consistently characterized as a safety benchmark or dataset composed of harmful instructions designed to evaluate language models. Several papers specify its composition, noting that it consists of 330 harmful queries or instructions distributed across 11 categories. The primary application of this benchmark is to evaluate a model's safety-related properties. It is most frequently used to measure a model's general 'safety' and 'safety alignment', with one paper stating its purpose is to \"evaluate the safety alignment of a model\" (SEAL: Safety-enhanced Aligned LLM Fine-tuning via Bilevel Data Selection). Other papers use it to assess 'harmlessness' and to evaluate model responses in the context of 'adversarial attacks'. The evaluation generally focuses on determining whether models \"comply with harmful requests and produce unsafe outputs\" (Safety Alignment Should be Made More Than Just a Few Tokens Deep). A smaller portion of the literature also highlights its use for assessing compliance with \"privacy-harming and personally harmful instructions\" (AfriMed-QA: A Pan-African, Multi-Specialty, Medical Question-Answering Benchmark Dataset).",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "HEX-PHI",
+    "HEx-PHI"
+  ],
+  "papers": [
+    "AfriMed-QA: A Pan-African, Multi-Specialty, Medical Question-Answering Benchmark Dataset",
+    "Exploiting Contextual Knowledge inLLMs through\ud835\udcb1-usable Information based Layer Enhancement",
+    "Powerformer: Efficient and High-Accuracy Privacy-Preserving Language Model with Homomorphic Encryption",
+    "ConCISE",
+    "Data to Defense: The Role of Curation in Aligning Large Language Models Against Safety Compromise",
+    "AIR-BENCH 2024: A Safety Benchmark based on Regulation and Policies Specified Risk Categories",
+    "On Evaluating the Durability of Safeguards for Open-Weight LLMs",
+    "SEAL: Safety-enhanced Aligned LLM Fine-tuning via Bilevel Data Selection",
+    "Safety Alignment Should be Made More Than Just a Few Tokens Deep",
+    "Benign Samples Matter! Fine-tuning On Outlier Benign Samples Severely Breaks Safety",
+    "Safety Alignment Can Be Not Superficial With Explicit Safety Signals"
+  ],
+  "paper_count": 11,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A dataset containing 11 categories of harmfulness-inducing instructions, specifically designed to evaluate the safety alignment of a language model.",
+      "paper": "SEAL: Safety-enhanced Aligned LLM Fine-tuning via Bilevel Data Selection",
+      "original_name": "HEX-PHI"
+    },
+    {
+      "text": "HEx-PHI safety benchmark consisting of harmful instructions used to evaluate whether models comply with harmful requests and produce unsafe outputs.",
+      "paper": "Safety Alignment Should be Made More Than Just a Few Tokens Deep",
+      "original_name": "HEx-PHI"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmlessness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "CausalEval: Towards Better Causal Reasoning in Language Models",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "naacl25": [
+          "CausalEval: Towards Better Causal Reasoning in Language Models"
+        ],
+        "emnlp25": [
+          "ConCISE"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Safety alignment",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "SEAL: Safety-enhanced Aligned LLM Fine-tuning via Bilevel Data Selection",
+      "evidence": "HEX-PHI: introduced in (Qi et al., 2023), it contains 11 categories of harmfulness-inducing instructions. It is used to evaluate the safety alignment of a model (Section 4.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "SEAL: Safety-enhanced Aligned LLM Fine-tuning via Bilevel Data Selection"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Adversarial attacks",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "On Evaluating the Durability of Safeguards for Open-Weight LLMs",
+      "evidence": "\"We also consider two additional harmfulness evaluation datasets: HEx-PHI (Qi et al., 2023) and SORRY-bench (Xie et al., 2024).\"",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "On Evaluating the Durability of Safeguards for Open-Weight LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Safety",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Powerformer: Efficient and High-Accuracy Privacy-Preserving Language Model with Homomorphic Encryption",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Powerformer: Efficient and High-Accuracy Privacy-Preserving Language Model with Homomorphic Encryption"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, HEX-PHI is consistently characterized as a safety benchmark or dataset composed of harmful instructions designed to evaluate language models. Several papers specify its composition, noting that it consists of 330 harmful queries or instructions distributed across 11 categories. The primary application of this benchmark is to evaluate a model's safety-related properties. It is most frequently used to measure a model's general 'safety' and 'safety alignment', with one paper stating its purpose is to \"evaluate the safety alignment of a model\" (SEAL: Safety-enhanced Aligned LLM Fine-tuning via Bilevel Data Selection). Other papers use it to assess 'harmlessness' and to evaluate model responses in the context of 'adversarial attacks'. The evaluation generally focuses on determining whether models \"comply with harmful requests and produce unsafe outputs\" (Safety Alignment Should be Made More Than Just a Few Tokens Deep). A smaller portion of the literature also highlights its use for assessing compliance with \"privacy-harming and personally harmful instructions\" (AfriMed-QA: A Pan-African, Multi-Specialty, Medical Question-Answering Benchmark Dataset).",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "AIR-BENCH 2024: A Safety Benchmark based on Regulation and Policies Specified Risk Categories",
+      "On Evaluating the Durability of Safeguards for Open-Weight LLMs",
+      "SEAL: Safety-enhanced Aligned LLM Fine-tuning via Bilevel Data Selection",
+      "Safety Alignment Should be Made More Than Just a Few Tokens Deep"
+    ],
+    "acl25": [
+      "AfriMed-QA: A Pan-African, Multi-Specialty, Medical Question-Answering Benchmark Dataset",
+      "Exploiting Contextual Knowledge inLLMs through\ud835\udcb1-usable Information based Layer Enhancement",
+      "Powerformer: Efficient and High-Accuracy Privacy-Preserving Language Model with Homomorphic Encryption"
+    ],
+    "icml25": [
+      "Benign Samples Matter! Fine-tuning On Outlier Benign Samples Severely Breaks Safety",
+      "Safety Alignment Can Be Not Superficial With Explicit Safety Signals"
+    ],
+    "emnlp25": [
+      "ConCISE",
+      "Data to Defense: The Role of Curation in Aligning Large Language Models Against Safety Compromise"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 4,
+    "acl25": 3,
+    "icml25": 2,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25"
+  ]
+}

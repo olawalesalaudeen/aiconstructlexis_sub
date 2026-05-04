@@ -1,0 +1,167 @@
+{
+  "canonical_name": "Conciseness",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, Conciseness is predominantly characterized as a model's ability to generate responses that are brief, to the point, and avoid unnecessary content such as repetition or verbosity. This core idea is reinforced by the use of synonymous terms like \"Brevity\" and \"Succinctness\" in some papers, and it is frequently positioned as a subjective factor in evaluation, as one paper notes it \"addresses vital subjective factors\" (\"PandaLM: An Automatic Evaluation Benchmark for LLM Instruction Tuning Optimization\"). The construct is operationalized in several ways, including human evaluation on a Likert scale alongside criteria like comprehensiveness and fluency (\"VisDoM: Multi-DocumentQAwith Visually Rich Elements Using Multimodal Retrieval-Augmented Generation\"). Some papers propose more quantitative measures; for summarization, it is defined as \"the proportion of summary sentences aligning with the key-facts\" (\"Familiarity: Better Evaluation of Zero-Shot Named Entity Recognition by Quantifying Label Shifts in Synthetic Training Data\") or the proportion of content that is \"both factually accurate and salient\" (\"EMNLP: Educator-role Moral and Normative Large Language Models Profiling\"). Another operationalization, in the context of code review, likens conciseness to precision, measuring the fraction of generated sentences that are \"'on topic' concerning the... reference/gold set\" (\"Is a Peeled Apple Still Red? EvaluatingLLMs\u2019 Ability for Conceptual Combination with Property Type\"). Some work highlights a tension with other qualities, noting that pursuing faithfulness can lead to \"long and redundant explanations,\" which conciseness is intended to mitigate (\"EcomScriptBench: A Multi-task Benchmark forE-commerce Script Planning via Step-wise Intention-Driven Product Association\"). A much less common framing appears in a small subset of the data, where related terms like \"Fullness\" and \"Compactness\" describe a spatial property in layout generation, defined as the ability to \"maximize space usage\" and avoid \"large areas of empty space\" (\"RecInter\").",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Conciseness",
+    "Brevity",
+    "Succinctness",
+    "Compactness",
+    "Fullness"
+  ],
+  "papers": [
+    "CLAIM: Mitigating Multilingual Object Hallucination in Large Vision-Language Models with Cross-Lingual Attention Intervention",
+    "EcomScriptBench: A Multi-task Benchmark forE-commerce Script Planning via Step-wise Intention-Driven Product Association",
+    "FOCUS: Evaluating Pre-trained Vision-Language Models on Underspecification Reasoning",
+    "GoR",
+    "KazMMLU: Evaluating Language Models onKazakh,Russian, and Regional Knowledge ofKazakhstan",
+    "2025.emnlp-main.287.checklist",
+    "Does Context Matter? A Prosodic Comparison ofEnglish andSpanish in Monolingual and Multilingual Discourse Settings",
+    "EMNLP: Educator-role Moral and Normative Large Language Models Profiling",
+    "Mining the Past with Dual Criteria: Integrating Three types of Historical Information for Context-aware Event Forecasting",
+    "REALM: Recursive Relevance Modeling forLLM-based Document Re-Ranking",
+    "RecInter",
+    "SHARP: Steering Hallucination inLVLMs via Representation Engineering",
+    "SmartBench: Is YourLLMTruly a GoodChinese Smartphone Assistant?",
+    "TinySQL: A Progressive Text-to-SQLDataset for Mechanistic Interpretability Research",
+    "UnitCoder: Scalable Code Synthesis from Pre-training Corpora",
+    "iKnow-audio: Integrating Knowledge Graphs with Audio-Language Models",
+    "FLASK: Fine-grained Language Model Evaluation based on Alignment Skill Sets",
+    "PandaLM: An Automatic Evaluation Benchmark for LLM Instruction Tuning Optimization",
+    "Familiarity: Better Evaluation of Zero-Shot Named Entity Recognition by Quantifying Label Shifts in Synthetic Training Data",
+    "Is a Peeled Apple Still Red? EvaluatingLLMs\u2019 Ability for Conceptual Combination with Property Type",
+    "VisDoM: Multi-DocumentQAwith Visually Rich Elements Using Multimodal Retrieval-Augmented Generation"
+  ],
+  "paper_count": 21,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The ability of a model to produce responses that are brief and to the point, avoiding unnecessary repetition or verbosity.",
+      "paper": "FLASK: Fine-grained Language Model Evaluation based on Alignment Skill Sets",
+      "original_name": "Conciseness"
+    },
+    {
+      "text": "The degree to which the explanation is concise and avoids redundancy, improving human interpretability by minimizing unnecessary content.",
+      "paper": "EcomScriptBench: A Multi-task Benchmark forE-commerce Script Planning via Step-wise Intention-Driven Product Association",
+      "original_name": "Brevity"
+    },
+    {
+      "text": "The quality of a description being brief and to the point without including extraneous or overly long text.",
+      "paper": "FOCUS: Evaluating Pre-trained Vision-Language Models on Underspecification Reasoning",
+      "original_name": "Succinctness"
+    },
+    {
+      "text": "The ability of a model to generate layouts that maximize space usage.",
+      "paper": "RecInter",
+      "original_name": "Fullness"
+    },
+    {
+      "text": "The ability to generate layouts that are dense and do not contain large areas of empty space.",
+      "paper": "RecInter",
+      "original_name": "Compactness"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "VisDoM: Multi-DocumentQAwith Visually Rich Elements Using Multimodal Retrieval-Augmented Generation",
+      "evidence": "",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "naacl25": [
+          "VisDoM: Multi-DocumentQAwith Visually Rich Elements Using Multimodal Retrieval-Augmented Generation"
+        ],
+        "acl25": [
+          "CLAIM: Mitigating Multilingual Object Hallucination in Large Vision-Language Models with Cross-Lingual Attention Intervention"
+        ],
+        "emnlp25": [
+          "SHARP: Steering Hallucination inLVLMs via Representation Engineering",
+          "TinySQL: A Progressive Text-to-SQLDataset for Mechanistic Interpretability Research"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human preference alignment",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "FLASK: Fine-grained Language Model Evaluation based on Alignment Skill Sets",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "FLASK: Fine-grained Language Model Evaluation based on Alignment Skill Sets"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mathematical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "2025.emnlp-main.287.checklist",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "2025.emnlp-main.287.checklist"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 3,
+  "characterization": "Across the surveyed literature, Conciseness is predominantly characterized as a model's ability to generate responses that are brief, to the point, and avoid unnecessary content such as repetition or verbosity. This core idea is reinforced by the use of synonymous terms like \"Brevity\" and \"Succinctness\" in some papers, and it is frequently positioned as a subjective factor in evaluation, as one paper notes it \"addresses vital subjective factors\" (\"PandaLM: An Automatic Evaluation Benchmark for LLM Instruction Tuning Optimization\"). The construct is operationalized in several ways, including human evaluation on a Likert scale alongside criteria like comprehensiveness and fluency (\"VisDoM: Multi-DocumentQAwith Visually Rich Elements Using Multimodal Retrieval-Augmented Generation\"). Some papers propose more quantitative measures; for summarization, it is defined as \"the proportion of summary sentences aligning with the key-facts\" (\"Familiarity: Better Evaluation of Zero-Shot Named Entity Recognition by Quantifying Label Shifts in Synthetic Training Data\") or the proportion of content that is \"both factually accurate and salient\" (\"EMNLP: Educator-role Moral and Normative Large Language Models Profiling\"). Another operationalization, in the context of code review, likens conciseness to precision, measuring the fraction of generated sentences that are \"'on topic' concerning the... reference/gold set\" (\"Is a Peeled Apple Still Red? EvaluatingLLMs\u2019 Ability for Conceptual Combination with Property Type\"). Some work highlights a tension with other qualities, noting that pursuing faithfulness can lead to \"long and redundant explanations,\" which conciseness is intended to mitigate (\"EcomScriptBench: A Multi-task Benchmark forE-commerce Script Planning via Step-wise Intention-Driven Product Association\"). A much less common framing appears in a small subset of the data, where related terms like \"Fullness\" and \"Compactness\" describe a spatial property in layout generation, defined as the ability to \"maximize space usage\" and avoid \"large areas of empty space\" (\"RecInter\").",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "FLASK: Fine-grained Language Model Evaluation based on Alignment Skill Sets",
+      "PandaLM: An Automatic Evaluation Benchmark for LLM Instruction Tuning Optimization"
+    ],
+    "naacl25": [
+      "Familiarity: Better Evaluation of Zero-Shot Named Entity Recognition by Quantifying Label Shifts in Synthetic Training Data",
+      "Is a Peeled Apple Still Red? EvaluatingLLMs\u2019 Ability for Conceptual Combination with Property Type",
+      "VisDoM: Multi-DocumentQAwith Visually Rich Elements Using Multimodal Retrieval-Augmented Generation"
+    ],
+    "acl25": [
+      "CLAIM: Mitigating Multilingual Object Hallucination in Large Vision-Language Models with Cross-Lingual Attention Intervention",
+      "EcomScriptBench: A Multi-task Benchmark forE-commerce Script Planning via Step-wise Intention-Driven Product Association",
+      "FOCUS: Evaluating Pre-trained Vision-Language Models on Underspecification Reasoning",
+      "GoR",
+      "KazMMLU: Evaluating Language Models onKazakh,Russian, and Regional Knowledge ofKazakhstan"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.287.checklist",
+      "Does Context Matter? A Prosodic Comparison ofEnglish andSpanish in Monolingual and Multilingual Discourse Settings",
+      "EMNLP: Educator-role Moral and Normative Large Language Models Profiling",
+      "Mining the Past with Dual Criteria: Integrating Three types of Historical Information for Context-aware Event Forecasting",
+      "REALM: Recursive Relevance Modeling forLLM-based Document Re-Ranking",
+      "RecInter",
+      "SHARP: Steering Hallucination inLVLMs via Representation Engineering",
+      "SmartBench: Is YourLLMTruly a GoodChinese Smartphone Assistant?",
+      "TinySQL: A Progressive Text-to-SQLDataset for Mechanistic Interpretability Research",
+      "UnitCoder: Scalable Code Synthesis from Pre-training Corpora",
+      "iKnow-audio: Integrating Knowledge Graphs with Audio-Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "naacl25": 3,
+    "acl25": 5,
+    "emnlp25": 11
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "naacl25"
+  ]
+}

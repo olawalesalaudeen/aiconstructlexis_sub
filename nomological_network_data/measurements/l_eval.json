@@ -1,0 +1,111 @@
+{
+  "canonical_name": "L-Eval",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, L-Eval is predominantly characterized as a benchmark designed to assess the long-context capabilities of large language models. Papers use L-Eval to measure several related constructs, most commonly `Long-context processing` and `Long-context understanding`, with one paper also using it to evaluate `Long-form text generation`. The benchmark is consistently described as an evaluation suite composed of closed-ended tasks with varying input lengths, specifically multiple-choice and true/false question answering. One study specifies that its evaluation uses four particular closed-ended tasks from L-Eval: TOFEL, QuALITY, Coursera, and SFiction. In practice, L-Eval is often studied alongside other long-context benchmarks, including LongBench and LooGLE. A less common framing, found in one paper, describes L-Eval as a benchmark for \"long-text and reasoning-oriented evaluations\" used for comparative purposes with another benchmark, CS-Bench. The prevailing usage, therefore, positions L-Eval as an instrument for evaluating how LLMs handle long contexts, operationalized through a set of closed-ended question-answering tasks.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "L-eval",
+    "L-Eval"
+  ],
+  "papers": [
+    "BIG-Bench Extra Hard",
+    "RuleArena: A Benchmark for Rule-Guided Reasoning withLLMs in Real-World Scenarios",
+    "Bridging Context Gaps: Leveraging Coreference Resolution for Long Contextual Understanding",
+    "CS-Bench: A Comprehensive Benchmark for Large Language Models towards Computer Science Mastery",
+    "ReAttention: Training-Free Infinite Context with Finite Attention Scope"
+  ],
+  "paper_count": 5,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "L-eval is a benchmark used for comparing CS-Bench with long-text and reasoning-oriented evaluations.",
+      "paper": "CS-Bench: A Comprehensive Benchmark for Large Language Models towards Computer Science Mastery",
+      "original_name": "L-eval"
+    },
+    {
+      "text": "L-Eval is a benchmark designed to assess the long-context capabilities of LLMs, featuring closed-ended tasks such as multiple-choice and true/false question answering.",
+      "paper": "Bridging Context Gaps: Leveraging Coreference Resolution for Long Contextual Understanding",
+      "original_name": "L-Eval"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-context understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Mixture of In-Context Experts Enhance LLMs' Long Context Awareness",
+      "evidence": "\u201cLongBench, L-eval and LooGLE serve as multitask benchmarks, providing a comprehensive evaluation of long-context understanding\u201d",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "neurips24": [
+          "Mixture of In-Context Experts Enhance LLMs' Long Context Awareness"
+        ],
+        "iclr25": [
+          "Bridging Context Gaps: Leveraging Coreference Resolution for Long Contextual Understanding"
+        ],
+        "acl25": [
+          "RuleArena: A Benchmark for Rule-Guided Reasoning withLLMs in Real-World Scenarios"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-context processing",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "ReAttention: Training-Free Infinite Context with Finite Attention Scope",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "ReAttention: Training-Free Infinite Context with Finite Attention Scope"
+        ],
+        "naacl25": [
+          "LLM-guided Plan and Retrieval: A Strategic Alignment for Interpretable User Satisfaction Estimation in Dialogue"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-form text generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Mixture of In-Context Experts Enhance LLMs' Long Context Awareness",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Mixture of In-Context Experts Enhance LLMs' Long Context Awareness"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, L-Eval is predominantly characterized as a benchmark designed to assess the long-context capabilities of large language models. Papers use L-Eval to measure several related constructs, most commonly `Long-context processing` and `Long-context understanding`, with one paper also using it to evaluate `Long-form text generation`. The benchmark is consistently described as an evaluation suite composed of closed-ended tasks with varying input lengths, specifically multiple-choice and true/false question answering. One study specifies that its evaluation uses four particular closed-ended tasks from L-Eval: TOFEL, QuALITY, Coursera, and SFiction. In practice, L-Eval is often studied alongside other long-context benchmarks, including LongBench and LooGLE. A less common framing, found in one paper, describes L-Eval as a benchmark for \"long-text and reasoning-oriented evaluations\" used for comparative purposes with another benchmark, CS-Bench. The prevailing usage, therefore, positions L-Eval as an instrument for evaluating how LLMs handle long contexts, operationalized through a set of closed-ended question-answering tasks.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Bridging Context Gaps: Leveraging Coreference Resolution for Long Contextual Understanding",
+      "CS-Bench: A Comprehensive Benchmark for Large Language Models towards Computer Science Mastery",
+      "ReAttention: Training-Free Infinite Context with Finite Attention Scope"
+    ],
+    "acl25": [
+      "BIG-Bench Extra Hard",
+      "RuleArena: A Benchmark for Rule-Guided Reasoning withLLMs in Real-World Scenarios"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3,
+    "acl25": 2
+  },
+  "conferences": [
+    "acl25",
+    "iclr25"
+  ]
+}

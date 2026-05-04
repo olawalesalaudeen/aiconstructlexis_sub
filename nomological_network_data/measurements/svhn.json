@@ -1,0 +1,91 @@
+{
+  "canonical_name": "SVHN",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, the SVHN dataset is defined as consisting of \"images of house numbers\". A prevalent application of SVHN is for measuring `Image classification`, where it is frequently used alongside other datasets like Cars, DTD, and MNIST for fine-tuning and evaluation. In a different context, one paper uses SVHN to measure `Out-of-distribution detection`, where it serves as an external OOD dataset for a model trained on another corpus. This contrasts with another study that uses it for \"in-distribution image generation and completion tasks\". The dataset is also associated with measuring `Optical character recognition`, although the provided materials do not detail this use case.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "SVHN"
+  ],
+  "papers": [
+    "Adapting Multi-modal Large Language Model to Concept Drift From Pre-training Onwards",
+    "Can Generative AI Solve Your In-Context Learning Problem?  A Martingale Perspective",
+    "LoRA-Pro: Are Low-Rank Adapters Properly Optimized?"
+  ],
+  "paper_count": 3,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The Street View House Numbers (SVHN) dataset consists of images of house numbers and is used in this paper for in-distribution image generation and completion tasks.",
+      "paper": "Can Generative AI Solve Your In-Context Learning Problem?  A Martingale Perspective",
+      "original_name": "SVHN"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Image classification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "LoRA-Pro: Are Low-Rank Adapters Properly Optimized?",
+      "evidence": "We follow the image classification benchmark from Ilharco et al. (2023) and merge models finetuned on eight different datasets: Cars (Krause et al., 2013), DTD (Cimpoi et al., 2014), EuroSAT (Helber et al., 2019), GTSRB Stallkamp et al. (2011), MNIST (LeCun, 1998), RESISC45 (Cheng et al., 2017), SUN397 (Xiao et al., 2016) and SVHN (Netzer et al., 2011). (\u00a7 5.2)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "LoRA-Pro: Are Low-Rank Adapters Properly Optimized?"
+        ],
+        "emnlp25": [
+          "Can Large Language Models Tackle Graph Partitioning?"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Optical character recognition",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "UniBench: Visual Reasoning Requires Rethinking Vision-Language Beyond Scaling",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "UniBench: Visual Reasoning Requires Rethinking Vision-Language Beyond Scaling"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Out-of-distribution detection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Adapting Multi-modal Large Language Model to Concept Drift From Pre-training Onwards",
+      "evidence": "The model is trained on CIFAR100-LT Krizhevsky & Hinton (2009) with an imbalance ratio of 100, and validated on external OOD datasets including SVHN Netzer et al. (2011), Places365 Zhou et al. (2017), LSUN Yu et al., iSUN Xu et al. and Texture Cimpoi et al. (2014). (Section 3)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Adapting Multi-modal Large Language Model to Concept Drift From Pre-training Onwards"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, the SVHN dataset is defined as consisting of \"images of house numbers\". A prevalent application of SVHN is for measuring `Image classification`, where it is frequently used alongside other datasets like Cars, DTD, and MNIST for fine-tuning and evaluation. In a different context, one paper uses SVHN to measure `Out-of-distribution detection`, where it serves as an external OOD dataset for a model trained on another corpus. This contrasts with another study that uses it for \"in-distribution image generation and completion tasks\". The dataset is also associated with measuring `Optical character recognition`, although the provided materials do not detail this use case.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Adapting Multi-modal Large Language Model to Concept Drift From Pre-training Onwards",
+      "Can Generative AI Solve Your In-Context Learning Problem?  A Martingale Perspective",
+      "LoRA-Pro: Are Low-Rank Adapters Properly Optimized?"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3
+  },
+  "conferences": [
+    "iclr25"
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "canonical_name": "Watermark detection",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, Watermark detection is predominantly characterized as the process of determining whether a given text sequence contains a hidden watermark. The most common operationalization of this behavior is a statistical test, where an algorithm makes a \"calibrated decision\" by comparing a calculated statistic against a threshold (Provable Robust Watermarking for AI-Generated Text). Specific methods mentioned for this test include calculating a z-score, counting token membership in a \"green list,\" or averaging token-level watermark logits. A less frequent approach involves using a trained neural network that \"functions as a discriminator\" to classify the text (An Unforgeable Publicly Verifiable Watermark for Large Language Models). The goal is consistently framed as a binary classification, outputting whether the text is watermarked or not. This is often positioned as the \"inverse problem of watermark embedding,\" inferring if a text originates from a marked or unmarked distribution (Unbiased Watermark for Large Language Models). A distinct framing, referred to as \"watermark decoding\" in one paper, focuses not on presence/absence but on extracting an embedded binary code from the text.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Watermark detection",
+    "Watermark decoding"
+  ],
+  "papers": [
+    "Arena-lite: Efficient and Reliable Large Language Model Evaluation via Tournament-Based Direct Comparisons",
+    "LoSiA: Efficient High-Rank Fine-Tuning via Subnet Localization and Optimization",
+    "A Semantic Invariant Robust Watermark for Large Language Models",
+    "An Unforgeable Publicly Verifiable Watermark for Large Language Models",
+    "Provable Robust Watermarking for AI-Generated Text",
+    "Unbiased Watermark for Large Language Models",
+    "A Watermark for Order-Agnostic Language Models",
+    "Permute-and-Flip: An optimally stable and watermarkable decoder for LLMs",
+    "An End-to-End Model for Logits-Based Large Language Models Watermarking",
+    "BiMark: Unbiased Multilayer Watermarking for Large Language Models",
+    "GaussMark: A Practical Approach for Structural Watermarking of Language Models",
+    "Robust Multi-bit Text Watermark with LLM-based Paraphrasers",
+    "StealthInk: A Multi-bit and Stealthy Watermark for Large Language Models"
+  ],
+  "paper_count": 13,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Determining whether a text contains a watermark signal from its token-level watermark logits.",
+      "paper": "A Semantic Invariant Robust Watermark for Large Language Models",
+      "original_name": "Watermark detection"
+    },
+    {
+      "text": "The process of extracting the embedded binary watermark code from a text using a trained classifier applied to segmented text.",
+      "paper": "Robust Multi-bit Text Watermark with LLM-based Paraphrasers",
+      "original_name": "Watermark decoding"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the surveyed literature, Watermark detection is predominantly characterized as the process of determining whether a given text sequence contains a hidden watermark. The most common operationalization of this behavior is a statistical test, where an algorithm makes a \"calibrated decision\" by comparing a calculated statistic against a threshold (Provable Robust Watermarking for AI-Generated Text). Specific methods mentioned for this test include calculating a z-score, counting token membership in a \"green list,\" or averaging token-level watermark logits. A less frequent approach involves using a trained neural network that \"functions as a discriminator\" to classify the text (An Unforgeable Publicly Verifiable Watermark for Large Language Models). The goal is consistently framed as a binary classification, outputting whether the text is watermarked or not. This is often positioned as the \"inverse problem of watermark embedding,\" inferring if a text originates from a marked or unmarked distribution (Unbiased Watermark for Large Language Models). A distinct framing, referred to as \"watermark decoding\" in one paper, focuses not on presence/absence but on extracting an embedded binary code from the text.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "A Semantic Invariant Robust Watermark for Large Language Models",
+      "An Unforgeable Publicly Verifiable Watermark for Large Language Models",
+      "Provable Robust Watermarking for AI-Generated Text",
+      "Unbiased Watermark for Large Language Models"
+    ],
+    "iclr25": [
+      "A Watermark for Order-Agnostic Language Models",
+      "Permute-and-Flip: An optimally stable and watermarkable decoder for LLMs"
+    ],
+    "icml25": [
+      "An End-to-End Model for Logits-Based Large Language Models Watermarking",
+      "BiMark: Unbiased Multilayer Watermarking for Large Language Models",
+      "GaussMark: A Practical Approach for Structural Watermarking of Language Models",
+      "Robust Multi-bit Text Watermark with LLM-based Paraphrasers",
+      "StealthInk: A Multi-bit and Stealthy Watermark for Large Language Models"
+    ],
+    "emnlp25": [
+      "Arena-lite: Efficient and Reliable Large Language Model Evaluation via Tournament-Based Direct Comparisons",
+      "LoSiA: Efficient High-Rank Fine-Tuning via Subnet Localization and Optimization"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 4,
+    "iclr25": 2,
+    "icml25": 5,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25"
+  ]
+}

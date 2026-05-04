@@ -1,0 +1,72 @@
+{
+  "canonical_name": "Input regurgitation",
+  "type": "behavior",
+  "canonical_definition": "Input regurgitation is consistently described across the provided literature as the observable behavior of a language model reproducing verbatim or near-verbatim content from its input context. The framing of this behavior, however, varies across different studies. Some work treats it as a fundamental capability for precise retrieval, with one paper noting it is \"one of the most fundamental abilities of language models\" (\"WET: Overcoming Paraphrasing Vulnerabilities in Embeddings-as-a-Service with Linear Transformation Watermarks\"). In this view, it is operationalized through tasks where the model's objective is to \"output the suffix of the queried prefix\". Another line of work frames it as a desired ability in specific domains, such as accurately copying predefined code elements like function names and parameters (\"CxGGEC: Construction-Guided Grammatical Error Correction\"). In contrast, a different perspective treats input regurgitation as a potential failure, explicitly linking it to privacy risks, as \"LLMs are likely to leak the augmented contexts if they were trained on them\" (\"500xCompressor: Generalized Prompt Compression for Large Language Models\"). One paper also reports that the behavior can be caused by few-shot prompting.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Contextual copying",
+    "In-context copying",
+    "Input regurgitation"
+  ],
+  "papers": [
+    "500xCompressor: Generalized Prompt Compression for Large Language Models",
+    "CxGGEC: Construction-Guided Grammatical Error Correction",
+    "WET: Overcoming Paraphrasing Vulnerabilities in Embeddings-as-a-Service with Linear Transformation Watermarks"
+  ],
+  "paper_count": 3,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Accurately reproducing specific code elements (e.g., function names, parameters) from the input context regardless of their position, testing permutation-invariant retrieval.",
+      "paper": "CxGGEC: Construction-Guided Grammatical Error Correction",
+      "original_name": "Contextual copying"
+    },
+    {
+      "text": "The observable behavior of reproducing a specific token sequence from earlier in the input when prompted, demonstrating precise retrieval from long contexts.",
+      "paper": "WET: Overcoming Paraphrasing Vulnerabilities in Embeddings-as-a-Service with Linear Transformation Watermarks",
+      "original_name": "In-context copying"
+    },
+    {
+      "text": "The observable behavior where an LLM reproduces verbatim or near-verbatim portions of the augmented input context in its output, potentially indicating privacy leakage.",
+      "paper": "500xCompressor: Generalized Prompt Compression for Large Language Models",
+      "original_name": "Input regurgitation"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Few-shot prompting",
+      "other_type": "measurements",
+      "relationship_type": "causes",
+      "paper": "Vision-Language Models Create Cross-Modal Task Representations",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Vision-Language Models Create Cross-Modal Task Representations"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization": "Input regurgitation is consistently described across the provided literature as the observable behavior of a language model reproducing verbatim or near-verbatim content from its input context. The framing of this behavior, however, varies across different studies. Some work treats it as a fundamental capability for precise retrieval, with one paper noting it is \"one of the most fundamental abilities of language models\" (\"WET: Overcoming Paraphrasing Vulnerabilities in Embeddings-as-a-Service with Linear Transformation Watermarks\"). In this view, it is operationalized through tasks where the model's objective is to \"output the suffix of the queried prefix\". Another line of work frames it as a desired ability in specific domains, such as accurately copying predefined code elements like function names and parameters (\"CxGGEC: Construction-Guided Grammatical Error Correction\"). In contrast, a different perspective treats input regurgitation as a potential failure, explicitly linking it to privacy risks, as \"LLMs are likely to leak the augmented contexts if they were trained on them\" (\"500xCompressor: Generalized Prompt Compression for Large Language Models\"). One paper also reports that the behavior can be caused by few-shot prompting.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "500xCompressor: Generalized Prompt Compression for Large Language Models",
+      "CxGGEC: Construction-Guided Grammatical Error Correction",
+      "WET: Overcoming Paraphrasing Vulnerabilities in Embeddings-as-a-Service with Linear Transformation Watermarks"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 3
+  },
+  "conferences": [
+    "acl25"
+  ]
+}

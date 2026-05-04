@@ -1,0 +1,111 @@
+{
+  "canonical_name": "FigStep",
+  "type": "measurement",
+  "canonical_definition": "FigStep is consistently characterized across the provided literature as a benchmark for evaluating the safety of Vision Language Models (VLMs) and Multimodal Large Language Models (MLLMs). The relationships show it is used to measure constructs such as `Safety`, `Safety alignment`, and `Adversarial robustness`. The most prevalent description of its methodology is that it assesses model safety against attacks involving both figures and text. A frequently cited mechanism within the benchmark is the use of typography to transfer unsafe content into images, which, as one paper notes, \"can bypass the safety mechanism of models.\" Some papers offer more specific framings, describing it as an \"adversarial multimodal benchmark\" for evaluating \"jailbreak attempts\" through step-by-step instructions, or as a \"dataset of harmful questions.\" The data also shows that FigStep is sometimes adapted for specific studies, for example by excluding categories like legal or medical advice. It is often evaluated alongside other multimodal safety benchmarks, such as MM-Safetybench and SIUO.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "FigStep",
+    "Figstep"
+  ],
+  "papers": [
+    "From General Reward to Targeted Reward: Improving Open-ended Long-context Generation Models",
+    "Generative or Discriminative? Revisiting Text Classification in the Era of Transformers",
+    "PakBBQ: A Culturally Adapted Bias Benchmark forQA",
+    "ETA: Evaluating Then Aligning Safety of Vision Language Models at Inference Time",
+    "How Does Vision-Language Adaptation Impact the Safety of Vision Language Models?",
+    "Measuring memorization in language models via probabilistic extraction",
+    "Single Ground Truth Is Not Enough: Adding Flexibility to Aspect-Based Sentiment Analysis Evaluation"
+  ],
+  "paper_count": 7,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A benchmark designed to test VLM safety, particularly against attacks involving figures and text.",
+      "paper": "ETA: Evaluating Then Aligning Safety of Vision Language Models at Inference Time",
+      "original_name": "FigStep"
+    },
+    {
+      "text": "A multimodal safety benchmark used to assess harmful-response behavior from image-based prompts.",
+      "paper": "How Does Vision-Language Adaptation Impact the Safety of Vision Language Models?",
+      "original_name": "Figstep"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Safety alignment",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Single Ground Truth Is Not Enough: Adding Flexibility to Aspect-Based Sentiment Analysis Evaluation",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "naacl25": [
+          "Single Ground Truth Is Not Enough: Adding Flexibility to Aspect-Based Sentiment Analysis Evaluation",
+          "Measuring memorization in language models via probabilistic extraction"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Safety",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "How Does Vision-Language Adaptation Impact the Safety of Vision Language Models?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "How Does Vision-Language Adaptation Impact the Safety of Vision Language Models?"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Adversarial robustness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "From General Reward to Targeted Reward: Improving Open-ended Long-context Generation Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "From General Reward to Targeted Reward: Improving Open-ended Long-context Generation Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization": "FigStep is consistently characterized across the provided literature as a benchmark for evaluating the safety of Vision Language Models (VLMs) and Multimodal Large Language Models (MLLMs). The relationships show it is used to measure constructs such as `Safety`, `Safety alignment`, and `Adversarial robustness`. The most prevalent description of its methodology is that it assesses model safety against attacks involving both figures and text. A frequently cited mechanism within the benchmark is the use of typography to transfer unsafe content into images, which, as one paper notes, \"can bypass the safety mechanism of models.\" Some papers offer more specific framings, describing it as an \"adversarial multimodal benchmark\" for evaluating \"jailbreak attempts\" through step-by-step instructions, or as a \"dataset of harmful questions.\" The data also shows that FigStep is sometimes adapted for specific studies, for example by excluding categories like legal or medical advice. It is often evaluated alongside other multimodal safety benchmarks, such as MM-Safetybench and SIUO.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "ETA: Evaluating Then Aligning Safety of Vision Language Models at Inference Time",
+      "How Does Vision-Language Adaptation Impact the Safety of Vision Language Models?"
+    ],
+    "naacl25": [
+      "Measuring memorization in language models via probabilistic extraction",
+      "Single Ground Truth Is Not Enough: Adding Flexibility to Aspect-Based Sentiment Analysis Evaluation"
+    ],
+    "emnlp25": [
+      "From General Reward to Targeted Reward: Improving Open-ended Long-context Generation Models",
+      "Generative or Discriminative? Revisiting Text Classification in the Era of Transformers",
+      "PakBBQ: A Culturally Adapted Bias Benchmark forQA"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "naacl25": 2,
+    "emnlp25": 3
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "naacl25"
+  ]
+}

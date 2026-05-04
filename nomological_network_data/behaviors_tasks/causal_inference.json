@@ -1,0 +1,226 @@
+{
+  "canonical_name": "Causal inference",
+  "type": "behavior",
+  "canonical_definition": "In the surveyed literature, \"Causal inference\" is treated as a broad category of behaviors rather than a single, uniformly defined task. A prevalent framing, articulated in \"Unveiling Causal Reasoning in Large Language Models: Reality or Mirage?\", organizes the concept into three core activities: causal discovery, cause attribution, and causal effect estimation. Causal discovery, which also appears as causal graph discovery or construction, is commonly described as recovering latent causal structures from data, text, or agent interactions. Other definitions focus more narrowly on identifying specific relationships, such as selecting the most plausible cause for a premise or classifying a sentence as describing a causal link. A third cluster of work defines the behavior as estimating or quantifying the effects of variables on one another, sometimes framed as predicting future states after an action. This behavior is operationalized and measured using benchmarks like COPA and ACRE, and in simulated environments including AI2-THOR and Gridworld. Some research reports that performing causal inference can enable interpretability and continual learning. The behavior is also studied alongside language proficiency and hypothesis formulation.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Causal discovery",
+    "Cause attribution",
+    "Causal effect estimation",
+    "Causal graph discovery",
+    "Causal inference",
+    "Causal graph construction",
+    "Causal relationship classification",
+    "Effect inference",
+    "Causal identification"
+  ],
+  "papers": [
+    "ADAM: An Embodied Causal Agent in Open-World Environments",
+    "Causal Order: The Key to Leveraging Imperfect Experts in Causal Inference",
+    "LLMs Can Plan Only If We Tell Them",
+    "Language Agents Meet Causality -- Bridging LLMs and Causal World Models",
+    "Teaching LLMs How to Learn with Contextual Fine-Tuning",
+    "CausalStock: Deep End-to-end Causal Discovery for News-driven Multi-stock Movement Prediction",
+    "Enhancing In-Context Learning Performance with just SVD-Based Weight Pruning: A Theoretical Perspective",
+    "Unveiling Causal Reasoning in Large Language Models: Reality or Mirage?"
+  ],
+  "paper_count": 8,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The task of recovering the latent causal structure of variables from data or text.",
+      "paper": "Unveiling Causal Reasoning in Large Language Models: Reality or Mirage?",
+      "original_name": "Causal discovery"
+    },
+    {
+      "text": "The task of uncovering the potential causes behind a given process or observed outcome.",
+      "paper": "Unveiling Causal Reasoning in Large Language Models: Reality or Mirage?",
+      "original_name": "Cause attribution"
+    },
+    {
+      "text": "The task of investigating and quantifying the effect of specific cause variables on outcome variables.",
+      "paper": "Unveiling Causal Reasoning in Large Language Models: Reality or Mirage?",
+      "original_name": "Causal effect estimation"
+    },
+    {
+      "text": "Inferring a temporal directed graph over stocks that represents lagged causal links between variables.",
+      "paper": "CausalStock: Deep End-to-end Causal Discovery for News-driven Multi-stock Movement Prediction",
+      "original_name": "Causal graph discovery"
+    },
+    {
+      "text": "The task of selecting the most plausible cause or effect for a given premise from a set of alternatives.",
+      "paper": "Enhancing In-Context Learning Performance with just SVD-Based Weight Pruning: A Theoretical Perspective",
+      "original_name": "Causal inference"
+    },
+    {
+      "text": "Building a directed structure of item-action dependencies from interaction records and interventions.",
+      "paper": "ADAM: An Embodied Causal Agent in Open-World Environments",
+      "original_name": "Causal graph construction"
+    },
+    {
+      "text": "Estimating causal effects of one variable on another from an inferred adjustment set or causal structure.",
+      "paper": "Causal Order: The Key to Leveraging Imperfect Experts in Causal Inference",
+      "original_name": "Effect inference"
+    },
+    {
+      "text": "The task of identifying whether a sentence describes a causal link between events or is merely coincidental noise.",
+      "paper": "Teaching LLMs How to Learn with Contextual Fine-Tuning",
+      "original_name": "Causal relationship classification"
+    },
+    {
+      "text": "Determining which objects can activate a machine based on observed outcomes.",
+      "paper": "LLMs Can Plan Only If We Tell Them",
+      "original_name": "Causal identification"
+    }
+  ],
+  "definition_count": 9,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Causal reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Unveiling Causal Reasoning in Large Language Models: Reality or Mirage?",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "neurips24": [
+          "Unveiling Causal Reasoning in Large Language Models: Reality or Mirage?"
+        ],
+        "iclr25": [
+          "ADAM: An Embodied Causal Agent in Open-World Environments"
+        ],
+        "naacl25": [
+          "ParaICL: Towards Parallel In-Context Learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Hypothesis generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Causal Modelling Agents: Causal Graph Discovery through Synergising Metadata- and Data-driven Reasoning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Causal Modelling Agents: Causal Graph Discovery through Synergising Metadata- and Data-driven Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Interpretability and explainability",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "ADAM: An Embodied Causal Agent in Open-World Environments",
+      "evidence": "\"ADAM constructs a nearly perfect causal graph from scratch, enabling efficient task decomposition and execution with strong interpretability.\"",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "ADAM: An Embodied Causal Agent in Open-World Environments"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "COPA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "ParaICL: Towards Parallel In-Context Learning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "ParaICL: Towards Parallel In-Context Learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Continual learning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "ADAM: An Embodied Causal Agent in Open-World Environments",
+      "evidence": "Newly discovered items enable the execution of new unknown actions and the CD on these actions. This iterative process ensures the lifelong learning through continuous engagement and adaptation.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "ADAM: An Embodied Causal Agent in Open-World Environments"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AI2-THOR",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Language Agents Meet Causality -- Bridging LLMs and Causal World Models",
+      "evidence": "We evaluate our framework using two distinct environments: a dynamic 8 \u00d7 8 GridWorld and a static 3D-rendered kitchen (AI2-THOR)... Our experiments focus on three key aspects: the effectiveness of text-based action representations, causal inference, and planning.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Language Agents Meet Causality -- Bridging LLMs and Causal World Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Gridworld",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Language Agents Meet Causality -- Bridging LLMs and Causal World Models",
+      "evidence": "We evaluate our framework using two distinct environments: a dynamic 8 \u00d7 8 GridWorld and a static 3D-rendered kitchen (AI2-THOR)... Our experiments focus on three key aspects: the effectiveness of text-based action representations, causal inference, and planning.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Language Agents Meet Causality -- Bridging LLMs and Causal World Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ACRE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LLMs Can Plan Only If We Tell Them",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "LLMs Can Plan Only If We Tell Them"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 8,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 8,
+  "characterization": "In the surveyed literature, \"Causal inference\" is treated as a broad category of behaviors rather than a single, uniformly defined task. A prevalent framing, articulated in \"Unveiling Causal Reasoning in Large Language Models: Reality or Mirage?\", organizes the concept into three core activities: causal discovery, cause attribution, and causal effect estimation. Causal discovery, which also appears as causal graph discovery or construction, is commonly described as recovering latent causal structures from data, text, or agent interactions. Other definitions focus more narrowly on identifying specific relationships, such as selecting the most plausible cause for a premise or classifying a sentence as describing a causal link. A third cluster of work defines the behavior as estimating or quantifying the effects of variables on one another, sometimes framed as predicting future states after an action. This behavior is operationalized and measured using benchmarks like COPA and ACRE, and in simulated environments including AI2-THOR and Gridworld. Some research reports that performing causal inference can enable interpretability and continual learning. The behavior is also studied alongside language proficiency and hypothesis formulation.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "CausalStock: Deep End-to-end Causal Discovery for News-driven Multi-stock Movement Prediction",
+      "Enhancing In-Context Learning Performance with just SVD-Based Weight Pruning: A Theoretical Perspective",
+      "Unveiling Causal Reasoning in Large Language Models: Reality or Mirage?"
+    ],
+    "iclr25": [
+      "ADAM: An Embodied Causal Agent in Open-World Environments",
+      "Causal Order: The Key to Leveraging Imperfect Experts in Causal Inference",
+      "LLMs Can Plan Only If We Tell Them",
+      "Language Agents Meet Causality -- Bridging LLMs and Causal World Models",
+      "Teaching LLMs How to Learn with Contextual Fine-Tuning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 3,
+    "iclr25": 5
+  },
+  "conferences": [
+    "iclr25",
+    "neurips24"
+  ]
+}

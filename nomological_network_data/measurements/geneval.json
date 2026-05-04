@@ -1,0 +1,113 @@
+{
+  "canonical_name": "GenEval",
+  "type": "measurement",
+  "canonical_definition": "GenEval is consistently described in the provided literature as a benchmark for evaluating text-to-image generation models. Its primary purpose is to assess a model's ability to generate an image that accurately depicts a given text prompt, a function one paper describes as examining \"a model\u2019s ability to generate an accurate depiction of the prompt\" ('Transfusion: Predict the Next Token and Diffuse Images with One Multi-Modal Model'). A more specific framing characterizes it as a metric that assesses the \"quality and alignment of generated images with respect to input text, based on human preferences and semantic accuracy\" ('Orthus: Autoregressive Interleaved Image-Text Generation with Modality-Specific Heads'). Across the surveyed work, GenEval is used to operationalize and measure both `Visual generation` and `Image generation` capabilities. In practice, researchers report quantitative results, such as \"a GenEval score of 0.58\" ('Orthus...'), and use the benchmark to compare the performance of different models, with DALL-E 2 and SDXL appearing as common points of comparison.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "GenEval"
+  ],
+  "papers": [
+    "Revisit Large-Scale Image-Caption Data in Pre-training Multimodal Foundation Models",
+    "Show-o: One Single Transformer to Unify Multimodal Understanding and Generation",
+    "Transfusion: Predict the Next Token and Diffuse Images with One Multi-Modal Model",
+    "I Think, Therefore I Diffuse: Enabling Multimodal In-Context Reasoning in Diffusion Models",
+    "Orthus: Autoregressive Interleaved Image-Text Generation with Modality-Specific Heads"
+  ],
+  "paper_count": 5,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A benchmark designed to evaluate a model's ability to generate an image that is an accurate depiction of a given prompt.",
+      "paper": "Transfusion: Predict the Next Token and Diffuse Images with One Multi-Modal Model",
+      "original_name": "GenEval"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual generation",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Show-o: One Single Transformer to Unify Multimodal Understanding and Generation",
+      "evidence": "For visual understanding and generation, Orthus achieves a GenEval score of 0.58 and an MME-P score of 1265.8 using 7B parameters... (Abstract)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Show-o: One Single Transformer to Unify Multimodal Understanding and Generation"
+        ],
+        "icml25": [
+          "Orthus: Autoregressive Interleaved Image-Text Generation with Modality-Specific Heads"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Image generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Revisit Large-Scale Image-Caption Data in Pre-training Multimodal Foundation Models",
+      "evidence": "\"On the GenEval (Ghosh et al., 2023) benchmark, our model outperforms other popular models\"",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Revisit Large-Scale Image-Caption Data in Pre-training Multimodal Foundation Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense knowledge",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Revisit Large-Scale Image-Caption Data in Pre-training Multimodal Foundation Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Revisit Large-Scale Image-Caption Data in Pre-training Multimodal Foundation Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal generation",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "ModelCitizens: Representing Community Voices in Online Safety",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "ModelCitizens: Representing Community Voices in Online Safety"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 0,
+  "characterization": "GenEval is consistently described in the provided literature as a benchmark for evaluating text-to-image generation models. Its primary purpose is to assess a model's ability to generate an image that accurately depicts a given text prompt, a function one paper describes as examining \"a model\u2019s ability to generate an accurate depiction of the prompt\" ('Transfusion: Predict the Next Token and Diffuse Images with One Multi-Modal Model'). A more specific framing characterizes it as a metric that assesses the \"quality and alignment of generated images with respect to input text, based on human preferences and semantic accuracy\" ('Orthus: Autoregressive Interleaved Image-Text Generation with Modality-Specific Heads'). Across the surveyed work, GenEval is used to operationalize and measure both `Visual generation` and `Image generation` capabilities. In practice, researchers report quantitative results, such as \"a GenEval score of 0.58\" ('Orthus...'), and use the benchmark to compare the performance of different models, with DALL-E 2 and SDXL appearing as common points of comparison.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Revisit Large-Scale Image-Caption Data in Pre-training Multimodal Foundation Models",
+      "Show-o: One Single Transformer to Unify Multimodal Understanding and Generation",
+      "Transfusion: Predict the Next Token and Diffuse Images with One Multi-Modal Model"
+    ],
+    "icml25": [
+      "I Think, Therefore I Diffuse: Enabling Multimodal In-Context Reasoning in Diffusion Models",
+      "Orthus: Autoregressive Interleaved Image-Text Generation with Modality-Specific Heads"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3,
+    "icml25": 2
+  },
+  "conferences": [
+    "iclr25",
+    "icml25"
+  ]
+}

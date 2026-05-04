@@ -1,0 +1,124 @@
+{
+  "canonical_name": "BFCL",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, BFCL (Benchmark for Function Calling) is consistently described as a benchmark for evaluating the function-calling performance of large language models. Its most prevalent application is to measure Tool use, with multiple papers characterizing it as a \"widely adopted\" and \"comprehensive\" instrument for assessing an LLM's ability to invoke functions and tools. The benchmark operationalizes this evaluation through various categories, including \"single-turn,\" \"multi-turn,\" and tasks like \"Simple Function, Multiple Function, Parallel Function, and Parallel Multiple Function.\" Some sources specify that evaluation is based on metrics such as \"Abstract Syntax Tree (AST)\" and \"Executable Function Evaluation (Exec).\" While primarily used for general tool use, BFCL is also reported to measure more specific constructs. For instance, one paper uses it to assess Hallucination, and another connects its 'multi-turn' component to the measurement of Memory management, particularly \"sustained context management and dynamic decision-making.\"",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "BFCL"
+  ],
+  "papers": [
+    "Param$\\Delta$ for Direct Mixing: Post-Train Large Language Model At Zero Cost",
+    "Robust Function-Calling for On-Device Language Model via Function Masking",
+    "ToolACE: Winning the Points of LLM Function Calling",
+    "MoRAgent: Parameter Efficient Agent Tuning with Mixture-of-Roles",
+    "Safety Reasoning with Guidelines",
+    "The Berkeley Function Calling Leaderboard (BFCL): From Tool Use to Agentic Evaluation of Large Language Models"
+  ],
+  "paper_count": 6,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "BFCL (Benchmark for Function Calling) is a benchmark used to evaluate LLM function-calling performance across single-turn, multi-turn, hallucination, and executable categories.",
+      "paper": "ToolACE: Winning the Points of LLM Function Calling",
+      "original_name": "BFCL"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Tool use",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Compact Language Models via Pruning and Knowledge Distillation",
+      "evidence": "The evaluation datasets employed are sourced from open-source collections as reported in the Llama3 paper, which include MMLU(Hendrycks et al., 2021a), IFEval(Zhou et al., 2023), HumanEval(Chen et al., 2021), MBPP(Austin et al., 2021), GSM8K(Cobbe et al., 2021), MATH(Hendrycks et al., 2021b), ARC Challenge (Clark et al., 2018), GPQA (Rein et al., 2023), BFCL(Yan et al., 2024), API-Bank(Li et al., 2023), and MGSM(Shi et al., 2022).",
+      "paper_count": 7,
+      "papers_by_conference": {
+        "neurips24": [
+          "Compact Language Models via Pruning and Knowledge Distillation"
+        ],
+        "iclr25": [
+          "ToolACE: Winning the Points of LLM Function Calling",
+          "Param$\\Delta$ for Direct Mixing: Post-Train Large Language Model At Zero Cost",
+          "Robust Function-Calling for On-Device Language Model via Function Masking"
+        ],
+        "naacl25": [
+          "PAPILLON: Privacy Preservation fromInternet-based and Local Language Model Ensembles"
+        ],
+        "icml25": [
+          "MoRAgent: Parameter Efficient Agent Tuning with Mixture-of-Roles",
+          "The Berkeley Function Calling Leaderboard (BFCL): From Tool Use to Agentic Evaluation of Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "ToolACE: Winning the Points of LLM Function Calling",
+      "evidence": "Accuracy performance comparison on BFCL-v3 leaderboard (updated on 09/20/2024). ... Hallucination (Table 2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "ToolACE: Winning the Points of LLM Function Calling"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Tool use",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "PAPILLON: Privacy Preservation fromInternet-based and Local Language Model Ensembles",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "PAPILLON: Privacy Preservation fromInternet-based and Local Language Model Ensembles"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Memory management",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "The Berkeley Function Calling Leaderboard (BFCL): From Tool Use to Agentic Evaluation of Large Language Models",
+      "evidence": "\"the \u2018multi-turn\u2019 featuring eight curated API suites and 1000 queries, assessing sustained context management and dynamic decision-making\"",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "The Berkeley Function Calling Leaderboard (BFCL): From Tool Use to Agentic Evaluation of Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the provided literature, BFCL (Benchmark for Function Calling) is consistently described as a benchmark for evaluating the function-calling performance of large language models. Its most prevalent application is to measure Tool use, with multiple papers characterizing it as a \"widely adopted\" and \"comprehensive\" instrument for assessing an LLM's ability to invoke functions and tools. The benchmark operationalizes this evaluation through various categories, including \"single-turn,\" \"multi-turn,\" and tasks like \"Simple Function, Multiple Function, Parallel Function, and Parallel Multiple Function.\" Some sources specify that evaluation is based on metrics such as \"Abstract Syntax Tree (AST)\" and \"Executable Function Evaluation (Exec).\" While primarily used for general tool use, BFCL is also reported to measure more specific constructs. For instance, one paper uses it to assess Hallucination, and another connects its 'multi-turn' component to the measurement of Memory management, particularly \"sustained context management and dynamic decision-making.\"",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Param$\\Delta$ for Direct Mixing: Post-Train Large Language Model At Zero Cost",
+      "Robust Function-Calling for On-Device Language Model via Function Masking",
+      "ToolACE: Winning the Points of LLM Function Calling"
+    ],
+    "icml25": [
+      "MoRAgent: Parameter Efficient Agent Tuning with Mixture-of-Roles",
+      "Safety Reasoning with Guidelines",
+      "The Berkeley Function Calling Leaderboard (BFCL): From Tool Use to Agentic Evaluation of Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3,
+    "icml25": 3
+  },
+  "conferences": [
+    "iclr25",
+    "icml25"
+  ]
+}

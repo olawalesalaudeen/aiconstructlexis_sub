@@ -1,0 +1,110 @@
+{
+  "canonical_name": "Representation quality",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, representation quality is a latent construct referring to the effectiveness of a model's internal representations in encoding and preserving task-relevant information. The most detailed definition frames it as the ability to retain useful information while discarding noise, which is reflected in downstream performance and structural properties like compression, geometry, and invariance. Other papers offer more specific framings, such as the ability to distinguish between tasks and knowledge domains, the decodability of task vectors for in-context learning, or the capacity to capture semantic meaning in text embeddings. A recurring theme is the geometric structure of these representations; one study notes that models can encode high- and low-level concepts in an \"approximately orthogonal manner.\" The concept also extends to vision, where \"visual feature quality\" is defined by the preservation of semantic, structural, and pixel-level details from an input image. To operationalize this construct, researchers measure downstream performance using benchmarks like the Massive Text Embedding Benchmark (MTEB), evaluating on its text similarity and text-embedding tasks. In the visual domain, one paper reports that image reconstruction can be used to enhance representation quality.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Embedding capability",
+    "Representation quality",
+    "Task vector quality",
+    "Visual feature quality",
+    "Feature representation capability",
+    "Hierarchical concept representation"
+  ],
+  "papers": [
+    "DS-VLM: Diffusion Supervision Vision Language Model",
+    "Emergence and Effectiveness of Task Vectors in In-Context Learning: An Encoder Decoder Perspective",
+    "Exploiting Presentative Feature Distributions for Parameter-Efficient Continual Learning of Large Language Models",
+    "Layer by Layer: Uncovering Hidden Representations in Language Models",
+    "Provable In-Context Vector Arithmetic via Retrieving Task Concepts",
+    "What Limits Bidirectional Model\u2019s Generative Capabilities? A Uni-Bi-Directional Mixture-of-Expert Method For Bidirectional Fine-tuning"
+  ],
+  "paper_count": 6,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The organization of knowledge in LLMs such that high-level task concepts (e.g., 'capital') are encoded in directions orthogonal to low-level, task-specific features, enabling selective attention and compositionality.",
+      "paper": "Provable In-Context Vector Arithmetic via Retrieving Task Concepts",
+      "original_name": "Hierarchical concept representation"
+    },
+    {
+      "text": "The inherent ability of a pre-trained model to encode data into a feature space that can be used to distinguish and categorize different tasks and knowledge domains.",
+      "paper": "Exploiting Presentative Feature Distributions for Parameter-Efficient Continual Learning of Large Language Models",
+      "original_name": "Feature representation capability"
+    },
+    {
+      "text": "The degree to which a model's internal representation of a task is distinct and decodable, determining the effectiveness of triggering correct in-context learning behavior.",
+      "paper": "Emergence and Effectiveness of Task Vectors in In-Context Learning: An Encoder Decoder Perspective",
+      "original_name": "Task vector quality"
+    },
+    {
+      "text": "The latent ability of a model to produce high-quality text representations that capture semantic meaning, enhanced by bidirectional modeling but typically at the cost of generative performance in unidirectional models.",
+      "paper": "What Limits Bidirectional Model\u2019s Generative Capabilities? A Uni-Bi-Directional Mixture-of-Expert Method For Bidirectional Fine-tuning",
+      "original_name": "Embedding capability"
+    },
+    {
+      "text": "The latent property of a model's internal representations that determines their effectiveness in preserving task-relevant information while discarding noise, as reflected in downstream performance and structural properties like compression, geometry, and invariance.",
+      "paper": "Layer by Layer: Uncovering Hidden Representations in Language Models",
+      "original_name": "Representation quality"
+    },
+    {
+      "text": "The degree to which visual encoder outputs preserve semantic, structural, and pixel-level details from the input image, enabling accurate multimodal alignment and reasoning.",
+      "paper": "DS-VLM: Diffusion Supervision Vision Language Model",
+      "original_name": "Visual feature quality"
+    }
+  ],
+  "definition_count": 6,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MTEB",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Layer by Layer: Uncovering Hidden Representations in Language Models",
+      "evidence": "we conduct experiments on ten text similarity (STS) tasks in MTEB (Muennighoff et al., 2022) (Section 5.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Layer by Layer: Uncovering Hidden Representations in Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Image reconstruction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "DS-VLM: Diffusion Supervision Vision Language Model",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "DS-VLM: Diffusion Supervision Vision Language Model"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the surveyed literature, representation quality is a latent construct referring to the effectiveness of a model's internal representations in encoding and preserving task-relevant information. The most detailed definition frames it as the ability to retain useful information while discarding noise, which is reflected in downstream performance and structural properties like compression, geometry, and invariance. Other papers offer more specific framings, such as the ability to distinguish between tasks and knowledge domains, the decodability of task vectors for in-context learning, or the capacity to capture semantic meaning in text embeddings. A recurring theme is the geometric structure of these representations; one study notes that models can encode high- and low-level concepts in an \"approximately orthogonal manner.\" The concept also extends to vision, where \"visual feature quality\" is defined by the preservation of semantic, structural, and pixel-level details from an input image. To operationalize this construct, researchers measure downstream performance using benchmarks like the Massive Text Embedding Benchmark (MTEB), evaluating on its text similarity and text-embedding tasks. In the visual domain, one paper reports that image reconstruction can be used to enhance representation quality.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "icml25": [
+      "DS-VLM: Diffusion Supervision Vision Language Model",
+      "Emergence and Effectiveness of Task Vectors in In-Context Learning: An Encoder Decoder Perspective",
+      "Exploiting Presentative Feature Distributions for Parameter-Efficient Continual Learning of Large Language Models",
+      "Layer by Layer: Uncovering Hidden Representations in Language Models",
+      "Provable In-Context Vector Arithmetic via Retrieving Task Concepts",
+      "What Limits Bidirectional Model\u2019s Generative Capabilities? A Uni-Bi-Directional Mixture-of-Expert Method For Bidirectional Fine-tuning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "icml25": 6
+  },
+  "conferences": [
+    "icml25"
+  ]
+}

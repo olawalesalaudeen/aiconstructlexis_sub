@@ -1,0 +1,433 @@
+{
+  "canonical_name": "Object hallucination",
+  "type": "behavior",
+  "canonical_definition": "Across the provided papers, object hallucination is consistently defined as an observable failure mode where a model generates text referring to objects not present in the corresponding visual input. A less common framing expands this to include the neglect of visible objects. The field operationalizes this behavior using numerous evaluation instruments, with the POPE benchmark being the most frequently cited. POPE is described as a \"widely used benchmark\" that quantifies object hallucination through VQA-based tasks or binary classification to determine the presence or absence of specific objects. Another common measurement instrument is CHAIR, which is designed for open-ended captioning and calculates the proportion of mentioned objects that are not in the ground-truth image labels. Other benchmarks such as MME, AMBER, and MM-Hal-Bench are also used to assess aspects like object existence and count. This behavior is treated as a specific type of hallucination and is studied in the context of tasks like visual question answering and image description.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Object hallucination"
+  ],
+  "papers": [
+    "A Survey of Link Prediction in N-ary Knowledge Graphs",
+    "ConsistentChat: Building Skeleton-Guided Consistent Multi-Turn Dialogues for Large Language Models from Scratch",
+    "Do It Yourself (DIY): Modifying Images for Poems in a Zero-Shot Setting Using Weighted Prompt Manipulation",
+    "Matter-of-Fact: A Benchmark for Verifying the Feasibility of Literature-Supported Claims in Materials Science",
+    "QCRD: Quality-guided Contrastive Rationale Distillation for Large Language Models",
+    "RecGPT: A Foundation Model for Sequential Recommendation",
+    "TVQACML: Benchmarking Text-Centric Visual Question Answering in MultilingualChinese Minority Languages",
+    "Benchmarking Vision Language Model Unlearning via Fictitious Facial Identity Dataset",
+    "ClawMachine: Learning to Fetch Visual Tokens for Referential Comprehension",
+    "DAMO: Decoding by Accumulating Activations Momentum for Mitigating Hallucinations in Vision-Language Models",
+    "Do Vision-Language Models Represent Space and How? Evaluating Spatial Frame of Reference under Ambiguities",
+    "Do You Keep an Eye on What I Ask? Mitigating Multimodal Hallucination via Attention-Guided Ensemble Decoding",
+    "EMMA: Empowering Multi-modal Mamba with Structural and Hierarchical Alignment",
+    "From Pixels to Tokens: Byte-Pair Encoding on Quantized Visual Modalities",
+    "Intervening Anchor Token: Decoding Strategy in Alleviating Hallucinations for MLLMs",
+    "Locality Alignment Improves Vision-Language Models",
+    "MLLM can see? Dynamic Correction Decoding for Hallucination Mitigation",
+    "MediConfusion: Can you trust your AI radiologist? Probing the reliability of multimodal medical foundation models",
+    "PerturboLLaVA: Reducing Multimodal Hallucinations with Perturbative Visual Training",
+    "Re-Imagining Multimodal Instruction Tuning: A Representation View",
+    "Reducing Hallucinations in Large Vision-Language Models via Latent Space Steering",
+    "Understanding and Mitigating Hallucination in Large Vision-Language Models via Modular Attribution and Intervention",
+    "CogVLM: Visual Expert for Pretrained Language Models",
+    "Efficient Large Multi-modal Models via Visual Context Compression",
+    "LOVA3: Learning to Visual Question Answering, Asking and Assessment",
+    "Multi-Object Hallucination in Vision Language Models",
+    "VideoLLM-MoD: Efficient Video-Language Streaming with Mixture-of-Depths Vision Computation",
+    "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks"
+  ],
+  "paper_count": 28,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "An observable failure mode where the model generates text that refers to objects not present in the corresponding image or video frame.",
+      "paper": "VideoLLM-MoD: Efficient Video-Language Streaming with Mixture-of-Depths Vision Computation",
+      "original_name": "Object hallucination"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "POPE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Ferret: Refer and Ground Anything Anywhere at Any Granularity",
+      "evidence": "\u201cPOPE (Li et al., 2023d) is a widely used benchmark for assessing object hallucinations in LVLMs\u201d",
+      "paper_count": 19,
+      "papers_by_conference": {
+        "iclr24": [
+          "Ferret: Refer and Ground Anything Anywhere at Any Granularity"
+        ],
+        "neurips24": [
+          "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+          "Mitigating Object Hallucination via Concentric Causal Attention",
+          "GraphVis: Boosting LLMs with Visual Knowledge Graph Integration",
+          "LOVA3: Learning to Visual Question Answering, Asking and Assessment",
+          "Efficient Large Multi-modal Models via Visual Context Compression"
+        ],
+        "iclr25": [
+          "From Pixels to Tokens: Byte-Pair Encoding on Quantized Visual Modalities",
+          "EMMA: Empowering Multi-modal Mamba with Structural and Hierarchical Alignment",
+          "Benchmarking Vision Language Model Unlearning via Fictitious Facial Identity Dataset",
+          "Re-Imagining Multimodal Instruction Tuning: A Representation View",
+          "ClawMachine: Learning to Fetch Visual Tokens for Referential Comprehension",
+          "Reducing Hallucinations in Large Vision-Language Models via Latent Space Steering",
+          "DAMO: Decoding by Accumulating Activations Momentum for Mitigating Hallucinations in Vision-Language Models",
+          "Intervening Anchor Token: Decoding Strategy in Alleviating Hallucinations for MLLMs",
+          "Do You Keep an Eye on What I Ask? Mitigating Multimodal Hallucination via Attention-Guided Ensemble Decoding"
+        ],
+        "icml25": [
+          "Mitigating Object Hallucination in Large Vision-Language Models via Image-Grounded Guidance"
+        ],
+        "emnlp25": [
+          "MuCAL: Contrastive Alignment for Preference-DrivenKG-to-Text Generation",
+          "QCRD: Quality-guided Contrastive Rationale Distillation for Large Language Models",
+          "A Survey of Link Prediction in N-ary Knowledge Graphs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CHAIR",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Analyzing and Mitigating Object Hallucination in Large Vision-Language Models",
+      "evidence": "\u201cCHAIR (Rohrbach et al., 2018) evaluates object hallucinations in open-ended captioning tasks\u201d",
+      "paper_count": 12,
+      "papers_by_conference": {
+        "iclr24": [
+          "Analyzing and Mitigating Object Hallucination in Large Vision-Language Models"
+        ],
+        "neurips24": [
+          "Unleashing Region Understanding in Intermediate Layers for MLLM-based Referring Expression Generation",
+          "Multi-Object Hallucination in Vision Language Models",
+          "Mitigating Object Hallucination via Concentric Causal Attention"
+        ],
+        "iclr25": [
+          "Do You Keep an Eye on What I Ask? Mitigating Multimodal Hallucination via Attention-Guided Ensemble Decoding",
+          "Reducing Hallucinations in Large Vision-Language Models via Latent Space Steering",
+          "Mitigating Object Hallucination in MLLMs via Data-augmented Phrase-level Alignment",
+          "PerturboLLaVA: Reducing Multimodal Hallucinations with Perturbative Visual Training",
+          "Intervening Anchor Token: Decoding Strategy in Alleviating Hallucinations for MLLMs"
+        ],
+        "acl25": [
+          "EAC-MoE: Expert-Selection Aware Compressor for Mixture-of-Experts Large Language Models"
+        ],
+        "icml25": [
+          "Mitigating Object Hallucination in Large Vision-Language Models via Image-Grounded Guidance"
+        ],
+        "emnlp25": [
+          "A Survey of Link Prediction in N-ary Knowledge Graphs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Unleashing Region Understanding in Intermediate Layers for MLLM-based Referring Expression Generation",
+      "evidence": "\"we compared with various decoding strategies on the SEEM-annotated MSCOCO and A-OKVQA datasets provided by POPE\" and \"addressing object hallucinations\"",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "neurips24": [
+          "Unleashing Region Understanding in Intermediate Layers for MLLM-based Referring Expression Generation",
+          "Alleviating Hallucinations in Large Vision-Language Models through Hallucination-Induced Optimization"
+        ],
+        "iclr25": [
+          "Mitigating Object Hallucination in MLLMs via Data-augmented Phrase-level Alignment"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MME",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Mitigating Object Hallucination via Concentric Causal Attention",
+      "evidence": "MME (Fu et al., 2024) provides a benchmark for assessing LVLMs across various tasks. Following Yin et al. (2023), we evaluate hallucination using four subtasks: Existence, Count, Position, and Color",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "neurips24": [
+          "Mitigating Object Hallucination via Concentric Causal Attention"
+        ],
+        "iclr25": [
+          "Do You Keep an Eye on What I Ask? Mitigating Multimodal Hallucination via Attention-Guided Ensemble Decoding"
+        ],
+        "emnlp25": [
+          "A Survey of Link Prediction in N-ary Knowledge Graphs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AMBER",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Mitigating Object Hallucination in MLLMs via Data-augmented Phrase-level Alignment",
+      "evidence": "To evaluate performance on both generative and discriminative tasks, we use AMBER (Wang et al., 2023b), which measures hallucination using several metrics. For generative tasks, AMBER assesses the frequency of hallucinated objects in image descriptions... (Section 4.1)",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr25": [
+          "Mitigating Object Hallucination in MLLMs via Data-augmented Phrase-level Alignment"
+        ],
+        "naacl25": [
+          "LibEvolutionEval: A Benchmark and Study for Version-Specific Code Generation"
+        ],
+        "emnlp25": [
+          "QCRD: Quality-guided Contrastive Rationale Distillation for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Mitigating Object Hallucination via Concentric Causal Attention",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Mitigating Object Hallucination via Concentric Causal Attention"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "COCO",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Understanding and Mitigating Hallucination in Large Vision-Language Models via Modular Attribution and Intervention",
+      "evidence": "To evaluate object hallucination in visual caption, we use images from the COCO validation and Nocaps (Agrawal et al., 2019) datasets (Section 5.1).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Understanding and Mitigating Hallucination in Large Vision-Language Models via Modular Attribution and Intervention"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Analyzing and Mitigating Object Hallucination in Large Vision-Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Analyzing and Mitigating Object Hallucination in Large Vision-Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-based evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Analyzing and Mitigating Object Hallucination in Large Vision-Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Analyzing and Mitigating Object Hallucination in Large Vision-Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MS-COCO",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "DAMO: Decoding by Accumulating Activations Momentum for Mitigating Hallucinations in Vision-Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "DAMO: Decoding by Accumulating Activations Momentum for Mitigating Hallucinations in Vision-Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Perception",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Mitigating Object Hallucination via Concentric Causal Attention",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Mitigating Object Hallucination via Concentric Causal Attention"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Modality alignment",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "From Pixels to Tokens: Byte-Pair Encoding on Quantized Visual Modalities",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "From Pixels to Tokens: Byte-Pair Encoding on Quantized Visual Modalities"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "NoCaps",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Understanding and Mitigating Hallucination in Large Vision-Language Models via Modular Attribution and Intervention",
+      "evidence": "To evaluate object hallucination in visual caption, we use images from the COCO validation and Nocaps (Agrawal et al., 2019) datasets (Section 5.1).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Understanding and Mitigating Hallucination in Large Vision-Language Models via Modular Attribution and Intervention"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "A-OKVQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "DAMO: Decoding by Accumulating Activations Momentum for Mitigating Hallucinations in Vision-Language Models",
+      "evidence": "POPE ... is a scalable framework for detecting object hallucinations in LVLMs, utilizing SEEM-annotated datasets from ... A-OKVQA Schwenk et al. (2022)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "DAMO: Decoding by Accumulating Activations Momentum for Mitigating Hallucinations in Vision-Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Mitigating Object Hallucination in MLLMs via Data-augmented Phrase-level Alignment",
+      "evidence": "\"POPE is a VQA-based metric for assessing object hallucination in MLLMs\"",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Mitigating Object Hallucination in MLLMs via Data-augmented Phrase-level Alignment"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-as-a-judge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Mitigating Object Hallucination in Large Vision-Language Models via Image-Grounded Guidance",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Mitigating Object Hallucination in Large Vision-Language Models via Image-Grounded Guidance"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MM-Hal-Bench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Mitigating Object Hallucination in MLLMs via Data-augmented Phrase-level Alignment",
+      "evidence": "we benchmark VTI on the MMHAL dataset with the evaluations of eight different hallucination types.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Mitigating Object Hallucination in MLLMs via Data-augmented Phrase-level Alignment"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Image description",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Mitigating Object Hallucination in MLLMs via Data-augmented Phrase-level Alignment",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Mitigating Object Hallucination in MLLMs via Data-augmented Phrase-level Alignment"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Object HalBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LibEvolutionEval: A Benchmark and Study for Version-Specific Code Generation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "LibEvolutionEval: A Benchmark and Study for Version-Specific Code Generation"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 19,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 15,
+  "characterization": "Across the provided papers, object hallucination is consistently defined as an observable failure mode where a model generates text referring to objects not present in the corresponding visual input. A less common framing expands this to include the neglect of visible objects. The field operationalizes this behavior using numerous evaluation instruments, with the POPE benchmark being the most frequently cited. POPE is described as a \"widely used benchmark\" that quantifies object hallucination through VQA-based tasks or binary classification to determine the presence or absence of specific objects. Another common measurement instrument is CHAIR, which is designed for open-ended captioning and calculates the proportion of mentioned objects that are not in the ground-truth image labels. Other benchmarks such as MME, AMBER, and MM-Hal-Bench are also used to assess aspects like object existence and count. This behavior is treated as a specific type of hallucination and is studied in the context of tasks like visual question answering and image description.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "CogVLM: Visual Expert for Pretrained Language Models",
+      "Efficient Large Multi-modal Models via Visual Context Compression",
+      "LOVA3: Learning to Visual Question Answering, Asking and Assessment",
+      "Multi-Object Hallucination in Vision Language Models",
+      "VideoLLM-MoD: Efficient Video-Language Streaming with Mixture-of-Depths Vision Computation",
+      "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks"
+    ],
+    "iclr25": [
+      "Benchmarking Vision Language Model Unlearning via Fictitious Facial Identity Dataset",
+      "ClawMachine: Learning to Fetch Visual Tokens for Referential Comprehension",
+      "DAMO: Decoding by Accumulating Activations Momentum for Mitigating Hallucinations in Vision-Language Models",
+      "Do Vision-Language Models Represent Space and How? Evaluating Spatial Frame of Reference under Ambiguities",
+      "Do You Keep an Eye on What I Ask? Mitigating Multimodal Hallucination via Attention-Guided Ensemble Decoding",
+      "EMMA: Empowering Multi-modal Mamba with Structural and Hierarchical Alignment",
+      "From Pixels to Tokens: Byte-Pair Encoding on Quantized Visual Modalities",
+      "Intervening Anchor Token: Decoding Strategy in Alleviating Hallucinations for MLLMs",
+      "Locality Alignment Improves Vision-Language Models",
+      "MLLM can see? Dynamic Correction Decoding for Hallucination Mitigation",
+      "MediConfusion: Can you trust your AI radiologist? Probing the reliability of multimodal medical foundation models",
+      "PerturboLLaVA: Reducing Multimodal Hallucinations with Perturbative Visual Training",
+      "Re-Imagining Multimodal Instruction Tuning: A Representation View",
+      "Reducing Hallucinations in Large Vision-Language Models via Latent Space Steering",
+      "Understanding and Mitigating Hallucination in Large Vision-Language Models via Modular Attribution and Intervention"
+    ],
+    "emnlp25": [
+      "A Survey of Link Prediction in N-ary Knowledge Graphs",
+      "ConsistentChat: Building Skeleton-Guided Consistent Multi-Turn Dialogues for Large Language Models from Scratch",
+      "Do It Yourself (DIY): Modifying Images for Poems in a Zero-Shot Setting Using Weighted Prompt Manipulation",
+      "Matter-of-Fact: A Benchmark for Verifying the Feasibility of Literature-Supported Claims in Materials Science",
+      "QCRD: Quality-guided Contrastive Rationale Distillation for Large Language Models",
+      "RecGPT: A Foundation Model for Sequential Recommendation",
+      "TVQACML: Benchmarking Text-Centric Visual Question Answering in MultilingualChinese Minority Languages"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 6,
+    "iclr25": 15,
+    "emnlp25": 7
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "neurips24"
+  ]
+}

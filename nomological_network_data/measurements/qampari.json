@@ -1,0 +1,80 @@
+{
+  "canonical_name": "QAMPARI",
+  "type": "measurement",
+  "canonical_definition": "Across the provided sources, QAMPARI is consistently defined as a benchmark dataset for attributable, factoid question-answering tasks. A common feature highlighted is that questions may have multiple answers, with one paper specifying that the answer to a question is \"a list of entities drawn from different passages.\" While it is predominantly framed as a factoid QA dataset, one source also describes it as an \"attributable factoid and long-form question-answering\" task. The dataset is explicitly used for evaluation purposes. Based on the provided relationships, papers use QAMPARI to measure the constructs of `Faithfulness` and `Refusal` in language models. One definition also states it is used to evaluate \"precision and recall in attributed generation.\" In evaluation settings, it is sometimes used alongside other benchmarks like ASQA and ELI5.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "QAMPARI"
+  ],
+  "papers": [
+    "CADReview: Automatically ReviewingCADPrograms with Error Detection and Correction",
+    "LLaVASteering: Visual Instruction Tuning with 500x Fewer Parameters through Modality Linear Representation-Steering",
+    "HELMET: How to Evaluate Long-context Models Effectively and Thoroughly",
+    "Measuring and Enhancing Trustworthiness of LLMs in RAG through Grounded Attributions and Learning to Refuse"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A benchmark dataset for attributable, factoid question-answering tasks where questions may have multiple answers, used for evaluation.",
+      "paper": "Measuring and Enhancing Trustworthiness of LLMs in RAG through Grounded Attributions and Learning to Refuse",
+      "original_name": "QAMPARI"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Trustworthiness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Measuring and Enhancing Trustworthiness of LLMs in RAG through Grounded Attributions and Learning to Refuse",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Measuring and Enhancing Trustworthiness of LLMs in RAG through Grounded Attributions and Learning to Refuse"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Refusal",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Measuring and Enhancing Trustworthiness of LLMs in RAG through Grounded Attributions and Learning to Refuse",
+      "evidence": "TRUST-ALIGN improves models' refusal capability. Across all 27 configurations, TRUST-ALIGN yields substantial improvements in F1GR. In LLaMA-3-8b, TRUST-ALIGN outperforms FRONT by 23.87% (ASQA), 47.95% (QAMPARI), and 45.72% (ELI5).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Measuring and Enhancing Trustworthiness of LLMs in RAG through Grounded Attributions and Learning to Refuse"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided sources, QAMPARI is consistently defined as a benchmark dataset for attributable, factoid question-answering tasks. A common feature highlighted is that questions may have multiple answers, with one paper specifying that the answer to a question is \"a list of entities drawn from different passages.\" While it is predominantly framed as a factoid QA dataset, one source also describes it as an \"attributable factoid and long-form question-answering\" task. The dataset is explicitly used for evaluation purposes. Based on the provided relationships, papers use QAMPARI to measure the constructs of `Faithfulness` and `Refusal` in language models. One definition also states it is used to evaluate \"precision and recall in attributed generation.\" In evaluation settings, it is sometimes used alongside other benchmarks like ASQA and ELI5.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "HELMET: How to Evaluate Long-context Models Effectively and Thoroughly",
+      "Measuring and Enhancing Trustworthiness of LLMs in RAG through Grounded Attributions and Learning to Refuse"
+    ],
+    "acl25": [
+      "CADReview: Automatically ReviewingCADPrograms with Error Detection and Correction",
+      "LLaVASteering: Visual Instruction Tuning with 500x Fewer Parameters through Modality Linear Representation-Steering"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "acl25": 2
+  },
+  "conferences": [
+    "acl25",
+    "iclr25"
+  ]
+}

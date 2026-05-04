@@ -1,0 +1,183 @@
+{
+  "canonical_name": "Representation learning",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, representation learning is most commonly defined as a model's ability to encode input data into a latent space where similar instances are represented closely, facilitating downstream tasks. Some papers offer more specific framings, such as `Feature learning`, which focuses on capturing \"invariant or environment-relevant patterns\" (Context is Environment), or `Semantic representation learning`, which contrasts learning \"semantic meaning\" with learning \"superficial token patterns\" (What Factors Affect Multi-Modal In-Context Learning?). The process is often described as a transformation occurring in a model's intermediate layers, which, as one paper notes, \"prepares it into a certain format\" for subsequent processing (How Do Transformers Learn In-Context Beyond Simple Functions?). The quality of these learned representations is operationalized and evaluated through performance on various downstream tasks. For instance, one study uses the `Nucleotide Transformer Benchmark` to assess representations by fine-tuning a model on genomic classification benchmarks. Representation learning is frequently studied alongside `In-context and few-shot learning`, with some work viewing it as the underlying mechanism for ICL. A few papers also report that it influences `Generalization`, `Commonsense knowledge`, and `Output diversity`.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Feature learning",
+    "Representation learning",
+    "Semantic representation learning"
+  ],
+  "papers": [
+    "Benchmarking Long-Context Language Models on Long Code Understanding",
+    "ProMALex: Progressive Modular Adapters for Multi-Jurisdictional Legal Language Modeling",
+    "Towards Context-RobustLLMs: A Gated Representation Fine-tuning Approach",
+    "Context is Environment",
+    "How Do Transformers Learn In-Context Beyond Simple Functions? A Case Study on Learning with Representations",
+    "Out-of-Distribution Detection by Leveraging Between-Layer Transformation Smoothness",
+    "TEST: Text Prototype Aligned Embedding to Activate LLM's Ability for Time Series",
+    "Bio-xLSTM: Generative modeling, representation and in-context learning of biological and chemical sequences",
+    "NV-Embed: Improved Techniques for Training LLMs as Generalist Embedding Models",
+    "Attention-Only Transformers via Unrolled Subspace Denoising",
+    "Elucidating the Design Space of Multimodal Protein Language Models",
+    "Towards Understanding How Transformers Learn In-context Through a Representation Learning Lens",
+    "Transformers are Minimax Optimal Nonparametric In-Context Learners",
+    "What Factors Affect Multi-Modal In-Context Learning? An In-Depth Exploration"
+  ],
+  "paper_count": 14,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The model's capacity to learn useful representations of input data that capture invariant or environment-relevant patterns, which can be enhanced through context-based training.",
+      "paper": "Context is Environment",
+      "original_name": "Feature learning"
+    },
+    {
+      "text": "The ability of a model to learn to encode input data into a latent space where similar instances are represented closely, facilitating downstream tasks.",
+      "paper": "How Do Transformers Learn In-Context Beyond Simple Functions? A Case Study on Learning with Representations",
+      "original_name": "Representation learning"
+    },
+    {
+      "text": "The ability to learn and utilize semantic meaning rather than superficial token patterns, which VLLMs rely on for effective MM-ICL performance.",
+      "paper": "What Factors Affect Multi-Modal In-Context Learning? An In-Depth Exploration",
+      "original_name": "Semantic representation learning"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-context learning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "How Do Transformers Learn In-Context Beyond Simple Functions? A Case Study on Learning with Representations",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr24": [
+          "How Do Transformers Learn In-Context Beyond Simple Functions? A Case Study on Learning with Representations"
+        ],
+        "neurips24": [
+          "Towards Understanding How Transformers Learn In-context Through a Representation Learning Lens"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "In-context learning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Transformers are Minimax Optimal Nonparametric In-Context Learners",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Transformers are Minimax Optimal Nonparametric In-Context Learners"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Nucleotide Transformer Benchmark",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Bio-xLSTM: Generative modeling, representation and in-context learning of biological and chemical sequences",
+      "evidence": "To evaluate the learned representations, we fine-tuned our MLM-pretrained, short-context DNA-xLSTM models ... while the DNA-xLSTM-2M model was fine-tuned on the Nucleotide Transformers Tasks (Dalla-Torre et al., 2024) (Section 4.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Bio-xLSTM: Generative modeling, representation and in-context learning of biological and chemical sequences"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Adaptive Prompting: Ad-hoc Prompt Composition for Social Bias Detection",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Adaptive Prompting: Ad-hoc Prompt Composition for Social Bias Detection"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Commonsense knowledge",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Adaptive Prompting: Ad-hoc Prompt Composition for Social Bias Detection",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Adaptive Prompting: Ad-hoc Prompt Composition for Social Bias Detection"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generation diversity",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Elucidating the Design Space of Multimodal Protein Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Elucidating the Design Space of Multimodal Protein Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 6,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 5,
+  "characterization": "Across the surveyed literature, representation learning is most commonly defined as a model's ability to encode input data into a latent space where similar instances are represented closely, facilitating downstream tasks. Some papers offer more specific framings, such as `Feature learning`, which focuses on capturing \"invariant or environment-relevant patterns\" (Context is Environment), or `Semantic representation learning`, which contrasts learning \"semantic meaning\" with learning \"superficial token patterns\" (What Factors Affect Multi-Modal In-Context Learning?). The process is often described as a transformation occurring in a model's intermediate layers, which, as one paper notes, \"prepares it into a certain format\" for subsequent processing (How Do Transformers Learn In-Context Beyond Simple Functions?). The quality of these learned representations is operationalized and evaluated through performance on various downstream tasks. For instance, one study uses the `Nucleotide Transformer Benchmark` to assess representations by fine-tuning a model on genomic classification benchmarks. Representation learning is frequently studied alongside `In-context and few-shot learning`, with some work viewing it as the underlying mechanism for ICL. A few papers also report that it influences `Generalization`, `Commonsense knowledge`, and `Output diversity`.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Context is Environment",
+      "How Do Transformers Learn In-Context Beyond Simple Functions? A Case Study on Learning with Representations",
+      "Out-of-Distribution Detection by Leveraging Between-Layer Transformation Smoothness",
+      "TEST: Text Prototype Aligned Embedding to Activate LLM's Ability for Time Series"
+    ],
+    "neurips24": [
+      "Towards Understanding How Transformers Learn In-context Through a Representation Learning Lens",
+      "Transformers are Minimax Optimal Nonparametric In-Context Learners",
+      "What Factors Affect Multi-Modal In-Context Learning? An In-Depth Exploration"
+    ],
+    "iclr25": [
+      "Bio-xLSTM: Generative modeling, representation and in-context learning of biological and chemical sequences",
+      "NV-Embed: Improved Techniques for Training LLMs as Generalist Embedding Models"
+    ],
+    "acl25": [
+      "Benchmarking Long-Context Language Models on Long Code Understanding",
+      "ProMALex: Progressive Modular Adapters for Multi-Jurisdictional Legal Language Modeling",
+      "Towards Context-RobustLLMs: A Gated Representation Fine-tuning Approach"
+    ],
+    "icml25": [
+      "Attention-Only Transformers via Unrolled Subspace Denoising",
+      "Elucidating the Design Space of Multimodal Protein Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 4,
+    "neurips24": 3,
+    "iclr25": 2,
+    "acl25": 3,
+    "icml25": 2
+  },
+  "conferences": [
+    "acl25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

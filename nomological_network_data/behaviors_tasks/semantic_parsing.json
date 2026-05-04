@@ -1,0 +1,139 @@
+{
+  "canonical_name": "Semantic parsing",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, semantic parsing is most commonly defined as the task of translating unstructured natural language inputs, such as user instructions or observations, into a structured, programmatic, or logical form. The target structured representation is frequently a JSON object with predefined keys, but is also described as machine-executable forms like logical queries or database commands. The general concept is specified in various contexts, appearing as \"query parsing\" or \"prompt parsing\" when converting user requests for downstream agents. A distinct application area is in dialogue systems, where the task is framed as \"intent and slot filling\" to identify user goals or as \"task-oriented dialogue parsing\" to update a conversational state. To operationalize and measure this behavior, papers use benchmarks such as MTop, with some work also citing SMCalFlow and TreeDST for dialogue-specific parsing. Semantic parsing is studied alongside code generation, and one paper presents a directional relationship where parsing user instructions is a preliminary step to ensure the quality of inputs prior to \"actual code implementation\" (\"AutoML-Agent: A Multi-Agent LLM Framework for Full-Pipeline AutoML\").",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Query parsing",
+    "Semantic parsing",
+    "Prompt parsing",
+    "Intent and slot filling",
+    "Task-oriented dialogue parsing"
+  ],
+  "papers": [
+    "2025.emnlp-main.906.checklist",
+    "AFRIDOC-MT: Document-levelMTCorpus forAfrican Languages",
+    "Improving Online Job Advertisement Analysis via Compositional Entity Extraction",
+    "Logits-Based Finetuning",
+    "Measuring and Mitigating Media Outlet Name Bias in Large Language Models",
+    "VeriFact: Enhancing Long-Form Factuality Evaluation with Refined Fact Extraction and Reference Facts",
+    "From an LLM Swarm to a PDDL-empowered Hive: Planning Self-executed Instructions in a Multi-modal Jungle",
+    "NeSyC: A Neuro-symbolic Continual Learner For Complex Embodied Tasks in Open Domains",
+    "AutoML-Agent: A Multi-Agent LLM Framework for Full-Pipeline AutoML",
+    "Earley-Driven Dynamic Pruning for Efficient Structured Decoding",
+    "Large Language Models are Demonstration Pre-Selectors for Themselves"
+  ],
+  "paper_count": 11,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The action of converting an unstructured natural language user query into a structured format with distinct components.",
+      "paper": "From an LLM Swarm to a PDDL-empowered Hive: Planning Self-executed Instructions in a Multi-modal Jungle",
+      "original_name": "Query parsing"
+    },
+    {
+      "text": "The task of translating natural language inputs, such as observations or instructions, into a structured, programmatic, or logical form.",
+      "paper": "NeSyC: A Neuro-symbolic Continual Learner For Complex Embodied Tasks in Open Domains",
+      "original_name": "Semantic parsing"
+    },
+    {
+      "text": "Converting unstructured user task descriptions into structured JSON format with standardized keys to extract requirements for downstream agents.",
+      "paper": "AutoML-Agent: A Multi-Agent LLM Framework for Full-Pipeline AutoML",
+      "original_name": "Prompt parsing"
+    },
+    {
+      "text": "A semantic parsing task common in dialogue systems where the goal is to identify the user's overall goal (intent) and extract specific pieces of information (slots).",
+      "paper": "Logits-Based Finetuning",
+      "original_name": "Intent and slot filling"
+    },
+    {
+      "text": "A semantic parsing task focused on interpreting user utterances within a goal-oriented conversation to update a dialogue state or execute an action.",
+      "paper": "Logits-Based Finetuning",
+      "original_name": "Task-oriented dialogue parsing"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MTop",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Mixture of Demonstrations for In-Context Learning",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "Mixture of Demonstrations for In-Context Learning"
+        ],
+        "naacl25": [
+          "Fine-Tuning Large Language Models with Sequential Instructions"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Fine-Tuning Large Language Models with Sequential Instructions",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Fine-Tuning Large Language Models with Sequential Instructions"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Code generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "AutoML-Agent: A Multi-Agent LLM Framework for Full-Pipeline AutoML",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "AutoML-Agent: A Multi-Agent LLM Framework for Full-Pipeline AutoML"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 2,
+  "characterization": "Across the provided literature, semantic parsing is most commonly defined as the task of translating unstructured natural language inputs, such as user instructions or observations, into a structured, programmatic, or logical form. The target structured representation is frequently a JSON object with predefined keys, but is also described as machine-executable forms like logical queries or database commands. The general concept is specified in various contexts, appearing as \"query parsing\" or \"prompt parsing\" when converting user requests for downstream agents. A distinct application area is in dialogue systems, where the task is framed as \"intent and slot filling\" to identify user goals or as \"task-oriented dialogue parsing\" to update a conversational state. To operationalize and measure this behavior, papers use benchmarks such as MTop, with some work also citing SMCalFlow and TreeDST for dialogue-specific parsing. Semantic parsing is studied alongside code generation, and one paper presents a directional relationship where parsing user instructions is a preliminary step to ensure the quality of inputs prior to \"actual code implementation\" (\"AutoML-Agent: A Multi-Agent LLM Framework for Full-Pipeline AutoML\").",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "From an LLM Swarm to a PDDL-empowered Hive: Planning Self-executed Instructions in a Multi-modal Jungle",
+      "NeSyC: A Neuro-symbolic Continual Learner For Complex Embodied Tasks in Open Domains"
+    ],
+    "icml25": [
+      "AutoML-Agent: A Multi-Agent LLM Framework for Full-Pipeline AutoML",
+      "Earley-Driven Dynamic Pruning for Efficient Structured Decoding",
+      "Large Language Models are Demonstration Pre-Selectors for Themselves"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.906.checklist",
+      "AFRIDOC-MT: Document-levelMTCorpus forAfrican Languages",
+      "Improving Online Job Advertisement Analysis via Compositional Entity Extraction",
+      "Logits-Based Finetuning",
+      "Measuring and Mitigating Media Outlet Name Bias in Large Language Models",
+      "VeriFact: Enhancing Long-Form Factuality Evaluation with Refined Fact Extraction and Reference Facts"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "icml25": 3,
+    "emnlp25": 6
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "icml25"
+  ]
+}

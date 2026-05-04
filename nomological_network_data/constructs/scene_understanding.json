@@ -1,0 +1,88 @@
+{
+  "canonical_name": "Scene understanding",
+  "type": "construct",
+  "canonical_definition": "Across the provided literature, scene understanding is most commonly defined as a cognitive ability to perceive a visual environment, identify critical objects, and interpret their semantic, spatial, and motion attributes. A narrower framing, referred to as \"scene recognition,\" treats it as the ability to identify and classify scenes, while another definition focuses on its role in supporting navigation decisions. The construct is operationalized and measured using benchmarks like MUIRBENCH, which evaluates the ability to understand a scene from \"multiple views from multiple surveillance images.\" Some work also describes using a Vision-Language Model (VLM) as a component for scene understanding. The concept is frequently positioned as a precursor to other capabilities, with some research stating it influences decision-making, particularly in the context of autonomous driving. This application is a recurring theme, where the goal is to simplify the environment by focusing on \"critical objects that may affect driving decisions\" to ensure safety. This focus on navigation is also present in work on UAVs, where enhanced scene understanding is reported to produce \"more accurate and adaptable pose sequences.\"",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Scene understanding",
+    "Scene recognition"
+  ],
+  "papers": [
+    "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding",
+    "Towards Realistic UAV Vision-Language Navigation: Platform, Benchmark, and Methodology",
+    "Continuously Learning, Adapting, and Improving: A Dual-Process Approach to Autonomous Driving",
+    "INQUIRE: A Natural World Text-to-Image Retrieval Benchmark",
+    "UniBench: Visual Reasoning Requires Rethinking Vision-Language Beyond Scaling"
+  ],
+  "paper_count": 5,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The cognitive ability to perceive a visual environment, selectively identify critical objects, and interpret their semantic, spatial, and motion attributes to form a comprehensive understanding.",
+      "paper": "Continuously Learning, Adapting, and Improving: A Dual-Process Approach to Autonomous Driving",
+      "original_name": "Scene understanding"
+    },
+    {
+      "text": "The ability to identify and classify scenes or environments depicted in images.",
+      "paper": "UniBench: Visual Reasoning Requires Rethinking Vision-Language Beyond Scaling",
+      "original_name": "Scene recognition"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Decision-making",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Continuously Learning, Adapting, and Improving: A Dual-Process Approach to Autonomous Driving",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Continuously Learning, Adapting, and Improving: A Dual-Process Approach to Autonomous Driving"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MUIRBENCH",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding",
+      "evidence": "[SCENE UNDERSTANDING] aims to evaluate the ability of models to understand a scene comprised of multiple views from multiple surveillance images. (Section 3.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 2,
+  "characterization": "Across the provided literature, scene understanding is most commonly defined as a cognitive ability to perceive a visual environment, identify critical objects, and interpret their semantic, spatial, and motion attributes. A narrower framing, referred to as \"scene recognition,\" treats it as the ability to identify and classify scenes, while another definition focuses on its role in supporting navigation decisions. The construct is operationalized and measured using benchmarks like MUIRBENCH, which evaluates the ability to understand a scene from \"multiple views from multiple surveillance images.\" Some work also describes using a Vision-Language Model (VLM) as a component for scene understanding. The concept is frequently positioned as a precursor to other capabilities, with some research stating it influences decision-making, particularly in the context of autonomous driving. This application is a recurring theme, where the goal is to simplify the environment by focusing on \"critical objects that may affect driving decisions\" to ensure safety. This focus on navigation is also present in work on UAVs, where enhanced scene understanding is reported to produce \"more accurate and adaptable pose sequences.\"",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "Continuously Learning, Adapting, and Improving: A Dual-Process Approach to Autonomous Driving",
+      "INQUIRE: A Natural World Text-to-Image Retrieval Benchmark",
+      "UniBench: Visual Reasoning Requires Rethinking Vision-Language Beyond Scaling"
+    ],
+    "iclr25": [
+      "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding",
+      "Towards Realistic UAV Vision-Language Navigation: Platform, Benchmark, and Methodology"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 3,
+    "iclr25": 2
+  },
+  "conferences": [
+    "iclr25",
+    "neurips24"
+  ]
+}

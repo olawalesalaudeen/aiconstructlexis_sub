@@ -1,0 +1,142 @@
+{
+  "canonical_name": "AMBER",
+  "type": "measurement",
+  "canonical_definition": "AMBER is consistently characterized across the provided literature as a benchmark for evaluating hallucination in vision-language and multimodal models. The prevailing usage is to assess multiple forms of hallucination, with most sources specifying its focus on object, attribute, and relation hallucinations. Several papers frame it as an extension of the POPE benchmark, expanding evaluation beyond object existence. The benchmark is operationalized across both generative and discriminative tasks, with one paper noting it \"provides a coverage of evaluations for both generative task and discriminative task.\" In terms of specific metrics, one source states that \"AMBER uses CHAIR ... as the evaluation metric,\" while others mention its assessment of hallucination rate, object coverage, and human cognition hallucination. Based on the provided relationships, AMBER is used to measure the constructs of `Hallucination` and `Object hallucination`, and is also applied to evaluate `Hallucination mitigation` techniques.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "AMBER"
+  ],
+  "papers": [
+    "Activating Distributed Visual Region withinLLMs for Efficient and Effective Vision-Language Training and Inference",
+    "Automated Structured Radiology Report Generation",
+    "Automating Legal Interpretation withLLMs: Retrieval, Generation, and Evaluation",
+    "AVHBench: A Cross-Modal Hallucination Benchmark for Audio-Visual Large Language Models",
+    "CHiP: Cross-modal Hierarchical Direct Preference Optimization for Multimodal LLMs",
+    "CertainlyUncertain: A Benchmark and Metric for Multimodal Epistemic and Aleatoric Awareness",
+    "Mitigating Object Hallucination in MLLMs via Data-augmented Phrase-level Alignment",
+    "PerturboLLaVA: Reducing Multimodal Hallucinations with Perturbative Visual Training",
+    "Visual Description Grounding Reduces Hallucinations and Boosts Reasoning in LVLMs",
+    "LibEvolutionEval: A Benchmark and Study for Version-Specific Code Generation",
+    "Smurfs: Multi-Agent System using Context-EfficientDFSDTfor Tool Planning",
+    "Verifiable by Design: Aligning Language Models to Quote from Pre-Training Data"
+  ],
+  "paper_count": 12,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A benchmark that extends POPE to evaluate not just the existence of objects but also attribute and relation hallucinations, providing a more comprehensive analysis of multimodal model accuracy.",
+      "paper": "CertainlyUncertain: A Benchmark and Metric for Multimodal Epistemic and Aleatoric Awareness",
+      "original_name": "AMBER"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "CHiP: Cross-modal Hierarchical Direct Preference Optimization for Multimodal LLMs",
+      "evidence": "AMBER (Wang et al., 2023a) further extends POPE by evaluating not just existence but also attribute and relation hallucinations. (Section 3.2).",
+      "paper_count": 5,
+      "papers_by_conference": {
+        "iclr25": [
+          "CHiP: Cross-modal Hierarchical Direct Preference Optimization for Multimodal LLMs",
+          "CertainlyUncertain: A Benchmark and Metric for Multimodal Epistemic and Aleatoric Awareness"
+        ],
+        "icml25": [
+          "DAMA: Data- and Model-aware Alignment of Multi-modal LLMs"
+        ],
+        "emnlp25": [
+          "Learning to Ask: WhenLLMAgents Meet Unclear Instruction",
+          "Artificial Impressions: Evaluating Large Language Model Behavior Through the Lens of Trait Impressions"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Object hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Mitigating Object Hallucination in MLLMs via Data-augmented Phrase-level Alignment",
+      "evidence": "To evaluate performance on both generative and discriminative tasks, we use AMBER (Wang et al., 2023b), which measures hallucination using several metrics. For generative tasks, AMBER assesses the frequency of hallucinated objects in image descriptions... (Section 4.1)",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr25": [
+          "Mitigating Object Hallucination in MLLMs via Data-augmented Phrase-level Alignment"
+        ],
+        "naacl25": [
+          "LibEvolutionEval: A Benchmark and Study for Version-Specific Code Generation"
+        ],
+        "emnlp25": [
+          "QCRD: Quality-guided Contrastive Rationale Distillation for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual recognition",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Visual Description Grounding Reduces Hallucinations and Boosts Reasoning in LVLMs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Visual Description Grounding Reduces Hallucinations and Boosts Reasoning in LVLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination mitigation",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Smurfs: Multi-Agent System using Context-EfficientDFSDTfor Tool Planning",
+      "evidence": "\u201cAMBER (Wang et al., 2023) provides a discriminative way to evaluate various types of hallucination including existence, attribute and relation\u201d",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Smurfs: Multi-Agent System using Context-EfficientDFSDTfor Tool Planning"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 0,
+  "characterization": "AMBER is consistently characterized across the provided literature as a benchmark for evaluating hallucination in vision-language and multimodal models. The prevailing usage is to assess multiple forms of hallucination, with most sources specifying its focus on object, attribute, and relation hallucinations. Several papers frame it as an extension of the POPE benchmark, expanding evaluation beyond object existence. The benchmark is operationalized across both generative and discriminative tasks, with one paper noting it \"provides a coverage of evaluations for both generative task and discriminative task.\" In terms of specific metrics, one source states that \"AMBER uses CHAIR ... as the evaluation metric,\" while others mention its assessment of hallucination rate, object coverage, and human cognition hallucination. Based on the provided relationships, AMBER is used to measure the constructs of `Hallucination` and `Object hallucination`, and is also applied to evaluate `Hallucination mitigation` techniques.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "AVHBench: A Cross-Modal Hallucination Benchmark for Audio-Visual Large Language Models",
+      "CHiP: Cross-modal Hierarchical Direct Preference Optimization for Multimodal LLMs",
+      "CertainlyUncertain: A Benchmark and Metric for Multimodal Epistemic and Aleatoric Awareness",
+      "Mitigating Object Hallucination in MLLMs via Data-augmented Phrase-level Alignment",
+      "PerturboLLaVA: Reducing Multimodal Hallucinations with Perturbative Visual Training",
+      "Visual Description Grounding Reduces Hallucinations and Boosts Reasoning in LVLMs"
+    ],
+    "naacl25": [
+      "LibEvolutionEval: A Benchmark and Study for Version-Specific Code Generation",
+      "Smurfs: Multi-Agent System using Context-EfficientDFSDTfor Tool Planning",
+      "Verifiable by Design: Aligning Language Models to Quote from Pre-Training Data"
+    ],
+    "acl25": [
+      "Activating Distributed Visual Region withinLLMs for Efficient and Effective Vision-Language Training and Inference",
+      "Automated Structured Radiology Report Generation",
+      "Automating Legal Interpretation withLLMs: Retrieval, Generation, and Evaluation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 6,
+    "naacl25": 3,
+    "acl25": 3
+  },
+  "conferences": [
+    "acl25",
+    "iclr25",
+    "naacl25"
+  ]
+}

@@ -1,0 +1,905 @@
+{
+  "canonical_name": "Image captioning",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, image captioning is consistently defined as the observable behavior of producing textual descriptions for input images. While this general framing is prevalent, the expected nature of the description varies considerably, with some work focusing on 'brief' or 'surface-level' summaries and others on 'dense' or 'ultra-detailed' narratives. The task is also adapted for specialized inputs, including generating captions for scientific figures, mathematical diagrams, earth-observation images, and specific marked regions within an image. A few papers frame the task functionally, where the goal is to produce a description that can 'replace the diagram for math problem-solving' (Measuring Multimodal Mathematical Reasoning with MATH-Vision Dataset). To operationalize this behavior, researchers most frequently use datasets such as COCO, MS-COCO, and Flickr30k, with NoCaps also appearing in multiple studies. Evaluation is conducted using automated metrics like CLIP score, human evaluation, and LLM-as-a-judge approaches. A recurring theme is the use of the CHAIR metric, which is specifically designed to measure object hallucination within the generated captions. Consequently, image captioning is frequently studied in relation to hallucination and is also used to assess broader constructs like visual perception and multimodal understanding.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Image captioning",
+    "Literal description writing",
+    "Visual captioning",
+    "Caption generation",
+    "Scene description",
+    "Image description generation",
+    "Image Caption Generation",
+    "Image Captioning",
+    "Image caption generation",
+    "Captioning",
+    "Diagram captioning",
+    "Situated captioning",
+    "Generic caption generation",
+    "Region-level captioning",
+    "Ultra-detailed image caption generation",
+    "Frame-level caption generation"
+  ],
+  "papers": [
+    "Activating Distributed Visual Region withinLLMs for Efficient and Effective Vision-Language Training and Inference",
+    "Automating Legal Interpretation withLLMs: Retrieval, Generation, and Evaluation",
+    "Dehumanizing Machines: Mitigating Anthropomorphic Behaviors in Text Generation Systems",
+    "EAC-MoE: Expert-Selection Aware Compressor for Mixture-of-Experts Large Language Models",
+    "HELIOS: Harmonizing Early Fusion, Late Fusion, andLLMReasoning for Multi-Granular Table-Text Retrieval",
+    "A Survey of Link Prediction in N-ary Knowledge Graphs",
+    "CityEQA: A HierarchicalLLMAgent on Embodied Question Answering Benchmark in City Space",
+    "Cost-Optimal Grouped-Query Attention for Long-Context Modeling",
+    "Following Length Constraints in Instructions",
+    "From General Reward to Targeted Reward: Improving Open-ended Long-context Generation Models",
+    "InMind: EvaluatingLLMs in Capturing and Applying Individual Human Reasoning Styles",
+    "Large Language Models Threaten Language\u2019s Epistemic and Communicative Foundations",
+    "Measuring Chain of Thought Faithfulness by Unlearning Reasoning Steps",
+    "Mondrian: A Framework for Logical Abstract (Re)Structuring",
+    "Program of Thoughts for Financial Reasoning: Leveraging Dynamic In-Context Examples and Generative Retrieval",
+    "QCRD: Quality-guided Contrastive Rationale Distillation for Large Language Models",
+    "Rescorla-Wagner Steering ofLLMs for Undesired Behaviors over Disproportionate Inappropriate Context",
+    "RiTTA: Modeling Event Relations in Text-to-Audio Generation",
+    "SQLWOZ: A Realistic Task-Oriented Dialogue Dataset withSQL-Based Dialogue State Representation for Complex User Requirements",
+    "Theorem-Validated Reverse Chain-of-Thought Problem Generation for Geometric Reasoning",
+    "VLP: Vision-Language Preference Learning for Embodied Manipulation",
+    "Vision-and-Language Navigation with Analogical Textual Descriptions inLLMs",
+    "What Do Indonesians Really Need from Language Technology? A Nationwide Survey",
+    "2025.emnlp-main.1357.checklist",
+    "2025.emnlp-main.1588.checklist",
+    "MuCAL: Contrastive Alignment for Preference-DrivenKG-to-Text Generation",
+    "Pre-trained Language Models Learn Remarkably Accurate Representations of Numbers",
+    "Reliable Evaluation and Benchmarks for Statement Autoformalization",
+    "Adapt-$\\infty$: Scalable Continual Multimodal Instruction Tuning via Dynamic Data Selection",
+    "AuroraCap: Efficient, Performant Video Detailed Captioning and a New Benchmark",
+    "Backdooring Vision-Language Models with Out-Of-Distribution Data",
+    "Bridging Compressed Image Latents and Multimodal Large Language Models",
+    "Can We Talk Models Into Seeing the World Differently?",
+    "CogCoM: A Visual Language Model with Chain-of-Manipulations Reasoning",
+    "Correlating instruction-tuning (in multimodal models) with vision-language processing (in the brain)",
+    "DAMO: Decoding by Accumulating Activations Momentum for Mitigating Hallucinations in Vision-Language Models",
+    "DEEM: Diffusion models serve as the eyes of large language models for image perception",
+    "Do You Keep an Eye on What I Ask? Mitigating Multimodal Hallucination via Attention-Guided Ensemble Decoding",
+    "Draw-and-Understand: Leveraging Visual Prompts to Enable MLLMs to Comprehend What You Want",
+    "Dysca: A Dynamic and Scalable Benchmark for Evaluating Perception Ability of LVLMs",
+    "EMMA: Empowering Multi-modal Mamba with Structural and Hierarchical Alignment",
+    "Enhancing Cognition and Explainability of Multimodal Foundation Models with Self-Synthesized Data",
+    "Fine-Grained Verifiers: Preference Modeling as Next-token Prediction in Vision-Language Alignment",
+    "From Pixels to Tokens: Byte-Pair Encoding on Quantized Visual Modalities",
+    "Interpreting and Editing Vision-Language Representations to Mitigate Hallucinations",
+    "Intervening Anchor Token: Decoding Strategy in Alleviating Hallucinations for MLLMs",
+    "Is Your Multimodal Language Model Oversensitive to Safe Queries?",
+    "JetFormer: An autoregressive generative model of raw images and text",
+    "LLM-wrapper: Black-Box Semantic-Aware Adaptation of Vision-Language Models for Referring Expression Comprehension",
+    "MAPS: Advancing Multi-Modal Reasoning in Expert-Level Physical Science",
+    "MAVIS: Mathematical Visual Instruction Tuning with an Automatic Data Engine",
+    "MEGA-Bench: Scaling Multimodal Evaluation to over 500 Real-World Tasks",
+    "MLLM can see? Dynamic Correction Decoding for Hallucination Mitigation",
+    "MMIE: Massive Multimodal Interleaved Comprehension Benchmark for Large Vision-Language Models",
+    "Matryoshka Multimodal Models",
+    "MetaMetrics: Calibrating Metrics for Generation Tasks Using Human Preferences",
+    "Multimodal Situational Safety",
+    "NL-Eye: Abductive NLI For Images",
+    "OmniCorpus: A Unified Multimodal Corpus of 10 Billion-Level Images Interleaved with Text",
+    "Pangea: A Fully Open Multilingual Multimodal LLM for 39 Languages",
+    "PathGen-1.6M: 1.6 Million Pathology Image-text Pairs Generation through Multi-agent Collaboration",
+    "REMEDY: Recipe Merging Dynamics in Large Vision-Language Models",
+    "Re-Imagining Multimodal Instruction Tuning: A Representation View",
+    "Reducing Hallucinations in Large Vision-Language Models via Latent Space Steering",
+    "Revisit Large-Scale Image-Caption Data in Pre-training Multimodal Foundation Models",
+    "SPARTUN3D: Situated Spatial Understanding of 3D World in Large Language Model",
+    "See What You Are Told: Visual Attention Sink in Large Multimodal Models",
+    "Self-Correcting Decoding with Generative Feedback for Mitigating Hallucinations in Large Vision-Language Models",
+    "Show-o: One Single Transformer to Unify Multimodal Understanding and Generation",
+    "TEOChat: A Large Vision-Language Assistant for Temporal Earth Observation Data",
+    "TIGeR: Unifying Text-to-Image Generation and Retrieval with Large Multimodal Models",
+    "TLDR: Token-Level Detective Reward Model for Large Vision Language Models",
+    "Towards Semantic Equivalence of Tokenization in Multimodal LLM",
+    "Transfusion: Predict the Next Token and Diffuse Images with One Multi-Modal Model",
+    "Understanding Long Videos with Multimodal Language Models",
+    "Understanding and Mitigating Hallucination in Large Vision-Language Models via Modular Attribution and Intervention",
+    "VL-ICL Bench: The Devil in the Details of Multimodal In-Context Learning",
+    "VibeCheck: Discover and Quantify Qualitative Differences in Large Language Models",
+    "Visual Description Grounding Reduces Hallucinations and Boosts Reasoning in LVLMs",
+    "World Model on Million-Length Video And Language With Blockwise RingAttention",
+    "Be Confident: Uncovering Overfitting in MLLM Multi-Task Tuning",
+    "CoMemo: LVLMs Need Image Context with Image Memory",
+    "DS-VLM: Diffusion Supervision Vision Language Model",
+    "Data-Juicer Sandbox: A Feedback-Driven Suite for Multimodal Data-Model Co-development",
+    "Defending LVLMs Against Vision Attacks Through Partial-Perception Supervision",
+    "Diffusion Instruction Tuning",
+    "Dynamic Mixture of Curriculum LoRA Experts for Continual Multimodal Instruction Tuning",
+    "GeoPixel: Pixel Grounding Large Multimodal Model in Remote Sensing",
+    "LAuReL: Learned Augmented Residual Layer",
+    "LLMs can see and hear without any training",
+    "Learn from Downstream and Be Yourself in Multimodal Large Language Models Fine-Tuning",
+    "MME-CoT: Benchmarking Chain-of-Thought in Large Multimodal Models for Reasoning Quality, Robustness, and Efficiency",
+    "Mitigating Object Hallucination in Large Vision-Language Models via Image-Grounded Guidance",
+    "Orthus: Autoregressive Interleaved Image-Text Generation with Modality-Specific Heads",
+    "PAK-UCB Contextual Bandit: An Online Learning Approach to Prompt-Aware Selection of Generative Models and LLMs",
+    "Perception in Reflection",
+    "PoisonedEye: Knowledge Poisoning Attack on Retrieval-Augmented Generation based Large Vision-Language Models",
+    "Privacy-Shielded Image Compression: Defending Against Exploitation from Vision-Language Pretrained Models",
+    "RepLoRA: Reparameterizing Low-rank Adaptation via the Perspective of Mixture of Experts",
+    "SECOND: Mitigating Perceptual Hallucination in Vision-Language Models via Selective and Contrastive Decoding",
+    "Toward Robust Hyper-Detailed Image Captioning: A Multiagent Approach and Dual Evaluation Metrics for Factuality and Coverage",
+    "Towards Rationale-Answer Alignment of LVLMs via Self-Rationale Calibration",
+    "What If We Recaption Billions of Web Images with LLaMA-3?",
+    "X-Transfer Attacks: Towards Super Transferable Adversarial Attacks on CLIP",
+    "Detect, Disambiguate, and Translate: On-Demand Visual Reasoning for Multimodal Machine Translation with Large Vision-Language Models",
+    "GuideLLM: ExploringLLM-Guided Conversation with Applications in Autobiography Interviewing",
+    "How Can We Diagnose and Treat Bias in Large Language Models for Clinical Decision-Making?",
+    "IFIR: A Comprehensive Benchmark for Evaluating Instruction-Following in Expert-Domain Information Retrieval",
+    "Is In-Context Learning a Type of Error-Driven Learning? Evidence from the Inverse Frequency Effect in Structural Priming",
+    "MAPWise: Evaluating Vision-Language Models for Advanced Map Queries",
+    "Smurfs: Multi-Agent System using Context-EfficientDFSDTfor Tool Planning",
+    "Stealthy Jailbreak Attacks on Large Language Models via Benign Data Mirroring",
+    "Towards Automatic Evaluation for Image Transcreation",
+    "A Concept-Based Explainability Framework for Large Multimodal Models",
+    "Accelerating Pre-training of Multimodal LLMs via Chain-of-Sight",
+    "Alleviating Hallucinations in Large Vision-Language Models through Hallucination-Induced Optimization",
+    "An eye for an ear: zero-shot audio description leveraging an image captioner with audio-visual token distribution matching",
+    "Automated Multi-level Preference for MLLMs",
+    "CODE: Contrasting Self-generated Description to Combat Hallucination in Large Multi-modal Models",
+    "CogVLM: Visual Expert for Pretrained Language Models",
+    "ConMe: Rethinking Evaluation of Compositional Reasoning for Modern VLMs",
+    "Cracking the Code of Juxtaposition: Can AI Models Understand the Humorous Contradictions",
+    "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts",
+    "DenseFusion-1M: Merging Vision Experts for Comprehensive Multimodal Perception",
+    "DreamClear: High-Capacity Real-World Image Restoration with Privacy-Safe Dataset Curation",
+    "Enhancing Large Vision Language Models with Self-Training on Image Comprehension",
+    "Grounding Multimodal Large Language Models in Actions",
+    "HEMM: Holistic Evaluation of Multimodal Foundation Models",
+    "IMPACT: A Large-scale Integrated Multimodal Patent Analysis and Creation Dataset for Design Patents",
+    "INQUIRE: A Natural World Text-to-Image Retrieval Benchmark",
+    "IPO: Interpretable Prompt Optimization for Vision-Language Models",
+    "Image Textualization: An Automatic Framework for Generating Rich and Detailed Image Descriptions",
+    "Instruction-Guided Visual Masking",
+    "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD",
+    "JourneyBench: A Challenging One-Stop Vision-Language Understanding Benchmark of Generated Images",
+    "LG-VQ: Language-Guided Codebook Learning",
+    "LOVA3: Learning to Visual Question Answering, Asking and Assessment",
+    "Leveraging Visual Tokens for Extended Text Contexts in Multi-Modal Learning",
+    "Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models",
+    "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens",
+    "MMDU: A Multi-Turn Multi-Image Dialog Understanding Benchmark and Instruction-Tuning Dataset for LVLMs",
+    "MaVEn: An Effective Multi-granularity Hybrid Visual Encoding Framework for Multimodal Large Language Model",
+    "Measuring Multimodal Mathematical Reasoning with MATH-Vision Dataset",
+    "Membership Inference Attacks against Large Vision-Language Models",
+    "Meteor: Mamba-based Traversal of Rationale for Large Language and Vision Models",
+    "Micro-Bench: A Microscopy Benchmark for Vision-Language Understanding",
+    "Mitigating Object Hallucination via Concentric Causal Attention",
+    "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+    "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+    "Multi-Head Mixture-of-Experts",
+    "Multi-Object Hallucination in Vision Language Models",
+    "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models",
+    "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+    "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding",
+    "OlympicArena: Benchmarking Multi-discipline Cognitive Reasoning for Superintelligent AI",
+    "Prism: A Framework for Decoupling and Assessing the Capabilities of VLMs",
+    "Q-VLM: Post-training Quantization for Large Vision-Language Models",
+    "SciFIBench: Benchmarking Large Multimodal Models for Scientific Figure Interpretation",
+    "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment",
+    "Shadowcast: Stealthy Data Poisoning Attacks Against Vision-Language Models",
+    "TabPedia: Towards Comprehensive Visual Table Understanding with Concept Synergy",
+    "Towards Comprehensive Detection of Chinese Harmful Memes",
+    "Training-Free Open-Ended Object Detection and Segmentation via Attention as Prompts",
+    "Understanding the Limits of Vision Language Models Through the Lens of the Binding Problem",
+    "Unified Generative and Discriminative Training for Multi-modal Large Language Models",
+    "Unveiling Encoder-Free Vision-Language Models",
+    "Unveiling the Tapestry of Consistency in Large Vision-Language Models",
+    "VHELM: A Holistic Evaluation of Vision Language Models",
+    "VRSBench: A Versatile Vision-Language Benchmark Dataset for Remote Sensing Image Understanding",
+    "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+    "Visual CoT: Advancing Multi-Modal Language Models with a Comprehensive Dataset and Benchmark for Chain-of-Thought Reasoning",
+    "Visual Riddles: a Commonsense and World Knowledge Challenge for Large Vision and Language Models",
+    "Voila-A: Aligning Vision-Language Models with User's Gaze Attention",
+    "What Factors Affect Multi-Modal In-Context Learning? An In-Depth Exploration",
+    "What matters when building vision-language models?",
+    "Why are Visually-Grounded Language Models Bad at Image Classification?",
+    "WildVision: Evaluating Vision-Language Models in the Wild with Human Preferences",
+    "Yo'LLaVA: Your Personalized Language and Vision Assistant"
+  ],
+  "paper_count": 178,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The observable task of producing textual descriptions of input images.",
+      "paper": "VHELM: A Holistic Evaluation of Vision Language Models",
+      "original_name": "Image captioning"
+    },
+    {
+      "text": "The task of generating a short, surface-level text description that illustrates the narrative depicted in the two panels of a comic.",
+      "paper": "Cracking the Code of Juxtaposition: Can AI Models Understand the Humorous Contradictions",
+      "original_name": "Literal description writing"
+    },
+    {
+      "text": "Generating textual descriptions of the visual content within an image.",
+      "paper": "MMDU: A Multi-Turn Multi-Image Dialog Understanding Benchmark and Instruction-Tuning Dataset for LVLMs",
+      "original_name": "Image description"
+    },
+    {
+      "text": "Generating descriptive text that summarizes or details the content of an image.",
+      "paper": "Instruction-Guided Visual Masking",
+      "original_name": "Visual captioning"
+    },
+    {
+      "text": "The task of generating a suitable and descriptive textual caption for a given scientific figure.",
+      "paper": "SciFIBench: Benchmarking Large Multimodal Models for Scientific Figure Interpretation",
+      "original_name": "Caption generation"
+    },
+    {
+      "text": "The task of generating a structured (e.g., JSON) or natural language description of all objects and their features (e.g., color, shape) in a visual scene.",
+      "paper": "Understanding the Limits of Vision Language Models Through the Lens of the Binding Problem",
+      "original_name": "Scene description"
+    },
+    {
+      "text": "The task of producing a natural language text that describes the visual content of a given image.",
+      "paper": "Image Textualization: An Automatic Framework for Generating Rich and Detailed Image Descriptions",
+      "original_name": "Image description generation"
+    },
+    {
+      "text": "The observable task of generating textual descriptions for provided images.",
+      "paper": "Unified Generative and Discriminative Training for Multi-modal Large Language Models",
+      "original_name": "Image Caption Generation"
+    },
+    {
+      "text": "The observable task of generating detailed textual descriptions of image content and style.",
+      "paper": "DreamClear: High-Capacity Real-World Image Restoration with Privacy-Safe Dataset Curation",
+      "original_name": "Image Captioning"
+    },
+    {
+      "text": "Describing a diagram or image in text so that the description can substitute for the visual input in downstream problem solving.",
+      "paper": "Measuring Multimodal Mathematical Reasoning with MATH-Vision Dataset",
+      "original_name": "Image caption generation"
+    },
+    {
+      "text": "Generating descriptive natural-language text about the content of an earth-observation image.",
+      "paper": "TEOChat: A Large Vision-Language Assistant for Temporal Earth Observation Data",
+      "original_name": "Captioning"
+    },
+    {
+      "text": "Generating brief descriptions of surrounding objects and their spatial directions from the agent\u2019s current standing point and orientation.",
+      "paper": "SPARTUN3D: Situated Spatial Understanding of 3D World in Large Language Model",
+      "original_name": "Situated captioning"
+    },
+    {
+      "text": "The observable behavior of generating a textual description that accurately identifies the mathematical elements and their relationships within a given diagram.",
+      "paper": "MAVIS: Mathematical Visual Instruction Tuning with an Automatic Data Engine",
+      "original_name": "Diagram captioning"
+    },
+    {
+      "text": "An observable behavior where the model produces a vague or non-specific description of an image that does not identify the primary objects.",
+      "paper": "Can We Talk Models Into Seeing the World Differently?",
+      "original_name": "Generic caption generation"
+    },
+    {
+      "text": "The task of generating detailed, comprehensive textual descriptions that cover multiple objects, attributes, and relationships within an image.",
+      "paper": "TLDR: Token-Level Detective Reward Model for Large Vision Language Models",
+      "original_name": "Dense captioning"
+    },
+    {
+      "text": "Generating concise or detailed natural language descriptions for specific marked regions in an image.",
+      "paper": "Draw-and-Understand: Leveraging Visual Prompts to Enable MLLMs to Comprehend What You Want",
+      "original_name": "Region-level captioning"
+    },
+    {
+      "text": "The task of generating descriptive or relevant text based on a given image as input.",
+      "paper": "Data-Juicer Sandbox: A Feedback-Driven Suite for Multimodal Data-Model Co-development",
+      "original_name": "Image-to-text generation"
+    },
+    {
+      "text": "The observable production of highly fine-grained and descriptive textual captions from input images by a vision-language model.",
+      "paper": "2025.emnlp-main.1357.checklist",
+      "original_name": "Ultra-detailed image caption generation"
+    },
+    {
+      "text": "Producing natural language descriptions for individual video frames as part of a video understanding pipeline.",
+      "paper": "2025.emnlp-main.1588.checklist",
+      "original_name": "Frame-level caption generation"
+    }
+  ],
+  "definition_count": 19,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Flickr30k",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Unified Language-Vision Pretraining in LLM with Dynamic Discrete Visual Tokenization",
+      "evidence": "",
+      "paper_count": 14,
+      "papers_by_conference": {
+        "iclr24": [
+          "Unified Language-Vision Pretraining in LLM with Dynamic Discrete Visual Tokenization",
+          "The All-Seeing Project: Towards Panoptic Visual Recognition and Understanding of the Open World",
+          "Octavius: Mitigating Task Interference in MLLMs via LoRA-MoE"
+        ],
+        "neurips24": [
+          "Leveraging Visual Tokens for Extended Text Contexts in Multi-Modal Learning",
+          "CogVLM: Visual Expert for Pretrained Language Models"
+        ],
+        "iclr25": [
+          "AuroraCap: Efficient, Performant Video Detailed Captioning and a New Benchmark",
+          "REMEDY: Recipe Merging Dynamics in Large Vision-Language Models",
+          "OmniCorpus: A Unified Multimodal Corpus of 10 Billion-Level Images Interleaved with Text"
+        ],
+        "naacl25": [
+          "IFIR: A Comprehensive Benchmark for Evaluating Instruction-Following in Expert-Domain Information Retrieval"
+        ],
+        "icml25": [
+          "CoMemo: LVLMs Need Image Context with Image Memory",
+          "Dynamic Mixture of Curriculum LoRA Experts for Continual Multimodal Instruction Tuning",
+          "Learn from Downstream and Be Yourself in Multimodal Large Language Models Fine-Tuning",
+          "Be Confident: Uncovering Overfitting in MLLM Multi-Task Tuning"
+        ],
+        "emnlp25": [
+          "Theorem-Validated Reverse Chain-of-Thought Problem Generation for Geometric Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "COCO",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens",
+      "evidence": "We evaluate our models on VQA benchmarks (Goyal et al., 2017; Singh et al., 2019; Gurari et al., 2018; Marino et al., 2019) and image captioning benchmarks (Chen et al., 2015; Young et al., 2014). (Section 5.1)",
+      "paper_count": 12,
+      "papers_by_conference": {
+        "neurips24": [
+          "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens",
+          "Accelerating Pre-training of Multimodal LLMs via Chain-of-Sight",
+          "Leveraging Visual Tokens for Extended Text Contexts in Multi-Modal Learning",
+          "What matters when building vision-language models?",
+          "CogVLM: Visual Expert for Pretrained Language Models"
+        ],
+        "iclr25": [
+          "DEEM: Diffusion models serve as the eyes of large language models for image perception",
+          "VibeCheck: Discover and Quantify Qualitative Differences in Large Language Models",
+          "Backdooring Vision-Language Models with Out-Of-Distribution Data",
+          "REMEDY: Recipe Merging Dynamics in Large Vision-Language Models",
+          "OmniCorpus: A Unified Multimodal Corpus of 10 Billion-Level Images Interleaved with Text"
+        ],
+        "icml25": [
+          "CoMemo: LVLMs Need Image Context with Image Memory",
+          "Diffusion Instruction Tuning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CHAIR",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Analyzing and Mitigating Object Hallucination in Large Vision-Language Models",
+      "evidence": "\u201cCHAIR (Rohrbach et al., 2018) evaluates object hallucinations in open-ended captioning tasks\u201d",
+      "paper_count": 9,
+      "papers_by_conference": {
+        "iclr24": [
+          "Analyzing and Mitigating Object Hallucination in Large Vision-Language Models"
+        ],
+        "neurips24": [
+          "Alleviating Hallucinations in Large Vision-Language Models through Hallucination-Induced Optimization"
+        ],
+        "iclr25": [
+          "Do You Keep an Eye on What I Ask? Mitigating Multimodal Hallucination via Attention-Guided Ensemble Decoding",
+          "Fine-Grained Verifiers: Preference Modeling as Next-token Prediction in Vision-Language Alignment",
+          "Reducing Hallucinations in Large Vision-Language Models via Latent Space Steering",
+          "Intervening Anchor Token: Decoding Strategy in Alleviating Hallucinations for MLLMs"
+        ],
+        "naacl25": [
+          "How Can We Diagnose and Treat Bias in Large Language Models for Clinical Decision-Making?"
+        ],
+        "emnlp25": [
+          "QCRD: Quality-guided Contrastive Rationale Distillation for Large Language Models",
+          "CityEQA: A HierarchicalLLMAgent on Embodied Question Answering Benchmark in City Space"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "NoCaps",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Unified Language-Vision Pretraining in LLM with Dynamic Discrete Visual Tokenization",
+      "evidence": "",
+      "paper_count": 7,
+      "papers_by_conference": {
+        "iclr24": [
+          "Unified Language-Vision Pretraining in LLM with Dynamic Discrete Visual Tokenization",
+          "The All-Seeing Project: Towards Panoptic Visual Recognition and Understanding of the Open World",
+          "Bridging Vision and Language Spaces with Assignment Prediction"
+        ],
+        "neurips24": [
+          "Accelerating Pre-training of Multimodal LLMs via Chain-of-Sight",
+          "CogVLM: Visual Expert for Pretrained Language Models"
+        ],
+        "naacl25": [
+          "IFIR: A Comprehensive Benchmark for Evaluating Instruction-Following in Expert-Domain Information Retrieval"
+        ],
+        "emnlp25": [
+          "Large Language Models Threaten Language\u2019s Epistemic and Communicative Foundations"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MS-COCO",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "DePT: Decomposed Prompt Tuning for Parameter-Efficient Fine-tuning",
+      "evidence": "Flickr30K (Young et al., 2014) and MSCOCO (Lin et al., 2014) for captioning; (Section 4.1)",
+      "paper_count": 6,
+      "papers_by_conference": {
+        "iclr24": [
+          "DePT: Decomposed Prompt Tuning for Parameter-Efficient Fine-tuning",
+          "Bridging Vision and Language Spaces with Assignment Prediction"
+        ],
+        "iclr25": [
+          "JetFormer: An autoregressive generative model of raw images and text"
+        ],
+        "icml25": [
+          "RepLoRA: Reparameterizing Low-rank Adaptation via the Perspective of Mixture of Experts",
+          "LLMs can see and hear without any training"
+        ],
+        "emnlp25": [
+          "Theorem-Validated Reverse Chain-of-Thought Problem Generation for Geometric Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "COCO Caption",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Multi-Head Mixture-of-Experts",
+      "evidence": "Comparison with the state-of-the-art Multimodal Large Language Model (MLLM) Fine-Tuning Solutions on the image caption task: Flickr30k and COCO-Capation datasets (Table 5).",
+      "paper_count": 5,
+      "papers_by_conference": {
+        "neurips24": [
+          "Multi-Head Mixture-of-Experts",
+          "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment",
+          "What Factors Affect Multi-Modal In-Context Learning? An In-Depth Exploration"
+        ],
+        "icml25": [
+          "Learn from Downstream and Be Yourself in Multimodal Large Language Models Fine-Tuning",
+          "Be Confident: Uncovering Overfitting in MLLM Multi-Task Tuning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multimodal understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "JetFormer: An autoregressive generative model of raw images and text",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "JetFormer: An autoregressive generative model of raw images and text",
+          "Show-o: One Single Transformer to Unify Multimodal Understanding and Generation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "DAMO: Decoding by Accumulating Activations Momentum for Mitigating Hallucinations in Vision-Language Models",
+      "evidence": "To strike a balance between the realism and complexity of the experiments, we primarily focus on the generation of objects in image description scenarios (image caption tasks). (Section 2)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "DAMO: Decoding by Accumulating Activations Momentum for Mitigating Hallucinations in Vision-Language Models"
+        ],
+        "emnlp25": [
+          "RiTTA: Modeling Event Relations in Text-to-Audio Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+      "evidence": "The IC instruction exhibits a high degree of shared information with prompts VQ1, VQ2, CR, and IU1.",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding"
+        ],
+        "iclr25": [
+          "Multimodal Situational Safety"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MS-COCO",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Analyzing and Mitigating Object Hallucination in Large Vision-Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Analyzing and Mitigating Object Hallucination in Large Vision-Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CLIP score",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "PAK-UCB Contextual Bandit: An Online Learning Approach to Prompt-Aware Selection of Generative Models and LLMs",
+      "evidence": "More recent works propose reference-free metrics for robust automatic evaluation of T2I and image captioning, with notable examples being CLIP-Score (Hessel et al., 2021) and PickScore (Kirstain et al., 2023).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "PAK-UCB Contextual Bandit: An Online Learning Approach to Prompt-Aware Selection of Generative Models and LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Perception",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Is Your Multimodal Language Model Oversensitive to Safe Queries?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Is Your Multimodal Language Model Oversensitive to Safe Queries?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CUB-200-2011",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LG-VQ: Language-Guided Codebook Learning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "LG-VQ: Language-Guided Codebook Learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual perception",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "VHELM: A Holistic Evaluation of Vision Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "VHELM: A Holistic Evaluation of Vision Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Cracking the Code of Juxtaposition: Can AI Models Understand the Humorous Contradictions",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Cracking the Code of Juxtaposition: Can AI Models Understand the Humorous Contradictions"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-based evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Cracking the Code of Juxtaposition: Can AI Models Understand the Humorous Contradictions",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Cracking the Code of Juxtaposition: Can AI Models Understand the Humorous Contradictions"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLaVA-Bench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Do You Keep an Eye on What I Ask? Mitigating Multimodal Hallucination via Attention-Guided Ensemble Decoding",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Do You Keep an Eye on What I Ask? Mitigating Multimodal Hallucination via Attention-Guided Ensemble Decoding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-as-a-judge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Do You Keep an Eye on What I Ask? Mitigating Multimodal Hallucination via Attention-Guided Ensemble Decoding",
+      "evidence": "Following Leng et al. (2024), we use GPT-4 to assess the accuracy and detailedness of LVLM\u2019s image captioning using a 10-point Likert scale (Section 4.1).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Do You Keep an Eye on What I Ask? Mitigating Multimodal Hallucination via Attention-Guided Ensemble Decoding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Visual Description Grounding Reduces Hallucinations and Boosts Reasoning in LVLMs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Visual Description Grounding Reduces Hallucinations and Boosts Reasoning in LVLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "RefCOCOg",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Draw-and-Understand: Leveraging Visual Prompts to Enable MLLMs to Comprehend What You Want",
+      "evidence": "Region-level captioning performance on the validation set of RefCOCOg",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Draw-and-Understand: Leveraging Visual Prompts to Enable MLLMs to Comprehend What You Want"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Privacy-Shielded Image Compression: Defending Against Exploitation from Vision-Language Pretrained Models",
+      "evidence": "Meanwhile, image captioning is conducted on the unseen BLIP-2 (OPT-2.7b) (Li et al., 2023), to demonstrate the generalization capacity. (Section 4.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Privacy-Shielded Image Compression: Defending Against Exploitation from Vision-Language Pretrained Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 21,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 19,
+  "characterization": "Across the surveyed literature, image captioning is consistently defined as the observable behavior of producing textual descriptions for input images. While this general framing is prevalent, the expected nature of the description varies considerably, with some work focusing on 'brief' or 'surface-level' summaries and others on 'dense' or 'ultra-detailed' narratives. The task is also adapted for specialized inputs, including generating captions for scientific figures, mathematical diagrams, earth-observation images, and specific marked regions within an image. A few papers frame the task functionally, where the goal is to produce a description that can 'replace the diagram for math problem-solving' (Measuring Multimodal Mathematical Reasoning with MATH-Vision Dataset). To operationalize this behavior, researchers most frequently use datasets such as COCO, MS-COCO, and Flickr30k, with NoCaps also appearing in multiple studies. Evaluation is conducted using automated metrics like CLIP score, human evaluation, and LLM-as-a-judge approaches. A recurring theme is the use of the CHAIR metric, which is specifically designed to measure object hallucination within the generated captions. Consequently, image captioning is frequently studied in relation to hallucination and is also used to assess broader constructs like visual perception and multimodal understanding.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "A Concept-Based Explainability Framework for Large Multimodal Models",
+      "Accelerating Pre-training of Multimodal LLMs via Chain-of-Sight",
+      "Alleviating Hallucinations in Large Vision-Language Models through Hallucination-Induced Optimization",
+      "An eye for an ear: zero-shot audio description leveraging an image captioner with audio-visual token distribution matching",
+      "Automated Multi-level Preference for MLLMs",
+      "CODE: Contrasting Self-generated Description to Combat Hallucination in Large Multi-modal Models",
+      "CogVLM: Visual Expert for Pretrained Language Models",
+      "ConMe: Rethinking Evaluation of Compositional Reasoning for Modern VLMs",
+      "Cracking the Code of Juxtaposition: Can AI Models Understand the Humorous Contradictions",
+      "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts",
+      "DenseFusion-1M: Merging Vision Experts for Comprehensive Multimodal Perception",
+      "DreamClear: High-Capacity Real-World Image Restoration with Privacy-Safe Dataset Curation",
+      "Enhancing Large Vision Language Models with Self-Training on Image Comprehension",
+      "Grounding Multimodal Large Language Models in Actions",
+      "HEMM: Holistic Evaluation of Multimodal Foundation Models",
+      "IMPACT: A Large-scale Integrated Multimodal Patent Analysis and Creation Dataset for Design Patents",
+      "INQUIRE: A Natural World Text-to-Image Retrieval Benchmark",
+      "IPO: Interpretable Prompt Optimization for Vision-Language Models",
+      "Image Textualization: An Automatic Framework for Generating Rich and Detailed Image Descriptions",
+      "Instruction-Guided Visual Masking",
+      "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD",
+      "JourneyBench: A Challenging One-Stop Vision-Language Understanding Benchmark of Generated Images",
+      "LG-VQ: Language-Guided Codebook Learning",
+      "LOVA3: Learning to Visual Question Answering, Asking and Assessment",
+      "Leveraging Visual Tokens for Extended Text Contexts in Multi-Modal Learning",
+      "Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models",
+      "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens",
+      "MMDU: A Multi-Turn Multi-Image Dialog Understanding Benchmark and Instruction-Tuning Dataset for LVLMs",
+      "MaVEn: An Effective Multi-granularity Hybrid Visual Encoding Framework for Multimodal Large Language Model",
+      "Measuring Multimodal Mathematical Reasoning with MATH-Vision Dataset",
+      "Membership Inference Attacks against Large Vision-Language Models",
+      "Meteor: Mamba-based Traversal of Rationale for Large Language and Vision Models",
+      "Micro-Bench: A Microscopy Benchmark for Vision-Language Understanding",
+      "Mitigating Object Hallucination via Concentric Causal Attention",
+      "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+      "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "Multi-Head Mixture-of-Experts",
+      "Multi-Object Hallucination in Vision Language Models",
+      "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models",
+      "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+      "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding",
+      "OlympicArena: Benchmarking Multi-discipline Cognitive Reasoning for Superintelligent AI",
+      "Prism: A Framework for Decoupling and Assessing the Capabilities of VLMs",
+      "Q-VLM: Post-training Quantization for Large Vision-Language Models",
+      "SciFIBench: Benchmarking Large Multimodal Models for Scientific Figure Interpretation",
+      "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment",
+      "Shadowcast: Stealthy Data Poisoning Attacks Against Vision-Language Models",
+      "TabPedia: Towards Comprehensive Visual Table Understanding with Concept Synergy",
+      "Towards Comprehensive Detection of Chinese Harmful Memes",
+      "Training-Free Open-Ended Object Detection and Segmentation via Attention as Prompts",
+      "Understanding the Limits of Vision Language Models Through the Lens of the Binding Problem",
+      "Unified Generative and Discriminative Training for Multi-modal Large Language Models",
+      "Unveiling Encoder-Free Vision-Language Models",
+      "Unveiling the Tapestry of Consistency in Large Vision-Language Models",
+      "VHELM: A Holistic Evaluation of Vision Language Models",
+      "VRSBench: A Versatile Vision-Language Benchmark Dataset for Remote Sensing Image Understanding",
+      "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "Visual CoT: Advancing Multi-Modal Language Models with a Comprehensive Dataset and Benchmark for Chain-of-Thought Reasoning",
+      "Visual Riddles: a Commonsense and World Knowledge Challenge for Large Vision and Language Models",
+      "Voila-A: Aligning Vision-Language Models with User's Gaze Attention",
+      "What Factors Affect Multi-Modal In-Context Learning? An In-Depth Exploration",
+      "What matters when building vision-language models?",
+      "Why are Visually-Grounded Language Models Bad at Image Classification?",
+      "WildVision: Evaluating Vision-Language Models in the Wild with Human Preferences",
+      "Yo'LLaVA: Your Personalized Language and Vision Assistant"
+    ],
+    "iclr25": [
+      "Adapt-$\\infty$: Scalable Continual Multimodal Instruction Tuning via Dynamic Data Selection",
+      "AuroraCap: Efficient, Performant Video Detailed Captioning and a New Benchmark",
+      "Backdooring Vision-Language Models with Out-Of-Distribution Data",
+      "Bridging Compressed Image Latents and Multimodal Large Language Models",
+      "Can We Talk Models Into Seeing the World Differently?",
+      "CogCoM: A Visual Language Model with Chain-of-Manipulations Reasoning",
+      "Correlating instruction-tuning (in multimodal models) with vision-language processing (in the brain)",
+      "DAMO: Decoding by Accumulating Activations Momentum for Mitigating Hallucinations in Vision-Language Models",
+      "DEEM: Diffusion models serve as the eyes of large language models for image perception",
+      "Do You Keep an Eye on What I Ask? Mitigating Multimodal Hallucination via Attention-Guided Ensemble Decoding",
+      "Draw-and-Understand: Leveraging Visual Prompts to Enable MLLMs to Comprehend What You Want",
+      "Dysca: A Dynamic and Scalable Benchmark for Evaluating Perception Ability of LVLMs",
+      "EMMA: Empowering Multi-modal Mamba with Structural and Hierarchical Alignment",
+      "Enhancing Cognition and Explainability of Multimodal Foundation Models with Self-Synthesized Data",
+      "Fine-Grained Verifiers: Preference Modeling as Next-token Prediction in Vision-Language Alignment",
+      "From Pixels to Tokens: Byte-Pair Encoding on Quantized Visual Modalities",
+      "Interpreting and Editing Vision-Language Representations to Mitigate Hallucinations",
+      "Intervening Anchor Token: Decoding Strategy in Alleviating Hallucinations for MLLMs",
+      "Is Your Multimodal Language Model Oversensitive to Safe Queries?",
+      "JetFormer: An autoregressive generative model of raw images and text",
+      "LLM-wrapper: Black-Box Semantic-Aware Adaptation of Vision-Language Models for Referring Expression Comprehension",
+      "MAPS: Advancing Multi-Modal Reasoning in Expert-Level Physical Science",
+      "MAVIS: Mathematical Visual Instruction Tuning with an Automatic Data Engine",
+      "MEGA-Bench: Scaling Multimodal Evaluation to over 500 Real-World Tasks",
+      "MLLM can see? Dynamic Correction Decoding for Hallucination Mitigation",
+      "MMIE: Massive Multimodal Interleaved Comprehension Benchmark for Large Vision-Language Models",
+      "Matryoshka Multimodal Models",
+      "MetaMetrics: Calibrating Metrics for Generation Tasks Using Human Preferences",
+      "Multimodal Situational Safety",
+      "NL-Eye: Abductive NLI For Images",
+      "OmniCorpus: A Unified Multimodal Corpus of 10 Billion-Level Images Interleaved with Text",
+      "Pangea: A Fully Open Multilingual Multimodal LLM for 39 Languages",
+      "PathGen-1.6M: 1.6 Million Pathology Image-text Pairs Generation through Multi-agent Collaboration",
+      "REMEDY: Recipe Merging Dynamics in Large Vision-Language Models",
+      "Re-Imagining Multimodal Instruction Tuning: A Representation View",
+      "Reducing Hallucinations in Large Vision-Language Models via Latent Space Steering",
+      "Revisit Large-Scale Image-Caption Data in Pre-training Multimodal Foundation Models",
+      "SPARTUN3D: Situated Spatial Understanding of 3D World in Large Language Model",
+      "See What You Are Told: Visual Attention Sink in Large Multimodal Models",
+      "Self-Correcting Decoding with Generative Feedback for Mitigating Hallucinations in Large Vision-Language Models",
+      "Show-o: One Single Transformer to Unify Multimodal Understanding and Generation",
+      "TEOChat: A Large Vision-Language Assistant for Temporal Earth Observation Data",
+      "TIGeR: Unifying Text-to-Image Generation and Retrieval with Large Multimodal Models",
+      "TLDR: Token-Level Detective Reward Model for Large Vision Language Models",
+      "Towards Semantic Equivalence of Tokenization in Multimodal LLM",
+      "Transfusion: Predict the Next Token and Diffuse Images with One Multi-Modal Model",
+      "Understanding Long Videos with Multimodal Language Models",
+      "Understanding and Mitigating Hallucination in Large Vision-Language Models via Modular Attribution and Intervention",
+      "VL-ICL Bench: The Devil in the Details of Multimodal In-Context Learning",
+      "VibeCheck: Discover and Quantify Qualitative Differences in Large Language Models",
+      "Visual Description Grounding Reduces Hallucinations and Boosts Reasoning in LVLMs",
+      "World Model on Million-Length Video And Language With Blockwise RingAttention"
+    ],
+    "naacl25": [
+      "Detect, Disambiguate, and Translate: On-Demand Visual Reasoning for Multimodal Machine Translation with Large Vision-Language Models",
+      "GuideLLM: ExploringLLM-Guided Conversation with Applications in Autobiography Interviewing",
+      "How Can We Diagnose and Treat Bias in Large Language Models for Clinical Decision-Making?",
+      "IFIR: A Comprehensive Benchmark for Evaluating Instruction-Following in Expert-Domain Information Retrieval",
+      "Is In-Context Learning a Type of Error-Driven Learning? Evidence from the Inverse Frequency Effect in Structural Priming",
+      "MAPWise: Evaluating Vision-Language Models for Advanced Map Queries",
+      "Smurfs: Multi-Agent System using Context-EfficientDFSDTfor Tool Planning",
+      "Stealthy Jailbreak Attacks on Large Language Models via Benign Data Mirroring",
+      "Towards Automatic Evaluation for Image Transcreation"
+    ],
+    "acl25": [
+      "Activating Distributed Visual Region withinLLMs for Efficient and Effective Vision-Language Training and Inference",
+      "Automating Legal Interpretation withLLMs: Retrieval, Generation, and Evaluation",
+      "Dehumanizing Machines: Mitigating Anthropomorphic Behaviors in Text Generation Systems",
+      "EAC-MoE: Expert-Selection Aware Compressor for Mixture-of-Experts Large Language Models",
+      "HELIOS: Harmonizing Early Fusion, Late Fusion, andLLMReasoning for Multi-Granular Table-Text Retrieval"
+    ],
+    "icml25": [
+      "Be Confident: Uncovering Overfitting in MLLM Multi-Task Tuning",
+      "CoMemo: LVLMs Need Image Context with Image Memory",
+      "DS-VLM: Diffusion Supervision Vision Language Model",
+      "Data-Juicer Sandbox: A Feedback-Driven Suite for Multimodal Data-Model Co-development",
+      "Defending LVLMs Against Vision Attacks Through Partial-Perception Supervision",
+      "Diffusion Instruction Tuning",
+      "Dynamic Mixture of Curriculum LoRA Experts for Continual Multimodal Instruction Tuning",
+      "GeoPixel: Pixel Grounding Large Multimodal Model in Remote Sensing",
+      "LAuReL: Learned Augmented Residual Layer",
+      "LLMs can see and hear without any training",
+      "Learn from Downstream and Be Yourself in Multimodal Large Language Models Fine-Tuning",
+      "MME-CoT: Benchmarking Chain-of-Thought in Large Multimodal Models for Reasoning Quality, Robustness, and Efficiency",
+      "Mitigating Object Hallucination in Large Vision-Language Models via Image-Grounded Guidance",
+      "Orthus: Autoregressive Interleaved Image-Text Generation with Modality-Specific Heads",
+      "PAK-UCB Contextual Bandit: An Online Learning Approach to Prompt-Aware Selection of Generative Models and LLMs",
+      "Perception in Reflection",
+      "PoisonedEye: Knowledge Poisoning Attack on Retrieval-Augmented Generation based Large Vision-Language Models",
+      "Privacy-Shielded Image Compression: Defending Against Exploitation from Vision-Language Pretrained Models",
+      "RepLoRA: Reparameterizing Low-rank Adaptation via the Perspective of Mixture of Experts",
+      "SECOND: Mitigating Perceptual Hallucination in Vision-Language Models via Selective and Contrastive Decoding",
+      "Toward Robust Hyper-Detailed Image Captioning: A Multiagent Approach and Dual Evaluation Metrics for Factuality and Coverage",
+      "Towards Rationale-Answer Alignment of LVLMs via Self-Rationale Calibration",
+      "What If We Recaption Billions of Web Images with LLaMA-3?",
+      "X-Transfer Attacks: Towards Super Transferable Adversarial Attacks on CLIP"
+    ],
+    "emnlp25": [
+      "A Survey of Link Prediction in N-ary Knowledge Graphs",
+      "CityEQA: A HierarchicalLLMAgent on Embodied Question Answering Benchmark in City Space",
+      "Cost-Optimal Grouped-Query Attention for Long-Context Modeling",
+      "Following Length Constraints in Instructions",
+      "From General Reward to Targeted Reward: Improving Open-ended Long-context Generation Models",
+      "InMind: EvaluatingLLMs in Capturing and Applying Individual Human Reasoning Styles",
+      "Large Language Models Threaten Language\u2019s Epistemic and Communicative Foundations",
+      "Measuring Chain of Thought Faithfulness by Unlearning Reasoning Steps",
+      "Mondrian: A Framework for Logical Abstract (Re)Structuring",
+      "Program of Thoughts for Financial Reasoning: Leveraging Dynamic In-Context Examples and Generative Retrieval",
+      "QCRD: Quality-guided Contrastive Rationale Distillation for Large Language Models",
+      "Rescorla-Wagner Steering ofLLMs for Undesired Behaviors over Disproportionate Inappropriate Context",
+      "RiTTA: Modeling Event Relations in Text-to-Audio Generation",
+      "SQLWOZ: A Realistic Task-Oriented Dialogue Dataset withSQL-Based Dialogue State Representation for Complex User Requirements",
+      "Theorem-Validated Reverse Chain-of-Thought Problem Generation for Geometric Reasoning",
+      "VLP: Vision-Language Preference Learning for Embodied Manipulation",
+      "Vision-and-Language Navigation with Analogical Textual Descriptions inLLMs",
+      "What Do Indonesians Really Need from Language Technology? A Nationwide Survey",
+      "2025.emnlp-main.1357.checklist",
+      "2025.emnlp-main.1588.checklist",
+      "MuCAL: Contrastive Alignment for Preference-DrivenKG-to-Text Generation",
+      "Pre-trained Language Models Learn Remarkably Accurate Representations of Numbers",
+      "Reliable Evaluation and Benchmarks for Statement Autoformalization"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 65,
+    "iclr25": 52,
+    "naacl25": 9,
+    "acl25": 5,
+    "icml25": 24,
+    "emnlp25": 23
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

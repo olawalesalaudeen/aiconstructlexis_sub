@@ -1,0 +1,164 @@
+{
+  "canonical_name": "ShareGPT",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, ShareGPT is consistently defined as a dataset of real-world, user-shared conversations with ChatGPT, collected from the website sharegpt.com. The prevailing use of this dataset falls into two main categories: model training and evaluation. Several papers employ it for supervised fine-tuning (SFT) or general instruction tuning, with one study using \"10,000 instruction-response pairs\" for this purpose (DataMan: Data Manager for Pre-training Large Language Models). As an evaluation instrument, its application is varied; it is used to source authentic user queries, to benchmark the performance of LLM serving systems, and to assess model capabilities. Specifically, ShareGPT is used to measure `Dialogue`, `Commonsense knowledge`, and `Safety`. It is also explicitly used to evaluate \"instruction-following capabilities\" alongside other prompt sets covering general reasoning and mathematical problem-solving (A Triple-View Framework for Fine-Grained Emotion Classification with Clustering-Guided Contrastive Learning). A smaller line of work uses the dataset in experiments to study phenomena like alignment drift.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "ShareGPT"
+  ],
+  "papers": [
+    "A Triple-View Framework for Fine-Grained Emotion Classification with Clustering-Guided Contrastive Learning",
+    "Beyond Prompt Engineering: Robust Behavior Control inLLMs via Steering Target Atoms",
+    "Investigating and Extending Homans\u2019 Social Exchange Theory with Large Language Model based Agents",
+    "mPLUG-DocOwl2: High-resolution Compressing forOCR-free Multi-page Document Understanding",
+    "Intrinsic Test of Unlearning Using Parametric Knowledge Traces",
+    "NUTMEG: Separating Signal From Noise in Annotator Disagreement",
+    "Toward Efficient Sparse Autoencoder-Guided Steering for Improved In-Context Learning in Large Language Models",
+    "pFedGPT: Hierarchically OptimizingLoRAAggregation Weights for Personalized FederatedGPTModels",
+    "An Engorgio Prompt Makes Large Language Model Babble on",
+    "Block Verification Accelerates Speculative Decoding",
+    "DataMan: Data Manager for Pre-training Large Language Models",
+    "Fiddler: CPU-GPU Orchestration for Fast Inference of Mixture-of-Experts Models",
+    "Holistically Evaluating the Environmental Impact of Creating Language Models",
+    "Instructional Segment Embedding: Improving LLM Safety with Instruction Hierarchy",
+    "Scaling up Masked Diffusion Models on Text",
+    "Demystifying Cost-Efficiency in LLM Serving over Heterogeneous GPUs",
+    "FloE: On-the-Fly MoE Inference on Memory-constrained GPU",
+    "Behavior-SD: Behaviorally Aware Spoken Dialogue Generation with Large Language Models",
+    "Threshold Filtering Packing for Supervised Fine-Tuning: Training Related Samples within Packs"
+  ],
+  "paper_count": 19,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A dataset of user-shared conversations with ChatGPT, used here for instruction fine-tuning and evaluation.",
+      "paper": "DataMan: Data Manager for Pre-training Large Language Models",
+      "original_name": "ShareGPT"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction following",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Threshold Filtering Packing for Supervised Fine-Tuning: Training Related Samples within Packs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Threshold Filtering Packing for Supervised Fine-Tuning: Training Related Samples within Packs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "HelpSteer2",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "HelpSteer 2: Open-source dataset for training top-performing reward models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "HelpSteer 2: Open-source dataset for training top-performing reward models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Dialogue",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Block Verification Accelerates Speculative Decoding",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Block Verification Accelerates Speculative Decoding"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense knowledge",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "DataMan: Data Manager for Pre-training Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "DataMan: Data Manager for Pre-training Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Robustness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Toward Efficient Sparse Autoencoder-Guided Steering for Improved In-Context Learning in Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Toward Efficient Sparse Autoencoder-Guided Steering for Improved In-Context Learning in Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 5,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, ShareGPT is consistently defined as a dataset of real-world, user-shared conversations with ChatGPT, collected from the website sharegpt.com. The prevailing use of this dataset falls into two main categories: model training and evaluation. Several papers employ it for supervised fine-tuning (SFT) or general instruction tuning, with one study using \"10,000 instruction-response pairs\" for this purpose (DataMan: Data Manager for Pre-training Large Language Models). As an evaluation instrument, its application is varied; it is used to source authentic user queries, to benchmark the performance of LLM serving systems, and to assess model capabilities. Specifically, ShareGPT is used to measure `Dialogue`, `Commonsense knowledge`, and `Safety`. It is also explicitly used to evaluate \"instruction-following capabilities\" alongside other prompt sets covering general reasoning and mathematical problem-solving (A Triple-View Framework for Fine-Grained Emotion Classification with Clustering-Guided Contrastive Learning). A smaller line of work uses the dataset in experiments to study phenomena like alignment drift.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "An Engorgio Prompt Makes Large Language Model Babble on",
+      "Block Verification Accelerates Speculative Decoding",
+      "DataMan: Data Manager for Pre-training Large Language Models",
+      "Fiddler: CPU-GPU Orchestration for Fast Inference of Mixture-of-Experts Models",
+      "Holistically Evaluating the Environmental Impact of Creating Language Models",
+      "Instructional Segment Embedding: Improving LLM Safety with Instruction Hierarchy",
+      "Scaling up Masked Diffusion Models on Text"
+    ],
+    "naacl25": [
+      "Behavior-SD: Behaviorally Aware Spoken Dialogue Generation with Large Language Models",
+      "Threshold Filtering Packing for Supervised Fine-Tuning: Training Related Samples within Packs"
+    ],
+    "acl25": [
+      "A Triple-View Framework for Fine-Grained Emotion Classification with Clustering-Guided Contrastive Learning",
+      "Beyond Prompt Engineering: Robust Behavior Control inLLMs via Steering Target Atoms",
+      "Investigating and Extending Homans\u2019 Social Exchange Theory with Large Language Model based Agents",
+      "mPLUG-DocOwl2: High-resolution Compressing forOCR-free Multi-page Document Understanding"
+    ],
+    "icml25": [
+      "Demystifying Cost-Efficiency in LLM Serving over Heterogeneous GPUs",
+      "FloE: On-the-Fly MoE Inference on Memory-constrained GPU"
+    ],
+    "emnlp25": [
+      "Intrinsic Test of Unlearning Using Parametric Knowledge Traces",
+      "NUTMEG: Separating Signal From Noise in Annotator Disagreement",
+      "Toward Efficient Sparse Autoencoder-Guided Steering for Improved In-Context Learning in Large Language Models",
+      "pFedGPT: Hierarchically OptimizingLoRAAggregation Weights for Personalized FederatedGPTModels"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 7,
+    "naacl25": 2,
+    "acl25": 4,
+    "icml25": 2,
+    "emnlp25": 4
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "naacl25"
+  ]
+}

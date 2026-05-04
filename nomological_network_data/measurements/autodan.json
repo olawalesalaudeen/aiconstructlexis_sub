@@ -1,0 +1,155 @@
+{
+  "canonical_name": "AutoDAN",
+  "type": "measurement",
+  "canonical_definition": "AutoDAN is predominantly characterized in the provided literature as an automated attack method used to generate adversarial prompts. Its primary application is to measure the `Adversarial robustness` of large language models by attempting to bypass their safety alignments, a behavior referred to as `Jailbreaking`. The most common description of its underlying mechanism is a genetic algorithm, which one paper specifies as a \"hierarchical genetic algorithm.\" However, there is some variation, with a smaller set of papers describing it as a \"gradient-based\" method or one that uses general \"optimization techniques.\" The prompts it generates are described as both \"high-perplexity\" and \"human-readable.\" Across the data, it is consistently classified as a \"white-box\" attack and is frequently studied alongside other methods like GCG and PAIR. A single source presents a distinct framing, describing AutoDAN as a \"public dataset used for evaluating jailbreak detection,\" a less common usage in this collection of papers.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "AutoDAN"
+  ],
+  "papers": [
+    "A-TASC:AsianTED-Based Automatic Subtitling Corpus",
+    "Answering Complex Geographic Questions by Adaptive Reasoning with Visual Context and External Commonsense Knowledge",
+    "MMLU-CF: A Contamination-free Multi-task Language Understanding Benchmark",
+    "$R^2$-Guard: Robust Reasoning Enabled LLM Guardrail via Knowledge-Enhanced Logical Reasoning",
+    "Backtracking Improves Generation Safety",
+    "EFFICIENT JAILBREAK ATTACK SEQUENCES ON LARGE LANGUAGE MODELS VIA MULTI-ARMED BANDIT-BASED CONTEXT SWITCHING",
+    "Functional Homotopy: Smoothing Discrete Optimization via Continuous Parameters for LLM Jailbreak Attacks",
+    "HarmAug: Effective Data Augmentation for Knowledge Distillation of Safety Guard Models",
+    "Injecting Universal Jailbreak Backdoors into LLMs in Minutes",
+    "Robust LLM safeguarding via refusal feature adversarial training",
+    "RobustKV: Defending Large Language Models against Jailbreak Attacks via KV Eviction",
+    "Improving LLM Safety Alignment with Dual-Objective Optimization",
+    "LLMScan: Causal Scan for LLM Misbehavior Detection",
+    "Investigating the (De)Composition Capabilities of Large Language Models in Natural-to-Formal Language Conversion",
+    "Language Models Largely Exhibit Human-like Constituent Ordering Preferences",
+    "Multilingual Machine Translation with Open Large Language Models at Practical Scale: An Empirical Study"
+  ],
+  "paper_count": 16,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A genetic-algorithm jailbreak procedure that generates adversarial prompts intended to bypass LLM safety alignment.",
+      "paper": "Robust LLM safeguarding via refusal feature adversarial training",
+      "original_name": "AutoDAN"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Adversarial robustness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "RobustKV: Defending Large Language Models against Jailbreak Attacks via KV Eviction",
+      "evidence": "Table 1: General model capability metrics and adversarial robustness (measured as ASR) of three LLMs trained using various safety fine-tuning methods. ... GCG ... PAIR ... AutoDAN ... HumanJailbreaks",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "RobustKV: Defending Large Language Models against Jailbreak Attacks via KV Eviction",
+          "Robust LLM safeguarding via refusal feature adversarial training"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Jailbreaking",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Fight Back Against Jailbreaking via Prompt Adversarial Tuning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Fight Back Against Jailbreaking via Prompt Adversarial Tuning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Jailbreaking",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Robust LLM safeguarding via refusal feature adversarial training",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Robust LLM safeguarding via refusal feature adversarial training"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Jailbreak resistance",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "$R^2$-Guard: Robust Reasoning Enabled LLM Guardrail via Knowledge-Enhanced Logical Reasoning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "$R^2$-Guard: Robust Reasoning Enabled LLM Guardrail via Knowledge-Enhanced Logical Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CSRT",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "MMLU-CF: A Contamination-free Multi-task Language Understanding Benchmark",
+      "evidence": "We compare the CSRT to three non-multilingual red-teaming baselines (i.e., GCG (Zou et al., 2023), AutoDAN (Liu et al., 2024), and PAIR (Chao et al., 2025)). (Section 4.3)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "MMLU-CF: A Contamination-free Multi-task Language Understanding Benchmark"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 2,
+  "characterization": "AutoDAN is predominantly characterized in the provided literature as an automated attack method used to generate adversarial prompts. Its primary application is to measure the `Adversarial robustness` of large language models by attempting to bypass their safety alignments, a behavior referred to as `Jailbreaking`. The most common description of its underlying mechanism is a genetic algorithm, which one paper specifies as a \"hierarchical genetic algorithm.\" However, there is some variation, with a smaller set of papers describing it as a \"gradient-based\" method or one that uses general \"optimization techniques.\" The prompts it generates are described as both \"high-perplexity\" and \"human-readable.\" Across the data, it is consistently classified as a \"white-box\" attack and is frequently studied alongside other methods like GCG and PAIR. A single source presents a distinct framing, describing AutoDAN as a \"public dataset used for evaluating jailbreak detection,\" a less common usage in this collection of papers.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "$R^2$-Guard: Robust Reasoning Enabled LLM Guardrail via Knowledge-Enhanced Logical Reasoning",
+      "Backtracking Improves Generation Safety",
+      "EFFICIENT JAILBREAK ATTACK SEQUENCES ON LARGE LANGUAGE MODELS VIA MULTI-ARMED BANDIT-BASED CONTEXT SWITCHING",
+      "Functional Homotopy: Smoothing Discrete Optimization via Continuous Parameters for LLM Jailbreak Attacks",
+      "HarmAug: Effective Data Augmentation for Knowledge Distillation of Safety Guard Models",
+      "Injecting Universal Jailbreak Backdoors into LLMs in Minutes",
+      "Robust LLM safeguarding via refusal feature adversarial training",
+      "RobustKV: Defending Large Language Models against Jailbreak Attacks via KV Eviction"
+    ],
+    "naacl25": [
+      "Investigating the (De)Composition Capabilities of Large Language Models in Natural-to-Formal Language Conversion",
+      "Language Models Largely Exhibit Human-like Constituent Ordering Preferences",
+      "Multilingual Machine Translation with Open Large Language Models at Practical Scale: An Empirical Study"
+    ],
+    "acl25": [
+      "A-TASC:AsianTED-Based Automatic Subtitling Corpus",
+      "Answering Complex Geographic Questions by Adaptive Reasoning with Visual Context and External Commonsense Knowledge",
+      "MMLU-CF: A Contamination-free Multi-task Language Understanding Benchmark"
+    ],
+    "icml25": [
+      "Improving LLM Safety Alignment with Dual-Objective Optimization",
+      "LLMScan: Causal Scan for LLM Misbehavior Detection"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 8,
+    "naacl25": 3,
+    "acl25": 3,
+    "icml25": 2
+  },
+  "conferences": [
+    "acl25",
+    "iclr25",
+    "icml25",
+    "naacl25"
+  ]
+}

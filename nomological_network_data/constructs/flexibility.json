@@ -1,0 +1,94 @@
+{
+  "canonical_name": "Flexibility",
+  "type": "construct",
+  "canonical_definition": "Across the provided literature, the construct of Flexibility is framed in two distinct ways. The most prevalent usage defines it as a guardrail model's ability to adapt to new or unseen safety categories without requiring complete retraining. This form of flexibility is operationalized by modifying a model's knowledge base or reasoning structure, as one paper notes its system \"can effectively adapt to unseen safety categories by simply editing the reasoning graph\" ($R^2$-Guard: Robust Reasoning Enabled LLM Guardrail via Knowledge-Enhanced Logical Reasoning). This adaptability is reported to be enhanced by both Logical reasoning and Prompt engineering. A different line of work treats Flexibility as \"the tendency to produce ideas that span multiple distinct semantic categories\" (On the Same Wavelength? Evaluating Pragmatic Reasoning in Language Models across Broad Concepts). In this context, it is measured by counting the number of distinct semantic categories in responses, a metric also referred to as a \"Creativity Quotient (CQ)\". This creativity-focused version of Flexibility is shown to correlate with Originality. Thus, the term's application diverges between the architectural adaptability of safety systems and the semantic diversity of generated content.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Flexibility"
+  ],
+  "papers": [
+    "Beyond Correctness: Confidence-Aware Reward Modeling for Enhancing Large Language Model Reasoning",
+    "On the Same Wavelength? Evaluating Pragmatic Reasoning in Language Models across Broad Concepts",
+    "$R^2$-Guard: Robust Reasoning Enabled LLM Guardrail via Knowledge-Enhanced Logical Reasoning",
+    "Visually Guided Decoding: Gradient-Free Hard Prompt Inversion with Language Models"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The ability of a guardrail model to adapt to new or unseen safety categories without requiring complete retraining, often by modifying its knowledge base or reasoning structure.",
+      "paper": "$R^2$-Guard: Robust Reasoning Enabled LLM Guardrail via Knowledge-Enhanced Logical Reasoning",
+      "original_name": "Flexibility"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Prompt engineering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Visually Guided Decoding: Gradient-Free Hard Prompt Inversion with Language Models",
+      "evidence": "VGD enhances the interpretability, generalization, and flexibility of prompt generation without the need for additional training. (Section 1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Visually Guided Decoding: Gradient-Free Hard Prompt Inversion with Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Logical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "$R^2$-Guard: Robust Reasoning Enabled LLM Guardrail via Knowledge-Enhanced Logical Reasoning",
+      "evidence": "The grounding knowledge and principled reasoning procedure enable R2-Guard to be effective, robust against jailbreak attacks, and flexible given new safety categories. (Abstract)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "$R^2$-Guard: Robust Reasoning Enabled LLM Guardrail via Knowledge-Enhanced Logical Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Originality",
+      "other_type": "constructs",
+      "relationship_type": "correlates",
+      "paper": "On the Same Wavelength? Evaluating Pragmatic Reasoning in Language Models across Broad Concepts",
+      "evidence": "\u201cFor convergent validity, MUSESCORER\u2019s normalized originality scores {Othresh_i} correlate strongly with Creativity Quotient (CQ) scores in socialmuse24. CQ is a flexibility measure that captures the diversity of semantic categories.\u201d",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "On the Same Wavelength? Evaluating Pragmatic Reasoning in Language Models across Broad Concepts"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the provided literature, the construct of Flexibility is framed in two distinct ways. The most prevalent usage defines it as a guardrail model's ability to adapt to new or unseen safety categories without requiring complete retraining. This form of flexibility is operationalized by modifying a model's knowledge base or reasoning structure, as one paper notes its system \"can effectively adapt to unseen safety categories by simply editing the reasoning graph\" ($R^2$-Guard: Robust Reasoning Enabled LLM Guardrail via Knowledge-Enhanced Logical Reasoning). This adaptability is reported to be enhanced by both Logical reasoning and Prompt engineering. A different line of work treats Flexibility as \"the tendency to produce ideas that span multiple distinct semantic categories\" (On the Same Wavelength? Evaluating Pragmatic Reasoning in Language Models across Broad Concepts). In this context, it is measured by counting the number of distinct semantic categories in responses, a metric also referred to as a \"Creativity Quotient (CQ)\". This creativity-focused version of Flexibility is shown to correlate with Originality. Thus, the term's application diverges between the architectural adaptability of safety systems and the semantic diversity of generated content.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "$R^2$-Guard: Robust Reasoning Enabled LLM Guardrail via Knowledge-Enhanced Logical Reasoning",
+      "Visually Guided Decoding: Gradient-Free Hard Prompt Inversion with Language Models"
+    ],
+    "emnlp25": [
+      "Beyond Correctness: Confidence-Aware Reward Modeling for Enhancing Large Language Model Reasoning",
+      "On the Same Wavelength? Evaluating Pragmatic Reasoning in Language Models across Broad Concepts"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25"
+  ]
+}

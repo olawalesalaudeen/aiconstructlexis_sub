@@ -1,0 +1,183 @@
+{
+  "canonical_name": "Belebele",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, Belebele is consistently described as a multilingual benchmark designed to evaluate reading comprehension. The prevailing operationalization of the task involves multiple-choice questions based on short passages, with one paper noting that its passages are sourced from the FLORES-200 dataset. Papers use this instrument to measure a range of capabilities, most frequently reading comprehension, machine reading comprehension, and language understanding. It is also used to assess question answering, multilingual ability, and text generation in a prompted question-answering context. A recurring feature is its broad linguistic coverage, with multiple sources specifying it spans 122 language variants or language-dialect combinations. The benchmark is noted to include low-resource languages and specific dialects, such as Moroccan and Egyptian. In practice, researchers are shown to employ Belebele in few-shot evaluation settings, with two papers specifically mentioning five-shot prompting.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "BELEBELE",
+    "Belebele"
+  ],
+  "papers": [
+    "ELBA-Bench: An Efficient Learning Backdoor Attacks Benchmark for Large Language Models",
+    "ONEBench to Test Them All: Sample-Level Benchmarking Over Open-Ended Capabilities",
+    "SEAL: Scaling to Emphasize Attention for Long-Context Retrieval",
+    "TRIDENT: Enhancing Large Language Model Safety with Tri-Dimensional Diversified Red-Teaming Data Synthesis",
+    "0.02",
+    "AFRIDOC-MT: Document-levelMTCorpus forAfrican Languages",
+    "CHENGYU-BENCH: Benchmarking Large Language Models forChinese Idiom Understanding and Use",
+    "How DoesDPOReduce Toxicity? A Mechanistic Neuron-Level Analysis",
+    "Leveraging Loanword Constraints for Improving Machine Translation in a Low-Resource Multilingual Context",
+    "Adapters for Altering LLM Vocabularies: What Languages Benefit the Most?",
+    "Latent Space Chain-of-Embedding Enables Output-free LLM Self-Evaluation",
+    "Layer Swapping for Zero-Shot Cross-Lingual Transfer in Large Language Models",
+    "LAuReL: Learned Augmented Residual Layer",
+    "Neutral residues: revisiting adapters for model extension",
+    "CoRAC: Integrating SelectiveAPIDocument Retrieval with Question Semantic Intent for Code Question Answering",
+    "Examining and Adapting Time for Multilingual Classification via Mixture of Temporal Experts",
+    "Graph Neural Network Enhanced Retrieval for Question Answering of Large Language Models"
+  ],
+  "paper_count": 17,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A multilingual reading comprehension benchmark used to assess a model's basic language understanding across many languages.",
+      "paper": "Layer Swapping for Zero-Shot Cross-Lingual Transfer in Large Language Models",
+      "original_name": "BELEBELE"
+    },
+    {
+      "text": "A multilingual benchmark for evaluating reading comprehension via multiple-choice questions based on short passages.",
+      "paper": "Adapters for Altering LLM Vocabularies: What Languages Benefit the Most?",
+      "original_name": "Belebele"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reading comprehension",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "CoRAC: Integrating SelectiveAPIDocument Retrieval with Question Semantic Intent for Code Question Answering",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "naacl25": [
+          "CoRAC: Integrating SelectiveAPIDocument Retrieval with Question Semantic Intent for Code Question Answering"
+        ],
+        "icml25": [
+          "LAuReL: Learned Augmented Residual Layer"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language understanding",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Layer Swapping for Zero-Shot Cross-Lingual Transfer in Large Language Models",
+      "evidence": "We evaluate understanding capabilities using MMLU (Hendrycks et al., 2021), HellaSwag (Zellers et al., 2019), and Belebele (Bandarkar et al., 2024) benchmarks, each adapted to both EGY and MOR dialects. (Section 4.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Layer Swapping for Zero-Shot Cross-Lingual Transfer in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multiple-choice question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Adapters for Altering LLM Vocabularies: What Languages Benefit the Most?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Adapters for Altering LLM Vocabularies: What Languages Benefit the Most?"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multilingual ability",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "SEAL: Scaling to Emphasize Attention for Long-Context Retrieval",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "SEAL: Scaling to Emphasize Attention for Long-Context Retrieval"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Neutral residues: revisiting adapters for model extension",
+      "evidence": "\"We use the following datasets: ARC challenge (Clark et al., 2018), HellaSwag (Zellers et al., 2019), MMLU (Hendrycks et al., 2020), CommonSense QA (Talmor et al., 2018) and Belebele (Bandarkar et al., 2023).\"",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Neutral residues: revisiting adapters for model extension"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Machine reading comprehension",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "AFRIDOC-MT: Document-levelMTCorpus forAfrican Languages",
+      "evidence": "To evaluate the generalization of bridge selection beyond the BLI task, we further evaluate cross-lingual Machine Reading Comprehension (MRC) using the Belebele dataset (Bandarkar et al., 2024). (Section 4.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "AFRIDOC-MT: Document-levelMTCorpus forAfrican Languages"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 6,
+  "incoming_relationship_count": 6,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, Belebele is consistently described as a multilingual benchmark designed to evaluate reading comprehension. The prevailing operationalization of the task involves multiple-choice questions based on short passages, with one paper noting that its passages are sourced from the FLORES-200 dataset. Papers use this instrument to measure a range of capabilities, most frequently reading comprehension, machine reading comprehension, and language understanding. It is also used to assess question answering, multilingual ability, and text generation in a prompted question-answering context. A recurring feature is its broad linguistic coverage, with multiple sources specifying it spans 122 language variants or language-dialect combinations. The benchmark is noted to include low-resource languages and specific dialects, such as Moroccan and Egyptian. In practice, researchers are shown to employ Belebele in few-shot evaluation settings, with two papers specifically mentioning five-shot prompting.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Adapters for Altering LLM Vocabularies: What Languages Benefit the Most?",
+      "Latent Space Chain-of-Embedding Enables Output-free LLM Self-Evaluation",
+      "Layer Swapping for Zero-Shot Cross-Lingual Transfer in Large Language Models"
+    ],
+    "naacl25": [
+      "CoRAC: Integrating SelectiveAPIDocument Retrieval with Question Semantic Intent for Code Question Answering",
+      "Examining and Adapting Time for Multilingual Classification via Mixture of Temporal Experts",
+      "Graph Neural Network Enhanced Retrieval for Question Answering of Large Language Models"
+    ],
+    "acl25": [
+      "ELBA-Bench: An Efficient Learning Backdoor Attacks Benchmark for Large Language Models",
+      "ONEBench to Test Them All: Sample-Level Benchmarking Over Open-Ended Capabilities",
+      "SEAL: Scaling to Emphasize Attention for Long-Context Retrieval",
+      "TRIDENT: Enhancing Large Language Model Safety with Tri-Dimensional Diversified Red-Teaming Data Synthesis"
+    ],
+    "icml25": [
+      "LAuReL: Learned Augmented Residual Layer",
+      "Neutral residues: revisiting adapters for model extension"
+    ],
+    "emnlp25": [
+      "0.02",
+      "AFRIDOC-MT: Document-levelMTCorpus forAfrican Languages",
+      "CHENGYU-BENCH: Benchmarking Large Language Models forChinese Idiom Understanding and Use",
+      "How DoesDPOReduce Toxicity? A Mechanistic Neuron-Level Analysis",
+      "Leveraging Loanword Constraints for Improving Machine Translation in a Low-Resource Multilingual Context"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3,
+    "naacl25": 3,
+    "acl25": 4,
+    "icml25": 2,
+    "emnlp25": 5
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "naacl25"
+  ]
+}

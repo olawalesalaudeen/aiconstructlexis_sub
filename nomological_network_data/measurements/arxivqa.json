@@ -1,0 +1,108 @@
+{
+  "canonical_name": "ArXivQA",
+  "type": "measurement",
+  "canonical_definition": "ArXivQA is a measurement instrument built from academic papers on ArXiv, with a consistent focus on questions related to scientific figures. Across the provided sources, it is most commonly used to evaluate `Visual question answering` and general `Question answering` capabilities. The format is described in multiple ways; one paper defines it as a \"visual question answering (VQA) dataset\" (\"VisRAG: Vision-based Retrieval-augmented Generation on Multi-modality Documents\"), while another specifies it is a \"multiple-choice question answering dataset\" where performance is measured by accuracy. A different operationalization frames ArXivQA as a \"page-level retrieval task\" used to measure `Information retrieval`. In this framing, a model uses \"the question as the query, and the associated page as the gold document\" (\"ColPali: Efficient Document Retrieval with Vision Language Models\"). The dataset's components are described as including \"questions, context images, and gold answers\" or \"page-question-answer triplet[s]\". Thus, while its prevailing use is for evaluating VQA, its structure also supports its application as a retrieval benchmark.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "ArXivQA",
+    "arXiVQA",
+    "ArxiVQA"
+  ],
+  "papers": [
+    "Enhancing Machine Translation with Self-Supervised Preference Data",
+    "Mind the Gesture: EvaluatingAISensitivity to Culturally Offensive Non-Verbal Gestures",
+    "On the Relation Between Fine-Tuning, Topological Properties, and Task Performance in Sense-Enhanced Embeddings",
+    "ColPali: Efficient Document Retrieval with Vision Language Models",
+    "VisRAG: Vision-based Retrieval-augmented Generation on Multi-modality Documents"
+  ],
+  "paper_count": 5,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A visual question answering (VQA) dataset consisting of questions about figures from ArXiv academic papers.",
+      "paper": "VisRAG: Vision-based Retrieval-augmented Generation on Multi-modality Documents",
+      "original_name": "ArXivQA"
+    },
+    {
+      "text": "A page-level retrieval task built from scientific figures from arXiv, using the question as the query and the associated page as the target.",
+      "paper": "ColPali: Efficient Document Retrieval with Vision Language Models",
+      "original_name": "arXiVQA"
+    },
+    {
+      "text": "A multiple-choice question answering dataset derived from academic papers, used to evaluate document visual question answering performance in both closed- and open-domain settings.",
+      "paper": "On the Relation Between Fine-Tuning, Topological Properties, and Task Performance in Sense-Enhanced Embeddings",
+      "original_name": "ArxiVQA"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "AvaTaR: Optimizing LLM Agents for Tool Usage via Contrastive Reasoning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "AvaTaR: Optimizing LLM Agents for Tool Usage via Contrastive Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "VisRAG: Vision-based Retrieval-augmented Generation on Multi-modality Documents",
+      "evidence": "We collect question-document pairs from a series of VQA datasets, targeting different document types: MP-DocVQA (Tito et al., 2023) for industrial documents, ArXivQA (Li et al., 2024b), ChartQA (Masry et al., 2022), InfographicsVQA (Mathew et al., 2022), and PlotQA (Methani et al., 2020) for various figure types, and SlideVQA (Tanaka et al., 2023) for presentation slides.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "VisRAG: Vision-based Retrieval-augmented Generation on Multi-modality Documents"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Information retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Enhancing Machine Translation with Self-Supervised Preference Data",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Enhancing Machine Translation with Self-Supervised Preference Data"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization": "ArXivQA is a measurement instrument built from academic papers on ArXiv, with a consistent focus on questions related to scientific figures. Across the provided sources, it is most commonly used to evaluate `Visual question answering` and general `Question answering` capabilities. The format is described in multiple ways; one paper defines it as a \"visual question answering (VQA) dataset\" (\"VisRAG: Vision-based Retrieval-augmented Generation on Multi-modality Documents\"), while another specifies it is a \"multiple-choice question answering dataset\" where performance is measured by accuracy. A different operationalization frames ArXivQA as a \"page-level retrieval task\" used to measure `Information retrieval`. In this framing, a model uses \"the question as the query, and the associated page as the gold document\" (\"ColPali: Efficient Document Retrieval with Vision Language Models\"). The dataset's components are described as including \"questions, context images, and gold answers\" or \"page-question-answer triplet[s]\". Thus, while its prevailing use is for evaluating VQA, its structure also supports its application as a retrieval benchmark.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "ColPali: Efficient Document Retrieval with Vision Language Models",
+      "VisRAG: Vision-based Retrieval-augmented Generation on Multi-modality Documents"
+    ],
+    "acl25": [
+      "Enhancing Machine Translation with Self-Supervised Preference Data",
+      "Mind the Gesture: EvaluatingAISensitivity to Culturally Offensive Non-Verbal Gestures",
+      "On the Relation Between Fine-Tuning, Topological Properties, and Task Performance in Sense-Enhanced Embeddings"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "acl25": 3
+  },
+  "conferences": [
+    "acl25",
+    "iclr25"
+  ]
+}

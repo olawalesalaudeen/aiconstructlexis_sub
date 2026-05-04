@@ -1,0 +1,100 @@
+{
+  "canonical_name": "Safe-RLHF",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, Safe-RLHF is most commonly described as a human-annotated, pairwise preference dataset used for both alignment tuning and evaluation of language models. Papers consistently use this instrument to measure the constructs of `Helpfulness` and `Harmlessness`. A specific feature noted in the data is that it \"ranks two responses in each datum for helpfulness and harmlessness independently.\" In practice, it is used as a training set for alignment methods and as a benchmark for LM alignment experiments, where one paper specifies that trained models are evaluated against a gold reward model and a reference model. The dataset's scale is described with some variation across papers, with one source citing \"83.4K preference entries\" and another \"1 million human-labeled data points.\" Its application is also situated alongside other alignment datasets, as it is used in experiments with HH-RLHF.",
+  "expert_reviewed": false,
+  "expert_removed": true,
+  "expert_removed_reason": "method/engineering \u2014 not a construct/measurement/behavior of LLM ability",
+  "names": [
+    "SafeRLHF",
+    "Safe-RLHF"
+  ],
+  "papers": [
+    "Igniting Creative Writing in Small Language Models:LLM-as-a-Judge versus Multi-Agent Refined Rewards",
+    "Through the Valley: Path to Effective LongCoTTraining for Small Language Models",
+    "BingoGuard: LLM Content Moderation Tools with Risk Levels",
+    "The Crucial Role of Samplers in Online Direct Preference Optimization",
+    "On Positional Bias of Faithfulness for Long-form Summarization",
+    "PromptRefine: Enhancing Few-Shot Performance on Low-ResourceIndic Languages with Example Selection from related Example Banks"
+  ],
+  "paper_count": 6,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Human-annotated pairwise preference dataset that independently ranks responses for helpfulness and harmlessness, used for alignment tuning and evaluation.",
+      "paper": "On Positional Bias of Faithfulness for Long-form Summarization",
+      "original_name": "SafeRLHF"
+    },
+    {
+      "text": "A dataset used for LM alignment experiments in which trained models are evaluated against a gold reward model and a reference model.",
+      "paper": "The Crucial Role of Samplers in Online Direct Preference Optimization",
+      "original_name": "Safe-RLHF"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "PromptRefine: Enhancing Few-Shot Performance on Low-ResourceIndic Languages with Example Selection from related Example Banks",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "naacl25": [
+          "PromptRefine: Enhancing Few-Shot Performance on Low-ResourceIndic Languages with Example Selection from related Example Banks"
+        ],
+        "emnlp25": [
+          "Through the Valley: Path to Effective LongCoTTraining for Small Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmlessness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "PromptRefine: Enhancing Few-Shot Performance on Low-ResourceIndic Languages with Example Selection from related Example Banks",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "naacl25": [
+          "PromptRefine: Enhancing Few-Shot Performance on Low-ResourceIndic Languages with Example Selection from related Example Banks"
+        ],
+        "emnlp25": [
+          "Through the Valley: Path to Effective LongCoTTraining for Small Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, Safe-RLHF is most commonly described as a human-annotated, pairwise preference dataset used for both alignment tuning and evaluation of language models. Papers consistently use this instrument to measure the constructs of `Helpfulness` and `Harmlessness`. A specific feature noted in the data is that it \"ranks two responses in each datum for helpfulness and harmlessness independently.\" In practice, it is used as a training set for alignment methods and as a benchmark for LM alignment experiments, where one paper specifies that trained models are evaluated against a gold reward model and a reference model. The dataset's scale is described with some variation across papers, with one source citing \"83.4K preference entries\" and another \"1 million human-labeled data points.\" Its application is also situated alongside other alignment datasets, as it is used in experiments with HH-RLHF.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "naacl25": [
+      "On Positional Bias of Faithfulness for Long-form Summarization",
+      "PromptRefine: Enhancing Few-Shot Performance on Low-ResourceIndic Languages with Example Selection from related Example Banks"
+    ],
+    "emnlp25": [
+      "Igniting Creative Writing in Small Language Models:LLM-as-a-Judge versus Multi-Agent Refined Rewards",
+      "Through the Valley: Path to Effective LongCoTTraining for Small Language Models"
+    ],
+    "iclr25": [
+      "BingoGuard: LLM Content Moderation Tools with Risk Levels",
+      "The Crucial Role of Samplers in Online Direct Preference Optimization"
+    ]
+  },
+  "paper_count_by_conference": {
+    "naacl25": 2,
+    "emnlp25": 2,
+    "iclr25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "naacl25"
+  ]
+}

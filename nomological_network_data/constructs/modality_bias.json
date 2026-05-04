@@ -1,0 +1,100 @@
+{
+  "canonical_name": "Modality bias",
+  "type": "construct",
+  "canonical_definition": "Across the provided literature, modality bias is consistently described as a model's or dataset's tendency to rely disproportionately on one input modality over others, which is said to limit the effectiveness of multimodal integration. This is most commonly framed as an over-reliance on text, with one study noting that models \"struggle with figure and table-based questions compared to text-based questions.\" A related framing defines it as an \"imbalanced capability\" or, as \"modality reliance,\" the degree to which a model depends on a specific input. The construct is operationalized and measured in multiple ways. One approach uses benchmarks like M-LongDoc to reveal performance disparities across different modalities. Another common measurement approach is human evaluation, which is used to \"confirm the modality bias of these datasets.\" This is sometimes implemented by using an external LLM as a judge to determine which input modality a model primarily uses for its inferences. The concept is also studied alongside cross-modal retrieval.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Multimodal bias",
+    "Modality reliance",
+    "Modality bias"
+  ],
+  "papers": [
+    "Evaluating the Evaluators: Are readability metrics good measures of readability?",
+    "Not All Parameters Are Created Equal: Smart Isolation Boosts Fine-Tuning Performance",
+    "VLASCD: A Visual Language Action Model for Simultaneous Chatting and Decision Making"
+  ],
+  "paper_count": 3,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A model's tendency to perform better on one modality (e.g., text) than others (e.g., figures, tables), indicating an imbalanced capability.",
+      "paper": "VLASCD: A Visual Language Action Model for Simultaneous Chatting and Decision Making",
+      "original_name": "Multimodal bias"
+    },
+    {
+      "text": "The degree to which a model depends on a specific input modality, such as vision versus text, when making multimodal inferences.",
+      "paper": "Not All Parameters Are Created Equal: Smart Isolation Boosts Fine-Tuning Performance",
+      "original_name": "Modality reliance"
+    },
+    {
+      "text": "The tendency of a model or dataset to rely disproportionately on one input modality (e.g., text) over others (e.g., audio, video), limiting the effectiveness of multimodal integration.",
+      "paper": "Evaluating the Evaluators: Are readability metrics good measures of readability?",
+      "original_name": "Modality bias"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Cross-modal retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "MM-EMBED: UNIVERSAL MULTIMODAL RETRIEVAL WITH MULTIMODAL LLMS",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "MM-EMBED: UNIVERSAL MULTIMODAL RETRIEVAL WITH MULTIMODAL LLMS"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "M-LongDoc",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "VLASCD: A Visual Language Action Model for Simultaneous Chatting and Decision Making",
+      "evidence": "With the proposed M-LongDoc and evaluation framework, our preliminary study on existing models show that they struggle with figure and table-based questions compared to text-based questions, revealing their multimodal bias and weaknesses",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "VLASCD: A Visual Language Action Model for Simultaneous Chatting and Decision Making"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Evaluating the Evaluators: Are readability metrics good measures of readability?",
+      "evidence": "\"As shown in Figure 9, most predictions are judged as mostly visual with some text\"",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Evaluating the Evaluators: Are readability metrics good measures of readability?"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 2,
+  "characterization": "Across the provided literature, modality bias is consistently described as a model's or dataset's tendency to rely disproportionately on one input modality over others, which is said to limit the effectiveness of multimodal integration. This is most commonly framed as an over-reliance on text, with one study noting that models \"struggle with figure and table-based questions compared to text-based questions.\" A related framing defines it as an \"imbalanced capability\" or, as \"modality reliance,\" the degree to which a model depends on a specific input. The construct is operationalized and measured in multiple ways. One approach uses benchmarks like M-LongDoc to reveal performance disparities across different modalities. Another common measurement approach is human evaluation, which is used to \"confirm the modality bias of these datasets.\" This is sometimes implemented by using an external LLM as a judge to determine which input modality a model primarily uses for its inferences. The concept is also studied alongside cross-modal retrieval.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Evaluating the Evaluators: Are readability metrics good measures of readability?",
+      "Not All Parameters Are Created Equal: Smart Isolation Boosts Fine-Tuning Performance",
+      "VLASCD: A Visual Language Action Model for Simultaneous Chatting and Decision Making"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 3
+  },
+  "conferences": [
+    "emnlp25"
+  ]
+}

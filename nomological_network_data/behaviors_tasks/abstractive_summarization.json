@@ -1,0 +1,170 @@
+{
+  "canonical_name": "Abstractive summarization",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, abstractive summarization is consistently defined as the task of generating a concise and coherent summary that captures the main ideas of a source document. A recurring element in these definitions is that the generated summary can use novel phrasing, paraphrasing, or compression, and is not constrained to using only phrases from the original text. The behavior is operationalized and evaluated using several datasets, with the most frequently cited measurement instrument being the XSum dataset, which one paper describes as requiring the generation of single-sentence summaries from articles. Other datasets used to measure this behavior include XLSum, CNN/DailyMail, the Reddit TL;DR dataset, and DialogSum. Abstractive summarization is frequently studied in relation to hallucination, with one paper noting that \"LLMs frequently hallucinate on abstractive summarization tasks\" (Teaching Language Models to Hallucinate Less with Synthetic Tasks). The task is also contrasted with extractive summarization and is applied in contexts like document-based question-answering, meeting summarization, and clinical report generation.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Abstractive summarization"
+  ],
+  "papers": [
+    "2025.emnlp-main.1531.checklist",
+    "FinetuningLLMs for Human Behavior Prediction in Social Science Experiments",
+    "LiteASR: Efficient Automatic Speech Recognition with Low-Rank Approximation",
+    "Model Consistency as a Cheap yet Predictive Proxy forLLMElo Scores",
+    "PPC-GPT: Federated Task-Specific Compression of Large Language Models via Pruning and Chain-of-Thought Distillation",
+    "R-BPE: ImprovingBPE-Tokenizers with Token Reuse",
+    "Waste-Bench: A Comprehensive Benchmark for EvaluatingVLLMs in Cluttered Environments",
+    "XAutoLM: Efficient Fine-Tuning of Language Models via Meta-Learning andAutoML",
+    "On-Policy Distillation of Language Models: Learning from Self-Generated Mistakes",
+    "Teaching Language Models to Hallucinate Less with Synthetic Tasks",
+    "Towards Green AI in Fine-tuning Large Language Models via Adaptive Backpropagation",
+    "BOND: Aligning LLMs with Best-of-N Distillation",
+    "MuHBoost: Multi-Label Boosting For Practical Longitudinal Human Behavior Modeling"
+  ],
+  "paper_count": 13,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The task of generating a concise and coherent summary that captures the main ideas of a source document, potentially using novel phrasing.",
+      "paper": "On-Policy Distillation of Language Models: Learning from Self-Generated Mistakes",
+      "original_name": "Abstractive summarization"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "XSum",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "On-Policy Distillation of Language Models: Learning from Self-Generated Mistakes",
+      "evidence": "We start by evaluating GKD on an abstractive summarization task of generating a summary that captures salient ideas of the input document. To do so, we use the XSum dataset (Narayan et al., 2018) (Section 4.1).",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "iclr24": [
+          "On-Policy Distillation of Language Models: Learning from Self-Generated Mistakes"
+        ],
+        "neurips24": [
+          "Many-Shot In-Context Learning"
+        ],
+        "iclr25": [
+          "BOND: Aligning LLMs with Best-of-N Distillation"
+        ],
+        "emnlp25": [
+          "XAutoLM: Efficient Fine-Tuning of Language Models via Meta-Learning andAutoML"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "XLSum",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Many-Shot In-Context Learning",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "Many-Shot In-Context Learning"
+        ],
+        "acl25": [
+          "Beyond N-Grams: Rethinking Evaluation Metrics and Strategies for Multilingual Abstractive Summarization"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Teaching Language Models to Hallucinate Less with Synthetic Tasks",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Teaching Language Models to Hallucinate Less with Synthetic Tasks"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CNN/DailyMail",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "R-BPE: ImprovingBPE-Tokenizers with Token Reuse",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "R-BPE: ImprovingBPE-Tokenizers with Token Reuse"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Extractive summarization",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "MuHBoost: Multi-Label Boosting For Practical Longitudinal Human Behavior Modeling",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "MuHBoost: Multi-Label Boosting For Practical Longitudinal Human Behavior Modeling"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reddit TL;DR dataset",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Progressively Label Enhancement for Large Language Model Alignment",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Progressively Label Enhancement for Large Language Model Alignment"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 6,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 6,
+  "characterization": "Across the provided literature, abstractive summarization is consistently defined as the task of generating a concise and coherent summary that captures the main ideas of a source document. A recurring element in these definitions is that the generated summary can use novel phrasing, paraphrasing, or compression, and is not constrained to using only phrases from the original text. The behavior is operationalized and evaluated using several datasets, with the most frequently cited measurement instrument being the XSum dataset, which one paper describes as requiring the generation of single-sentence summaries from articles. Other datasets used to measure this behavior include XLSum, CNN/DailyMail, the Reddit TL;DR dataset, and DialogSum. Abstractive summarization is frequently studied in relation to hallucination, with one paper noting that \"LLMs frequently hallucinate on abstractive summarization tasks\" (Teaching Language Models to Hallucinate Less with Synthetic Tasks). The task is also contrasted with extractive summarization and is applied in contexts like document-based question-answering, meeting summarization, and clinical report generation.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "On-Policy Distillation of Language Models: Learning from Self-Generated Mistakes",
+      "Teaching Language Models to Hallucinate Less with Synthetic Tasks",
+      "Towards Green AI in Fine-tuning Large Language Models via Adaptive Backpropagation"
+    ],
+    "iclr25": [
+      "BOND: Aligning LLMs with Best-of-N Distillation",
+      "MuHBoost: Multi-Label Boosting For Practical Longitudinal Human Behavior Modeling"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.1531.checklist",
+      "FinetuningLLMs for Human Behavior Prediction in Social Science Experiments",
+      "LiteASR: Efficient Automatic Speech Recognition with Low-Rank Approximation",
+      "Model Consistency as a Cheap yet Predictive Proxy forLLMElo Scores",
+      "PPC-GPT: Federated Task-Specific Compression of Large Language Models via Pruning and Chain-of-Thought Distillation",
+      "R-BPE: ImprovingBPE-Tokenizers with Token Reuse",
+      "Waste-Bench: A Comprehensive Benchmark for EvaluatingVLLMs in Cluttered Environments",
+      "XAutoLM: Efficient Fine-Tuning of Language Models via Meta-Learning andAutoML"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 3,
+    "iclr25": 2,
+    "emnlp25": 8
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25"
+  ]
+}

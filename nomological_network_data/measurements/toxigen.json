@@ -1,0 +1,219 @@
+{
+  "canonical_name": "ToxiGen",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, ToxiGen is consistently characterized as a benchmark for evaluating toxicity in language models. It is most frequently used to operationalize and measure the constructs of `Harmlessness` and `Safety`, with a smaller set of studies also employing it to assess `Harmful content generation` and `Hate speech detection`. Several papers describe its composition as a synthetic, machine-generated dataset containing both toxic and neutral prompts designed to evaluate a model's ability to avoid generating toxic content. A recurring detail is its focus on demographic diversity, with two sources specifying that its toxic contexts target 13 minority or demographic groups. One paper provides a specific scale, stating it 'comprises approximately 274k machine-generated statements, evenly split between toxic and non-toxic language' (How to Protect Yourself from 5GRadiation? InvestigatingLLMResponses to Implicit Misinformation). The benchmark is often situated within larger evaluation suites, such as LLM Harness and T\u00dcLU-2, and is frequently studied alongside REALTOXICITYPROMPTS.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "ToxiGen",
+    "Toxigen",
+    "TOXIGEN"
+  ],
+  "papers": [
+    "DialUp! Modeling the Language Continuum by Adapting Models to Dialects and Dialects to Models",
+    "M",
+    "MaCP: Minimal yet Mighty Adaptation via Hierarchical Cosine Projection",
+    "Temporal reasoning for timeline summarisation in social media",
+    "How to Protect Yourself from 5GRadiation? InvestigatingLLMResponses to Implicit Misinformation",
+    "ProLongVid: A Simple but Strong Baseline for Long-context Video Instruction Tuning",
+    "RevisitingLLMValue Probing Strategies: Are They Robust and Expressive?",
+    "ImpScore: A Learnable Metric For Quantifying The Implicitness Level of Sentences",
+    "Monet: Mixture of Monosemantic Experts for Transformers",
+    "REEF: Representation Encoding Fingerprints for Large Language Models",
+    "RM-Bench: Benchmarking Reward Models of Language Models with Subtlety and Style",
+    "Self-Boosting Large Language Models with  Synthetic Preference Data",
+    "Semantics-Adaptive Activation Intervention for LLMs via Dynamic Steering Vectors",
+    "UniDetox: Universal Detoxification of Large Language Models via Dataset Distillation",
+    "Unveiling the Secret Recipe: A Guide For Supervised Fine-Tuning Small LLMs",
+    "Data Mixing Optimization for Supervised Fine-Tuning of Large Language Models",
+    "When Bad Data Leads to Good Models",
+    "Decomposition Dilemmas: Does Claim Decomposition Boost or Burden Fact-Checking Performance?",
+    "ManaTTSPersian: a recipe for creatingTTSdatasets for lower resource languages",
+    "Threshold Filtering Packing for Supervised Fine-Tuning: Training Related Samples within Packs",
+    "WorldCuisines: A Massive-Scale Benchmark for Multilingual and Multicultural Visual Question Answering on Global Cuisines"
+  ],
+  "paper_count": 21,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A toxicity benchmark for evaluating toxic versus neutral generation behavior.",
+      "paper": "Monet: Mixture of Monosemantic Experts for Transformers",
+      "original_name": "ToxiGen"
+    },
+    {
+      "text": "Toxigen, a benchmark used in LLM Harness for toxicity evaluation.",
+      "paper": "Self-Boosting Large Language Models with  Synthetic Preference Data",
+      "original_name": "Toxigen"
+    },
+    {
+      "text": "Benchmark for detecting toxic language generation, used to assess whether fine-tuning increases harmful output tendencies.",
+      "paper": "ManaTTSPersian: a recipe for creatingTTSdatasets for lower resource languages",
+      "original_name": "TOXIGEN"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmlessness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Spectral Editing of Activations for Large Language Model Alignment",
+      "evidence": "",
+      "paper_count": 6,
+      "papers_by_conference": {
+        "neurips24": [
+          "Spectral Editing of Activations for Large Language Model Alignment"
+        ],
+        "iclr25": [
+          "UniDetox: Universal Detoxification of Large Language Models via Dataset Distillation",
+          "Semantics-Adaptive Activation Intervention for LLMs via Dynamic Steering Vectors"
+        ],
+        "naacl25": [
+          "Decomposition Dilemmas: Does Claim Decomposition Boost or Burden Fact-Checking Performance?"
+        ],
+        "acl25": [
+          "DialUp! Modeling the Language Continuum by Adapting Models to Dialects and Dialects to Models"
+        ],
+        "icml25": [
+          "When Bad Data Leads to Good Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Safety",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Decoding-Time Language Model Alignment with Multiple Objectives",
+      "evidence": "",
+      "paper_count": 5,
+      "papers_by_conference": {
+        "neurips24": [
+          "Decoding-Time Language Model Alignment with Multiple Objectives",
+          "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback",
+          "Instruction Tuning With Loss Over Instructions",
+          "Should We Really Edit Language Models? On the Evaluation of Edited Language Models"
+        ],
+        "icml25": [
+          "Data Mixing Optimization for Supervised Fine-Tuning of Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmful content generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback",
+      "evidence": "We evaluate the effect of detoxification using various techniques on Toxigen and Real Toxicity Prompts dataset (Section 5.3).",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback"
+        ],
+        "icml25": [
+          "When Bad Data Leads to Good Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hate speech detection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "ImpScore: A Learnable Metric For Quantifying The Implicitness Level of Sentences",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "ImpScore: A Learnable Metric For Quantifying The Implicitness Level of Sentences"
+        ],
+        "icml25": [
+          "When Bad Data Leads to Good Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-form text generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Semantics-Adaptive Activation Intervention for LLMs via Dynamic Steering Vectors",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Semantics-Adaptive Activation Intervention for LLMs via Dynamic Steering Vectors"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Semantics-Adaptive Activation Intervention for LLMs via Dynamic Steering Vectors",
+      "evidence": "For the open-ended generation tasks, we apply SADI on TriviaQA (Joshi et al., 2017), TruthfulQA (Lin et al., 2022), ToxiGen (Hartvigsen et al., 2022) datasets. (Section 4.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Semantics-Adaptive Activation Intervention for LLMs via Dynamic Steering Vectors"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 6,
+  "incoming_relationship_count": 6,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, ToxiGen is consistently characterized as a benchmark for evaluating toxicity in language models. It is most frequently used to operationalize and measure the constructs of `Harmlessness` and `Safety`, with a smaller set of studies also employing it to assess `Harmful content generation` and `Hate speech detection`. Several papers describe its composition as a synthetic, machine-generated dataset containing both toxic and neutral prompts designed to evaluate a model's ability to avoid generating toxic content. A recurring detail is its focus on demographic diversity, with two sources specifying that its toxic contexts target 13 minority or demographic groups. One paper provides a specific scale, stating it 'comprises approximately 274k machine-generated statements, evenly split between toxic and non-toxic language' (How to Protect Yourself from 5GRadiation? InvestigatingLLMResponses to Implicit Misinformation). The benchmark is often situated within larger evaluation suites, such as LLM Harness and T\u00dcLU-2, and is frequently studied alongside REALTOXICITYPROMPTS.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "ImpScore: A Learnable Metric For Quantifying The Implicitness Level of Sentences",
+      "Monet: Mixture of Monosemantic Experts for Transformers",
+      "REEF: Representation Encoding Fingerprints for Large Language Models",
+      "RM-Bench: Benchmarking Reward Models of Language Models with Subtlety and Style",
+      "Self-Boosting Large Language Models with  Synthetic Preference Data",
+      "Semantics-Adaptive Activation Intervention for LLMs via Dynamic Steering Vectors",
+      "UniDetox: Universal Detoxification of Large Language Models via Dataset Distillation",
+      "Unveiling the Secret Recipe: A Guide For Supervised Fine-Tuning Small LLMs"
+    ],
+    "naacl25": [
+      "Decomposition Dilemmas: Does Claim Decomposition Boost or Burden Fact-Checking Performance?",
+      "ManaTTSPersian: a recipe for creatingTTSdatasets for lower resource languages",
+      "Threshold Filtering Packing for Supervised Fine-Tuning: Training Related Samples within Packs",
+      "WorldCuisines: A Massive-Scale Benchmark for Multilingual and Multicultural Visual Question Answering on Global Cuisines"
+    ],
+    "acl25": [
+      "DialUp! Modeling the Language Continuum by Adapting Models to Dialects and Dialects to Models",
+      "M",
+      "MaCP: Minimal yet Mighty Adaptation via Hierarchical Cosine Projection",
+      "Temporal reasoning for timeline summarisation in social media"
+    ],
+    "icml25": [
+      "Data Mixing Optimization for Supervised Fine-Tuning of Large Language Models",
+      "When Bad Data Leads to Good Models"
+    ],
+    "emnlp25": [
+      "How to Protect Yourself from 5GRadiation? InvestigatingLLMResponses to Implicit Misinformation",
+      "ProLongVid: A Simple but Strong Baseline for Long-context Video Instruction Tuning",
+      "RevisitingLLMValue Probing Strategies: Are They Robust and Expressive?"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 8,
+    "naacl25": 4,
+    "acl25": 4,
+    "icml25": 2,
+    "emnlp25": 3
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "naacl25"
+  ]
+}

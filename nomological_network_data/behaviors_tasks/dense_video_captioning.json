@@ -1,0 +1,108 @@
+{
+  "canonical_name": "Dense video captioning",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, dense video captioning is consistently defined as the task of producing multiple, time-localized textual descriptions for a sequence of events within a single video. The expected output involves generating sentences that \"Comprehensively describe all the events happened in the video\" and explicitly providing the \"start and end timestamp for each event\" (E.T. Bench: Towards Open-Ended Event-Level Video-Language Understanding). This approach is explicitly distinguished from traditional video captioning methods. As one paper notes, the focus is on the \"nuanced task of narrating multiple events within a video rather than generating a single overarching description\" (Youku Dense Caption: A Large-scale Chinese Video Dense Caption Dataset and Benchmarks). To operationalize and evaluate this behavior, researchers use datasets such as YouCook2 and ActivityNet Captions. The task is also studied in relation to both image captioning and temporal reasoning.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Dense video captioning"
+  ],
+  "papers": [
+    "TRACE: Temporal Grounding Video LLM  via Causal Event Modeling",
+    "Youku Dense Caption: A Large-scale Chinese Video Dense Caption Dataset and Benchmarks",
+    "E.T. Bench: Towards Open-Ended Event-Level Video-Language Understanding",
+    "SlowFocus: Enhancing Fine-grained Temporal Understanding in Video LLM"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Producing timestamped descriptions for multiple events throughout a video.",
+      "paper": "E.T. Bench: Towards Open-Ended Event-Level Video-Language Understanding",
+      "original_name": "Dense video captioning"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Dense captioning",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "E.T. Bench: Towards Open-Ended Event-Level Video-Language Understanding",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "E.T. Bench: Towards Open-Ended Event-Level Video-Language Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "YouCook2",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "TRACE: Temporal Grounding Video LLM  via Causal Event Modeling",
+      "evidence": "Dense video caption. We use Youcook2 (Zhou et al., 2018) and ActivityNet Captions (Fabian Caba Heilbron & Niebles, 2015) datasets as the evaluation datasets.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "TRACE: Temporal Grounding Video LLM  via Causal Event Modeling"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Temporal reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "TRACE: Temporal Grounding Video LLM  via Causal Event Modeling",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "TRACE: Temporal Grounding Video LLM  via Causal Event Modeling"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ActivityNet Captions",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "TRACE: Temporal Grounding Video LLM  via Causal Event Modeling",
+      "evidence": "Dense video caption. We use Youcook2 (Zhou et al., 2018) and ActivityNet Captions (Fabian Caba Heilbron & Niebles, 2015) datasets as the evaluation datasets.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "TRACE: Temporal Grounding Video LLM  via Causal Event Modeling"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 3,
+  "characterization": "Across the provided literature, dense video captioning is consistently defined as the task of producing multiple, time-localized textual descriptions for a sequence of events within a single video. The expected output involves generating sentences that \"Comprehensively describe all the events happened in the video\" and explicitly providing the \"start and end timestamp for each event\" (E.T. Bench: Towards Open-Ended Event-Level Video-Language Understanding). This approach is explicitly distinguished from traditional video captioning methods. As one paper notes, the focus is on the \"nuanced task of narrating multiple events within a video rather than generating a single overarching description\" (Youku Dense Caption: A Large-scale Chinese Video Dense Caption Dataset and Benchmarks). To operationalize and evaluate this behavior, researchers use datasets such as YouCook2 and ActivityNet Captions. The task is also studied in relation to both image captioning and temporal reasoning.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "E.T. Bench: Towards Open-Ended Event-Level Video-Language Understanding",
+      "SlowFocus: Enhancing Fine-grained Temporal Understanding in Video LLM"
+    ],
+    "iclr25": [
+      "TRACE: Temporal Grounding Video LLM  via Causal Event Modeling",
+      "Youku Dense Caption: A Large-scale Chinese Video Dense Caption Dataset and Benchmarks"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 2,
+    "iclr25": 2
+  },
+  "conferences": [
+    "iclr25",
+    "neurips24"
+  ]
+}

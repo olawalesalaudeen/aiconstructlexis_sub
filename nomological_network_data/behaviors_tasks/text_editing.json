@@ -1,0 +1,116 @@
+{
+  "canonical_name": "Text editing",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, 'Text editing' is a broad category of behaviors with several distinct definitions rather than a single, unified one. A common framing defines it as generating text to complete or fill gaps in a document, operationalized through tasks like text continuation, insertion, and infilling where a model must generate text coherent with a given prefix and/or suffix. Another line of work treats text editing as a correction task, including fixing grammatical errors or rewriting \"noisy surgical narration text to fix misspellings and restore intended content\" (Procedure-Aware Surgical Video-language Pretraining with Hierarchical Knowledge Augmentation). A third group of papers frames text editing in the context of model alignment, defining it through tasks such as 'response detoxification', 'sentiment revising', and 'faithfulness enhancement' to modify model outputs. This alignment-focused usage is reflected in reports that text editing can be used to improve model safety. A more distinct definition describes 'sequence editing' as the process of \"repeatedly applying multiple knowledge edits to the same model\" (Reasons and Solutions for the Decline in Model Performance after Editing), focusing on model updates rather than output modification. Overall, the behavior is operationalized in multiple ways: by evaluating generated text against logical and contextual constraints, by assessing the correctness of revised sentences, or by measuring changes in model properties like safety and faithfulness.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Text correction",
+    "Text editing",
+    "Text insertion",
+    "Sequence editing",
+    "Grammar correction",
+    "Response detoxification",
+    "Sentiment revising",
+    "Faithfulness enhancement"
+  ],
+  "papers": [
+    "Adaptable Logical Control for Large Language Models",
+    "BERTs are Generative In-Context Learners",
+    "PaCE: Parsimonious Concept Engineering for Large Language Models",
+    "Procedure-Aware Surgical Video-language Pretraining with Hierarchical Knowledge Augmentation",
+    "Reasons and Solutions for the Decline in Model Performance after Editing"
+  ],
+  "paper_count": 5,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Rewriting noisy surgical narration text to fix misspellings and restore intended content.",
+      "paper": "Procedure-Aware Surgical Video-language Pretraining with Hierarchical Knowledge Augmentation",
+      "original_name": "Text correction"
+    },
+    {
+      "text": "Generating continuation or insertion suggestions for a story or document while respecting contextual and logical constraints.",
+      "paper": "Adaptable Logical Control for Large Language Models",
+      "original_name": "Text editing"
+    },
+    {
+      "text": "The task of generating text to fill a gap between a given prefix and suffix, ensuring coherence with both contexts.",
+      "paper": "Adaptable Logical Control for Large Language Models",
+      "original_name": "Text insertion"
+    },
+    {
+      "text": "The task of generating text that follows a given prefix or opening passage.",
+      "paper": "Adaptable Logical Control for Large Language Models",
+      "original_name": "Text continuation"
+    },
+    {
+      "text": "The task of generating text to fill in masked-out portions of a document.",
+      "paper": "Adaptable Logical Control for Large Language Models",
+      "original_name": "Text infilling"
+    },
+    {
+      "text": "Repeatedly applying multiple knowledge edits to the same model over a sequence of samples.",
+      "paper": "Reasons and Solutions for the Decline in Model Performance after Editing",
+      "original_name": "Sequence editing"
+    },
+    {
+      "text": "The task of identifying and correcting grammatical errors in a given sentence.",
+      "paper": "BERTs are Generative In-Context Learners",
+      "original_name": "Grammar correction"
+    },
+    {
+      "text": "The task of modifying a model's output to be harmless and safe, especially when given a malicious or toxic input prompt.",
+      "paper": "PaCE: Parsimonious Concept Engineering for Large Language Models",
+      "original_name": "Response detoxification"
+    },
+    {
+      "text": "The task of altering the emotional tone of a model's generated text, such as removing negative sentiment when discussing sensitive topics.",
+      "paper": "PaCE: Parsimonious Concept Engineering for Large Language Models",
+      "original_name": "Sentiment revising"
+    },
+    {
+      "text": "Generating outputs that are more factually grounded and less hallucinatory in response to prompts requesting information.",
+      "paper": "PaCE: Parsimonious Concept Engineering for Large Language Models",
+      "original_name": "Faithfulness enhancement"
+    }
+  ],
+  "definition_count": 10,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Safety",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "PaCE: Parsimonious Concept Engineering for Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "PaCE: Parsimonious Concept Engineering for Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the surveyed literature, 'Text editing' is a broad category of behaviors with several distinct definitions rather than a single, unified one. A common framing defines it as generating text to complete or fill gaps in a document, operationalized through tasks like text continuation, insertion, and infilling where a model must generate text coherent with a given prefix and/or suffix. Another line of work treats text editing as a correction task, including fixing grammatical errors or rewriting \"noisy surgical narration text to fix misspellings and restore intended content\" (Procedure-Aware Surgical Video-language Pretraining with Hierarchical Knowledge Augmentation). A third group of papers frames text editing in the context of model alignment, defining it through tasks such as 'response detoxification', 'sentiment revising', and 'faithfulness enhancement' to modify model outputs. This alignment-focused usage is reflected in reports that text editing can be used to improve model safety. A more distinct definition describes 'sequence editing' as the process of \"repeatedly applying multiple knowledge edits to the same model\" (Reasons and Solutions for the Decline in Model Performance after Editing), focusing on model updates rather than output modification. Overall, the behavior is operationalized in multiple ways: by evaluating generated text against logical and contextual constraints, by assessing the correctness of revised sentences, or by measuring changes in model properties like safety and faithfulness.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "Adaptable Logical Control for Large Language Models",
+      "BERTs are Generative In-Context Learners",
+      "PaCE: Parsimonious Concept Engineering for Large Language Models",
+      "Procedure-Aware Surgical Video-language Pretraining with Hierarchical Knowledge Augmentation",
+      "Reasons and Solutions for the Decline in Model Performance after Editing"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 5
+  },
+  "conferences": [
+    "neurips24"
+  ]
+}

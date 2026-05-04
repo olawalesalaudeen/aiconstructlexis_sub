@@ -1,0 +1,166 @@
+{
+  "canonical_name": "Overrefusal",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, Overrefusal is a widely discussed phenomenon, also referred to as over-rejection, over-defense, or false refusal, where a language model inappropriately refuses to answer benign, harmless, or legitimate user queries. This is consistently described as an unintended side effect of safety training or overly cautious safety mechanisms, which can cause a model to fail to distinguish between harmful and \"semantically similar but safe inputs\" (Towards Transferable Personality Representation Learning...). The conceptualization varies across papers; some define it as a latent \"tendency,\" \"propensity,\" or \"disposition,\" while others frame it as an observable \"behavior.\" Several papers note that this creates an imbalance between safety and helpfulness, with one study stating that safety alignment can come \"at the cost of increased model over-rejection, resulting in diminished helpfulness\" (Towards Transferable Personality Representation Learning...). A concrete example of this \"over-sensitivity\" is a model refusing a query like \"'How to kill a Python program?'\" because it superficially resembles a harmful request (A-TASC...). As a construct, Overrefusal is operationalized and measured using specific benchmarks, including XSTEST, OKTest, and OR-Bench. Some work also measures it directly as a \"False Refusal Rate (FRR), the percentage of prompts that the model incorrectly refuses to answer\" (Data to Defense...).",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Over-refusal",
+    "Over-rejection",
+    "Over-refusal tendency",
+    "Overrefusal",
+    "Over-sensitivity",
+    "Over-defense",
+    "False refusal",
+    "False rejection",
+    "Unwarranted refusal"
+  ],
+  "papers": [
+    "A-TASC:AsianTED-Based Automatic Subtitling Corpus",
+    "ToolHop: A Query-Driven Benchmark for Evaluating Large Language Models in Multi-Hop Tool Use",
+    "2025.emnlp-main.1065.checklist",
+    "2025.emnlp-main.510.checklist",
+    "Igniting Creative Writing in Small Language Models:LLM-as-a-Judge versus Multi-Agent Refined Rewards",
+    "Less is More: The Effectiveness of Compact Typological Language Representations",
+    "PACHAT: Persona-Aware Speech Assistant for Multi-party Dialogue",
+    "TCPO: Thought-Centric Preference Optimization for Effective Embodied Decision-making",
+    "Towards Transferable Personality Representation Learning based on Triplet Comparisons and Its Applications",
+    "\u2018Rich Dad, Poor Lad\u2019: How do Large Language Models Contextualize Socioeconomic Factors in College Admission ?",
+    "Data to Defense: The Role of Curation in Aligning Large Language Models Against Safety Compromise",
+    "EQA-RM: A Generative Embodied Reward Model with Test-time Scaling",
+    "Mitigating the Privacy Issues in Retrieval-Augmented Generation (RAG) via Pure Synthetic Data",
+    "RED: Unleashing Token-Level Rewards from Holistic Feedback via Reward Redistribution",
+    "SQLWOZ: A Realistic Task-Oriented Dialogue Dataset withSQL-Based Dialogue State Representation for Complex User Requirements",
+    "fLSA: Learning Semantic Structures in Document Collections Using Foundation Models"
+  ],
+  "paper_count": 16,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A latent tendency of a model to inappropriately reject benign or borderline queries due to overly strict safety mechanisms, reflecting poor calibration of safety thresholds.",
+      "paper": "TCPO: Thought-Centric Preference Optimization for Effective Embodied Decision-making",
+      "original_name": "Over-refusal"
+    },
+    {
+      "text": "The tendency of a model to inappropriately refuse benign queries, often as a side effect of safety training, reflecting a failure to distinguish between harmful and semantically similar but safe inputs.",
+      "paper": "Towards Transferable Personality Representation Learning based on Triplet Comparisons and Its Applications",
+      "original_name": "Over-rejection"
+    },
+    {
+      "text": "The propensity of a model to inappropriately refuse to answer harmless or benign queries, reflecting an imbalance between safety and helpfulness.",
+      "paper": "Igniting Creative Writing in Small Language Models:LLM-as-a-Judge versus Multi-Agent Refined Rewards",
+      "original_name": "Over-refusal tendency"
+    },
+    {
+      "text": "The latent tendency of a model to incorrectly refuse to answer legitimate, benign queries by misclassifying them as harmful.",
+      "paper": "\u2018Rich Dad, Poor Lad\u2019: How do Large Language Models Contextualize Socioeconomic Factors in College Admission ?",
+      "original_name": "Overrefusal"
+    },
+    {
+      "text": "A safety-related disposition where the model excessively refuses benign or ambiguous queries that only superficially resemble harmful ones, potentially reducing usability.",
+      "paper": "A-TASC:AsianTED-Based Automatic Subtitling Corpus",
+      "original_name": "Over-sensitivity"
+    },
+    {
+      "text": "The behavior of incorrectly refusing to answer benign or harmless queries, often due to overly cautious safety mechanisms.",
+      "paper": "SQLWOZ: A Realistic Task-Oriented Dialogue Dataset withSQL-Based Dialogue State Representation for Complex User Requirements",
+      "original_name": "Over-defense"
+    },
+    {
+      "text": "The observable behavior of a model incorrectly refusing to answer a benign query that touches on sensitive but non-harmful topics.",
+      "paper": "Data to Defense: The Role of Curation in Aligning Large Language Models Against Safety Compromise",
+      "original_name": "False refusal"
+    },
+    {
+      "text": "The observable behavior of a model incorrectly refusing to respond to benign inputs, often due to over-enforcement of safety rules.",
+      "paper": "Mitigating the Privacy Issues in Retrieval-Augmented Generation (RAG) via Pure Synthetic Data",
+      "original_name": "False rejection"
+    },
+    {
+      "text": "The behavior of a model refusing to respond to a valid, benign user query, often as a side effect of safety interventions.",
+      "paper": "Less is More: The Effectiveness of Compact Typological Language Representations",
+      "original_name": "Unwarranted refusal"
+    }
+  ],
+  "definition_count": 9,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OKTest",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Surgical, Cheap, and Flexible: Mitigating False Refusal in Language Models via Single Vector Ablation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Surgical, Cheap, and Flexible: Mitigating False Refusal in Language Models via Single Vector Ablation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "XSTEST",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Surgical, Cheap, and Flexible: Mitigating False Refusal in Language Models via Single Vector Ablation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Surgical, Cheap, and Flexible: Mitigating False Refusal in Language Models via Single Vector Ablation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OR-Bench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Safe Delta: Consistently Preserving Safety when Fine-Tuning LLMs on Diverse Datasets",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Safe Delta: Consistently Preserving Safety when Fine-Tuning LLMs on Diverse Datasets"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 3,
+  "characterization": "Across the surveyed literature, Overrefusal is a widely discussed phenomenon, also referred to as over-rejection, over-defense, or false refusal, where a language model inappropriately refuses to answer benign, harmless, or legitimate user queries. This is consistently described as an unintended side effect of safety training or overly cautious safety mechanisms, which can cause a model to fail to distinguish between harmful and \"semantically similar but safe inputs\" (Towards Transferable Personality Representation Learning...). The conceptualization varies across papers; some define it as a latent \"tendency,\" \"propensity,\" or \"disposition,\" while others frame it as an observable \"behavior.\" Several papers note that this creates an imbalance between safety and helpfulness, with one study stating that safety alignment can come \"at the cost of increased model over-rejection, resulting in diminished helpfulness\" (Towards Transferable Personality Representation Learning...). A concrete example of this \"over-sensitivity\" is a model refusing a query like \"'How to kill a Python program?'\" because it superficially resembles a harmful request (A-TASC...). As a construct, Overrefusal is operationalized and measured using specific benchmarks, including XSTEST, OKTest, and OR-Bench. Some work also measures it directly as a \"False Refusal Rate (FRR), the percentage of prompts that the model incorrectly refuses to answer\" (Data to Defense...).",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "2025.emnlp-main.1065.checklist",
+      "2025.emnlp-main.510.checklist",
+      "Igniting Creative Writing in Small Language Models:LLM-as-a-Judge versus Multi-Agent Refined Rewards",
+      "Less is More: The Effectiveness of Compact Typological Language Representations",
+      "PACHAT: Persona-Aware Speech Assistant for Multi-party Dialogue",
+      "TCPO: Thought-Centric Preference Optimization for Effective Embodied Decision-making",
+      "Towards Transferable Personality Representation Learning based on Triplet Comparisons and Its Applications",
+      "\u2018Rich Dad, Poor Lad\u2019: How do Large Language Models Contextualize Socioeconomic Factors in College Admission ?",
+      "Data to Defense: The Role of Curation in Aligning Large Language Models Against Safety Compromise",
+      "EQA-RM: A Generative Embodied Reward Model with Test-time Scaling",
+      "Mitigating the Privacy Issues in Retrieval-Augmented Generation (RAG) via Pure Synthetic Data",
+      "RED: Unleashing Token-Level Rewards from Holistic Feedback via Reward Redistribution",
+      "SQLWOZ: A Realistic Task-Oriented Dialogue Dataset withSQL-Based Dialogue State Representation for Complex User Requirements",
+      "fLSA: Learning Semantic Structures in Document Collections Using Foundation Models"
+    ],
+    "acl25": [
+      "A-TASC:AsianTED-Based Automatic Subtitling Corpus",
+      "ToolHop: A Query-Driven Benchmark for Evaluating Large Language Models in Multi-Hop Tool Use"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 14,
+    "acl25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25"
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "canonical_name": "Instruction understanding",
+  "type": "construct",
+  "canonical_definition": "Across the provided literature, instruction understanding is predominantly characterized as a latent ability of a model to comprehend the meaning and intent of an input. Definitions vary in scope, with some focusing on mapping task instructions to \"appropriate actions in constrained environments\" (\"Plan Dynamically, Express Rhetorically...\"), while others describe a broader \"input comprehension\" of context-sensitive language that occurs prior to output generation (\"NitiBench...\"). One paper posits that failures in this internal comprehension can be masked by otherwise coherent outputs, suggesting that \"high-confidence generation masks a fundamental interpretive error.\" The construct is frequently studied in specialized domains with \"intricate terminologies\" like healthcare, as well as in embodied contexts involving \"sequential navigation and manipulation.\" Instruction understanding is operationalized through its effect on downstream tasks; for example, it is reported to influence a model's performance in robotic manipulation. One paper proposes that internal comprehension could be measured by analyzing \"surprisal and related features derived from input token probabilities.\" The construct is also studied in relation to code generation, which is presented as a factor that can influence it.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Instruction comprehension",
+    "Instruction understanding",
+    "Input comprehension"
+  ],
+  "papers": [
+    "DSVD: Dynamic Self-Verify Decoding for Faithful Generation in Large Language Models",
+    "Mitigating Hallucinations in Large Vision-Language Models via Entity-Centric Multimodal Preference Optimization",
+    "NitiBench: BenchmarkingLLMFrameworks onThai Legal Question Answering Capabilities"
+  ],
+  "paper_count": 3,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The model's ability to understand task instructions and map them to appropriate actions in constrained environments.",
+      "paper": "Plan Dynamically, Express Rhetorically: A Debate-Driven Rhetorical Framework for Argumentative Writing",
+      "original_name": "Instruction comprehension"
+    },
+    {
+      "text": "The latent ability of an LLM to comprehend the meaning and intent of an instruction, particularly in specialized domains with complex terminology.",
+      "paper": "Mitigating Hallucinations in Large Vision-Language Models via Entity-Centric Multimodal Preference Optimization",
+      "original_name": "Instruction understanding"
+    },
+    {
+      "text": "The latent ability of a language model to correctly interpret the meaning of an input sequence, particularly in context-sensitive or non-literal constructions, prior to generating any output.",
+      "paper": "NitiBench: BenchmarkingLLMFrameworks onThai Legal Question Answering Capabilities",
+      "original_name": "Input comprehension"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Robotic manipulation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "DeeR-VLA: Dynamic Inference of Multimodal Large Language Models for Efficient Robot Execution",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "DeeR-VLA: Dynamic Inference of Multimodal Large Language Models for Efficient Robot Execution"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "ROUTE: Robust Multitask Tuning and Collaboration for Text-to-SQL",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "ROUTE: Robust Multitask Tuning and Collaboration for Text-to-SQL"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the provided literature, instruction understanding is predominantly characterized as a latent ability of a model to comprehend the meaning and intent of an input. Definitions vary in scope, with some focusing on mapping task instructions to \"appropriate actions in constrained environments\" (\"Plan Dynamically, Express Rhetorically...\"), while others describe a broader \"input comprehension\" of context-sensitive language that occurs prior to output generation (\"NitiBench...\"). One paper posits that failures in this internal comprehension can be masked by otherwise coherent outputs, suggesting that \"high-confidence generation masks a fundamental interpretive error.\" The construct is frequently studied in specialized domains with \"intricate terminologies\" like healthcare, as well as in embodied contexts involving \"sequential navigation and manipulation.\" Instruction understanding is operationalized through its effect on downstream tasks; for example, it is reported to influence a model's performance in robotic manipulation. One paper proposes that internal comprehension could be measured by analyzing \"surprisal and related features derived from input token probabilities.\" The construct is also studied in relation to code generation, which is presented as a factor that can influence it.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "DSVD: Dynamic Self-Verify Decoding for Faithful Generation in Large Language Models",
+      "Mitigating Hallucinations in Large Vision-Language Models via Entity-Centric Multimodal Preference Optimization",
+      "NitiBench: BenchmarkingLLMFrameworks onThai Legal Question Answering Capabilities"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 3
+  },
+  "conferences": [
+    "emnlp25"
+  ]
+}

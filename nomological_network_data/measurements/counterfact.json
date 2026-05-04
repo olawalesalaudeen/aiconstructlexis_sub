@@ -1,0 +1,343 @@
+{
+  "canonical_name": "CounterFact",
+  "type": "measurement",
+  "canonical_definition": "Across the surveyed literature, CounterFact is a widely used dataset for evaluating large language models, with two prevalent applications: assessing knowledge editing interventions and measuring factual knowledge. It is most commonly described as a question-answering dataset structured around `(subject, relation, answer)` tuples, often including paraphrased prompts for each query. A defining feature highlighted in multiple papers is its use of \"counterfactual statements\" or \"false facts\" to test a model's ability to adopt new information that may contradict its stored knowledge. In the context of model editing, CounterFact is used to measure constructs such as `Knowledge editing`, `Generality`, and `Locality`. For its other common application, it is used to evaluate a model's baseline `Factuality` and `Factual recall`. The dataset's paraphrased prompts are specifically leveraged to assess `Paraphrastic robustness`, and it is also reported to measure `Knowledge conflict resolution`, `Faithfulness`, and `Knowledge retention`.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "COUNTERFACT",
+    "CounterFact",
+    "Counterfact"
+  ],
+  "papers": [
+    "Adversarial Alignment with Anchor Dragging Drift (A3D2): Multimodal Domain Adaptation with Partially Shifted Modalities",
+    "Beyond the Answer: Advancing Multi-HopQAwith Fine-Grained Graph Reasoning and Evaluation",
+    "Can External Validation Tools Improve Annotation Quality forLLM-as-a-Judge?",
+    "Cracking Factual Knowledge: A Comprehensive Analysis of Degenerate Knowledge Neurons in Large Language Models",
+    "LongSafety: Evaluating Long-Context Safety of Large Language Models",
+    "MockConf: A Student Interpretation Dataset: Analysis, Word- and Span-level Alignment and Baselines",
+    "Sheep\u2019s Skin, Wolf\u2019s Deeds: AreLLMs Ready for Metaphorical Implicit Hate Speech?",
+    "TokAlign: Efficient Vocabulary Adaptation via Token Alignment",
+    "Training Dynamics Underlying Language Model Scaling Laws: Loss Deceleration and Zero-Sum Learning",
+    "WhiSPA: Semantically and Psychologically Aligned Whisper with Self-Supervised Contrastive and Student-Teacher Learning",
+    "2025.emnlp-main.1448.checklist",
+    "2025.emnlp-main.848.checklist",
+    "CalibratingLLMs for Text-to-SQLParsing by Leveraging Sub-clause Frequencies",
+    "Identification of Multiple Logical Interpretations in Counter-Arguments",
+    "Implicit Values Embedded in How Humans andLLMs Complete Subjective Everyday Tasks",
+    "Investigating Pedagogical Teacher and StudentLLMAgents: Genetic Adaptation Meets Retrieval-Augmented Generation Across Learning Styles",
+    "Joint Modeling of Entities and Discourse Relations for Coherence Assessment",
+    "MULTIVOX: A Benchmark for Evaluating Voice Assistants for Multimodal Interactions",
+    "The Validation Gap: A Mechanistic Analysis of How Language Models Compute Arithmetic but Fail to Validate It",
+    "BadEdit: Backdooring Large Language Models by Model Editing",
+    "Can Sensitive Information Be Deleted From LLMs? Objectives for Defending Against Extraction Attacks",
+    "Is This the Subspace You Are Looking for? An Interpretability Illusion for Subspace Activation Patching",
+    "Tell Your Model Where to Attend: Post-hoc Attention Steering for LLMs",
+    "The Truth is in There: Improving Reasoning in Language Models with Layer-Selective Rank Reduction",
+    "AlphaEdit: Null-Space Constrained Knowledge Editing for Language Models",
+    "Capability Localization: Capabilities Can be Localized rather than Individual Knowledge",
+    "Everything is Editable: Extend Knowledge Editing to Unstructured Data in Large Language Models",
+    "Perturbation-Restrained Sequential Model Editing",
+    "Revealing and Mitigating Over-Attention in Knowledge Editing",
+    "Mechanistic Unlearning: Robust Knowledge Unlearning and Editing via Mechanistic Localization",
+    "Peripheral Memory for LLMs: Integration of Sequential Memory Banks with Adaptive Querying",
+    "Reinforced Lifelong Editing for Language Models",
+    "Resolving Lexical Bias in Model Editing",
+    "Towards Lifelong Model Editing via Simulating Ideal Editor",
+    "A Cognitive Evaluation Benchmark of Image Reasoning and Description for Large Vision-Language Models",
+    "Grounding Fallacies Misrepresenting Scientific Publications in Evidence",
+    "Language Model Council: Democratically Benchmarking Foundation Models on Highly Subjective Tasks",
+    "Pipeline Analysis for Developing InstructLLMs in Low-Resource Languages: A Case Study onBasque"
+  ],
+  "paper_count": 38,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Question-answering dataset used to evaluate a model's factual knowledge, consisting of (subject, relation, answer) tuples with paraphrased prompts, designed to test recovery of specific facts.",
+      "paper": "BadEdit: Backdooring Large Language Models by Model Editing",
+      "original_name": "CounterFact"
+    },
+    {
+      "text": "The COUNTERFACT dataset, a collection of factual prompt pairs used to evaluate factual recall and fact editing interventions.",
+      "paper": "Is This the Subspace You Are Looking for? An Interpretability Illusion for Subspace Activation Patching",
+      "original_name": "COUNTERFACT"
+    },
+    {
+      "text": "A dataset used for evaluating knowledge editing on structured, counterfactual statements.",
+      "paper": "Everything is Editable: Extend Knowledge Editing to Unstructured Data in Large Language Models",
+      "original_name": "Counterfact"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Factual knowledge",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "The Truth is in There: Improving Reasoning in Language Models with Layer-Selective Rank Reduction",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr24": [
+          "The Truth is in There: Improving Reasoning in Language Models with Layer-Selective Rank Reduction"
+        ],
+        "iclr25": [
+          "Perturbation-Restrained Sequential Model Editing"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Factual recall",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Language Model Council: Democratically Benchmarking Foundation Models on Highly Subjective Tasks",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "naacl25": [
+          "Language Model Council: Democratically Benchmarking Foundation Models on Highly Subjective Tasks"
+        ],
+        "icml25": [
+          "Mechanistic Unlearning: Robust Knowledge Unlearning and Editing via Mechanistic Localization"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge editing",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Implicit Values Embedded in How Humans andLLMs Complete Subjective Everyday Tasks",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Implicit Values Embedded in How Humans andLLMs Complete Subjective Everyday Tasks",
+          "Identification of Multiple Logical Interpretations in Counter-Arguments"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generality",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "A Cognitive Evaluation Benchmark of Image Reasoning and Description for Large Vision-Language Models",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "naacl25": [
+          "A Cognitive Evaluation Benchmark of Image Reasoning and Description for Large Vision-Language Models"
+        ],
+        "emnlp25": [
+          "Investigating Pedagogical Teacher and StudentLLMAgents: Genetic Adaptation Meets Retrieval-Augmented Generation Across Learning Styles"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Locality",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "A Cognitive Evaluation Benchmark of Image Reasoning and Description for Large Vision-Language Models",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "naacl25": [
+          "A Cognitive Evaluation Benchmark of Image Reasoning and Description for Large Vision-Language Models"
+        ],
+        "emnlp25": [
+          "Investigating Pedagogical Teacher and StudentLLMAgents: Genetic Adaptation Meets Retrieval-Augmented Generation Across Learning Styles"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge conflict resolution",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Tell Your Model Where to Attend: Post-hoc Attention Steering for LLMs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Tell Your Model Where to Attend: Post-hoc Attention Steering for LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Paraphrastic robustness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "The Truth is in There: Improving Reasoning in Language Models with Layer-Selective Rank Reduction",
+      "evidence": "We evaluate the model\u2019s robustness to paraphrases by computing the percentage of datapoints where the model gets all paraphrases of a given question correct. (Section 5.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "The Truth is in There: Improving Reasoning in Language Models with Layer-Selective Rank Reduction"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Fluency",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "A Cognitive Evaluation Benchmark of Image Reasoning and Description for Large Vision-Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "A Cognitive Evaluation Benchmark of Image Reasoning and Description for Large Vision-Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge retention",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "AlphaEdit: Null-Space Constrained Knowledge Editing for Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "AlphaEdit: Null-Space Constrained Knowledge Editing for Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Consistency",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "A Cognitive Evaluation Benchmark of Image Reasoning and Description for Large Vision-Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "A Cognitive Evaluation Benchmark of Image Reasoning and Description for Large Vision-Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reliability",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Investigating Pedagogical Teacher and StudentLLMAgents: Genetic Adaptation Meets Retrieval-Augmented Generation Across Learning Styles",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Investigating Pedagogical Teacher and StudentLLMAgents: Genetic Adaptation Meets Retrieval-Augmented Generation Across Learning Styles"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Context faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Joint Modeling of Entities and Discourse Relations for Coherence Assessment",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Joint Modeling of Entities and Discourse Relations for Coherence Assessment"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Fact checking",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "The Validation Gap: A Mechanistic Analysis of How Language Models Compute Arithmetic but Fail to Validate It",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "The Validation Gap: A Mechanistic Analysis of How Language Models Compute Arithmetic but Fail to Validate It"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 13,
+  "incoming_relationship_count": 12,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the surveyed literature, CounterFact is a widely used dataset for evaluating large language models, with two prevalent applications: assessing knowledge editing interventions and measuring factual knowledge. It is most commonly described as a question-answering dataset structured around `(subject, relation, answer)` tuples, often including paraphrased prompts for each query. A defining feature highlighted in multiple papers is its use of \"counterfactual statements\" or \"false facts\" to test a model's ability to adopt new information that may contradict its stored knowledge. In the context of model editing, CounterFact is used to measure constructs such as `Knowledge editing`, `Generality`, and `Locality`. For its other common application, it is used to evaluate a model's baseline `Factuality` and `Factual recall`. The dataset's paraphrased prompts are specifically leveraged to assess `Paraphrastic robustness`, and it is also reported to measure `Knowledge conflict resolution`, `Faithfulness`, and `Knowledge retention`.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "BadEdit: Backdooring Large Language Models by Model Editing",
+      "Can Sensitive Information Be Deleted From LLMs? Objectives for Defending Against Extraction Attacks",
+      "Is This the Subspace You Are Looking for? An Interpretability Illusion for Subspace Activation Patching",
+      "Tell Your Model Where to Attend: Post-hoc Attention Steering for LLMs",
+      "The Truth is in There: Improving Reasoning in Language Models with Layer-Selective Rank Reduction"
+    ],
+    "iclr25": [
+      "AlphaEdit: Null-Space Constrained Knowledge Editing for Language Models",
+      "Capability Localization: Capabilities Can be Localized rather than Individual Knowledge",
+      "Everything is Editable: Extend Knowledge Editing to Unstructured Data in Large Language Models",
+      "Perturbation-Restrained Sequential Model Editing",
+      "Revealing and Mitigating Over-Attention in Knowledge Editing"
+    ],
+    "naacl25": [
+      "A Cognitive Evaluation Benchmark of Image Reasoning and Description for Large Vision-Language Models",
+      "Grounding Fallacies Misrepresenting Scientific Publications in Evidence",
+      "Language Model Council: Democratically Benchmarking Foundation Models on Highly Subjective Tasks",
+      "Pipeline Analysis for Developing InstructLLMs in Low-Resource Languages: A Case Study onBasque"
+    ],
+    "acl25": [
+      "Adversarial Alignment with Anchor Dragging Drift (A3D2): Multimodal Domain Adaptation with Partially Shifted Modalities",
+      "Beyond the Answer: Advancing Multi-HopQAwith Fine-Grained Graph Reasoning and Evaluation",
+      "Can External Validation Tools Improve Annotation Quality forLLM-as-a-Judge?",
+      "Cracking Factual Knowledge: A Comprehensive Analysis of Degenerate Knowledge Neurons in Large Language Models",
+      "LongSafety: Evaluating Long-Context Safety of Large Language Models",
+      "MockConf: A Student Interpretation Dataset: Analysis, Word- and Span-level Alignment and Baselines",
+      "Sheep\u2019s Skin, Wolf\u2019s Deeds: AreLLMs Ready for Metaphorical Implicit Hate Speech?",
+      "TokAlign: Efficient Vocabulary Adaptation via Token Alignment",
+      "Training Dynamics Underlying Language Model Scaling Laws: Loss Deceleration and Zero-Sum Learning",
+      "WhiSPA: Semantically and Psychologically Aligned Whisper with Self-Supervised Contrastive and Student-Teacher Learning"
+    ],
+    "icml25": [
+      "Mechanistic Unlearning: Robust Knowledge Unlearning and Editing via Mechanistic Localization",
+      "Peripheral Memory for LLMs: Integration of Sequential Memory Banks with Adaptive Querying",
+      "Reinforced Lifelong Editing for Language Models",
+      "Resolving Lexical Bias in Model Editing",
+      "Towards Lifelong Model Editing via Simulating Ideal Editor"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.1448.checklist",
+      "2025.emnlp-main.848.checklist",
+      "CalibratingLLMs for Text-to-SQLParsing by Leveraging Sub-clause Frequencies",
+      "Identification of Multiple Logical Interpretations in Counter-Arguments",
+      "Implicit Values Embedded in How Humans andLLMs Complete Subjective Everyday Tasks",
+      "Investigating Pedagogical Teacher and StudentLLMAgents: Genetic Adaptation Meets Retrieval-Augmented Generation Across Learning Styles",
+      "Joint Modeling of Entities and Discourse Relations for Coherence Assessment",
+      "MULTIVOX: A Benchmark for Evaluating Voice Assistants for Multimodal Interactions",
+      "The Validation Gap: A Mechanistic Analysis of How Language Models Compute Arithmetic but Fail to Validate It"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 5,
+    "iclr25": 5,
+    "naacl25": 4,
+    "acl25": 10,
+    "icml25": 5,
+    "emnlp25": 9
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25"
+  ]
+}

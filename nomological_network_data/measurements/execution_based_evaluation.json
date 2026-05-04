@@ -1,0 +1,63 @@
+{
+  "canonical_name": "Execution-based evaluation",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, execution-based evaluation is predominantly framed as a method for verifying task completion or code correctness by programmatically running a model's output in a computational environment. This approach is explicitly contrasted with static methods like string matching. The most common operationalization involves executing generated code against a set of test cases to determine if the output matches expected results, a procedure one paper describes as measuring the \"success rate\" (\"McEval: Massively Multilingual Code Evaluation\"). A related approach, used for agent-based tasks, verifies completion by using a custom script to check the \"final state of the computer environment\" (\"OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments\"). Some work emphasizes safety, implementing this evaluation within a secure, isolated \"sandbox environment\" such as a Docker container to validate correctness (\"SelfCodeAlign: Self-Alignment for Code Generation\"). A more specialized variant, \"execution-based focused evaluation,\" is applied to database tasks, where scripts programmatically retrieve results and assess success by concentrating on the \"essential components of the answers\" (\"Spider 2.0: Evaluating Language Models on Real-World Enterprise Text-to-SQL Workflows\").",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Execution-based evaluation",
+    "Sandbox execution",
+    "Execution-based focused evaluation"
+  ],
+  "papers": [
+    "McEval: Massively Multilingual Code Evaluation",
+    "Spider 2.0: Evaluating Language Models on Real-World Enterprise Text-to-SQL Workflows",
+    "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
+    "SelfCodeAlign: Self-Alignment for Code Generation"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A method of evaluation where task completion is verified by a custom script that checks the final state of the computer environment, rather than relying on static demonstrations or string matching.",
+      "paper": "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
+      "original_name": "Execution-based evaluation"
+    },
+    {
+      "text": "An evaluation procedure where model-generated code and test cases are executed in a secure, isolated environment to validate correctness.",
+      "paper": "SelfCodeAlign: Self-Alignment for Code Generation",
+      "original_name": "Sandbox execution"
+    },
+    {
+      "text": "An evaluation protocol where scripts programmatically obtain results from the database and assess success by focusing on the essential components of the answer, ignoring non-essential columns.",
+      "paper": "Spider 2.0: Evaluating Language Models on Real-World Enterprise Text-to-SQL Workflows",
+      "original_name": "Execution-based focused evaluation"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, execution-based evaluation is predominantly framed as a method for verifying task completion or code correctness by programmatically running a model's output in a computational environment. This approach is explicitly contrasted with static methods like string matching. The most common operationalization involves executing generated code against a set of test cases to determine if the output matches expected results, a procedure one paper describes as measuring the \"success rate\" (\"McEval: Massively Multilingual Code Evaluation\"). A related approach, used for agent-based tasks, verifies completion by using a custom script to check the \"final state of the computer environment\" (\"OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments\"). Some work emphasizes safety, implementing this evaluation within a secure, isolated \"sandbox environment\" such as a Docker container to validate correctness (\"SelfCodeAlign: Self-Alignment for Code Generation\"). A more specialized variant, \"execution-based focused evaluation,\" is applied to database tasks, where scripts programmatically retrieve results and assess success by concentrating on the \"essential components of the answers\" (\"Spider 2.0: Evaluating Language Models on Real-World Enterprise Text-to-SQL Workflows\").",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
+      "SelfCodeAlign: Self-Alignment for Code Generation"
+    ],
+    "iclr25": [
+      "McEval: Massively Multilingual Code Evaluation",
+      "Spider 2.0: Evaluating Language Models on Real-World Enterprise Text-to-SQL Workflows"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 2,
+    "iclr25": 2
+  },
+  "conferences": [
+    "iclr25",
+    "neurips24"
+  ]
+}

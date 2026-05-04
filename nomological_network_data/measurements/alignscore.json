@@ -1,0 +1,136 @@
+{
+  "canonical_name": "AlignScore",
+  "type": "measurement",
+  "canonical_definition": "Across the surveyed literature, AlignScore is predominantly described as a model-based evaluation procedure for assessing text alignment between a generated text and a source passage. It is frequently used to operationalize and measure constructs like `Faithfulness` and, most commonly, \"factual consistency\" in the context of behaviors like `Text summarization` and `Paraphrase generation`. Several sources specify its underlying mechanism, describing it as an NLI-based or \"trained entailment metric\" that is based on a fine-tuned RoBERTa-large model. This procedure yields a continuous score, typically from 0 to 1, indicating the degree of correspondence or entailment. While the most prevalent usage is as an evaluation metric, a smaller line of work also employs AlignScore as a \"verifier model\" in fact-checking or as a quality filter, for instance by accepting only generations with a score above a certain threshold. The definitions are largely consistent, with the most common one being a general text-alignment procedure, while a few papers offer a more specific framing of it as an NLI-based metric for summarization.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "ALIGNSCORE",
+    "AlignScore"
+  ],
+  "papers": [
+    "A Computational Simulation of Language Production in First Language Acquisition",
+    "BTS: Harmonizing Specialized Experts into a GeneralistLLM",
+    "D-CoDe: Scaling Image-PretrainedVLMs to Video via Dynamic Compression and Question Decomposition",
+    "SafeKey: Amplifying Aha-Moment Insights for Safety Reasoning",
+    "Speech Discrete Tokens or Continuous Features? A Comparative Analysis for Spoken Language Understanding inSpeechLLMs",
+    "XAutoLM: Efficient Fine-Tuning of Language Models via Meta-Learning andAutoML",
+    "xCoRe: Cross-context Coreference Resolution",
+    "A Picture is Worth A Thousand Numbers: EnablingLLMs Reason about Time Series via Visualization",
+    "A Systematic Examination of Preference Learning through the Lens of Instruction-Following",
+    "Aligning Sentence Simplification withESLLearner\u2019s Proficiency for Language Acquisition",
+    "COVE:COntext andVEracity prediction for out-of-context images",
+    "Cascading Large Language Models for Salient Event Graph Generation",
+    "Ethical Concern Identification inNLP: A Corpus ofACLAnthology Ethics Statements",
+    "Palette of Language Models: A Solver for Controlled Text Generation",
+    "Rethinking the Role ofLLMs for Document-level Relation Extraction: a Refiner with Task Distribution and Probability Fusion"
+  ],
+  "paper_count": 15,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A model-based text-alignment evaluation procedure used to assess how well generated answers align with reference passages.",
+      "paper": "A Picture is Worth A Thousand Numbers: EnablingLLMs Reason about Time Series via Visualization",
+      "original_name": "AlignScore"
+    },
+    {
+      "text": "An NLI-based metric that computes an aggregated inference score between a source article and a generated summary to evaluate factual consistency.",
+      "paper": "COVE:COntext andVEracity prediction for out-of-context images",
+      "original_name": "ALIGNSCORE"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Factuality",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Ethical Concern Identification inNLP: A Corpus ofACLAnthology Ethics Statements",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Ethical Concern Identification inNLP: A Corpus ofACLAnthology Ethics Statements"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "SafeKey: Amplifying Aha-Moment Insights for Safety Reasoning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "SafeKey: Amplifying Aha-Moment Insights for Safety Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Paraphrase generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "A Picture is Worth A Thousand Numbers: EnablingLLMs Reason about Time Series via Visualization",
+      "evidence": "\u2022 Consistency \u2192AlignScore (Zha et al., 2023) : the authors train a information alignment model on 7 well-established tasks including paraphrasing and summarization. (Section 3.2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "A Picture is Worth A Thousand Numbers: EnablingLLMs Reason about Time Series via Visualization"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text summarization",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "A Picture is Worth A Thousand Numbers: EnablingLLMs Reason about Time Series via Visualization",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "A Picture is Worth A Thousand Numbers: EnablingLLMs Reason about Time Series via Visualization"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the surveyed literature, AlignScore is predominantly described as a model-based evaluation procedure for assessing text alignment between a generated text and a source passage. It is frequently used to operationalize and measure constructs like `Faithfulness` and, most commonly, \"factual consistency\" in the context of behaviors like `Text summarization` and `Paraphrase generation`. Several sources specify its underlying mechanism, describing it as an NLI-based or \"trained entailment metric\" that is based on a fine-tuned RoBERTa-large model. This procedure yields a continuous score, typically from 0 to 1, indicating the degree of correspondence or entailment. While the most prevalent usage is as an evaluation metric, a smaller line of work also employs AlignScore as a \"verifier model\" in fact-checking or as a quality filter, for instance by accepting only generations with a score above a certain threshold. The definitions are largely consistent, with the most common one being a general text-alignment procedure, while a few papers offer a more specific framing of it as an NLI-based metric for summarization.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "naacl25": [
+      "A Picture is Worth A Thousand Numbers: EnablingLLMs Reason about Time Series via Visualization",
+      "A Systematic Examination of Preference Learning through the Lens of Instruction-Following",
+      "Aligning Sentence Simplification withESLLearner\u2019s Proficiency for Language Acquisition",
+      "COVE:COntext andVEracity prediction for out-of-context images",
+      "Cascading Large Language Models for Salient Event Graph Generation",
+      "Ethical Concern Identification inNLP: A Corpus ofACLAnthology Ethics Statements",
+      "Palette of Language Models: A Solver for Controlled Text Generation",
+      "Rethinking the Role ofLLMs for Document-level Relation Extraction: a Refiner with Task Distribution and Probability Fusion"
+    ],
+    "emnlp25": [
+      "A Computational Simulation of Language Production in First Language Acquisition",
+      "BTS: Harmonizing Specialized Experts into a GeneralistLLM",
+      "D-CoDe: Scaling Image-PretrainedVLMs to Video via Dynamic Compression and Question Decomposition",
+      "SafeKey: Amplifying Aha-Moment Insights for Safety Reasoning",
+      "Speech Discrete Tokens or Continuous Features? A Comparative Analysis for Spoken Language Understanding inSpeechLLMs",
+      "XAutoLM: Efficient Fine-Tuning of Language Models via Meta-Learning andAutoML",
+      "xCoRe: Cross-context Coreference Resolution"
+    ]
+  },
+  "paper_count_by_conference": {
+    "naacl25": 8,
+    "emnlp25": 7
+  },
+  "conferences": [
+    "emnlp25",
+    "naacl25"
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "canonical_name": "Knowledge graph construction",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, knowledge graph construction is most commonly described as the automatic extraction of entities and their relationships from unstructured text to form a structured graph. One paper frames this as the \"text-to-graph generation (T2G) task,\" aiming to create a knowledge representation without manual intervention. While this core idea is consistent, different papers introduce specific nuances. For instance, one study distinguishes between \"textual entity graph construction,\" which represents relationships solely as expressed in the input text, and \"factual entity graph construction,\" which validates these relationships against an external knowledge base like Wikipedia. A different line of work focuses on the temporal dimension, defining the task as updating a knowledge graph over time by integrating new information as \"short-term memory\" while preserving historical structure. Another paper describes a related process, \"Semantic Network Analysis,\" as transforming text into networks of concepts to unify lexical, syntactic, and semantic information. To evaluate this behavior, researchers use datasets with ground truth knowledge graphs; the provided data shows that the SciERC dataset is used for this purpose.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Semantic network construction",
+    "Factual entity graph construction",
+    "Textual entity graph construction",
+    "Knowledge graph construction",
+    "Temporal knowledge graph update"
+  ],
+  "papers": [
+    "2025.emnlp-main.1196.checklist",
+    "Complex Numerical Reasoning with Numerical Semantic Pre-training Framework",
+    "LLMs cannot spot math errors, even when allowed to peek into the solution",
+    "RewardDS: Privacy-Preserving Fine-Tuning for Large Language Models via Reward Driven Data Synthesis",
+    "Sali4Vid: Saliency-Aware Video Reweighting and Adaptive Caption Retrieval for Dense Video Captioning",
+    "T2: An Adaptive Test-Time Scaling Strategy for Contextual Question Answering"
+  ],
+  "paper_count": 6,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Transforming textual data into a graph of nodes (concepts) and edges (relations) to represent knowledge structure.",
+      "paper": "Sali4Vid: Saliency-Aware Video Reweighting and Adaptive Caption Retrieval for Dense Video Captioning",
+      "original_name": "Semantic network construction"
+    },
+    {
+      "text": "Building a graph representation of entities and their relationships as expressed in the input text, where nodes represent entities and edges represent extracted relations.",
+      "paper": "T2: An Adaptive Test-Time Scaling Strategy for Contextual Question Answering",
+      "original_name": "Textual entity graph construction"
+    },
+    {
+      "text": "Constructing a knowledge-based entity graph by querying a knowledge base (e.g., Wikipedia) to determine whether real-world relationships exist between linked entities.",
+      "paper": "T2: An Adaptive Test-Time Scaling Strategy for Contextual Question Answering",
+      "original_name": "Factual entity graph construction"
+    },
+    {
+      "text": "The process of automatically extracting entities and their relationships from unstructured text to create a structured knowledge graph.",
+      "paper": "LLMs cannot spot math errors, even when allowed to peek into the solution",
+      "original_name": "Knowledge graph construction"
+    },
+    {
+      "text": "Updating a knowledge graph over time by incorporating new scene information while preserving historical structure, enabling long-term reasoning.",
+      "paper": "RewardDS: Privacy-Preserving Fine-Tuning for Large Language Models via Reward Driven Data Synthesis",
+      "original_name": "Temporal knowledge graph update"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SciERC",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LLMs cannot spot math errors, even when allowed to peek into the solution",
+      "evidence": "In our study, we conduct experiments on two general datasets (REBEL-Sub (Huguet Cabot and Navigli, 2021) and GenWiki (Jin et al., 2020)) and two domain-specific datasets (SCIERC (Luan et al., 2018) and the Windows-centric subset of Re-DocRED (Tan et al., 2022)) with golden ground truth KGs (Section 5.1.1).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "LLMs cannot spot math errors, even when allowed to peek into the solution"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the provided literature, knowledge graph construction is most commonly described as the automatic extraction of entities and their relationships from unstructured text to form a structured graph. One paper frames this as the \"text-to-graph generation (T2G) task,\" aiming to create a knowledge representation without manual intervention. While this core idea is consistent, different papers introduce specific nuances. For instance, one study distinguishes between \"textual entity graph construction,\" which represents relationships solely as expressed in the input text, and \"factual entity graph construction,\" which validates these relationships against an external knowledge base like Wikipedia. A different line of work focuses on the temporal dimension, defining the task as updating a knowledge graph over time by integrating new information as \"short-term memory\" while preserving historical structure. Another paper describes a related process, \"Semantic Network Analysis,\" as transforming text into networks of concepts to unify lexical, syntactic, and semantic information. To evaluate this behavior, researchers use datasets with ground truth knowledge graphs; the provided data shows that the SciERC dataset is used for this purpose.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "2025.emnlp-main.1196.checklist",
+      "Complex Numerical Reasoning with Numerical Semantic Pre-training Framework",
+      "LLMs cannot spot math errors, even when allowed to peek into the solution",
+      "RewardDS: Privacy-Preserving Fine-Tuning for Large Language Models via Reward Driven Data Synthesis",
+      "Sali4Vid: Saliency-Aware Video Reweighting and Adaptive Caption Retrieval for Dense Video Captioning",
+      "T2: An Adaptive Test-Time Scaling Strategy for Contextual Question Answering"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 6
+  },
+  "conferences": [
+    "emnlp25"
+  ]
+}

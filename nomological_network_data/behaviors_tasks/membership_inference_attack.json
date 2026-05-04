@@ -1,0 +1,169 @@
+{
+  "canonical_name": "Membership inference attack",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, a Membership Inference Attack (MIA) is predominantly defined as a privacy evaluation procedure designed to determine if a specific data point was used in a model's training or alignment process. The attack operates by distinguishing member from non-member examples, often by exploiting \"distributional differences in certain statistics (e.g., loss) between training (member) and non-training (non-member) data\" (MUSE: Machine Unlearning Six-Way Evaluation for Language Models). While some attacks are loss-based, others are designed for \"black-box\" scenarios that rely \"solely on the output texts\" without access to logits (Differentially Private Steering for Large Language Model Alignment). The most prevalent use of MIA is to measure `Privacy leakage` and estimate empirical privacy risk. It is also employed to evaluate the efficacy of `Machine unlearning`, assess `Forget quality`, and, in a smaller set of studies, measure `Knowledge memorization`. Specific implementations mentioned include `lossMIA`, which uses a model's loss, and `zlibMIA`, which normalizes loss by zlib compression size. The performance of these attacks is sometimes evaluated using metrics like AUC and TPR at low FPR thresholds. Described as an \"established practice,\" MIA serves as a common tool for auditing privacy in language models.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Membership inference attack",
+    "Membership Inference Attack (MIA)",
+    "Membership Inference Attack",
+    "lossMIA",
+    "zlibMIA"
+  ],
+  "papers": [
+    "Benchmarking Vision Language Model Unlearning via Fictitious Facial Identity Dataset",
+    "Differentially Private Steering for Large Language Model Alignment",
+    "MUSE: Machine Unlearning Six-Way Evaluation for Language Models",
+    "Machine Unlearning Fails to Remove Data Poisoning Attacks",
+    "Privacy Auditing of Large Language Models",
+    "Privacy-Preserving Personalized Federated Prompt Learning for Multimodal Large Language Models",
+    "Adaptive Localization of Knowledge Negation for Continual LLM Unlearning",
+    "The Canary\u2019s Echo: Auditing Privacy Risks of LLM-Generated Synthetic Text",
+    "Underestimated Privacy Risks for Minority Populations in Large Language Model Unlearning",
+    "Communication Makes Perfect: Persuasion Dataset Construction via Multi-LLMCommunication",
+    "Seq1F1B: Efficient Sequence-Level Pipeline Parallelism for Large Language Model Training"
+  ],
+  "paper_count": 11,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "An evaluation procedure designed to audit empirical privacy by attempting to determine whether a specific data sample was used in the model's alignment or training process.",
+      "paper": "Differentially Private Steering for Large Language Model Alignment",
+      "original_name": "Membership Inference Attack (MIA)"
+    },
+    {
+      "text": "A privacy evaluation procedure that tests whether a datapoint was used in training by distinguishing member from non-member examples.",
+      "paper": "MUSE: Machine Unlearning Six-Way Evaluation for Language Models",
+      "original_name": "Membership inference attack"
+    },
+    {
+      "text": "An evaluation procedure designed to determine whether a specific data sample was part of a model's training set by analyzing its output behavior.",
+      "paper": "Communication Makes Perfect: Persuasion Dataset Construction via Multi-LLMCommunication",
+      "original_name": "Membership Inference Attack"
+    },
+    {
+      "text": "A specific type of Membership Inference Attack that uses a model's loss on a given sample to infer whether that sample was part of the training data.",
+      "paper": "Underestimated Privacy Risks for Minority Populations in Large Language Model Unlearning",
+      "original_name": "lossMIA"
+    },
+    {
+      "text": "A specific type of Membership Inference Attack that uses a model's loss on a sample, normalized by the sample's zlib compression size, to infer membership.",
+      "paper": "Underestimated Privacy Risks for Minority Populations in Large Language Model Unlearning",
+      "original_name": "zlibMIA"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Privacy leakage",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "MUSE: Machine Unlearning Six-Way Evaluation for Language Models",
+      "evidence": "\u201cwe consider three popular MIA methods: LOSS ... Zlib Entropy ... and Min-k% Prob\u201d",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "iclr25": [
+          "MUSE: Machine Unlearning Six-Way Evaluation for Language Models",
+          "Privacy Auditing of Large Language Models"
+        ],
+        "icml25": [
+          "Underestimated Privacy Risks for Minority Populations in Large Language Model Unlearning",
+          "The Canary\u2019s Echo: Auditing Privacy Risks of LLM-Generated Synthetic Text"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge memorization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "RWKU: Benchmarking Real-World Knowledge Unlearning for Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "RWKU: Benchmarking Real-World Knowledge Unlearning for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Unlearning efficacy",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Machine Unlearning Fails to Remove Data Poisoning Attacks",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Machine Unlearning Fails to Remove Data Poisoning Attacks"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Forget quality",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Benchmarking Vision Language Model Unlearning via Fictitious Facial Identity Dataset",
+      "evidence": "To determine whether private information still exists in VLMs after unlearning more accurately, we proposed to use MIAs for evaluation. (Section 2.5.3)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Benchmarking Vision Language Model Unlearning via Fictitious Facial Identity Dataset"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Min-K% Prob",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "MUSE: Machine Unlearning Six-Way Evaluation for Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "MUSE: Machine Unlearning Six-Way Evaluation for Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the surveyed literature, a Membership Inference Attack (MIA) is predominantly defined as a privacy evaluation procedure designed to determine if a specific data point was used in a model's training or alignment process. The attack operates by distinguishing member from non-member examples, often by exploiting \"distributional differences in certain statistics (e.g., loss) between training (member) and non-training (non-member) data\" (MUSE: Machine Unlearning Six-Way Evaluation for Language Models). While some attacks are loss-based, others are designed for \"black-box\" scenarios that rely \"solely on the output texts\" without access to logits (Differentially Private Steering for Large Language Model Alignment). The most prevalent use of MIA is to measure `Privacy leakage` and estimate empirical privacy risk. It is also employed to evaluate the efficacy of `Machine unlearning`, assess `Forget quality`, and, in a smaller set of studies, measure `Knowledge memorization`. Specific implementations mentioned include `lossMIA`, which uses a model's loss, and `zlibMIA`, which normalizes loss by zlib compression size. The performance of these attacks is sometimes evaluated using metrics like AUC and TPR at low FPR thresholds. Described as an \"established practice,\" MIA serves as a common tool for auditing privacy in language models.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Benchmarking Vision Language Model Unlearning via Fictitious Facial Identity Dataset",
+      "Differentially Private Steering for Large Language Model Alignment",
+      "MUSE: Machine Unlearning Six-Way Evaluation for Language Models",
+      "Machine Unlearning Fails to Remove Data Poisoning Attacks",
+      "Privacy Auditing of Large Language Models",
+      "Privacy-Preserving Personalized Federated Prompt Learning for Multimodal Large Language Models"
+    ],
+    "naacl25": [
+      "Communication Makes Perfect: Persuasion Dataset Construction via Multi-LLMCommunication",
+      "Seq1F1B: Efficient Sequence-Level Pipeline Parallelism for Large Language Model Training"
+    ],
+    "icml25": [
+      "Adaptive Localization of Knowledge Negation for Continual LLM Unlearning",
+      "The Canary\u2019s Echo: Auditing Privacy Risks of LLM-Generated Synthetic Text",
+      "Underestimated Privacy Risks for Minority Populations in Large Language Model Unlearning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 6,
+    "naacl25": 2,
+    "icml25": 3
+  },
+  "conferences": [
+    "iclr25",
+    "icml25",
+    "naacl25"
+  ]
+}

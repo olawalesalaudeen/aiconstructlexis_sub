@@ -1,0 +1,365 @@
+{
+  "canonical_name": "Hallucination detection",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, hallucination detection is predominantly characterized as the observable task of identifying factually incorrect, fabricated, or unsupported information within a model's generated output. This is frequently applied in multi-modal settings, where the goal is to find inconsistencies between text and a source image, such as \"tagging object phrases in a description that do not correspond to objects in the image\" (Image Textualization: An Automatic Framework for Generating Rich and Detailed Image Descriptions). The task is also specified for particular domains, including \"Medical hallucination detection\" and knowledge-grounded contexts, where it is framed as identifying sentences that contradict a reasoning graph. The field operationalizes this behavior using a range of benchmarks, with papers citing the use of HaluEval, POPE, TruthfulQA, and the domain-specific MedHallu to measure performance. Methodologically, approaches range from comparing outputs to a knowledge base to using a model's internal states, such as \"contextual embeddings from intermediate layers\" (Towards Quantifying Commonsense Reasoning with Mechanistic Insights). While the prevailing view is of an observable task, a less common framing describes it as a \"latent ability\" of a model to recognize unsupported content. Hallucination detection is studied in relation to concepts like \"Consistency\" and \"Semantic uncertainty\" and is considered relevant across tasks like \"Question answering\" and \"Text summarization.\" One paper title also suggests that \"Self-reflection\" can be used to perform this task.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Hallucination Detection",
+    "Hallucination detection",
+    "Knowledge conflict detection",
+    "Medical hallucination detection"
+  ],
+  "papers": [
+    "(Almost) Free Modality Stitching of Foundation Models",
+    "2025.emnlp-main.1063.checklist",
+    "Ask Patients with Patience: EnablingLLMs for Human-Centric Medical Dialogue with Grounded Reasoning",
+    "Can Prompts Rewind Time forLLMs? Evaluating the Effectiveness of Prompted Knowledge Cutoffs",
+    "Improving Cross Lingual Transfer by Pretraining with Active Forgetting",
+    "MultiDocFusion : Hierarchical and Multimodal Chunking Pipeline for EnhancedRAGon Long Industrial Documents",
+    "Multilingual vs Crosslingual Retrieval of Fact-Checked Claims: A Tale of Two Approaches",
+    "One Planner To Guide Them All ! Learning Adaptive Conversational Planners for Goal-oriented Dialogues",
+    "START: Self-taught Reasoner with Tools",
+    "Self-Adjust Softmax",
+    "Flexible-length Text Infilling for Discrete Diffusion Models",
+    "Seeing Through Words, Speaking Through Pixels: Deep Representational Alignment Between Vision and Language Models",
+    "A Theory for Token-Level Harmonization in Retrieval-Augmented Generation",
+    "An Empirical Analysis of Uncertainty in Large Language Model Evaluations",
+    "K-HALU: Multiple Answer Korean Hallucination Benchmark for Large Language Models",
+    "Knowledge Graph Finetuning Enhances Knowledge Manipulation in Large Language Models",
+    "PhysBench: Benchmarking and Enhancing Vision-Language Models for Physical World Understanding",
+    "TLDR: Token-Level Detective Reward Model for Large Vision Language Models",
+    "Steer LLM Latents for Hallucination Detection",
+    "The Logical Implication Steering Method for Conditional Interventions on Transformer Generation",
+    "ALiiCE: Evaluating Positional Fine-grained Citation Generation",
+    "ToW: Thoughts of Words Improve Reasoning in Large Language Models",
+    "Towards Quantifying Commonsense Reasoning with Mechanistic Insights",
+    "Hallo3D: Multi-Modal Hallucination Detection and Mitigation for Consistent 3D Content Generation",
+    "Image Textualization: An Automatic Framework for Generating Rich and Detailed Image Descriptions"
+  ],
+  "paper_count": 25,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The observable task of identifying and tagging object phrases in a description that do not correspond to objects in the image.",
+      "paper": "Image Textualization: An Automatic Framework for Generating Rich and Detailed Image Descriptions",
+      "original_name": "Hallucination Detection"
+    },
+    {
+      "text": "The task of using a large multi-modal model to identify and describe concrete hallucinations or inconsistencies within a rendered 2D image.",
+      "paper": "Hallo3D: Multi-Modal Hallucination Detection and Mitigation for Consistent 3D Content Generation",
+      "original_name": "Hallucination detection"
+    },
+    {
+      "text": "Identifying explanation sentences that contradict or are unsupported by comparison triples from the reasoning graph.",
+      "paper": "Knowledge Graph Finetuning Enhances Knowledge Manipulation in Large Language Models",
+      "original_name": "Knowledge conflict detection"
+    },
+    {
+      "text": "The observable task of judging whether a given answer to a medical question is hallucinated (factually incorrect) or not, based on factual accuracy.",
+      "paper": "Ask Patients with Patience: EnablingLLMs for Human-Centric Medical Dialogue with Grounded Reasoning",
+      "original_name": "Medical hallucination detection"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HaluEval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "The Logical Implication Steering Method for Conditional Interventions on Transformer Generation",
+      "evidence": "\"First we evaluate a model\u2019s ability to judge whether an answer to a question contains a hallucination or not using the HaluEval dataset\"",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "icml25": [
+          "The Logical Implication Steering Method for Conditional Interventions on Transformer Generation"
+        ],
+        "emnlp25": [
+          "START: Self-taught Reasoner with Tools"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AUROC",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Steer LLM Latents for Hallucination Detection",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Steer LLM Latents for Hallucination Detection"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "POPE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "(Almost) Free Modality Stitching of Foundation Models",
+      "evidence": "Specifically, we assess our method\u2019s performance in hallucination detection using the POPE dataset (Li et al., 2023c) and HallusionBench (Guan et al., 2023). (Section 4.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "(Almost) Free Modality Stitching of Foundation Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Semantic uncertainty",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "ToW: Thoughts of Words Improve Reasoning in Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "ToW: Thoughts of Words Improve Reasoning in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SelfCheckGPT",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "ToW: Thoughts of Words Improve Reasoning in Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "ToW: Thoughts of Words Improve Reasoning in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "START: Self-taught Reasoner with Tools",
+      "evidence": "We demonstrate that the influence of negated text on hallucination detection extends across multiple tasks, including question answering (QA), dialogue, summarization, and completion, indicating its task-agnostic.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "START: Self-taught Reasoner with Tools"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Text summarization",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "START: Self-taught Reasoner with Tools",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "START: Self-taught Reasoner with Tools"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Text generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "START: Self-taught Reasoner with Tools",
+      "evidence": "We demonstrate that the influence of negated text on hallucination detection extends across multiple tasks, including question answering (QA), dialogue, summarization, and completion, indicating its task-agnostic.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "START: Self-taught Reasoner with Tools"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Consistency",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Steer LLM Latents for Hallucination Detection",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Steer LLM Latents for Hallucination Detection"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "FoCus",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "ToW: Thoughts of Words Improve Reasoning in Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "ToW: Thoughts of Words Improve Reasoning in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Linear probing",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MeNTi: Bridging Medical Calculator andLLMAgent with Nested Tool Calling",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "MeNTi: Bridging Medical Calculator andLLMAgent with Nested Tool Calling"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Steer LLM Latents for Hallucination Detection",
+      "evidence": "On the challenging TruthfulQA benchmark (Lin et al., 2022a), our approach achieves a significant +12.8% improvement in hallucination detection accuracy (AUROC) compared to state-of-the-art methods. (Section 1. Introduction)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Steer LLM Latents for Hallucination Detection"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Refusal to answer",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "LaRA: Benchmarking Retrieval-Augmented Generation and Long-Context LLMs \u2013 No Silver Bullet for LC or RAG Routing",
+      "evidence": "The hallucination detection task aims to test the model\u2019s ability to decline answering questions that are not mentioned in the given context. (Section 3.2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "LaRA: Benchmarking Retrieval-Augmented Generation and Long-Context LLMs \u2013 No Silver Bullet for LC or RAG Routing"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MedHallu",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Ask Patients with Patience: EnablingLLMs for Human-Centric Medical Dialogue with Grounded Reasoning",
+      "evidence": "To address this, we introduce MedHallu, one of the first benchmark specifically designed for medical hallucination detection.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Ask Patients with Patience: EnablingLLMs for Human-Centric Medical Dialogue with Grounded Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "NegHalu",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "START: Self-taught Reasoner with Tools",
+      "evidence": "we conduct this analysis by reconstructing existing hallucination detection benchmarks with negated expressions and introducing NegHalu, a dataset in which hallucination labels are newly assigned to account for the effects of negation.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "START: Self-taught Reasoner with Tools"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Logit lens",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "START: Self-taught Reasoner with Tools",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "START: Self-taught Reasoner with Tools"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Self-reflection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "2025.emnlp-main.1063.checklist",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "2025.emnlp-main.1063.checklist"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 17,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 14,
+  "characterization": "Across the provided literature, hallucination detection is predominantly characterized as the observable task of identifying factually incorrect, fabricated, or unsupported information within a model's generated output. This is frequently applied in multi-modal settings, where the goal is to find inconsistencies between text and a source image, such as \"tagging object phrases in a description that do not correspond to objects in the image\" (Image Textualization: An Automatic Framework for Generating Rich and Detailed Image Descriptions). The task is also specified for particular domains, including \"Medical hallucination detection\" and knowledge-grounded contexts, where it is framed as identifying sentences that contradict a reasoning graph. The field operationalizes this behavior using a range of benchmarks, with papers citing the use of HaluEval, POPE, TruthfulQA, and the domain-specific MedHallu to measure performance. Methodologically, approaches range from comparing outputs to a knowledge base to using a model's internal states, such as \"contextual embeddings from intermediate layers\" (Towards Quantifying Commonsense Reasoning with Mechanistic Insights). While the prevailing view is of an observable task, a less common framing describes it as a \"latent ability\" of a model to recognize unsupported content. Hallucination detection is studied in relation to concepts like \"Consistency\" and \"Semantic uncertainty\" and is considered relevant across tasks like \"Question answering\" and \"Text summarization.\" One paper title also suggests that \"Self-reflection\" can be used to perform this task.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "Hallo3D: Multi-Modal Hallucination Detection and Mitigation for Consistent 3D Content Generation",
+      "Image Textualization: An Automatic Framework for Generating Rich and Detailed Image Descriptions"
+    ],
+    "iclr25": [
+      "A Theory for Token-Level Harmonization in Retrieval-Augmented Generation",
+      "An Empirical Analysis of Uncertainty in Large Language Model Evaluations",
+      "K-HALU: Multiple Answer Korean Hallucination Benchmark for Large Language Models",
+      "Knowledge Graph Finetuning Enhances Knowledge Manipulation in Large Language Models",
+      "PhysBench: Benchmarking and Enhancing Vision-Language Models for Physical World Understanding",
+      "TLDR: Token-Level Detective Reward Model for Large Vision Language Models"
+    ],
+    "naacl25": [
+      "ALiiCE: Evaluating Positional Fine-grained Citation Generation",
+      "ToW: Thoughts of Words Improve Reasoning in Large Language Models",
+      "Towards Quantifying Commonsense Reasoning with Mechanistic Insights"
+    ],
+    "emnlp25": [
+      "(Almost) Free Modality Stitching of Foundation Models",
+      "2025.emnlp-main.1063.checklist",
+      "Ask Patients with Patience: EnablingLLMs for Human-Centric Medical Dialogue with Grounded Reasoning",
+      "Can Prompts Rewind Time forLLMs? Evaluating the Effectiveness of Prompted Knowledge Cutoffs",
+      "Improving Cross Lingual Transfer by Pretraining with Active Forgetting",
+      "MultiDocFusion : Hierarchical and Multimodal Chunking Pipeline for EnhancedRAGon Long Industrial Documents",
+      "Multilingual vs Crosslingual Retrieval of Fact-Checked Claims: A Tale of Two Approaches",
+      "One Planner To Guide Them All ! Learning Adaptive Conversational Planners for Goal-oriented Dialogues",
+      "START: Self-taught Reasoner with Tools",
+      "Self-Adjust Softmax",
+      "Flexible-length Text Infilling for Discrete Diffusion Models",
+      "Seeing Through Words, Speaking Through Pixels: Deep Representational Alignment Between Vision and Language Models"
+    ],
+    "icml25": [
+      "Steer LLM Latents for Hallucination Detection",
+      "The Logical Implication Steering Method for Conditional Interventions on Transformer Generation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 2,
+    "iclr25": 6,
+    "naacl25": 3,
+    "emnlp25": 12,
+    "icml25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

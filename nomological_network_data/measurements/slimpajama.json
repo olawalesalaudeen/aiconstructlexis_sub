@@ -1,0 +1,148 @@
+{
+  "canonical_name": "SlimPajama",
+  "type": "measurement",
+  "canonical_definition": "Across the surveyed literature, SlimPajama is most commonly characterized as a large text corpus used as a data source for various stages of model development. The prevailing definition describes it as a pre-training data source, while a more specific, less frequent definition clarifies it as \"a cleaned and deduplicated version of RedPajama\" with diverse sources including C4, ArXiv, GitHub, and Books. Its primary application is in `Language model pre-training`, where it is used for both initial training and for \"continual pre-training\" to recover model performance after modifications. Several papers also use subsets of SlimPajama for post-training procedures, such as for \"post-prune recovery,\" with data samples ranging from 0.5B to 10B tokens. One study leverages its categorical composition, selecting specific subsets like \"StackExchange, Github Codes, ArXiv, and Book\" to simulate different topic preferences. While primarily described as a training corpus in definitions and usage snippets, the provided relationship data also positions SlimPajama as a measurement instrument. In this capacity, it is reported as being used to measure the behaviors of `Language model pre-training`, `Language modeling`, and `Instruction fine-tuning`.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "SlimPajama",
+    "Slimpajama"
+  ],
+  "papers": [
+    "Energy Considerations of Large Language Model Inference and Efficiency Optimizations",
+    "Transition-aware Knowledge Extractor",
+    "Adaptive Data Optimization: Dynamic Sample Selection with Scaling Laws",
+    "Aioli: A Unified Optimization Framework for Language Model Data Mixing",
+    "Beware of Calibration Data for Pruning Large Language Models",
+    "Combatting Dimensional Collapse in LLM Pre-Training Data via Submodular File Selection",
+    "DataMan: Data Manager for Pre-training Large Language Models",
+    "Dynamic Loss-Based Sample Reweighting for Improved Large Language Model Pretraining",
+    "Longhorn: State Space Models are Amortized Online Learners",
+    "QERA: an Analytical Framework for Quantization Error Reconstruction",
+    "Relaxed Recursive Transformers: Effective Parameter Sharing with Layer-wise LoRA",
+    "SPAM: Spike-Aware Adam with Momentum Reset for Stable LLM Training",
+    "Samba: Simple Hybrid State Space Models for Efficient Unlimited Context Language Modeling",
+    "Scaling up Masked Diffusion Models on Text",
+    "Straight to Zero: Why Linearly Decaying the Learning Rate to Zero Works Best for LLMs",
+    "Towards Universality: Studying Mechanistic Similarity Across Language Model Architectures",
+    "Unlocking State-Tracking in Linear RNNs Through Negative Eigenvalues",
+    "u-$\\mu$P: The Unit-Scaled Maximal Update Parametrization",
+    "Learning Dynamics in Continual Pre-Training for Large Language Models",
+    "Memorization Sinks: Isolating Memorization during LLM Training",
+    "On the Duality between Gradient Transformations and Adapters",
+    "On-Device Collaborative Language Modeling via a Mixture of Generalists and Specialists",
+    "Direct Preference Optimization of Video Large Multimodal Models from Language Model Reward",
+    "Multi-Conditional Ranking with Large Language Models"
+  ],
+  "paper_count": 24,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A large text corpus used as the pre-training data source from which files are selected.",
+      "paper": "Combatting Dimensional Collapse in LLM Pre-Training Data via Submodular File Selection",
+      "original_name": "SlimPajama"
+    },
+    {
+      "text": "A cleaned and deduplicated version of the RedPajama dataset, serving as a high-quality pre-training corpus with diverse sources.",
+      "paper": "Beware of Calibration Data for Pruning Large Language Models",
+      "original_name": "Slimpajama"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language modeling",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Gated Slot Attention for Efficient Linear-Time Sequence Modeling",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Gated Slot Attention for Efficient Linear-Time Sequence Modeling"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction fine-tuning",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "QERA: an Analytical Framework for Quantization Error Reconstruction",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "QERA: an Analytical Framework for Quantization Error Reconstruction"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language model pre-training",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "On the Duality between Gradient Transformations and Adapters",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "On the Duality between Gradient Transformations and Adapters"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the surveyed literature, SlimPajama is most commonly characterized as a large text corpus used as a data source for various stages of model development. The prevailing definition describes it as a pre-training data source, while a more specific, less frequent definition clarifies it as \"a cleaned and deduplicated version of RedPajama\" with diverse sources including C4, ArXiv, GitHub, and Books. Its primary application is in `Language model pre-training`, where it is used for both initial training and for \"continual pre-training\" to recover model performance after modifications. Several papers also use subsets of SlimPajama for post-training procedures, such as for \"post-prune recovery,\" with data samples ranging from 0.5B to 10B tokens. One study leverages its categorical composition, selecting specific subsets like \"StackExchange, Github Codes, ArXiv, and Book\" to simulate different topic preferences. While primarily described as a training corpus in definitions and usage snippets, the provided relationship data also positions SlimPajama as a measurement instrument. In this capacity, it is reported as being used to measure the behaviors of `Language model pre-training`, `Language modeling`, and `Instruction fine-tuning`.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Adaptive Data Optimization: Dynamic Sample Selection with Scaling Laws",
+      "Aioli: A Unified Optimization Framework for Language Model Data Mixing",
+      "Beware of Calibration Data for Pruning Large Language Models",
+      "Combatting Dimensional Collapse in LLM Pre-Training Data via Submodular File Selection",
+      "DataMan: Data Manager for Pre-training Large Language Models",
+      "Dynamic Loss-Based Sample Reweighting for Improved Large Language Model Pretraining",
+      "Longhorn: State Space Models are Amortized Online Learners",
+      "QERA: an Analytical Framework for Quantization Error Reconstruction",
+      "Relaxed Recursive Transformers: Effective Parameter Sharing with Layer-wise LoRA",
+      "SPAM: Spike-Aware Adam with Momentum Reset for Stable LLM Training",
+      "Samba: Simple Hybrid State Space Models for Efficient Unlimited Context Language Modeling",
+      "Scaling up Masked Diffusion Models on Text",
+      "Straight to Zero: Why Linearly Decaying the Learning Rate to Zero Works Best for LLMs",
+      "Towards Universality: Studying Mechanistic Similarity Across Language Model Architectures",
+      "Unlocking State-Tracking in Linear RNNs Through Negative Eigenvalues",
+      "u-$\\mu$P: The Unit-Scaled Maximal Update Parametrization"
+    ],
+    "naacl25": [
+      "Direct Preference Optimization of Video Large Multimodal Models from Language Model Reward",
+      "Multi-Conditional Ranking with Large Language Models"
+    ],
+    "acl25": [
+      "Energy Considerations of Large Language Model Inference and Efficiency Optimizations",
+      "Transition-aware Knowledge Extractor"
+    ],
+    "icml25": [
+      "Learning Dynamics in Continual Pre-Training for Large Language Models",
+      "Memorization Sinks: Isolating Memorization during LLM Training",
+      "On the Duality between Gradient Transformations and Adapters",
+      "On-Device Collaborative Language Modeling via a Mixture of Generalists and Specialists"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 16,
+    "naacl25": 2,
+    "acl25": 2,
+    "icml25": 4
+  },
+  "conferences": [
+    "acl25",
+    "iclr25",
+    "icml25",
+    "naacl25"
+  ]
+}

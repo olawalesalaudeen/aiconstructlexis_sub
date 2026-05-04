@@ -1,0 +1,89 @@
+{
+  "canonical_name": "MiniCheck",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, MiniCheck is most commonly characterized as an automatic metric used to evaluate the faithfulness of generated text. It is frequently defined as a trained, distilled Natural Language Inference (NLI) model that assesses summary-document entailment. Papers operationalize this by using MiniCheck to generate an entailment score between a claim and its evidence or to score the consistency of individual statements against source documents. The primary construct it is used to measure is Faithfulness, with some papers also describing it as a \"hallucination detector\" that classifies whether content is supported by context (\"Curriculum Debiasing: Toward Robust Parameter-Efficient Fine-Tuning Against Dataset Biases\"). The evaluation process is noted to sometimes involve internal document chunking, comparing generated summary sentences against these chunks. A less common framing describes it simply as a \"verifier\" model, used alongside other verifiers like AlignScore. Its application is noted in summarization tasks and long-context settings, where one study reports its efficacy is \"comparable to GPT-4 performance\" (\"SLM-Mod: Small Language Models SurpassLLMs at Content Moderation\").",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "MiniCheck",
+    "Minicheck"
+  ],
+  "papers": [
+    "CanLLMs Ground when they (Don\u2019t) Know: A Study on Direct and Loaded Political Questions",
+    "Curriculum Debiasing: Toward Robust Parameter-Efficient Fine-Tuning Against Dataset Biases",
+    "Length Controlled Generation for Black-boxLLMs",
+    "UnSeenTimeQA: Time-Sensitive Question-Answering BeyondLLMs\u2019 Memorization",
+    "BTS: Harmonizing Specialized Experts into a GeneralistLLM",
+    "What\u2019s in a prompt? Language models encode literary style in prompt embeddings",
+    "Palette of Language Models: A Solver for Controlled Text Generation",
+    "Rethinking the Role ofLLMs for Document-level Relation Extraction: a Refiner with Task Distribution and Probability Fusion",
+    "SLM-Mod: Small Language Models SurpassLLMs at Content Moderation"
+  ],
+  "paper_count": 9,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A model used as a verifier to generate an entailment score between 0 and 1 for a claim and its corresponding evidence.",
+      "paper": "Rethinking the Role ofLLMs for Document-level Relation Extraction: a Refiner with Task Distribution and Probability Fusion",
+      "original_name": "Minicheck"
+    },
+    {
+      "text": "An automatic faithfulness metric based on a distilled NLI model that evaluates summary-document entailment, used here in long-context settings with document-level aggregation.",
+      "paper": "Palette of Language Models: A Solver for Controlled Text Generation",
+      "original_name": "MiniCheck"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "SLM-Mod: Small Language Models SurpassLLMs at Content Moderation",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "naacl25": [
+          "SLM-Mod: Small Language Models SurpassLLMs at Content Moderation"
+        ],
+        "emnlp25": [
+          "BTS: Harmonizing Specialized Experts into a GeneralistLLM"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, MiniCheck is most commonly characterized as an automatic metric used to evaluate the faithfulness of generated text. It is frequently defined as a trained, distilled Natural Language Inference (NLI) model that assesses summary-document entailment. Papers operationalize this by using MiniCheck to generate an entailment score between a claim and its evidence or to score the consistency of individual statements against source documents. The primary construct it is used to measure is Faithfulness, with some papers also describing it as a \"hallucination detector\" that classifies whether content is supported by context (\"Curriculum Debiasing: Toward Robust Parameter-Efficient Fine-Tuning Against Dataset Biases\"). The evaluation process is noted to sometimes involve internal document chunking, comparing generated summary sentences against these chunks. A less common framing describes it simply as a \"verifier\" model, used alongside other verifiers like AlignScore. Its application is noted in summarization tasks and long-context settings, where one study reports its efficacy is \"comparable to GPT-4 performance\" (\"SLM-Mod: Small Language Models SurpassLLMs at Content Moderation\").",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "naacl25": [
+      "Palette of Language Models: A Solver for Controlled Text Generation",
+      "Rethinking the Role ofLLMs for Document-level Relation Extraction: a Refiner with Task Distribution and Probability Fusion",
+      "SLM-Mod: Small Language Models SurpassLLMs at Content Moderation"
+    ],
+    "acl25": [
+      "CanLLMs Ground when they (Don\u2019t) Know: A Study on Direct and Loaded Political Questions",
+      "Curriculum Debiasing: Toward Robust Parameter-Efficient Fine-Tuning Against Dataset Biases",
+      "Length Controlled Generation for Black-boxLLMs",
+      "UnSeenTimeQA: Time-Sensitive Question-Answering BeyondLLMs\u2019 Memorization"
+    ],
+    "emnlp25": [
+      "BTS: Harmonizing Specialized Experts into a GeneralistLLM",
+      "What\u2019s in a prompt? Language models encode literary style in prompt embeddings"
+    ]
+  },
+  "paper_count_by_conference": {
+    "naacl25": 3,
+    "acl25": 4,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "naacl25"
+  ]
+}

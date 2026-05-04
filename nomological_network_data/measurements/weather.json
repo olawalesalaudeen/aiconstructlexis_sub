@@ -1,0 +1,87 @@
+{
+  "canonical_name": "Weather",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, the Weather dataset is consistently used as a standard benchmark for evaluating models on time series forecasting tasks. It is explicitly employed to measure the performance of time series forecasting and, in one instance, in-context learning. The dataset is broadly defined as containing climate or weather-related time series, with one paper specifying it includes \"meteorological variables such as temperature, humidity, and wind speed\" (Time-LLM: Time Series Forecasting by Reprogramming Large Language Models). A recurring application mentioned in the definitions is the evaluation of \"long-term forecasting performance in zero-shot settings.\" In practice, it is frequently evaluated alongside a suite of other time series datasets, most commonly the ETT family (ETTh1, ETTh2, ETTm1, ETTm2), Electricity (ECL), and Traffic.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Weather"
+  ],
+  "papers": [
+    "TEMPO: Prompt-based Generative Pre-trained Transformer for Time Series Forecasting",
+    "Time-LLM: Time Series Forecasting by Reprogramming Large Language Models",
+    "LangTime: A Language-Guided Unified Model for Time Series Forecasting with Proximal Policy Optimization",
+    "Lightweight Online Adaption for Time Series Foundation Model Forecasts"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A climate time series dataset used for evaluating long-term forecasting performance in zero-shot settings.",
+      "paper": "TEMPO: Prompt-based Generative Pre-trained Transformer for Time Series Forecasting",
+      "original_name": "Weather"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Time series forecasting",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Time-LLM: Time Series Forecasting by Reprogramming Large Language Models",
+      "evidence": "\u201cThe datasets we evaluate on are ETTh1, ETTh2, ETTm1, ETTm2, Weather, Traffic, ECL, Solar and US Weather\u201d",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "iclr24": [
+          "Time-LLM: Time Series Forecasting by Reprogramming Large Language Models"
+        ],
+        "neurips24": [
+          "Time-FFM: Towards LM-Empowered Federated Foundation Model for Time Series Forecasting",
+          "Are Language Models Actually Useful for Time Series Forecasting?"
+        ],
+        "icml25": [
+          "LangTime: A Language-Guided Unified Model for Time Series Forecasting with Proximal Policy Optimization"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-context learning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Time-FFM: Towards LM-Empowered Federated Foundation Model for Time Series Forecasting",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Time-FFM: Towards LM-Empowered Federated Foundation Model for Time Series Forecasting"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, the Weather dataset is consistently used as a standard benchmark for evaluating models on time series forecasting tasks. It is explicitly employed to measure the performance of time series forecasting and, in one instance, in-context learning. The dataset is broadly defined as containing climate or weather-related time series, with one paper specifying it includes \"meteorological variables such as temperature, humidity, and wind speed\" (Time-LLM: Time Series Forecasting by Reprogramming Large Language Models). A recurring application mentioned in the definitions is the evaluation of \"long-term forecasting performance in zero-shot settings.\" In practice, it is frequently evaluated alongside a suite of other time series datasets, most commonly the ETT family (ETTh1, ETTh2, ETTm1, ETTm2), Electricity (ECL), and Traffic.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "TEMPO: Prompt-based Generative Pre-trained Transformer for Time Series Forecasting",
+      "Time-LLM: Time Series Forecasting by Reprogramming Large Language Models"
+    ],
+    "icml25": [
+      "LangTime: A Language-Guided Unified Model for Time Series Forecasting with Proximal Policy Optimization",
+      "Lightweight Online Adaption for Time Series Foundation Model Forecasts"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "icml25": 2
+  },
+  "conferences": [
+    "iclr24",
+    "icml25"
+  ]
+}

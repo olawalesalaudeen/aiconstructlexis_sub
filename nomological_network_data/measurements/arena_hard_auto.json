@@ -1,0 +1,115 @@
+{
+  "canonical_name": "Arena-Hard-Auto",
+  "type": "measurement",
+  "canonical_definition": "Across the provided sources, Arena-Hard-Auto is consistently characterized as an automated benchmark that uses a strong LLM as a judge to evaluate model performance on challenging prompts. The most common definition describes its mechanism as conducting pairwise comparisons against a baseline model, using a Likert scale and chain-of-thought prompting to score outputs. Papers use this instrument to measure several concepts, most frequently to evaluate \"human preference to models\u2019 generations,\" but also to assess commonsense knowledge. A specific version, Arena-Hard-Auto-v0.1, is described as being designed to assess chat and instruction-following capabilities using 500 complex prompts. This benchmark is frequently listed alongside other LLM-judge instruments like MT-Bench and AlpacaEval. It is explicitly positioned as an automated replication of the LMSYS Chatbot Arena, with one source reporting that its v0.1 version achieves \"89% agreement with human rankings\" from the original arena.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Arena-Hard-Auto",
+    "Arena-Hard-Auto-v0.1"
+  ],
+  "papers": [
+    "Model Extrapolation Expedites Alignment",
+    "Predicting Through Generation: Why Generation Is Better for Prediction",
+    "Cheating Automatic LLM Benchmarks: Null Models Achieve High Win Rates",
+    "RM-Bench: Benchmarking Reward Models of Language Models with Subtlety and Style",
+    "Style Outweighs Substance: Failure Modes of LLM Judges in Alignment Benchmarking",
+    "An Architecture Search Framework for Inference-Time Techniques",
+    "From Crowdsourced Data to High-quality Benchmarks: Arena-Hard and Benchbuilder Pipeline",
+    "Instruction-Following Pruning for Large Language Models",
+    "Reward-Augmented Data Enhances Direct Preference Alignment of LLMs"
+  ],
+  "paper_count": 9,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A popular LLM-judge benchmark that conducts pairwise comparisons against a baseline model, using a Likert scale and chain-of-thought prompting to score outputs.",
+      "paper": "Style Outweighs Substance: Failure Modes of LLM Judges in Alignment Benchmarking",
+      "original_name": "Arena-Hard-Auto"
+    },
+    {
+      "text": "Automated evaluation that uses an LLM to judge model responses to 500 complex prompts, replicating LMSYS Chatbot Arena with 89% agreement with human rankings, designed to assess chat and instruction-following capabilities.",
+      "paper": "Predicting Through Generation: Why Generation Is Better for Prediction",
+      "original_name": "Arena-Hard-Auto-v0.1"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction following",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Instruction-Following Pruning for Large Language Models",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "icml25": [
+          "Instruction-Following Pruning for Large Language Models",
+          "An Architecture Search Framework for Inference-Time Techniques"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LMSYS Chatbot Arena",
+      "other_type": "measurements",
+      "relationship_type": "correlates",
+      "paper": "From Crowdsourced Data to High-quality Benchmarks: Arena-Hard and Benchbuilder Pipeline",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "From Crowdsourced Data to High-quality Benchmarks: Arena-Hard and Benchbuilder Pipeline"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Human preference alignment",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Model Extrapolation Expedites Alignment",
+      "evidence": "Thus we adopt MT-Bench (Zheng et al., 2023), AlpacaEval (Li et al., 2023b), and Arena-Hard-Auto (Li et al., 2024b) to evaluate human preference to models\u2019 generations. (Section 3.2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Model Extrapolation Expedites Alignment"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the provided sources, Arena-Hard-Auto is consistently characterized as an automated benchmark that uses a strong LLM as a judge to evaluate model performance on challenging prompts. The most common definition describes its mechanism as conducting pairwise comparisons against a baseline model, using a Likert scale and chain-of-thought prompting to score outputs. Papers use this instrument to measure several concepts, most frequently to evaluate \"human preference to models\u2019 generations,\" but also to assess commonsense knowledge. A specific version, Arena-Hard-Auto-v0.1, is described as being designed to assess chat and instruction-following capabilities using 500 complex prompts. This benchmark is frequently listed alongside other LLM-judge instruments like MT-Bench and AlpacaEval. It is explicitly positioned as an automated replication of the LMSYS Chatbot Arena, with one source reporting that its v0.1 version achieves \"89% agreement with human rankings\" from the original arena.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Cheating Automatic LLM Benchmarks: Null Models Achieve High Win Rates",
+      "RM-Bench: Benchmarking Reward Models of Language Models with Subtlety and Style",
+      "Style Outweighs Substance: Failure Modes of LLM Judges in Alignment Benchmarking"
+    ],
+    "acl25": [
+      "Model Extrapolation Expedites Alignment",
+      "Predicting Through Generation: Why Generation Is Better for Prediction"
+    ],
+    "icml25": [
+      "An Architecture Search Framework for Inference-Time Techniques",
+      "From Crowdsourced Data to High-quality Benchmarks: Arena-Hard and Benchbuilder Pipeline",
+      "Instruction-Following Pruning for Large Language Models",
+      "Reward-Augmented Data Enhances Direct Preference Alignment of LLMs"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3,
+    "acl25": 2,
+    "icml25": 4
+  },
+  "conferences": [
+    "acl25",
+    "iclr25",
+    "icml25"
+  ]
+}

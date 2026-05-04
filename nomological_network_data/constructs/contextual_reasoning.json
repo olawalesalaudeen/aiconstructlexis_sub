@@ -1,0 +1,171 @@
+{
+  "canonical_name": "Contextual reasoning",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, contextual reasoning is most commonly defined as the ability to understand instructions or situations and infer information based on functional or situational relationships, rather than literal keyword matching. This framing is applied in domains ranging from detecting objects based on \"daily life requirement\" instructions (Ins-DetCLIP: Aligning Detection Model to Follow Human-Language Instruction) to making \"deontic judgments\" about social norms (G-Safeguard: A Topology-Guided Security Lens and Treatment onLLM-based Multi-agent Systems). A related but distinct definition treats it as the capacity to use information provided exclusively in a prompt to form representations \"without relying on stored factual weights\" (How do Language Models Bind Entities in Context?). Other definitions specify the type of context, such as information distributed across long texts, specialized user queries, or surrounding code for vulnerability analysis. To operationalize this construct, papers report using benchmarks like LongBench, PubMedQA, and MemeReaCon, with the latter being used to evaluate the \"fine-grained contextual reasoning required to understand memes\" (WangchanThaiInstruct...). The construct is also presented as a capability related to natural language understanding.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Contextual reasoning",
+    "Context-specific reasoning",
+    "Context-aware reasoning",
+    "Context reasoning"
+  ],
+  "papers": [
+    "Data-Constrained Synthesis of Training Data for De-Identification",
+    "G-Safeguard: A Topology-Guided Security Lens and Treatment onLLM-based Multi-agent Systems",
+    "SpeechIQ: Speech-Agentic Intelligence Quotient Across Cognitive Levels in Voice Understanding by Large Language Models",
+    "iNews: A Multimodal Dataset for Modeling Personalized Affective Responses to News",
+    "Improving the Quality of Web-mined Parallel Corpora of Low-Resource Languages using Debiasing Heuristics",
+    "LegalSearchLM: Rethinking Legal Case Retrieval as Legal Elements Generation",
+    "Think and Recall: Layer-Level Prompting for Lifelong Model Editing",
+    "TracSum: A New Benchmark for Aspect-Based Summarization with Sentence-Level Traceability in Medical Domain",
+    "WangchanThaiInstruct: An instruction-following Dataset for Culture-Aware, Multitask, and Multi-domain Evaluation inThai",
+    "How do Language Models Bind Entities in Context?",
+    "Ins-DetCLIP: Aligning Detection Model to Follow Human-Language Instruction",
+    "IRIS: LLM-Assisted Static Analysis for Detecting Security Vulnerabilities",
+    "Not All Heads Matter: A Head-Level KV Cache Compression Method with Integrated Retrieval and Reasoning",
+    "VCR: A Task for Pixel-Level Complex Reasoning in Vision Language Models via Restoring Occluded Text",
+    "Chain of Agents: Large Language Models Collaborating on Long-Context Tasks",
+    "On the Inductive Bias of Stacking Towards Improving Reasoning",
+    "RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation",
+    "STaRK: Benchmarking LLM Retrieval on Textual and Relational Knowledge Bases"
+  ],
+  "paper_count": 18,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The capacity to use information provided in the prompt or context to form and recall structured representations without relying on stored factual weights.",
+      "paper": "How do Language Models Bind Entities in Context?",
+      "original_name": "In-context reasoning"
+    },
+    {
+      "text": "The ability to understand the context within an instruction and infer relevant objects based on situational or functional relationships, rather than literal keyword matching.",
+      "paper": "Ins-DetCLIP: Aligning Detection Model to Follow Human-Language Instruction",
+      "original_name": "Contextual reasoning"
+    },
+    {
+      "text": "The latent ability to infer user interests, understand specialized field descriptions, and deduce relationships involving multiple subjects within a specific query context.",
+      "paper": "STaRK: Benchmarking LLM Retrieval on Textual and Relational Knowledge Bases",
+      "original_name": "Context-specific reasoning"
+    },
+    {
+      "text": "The ability to reason about sequences by selectively focusing on relevant context, a key feature of the Mamba architecture.",
+      "paper": "RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation",
+      "original_name": "Context-aware reasoning"
+    },
+    {
+      "text": "The latent ability of a model to understand and draw inferences from information distributed across a long textual context.",
+      "paper": "Chain of Agents: Large Language Models Collaborating on Long-Context Tasks",
+      "original_name": "Context reasoning"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LongBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Not All Heads Matter: A Head-Level KV Cache Compression Method with Integrated Retrieval and Reasoning",
+      "evidence": "For LongBench, we use datasets from the Single-Doc QA and Multi-Doc QA categories to assess contextual reasoning.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Not All Heads Matter: A Head-Level KV Cache Compression Method with Integrated Retrieval and Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PubMedQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Reading between the Lines: CanLLMs Identify Cross-Cultural Communication Gaps?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Reading between the Lines: CanLLMs Identify Cross-Cultural Communication Gaps?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MemeReaCon",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "WangchanThaiInstruct: An instruction-following Dataset for Culture-Aware, Multitask, and Multi-domain Evaluation inThai",
+      "evidence": "MemeReaCon occupies a unique position by being the first benchmark, to our knowledge, specifically constructed to evaluate the fine-grained contextual reasoning required to understand memes as they are used in online posts. (Section 2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "WangchanThaiInstruct: An instruction-following Dataset for Culture-Aware, Multitask, and Multi-domain Evaluation inThai"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Natural language understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Improving the Quality of Web-mined Parallel Corpora of Low-Resource Languages using Debiasing Heuristics",
+      "evidence": "Recent advances in Large Language Models (LLMs) have demonstrated strong capabilities in natural language understanding and contextual reasoning, opening new avenues for complex tasks. (Section 1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Improving the Quality of Web-mined Parallel Corpora of Low-Resource Languages using Debiasing Heuristics"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 4,
+  "characterization": "Across the surveyed literature, contextual reasoning is most commonly defined as the ability to understand instructions or situations and infer information based on functional or situational relationships, rather than literal keyword matching. This framing is applied in domains ranging from detecting objects based on \"daily life requirement\" instructions (Ins-DetCLIP: Aligning Detection Model to Follow Human-Language Instruction) to making \"deontic judgments\" about social norms (G-Safeguard: A Topology-Guided Security Lens and Treatment onLLM-based Multi-agent Systems). A related but distinct definition treats it as the capacity to use information provided exclusively in a prompt to form representations \"without relying on stored factual weights\" (How do Language Models Bind Entities in Context?). Other definitions specify the type of context, such as information distributed across long texts, specialized user queries, or surrounding code for vulnerability analysis. To operationalize this construct, papers report using benchmarks like LongBench, PubMedQA, and MemeReaCon, with the latter being used to evaluate the \"fine-grained contextual reasoning required to understand memes\" (WangchanThaiInstruct...). The construct is also presented as a capability related to natural language understanding.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "How do Language Models Bind Entities in Context?",
+      "Ins-DetCLIP: Aligning Detection Model to Follow Human-Language Instruction"
+    ],
+    "iclr25": [
+      "IRIS: LLM-Assisted Static Analysis for Detecting Security Vulnerabilities",
+      "Not All Heads Matter: A Head-Level KV Cache Compression Method with Integrated Retrieval and Reasoning",
+      "VCR: A Task for Pixel-Level Complex Reasoning in Vision Language Models via Restoring Occluded Text"
+    ],
+    "acl25": [
+      "Data-Constrained Synthesis of Training Data for De-Identification",
+      "G-Safeguard: A Topology-Guided Security Lens and Treatment onLLM-based Multi-agent Systems",
+      "SpeechIQ: Speech-Agentic Intelligence Quotient Across Cognitive Levels in Voice Understanding by Large Language Models",
+      "iNews: A Multimodal Dataset for Modeling Personalized Affective Responses to News"
+    ],
+    "emnlp25": [
+      "Improving the Quality of Web-mined Parallel Corpora of Low-Resource Languages using Debiasing Heuristics",
+      "LegalSearchLM: Rethinking Legal Case Retrieval as Legal Elements Generation",
+      "Think and Recall: Layer-Level Prompting for Lifelong Model Editing",
+      "TracSum: A New Benchmark for Aspect-Based Summarization with Sentence-Level Traceability in Medical Domain",
+      "WangchanThaiInstruct: An instruction-following Dataset for Culture-Aware, Multitask, and Multi-domain Evaluation inThai"
+    ],
+    "neurips24": [
+      "Chain of Agents: Large Language Models Collaborating on Long-Context Tasks",
+      "On the Inductive Bias of Stacking Towards Improving Reasoning",
+      "RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation",
+      "STaRK: Benchmarking LLM Retrieval on Textual and Relational Knowledge Bases"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "iclr25": 3,
+    "acl25": 4,
+    "emnlp25": 5,
+    "neurips24": 4
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "neurips24"
+  ]
+}

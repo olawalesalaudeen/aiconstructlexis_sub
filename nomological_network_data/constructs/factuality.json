@@ -1,0 +1,1523 @@
+{
+  "canonical_name": "Factuality",
+  "type": "construct",
+  "canonical_definition": "Across the provided literature, factuality is most commonly discussed through its failure mode, termed \"hallucination,\" which is broadly defined as the generation of information that is factually incorrect or not supported by a given context. The positive framing of the construct, appearing under names like \"factual correctness,\" \"faithfulness,\" and \"truthfulness,\" consistently refers to the degree to which a model's output aligns with a source of truth, which can be real-world knowledge, a provided document, or visual input. The concept is applied in specialized domains, leading to more specific definitions like \"object hallucination\" for describing non-existent items in images and \"reasoning hallucinations\" for logical inconsistencies in generated thought processes. A large portion of the work operationalizes factuality as a model's latent ability to recall or retrieve information, using terms like \"fact recall\" and \"associative recall\" to describe accessing knowledge stored in its parameters or provided in-context. This construct is measured using a wide array of benchmarks, including question-answering datasets like TriviaQA and Natural Questions, multitask evaluations like MMLU, and knowledge-conflict datasets such as CounterFact. A recurring theme is the distinction between grounding in a provided source versus parametric knowledge, with one study noting that hallucinations are \"grounding errors: errors where the output contains some information that is not supported by the context\" (Teaching Language Models to Hallucinate Less with Synthetic Tasks). Factuality is studied alongside related concepts like commonsense knowledge and is reported in some work to influence long-context understanding. Ultimately, the surveyed papers treat factuality as a multifaceted construct concerning the alignment of generated content with verifiable information, with its absence being a widely documented failure.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Factual correctness",
+    "Factuality",
+    "Hallucination",
+    "Knowledge hallucination",
+    "Molecular hallucination",
+    "Object hallucination",
+    "Truth alignment",
+    "Correctness",
+    "Factual precision",
+    "Factual recall",
+    "Factual consistency",
+    "Prompt faithfulness",
+    "Unfaithfulness",
+    "Fact recall",
+    "Object existence determination",
+    "Reasoning hallucinations",
+    "Reference reliability",
+    "Long-term knowledge recall",
+    "Recall capability",
+    "Associative recall",
+    "Knowledge recall",
+    "Factual knowledge recall",
+    "Association recall",
+    "Associative recall capacity",
+    "Statistical recall",
+    "Factual knowledge retrieval",
+    "Information retrieval and localization",
+    "Retrievability",
+    "Associative memory retrieval",
+    "Causal retrieval",
+    "In-context retrieval",
+    "Information retrieval capability",
+    "Parametric knowledge retrieval",
+    "Retrieval",
+    "Task vector retrieval"
+  ],
+  "papers": [
+    "A",
+    "Automating Legal Interpretation withLLMs: Retrieval, Generation, and Evaluation",
+    "CoAM: Corpus of All-Type Multiword Expressions",
+    "Contrastive Prompting Enhances Sentence Embeddings inLLMs through Inference-Time Steering",
+    "Decoding Knowledge Attribution in Mixture-of-Experts: A Framework of Basic-Refinement Collaboration and Efficiency Analysis",
+    "EAC-MoE: Expert-Selection Aware Compressor for Mixture-of-Experts Large Language Models",
+    "FairITales: Evaluation of Fairness inIndian Contexts with a Focus on Bias and Stereotypes",
+    "From Information to Insight: LeveragingLLMs for Open Aspect-Based Educational Summarization",
+    "LLMs can be easily Confused by Instructional Distractions",
+    "LSSF: Safety Alignment for Large Language Models through Low-Rank Safety Subspace Fusion",
+    "MegaPairs: Massive Data Synthesis for Universal Multimodal Retrieval",
+    "Neural Topic Modeling with Large Language Models in the Loop",
+    "PerSphere: A Comprehensive Framework for Multi-Faceted Perspective Retrieval and Summarization",
+    "ReflectDiffu: Reflect between Emotion-intent Contagion and Mimicry for Empathetic Response Generation via aRL-Diffusion Framework",
+    "Self-Error-Instruct: Generalizing from Errors forLLMs Mathematical Reasoning",
+    "Self-Taught Agentic Long Context Understanding",
+    "Why Safeguarded Ships Run Aground? Aligned Large Language Models\u2019 Safety Mechanisms Tend to Be Anchored in The Template Region",
+    "EvolveBench: A Comprehensive Benchmark for Assessing Temporal Awareness inLLMs on Evolving Knowledge",
+    "Incongruity-aware Tension Field Network for Multi-modal Sarcasm Detection",
+    "On Synthetic Data Strategies for Domain-Specific Generative Retrieval",
+    "Learning to Look at the Other Side: A Semantic Probing Study of Word Embeddings inLLMs with Enabled Bidirectional Attention",
+    "Sticking to the Mean: Detecting Sticky Tokens in Text Embedding Models",
+    "Have We Designed Generalizable Structural Knowledge Promptings? Systematic Evaluation and Rethinking",
+    "MaCP: Minimal yet Mighty Adaptation via Hierarchical Cosine Projection",
+    "ONEBench to Test Them All: Sample-Level Benchmarking Over Open-Ended Capabilities",
+    "Subtle Errors in Reasoning: Preference Learning via Error-injected Self-editing",
+    "2025.emnlp-main.115.checklist",
+    "2025.emnlp-main.1239.checklist",
+    "2025.emnlp-main.1452.checklist",
+    "2025.emnlp-main.1481.checklist",
+    "2025.emnlp-main.1491.checklist",
+    "2025.emnlp-main.150.checklist",
+    "2025.emnlp-main.174.checklist",
+    "2025.emnlp-main.1761.checklist",
+    "2025.emnlp-main.187.checklist",
+    "2025.emnlp-main.684.checklist",
+    "2025.emnlp-main.725.checklist",
+    "2025.emnlp-main.939.checklist",
+    "2025.emnlp-main.982.checklist",
+    "A Multi-Agent Framework with Automated Decision Rule Optimization for Cross-Domain Misinformation Detection",
+    "ActionStudio: A Lightweight Framework for Data and Training of Large Action Models",
+    "Artificial Impressions: Evaluating Large Language Model Behavior Through the Lens of Trait Impressions",
+    "Automated Knowledge Graph Construction using Large Language Models and Sentence Complexity Modelling",
+    "CIKT: A Collaborative and Iterative Knowledge Tracing Framework with Large Language Models",
+    "Chart2Code53: A Large-Scale Diverse and Complex Dataset for Enhancing Chart-to-Code Generation",
+    "CityEQA: A HierarchicalLLMAgent on Embodied Question Answering Benchmark in City Space",
+    "Cognitive Linguistic Identity Fusion Score (CLIFS): A ScalableCognition\u2010Informed Approach to Quantifying Identity Fusion from Text",
+    "Context andPOSin Action: A Comparative Study ofChinese Homonym Disambiguation in Human and Language Models",
+    "Context-Aware Hierarchical Taxonomy Generation for Scientific Papers viaLLM-Guided Multi-Aspect Clustering",
+    "Deriving Strategic Market Insights with Large Language Models: A Benchmark for Forward Counterfactual Generation",
+    "Do It Yourself (DIY): Modifying Images for Poems in a Zero-Shot Setting Using Weighted Prompt Manipulation",
+    "EduVidQA: Generating and Evaluating Long-form Answers to Student Questions based on Lecture Videos",
+    "Embedding Domain Knowledge for Large Language Models via Reinforcement Learning from Augmented Generation",
+    "Exploring Large Language Models for Detecting Mental Disorders",
+    "From Scores to Steps: Diagnosing and ImprovingLLMPerformance in Evidence-Based Medical Calculations",
+    "GRIT: Guided Relational Integration for Efficient Multi-Table Understanding",
+    "HYDRA: A Multi-Head Encoder-only Architecture for Hierarchical Text Classification",
+    "Icon2: Aligning Large Language Models Using Self-Synthetic Preference Data via Inherent Regulation",
+    "Improving Instruct Models for Free: A Study on Partial Adaptation",
+    "Interpretation Meets Safety: A Survey on Interpretation Methods and Tools for ImprovingLLMSafety",
+    "JailbreakLLMs through Internal Stance Manipulation",
+    "Learning to Ask: WhenLLMAgents Meet Unclear Instruction",
+    "Logos as a Well-Tempered Pre-train for Sign Language Recognition",
+    "MAviS: A Multimodal Conversational Assistant For Avian Species",
+    "Mah\u0101n\u0101ma: A Unique Testbed for Literary Entity Discovery and Linking",
+    "Model-Based Ranking of Source Languages for Zero-Shot Cross-Lingual Transfer",
+    "MultiDocFusion : Hierarchical and Multimodal Chunking Pipeline for EnhancedRAGon Long Industrial Documents",
+    "Multilingual vs Crosslingual Retrieval of Fact-Checked Claims: A Tale of Two Approaches",
+    "NOVA-63: Native Omni-lingual Versatile Assessments of 63 Disciplines",
+    "Non-Existent Relationship: Fact-Aware Multi-Level Machine-Generated Text Detection",
+    "PBI-Attack: Prior-Guided Bimodal Interactive Black-Box Jailbreak Attack for Toxicity Maximization",
+    "POINTS-Reader: Distillation-Free Adaptation of Vision-Language Models for Document Conversion",
+    "PORTS: Preference-Optimized Retrievers for Tool Selection with Large Language Models",
+    "Pre-trained Language Models Learn Remarkably Accurate Representations of Numbers",
+    "Pun Unintended:LLMs and the Illusion of Humor Understanding",
+    "QCRD: Quality-guided Contrastive Rationale Distillation for Large Language Models",
+    "QG-CoC: Question-Guided Chain-of-Captions for Large Multimodal Models",
+    "R",
+    "RecGPT: A Foundation Model for Sequential Recommendation",
+    "Recursive Training Loops inLLMs: How training data properties modulate distribution shift in generated data?",
+    "RiTTA: Modeling Event Relations in Text-to-Audio Generation",
+    "SCRIBE: Structured Chain Reasoning for Interactive Behaviour Explanations using Tool Calling",
+    "SSA: Semantic Contamination ofLLM-Driven Fake News Detection",
+    "The Role of Outgoing Connection Heterogeneity in Feedforward Layers of Large Language Models",
+    "Unleashing the Reasoning Potential ofLLMs by Critique Fine-Tuning on One Problem",
+    "Walk and Read Less: Improving the Efficiency of Vision-and-Language Navigation via Tuning-Free Multimodal Token Pruning",
+    "What\u2019s in a prompt? Language models encode literary style in prompt embeddings",
+    "2025.emnlp-main.539.checklist",
+    "Internal Chain-of-Thought: Empirical Evidence for Layer\u2010wise Subtask Scheduling inLLMs",
+    "Transformer-Based Temporal Information Extraction and Application: A Review",
+    "2025.emnlp-main.1448.checklist",
+    "2025.emnlp-main.1685.checklist",
+    "Answer Convergence as a Signal for Early Stopping in Reasoning",
+    "BenchmarkingLLMs for Translating ClassicalChinese Poetry: Evaluating Adequacy, Fluency, and Elegance",
+    "Do Slides Help? Multi-modal Context for Automatic Transcription of Conference Talks",
+    "Implicit Values Embedded in How Humans andLLMs Complete Subjective Everyday Tasks",
+    "Token-level Proximal Policy Optimization for Query Generation",
+    "An Emulator for Fine-tuning Large Language Models using Small Language Models",
+    "Analyzing and Mitigating Object Hallucination in Large Vision-Language Models",
+    "Attention Satisfies: A Constraint-Satisfaction Lens on Factual Errors of Language Models",
+    "BTR: Binary Token Representations for Efficient Retrieval Augmented Language Models",
+    "Can LLM-Generated Misinformation Be Detected?",
+    "Chain-of-Knowledge: Grounding Large Language Models via Dynamic Knowledge Adapting over Heterogeneous Sources",
+    "DoLa: Decoding by Contrasting Layers Improves Factuality in Large Language Models",
+    "Domain-Agnostic Molecular Generation with Chemical Feedback",
+    "FLASK: Fine-grained Language Model Evaluation based on Alignment Skill Sets",
+    "Ferret: Refer and Ground Anything Anywhere at Any Granularity",
+    "Fine-Tuning Language Models for Factuality",
+    "Human Feedback is not Gold Standard",
+    "KITAB: Evaluating LLMs on Constraint Satisfaction for Information Retrieval",
+    "KoLA: Carefully Benchmarking World Knowledge of Large Language Models",
+    "Listen, Think, and Understand",
+    "MetaTool Benchmark for Large Language Models: Deciding Whether to Use Tools and Which to Use",
+    "MiniGPT-4: Enhancing Vision-Language Understanding with Advanced Large Language Models",
+    "Mitigating Hallucination in Large Multi-Modal Models via Robust Instruction Tuning",
+    "RAPPER: Reinforced Rationale-Prompted Paradigm for Natural Language Explanation in Visual Question Answering",
+    "Retrieval is Accurate Generation",
+    "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+    "Self-contradictory Hallucinations of Large Language Models: Evaluation, Detection and Mitigation",
+    "SuRe: Summarizing Retrievals using Answer Candidates for Open-domain QA of LLMs",
+    "Supervised Knowledge Makes Large Language Models Better In-context Learners",
+    "Take a Step Back: Evoking Reasoning via Abstraction in Large Language Models",
+    "Teaching Language Models to Hallucinate Less with Synthetic Tasks",
+    "The Consensus Game: Language Model Generation via Equilibrium Search",
+    "The False Promise of Imitating Proprietary Language Models",
+    "The Truth is in There: Improving Reasoning in Language Models with Layer-Selective Rank Reduction",
+    "Tool-Augmented Reward Modeling",
+    "Towards Understanding Factual Knowledge of Large Language Models",
+    "WebArena: A Realistic Web Environment for Building Autonomous Agents",
+    "The Cost of Scaling Down Large Language Models: Reducing Model Size Affects Memory before In-context Learning",
+    "Think before you speak: Training Language Models With Pause Tokens",
+    "Towards Best Practices of Activation Patching in Language Models: Metrics and Methods",
+    "A Benchmark for Semantic Sensitive Information in LLMs Outputs",
+    "A Closer Look at Machine Unlearning for Large Language Models",
+    "ADIFF: Explaining audio difference using natural language",
+    "Automatic Curriculum Expert Iteration for Reliable LLM Reasoning",
+    "CHiP: Cross-modal Hierarchical Direct Preference Optimization for Multimodal LLMs",
+    "Can Video LLMs Refuse to Answer? Alignment for Answerability in Video Large Language Models",
+    "DAMO: Decoding by Accumulating Activations Momentum for Mitigating Hallucinations in Vision-Language Models",
+    "Differentially Private Steering for Large Language Model Alignment",
+    "Eagle: Exploring The Design Space for Multimodal LLMs with Mixture of Encoders",
+    "Fictitious Synthetic Data Can Improve LLM Factuality via Prerequisite Learning",
+    "Fine-Grained Verifiers: Preference Modeling as Next-token Prediction in Vision-Language Alignment",
+    "G-LLaVA: Solving Geometric Problem with Multi-Modal Large Language Model",
+    "GraphEval: A Lightweight Graph-Based LLM Framework for Idea Evaluation",
+    "Improving Uncertainty Estimation through Semantically Diverse Language Generation",
+    "LLMOPT: Learning to Define and Solve General Optimization Problems from Scratch",
+    "MMDT: Decoding the Trustworthiness and Safety of Multimodal Foundation Models",
+    "Mask-DPO: Generalizable Fine-grained Factuality Alignment of LLMs",
+    "Matryoshka Multimodal Models",
+    "MindSearch: Mimicking Human Minds Elicits Deep AI Searcher",
+    "Mitigating Spurious Correlations in Zero-Shot Multimodal Models",
+    "No Free Lunch: Fundamental Limits of Learning Non-Hallucinating Generative Models",
+    "NoVo: Norm Voting off Hallucinations with Attention Heads in Large Language Models",
+    "Painting with Words: Elevating Detailed Image Captioning with Benchmark and Alignment Learning",
+    "PerturboLLaVA: Reducing Multimodal Hallucinations with Perturbative Visual Training",
+    "Re-Aligning Language to Visual Objects with an Agentic Workflow",
+    "Reconstructive Visual Instruction Tuning",
+    "Reducing Hallucinations in Large Vision-Language Models via Latent Space Steering",
+    "Refine Knowledge of Large Language Models via Adaptive Contrastive Learning",
+    "SCOPE: A Self-supervised Framework for Improving Faithfulness in Conditional Text Generation",
+    "Self-Introspective Decoding: Alleviating Hallucinations for Large Vision-Language Models",
+    "Simple is Effective: The Roles of Graphs and Large Language Models in Knowledge-Graph-Based Retrieval-Augmented Generation",
+    "Synthetic continued pretraining",
+    "TLDR: Token-Level Detective Reward Model for Large Vision Language Models",
+    "Compute-Constrained Data Selection",
+    "MoS: Unleashing Parameter Efficiency of Low-Rank Adaptation with Mixture of Shards",
+    "Perturbation-Restrained Sequential Model Editing",
+    "Gated Delta Networks: Improving Mamba2 with Delta Rule",
+    "Generative Adapter: Contextualizing Language Models in Parameters with A Single Forward Pass",
+    "Hymba: A Hybrid-head Architecture for Small Language Models",
+    "Knowledge Graph Finetuning Enhances Knowledge Manipulation in Large Language Models",
+    "Longhorn: State Space Models are Amortized Online Learners",
+    "Reasoning Elicitation in Language Models via Counterfactual Feedback",
+    "Rodimus*: Breaking the Accuracy-Efficiency Trade-Off with Efficient Attentions",
+    "Uncovering Overfitting in Large Language Model Editing",
+    "Understanding Factual Recall in Transformers via Associative Memories",
+    "Adapting While Learning: Grounding LLMs for Scientific Problems with Tool Usage Adaptation",
+    "DAMA: Data- and Model-aware Alignment of Multi-modal LLMs",
+    "EnIGMA: Interactive Tools Substantially Assist LM Agents in Finding Security Vulnerabilities",
+    "FactTest: Factuality Testing in Large Language Models with Finite-Sample and Distribution-Free Guarantees",
+    "Hierarchical Graph Tokenization for Molecule-Language Alignment",
+    "Hypo3D: Exploring Hypothetical Reasoning in 3D",
+    "Look Twice Before You Answer: Memory-Space Visual Retracing for Hallucination Mitigation in Multimodal Large Language Models",
+    "Monte Carlo Tree Search for Comprehensive Exploration in LLM-Based Automatic Heuristic Design",
+    "PoisonedEye: Knowledge Poisoning Attack on Retrieval-Augmented Generation based Large Vision-Language Models",
+    "Position: Trustworthy AI Agents Require the Integration of Large Language Models and Formal Methods",
+    "Reasoning-as-Logic-Units: Scaling Test-Time Reasoning in Large Language Models Through Logic Unit Alignment",
+    "Robust Multimodal Large Language Models Against Modality Conflict",
+    "The Hidden Life of Tokens: Reducing Hallucination of Large Vision-Language Models Via Visual Information Steering",
+    "To Steer or Not to Steer? Mechanistic Error Reduction with Abstention for Language Models",
+    "Toward Robust Hyper-Detailed Image Captioning: A Multiagent Approach and Dual Evaluation Metrics for Factuality and Coverage",
+    "TruthFlow: Truthful LLM Generation via Representation Flow Correction",
+    "Direct Density Ratio Optimization: A Statistically Consistent Approach to Aligning Large Language Models",
+    "Towards Rationale-Answer Alignment of LVLMs via Self-Rationale Calibration",
+    "Bring Reason to Vision: Understanding Perception and Reasoning through Model Merging",
+    "Data Mixing Optimization for Supervised Fine-Tuning of Large Language Models",
+    "Efficient Length-Generalizable Attention via Causal Retrieval for Long-Context Language Modeling",
+    "Improving Diversity in Language Models: When Temperature Fails, Change the Loss",
+    "In-Context Learning as Conditioned Associative Memory Retrieval",
+    "LOGO \u2014 Long cOntext aliGnment via efficient preference Optimization",
+    "Massive Values in Self-Attention Modules are the Key to Contextual Knowledge Understanding",
+    "Minerva: A Programmable Memory Test Benchmark for Language Models",
+    "NoLiMa: Long-Context Evaluation Beyond Literal Matching",
+    "PhantomWiki: On-Demand Datasets for Reasoning and Retrieval Evaluation",
+    "Position: Enough of Scaling LLMs! Lets Focus on Downscaling",
+    "Provable In-Context Vector Arithmetic via Retrieving Task Concepts",
+    "RE-IMAGINE: Symbolic Benchmark Synthesis for Reasoning Evaluation",
+    "UGPhysics: A Comprehensive Benchmark for Undergraduate Physics Reasoning with Large Language Models",
+    "Understanding Input Selectivity in Mamba: Impact on Approximation Power, Memorization, and Associative Recall Capacity",
+    "Understanding the Skill Gap in Recurrent Language Models: The Role of the Gather-and-Aggregate Mechanism",
+    "ALERT: AnLLM-powered Benchmark for Automatic Evaluation of Recommendation Explanations",
+    "ALiiCE: Evaluating Positional Fine-grained Citation Generation",
+    "AdvisorQA: Towards Helpful and Harmless Advice-seeking Question Answering with Collective Intelligence",
+    "Amphista: Bi-directional Multi-head Decoding for AcceleratingLLMInference",
+    "Automatically Discovering How Misogyny is Framed on Social Media",
+    "B4: A Black-Box Scrubbing Attack onLLMWatermarks",
+    "Benchmarking Large Language Models on Answering and Explaining Challenging Medical Questions",
+    "Benchmarking and Building Zero-ShotHindi Retrieval Model withHindi-BEIRandNLLB-E5",
+    "COVE:COntext andVEracity prediction for out-of-context images",
+    "DREAM: Improving Video-Text Retrieval Through Relevance-Based Augmentation Using Large Foundation Models",
+    "Detect, Disambiguate, and Translate: On-Demand Visual Reasoning for Multimodal Machine Translation with Large Vision-Language Models",
+    "Diverse In-Context Example Selection After Decomposing Programs and Aligned Utterances Improves Semantic Parsing",
+    "Entangled Relations: LeveragingNLIand Meta-analysis to Enhance Biomedical Relation Extraction",
+    "How Can We Diagnose and Treat Bias in Large Language Models for Clinical Decision-Making?",
+    "Identifying Emerging Concepts in Large Corpora",
+    "JAWAHER: A Multidialectal Dataset ofArabic Proverbs forLLMBenchmarking",
+    "LibEvolutionEval: A Benchmark and Study for Version-Specific Code Generation",
+    "Prototypical Extreme Multi-label Classification with a Dynamic Margin Loss",
+    "Regularized Best-of-N Sampling with MinimumBayes Risk Objective for Language Model Alignment",
+    "SALAD: Improving Robustness and Generalization through Contrastive Learning with Structure-Aware andLLM-Driven Augmented Data",
+    "SafetyQuizzer: Timely and Dynamic Evaluation on the Safety ofLLMs",
+    "Towards Quantifying Commonsense Reasoning with Mechanistic Insights",
+    "A Unified Supervised and Unsupervised Dialogue Topic Segmentation Framework Based on Utterance Pair Modeling",
+    "Probe-Free Low-Rank Activation Intervention",
+    "$\\texttt{ConflictBank}$: A Benchmark for Evaluating the Influence of Knowledge Conflicts in LLMs",
+    "Adversarial Representation Engineering: A General Model Editing Framework for Large Language Models",
+    "Aligning Large Language Models with Representation Editing: A Control Perspective",
+    "Alignment for Honesty",
+    "AutoSurvey: Large Language Models Can Automatically Write Surveys",
+    "Benchmarking Complex Instruction-Following with Multiple Constraints Composition",
+    "Beyond Accuracy: Ensuring Correct Predictions With Correct Rationales",
+    "CARES: A Comprehensive Benchmark of Trustworthiness in Medical Vision Language Models",
+    "CRAG - Comprehensive RAG Benchmark",
+    "CTIBench: A Benchmark for Evaluating LLMs in Cyber Threat Intelligence",
+    "Calibrating Reasoning in Language Models with Internal Consistency",
+    "CiteME: Can Language Models Accurately Cite Scientific Claims?",
+    "CoIN: A Benchmark of Continual Instruction Tuning for Multimodel Large Language Models",
+    "Decoding-Time Language Model Alignment with Multiple Objectives",
+    "Distributional Preference Alignment of LLMs via Optimal Transport",
+    "Enhancing LLM\u2019s Cognition via Structurization",
+    "Enhancing Multiple Dimensions of Trustworthiness in LLMs via Sparse Activation Control",
+    "Exploiting LLM Quantization",
+    "G-Retriever: Retrieval-Augmented Generation for Textual Graph Understanding and Question Answering",
+    "HelpSteer 2: Open-source dataset for training top-performing reward models",
+    "I Don't Know: Explicit Modeling of Uncertainty with an [IDK] Token",
+    "Is the MMI Criterion Necessary for Interpretability? Degenerating Non-causal Features to Plain Noise for Self-Rationalization",
+    "KnowGPT: Knowledge Graph based Prompting for Large Language Models",
+    "LACIE: Listener-Aware Finetuning for Calibration in Large Language Models",
+    "LLM-Check: Investigating Detection of Hallucinations in Large Language Models",
+    "LLMCBench: Benchmarking Large Language Model Compression for Efficient Deployment",
+    "Large language model validity via enhanced conformal prediction methods",
+    "Learning Goal-Conditioned Representations for Language Reward Models",
+    "Learning to Understand: Identifying Interactions via the M\u00f6bius Transform",
+    "LoFiT: Localized Fine-tuning on LLM Representations",
+    "Long-form factuality in large language models",
+    "MEQA: A Benchmark for Multi-hop Event-centric Question Answering with Explanations",
+    "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+    "MMLONGBENCH-DOC: Benchmarking Long-context Document Understanding with Visualizations",
+    "MedJourney: Benchmark and Evaluation of Large Language Models over Patient Clinical Journey",
+    "MediQ: Question-Asking LLMs and a Benchmark for Reliable Interactive Clinical Reasoning",
+    "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+    "Mitigating Object Hallucination via Concentric Causal Attention",
+    "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models",
+    "Navigating the Safety Landscape: Measuring Risks in Finetuning Large Language Models",
+    "Nearest Neighbor Speculative Decoding for LLM Generation and Attribution",
+    "Observational Scaling Laws and the Predictability of Langauge Model Performance",
+    "On Giant's Shoulders: Effortless Weak to Strong by Dynamic Logits Fusion",
+    "On scalable oversight with weak LLMs judging strong LLMs",
+    "PaCE: Parsimonious Concept Engineering for Large Language Models",
+    "Personalized Steering of Large Language Models: Versatile Steering Vectors Through Bi-directional Preference Optimization",
+    "RAGChecker: A Fine-grained Framework for Diagnosing Retrieval-Augmented Generation",
+    "RWKU: Benchmarking Real-World Knowledge Unlearning for Large Language Models",
+    "SIRIUS : Contexual Sparisty with Correction for Efficient LLMs",
+    "SLED: Self Logits Evolution Decoding for Improving Factuality in Large Language Models",
+    "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+    "Scaling Retrieval-Based Language Models with a Trillion-Token Datastore",
+    "SciFIBench: Benchmarking Large Multimodal Models for Scientific Figure Interpretation",
+    "SeafloorAI: A Large-scale Vision-Language Dataset for Seafloor Geological Survey",
+    "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+    "Spectral Editing of Activations for Large Language Model Alignment",
+    "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback",
+    "UrbanKGent: A Unified Large Language Model Agent Framework for Urban Knowledge Graph Construction",
+    "Visual Riddles: a Commonsense and World Knowledge Challenge for Large Vision and Language Models",
+    "Who Evaluates the Evaluations? Objectively Scoring Text-to-Image Prompt Coherence Metrics with T2IScoreScore (TS2)",
+    "WikiContradict: A Benchmark for Evaluating LLMs on Real-World Knowledge Conflicts from Wikipedia",
+    "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena",
+    "Would I Lie To You? Inference Time Alignment of Language Models using Direct Preference Heads",
+    "ANAH-v2: Scaling Analytical Hallucination Annotation of Large Language Models",
+    "Artemis:  Towards Referential Understanding in Complex Videos",
+    "Automated Multi-level Preference for MLLMs",
+    "Boosting the Potential of Large Language Models with an Intelligent Information Assistant",
+    "CALVIN: Improved Contextual Video Captioning via Instruction Tuning",
+    "CODE: Contrasting Self-generated Description to Combat Hallucination in Large Multi-modal Models",
+    "ChatTracker: Enhancing Visual Tracking Performance via Chatting with Multimodal Large Language Model",
+    "CogVLM: Visual Expert for Pretrained Language Models",
+    "Hallo3D: Multi-Modal Hallucination Detection and Mitigation for Consistent 3D Content Generation",
+    "LLMDFA: Analyzing Dataflow in Code with Large Language Models",
+    "Leveraging Hallucinations to Reduce Manual Prompt Dependency in Promptable Segmentation",
+    "MMBench-Video: A Long-Form Multi-Shot Benchmark for Holistic Video Understanding",
+    "Microstructures and Accuracy of Graph Recall by Large Language Models",
+    "Mobile-Agent-v2: Mobile Device Operation Assistant with Effective Navigation via Multi-Agent Collaboration",
+    "NaturalBench: Evaluating Vision-Language Models on Natural Adversarial Samples",
+    "Selective Generation for Controllable Language Models",
+    "Time-Reversal Provides Unsupervised Feedback to LLMs",
+    "Training-Free Open-Ended Object Detection and Segmentation via Attention as Prompts",
+    "Unleashing Region Understanding in Intermediate Layers for MLLM-based Referring Expression Generation",
+    "Vript: A Video Is Worth Thousands of Words",
+    "Web-Scale Visual Entity Recognition: An LLM-Driven Data Approach",
+    "WildVision: Evaluating Vision-Language Models in the Wild with Human Preferences",
+    "Yo'LLaVA: Your Personalized Language and Vision Assistant",
+    "Multi-Object Hallucination in Vision Language Models",
+    "AmoebaLLM: Constructing Any-Shape Large Language Models for Efficient and Instant Deployment",
+    "SelectIT: Selective Instruction Tuning for LLMs via Uncertainty-Aware Self-Reflection"
+  ],
+  "paper_count": 324,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "An observable failure mode where the model generates information that is factually incorrect or not supported by the provided context.",
+      "paper": "An LLM can Fool Itself: A Prompt-Based Adversarial Attack",
+      "original_name": "Hallucination"
+    },
+    {
+      "text": "The degree to which a model's generated statements are factually correct and free from errors.",
+      "paper": "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+      "original_name": "Factual accuracy"
+    },
+    {
+      "text": "The degree to which a model's generated text, particularly its reasoning steps and final answers, aligns with established facts from external knowledge sources.",
+      "paper": "Attention Satisfies: A Constraint-Satisfaction Lens on Factual Errors of Language Models",
+      "original_name": "Factual correctness"
+    },
+    {
+      "text": "The degree to which a model's generated statements are factually correct and grounded in real-world knowledge.",
+      "paper": "An Emulator for Fine-tuning Large Language Models using Small Language Models",
+      "original_name": "Factuality"
+    },
+    {
+      "text": "The extent to which a model stores and can retrieve correct world facts from its parameters when queried.",
+      "paper": "Take a Step Back: Evoking Reasoning via Abstraction in Large Language Models",
+      "original_name": "Factual knowledge"
+    },
+    {
+      "text": "The generation of textual descriptions that refer to objects not actually present in the input image.",
+      "paper": "Analyzing and Mitigating Object Hallucination in Large Vision-Language Models",
+      "original_name": "Object hallucination"
+    },
+    {
+      "text": "The tendency of a model to generate content that is inconsistent with actual facts, even when those facts are provided, reflecting a failure in knowledge faithfulness.",
+      "paper": "KoLA: Carefully Benchmarking World Knowledge of Large Language Models",
+      "original_name": "Knowledge hallucination"
+    },
+    {
+      "text": "The model's latent tendency to generate molecules that are structurally and syntactically correct but fail to exhibit the expected chemical activity or practical utility in real-world applications.",
+      "paper": "Domain-Agnostic Molecular Generation with Chemical Feedback",
+      "original_name": "Molecular hallucination"
+    },
+    {
+      "text": "The degree to which a model's generated statements correspond to factual reality.",
+      "paper": "Aligning Large Language Models with Representation Editing: A Control Perspective",
+      "original_name": "Truthfulness"
+    },
+    {
+      "text": "The extent to which a model's stated reasoning or answer behavior remains grounded in the provided evidence rather than being driven by misleading annotations or shortcuts.",
+      "paper": "SciFIBench: Benchmarking Large Multimodal Models for Scientific Figure Interpretation",
+      "original_name": "Reasoning faithfulness"
+    },
+    {
+      "text": "The extent to which a model's outputs match the ground truth in the required answer form for a task.",
+      "paper": "CoIN: A Benchmark of Continual Instruction Tuning for Multimodel Large Language Models",
+      "original_name": "Truth alignment"
+    },
+    {
+      "text": "The degree to which the model's generated responses are factually grounded in and supported by the information provided in the source graph.",
+      "paper": "G-Retriever: Retrieval-Augmented Generation for Textual Graph Understanding and Question Answering",
+      "original_name": "Faithfulness"
+    },
+    {
+      "text": "The factual accuracy and correctness of the information provided in the model's response.",
+      "paper": "Decoding-Time Language Model Alignment with Multiple Objectives",
+      "original_name": "Correctness"
+    },
+    {
+      "text": "The proportion of factual claims in a model's response that are supported by external knowledge sources.",
+      "paper": "Long-form factuality in large language models",
+      "original_name": "Factual precision"
+    },
+    {
+      "text": "The extent to which a response includes enough supported facts to satisfy a user-preferred response length.",
+      "paper": "Long-form factuality in large language models",
+      "original_name": "Factual recall"
+    },
+    {
+      "text": "The degree to which generated annotations agree with the original ground-truth or source annotations.",
+      "paper": "SeafloorAI: A Large-scale Vision-Language Dataset for Seafloor Geological Survey",
+      "original_name": "Factual consistency"
+    },
+    {
+      "text": "The degree to which a generated image semantically aligns with and satisfies the requirements of the text prompt it was conditioned on.",
+      "paper": "Who Evaluates the Evaluations? Objectively Scoring Text-to-Image Prompt Coherence Metrics with T2IScoreScore (TS2)",
+      "original_name": "Prompt faithfulness"
+    },
+    {
+      "text": "The tendency of a model to generate information that is not grounded in the provided source document.",
+      "paper": "MMLONGBENCH-DOC: Benchmarking Long-context Document Understanding with Visualizations",
+      "original_name": "Unfaithfulness"
+    },
+    {
+      "text": "The latent ability to retrieve specific factual knowledge from training data when prompted.",
+      "paper": "KoLA: Carefully Benchmarking World Knowledge of Large Language Models",
+      "original_name": "Fact recall"
+    },
+    {
+      "text": "The model's latent capability to correctly identify whether a specified object is present or absent in a given image.",
+      "paper": "LibEvolutionEval: A Benchmark and Study for Version-Specific Code Generation",
+      "original_name": "Object existence determination"
+    },
+    {
+      "text": "The latent tendency of LLMs to generate reasoning steps in natural language that are inconsistent with the logic of generated programs, manifesting as logical errors, missing steps, or misordered connections despite seemingly correct justifications.",
+      "paper": "Reasoning-as-Logic-Units: Scaling Test-Time Reasoning in Large Language Models Through Logic Unit Alignment",
+      "original_name": "Reasoning hallucinations"
+    },
+    {
+      "text": "The latent ability of a model to generate citations that correspond to real, existing academic publications with accurate metadata.",
+      "paper": "POINTS-Reader: Distillation-Free Adaptation of Vision-Language Models for Document Conversion",
+      "original_name": "Reference reliability"
+    },
+    {
+      "text": "The latent ability to access and retrieve stored factual knowledge about the world, such as historical, scientific, or geographical facts, independent of the current context.",
+      "paper": "Context-Aware Hierarchical Taxonomy Generation for Scientific Papers viaLLM-Guided Multi-Aspect Clustering",
+      "original_name": "Long-term knowledge recall"
+    },
+    {
+      "text": "The model's ability to retrieve specific, factual information from a long context provided as input.",
+      "paper": "Rodimus*: Breaking the Accuracy-Efficiency Trade-Off with Efficient Attentions",
+      "original_name": "Recall capability"
+    },
+    {
+      "text": "The latent reliance on statistical correlations or training data retrieval rather than genuine reasoning processes.",
+      "paper": "Reasoning Elicitation in Language Models via Counterfactual Feedback",
+      "original_name": "Recall"
+    },
+    {
+      "text": "The ability to retrieve a specific value when prompted with its associated key.",
+      "paper": "Gated Delta Networks: Improving Mamba2 with Delta Rule",
+      "original_name": "Associative recall"
+    },
+    {
+      "text": "The ability of an edited model to retrieve newly edited factual knowledge when prompted directly or through paraphrase.",
+      "paper": "Uncovering Overfitting in Large Language Model Editing",
+      "original_name": "Knowledge recall"
+    },
+    {
+      "text": "The latent ability of a model to access and utilize stored factual information relevant to a given context during reasoning.",
+      "paper": "Learning to Look at the Other Side: A Semantic Probing Study of Word Embeddings inLLMs with Enabled Bidirectional Attention",
+      "original_name": "Factual knowledge recall"
+    },
+    {
+      "text": "The model's ability to access and retrieve stored factual information when prompted.",
+      "paper": "Provable In-Context Vector Arithmetic via Retrieving Task Concepts",
+      "original_name": "Factual knowledge retrieval"
+    },
+    {
+      "text": "The ability of a model to retrieve stored information based on contextual cues, such as recovering a value given a key or predicting the successor of a previously seen token.",
+      "paper": "Understanding Input Selectivity in Mamba: Impact on Approximation Power, Memorization, and Associative Recall Capacity",
+      "original_name": "Associative recall capacity"
+    },
+    {
+      "text": "The fundamental ability to recall previously seen information based on associative links present in the input context.",
+      "paper": "NoLiMa: Long-Context Evaluation Beyond Literal Matching",
+      "original_name": "Association recall"
+    },
+    {
+      "text": "The degree to which a model's performance relies on recognizing and reproducing patterns from its training data rather than engaging in systematic reasoning.",
+      "paper": "RE-IMAGINE: Symbolic Benchmark Synthesis for Reasoning Evaluation",
+      "original_name": "Statistical recall"
+    },
+    {
+      "text": "The latent ability to precisely locate and extract relevant information from earlier in the input sequence, particularly for mapping contextual cues to specific outputs such as answer labels.",
+      "paper": "Understanding the Skill Gap in Recurrent Language Models: The Role of the Gather-and-Aggregate Mechanism",
+      "original_name": "In-context retrieval"
+    },
+    {
+      "text": "The latent ability of a transformer to extract a high-level task concept vector from demonstration pairs during in-context learning, enabling generalization across queries within the same task.",
+      "paper": "Provable In-Context Vector Arithmetic via Retrieving Task Concepts",
+      "original_name": "Task vector retrieval"
+    },
+    {
+      "text": "The latent ability to locate and extract specific, relevant pieces of information from a large body of text.",
+      "paper": "Attention-Level Speculation",
+      "original_name": "Information retrieval"
+    },
+    {
+      "text": "The latent ability to access and utilize relevant information from a large external document corpus, especially when the full corpus exceeds the model's context window.",
+      "paper": "PhantomWiki: On-Demand Datasets for Reasoning and Retrieval Evaluation",
+      "original_name": "Retrieval"
+    },
+    {
+      "text": "The latent ability to retrieve past contextual chunks that are most useful for predicting future chunks, trained end-to-end via gradient propagation through relevance scores.",
+      "paper": "Efficient Length-Generalizable Attention via Causal Retrieval for Long-Context Language Modeling",
+      "original_name": "Causal retrieval"
+    },
+    {
+      "text": "The latent ability of a model to retrieve factual knowledge that has been encoded during pre-training, independent of the current input context.",
+      "paper": "Massive Values in Self-Attention Modules are the Key to Contextual Knowledge Understanding",
+      "original_name": "Parametric knowledge retrieval"
+    },
+    {
+      "text": "The model's underlying ability to accurately locate and identify key, salient pieces of information embedded within a long context.",
+      "paper": "LOGO \u2014 Long cOntext aliGnment via efficient preference Optimization",
+      "original_name": "Information retrieval capability"
+    },
+    {
+      "text": "The latent capacity of a model to retrieve stored patterns or knowledge by matching a query to the most relevant memory through similarity-based dynamics, akin to Hopfield network behavior.",
+      "paper": "In-Context Learning as Conditioned Associative Memory Retrieval",
+      "original_name": "Associative memory retrieval"
+    },
+    {
+      "text": "The latent ability to locate, search for, and extract relevant information from context memory based on instructions or queries, treating the context as a dynamic memory store.",
+      "paper": "Minerva: A Programmable Memory Test Benchmark for Language Models",
+      "original_name": "Information retrieval and localization"
+    },
+    {
+      "text": "The latent property of a poison sample to be successfully retrieved by the system in response to a target query, determined by its embedding proximity to the query.",
+      "paper": "PoisonedEye: Knowledge Poisoning Attack on Retrieval-Augmented Generation based Large Vision-Language Models",
+      "original_name": "Retrievability"
+    }
+  ],
+  "definition_count": 42,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Fine-Tuning Language Models for Factuality",
+      "evidence": "",
+      "paper_count": 16,
+      "papers_by_conference": {
+        "iclr24": [
+          "Fine-Tuning Language Models for Factuality",
+          "DoLa: Decoding by Contrasting Layers Improves Factuality in Large Language Models"
+        ],
+        "neurips24": [
+          "SLED: Self Logits Evolution Decoding for Improving Factuality in Large Language Models",
+          "Nearest Neighbor Speculative Decoding for LLM Generation and Attribution",
+          "MMLONGBENCH-DOC: Benchmarking Long-context Document Understanding with Visualizations"
+        ],
+        "iclr25": [
+          "Integrative Decoding: Improving Factuality via Implicit Self-consistency"
+        ],
+        "naacl25": [
+          "Style Transfer with Multi-iteration Preference Optimization",
+          "Benchmarking Large Language Models on Answering and Explaining Challenging Medical Questions"
+        ],
+        "icml25": [
+          "Memory Layers at Scale"
+        ],
+        "emnlp25": [
+          "PBI-Attack: Prior-Guided Bimodal Interactive Black-Box Jailbreak Attack for Toxicity Maximization",
+          "Unleashing the Reasoning Potential ofLLMs by Critique Fine-Tuning on One Problem",
+          "MAIN: Mutual Alignment Is Necessary for instruction tuning",
+          "Model-Based Ranking of Source Languages for Zero-Shot Cross-Lingual Transfer",
+          "MultiDocFusion : Hierarchical and Multimodal Chunking Pipeline for EnhancedRAGon Long Industrial Documents",
+          "Chart2Code53: A Large-Scale Diverse and Complex Dataset for Enhancing Chart-to-Code Generation",
+          "PIIvot: A LightweightNLPAnonymization Framework for Question-Anchored Tutoring Dialogues"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "FactScore",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Fine-Tuning Language Models for Factuality",
+      "evidence": "",
+      "paper_count": 9,
+      "papers_by_conference": {
+        "iclr24": [
+          "Fine-Tuning Language Models for Factuality",
+          "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection"
+        ],
+        "neurips24": [
+          "Large language model validity via enhanced conformal prediction methods"
+        ],
+        "iclr25": [
+          "Is Factuality Enhancement a Free Lunch For LLMs? Better Factuality Can Lead to Worse Context-Faithfulness",
+          "Mask-DPO: Generalizable Fine-grained Factuality Alignment of LLMs",
+          "Fictitious Synthetic Data Can Improve LLM Factuality via Prerequisite Learning"
+        ],
+        "icml25": [
+          "Toward Robust Hyper-Detailed Image Captioning: A Multiagent Approach and Dual Evaluation Metrics for Factuality and Coverage"
+        ],
+        "emnlp25": [
+          "Connecting the Knowledge Dots: Retrieval-augmented Knowledge Connection for Commonsense Reasoning",
+          "Agent-as-Judge for Factual Summarization of Long Narratives"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-as-a-judge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Fine-Tuning Language Models for Factuality",
+      "evidence": "",
+      "paper_count": 5,
+      "papers_by_conference": {
+        "iclr24": [
+          "Fine-Tuning Language Models for Factuality",
+          "An Emulator for Fine-tuning Large Language Models using Small Language Models"
+        ],
+        "naacl25": [
+          "CodeSCM: Causal Analysis for Multi-Modal Code Generation"
+        ],
+        "icml25": [
+          "SK-VQA: Synthetic Knowledge Generation at Scale for Training Context-Augmented Multimodal LLMs",
+          "Generalized Interpolating Discrete Diffusion"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "DoLa: Decoding by Contrasting Layers Improves Factuality in Large Language Models",
+      "evidence": "",
+      "paper_count": 5,
+      "papers_by_conference": {
+        "iclr24": [
+          "DoLa: Decoding by Contrasting Layers Improves Factuality in Large Language Models"
+        ],
+        "neurips24": [
+          "SIRIUS : Contexual Sparisty with Correction for Efficient LLMs",
+          "SLED: Self Logits Evolution Decoding for Improving Factuality in Large Language Models"
+        ],
+        "iclr25": [
+          "Is Factuality Enhancement a Free Lunch For LLMs? Better Factuality Can Lead to Worse Context-Faithfulness",
+          "Integrative Decoding: Improving Factuality via Implicit Self-consistency"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Human Feedback is not Gold Standard",
+      "evidence": "",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "iclr24": [
+          "Human Feedback is not Gold Standard"
+        ],
+        "icml25": [
+          "SK-VQA: Synthetic Knowledge Generation at Scale for Training Context-Augmented Multimodal LLMs",
+          "Toward Robust Hyper-Detailed Image Captioning: A Multiagent Approach and Dual Evaluation Metrics for Factuality and Coverage"
+        ],
+        "emnlp25": [
+          "Connecting the Knowledge Dots: Retrieval-augmented Knowledge Connection for Commonsense Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Large language model validity via enhanced conformal prediction methods",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "neurips24": [
+          "Large language model validity via enhanced conformal prediction methods"
+        ],
+        "iclr25": [
+          "SCOPE: A Self-supervised Framework for Improving Faithfulness in Conditional Text Generation"
+        ],
+        "naacl25": [
+          "RAGLLMs are Not Safer: A Safety Analysis of Retrieval-Augmented Generation for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TriviaQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "RWKU: Benchmarking Real-World Knowledge Unlearning for Large Language Models",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "neurips24": [
+          "RWKU: Benchmarking Real-World Knowledge Unlearning for Large Language Models"
+        ],
+        "iclr25": [
+          "Catastrophic Failure of LLM Unlearning via Quantization"
+        ],
+        "icml25": [
+          "Memory Layers at Scale"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Natural Questions",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "The False Promise of Imitating Proprietary Language Models",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr24": [
+          "The False Promise of Imitating Proprietary Language Models"
+        ],
+        "icml25": [
+          "Memory Layers at Scale"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Instruction following",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "CoIN: A Benchmark of Continual Instruction Tuning for Multimodel Large Language Models",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "CoIN: A Benchmark of Continual Instruction Tuning for Multimodel Large Language Models"
+        ],
+        "naacl25": [
+          "FiNE: Filtering and Improving Noisy Data Elaborately with Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Mask-DPO: Generalizable Fine-grained Factuality Alignment of LLMs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Mask-DPO: Generalizable Fine-grained Factuality Alignment of LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense knowledge",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "FLASK: Fine-grained Language Model Evaluation based on Alignment Skill Sets",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "FLASK: Fine-grained Language Model Evaluation based on Alignment Skill Sets"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-context learning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Supervised Knowledge Makes Large Language Models Better In-context Learners",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Supervised Knowledge Makes Large Language Models Better In-context Learners"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "HelpSteer 2: Open-source dataset for training top-performing reward models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "HelpSteer 2: Open-source dataset for training top-performing reward models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "FLASK",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Mixture-of-Agents Enhances Large Language Model Capabilities",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Mixture-of-Agents Enhances Large Language Model Capabilities"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Factual recall",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Long-form factuality in large language models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Long-form factuality in large language models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CLIP score",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Who Evaluates the Evaluations? Objectively Scoring Text-to-Image Prompt Coherence Metrics with T2IScoreScore (TS2)",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Who Evaluates the Evaluations? Objectively Scoring Text-to-Image Prompt Coherence Metrics with T2IScoreScore (TS2)"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Implicit knowledge",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "SLED: Self Logits Evolution Decoding for Improving Factuality in Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "SLED: Self Logits Evolution Decoding for Improving Factuality in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "FactScore",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Benchmarking Large Language Models on Answering and Explaining Challenging Medical Questions",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Benchmarking Large Language Models on Answering and Explaining Challenging Medical Questions"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AlignScore",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Ethical Concern Identification inNLP: A Corpus ofACLAnthology Ethics Statements",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Ethical Concern Identification inNLP: A Corpus ofACLAnthology Ethics Statements"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Biography",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Mask-DPO: Generalizable Fine-grained Factuality Alignment of LLMs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Mask-DPO: Generalizable Fine-grained Factuality Alignment of LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Is Factuality Enhancement a Free Lunch For LLMs? Better Factuality Can Lead to Worse Context-Faithfulness",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Is Factuality Enhancement a Free Lunch For LLMs? Better Factuality Can Lead to Worse Context-Faithfulness"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Overconfidence",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Is Factuality Enhancement a Free Lunch For LLMs? Better Factuality Can Lead to Worse Context-Faithfulness",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Is Factuality Enhancement a Free Lunch For LLMs? Better Factuality Can Lead to Worse Context-Faithfulness"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HallusionBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "EMMA: Empowering Multi-modal Mamba with Structural and Hierarchical Alignment",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "EMMA: Empowering Multi-modal Mamba with Structural and Hierarchical Alignment"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OpenBookQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Context Steering: Controllable Personalization at Inference Time",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Context Steering: Controllable Personalization at Inference Time"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Self-consistency",
+      "other_type": "measurements",
+      "relationship_type": "causes",
+      "paper": "Integrative Decoding: Improving Factuality via Implicit Self-consistency",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Integrative Decoding: Improving Factuality via Implicit Self-consistency"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Logical consistency",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Logically Consistent Language Models via Neuro-Symbolic Integration",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Logically Consistent Language Models via Neuro-Symbolic Integration"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Boolean question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Logically Consistent Language Models via Neuro-Symbolic Integration",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Logically Consistent Language Models via Neuro-Symbolic Integration"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SimpleQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Controlled Low-Rank Adaptation with Subspace Regularization for Continued Training on Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Controlled Low-Rank Adaptation with Subspace Regularization for Continued Training on Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Refusal to answer",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Deriving Strategic Market Insights with Large Language Models: A Benchmark for Forward Counterfactual Generation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Deriving Strategic Market Insights with Large Language Models: A Benchmark for Forward Counterfactual Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Chinese SimpleQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Controlled Low-Rank Adaptation with Subspace Regularization for Continued Training on Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Controlled Low-Rank Adaptation with Subspace Regularization for Continued Training on Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "RM-Bench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Quantifying Lexical Semantic Shift via Unbalanced Optimal Transport",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Quantifying Lexical Semantic Shift via Unbalanced Optimal Transport"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "JudgeBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Quantifying Lexical Semantic Shift via Unbalanced Optimal Transport",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Quantifying Lexical Semantic Shift via Unbalanced Optimal Transport"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Alignment tax",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Controlled Low-Rank Adaptation with Subspace Regularization for Continued Training on Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Controlled Low-Rank Adaptation with Subspace Regularization for Continued Training on Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Knowledge acquisition",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Memory Layers at Scale",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Memory Layers at Scale"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 35,
+  "incoming_relationship_count": 8,
+  "outgoing_relationship_count": 27,
+  "characterization": "Across the provided literature, factuality is most commonly discussed through its failure mode, termed \"hallucination,\" which is broadly defined as the generation of information that is factually incorrect or not supported by a given context. The positive framing of the construct, appearing under names like \"factual correctness,\" \"faithfulness,\" and \"truthfulness,\" consistently refers to the degree to which a model's output aligns with a source of truth, which can be real-world knowledge, a provided document, or visual input. The concept is applied in specialized domains, leading to more specific definitions like \"object hallucination\" for describing non-existent items in images and \"reasoning hallucinations\" for logical inconsistencies in generated thought processes. A large portion of the work operationalizes factuality as a model's latent ability to recall or retrieve information, using terms like \"fact recall\" and \"associative recall\" to describe accessing knowledge stored in its parameters or provided in-context. This construct is measured using a wide array of benchmarks, including question-answering datasets like TriviaQA and Natural Questions, multitask evaluations like MMLU, and knowledge-conflict datasets such as CounterFact. A recurring theme is the distinction between grounding in a provided source versus parametric knowledge, with one study noting that hallucinations are \"grounding errors: errors where the output contains some information that is not supported by the context\" (Teaching Language Models to Hallucinate Less with Synthetic Tasks). Factuality is studied alongside related concepts like commonsense knowledge and is reported in some work to influence long-context understanding. Ultimately, the surveyed papers treat factuality as a multifaceted construct concerning the alignment of generated content with verifiable information, with its absence being a widely documented failure.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "An Emulator for Fine-tuning Large Language Models using Small Language Models",
+      "Analyzing and Mitigating Object Hallucination in Large Vision-Language Models",
+      "Attention Satisfies: A Constraint-Satisfaction Lens on Factual Errors of Language Models",
+      "BTR: Binary Token Representations for Efficient Retrieval Augmented Language Models",
+      "Can LLM-Generated Misinformation Be Detected?",
+      "Chain-of-Knowledge: Grounding Large Language Models via Dynamic Knowledge Adapting over Heterogeneous Sources",
+      "DoLa: Decoding by Contrasting Layers Improves Factuality in Large Language Models",
+      "Domain-Agnostic Molecular Generation with Chemical Feedback",
+      "FLASK: Fine-grained Language Model Evaluation based on Alignment Skill Sets",
+      "Ferret: Refer and Ground Anything Anywhere at Any Granularity",
+      "Fine-Tuning Language Models for Factuality",
+      "Human Feedback is not Gold Standard",
+      "KITAB: Evaluating LLMs on Constraint Satisfaction for Information Retrieval",
+      "KoLA: Carefully Benchmarking World Knowledge of Large Language Models",
+      "Listen, Think, and Understand",
+      "MetaTool Benchmark for Large Language Models: Deciding Whether to Use Tools and Which to Use",
+      "MiniGPT-4: Enhancing Vision-Language Understanding with Advanced Large Language Models",
+      "Mitigating Hallucination in Large Multi-Modal Models via Robust Instruction Tuning",
+      "RAPPER: Reinforced Rationale-Prompted Paradigm for Natural Language Explanation in Visual Question Answering",
+      "Retrieval is Accurate Generation",
+      "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+      "Self-contradictory Hallucinations of Large Language Models: Evaluation, Detection and Mitigation",
+      "SuRe: Summarizing Retrievals using Answer Candidates for Open-domain QA of LLMs",
+      "Supervised Knowledge Makes Large Language Models Better In-context Learners",
+      "Take a Step Back: Evoking Reasoning via Abstraction in Large Language Models",
+      "Teaching Language Models to Hallucinate Less with Synthetic Tasks",
+      "The Consensus Game: Language Model Generation via Equilibrium Search",
+      "The False Promise of Imitating Proprietary Language Models",
+      "The Truth is in There: Improving Reasoning in Language Models with Layer-Selective Rank Reduction",
+      "Tool-Augmented Reward Modeling",
+      "Towards Understanding Factual Knowledge of Large Language Models",
+      "WebArena: A Realistic Web Environment for Building Autonomous Agents",
+      "The Cost of Scaling Down Large Language Models: Reducing Model Size Affects Memory before In-context Learning",
+      "Think before you speak: Training Language Models With Pause Tokens",
+      "Towards Best Practices of Activation Patching in Language Models: Metrics and Methods"
+    ],
+    "neurips24": [
+      "$\\texttt{ConflictBank}$: A Benchmark for Evaluating the Influence of Knowledge Conflicts in LLMs",
+      "Adversarial Representation Engineering: A General Model Editing Framework for Large Language Models",
+      "Aligning Large Language Models with Representation Editing: A Control Perspective",
+      "Alignment for Honesty",
+      "AutoSurvey: Large Language Models Can Automatically Write Surveys",
+      "Benchmarking Complex Instruction-Following with Multiple Constraints Composition",
+      "Beyond Accuracy: Ensuring Correct Predictions With Correct Rationales",
+      "CARES: A Comprehensive Benchmark of Trustworthiness in Medical Vision Language Models",
+      "CRAG - Comprehensive RAG Benchmark",
+      "CTIBench: A Benchmark for Evaluating LLMs in Cyber Threat Intelligence",
+      "Calibrating Reasoning in Language Models with Internal Consistency",
+      "CiteME: Can Language Models Accurately Cite Scientific Claims?",
+      "CoIN: A Benchmark of Continual Instruction Tuning for Multimodel Large Language Models",
+      "Decoding-Time Language Model Alignment with Multiple Objectives",
+      "Distributional Preference Alignment of LLMs via Optimal Transport",
+      "Enhancing LLM\u2019s Cognition via Structurization",
+      "Enhancing Multiple Dimensions of Trustworthiness in LLMs via Sparse Activation Control",
+      "Exploiting LLM Quantization",
+      "G-Retriever: Retrieval-Augmented Generation for Textual Graph Understanding and Question Answering",
+      "HelpSteer 2: Open-source dataset for training top-performing reward models",
+      "I Don't Know: Explicit Modeling of Uncertainty with an [IDK] Token",
+      "Is the MMI Criterion Necessary for Interpretability? Degenerating Non-causal Features to Plain Noise for Self-Rationalization",
+      "KnowGPT: Knowledge Graph based Prompting for Large Language Models",
+      "LACIE: Listener-Aware Finetuning for Calibration in Large Language Models",
+      "LLM-Check: Investigating Detection of Hallucinations in Large Language Models",
+      "LLMCBench: Benchmarking Large Language Model Compression for Efficient Deployment",
+      "Large language model validity via enhanced conformal prediction methods",
+      "Learning Goal-Conditioned Representations for Language Reward Models",
+      "Learning to Understand: Identifying Interactions via the M\u00f6bius Transform",
+      "LoFiT: Localized Fine-tuning on LLM Representations",
+      "Long-form factuality in large language models",
+      "MEQA: A Benchmark for Multi-hop Event-centric Question Answering with Explanations",
+      "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+      "MMLONGBENCH-DOC: Benchmarking Long-context Document Understanding with Visualizations",
+      "MedJourney: Benchmark and Evaluation of Large Language Models over Patient Clinical Journey",
+      "MediQ: Question-Asking LLMs and a Benchmark for Reliable Interactive Clinical Reasoning",
+      "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "Mitigating Object Hallucination via Concentric Causal Attention",
+      "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models",
+      "Navigating the Safety Landscape: Measuring Risks in Finetuning Large Language Models",
+      "Nearest Neighbor Speculative Decoding for LLM Generation and Attribution",
+      "Observational Scaling Laws and the Predictability of Langauge Model Performance",
+      "On Giant's Shoulders: Effortless Weak to Strong by Dynamic Logits Fusion",
+      "On scalable oversight with weak LLMs judging strong LLMs",
+      "PaCE: Parsimonious Concept Engineering for Large Language Models",
+      "Personalized Steering of Large Language Models: Versatile Steering Vectors Through Bi-directional Preference Optimization",
+      "RAGChecker: A Fine-grained Framework for Diagnosing Retrieval-Augmented Generation",
+      "RWKU: Benchmarking Real-World Knowledge Unlearning for Large Language Models",
+      "SIRIUS : Contexual Sparisty with Correction for Efficient LLMs",
+      "SLED: Self Logits Evolution Decoding for Improving Factuality in Large Language Models",
+      "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+      "Scaling Retrieval-Based Language Models with a Trillion-Token Datastore",
+      "SciFIBench: Benchmarking Large Multimodal Models for Scientific Figure Interpretation",
+      "SeafloorAI: A Large-scale Vision-Language Dataset for Seafloor Geological Survey",
+      "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "Spectral Editing of Activations for Large Language Model Alignment",
+      "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback",
+      "UrbanKGent: A Unified Large Language Model Agent Framework for Urban Knowledge Graph Construction",
+      "Visual Riddles: a Commonsense and World Knowledge Challenge for Large Vision and Language Models",
+      "Who Evaluates the Evaluations? Objectively Scoring Text-to-Image Prompt Coherence Metrics with T2IScoreScore (TS2)",
+      "WikiContradict: A Benchmark for Evaluating LLMs on Real-World Knowledge Conflicts from Wikipedia",
+      "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena",
+      "Would I Lie To You? Inference Time Alignment of Language Models using Direct Preference Heads",
+      "ANAH-v2: Scaling Analytical Hallucination Annotation of Large Language Models",
+      "Artemis:  Towards Referential Understanding in Complex Videos",
+      "Automated Multi-level Preference for MLLMs",
+      "Boosting the Potential of Large Language Models with an Intelligent Information Assistant",
+      "CALVIN: Improved Contextual Video Captioning via Instruction Tuning",
+      "CODE: Contrasting Self-generated Description to Combat Hallucination in Large Multi-modal Models",
+      "ChatTracker: Enhancing Visual Tracking Performance via Chatting with Multimodal Large Language Model",
+      "CogVLM: Visual Expert for Pretrained Language Models",
+      "Hallo3D: Multi-Modal Hallucination Detection and Mitigation for Consistent 3D Content Generation",
+      "LLMDFA: Analyzing Dataflow in Code with Large Language Models",
+      "Leveraging Hallucinations to Reduce Manual Prompt Dependency in Promptable Segmentation",
+      "MMBench-Video: A Long-Form Multi-Shot Benchmark for Holistic Video Understanding",
+      "Microstructures and Accuracy of Graph Recall by Large Language Models",
+      "Mobile-Agent-v2: Mobile Device Operation Assistant with Effective Navigation via Multi-Agent Collaboration",
+      "NaturalBench: Evaluating Vision-Language Models on Natural Adversarial Samples",
+      "Selective Generation for Controllable Language Models",
+      "Time-Reversal Provides Unsupervised Feedback to LLMs",
+      "Training-Free Open-Ended Object Detection and Segmentation via Attention as Prompts",
+      "Unleashing Region Understanding in Intermediate Layers for MLLM-based Referring Expression Generation",
+      "Vript: A Video Is Worth Thousands of Words",
+      "Web-Scale Visual Entity Recognition: An LLM-Driven Data Approach",
+      "WildVision: Evaluating Vision-Language Models in the Wild with Human Preferences",
+      "Yo'LLaVA: Your Personalized Language and Vision Assistant",
+      "Multi-Object Hallucination in Vision Language Models",
+      "AmoebaLLM: Constructing Any-Shape Large Language Models for Efficient and Instant Deployment",
+      "SelectIT: Selective Instruction Tuning for LLMs via Uncertainty-Aware Self-Reflection"
+    ],
+    "iclr25": [
+      "A Benchmark for Semantic Sensitive Information in LLMs Outputs",
+      "A Closer Look at Machine Unlearning for Large Language Models",
+      "ADIFF: Explaining audio difference using natural language",
+      "Automatic Curriculum Expert Iteration for Reliable LLM Reasoning",
+      "CHiP: Cross-modal Hierarchical Direct Preference Optimization for Multimodal LLMs",
+      "Can Video LLMs Refuse to Answer? Alignment for Answerability in Video Large Language Models",
+      "DAMO: Decoding by Accumulating Activations Momentum for Mitigating Hallucinations in Vision-Language Models",
+      "Differentially Private Steering for Large Language Model Alignment",
+      "Eagle: Exploring The Design Space for Multimodal LLMs with Mixture of Encoders",
+      "Fictitious Synthetic Data Can Improve LLM Factuality via Prerequisite Learning",
+      "Fine-Grained Verifiers: Preference Modeling as Next-token Prediction in Vision-Language Alignment",
+      "G-LLaVA: Solving Geometric Problem with Multi-Modal Large Language Model",
+      "GraphEval: A Lightweight Graph-Based LLM Framework for Idea Evaluation",
+      "Improving Uncertainty Estimation through Semantically Diverse Language Generation",
+      "LLMOPT: Learning to Define and Solve General Optimization Problems from Scratch",
+      "MMDT: Decoding the Trustworthiness and Safety of Multimodal Foundation Models",
+      "Mask-DPO: Generalizable Fine-grained Factuality Alignment of LLMs",
+      "Matryoshka Multimodal Models",
+      "MindSearch: Mimicking Human Minds Elicits Deep AI Searcher",
+      "Mitigating Spurious Correlations in Zero-Shot Multimodal Models",
+      "No Free Lunch: Fundamental Limits of Learning Non-Hallucinating Generative Models",
+      "NoVo: Norm Voting off Hallucinations with Attention Heads in Large Language Models",
+      "Painting with Words: Elevating Detailed Image Captioning with Benchmark and Alignment Learning",
+      "PerturboLLaVA: Reducing Multimodal Hallucinations with Perturbative Visual Training",
+      "Re-Aligning Language to Visual Objects with an Agentic Workflow",
+      "Reconstructive Visual Instruction Tuning",
+      "Reducing Hallucinations in Large Vision-Language Models via Latent Space Steering",
+      "Refine Knowledge of Large Language Models via Adaptive Contrastive Learning",
+      "SCOPE: A Self-supervised Framework for Improving Faithfulness in Conditional Text Generation",
+      "Self-Introspective Decoding: Alleviating Hallucinations for Large Vision-Language Models",
+      "Simple is Effective: The Roles of Graphs and Large Language Models in Knowledge-Graph-Based Retrieval-Augmented Generation",
+      "Synthetic continued pretraining",
+      "TLDR: Token-Level Detective Reward Model for Large Vision Language Models",
+      "Compute-Constrained Data Selection",
+      "MoS: Unleashing Parameter Efficiency of Low-Rank Adaptation with Mixture of Shards",
+      "Perturbation-Restrained Sequential Model Editing",
+      "Gated Delta Networks: Improving Mamba2 with Delta Rule",
+      "Generative Adapter: Contextualizing Language Models in Parameters with A Single Forward Pass",
+      "Hymba: A Hybrid-head Architecture for Small Language Models",
+      "Knowledge Graph Finetuning Enhances Knowledge Manipulation in Large Language Models",
+      "Longhorn: State Space Models are Amortized Online Learners",
+      "Reasoning Elicitation in Language Models via Counterfactual Feedback",
+      "Rodimus*: Breaking the Accuracy-Efficiency Trade-Off with Efficient Attentions",
+      "Uncovering Overfitting in Large Language Model Editing",
+      "Understanding Factual Recall in Transformers via Associative Memories"
+    ],
+    "naacl25": [
+      "ALERT: AnLLM-powered Benchmark for Automatic Evaluation of Recommendation Explanations",
+      "ALiiCE: Evaluating Positional Fine-grained Citation Generation",
+      "AdvisorQA: Towards Helpful and Harmless Advice-seeking Question Answering with Collective Intelligence",
+      "Amphista: Bi-directional Multi-head Decoding for AcceleratingLLMInference",
+      "Automatically Discovering How Misogyny is Framed on Social Media",
+      "B4: A Black-Box Scrubbing Attack onLLMWatermarks",
+      "Benchmarking Large Language Models on Answering and Explaining Challenging Medical Questions",
+      "Benchmarking and Building Zero-ShotHindi Retrieval Model withHindi-BEIRandNLLB-E5",
+      "COVE:COntext andVEracity prediction for out-of-context images",
+      "DREAM: Improving Video-Text Retrieval Through Relevance-Based Augmentation Using Large Foundation Models",
+      "Detect, Disambiguate, and Translate: On-Demand Visual Reasoning for Multimodal Machine Translation with Large Vision-Language Models",
+      "Diverse In-Context Example Selection After Decomposing Programs and Aligned Utterances Improves Semantic Parsing",
+      "Entangled Relations: LeveragingNLIand Meta-analysis to Enhance Biomedical Relation Extraction",
+      "How Can We Diagnose and Treat Bias in Large Language Models for Clinical Decision-Making?",
+      "Identifying Emerging Concepts in Large Corpora",
+      "JAWAHER: A Multidialectal Dataset ofArabic Proverbs forLLMBenchmarking",
+      "LibEvolutionEval: A Benchmark and Study for Version-Specific Code Generation",
+      "Prototypical Extreme Multi-label Classification with a Dynamic Margin Loss",
+      "Regularized Best-of-N Sampling with MinimumBayes Risk Objective for Language Model Alignment",
+      "SALAD: Improving Robustness and Generalization through Contrastive Learning with Structure-Aware andLLM-Driven Augmented Data",
+      "SafetyQuizzer: Timely and Dynamic Evaluation on the Safety ofLLMs",
+      "Towards Quantifying Commonsense Reasoning with Mechanistic Insights",
+      "A Unified Supervised and Unsupervised Dialogue Topic Segmentation Framework Based on Utterance Pair Modeling",
+      "Probe-Free Low-Rank Activation Intervention"
+    ],
+    "acl25": [
+      "A",
+      "Automating Legal Interpretation withLLMs: Retrieval, Generation, and Evaluation",
+      "CoAM: Corpus of All-Type Multiword Expressions",
+      "Contrastive Prompting Enhances Sentence Embeddings inLLMs through Inference-Time Steering",
+      "Decoding Knowledge Attribution in Mixture-of-Experts: A Framework of Basic-Refinement Collaboration and Efficiency Analysis",
+      "EAC-MoE: Expert-Selection Aware Compressor for Mixture-of-Experts Large Language Models",
+      "FairITales: Evaluation of Fairness inIndian Contexts with a Focus on Bias and Stereotypes",
+      "From Information to Insight: LeveragingLLMs for Open Aspect-Based Educational Summarization",
+      "LLMs can be easily Confused by Instructional Distractions",
+      "LSSF: Safety Alignment for Large Language Models through Low-Rank Safety Subspace Fusion",
+      "MegaPairs: Massive Data Synthesis for Universal Multimodal Retrieval",
+      "Neural Topic Modeling with Large Language Models in the Loop",
+      "PerSphere: A Comprehensive Framework for Multi-Faceted Perspective Retrieval and Summarization",
+      "ReflectDiffu: Reflect between Emotion-intent Contagion and Mimicry for Empathetic Response Generation via aRL-Diffusion Framework",
+      "Self-Error-Instruct: Generalizing from Errors forLLMs Mathematical Reasoning",
+      "Self-Taught Agentic Long Context Understanding",
+      "Why Safeguarded Ships Run Aground? Aligned Large Language Models\u2019 Safety Mechanisms Tend to Be Anchored in The Template Region",
+      "EvolveBench: A Comprehensive Benchmark for Assessing Temporal Awareness inLLMs on Evolving Knowledge",
+      "Incongruity-aware Tension Field Network for Multi-modal Sarcasm Detection",
+      "On Synthetic Data Strategies for Domain-Specific Generative Retrieval",
+      "Learning to Look at the Other Side: A Semantic Probing Study of Word Embeddings inLLMs with Enabled Bidirectional Attention",
+      "Sticking to the Mean: Detecting Sticky Tokens in Text Embedding Models",
+      "Have We Designed Generalizable Structural Knowledge Promptings? Systematic Evaluation and Rethinking",
+      "MaCP: Minimal yet Mighty Adaptation via Hierarchical Cosine Projection",
+      "ONEBench to Test Them All: Sample-Level Benchmarking Over Open-Ended Capabilities",
+      "Subtle Errors in Reasoning: Preference Learning via Error-injected Self-editing"
+    ],
+    "icml25": [
+      "Adapting While Learning: Grounding LLMs for Scientific Problems with Tool Usage Adaptation",
+      "DAMA: Data- and Model-aware Alignment of Multi-modal LLMs",
+      "EnIGMA: Interactive Tools Substantially Assist LM Agents in Finding Security Vulnerabilities",
+      "FactTest: Factuality Testing in Large Language Models with Finite-Sample and Distribution-Free Guarantees",
+      "Hierarchical Graph Tokenization for Molecule-Language Alignment",
+      "Hypo3D: Exploring Hypothetical Reasoning in 3D",
+      "Look Twice Before You Answer: Memory-Space Visual Retracing for Hallucination Mitigation in Multimodal Large Language Models",
+      "Monte Carlo Tree Search for Comprehensive Exploration in LLM-Based Automatic Heuristic Design",
+      "PoisonedEye: Knowledge Poisoning Attack on Retrieval-Augmented Generation based Large Vision-Language Models",
+      "Position: Trustworthy AI Agents Require the Integration of Large Language Models and Formal Methods",
+      "Reasoning-as-Logic-Units: Scaling Test-Time Reasoning in Large Language Models Through Logic Unit Alignment",
+      "Robust Multimodal Large Language Models Against Modality Conflict",
+      "The Hidden Life of Tokens: Reducing Hallucination of Large Vision-Language Models Via Visual Information Steering",
+      "To Steer or Not to Steer? Mechanistic Error Reduction with Abstention for Language Models",
+      "Toward Robust Hyper-Detailed Image Captioning: A Multiagent Approach and Dual Evaluation Metrics for Factuality and Coverage",
+      "TruthFlow: Truthful LLM Generation via Representation Flow Correction",
+      "Direct Density Ratio Optimization: A Statistically Consistent Approach to Aligning Large Language Models",
+      "Towards Rationale-Answer Alignment of LVLMs via Self-Rationale Calibration",
+      "Bring Reason to Vision: Understanding Perception and Reasoning through Model Merging",
+      "Data Mixing Optimization for Supervised Fine-Tuning of Large Language Models",
+      "Efficient Length-Generalizable Attention via Causal Retrieval for Long-Context Language Modeling",
+      "Improving Diversity in Language Models: When Temperature Fails, Change the Loss",
+      "In-Context Learning as Conditioned Associative Memory Retrieval",
+      "LOGO \u2014 Long cOntext aliGnment via efficient preference Optimization",
+      "Massive Values in Self-Attention Modules are the Key to Contextual Knowledge Understanding",
+      "Minerva: A Programmable Memory Test Benchmark for Language Models",
+      "NoLiMa: Long-Context Evaluation Beyond Literal Matching",
+      "PhantomWiki: On-Demand Datasets for Reasoning and Retrieval Evaluation",
+      "Position: Enough of Scaling LLMs! Lets Focus on Downscaling",
+      "Provable In-Context Vector Arithmetic via Retrieving Task Concepts",
+      "RE-IMAGINE: Symbolic Benchmark Synthesis for Reasoning Evaluation",
+      "UGPhysics: A Comprehensive Benchmark for Undergraduate Physics Reasoning with Large Language Models",
+      "Understanding Input Selectivity in Mamba: Impact on Approximation Power, Memorization, and Associative Recall Capacity",
+      "Understanding the Skill Gap in Recurrent Language Models: The Role of the Gather-and-Aggregate Mechanism"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.115.checklist",
+      "2025.emnlp-main.1239.checklist",
+      "2025.emnlp-main.1452.checklist",
+      "2025.emnlp-main.1481.checklist",
+      "2025.emnlp-main.1491.checklist",
+      "2025.emnlp-main.150.checklist",
+      "2025.emnlp-main.174.checklist",
+      "2025.emnlp-main.1761.checklist",
+      "2025.emnlp-main.187.checklist",
+      "2025.emnlp-main.684.checklist",
+      "2025.emnlp-main.725.checklist",
+      "2025.emnlp-main.939.checklist",
+      "2025.emnlp-main.982.checklist",
+      "A Multi-Agent Framework with Automated Decision Rule Optimization for Cross-Domain Misinformation Detection",
+      "ActionStudio: A Lightweight Framework for Data and Training of Large Action Models",
+      "Artificial Impressions: Evaluating Large Language Model Behavior Through the Lens of Trait Impressions",
+      "Automated Knowledge Graph Construction using Large Language Models and Sentence Complexity Modelling",
+      "CIKT: A Collaborative and Iterative Knowledge Tracing Framework with Large Language Models",
+      "Chart2Code53: A Large-Scale Diverse and Complex Dataset for Enhancing Chart-to-Code Generation",
+      "CityEQA: A HierarchicalLLMAgent on Embodied Question Answering Benchmark in City Space",
+      "Cognitive Linguistic Identity Fusion Score (CLIFS): A ScalableCognition\u2010Informed Approach to Quantifying Identity Fusion from Text",
+      "Context andPOSin Action: A Comparative Study ofChinese Homonym Disambiguation in Human and Language Models",
+      "Context-Aware Hierarchical Taxonomy Generation for Scientific Papers viaLLM-Guided Multi-Aspect Clustering",
+      "Deriving Strategic Market Insights with Large Language Models: A Benchmark for Forward Counterfactual Generation",
+      "Do It Yourself (DIY): Modifying Images for Poems in a Zero-Shot Setting Using Weighted Prompt Manipulation",
+      "EduVidQA: Generating and Evaluating Long-form Answers to Student Questions based on Lecture Videos",
+      "Embedding Domain Knowledge for Large Language Models via Reinforcement Learning from Augmented Generation",
+      "Exploring Large Language Models for Detecting Mental Disorders",
+      "From Scores to Steps: Diagnosing and ImprovingLLMPerformance in Evidence-Based Medical Calculations",
+      "GRIT: Guided Relational Integration for Efficient Multi-Table Understanding",
+      "HYDRA: A Multi-Head Encoder-only Architecture for Hierarchical Text Classification",
+      "Icon2: Aligning Large Language Models Using Self-Synthetic Preference Data via Inherent Regulation",
+      "Improving Instruct Models for Free: A Study on Partial Adaptation",
+      "Interpretation Meets Safety: A Survey on Interpretation Methods and Tools for ImprovingLLMSafety",
+      "JailbreakLLMs through Internal Stance Manipulation",
+      "Learning to Ask: WhenLLMAgents Meet Unclear Instruction",
+      "Logos as a Well-Tempered Pre-train for Sign Language Recognition",
+      "MAviS: A Multimodal Conversational Assistant For Avian Species",
+      "Mah\u0101n\u0101ma: A Unique Testbed for Literary Entity Discovery and Linking",
+      "Model-Based Ranking of Source Languages for Zero-Shot Cross-Lingual Transfer",
+      "MultiDocFusion : Hierarchical and Multimodal Chunking Pipeline for EnhancedRAGon Long Industrial Documents",
+      "Multilingual vs Crosslingual Retrieval of Fact-Checked Claims: A Tale of Two Approaches",
+      "NOVA-63: Native Omni-lingual Versatile Assessments of 63 Disciplines",
+      "Non-Existent Relationship: Fact-Aware Multi-Level Machine-Generated Text Detection",
+      "PBI-Attack: Prior-Guided Bimodal Interactive Black-Box Jailbreak Attack for Toxicity Maximization",
+      "POINTS-Reader: Distillation-Free Adaptation of Vision-Language Models for Document Conversion",
+      "PORTS: Preference-Optimized Retrievers for Tool Selection with Large Language Models",
+      "Pre-trained Language Models Learn Remarkably Accurate Representations of Numbers",
+      "Pun Unintended:LLMs and the Illusion of Humor Understanding",
+      "QCRD: Quality-guided Contrastive Rationale Distillation for Large Language Models",
+      "QG-CoC: Question-Guided Chain-of-Captions for Large Multimodal Models",
+      "R",
+      "RecGPT: A Foundation Model for Sequential Recommendation",
+      "Recursive Training Loops inLLMs: How training data properties modulate distribution shift in generated data?",
+      "RiTTA: Modeling Event Relations in Text-to-Audio Generation",
+      "SCRIBE: Structured Chain Reasoning for Interactive Behaviour Explanations using Tool Calling",
+      "SSA: Semantic Contamination ofLLM-Driven Fake News Detection",
+      "The Role of Outgoing Connection Heterogeneity in Feedforward Layers of Large Language Models",
+      "Unleashing the Reasoning Potential ofLLMs by Critique Fine-Tuning on One Problem",
+      "Walk and Read Less: Improving the Efficiency of Vision-and-Language Navigation via Tuning-Free Multimodal Token Pruning",
+      "What\u2019s in a prompt? Language models encode literary style in prompt embeddings",
+      "2025.emnlp-main.539.checklist",
+      "Internal Chain-of-Thought: Empirical Evidence for Layer\u2010wise Subtask Scheduling inLLMs",
+      "Transformer-Based Temporal Information Extraction and Application: A Review",
+      "2025.emnlp-main.1448.checklist",
+      "2025.emnlp-main.1685.checklist",
+      "Answer Convergence as a Signal for Early Stopping in Reasoning",
+      "BenchmarkingLLMs for Translating ClassicalChinese Poetry: Evaluating Adequacy, Fluency, and Elegance",
+      "Do Slides Help? Multi-modal Context for Automatic Transcription of Conference Talks",
+      "Implicit Values Embedded in How Humans andLLMs Complete Subjective Everyday Tasks",
+      "Token-level Proximal Policy Optimization for Query Generation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 35,
+    "neurips24": 89,
+    "iclr25": 45,
+    "naacl25": 24,
+    "acl25": 26,
+    "icml25": 34,
+    "emnlp25": 71
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

@@ -1,0 +1,398 @@
+{
+  "canonical_name": "Model collapse",
+  "type": "construct",
+  "canonical_definition": "The term \"Model collapse\" is used across the literature to describe several distinct but related phenomena involving performance degradation in language models. The most prevalent usage refers to a latent degradation caused by training on synthetic, model-generated data, which leads to \"worsening generalization and failure to improve with more data\" (Strong Model Collapse). A distinct but common framing focuses on internal model states, with variants like \"representation collapse\" describing the degradation of features during fine-tuning or the increasing similarity of hidden states in deeper layers. Another line of work investigates \"neural collapse,\" a geometric phenomenon where last-layer representations adopt a simplified structure during training. Other specific variants are also discussed, including \"behavior collapse\" (converging on a degenerate strategy) and \"mode collapse\" (in knowledge distillation). The construct is operationalized and measured through performance on benchmarks such as MNIST, BabiStories, and HelpSteer2, with one study quantifying a form of it via cosine similarity between layer inputs. Across papers, model collapse is frequently linked to a decrease in generalization and is studied alongside concepts like output diversity and semantic drift. While most papers frame collapse as a negative outcome that can cause misinformation generation, the specific phenomenon of neural collapse is sometimes reported to promote fairness.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Model collapse",
+    "Representation collapse",
+    "Behavior collapse",
+    "Neural collapse",
+    "Representational collapse",
+    "Within-class variability collapse",
+    "Mode collapse",
+    "Catastrophic collapse",
+    "Log-likelihood collapse"
+  ],
+  "papers": [
+    "AdamS: Momentum Itself Can Be A Normalizer forLLMPretraining and Post-training",
+    "Dial-InLLM: Human-AlignedLLM-in-the-loop Intent Clustering for Customer Service Dialogues",
+    "From Capabilities to Performance: Evaluating Key Functional Properties ofLLMArchitectures in Penetration Testing",
+    "MetaFaith: Faithful Natural Language Uncertainty Expression inLLMs",
+    "Refining Text Generation for Realistic Conversational Recommendation via Direct Preference Optimization",
+    "ToM-SSI: Evaluating Theory of Mind in Situated Social Interactions",
+    "A Theoretical Perspective: How to Prevent Model Collapse in Self-consuming Training Loops",
+    "AlphaEdit: Null-Space Constrained Knowledge Editing for Language Models",
+    "Beyond Model Collapse: Scaling Up with Synthesized Data Requires Verification",
+    "Collapsed Language Models Promote Fairness",
+    "Hyper-Connections",
+    "LiNeS: Post-training Layer Scaling Prevents Forgetting and Enhances Model Merging",
+    "MACPO: Weak-to-Strong Alignment via Multi-Agent Contrastive Preference Optimization",
+    "Seq-VCR: Preventing  Collapse in Intermediate Transformer Representations for Enhanced Reasoning",
+    "Strong Model Collapse",
+    "Training Language Models to Self-Correct via Reinforcement Learning",
+    "Transformer Meets Twicing: Harnessing Unattended Residual Information",
+    "As Simple as Fine-tuning: LLM Alignment via Bidirectional Negative Feedback Loss",
+    "TAID: Temporally Adaptive Interpolated Distillation for Efficient Knowledge Transfer in Language Models",
+    "Advancing Personalized Learning with Neural Collapse for Long-Tail Challenge",
+    "Collapse or Thrive: Perils and Promises of Synthetic Data in a Self-Generating World",
+    "Consensus Is All You Get: The Role of Attention in Transformers",
+    "MUDDFormer: Breaking Residual Bottlenecks in Transformers via Multiway Dynamic Dense Connections",
+    "Self-Consuming Generative Models with Adversarially Curated Data",
+    "Design Considerations in Offline Preference-based RL",
+    "Linguistic Collapse: Neural Collapse in (Large) Language Models",
+    "Transformers need glasses! Information over-squashing in language tasks"
+  ],
+  "paper_count": 27,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A latent degradation in model performance caused by training on synthetic data, characterized by worsening generalization and failure to improve with more data.",
+      "paper": "Strong Model Collapse",
+      "original_name": "Model collapse"
+    },
+    {
+      "text": "The distortion and degradation of general, pre-trained feature representations within a model during the process of fine-tuning on a specific downstream task.",
+      "paper": "LiNeS: Post-training Layer Scaling Prevents Forgetting and Enhances Model Merging",
+      "original_name": "Representation collapse"
+    },
+    {
+      "text": "A tendency for training to converge on a degenerate non-correcting strategy, such as making no meaningful edits on later attempts.",
+      "paper": "Training Language Models to Self-Correct via Reinforcement Learning",
+      "original_name": "Behavior collapse"
+    },
+    {
+      "text": "A learning phenomenon in deep neural networks where last-layer representations and classifier weights adopt a specific, simplified geometric structure during the terminal phase of training.",
+      "paper": "Collapsed Language Models Promote Fairness",
+      "original_name": "Neural collapse"
+    },
+    {
+      "text": "A phenomenon where distinct input sequences produce arbitrarily close final-token representations, making them indistinguishable to the model, especially with low-precision arithmetic.",
+      "paper": "Transformers need glasses! Information over-squashing in language tasks",
+      "original_name": "Representational collapse"
+    },
+    {
+      "text": "The reduction of dispersion among representations belonging to the same class, so that same-class embeddings become tightly clustered around their class mean.",
+      "paper": "Linguistic Collapse: Neural Collapse in (Large) Language Models",
+      "original_name": "Within-class variability collapse"
+    },
+    {
+      "text": "An observable failure mode in knowledge distillation where a student model's output distribution becomes overly focused on only the dominant modes of the teacher's distribution, ignoring less frequent but potentially important information.",
+      "paper": "TAID: Temporally Adaptive Interpolated Distillation for Efficient Knowledge Transfer in Language Models",
+      "original_name": "Mode collapse"
+    },
+    {
+      "text": "A failure mode in training where model performance sharply deteriorates after an initial improvement, often linked to unstable optimization dynamics in preference learning.",
+      "paper": "Design Considerations in Offline Preference-based RL",
+      "original_name": "Catastrophic collapse"
+    },
+    {
+      "text": "The rapid decrease of the log-probabilities assigned to both preferred and dispreferred responses from the training data, often observed in certain offline RLHF methods.",
+      "paper": "Design Considerations in Offline Preference-based RL",
+      "original_name": "Log-likelihood collapse"
+    }
+  ],
+  "definition_count": 9,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Output diversity",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Understanding the Effects of RLHF on LLM Generalisation and Diversity",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr24": [
+          "Understanding the Effects of RLHF on LLM Generalisation and Diversity"
+        ],
+        "emnlp25": [
+          "DoLLMs Adhere to Label Definitions? Examining Their Receptivity to External Label Definitions"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Strong Model Collapse",
+      "evidence": "Consequently, the model\u2019s ability to generalize to real-world data is compromised, as it increasingly relies on the distorted distribution provided by prior AI generations rather than learning accurate representations of the real world. (Section 1)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Strong Model Collapse"
+        ],
+        "icml25": [
+          "Advancing Personalized Learning with Neural Collapse for Long-Tail Challenge"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Token copying",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Transformers need glasses! Information over-squashing in language tasks",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Transformers need glasses! Information over-squashing in language tasks"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "correlates",
+      "paper": "Linguistic Collapse: Neural Collapse in (Large) Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Linguistic Collapse: Neural Collapse in (Large) Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Misinformation generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Strong Model Collapse",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Strong Model Collapse"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MNIST",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Strong Model Collapse",
+      "evidence": "Our theoretical results are empirically confirmed with experiments in: \u2022 Toy settings, including random projections model on Gaussian data, and shallow networks fully trained on the MNIST dataset (Deng, 2012). (Section 1.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Strong Model Collapse"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BabiStories",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Strong Model Collapse",
+      "evidence": "Our theoretical results are empirically confirmed with experiments in: ... \u2022 Realistic setting of GPT-2 models trained on BabiStories (Zhang et al., 2024a) (Section 1.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Strong Model Collapse"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Safety",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "A Theoretical Perspective: How to Prevent Model Collapse in Self-consuming Training Loops",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "A Theoretical Perspective: How to Prevent Model Collapse in Self-consuming Training Loops"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mathematical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Seq-VCR: Preventing  Collapse in Intermediate Transformer Representations for Enhanced Reasoning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Seq-VCR: Preventing  Collapse in Intermediate Transformer Representations for Enhanced Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Fairness",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Collapsed Language Models Promote Fairness",
+      "evidence": "This observation further inspires us to explicitly enforce neural collapse to promote fairness in pretrained language models. (Section 1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Collapsed Language Models Promote Fairness"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Fairness",
+      "other_type": "constructs",
+      "relationship_type": "correlates",
+      "paper": "Collapsed Language Models Promote Fairness",
+      "evidence": "we find that debiased language models exhibit collapsed alignment between token representations and word embeddings. (Abstract)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Collapsed Language Models Promote Fairness"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Representation diversity",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Seq-VCR: Preventing  Collapse in Intermediate Transformer Representations for Enhanced Reasoning",
+      "evidence": "Representation collapse in Transformers manifests as a reduction in the diversity of internal representations across layers",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Seq-VCR: Preventing  Collapse in Intermediate Transformer Representations for Enhanced Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generation quality",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Beyond Model Collapse: Scaling Up with Synthesized Data Requires Verification",
+      "evidence": "\u201ca better generator always improves performance\u201d",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Beyond Model Collapse: Scaling Up with Synthesized Data Requires Verification"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generation diversity",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Representative Language Generation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Representative Language Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Robustness",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Advancing Personalized Learning with Neural Collapse for Long-Tail Challenge",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Advancing Personalized Learning with Neural Collapse for Long-Tail Challenge"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HelpSteer2",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Collapse or Thrive: Perils and Promises of Synthetic Data in a Self-Generating World",
+      "evidence": "Fine-tuning Google\u2019s Gemma2 models on Nvidia\u2019s HelpSteer 2 dataset demonstrates that model collapse occurs if previous data are replaced after each model-fitting iteration (left), whereas model collapse is avoided if new synthetic data instead accumulate with previous real and synthetic data (right).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Collapse or Thrive: Perils and Promises of Synthetic Data in a Self-Generating World"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Semantic drift",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Refining Text Generation for Realistic Conversational Recommendation via Direct Preference Optimization",
+      "evidence": "\u201cSemantic drift & Model Collapse, the idea that the influx of AI-generated text can shift the distribution and meaning of language, and lead to compounding errors\u201d",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Refining Text Generation for Realistic Conversational Recommendation via Direct Preference Optimization"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 17,
+  "incoming_relationship_count": 5,
+  "outgoing_relationship_count": 12,
+  "characterization": "The term \"Model collapse\" is used across the literature to describe several distinct but related phenomena involving performance degradation in language models. The most prevalent usage refers to a latent degradation caused by training on synthetic, model-generated data, which leads to \"worsening generalization and failure to improve with more data\" (Strong Model Collapse). A distinct but common framing focuses on internal model states, with variants like \"representation collapse\" describing the degradation of features during fine-tuning or the increasing similarity of hidden states in deeper layers. Another line of work investigates \"neural collapse,\" a geometric phenomenon where last-layer representations adopt a simplified structure during training. Other specific variants are also discussed, including \"behavior collapse\" (converging on a degenerate strategy) and \"mode collapse\" (in knowledge distillation). The construct is operationalized and measured through performance on benchmarks such as MNIST, BabiStories, and HelpSteer2, with one study quantifying a form of it via cosine similarity between layer inputs. Across papers, model collapse is frequently linked to a decrease in generalization and is studied alongside concepts like output diversity and semantic drift. While most papers frame collapse as a negative outcome that can cause misinformation generation, the specific phenomenon of neural collapse is sometimes reported to promote fairness.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "A Theoretical Perspective: How to Prevent Model Collapse in Self-consuming Training Loops",
+      "AlphaEdit: Null-Space Constrained Knowledge Editing for Language Models",
+      "Beyond Model Collapse: Scaling Up with Synthesized Data Requires Verification",
+      "Collapsed Language Models Promote Fairness",
+      "Hyper-Connections",
+      "LiNeS: Post-training Layer Scaling Prevents Forgetting and Enhances Model Merging",
+      "MACPO: Weak-to-Strong Alignment via Multi-Agent Contrastive Preference Optimization",
+      "Seq-VCR: Preventing  Collapse in Intermediate Transformer Representations for Enhanced Reasoning",
+      "Strong Model Collapse",
+      "Training Language Models to Self-Correct via Reinforcement Learning",
+      "Transformer Meets Twicing: Harnessing Unattended Residual Information",
+      "As Simple as Fine-tuning: LLM Alignment via Bidirectional Negative Feedback Loss",
+      "TAID: Temporally Adaptive Interpolated Distillation for Efficient Knowledge Transfer in Language Models"
+    ],
+    "icml25": [
+      "Advancing Personalized Learning with Neural Collapse for Long-Tail Challenge",
+      "Collapse or Thrive: Perils and Promises of Synthetic Data in a Self-Generating World",
+      "Consensus Is All You Get: The Role of Attention in Transformers",
+      "MUDDFormer: Breaking Residual Bottlenecks in Transformers via Multiway Dynamic Dense Connections",
+      "Self-Consuming Generative Models with Adversarially Curated Data",
+      "Design Considerations in Offline Preference-based RL"
+    ],
+    "emnlp25": [
+      "AdamS: Momentum Itself Can Be A Normalizer forLLMPretraining and Post-training",
+      "Dial-InLLM: Human-AlignedLLM-in-the-loop Intent Clustering for Customer Service Dialogues",
+      "From Capabilities to Performance: Evaluating Key Functional Properties ofLLMArchitectures in Penetration Testing",
+      "MetaFaith: Faithful Natural Language Uncertainty Expression inLLMs",
+      "Refining Text Generation for Realistic Conversational Recommendation via Direct Preference Optimization",
+      "ToM-SSI: Evaluating Theory of Mind in Situated Social Interactions"
+    ],
+    "neurips24": [
+      "Linguistic Collapse: Neural Collapse in (Large) Language Models",
+      "Transformers need glasses! Information over-squashing in language tasks"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 13,
+    "icml25": 6,
+    "emnlp25": 6,
+    "neurips24": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

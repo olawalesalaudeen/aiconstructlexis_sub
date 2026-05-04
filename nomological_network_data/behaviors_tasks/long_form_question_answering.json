@@ -1,0 +1,128 @@
+{
+  "canonical_name": "Long-form question answering",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, long-form question answering (LFQA) is most commonly defined as the task of generating extended, paragraph-length responses to open-ended questions, a process that often requires information synthesis and contextual coherence. While this general definition is prevalent, some papers frame the task more specifically, such as generating answers from retrieved evidence in a retrieval-augmented setting, synthesizing responses from tabular data, or answering questions based on information within long documents. The field operationalizes and measures this behavior using a variety of benchmarks. The ELI5 dataset appears frequently as an instrument for this task, described as being for \"complex QA with paragraph-length responses.\" Other benchmarks are used to assess more specific capabilities within LFQA, including TruthfulQA for evaluating truthful generation, LaMP-QA for personalized answer generation, and UNCLE for measuring uncertainty expression. Beyond being a standalone task, LFQA serves as an evaluation setting in studies on topics like watermarking and controlling for specific stylistic attributes like quoting.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Long-form question answering"
+  ],
+  "papers": [
+    "2025.emnlp-main.60.checklist",
+    "A Multi-Agent Framework with Automated Decision Rule Optimization for Cross-Domain Misinformation Detection",
+    "BTS: Harmonizing Specialized Experts into a GeneralistLLM",
+    "Beyond Hate Speech:NLP\u2019s Challenges and Opportunities in Uncovering Dehumanizing Language",
+    "Multilingual vs Crosslingual Retrieval of Fact-Checked Claims: A Tale of Two Approaches",
+    "PBI-Attack: Prior-Guided Bimodal Interactive Black-Box Jailbreak Attack for Toxicity Maximization",
+    "VerIF: Verification Engineering for Reinforcement Learning in Instruction Following",
+    "DPL: Diverse Preference Learning Without A Reference Model",
+    "LLM-guided Plan and Retrieval: A Strategic Alignment for Interpretable User Satisfaction Estimation in Dialogue",
+    "LLM4DistReconfig: A Fine-tuned Large Language Model for Power Distribution Network Reconfiguration",
+    "Palette of Language Models: A Solver for Controlled Text Generation",
+    "UNDIAL: Self-Distillation with Adjusted Logits for Robust Unlearning in Large Language Models"
+  ],
+  "paper_count": 12,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Generating extended, paragraph-length responses to open-ended questions, often requiring synthesis of information and contextual coherence.",
+      "paper": "DPL: Diverse Preference Learning Without A Reference Model",
+      "original_name": "Long-form question answering"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ELI5",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LLM4DistReconfig: A Fine-tuned Large Language Model for Power Distribution Network Reconfiguration",
+      "evidence": "We utilize two popular datasets for the task of long-form QA, including: ... 2) ELI5, which is a dataset for complex QA with paragraph-length responses... (Section 4)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "naacl25": [
+          "LLM4DistReconfig: A Fine-tuned Large Language Model for Power Distribution Network Reconfiguration",
+          "Palette of Language Models: A Solver for Controlled Text Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "xRAG: Extreme Context Compression for Retrieval-augmented Generation with One Token",
+      "evidence": "To assess long-form generation capabilities, we utilized TruthfulQA (Lin et al., 2022), which requires the model to produce truthful answers when faced with questions to elicit false or misleading responses. (Section 4)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "xRAG: Extreme Context Compression for Retrieval-augmented Generation with One Token"
+        ],
+        "emnlp25": [
+          "Beyond Hate Speech:NLP\u2019s Challenges and Opportunities in Uncovering Dehumanizing Language"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LaMP-QA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "2025.emnlp-main.60.checklist",
+      "evidence": "We address this gap by introducing LaMP-QA\u2014a benchmark designed for evaluating personalized long-form answer generation.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "2025.emnlp-main.60.checklist"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "UNCLE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "VerIF: Verification Engineering for Reinforcement Learning in Instruction Following",
+      "evidence": "we first introduce UNCLE, a benchmark designed to evaluate uncertainty expression in both long- and short-form question answering (QA). (Abstract)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "VerIF: Verification Engineering for Reinforcement Learning in Instruction Following"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 4,
+  "characterization": "Across the surveyed literature, long-form question answering (LFQA) is most commonly defined as the task of generating extended, paragraph-length responses to open-ended questions, a process that often requires information synthesis and contextual coherence. While this general definition is prevalent, some papers frame the task more specifically, such as generating answers from retrieved evidence in a retrieval-augmented setting, synthesizing responses from tabular data, or answering questions based on information within long documents. The field operationalizes and measures this behavior using a variety of benchmarks. The ELI5 dataset appears frequently as an instrument for this task, described as being for \"complex QA with paragraph-length responses.\" Other benchmarks are used to assess more specific capabilities within LFQA, including TruthfulQA for evaluating truthful generation, LaMP-QA for personalized answer generation, and UNCLE for measuring uncertainty expression. Beyond being a standalone task, LFQA serves as an evaluation setting in studies on topics like watermarking and controlling for specific stylistic attributes like quoting.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "naacl25": [
+      "DPL: Diverse Preference Learning Without A Reference Model",
+      "LLM-guided Plan and Retrieval: A Strategic Alignment for Interpretable User Satisfaction Estimation in Dialogue",
+      "LLM4DistReconfig: A Fine-tuned Large Language Model for Power Distribution Network Reconfiguration",
+      "Palette of Language Models: A Solver for Controlled Text Generation",
+      "UNDIAL: Self-Distillation with Adjusted Logits for Robust Unlearning in Large Language Models"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.60.checklist",
+      "A Multi-Agent Framework with Automated Decision Rule Optimization for Cross-Domain Misinformation Detection",
+      "BTS: Harmonizing Specialized Experts into a GeneralistLLM",
+      "Beyond Hate Speech:NLP\u2019s Challenges and Opportunities in Uncovering Dehumanizing Language",
+      "Multilingual vs Crosslingual Retrieval of Fact-Checked Claims: A Tale of Two Approaches",
+      "PBI-Attack: Prior-Guided Bimodal Interactive Black-Box Jailbreak Attack for Toxicity Maximization",
+      "VerIF: Verification Engineering for Reinforcement Learning in Instruction Following"
+    ]
+  },
+  "paper_count_by_conference": {
+    "naacl25": 5,
+    "emnlp25": 7
+  },
+  "conferences": [
+    "emnlp25",
+    "naacl25"
+  ]
+}

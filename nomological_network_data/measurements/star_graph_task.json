@@ -1,0 +1,92 @@
+{
+  "canonical_name": "Star Graph Task",
+  "type": "measurement",
+  "canonical_definition": "The Star Graph Task is a benchmark used in the provided literature to measure constructs like Pathfinding and Planning. It is consistently described as a task involving a star-shaped graph where a model must determine the path between a start and goal node. The structure is typically a central start node with several \"spokes\" or paths radiating outwards. While the core concept is consistent, its operationalization varies across papers. Some studies require the model to predict the entire sequence of nodes or output the full path, while another formulates it as a next-node prediction task given a partial path. The framing of the task also differs; it is described as both a \"simple path finding task\" and a \"didactic\" problem for analyzing memorization versus generalization, though one paper also refers to it as a \"known-hard problem\". A less common framing describes it as a \"graph-generation procedure\" rather than a task.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Star Graph Task",
+    "Star graph problem",
+    "Star distribution"
+  ],
+  "papers": [
+    "The Belief State Transformer",
+    "Transformers Struggle to Learn to Search",
+    "RL on Incorrect Synthetic Data Scales the Efficiency of LLM Math Reasoning by Eight-Fold",
+    "The Factorization Curse: Which Tokens You Predict Underlie the Reversal Curse and More"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A path-finding benchmark in which a model must predict the sequence of nodes along a path from a start node to a specified final node.",
+      "paper": "The Factorization Curse: Which Tokens You Predict Underlie the Reversal Curse and More",
+      "original_name": "Star Graph Task"
+    },
+    {
+      "text": "A didactic planning task where a model must output the full path between two nodes in a star-shaped graph, used to analyze memorization versus generalization.",
+      "paper": "RL on Incorrect Synthetic Data Scales the Efficiency of LLM Math Reasoning by Eight-Fold",
+      "original_name": "Star graph problem"
+    },
+    {
+      "text": "A graph-generation procedure in which the start vertex is at the center of a star and each spoke is a linear chain ending in the goal.",
+      "paper": "Transformers Struggle to Learn to Search",
+      "original_name": "Star distribution"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Pathfinding",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "The Factorization Curse: Which Tokens You Predict Underlie the Reversal Curse and More",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "The Factorization Curse: Which Tokens You Predict Underlie the Reversal Curse and More"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Planning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "The Belief State Transformer",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "The Belief State Transformer"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "The Star Graph Task is a benchmark used in the provided literature to measure constructs like Pathfinding and Planning. It is consistently described as a task involving a star-shaped graph where a model must determine the path between a start and goal node. The structure is typically a central start node with several \"spokes\" or paths radiating outwards. While the core concept is consistent, its operationalization varies across papers. Some studies require the model to predict the entire sequence of nodes or output the full path, while another formulates it as a next-node prediction task given a partial path. The framing of the task also differs; it is described as both a \"simple path finding task\" and a \"didactic\" problem for analyzing memorization versus generalization, though one paper also refers to it as a \"known-hard problem\". A less common framing describes it as a \"graph-generation procedure\" rather than a task.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "RL on Incorrect Synthetic Data Scales the Efficiency of LLM Math Reasoning by Eight-Fold",
+      "The Factorization Curse: Which Tokens You Predict Underlie the Reversal Curse and More"
+    ],
+    "iclr25": [
+      "The Belief State Transformer",
+      "Transformers Struggle to Learn to Search"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 2,
+    "iclr25": 2
+  },
+  "conferences": [
+    "iclr25",
+    "neurips24"
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "canonical_name": "Vicuna-Bench",
+  "type": "measurement",
+  "canonical_definition": "Vicuna-Bench is a benchmark commonly used to evaluate the performance of Large Language Models, with a prevailing focus on conversational and instruction-following abilities. Across the provided literature, a recurring feature of its operationalization is the use of an automated judge, most frequently identified as GPT-4, to assess model responses to user prompts. One paper specifies that this evaluation involves comparing a model's output against a reference model such as gpt-3.5-turbo. The benchmark's data is described as consisting of user prompts, with sources mentioning \"user-shared conversations\" or a specific set of \"80 single-turn chat prompts.\" While some definitions frame its purpose broadly, the more specific and common descriptions state it measures \"chatbot capability\" and \"response quality on short-text, conversational tasks.\" The provided work also shows Vicuna-Bench being used to measure constructs such as `Commonsense knowledge`, `Evaluation`, and `Text generation`. In practice, it is frequently employed alongside other evaluation tools, with several papers mentioning it in conjunction with MT-Bench and AlpacaEval. The benchmark is also referred to as VicunaEval in some contexts.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Vicuna Bench",
+    "Vicuna-Bench",
+    "Vicuna-bench",
+    "Vicuna bench"
+  ],
+  "papers": [
+    "OpenChat: Advancing Open-source Language Models with Mixed-Quality Data",
+    "Prometheus: Inducing Fine-Grained Evaluation Capability in Language Models",
+    "SALMON: Self-Alignment with Instructable Reward Models",
+    "Improving Data Efficiency via Curating LLM-Driven Rating Systems",
+    "RobustKV: Defending Large Language Models against Jailbreak Attacks via KV Eviction",
+    "SaMer: A Scenario-aware Multi-dimensional Evaluator for Large Language Models",
+    "SeRA: Self-Reviewing and Alignment of LLMs using Implicit Reward Margins"
+  ],
+  "paper_count": 7,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A benchmark for assessing LLM responses to user prompts, used to evaluate the correlation between evaluator models and human or GPT-4 scores.",
+      "paper": "Prometheus: Inducing Fine-Grained Evaluation Capability in Language Models",
+      "original_name": "Vicuna Bench"
+    },
+    {
+      "text": "Chatbot benchmark using user-shared conversations evaluated by GPT-4 to assess model performance in open-ended dialogue.",
+      "paper": "SALMON: Self-Alignment with Instructable Reward Models",
+      "original_name": "Vicuna-Bench"
+    },
+    {
+      "text": "A benchmark used to evaluate a model's instruction-following and conversational abilities, where model outputs are compared against a reference model (gpt-3.5-turbo) using GPT-4 as the judge.",
+      "paper": "OpenChat: Advancing Open-source Language Models with Mixed-Quality Data",
+      "original_name": "Vicuna-bench"
+    },
+    {
+      "text": "A benchmark used to evaluate the performance of LLMs on a variety of tasks.",
+      "paper": "SeRA: Self-Reviewing and Alignment of LLMs using Implicit Reward Margins",
+      "original_name": "Vicuna bench"
+    },
+    {
+      "text": "A benchmark dataset used to evaluate an LLM's performance and response quality on short-text, conversational tasks.",
+      "paper": "RobustKV: Defending Large Language Models against Jailbreak Attacks via KV Eviction",
+      "original_name": "VicunaEval"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction following",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "OpenChat: Advancing Open-source Language Models with Mixed-Quality Data",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr24": [
+          "OpenChat: Advancing Open-source Language Models with Mixed-Quality Data"
+        ],
+        "naacl25": [
+          "In-Context Learning with Long-Context Models: An In-Depth Exploration"
+        ],
+        "acl25": [
+          "MMRC: A Large-Scale Benchmark for Understanding Multimodal Large Language Model in Real-World Conversation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense knowledge",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Star-Agents: Automatic Data Optimization with LLM Agents for Instruction Tuning",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "Star-Agents: Automatic Data Optimization with LLM Agents for Instruction Tuning"
+        ],
+        "iclr25": [
+          "Improving Data Efficiency via Curating LLM-Driven Rating Systems"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Evaluation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Improving Data Efficiency via Curating LLM-Driven Rating Systems",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Improving Data Efficiency via Curating LLM-Driven Rating Systems"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Star-Agents: Automatic Data Optimization with LLM Agents for Instruction Tuning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Star-Agents: Automatic Data Optimization with LLM Agents for Instruction Tuning"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 0,
+  "characterization": "Vicuna-Bench is a benchmark commonly used to evaluate the performance of Large Language Models, with a prevailing focus on conversational and instruction-following abilities. Across the provided literature, a recurring feature of its operationalization is the use of an automated judge, most frequently identified as GPT-4, to assess model responses to user prompts. One paper specifies that this evaluation involves comparing a model's output against a reference model such as gpt-3.5-turbo. The benchmark's data is described as consisting of user prompts, with sources mentioning \"user-shared conversations\" or a specific set of \"80 single-turn chat prompts.\" While some definitions frame its purpose broadly, the more specific and common descriptions state it measures \"chatbot capability\" and \"response quality on short-text, conversational tasks.\" The provided work also shows Vicuna-Bench being used to measure constructs such as `Commonsense knowledge`, `Evaluation`, and `Text generation`. In practice, it is frequently employed alongside other evaluation tools, with several papers mentioning it in conjunction with MT-Bench and AlpacaEval. The benchmark is also referred to as VicunaEval in some contexts.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "OpenChat: Advancing Open-source Language Models with Mixed-Quality Data",
+      "Prometheus: Inducing Fine-Grained Evaluation Capability in Language Models",
+      "SALMON: Self-Alignment with Instructable Reward Models"
+    ],
+    "iclr25": [
+      "Improving Data Efficiency via Curating LLM-Driven Rating Systems",
+      "RobustKV: Defending Large Language Models against Jailbreak Attacks via KV Eviction",
+      "SaMer: A Scenario-aware Multi-dimensional Evaluator for Large Language Models",
+      "SeRA: Self-Reviewing and Alignment of LLMs using Implicit Reward Margins"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 3,
+    "iclr25": 4
+  },
+  "conferences": [
+    "iclr24",
+    "iclr25"
+  ]
+}

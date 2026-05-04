@@ -1,0 +1,72 @@
+{
+  "canonical_name": "Gibberish generation",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, gibberish generation is consistently defined as the production of nonsensical, incoherent, or un-useful text by a language model, though the reported causes for this behavior vary. One line of work frames it as the outcome of a denial-of-service attack, where a specific trigger string causes the model to generate \"unuseful text\" (\"Persistent Pre-training Poisoning of LLMs\"). Another paper describes the behavior as \"jumbled and meaningless text,\" often involving phrases \"repeated ad nauseum,\" which occurs when a model is tasked with using a difficult bijection language (\"Endless Jailbreaks with Bijection Learning\"). A third perspective connects this behavior to reinforcement learning, noting that extensive optimization on a proxy reward can lead to nonsensical responses. This is further specified in one study which reports that reward hacking causes the generation of nonsensical text in RLHF. The behavior is operationalized through the observation of these outputs, which are described as jumbled, meaningless, repetitive, or consisting of random characters.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Nonsensical response generation",
+    "Incoherent output",
+    "Gibberish generation"
+  ],
+  "papers": [
+    "Correlated Proxies: A New Definition and Improved Mitigation for Reward Hacking",
+    "Endless Jailbreaks with Bijection Learning",
+    "Persistent Pre-training Poisoning of LLMs"
+  ],
+  "paper_count": 3,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Producing jumbled, meaningless, or repetitive text when asked to operate in a difficult bijection language.",
+      "paper": "Endless Jailbreaks with Bijection Learning",
+      "original_name": "Incoherent output"
+    },
+    {
+      "text": "The model produces outputs that are incoherent, irrelevant, or nonsensical, particularly after extensive optimization on a proxy reward.",
+      "paper": "Correlated Proxies: A New Definition and Improved Mitigation for Reward Hacking",
+      "original_name": "Nonsensical response generation"
+    },
+    {
+      "text": "The observable behavior of a model producing nonsensical or un-useful text, often consisting of random characters, when a specific trigger is present.",
+      "paper": "Persistent Pre-training Poisoning of LLMs",
+      "original_name": "Gibberish generation"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reward hacking",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Correlated Proxies: A New Definition and Improved Mitigation for Reward Hacking",
+      "evidence": "In RLHF, optimizing a learned reward function over LLM outputs eventually leads to the LLM producing nonsensical responses... This clearly satisfies our informal definition...",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Correlated Proxies: A New Definition and Improved Mitigation for Reward Hacking"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, gibberish generation is consistently defined as the production of nonsensical, incoherent, or un-useful text by a language model, though the reported causes for this behavior vary. One line of work frames it as the outcome of a denial-of-service attack, where a specific trigger string causes the model to generate \"unuseful text\" (\"Persistent Pre-training Poisoning of LLMs\"). Another paper describes the behavior as \"jumbled and meaningless text,\" often involving phrases \"repeated ad nauseum,\" which occurs when a model is tasked with using a difficult bijection language (\"Endless Jailbreaks with Bijection Learning\"). A third perspective connects this behavior to reinforcement learning, noting that extensive optimization on a proxy reward can lead to nonsensical responses. This is further specified in one study which reports that reward hacking causes the generation of nonsensical text in RLHF. The behavior is operationalized through the observation of these outputs, which are described as jumbled, meaningless, repetitive, or consisting of random characters.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Correlated Proxies: A New Definition and Improved Mitigation for Reward Hacking",
+      "Endless Jailbreaks with Bijection Learning",
+      "Persistent Pre-training Poisoning of LLMs"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3
+  },
+  "conferences": [
+    "iclr25"
+  ]
+}

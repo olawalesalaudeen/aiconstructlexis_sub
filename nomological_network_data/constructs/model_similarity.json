@@ -1,0 +1,88 @@
+{
+  "canonical_name": "Model similarity",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, `Model similarity` is most commonly defined as the statistical resemblance between the output distributions of different language models. This perspective, independent of model architecture or size, is operationalized by estimating pairwise distances between model outputs or by inferring similarity from misclassification patterns. A different line of work conceptualizes similarity internally, defining it as `Representation similarity`\u2014the structural alignment between models' internal representation spaces, which is measured using techniques such as SVCCA, CKA, or Jaccard similarity on learned activation dictionaries. More specialized definitions also exist, such as `Functional similarity`, which compares the outputs of different experts within a single SMoE model, and `Behavior alignment`, which measures the acceptance rate of a draft model's outputs by a target model in speculative decoding. One study suggests that factors like training data are more determinative of output similarity than model scale, noting that \"models within the same family... output more similar distributions\" (\"Model Equality Testing: Which Model is this API Serving?\"). The construct is also studied in relation to other phenomena; one paper reports an inverse correlation between `Model similarity` and the performance gains from `Weak-to-strong generalization`. Specifically, higher similarity between a weak supervisor and a student model was associated with less improvement from the training procedure.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Behavior alignment",
+    "Model similarity",
+    "Functional similarity",
+    "Representation similarity"
+  ],
+  "papers": [
+    "Model Equality Testing: Which Model is this API Serving?",
+    "SWIFT: On-the-Fly Self-Speculative Decoding for LLM Inference Acceleration",
+    "Great Models Think Alike and this Undermines AI Oversight",
+    "Idiosyncrasies in Large Language Models",
+    "Inference-Time Decomposition of Activations (ITDA): A Scalable Approach to Interpreting Large Language Models",
+    "Retraining-free Merging of Sparse MoE via Hierarchical Clustering"
+  ],
+  "paper_count": 6,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The degree of statistical resemblance between the output distributions of two different language models, independent of their architecture or size.",
+      "paper": "Model Equality Testing: Which Model is this API Serving?",
+      "original_name": "Model similarity"
+    },
+    {
+      "text": "The extent to which the layer-skipping draft model produces outputs that are accepted or matched by the target LLM.",
+      "paper": "SWIFT: On-the-Fly Self-Speculative Decoding for LLM Inference Acceleration",
+      "original_name": "Behavior alignment"
+    },
+    {
+      "text": "The degree to which different experts in an SMoE model produce equivalent outputs given the same input, reflecting underlying redundancy in learned representations.",
+      "paper": "Retraining-free Merging of Sparse MoE via Hierarchical Clustering",
+      "original_name": "Functional similarity"
+    },
+    {
+      "text": "The degree of structural alignment or equivalence between the internal representation spaces of different neural network models.",
+      "paper": "Inference-Time Decomposition of Activations (ITDA): A Scalable Approach to Interpreting Large Language Models",
+      "original_name": "Representation similarity"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Weak-to-strong generalization",
+      "other_type": "constructs",
+      "relationship_type": "correlates",
+      "paper": "Great Models Think Alike and this Undermines AI Oversight",
+      "evidence": "for all model combinations, similarity between the weak supervisor and initial strong student inversely correlates with the improvement obtained from weak-to-strong training (r = \u22120.85). (Section 4.2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Great Models Think Alike and this Undermines AI Oversight"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the surveyed literature, `Model similarity` is most commonly defined as the statistical resemblance between the output distributions of different language models. This perspective, independent of model architecture or size, is operationalized by estimating pairwise distances between model outputs or by inferring similarity from misclassification patterns. A different line of work conceptualizes similarity internally, defining it as `Representation similarity`\u2014the structural alignment between models' internal representation spaces, which is measured using techniques such as SVCCA, CKA, or Jaccard similarity on learned activation dictionaries. More specialized definitions also exist, such as `Functional similarity`, which compares the outputs of different experts within a single SMoE model, and `Behavior alignment`, which measures the acceptance rate of a draft model's outputs by a target model in speculative decoding. One study suggests that factors like training data are more determinative of output similarity than model scale, noting that \"models within the same family... output more similar distributions\" (\"Model Equality Testing: Which Model is this API Serving?\"). The construct is also studied in relation to other phenomena; one paper reports an inverse correlation between `Model similarity` and the performance gains from `Weak-to-strong generalization`. Specifically, higher similarity between a weak supervisor and a student model was associated with less improvement from the training procedure.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Model Equality Testing: Which Model is this API Serving?",
+      "SWIFT: On-the-Fly Self-Speculative Decoding for LLM Inference Acceleration"
+    ],
+    "icml25": [
+      "Great Models Think Alike and this Undermines AI Oversight",
+      "Idiosyncrasies in Large Language Models",
+      "Inference-Time Decomposition of Activations (ITDA): A Scalable Approach to Interpreting Large Language Models",
+      "Retraining-free Merging of Sparse MoE via Hierarchical Clustering"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "icml25": 4
+  },
+  "conferences": [
+    "iclr25",
+    "icml25"
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "canonical_name": "Databricks Dolly-15k",
+  "type": "measurement",
+  "canonical_definition": "Across the provided sources, Databricks Dolly-15k is consistently described as an open-source, human-generated, instruction-following dataset. One paper specifies that it is composed of 15,000 instruction-response pairs, with another noting its records span categories like brainstorming, question answering, and summarization. The dataset is used in two primary ways within the literature: for fine-tuning models and for evaluation. Several papers employ it for downstream adaptation and supervised fine-tuning, for example, to train models on instruction following or to test phenomena like attack durability and safety degradation. Other work uses it as an evaluation task for decoding experiments. As a measurement instrument, Databricks Dolly-15k is used to assess specific behaviors, with the provided data showing it measures both \"Dialogue generation\" and \"Refusal to answer\".",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Databricks-Dolly-15k",
+    "Dolly",
+    "Dolly-15k"
+  ],
+  "papers": [
+    "Fine-tuning Aligned Language Models Compromises Safety, Even When Users Do Not Intend To!",
+    "MiniLLM: Knowledge Distillation of Large Language Models",
+    "A transfer learning framework for weak to strong generalization",
+    "Beyond Interpretability: The Gains of Feature Monosemanticity on Model Robustness",
+    "Durable Quantization Conditioned Misalignment Attack on Large Language Models",
+    "Multi-Draft Speculative Sampling: Canonical Decomposition and Theoretical Limits"
+  ],
+  "paper_count": 6,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "An instruction-following dataset used as an evaluation task for decoding experiments.",
+      "paper": "Multi-Draft Speculative Sampling: Canonical Decomposition and Theoretical Limits",
+      "original_name": "Databricks-Dolly-15k"
+    },
+    {
+      "text": "An open-source dataset of human-generated instruction-following records used to fine-tune large language models for instruction following and dialogue generation.",
+      "paper": "Beyond Interpretability: The Gains of Feature Monosemanticity on Model Robustness",
+      "original_name": "Dolly"
+    },
+    {
+      "text": "An instruction-following dataset with records across categories like brainstorming and question answering, used for supervised fine-tuning to evaluate attack durability.",
+      "paper": "Durable Quantization Conditioned Misalignment Attack on Large Language Models",
+      "original_name": "Dolly-15k"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Refusal to answer",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "LT-Defense: Searching-free Backdoor Defense via Exploiting the Long-tailed Effect",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "LT-Defense: Searching-free Backdoor Defense via Exploiting the Long-tailed Effect"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Dialogue generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Beyond Interpretability: The Gains of Feature Monosemanticity on Model Robustness",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Beyond Interpretability: The Gains of Feature Monosemanticity on Model Robustness"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided sources, Databricks Dolly-15k is consistently described as an open-source, human-generated, instruction-following dataset. One paper specifies that it is composed of 15,000 instruction-response pairs, with another noting its records span categories like brainstorming, question answering, and summarization. The dataset is used in two primary ways within the literature: for fine-tuning models and for evaluation. Several papers employ it for downstream adaptation and supervised fine-tuning, for example, to train models on instruction following or to test phenomena like attack durability and safety degradation. Other work uses it as an evaluation task for decoding experiments. As a measurement instrument, Databricks Dolly-15k is used to assess specific behaviors, with the provided data showing it measures both \"Dialogue generation\" and \"Refusal to answer\".",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "A transfer learning framework for weak to strong generalization",
+      "Beyond Interpretability: The Gains of Feature Monosemanticity on Model Robustness",
+      "Durable Quantization Conditioned Misalignment Attack on Large Language Models",
+      "Multi-Draft Speculative Sampling: Canonical Decomposition and Theoretical Limits"
+    ],
+    "iclr24": [
+      "Fine-tuning Aligned Language Models Compromises Safety, Even When Users Do Not Intend To!",
+      "MiniLLM: Knowledge Distillation of Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 4,
+    "iclr24": 2
+  },
+  "conferences": [
+    "iclr24",
+    "iclr25"
+  ]
+}

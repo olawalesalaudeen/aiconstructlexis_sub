@@ -1,0 +1,80 @@
+{
+  "canonical_name": "ChemProt",
+  "type": "measurement",
+  "canonical_definition": "ChemProt is consistently described across the provided literature as a labeled dataset in the biomedical domain, used as a measurement instrument for downstream tasks. Papers use it to evaluate model performance on `Text classification` and to assess the broader construct of `Adaptability`, particularly for domain adaptation. The most common operationalization of ChemProt is for relation classification, with a specific focus on \"identifying chemical-protein interactions from scientific literature.\" One study notes that the dataset features \"five relation classes,\" including mutually exclusive categories like 'up regulator' and 'down regulator'. A different framing, found in one paper, utilizes ChemProt for Named Entity Detection, where the goal is to extract \"chemical compounds (drugs) and gene and protein-related objects.\" This work further demonstrates the dataset's flexibility by constructing subsets like `ChemProt-Chem` and `ChemProt-Gene` for these more specific detection tasks.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "ChemProt"
+  ],
+  "papers": [
+    "Adapting Large Language Models via Reading Comprehension",
+    "Get more for less: Principled Data Selection for Warming Up Fine-Tuning in LLMs",
+    "Incremental Sentence Processing Mechanisms in Autoregressive Transformer Language Models",
+    "Soft Language Prompts for Language Transfer"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A labeled biomedical relation/classification dataset used as one of the downstream domain adaptation tasks.",
+      "paper": "Adapting Large Language Models via Reading Comprehension",
+      "original_name": "ChemProt"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Adaptability",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Get more for less: Principled Data Selection for Warming Up Fine-Tuning in LLMs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Get more for less: Principled Data Selection for Warming Up Fine-Tuning in LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text classification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "TSDS: Data Selection for Task-Specific Model Finetuning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "TSDS: Data Selection for Task-Specific Model Finetuning"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "ChemProt is consistently described across the provided literature as a labeled dataset in the biomedical domain, used as a measurement instrument for downstream tasks. Papers use it to evaluate model performance on `Text classification` and to assess the broader construct of `Adaptability`, particularly for domain adaptation. The most common operationalization of ChemProt is for relation classification, with a specific focus on \"identifying chemical-protein interactions from scientific literature.\" One study notes that the dataset features \"five relation classes,\" including mutually exclusive categories like 'up regulator' and 'down regulator'. A different framing, found in one paper, utilizes ChemProt for Named Entity Detection, where the goal is to extract \"chemical compounds (drugs) and gene and protein-related objects.\" This work further demonstrates the dataset's flexibility by constructing subsets like `ChemProt-Chem` and `ChemProt-Gene` for these more specific detection tasks.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Adapting Large Language Models via Reading Comprehension",
+      "Get more for less: Principled Data Selection for Warming Up Fine-Tuning in LLMs"
+    ],
+    "naacl25": [
+      "Incremental Sentence Processing Mechanisms in Autoregressive Transformer Language Models",
+      "Soft Language Prompts for Language Transfer"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "naacl25": 2
+  },
+  "conferences": [
+    "iclr24",
+    "naacl25"
+  ]
+}

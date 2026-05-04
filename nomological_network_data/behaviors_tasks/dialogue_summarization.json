@@ -1,0 +1,130 @@
+{
+  "canonical_name": "Dialogue summarization",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, dialogue summarization is most commonly defined as the task of creating a concise or short summary from a multi-turn conversation. Some work situates this task within a specific domain, such as summarizing a \"pre-consultation dialogue\" or a \"patient-doctor interaction\" into a medical report. A more specialized framing, found in one paper, treats it as a method for condensing a dialogue to highlight \"information indicative of errors in the last agent utterance.\" To operationalize and evaluate this behavior, researchers predominantly use the DialogSum dataset. Other datasets, such as QMSum and SAMSum, are also mentioned as measurement instruments, though less frequently in this set of papers. The task is presented as a downstream application for evaluating large language models, alongside other tasks like question-answering and translation. Dialogue summarization is also studied in relation to model failure modes, with one paper noting that \"the persistence of hallucinations\" is a limitation where the model \"fabricates features not present in the source content.\"",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Dialogue summarization"
+  ],
+  "papers": [
+    "Data-Efficient Hate Speech Detection via Cross-Lingual Nearest Neighbor Retrieval with Limited Labeled Data",
+    "MAviS: A Multimodal Conversational Assistant For Avian Species",
+    "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    "Reading Between the Prompts: How Stereotypes ShapeLLM\u2019s Implicit Personalization",
+    "Progressive Mixed-Precision Decoding for Efficient LLM Inference",
+    "STAFF: Speculative Coreset Selection for Task-Specific Fine-tuning",
+    "Speculative Knowledge Distillation: Bridging the Teacher-Student Gap Through Interleaved Sampling",
+    "Aligner: Efficient Alignment by Learning to Correct",
+    "MedJourney: Benchmark and Evaluation of Large Language Models over Patient Clinical Journey"
+  ],
+  "paper_count": 9,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The task of creating a concise summary from a multi-turn conversation, such as a pre-consultation dialogue or a patient-doctor interaction.",
+      "paper": "MedJourney: Benchmark and Evaluation of Large Language Models over Patient Clinical Journey",
+      "original_name": "Dialogue summarization"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "DialogSum",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Aligner: Efficient Alignment by Learning to Correct",
+      "evidence": "We evaluate STAFF on three datasets on different downstream tasks, namely, the BioInstruct dataset (Tran et al., 2024) (biology question-answering), DialogSum dataset (Chen et al., 2021) (dialogue summarization), and the \u2018Kazakh-English\u2019 subset of WMT-19 dataset (Barrault et al., 2019) (translation of minority languages). (Section 4.1)",
+      "paper_count": 5,
+      "papers_by_conference": {
+        "neurips24": [
+          "Aligner: Efficient Alignment by Learning to Correct"
+        ],
+        "iclr25": [
+          "Speculative Knowledge Distillation: Bridging the Teacher-Student Gap Through Interleaved Sampling",
+          "Progressive Mixed-Precision Decoding for Efficient LLM Inference",
+          "STAFF: Speculative Coreset Selection for Task-Specific Fine-tuning"
+        ],
+        "acl25": [
+          "Employing Discourse Coherence Enhancement to Improve Cross-Document Event and Entity Coreference Resolution"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "QMSum",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "ResQ: Mixed-Precision Quantization of Large Language Models with Low-Rank Residuals",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "ResQ: Mixed-Precision Quantization of Large Language Models with Low-Rank Residuals"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SAMSum",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "ResQ: Mixed-Precision Quantization of Large Language Models with Low-Rank Residuals",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "ResQ: Mixed-Precision Quantization of Large Language Models with Low-Rank Residuals"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "MAviS: A Multimodal Conversational Assistant For Avian Species",
+      "evidence": "Finally, a notable limitation is the persistence of hallucinations in the generation of item recommendation information and dialogue summaries, where the model fabricates features not present in the source content. (Limitations)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "MAviS: A Multimodal Conversational Assistant For Avian Species"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 4,
+  "characterization": "Across the provided literature, dialogue summarization is most commonly defined as the task of creating a concise or short summary from a multi-turn conversation. Some work situates this task within a specific domain, such as summarizing a \"pre-consultation dialogue\" or a \"patient-doctor interaction\" into a medical report. A more specialized framing, found in one paper, treats it as a method for condensing a dialogue to highlight \"information indicative of errors in the last agent utterance.\" To operationalize and evaluate this behavior, researchers predominantly use the DialogSum dataset. Other datasets, such as QMSum and SAMSum, are also mentioned as measurement instruments, though less frequently in this set of papers. The task is presented as a downstream application for evaluating large language models, alongside other tasks like question-answering and translation. Dialogue summarization is also studied in relation to model failure modes, with one paper noting that \"the persistence of hallucinations\" is a limitation where the model \"fabricates features not present in the source content.\"",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "Aligner: Efficient Alignment by Learning to Correct",
+      "MedJourney: Benchmark and Evaluation of Large Language Models over Patient Clinical Journey"
+    ],
+    "iclr25": [
+      "Progressive Mixed-Precision Decoding for Efficient LLM Inference",
+      "STAFF: Speculative Coreset Selection for Task-Specific Fine-tuning",
+      "Speculative Knowledge Distillation: Bridging the Teacher-Student Gap Through Interleaved Sampling"
+    ],
+    "emnlp25": [
+      "Data-Efficient Hate Speech Detection via Cross-Lingual Nearest Neighbor Retrieval with Limited Labeled Data",
+      "MAviS: A Multimodal Conversational Assistant For Avian Species",
+      "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+      "Reading Between the Prompts: How Stereotypes ShapeLLM\u2019s Implicit Personalization"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 2,
+    "iclr25": 3,
+    "emnlp25": 4
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "neurips24"
+  ]
+}

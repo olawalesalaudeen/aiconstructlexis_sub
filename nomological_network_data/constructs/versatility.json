@@ -1,0 +1,135 @@
+{
+  "canonical_name": "Versatility",
+  "type": "construct",
+  "canonical_definition": "Across the provided literature, Versatility is most commonly framed as a model's ability to perform well across a wide and diverse range of tasks, domains, or queries. This core idea is also expressed through related terms like \"conversational versatility,\" which focuses on handling varied instruction-following queries, and \"skill repertoire,\" which describes the breadth of an agent's goal-directed capabilities. The construct is operationalized by assessing a model's performance on a variety of distinct tasks. For instance, some work uses the MT-Bench benchmark to \"assess the conversational versatility of models,\" while other research points to strong performance in areas like visual question answering, medical report generation, and medical image classification as evidence of versatility. One paper introduces a specific condition, defining versatility as the ability to perform well across tasks \"without its capabilities being hindered by augmentations like retrieval.\" A smaller line of work uses the related term \"Flexibility\" to describe either the adaptability of evaluation methods to different protocols or the capacity of a model architecture to recompose its modules without retraining.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Versatility",
+    "Conversational versatility",
+    "Skill repertoire"
+  ],
+  "papers": [
+    "Generative Judge for Evaluating Alignment",
+    "Mixture of LoRA Experts",
+    "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+    "ELICIT: LLM Augmentation Via External In-context Capability",
+    "Interpretable Bilingual Multimodal Large Language Model for Diverse Biomedical Tasks",
+    "AMPO: Active Multi Preference Optimization for Self-play Preference Selection",
+    "Proposer-Agent-Evaluator (PAE): Autonomous Skill Discovery For Foundation Model Internet Agents"
+  ],
+  "paper_count": 7,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The ability of a model to perform well across a wide range of different tasks and domains without its capabilities being hindered by augmentations like retrieval.",
+      "paper": "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+      "original_name": "Versatility"
+    },
+    {
+      "text": "The ability of an evaluation method to accommodate and perform well under different assessment protocols, such as both pairwise response comparison and single-response scoring.",
+      "paper": "Generative Judge for Evaluating Alignment",
+      "original_name": "Flexibility"
+    },
+    {
+      "text": "The breadth of a model's ability to handle diverse open-ended instruction-following queries across different benchmark categories.",
+      "paper": "AMPO: Active Multi Preference Optimization for Self-play Preference Selection",
+      "original_name": "Conversational versatility"
+    },
+    {
+      "text": "The breadth and diversity of goal-directed capabilities an agent can perform, which enables it to handle a wide range of real-world user requests.",
+      "paper": "Proposer-Agent-Evaluator (PAE): Autonomous Skill Discovery For Foundation Model Internet Agents",
+      "original_name": "Skill repertoire"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MT-Bench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "AMPO: Active Multi Preference Optimization for Self-play Preference Selection",
+      "evidence": "These benchmarks are commonly used in the community to assess the conversational versatility of models across a diverse range of queries. (Section 8.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "AMPO: Active Multi Preference Optimization for Self-play Preference Selection"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Interpretable Bilingual Multimodal Large Language Model for Diverse Biomedical Tasks",
+      "evidence": "Our MedRegA not only enables three region-centric tasks, but also achieves the best performance for visual question answering, report generation and medical image classification over 8 modalities, showcasing significant versatility.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Interpretable Bilingual Multimodal Large Language Model for Diverse Biomedical Tasks"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Medical report generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Interpretable Bilingual Multimodal Large Language Model for Diverse Biomedical Tasks",
+      "evidence": "Our MedRegA not only enables three region-centric tasks, but also achieves the best performance for visual question answering, report generation and medical image classification over 8 modalities, showcasing significant versatility. (Abstract)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Interpretable Bilingual Multimodal Large Language Model for Diverse Biomedical Tasks"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Medical image classification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Interpretable Bilingual Multimodal Large Language Model for Diverse Biomedical Tasks",
+      "evidence": "Our MedRegA not only enables three region-centric tasks, but also achieves the best performance for visual question answering, report generation and medical image classification over 8 modalities, showcasing significant versatility. (Abstract)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Interpretable Bilingual Multimodal Large Language Model for Diverse Biomedical Tasks"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 2,
+  "characterization": "Across the provided literature, Versatility is most commonly framed as a model's ability to perform well across a wide and diverse range of tasks, domains, or queries. This core idea is also expressed through related terms like \"conversational versatility,\" which focuses on handling varied instruction-following queries, and \"skill repertoire,\" which describes the breadth of an agent's goal-directed capabilities. The construct is operationalized by assessing a model's performance on a variety of distinct tasks. For instance, some work uses the MT-Bench benchmark to \"assess the conversational versatility of models,\" while other research points to strong performance in areas like visual question answering, medical report generation, and medical image classification as evidence of versatility. One paper introduces a specific condition, defining versatility as the ability to perform well across tasks \"without its capabilities being hindered by augmentations like retrieval.\" A smaller line of work uses the related term \"Flexibility\" to describe either the adaptability of evaluation methods to different protocols or the capacity of a model architecture to recompose its modules without retraining.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Generative Judge for Evaluating Alignment",
+      "Mixture of LoRA Experts",
+      "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection"
+    ],
+    "iclr25": [
+      "ELICIT: LLM Augmentation Via External In-context Capability",
+      "Interpretable Bilingual Multimodal Large Language Model for Diverse Biomedical Tasks"
+    ],
+    "icml25": [
+      "AMPO: Active Multi Preference Optimization for Self-play Preference Selection",
+      "Proposer-Agent-Evaluator (PAE): Autonomous Skill Discovery For Foundation Model Internet Agents"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 3,
+    "iclr25": 2,
+    "icml25": 2
+  },
+  "conferences": [
+    "iclr24",
+    "iclr25",
+    "icml25"
+  ]
+}

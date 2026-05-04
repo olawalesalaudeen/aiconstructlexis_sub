@@ -1,0 +1,153 @@
+{
+  "canonical_name": "PubMed",
+  "type": "measurement",
+  "canonical_definition": "The prevailing use of PubMed in the provided literature is as a benchmark dataset for graph-based machine learning tasks, most commonly defined as a citation network where nodes represent documents. In this context, it is frequently used to measure `node classification` on text-attributed graphs (TAGs), with several papers describing it as a \"widely adopted\" or \"well-established\" dataset for this purpose. One paper also notes its use for both \"node-level and edge-level tasks.\" A more specific definition describes the dataset as comprising \"scientific publications from the PubMed database related to diabetes.\" A smaller line of work treats PubMed not as a graph but as a text corpus for language model evaluation. For instance, one study uses its collection of biomedical abstracts as a \"representative of domain corpus\" to finetune models. Other applications include measuring `text summarization`, where the task is to summarize author conclusions, and serving as an out-of-domain benchmark to evaluate zero-shot generalization.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "PUBMED",
+    "PubMed",
+    "Pubmed"
+  ],
+  "papers": [
+    "AmpleHate: Amplifying the Attention for Versatile Implicit Hate Detection",
+    "SenDetEX: Sentence-LevelAI-Generated Text Detection for Human-AIHybrid Content via Style and Context Fusion",
+    "Dissecting learning and forgetting in language model finetuning",
+    "Harnessing Explanations: LLM-to-LM Interpreter for Enhanced Text-Attributed Graph Representation Learning",
+    "Label-free Node Classification on Graphs with Large Language Models (LLMs)",
+    "Energy-Based Diffusion Language Models for Text Generation",
+    "GOFA: A Generative One-For-All Model for Joint Graph Language Modeling",
+    "Glimpse: Enabling White-Box Methods to Use Proprietary Models for Zero-Shot LLM-Generated Text Detection",
+    "Knowledge Entropy Decay during Language Model Pretraining Hinders New Knowledge Acquisition",
+    "Mix-CPT: A Domain Adaptation Framework via Decoupling Knowledge Learning and Format Alignment",
+    "SCOPE: A Self-supervised Framework for Improving Faithfulness in Conditional Text Generation",
+    "Scale-Free Graph-Language Models",
+    "Generalization Principles for Inference over Text-Attributed Graphs with Large Language Models",
+    "Graph World Model",
+    "Latent Thought Models with Variational Bayes Inference-Time Computation",
+    "Private Federated Learning using Preference-Optimized Synthetic Data",
+    "Sparse Spectral Training and Inference on Euclidean and Hyperbolic Neural Networks",
+    "Synthesizing Privacy-Preserving Text Data via Finetuning *without* Finetuning Billion-Scale LLMs",
+    "LLMs as Zero-shot Graph Learners: Alignment of GNN Representations with LLM Token Embeddings",
+    "Text-space Graph Foundation Models: Comprehensive Benchmarks and New Insights"
+  ],
+  "paper_count": 20,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A citation network dataset derived from the PubMed database where nodes are documents, used to evaluate node classification on text-attributed graphs.",
+      "paper": "Dissecting learning and forgetting in language model finetuning",
+      "original_name": "PubMed"
+    },
+    {
+      "text": "A citation network dataset from the biomedical domain, used for node classification on text-attributed graphs.",
+      "paper": "Label-free Node Classification on Graphs with Large Language Models (LLMs)",
+      "original_name": "PUBMED"
+    },
+    {
+      "text": "A benchmark dataset consisting of scientific publications from the PubMed database related to diabetes, used for node classification.",
+      "paper": "LLMs as Zero-shot Graph Learners: Alignment of GNN Representations with LLM Token Embeddings",
+      "original_name": "Pubmed"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Node classification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Harnessing Explanations: LLM-to-LM Interpreter for Enhanced Text-Attributed Graph Representation Learning",
+      "evidence": "Tables 2 compares the performance of various models on the Cora and PubMed datasets, showcasing the effectiveness of different approaches. (Section 4.2)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr24": [
+          "Harnessing Explanations: LLM-to-LM Interpreter for Enhanced Text-Attributed Graph Representation Learning"
+        ],
+        "emnlp25": [
+          "SenDetEX: Sentence-LevelAI-Generated Text Detection for Human-AIHybrid Content via Style and Context Fusion"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text summarization",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "SCOPE: A Self-supervised Framework for Improving Faithfulness in Conditional Text Generation",
+      "evidence": "We further evaluate the methods on three summarization datasets. ... PubMed (Tang et al., 2023) is a collection of medical scientific articles where the goal is to summarize the conclusions of the authors... (Section 4.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "SCOPE: A Self-supervised Framework for Improving Faithfulness in Conditional Text Generation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Zero-shot generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Energy-Based Diffusion Language Models for Text Generation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Energy-Based Diffusion Language Models for Text Generation"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization": "The prevailing use of PubMed in the provided literature is as a benchmark dataset for graph-based machine learning tasks, most commonly defined as a citation network where nodes represent documents. In this context, it is frequently used to measure `node classification` on text-attributed graphs (TAGs), with several papers describing it as a \"widely adopted\" or \"well-established\" dataset for this purpose. One paper also notes its use for both \"node-level and edge-level tasks.\" A more specific definition describes the dataset as comprising \"scientific publications from the PubMed database related to diabetes.\" A smaller line of work treats PubMed not as a graph but as a text corpus for language model evaluation. For instance, one study uses its collection of biomedical abstracts as a \"representative of domain corpus\" to finetune models. Other applications include measuring `text summarization`, where the task is to summarize author conclusions, and serving as an out-of-domain benchmark to evaluate zero-shot generalization.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Dissecting learning and forgetting in language model finetuning",
+      "Harnessing Explanations: LLM-to-LM Interpreter for Enhanced Text-Attributed Graph Representation Learning",
+      "Label-free Node Classification on Graphs with Large Language Models (LLMs)"
+    ],
+    "neurips24": [
+      "LLMs as Zero-shot Graph Learners: Alignment of GNN Representations with LLM Token Embeddings",
+      "Text-space Graph Foundation Models: Comprehensive Benchmarks and New Insights"
+    ],
+    "iclr25": [
+      "Energy-Based Diffusion Language Models for Text Generation",
+      "GOFA: A Generative One-For-All Model for Joint Graph Language Modeling",
+      "Glimpse: Enabling White-Box Methods to Use Proprietary Models for Zero-Shot LLM-Generated Text Detection",
+      "Knowledge Entropy Decay during Language Model Pretraining Hinders New Knowledge Acquisition",
+      "Mix-CPT: A Domain Adaptation Framework via Decoupling Knowledge Learning and Format Alignment",
+      "SCOPE: A Self-supervised Framework for Improving Faithfulness in Conditional Text Generation",
+      "Scale-Free Graph-Language Models"
+    ],
+    "icml25": [
+      "Generalization Principles for Inference over Text-Attributed Graphs with Large Language Models",
+      "Graph World Model",
+      "Latent Thought Models with Variational Bayes Inference-Time Computation",
+      "Private Federated Learning using Preference-Optimized Synthetic Data",
+      "Sparse Spectral Training and Inference on Euclidean and Hyperbolic Neural Networks",
+      "Synthesizing Privacy-Preserving Text Data via Finetuning *without* Finetuning Billion-Scale LLMs"
+    ],
+    "emnlp25": [
+      "AmpleHate: Amplifying the Attention for Versatile Implicit Hate Detection",
+      "SenDetEX: Sentence-LevelAI-Generated Text Detection for Human-AIHybrid Content via Style and Context Fusion"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 3,
+    "neurips24": 2,
+    "iclr25": 7,
+    "icml25": 6,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

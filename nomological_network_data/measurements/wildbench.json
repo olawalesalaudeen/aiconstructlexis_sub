@@ -1,0 +1,250 @@
+{
+  "canonical_name": "WildBench",
+  "type": "measurement",
+  "canonical_definition": "WildBench is predominantly characterized as a benchmark for evaluating the instruction-following capabilities of large language models, often used alongside other evaluation suites like AlpacaEval and MT-Bench. The provided literature consistently describes it as a challenging benchmark featuring \"long, multi-turn prompts\" and \"difficult questions sourced from real users.\" The evaluation methodology is frequently described as subjective, often employing an \"LLM-as-a-judge\" system, with some papers noting a \"fine-grained grading scale\" and a specific \"WB-Score\" to quantify performance. A less common framing describes it simply as a \"public dataset of model comparisons.\" Papers use WildBench to measure a broad set of abilities, including conversational ability, question answering, commonsense knowledge, and long-context understanding. The tasks within the benchmark are reported to require higher-order skills such as creativity, planning, data analysis, role-playing, and domain knowledge.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "WildBench",
+    "Wildbench",
+    "Wild-Bench"
+  ],
+  "papers": [
+    "Cultivating Gaming Sense for Yourself: MakingVLMs Gaming Experts",
+    "TableLoRA: Low-rank Adaptation on Table Structure Understanding for Large Language Models",
+    "DSCD: Large Language Model Detoxification with Self-Constrained Decoding",
+    "Language Mixing in Reasoning Language Models: Patterns, Impact, and Internal Causes",
+    "As Simple as Fine-tuning: LLM Alignment via Bidirectional Negative Feedback Loss",
+    "Instruct-SkillMix: A Powerful Pipeline for LLM Instruction Tuning",
+    "Jamba: Hybrid Transformer-Mamba Language Models",
+    "Magpie: Alignment Data Synthesis from Scratch by Prompting Aligned LLMs with Nothing",
+    "Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation",
+    "RocketEval: Efficient automated LLM evaluation via grading checklist",
+    "WildBench: Benchmarking LLMs with Challenging Tasks from Real Users in the Wild",
+    "Diverging Preferences: When do Annotators Disagree and do Models Know?",
+    "R.I.P.: Better Models by Survival of the Fittest Prompts"
+  ],
+  "paper_count": 13,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "An instruction-following benchmark that uses a diverse distribution of task categories and a fine-grained grading scale to evaluate model responses against a reference answer.",
+      "paper": "Instruct-SkillMix: A Powerful Pipeline for LLM Instruction Tuning",
+      "original_name": "WildBench"
+    },
+    {
+      "text": "An LLM-based evaluation framework used as a public dataset of model comparisons judged by an LLM-based judge.",
+      "paper": "Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation",
+      "original_name": "Wildbench"
+    },
+    {
+      "text": "A challenging instruction-following QA benchmark featuring long, multi-turn prompts and difficult questions sourced from real users.",
+      "paper": "As Simple as Fine-tuning: LLM Alignment via Bidirectional Negative Feedback Loss",
+      "original_name": "Wild-Bench"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Conversational ability",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Jamba: Hybrid Transformer-Mamba Language Models",
+      "evidence": "In this section we evaluate the Jamba-1.5 models on two chatbot scenarios: Arena-Hard (Li et al., 2024b), a set of 500 challenging user queries that uses GPT4-Turbo as a judge, and WildBench (Lin et al., 2024)... (Section 7.3)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Jamba: Hybrid Transformer-Mamba Language Models"
+        ],
+        "acl25": [
+          "TableLoRA: Low-rank Adaptation on Table Structure Understanding for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction following",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Instruct-SkillMix: A Powerful Pipeline for LLM Instruction Tuning",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Instruct-SkillMix: A Powerful Pipeline for LLM Instruction Tuning"
+        ],
+        "naacl25": [
+          "Faithful, Unfaithful or Ambiguous? Multi-Agent Debate with Initial Stance for Summary Evaluation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Planning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "WildBench: Benchmarking LLMs with Challenging Tasks from Real Users in the Wild",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "WildBench: Benchmarking LLMs with Challenging Tasks from Real Users in the Wild"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Creativity",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "WildBench: Benchmarking LLMs with Challenging Tasks from Real Users in the Wild",
+      "evidence": "\u201cThe tasks in WILDBENCH typically demand higher-order reasoning, such as writing and/or debugging code with specific constraints, creative writing with multiple constraints on the style and content\u201d",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "WildBench: Benchmarking LLMs with Challenging Tasks from Real Users in the Wild"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Domain knowledge",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "WildBench: Benchmarking LLMs with Challenging Tasks from Real Users in the Wild",
+      "evidence": "\u201cThe tasks in WILDBENCH typically demand higher-order reasoning, such as writing and/or debugging code with specific constraints, creative writing with multiple constraints on the style and content, or designing a software system with complex requirements. These tasks often require critical thinking, creativity, and technical expertise\u201d",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "WildBench: Benchmarking LLMs with Challenging Tasks from Real Users in the Wild"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-context understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "WildBench: Benchmarking LLMs with Challenging Tasks from Real Users in the Wild",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "WildBench: Benchmarking LLMs with Challenging Tasks from Real Users in the Wild"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "LMSYS Chatbot Arena",
+      "other_type": "measurements",
+      "relationship_type": "correlates",
+      "paper": "WildBench: Benchmarking LLMs with Challenging Tasks from Real Users in the Wild",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "WildBench: Benchmarking LLMs with Challenging Tasks from Real Users in the Wild"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Data analysis",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "WildBench: Benchmarking LLMs with Challenging Tasks from Real Users in the Wild",
+      "evidence": "This dataset is particularly suited for conversion into an evaluation benchmark because it contains a diverse array of tasks that users expect LLMs to perform, such as writing assistance, coding, mathematics, data analysis, role playing, and planning. (Section 2.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "WildBench: Benchmarking LLMs with Challenging Tasks from Real Users in the Wild"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Role-playing",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "WildBench: Benchmarking LLMs with Challenging Tasks from Real Users in the Wild",
+      "evidence": "This dataset is particularly suited for conversion into an evaluation benchmark because it contains a diverse array of tasks that users expect LLMs to perform, such as writing assistance, coding, mathematics, data analysis, role playing, and planning. (Section 2.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "WildBench: Benchmarking LLMs with Challenging Tasks from Real Users in the Wild"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "As Simple as Fine-tuning: LLM Alignment via Bidirectional Negative Feedback Loss",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "As Simple as Fine-tuning: LLM Alignment via Bidirectional Negative Feedback Loss"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense knowledge",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "R.I.P.: Better Models by Survival of the Fittest Prompts",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "R.I.P.: Better Models by Survival of the Fittest Prompts"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 11,
+  "incoming_relationship_count": 11,
+  "outgoing_relationship_count": 0,
+  "characterization": "WildBench is predominantly characterized as a benchmark for evaluating the instruction-following capabilities of large language models, often used alongside other evaluation suites like AlpacaEval and MT-Bench. The provided literature consistently describes it as a challenging benchmark featuring \"long, multi-turn prompts\" and \"difficult questions sourced from real users.\" The evaluation methodology is frequently described as subjective, often employing an \"LLM-as-a-judge\" system, with some papers noting a \"fine-grained grading scale\" and a specific \"WB-Score\" to quantify performance. A less common framing describes it simply as a \"public dataset of model comparisons.\" Papers use WildBench to measure a broad set of abilities, including conversational ability, question answering, commonsense knowledge, and long-context understanding. The tasks within the benchmark are reported to require higher-order skills such as creativity, planning, data analysis, role-playing, and domain knowledge.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "As Simple as Fine-tuning: LLM Alignment via Bidirectional Negative Feedback Loss",
+      "Instruct-SkillMix: A Powerful Pipeline for LLM Instruction Tuning",
+      "Jamba: Hybrid Transformer-Mamba Language Models",
+      "Magpie: Alignment Data Synthesis from Scratch by Prompting Aligned LLMs with Nothing",
+      "Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation",
+      "RocketEval: Efficient automated LLM evaluation via grading checklist",
+      "WildBench: Benchmarking LLMs with Challenging Tasks from Real Users in the Wild"
+    ],
+    "acl25": [
+      "Cultivating Gaming Sense for Yourself: MakingVLMs Gaming Experts",
+      "TableLoRA: Low-rank Adaptation on Table Structure Understanding for Large Language Models"
+    ],
+    "icml25": [
+      "Diverging Preferences: When do Annotators Disagree and do Models Know?",
+      "R.I.P.: Better Models by Survival of the Fittest Prompts"
+    ],
+    "emnlp25": [
+      "DSCD: Large Language Model Detoxification with Self-Constrained Decoding",
+      "Language Mixing in Reasoning Language Models: Patterns, Impact, and Internal Causes"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 7,
+    "acl25": 2,
+    "icml25": 2,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25"
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "canonical_name": "FinQA",
+  "type": "measurement",
+  "canonical_definition": "Across the surveyed literature, FinQA is characterized as a benchmark dataset for question answering in the financial domain. The most prevalent operationalization requires models to generate a Python-executable math expression based on questions and financial tables. Papers use FinQA to measure constructs such as `Mathematical reasoning` and `Table understanding`, with one study noting it was developed to \"benchmark deep learning models for such numerical reasoning tasks in the financial domain\" (MMDocIR: Benchmarking Multimodal Retrieval for Long Documents). While the Python-generation framing is common, a smaller set of work describes the benchmark's focus differently; for instance, one paper states that FinQA assesses \"knowledge-based question answering,\" while another claims it \"primarily assess[es] text generation\" (Dialect-SQL: An Adaptive Framework for Bridging the Dialect Gap in Text-to-SQL). In experimental setups, FinQA is employed as a held-out dataset to evaluate the generalization ability of methods and is also used to construct other evaluation tasks, such as reranking.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "FinQA"
+  ],
+  "papers": [
+    "Dialect-SQL: An Adaptive Framework for Bridging the Dialect Gap in Text-to-SQL",
+    "Improving the Quality of Web-mined Parallel Corpora of Low-Resource Languages using Debiasing Heuristics",
+    "MMDocIR: Benchmarking Multimodal Retrieval for Long Documents",
+    "SNaRe: Domain-aware Data Generation for Low-Resource Event Detection",
+    "Towards Robust Mathematical Reasoning",
+    "DAWN-ICL: Strategic Planning of Problem-solving Trajectories for Zero-Shot In-Context Learning",
+    "Language Models can Categorize System Inputs for Performance Analysis"
+  ],
+  "paper_count": 7,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A held-out dataset that requires generating a Python-executable math expression to answer questions based on financial tables.",
+      "paper": "DAWN-ICL: Strategic Planning of Problem-solving Trajectories for Zero-Shot In-Context Learning",
+      "original_name": "FinQA"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "MMDocIR: Benchmarking Multimodal Retrieval for Long Documents",
+      "evidence": "datasets such as FinQA (Chen et al., 2021b) and ConvFinQA (Chen et al., 2022) have been developed to benchmark deep learning models for such numerical reasoning tasks in the financial domain.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "MMDocIR: Benchmarking Multimodal Retrieval for Long Documents"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Table question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Towards Robust Mathematical Reasoning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Towards Robust Mathematical Reasoning"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the surveyed literature, FinQA is characterized as a benchmark dataset for question answering in the financial domain. The most prevalent operationalization requires models to generate a Python-executable math expression based on questions and financial tables. Papers use FinQA to measure constructs such as `Mathematical reasoning` and `Table understanding`, with one study noting it was developed to \"benchmark deep learning models for such numerical reasoning tasks in the financial domain\" (MMDocIR: Benchmarking Multimodal Retrieval for Long Documents). While the Python-generation framing is common, a smaller set of work describes the benchmark's focus differently; for instance, one paper states that FinQA assesses \"knowledge-based question answering,\" while another claims it \"primarily assess[es] text generation\" (Dialect-SQL: An Adaptive Framework for Bridging the Dialect Gap in Text-to-SQL). In experimental setups, FinQA is employed as a held-out dataset to evaluate the generalization ability of methods and is also used to construct other evaluation tasks, such as reranking.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "naacl25": [
+      "DAWN-ICL: Strategic Planning of Problem-solving Trajectories for Zero-Shot In-Context Learning",
+      "Language Models can Categorize System Inputs for Performance Analysis"
+    ],
+    "emnlp25": [
+      "Dialect-SQL: An Adaptive Framework for Bridging the Dialect Gap in Text-to-SQL",
+      "Improving the Quality of Web-mined Parallel Corpora of Low-Resource Languages using Debiasing Heuristics",
+      "MMDocIR: Benchmarking Multimodal Retrieval for Long Documents",
+      "SNaRe: Domain-aware Data Generation for Low-Resource Event Detection",
+      "Towards Robust Mathematical Reasoning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "naacl25": 2,
+    "emnlp25": 5
+  },
+  "conferences": [
+    "emnlp25",
+    "naacl25"
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "canonical_name": "Refusal behavior",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, refusal behavior is consistently defined as the observable act of a model declining to respond to prompts identified as harmful, unsafe, or policy-violating. This behavior is treated as an indicator of intact safety mechanisms and is described in one paper as a \"safety-critical function\" (NUTMEG: Separating Signal From Noise in Annotator Disagreement). The measurement of this behavior is operationalized through specific evaluation setups. For instance, one study mentions a \"focused evaluation of binary refusal behavior\" using a balanced set of one-line prompts (NUTMEG: Separating Signal From Noise in Annotator Disagreement). Additionally, the JailbreakBench benchmark is used to assess this behavior by measuring the \"jailbreak Attack Success Rate (ASR)\", where a successful attack represents a failure of the model to refuse (The Geometry of Refusal in Large Language Models: Concept Cones and Representational Independence). Refusal behavior is studied alongside concepts like \"attack success rate\" and \"safety risk index\" and is also noted as being related to \"Helpful response generation\".",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Refusal behavior"
+  ],
+  "papers": [
+    "Assumed Identities: Quantifying Gender Bias in Machine Translation of Gender-Ambiguous Occupational Terms",
+    "NUTMEG: Separating Signal From Noise in Annotator Disagreement",
+    "Assessing Safety Risks and Quantization-aware Safety Patching for Quantized Large Language Models",
+    "Position: Evaluating Generative AI Systems Is a Social Science Measurement Challenge"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The observable act of a model declining to respond to a harmful or unsafe prompt, indicating intact safety mechanisms.",
+      "paper": "Assessing Safety Risks and Quantization-aware Safety Patching for Quantized Large Language Models",
+      "original_name": "Refusal behavior"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpful response generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Prompt Compression for Large Language Models: A Survey",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Prompt Compression for Large Language Models: A Survey"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "JailbreakBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "The Geometry of Refusal in Large Language Models: Concept Cones and Representational Independence",
+      "evidence": "We evaluate the jailbreak Attack Success Rate (ASR) on JAILBREAKBENCH (Chao et al., 2024) using the STRONGREJECT fine\u2013tuned judge (Souly et al., 2024).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "The Geometry of Refusal in Large Language Models: Concept Cones and Representational Independence"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the provided literature, refusal behavior is consistently defined as the observable act of a model declining to respond to prompts identified as harmful, unsafe, or policy-violating. This behavior is treated as an indicator of intact safety mechanisms and is described in one paper as a \"safety-critical function\" (NUTMEG: Separating Signal From Noise in Annotator Disagreement). The measurement of this behavior is operationalized through specific evaluation setups. For instance, one study mentions a \"focused evaluation of binary refusal behavior\" using a balanced set of one-line prompts (NUTMEG: Separating Signal From Noise in Annotator Disagreement). Additionally, the JailbreakBench benchmark is used to assess this behavior by measuring the \"jailbreak Attack Success Rate (ASR)\", where a successful attack represents a failure of the model to refuse (The Geometry of Refusal in Large Language Models: Concept Cones and Representational Independence). Refusal behavior is studied alongside concepts like \"attack success rate\" and \"safety risk index\" and is also noted as being related to \"Helpful response generation\".",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "icml25": [
+      "Assessing Safety Risks and Quantization-aware Safety Patching for Quantized Large Language Models",
+      "Position: Evaluating Generative AI Systems Is a Social Science Measurement Challenge"
+    ],
+    "emnlp25": [
+      "Assumed Identities: Quantifying Gender Bias in Machine Translation of Gender-Ambiguous Occupational Terms",
+      "NUTMEG: Separating Signal From Noise in Annotator Disagreement"
+    ]
+  },
+  "paper_count_by_conference": {
+    "icml25": 2,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "icml25"
+  ]
+}

@@ -1,0 +1,89 @@
+\section*{Prompt: Aggregate Relationships}
+\begin{description}
+\item[Pipeline step:] Harmonization --- Relationship Mapping
+\item[Models:] Gemini 2.5 Pro
+\item[Source:] \texttt{misc/prompts.py} $\rightarrow$ \texttt{AGGREGATE\_RELATIONSHIPS\_PROMPT}
+\item[Called from:] \texttt{scripts/llm\_aggregator.py:aggregate\_relationships\_llm()}
+\end{description}
+\begin{tcolorbox}[colback=yellow!8,colframe=yellow!50!black,left=4pt,right=4pt,top=4pt,bottom=4pt,arc=2pt]
+\textbf{Note:} The \texttt{\{construct\_groups\_json\}}, \texttt{\{measurement\_groups\_json\}}, \texttt{\{behavior\_groups\_json\}}, and \texttt{\{name\_mapping\_json\}} placeholders are filled at runtime with the harmonized entity groups. The raw relationships are appended after this template.
+\end{tcolorbox}
+
+\begin{tcolorbox}[breakable,enhanced,colback=blue!3,colframe=blue!40!black,title={Prompt},fonttitle=\bfseries,left=8pt,right=8pt,top=6pt,bottom=6pt]
+
+You are a research assistant harmonizing relationships between constructs, measurement instruments, and behaviors extracted from multiple academic papers. Your goal is to deduplicate relationships that describe the same connection under different wordings, resolving them to canonical forms.
+
+\textbf{Faithfulness:} Do not invent relationships or nodes. Only map and consolidate what appears in the input relationships and canonical groups.
+
+Given relationships from different papers, your task is to:
+\begin{enumerate}
+\item Map source and target names to their canonical names using the provided harmonized groups
+\item Deduplicate relationships (same canonical source-target-type pairs expressed differently)
+\item Consolidate evidence from multiple papers for each canonical relationship
+\end{enumerate}
+
+There are three types of relationships allowed: \texttt{related}, \texttt{causal}, and \texttt{correlation} - related is basically NOT causal or correlated, but related and important to capture.
+
+\textbf{Context - Canonical Groups:}
+
+\textbf{Constructs:}
+\{construct\_groups\_json\}
+
+\textbf{Measurement Instruments:}
+\{measurement\_groups\_json\}
+
+\textbf{Behaviors:}
+\{behavior\_groups\_json\}
+
+\textbf{Name Mapping (original -> canonical):}
+\{name\_mapping\_json\}
+
+\textbf{Relationships to aggregate (JSON array):}
+\{relationships\_json\}
+
+\textbf{Instructions:}
+\begin{enumerate}
+\item For each relationship, map the source and target to canonical names using:
+\begin{itemize}
+\item First check the name\_mapping dictionary (direct mapping)
+\item If not found in mapping, search through the groups lists to find which canonical name it belongs to
+\item Use the canonical\_name from the matching group
+\end{itemize}
+\item If multiple relationships have the same canonical source-target-type combination, consolidate them:
+\begin{itemize}
+\item Combine all evidence into a list
+\item List all papers that mention this relationship
+\item Count how many papers support this relationship
+\end{itemize}
+\item Preserve unique relationships (different canonical source-target-type combinations)
+\end{enumerate}
+
+**Allowed relationship \texttt{type} values (exactly one):** \texttt{related}, \texttt{causes}, \texttt{correlates}. Preserve the type from the input when mapping to canonical names; if unclear, use \texttt{related}.
+
+\textbf{Output Format (JSON):}
+\{\{
+  "relationships": [
+    \{\{
+      "source": "Canonical Construct Name",
+      "target": "Canonical Measurement Name",
+      "type": "related",
+      "evidence": [
+        "Quoted evidence from Paper1 (p. 5)",
+        "Quoted evidence from Paper2 (Sec. 3)"
+      ],
+      "papers": ["Paper1", "Paper2"],
+      "paper\_count": 2
+    \}\},
+    \{\{
+      "source": "MMLU",
+      "target": "Jailbreak robustness",
+      "type": "correlates",
+      "evidence": ["Association reported in Paper3 (Table 2)."],
+      "papers": ["Paper3"],
+      "paper\_count": 1
+    \}\}
+  ]
+\}\}
+
+Return only the JSON object, no additional text.
+\end{tcolorbox}

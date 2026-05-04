@@ -1,0 +1,250 @@
+{
+  "canonical_name": "Zero-shot question answering",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, zero-shot question answering is characterized as the behavior of a model performing tasks without any task-specific training, fine-tuning, or examples provided in the prompt or context. The most common definition specifies this as \"generating correct answers to multiple-choice questions,\" while other papers adopt a broader framing that includes general question answering on downstream tasks or other natural language understanding and reasoning tasks. This behavior is consistently operationalized by measuring a model's performance, typically reported as \"zero-shot accuracy,\" across a wide array of evaluation benchmarks. The most frequently cited instruments for this purpose are PIQA, BoolQ, and WinoGrande. Other benchmarks commonly used to measure this behavior include HellaSwag, ARC, MMLU, and LAMBADA. As one study notes, evaluation involves reporting \"the zero-shot accuracy on various benchmarks, including PIQA, ARC, HellaSwag, and WinoGrande\" (QLLM: Accurate and Efficient Low-Bitwidth Quantization for Large Language Models). The consistent focus is on assessing a model's capabilities on unseen tasks without task-specific adaptation.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Zero-shot question answering",
+    "Zero-shot Question Answering"
+  ],
+  "papers": [
+    "PoSE: Efficient Context Window Extension of LLMs via Positional Skip-wise Training",
+    "QLLM: Accurate and Efficient Low-Bitwidth Quantization for Large Language Models",
+    "DISP-LLM: Dimension-Independent Structural Pruning for Large Language Models",
+    "Discovering Sparsity Allocation for  Layer-wise Pruning of Large Language Models",
+    "OneBit: Towards Extremely Low-bit Large Language Models",
+    "ShiftAddLLM: Accelerating Pretrained LLMs via Post-Training Multiplication-Less Reparameterization"
+  ],
+  "paper_count": 6,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Generating correct answers to multiple-choice questions without any task-specific training examples provided in context.",
+      "paper": "PoSE: Efficient Context Window Extension of LLMs via Positional Skip-wise Training",
+      "original_name": "Zero-shot question answering"
+    },
+    {
+      "text": "The observable behavior of answering questions on downstream tasks without fine-tuning or additional training.",
+      "paper": "ShiftAddLLM: Accelerating Pretrained LLMs via Post-Training Multiplication-Less Reparameterization",
+      "original_name": "Zero-shot Question Answering"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BoolQ",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "PoSE: Efficient Context Window Extension of LLMs via Positional Skip-wise Training",
+      "evidence": "\u201cFor zero-shot evaluation, we employ BoolQ (Clark et al., 2019), PIQA (Bisk et al., 2020), WinoGrande (Keisuke et al., 2019), and TruthfulQA (Lin et al., 2022).\u201d (Section 5.4)",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "iclr24": [
+          "PoSE: Efficient Context Window Extension of LLMs via Positional Skip-wise Training"
+        ],
+        "neurips24": [
+          "OneBit: Towards Extremely Low-bit Large Language Models",
+          "Discovering Sparsity Allocation for  Layer-wise Pruning of Large Language Models"
+        ],
+        "iclr25": [
+          "ARB-LLM: Alternating Refined Binarizations for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "PoSE: Efficient Context Window Extension of LLMs via Positional Skip-wise Training",
+      "evidence": "\u201cwe also examined the zero-shot capabilities of pruned models. In detail, we report the accuracy in six zero-shot tasks including PIQA\u201d",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "iclr24": [
+          "PoSE: Efficient Context Window Extension of LLMs via Positional Skip-wise Training"
+        ],
+        "neurips24": [
+          "OneBit: Towards Extremely Low-bit Large Language Models"
+        ],
+        "iclr25": [
+          "ARB-LLM: Alternating Refined Binarizations for Large Language Models"
+        ],
+        "icml25": [
+          "Let LLM Tell What to Prune and How Much to Prune"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "PoSE: Efficient Context Window Extension of LLMs via Positional Skip-wise Training",
+      "evidence": "\u201cFor zero-shot evaluation, we employ BoolQ (Clark et al., 2019), PIQA (Bisk et al., 2020), WinoGrande (Keisuke et al., 2019), and TruthfulQA (Lin et al., 2022).\u201d (Section 5.4)",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "iclr24": [
+          "PoSE: Efficient Context Window Extension of LLMs via Positional Skip-wise Training"
+        ],
+        "neurips24": [
+          "OneBit: Towards Extremely Low-bit Large Language Models"
+        ],
+        "iclr25": [
+          "ARB-LLM: Alternating Refined Binarizations for Large Language Models"
+        ],
+        "icml25": [
+          "Let LLM Tell What to Prune and How Much to Prune"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HellaSwag",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "OneBit: Towards Extremely Low-bit Large Language Models",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "neurips24": [
+          "OneBit: Towards Extremely Low-bit Large Language Models"
+        ],
+        "iclr25": [
+          "ARB-LLM: Alternating Refined Binarizations for Large Language Models"
+        ],
+        "icml25": [
+          "Let LLM Tell What to Prune and How Much to Prune"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "OneBit: Towards Extremely Low-bit Large Language Models",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "OneBit: Towards Extremely Low-bit Large Language Models"
+        ],
+        "iclr25": [
+          "LeanQuant: Accurate and Scalable Large Language Model Quantization with Loss-error-aware Grid"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-Easy",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "ARB-LLM: Alternating Refined Binarizations for Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "ARB-LLM: Alternating Refined Binarizations for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-Challenge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "ARB-LLM: Alternating Refined Binarizations for Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "ARB-LLM: Alternating Refined Binarizations for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LeanQuant: Accurate and Scalable Large Language Model Quantization with Loss-error-aware Grid",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "LeanQuant: Accurate and Scalable Large Language Model Quantization with Loss-error-aware Grid"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM Evaluation Harness",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Discovering Sparsity Allocation for  Layer-wise Pruning of Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Discovering Sparsity Allocation for  Layer-wise Pruning of Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OBQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "ARB-LLM: Alternating Refined Binarizations for Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "ARB-LLM: Alternating Refined Binarizations for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LAMBADA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LeanQuant: Accurate and Scalable Large Language Model Quantization with Loss-error-aware Grid",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "LeanQuant: Accurate and Scalable Large Language Model Quantization with Loss-error-aware Grid"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 11,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 11,
+  "characterization": "Across the surveyed literature, zero-shot question answering is characterized as the behavior of a model performing tasks without any task-specific training, fine-tuning, or examples provided in the prompt or context. The most common definition specifies this as \"generating correct answers to multiple-choice questions,\" while other papers adopt a broader framing that includes general question answering on downstream tasks or other natural language understanding and reasoning tasks. This behavior is consistently operationalized by measuring a model's performance, typically reported as \"zero-shot accuracy,\" across a wide array of evaluation benchmarks. The most frequently cited instruments for this purpose are PIQA, BoolQ, and WinoGrande. Other benchmarks commonly used to measure this behavior include HellaSwag, ARC, MMLU, and LAMBADA. As one study notes, evaluation involves reporting \"the zero-shot accuracy on various benchmarks, including PIQA, ARC, HellaSwag, and WinoGrande\" (QLLM: Accurate and Efficient Low-Bitwidth Quantization for Large Language Models). The consistent focus is on assessing a model's capabilities on unseen tasks without task-specific adaptation.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "PoSE: Efficient Context Window Extension of LLMs via Positional Skip-wise Training",
+      "QLLM: Accurate and Efficient Low-Bitwidth Quantization for Large Language Models"
+    ],
+    "neurips24": [
+      "DISP-LLM: Dimension-Independent Structural Pruning for Large Language Models",
+      "Discovering Sparsity Allocation for  Layer-wise Pruning of Large Language Models",
+      "OneBit: Towards Extremely Low-bit Large Language Models",
+      "ShiftAddLLM: Accelerating Pretrained LLMs via Post-Training Multiplication-Less Reparameterization"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "neurips24": 4
+  },
+  "conferences": [
+    "iclr24",
+    "neurips24"
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "canonical_name": "MMMLU",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, MMMLU is consistently characterized as a multilingual, human-translated version of the MMLU benchmark. Its most frequently stated purpose is to assess \"general language understanding\" across various languages and subjects. Papers also use it to measure more specific constructs, including \"multilingual reasoning,\" \"reasoning performance,\" and \"knowledge comprehension.\" Operationally, MMMLU is used to evaluate the behavior of text generation, specifically in the context of five-shot, multiple-choice question answering. One paper specifies that the benchmark functions by extracting answers from a model's generated outputs rather than from token probabilities. Another source notes that the test sets can be divided by difficulty into \"easy\" and \"hard\" evaluations. Several papers associate this benchmark with OpenAI.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "MMMLU"
+  ],
+  "papers": [
+    "Beyond N-Grams: Rethinking Evaluation Metrics and Strategies for Multilingual Abstractive Summarization",
+    "Condor: EnhanceLLMAlignment with Knowledge-Driven Data Synthesis and Refinement",
+    "Flipping Knowledge Distillation: Leveraging Small Models\u2019 Expertise to EnhanceLLMs in Text Matching",
+    "TRIDENT: Enhancing Large Language Model Safety with Tri-Dimensional Diversified Red-Teaming Data Synthesis",
+    "CAVE: Detecting and Explaining Commonsense Anomalies in Visual Environments",
+    "Co-EvolvingLLMs and Embedding Models via Density-Guided Preference Optimization for Text Clustering",
+    "NEXUS: Network Exploration for eXploiting Unsafe Sequences in Multi-TurnLLMJailbreaks",
+    "PSET: a Phonetics-Semantics Evaluation Testbed",
+    "TableEval: A Real-World Benchmark for Complex, Multilingual, and Multi-Structured Table Question Answering",
+    "Adapters for Altering LLM Vocabularies: What Languages Benefit the Most?",
+    "Pangea: A Fully Open Multilingual Multimodal LLM for 39 Languages"
+  ],
+  "paper_count": 11,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A human-translated version of the MMLU benchmark, used to test general language understanding across multiple languages and subjects.",
+      "paper": "Pangea: A Fully Open Multilingual Multimodal LLM for 39 Languages",
+      "original_name": "MMMLU"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multiple-choice question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Adapters for Altering LLM Vocabularies: What Languages Benefit the Most?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Adapters for Altering LLM Vocabularies: What Languages Benefit the Most?"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multilingual reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "NEXUS: Network Exploration for eXploiting Unsafe Sequences in Multi-TurnLLMJailbreaks",
+      "evidence": "Beyond English textual reasoning, we include two additional evaluation tracks: a multilingual experiment using MMLU and its professionally translated variant MMMLU (Hendrycks et al., 2021)...",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "NEXUS: Network Exploration for eXploiting Unsafe Sequences in Multi-TurnLLMJailbreaks"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, MMMLU is consistently characterized as a multilingual, human-translated version of the MMLU benchmark. Its most frequently stated purpose is to assess \"general language understanding\" across various languages and subjects. Papers also use it to measure more specific constructs, including \"multilingual reasoning,\" \"reasoning performance,\" and \"knowledge comprehension.\" Operationally, MMMLU is used to evaluate the behavior of text generation, specifically in the context of five-shot, multiple-choice question answering. One paper specifies that the benchmark functions by extracting answers from a model's generated outputs rather than from token probabilities. Another source notes that the test sets can be divided by difficulty into \"easy\" and \"hard\" evaluations. Several papers associate this benchmark with OpenAI.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Adapters for Altering LLM Vocabularies: What Languages Benefit the Most?",
+      "Pangea: A Fully Open Multilingual Multimodal LLM for 39 Languages"
+    ],
+    "acl25": [
+      "Beyond N-Grams: Rethinking Evaluation Metrics and Strategies for Multilingual Abstractive Summarization",
+      "Condor: EnhanceLLMAlignment with Knowledge-Driven Data Synthesis and Refinement",
+      "Flipping Knowledge Distillation: Leveraging Small Models\u2019 Expertise to EnhanceLLMs in Text Matching",
+      "TRIDENT: Enhancing Large Language Model Safety with Tri-Dimensional Diversified Red-Teaming Data Synthesis"
+    ],
+    "emnlp25": [
+      "CAVE: Detecting and Explaining Commonsense Anomalies in Visual Environments",
+      "Co-EvolvingLLMs and Embedding Models via Density-Guided Preference Optimization for Text Clustering",
+      "NEXUS: Network Exploration for eXploiting Unsafe Sequences in Multi-TurnLLMJailbreaks",
+      "PSET: a Phonetics-Semantics Evaluation Testbed",
+      "TableEval: A Real-World Benchmark for Complex, Multilingual, and Multi-Structured Table Question Answering"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "acl25": 4,
+    "emnlp25": 5
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25"
+  ]
+}

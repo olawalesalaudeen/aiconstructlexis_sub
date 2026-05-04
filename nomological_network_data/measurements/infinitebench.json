@@ -1,0 +1,372 @@
+{
+  "canonical_name": "InfiniteBench",
+  "type": "measurement",
+  "canonical_definition": "InfiniteBench is consistently characterized as a benchmark for evaluating large language models on tasks involving very long contexts, with sources frequently specifying lengths exceeding 100,000 tokens. Across the provided literature, its primary application is to measure the construct of `Long-context processing` by assessing an LLM's ability to understand and reason over long dependencies. The most common operationalization focuses on a narrow set of tasks, particularly long-book question answering (`En.QA`), multiple-choice question answering (`En.MC`), and `Text summarization` (`En.Sum`). However, a smaller set of papers describes a more diverse collection of what one source calls \"10 real-world and synthetic tasks.\" This broader scope includes the evaluation of `Information retrieval` (such as passkey and key-value retrieval), `Code debugging`, and `Mathematical reasoning`. The benchmark is also used to assess more general capabilities like `Length generalization` and `Long-context understanding`. Several papers refer to it as a \"widely used\" instrument for these purposes.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "\u221e-Bench",
+    "\u221eBench",
+    "\u221eBENCH",
+    "InfiniteBench",
+    "\u221e-bench"
+  ],
+  "papers": [
+    "Counterspeech the ultimate shield! Multi-Conditioned Counterspeech Generation through Attributed Prefix Learning",
+    "INJONGO: A Multicultural Intent Detection and Slot-filling Dataset for 16African Languages",
+    "Modeling Uncertainty in Composed Image Retrieval via Probabilistic Embeddings",
+    "PlanningArena: A Modular Benchmark for Multidimensional Evaluation of Planning and Tool Learning",
+    "An Evolved Universal Transformer Memory",
+    "ChatQA 2: Bridging the Gap to Proprietary LLMs in Long Context and RAG Capabilities",
+    "FlexPrefill: A Context-Aware Sparse Attention Mechanism for Efficient Long-Sequence Inference",
+    "HELMET: How to Evaluate Long-context Models Effectively and Thoroughly",
+    "Holistic Reasoning with Long-Context LMs: A Benchmark for Database Operations on Massive Textual Data",
+    "Human-inspired Episodic Memory for Infinite Context LLMs",
+    "Jamba: Hybrid Transformer-Mamba Language Models",
+    "LongPO: Long Context Self-Evolution of Large Language Models through Short-to-Long Preference Optimization",
+    "OmniKV: Dynamic Context Selection for Efficient Long-Context LLMs",
+    "ReAttention: Training-Free Infinite Context with Finite Attention Scope",
+    "SCBench: A KV Cache-Centric Analysis of Long-Context Methods",
+    "Scaling Instruction-tuned LLMs to Million-token Contexts via Hierarchical Synthetic Data Generation",
+    "Why Does the Effective Context Length of LLMs Fall Short?",
+    "CommVQ: Commutative Vector Quantization for KV Cache Compression",
+    "LaRA: Benchmarking Retrieval-Augmented Generation and Long-Context LLMs \u2013 No Silver Bullet for LC or RAG Routing",
+    "LongRoPE2: Near-Lossless LLM Context Window Scaling",
+    "ParallelComp: Parallel Long-Context Compressor for Length Extrapolation",
+    "Star Attention: Efficient LLM Inference over Long Sequences",
+    "CAMIEval: EnhancingNLGEvaluation through Multidimensional Comparative Instruction-Following Analysis",
+    "LLM-guided Plan and Retrieval: A Strategic Alignment for Interpretable User Satisfaction Estimation in Dialogue"
+  ],
+  "paper_count": 24,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A long-context benchmark evaluating summarization, long-book question answering, and multiple-choice question answering over contexts beyond 100K tokens.",
+      "paper": "LongPO: Long Context Self-Evolution of Large Language Models through Short-to-Long Preference Optimization",
+      "original_name": "\u221eBench"
+    },
+    {
+      "text": "Long-context benchmark with average length of 100K tokens, including English question answering and multiple-choice question answering tasks on long novels.",
+      "paper": "Jamba: Hybrid Transformer-Mamba Language Models",
+      "original_name": "\u221eBENCH"
+    },
+    {
+      "text": "A benchmark specifically designed to evaluate LLMs on very long context tasks, including various forms of retrieval like passkey, key-value, and number retrieval.",
+      "paper": "Human-inspired Episodic Memory for Infinite Context LLMs",
+      "original_name": "\u221e-Bench"
+    },
+    {
+      "text": "A benchmark dataset designed to test LLMs\u2019 understanding of long dependencies within extensive contexts, including 10 synthetic and real-world tasks across various domains.",
+      "paper": "FlexPrefill: A Context-Aware Sparse Attention Mechanism for Efficient Long-Sequence Inference",
+      "original_name": "InfiniteBench"
+    },
+    {
+      "text": "\u221e-bench, a long-context benchmark with En.QA and En.MC tasks used in the paper as a comparison point and critique target.",
+      "paper": "LaRA: Benchmarking Retrieval-Augmented Generation and Long-Context LLMs \u2013 No Silver Bullet for LC or RAG Routing",
+      "original_name": "\u221e-bench"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text summarization",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "InfLLM: Training-Free Long-Context Extrapolation for LLMs with an Efficient Context Memory",
+      "evidence": "",
+      "paper_count": 5,
+      "papers_by_conference": {
+        "neurips24": [
+          "InfLLM: Training-Free Long-Context Extrapolation for LLMs with an Efficient Context Memory"
+        ],
+        "iclr25": [
+          "LongPO: Long Context Self-Evolution of Large Language Models through Short-to-Long Preference Optimization",
+          "Scaling Instruction-tuned LLMs to Million-token Contexts via Hierarchical Synthetic Data Generation"
+        ],
+        "acl25": [
+          "Top-n\ud835\udf0e: Eliminating Noise in Logit Space for Robust Token Sampling ofLLM"
+        ],
+        "icml25": [
+          "RAPID: Long-Context Inference with Retrieval-Augmented Speculative Decoding"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-context understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "ChatQA 2: Bridging the Gap to Proprietary LLMs in Long Context and RAG Capabilities",
+      "evidence": "",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "iclr25": [
+          "ChatQA 2: Bridging the Gap to Proprietary LLMs in Long Context and RAG Capabilities",
+          "FlexPrefill: A Context-Aware Sparse Attention Mechanism for Efficient Long-Sequence Inference",
+          "An Evolved Universal Transformer Memory"
+        ],
+        "emnlp25": [
+          "Gamma-Guard: Lightweight Residual Adapters for Robust Guardrails in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-context processing",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Jamba: Hybrid Transformer-Mamba Language Models",
+      "evidence": "",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "iclr25": [
+          "Jamba: Hybrid Transformer-Mamba Language Models",
+          "LongPO: Long Context Self-Evolution of Large Language Models through Short-to-Long Preference Optimization",
+          "ReAttention: Training-Free Infinite Context with Finite Attention Scope"
+        ],
+        "naacl25": [
+          "LLM-guided Plan and Retrieval: A Strategic Alignment for Interpretable User Satisfaction Estimation in Dialogue"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code debugging",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "FlexPrefill: A Context-Aware Sparse Attention Mechanism for Efficient Long-Sequence Inference",
+      "evidence": "\"Table 2 shows that our method preserves most of the model\u2019s performance in retrieval and QA tasks, while maintaining efficacy in complex mathematical and coding tasks.\"",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr25": [
+          "FlexPrefill: A Context-Aware Sparse Attention Mechanism for Efficient Long-Sequence Inference",
+          "Why Does the Effective Context Length of LLMs Fall Short?"
+        ],
+        "icml25": [
+          "CommVQ: Commutative Vector Quantization for KV Cache Compression"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Length generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "ParallelComp: Parallel Long-Context Compressor for Length Extrapolation",
+      "evidence": "We compare our method with existing length extrapolation approaches...on LongBench (Bai et al., 2023) and InfiniteBench (Zhang et al., 2024), evaluating them on Llama2-7B-chat-hf... (Section 5.1)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "icml25": [
+          "ParallelComp: Parallel Long-Context Compressor for Length Extrapolation"
+        ],
+        "emnlp25": [
+          "Reinforced Query Reasoners for Reasoning-intensive Retrieval Tasks"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "InfLLM: Training-Free Long-Context Extrapolation for LLMs with an Efficient Context Memory",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "InfLLM: Training-Free Long-Context Extrapolation for LLMs with an Efficient Context Memory"
+        ],
+        "iclr25": [
+          "Scaling Instruction-tuned LLMs to Million-token Contexts via Hierarchical Synthetic Data Generation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Context retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "InfLLM: Training-Free Long-Context Extrapolation for LLMs with an Efficient Context Memory",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "InfLLM: Training-Free Long-Context Extrapolation for LLMs with an Efficient Context Memory"
+        ],
+        "acl25": [
+          "LongReD: Mitigating Short-Text Degradation of Long-Context Large Language Models via Restoration Distillation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "An Evolved Universal Transformer Memory",
+      "evidence": "maintaining efficacy in complex mathematical and coding tasks.",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "An Evolved Universal Transformer Memory",
+          "Why Does the Effective Context Length of LLMs Fall Short?"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Information retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Human-inspired Episodic Memory for Infinite Context LLMs",
+      "evidence": "Table 2 shows that our method preserves most of the model's performance in retrieval and QA tasks",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Human-inspired Episodic Memory for Infinite Context LLMs",
+          "An Evolved Universal Transformer Memory"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-context reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Scaling Instruction-tuned LLMs to Million-token Contexts via Hierarchical Synthetic Data Generation",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Scaling Instruction-tuned LLMs to Million-token Contexts via Hierarchical Synthetic Data Generation"
+        ],
+        "emnlp25": [
+          "Alignment for Efficient Tool Calling of Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Open-domain question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "ChatQA 2: Bridging the Gap to Proprietary LLMs in Long Context and RAG Capabilities",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "ChatQA 2: Bridging the Gap to Proprietary LLMs in Long Context and RAG Capabilities"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Document question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "LongPO: Long Context Self-Evolution of Large Language Models through Short-to-Long Preference Optimization",
+      "evidence": "\"Infinite Bench: a benchmark dataset designed to test LLMs\u2019 understanding of long dependencies within extensive contexts\"",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "LongPO: Long Context Self-Evolution of Large Language Models through Short-to-Long Preference Optimization"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "LongPO: Long Context Self-Evolution of Large Language Models through Short-to-Long Preference Optimization",
+      "evidence": "Table 2 shows that our method preserves most of the model's performance in retrieval and QA tasks",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "LongPO: Long Context Self-Evolution of Large Language Models through Short-to-Long Preference Optimization"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Natural language understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "An Evolved Universal Transformer Memory",
+      "evidence": "\"In Table 3, we provide results across the InfiniteBench tasks\" and the table includes \"Dialogue\" tasks under InfiniteBench",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "An Evolved Universal Transformer Memory"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Key-value retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Scaling Instruction-tuned LLMs to Million-token Contexts via Hierarchical Synthetic Data Generation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Scaling Instruction-tuned LLMs to Million-token Contexts via Hierarchical Synthetic Data Generation"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 15,
+  "incoming_relationship_count": 15,
+  "outgoing_relationship_count": 0,
+  "characterization": "InfiniteBench is consistently characterized as a benchmark for evaluating large language models on tasks involving very long contexts, with sources frequently specifying lengths exceeding 100,000 tokens. Across the provided literature, its primary application is to measure the construct of `Long-context processing` by assessing an LLM's ability to understand and reason over long dependencies. The most common operationalization focuses on a narrow set of tasks, particularly long-book question answering (`En.QA`), multiple-choice question answering (`En.MC`), and `Text summarization` (`En.Sum`). However, a smaller set of papers describes a more diverse collection of what one source calls \"10 real-world and synthetic tasks.\" This broader scope includes the evaluation of `Information retrieval` (such as passkey and key-value retrieval), `Code debugging`, and `Mathematical reasoning`. The benchmark is also used to assess more general capabilities like `Length generalization` and `Long-context understanding`. Several papers refer to it as a \"widely used\" instrument for these purposes.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "An Evolved Universal Transformer Memory",
+      "ChatQA 2: Bridging the Gap to Proprietary LLMs in Long Context and RAG Capabilities",
+      "FlexPrefill: A Context-Aware Sparse Attention Mechanism for Efficient Long-Sequence Inference",
+      "HELMET: How to Evaluate Long-context Models Effectively and Thoroughly",
+      "Holistic Reasoning with Long-Context LMs: A Benchmark for Database Operations on Massive Textual Data",
+      "Human-inspired Episodic Memory for Infinite Context LLMs",
+      "Jamba: Hybrid Transformer-Mamba Language Models",
+      "LongPO: Long Context Self-Evolution of Large Language Models through Short-to-Long Preference Optimization",
+      "OmniKV: Dynamic Context Selection for Efficient Long-Context LLMs",
+      "ReAttention: Training-Free Infinite Context with Finite Attention Scope",
+      "SCBench: A KV Cache-Centric Analysis of Long-Context Methods",
+      "Scaling Instruction-tuned LLMs to Million-token Contexts via Hierarchical Synthetic Data Generation",
+      "Why Does the Effective Context Length of LLMs Fall Short?"
+    ],
+    "naacl25": [
+      "CAMIEval: EnhancingNLGEvaluation through Multidimensional Comparative Instruction-Following Analysis",
+      "LLM-guided Plan and Retrieval: A Strategic Alignment for Interpretable User Satisfaction Estimation in Dialogue"
+    ],
+    "acl25": [
+      "Counterspeech the ultimate shield! Multi-Conditioned Counterspeech Generation through Attributed Prefix Learning",
+      "INJONGO: A Multicultural Intent Detection and Slot-filling Dataset for 16African Languages",
+      "Modeling Uncertainty in Composed Image Retrieval via Probabilistic Embeddings",
+      "PlanningArena: A Modular Benchmark for Multidimensional Evaluation of Planning and Tool Learning"
+    ],
+    "icml25": [
+      "CommVQ: Commutative Vector Quantization for KV Cache Compression",
+      "LaRA: Benchmarking Retrieval-Augmented Generation and Long-Context LLMs \u2013 No Silver Bullet for LC or RAG Routing",
+      "LongRoPE2: Near-Lossless LLM Context Window Scaling",
+      "ParallelComp: Parallel Long-Context Compressor for Length Extrapolation",
+      "Star Attention: Efficient LLM Inference over Long Sequences"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 13,
+    "naacl25": 2,
+    "acl25": 4,
+    "icml25": 5
+  },
+  "conferences": [
+    "acl25",
+    "iclr25",
+    "icml25",
+    "naacl25"
+  ]
+}

@@ -1,0 +1,478 @@
+{
+  "canonical_name": "Document question answering",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, document question answering is predominantly framed as the task of generating answers based on information provided within a given context, such as one or more documents, rather than relying on parametric knowledge. A frequent distinction is made between single-document QA, which involves one long document, and multi-document QA, where models must synthesize information or identify a correct source among irrelevant \"distractor\" documents. The task is further specified by context length, with variants like \"long-context\" and \"long-book\" QA, and by content type, including multimodal documents, webpages, and specialized texts like privacy policies. Most definitions, such as \"open-book\" or \"contextual\" QA, emphasize reliance on the provided passage, with some studies explicitly using contexts that are \"counterfactual to the model\u2019s pretrained knowledge\" to test this capability. In contrast, \"open-domain question answering\" is described as a task that typically requires retrieving information from an external knowledge source. This behavior is commonly measured using a range of benchmarks, with `LongBench` appearing as a prevalent instrument for evaluating both single- and multi-document QA. Other datasets used to operationalize this behavior include `InfiniteBench` for book-length contexts, `HotpotQA` and `2WikiMultihopQA` for multi-document scenarios, and `SQuAD` for general context-based QA. In the specific application of privacy policy QA, this behavior is also studied in relation to `Hallucination`.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Document question answering",
+    "Contextual question answering",
+    "Document-based question answering",
+    "Long-context question answering",
+    "Open-book question answering",
+    "Webpage question answering",
+    "Flexible length question answering",
+    "Long-book question answering",
+    "Multi-document question answering",
+    "Long-document question answering",
+    "Context-based question answering",
+    "Privacy question answering",
+    "Privacy policy question answering"
+  ],
+  "papers": [
+    "Multi-Level Explanations for Generative Language Models",
+    "Scaling Laws and Efficient Inference for Ternary Language Models",
+    "AdaRewriter: Unleashing the Power of Prompting-based Conversational Query Reformulation via Test-Time Adaptation",
+    "AdaSteer: Your AlignedLLMis Inherently an Adaptive Jailbreak Defender",
+    "AdaptThink: Reasoning Models Can Learn When to Think",
+    "Advancing Oversight Reasoning across Languages for Audit Sycophantic Behaviour viaX-Agent",
+    "Adversarial Attacks Against Automated Fact-Checking: A Survey",
+    "Audio-centric Video Understanding Benchmark without Text Shortcut",
+    "CCQA: Generating Question from Solution Can Improve Inference-Time Reasoning inSLMs",
+    "Generator-Assistant Stepwise Rollback Framework for Large Language Model Agent",
+    "HVGuard: Utilizing Multimodal Large Language Models for Hateful Video Detection",
+    "Teaching Your Models to Understand Code via Focal Preference Alignment",
+    "The Pursuit of Empathy: Evaluating Small Language Models forPTSDDialogue Support",
+    "An Evolved Universal Transformer Memory",
+    "AttriBoT: A Bag of Tricks for Efficiently Approximating Leave-One-Out Context Attribution",
+    "Bridging Context Gaps: Leveraging Coreference Resolution for Long Contextual Understanding",
+    "Conformal Generative Modeling with Improved Sample Efficiency through Sequential Greedy Filtering",
+    "Context-Parametric Inversion: Why Instruction Finetuning May Not Actually Improve Context Reliance",
+    "DeciMamba: Exploring the Length Extrapolation Potential of Mamba",
+    "Empowering Users in Digital Privacy Management through Interactive LLM-Based Agents",
+    "FaithEval: Can Your Language Model Stay Faithful to Context, Even If \"The Moon is Made of Marshmallows\"",
+    "From Artificial Needles to Real Haystacks: Improving Retrieval Capabilities in LLMs by Finetuning on Synthetic Data",
+    "From Isolated Conversations to Hierarchical Schemas: Dynamic Tree Memory Representation for LLMs",
+    "Generative Adapter: Contextualizing Language Models in Parameters with A Single Forward Pass",
+    "HELMET: How to Evaluate Long-context Models Effectively and Thoroughly",
+    "HShare: Fast LLM Decoding by Hierarchical Key-Value Sharing",
+    "Harnessing Webpage UIs for Text-Rich Visual Understanding",
+    "Human-inspired Episodic Memory for Infinite Context LLMs",
+    "Long Context Compression with Activation Beacon",
+    "LongPO: Long Context Self-Evolution of Large Language Models through Short-to-Long Preference Optimization",
+    "MambaExtend: A Training-Free Approach to Improve Long Context Extension of Mamba",
+    "Montessori-Instruct: Generate Influential Training Data Tailored for Student Learning",
+    "Not All Heads Matter: A Head-Level KV Cache Compression Method with Integrated Retrieval and Reasoning",
+    "OmniKV: Dynamic Context Selection for Efficient Long-Context LLMs",
+    "Param$\\Delta$ for Direct Mixing: Post-Train Large Language Model At Zero Cost",
+    "Perturbation-Restrained Sequential Model Editing",
+    "Preble: Efficient Distributed Prompt Scheduling for LLM Serving",
+    "Quest: Query-centric Data Synthesis Approach for Long-context Scaling of Large Language Model",
+    "RAG-DDR: Optimizing Retrieval-Augmented Generation Using Differentiable Data Rewards",
+    "RNNs are not Transformers (Yet):  The Key Bottleneck on In-Context Retrieval",
+    "Radar: Fast Long-Context Decoding for Any Transformer",
+    "RazorAttention: Efficient KV Cache Compression Through Retrieval Heads",
+    "SCBench: A KV Cache-Centric Analysis of Long-Context Methods",
+    "SmartRAG: Jointly Learn RAG-Related Tasks From the Environment Feedback",
+    "Streaming Video Understanding and Multi-round Interaction with Memory-enhanced Knowledge",
+    "StructRAG: Boosting Knowledge Intensive Reasoning of LLMs via Inference-time Hybrid Information Structurization",
+    "Sufficient Context: A New Lens on Retrieval Augmented Generation Systems",
+    "ThinK: Thinner Key Cache by Query-Driven Pruning",
+    "TidalDecode: Fast and Accurate LLM Decoding with Position Persistent Sparse Attention",
+    "Why Does the Effective Context Length of LLMs Fall Short?",
+    "Core Context Aware Transformers for Long Context Language Modeling",
+    "EPIC: Efficient Position-Independent Caching for Serving Large Language Models",
+    "Mask-Enhanced Autoregressive Prediction: Pay Less Attention to Learn More",
+    "ShadowKV: KV Cache in Shadows for High-Throughput Long-Context LLM Inference",
+    "Unnatural Languages Are Not Bugs but Features for LLMs",
+    "Improving Model Evaluation usingSMARTFiltering of Benchmark Datasets",
+    "Language Models can Categorize System Inputs for Performance Analysis",
+    "TinyThinker: Distilling Reasoning through Coarse-to-Fine Knowledge Internalization with Self-Reflection",
+    "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD",
+    "Leveraging Visual Tokens for Extended Text Contexts in Multi-Modal Learning",
+    "MMLONGBENCH-DOC: Benchmarking Long-context Document Understanding with Visualizations",
+    "Multimodal Task Vectors Enable Many-Shot Multimodal In-Context Learning",
+    "Dataset Decomposition: Faster LLM Training with Variable Sequence Length Curriculum",
+    "Found in the Middle: How Language Models Use Long Contexts Better via Plug-and-Play Positional Encoding",
+    "Mixture of In-Context Experts Enhance LLMs' Long Context Awareness"
+  ],
+  "paper_count": 65,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The task of answering questions based on the content of multimodal documents that may contain text, charts, and images.",
+      "paper": "Multimodal Task Vectors Enable Many-Shot Multimodal In-Context Learning",
+      "original_name": "Document question answering"
+    },
+    {
+      "text": "The observable action of generating answers to questions based on information contained within a lengthy input context.",
+      "paper": "RazorAttention: Efficient KV Cache Compression Through Retrieval Heads",
+      "original_name": "Long-context question answering"
+    },
+    {
+      "text": "The task of answering a question using information provided in a given context, where the model is not expected to rely solely on its pre-trained knowledge.",
+      "paper": "AttriBoT: A Bag of Tricks for Efficiently Approximating Leave-One-Out Context Attribution",
+      "original_name": "Open-book question answering"
+    },
+    {
+      "text": "Answering questions about non-image content in webpages using page structure and textual information.",
+      "paper": "Harnessing Webpage UIs for Text-Rich Visual Understanding",
+      "original_name": "Webpage question answering"
+    },
+    {
+      "text": "Answering questions that require extracting or reasoning over information from a single long document.",
+      "paper": "Radar: Fast Long-Context Decoding for Any Transformer",
+      "original_name": "Single-document question answering"
+    },
+    {
+      "text": "Answering questions using information contained in provided documents or passages, especially under varying context lengths.",
+      "paper": "Generative Adapter: Contextualizing Language Models in Parameters with A Single Forward Pass",
+      "original_name": "Document-based question answering"
+    },
+    {
+      "text": "The task of generating an answer to a question based solely on the information provided in a given context passage.",
+      "paper": "FaithEval: Can Your Language Model Stay Faithful to Context, Even If \"The Moon is Made of Marshmallows\"",
+      "original_name": "Contextual question answering"
+    },
+    {
+      "text": "Generating answers to questions based on large sets of dispersed documents.",
+      "paper": "StructRAG: Boosting Knowledge Intensive Reasoning of LLMs via Inference-time Hybrid Information Structurization",
+      "original_name": "Knowledge-based question answering"
+    },
+    {
+      "text": "The observable task of answering questions based on information contained within an extensive, book-length text.",
+      "paper": "LongPO: Long Context Self-Evolution of Large Language Models through Short-to-Long Preference Optimization",
+      "original_name": "Long-book question answering"
+    },
+    {
+      "text": "The task of answering a question based on information contained within one of several documents provided in the context, where other documents act as distractors.",
+      "paper": "From Artificial Needles to Real Haystacks: Improving Retrieval Capabilities in LLMs by Finetuning on Synthetic Data",
+      "original_name": "Multi-document question answering"
+    },
+    {
+      "text": "The task of answering a True/False question that requires reasoning over two key sentences within a context of varying length.",
+      "paper": "From Artificial Needles to Real Haystacks: Improving Retrieval Capabilities in LLMs by Finetuning on Synthetic Data",
+      "original_name": "Flexible length question answering"
+    },
+    {
+      "text": "The task of answering questions on a wide range of topics, which typically requires retrieving information from an external knowledge source.",
+      "paper": "RAG-DDR: Optimizing Retrieval-Augmented Generation Using Differentiable Data Rewards",
+      "original_name": "Open-domain question answering"
+    },
+    {
+      "text": "Answering questions about facts contained in a specialized document or newly learned domain.",
+      "paper": "Param$\\Delta$ for Direct Mixing: Post-Train Large Language Model At Zero Cost",
+      "original_name": "Domain-specific question answering"
+    },
+    {
+      "text": "The observable task of answering questions by locating, aggregating, or filtering information from a long document provided in the context.",
+      "paper": "SCBench: A KV Cache-Centric Analysis of Long-Context Methods",
+      "original_name": "Long-document question answering"
+    },
+    {
+      "text": "Answering questions by using information supplied in the input context, especially when that context conflicts with pretrained knowledge.",
+      "paper": "Context-Parametric Inversion: Why Instruction Finetuning May Not Actually Improve Context Reliance",
+      "original_name": "Context-based question answering"
+    },
+    {
+      "text": "The observable task of providing accurate answers to specific user questions based on the content of a given privacy policy.",
+      "paper": "Empowering Users in Digital Privacy Management through Interactive LLM-Based Agents",
+      "original_name": "Privacy question answering"
+    },
+    {
+      "text": "The observable task of generating a concise and relevant answer to a user's query based on the text of a given privacy policy document.",
+      "paper": "Multi-Level Explanations for Generative Language Models",
+      "original_name": "Privacy policy question answering"
+    }
+  ],
+  "definition_count": 17,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "DocVQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Privacy-Preserving In-Context Learning for Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Privacy-Preserving In-Context Learning for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LongBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Audio-centric Video Understanding Benchmark without Text Shortcut",
+      "evidence": "In Table 3 we present the results of different algorithms on LongBench (Bai et al., 2023b), which provides a comprehensive assessment to evaluate long-context related abilities of LLMs.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Audio-centric Video Understanding Benchmark without Text Shortcut"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HotpotQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "AttriBoT: A Bag of Tricks for Efficiently Approximating Leave-One-Out Context Attribution",
+      "evidence": "Performance comparison on eight LongBench datasets evaluating single/multi-document QA, summarization, and retrieval tasks... (Table 3)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "AttriBoT: A Bag of Tricks for Efficiently Approximating Leave-One-Out Context Attribution"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "2WikiMultihopQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "HVGuard: Utilizing Multimodal Large Language Models for Hateful Video Detection",
+      "evidence": "Performance comparison on eight LongBench datasets evaluating single/multi-document QA, summarization, and retrieval tasks... (Table 3)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "HVGuard: Utilizing Multimodal Large Language Models for Hateful Video Detection"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Empowering Users in Digital Privacy Management through Interactive LLM-Based Agents",
+      "evidence": "However, we also observed that autoregressive large language models like GPT-4o-mini tend to hallucinate responses... in answering questions within the privacy policy context.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Empowering Users in Digital Privacy Management through Interactive LLM-Based Agents"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "InfiniteBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LongPO: Long Context Self-Evolution of Large Language Models through Short-to-Long Preference Optimization",
+      "evidence": "\"Infinite Bench: a benchmark dataset designed to test LLMs\u2019 understanding of long dependencies within extensive contexts\"",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "LongPO: Long Context Self-Evolution of Large Language Models through Short-to-Long Preference Optimization"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SQuAD v1.1",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Generative Adapter: Contextualizing Language Models in Parameters with A Single Forward Pass",
+      "evidence": "Here, we consider the scenario where the model needs to adapt to new knowledge based on documents. ... we use two question answering (QA) datasets, SQuAD (Rajpurkar et al., 2016) and StreamingQA (Liska et al., 2022)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Generative Adapter: Contextualizing Language Models in Parameters with A Single Forward Pass"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "FLenQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "From Artificial Needles to Real Haystacks: Improving Retrieval Capabilities in LLMs by Finetuning on Synthetic Data",
+      "evidence": "Our goal is to investigate whether finetuning LLMs ... improves their long context capabilities on natural language tasks: ... flexible length question answering (FLenQA) (Section 3)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "From Artificial Needles to Real Haystacks: Improving Retrieval Capabilities in LLMs by Finetuning on Synthetic Data"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SQuAD 2.0",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "AttriBoT: A Bag of Tricks for Efficiently Approximating Leave-One-Out Context Attribution",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "AttriBoT: A Bag of Tricks for Efficiently Approximating Leave-One-Out Context Attribution"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Qasper",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "AttriBoT: A Bag of Tricks for Efficiently Approximating Leave-One-Out Context Attribution",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "AttriBoT: A Bag of Tricks for Efficiently Approximating Leave-One-Out Context Attribution"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multi-task capability",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "OmniEval: An Omnidirectional and AutomaticRAGEvaluation Benchmark in Financial Domain",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "OmniEval: An Omnidirectional and AutomaticRAGEvaluation Benchmark in Financial Domain"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLongBench-Doc",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Generator-Assistant Stepwise Rollback Framework for Large Language Model Agent",
+      "evidence": "We evaluate the performance of our proposed DocAgent on two multi-modal long-context document question answering benchmarks. (Section 4)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Generator-Assistant Stepwise Rollback Framework for Large Language Model Agent"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "DocBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Generator-Assistant Stepwise Rollback Framework for Large Language Model Agent",
+      "evidence": "We conduct experiments on two multi-modal long-context document understanding and question-answering benchmarks, including MMLongBench-Doc (Ma et al., 2024) and DocBench (Zou et al., 2025). (Section 4.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Generator-Assistant Stepwise Rollback Framework for Large Language Model Agent"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HAGRID",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "AISees YourLocation\u2014But With A Bias Toward The Wealthy World",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "AISees YourLocation\u2014But With A Bias Toward The Wealthy World"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 14,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 14,
+  "characterization": "Across the surveyed literature, document question answering is predominantly framed as the task of generating answers based on information provided within a given context, such as one or more documents, rather than relying on parametric knowledge. A frequent distinction is made between single-document QA, which involves one long document, and multi-document QA, where models must synthesize information or identify a correct source among irrelevant \"distractor\" documents. The task is further specified by context length, with variants like \"long-context\" and \"long-book\" QA, and by content type, including multimodal documents, webpages, and specialized texts like privacy policies. Most definitions, such as \"open-book\" or \"contextual\" QA, emphasize reliance on the provided passage, with some studies explicitly using contexts that are \"counterfactual to the model\u2019s pretrained knowledge\" to test this capability. In contrast, \"open-domain question answering\" is described as a task that typically requires retrieving information from an external knowledge source. This behavior is commonly measured using a range of benchmarks, with `LongBench` appearing as a prevalent instrument for evaluating both single- and multi-document QA. Other datasets used to operationalize this behavior include `InfiniteBench` for book-length contexts, `HotpotQA` and `2WikiMultihopQA` for multi-document scenarios, and `SQuAD` for general context-based QA. In the specific application of privacy policy QA, this behavior is also studied in relation to `Hallucination`.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD",
+      "Leveraging Visual Tokens for Extended Text Contexts in Multi-Modal Learning",
+      "MMLONGBENCH-DOC: Benchmarking Long-context Document Understanding with Visualizations",
+      "Multimodal Task Vectors Enable Many-Shot Multimodal In-Context Learning",
+      "Dataset Decomposition: Faster LLM Training with Variable Sequence Length Curriculum",
+      "Found in the Middle: How Language Models Use Long Contexts Better via Plug-and-Play Positional Encoding",
+      "Mixture of In-Context Experts Enhance LLMs' Long Context Awareness"
+    ],
+    "iclr25": [
+      "An Evolved Universal Transformer Memory",
+      "AttriBoT: A Bag of Tricks for Efficiently Approximating Leave-One-Out Context Attribution",
+      "Bridging Context Gaps: Leveraging Coreference Resolution for Long Contextual Understanding",
+      "Conformal Generative Modeling with Improved Sample Efficiency through Sequential Greedy Filtering",
+      "Context-Parametric Inversion: Why Instruction Finetuning May Not Actually Improve Context Reliance",
+      "DeciMamba: Exploring the Length Extrapolation Potential of Mamba",
+      "Empowering Users in Digital Privacy Management through Interactive LLM-Based Agents",
+      "FaithEval: Can Your Language Model Stay Faithful to Context, Even If \"The Moon is Made of Marshmallows\"",
+      "From Artificial Needles to Real Haystacks: Improving Retrieval Capabilities in LLMs by Finetuning on Synthetic Data",
+      "From Isolated Conversations to Hierarchical Schemas: Dynamic Tree Memory Representation for LLMs",
+      "Generative Adapter: Contextualizing Language Models in Parameters with A Single Forward Pass",
+      "HELMET: How to Evaluate Long-context Models Effectively and Thoroughly",
+      "HShare: Fast LLM Decoding by Hierarchical Key-Value Sharing",
+      "Harnessing Webpage UIs for Text-Rich Visual Understanding",
+      "Human-inspired Episodic Memory for Infinite Context LLMs",
+      "Long Context Compression with Activation Beacon",
+      "LongPO: Long Context Self-Evolution of Large Language Models through Short-to-Long Preference Optimization",
+      "MambaExtend: A Training-Free Approach to Improve Long Context Extension of Mamba",
+      "Montessori-Instruct: Generate Influential Training Data Tailored for Student Learning",
+      "Not All Heads Matter: A Head-Level KV Cache Compression Method with Integrated Retrieval and Reasoning",
+      "OmniKV: Dynamic Context Selection for Efficient Long-Context LLMs",
+      "Param$\\Delta$ for Direct Mixing: Post-Train Large Language Model At Zero Cost",
+      "Perturbation-Restrained Sequential Model Editing",
+      "Preble: Efficient Distributed Prompt Scheduling for LLM Serving",
+      "Quest: Query-centric Data Synthesis Approach for Long-context Scaling of Large Language Model",
+      "RAG-DDR: Optimizing Retrieval-Augmented Generation Using Differentiable Data Rewards",
+      "RNNs are not Transformers (Yet):  The Key Bottleneck on In-Context Retrieval",
+      "Radar: Fast Long-Context Decoding for Any Transformer",
+      "RazorAttention: Efficient KV Cache Compression Through Retrieval Heads",
+      "SCBench: A KV Cache-Centric Analysis of Long-Context Methods",
+      "SmartRAG: Jointly Learn RAG-Related Tasks From the Environment Feedback",
+      "Streaming Video Understanding and Multi-round Interaction with Memory-enhanced Knowledge",
+      "StructRAG: Boosting Knowledge Intensive Reasoning of LLMs via Inference-time Hybrid Information Structurization",
+      "Sufficient Context: A New Lens on Retrieval Augmented Generation Systems",
+      "ThinK: Thinner Key Cache by Query-Driven Pruning",
+      "TidalDecode: Fast and Accurate LLM Decoding with Position Persistent Sparse Attention",
+      "Why Does the Effective Context Length of LLMs Fall Short?"
+    ],
+    "acl25": [
+      "Multi-Level Explanations for Generative Language Models",
+      "Scaling Laws and Efficient Inference for Ternary Language Models"
+    ],
+    "icml25": [
+      "Core Context Aware Transformers for Long Context Language Modeling",
+      "EPIC: Efficient Position-Independent Caching for Serving Large Language Models",
+      "Mask-Enhanced Autoregressive Prediction: Pay Less Attention to Learn More",
+      "ShadowKV: KV Cache in Shadows for High-Throughput Long-Context LLM Inference",
+      "Unnatural Languages Are Not Bugs but Features for LLMs"
+    ],
+    "emnlp25": [
+      "AdaRewriter: Unleashing the Power of Prompting-based Conversational Query Reformulation via Test-Time Adaptation",
+      "AdaSteer: Your AlignedLLMis Inherently an Adaptive Jailbreak Defender",
+      "AdaptThink: Reasoning Models Can Learn When to Think",
+      "Advancing Oversight Reasoning across Languages for Audit Sycophantic Behaviour viaX-Agent",
+      "Adversarial Attacks Against Automated Fact-Checking: A Survey",
+      "Audio-centric Video Understanding Benchmark without Text Shortcut",
+      "CCQA: Generating Question from Solution Can Improve Inference-Time Reasoning inSLMs",
+      "Generator-Assistant Stepwise Rollback Framework for Large Language Model Agent",
+      "HVGuard: Utilizing Multimodal Large Language Models for Hateful Video Detection",
+      "Teaching Your Models to Understand Code via Focal Preference Alignment",
+      "The Pursuit of Empathy: Evaluating Small Language Models forPTSDDialogue Support"
+    ],
+    "naacl25": [
+      "Improving Model Evaluation usingSMARTFiltering of Benchmark Datasets",
+      "Language Models can Categorize System Inputs for Performance Analysis",
+      "TinyThinker: Distilling Reasoning through Coarse-to-Fine Knowledge Internalization with Self-Reflection"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 7,
+    "iclr25": 37,
+    "acl25": 2,
+    "icml25": 5,
+    "emnlp25": 11,
+    "naacl25": 3
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

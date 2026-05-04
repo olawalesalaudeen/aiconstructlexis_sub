@@ -1,0 +1,181 @@
+{
+  "canonical_name": "Pre-training data detection",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, pre-training data detection is consistently defined as the observable task of classifying whether a given text sample was part of a language model's training or pre-training corpus. The common approach involves analyzing a model's output statistics to design a scoring function that can distinguish between training and non-training data. The papers describe this task as receiving growing attention, citing its relevance for issues like \"copyright violation and test data contamination\" and its use in \"high-reliability applications\". To operationalize and measure this behavior, researchers frequently use dedicated benchmarks, with WikiMIA and MIMIR being commonly cited as evaluation instruments. Other datasets mentioned for this purpose include BookTection, BookMIA, and The Pile. The literature also connects this behavior to other phenomena; for example, one paper notes a \"common view\" that its effectiveness is \"closely tied to the level of training-data memorization or overfitting\" exhibited by the model. The task is also studied in the context of privacy.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Pre-training data detection",
+    "Training data detection",
+    "Pretraining data detection"
+  ],
+  "papers": [
+    "A Statistical Approach for Controlled Training Data Detection",
+    "Min-K%++: Improved Baseline for Pre-Training Data Detection from Large Language Models",
+    "Fine-tuning can Help Detect Pretraining Data from Large Language Models",
+    "Infilling Score: A Pretraining Data Detection Algorithm for Large Language Models"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The observable task of determining whether a given text sample was part of a large language model's pre-training corpus by analyzing the model's output statistics.",
+      "paper": "Min-K%++: Improved Baseline for Pre-Training Data Detection from Large Language Models",
+      "original_name": "Pre-training data detection"
+    },
+    {
+      "text": "The observable task of classifying a given text sample as either having been part of the model's training set or not.",
+      "paper": "A Statistical Approach for Controlled Training Data Detection",
+      "original_name": "Training data detection"
+    },
+    {
+      "text": "The observable task of classifying whether a given text sequence was included in a language model's pretraining dataset.",
+      "paper": "Infilling Score: A Pretraining Data Detection Algorithm for Large Language Models",
+      "original_name": "Pretraining data detection"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WikiMIA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Detecting Pretraining Data from Large Language Models",
+      "evidence": "WIKIMIA is a dataset specifically designed to evaluate TDD algorithms on large language models.",
+      "paper_count": 5,
+      "papers_by_conference": {
+        "iclr24": [
+          "Detecting Pretraining Data from Large Language Models"
+        ],
+        "iclr25": [
+          "Min-K%++: Improved Baseline for Pre-Training Data Detection from Large Language Models",
+          "Infilling Score: A Pretraining Data Detection Algorithm for Large Language Models",
+          "Fine-tuning can Help Detect Pretraining Data from Large Language Models"
+        ],
+        "emnlp25": [
+          "UltraIF: Advancing Instruction Following from the Wild"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MIMIR",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Min-K%++: Improved Baseline for Pre-Training Data Detection from Large Language Models",
+      "evidence": "We focus on two benchmarks (and the only two to our knowledge) for pre-training data detection, WikiMIA (Shi et al., 2024) and MIMIR (Duan et al., 2024).",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Min-K%++: Improved Baseline for Pre-Training Data Detection from Large Language Models",
+          "Infilling Score: A Pretraining Data Detection Algorithm for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Memorization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Min-K%++: Improved Baseline for Pre-Training Data Detection from Large Language Models",
+      "evidence": "A common view is that the effectiveness of TDD is closely tied to the level of training-data memorization or overfitting exhibited by the target model during training (Yeom et al., 2018; Long et al., 2018).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Min-K%++: Improved Baseline for Pre-Training Data Detection from Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Privacy",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "TDDBench: A Benchmark for Training data detection",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "TDDBench: A Benchmark for Training data detection"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Overfitting",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "TDDBench: A Benchmark for Training data detection",
+      "evidence": "A common view is that the effectiveness of TDD is closely tied to the level of training-data memorization or overfitting exhibited by the target model during training (Yeom et al., 2018; Long et al., 2018).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "TDDBench: A Benchmark for Training data detection"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BookTection",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Fine-tuning can Help Detect Pretraining Data from Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Fine-tuning can Help Detect Pretraining Data from Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BookMIA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Fine-tuning can Help Detect Pretraining Data from Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Fine-tuning can Help Detect Pretraining Data from Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "The Pile",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Fine-tuning can Help Detect Pretraining Data from Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Fine-tuning can Help Detect Pretraining Data from Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 8,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 6,
+  "characterization": "Across the provided literature, pre-training data detection is consistently defined as the observable task of classifying whether a given text sample was part of a language model's training or pre-training corpus. The common approach involves analyzing a model's output statistics to design a scoring function that can distinguish between training and non-training data. The papers describe this task as receiving growing attention, citing its relevance for issues like \"copyright violation and test data contamination\" and its use in \"high-reliability applications\". To operationalize and measure this behavior, researchers frequently use dedicated benchmarks, with WikiMIA and MIMIR being commonly cited as evaluation instruments. Other datasets mentioned for this purpose include BookTection, BookMIA, and The Pile. The literature also connects this behavior to other phenomena; for example, one paper notes a \"common view\" that its effectiveness is \"closely tied to the level of training-data memorization or overfitting\" exhibited by the model. The task is also studied in the context of privacy.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "A Statistical Approach for Controlled Training Data Detection",
+      "Min-K%++: Improved Baseline for Pre-Training Data Detection from Large Language Models",
+      "Fine-tuning can Help Detect Pretraining Data from Large Language Models",
+      "Infilling Score: A Pretraining Data Detection Algorithm for Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 4
+  },
+  "conferences": [
+    "iclr25"
+  ]
+}

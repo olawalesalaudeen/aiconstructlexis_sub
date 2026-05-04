@@ -1,0 +1,120 @@
+{
+  "canonical_name": "AudioCaps",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, AudioCaps is consistently defined as a benchmark dataset for evaluating audio-language tasks, composed of audio clips from AudioSet paired with human-written captions. Its most prevalent application is to measure model performance on audio captioning, as evidenced by multiple papers that use it to evaluate generated audio descriptions. Several sources position it as one of the most commonly used benchmarks for this purpose, frequently studied alongside the Clotho dataset. While audio captioning is the dominant use case, a smaller set of definitions also describe its utility for evaluating audio-retrieval and audio question answering. The data indicates it is operationalized through its test set, with some studies referencing specific evaluation metrics like CIDEr or zero-shot variants of the benchmark. AudioCaps is also listed as a measurement instrument for cross-modal retrieval and text-to-speech synthesis, though the provided evidence centers on its captioning and retrieval applications.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "AudioCaps"
+  ],
+  "papers": [
+    "Definition Generation for Word Meaning Modeling: Monolingual, Multilingual, and Cross-Lingual Perspectives",
+    "MA-GTS: A Multi-Agent Framework for Solving Complex Graph Problems in Real-World Applications",
+    "Syntax-Aware Retrieval Augmentation for Neural Symbolic Regression",
+    "ToolSafety: A Comprehensive Dataset for Enhancing Safety inLLM-Based Agent Tool Invocations",
+    "CompA: Addressing the Gap in Compositional Reasoning in Audio-Language Models",
+    "Listen, Think, and Understand",
+    "SALMONN: Towards Generic Hearing Abilities for Large Language Models",
+    "ALMTokenizer: A Low-bitrate and Semantic-rich Audio Codec Tokenizer for Audio Language Modeling",
+    "Audio Flamingo 2: An Audio-Language Model with Long-Audio Understanding and Expert Reasoning Abilities",
+    "Generative Audio Language Modeling with Continuous-valued Tokens and Masked Next-Token Prediction",
+    "MATS: An Audio Language Model under Text-only Supervision"
+  ],
+  "paper_count": 11,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A benchmark dataset used for evaluating audio-retrieval and captioning tasks, containing audio clips from AudioSet with human-written captions.",
+      "paper": "CompA: Addressing the Gap in Compositional Reasoning in Audio-Language Models",
+      "original_name": "AudioCaps"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Audio captioning",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Listen, Think, and Understand",
+      "evidence": "The results on all 15 tasks produced by SALMONN are shown in Table 3. From the results, SALMONN, without or with activation tuning, can produce competitive results on all level 1 tasks. (Section 5.1)",
+      "paper_count": 5,
+      "papers_by_conference": {
+        "iclr24": [
+          "Listen, Think, and Understand",
+          "SALMONN: Towards Generic Hearing Abilities for Large Language Models"
+        ],
+        "neurips24": [
+          "An eye for an ear: zero-shot audio description leveraging an image captioner with audio-visual token distribution matching"
+        ],
+        "icml25": [
+          "Audio Flamingo 2: An Audio-Language Model with Long-Audio Understanding and Expert Reasoning Abilities",
+          "MATS: An Audio Language Model under Text-only Supervision"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Cross-modal retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Learning Spatially-Aware Language and Audio Embeddings",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Learning Spatially-Aware Language and Audio Embeddings"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text-to-speech synthesis",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Generative Audio Language Modeling with Continuous-valued Tokens and Masked Next-Token Prediction",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Generative Audio Language Modeling with Continuous-valued Tokens and Masked Next-Token Prediction"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, AudioCaps is consistently defined as a benchmark dataset for evaluating audio-language tasks, composed of audio clips from AudioSet paired with human-written captions. Its most prevalent application is to measure model performance on audio captioning, as evidenced by multiple papers that use it to evaluate generated audio descriptions. Several sources position it as one of the most commonly used benchmarks for this purpose, frequently studied alongside the Clotho dataset. While audio captioning is the dominant use case, a smaller set of definitions also describe its utility for evaluating audio-retrieval and audio question answering. The data indicates it is operationalized through its test set, with some studies referencing specific evaluation metrics like CIDEr or zero-shot variants of the benchmark. AudioCaps is also listed as a measurement instrument for cross-modal retrieval and text-to-speech synthesis, though the provided evidence centers on its captioning and retrieval applications.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "CompA: Addressing the Gap in Compositional Reasoning in Audio-Language Models",
+      "Listen, Think, and Understand",
+      "SALMONN: Towards Generic Hearing Abilities for Large Language Models"
+    ],
+    "icml25": [
+      "ALMTokenizer: A Low-bitrate and Semantic-rich Audio Codec Tokenizer for Audio Language Modeling",
+      "Audio Flamingo 2: An Audio-Language Model with Long-Audio Understanding and Expert Reasoning Abilities",
+      "Generative Audio Language Modeling with Continuous-valued Tokens and Masked Next-Token Prediction",
+      "MATS: An Audio Language Model under Text-only Supervision"
+    ],
+    "emnlp25": [
+      "Definition Generation for Word Meaning Modeling: Monolingual, Multilingual, and Cross-Lingual Perspectives",
+      "MA-GTS: A Multi-Agent Framework for Solving Complex Graph Problems in Real-World Applications",
+      "Syntax-Aware Retrieval Augmentation for Neural Symbolic Regression",
+      "ToolSafety: A Comprehensive Dataset for Enhancing Safety inLLM-Based Agent Tool Invocations"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 3,
+    "icml25": 4,
+    "emnlp25": 4
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "icml25"
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "canonical_name": "Safety awareness",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, Safety awareness is predominantly framed as a latent construct related to a model's capacity to recognize and manage potentially harmful situations. The most common definition describes it as a disposition to identify sensitive or harmful actions and seek user confirmation before execution, with one study noting this is operationalized as a \"safeguard mechanism\". Other definitions characterize it as a model's general sensitivity to risks and tendency to avoid unsafe outputs, or more specifically as the ability to recognize and avoid harmful interactions like clicking on pop-ups. A smaller line of work treats it as an internal property, defining it by the degree to which a model's representations contain \"clear and consistent distinctions between safe and toxic content.\" The construct is operationalized in several ways: one paper uses `Human evaluation` to assess a \"safeguard rate,\" while others employ benchmarks like `SIUO` or measure it through `Harmfulness detection` tasks. Safety awareness is also positioned as a component of the broader concept of `Safety alignment`.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Safety awareness"
+  ],
+  "papers": [
+    "Analyzing the Rapid Generalization ofSFTvia the Perspective of Attention Head Activation Patterns",
+    "Exploiting the Shadows: Unveiling Privacy Leaks through Lower-Ranked Tokens in Large Language Models",
+    "Towards RobustESGAnalysis Against Greenwashing Risks: Aspect-Action Analysis with Cross-Category Generalization",
+    "2025.emnlp-main.1777.checklist",
+    "CondAmbigQA: A Benchmark and Dataset for Conditional Ambiguous Question Answering",
+    "TheLLMAlready Knows: EstimatingLLM-Perceived Question Difficulty via Hidden Representations",
+    "Towards Controllable Speech Synthesis in the Era of Large Language Models: A Systematic Survey",
+    "A Survey ofQUDModels for Discourse Processing",
+    "WebQuality: A Large-scale Multi-modal Web Page Quality Assessment Dataset with Multiple Scoring Dimensions"
+  ],
+  "paper_count": 9,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The latent disposition to recognize and handle sensitive or potentially harmful actions by seeking user confirmation before execution.",
+      "paper": "A Survey ofQUDModels for Discourse Processing",
+      "original_name": "Safety awareness"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "WebQuality: A Large-scale Multi-modal Web Page Quality Assessment Dataset with Multiple Scoring Dimensions",
+      "evidence": "The safeguard rate measures how often UFO requests user confirmation when the request involves sensitive actions. All metrics are assessed through human evaluation. (Section 4.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "WebQuality: A Large-scale Multi-modal Web Page Quality Assessment Dataset with Multiple Scoring Dimensions"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmfulness detection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "From General Reward to Targeted Reward: Improving Open-ended Long-context Generation Models",
+      "evidence": "\u201cwe define two security evaluation metrics: Safety Awareness, measured by accuracy on the binary classification task, and Risk Resistance, measured by accuracy on the 11-class risk identification task\u201d",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "From General Reward to Targeted Reward: Improving Open-ended Long-context Generation Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SIUO",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "From General Reward to Targeted Reward: Improving Open-ended Long-context Generation Models",
+      "evidence": "For assessment of safety-awareness, we employ SIUO (Wang et al., 2025) and MSS-Bench (Zhou et al., 2024) datasets... (Section 2.1).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "From General Reward to Targeted Reward: Improving Open-ended Long-context Generation Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Safety alignment",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "From General Reward to Targeted Reward: Improving Open-ended Long-context Generation Models",
+      "evidence": "These tasks pose significant challenges to the multimodal reasoning and safety alignment capabilities of models (Section 2.1).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "From General Reward to Targeted Reward: Improving Open-ended Long-context Generation Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 2,
+  "characterization": "Across the surveyed literature, Safety awareness is predominantly framed as a latent construct related to a model's capacity to recognize and manage potentially harmful situations. The most common definition describes it as a disposition to identify sensitive or harmful actions and seek user confirmation before execution, with one study noting this is operationalized as a \"safeguard mechanism\". Other definitions characterize it as a model's general sensitivity to risks and tendency to avoid unsafe outputs, or more specifically as the ability to recognize and avoid harmful interactions like clicking on pop-ups. A smaller line of work treats it as an internal property, defining it by the degree to which a model's representations contain \"clear and consistent distinctions between safe and toxic content.\" The construct is operationalized in several ways: one paper uses `Human evaluation` to assess a \"safeguard rate,\" while others employ benchmarks like `SIUO` or measure it through `Harmfulness detection` tasks. Safety awareness is also positioned as a component of the broader concept of `Safety alignment`.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "naacl25": [
+      "A Survey ofQUDModels for Discourse Processing",
+      "WebQuality: A Large-scale Multi-modal Web Page Quality Assessment Dataset with Multiple Scoring Dimensions"
+    ],
+    "acl25": [
+      "Analyzing the Rapid Generalization ofSFTvia the Perspective of Attention Head Activation Patterns",
+      "Exploiting the Shadows: Unveiling Privacy Leaks through Lower-Ranked Tokens in Large Language Models",
+      "Towards RobustESGAnalysis Against Greenwashing Risks: Aspect-Action Analysis with Cross-Category Generalization"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.1777.checklist",
+      "CondAmbigQA: A Benchmark and Dataset for Conditional Ambiguous Question Answering",
+      "TheLLMAlready Knows: EstimatingLLM-Perceived Question Difficulty via Hidden Representations",
+      "Towards Controllable Speech Synthesis in the Era of Large Language Models: A Systematic Survey"
+    ]
+  },
+  "paper_count_by_conference": {
+    "naacl25": 2,
+    "acl25": 3,
+    "emnlp25": 4
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "naacl25"
+  ]
+}

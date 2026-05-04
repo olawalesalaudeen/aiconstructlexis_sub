@@ -1,0 +1,258 @@
+{
+  "canonical_name": "Autoformalization",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, autoformalization is predominantly characterized as the observable behavior of translating mathematical content from natural language into a formal, machine-verifiable language. The source material is typically a mathematical problem or statement, sometimes including LaTeX, while the target formal languages mentioned include proof assistant languages like Isabelle/HOL and Lean4, as well as symbolic representations such as SMT-LIB and first-order logic. This behavior is operationalized and evaluated using benchmarks including miniF2F, MATH, and ProofNet. Autoformalization is studied in relation to concepts like theorem proving and consistency, and one paper suggests that information retrieval can be used to improve its performance. While the prevailing usage treats it as a task, a less common framing defines it as a latent \"autoformalization capability\" of a model. Several papers also define and study the inverse process, \"informalization,\" which translates formal statements back into natural language. The scope of the task varies, with some definitions focusing on entire problems and others on specific components like \"statement autoformalization\" or the reverse task of \"proof informalization.\" One paper summarizes the task as a \"transformation function from natural language and LaTeX symbols S to a formal language F\" (\"CiteBART: Learning to Generate Citations for Local Citation Recommendation\").",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Formalization",
+    "Autoformalization",
+    "Informalization",
+    "Statement formalization",
+    "Natural language to formal language translation",
+    "Formal problem modeling",
+    "Proof informalization",
+    "Statement informalization",
+    "Statement autoformalization",
+    "Autoformalization capability"
+  ],
+  "papers": [
+    "2025.emnlp-main.90.checklist",
+    "Breaking Bad Tokens: Detoxification ofLLMs Using Sparse Autoencoders",
+    "CiteBART: Learning to Generate Citations for Local Citation Recommendation",
+    "Diagnosing Memorization in Chain-of-Thought Reasoning, One Token at a Time",
+    "LVLMs are Bad at Overhearing Human Referential Communication",
+    "Predicting Prosodic Boundaries for Children\u2019s Texts",
+    "Autonomous Evaluation of LLMs for Truth Maintenance and Reasoning Tasks",
+    "FormalAlign: Automated Alignment Evaluation for Autoformalization",
+    "Herald: A Natural Language Annotated Lean 4 Dataset",
+    "Rethinking and Improving Autoformalization: Towards a Faithful Metric and a Dependency Retrieval-based Approach",
+    "Autoformalize Mathematical Statements by Symbolic Equivalence and Semantic Consistency",
+    "Neuro-Symbolic Data Generation for Math Reasoning",
+    "Lean Workbook: A large-scale Lean problem set formalized from natural language math problems"
+  ],
+  "paper_count": 13,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The task of translating a natural language math problem into a formal symbolic representation (e.g., SMT-LIB).",
+      "paper": "Neuro-Symbolic Data Generation for Math Reasoning",
+      "original_name": "Formalization"
+    },
+    {
+      "text": "The observable task of translating a mathematical statement from a natural language description into a formal language representation, such as Isabelle/HOL.",
+      "paper": "Autoformalize Mathematical Statements by Symbolic Equivalence and Semantic Consistency",
+      "original_name": "Autoformalization"
+    },
+    {
+      "text": "Translating a formal SMT-LIB math problem back into a natural-language word problem or pure math prompt.",
+      "paper": "Neuro-Symbolic Data Generation for Math Reasoning",
+      "original_name": "Informalization"
+    },
+    {
+      "text": "The observable task of generating a formal language representation of a mathematical statement given its natural language counterpart.",
+      "paper": "SQUAB: EvaluatingLLMrobustness to Ambiguous and Unanswerable Questions in Semantic Parsing",
+      "original_name": "Statement formalization"
+    },
+    {
+      "text": "Converting natural language math problems and their solutions into formal Lean4 theorem statements that preserve semantic meaning and mathematical constraints.",
+      "paper": "Diagnosing Memorization in Chain-of-Thought Reasoning, One Token at a Time",
+      "original_name": "Natural language to formal language translation"
+    },
+    {
+      "text": "The observable behavior of translating a natural language math problem into a formal representation (e.g., SMT-Lib) with variables and constraints.",
+      "paper": "Breaking Bad Tokens: Detoxification ofLLMs Using Sparse Autoencoders",
+      "original_name": "Formal problem modeling"
+    },
+    {
+      "text": "The specific task of translating a mathematical statement from its formal language representation into natural language.",
+      "paper": "Herald: A Natural Language Annotated Lean 4 Dataset",
+      "original_name": "Statement informalization"
+    },
+    {
+      "text": "The specific task of translating a mathematical proof from its formal language representation into a natural language explanation.",
+      "paper": "Herald: A Natural Language Annotated Lean 4 Dataset",
+      "original_name": "Proof informalization"
+    },
+    {
+      "text": "Translating an informal mathematical statement into a formal statement in a proof assistant language.",
+      "paper": "Rethinking and Improving Autoformalization: Towards a Faithful Metric and a Dependency Retrieval-based Approach",
+      "original_name": "Statement autoformalization"
+    },
+    {
+      "text": "The latent ability of an LLM to translate natural-language mathematical statements into correct formal statements.",
+      "paper": "Autoformalize Mathematical Statements by Symbolic Equivalence and Semantic Consistency",
+      "original_name": "Autoformalization capability"
+    }
+  ],
+  "definition_count": 10,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "miniF2F",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Autoformalize Mathematical Statements by Symbolic Equivalence and Semantic Consistency",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "neurips24": [
+          "Autoformalize Mathematical Statements by Symbolic Equivalence and Semantic Consistency",
+          "Lean Workbook: A large-scale Lean problem set formalized from natural language math problems"
+        ],
+        "iclr25": [
+          "Herald: A Natural Language Annotated Lean 4 Dataset"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Autoformalize Mathematical Statements by Symbolic Equivalence and Semantic Consistency",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Autoformalize Mathematical Statements by Symbolic Equivalence and Semantic Consistency"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Semantic consistency",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Autoformalize Mathematical Statements by Symbolic Equivalence and Semantic Consistency",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Autoformalize Mathematical Statements by Symbolic Equivalence and Semantic Consistency"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ProofNet",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Rethinking and Improving Autoformalization: Towards a Faithful Metric and a Dependency Retrieval-based Approach",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Rethinking and Improving Autoformalization: Towards a Faithful Metric and a Dependency Retrieval-based Approach"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Semantic alignment",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "FormalAlign: Automated Alignment Evaluation for Autoformalization",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "FormalAlign: Automated Alignment Evaluation for Autoformalization"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Information retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Rethinking and Improving Autoformalization: Towards a Faithful Metric and a Dependency Retrieval-based Approach",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Rethinking and Improving Autoformalization: Towards a Faithful Metric and a Dependency Retrieval-based Approach"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Theorem proving",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Position: Formal Mathematical Reasoning\u2014A New Frontier in AI",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Position: Formal Mathematical Reasoning\u2014A New Frontier in AI"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Symbolic reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Position: Trustworthy AI Agents Require the Integration of Large Language Models and Formal Methods",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Position: Trustworthy AI Agents Require the Integration of Large Language Models and Formal Methods"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Theorem proving",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Position: Formal Mathematical Reasoning\u2014A New Frontier in AI",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Position: Formal Mathematical Reasoning\u2014A New Frontier in AI"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 9,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 8,
+  "characterization": "Across the provided literature, autoformalization is predominantly characterized as the observable behavior of translating mathematical content from natural language into a formal, machine-verifiable language. The source material is typically a mathematical problem or statement, sometimes including LaTeX, while the target formal languages mentioned include proof assistant languages like Isabelle/HOL and Lean4, as well as symbolic representations such as SMT-LIB and first-order logic. This behavior is operationalized and evaluated using benchmarks including miniF2F, MATH, and ProofNet. Autoformalization is studied in relation to concepts like theorem proving and consistency, and one paper suggests that information retrieval can be used to improve its performance. While the prevailing usage treats it as a task, a less common framing defines it as a latent \"autoformalization capability\" of a model. Several papers also define and study the inverse process, \"informalization,\" which translates formal statements back into natural language. The scope of the task varies, with some definitions focusing on entire problems and others on specific components like \"statement autoformalization\" or the reverse task of \"proof informalization.\" One paper summarizes the task as a \"transformation function from natural language and LaTeX symbols S to a formal language F\" (\"CiteBART: Learning to Generate Citations for Local Citation Recommendation\").",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "Autoformalize Mathematical Statements by Symbolic Equivalence and Semantic Consistency",
+      "Neuro-Symbolic Data Generation for Math Reasoning",
+      "Lean Workbook: A large-scale Lean problem set formalized from natural language math problems"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.90.checklist",
+      "Breaking Bad Tokens: Detoxification ofLLMs Using Sparse Autoencoders",
+      "CiteBART: Learning to Generate Citations for Local Citation Recommendation",
+      "Diagnosing Memorization in Chain-of-Thought Reasoning, One Token at a Time",
+      "LVLMs are Bad at Overhearing Human Referential Communication",
+      "Predicting Prosodic Boundaries for Children\u2019s Texts"
+    ],
+    "iclr25": [
+      "Autonomous Evaluation of LLMs for Truth Maintenance and Reasoning Tasks",
+      "FormalAlign: Automated Alignment Evaluation for Autoformalization",
+      "Herald: A Natural Language Annotated Lean 4 Dataset",
+      "Rethinking and Improving Autoformalization: Towards a Faithful Metric and a Dependency Retrieval-based Approach"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 3,
+    "emnlp25": 6,
+    "iclr25": 4
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "neurips24"
+  ]
+}

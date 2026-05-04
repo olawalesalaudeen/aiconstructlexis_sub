@@ -1,0 +1,118 @@
+{
+  "canonical_name": "API-Bank",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, API-Bank is consistently used as a benchmark to evaluate the ability of large language models to make tool calls. The most prevalent application of the instrument is to measure the construct of `Tool use`, with one paper also using it as an out-of-distribution benchmark to assess `Generalization`. Papers frequently describe it as a \"dialogue-style tool call dataset\" that covers both single- and multi-turn scenarios. The evaluation is operationalized by requiring a model to \"call predefined local Python tools based on user requirements in the dialogue,\" with accuracy measured by comparing tool return values to a ground truth. Some sources provide specific details on its structure, noting it contains \"314 tool-use dialogues and 753 API calls\" and features two distinct levels of difficulty: one for invoking a known API and another for retrieving and then calling an API from multiple candidates. A less common application involves using its \"benchmark loss\" to monitor agent capabilities during pre-training.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "API-Bank"
+  ],
+  "papers": [
+    "SceneGenAgent: Precise Industrial Scene Generation with Coding Agent",
+    "TreeRL:LLMReinforcement Learning with On-Policy Tree Search",
+    "AgentPro: EnhancingLLMAgents with Automated Process Supervision",
+    "Translation in the Hands of Many: Centering Lay Users in Machine Translation Interactions",
+    "MTU-Bench: A Multi-granularity Tool-Use Benchmark for Large Language Models",
+    "Param$\\Delta$ for Direct Mixing: Post-Train Large Language Model At Zero Cost",
+    "Robust Function-Calling for On-Device Language Model via Function Masking",
+    "ToolACE: Winning the Points of LLM Function Calling",
+    "PROMPTEVALS: A Dataset of Assertions and Guardrails for Custom Production Large Language Model Pipelines",
+    "UOREX: Towards Uncertainty-Aware Open Relation Extraction"
+  ],
+  "paper_count": 10,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A benchmark for evaluating the ability of LLMs to make tool calls, covering single- and multi-turn scenarios.",
+      "paper": "MTU-Bench: A Multi-granularity Tool-Use Benchmark for Large Language Models",
+      "original_name": "API-Bank"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Tool use",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Param$\\Delta$ for Direct Mixing: Post-Train Large Language Model At Zero Cost",
+      "evidence": "The evaluation datasets employed are sourced from open-source collections as reported in the Llama3 paper, which include MMLU(Hendrycks et al., 2021a), IFEval(Zhou et al., 2023), HumanEval(Chen et al., 2021), MBPP(Austin et al., 2021), GSM8K(Cobbe et al., 2021), MATH(Hendrycks et al., 2021b), ARC Challenge (Clark et al., 2018), GPQA (Rein et al., 2023), BFCL(Yan et al., 2024), API-Bank(Li et al., 2023), and MGSM(Shi et al., 2022).",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr25": [
+          "Param$\\Delta$ for Direct Mixing: Post-Train Large Language Model At Zero Cost",
+          "Robust Function-Calling for On-Device Language Model via Function Masking"
+        ],
+        "naacl25": [
+          "PROMPTEVALS: A Dataset of Assertions and Guardrails for Custom Production Large Language Model Pipelines"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "MTU-Bench: A Multi-granularity Tool-Use Benchmark for Large Language Models",
+      "evidence": "To evaluate the generality of MTU-LLaMA, we measure its performance on the OOD test split of MTU-Bench and two other OOD tool-use benchmarks, i.e., API-Bank (Li et al., 2023) and ToolTalk (Farn & Shin, 2023)... which show strong generalizability of MTU-LLaMA.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "MTU-Bench: A Multi-granularity Tool-Use Benchmark for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Decision-making",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "AgentPro: EnhancingLLMAgents with Automated Process Supervision",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "AgentPro: EnhancingLLMAgents with Automated Process Supervision"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, API-Bank is consistently used as a benchmark to evaluate the ability of large language models to make tool calls. The most prevalent application of the instrument is to measure the construct of `Tool use`, with one paper also using it as an out-of-distribution benchmark to assess `Generalization`. Papers frequently describe it as a \"dialogue-style tool call dataset\" that covers both single- and multi-turn scenarios. The evaluation is operationalized by requiring a model to \"call predefined local Python tools based on user requirements in the dialogue,\" with accuracy measured by comparing tool return values to a ground truth. Some sources provide specific details on its structure, noting it contains \"314 tool-use dialogues and 753 API calls\" and features two distinct levels of difficulty: one for invoking a known API and another for retrieving and then calling an API from multiple candidates. A less common application involves using its \"benchmark loss\" to monitor agent capabilities during pre-training.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "MTU-Bench: A Multi-granularity Tool-Use Benchmark for Large Language Models",
+      "Param$\\Delta$ for Direct Mixing: Post-Train Large Language Model At Zero Cost",
+      "Robust Function-Calling for On-Device Language Model via Function Masking",
+      "ToolACE: Winning the Points of LLM Function Calling"
+    ],
+    "naacl25": [
+      "PROMPTEVALS: A Dataset of Assertions and Guardrails for Custom Production Large Language Model Pipelines",
+      "UOREX: Towards Uncertainty-Aware Open Relation Extraction"
+    ],
+    "acl25": [
+      "SceneGenAgent: Precise Industrial Scene Generation with Coding Agent",
+      "TreeRL:LLMReinforcement Learning with On-Policy Tree Search"
+    ],
+    "emnlp25": [
+      "AgentPro: EnhancingLLMAgents with Automated Process Supervision",
+      "Translation in the Hands of Many: Centering Lay Users in Machine Translation Interactions"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 4,
+    "naacl25": 2,
+    "acl25": 2,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "naacl25"
+  ]
+}

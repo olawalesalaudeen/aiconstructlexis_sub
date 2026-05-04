@@ -1,0 +1,232 @@
+{
+  "canonical_name": "Code understanding",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, \"Code understanding\" is predominantly framed as a latent ability to interpret the syntax, semantics, and functionality of programming code. This concept, also referred to as \"code comprehension\" or \"program comprehension,\" involves grasping the logic, structure, and behavior of code beyond just its static text patterns. Several papers emphasize that this requires understanding execution effects and implicit logic, with one study noting that models can \"generate syntactically correct code while failing to grasp semantic meaning\" (RuCCoD: Towards AutomatedICDCoding inRussian). The construct is operationalized and measured through a wide range of downstream behaviors, including code summarization, bug and defect detection, code translation, and predicting execution outcomes, with one paper explicitly linking it to the \"Code-to-Text (C2T)\" task (LLM Augmented LLMs: Expanding Capabilities through Composition).\n\nEvaluation approaches mentioned in the data include the CodeMMLU benchmark, execution-based validation, and, for specialized variants like Verilog understanding, LLM-as-a-judge and Human evaluation. Code understanding is frequently studied alongside Code generation as a primary capability of large language models for code. It is reported to enable Explanation generation and is also studied in relation to Type inference and Code navigation. Some research identifies specific limitations in current models, such as a \"weak sense of data types\" and \"implicit code semantics\" (Beyond Accuracy: Evaluating Self-Consistency of Code Large Language Models with IdentityChain), while other work proposes more granular versions of the construct like Cross-file understanding.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Code understanding",
+    "Code comprehension",
+    "Verilog understanding",
+    "Cross-file understanding",
+    "Program semantics understanding",
+    "Program comprehension",
+    "Code-level understanding"
+  ],
+  "papers": [
+    "Investigating Neurons and Heads in Transformer-basedLLMs for Typographical Errors",
+    "LoCt-Instruct: An Automatic Pipeline for Constructing Datasets of Logical Continuous Instructions",
+    "RuCCoD: Towards AutomatedICDCoding inRussian",
+    "SHIFT: Selected Helpful Informative Frame for Video-guided Machine Translation",
+    "Transparent and Coherent Procedural Mistake Detection",
+    "Tree-of-Quote Prompting Improves Factuality and Attribution in Multi-Hop and Medical Reasoning",
+    "Beyond Accuracy: Evaluating Self-Consistency of Code Large Language Models with IdentityChain",
+    "LLM Augmented LLMs: Expanding Capabilities through Composition",
+    "Lemur: Integrating Large Language Models in Automated Program Verification",
+    "WizardCoder: Empowering Code Large Language Models with Evol-Instruct",
+    "CodeMMLU: A Multi-Task Benchmark for Assessing Code Understanding & Reasoning Capabilities of CodeLLMs",
+    "DeepRTL: Bridging Verilog Understanding and Generation with a Unified Representation Model",
+    "Execution-guided within-prompt search for programming-by-example",
+    "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code",
+    "McEval: Massively Multilingual Code Evaluation",
+    "Training Language Models on Synthetic Edit Sequences Improves Code Synthesis",
+    "NextCoder: Robust Adaptation of Code LMs to Diverse Code Edits",
+    "RZ-NAS: Enhancing LLM-guided Neural Architecture Search via Reflective Zero-Cost Strategy",
+    "ProSE: Diffusion Priors for Speech Enhancement",
+    "Tonguescape: Exploring Language Models Understanding of Vowel Articulation",
+    "Detecting Bugs with Substantial Monetary Consequences by LLM and Rule-based Reasoning",
+    "LLMDFA: Analyzing Dataflow in Code with Large Language Models",
+    "MAGIS: LLM-Based Multi-Agent Framework for GitHub Issue Resolution",
+    "SelfCodeAlign: Self-Alignment for Code Generation",
+    "SemCoder: Training Code Language Models with Comprehensive Semantics Reasoning",
+    "kGym: A Platform and Dataset to Benchmark Large Language Models on Linux Kernel Crash Resolution"
+  ],
+  "paper_count": 26,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The latent ability to interpret the syntax, semantics, and functionality of programming code, enabling explanation and reasoning about code behavior.",
+      "paper": "Beyond Accuracy: Evaluating Self-Consistency of Code Large Language Models with IdentityChain",
+      "original_name": "Code understanding"
+    },
+    {
+      "text": "The model's underlying ability to understand the semantics and predict the outcome of a given piece of code.",
+      "paper": "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code",
+      "original_name": "Code comprehension"
+    },
+    {
+      "text": "The latent ability of a model to comprehend Verilog code and summarize its high-level functionality in natural language.",
+      "paper": "DeepRTL: Bridging Verilog Understanding and Generation with a Unified Representation Model",
+      "original_name": "Verilog understanding"
+    },
+    {
+      "text": "The ability to track and integrate information distributed across multiple files in a code repository when implementing a target function.",
+      "paper": "Investigating Neurons and Heads in Transformer-basedLLMs for Typographical Errors",
+      "original_name": "Cross-file understanding"
+    },
+    {
+      "text": "The latent ability of a model to grasp the meaning, behavior, and execution effects of code beyond static text patterns.",
+      "paper": "SemCoder: Training Code Language Models with Comprehensive Semantics Reasoning",
+      "original_name": "Program semantics understanding"
+    },
+    {
+      "text": "The latent ability of a model to understand the semantic properties, structures, and relationships within source code.",
+      "paper": "LLMDFA: Analyzing Dataflow in Code with Large Language Models",
+      "original_name": "Program comprehension"
+    },
+    {
+      "text": "The latent ability of the LLM to comprehend and reason about neural architecture search tasks through executable code representations of network construction and zero-cost proxy computation.",
+      "paper": "RZ-NAS: Enhancing LLM-guided Neural Architecture Search via Reflective Zero-Cost Strategy",
+      "original_name": "Code-level understanding"
+    }
+  ],
+  "definition_count": 7,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Code explanation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "LLM Augmented LLMs: Expanding Capabilities through Composition",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "LLM Augmented LLMs: Expanding Capabilities through Composition"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-as-a-judge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "DeepRTL: Bridging Verilog Understanding and Generation with a Unified Representation Model",
+      "evidence": "To tackle this issue, we take the initiative to apply embedding similarity and GPT score for evaluation, both of which assess semantic similarity more effectively. (Section 1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "DeepRTL: Bridging Verilog Understanding and Generation with a Unified Representation Model"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "DeepRTL: Bridging Verilog Understanding and Generation with a Unified Representation Model",
+      "evidence": "To further validate our model\u2019s performance, we have conducted human evaluations, which show that DeepRTL-220m, GPT-4, and o1-preview achieve accuracies of 78%, 72%, and 67%, respectively. (Section 5.2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "DeepRTL: Bridging Verilog Understanding and Generation with a Unified Representation Model"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-context understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "On-the-Fly Adaptive Distillation of Transformer to Dual-State Linear Attention for Long-Context LLM Serving",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "On-the-Fly Adaptive Distillation of Transformer to Dual-State Linear Attention for Long-Context LLM Serving"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Type inference",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "TypyBench: Evaluating LLM Type Inference for Untyped Python Repositories",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "TypyBench: Evaluating LLM Type Inference for Untyped Python Repositories"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code navigation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Position: Future Research and Challenges Remain Towards AI for Software Engineering",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Position: Future Research and Challenges Remain Towards AI for Software Engineering"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 6,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 4,
+  "characterization": "Across the surveyed literature, \"Code understanding\" is predominantly framed as a latent ability to interpret the syntax, semantics, and functionality of programming code. This concept, also referred to as \"code comprehension\" or \"program comprehension,\" involves grasping the logic, structure, and behavior of code beyond just its static text patterns. Several papers emphasize that this requires understanding execution effects and implicit logic, with one study noting that models can \"generate syntactically correct code while failing to grasp semantic meaning\" (RuCCoD: Towards AutomatedICDCoding inRussian). The construct is operationalized and measured through a wide range of downstream behaviors, including code summarization, bug and defect detection, code translation, and predicting execution outcomes, with one paper explicitly linking it to the \"Code-to-Text (C2T)\" task (LLM Augmented LLMs: Expanding Capabilities through Composition).\n\nEvaluation approaches mentioned in the data include the CodeMMLU benchmark, execution-based validation, and, for specialized variants like Verilog understanding, LLM-as-a-judge and Human evaluation. Code understanding is frequently studied alongside Code generation as a primary capability of large language models for code. It is reported to enable Explanation generation and is also studied in relation to Type inference and Code navigation. Some research identifies specific limitations in current models, such as a \"weak sense of data types\" and \"implicit code semantics\" (Beyond Accuracy: Evaluating Self-Consistency of Code Large Language Models with IdentityChain), while other work proposes more granular versions of the construct like Cross-file understanding.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Beyond Accuracy: Evaluating Self-Consistency of Code Large Language Models with IdentityChain",
+      "LLM Augmented LLMs: Expanding Capabilities through Composition",
+      "Lemur: Integrating Large Language Models in Automated Program Verification",
+      "WizardCoder: Empowering Code Large Language Models with Evol-Instruct"
+    ],
+    "iclr25": [
+      "CodeMMLU: A Multi-Task Benchmark for Assessing Code Understanding & Reasoning Capabilities of CodeLLMs",
+      "DeepRTL: Bridging Verilog Understanding and Generation with a Unified Representation Model",
+      "Execution-guided within-prompt search for programming-by-example",
+      "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code",
+      "McEval: Massively Multilingual Code Evaluation",
+      "Training Language Models on Synthetic Edit Sequences Improves Code Synthesis"
+    ],
+    "naacl25": [
+      "ProSE: Diffusion Priors for Speech Enhancement",
+      "Tonguescape: Exploring Language Models Understanding of Vowel Articulation"
+    ],
+    "emnlp25": [
+      "Investigating Neurons and Heads in Transformer-basedLLMs for Typographical Errors",
+      "LoCt-Instruct: An Automatic Pipeline for Constructing Datasets of Logical Continuous Instructions",
+      "RuCCoD: Towards AutomatedICDCoding inRussian",
+      "SHIFT: Selected Helpful Informative Frame for Video-guided Machine Translation",
+      "Transparent and Coherent Procedural Mistake Detection",
+      "Tree-of-Quote Prompting Improves Factuality and Attribution in Multi-Hop and Medical Reasoning"
+    ],
+    "neurips24": [
+      "Detecting Bugs with Substantial Monetary Consequences by LLM and Rule-based Reasoning",
+      "LLMDFA: Analyzing Dataflow in Code with Large Language Models",
+      "MAGIS: LLM-Based Multi-Agent Framework for GitHub Issue Resolution",
+      "SelfCodeAlign: Self-Alignment for Code Generation",
+      "SemCoder: Training Code Language Models with Comprehensive Semantics Reasoning",
+      "kGym: A Platform and Dataset to Benchmark Large Language Models on Linux Kernel Crash Resolution"
+    ],
+    "icml25": [
+      "NextCoder: Robust Adaptation of Code LMs to Diverse Code Edits",
+      "RZ-NAS: Enhancing LLM-guided Neural Architecture Search via Reflective Zero-Cost Strategy"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 4,
+    "iclr25": 6,
+    "naacl25": 2,
+    "emnlp25": 6,
+    "neurips24": 6,
+    "icml25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

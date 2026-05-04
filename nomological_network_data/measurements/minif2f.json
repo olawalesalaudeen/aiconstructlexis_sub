@@ -1,0 +1,248 @@
+{
+  "canonical_name": "miniF2F",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, miniF2F is consistently defined as a benchmark for evaluating automated and formal theorem proving. It is most frequently used to measure the capabilities of `Theorem proving` and `Formal theorem proving`, and is also applied to assess `Autoformalization`, `Generalization`, and `Formal reasoning`. The benchmark is widely described as containing problems derived from high-school and Olympiad-level mathematics competitions like AIME and IMO, with several sources specifying a total of 488 problems split into validation and test sets. One paper characterizes these as \"standalone competition problems that do not require external context\" (miniCTX: Neural Theorem Proving with (Long-)Contexts). Operationally, models are evaluated on their ability to generate proofs that are verifiable within interactive theorem provers, and the data shows its use with multiple systems including Lean and Isabelle. Some papers refer specifically to a `miniF2F-test` variant for evaluation. While the prevailing usage is for formal-to-formal proving, one paper also mentions its application in \"informal-to-formal\" evaluation (Llemma: An Open Language Model for Mathematics).",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "miniF2F",
+    "minif2f",
+    "MiniF2F",
+    "miniF2F-test"
+  ],
+  "papers": [
+    "Flexora: Flexible Low-Rank Adaptation for Large Language Models",
+    "Optimizing Pre-Training Data Mixtures with Mixtures of Data Expert Models",
+    "SEA: Low-Resource Safety Alignment for Multimodal Large Language Models via Synthetic Embeddings",
+    "Scaling Text-Rich Image Understanding via Code-Guided Synthetic Multimodal Data Generation",
+    "LEGO-Prover: Neural Theorem Proving with Growing Libraries",
+    "Llemma: An Open Language Model for Mathematics",
+    "MUSTARD: Mastering Uniform Synthesis of Theorem and Proof Data",
+    "Magnushammer: A Transformer-Based Approach to Premise Selection",
+    "CARTS: Advancing Neural Theorem Proving with Diversified Tactic Calibration and Bias-Resistant Tree Search",
+    "DeepSeek-Prover-V1.5: Harnessing Proof Assistant Feedback for Reinforcement Learning and Monte-Carlo Tree Search",
+    "FormalAlign: Automated Alignment Evaluation for Autoformalization",
+    "Herald: A Natural Language Annotated Lean 4 Dataset",
+    "ImProver: Agent-Based Automated Proof Optimization",
+    "Lean-STaR: Learning to Interleave Thinking and Proving",
+    "LeanAgent: Lifelong Learning for Formal Theorem Proving",
+    "miniCTX: Neural Theorem Proving with (Long-)Contexts",
+    "MA-LoT: Model-Collaboration Lean-based Long Chain-of-Thought Reasoning enhances Formal Theorem Proving",
+    "Position: Formal Mathematical Reasoning\u2014A New Frontier in AI",
+    "ProofAug: Efficient Neural Theorem Proving via Fine-grained Proof Structure Analysis",
+    "STP: Self-play LLM Theorem Provers with Iterative Conjecturing and Proving",
+    "Autoformalize Mathematical Statements by Symbolic Equivalence and Semantic Consistency",
+    "Lean Workbook: A large-scale Lean problem set formalized from natural language math problems",
+    "Learning Formal Mathematics From Intrinsic Motivation",
+    "Proving Olympiad Algebraic Inequalities without Human Demonstrations",
+    "Proving Theorems Recursively",
+    "PutnamBench: Evaluating Neural Theorem-Provers on the Putnam Mathematical Competition"
+  ],
+  "paper_count": 26,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Benchmark for formal theorem proving that evaluates models on their ability to generate proofs verifiable by a theorem prover.",
+      "paper": "LEGO-Prover: Neural Theorem Proving with Growing Libraries",
+      "original_name": "miniF2F"
+    },
+    {
+      "text": "A benchmark for formal theorem proving, containing problems from olympiad-level mathematics translated into multiple formal systems.",
+      "paper": "Learning Formal Mathematics From Intrinsic Motivation",
+      "original_name": "minif2f"
+    },
+    {
+      "text": "A benchmark dataset of formal theorem proving problems derived from high-school mathematics competitions, used to evaluate neural theorem proving performance.",
+      "paper": "ImProver: Agent-Based Automated Proof Optimization",
+      "original_name": "MiniF2F"
+    },
+    {
+      "text": "A benchmark dataset (mini Formal-to-Formal) used for evaluating language model-based theorem provers in the Lean interactive theorem prover.",
+      "paper": "Lean-STaR: Learning to Interleave Thinking and Proving",
+      "original_name": "miniF2F-test"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Theorem proving",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "LEGO-Prover: Neural Theorem Proving with Growing Libraries",
+      "evidence": "",
+      "paper_count": 6,
+      "papers_by_conference": {
+        "iclr24": [
+          "LEGO-Prover: Neural Theorem Proving with Growing Libraries",
+          "Magnushammer: A Transformer-Based Approach to Premise Selection"
+        ],
+        "neurips24": [
+          "Learning Formal Mathematics From Intrinsic Motivation"
+        ],
+        "iclr25": [
+          "CARTS: Advancing Neural Theorem Proving with Diversified Tactic Calibration and Bias-Resistant Tree Search"
+        ],
+        "acl25": [
+          "Optimizing Pre-Training Data Mixtures with Mixtures of Data Expert Models"
+        ],
+        "icml25": [
+          "STP: Self-play LLM Theorem Provers with Iterative Conjecturing and Proving"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Formal theorem proving",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "DeepSeek-Prover-V1.5: Harnessing Proof Assistant Feedback for Reinforcement Learning and Monte-Carlo Tree Search",
+      "evidence": "benchmarks often focus on proving standalone competition problems (e.g., miniF2F (Zheng et al., 2022))",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr25": [
+          "DeepSeek-Prover-V1.5: Harnessing Proof Assistant Feedback for Reinforcement Learning and Monte-Carlo Tree Search",
+          "LeanAgent: Lifelong Learning for Formal Theorem Proving"
+        ],
+        "icml25": [
+          "MA-LoT: Model-Collaboration Lean-based Long Chain-of-Thought Reasoning enhances Formal Theorem Proving"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Autoformalization",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Autoformalize Mathematical Statements by Symbolic Equivalence and Semantic Consistency",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "neurips24": [
+          "Autoformalize Mathematical Statements by Symbolic Equivalence and Semantic Consistency",
+          "Lean Workbook: A large-scale Lean problem set formalized from natural language math problems"
+        ],
+        "iclr25": [
+          "Herald: A Natural Language Annotated Lean 4 Dataset"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "FormalAlign: Automated Alignment Evaluation for Autoformalization",
+      "evidence": "The FORMALALIGN model exhibits consistent performance across four diverse datasets, demonstrating its ability to generalize its autoformalization evaluation capabilities. Particularly noteworthy are the model's AS scores of 66.39% and 64.61% on the challenging MiniF2F-Valid and MiniF2F-Test datasets, respectively.",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "FormalAlign: Automated Alignment Evaluation for Autoformalization"
+        ],
+        "icml25": [
+          "STP: Self-play LLM Theorem Provers with Iterative Conjecturing and Proving"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Autoformalize Mathematical Statements by Symbolic Equivalence and Semantic Consistency",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Autoformalize Mathematical Statements by Symbolic Equivalence and Semantic Consistency"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "PutnamBench",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "PutnamBench: Evaluating Neural Theorem-Provers on the Putnam Mathematical Competition",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "PutnamBench: Evaluating Neural Theorem-Provers on the Putnam Mathematical Competition"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Formal reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "MA-LoT: Model-Collaboration Lean-based Long Chain-of-Thought Reasoning enhances Formal Theorem Proving",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "MA-LoT: Model-Collaboration Lean-based Long Chain-of-Thought Reasoning enhances Formal Theorem Proving"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 7,
+  "incoming_relationship_count": 7,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, miniF2F is consistently defined as a benchmark for evaluating automated and formal theorem proving. It is most frequently used to measure the capabilities of `Theorem proving` and `Formal theorem proving`, and is also applied to assess `Autoformalization`, `Generalization`, and `Formal reasoning`. The benchmark is widely described as containing problems derived from high-school and Olympiad-level mathematics competitions like AIME and IMO, with several sources specifying a total of 488 problems split into validation and test sets. One paper characterizes these as \"standalone competition problems that do not require external context\" (miniCTX: Neural Theorem Proving with (Long-)Contexts). Operationally, models are evaluated on their ability to generate proofs that are verifiable within interactive theorem provers, and the data shows its use with multiple systems including Lean and Isabelle. Some papers refer specifically to a `miniF2F-test` variant for evaluation. While the prevailing usage is for formal-to-formal proving, one paper also mentions its application in \"informal-to-formal\" evaluation (Llemma: An Open Language Model for Mathematics).",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "LEGO-Prover: Neural Theorem Proving with Growing Libraries",
+      "Llemma: An Open Language Model for Mathematics",
+      "MUSTARD: Mastering Uniform Synthesis of Theorem and Proof Data",
+      "Magnushammer: A Transformer-Based Approach to Premise Selection"
+    ],
+    "neurips24": [
+      "Autoformalize Mathematical Statements by Symbolic Equivalence and Semantic Consistency",
+      "Lean Workbook: A large-scale Lean problem set formalized from natural language math problems",
+      "Learning Formal Mathematics From Intrinsic Motivation",
+      "Proving Olympiad Algebraic Inequalities without Human Demonstrations",
+      "Proving Theorems Recursively",
+      "PutnamBench: Evaluating Neural Theorem-Provers on the Putnam Mathematical Competition"
+    ],
+    "iclr25": [
+      "CARTS: Advancing Neural Theorem Proving with Diversified Tactic Calibration and Bias-Resistant Tree Search",
+      "DeepSeek-Prover-V1.5: Harnessing Proof Assistant Feedback for Reinforcement Learning and Monte-Carlo Tree Search",
+      "FormalAlign: Automated Alignment Evaluation for Autoformalization",
+      "Herald: A Natural Language Annotated Lean 4 Dataset",
+      "ImProver: Agent-Based Automated Proof Optimization",
+      "Lean-STaR: Learning to Interleave Thinking and Proving",
+      "LeanAgent: Lifelong Learning for Formal Theorem Proving",
+      "miniCTX: Neural Theorem Proving with (Long-)Contexts"
+    ],
+    "acl25": [
+      "Flexora: Flexible Low-Rank Adaptation for Large Language Models",
+      "Optimizing Pre-Training Data Mixtures with Mixtures of Data Expert Models",
+      "SEA: Low-Resource Safety Alignment for Multimodal Large Language Models via Synthetic Embeddings",
+      "Scaling Text-Rich Image Understanding via Code-Guided Synthetic Multimodal Data Generation"
+    ],
+    "icml25": [
+      "MA-LoT: Model-Collaboration Lean-based Long Chain-of-Thought Reasoning enhances Formal Theorem Proving",
+      "Position: Formal Mathematical Reasoning\u2014A New Frontier in AI",
+      "ProofAug: Efficient Neural Theorem Proving via Fine-grained Proof Structure Analysis",
+      "STP: Self-play LLM Theorem Provers with Iterative Conjecturing and Proving"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 4,
+    "neurips24": 6,
+    "iclr25": 8,
+    "acl25": 4,
+    "icml25": 4
+  },
+  "conferences": [
+    "acl25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

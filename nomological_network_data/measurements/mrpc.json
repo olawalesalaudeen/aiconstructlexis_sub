@@ -1,0 +1,212 @@
+{
+  "canonical_name": "MRPC",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, MRPC (Microsoft Research Paraphrase Corpus) is consistently described as a benchmark used to measure a model's ability for paraphrase identification. The task is most commonly defined as detecting whether two sentences are paraphrases of each other, with some sources framing it as determining if two sentences are semantically equivalent. A prevalent theme in the data is the instrument's inclusion as a task within the GLUE benchmark, where it is often evaluated alongside other datasets. While its primary stated purpose is measuring paraphrase detection, some papers also use MRPC as part of a suite of tasks to evaluate broader natural language understanding (NLU) capabilities. The benchmark is applied in various evaluation contexts, such as assessing the performance of fine-tuned models, the impact of model compression, and downstream capabilities after model editing.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "MRPC"
+  ],
+  "papers": [
+    "A Systematic Analysis of Base Model Choice for Reward Modeling",
+    "Building Trust in ClinicalLLMs: Bias Analysis and Dataset Transparency",
+    "Computational Analysis of Character Development in Holocaust Testimonies",
+    "DiplomacyAgent: DoLLMs Balance Interests and Ethical Principles in International Events?",
+    "Dynamic Model-Bank Test-Time Adaptation for Automatic Speech Recognition",
+    "MR. Judge: Multimodal Reasoner as a Judge",
+    "Primus: A Pioneering Collection of Open-Source Datasets for CybersecurityLLMTraining",
+    "Accurate Retraining-free Pruning for Pretrained Encoder-based Language Models",
+    "Batch Calibration: Rethinking Calibration for In-Context Learning and Prompt Engineering",
+    "IDEAL: Influence-Driven Selective Annotations Empower In-Context Learners in Large Language Models",
+    "In-Context Learning Learns Label Relationships but Is Not Conventional Learning",
+    "Merge, Then Compress: Demystify Efficient SMoE with Hints from Its Routing Policy",
+    "ReLoRA: High-Rank Training Through Low-Rank Updates",
+    "Stable Anisotropic Regularization",
+    "AlphaEdit: Null-Space Constrained Knowledge Editing for Language Models",
+    "DARE the Extreme: Revisiting Delta-Parameter Pruning For Fine-Tuned Models",
+    "DS-LLM: Leveraging Dynamical Systems to Enhance Both Training and Inference of Large Language Models",
+    "Encryption-Friendly LLM Architecture",
+    "HeadMap: Locating and Enhancing Knowledge Circuits in LLMs",
+    "Improving Language Model Distillation through Hidden State Matching",
+    "KaSA: Knowledge-Aware Singular-Value Adaptation of Large Language Models",
+    "Not All LLM-Generated Data Are Equal: Rethinking Data Weighting in Text Classification",
+    "On Large Language Model Continual Unlearning",
+    "PortLLM: Personalizing Evolving Large Language Models with Training-Free and Portable Model Patches",
+    "UniCoTT: A Unified Framework for Structural Chain-of-Thought Distillation",
+    "Beyond Zero Initialization: Investigating the Impact of Non-Zero Initialization on LoRA Fine-Tuning Dynamics",
+    "Does Low Rank Adaptation Lead to Lower Robustness against Training-Time Attacks?",
+    "Learngene Tells You How to Customize: Task-Aware Parameter Initialization at Flexible Scales",
+    "LoRA-One: One-Step Full Gradient Could Suffice for Fine-Tuning Large Language Models, Provably and Efficiently",
+    "Reinforced Lifelong Editing for Language Models"
+  ],
+  "paper_count": 30,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The Microsoft Research Paraphrase Corpus, a benchmark for detecting whether two sentences are paraphrases of each other.",
+      "paper": "Accurate Retraining-free Pruning for Pretrained Encoder-based Language Models",
+      "original_name": "MRPC"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "GLUE",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Merge, Then Compress: Demystify Efficient SMoE with Hints from Its Routing Policy",
+      "evidence": "...we omit the time-intensive MNLI and QQP tasks, thus forgoing the use of the MNLI trick3 for tasks MRPC, RTE, and STS-B. (Section 4.1)",
+      "paper_count": 5,
+      "papers_by_conference": {
+        "iclr24": [
+          "Merge, Then Compress: Demystify Efficient SMoE with Hints from Its Routing Policy"
+        ],
+        "neurips24": [
+          "Prompt Tuning Strikes Back: Customizing Foundation Models with Low-Rank Prompt Adaptation"
+        ],
+        "iclr25": [
+          "PortLLM: Personalizing Evolving Large Language Models with Training-Free and Portable Model Patches",
+          "KaSA: Knowledge-Aware Singular-Value Adaptation of Large Language Models",
+          "DS-LLM: Leveraging Dynamical Systems to Enhance Both Training and Inference of Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Paraphrase detection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Enhancing In-Context Learning Performance with just SVD-Based Weight Pruning: A Theoretical Perspective",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "neurips24": [
+          "Enhancing In-Context Learning Performance with just SVD-Based Weight Pruning: A Theoretical Perspective",
+          "Mixture of Demonstrations for In-Context Learning"
+        ],
+        "emnlp25": [
+          "Primus: A Pioneering Collection of Open-Source Datasets for CybersecurityLLMTraining"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Natural language understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "UniCoTT: A Unified Framework for Structural Chain-of-Thought Distillation",
+      "evidence": "For NLU tasks, we compare baselines on five datasets, including CoLA (Warstadt et al., 2018), MRPC (Dolan & Brockett, 2005), RTE (Wang et al., 2019), SST-2 (Socher et al., 2013), and WNLI (Wang et al., 2019).",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "UniCoTT: A Unified Framework for Structural Chain-of-Thought Distillation"
+        ],
+        "icml25": [
+          "LoRA-One: One-Step Full Gradient Could Suffice for Fine-Tuning Large Language Models, Provably and Efficiently"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Paraphrase identification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "On Large Language Model Continual Unlearning",
+      "evidence": "We employ eight datasets across various NLP tasks to evaluate the impact of bit-flip errors on model performance: MRPC (paraphrase detection) (Dolan and Brockett, 2005)... (Section 5.1)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "On Large Language Model Continual Unlearning",
+          "DS-LLM: Leveraging Dynamical Systems to Enhance Both Training and Inference of Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-context learning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "IDEAL: Influence-Driven Selective Annotations Empower In-Context Learners in Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "IDEAL: Influence-Driven Selective Annotations Empower In-Context Learners in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "AlphaEdit: Null-Space Constrained Knowledge Editing for Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "AlphaEdit: Null-Space Constrained Knowledge Editing for Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 6,
+  "incoming_relationship_count": 6,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, MRPC (Microsoft Research Paraphrase Corpus) is consistently described as a benchmark used to measure a model's ability for paraphrase identification. The task is most commonly defined as detecting whether two sentences are paraphrases of each other, with some sources framing it as determining if two sentences are semantically equivalent. A prevalent theme in the data is the instrument's inclusion as a task within the GLUE benchmark, where it is often evaluated alongside other datasets. While its primary stated purpose is measuring paraphrase detection, some papers also use MRPC as part of a suite of tasks to evaluate broader natural language understanding (NLU) capabilities. The benchmark is applied in various evaluation contexts, such as assessing the performance of fine-tuned models, the impact of model compression, and downstream capabilities after model editing.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Accurate Retraining-free Pruning for Pretrained Encoder-based Language Models",
+      "Batch Calibration: Rethinking Calibration for In-Context Learning and Prompt Engineering",
+      "IDEAL: Influence-Driven Selective Annotations Empower In-Context Learners in Large Language Models",
+      "In-Context Learning Learns Label Relationships but Is Not Conventional Learning",
+      "Merge, Then Compress: Demystify Efficient SMoE with Hints from Its Routing Policy",
+      "ReLoRA: High-Rank Training Through Low-Rank Updates",
+      "Stable Anisotropic Regularization"
+    ],
+    "iclr25": [
+      "AlphaEdit: Null-Space Constrained Knowledge Editing for Language Models",
+      "DARE the Extreme: Revisiting Delta-Parameter Pruning For Fine-Tuned Models",
+      "DS-LLM: Leveraging Dynamical Systems to Enhance Both Training and Inference of Large Language Models",
+      "Encryption-Friendly LLM Architecture",
+      "HeadMap: Locating and Enhancing Knowledge Circuits in LLMs",
+      "Improving Language Model Distillation through Hidden State Matching",
+      "KaSA: Knowledge-Aware Singular-Value Adaptation of Large Language Models",
+      "Not All LLM-Generated Data Are Equal: Rethinking Data Weighting in Text Classification",
+      "On Large Language Model Continual Unlearning",
+      "PortLLM: Personalizing Evolving Large Language Models with Training-Free and Portable Model Patches",
+      "UniCoTT: A Unified Framework for Structural Chain-of-Thought Distillation"
+    ],
+    "icml25": [
+      "Beyond Zero Initialization: Investigating the Impact of Non-Zero Initialization on LoRA Fine-Tuning Dynamics",
+      "Does Low Rank Adaptation Lead to Lower Robustness against Training-Time Attacks?",
+      "Learngene Tells You How to Customize: Task-Aware Parameter Initialization at Flexible Scales",
+      "LoRA-One: One-Step Full Gradient Could Suffice for Fine-Tuning Large Language Models, Provably and Efficiently",
+      "Reinforced Lifelong Editing for Language Models"
+    ],
+    "emnlp25": [
+      "A Systematic Analysis of Base Model Choice for Reward Modeling",
+      "Building Trust in ClinicalLLMs: Bias Analysis and Dataset Transparency",
+      "Computational Analysis of Character Development in Holocaust Testimonies",
+      "DiplomacyAgent: DoLLMs Balance Interests and Ethical Principles in International Events?",
+      "Dynamic Model-Bank Test-Time Adaptation for Automatic Speech Recognition",
+      "MR. Judge: Multimodal Reasoner as a Judge",
+      "Primus: A Pioneering Collection of Open-Source Datasets for CybersecurityLLMTraining"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 7,
+    "iclr25": 11,
+    "icml25": 5,
+    "emnlp25": 7
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25"
+  ]
+}

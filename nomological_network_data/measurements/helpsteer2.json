@@ -1,0 +1,195 @@
+{
+  "canonical_name": "HelpSteer2",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, HelpSteer2 is most frequently described as a multi-aspect alignment dataset, though it is also referred to as a preference dataset and an instruction-following dataset. The dataset is employed in two primary ways: for training models through preference optimization and for developing personalized reward models, as well as for evaluating alignment. As an evaluation instrument, HelpSteer2 is used to measure personalized alignment, with one paper noting its validation split contains 1,000 prompts for assessing \"alignment across different preference dimensions.\" It is also reported to measure the constructs of faithfulness, helpfulness, complexity, and verbosity. A distinct line of work uses HelpSteer2 as a source of 'real data' for supervised fine-tuning experiments to demonstrate and study the phenomenon of model collapse. The dataset is noted to contain prompts, completions, and metrics, including a helpfulness score. Finally, the dataset is studied in relation to ShareGPT and Dialogue.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "HelpSteer2",
+    "Helpsteer2"
+  ],
+  "papers": [
+    "Self-Instructed Derived Prompt Generation Meets In-Context Learning: Unlocking New Potential of Black-BoxLLMs",
+    "Stepwise Reasoning Disruption Attack ofLLMs",
+    "Veracity Bias and Beyond: UncoveringLLMs\u2019 Hidden Beliefs in Problem-Solving Reasoning",
+    "Advantage-Guided Distillation for Preference Alignment in Small Language Models",
+    "HelpSteer2-Preference: Complementing Ratings with Preferences",
+    "Interpreting Language Reward Models via Contrastive Explanations",
+    "PAD: Personalized Alignment of LLMs at Decoding-time",
+    "Sail into the Headwind: Alignment via Robust Rewards and Dynamic Labels against Reward Hacking",
+    "Seeing Eye to AI: Human Alignment via Gaze-Based Response Rewards for Large Language Models",
+    "Collapse or Thrive: Perils and Promises of Synthetic Data in a Self-Generating World",
+    "Diverging Preferences: When do Annotators Disagree and do Models Know?",
+    "R.I.P.: Better Models by Survival of the Fittest Prompts",
+    "SIMPLEMIX: Frustratingly Simple Mixing of Off- and On-policy Data in Language Model Preference Learning"
+  ],
+  "paper_count": 13,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A multi-aspect alignment dataset comprising 1,000 prompts, used for both training a personalized reward model and for evaluating alignment across different preference dimensions.",
+      "paper": "PAD: Personalized Alignment of LLMs at Decoding-time",
+      "original_name": "HelpSteer2"
+    },
+    {
+      "text": "Helpsteer2, a preference dataset used for preference optimization and alignment experiments.",
+      "paper": "Sail into the Headwind: Alignment via Robust Rewards and Dynamic Labels against Reward Hacking",
+      "original_name": "Helpsteer2"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Coherence",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "HelpSteer2-Preference: Complementing Ratings with Preferences",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "HelpSteer2-Preference: Complementing Ratings with Preferences"
+        ],
+        "emnlp25": [
+          "LORAXBENCH: A Multitask, Multilingual Benchmark Suite for 20Indonesian Languages"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ShareGPT",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "HelpSteer 2: Open-source dataset for training top-performing reward models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "HelpSteer 2: Open-source dataset for training top-performing reward models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Dialogue",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "HelpSteer 2: Open-source dataset for training top-performing reward models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "HelpSteer 2: Open-source dataset for training top-performing reward models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "LORAXBENCH: A Multitask, Multilingual Benchmark Suite for 20Indonesian Languages",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "LORAXBENCH: A Multitask, Multilingual Benchmark Suite for 20Indonesian Languages"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Complexity",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "HelpSteer2-Preference: Complementing Ratings with Preferences",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "HelpSteer2-Preference: Complementing Ratings with Preferences"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Verbosity",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "HelpSteer2-Preference: Complementing Ratings with Preferences",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "HelpSteer2-Preference: Complementing Ratings with Preferences"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Personalized alignment",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "PAD: Personalized Alignment of LLMs at Decoding-time",
+      "evidence": "\u201cWe utilize two evaluation datasets... The HelpSteer2 (Wang et al., 2024c) (validation split) dataset is a multi-aspect alignment dataset comprising 1,000 prompts.\u201d",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "PAD: Personalized Alignment of LLMs at Decoding-time"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Model collapse",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Collapse or Thrive: Perils and Promises of Synthetic Data in a Self-Generating World",
+      "evidence": "Fine-tuning Google\u2019s Gemma2 models on Nvidia\u2019s HelpSteer 2 dataset demonstrates that model collapse occurs if previous data are replaced after each model-fitting iteration (left), whereas model collapse is avoided if new synthetic data instead accumulate with previous real and synthetic data (right).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Collapse or Thrive: Perils and Promises of Synthetic Data in a Self-Generating World"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 8,
+  "incoming_relationship_count": 7,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the provided literature, HelpSteer2 is most frequently described as a multi-aspect alignment dataset, though it is also referred to as a preference dataset and an instruction-following dataset. The dataset is employed in two primary ways: for training models through preference optimization and for developing personalized reward models, as well as for evaluating alignment. As an evaluation instrument, HelpSteer2 is used to measure personalized alignment, with one paper noting its validation split contains 1,000 prompts for assessing \"alignment across different preference dimensions.\" It is also reported to measure the constructs of faithfulness, helpfulness, complexity, and verbosity. A distinct line of work uses HelpSteer2 as a source of 'real data' for supervised fine-tuning experiments to demonstrate and study the phenomenon of model collapse. The dataset is noted to contain prompts, completions, and metrics, including a helpfulness score. Finally, the dataset is studied in relation to ShareGPT and Dialogue.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Advantage-Guided Distillation for Preference Alignment in Small Language Models",
+      "HelpSteer2-Preference: Complementing Ratings with Preferences",
+      "Interpreting Language Reward Models via Contrastive Explanations",
+      "PAD: Personalized Alignment of LLMs at Decoding-time",
+      "Sail into the Headwind: Alignment via Robust Rewards and Dynamic Labels against Reward Hacking",
+      "Seeing Eye to AI: Human Alignment via Gaze-Based Response Rewards for Large Language Models"
+    ],
+    "acl25": [
+      "Self-Instructed Derived Prompt Generation Meets In-Context Learning: Unlocking New Potential of Black-BoxLLMs",
+      "Stepwise Reasoning Disruption Attack ofLLMs",
+      "Veracity Bias and Beyond: UncoveringLLMs\u2019 Hidden Beliefs in Problem-Solving Reasoning"
+    ],
+    "icml25": [
+      "Collapse or Thrive: Perils and Promises of Synthetic Data in a Self-Generating World",
+      "Diverging Preferences: When do Annotators Disagree and do Models Know?",
+      "R.I.P.: Better Models by Survival of the Fittest Prompts",
+      "SIMPLEMIX: Frustratingly Simple Mixing of Off- and On-policy Data in Language Model Preference Learning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 6,
+    "acl25": 3,
+    "icml25": 4
+  },
+  "conferences": [
+    "acl25",
+    "iclr25",
+    "icml25"
+  ]
+}

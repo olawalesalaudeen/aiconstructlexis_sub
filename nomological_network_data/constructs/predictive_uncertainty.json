@@ -1,0 +1,82 @@
+{
+  "canonical_name": "Predictive uncertainty",
+  "type": "construct",
+  "canonical_definition": "Across the provided literature, predictive uncertainty is consistently framed as the degree of confidence or ambiguity in a large language model's predictions. The most common operationalization involves measuring the entropy of the model's output probability distribution, where higher entropy indicates greater uncertainty. Another method mentioned, CAMIA, analyzes the model's transition from an initial state of high ambiguity to confident predictions during token generation. This uncertainty is reported to increase in response to ambiguous or complex prefixes, which may cause a model to \"rely on specific memorized sequences encountered during training\" (\"Confounding Factors in Relating Model Performance to Morphology\"). Other work notes that factors like \"harmful knowledge\" and introspection can also influence uncertainty levels. Predictive uncertainty is studied in relation to the behavior of hallucination, though the nature of the link is described differently across papers. One source suggests that predictive uncertainty causes hallucination, while another reports a correlation between the two.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Prediction uncertainty",
+    "Predictive uncertainty"
+  ],
+  "papers": [
+    "Analyzing values about gendered language reform inLLMs\u2019 revisions",
+    "Information Integration in Large Language Models is Gated by Linguistic Structural Markers",
+    "Confounding Factors in Relating Model Performance to Morphology",
+    "Flaw or Artifact? Rethinking Prompt Sensitivity in EvaluatingLLMs"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The degree of confidence in a model's predictions, often measured by the entropy of its output probability distribution, where higher entropy indicates greater uncertainty.",
+      "paper": "Information Integration in Large Language Models is Gated by Linguistic Structural Markers",
+      "original_name": "Prediction uncertainty"
+    },
+    {
+      "text": "The degree of ambiguity in the model's next-token predictions, which decreases more rapidly for memorized sequences as the model resolves uncertainty through recall.",
+      "paper": "Confounding Factors in Relating Model Performance to Morphology",
+      "original_name": "Predictive uncertainty"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Improving Uncertainty Estimation through Semantically Diverse Language Generation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Improving Uncertainty Estimation through Semantically Diverse Language Generation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "correlates",
+      "paper": "Uncertainty-Aware Decoding with Minimum Bayes Risk",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Uncertainty-Aware Decoding with Minimum Bayes Risk"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the provided literature, predictive uncertainty is consistently framed as the degree of confidence or ambiguity in a large language model's predictions. The most common operationalization involves measuring the entropy of the model's output probability distribution, where higher entropy indicates greater uncertainty. Another method mentioned, CAMIA, analyzes the model's transition from an initial state of high ambiguity to confident predictions during token generation. This uncertainty is reported to increase in response to ambiguous or complex prefixes, which may cause a model to \"rely on specific memorized sequences encountered during training\" (\"Confounding Factors in Relating Model Performance to Morphology\"). Other work notes that factors like \"harmful knowledge\" and introspection can also influence uncertainty levels. Predictive uncertainty is studied in relation to the behavior of hallucination, though the nature of the link is described differently across papers. One source suggests that predictive uncertainty causes hallucination, while another reports a correlation between the two.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Analyzing values about gendered language reform inLLMs\u2019 revisions",
+      "Information Integration in Large Language Models is Gated by Linguistic Structural Markers",
+      "Confounding Factors in Relating Model Performance to Morphology",
+      "Flaw or Artifact? Rethinking Prompt Sensitivity in EvaluatingLLMs"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 4
+  },
+  "conferences": [
+    "emnlp25"
+  ]
+}

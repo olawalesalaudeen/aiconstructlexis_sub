@@ -1,0 +1,88 @@
+{
+  "canonical_name": "Zero-shot prompting",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, Zero-shot prompting is consistently characterized as an evaluation protocol or procedure. The prevailing definition across multiple papers is that it involves providing a model with a task description or instruction without any prior examples or demonstrations. Several sources also specify that this method is used without any task-specific fine-tuning, aiming to assess a model's out-of-the-box capabilities. The stated purpose is to test a model's ability to follow instructions and generalize, as one paper notes it \"relies solely on the pre-trained knowledge and generalization abilities of LLMs\" (Mitigating Tail Narrowing inLLMSelf-Improvement via Socratic-Guided Sampling). In practice, it is frequently employed as a baseline method for comparison. Researchers contrast its performance with other approaches such as fine-tuning, few-shot prompting, and chain-of-thought prompting. This protocol is used to measure specific behaviors; for instance, it is used to benchmark models on \"Native language identification\".",
+  "expert_reviewed": false,
+  "expert_removed": true,
+  "expert_removed_reason": "method/training pipeline \u2014 not a construct/measurement/behavior of LLM ability",
+  "names": [
+    "Zero-shot prompting"
+  ],
+  "papers": [
+    "AcT2I: Evaluating and Improving Action Depiction in Text-to-Image Models",
+    "Controllable Memorization inLLMs via Weight Pruning",
+    "IL-PCSR: Legal Corpus for Prior Case and Statute Retrieval",
+    "M-Wanda: Improving One-Shot Pruning for MultilingualLLMs",
+    "POSITIONBIASMITIGATESPOSITIONBIAS: Mitigate Position Bias Through Inter-Position Knowledge Distillation",
+    "Think Wider, Detect Sharper: Reinforced Reference Coverage for Document-Level Self-Contradiction Detection",
+    "ToM: Leveraging Tree-orientedMapReduce for Long-Context Reasoning in Large Language Models",
+    "Who is in the Spotlight: The Hidden Bias Undermining Multimodal Retrieval-Augmented Generation",
+    "COLLIE: Systematic Construction of Constrained Text Generation Tasks",
+    "Talk like a Graph: Encoding Graphs for Large Language Models",
+    "LLMs Are Not Intelligent Thinkers: Introducing Mathematical Topic Tree Benchmark for Comprehensive Evaluation ofLLMs",
+    "Mitigating Tail Narrowing inLLMSelf-Improvement via Socratic-Guided Sampling",
+    "VisCGEC: Benchmarking the VisualChinese Grammatical Error Correction"
+  ],
+  "paper_count": 13,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Evaluation protocol in which models are given a constraint instruction without any prior examples, testing their ability to follow compositional constraints from instruction alone.",
+      "paper": "COLLIE: Systematic Construction of Constrained Text Generation Tasks",
+      "original_name": "Zero-shot prompting"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Native language identification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Controllable Memorization inLLMs via Weight Pruning",
+      "evidence": "\u201cWe benchmark the three models using both zero-shot prompting as well as task-speci\ufb01c \ufb01ne-tuning on the training set.\u201d",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Controllable Memorization inLLMs via Weight Pruning"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, Zero-shot prompting is consistently characterized as an evaluation protocol or procedure. The prevailing definition across multiple papers is that it involves providing a model with a task description or instruction without any prior examples or demonstrations. Several sources also specify that this method is used without any task-specific fine-tuning, aiming to assess a model's out-of-the-box capabilities. The stated purpose is to test a model's ability to follow instructions and generalize, as one paper notes it \"relies solely on the pre-trained knowledge and generalization abilities of LLMs\" (Mitigating Tail Narrowing inLLMSelf-Improvement via Socratic-Guided Sampling). In practice, it is frequently employed as a baseline method for comparison. Researchers contrast its performance with other approaches such as fine-tuning, few-shot prompting, and chain-of-thought prompting. This protocol is used to measure specific behaviors; for instance, it is used to benchmark models on \"Native language identification\".",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "COLLIE: Systematic Construction of Constrained Text Generation Tasks",
+      "Talk like a Graph: Encoding Graphs for Large Language Models"
+    ],
+    "naacl25": [
+      "LLMs Are Not Intelligent Thinkers: Introducing Mathematical Topic Tree Benchmark for Comprehensive Evaluation ofLLMs",
+      "Mitigating Tail Narrowing inLLMSelf-Improvement via Socratic-Guided Sampling",
+      "VisCGEC: Benchmarking the VisualChinese Grammatical Error Correction"
+    ],
+    "emnlp25": [
+      "AcT2I: Evaluating and Improving Action Depiction in Text-to-Image Models",
+      "Controllable Memorization inLLMs via Weight Pruning",
+      "IL-PCSR: Legal Corpus for Prior Case and Statute Retrieval",
+      "M-Wanda: Improving One-Shot Pruning for MultilingualLLMs",
+      "POSITIONBIASMITIGATESPOSITIONBIAS: Mitigate Position Bias Through Inter-Position Knowledge Distillation",
+      "Think Wider, Detect Sharper: Reinforced Reference Coverage for Document-Level Self-Contradiction Detection",
+      "ToM: Leveraging Tree-orientedMapReduce for Long-Context Reasoning in Large Language Models",
+      "Who is in the Spotlight: The Hidden Bias Undermining Multimodal Retrieval-Augmented Generation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "naacl25": 3,
+    "emnlp25": 8
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "naacl25"
+  ]
+}

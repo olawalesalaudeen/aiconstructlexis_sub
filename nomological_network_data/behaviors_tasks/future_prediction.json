@@ -1,0 +1,110 @@
+{
+  "canonical_name": "Future prediction",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, future prediction is a behavior commonly defined as a model's ability to forecast a subsequent state or observation based on current information. The specific inputs for this task vary, with some papers framing it as predicting from a current state and an action, while others describe it as predicting the next step in a sequence or from general contextual information. The operationalization of this behavior also differs across studies; it can involve selecting from candidate observations, generating a textual description of the next state, producing a probabilistic forecast, or autoregressively predicting both the next state and its associated reward. For instance, one approach prompts a model to \"select between 1) a pair of candidate next observations\" (\"On the Modeling Capabilities of Large Language Models for Sequential Decision Making\"), while another requires it to generate \"a textual description of the next observation\" (\"LLaRA: Supercharging Robot Learning Data for Vision-Language Policy\"). A less common framing extends this concept to include not just forecasting future events but also reconstructing past ones, involving the generation of both images and text. In the context of this research, future prediction is studied alongside the constructs of faithfulness and commonsense understanding.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Next-state prediction",
+    "Observation prediction",
+    "State transition prediction",
+    "State forecasting",
+    "Future prediction",
+    "Temporal prediction"
+  ],
+  "papers": [
+    "DeLLMa: Decision Making Under Uncertainty with Large Language Models",
+    "Interleaved Scene Graphs for Interleaved Text-and-Image Generation Assessment",
+    "LLaRA: Supercharging Robot Learning Data for Vision-Language Policy",
+    "On the Modeling Capabilities of Large Language Models for Sequential Decision Making",
+    "Sparse Autoencoders Reveal Temporal Difference Learning in Large Language Models",
+    "Zero-shot Model-based Reinforcement Learning using Large Language Models"
+  ],
+  "paper_count": 6,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The observable behavior where the model selects candidate next observations given current state and action.",
+      "paper": "On the Modeling Capabilities of Large Language Models for Sequential Decision Making",
+      "original_name": "Observation prediction"
+    },
+    {
+      "text": "The task of predicting the next observation in a sequence generated from a stochastic process, such as a random walk on a graph.",
+      "paper": "Sparse Autoencoders Reveal Temporal Difference Learning in Large Language Models",
+      "original_name": "Next-state prediction"
+    },
+    {
+      "text": "Autoregressively predicting the next state and reward given the current state and action.",
+      "paper": "Zero-shot Model-based Reinforcement Learning using Large Language Models",
+      "original_name": "State transition prediction"
+    },
+    {
+      "text": "The observable task of producing a probabilistic forecast for the values of unknown variables (states) based on provided contextual information.",
+      "paper": "DeLLMa: Decision Making Under Uncertainty with Large Language Models",
+      "original_name": "State forecasting"
+    },
+    {
+      "text": "The task of generating a textual description of the next observation, given a current observation and a single-step action.",
+      "paper": "LLaRA: Supercharging Robot Learning Data for Vision-Language Policy",
+      "original_name": "Future prediction"
+    },
+    {
+      "text": "The task of generating a sequence of images and text that forecasts future events or reconstructs past events based on an input.",
+      "paper": "Interleaved Scene Graphs for Interleaved Text-and-Image Generation Assessment",
+      "original_name": "Temporal prediction"
+    }
+  ],
+  "definition_count": 6,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "DeLLMa: Decision Making Under Uncertainty with Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "DeLLMa: Decision Making Under Uncertainty with Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Web Agents with World Models: Learning and Leveraging Environment Dynamics in Web Navigation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Web Agents with World Models: Learning and Leveraging Environment Dynamics in Web Navigation"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, future prediction is a behavior commonly defined as a model's ability to forecast a subsequent state or observation based on current information. The specific inputs for this task vary, with some papers framing it as predicting from a current state and an action, while others describe it as predicting the next step in a sequence or from general contextual information. The operationalization of this behavior also differs across studies; it can involve selecting from candidate observations, generating a textual description of the next state, producing a probabilistic forecast, or autoregressively predicting both the next state and its associated reward. For instance, one approach prompts a model to \"select between 1) a pair of candidate next observations\" (\"On the Modeling Capabilities of Large Language Models for Sequential Decision Making\"), while another requires it to generate \"a textual description of the next observation\" (\"LLaRA: Supercharging Robot Learning Data for Vision-Language Policy\"). A less common framing extends this concept to include not just forecasting future events but also reconstructing past ones, involving the generation of both images and text. In the context of this research, future prediction is studied alongside the constructs of faithfulness and commonsense understanding.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "DeLLMa: Decision Making Under Uncertainty with Large Language Models",
+      "Interleaved Scene Graphs for Interleaved Text-and-Image Generation Assessment",
+      "LLaRA: Supercharging Robot Learning Data for Vision-Language Policy",
+      "On the Modeling Capabilities of Large Language Models for Sequential Decision Making",
+      "Sparse Autoencoders Reveal Temporal Difference Learning in Large Language Models",
+      "Zero-shot Model-based Reinforcement Learning using Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 6
+  },
+  "conferences": [
+    "iclr25"
+  ]
+}

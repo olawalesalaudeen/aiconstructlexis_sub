@@ -1,0 +1,91 @@
+{
+  "canonical_name": "DetectGPT",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, DetectGPT is consistently characterized as a measurement instrument for detecting machine-generated text. The most prevalent description of its methodology is as a zero-shot, training-free, or post-hoc approach that relies on perturbing a given text passage and analyzing the resulting changes. This method operates by comparing the log probabilities of the original text with those of its perturbed versions, using what several papers describe as the \"curvature of the log probability function\" as the core detection criterion. The technique is based on the widely cited assumption that machine-generated text occupies a local optimum of log probability, meaning variations will typically have a lower model probability than the original passage. As one paper notes, this is because \"AI-generated passages occupy regions with clear negative log probability curvature\" (DNA-GPT: Divergent N-Gram Analysis for Training-Free Detection of GPT-Generated Text). Some sources refer to it as a \"state-of-the-art thresholding approach\" and a \"representative for loss-based post-hoc detectors.\" Overall, DetectGPT is used to operationalize the detection of AI-generated text by measuring this perturbation-based discrepancy.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "DetectGPT"
+  ],
+  "papers": [
+    "CanLLMs Reason About Program Semantics? A Comprehensive Evaluation ofLLMs on Formal Specification Inference",
+    "Enhancing Interpretable Image Classification ThroughLLMAgents and Conditional Concept Bottleneck Models",
+    "Active Layer-Contrastive Decoding Reduces Hallucination in Large Language Model Generation",
+    "E2LLM: Encoder Elongated Large Language Models for Long-Context Understanding and Reasoning",
+    "LogicTree: Structured Proof Exploration for Coherent and Rigorous Logical Reasoning with Large Language Models",
+    "MUZO: Leveraging Multiple Queries and Momentum for Zeroth-Order Fine-Tuning of Large Language Models",
+    "Social Genome: Grounded Social Reasoning Abilities of Multimodal Models",
+    "T2: An Adaptive Test-Time Scaling Strategy for Contextual Question Answering",
+    "DNA-GPT: Divergent N-Gram Analysis for Training-Free Detection of GPT-Generated Text",
+    "Fast-DetectGPT: Efficient Zero-Shot Detection of Machine-Generated Text via Conditional Probability Curvature",
+    "Language Model Detectors Are Easily Optimized Against",
+    "Multiscale Positive-Unlabeled Detection of AI-Generated Texts",
+    "On the Reliability of Watermarks for Large Language Models",
+    "Raidar: geneRative AI Detection viA Rewriting",
+    "AI as Humanity\u2019s Salieri: Quantifying Linguistic Creativity of Language Models via Systematic Attribution of Machine Text against Web Text",
+    "Deep Kernel Relative Test for Machine-generated Text Detection",
+    "Glimpse: Enabling White-Box Methods to Use Proprietary Models for Zero-Shot LLM-Generated Text Detection",
+    "Humanizing the Machine: Proxy Attacks to Mislead LLM Detectors",
+    "PaLD: Detection of Text Partially Written by Large Language Models",
+    "Training-free LLM-generated Text Detection by Mining Token Probability Sequences"
+  ],
+  "paper_count": 20,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A detection method that identifies machine-generated text by thresholding the curvature of the log probability function from a scoring model.",
+      "paper": "DNA-GPT: Divergent N-Gram Analysis for Training-Free Detection of GPT-Generated Text",
+      "original_name": "DetectGPT"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, DetectGPT is consistently characterized as a measurement instrument for detecting machine-generated text. The most prevalent description of its methodology is as a zero-shot, training-free, or post-hoc approach that relies on perturbing a given text passage and analyzing the resulting changes. This method operates by comparing the log probabilities of the original text with those of its perturbed versions, using what several papers describe as the \"curvature of the log probability function\" as the core detection criterion. The technique is based on the widely cited assumption that machine-generated text occupies a local optimum of log probability, meaning variations will typically have a lower model probability than the original passage. As one paper notes, this is because \"AI-generated passages occupy regions with clear negative log probability curvature\" (DNA-GPT: Divergent N-Gram Analysis for Training-Free Detection of GPT-Generated Text). Some sources refer to it as a \"state-of-the-art thresholding approach\" and a \"representative for loss-based post-hoc detectors.\" Overall, DetectGPT is used to operationalize the detection of AI-generated text by measuring this perturbation-based discrepancy.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "DNA-GPT: Divergent N-Gram Analysis for Training-Free Detection of GPT-Generated Text",
+      "Fast-DetectGPT: Efficient Zero-Shot Detection of Machine-Generated Text via Conditional Probability Curvature",
+      "Language Model Detectors Are Easily Optimized Against",
+      "Multiscale Positive-Unlabeled Detection of AI-Generated Texts",
+      "On the Reliability of Watermarks for Large Language Models",
+      "Raidar: geneRative AI Detection viA Rewriting"
+    ],
+    "iclr25": [
+      "AI as Humanity\u2019s Salieri: Quantifying Linguistic Creativity of Language Models via Systematic Attribution of Machine Text against Web Text",
+      "Deep Kernel Relative Test for Machine-generated Text Detection",
+      "Glimpse: Enabling White-Box Methods to Use Proprietary Models for Zero-Shot LLM-Generated Text Detection",
+      "Humanizing the Machine: Proxy Attacks to Mislead LLM Detectors",
+      "PaLD: Detection of Text Partially Written by Large Language Models",
+      "Training-free LLM-generated Text Detection by Mining Token Probability Sequences"
+    ],
+    "acl25": [
+      "CanLLMs Reason About Program Semantics? A Comprehensive Evaluation ofLLMs on Formal Specification Inference",
+      "Enhancing Interpretable Image Classification ThroughLLMAgents and Conditional Concept Bottleneck Models"
+    ],
+    "emnlp25": [
+      "Active Layer-Contrastive Decoding Reduces Hallucination in Large Language Model Generation",
+      "E2LLM: Encoder Elongated Large Language Models for Long-Context Understanding and Reasoning",
+      "LogicTree: Structured Proof Exploration for Coherent and Rigorous Logical Reasoning with Large Language Models",
+      "MUZO: Leveraging Multiple Queries and Momentum for Zeroth-Order Fine-Tuning of Large Language Models",
+      "Social Genome: Grounded Social Reasoning Abilities of Multimodal Models",
+      "T2: An Adaptive Test-Time Scaling Strategy for Contextual Question Answering"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 6,
+    "iclr25": 6,
+    "acl25": 2,
+    "emnlp25": 6
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25"
+  ]
+}

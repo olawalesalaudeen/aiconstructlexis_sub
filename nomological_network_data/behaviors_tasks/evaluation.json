@@ -1,0 +1,2207 @@
+{
+  "canonical_name": "Evaluation",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, 'Evaluation' is predominantly framed as a diverse set of observable behaviors rather than a single, unified task, although a few papers define it as a latent ability. These behaviors can be broadly categorized into several activities: identifying errors, assessing output quality, expressing internal confidence, and rectifying mistakes. The most common forms of evaluation involve assessing outputs, which includes judging the correctness of a solution, as in 'Outcome judging', and making comparative judgments, frequently through pairwise preference selection ('Pairwise preference judgment', 'LM-as-a-judge'). Another prevalent category is fact and claim verification, where a model's output is checked against a knowledge source ('Fact checking', 'Claim verification'). A distinct line of work focuses on a model's capacity for introspection, operationalized as its ability to express confidence or uncertainty, either through numerical scores ('Confidence estimation') or natural language phrases ('Expressing uncertainty'). The literature also extensively covers the subsequent act of rectifying identified issues, with numerous definitions for behaviors like 'Self-correction', 'Iterative refinement', and 'Bug fixing'. To measure these behaviors, researchers employ a wide array of benchmarks; fact verification is commonly measured using datasets like FEVER and TabFact, while judging capabilities are often assessed with MT-Bench, and correction in problem-solving is operationalized through benchmarks such as GSM8k and HumanEval. Evaluation is frequently studied alongside 'Self-reflection', which some papers suggest is a driver for evaluation capabilities, and is also closely related to the concepts of 'Faithfulness' and 'Self-correction'.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Answer verification",
+    "Bug detection",
+    "Accounting bug detection",
+    "Error awareness",
+    "Stepwise error detection",
+    "Invalid node identification",
+    "Fault localization",
+    "Misleading region localization",
+    "Self-verification",
+    "Self-checking",
+    "Draft verification",
+    "Probability estimation",
+    "Confidence Expression",
+    "Expressing uncertainty",
+    "Confidence score generation",
+    "Step correctness prediction",
+    "Confidence correction",
+    "Verbalized confidence",
+    "Nuanced uncertainty expression",
+    "Linguistic uncertainty expression",
+    "Natural language uncertainty expression",
+    "Self-knowledge estimation",
+    "Uncertainty estimation",
+    "Noise correction",
+    "Spelling correction",
+    "Error correction",
+    "Typo correction",
+    "Correcting errors",
+    "Mistake correction",
+    "Student mistake correction",
+    "Fact refinement",
+    "Iterative hypothesis refinement",
+    "Patch refinement",
+    "Bug fixing",
+    "Answer refinement",
+    "Natural language refinement",
+    "Self-refinement",
+    "Text correction",
+    "Assessment refinement",
+    "Chain-of-thought correction",
+    "Thought refinement",
+    "Hallucination correction",
+    "Multi-round self-correction",
+    "Invalid SMILES correction",
+    "Code fixing",
+    "Response refinement",
+    "Iterative self-correction",
+    "Iterative chart refinement",
+    "Over-correction",
+    "Grammar correction",
+    "Chinese spelling correction",
+    "Overcorrection",
+    "Undercorrection",
+    "Activity evaluation",
+    "Peer evaluation",
+    "Policy evaluation",
+    "Trajectory evaluation",
+    "Answerable judging",
+    "Outcome judging",
+    "Process judging",
+    "Anomaly discrimination",
+    "Interestingness evaluation",
+    "Self-examination",
+    "Providing feedback",
+    "Response judgment",
+    "Patch scoring",
+    "Response verification",
+    "Self-critique",
+    "Hypothesis evaluation",
+    "Summarization evaluation",
+    "Peer review generation",
+    "Quality rating",
+    "Solution verification",
+    "Self-assessment",
+    "Checklist grading",
+    "Single answer grading",
+    "Multi-turn chat judging",
+    "Multimodal judging",
+    "Research idea evaluation",
+    "LLM judging",
+    "Scoring",
+    "Pairwise preference judgment",
+    "Preference judgment",
+    "Arena-style comparison",
+    "Binary response comparison",
+    "Preference feedback generation",
+    "Pair-wise preference",
+    "Pairwise preference selection",
+    "Knowledge comparison",
+    "Plausibility prediction",
+    "Response pair judgment",
+    "LM-as-a-judge",
+    "Authenticity judgment",
+    "Abnormal detail selection",
+    "Response comparison",
+    "Response critique",
+    "Open-ended generation evaluation",
+    "Pairwise response evaluation",
+    "Success evaluation",
+    "Thought evaluation",
+    "Unit test evaluation",
+    "Answer existence judgment",
+    "Double-checking",
+    "Action evaluation",
+    "Program evaluation",
+    "Veracity analysis",
+    "Factuality checking",
+    "Fact extraction and verification",
+    "Veracity judgment",
+    "Fact verification",
+    "Table fact verification",
+    "Statement verification",
+    "Verdict prediction",
+    "Factual consistency evaluation",
+    "Veracity labeling",
+    "Hypothesis validation",
+    "Correction verification",
+    "Ownership verification",
+    "Plan verification",
+    "Verification",
+    "Forward verification",
+    "Proof verification",
+    "Answer correctness assessment",
+    "Reasoning chain validation",
+    "Sentence-level verification",
+    "Factual verification",
+    "Hypothesis verification",
+    "Label verification",
+    "Cross-modal verification",
+    "Connection verification",
+    "Sequence answer verification",
+    "Evaluation capability",
+    "Evaluation"
+  ],
+  "papers": [
+    "Adapt Once, Thrive with Updates: Transferable Parameter-Efficient Fine-Tuning on Evolving Base Models",
+    "Can\u2019t See the Forest for the Trees: Benchmarking Multimodal Safety Awareness for MultimodalLLMs",
+    "Deontological Keyword Bias: The Impact of Modal Expressions on Normative Judgments of Language Models",
+    "Targeted Syntactic Evaluation for Grammatical Error Correction",
+    "2025.emnlp-main.977.checklist",
+    "Controllable Memorization inLLMs via Weight Pruning",
+    "DisLoRA: Task-specific Low-Rank Adaptation via Orthogonal Basis from Singular Value Decomposition",
+    "DrFrattn: Directly Learn Adaptive Policy from Attention for Simultaneous Machine Translation",
+    "Firewall Routing: Blocking Leads to Better Hybrid Inference forLLMs",
+    "Grammar Pruning: Enabling Low-Latency Zero-Shot Task-Oriented Language Models for EdgeAI",
+    "Mitigating Hallucinations inLM-BasedTTSModels via Distribution Alignment UsingGFlowNets",
+    "NitiBench: BenchmarkingLLMFrameworks onThai Legal Question Answering Capabilities",
+    "PlanGEN: A Multi-Agent Framework for Generating Planning and Reasoning Trajectories for Complex Problem Solving",
+    "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    "RethinkMCTS: Refining Erroneous Thoughts inMonteCarlo Tree Search for Code Generation",
+    "RuCCoD: Towards AutomatedICDCoding inRussian",
+    "SafeKey: Amplifying Aha-Moment Insights for Safety Reasoning",
+    "The Transfer Neurons Hypothesis: An Underlying Mechanism for Language Latent Space Transitions in MultilingualLLMs",
+    "Towards Robust Mathematical Reasoning",
+    "UI-Hawk: Unleashing the Screen Stream Understanding for MobileGUIAgents",
+    "Women, Infamous, and Exotic Beings: A Comparative Study of Honorific Usages inWikipedia andLLMs forBengali andHindi",
+    "2025.emnlp-main.1505.checklist",
+    "2025.emnlp-main.530.checklist",
+    "AROMA: Autonomous Rank-one Matrix Adaptation",
+    "Evaluating Cognitive-Behavioral Fixation via Multimodal User Viewing Patterns on Social Media",
+    "Few-Shot Learning Translation from New Languages",
+    "MentalGLMSeries: Explainable Large Language Models for Mental Health Analysis onChinese Social Media",
+    "Multilingual Pretraining for Pixel Language Models",
+    "Non-Existent Relationship: Fact-Aware Multi-Level Machine-Generated Text Detection",
+    "Not What the Doctor Ordered: SurveyingLLM-based De-identification and Quantifying Clinical Information Loss",
+    "PIIvot: A LightweightNLPAnonymization Framework for Question-Anchored Tutoring Dialogues",
+    "SportReason: Evaluating Retrieval-Augmented Reasoning across Tables and Text for Sports Question Answering",
+    "Towards Faithful Natural Language Explanations: A Study Using Activation Patching in Large Language Models",
+    "ViPE: Visual Perception in Parameter Space for Efficient Video-Language Understanding",
+    "VisualWebInstruct: Scaling up Multimodal Instruction Data through Web Search",
+    "WISE: Weak-Supervision-Guided Step-by-Step Explanations for MultimodalLLMs in Image Classification",
+    "Your Language Model Can Secretly Write Like Humans: Contrastive Paraphrase Attacks onLLM-Generated Text Detectors",
+    "2025.emnlp-main.1443.checklist",
+    "2025.emnlp-main.202.checklist",
+    "2025.emnlp-main.72.checklist",
+    "32.3%",
+    "A Fully Probabilistic Perspective on Large Language Model Unlearning: Evaluation and Optimization",
+    "AFRIDOC-MT: Document-levelMTCorpus forAfrican Languages",
+    "AdaRewriter: Unleashing the Power of Prompting-based Conversational Query Reformulation via Test-Time Adaptation",
+    "AdaSteer: Your AlignedLLMis Inherently an Adaptive Jailbreak Defender",
+    "AlignX: Advancing Multilingual Large Language Models with Multilingual Representation Alignment",
+    "Answer Convergence as a Signal for Early Stopping in Reasoning",
+    "BeyondWER: Probing Whisper\u2019s Sub\u2010token Decoder Across Diverse Language Resource Levels",
+    "COUNTDOWN: Contextually Sparse Activation Filtering Out Unnecessary Weights in Down Projection",
+    "Can Prompts Rewind Time forLLMs? Evaluating the Effectiveness of Prompted Knowledge Cutoffs",
+    "Chat-Driven Text Generation and Interaction for Person Retrieval",
+    "CoMAT: Chain of Mathematically Annotated Thought Improves Mathematical Reasoning",
+    "Confidence-guided Refinement Reasoning for Zero-shot Question Answering",
+    "ConvSearch-R1: Enhancing Query Reformulation for Conversational Search with Reasoning via Reinforcement Learning",
+    "Do Large Language Models Truly Grasp Addition? A Rule-Focused Diagnostic Using Two-Integer Arithmetic",
+    "Dynamic Collaboration of Multi-Language Models based on Minimal Complete Semantic Units",
+    "DynamicNER: A Dynamic, Multilingual, and Fine-Grained Dataset forLLM-based Named Entity Recognition",
+    "EasyRec: Simple yet Effective Language Models for Recommendation",
+    "EquiBench: Benchmarking Large Language Models\u2019 Reasoning about Program Semantics via Equivalence Checking",
+    "Financial Risk Relation Identification through Dual-view Adaptation",
+    "From General Reward to Targeted Reward: Improving Open-ended Long-context Generation Models",
+    "From Shortcuts to Balance: Attribution Analysis of Speech-Text Feature Utilization in Distinguishing Original from Machine-Translated Texts",
+    "GATEAU: Selecting Influential Samples for Long Context Alignment",
+    "GUI-Bee: AlignGUIAction Grounding to Novel Environments via Autonomous Exploration",
+    "Glider: Global and Local Instruction-Driven Expert Router",
+    "Gradient-Attention Guided Dual-Masking Synergetic Framework for Robust Text-based Person Retrieval",
+    "Hanfu-Bench: A Multimodal Benchmark on Cross-Temporal Cultural Understanding and Transcreation",
+    "Identifying Unlearned Data inLLMs via Membership Inference Attacks",
+    "Improving Large Language Model Safety with Contrastive Representation Learning",
+    "Is the Top Still Spinning? Evaluating Subjectivity in Narrative Understanding",
+    "KRETA: A Benchmark forKorean Reading and Reasoning in Text-RichVQAAttuned to Diverse Visual Contexts",
+    "Language Mixing in Reasoning Language Models: Patterns, Impact, and Internal Causes",
+    "Look Again, Think Slowly: Enhancing Visual Reflection in Vision-Language Models",
+    "MMLU-ProX: A Multilingual Benchmark for Advanced Large Language Model Evaluation",
+    "Meta-Rewarding Language Models: Self-Improving Alignment withLLM-as-a-Meta-Judge",
+    "Mind the Value-Action Gap: DoLLMs Act in Alignment with Their Values?",
+    "Mitigating Hallucinations in Vision-Language Models through Image-Guided Head Suppression",
+    "Model-based Large Language Model Customization as Service",
+    "Multi-Document Event Extraction Using Large and Small Language Models",
+    "OMS: On-the-fly, Multi-Objective, Self-Reflective Ad Keyword Generation viaLLMAgent",
+    "OpenTuringBench: An Open-Model-based Benchmark and Framework for Machine-Generated Text Detection and Attribution",
+    "Principled Personas: Defining and Measuring the Intended Effects of Persona Prompting on Task Performance",
+    "RD-MCSA: A Multi-Class Sentiment Analysis Approach Integrating In-Context Classification Rationales and Demonstrations",
+    "REACT: Representation Extraction And Controllable Tuning to Overcome Overfitting inLLMKnowledge Editing",
+    "RareSyn: Health Record Synthesis for Rare Disease Diagnosis",
+    "Rule Discovery for Natural Language Inference Data Generation Using Out-of-Distribution Detection",
+    "SciNLP: A Domain-Specific Benchmark for Full-Text Scientific Entity and Relation Extraction inNLP",
+    "Semantic Inversion, Identical Replies: Revisiting Negation Blindness in Large Language Models",
+    "Social Bias in Multilingual Language Models: A Survey",
+    "TS-CLIP: Time Series Understanding byCLIP",
+    "The Good, the Bad and the Constructive: Automatically Measuring Peer Review\u2019s Utility for Authors",
+    "The Impact of Negated Text on Hallucination with Large Language Models",
+    "Think, Verbalize, then Speak: Bridging Complex Thoughts and Comprehensible Speech",
+    "ThinkSLM",
+    "ToDi: Token-wise Distillation via Fine-Grained Divergence Control",
+    "Towards a Unified Paradigm of Concept Editing in Large Language Models",
+    "Tree-of-Quote Prompting Improves Factuality and Attribution in Multi-Hop and Medical Reasoning",
+    "VisCRA: A Visual Chain Reasoning Attack for Jailbreaking Multimodal Large Language Models",
+    "Warm Up Before You Train: Unlocking General Reasoning in Resource-Constrained Settings",
+    "Where Confabulation Lives: Latent Feature Discovery inLLMs",
+    "Words Like Knives: Backstory-Personalized Modeling and Detection of Violent Communication",
+    "2025.emnlp-main.1050.checklist",
+    "2025.emnlp-main.710.checklist",
+    "A Computational Simulation of Language Production in First Language Acquisition",
+    "Agent-as-Judge for Factual Summarization of Long Narratives",
+    "AnchorAttention: Difference-Aware Sparse Attention with Stripe Granularity",
+    "Beyond Hate Speech:NLP\u2019s Challenges and Opportunities in Uncovering Dehumanizing Language",
+    "Beyond the Score: Uncertainty-CalibratedLLMs for Automated Essay Assessment",
+    "DMDTEval: An Evaluation and Analysis ofLLMs on Disambiguation in Multi-domain Translation",
+    "Diagnosing Memorization in Chain-of-Thought Reasoning, One Token at a Time",
+    "Discursive Circuits: How Do Language Models Understand Discourse Relations?",
+    "Easy asPIE? Identifying Multi-Word Expressions withLLMs",
+    "Exploring Large Language Models for Detecting Mental Disorders",
+    "Extending Automatic Machine Translation Evaluation to Book-Length Documents",
+    "GenLink: Generation-Driven Schema-Linking via Multi-Model Learning for Text-to-SQL",
+    "Generator-Assistant Stepwise Rollback Framework for Large Language Model Agent",
+    "HookMoE: A learnable performance compensation strategy of Mixture-of-Experts forLLMinference acceleration",
+    "Improving the Quality of Web-mined Parallel Corpora of Low-Resource Languages using Debiasing Heuristics",
+    "Interpretable Mnemonic Generation for Kanji Learning via Expectation-Maximization",
+    "LM-Searcher: Cross-domain Neural Architecture Search withLLMs via Unified Numerical Encoding",
+    "Language Models Can be Efficiently Steered via Minimal Embedding Layer Transformations",
+    "NOVA-63: Native Omni-lingual Versatile Assessments of 63 Disciplines",
+    "One Planner To Guide Them All ! Learning Adaptive Conversational Planners for Goal-oriented Dialogues",
+    "PBI-Attack: Prior-Guided Bimodal Interactive Black-Box Jailbreak Attack for Toxicity Maximization",
+    "PORTS: Preference-Optimized Retrievers for Tool Selection with Large Language Models",
+    "PRISM: Efficient Long-Range Reasoning With Short-ContextLLMs",
+    "PersonalizedLLMDecoding via Contrasting Personal Preference",
+    "Predicting Prosodic Boundaries for Children\u2019s Texts",
+    "R2I-Bench: Benchmarking Reasoning-Driven Text-to-Image Generation",
+    "RCScore: Quantifying Response Consistency in Large Language Models",
+    "ReAgent: Reversible Multi-Agent Reasoning for Knowledge-Enhanced Multi-HopQA",
+    "ReflAct: World-Grounded Decision Making inLLMAgents via Goal-State Reflection",
+    "SABER: Uncovering Vulnerabilities in Safety Alignment via Cross-Layer Residual Connection",
+    "SAKI-RAG: Mitigating Context Fragmentation in Long-DocumentRAGvia Sentence-level Attention Knowledge Integration",
+    "SNaRe: Domain-aware Data Generation for Low-Resource Event Detection",
+    "SOLAR: Towards Characterizing Subjectivity of Individuals through Modeling Value Conflicts and Trade-offs",
+    "Self-Critique and Refinement for Faithful Natural Language Explanations",
+    "Stop Looking for \u201cImportant Tokens\u201d in Multimodal Language Models: Duplication Matters More",
+    "Token-level Proximal Policy Optimization for Query Generation",
+    "Toward Efficient Sparse Autoencoder-Guided Steering for Improved In-Context Learning in Large Language Models",
+    "Towards Author-informedNLP: Mind the Social Bias",
+    "iVISPAR\u2014 An Interactive Visual-Spatial Reasoning Benchmark forVLMs",
+    "2025.emnlp-main.475.checklist",
+    "DrDiff: Dynamic Routing Diffusion with Hierarchical Attention for Breaking the Efficiency-Quality Trade-off",
+    "PhoniTale: Phonologically Grounded Mnemonic Generation for Typologically Distant Language Pairs",
+    "Large Language Model Cascades with Mixture of Thought Representations for Cost-Efficient Reasoning",
+    "Solving Challenging Math Word Problems Using GPT-4 Code Interpreter with Code-based Self-Verification",
+    "BIRD: A Trustworthy Bayesian Inference Framework for Large Language Models",
+    "CertainlyUncertain: A Benchmark and Metric for Multimodal Epistemic and Aleatoric Awareness",
+    "Forewarned is Forearmed:  Harnessing LLMs for Data Synthesis via Failure-induced Exploration",
+    "Latent Space Chain-of-Embedding Enables Output-free LLM Self-Evaluation",
+    "Reflexive Guidance: Improving OoDD in Vision-Language Models via Self-Guided Image-Adaptive Concept Generation",
+    "Small Models are LLM Knowledge Triggers for Medical Tabular Prediction",
+    "To Trust or Not to Trust? Enhancing Large Language Models' Situated Faithfulness to External Contexts",
+    "Trust or Escalate: LLM Judges with Provable Guarantees for Human Agreement",
+    "Varying Shades of Wrong: Aligning LLMs with Wrong Answers Only",
+    "Advancing Mathematical Reasoning in Language Models: The Impact of Problem-Solving Data, Data Synthesis Methods, and Training Stages",
+    "Efficient Perplexity Bound and Ratio Matching in Discrete Diffusion Language Models",
+    "ImProver: Agent-Based Automated Proof Optimization",
+    "LiveBench: A Challenging, Contamination-Limited LLM Benchmark",
+    "MrT5: Dynamic Token Merging for Efficient Byte-level Language Models",
+    "ROUTE: Robust Multitask Tuning and Collaboration for Text-to-SQL",
+    "Think while You Generate: Discrete Diffusion with Planned Denoising",
+    "ACC-Collab: An Actor-Critic Approach to Multi-Agent LLM Collaboration",
+    "BadJudge: Backdoor Vulnerabilities of LLM-As-A-Judge",
+    "Benchmarking LLMs' Judgments with No Gold Standard",
+    "Beyond correlation: The impact of human uncertainty in measuring the effectiveness of automatic evaluation and LLM-as-a-judge",
+    "CycleResearcher: Improving Automated Research via Automated Review",
+    "DOTS: Learning to Reason Dynamically in LLMs via Optimal Reasoning Trajectories Search",
+    "DataMan: Data Manager for Pre-training Large Language Models",
+    "Diversity Empowers Intelligence: Integrating Expertise of Software Engineering Agents",
+    "Eliminating Position Bias of Language Models: A Mechanistic Approach",
+    "Empowering LLM Agents with Zero-Shot Optimal Decision-Making through Q-learning",
+    "Generative Verifiers: Reward Modeling as Next-Token Prediction",
+    "GraphEval: A Lightweight Graph-Based LLM Framework for Idea Evaluation",
+    "How to Evaluate Reward Models for RLHF",
+    "Hypothetical Minds: Scaffolding Theory of Mind for Multi-Agent Tasks with Large Language Models",
+    "Improving Data Efficiency via Curating LLM-Driven Rating Systems",
+    "Interpreting Language Reward Models via Contrastive Explanations",
+    "Is Your Model Really A Good Math Reasoner? Evaluating Mathematical Reasoning with Checklist",
+    "JudgeBench: A Benchmark for Evaluating LLM-Based Judges",
+    "JudgeLM: Fine-tuned Large Language Models are Scalable Judges",
+    "Justice or Prejudice? Quantifying Biases in LLM-as-a-Judge",
+    "LLMs Know More Than They Show: On the Intrinsic Representation of LLM Hallucinations",
+    "LOKI: A Comprehensive Synthetic Data Detection Benchmark using Large Multimodal Models",
+    "Learning How Hard to Think: Input-Adaptive Allocation of LM Computation",
+    "Learning LLM-as-a-Judge for Preference Alignment",
+    "Limits to scalable evaluation at the frontier: LLM as judge won\u2019t beat twice the data",
+    "MMAD: A Comprehensive Benchmark for Multimodal Large Language Models in Industrial Anomaly Detection",
+    "Mind the Gap: Examining the Self-Improvement Capabilities of Large Language Models",
+    "Mutual Reasoning Makes Smaller LLMs Stronger Problem-Solver",
+    "NL-Eye: Abductive NLI For Images",
+    "Non-myopic Generation of Language Models for Reasoning and Planning",
+    "OMNI-EPIC: Open-endedness via Models of human Notions of Interestingness with Environments Programmed in Code",
+    "On the self-verification limitations of large language models on reasoning and planning tasks",
+    "Physics of Language Models: Part 2.2, How to Learn From Mistakes on Grade-School Math Problems",
+    "Physics of Language Models: Part 3.2, Knowledge Manipulation",
+    "PiCO: Peer Review in LLMs based on Consistency Optimization",
+    "Planning Anything with Rigor: General-Purpose Zero-Shot Planning with LLM-based Formalized Programming",
+    "Preference Optimization for Reasoning with Pseudo Feedback",
+    "Process Reward Model with Q-value Rankings",
+    "RMB: Comprehensively benchmarking reward models in LLM alignment",
+    "RocketEval: Efficient automated LLM evaluation via grading checklist",
+    "SPaR: Self-Play with Tree-Search Refinement to Improve Instruction-Following in Large Language Models",
+    "Scaling Autonomous Agents via Automatic Reward Modeling And Planning",
+    "Scaling LLM Test-Time Compute Optimally Can be More Effective than Scaling Parameters for Reasoning",
+    "Self-Improvement in Language Models: The Sharpening Mechanism",
+    "Simulating Human-like Daily Activities with Desire-driven Autonomy",
+    "Spread Preference Annotation: Direct Preference Judgment for Efficient LLM Alignment",
+    "Style Outweighs Substance: Failure Modes of LLM Judges in Alignment Benchmarking",
+    "Triples as the Key: Structuring Makes Decomposition and Verification Easier in LLM-based TableQA",
+    "Your Weak LLM is Secretly a Strong Teacher for Alignment",
+    "Zero-shot Model-based Reinforcement Learning using Large Language Models",
+    "Cheating Automatic LLM Benchmarks: Null Models Achieve High Win Rates",
+    "Improving Rationality in the Reasoning Process of Language Models through Self-playing Game",
+    "RepoAudit: An Autonomous LLM-Agent for Repository-Level Code Auditing",
+    "A Mathematical Framework for AI-Human Integration in Work",
+    "Demystifying Long Chain-of-Thought Reasoning",
+    "On the Resilience of LLM-Based Multi-Agent Collaboration with Faulty Agents",
+    "Position: LLMs Need a Bayesian Meta-Reasoning Framework for More Robust and Generalizable Reasoning",
+    "RATE: Causal Explainability of Reward Models with Imperfect Counterfactuals",
+    "Accelerating Large Language Model Reasoning via Speculative Search",
+    "An Architecture Search Framework for Inference-Time Techniques",
+    "Bootstrapping Self-Improvement of Language Model Programs for Zero-Shot Schema Matching",
+    "Do NOT Think That Much for 2+3=? On the Overthinking of Long Reasoning Models",
+    "Enhancing Decision-Making of Large Language Models via Actor-Critic",
+    "Evaluating LLMs Across Multi-Cognitive Levels: From Medical Knowledge Mastery to Scenario-Based Problem Solving",
+    "FunBO: Discovering Acquisition Functions for Bayesian Optimization with FunSearch",
+    "Learning to Plan & Reason for Evaluation with Thinking-LLM-as-a-Judge",
+    "Proposer-Agent-Evaluator (PAE): Autonomous Skill Discovery For Foundation Model Internet Agents",
+    "SPRI: Aligning Large Language Models with Context-Situated Principles",
+    "Sample, Scrutinize and Scale: Effective Inference-Time Search by Scaling Verification",
+    "Teaching Language Models to Critique via Reinforcement Learning",
+    "Amphista: Bi-directional Multi-head Decoding for AcceleratingLLMInference",
+    "ToW: Thoughts of Words Improve Reasoning in Large Language Models",
+    "AI-Assisted Human Evaluation of Machine Translation",
+    "Faithful, Unfaithful or Ambiguous? Multi-Agent Debate with Initial Stance for Summary Evaluation",
+    "Detecting Bugs with Substantial Monetary Consequences by LLM and Rule-based Reasoning",
+    "LLMDFA: Analyzing Dataflow in Code with Large Language Models",
+    "Reflective Multi-Agent Collaboration based on Large Language Models",
+    "Accelerating Blockwise Parallel Language Models with Draft Refinement",
+    "AutoMix: Automatically Mixing Language Models",
+    "Decompose, Analyze and Rethink: Solving Intricate Problems with Human-like Reasoning Cycle",
+    "Unveiling the Tapestry of Consistency in Large Vision-Language Models"
+  ],
+  "paper_count": 244,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The observable behavior of generating and executing a specific procedure, typically code-based, to check the validity of a previously derived answer.",
+      "paper": "Large Language Model Cascades with Mixture of Thought Representations for Cost-Efficient Reasoning",
+      "original_name": "Answer verification"
+    },
+    {
+      "text": "The observable task of identifying specific categories of vulnerabilities or errors in source code, such as divide-by-zero, cross-site scripting, or OS command injection.",
+      "paper": "LLMDFA: Analyzing Dataflow in Code with Large Language Models",
+      "original_name": "Bug detection"
+    },
+    {
+      "text": "The observable process of an agent identifying mistakes or failures in its own or another agent's reasoning or actions.",
+      "paper": "Reflective Multi-Agent Collaboration based on Large Language Models",
+      "original_name": "Error detection"
+    },
+    {
+      "text": "Identifying smart-contract statements or code regions that violate domain-specific financial-model constraints.",
+      "paper": "Detecting Bugs with Substantial Monetary Consequences by LLM and Rule-based Reasoning",
+      "original_name": "Accounting bug detection"
+    },
+    {
+      "text": "The observable task of identifying the presence of general errors in a given video, typically evaluated with binary (Yes/No) questions.",
+      "paper": "Targeted Syntactic Evaluation for Grammatical Error Correction",
+      "original_name": "Error awareness"
+    },
+    {
+      "text": "The observable task of examining a specified step within a given solution to a problem and determining whether that step is correct or incorrect.",
+      "paper": "Improving Rationality in the Reasoning Process of Language Models through Self-playing Game",
+      "original_name": "Stepwise error detection"
+    },
+    {
+      "text": "The task of identifying the specific papers within an invalid reasoning chain where the logical progression or coherence breaks down.",
+      "paper": "SafeKey: Amplifying Aha-Moment Insights for Safety Reasoning",
+      "original_name": "Invalid node identification"
+    },
+    {
+      "text": "Identifying the source of a bug or failure within code or a repository.",
+      "paper": "RuCCoD: Towards AutomatedICDCoding inRussian",
+      "original_name": "Fault localization"
+    },
+    {
+      "text": "The observable task of identifying and outputting the coordinates of specific regions within a chart that are considered deceptive or misleading.",
+      "paper": "DisLoRA: Task-specific Low-Rank Adaptation via Orthogonal Basis from Singular Value Decomposition",
+      "original_name": "Misleading region localization"
+    },
+    {
+      "text": "The observable task of pinpointing the specific contiguous span of text within a molecular description that contains a chemical error.",
+      "paper": "Mitigating Hallucinations inLM-BasedTTSModels via Distribution Alignment UsingGFlowNets",
+      "original_name": "Error localization"
+    },
+    {
+      "text": "The observable process where a model assesses the correctness or reliability of its own generated output, typically by checking for consistency with a given context.",
+      "paper": "AutoMix: Automatically Mixing Language Models",
+      "original_name": "Self-verification"
+    },
+    {
+      "text": "The action of a model reviewing its own generated rationale to identify and correct potential errors.",
+      "paper": "Decompose, Analyze and Rethink: Solving Intricate Problems with Human-like Reasoning Cycle",
+      "original_name": "Self-checking"
+    },
+    {
+      "text": "Checking whether proposed draft tokens match the base language model's greedy next-token predictions.",
+      "paper": "Accelerating Blockwise Parallel Language Models with Draft Refinement",
+      "original_name": "Draft verification"
+    },
+    {
+      "text": "The model generates a numerical score representing its certainty that its judgment aligns with human preferences.",
+      "paper": "Trust or Escalate: LLM Judges with Provable Guarantees for Human Agreement",
+      "original_name": "Confidence estimation"
+    },
+    {
+      "text": "The observable act of assigning a numerical probability or confidence score to a potential outcome given a context.",
+      "paper": "BIRD: A Trustworthy Bayesian Inference Framework for Large Language Models",
+      "original_name": "Probability estimation"
+    },
+    {
+      "text": "Providing probability estimates or confidence levels for predictions, often by verifying if a predicted answer is correct via token probability.",
+      "paper": "CertainlyUncertain: A Benchmark and Metric for Multimodal Epistemic and Aleatoric Awareness",
+      "original_name": "Confidence Expression"
+    },
+    {
+      "text": "The observable behavior of a model explicitly stating its lack of confidence or knowledge in its response, such as by outputting phrases like 'I am unsure'.",
+      "paper": "Forewarned is Forearmed:  Harnessing LLMs for Data Synthesis via Failure-induced Exploration",
+      "original_name": "Expressing uncertainty"
+    },
+    {
+      "text": "The action of producing numerical confidence values for each potential class in a classification task, expressed within a natural language response.",
+      "paper": "Reflexive Guidance: Improving OoDD in Vision-Language Models via Self-Guided Image-Adaptive Concept Generation",
+      "original_name": "Confidence score generation"
+    },
+    {
+      "text": "The observable task of assigning a confidence score to each reasoning step indicating whether it is correct or incorrect, based on internal model states.",
+      "paper": "AROMA: Autonomous Rank-one Matrix Adaptation",
+      "original_name": "Step correctness prediction"
+    },
+    {
+      "text": "The observable behavior of an LLM producing internal confidence signals about its own reasoning steps without external feedback.",
+      "paper": "AROMA: Autonomous Rank-one Matrix Adaptation",
+      "original_name": "Self-evaluation"
+    },
+    {
+      "text": "The model's output of a probability or likelihood score associated with its generated response or prediction.",
+      "paper": "2025.emnlp-main.530.checklist",
+      "original_name": "Confidence expression"
+    },
+    {
+      "text": "The observable pattern in which a model's confidence increases beyond accuracy (overconfidence) and then decreases to better align with accuracy in later layers, indicating active recalibration of confidence.",
+      "paper": "WISE: Weak-Supervision-Guided Step-by-Step Explanations for MultimodalLLMs in Image Classification",
+      "original_name": "Confidence correction"
+    },
+    {
+      "text": "The observable expression of a model's certainty in its answer, typically in the form of a percentage or probability statement.",
+      "paper": "VisualWebInstruct: Scaling up Multimodal Instruction Data through Web Search",
+      "original_name": "Verbalized confidence"
+    },
+    {
+      "text": "The generation of text that qualifies an answer with expressions of doubt or uncertainty, such as \"I am not sure but...\" or \"maybe\".",
+      "paper": "Non-Existent Relationship: Fact-Aware Multi-Level Machine-Generated Text Detection",
+      "original_name": "Nuanced uncertainty expression"
+    },
+    {
+      "text": "The observable use of words, phrases, and hedging language to convey a degree of confidence or doubt in a generated response.",
+      "paper": "Multilingual Pretraining for Pixel Language Models",
+      "original_name": "Linguistic uncertainty expression"
+    },
+    {
+      "text": "The model generates explicit statements about its confidence or uncertainty using natural language (e.g., 'I'm not sure' or 'I'm highly confident').",
+      "paper": "2025.emnlp-main.1505.checklist",
+      "original_name": "Natural language uncertainty expression"
+    },
+    {
+      "text": "The observable task of assigning a score to a model's own generated answer that reflects the model's confidence in its factual correctness, framed as a binary classification problem.",
+      "paper": "Your Language Model Can Secretly Write Like Humans: Contrastive Paraphrase Attacks onLLM-Generated Text Detectors",
+      "original_name": "Self-knowledge estimation"
+    },
+    {
+      "text": "The model's generation of confidence or uncertainty signals (e.g., perplexity, token entropy) in response to input questions, used to infer implicit awareness of evergreen-ness.",
+      "paper": "Your Language Model Can Secretly Write Like Humans: Contrastive Paraphrase Attacks onLLM-Generated Text Detectors",
+      "original_name": "Uncertainty estimation"
+    },
+    {
+      "text": "Assigning a numerical confidence level to a diagnostic decision based on factual consistency and evidence from a reasoning subgraph.",
+      "paper": "MentalGLMSeries: Explainable Large Language Models for Mental Health Analysis onChinese Social Media",
+      "original_name": "Confidence scoring"
+    },
+    {
+      "text": "The task of evaluating a given SQL query against a question and database, determining if it is correct, and providing a revised query if it is not.",
+      "paper": "ROUTE: Robust Multitask Tuning and Collaboration for Text-to-SQL",
+      "original_name": "Noise correction"
+    },
+    {
+      "text": "The task of identifying and correcting spelling errors in a given text at the character level.",
+      "paper": "Efficient Perplexity Bound and Ratio Matching in Discrete Diffusion Language Models",
+      "original_name": "Spelling correction"
+    },
+    {
+      "text": "The process of identifying and fixing errors in a generated proof, often through an iterative refinement process that uses feedback from a verifier.",
+      "paper": "ImProver: Agent-Based Automated Proof Optimization",
+      "original_name": "Error correction"
+    },
+    {
+      "text": "The task of identifying and fixing misspellings in a text while preserving all other stylistic and formatting elements.",
+      "paper": "LiveBench: A Challenging, Contamination-Limited LLM Benchmark",
+      "original_name": "Typo correction"
+    },
+    {
+      "text": "The observable task of identifying and rectifying mistakes in a given artifact, such as code or text.",
+      "paper": "A Mathematical Framework for AI-Human Integration in Work",
+      "original_name": "Correcting errors"
+    },
+    {
+      "text": "The observable task of generating a correct reasoning chain and final answer for a problem, even when conditioned on a dialogue history containing an incorrect solution from the student.",
+      "paper": "Is the Top Still Spinning? Evaluating Subjectivity in Narrative Understanding",
+      "original_name": "Student mistake correction"
+    },
+    {
+      "text": "The task of providing feedback or guidance to help a student fix an identified error in their work.",
+      "paper": "Gradient-Attention Guided Dual-Masking Synergetic Framework for Robust Text-based Person Retrieval",
+      "original_name": "Mistake correction"
+    },
+    {
+      "text": "The observable process of progressively improving a scientific hypothesis through repeated cycles of evaluation and modification.",
+      "paper": "EasyRec: Simple yet Effective Language Models for Recommendation",
+      "original_name": "Iterative hypothesis refinement"
+    },
+    {
+      "text": "The process of revising incomplete or missing facts by incorporating omitted conditions, comparanda, or relational context to make them self-contained and verifiable.",
+      "paper": "Answer Convergence as a Signal for Early Stopping in Reasoning",
+      "original_name": "Fact refinement"
+    },
+    {
+      "text": "Evaluating a generated patch for correctness, performance, or maintainability and producing an improved version or detailed analysis report.",
+      "paper": "UI-Hawk: Unleashing the Screen Stream Understanding for MobileGUIAgents",
+      "original_name": "Patch refinement"
+    },
+    {
+      "text": "The observable act of reviewing an initial response and generating an updated one.",
+      "paper": "Chat-Driven Text Generation and Interaction for Person Retrieval",
+      "original_name": "Response revision"
+    },
+    {
+      "text": "Revising failing code snippets to remove defects identified by test failures or execution traces.",
+      "paper": "Tree-of-Quote Prompting Improves Factuality and Attribution in Multi-Hop and Medical Reasoning",
+      "original_name": "Bug fixing"
+    },
+    {
+      "text": "The observable task of editing or improving an existing answer to enhance its quality, accuracy, or clarity.",
+      "paper": "2025.emnlp-main.72.checklist",
+      "original_name": "Answer refinement"
+    },
+    {
+      "text": "A multi-step process where a model progressively improves an output, such as code or a natural language plan, based on feedback or further analysis.",
+      "paper": "MMLU-ProX: A Multilingual Benchmark for Advanced Large Language Model Evaluation",
+      "original_name": "Iterative refinement"
+    },
+    {
+      "text": "The observable act of modifying a natural language description of code logic to correct errors, based on execution feedback and analysis.",
+      "paper": "MMLU-ProX: A Multilingual Benchmark for Advanced Large Language Model Evaluation",
+      "original_name": "Natural language refinement"
+    },
+    {
+      "text": "Iteratively improving generated code or reasoning by analyzing execution feedback and revising outputs accordingly.",
+      "paper": "RuCCoD: Towards AutomatedICDCoding inRussian",
+      "original_name": "Self-correction"
+    },
+    {
+      "text": "The observable behavior of a model updating its own response in a subsequent turn based on user feedback, even if the improvement is limited.",
+      "paper": "Language Mixing in Reasoning Language Models: Patterns, Impact, and Internal Causes",
+      "original_name": "Self-refinement"
+    },
+    {
+      "text": "The observable act of revising an initial assessment and its rationale in response to critical feedback.",
+      "paper": "Mind the Value-Action Gap: DoLLMs Act in Alignment with Their Values?",
+      "original_name": "Assessment refinement"
+    },
+    {
+      "text": "Detecting and correcting errors in text, including typos and other modifications needed to match a reference answer.",
+      "paper": "AdaRewriter: Unleashing the Power of Prompting-based Conversational Query Reformulation via Test-Time Adaptation",
+      "original_name": "Text correction"
+    },
+    {
+      "text": "The process of analyzing an initial reasoning trace (chain-of-thought) and refining it to improve accuracy or format compliance.",
+      "paper": "Confidence-guided Refinement Reasoning for Zero-shot Question Answering",
+      "original_name": "Chain-of-thought correction"
+    },
+    {
+      "text": "Regenerating or revising a prior reasoning step based on execution feedback to correct logical errors and improve the reasoning trajectory.",
+      "paper": "ToDi: Token-wise Distillation via Fine-Grained Divergence Control",
+      "original_name": "Thought refinement"
+    },
+    {
+      "text": "The observable process where a model iteratively refines a sequence of answers for a given question, with each new answer being a correction of the previous one.",
+      "paper": "The Impact of Negated Text on Hallucination with Large Language Models",
+      "original_name": "Multi-round self-correction"
+    },
+    {
+      "text": "Reducing or eliminating factually incorrect statements in model outputs by applying knowledge edits.",
+      "paper": "SciNLP: A Domain-Specific Benchmark for Full-Text Scientific Entity and Relation Extraction inNLP",
+      "original_name": "Hallucination correction"
+    },
+    {
+      "text": "Editing existing code to correct errors such as indentation or syntax issues.",
+      "paper": "Financial Risk Relation Identification through Dual-view Adaptation",
+      "original_name": "Code fixing"
+    },
+    {
+      "text": "Modifying a syntactically or semantically invalid SMILES string to produce a valid one, either through iterative refinement or structural transformation.",
+      "paper": "ConvSearch-R1: Enhancing Query Reformulation for Conversational Search with Reasoning via Reinforcement Learning",
+      "original_name": "Invalid SMILES correction"
+    },
+    {
+      "text": "Improving a selected response by evaluating its consistency with the conversation, alignment with the chosen strategy, and effectiveness in alleviating emotional stress.",
+      "paper": "TS-CLIP: Time Series Understanding byCLIP",
+      "original_name": "Response refinement"
+    },
+    {
+      "text": "Revising generated constraint model code over multiple rounds using feedback from a symbolic solver and retrieved correction exemplars.",
+      "paper": "32.3%",
+      "original_name": "Iterative self-correction"
+    },
+    {
+      "text": "The observable process of modifying chart code and visual output across multiple steps based on feedback from evaluation agents.",
+      "paper": "Semantic Inversion, Identical Replies: Revisiting Negation Blindness in Large Language Models",
+      "original_name": "Iterative chart refinement"
+    },
+    {
+      "text": "An observable failure mode where the model introduces errors by altering correct parts of the input hypothesis, particularly under strict correctness constraints in ASR.",
+      "paper": "Glider: Global and Local Instruction-Driven Expert Router",
+      "original_name": "Over-correction"
+    },
+    {
+      "text": "Identifying and generating the correct form of a given input that contains grammatical errors.",
+      "paper": "Principled Personas: Defining and Measuring the Intended Effects of Persona Prompting on Task Performance",
+      "original_name": "Grammar correction"
+    },
+    {
+      "text": "The task of detecting and correcting erroneous characters within Chinese sentences.",
+      "paper": "The Good, the Bad and the Constructive: Automatically Measuring Peer Review\u2019s Utility for Authors",
+      "original_name": "Chinese spelling correction"
+    },
+    {
+      "text": "The observable behavior of making excessive, unnecessary changes to input text during correction, including altering correct parts or adding redundant content.",
+      "paper": "Improving Large Language Model Safety with Contrastive Representation Learning",
+      "original_name": "Overcorrection"
+    },
+    {
+      "text": "Failing to make all needed edits, leaving some grammatical errors uncorrected.",
+      "paper": "Improving Large Language Model Safety with Contrastive Representation Learning",
+      "original_name": "Undercorrection"
+    },
+    {
+      "text": "The observable action of one LLM assessing the quality of a response generated by another LLM, often by making a comparative judgment.",
+      "paper": "PiCO: Peer Review in LLMs based on Consistency Optimization",
+      "original_name": "Peer evaluation"
+    },
+    {
+      "text": "Judging whether an action sequence and its observations satisfy an instruction or task intent.",
+      "paper": "Scaling Autonomous Agents via Automatic Reward Modeling And Planning",
+      "original_name": "Trajectory evaluation"
+    },
+    {
+      "text": "The observable process of an agent assessing the potential impact of each candidate activity on its internal desire states.",
+      "paper": "Simulating Human-like Daily Activities with Desire-driven Autonomy",
+      "original_name": "Activity evaluation"
+    },
+    {
+      "text": "The observable behavior of determining whether a given mathematical problem contains sufficient information to be solved.",
+      "paper": "Is Your Model Really A Good Math Reasoner? Evaluating Mathematical Reasoning with Checklist",
+      "original_name": "Answerable judging"
+    },
+    {
+      "text": "The observable behavior of determining whether the final answer in a provided solution to a math problem is correct.",
+      "paper": "Is Your Model Really A Good Math Reasoner? Evaluating Mathematical Reasoning with Checklist",
+      "original_name": "Outcome judging"
+    },
+    {
+      "text": "The observable behavior of identifying the specific step in a provided incorrect solution where the first error occurs.",
+      "paper": "Is Your Model Really A Good Math Reasoner? Evaluating Mathematical Reasoning with Checklist",
+      "original_name": "Process judging"
+    },
+    {
+      "text": "Estimating the value or performance of a policy using a combination of online interaction and model-based rollout.",
+      "paper": "Zero-shot Model-based Reinforcement Learning using Large Language Models",
+      "original_name": "Policy evaluation"
+    },
+    {
+      "text": "The observable action of a model producing an assessment of a given response, typically including a label and an explanation of whether the response followed an instruction.",
+      "paper": "SPaR: Self-Play with Tree-Search Refinement to Improve Instruction-Following in Large Language Models",
+      "original_name": "Response judgment"
+    },
+    {
+      "text": "The observable action of a model evaluating the quality of a given response, typically by assigning it a score or probability.",
+      "paper": "Self-Improvement in Language Models: The Sharpening Mechanism",
+      "original_name": "Response verification"
+    },
+    {
+      "text": "An observable process where a model uses its own capabilities to check, validate, and correct its generated outputs, such as actions or state predictions.",
+      "paper": "Empowering LLM Agents with Zero-Shot Optimal Decision-Making through Q-learning",
+      "original_name": "Self-examination"
+    },
+    {
+      "text": "The observable action of assessing a newly generated task to determine if it is sufficiently novel, surprising, or worthwhile compared to a collection of existing tasks.",
+      "paper": "OMNI-EPIC: Open-endedness via Models of human Notions of Interestingness with Environments Programmed in Code",
+      "original_name": "Interestingness evaluation"
+    },
+    {
+      "text": "The behavior of assigning a numerical score to a candidate code patch based on an evaluation of its correctness and quality.",
+      "paper": "Diversity Empowers Intelligence: Integrating Expertise of Software Engineering Agents",
+      "original_name": "Patch scoring"
+    },
+    {
+      "text": "Judging whether an industrial image contains a defect or anomaly.",
+      "paper": "MMAD: A Comprehensive Benchmark for Multimodal Large Language Models in Industrial Anomaly Detection",
+      "original_name": "Anomaly discrimination"
+    },
+    {
+      "text": "Generating critique or guidance on another agent's answer during a collaborative exchange.",
+      "paper": "ACC-Collab: An Actor-Critic Approach to Multi-Agent LLM Collaboration",
+      "original_name": "Providing feedback"
+    },
+    {
+      "text": "The task of judging the quality of generated summaries against human preferences.",
+      "paper": "Trust or Escalate: LLM Judges with Provable Guarantees for Human Agreement",
+      "original_name": "Summarization evaluation"
+    },
+    {
+      "text": "The observable task of generating textual feedback on a research paper, including strengths, weaknesses, and numerical scores for different criteria, simulating a human peer review.",
+      "paper": "CycleResearcher: Improving Automated Research via Automated Review",
+      "original_name": "Peer review generation"
+    },
+    {
+      "text": "The process of scoring or assessing generated hypotheses based on their ability to accurately predict the future actions of other agents.",
+      "paper": "Hypothetical Minds: Scaffolding Theory of Mind for Multi-Agent Tasks with Large Language Models",
+      "original_name": "Hypothesis evaluation"
+    },
+    {
+      "text": "Assigning a discrete quality level to a document based on criteria such as coherence, creativity, or professionalism.",
+      "paper": "DataMan: Data Manager for Pre-training Large Language Models",
+      "original_name": "Quality rating"
+    },
+    {
+      "text": "The observable behavior where a model is instructed to critique its own output as a step towards improving it.",
+      "paper": "Scaling LLM Test-Time Compute Optimally Can be More Effective than Scaling Parameters for Reasoning",
+      "original_name": "Self-critique"
+    },
+    {
+      "text": "The observable task of a model assessing a given problem-solution pair and predicting its correctness, typically as a 'Yes' or 'No' token.",
+      "paper": "Generative Verifiers: Reward Modeling as Next-Token Prediction",
+      "original_name": "Solution verification"
+    },
+    {
+      "text": "The observable task of evaluating a single model-generated answer and assigning it a score.",
+      "paper": "JudgeLM: Fine-tuned Large Language Models are Scalable Judges",
+      "original_name": "Single answer grading"
+    },
+    {
+      "text": "Assessing answers or outputs from multimodal models that combine text with other modalities.",
+      "paper": "JudgeLM: Fine-tuned Large Language Models are Scalable Judges",
+      "original_name": "Multimodal judging"
+    },
+    {
+      "text": "Evaluating conversational responses across multiple dialogue turns.",
+      "paper": "JudgeLM: Fine-tuned Large Language Models are Scalable Judges",
+      "original_name": "Multi-turn chat judging"
+    },
+    {
+      "text": "The task of evaluating a model's response against a series of specific, independent criteria or questions, typically with a binary or scaled judgment for each item.",
+      "paper": "RocketEval: Efficient automated LLM evaluation via grading checklist",
+      "original_name": "Checklist grading"
+    },
+    {
+      "text": "Evaluating whether the generated definition, formulation, and code are correct based on the execution result.",
+      "paper": "Planning Anything with Rigor: General-Purpose Zero-Shot Planning with LLM-based Formalized Programming",
+      "original_name": "Self-assessment"
+    },
+    {
+      "text": "Assigning a quality judgment or review decision to a research idea based on its title and abstract.",
+      "paper": "GraphEval: A Lightweight Graph-Based LLM Framework for Idea Evaluation",
+      "original_name": "Research idea evaluation"
+    },
+    {
+      "text": "Using an LLM as a judge to compare model responses and produce win-tie-loss style judgments.",
+      "paper": "Improving Data Efficiency via Curating LLM-Driven Rating Systems",
+      "original_name": "LLM judging"
+    },
+    {
+      "text": "The observable task where an LLM judge provides a numerical score for a single given response based on specified criteria.",
+      "paper": "Justice or Prejudice? Quantifying Biases in LLM-as-a-Judge",
+      "original_name": "Scoring"
+    },
+    {
+      "text": "The observable task of comparing two candidate answers to a prompt and selecting the preferred one.",
+      "paper": "Learning LLM-as-a-Judge for Preference Alignment",
+      "original_name": "Preference judgment"
+    },
+    {
+      "text": "Selecting one of two model outputs as better according to explicit or implicit criteria.",
+      "paper": "Style Outweighs Substance: Failure Modes of LLM Judges in Alignment Benchmarking",
+      "original_name": "Pairwise preference judgment"
+    },
+    {
+      "text": "Choosing one of two responses as preferred in a head-to-head comparison.",
+      "paper": "How to Evaluate Reward Models for RLHF",
+      "original_name": "Pairwise preference selection"
+    },
+    {
+      "text": "Choosing a winner between two candidate responses or models.",
+      "paper": "BadJudge: Backdoor Vulnerabilities of LLM-As-A-Judge",
+      "original_name": "Pair-wise preference"
+    },
+    {
+      "text": "The observable task of providing a comparative judgment between two responses to a given prompt, indicating which one is preferred.",
+      "paper": "Your Weak LLM is Secretly a Strong Teacher for Alignment",
+      "original_name": "Preference feedback generation"
+    },
+    {
+      "text": "Choosing one of two candidate responses to the same prompt as the preferred response.",
+      "paper": "Interpreting Language Reward Models via Contrastive Explanations",
+      "original_name": "Binary response comparison"
+    },
+    {
+      "text": "Comparing two model responses to the same prompt and selecting which response is better.",
+      "paper": "Limits to scalable evaluation at the frontier: LLM as judge won\u2019t beat twice the data",
+      "original_name": "Arena-style comparison"
+    },
+    {
+      "text": "Answering questions that compare two stored attributes and decide which one is greater or better according to a ranking.",
+      "paper": "Physics of Language Models: Part 3.2, Knowledge Manipulation",
+      "original_name": "Knowledge comparison"
+    },
+    {
+      "text": "The observable task of determining which of two hypothesis images is more plausible given a premise image, or assigning a plausibility score to a single hypothesis.",
+      "paper": "NL-Eye: Abductive NLI For Images",
+      "original_name": "Plausibility prediction"
+    },
+    {
+      "text": "Selecting which of two candidate responses is better or more correct, optionally with a tie option.",
+      "paper": "JudgeBench: A Benchmark for Evaluating LLM-Based Judges",
+      "original_name": "Response pair judgment"
+    },
+    {
+      "text": "The task of using a language model to evaluate and select the better of two candidate responses for a given prompt or question.",
+      "paper": "Eliminating Position Bias of Language Models: A Mechanistic Approach",
+      "original_name": "LM-as-a-judge"
+    },
+    {
+      "text": "The task of making a binary determination of whether a given piece of data is synthetic or real.",
+      "paper": "LOKI: A Comprehensive Synthetic Data Detection Benchmark using Large Multimodal Models",
+      "original_name": "Authenticity judgment"
+    },
+    {
+      "text": "The task of identifying specific inconsistent or anomalous elements within a piece of synthetic content from a list of choices.",
+      "paper": "LOKI: A Comprehensive Synthetic Data Detection Benchmark using Large Multimodal Models",
+      "original_name": "Abnormal detail selection"
+    },
+    {
+      "text": "Evaluating candidate responses against generated unit tests and using the test outcomes to rank or filter responses.",
+      "paper": "An Architecture Search Framework for Inference-Time Techniques",
+      "original_name": "Unit test evaluation"
+    },
+    {
+      "text": "Producing strengths and weaknesses for candidate responses so they can be improved or selected.",
+      "paper": "An Architecture Search Framework for Inference-Time Techniques",
+      "original_name": "Response critique"
+    },
+    {
+      "text": "The task of taking an instruction and a pair of model-generated responses as input and producing a judgment indicating which response is better.",
+      "paper": "Learning to Plan & Reason for Evaluation with Thinking-LLM-as-a-Judge",
+      "original_name": "Pairwise response evaluation"
+    },
+    {
+      "text": "The process of assessing the quality of generated reasoning steps using a thought evaluator such as a process reward model, determining which thoughts to accept or reject.",
+      "paper": "Accelerating Large Language Model Reasoning via Speculative Search",
+      "original_name": "Thought evaluation"
+    },
+    {
+      "text": "The task of assessing the quality of unconstrained, free-form text generated by a language model, often using another LLM as a judge.",
+      "paper": "SPRI: Aligning Large Language Models with Context-Situated Principles",
+      "original_name": "Open-ended generation evaluation"
+    },
+    {
+      "text": "The behavior of directly comparing two or more candidate responses to determine which is correct, particularly when verification scores are close.",
+      "paper": "Sample, Scrutinize and Scale: Effective Inference-Time Search by Scaling Verification",
+      "original_name": "Response comparison"
+    },
+    {
+      "text": "Determining whether the correct answer to a medical question is present within a given set of candidate options, testing the model's ability to assess answer plausibility in open decision spaces.",
+      "paper": "Evaluating LLMs Across Multi-Cognitive Levels: From Medical Knowledge Mastery to Scenario-Based Problem Solving",
+      "original_name": "Answer existence judgment"
+    },
+    {
+      "text": "Assessing whether a task has been completed successfully based on final outcomes, typically using binary judgments from VLMs or humans.",
+      "paper": "Proposer-Agent-Evaluator (PAE): Autonomous Skill Discovery For Foundation Model Internet Agents",
+      "original_name": "Success evaluation"
+    },
+    {
+      "text": "Running a full Bayesian optimization loop to assess the performance of a candidate acquisition function on a set of objective functions.",
+      "paper": "FunBO: Discovering Acquisition Functions for Bayesian Optimization with FunSearch",
+      "original_name": "Program evaluation"
+    },
+    {
+      "text": "The observable behavior of generating a subsequent solution to verify or re-evaluate a previously generated solution, often using the same reasoning strategy.",
+      "paper": "Do NOT Think That Much for 2+3=? On the Overthinking of Long Reasoning Models",
+      "original_name": "Double-checking"
+    },
+    {
+      "text": "The observable process of assigning numerical values (Q-values) to candidate actions based on token logits for 'GOOD'/'BAD' outcomes, incorporating future trajectory rollouts and reflections.",
+      "paper": "Enhancing Decision-Making of Large Language Models via Actor-Critic",
+      "original_name": "Action evaluation"
+    },
+    {
+      "text": "The task of classifying a claim as true, false, or another relevant category based on retrieved evidence.",
+      "paper": "Self-Critique and Refinement for Faithful Natural Language Explanations",
+      "original_name": "Veracity prediction"
+    },
+    {
+      "text": "The process of synthesizing evidence to make a judgment on whether a claim should be believed, including handling cases of missing or contradictory evidence.",
+      "paper": "AnchorAttention: Difference-Aware Sparse Attention with Stripe Granularity",
+      "original_name": "Veracity analysis"
+    },
+    {
+      "text": "The task of identifying factual claims in text and verifying their correctness against a knowledge source.",
+      "paper": "Stop Looking for \u201cImportant Tokens\u201d in Multimodal Language Models: Duplication Matters More",
+      "original_name": "Fact extraction and verification"
+    },
+    {
+      "text": "Judging whether a generated fact is entailed by retrieved evidence.",
+      "paper": "PORTS: Preference-Optimized Retrievers for Tool Selection with Large Language Models",
+      "original_name": "Factuality checking"
+    },
+    {
+      "text": "The task of verifying the truthfulness of a given claim against a corpus of evidence.",
+      "paper": "PBI-Attack: Prior-Guided Bimodal Interactive Black-Box Jailbreak Attack for Toxicity Maximization",
+      "original_name": "Fact checking"
+    },
+    {
+      "text": "The task of making a final determination on whether a piece of news is true or false, based on provided analysis, evidence, and decision rules.",
+      "paper": "RCScore: Quantifying Response Consistency in Large Language Models",
+      "original_name": "Veracity judgment"
+    },
+    {
+      "text": "Determining whether a scientific claim is supported or refuted by evidence in a given abstract or paper, often accompanied by extracted supporting or refuting statements.",
+      "paper": "DMDTEval: An Evaluation and Analysis ofLLMs on Disambiguation in Multi-domain Translation",
+      "original_name": "Claim verification"
+    },
+    {
+      "text": "The task of determining whether a given claim is supported or refuted by evidence from a provided knowledge source.",
+      "paper": "NOVA-63: Native Omni-lingual Versatile Assessments of 63 Disciplines",
+      "original_name": "Fact verification"
+    },
+    {
+      "text": "The task of determining whether a given statement is true or false based on the content of an associated table.",
+      "paper": "R2I-Bench: Benchmarking Reasoning-Driven Text-to-Image Generation",
+      "original_name": "Table fact verification"
+    },
+    {
+      "text": "The observable behavior of a model assessing whether a given statement is factually correct, often through step-by-step reasoning.",
+      "paper": "One Planner To Guide Them All ! Learning Adaptive Conversational Planners for Goal-oriented Dialogues",
+      "original_name": "Statement verification"
+    },
+    {
+      "text": "Classifying the truthfulness of a claim based on retrieved evidence, typically as Supported, Refuted, or NotEnoughInfo.",
+      "paper": "Language Models Can be Efficiently Steered via Minimal Embedding Layer Transformations",
+      "original_name": "Verdict prediction"
+    },
+    {
+      "text": "Assessing whether a generated text (e.g., summary, dialogue response) is factually consistent with respect to a grounding text or source document.",
+      "paper": "iVISPAR\u2014 An Interactive Visual-Spatial Reasoning Benchmark forVLMs",
+      "original_name": "Factual consistency evaluation"
+    },
+    {
+      "text": "Assigning a truthfulness label to a claim-evidence pair after reviewing both elements, either through human annotation or LLM-assisted labeling.",
+      "paper": "Extending Automatic Machine Translation Evaluation to Book-Length Documents",
+      "original_name": "Veracity labeling"
+    },
+    {
+      "text": "Assessing the validity of scientific hypotheses through code generation, replication, or outcome prediction.",
+      "paper": "EasyRec: Simple yet Effective Language Models for Recommendation",
+      "original_name": "Hypothesis validation"
+    },
+    {
+      "text": "Querying a model via API with predefined watermark inputs and analyzing outputs to detect the presence of embedded identifiers for tracing purposes.",
+      "paper": "Toward Efficient Sparse Autoencoder-Guided Steering for Improved In-Context Learning in Large Language Models",
+      "original_name": "Ownership verification"
+    },
+    {
+      "text": "Judging whether a proposed correction is better than the original sentence or whether both versions are incorrect.",
+      "paper": "The Good, the Bad and the Constructive: Automatically Measuring Peer Review\u2019s Utility for Authors",
+      "original_name": "Correction verification"
+    },
+    {
+      "text": "Identifying errors or checking whether a solution is correct.",
+      "paper": "Token-level Proximal Policy Optimization for Query Generation",
+      "original_name": "Verification"
+    },
+    {
+      "text": "Comparing two versions of a plan and selecting the one judged to be superior in terms of correctness, completeness, or safety.",
+      "paper": "Discursive Circuits: How Do Language Models Understand Discourse Relations?",
+      "original_name": "Plan verification"
+    },
+    {
+      "text": "Using chain-of-thought reasoning to assess and correct the semantic consistency between a synthesized natural language question and its corresponding formal query.",
+      "paper": "SAKI-RAG: Mitigating Context Fragmentation in Long-DocumentRAGvia Sentence-level Attention Knowledge Integration",
+      "original_name": "Forward verification"
+    },
+    {
+      "text": "Checking whether a generated formal proof is accepted by the Lean4 compiler or verifier.",
+      "paper": "Diagnosing Memorization in Chain-of-Thought Reasoning, One Token at a Time",
+      "original_name": "Proof verification"
+    },
+    {
+      "text": "Observably determining whether a generated answer is factually accurate and logically sound based on evidence from heterogeneous documents.",
+      "paper": "2025.emnlp-main.710.checklist",
+      "original_name": "Answer correctness assessment"
+    },
+    {
+      "text": "Determining whether a sequence of chronologically ordered scientific papers forms a logically coherent and valid path of reasoning, and identifying breakpoints where inconsistencies occur.",
+      "paper": "SafeKey: Amplifying Aha-Moment Insights for Safety Reasoning",
+      "original_name": "Reasoning chain validation"
+    },
+    {
+      "text": "The observable process of checking the factual correctness of individual sentences as they are generated during text production.",
+      "paper": "Exploring Large Language Models for Detecting Mental Disorders",
+      "original_name": "Sentence-level verification"
+    },
+    {
+      "text": "The observable task of assessing a given factual statement and producing a binary output of \"True\" or \"False\" based on the instructional context.",
+      "paper": "SABER: Uncovering Vulnerabilities in Safety Alignment via Cross-Layer Residual Connection",
+      "original_name": "Factual verification"
+    },
+    {
+      "text": "Determining whether a hypothesis is true, false, or unknown from a set of facts and rules.",
+      "paper": "SOLAR: Towards Characterizing Subjectivity of Individuals through Modeling Value Conflicts and Trade-offs",
+      "original_name": "Hypothesis verification"
+    },
+    {
+      "text": "The observable behavior of an LLM checking whether a provided label for a query is consistent with its internal knowledge by attempting to reproduce it in a task-specific context.",
+      "paper": "Beyond the Score: Uncertainty-CalibratedLLMs for Automated Essay Assessment",
+      "original_name": "Label verification"
+    },
+    {
+      "text": "Validating emotion predictions by checking consistency between textual reasoning and visual evidence across iterative refinement steps.",
+      "paper": "Hanfu-Bench: A Multimodal Benchmark on Cross-Temporal Cultural Understanding and Transcreation",
+      "original_name": "Cross-modal verification"
+    },
+    {
+      "text": "The task of determining the spatial relationship (e.g., above-below, left-right, or non-adjacent) between two randomly selected patches from an original image.",
+      "paper": "Rule Discovery for Natural Language Inference Data Generation Using Out-of-Distribution Detection",
+      "original_name": "Connection verification"
+    },
+    {
+      "text": "Evaluating responses that consist of ordered sequences of elements, requiring element-by-element matching against a reference sequence.",
+      "paper": "ReflAct: World-Grounded Decision Making inLLMAgents via Goal-State Reflection",
+      "original_name": "Sequence answer verification"
+    },
+    {
+      "text": "Selecting the most likely user-preferred response from a set of candidates for a given context, based on a learned reward model.",
+      "paper": "DrDiff: Dynamic Routing Diffusion with Hierarchical Attention for Breaking the Efficiency-Quality Trade-off",
+      "original_name": "Preferred response prediction"
+    },
+    {
+      "text": "The model's latent ability to accurately assess the quality or correctness of a generated trajectory or its intermediate steps.",
+      "paper": "Non-myopic Generation of Language Models for Reasoning and Planning",
+      "original_name": "Evaluation capability"
+    },
+    {
+      "text": "The latent ability of MLLMs to make judgments based on criteria and standards, such as assessing image quality or discerning content authenticity.",
+      "paper": "AI-Assisted Human Evaluation of Machine Translation",
+      "original_name": "Evaluation"
+    }
+  ],
+  "definition_count": 146,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "FEVER",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Unsupervised Pretraining for Fact Verification by Language Model Distillation",
+      "evidence": "",
+      "paper_count": 7,
+      "papers_by_conference": {
+        "iclr24": [
+          "Unsupervised Pretraining for Fact Verification by Language Model Distillation",
+          "Massive Editing for Large Language Models via Meta Learning"
+        ],
+        "neurips24": [
+          "Chain of Preference Optimization: Improving Chain-of-Thought Reasoning in LLMs"
+        ],
+        "iclr25": [
+          "Think-on-Graph 2.0: Deep and Faithful Large Language Model Reasoning with Knowledge-guided Retrieval Augmented Generation"
+        ],
+        "naacl25": [
+          "Mitigating Tail Narrowing inLLMSelf-Improvement via Socratic-Guided Sampling"
+        ],
+        "emnlp25": [
+          "Stop Looking for \u201cImportant Tokens\u201d in Multimodal Language Models: Duplication Matters More",
+          "Language Models Can be Efficiently Steered via Minimal Embedding Layer Transformations"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "AutoMix: Automatically Mixing Language Models",
+      "evidence": "",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "neurips24": [
+          "AutoMix: Automatically Mixing Language Models"
+        ],
+        "iclr25": [
+          "Zero-shot Model-based Reinforcement Learning using Large Language Models"
+        ],
+        "emnlp25": [
+          "WISE: Weak-Supervision-Guided Step-by-Step Explanations for MultimodalLLMs in Image Classification",
+          "2025.emnlp-main.1505.checklist"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MT-Bench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Improving Data Efficiency via Curating LLM-Driven Rating Systems",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr25": [
+          "Improving Data Efficiency via Curating LLM-Driven Rating Systems",
+          "Beyond correlation: The impact of human uncertainty in measuring the effectiveness of automatic evaluation and LLM-as-a-judge",
+          "Limits to scalable evaluation at the frontier: LLM as judge won\u2019t beat twice the data"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SelfCheckGPT",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "WISE: Rethinking the Knowledge Memory for Lifelong Model Editing of Large Language Models",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "neurips24": [
+          "WISE: Rethinking the Knowledge Memory for Lifelong Model Editing of Large Language Models"
+        ],
+        "emnlp25": [
+          "SciNLP: A Domain-Specific Benchmark for Full-Text Scientific Entity and Relation Extraction inNLP",
+          "EquiBench: Benchmarking Large Language Models\u2019 Reasoning about Program Semantics via Equivalence Checking"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TabFact",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Mitigating Lost-in-Retrieval Problems in Retrieval Augmented Multi-Hop Question Answering",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "acl25": [
+          "Mitigating Lost-in-Retrieval Problems in Retrieval Augmented Multi-Hop Question Answering"
+        ],
+        "emnlp25": [
+          "SNaRe: Domain-aware Data Generation for Low-Resource Event Detection",
+          "R2I-Bench: Benchmarking Reasoning-Driven Text-to-Image Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "FEVEROUS",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "OpenTab: Advancing Large Language Models as Open-domain Table Reasoners",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr24": [
+          "OpenTab: Advancing Large Language Models as Open-domain Table Reasoners"
+        ],
+        "neurips24": [
+          "Chain of Preference Optimization: Improving Chain-of-Thought Reasoning in LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Overconfidence",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "CARES: A Comprehensive Benchmark of Trustworthiness in Medical Vision Language Models",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "CARES: A Comprehensive Benchmark of Trustworthiness in Medical Vision Language Models"
+        ],
+        "emnlp25": [
+          "WISE: Weak-Supervision-Guided Step-by-Step Explanations for MultimodalLLMs in Image Classification"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Self-reflection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Position: LLMs Need a Bayesian Meta-Reasoning Framework for More Robust and Generalizable Reasoning",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "icml25": [
+          "Position: LLMs Need a Bayesian Meta-Reasoning Framework for More Robust and Generalizable Reasoning",
+          "ReVISE: Learning to Refine at Test-Time via Intrinsic Self-Verification"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HumanEval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "OpenHands: An Open Platform for AI Software Developers as Generalist Agents",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "OpenHands: An Open Platform for AI Software Developers as Generalist Agents"
+        ],
+        "icml25": [
+          "NextCoder: Robust Adaptation of Code LMs to Diverse Code Edits"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Robustness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "TurkingBench: A Challenge Benchmark for Web Agents",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "naacl25": [
+          "TurkingBench: A Challenge Benchmark for Web Agents",
+          "Mitigating Tail Narrowing inLLMSelf-Improvement via Socratic-Guided Sampling"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Inductive reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Phenomenal Yet Puzzling: Testing Inductive Reasoning Capabilities of Language Models with Hypothesis Refinement",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Phenomenal Yet Puzzling: Testing Inductive Reasoning Capabilities of Language Models with Hypothesis Refinement"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Hypothesis generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Phenomenal Yet Puzzling: Testing Inductive Reasoning Capabilities of Language Models with Hypothesis Refinement",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Phenomenal Yet Puzzling: Testing Inductive Reasoning Capabilities of Language Models with Hypothesis Refinement"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Bayesian Low-rank Adaptation for Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Bayesian Low-rank Adaptation for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Self-correction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "ReVISE: Learning to Refine at Test-Time via Intrinsic Self-Verification",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "ReVISE: Learning to Refine at Test-Time via Intrinsic Self-Verification"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Critique",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Solving Challenging Math Word Problems Using GPT-4 Code Interpreter with Code-based Self-Verification",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Solving Challenging Math Word Problems Using GPT-4 Code Interpreter with Code-based Self-Verification"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "FB15k-237",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Unsupervised Pretraining for Fact Verification by Language Model Distillation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Unsupervised Pretraining for Fact Verification by Language Model Distillation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-as-a-judge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Spread Preference Annotation: Direct Preference Judgment for Efficient LLM Alignment",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Spread Preference Annotation: Direct Preference Judgment for Efficient LLM Alignment"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Automated Hypothesis Validation with Agentic Sequential Falsifications",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Automated Hypothesis Validation with Agentic Sequential Falsifications"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8k",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Non-myopic Generation of Language Models for Reasoning and Planning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Non-myopic Generation of Language Models for Reasoning and Planning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Vicuna-Bench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Improving Data Efficiency via Curating LLM-Driven Rating Systems",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Improving Data Efficiency via Curating LLM-Driven Rating Systems"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Chain-of-thought reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Cooperative or Competitive? Understanding the Interaction between Attention Heads From A Game Theory Perspective",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Cooperative or Competitive? Understanding the Interaction between Attention Heads From A Game Theory Perspective"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Grounded reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "AutoMix: Automatically Mixing Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "AutoMix: Automatically Mixing Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Nearest Neighbor Speculative Decoding for LLM Generation and Attribution",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Nearest Neighbor Speculative Decoding for LLM Generation and Attribution"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Empowering LLM Agents with Zero-Shot Optimal Decision-Making through Q-learning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Empowering LLM Agents with Zero-Shot Optimal Decision-Making through Q-learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "RTE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "QuanTA: Efficient High-Rank Fine-Tuning of LLMs with Quantum-Informed Tensor Adaptation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reward-Bench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Eliminating Position Bias of Language Models: A Mechanistic Approach",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Eliminating Position Bias of Language Models: A Mechanistic Approach"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Creak",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Think-on-Graph 2.0: Deep and Faithful Large Language Model Reasoning with Knowledge-guided Retrieval Augmented Generation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Think-on-Graph 2.0: Deep and Faithful Large Language Model Reasoning with Knowledge-guided Retrieval Augmented Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SWE-bench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "SWE-bench Multimodal: Do AI Systems Generalize to Visual Software Domains?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "SWE-bench Multimodal: Do AI Systems Generalize to Visual Software Domains?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-as-a-judge",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "RocketEval: Efficient automated LLM evaluation via grading checklist",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "RocketEval: Efficient automated LLM evaluation via grading checklist"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Theory of mind",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Hypothetical Minds: Scaffolding Theory of Mind for Multi-Agent Tasks with Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Hypothetical Minds: Scaffolding Theory of Mind for Multi-Agent Tasks with Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Knowledge forgetting",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Eliminating Position Bias of Language Models: A Mechanistic Approach",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Eliminating Position Bias of Language Models: A Mechanistic Approach"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Self-evaluation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Do LLMs estimate uncertainty well in instruction-following?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Do LLMs estimate uncertainty well in instruction-following?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Knowledge manipulation",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Physics of Language Models: Part 3.2, Knowledge Manipulation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Physics of Language Models: Part 3.2, Knowledge Manipulation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Explanation generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Diversity Empowers Intelligence: Integrating Expertise of Software Engineering Agents",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Diversity Empowers Intelligence: Integrating Expertise of Software Engineering Agents"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Task generalization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Is Your Model Really A Good Math Reasoner? Evaluating Mathematical Reasoning with Checklist",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Is Your Model Really A Good Math Reasoner? Evaluating Mathematical Reasoning with Checklist"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ALFWorld",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Non-myopic Generation of Language Models for Reasoning and Planning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Non-myopic Generation of Language Models for Reasoning and Planning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Table question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Triples as the Key: Structuring Makes Decomposition and Verification Easier in LLM-based TableQA",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Triples as the Key: Structuring Makes Decomposition and Verification Easier in LLM-based TableQA"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Game of 24",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "DOTS: Learning to Reason Dynamically in LLMs via Optimal Reasoning Trajectories Search",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "DOTS: Learning to Reason Dynamically in LLMs via Optimal Reasoning Trajectories Search"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HoVer",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Grounding by Trying: LLMs with Reinforcement Learning-Enhanced Retrieval",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Grounding by Trying: LLMs with Reinforcement Learning-Enhanced Retrieval"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SWE-bench Lite",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "AlignDistil: Token-Level Language Model Alignment as Adaptive Policy Distillation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "AlignDistil: Token-Level Language Model Alignment as Adaptive Policy Distillation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "UI-Hawk: Unleashing the Screen Stream Understanding for MobileGUIAgents",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "UI-Hawk: Unleashing the Screen Stream Understanding for MobileGUIAgents"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "DiscoveryBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Automated Hypothesis Validation with Agentic Sequential Falsifications",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Automated Hypothesis Validation with Agentic Sequential Falsifications"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PairRM",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Spread Preference Annotation: Direct Preference Judgment for Efficient LLM Alignment",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Spread Preference Annotation: Direct Preference Judgment for Efficient LLM Alignment"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Robustness",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Adaptive Transformer Programs: Bridging the Gap Between Performance and Interpretability in Transformers",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Adaptive Transformer Programs: Bridging the Gap Between Performance and Interpretability in Transformers"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Conformal Prediction",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Can Transformers Do Enumerative Geometry?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Can Transformers Do Enumerative Geometry?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VAL",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "On the self-verification limitations of large language models on reasoning and planning tasks",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "On the self-verification limitations of large language models on reasoning and planning tasks"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Binary decision making",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Instruct-of-Reflection: Enhancing Large Language Models Iterative Reflection Capabilities via Dynamic-Meta Instruction",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Instruct-of-Reflection: Enhancing Large Language Models Iterative Reflection Capabilities via Dynamic-Meta Instruction"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Grammatical error correction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Multimodal Cognitive Reframing Therapy via Multi-hop Psychotherapeutic Reasoning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Multimodal Cognitive Reframing Therapy via Multi-hop Psychotherapeutic Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CSCD-NS",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "The Good, the Bad and the Constructive: Automatically Measuring Peer Review\u2019s Utility for Authors",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "The Good, the Bad and the Constructive: Automatically Measuring Peer Review\u2019s Utility for Authors"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LEMON",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "The Good, the Bad and the Constructive: Automatically Measuring Peer Review\u2019s Utility for Authors",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "The Good, the Bad and the Constructive: Automatically Measuring Peer Review\u2019s Utility for Authors"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Unit test generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "An Architecture Search Framework for Inference-Time Techniques",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "An Architecture Search Framework for Inference-Time Techniques"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Information extraction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "LimRank: Less is More for Reasoning-Intensive Information Reranking",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "LimRank: Less is More for Reasoning-Intensive Information Reranking"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CLIMATEVIZ",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "2025.emnlp-main.1196.checklist",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "2025.emnlp-main.1196.checklist"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "FM2",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "NOVA-63: Native Omni-lingual Versatile Assessments of 63 Disciplines",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "NOVA-63: Native Omni-lingual Versatile Assessments of 63 Disciplines"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 54,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 50,
+  "characterization": "Across the surveyed literature, 'Evaluation' is predominantly framed as a diverse set of observable behaviors rather than a single, unified task, although a few papers define it as a latent ability. These behaviors can be broadly categorized into several activities: identifying errors, assessing output quality, expressing internal confidence, and rectifying mistakes. The most common forms of evaluation involve assessing outputs, which includes judging the correctness of a solution, as in 'Outcome judging', and making comparative judgments, frequently through pairwise preference selection ('Pairwise preference judgment', 'LM-as-a-judge'). Another prevalent category is fact and claim verification, where a model's output is checked against a knowledge source ('Fact checking', 'Claim verification'). A distinct line of work focuses on a model's capacity for introspection, operationalized as its ability to express confidence or uncertainty, either through numerical scores ('Confidence estimation') or natural language phrases ('Expressing uncertainty'). The literature also extensively covers the subsequent act of rectifying identified issues, with numerous definitions for behaviors like 'Self-correction', 'Iterative refinement', and 'Bug fixing'. To measure these behaviors, researchers employ a wide array of benchmarks; fact verification is commonly measured using datasets like FEVER and TabFact, while judging capabilities are often assessed with MT-Bench, and correction in problem-solving is operationalized through benchmarks such as GSM8k and HumanEval. Evaluation is frequently studied alongside 'Self-reflection', which some papers suggest is a driver for evaluation capabilities, and is also closely related to the concepts of 'Faithfulness' and 'Self-correction'.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Large Language Model Cascades with Mixture of Thought Representations for Cost-Efficient Reasoning",
+      "Solving Challenging Math Word Problems Using GPT-4 Code Interpreter with Code-based Self-Verification"
+    ],
+    "neurips24": [
+      "Detecting Bugs with Substantial Monetary Consequences by LLM and Rule-based Reasoning",
+      "LLMDFA: Analyzing Dataflow in Code with Large Language Models",
+      "Reflective Multi-Agent Collaboration based on Large Language Models",
+      "Accelerating Blockwise Parallel Language Models with Draft Refinement",
+      "AutoMix: Automatically Mixing Language Models",
+      "Decompose, Analyze and Rethink: Solving Intricate Problems with Human-like Reasoning Cycle",
+      "Unveiling the Tapestry of Consistency in Large Vision-Language Models"
+    ],
+    "acl25": [
+      "Adapt Once, Thrive with Updates: Transferable Parameter-Efficient Fine-Tuning on Evolving Base Models",
+      "Can\u2019t See the Forest for the Trees: Benchmarking Multimodal Safety Awareness for MultimodalLLMs",
+      "Deontological Keyword Bias: The Impact of Modal Expressions on Normative Judgments of Language Models",
+      "Targeted Syntactic Evaluation for Grammatical Error Correction"
+    ],
+    "icml25": [
+      "Improving Rationality in the Reasoning Process of Language Models through Self-playing Game",
+      "RepoAudit: An Autonomous LLM-Agent for Repository-Level Code Auditing",
+      "A Mathematical Framework for AI-Human Integration in Work",
+      "Demystifying Long Chain-of-Thought Reasoning",
+      "On the Resilience of LLM-Based Multi-Agent Collaboration with Faulty Agents",
+      "Position: LLMs Need a Bayesian Meta-Reasoning Framework for More Robust and Generalizable Reasoning",
+      "RATE: Causal Explainability of Reward Models with Imperfect Counterfactuals",
+      "Accelerating Large Language Model Reasoning via Speculative Search",
+      "An Architecture Search Framework for Inference-Time Techniques",
+      "Bootstrapping Self-Improvement of Language Model Programs for Zero-Shot Schema Matching",
+      "Do NOT Think That Much for 2+3=? On the Overthinking of Long Reasoning Models",
+      "Enhancing Decision-Making of Large Language Models via Actor-Critic",
+      "Evaluating LLMs Across Multi-Cognitive Levels: From Medical Knowledge Mastery to Scenario-Based Problem Solving",
+      "FunBO: Discovering Acquisition Functions for Bayesian Optimization with FunSearch",
+      "Learning to Plan & Reason for Evaluation with Thinking-LLM-as-a-Judge",
+      "Proposer-Agent-Evaluator (PAE): Autonomous Skill Discovery For Foundation Model Internet Agents",
+      "SPRI: Aligning Large Language Models with Context-Situated Principles",
+      "Sample, Scrutinize and Scale: Effective Inference-Time Search by Scaling Verification",
+      "Teaching Language Models to Critique via Reinforcement Learning"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.977.checklist",
+      "Controllable Memorization inLLMs via Weight Pruning",
+      "DisLoRA: Task-specific Low-Rank Adaptation via Orthogonal Basis from Singular Value Decomposition",
+      "DrFrattn: Directly Learn Adaptive Policy from Attention for Simultaneous Machine Translation",
+      "Firewall Routing: Blocking Leads to Better Hybrid Inference forLLMs",
+      "Grammar Pruning: Enabling Low-Latency Zero-Shot Task-Oriented Language Models for EdgeAI",
+      "Mitigating Hallucinations inLM-BasedTTSModels via Distribution Alignment UsingGFlowNets",
+      "NitiBench: BenchmarkingLLMFrameworks onThai Legal Question Answering Capabilities",
+      "PlanGEN: A Multi-Agent Framework for Generating Planning and Reasoning Trajectories for Complex Problem Solving",
+      "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+      "RethinkMCTS: Refining Erroneous Thoughts inMonteCarlo Tree Search for Code Generation",
+      "RuCCoD: Towards AutomatedICDCoding inRussian",
+      "SafeKey: Amplifying Aha-Moment Insights for Safety Reasoning",
+      "The Transfer Neurons Hypothesis: An Underlying Mechanism for Language Latent Space Transitions in MultilingualLLMs",
+      "Towards Robust Mathematical Reasoning",
+      "UI-Hawk: Unleashing the Screen Stream Understanding for MobileGUIAgents",
+      "Women, Infamous, and Exotic Beings: A Comparative Study of Honorific Usages inWikipedia andLLMs forBengali andHindi",
+      "2025.emnlp-main.1505.checklist",
+      "2025.emnlp-main.530.checklist",
+      "AROMA: Autonomous Rank-one Matrix Adaptation",
+      "Evaluating Cognitive-Behavioral Fixation via Multimodal User Viewing Patterns on Social Media",
+      "Few-Shot Learning Translation from New Languages",
+      "MentalGLMSeries: Explainable Large Language Models for Mental Health Analysis onChinese Social Media",
+      "Multilingual Pretraining for Pixel Language Models",
+      "Non-Existent Relationship: Fact-Aware Multi-Level Machine-Generated Text Detection",
+      "Not What the Doctor Ordered: SurveyingLLM-based De-identification and Quantifying Clinical Information Loss",
+      "PIIvot: A LightweightNLPAnonymization Framework for Question-Anchored Tutoring Dialogues",
+      "SportReason: Evaluating Retrieval-Augmented Reasoning across Tables and Text for Sports Question Answering",
+      "Towards Faithful Natural Language Explanations: A Study Using Activation Patching in Large Language Models",
+      "ViPE: Visual Perception in Parameter Space for Efficient Video-Language Understanding",
+      "VisualWebInstruct: Scaling up Multimodal Instruction Data through Web Search",
+      "WISE: Weak-Supervision-Guided Step-by-Step Explanations for MultimodalLLMs in Image Classification",
+      "Your Language Model Can Secretly Write Like Humans: Contrastive Paraphrase Attacks onLLM-Generated Text Detectors",
+      "2025.emnlp-main.1443.checklist",
+      "2025.emnlp-main.202.checklist",
+      "2025.emnlp-main.72.checklist",
+      "32.3%",
+      "A Fully Probabilistic Perspective on Large Language Model Unlearning: Evaluation and Optimization",
+      "AFRIDOC-MT: Document-levelMTCorpus forAfrican Languages",
+      "AdaRewriter: Unleashing the Power of Prompting-based Conversational Query Reformulation via Test-Time Adaptation",
+      "AdaSteer: Your AlignedLLMis Inherently an Adaptive Jailbreak Defender",
+      "AlignX: Advancing Multilingual Large Language Models with Multilingual Representation Alignment",
+      "Answer Convergence as a Signal for Early Stopping in Reasoning",
+      "BeyondWER: Probing Whisper\u2019s Sub\u2010token Decoder Across Diverse Language Resource Levels",
+      "COUNTDOWN: Contextually Sparse Activation Filtering Out Unnecessary Weights in Down Projection",
+      "Can Prompts Rewind Time forLLMs? Evaluating the Effectiveness of Prompted Knowledge Cutoffs",
+      "Chat-Driven Text Generation and Interaction for Person Retrieval",
+      "CoMAT: Chain of Mathematically Annotated Thought Improves Mathematical Reasoning",
+      "Confidence-guided Refinement Reasoning for Zero-shot Question Answering",
+      "ConvSearch-R1: Enhancing Query Reformulation for Conversational Search with Reasoning via Reinforcement Learning",
+      "Do Large Language Models Truly Grasp Addition? A Rule-Focused Diagnostic Using Two-Integer Arithmetic",
+      "Dynamic Collaboration of Multi-Language Models based on Minimal Complete Semantic Units",
+      "DynamicNER: A Dynamic, Multilingual, and Fine-Grained Dataset forLLM-based Named Entity Recognition",
+      "EasyRec: Simple yet Effective Language Models for Recommendation",
+      "EquiBench: Benchmarking Large Language Models\u2019 Reasoning about Program Semantics via Equivalence Checking",
+      "Financial Risk Relation Identification through Dual-view Adaptation",
+      "From General Reward to Targeted Reward: Improving Open-ended Long-context Generation Models",
+      "From Shortcuts to Balance: Attribution Analysis of Speech-Text Feature Utilization in Distinguishing Original from Machine-Translated Texts",
+      "GATEAU: Selecting Influential Samples for Long Context Alignment",
+      "GUI-Bee: AlignGUIAction Grounding to Novel Environments via Autonomous Exploration",
+      "Glider: Global and Local Instruction-Driven Expert Router",
+      "Gradient-Attention Guided Dual-Masking Synergetic Framework for Robust Text-based Person Retrieval",
+      "Hanfu-Bench: A Multimodal Benchmark on Cross-Temporal Cultural Understanding and Transcreation",
+      "Identifying Unlearned Data inLLMs via Membership Inference Attacks",
+      "Improving Large Language Model Safety with Contrastive Representation Learning",
+      "Is the Top Still Spinning? Evaluating Subjectivity in Narrative Understanding",
+      "KRETA: A Benchmark forKorean Reading and Reasoning in Text-RichVQAAttuned to Diverse Visual Contexts",
+      "Language Mixing in Reasoning Language Models: Patterns, Impact, and Internal Causes",
+      "Look Again, Think Slowly: Enhancing Visual Reflection in Vision-Language Models",
+      "MMLU-ProX: A Multilingual Benchmark for Advanced Large Language Model Evaluation",
+      "Meta-Rewarding Language Models: Self-Improving Alignment withLLM-as-a-Meta-Judge",
+      "Mind the Value-Action Gap: DoLLMs Act in Alignment with Their Values?",
+      "Mitigating Hallucinations in Vision-Language Models through Image-Guided Head Suppression",
+      "Model-based Large Language Model Customization as Service",
+      "Multi-Document Event Extraction Using Large and Small Language Models",
+      "OMS: On-the-fly, Multi-Objective, Self-Reflective Ad Keyword Generation viaLLMAgent",
+      "OpenTuringBench: An Open-Model-based Benchmark and Framework for Machine-Generated Text Detection and Attribution",
+      "Principled Personas: Defining and Measuring the Intended Effects of Persona Prompting on Task Performance",
+      "RD-MCSA: A Multi-Class Sentiment Analysis Approach Integrating In-Context Classification Rationales and Demonstrations",
+      "REACT: Representation Extraction And Controllable Tuning to Overcome Overfitting inLLMKnowledge Editing",
+      "RareSyn: Health Record Synthesis for Rare Disease Diagnosis",
+      "Rule Discovery for Natural Language Inference Data Generation Using Out-of-Distribution Detection",
+      "SciNLP: A Domain-Specific Benchmark for Full-Text Scientific Entity and Relation Extraction inNLP",
+      "Semantic Inversion, Identical Replies: Revisiting Negation Blindness in Large Language Models",
+      "Social Bias in Multilingual Language Models: A Survey",
+      "TS-CLIP: Time Series Understanding byCLIP",
+      "The Good, the Bad and the Constructive: Automatically Measuring Peer Review\u2019s Utility for Authors",
+      "The Impact of Negated Text on Hallucination with Large Language Models",
+      "Think, Verbalize, then Speak: Bridging Complex Thoughts and Comprehensible Speech",
+      "ThinkSLM",
+      "ToDi: Token-wise Distillation via Fine-Grained Divergence Control",
+      "Towards a Unified Paradigm of Concept Editing in Large Language Models",
+      "Tree-of-Quote Prompting Improves Factuality and Attribution in Multi-Hop and Medical Reasoning",
+      "VisCRA: A Visual Chain Reasoning Attack for Jailbreaking Multimodal Large Language Models",
+      "Warm Up Before You Train: Unlocking General Reasoning in Resource-Constrained Settings",
+      "Where Confabulation Lives: Latent Feature Discovery inLLMs",
+      "Words Like Knives: Backstory-Personalized Modeling and Detection of Violent Communication",
+      "2025.emnlp-main.1050.checklist",
+      "2025.emnlp-main.710.checklist",
+      "A Computational Simulation of Language Production in First Language Acquisition",
+      "Agent-as-Judge for Factual Summarization of Long Narratives",
+      "AnchorAttention: Difference-Aware Sparse Attention with Stripe Granularity",
+      "Beyond Hate Speech:NLP\u2019s Challenges and Opportunities in Uncovering Dehumanizing Language",
+      "Beyond the Score: Uncertainty-CalibratedLLMs for Automated Essay Assessment",
+      "DMDTEval: An Evaluation and Analysis ofLLMs on Disambiguation in Multi-domain Translation",
+      "Diagnosing Memorization in Chain-of-Thought Reasoning, One Token at a Time",
+      "Discursive Circuits: How Do Language Models Understand Discourse Relations?",
+      "Easy asPIE? Identifying Multi-Word Expressions withLLMs",
+      "Exploring Large Language Models for Detecting Mental Disorders",
+      "Extending Automatic Machine Translation Evaluation to Book-Length Documents",
+      "GenLink: Generation-Driven Schema-Linking via Multi-Model Learning for Text-to-SQL",
+      "Generator-Assistant Stepwise Rollback Framework for Large Language Model Agent",
+      "HookMoE: A learnable performance compensation strategy of Mixture-of-Experts forLLMinference acceleration",
+      "Improving the Quality of Web-mined Parallel Corpora of Low-Resource Languages using Debiasing Heuristics",
+      "Interpretable Mnemonic Generation for Kanji Learning via Expectation-Maximization",
+      "LM-Searcher: Cross-domain Neural Architecture Search withLLMs via Unified Numerical Encoding",
+      "Language Models Can be Efficiently Steered via Minimal Embedding Layer Transformations",
+      "NOVA-63: Native Omni-lingual Versatile Assessments of 63 Disciplines",
+      "One Planner To Guide Them All ! Learning Adaptive Conversational Planners for Goal-oriented Dialogues",
+      "PBI-Attack: Prior-Guided Bimodal Interactive Black-Box Jailbreak Attack for Toxicity Maximization",
+      "PORTS: Preference-Optimized Retrievers for Tool Selection with Large Language Models",
+      "PRISM: Efficient Long-Range Reasoning With Short-ContextLLMs",
+      "PersonalizedLLMDecoding via Contrasting Personal Preference",
+      "Predicting Prosodic Boundaries for Children\u2019s Texts",
+      "R2I-Bench: Benchmarking Reasoning-Driven Text-to-Image Generation",
+      "RCScore: Quantifying Response Consistency in Large Language Models",
+      "ReAgent: Reversible Multi-Agent Reasoning for Knowledge-Enhanced Multi-HopQA",
+      "ReflAct: World-Grounded Decision Making inLLMAgents via Goal-State Reflection",
+      "SABER: Uncovering Vulnerabilities in Safety Alignment via Cross-Layer Residual Connection",
+      "SAKI-RAG: Mitigating Context Fragmentation in Long-DocumentRAGvia Sentence-level Attention Knowledge Integration",
+      "SNaRe: Domain-aware Data Generation for Low-Resource Event Detection",
+      "SOLAR: Towards Characterizing Subjectivity of Individuals through Modeling Value Conflicts and Trade-offs",
+      "Self-Critique and Refinement for Faithful Natural Language Explanations",
+      "Stop Looking for \u201cImportant Tokens\u201d in Multimodal Language Models: Duplication Matters More",
+      "Token-level Proximal Policy Optimization for Query Generation",
+      "Toward Efficient Sparse Autoencoder-Guided Steering for Improved In-Context Learning in Large Language Models",
+      "Towards Author-informedNLP: Mind the Social Bias",
+      "iVISPAR\u2014 An Interactive Visual-Spatial Reasoning Benchmark forVLMs",
+      "2025.emnlp-main.475.checklist",
+      "DrDiff: Dynamic Routing Diffusion with Hierarchical Attention for Breaking the Efficiency-Quality Trade-off",
+      "PhoniTale: Phonologically Grounded Mnemonic Generation for Typologically Distant Language Pairs"
+    ],
+    "iclr25": [
+      "BIRD: A Trustworthy Bayesian Inference Framework for Large Language Models",
+      "CertainlyUncertain: A Benchmark and Metric for Multimodal Epistemic and Aleatoric Awareness",
+      "Forewarned is Forearmed:  Harnessing LLMs for Data Synthesis via Failure-induced Exploration",
+      "Latent Space Chain-of-Embedding Enables Output-free LLM Self-Evaluation",
+      "Reflexive Guidance: Improving OoDD in Vision-Language Models via Self-Guided Image-Adaptive Concept Generation",
+      "Small Models are LLM Knowledge Triggers for Medical Tabular Prediction",
+      "To Trust or Not to Trust? Enhancing Large Language Models' Situated Faithfulness to External Contexts",
+      "Trust or Escalate: LLM Judges with Provable Guarantees for Human Agreement",
+      "Varying Shades of Wrong: Aligning LLMs with Wrong Answers Only",
+      "Advancing Mathematical Reasoning in Language Models: The Impact of Problem-Solving Data, Data Synthesis Methods, and Training Stages",
+      "Efficient Perplexity Bound and Ratio Matching in Discrete Diffusion Language Models",
+      "ImProver: Agent-Based Automated Proof Optimization",
+      "LiveBench: A Challenging, Contamination-Limited LLM Benchmark",
+      "MrT5: Dynamic Token Merging for Efficient Byte-level Language Models",
+      "ROUTE: Robust Multitask Tuning and Collaboration for Text-to-SQL",
+      "Think while You Generate: Discrete Diffusion with Planned Denoising",
+      "ACC-Collab: An Actor-Critic Approach to Multi-Agent LLM Collaboration",
+      "BadJudge: Backdoor Vulnerabilities of LLM-As-A-Judge",
+      "Benchmarking LLMs' Judgments with No Gold Standard",
+      "Beyond correlation: The impact of human uncertainty in measuring the effectiveness of automatic evaluation and LLM-as-a-judge",
+      "CycleResearcher: Improving Automated Research via Automated Review",
+      "DOTS: Learning to Reason Dynamically in LLMs via Optimal Reasoning Trajectories Search",
+      "DataMan: Data Manager for Pre-training Large Language Models",
+      "Diversity Empowers Intelligence: Integrating Expertise of Software Engineering Agents",
+      "Eliminating Position Bias of Language Models: A Mechanistic Approach",
+      "Empowering LLM Agents with Zero-Shot Optimal Decision-Making through Q-learning",
+      "Generative Verifiers: Reward Modeling as Next-Token Prediction",
+      "GraphEval: A Lightweight Graph-Based LLM Framework for Idea Evaluation",
+      "How to Evaluate Reward Models for RLHF",
+      "Hypothetical Minds: Scaffolding Theory of Mind for Multi-Agent Tasks with Large Language Models",
+      "Improving Data Efficiency via Curating LLM-Driven Rating Systems",
+      "Interpreting Language Reward Models via Contrastive Explanations",
+      "Is Your Model Really A Good Math Reasoner? Evaluating Mathematical Reasoning with Checklist",
+      "JudgeBench: A Benchmark for Evaluating LLM-Based Judges",
+      "JudgeLM: Fine-tuned Large Language Models are Scalable Judges",
+      "Justice or Prejudice? Quantifying Biases in LLM-as-a-Judge",
+      "LLMs Know More Than They Show: On the Intrinsic Representation of LLM Hallucinations",
+      "LOKI: A Comprehensive Synthetic Data Detection Benchmark using Large Multimodal Models",
+      "Learning How Hard to Think: Input-Adaptive Allocation of LM Computation",
+      "Learning LLM-as-a-Judge for Preference Alignment",
+      "Limits to scalable evaluation at the frontier: LLM as judge won\u2019t beat twice the data",
+      "MMAD: A Comprehensive Benchmark for Multimodal Large Language Models in Industrial Anomaly Detection",
+      "Mind the Gap: Examining the Self-Improvement Capabilities of Large Language Models",
+      "Mutual Reasoning Makes Smaller LLMs Stronger Problem-Solver",
+      "NL-Eye: Abductive NLI For Images",
+      "Non-myopic Generation of Language Models for Reasoning and Planning",
+      "OMNI-EPIC: Open-endedness via Models of human Notions of Interestingness with Environments Programmed in Code",
+      "On the self-verification limitations of large language models on reasoning and planning tasks",
+      "Physics of Language Models: Part 2.2, How to Learn From Mistakes on Grade-School Math Problems",
+      "Physics of Language Models: Part 3.2, Knowledge Manipulation",
+      "PiCO: Peer Review in LLMs based on Consistency Optimization",
+      "Planning Anything with Rigor: General-Purpose Zero-Shot Planning with LLM-based Formalized Programming",
+      "Preference Optimization for Reasoning with Pseudo Feedback",
+      "Process Reward Model with Q-value Rankings",
+      "RMB: Comprehensively benchmarking reward models in LLM alignment",
+      "RocketEval: Efficient automated LLM evaluation via grading checklist",
+      "SPaR: Self-Play with Tree-Search Refinement to Improve Instruction-Following in Large Language Models",
+      "Scaling Autonomous Agents via Automatic Reward Modeling And Planning",
+      "Scaling LLM Test-Time Compute Optimally Can be More Effective than Scaling Parameters for Reasoning",
+      "Self-Improvement in Language Models: The Sharpening Mechanism",
+      "Simulating Human-like Daily Activities with Desire-driven Autonomy",
+      "Spread Preference Annotation: Direct Preference Judgment for Efficient LLM Alignment",
+      "Style Outweighs Substance: Failure Modes of LLM Judges in Alignment Benchmarking",
+      "Triples as the Key: Structuring Makes Decomposition and Verification Easier in LLM-based TableQA",
+      "Your Weak LLM is Secretly a Strong Teacher for Alignment",
+      "Zero-shot Model-based Reinforcement Learning using Large Language Models",
+      "Cheating Automatic LLM Benchmarks: Null Models Achieve High Win Rates"
+    ],
+    "naacl25": [
+      "Amphista: Bi-directional Multi-head Decoding for AcceleratingLLMInference",
+      "ToW: Thoughts of Words Improve Reasoning in Large Language Models",
+      "AI-Assisted Human Evaluation of Machine Translation",
+      "Faithful, Unfaithful or Ambiguous? Multi-Agent Debate with Initial Stance for Summary Evaluation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "neurips24": 7,
+    "acl25": 4,
+    "icml25": 19,
+    "emnlp25": 141,
+    "iclr25": 67,
+    "naacl25": 4
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

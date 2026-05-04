@@ -1,0 +1,284 @@
+{
+  "canonical_name": "CHAIR",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, CHAIR (Caption Hallucination Assessment with Image Relevance) is a widely-used metric and benchmark for evaluating hallucination, specifically within image captioning tasks. Its primary and most frequently described function is to measure the construct of `Object hallucination`. The core operationalization, consistent across nearly all sources, involves quantifying the proportion of objects mentioned in a generated caption that are not present in the source image by comparing them to ground-truth annotations. This is typically calculated at two levels: the instance level (CHAIRi), defined as the \"fraction of hallucinated object instances,\" and the sentence level (CHAIRs), the \"fraction of sentences containing a hallucinated object.\" Some papers specify that the evaluation is conducted on images from the MS-COCO dataset. While the predominant focus is on object presence, a few sources describe a broader application of CHAIR to assess attribute and positional correctness. Overall, CHAIR is presented as a standard tool for quantitatively assessing the fidelity of generated image descriptions, where lower scores indicate better performance.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "CHAIR"
+  ],
+  "papers": [
+    "Contrastive Prompting Enhances Sentence Embeddings inLLMs through Inference-Time Steering",
+    "EAC-MoE: Expert-Selection Aware Compressor for Mixture-of-Experts Large Language Models",
+    "A Survey of Link Prediction in N-ary Knowledge Graphs",
+    "Artificial Impressions: Evaluating Large Language Model Behavior Through the Lens of Trait Impressions",
+    "CityEQA: A HierarchicalLLMAgent on Embodied Question Answering Benchmark in City Space",
+    "Interpretation Meets Safety: A Survey on Interpretation Methods and Tools for ImprovingLLMSafety",
+    "QCRD: Quality-guided Contrastive Rationale Distillation for Large Language Models",
+    "RiTTA: Modeling Event Relations in Text-to-Audio Generation",
+    "Analyzing and Mitigating Object Hallucination in Large Vision-Language Models",
+    "Inducing High Energy-Latency of Large Vision-Language Models with Verbose Images",
+    "Do You Keep an Eye on What I Ask? Mitigating Multimodal Hallucination via Attention-Guided Ensemble Decoding",
+    "Fine-Grained Verifiers: Preference Modeling as Next-token Prediction in Vision-Language Alignment",
+    "Intervening Anchor Token: Decoding Strategy in Alleviating Hallucinations for MLLMs",
+    "MLLM can see? Dynamic Correction Decoding for Hallucination Mitigation",
+    "Mitigating Object Hallucination in MLLMs via Data-augmented Phrase-level Alignment",
+    "PerturboLLaVA: Reducing Multimodal Hallucinations with Perturbative Visual Training",
+    "Reducing Hallucinations in Large Vision-Language Models via Latent Space Steering",
+    "See What You Are Told: Visual Attention Sink in Large Multimodal Models",
+    "Self-Correcting Decoding with Generative Feedback for Mitigating Hallucinations in Large Vision-Language Models",
+    "Self-Introspective Decoding: Alleviating Hallucinations for Large Vision-Language Models",
+    "Contrastive Localized Language-Image Pre-Training",
+    "Look Twice Before You Answer: Memory-Space Visual Retracing for Hallucination Mitigation in Multimodal Large Language Models",
+    "Mitigating Object Hallucination in Large Vision-Language Models via Image-Grounded Guidance",
+    "Probing Visual Language Priors in VLMs",
+    "The Hidden Life of Tokens: Reducing Hallucination of Large Vision-Language Models Via Visual Information Steering",
+    "Visual Attention Never Fades: Selective Progressive Attention ReCalibration for Detailed Image Captioning in Multimodal Large Language Models",
+    "Detect, Disambiguate, and Translate: On-Demand Visual Reasoning for Multimodal Machine Translation with Large Vision-Language Models",
+    "How Can We Diagnose and Treat Bias in Large Language Models for Clinical Decision-Making?",
+    "Alleviating Hallucinations in Large Vision-Language Models through Hallucination-Induced Optimization",
+    "Mitigating Object Hallucination via Concentric Causal Attention",
+    "Multi-Object Hallucination in Vision Language Models",
+    "Unleashing Region Understanding in Intermediate Layers for MLLM-based Referring Expression Generation"
+  ],
+  "paper_count": 32,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Evaluation metric for hallucination in image captioning, measuring the fraction of hallucinated object instances (CHAIRi) and sentences containing hallucinated objects (CHAIRs).",
+      "paper": "Analyzing and Mitigating Object Hallucination in Large Vision-Language Models",
+      "original_name": "CHAIR"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Alleviating Hallucinations in Large Vision-Language Models through Hallucination-Induced Optimization",
+      "evidence": "CHAIR (Rohrbach et al., 2018) evaluates object hallucinations in open-ended captioning tasks (Section 4.1).",
+      "paper_count": 14,
+      "papers_by_conference": {
+        "neurips24": [
+          "Alleviating Hallucinations in Large Vision-Language Models through Hallucination-Induced Optimization"
+        ],
+        "iclr25": [
+          "Fine-Grained Verifiers: Preference Modeling as Next-token Prediction in Vision-Language Alignment",
+          "Self-Correcting Decoding with Generative Feedback for Mitigating Hallucinations in Large Vision-Language Models",
+          "Self-Introspective Decoding: Alleviating Hallucinations for Large Vision-Language Models",
+          "Intervening Anchor Token: Decoding Strategy in Alleviating Hallucinations for MLLMs"
+        ],
+        "naacl25": [
+          "Detect, Disambiguate, and Translate: On-Demand Visual Reasoning for Multimodal Machine Translation with Large Vision-Language Models"
+        ],
+        "icml25": [
+          "The Hidden Life of Tokens: Reducing Hallucination of Large Vision-Language Models Via Visual Information Steering",
+          "Visual Attention Never Fades: Selective Progressive Attention ReCalibration for Detailed Image Captioning in Multimodal Large Language Models",
+          "Look Twice Before You Answer: Memory-Space Visual Retracing for Hallucination Mitigation in Multimodal Large Language Models",
+          "Mitigating Object Hallucination in Large Vision-Language Models via Image-Grounded Guidance"
+        ],
+        "emnlp25": [
+          "QCRD: Quality-guided Contrastive Rationale Distillation for Large Language Models",
+          "Interpretation Meets Safety: A Survey on Interpretation Methods and Tools for ImprovingLLMSafety",
+          "Artificial Impressions: Evaluating Large Language Model Behavior Through the Lens of Trait Impressions",
+          "CityEQA: A HierarchicalLLMAgent on Embodied Question Answering Benchmark in City Space"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Object hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Analyzing and Mitigating Object Hallucination in Large Vision-Language Models",
+      "evidence": "\u201cCHAIR (Rohrbach et al., 2018) evaluates object hallucinations in open-ended captioning tasks\u201d",
+      "paper_count": 12,
+      "papers_by_conference": {
+        "iclr24": [
+          "Analyzing and Mitigating Object Hallucination in Large Vision-Language Models"
+        ],
+        "neurips24": [
+          "Unleashing Region Understanding in Intermediate Layers for MLLM-based Referring Expression Generation",
+          "Multi-Object Hallucination in Vision Language Models",
+          "Mitigating Object Hallucination via Concentric Causal Attention"
+        ],
+        "iclr25": [
+          "Do You Keep an Eye on What I Ask? Mitigating Multimodal Hallucination via Attention-Guided Ensemble Decoding",
+          "Reducing Hallucinations in Large Vision-Language Models via Latent Space Steering",
+          "Mitigating Object Hallucination in MLLMs via Data-augmented Phrase-level Alignment",
+          "PerturboLLaVA: Reducing Multimodal Hallucinations with Perturbative Visual Training",
+          "Intervening Anchor Token: Decoding Strategy in Alleviating Hallucinations for MLLMs"
+        ],
+        "acl25": [
+          "EAC-MoE: Expert-Selection Aware Compressor for Mixture-of-Experts Large Language Models"
+        ],
+        "icml25": [
+          "Mitigating Object Hallucination in Large Vision-Language Models via Image-Grounded Guidance"
+        ],
+        "emnlp25": [
+          "A Survey of Link Prediction in N-ary Knowledge Graphs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Image captioning",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Analyzing and Mitigating Object Hallucination in Large Vision-Language Models",
+      "evidence": "\u201cCHAIR (Rohrbach et al., 2018) evaluates object hallucinations in open-ended captioning tasks\u201d",
+      "paper_count": 9,
+      "papers_by_conference": {
+        "iclr24": [
+          "Analyzing and Mitigating Object Hallucination in Large Vision-Language Models"
+        ],
+        "neurips24": [
+          "Alleviating Hallucinations in Large Vision-Language Models through Hallucination-Induced Optimization"
+        ],
+        "iclr25": [
+          "Do You Keep an Eye on What I Ask? Mitigating Multimodal Hallucination via Attention-Guided Ensemble Decoding",
+          "Fine-Grained Verifiers: Preference Modeling as Next-token Prediction in Vision-Language Alignment",
+          "Reducing Hallucinations in Large Vision-Language Models via Latent Space Steering",
+          "Intervening Anchor Token: Decoding Strategy in Alleviating Hallucinations for MLLMs"
+        ],
+        "naacl25": [
+          "How Can We Diagnose and Treat Bias in Large Language Models for Clinical Decision-Making?"
+        ],
+        "emnlp25": [
+          "QCRD: Quality-guided Contrastive Rationale Distillation for Large Language Models",
+          "CityEQA: A HierarchicalLLMAgent on Embodied Question Answering Benchmark in City Space"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal alignment",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Fine-Grained Verifiers: Preference Modeling as Next-token Prediction in Vision-Language Alignment",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Fine-Grained Verifiers: Preference Modeling as Next-token Prediction in Vision-Language Alignment"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "See What You Are Told: Visual Attention Sink in Large Multimodal Models",
+      "evidence": "Visual hallucination task evaluates whether the response of the model is consistent with the image content to ensure the trustworthiness and reliability of the model. We use CHAIR (Rohrbach et al., 2018), POPE (Li et al., 2023c), and MMHal-Bench (Sun et al., 2023).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "See What You Are Told: Visual Attention Sink in Large Multimodal Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MS-COCO",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Self-Introspective Decoding: Alleviating Hallucinations for Large Vision-Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Self-Introspective Decoding: Alleviating Hallucinations for Large Vision-Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-form text generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Interpretation Meets Safety: A Survey on Interpretation Methods and Tools for ImprovingLLMSafety",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Interpretation Meets Safety: A Survey on Interpretation Methods and Tools for ImprovingLLMSafety"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 7,
+  "incoming_relationship_count": 6,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the provided literature, CHAIR (Caption Hallucination Assessment with Image Relevance) is a widely-used metric and benchmark for evaluating hallucination, specifically within image captioning tasks. Its primary and most frequently described function is to measure the construct of `Object hallucination`. The core operationalization, consistent across nearly all sources, involves quantifying the proportion of objects mentioned in a generated caption that are not present in the source image by comparing them to ground-truth annotations. This is typically calculated at two levels: the instance level (CHAIRi), defined as the \"fraction of hallucinated object instances,\" and the sentence level (CHAIRs), the \"fraction of sentences containing a hallucinated object.\" Some papers specify that the evaluation is conducted on images from the MS-COCO dataset. While the predominant focus is on object presence, a few sources describe a broader application of CHAIR to assess attribute and positional correctness. Overall, CHAIR is presented as a standard tool for quantitatively assessing the fidelity of generated image descriptions, where lower scores indicate better performance.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Analyzing and Mitigating Object Hallucination in Large Vision-Language Models",
+      "Inducing High Energy-Latency of Large Vision-Language Models with Verbose Images"
+    ],
+    "neurips24": [
+      "Alleviating Hallucinations in Large Vision-Language Models through Hallucination-Induced Optimization",
+      "Mitigating Object Hallucination via Concentric Causal Attention",
+      "Multi-Object Hallucination in Vision Language Models",
+      "Unleashing Region Understanding in Intermediate Layers for MLLM-based Referring Expression Generation"
+    ],
+    "iclr25": [
+      "Do You Keep an Eye on What I Ask? Mitigating Multimodal Hallucination via Attention-Guided Ensemble Decoding",
+      "Fine-Grained Verifiers: Preference Modeling as Next-token Prediction in Vision-Language Alignment",
+      "Intervening Anchor Token: Decoding Strategy in Alleviating Hallucinations for MLLMs",
+      "MLLM can see? Dynamic Correction Decoding for Hallucination Mitigation",
+      "Mitigating Object Hallucination in MLLMs via Data-augmented Phrase-level Alignment",
+      "PerturboLLaVA: Reducing Multimodal Hallucinations with Perturbative Visual Training",
+      "Reducing Hallucinations in Large Vision-Language Models via Latent Space Steering",
+      "See What You Are Told: Visual Attention Sink in Large Multimodal Models",
+      "Self-Correcting Decoding with Generative Feedback for Mitigating Hallucinations in Large Vision-Language Models",
+      "Self-Introspective Decoding: Alleviating Hallucinations for Large Vision-Language Models"
+    ],
+    "naacl25": [
+      "Detect, Disambiguate, and Translate: On-Demand Visual Reasoning for Multimodal Machine Translation with Large Vision-Language Models",
+      "How Can We Diagnose and Treat Bias in Large Language Models for Clinical Decision-Making?"
+    ],
+    "acl25": [
+      "Contrastive Prompting Enhances Sentence Embeddings inLLMs through Inference-Time Steering",
+      "EAC-MoE: Expert-Selection Aware Compressor for Mixture-of-Experts Large Language Models"
+    ],
+    "icml25": [
+      "Contrastive Localized Language-Image Pre-Training",
+      "Look Twice Before You Answer: Memory-Space Visual Retracing for Hallucination Mitigation in Multimodal Large Language Models",
+      "Mitigating Object Hallucination in Large Vision-Language Models via Image-Grounded Guidance",
+      "Probing Visual Language Priors in VLMs",
+      "The Hidden Life of Tokens: Reducing Hallucination of Large Vision-Language Models Via Visual Information Steering",
+      "Visual Attention Never Fades: Selective Progressive Attention ReCalibration for Detailed Image Captioning in Multimodal Large Language Models"
+    ],
+    "emnlp25": [
+      "A Survey of Link Prediction in N-ary Knowledge Graphs",
+      "Artificial Impressions: Evaluating Large Language Model Behavior Through the Lens of Trait Impressions",
+      "CityEQA: A HierarchicalLLMAgent on Embodied Question Answering Benchmark in City Space",
+      "Interpretation Meets Safety: A Survey on Interpretation Methods and Tools for ImprovingLLMSafety",
+      "QCRD: Quality-guided Contrastive Rationale Distillation for Large Language Models",
+      "RiTTA: Modeling Event Relations in Text-to-Audio Generation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "neurips24": 4,
+    "iclr25": 10,
+    "naacl25": 2,
+    "acl25": 2,
+    "icml25": 6,
+    "emnlp25": 6
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

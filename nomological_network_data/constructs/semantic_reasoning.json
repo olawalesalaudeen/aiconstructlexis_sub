@@ -1,0 +1,110 @@
+{
+  "canonical_name": "Semantic reasoning",
+  "type": "construct",
+  "canonical_definition": "Across the provided literature, semantic reasoning is framed in two distinct ways, with no single prevailing definition. One line of work defines it as a model's capacity to understand language instructions in relation to objects and actions in an environment, particularly in the context of robotics and \"long-horizon planning.\" This form of the construct is operationalized through tasks like Referring Expression Comprehension, which requires using both spatial and semantic reasoning to localize an object from a textual query. A different framing treats semantic reasoning as a latent ability for multi-step inference to connect concepts that are not explicitly stated in text. In this view, it is associated with Chain-of-Thought (CoT) prompting to identify \"implicit targets\" and is categorized as a subtype of Text-Based Reasoning, which depends on linguistic evidence. The reliability of this latter form of reasoning is noted to potentially \"vary across model families and domain shifts.\" The concept is also studied alongside table understanding, though the nature of this relationship is not specified.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Semantic reasoning"
+  ],
+  "papers": [
+    "Data Descriptions from Large Language Models with Influence Estimation",
+    "Detoxifying Large Language Models via the Diversity of Toxic Samples",
+    "EnhancingLLM-Based Social Bot via an Adversarial Learning Framework",
+    "Improving the Quality of Web-mined Parallel Corpora of Low-Resource Languages using Debiasing Heuristics",
+    "MPCG: Multi-Round Persona-Conditioned Generation for Modeling the Evolution of Misinformation withLLMs",
+    "Rethinking Backdoor Detection Evaluation for Language Models",
+    "ToDi: Token-wise Distillation via Fine-Grained Divergence Control",
+    "Execution-guided within-prompt search for programming-by-example",
+    "HAMSTER: Hierarchical Action Models for Open-World Robot Manipulation",
+    "LLM-wrapper: Black-Box Semantic-Aware Adaptation of Vision-Language Models for Referring Expression Comprehension",
+    "Monte Carlo Planning with Large Language Model for Text-Based Game Agents",
+    "Natural Language Inference Improves Compositionality in Vision-Language Models"
+  ],
+  "paper_count": 12,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The model's capacity to understand and reason about the meaning of language instructions and their relationship to objects and actions in the environment.",
+      "paper": "HAMSTER: Hierarchical Action Models for Open-World Robot Manipulation",
+      "original_name": "Semantic reasoning"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Referring expression understanding",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "LLM-wrapper: Black-Box Semantic-Aware Adaptation of Vision-Language Models for Referring Expression Comprehension",
+      "evidence": "Referring Expression Comprehension (REC) (Mao et al., 2016), which involves localizing an object in an image based on a complex textual query, requiring both spatial and semantic reasoning.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "LLM-wrapper: Black-Box Semantic-Aware Adaptation of Vision-Language Models for Referring Expression Comprehension"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Text-based reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "MPCG: Multi-Round Persona-Conditioned Generation for Modeling the Evolution of Misinformation withLLMs",
+      "evidence": "The first broad category, Text-Based (TB) Reasoning, includes explanations that depend solely on surface-level linguistic evidence found within the premise and hypothesis, without appealing to world knowledge. Six subtypes are defined: Coreference, Syntactic, Semantic, Pragmatic, Absence of Mention and Logic Conflict. (Section 3.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "MPCG: Multi-Round Persona-Conditioned Generation for Modeling the Evolution of Misinformation withLLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Table question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Improving the Quality of Web-mined Parallel Corpora of Low-Resource Languages using Debiasing Heuristics",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Improving the Quality of Web-mined Parallel Corpora of Low-Resource Languages using Debiasing Heuristics"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 2,
+  "characterization": "Across the provided literature, semantic reasoning is framed in two distinct ways, with no single prevailing definition. One line of work defines it as a model's capacity to understand language instructions in relation to objects and actions in an environment, particularly in the context of robotics and \"long-horizon planning.\" This form of the construct is operationalized through tasks like Referring Expression Comprehension, which requires using both spatial and semantic reasoning to localize an object from a textual query. A different framing treats semantic reasoning as a latent ability for multi-step inference to connect concepts that are not explicitly stated in text. In this view, it is associated with Chain-of-Thought (CoT) prompting to identify \"implicit targets\" and is categorized as a subtype of Text-Based Reasoning, which depends on linguistic evidence. The reliability of this latter form of reasoning is noted to potentially \"vary across model families and domain shifts.\" The concept is also studied alongside table understanding, though the nature of this relationship is not specified.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Execution-guided within-prompt search for programming-by-example",
+      "HAMSTER: Hierarchical Action Models for Open-World Robot Manipulation",
+      "LLM-wrapper: Black-Box Semantic-Aware Adaptation of Vision-Language Models for Referring Expression Comprehension",
+      "Monte Carlo Planning with Large Language Model for Text-Based Game Agents",
+      "Natural Language Inference Improves Compositionality in Vision-Language Models"
+    ],
+    "emnlp25": [
+      "Data Descriptions from Large Language Models with Influence Estimation",
+      "Detoxifying Large Language Models via the Diversity of Toxic Samples",
+      "EnhancingLLM-Based Social Bot via an Adversarial Learning Framework",
+      "Improving the Quality of Web-mined Parallel Corpora of Low-Resource Languages using Debiasing Heuristics",
+      "MPCG: Multi-Round Persona-Conditioned Generation for Modeling the Evolution of Misinformation withLLMs",
+      "Rethinking Backdoor Detection Evaluation for Language Models",
+      "ToDi: Token-wise Distillation via Fine-Grained Divergence Control"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 5,
+    "emnlp25": 7
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25"
+  ]
+}

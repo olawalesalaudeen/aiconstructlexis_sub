@@ -1,0 +1,608 @@
+{
+  "canonical_name": "Task decomposition",
+  "type": "behavior",
+  "canonical_definition": "The most common framing of task decomposition in the provided literature is the observable behavior of breaking down a complex input\u2014such as a task, question, or query\u2014into a series of smaller, more manageable sub-components. This behavior is applied to a wide range of inputs, including high-level goals, programming problems, user requests, and textual descriptions, resulting in outputs like sequences of sub-tasks, simpler sub-questions, or modular code functions. The most frequently cited purpose is to enable a \"divide-and-conquer\" strategy, allowing a model to \"address each component individually, and synthesize the results to create the final plan\" (HyperTree Planning: Enhancing LLM Reasoning via Hierarchical Thinking). A distinct line of work operationalizes decomposition as a method for bypassing safety mechanisms, where a malicious query is broken into \"multiple seemingly innocuous subqueries\" to \"circumvent safety guardrails\" (Speak Easy: Eliciting Harmful Jailbreaks from LLMs with Simple Interactions). The behavior is operationalized by observing the model's generation of intermediate steps, such as producing a list of sub-questions, a structured plan of actionable steps, or a directed acyclic graph of sub-queries. Across the surveyed work, task decomposition is frequently studied alongside broader capabilities like `Complex reasoning`, `Planning`, and `Chain-of-thought reasoning`. Several papers report that this behavior influences downstream outcomes, describing it as a mechanism for improving `Problem-solving`, `Code generation`, and `Information retrieval`. While the overwhelming majority of sources define this as a process of breaking things down, one paper uses the term `Task composition` to refer to the inverse process of combining components.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Program decomposition",
+    "Task decomposition",
+    "Subtask decomposition",
+    "Question decomposition",
+    "Request decomposition",
+    "Problem decomposition",
+    "Prompt decomposition",
+    "Subgoal generation",
+    "Text decomposition",
+    "Task composition",
+    "Multi-step query decomposition",
+    "Dependency identification",
+    "Subtask identification",
+    "Concept decomposition",
+    "Plan decomposition",
+    "Subgoal proposal",
+    "Query graph construction",
+    "Subquestion decomposition",
+    "Instruction decomposition",
+    "Sub-question generation",
+    "Subproblem decomposition",
+    "Subgoal setting",
+    "Query decomposition"
+  ],
+  "papers": [
+    "AdaptThink: Reasoning Models Can Learn When to Think",
+    "Agent-as-Judge for Factual Summarization of Long Narratives",
+    "An Empirical Study ofLLMReasoning Ability Under Strict Output Length Constraint",
+    "Benchmark Profiling: Mechanistic Diagnosis ofLLMBenchmarks",
+    "ChartMind: A Comprehensive Benchmark for Complex Real-world Multimodal Chart Question Answering",
+    "Deriving Strategic Market Insights with Large Language Models: A Benchmark for Forward Counterfactual Generation",
+    "DrFrattn: Directly Learn Adaptive Policy from Attention for Simultaneous Machine Translation",
+    "EMNLP: Educator-role Moral and Normative Large Language Models Profiling",
+    "End-to-End Learnable Psychiatric Scale Guided Risky Post Screening for Depression Detection on Social Media",
+    "Exploring the Limitations of Mamba inCOPYandCoTReasoning",
+    "Facilitating Cognitive Accessibility withLLMs: A Multi-Task Approach to Easy-to-Read Text Generation",
+    "GraDaSE: Graph-Based Dataset Search with Examples",
+    "Identifying Pre-training Data inLLMs: A Neuron Activation-Based Detection Framework",
+    "Legal Fact Prediction: The Missing Piece in Legal Judgment Prediction",
+    "Media Source Matters More Than Content: Unveiling Political Bias inLLM-Generated Citations",
+    "Mixture of Weight-shared Heterogeneous Group Attention Experts for Dynamic Token-wiseKVOptimization",
+    "P-MMEval: A Parallel Multilingual Multitask Benchmark for Consistent Evaluation ofLLMs",
+    "PunMemeCN: A Benchmark to Explore Vision-Language Models\u2019 Understanding ofChinese Pun Memes",
+    "RPDR: A Round-trip Prediction-Based Data Augmentation Framework for Long-Tail Question Answering",
+    "RuCCoD: Towards AutomatedICDCoding inRussian",
+    "Similarity = Value? Consultation Value-Assessment and Alignment for Personalized Search",
+    "SliceMoE: Routing Embedding Slices Instead of Tokens for Fine-Grained and Balanced Transformer Scaling",
+    "Speech Discrete Tokens or Continuous Features? A Comparative Analysis for Spoken Language Understanding inSpeechLLMs",
+    "TRUST-VL: An Explainable News Assistant for General Multimodal Misinformation Detection",
+    "Token-level Proximal Policy Optimization for Query Generation",
+    "Towards Author-informedNLP: Mind the Social Bias",
+    "VLP: Vision-Language Preference Learning for Embodied Manipulation",
+    "Vision-Free Retrieval: Rethinking Multimodal Search with Textual Scene Descriptions",
+    "When Life Gives You Samples: The Benefits of Scaling up Inference Compute for MultilingualLLMs",
+    "Aligning Text/Speech Representations from Multimodal Models withMEGBrain Activity During Listening",
+    "From Personas to Talks: Revisiting the Impact of Personas onLLM-Synthesized Emotional Support Conversations",
+    "Personality Vector: Modulating Personality of Large Language Models by Model Merging",
+    "How IsLLMReasoning Distracted by Irrelevant Context? An Analysis Using a Controlled Benchmark",
+    "PLAN-TUNING: Post-Training Language Models to Learn Step-by-Step Planning for Complex Problem Solving",
+    "Adversaries Can Misuse Combinations of Safe Models",
+    "AutoML-Agent: A Multi-Agent LLM Framework for Full-Pipeline AutoML",
+    "Cannot See the Forest for the Trees: Invoking Heuristics and Biases to Elicit Irrational Choices of LLMs",
+    "Cost-efficient Collaboration between On-device and Cloud Language Models",
+    "HyperTree Planning: Enhancing LLM Reasoning via Hierarchical Thinking",
+    "PDE-Controller: LLMs for Autoformalization and Reasoning of PDEs",
+    "Speak Easy: Eliciting Harmful Jailbreaks from LLMs with Simple Interactions",
+    "What Limits Virtual Agent Application? OmniBench: A Scalable Multi-Dimensional Benchmark for Essential Virtual Agent Capabilities",
+    "B4: A Black-Box Scrubbing Attack onLLMWatermarks",
+    "Rethinking the Role ofLLMs for Document-level Relation Extraction: a Refiner with Task Distribution and Probability Fusion",
+    "Afrispeech-Dialog: A Benchmark Dataset for SpontaneousEnglish Conversations in Healthcare and Beyond",
+    "GuideLLM: ExploringLLM-Guided Conversation with Applications in Autobiography Interviewing",
+    "NAT: Enhancing Agent Tuning with Negative Samples",
+    "WebQuality: A Large-scale Multi-modal Web Page Quality Assessment Dataset with Multiple Scoring Dimensions",
+    "3-in-1: 2D Rotary Adaptation for Efficient Finetuning, Efficient Batching and Composability",
+    "AMOR: A Recipe for Building Adaptable Modular Knowledge Agents Through Process Feedback",
+    "Architect: Generating Vivid and Interactive 3D Scenes with Hierarchical 2D Inpainting",
+    "AvaTaR: Optimizing LLM Agents for Tool Usage via Contrastive Reasoning",
+    "Boosting Weakly Supervised Referring Image Segmentation via Progressive Comprehension",
+    "Boosting the Potential of Large Language Models with an Intelligent Information Assistant",
+    "Can Graph Learning Improve Planning in LLM-based Agents?",
+    "Compositional 3D-aware Video Generation with LLM Director",
+    "Decompose, Analyze and Rethink: Solving Intricate Problems with Human-like Reasoning Cycle",
+    "Divide-and-Conquer Meets Consensus: Unleashing the Power of Functions in Code Generation",
+    "Long-Horizon Planning for Multi-Agent Robots in Partially Observable Environments",
+    "OmniJARVIS: Unified Vision-Language-Action Tokenization Enables Open-World Instruction Following Agents",
+    "Plan-on-Graph: Self-Correcting Adaptive Planning of Large Language Model on Knowledge Graphs",
+    "Proving Olympiad Algebraic Inequalities without Human Demonstrations",
+    "RL-GPT: Integrating Reinforcement Learning and Code-as-policy",
+    "Self-Guiding Exploration for Combinatorial Problems",
+    "TaskBench: Benchmarking Large Language Models for Task Automation"
+  ],
+  "paper_count": 65,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The observable behavior of breaking down a complex programming problem into smaller, more manageable sub-problems, often represented as distinct functions.",
+      "paper": "Divide-and-Conquer Meets Consensus: Unleashing the Power of Functions in Code Generation",
+      "original_name": "Program decomposition"
+    },
+    {
+      "text": "The observable process of breaking down a complex, high-level goal into a series of smaller, more manageable sub-tasks or sub-actions.",
+      "paper": "RL-GPT: Integrating Reinforcement Learning and Code-as-policy",
+      "original_name": "Task decomposition"
+    },
+    {
+      "text": "The observable action of breaking down a high-level language instruction into a sequence of smaller, feasible subtasks based on current observations and memory.",
+      "paper": "Long-Horizon Planning for Multi-Agent Robots in Partially Observable Environments",
+      "original_name": "Subtask decomposition"
+    },
+    {
+      "text": "Breaking a complex question into a sequence of simpler sub-questions.",
+      "paper": "Decompose, Analyze and Rethink: Solving Intricate Problems with Human-like Reasoning Cycle",
+      "original_name": "Question decomposition"
+    },
+    {
+      "text": "The observable behavior of an LLM breaking down a user's ambiguous, high-level request into a sequence of concrete, actionable steps.",
+      "paper": "Can Graph Learning Improve Planning in LLM-based Agents?",
+      "original_name": "Request decomposition"
+    },
+    {
+      "text": "The observable action of breaking down a complex question or problem into a structured plan of simpler, actionable steps.",
+      "paper": "AvaTaR: Optimizing LLM Agents for Tool Usage via Contrastive Reasoning",
+      "original_name": "Problem decomposition"
+    },
+    {
+      "text": "Splitting a complex textual input into distinct sub-prompts that describe individual concepts such as scene, objects, and motion.",
+      "paper": "Compositional 3D-aware Video Generation with LLM Director",
+      "original_name": "Prompt decomposition"
+    },
+    {
+      "text": "The observable action of producing a set of intermediate mathematical statements (subgoals) from a current goal state by applying theorems or transformation rules.",
+      "paper": "Proving Olympiad Algebraic Inequalities without Human Demonstrations",
+      "original_name": "Subgoal generation"
+    },
+    {
+      "text": "The task of breaking down a complex text description into multiple, shorter, semantically coherent phrases.",
+      "paper": "Boosting Weakly Supervised Referring Image Segmentation via Progressive Comprehension",
+      "original_name": "Text decomposition"
+    },
+    {
+      "text": "Combining separately trained task-specific subspaces or weights to produce a new combined output behavior.",
+      "paper": "3-in-1: 2D Rotary Adaptation for Efficient Finetuning, Efficient Batching and Composability",
+      "original_name": "Task composition"
+    },
+    {
+      "text": "Observably decomposing a complex task instruction into its constituent subtasks based on semantic content.",
+      "paper": "What Limits Virtual Agent Application? OmniBench: A Scalable Multi-Dimensional Benchmark for Essential Virtual Agent Capabilities",
+      "original_name": "Subtask identification"
+    },
+    {
+      "text": "Correctly recognizing and acting upon prerequisite relationships between subtasks in a non-linear task structure.",
+      "paper": "What Limits Virtual Agent Application? OmniBench: A Scalable Multi-Dimensional Benchmark for Essential Virtual Agent Capabilities",
+      "original_name": "Dependency identification"
+    },
+    {
+      "text": "The observable behavior of breaking down a complex or malicious query into a sequence of simpler, seemingly harmless subqueries to bypass safety filters.",
+      "paper": "Speak Easy: Eliciting Harmful Jailbreaks from LLMs with Simple Interactions",
+      "original_name": "Multi-step query decomposition"
+    },
+    {
+      "text": "The observable generation of intermediate STL constraints (subgoals) intended to improve the solution of a primary PDE control problem when solved sequentially.",
+      "paper": "PDE-Controller: LLMs for Autoformalization and Reasoning of PDEs",
+      "original_name": "Subgoal proposal"
+    },
+    {
+      "text": "Breaking down high-level AutoML plans into role-specific sub-tasks assigned to specialized agents, such as data preprocessing or model search.",
+      "paper": "AutoML-Agent: A Multi-Agent LLM Framework for Full-Pipeline AutoML",
+      "original_name": "Plan decomposition"
+    },
+    {
+      "text": "The breakdown of a complex malicious goal into simpler, less overtly harmful sub-concepts to reduce cognitive load and evade detection by safety mechanisms.",
+      "paper": "Cannot See the Forest for the Trees: Invoking Heuristics and Biases to Elicit Irrational Choices of LLMs",
+      "original_name": "Concept decomposition"
+    },
+    {
+      "text": "Breaking down a summary into atomic factual subclaims for fine-grained evaluation of content validity and coverage.",
+      "paper": "EMNLP: Educator-role Moral and Normative Large Language Models Profiling",
+      "original_name": "Claim decomposition"
+    },
+    {
+      "text": "The task of decomposing a query into sub-queries and organizing them into a directed acyclic graph representing dependencies and a reasoning plan.",
+      "paper": "P-MMEval: A Parallel Multilingual Multitask Benchmark for Consistent Evaluation ofLLMs",
+      "original_name": "Query graph construction"
+    },
+    {
+      "text": "Breaking down a complex question into simpler, answerable subquestions to guide stepwise reasoning.",
+      "paper": "TRUST-VL: An Explainable News Assistant for General Multimodal Misinformation Detection",
+      "original_name": "Subquestion decomposition"
+    },
+    {
+      "text": "Breaking down a complex or harmful instruction into a sequence of simpler or less suspicious sub-instructions to evade detection.",
+      "paper": "Legal Fact Prediction: The Missing Piece in Legal Judgment Prediction",
+      "original_name": "Instruction decomposition"
+    },
+    {
+      "text": "The process of decomposing a main question into multiple sub-questions as intermediate reasoning steps.",
+      "paper": "GraDaSE: Graph-Based Dataset Search with Examples",
+      "original_name": "Sub-question generation"
+    },
+    {
+      "text": "Breaking down a complex query into smaller, logically structured subproblems that can be processed independently or in sequence.",
+      "paper": "Mixture of Weight-shared Heterogeneous Group Attention Experts for Dynamic Token-wiseKVOptimization",
+      "original_name": "Subproblem decomposition"
+    },
+    {
+      "text": "Generating intermediate steps or subgoals that break a problem into smaller parts.",
+      "paper": "Token-level Proximal Policy Optimization for Query Generation",
+      "original_name": "Subgoal setting"
+    },
+    {
+      "text": "The process of breaking down a complex user query into a set of simpler, more manageable sub-queries.",
+      "paper": "P-MMEval: A Parallel Multilingual Multitask Benchmark for Consistent Evaluation ofLLMs",
+      "original_name": "Query decomposition"
+    }
+  ],
+  "definition_count": 24,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Complex reasoning",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Towards Robust Multi-Modal Reasoning via Model Selection",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr24": [
+          "Towards Robust Multi-Modal Reasoning via Model Selection"
+        ],
+        "neurips24": [
+          "AvaTaR: Optimizing LLM Agents for Tool Usage via Contrastive Reasoning"
+        ],
+        "emnlp25": [
+          "GraDaSE: Graph-Based Dataset Search with Examples"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Information retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Boosting the Potential of Large Language Models with an Intelligent Information Assistant",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "Boosting the Potential of Large Language Models with an Intelligent Information Assistant"
+        ],
+        "iclr25": [
+          "MMQA: Evaluating LLMs with Multi-Table Multi-Hop Complex Questions"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Planning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "From an LLM Swarm to a PDDL-empowered Hive: Planning Self-executed Instructions in a Multi-modal Jungle",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "From an LLM Swarm to a PDDL-empowered Hive: Planning Self-executed Instructions in a Multi-modal Jungle"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "MindSearch: Mimicking Human Minds Elicits Deep AI Searcher",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "MindSearch: Mimicking Human Minds Elicits Deep AI Searcher"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Task planning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Can Graph Learning Improve Planning in LLM-based Agents?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Can Graph Learning Improve Planning in LLM-based Agents?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Theorem proving",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Proving Olympiad Algebraic Inequalities without Human Demonstrations",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Proving Olympiad Algebraic Inequalities without Human Demonstrations"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Data efficiency",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "RL-GPT: Integrating Reinforcement Learning and Code-as-policy",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "RL-GPT: Integrating Reinforcement Learning and Code-as-policy"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Code generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "RL-GPT: Integrating Reinforcement Learning and Code-as-policy",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "RL-GPT: Integrating Reinforcement Learning and Code-as-policy"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Data analysis",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "DACO: Towards Application-Driven and Comprehensive Data Analysis via Code Generation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "DACO: Towards Application-Driven and Comprehensive Data Analysis via Code Generation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Compositionality",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "3-in-1: 2D Rotary Adaptation for Efficient Finetuning, Efficient Batching and Composability",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "3-in-1: 2D Rotary Adaptation for Efficient Finetuning, Efficient Batching and Composability"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Planning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "AgentSquare: Automatic LLM Agent Search in Modular Design Space",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "AgentSquare: Automatic LLM Agent Search in Modular Design Space"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Problem-solving",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "ChemAgent: Self-updating Memories in Large Language Models Improves Chemical Reasoning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "ChemAgent: Self-updating Memories in Large Language Models Improves Chemical Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Chain-of-thought reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Modularized Self-Reflected Video Reasoner for Multimodal LLM with Application to Video Question Answering",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Modularized Self-Reflected Video Reasoner for Multimodal LLM with Application to Video Question Answering"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "RAP",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Mutual Reasoning Makes Smaller LLMs Stronger Problem-Solver",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Mutual Reasoning Makes Smaller LLMs Stronger Problem-Solver"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Table question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Triples as the Key: Structuring Makes Decomposition and Verification Easier in LLM-based TableQA",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Triples as the Key: Structuring Makes Decomposition and Verification Easier in LLM-based TableQA"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "ReAct",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Rethinking Word Similarity: Semantic Similarity through Classification Confusion",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Rethinking Word Similarity: Semantic Similarity through Classification Confusion"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multi-step planning",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "zFLoRA: Zero-Latency Fused Low-Rank Adapters",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "zFLoRA: Zero-Latency Fused Low-Rank Adapters"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Scientific reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "PDE-Controller: LLMs for Autoformalization and Reasoning of PDEs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "PDE-Controller: LLMs for Autoformalization and Reasoning of PDEs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Harmful content generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Speak Easy: Eliciting Harmful Jailbreaks from LLMs with Simple Interactions",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Speak Easy: Eliciting Harmful Jailbreaks from LLMs with Simple Interactions"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Prompt optimization",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "POQD: Performance-Oriented Query Decomposer for Multi-vector retrieval",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "POQD: Performance-Oriented Query Decomposer for Multi-vector retrieval"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 20,
+  "incoming_relationship_count": 13,
+  "outgoing_relationship_count": 7,
+  "characterization": "The most common framing of task decomposition in the provided literature is the observable behavior of breaking down a complex input\u2014such as a task, question, or query\u2014into a series of smaller, more manageable sub-components. This behavior is applied to a wide range of inputs, including high-level goals, programming problems, user requests, and textual descriptions, resulting in outputs like sequences of sub-tasks, simpler sub-questions, or modular code functions. The most frequently cited purpose is to enable a \"divide-and-conquer\" strategy, allowing a model to \"address each component individually, and synthesize the results to create the final plan\" (HyperTree Planning: Enhancing LLM Reasoning via Hierarchical Thinking). A distinct line of work operationalizes decomposition as a method for bypassing safety mechanisms, where a malicious query is broken into \"multiple seemingly innocuous subqueries\" to \"circumvent safety guardrails\" (Speak Easy: Eliciting Harmful Jailbreaks from LLMs with Simple Interactions). The behavior is operationalized by observing the model's generation of intermediate steps, such as producing a list of sub-questions, a structured plan of actionable steps, or a directed acyclic graph of sub-queries. Across the surveyed work, task decomposition is frequently studied alongside broader capabilities like `Complex reasoning`, `Planning`, and `Chain-of-thought reasoning`. Several papers report that this behavior influences downstream outcomes, describing it as a mechanism for improving `Problem-solving`, `Code generation`, and `Information retrieval`. While the overwhelming majority of sources define this as a process of breaking things down, one paper uses the term `Task composition` to refer to the inverse process of combining components.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "3-in-1: 2D Rotary Adaptation for Efficient Finetuning, Efficient Batching and Composability",
+      "AMOR: A Recipe for Building Adaptable Modular Knowledge Agents Through Process Feedback",
+      "Architect: Generating Vivid and Interactive 3D Scenes with Hierarchical 2D Inpainting",
+      "AvaTaR: Optimizing LLM Agents for Tool Usage via Contrastive Reasoning",
+      "Boosting Weakly Supervised Referring Image Segmentation via Progressive Comprehension",
+      "Boosting the Potential of Large Language Models with an Intelligent Information Assistant",
+      "Can Graph Learning Improve Planning in LLM-based Agents?",
+      "Compositional 3D-aware Video Generation with LLM Director",
+      "Decompose, Analyze and Rethink: Solving Intricate Problems with Human-like Reasoning Cycle",
+      "Divide-and-Conquer Meets Consensus: Unleashing the Power of Functions in Code Generation",
+      "Long-Horizon Planning for Multi-Agent Robots in Partially Observable Environments",
+      "OmniJARVIS: Unified Vision-Language-Action Tokenization Enables Open-World Instruction Following Agents",
+      "Plan-on-Graph: Self-Correcting Adaptive Planning of Large Language Model on Knowledge Graphs",
+      "Proving Olympiad Algebraic Inequalities without Human Demonstrations",
+      "RL-GPT: Integrating Reinforcement Learning and Code-as-policy",
+      "Self-Guiding Exploration for Combinatorial Problems",
+      "TaskBench: Benchmarking Large Language Models for Task Automation"
+    ],
+    "icml25": [
+      "Adversaries Can Misuse Combinations of Safe Models",
+      "AutoML-Agent: A Multi-Agent LLM Framework for Full-Pipeline AutoML",
+      "Cannot See the Forest for the Trees: Invoking Heuristics and Biases to Elicit Irrational Choices of LLMs",
+      "Cost-efficient Collaboration between On-device and Cloud Language Models",
+      "HyperTree Planning: Enhancing LLM Reasoning via Hierarchical Thinking",
+      "PDE-Controller: LLMs for Autoformalization and Reasoning of PDEs",
+      "Speak Easy: Eliciting Harmful Jailbreaks from LLMs with Simple Interactions",
+      "What Limits Virtual Agent Application? OmniBench: A Scalable Multi-Dimensional Benchmark for Essential Virtual Agent Capabilities"
+    ],
+    "emnlp25": [
+      "AdaptThink: Reasoning Models Can Learn When to Think",
+      "Agent-as-Judge for Factual Summarization of Long Narratives",
+      "An Empirical Study ofLLMReasoning Ability Under Strict Output Length Constraint",
+      "Benchmark Profiling: Mechanistic Diagnosis ofLLMBenchmarks",
+      "ChartMind: A Comprehensive Benchmark for Complex Real-world Multimodal Chart Question Answering",
+      "Deriving Strategic Market Insights with Large Language Models: A Benchmark for Forward Counterfactual Generation",
+      "DrFrattn: Directly Learn Adaptive Policy from Attention for Simultaneous Machine Translation",
+      "EMNLP: Educator-role Moral and Normative Large Language Models Profiling",
+      "End-to-End Learnable Psychiatric Scale Guided Risky Post Screening for Depression Detection on Social Media",
+      "Exploring the Limitations of Mamba inCOPYandCoTReasoning",
+      "Facilitating Cognitive Accessibility withLLMs: A Multi-Task Approach to Easy-to-Read Text Generation",
+      "GraDaSE: Graph-Based Dataset Search with Examples",
+      "Identifying Pre-training Data inLLMs: A Neuron Activation-Based Detection Framework",
+      "Legal Fact Prediction: The Missing Piece in Legal Judgment Prediction",
+      "Media Source Matters More Than Content: Unveiling Political Bias inLLM-Generated Citations",
+      "Mixture of Weight-shared Heterogeneous Group Attention Experts for Dynamic Token-wiseKVOptimization",
+      "P-MMEval: A Parallel Multilingual Multitask Benchmark for Consistent Evaluation ofLLMs",
+      "PunMemeCN: A Benchmark to Explore Vision-Language Models\u2019 Understanding ofChinese Pun Memes",
+      "RPDR: A Round-trip Prediction-Based Data Augmentation Framework for Long-Tail Question Answering",
+      "RuCCoD: Towards AutomatedICDCoding inRussian",
+      "Similarity = Value? Consultation Value-Assessment and Alignment for Personalized Search",
+      "SliceMoE: Routing Embedding Slices Instead of Tokens for Fine-Grained and Balanced Transformer Scaling",
+      "Speech Discrete Tokens or Continuous Features? A Comparative Analysis for Spoken Language Understanding inSpeechLLMs",
+      "TRUST-VL: An Explainable News Assistant for General Multimodal Misinformation Detection",
+      "Token-level Proximal Policy Optimization for Query Generation",
+      "Towards Author-informedNLP: Mind the Social Bias",
+      "VLP: Vision-Language Preference Learning for Embodied Manipulation",
+      "Vision-Free Retrieval: Rethinking Multimodal Search with Textual Scene Descriptions",
+      "When Life Gives You Samples: The Benefits of Scaling up Inference Compute for MultilingualLLMs",
+      "Aligning Text/Speech Representations from Multimodal Models withMEGBrain Activity During Listening",
+      "From Personas to Talks: Revisiting the Impact of Personas onLLM-Synthesized Emotional Support Conversations",
+      "Personality Vector: Modulating Personality of Large Language Models by Model Merging",
+      "How IsLLMReasoning Distracted by Irrelevant Context? An Analysis Using a Controlled Benchmark",
+      "PLAN-TUNING: Post-Training Language Models to Learn Step-by-Step Planning for Complex Problem Solving"
+    ],
+    "naacl25": [
+      "B4: A Black-Box Scrubbing Attack onLLMWatermarks",
+      "Rethinking the Role ofLLMs for Document-level Relation Extraction: a Refiner with Task Distribution and Probability Fusion",
+      "Afrispeech-Dialog: A Benchmark Dataset for SpontaneousEnglish Conversations in Healthcare and Beyond",
+      "GuideLLM: ExploringLLM-Guided Conversation with Applications in Autobiography Interviewing",
+      "NAT: Enhancing Agent Tuning with Negative Samples",
+      "WebQuality: A Large-scale Multi-modal Web Page Quality Assessment Dataset with Multiple Scoring Dimensions"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 17,
+    "icml25": 8,
+    "emnlp25": 34,
+    "naacl25": 6
+  },
+  "conferences": [
+    "emnlp25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

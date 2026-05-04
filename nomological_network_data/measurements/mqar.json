@@ -1,0 +1,80 @@
+{
+  "canonical_name": "MQAR",
+  "type": "measurement",
+  "canonical_definition": "Across the provided sources, MQAR (Multi-Query Associative Recall) is consistently defined as a benchmark task designed to evaluate a model's ability to perform associative recall. The literature states that it is used to measure constructs such as `Knowledge recall` and `Factuality`. The task's objective is to assess a model's capacity to retrieve values associated with specific keys from a given context. One definition elaborates that this context contains \"multiple key-value pairs and distractors\" (\"Understanding Input Selectivity in Mamba: Impact on Approximation Power, Memorization, and Associative Recall Capacity\"). Regarding its operationalization, one study notes that \"The MQAR task involves training a small-parameter model from scratch using a specific dataset\" (\"Rodimus*: Breaking the Accuracy-Efficiency Trade-Off with Efficient Attentions\"). The papers position MQAR as one of the available tasks for evaluating a model's associative recall capabilities.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "MQAR"
+  ],
+  "papers": [
+    "Longhorn: State Space Models are Amortized Online Learners",
+    "Rodimus*: Breaking the Accuracy-Efficiency Trade-Off with Efficient Attentions",
+    "KV Shifting Attention Enhances Language Modeling",
+    "Understanding Input Selectivity in Mamba: Impact on Approximation Power, Memorization, and Associative Recall Capacity"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The Multi-Query Associative Recall task, a benchmark designed to assess a model's ability to retrieve values associated with keys from a context.",
+      "paper": "Rodimus*: Breaking the Accuracy-Efficiency Trade-Off with Efficient Attentions",
+      "original_name": "MQAR"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge recall",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Rodimus*: Breaking the Accuracy-Efficiency Trade-Off with Efficient Attentions",
+      "evidence": "The model\u2019s recall capability is assessed using the MQAR Task (See Appendix D.7), as described in Arora et al. (2024a). (Figure 1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Rodimus*: Breaking the Accuracy-Efficiency Trade-Off with Efficient Attentions"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Recall",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Understanding Input Selectivity in Mamba: Impact on Approximation Power, Memorization, and Associative Recall Capacity",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Understanding Input Selectivity in Mamba: Impact on Approximation Power, Memorization, and Associative Recall Capacity"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided sources, MQAR (Multi-Query Associative Recall) is consistently defined as a benchmark task designed to evaluate a model's ability to perform associative recall. The literature states that it is used to measure constructs such as `Knowledge recall` and `Factuality`. The task's objective is to assess a model's capacity to retrieve values associated with specific keys from a given context. One definition elaborates that this context contains \"multiple key-value pairs and distractors\" (\"Understanding Input Selectivity in Mamba: Impact on Approximation Power, Memorization, and Associative Recall Capacity\"). Regarding its operationalization, one study notes that \"The MQAR task involves training a small-parameter model from scratch using a specific dataset\" (\"Rodimus*: Breaking the Accuracy-Efficiency Trade-Off with Efficient Attentions\"). The papers position MQAR as one of the available tasks for evaluating a model's associative recall capabilities.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Longhorn: State Space Models are Amortized Online Learners",
+      "Rodimus*: Breaking the Accuracy-Efficiency Trade-Off with Efficient Attentions"
+    ],
+    "icml25": [
+      "KV Shifting Attention Enhances Language Modeling",
+      "Understanding Input Selectivity in Mamba: Impact on Approximation Power, Memorization, and Associative Recall Capacity"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "icml25": 2
+  },
+  "conferences": [
+    "iclr25",
+    "icml25"
+  ]
+}

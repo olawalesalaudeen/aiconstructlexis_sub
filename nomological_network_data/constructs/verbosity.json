@@ -1,0 +1,319 @@
+{
+  "canonical_name": "Verbosity",
+  "type": "construct",
+  "canonical_definition": "The most prevalent framing of verbosity in the provided literature is as a negative bias, commonly termed \"length bias\" or \"verbosity bias.\" This is widely defined as a disposition for models, reward models, or LLM-based evaluators to favor longer responses irrespective of their actual quality. Multiple papers describe this as a \"prevalent\" issue where models exploit spurious correlations, with one study noting it is a \"known issue of length exploitation\" where models generate long responses when the same content could be provided more succinctly (\"Bootstrapping Language Models with DPO Implicit Rewards\"). This bias is also identified as a limitation of using LLMs as evaluators. A smaller line of work treats verbosity more neutrally as a controllable attribute of a model's output, sometimes considered desirable, and is often included as a dimension for annotation alongside helpfulness and correctness. The construct is operationalized and measured using several methods, most commonly through `Human evaluation` and specifically with instruments like `HelpSteer`, `HelpSteer2`, and `MT-Bench`. Verbosity is studied in the context of tasks like `Question answering` and `Text summarization`, is related to `Human preference alignment`, and is reported to correlate with `Helpfulness`.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Verbosity",
+    "Length Bias",
+    "Response length generation",
+    "Overgeneration",
+    "Verbose response generation",
+    "Verbose generation",
+    "Overly verbose generation"
+  ],
+  "papers": [
+    "From Shortcuts to Balance: Attribution Analysis of Speech-Text Feature Utilization in Distinguishing Original from Machine-Translated Texts",
+    "SwiftKV: Fast Prefill-Optimized Inference with Knowledge-Preserving Model Transformation",
+    "2025.emnlp-main.1676.checklist",
+    "CodeSSM: Towards State Space Models for Code Understanding",
+    "Improving Reasoning Capabilities in Small Models through Mixture-of-layers Distillation with Stepwise Attention on Key Information",
+    "Large Language Models Do Multi-Label Classification Differently",
+    "NovelHopQA: Diagnosing Multi-Hop Reasoning Failures in Long Narrative Contexts",
+    "slow-reconvergence phase",
+    "Bootstrapping Language Models with DPO Implicit Rewards",
+    "Cheating Automatic LLM Benchmarks: Null Models Achieve High Win Rates",
+    "Earlier Tokens Contribute More: Learning Direct Preference Optimization From Temporal Decay Perspective",
+    "HelpSteer2-Preference: Complementing Ratings with Preferences",
+    "Justice or Prejudice? Quantifying Biases in LLM-as-a-Judge",
+    "L3Ms \u2014 Lagrange Large Language Models",
+    "Mixture-of-Agents Enhances Large Language Model Capabilities",
+    "OpenPRM: Building Open-domain Process-based Reward Models with Preference Trees",
+    "Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation",
+    "Post-hoc Reward Calibration: A Case Study on Length Bias",
+    "RevisEval: Improving LLM-as-a-Judge via Response-Adapted References",
+    "VibeCheck: Discover and Quantify Qualitative Differences in Large Language Models",
+    "Energy-Based Preference Model Offers Better Offline Alignment than the Bradley-Terry Preference Model",
+    "MPO: An Efficient Post-Processing Framework for Mixing Diverse Preference Alignment",
+    "On the Robustness of Reward Models for Language Model Alignment",
+    "Preference Learning for AI Alignment: a Causal Perspective",
+    "RATE: Causal Explainability of Reward Models with Imperfect Counterfactuals",
+    "RuleAdapter: Dynamic Rules for training Safety Reward Models in RLHF",
+    "Speak Easy: Eliciting Harmful Jailbreaks from LLMs with Simple Interactions",
+    "CALVIN: Improved Contextual Video Captioning via Instruction Tuning",
+    "Decoding-Time Language Model Alignment with Multiple Objectives",
+    "HelpSteer 2: Open-source dataset for training top-performing reward models",
+    "SimPO: Simple Preference Optimization with a Reference-Free Reward"
+  ],
+  "paper_count": 31,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The tendency of a model to produce outputs of a certain length, which can be controlled as a desirable attribute.",
+      "paper": "Decoding-Time Language Model Alignment with Multiple Objectives",
+      "original_name": "Verbosity"
+    },
+    {
+      "text": "A disposition of a reward model to favor outputs based on their sequence length rather than their true quality.",
+      "paper": "Post-hoc Reward Calibration: A Case Study on Length Bias",
+      "original_name": "Length bias"
+    },
+    {
+      "text": "A latent tendency for the model or reward signal to prefer longer responses over more succinct ones of equal content.",
+      "paper": "Bootstrapping Language Models with DPO Implicit Rewards",
+      "original_name": "Length Bias"
+    },
+    {
+      "text": "The tendency of an LLM-based evaluator to prefer longer, more verbose responses, irrespective of their actual quality.",
+      "paper": "Cheating Automatic LLM Benchmarks: Null Models Achieve High Win Rates",
+      "original_name": "Verbosity bias"
+    },
+    {
+      "text": "The ability to convey information clearly and effectively using as few words as necessary.",
+      "paper": "Mixture-of-Agents Enhances Large Language Model Capabilities",
+      "original_name": "Conciseness"
+    },
+    {
+      "text": "The observable production of text outputs with measurable word counts, varying in length based on model, prompt, and decoding settings.",
+      "paper": "slow-reconvergence phase",
+      "original_name": "Response length generation"
+    },
+    {
+      "text": "Producing excessively long or verbose outputs, often continuing until the maximum generation length is reached, leading to incoherence.",
+      "paper": "Large Language Models Do Multi-Label Classification Differently",
+      "original_name": "Overgeneration"
+    },
+    {
+      "text": "The observable tendency of a model to produce outputs that are excessively long or wordy relative to the complexity of the task.",
+      "paper": "Improving Reasoning Capabilities in Small Models through Mixture-of-layers Distillation with Stepwise Attention on Key Information",
+      "original_name": "Verbose response generation"
+    },
+    {
+      "text": "The tendency of a model to produce outputs that are unnecessarily long or contain redundant information.",
+      "paper": "CalibratingLLMConfidence by Probing Perturbed Representation Stability",
+      "original_name": "Verbose generation"
+    },
+    {
+      "text": "Producing responses that are excessively long, often including redundant or irrelevant content, beyond what is necessary to answer the prompt.",
+      "paper": "NovelHopQA: Diagnosing Multi-Hop Reasoning Failures in Long Narrative Contexts",
+      "original_name": "Overly verbose generation"
+    }
+  ],
+  "definition_count": 10,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Decoding-Time Language Model Alignment with Multiple Objectives",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Decoding-Time Language Model Alignment with Multiple Objectives"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HelpSteer",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Decoding-Time Language Model Alignment with Multiple Objectives",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Decoding-Time Language Model Alignment with Multiple Objectives"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "correlates",
+      "paper": "HelpSteer 2: Open-source dataset for training top-performing reward models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "HelpSteer 2: Open-source dataset for training top-performing reward models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MT-Bench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "HelpSteer 2: Open-source dataset for training top-performing reward models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "HelpSteer 2: Open-source dataset for training top-performing reward models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HelpSteer2",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "HelpSteer2-Preference: Complementing Ratings with Preferences",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "HelpSteer2-Preference: Complementing Ratings with Preferences"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Human preference alignment",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Earlier Tokens Contribute More: Learning Direct Preference Optimization From Temporal Decay Perspective",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Earlier Tokens Contribute More: Learning Direct Preference Optimization From Temporal Decay Perspective"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-context learning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Padding Tone: A Mechanistic Analysis of Padding Tokens inT2IModels",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Padding Tone: A Mechanistic Analysis of Padding Tokens inT2IModels"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reward-Bench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Post-hoc Reward Calibration: A Case Study on Length Bias",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Post-hoc Reward Calibration: A Case Study on Length Bias"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction following",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "L3Ms \u2014 Lagrange Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "L3Ms \u2014 Lagrange Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text summarization",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "L3Ms \u2014 Lagrange Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "L3Ms \u2014 Lagrange Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reward hacking",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "RRM:  Robust Reward Model Training Mitigates Reward Hacking",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "RRM:  Robust Reward Model Training Mitigates Reward Hacking"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 11,
+  "incoming_relationship_count": 7,
+  "outgoing_relationship_count": 4,
+  "characterization": "The most prevalent framing of verbosity in the provided literature is as a negative bias, commonly termed \"length bias\" or \"verbosity bias.\" This is widely defined as a disposition for models, reward models, or LLM-based evaluators to favor longer responses irrespective of their actual quality. Multiple papers describe this as a \"prevalent\" issue where models exploit spurious correlations, with one study noting it is a \"known issue of length exploitation\" where models generate long responses when the same content could be provided more succinctly (\"Bootstrapping Language Models with DPO Implicit Rewards\"). This bias is also identified as a limitation of using LLMs as evaluators. A smaller line of work treats verbosity more neutrally as a controllable attribute of a model's output, sometimes considered desirable, and is often included as a dimension for annotation alongside helpfulness and correctness. The construct is operationalized and measured using several methods, most commonly through `Human evaluation` and specifically with instruments like `HelpSteer`, `HelpSteer2`, and `MT-Bench`. Verbosity is studied in the context of tasks like `Question answering` and `Text summarization`, is related to `Human preference alignment`, and is reported to correlate with `Helpfulness`.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "CALVIN: Improved Contextual Video Captioning via Instruction Tuning",
+      "Decoding-Time Language Model Alignment with Multiple Objectives",
+      "HelpSteer 2: Open-source dataset for training top-performing reward models",
+      "SimPO: Simple Preference Optimization with a Reference-Free Reward"
+    ],
+    "iclr25": [
+      "Bootstrapping Language Models with DPO Implicit Rewards",
+      "Cheating Automatic LLM Benchmarks: Null Models Achieve High Win Rates",
+      "Earlier Tokens Contribute More: Learning Direct Preference Optimization From Temporal Decay Perspective",
+      "HelpSteer2-Preference: Complementing Ratings with Preferences",
+      "Justice or Prejudice? Quantifying Biases in LLM-as-a-Judge",
+      "L3Ms \u2014 Lagrange Large Language Models",
+      "Mixture-of-Agents Enhances Large Language Model Capabilities",
+      "OpenPRM: Building Open-domain Process-based Reward Models with Preference Trees",
+      "Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation",
+      "Post-hoc Reward Calibration: A Case Study on Length Bias",
+      "RevisEval: Improving LLM-as-a-Judge via Response-Adapted References",
+      "VibeCheck: Discover and Quantify Qualitative Differences in Large Language Models"
+    ],
+    "icml25": [
+      "Energy-Based Preference Model Offers Better Offline Alignment than the Bradley-Terry Preference Model",
+      "MPO: An Efficient Post-Processing Framework for Mixing Diverse Preference Alignment",
+      "On the Robustness of Reward Models for Language Model Alignment",
+      "Preference Learning for AI Alignment: a Causal Perspective",
+      "RATE: Causal Explainability of Reward Models with Imperfect Counterfactuals",
+      "RuleAdapter: Dynamic Rules for training Safety Reward Models in RLHF",
+      "Speak Easy: Eliciting Harmful Jailbreaks from LLMs with Simple Interactions"
+    ],
+    "emnlp25": [
+      "From Shortcuts to Balance: Attribution Analysis of Speech-Text Feature Utilization in Distinguishing Original from Machine-Translated Texts",
+      "SwiftKV: Fast Prefill-Optimized Inference with Knowledge-Preserving Model Transformation",
+      "2025.emnlp-main.1676.checklist",
+      "CodeSSM: Towards State Space Models for Code Understanding",
+      "Improving Reasoning Capabilities in Small Models through Mixture-of-layers Distillation with Stepwise Attention on Key Information",
+      "Large Language Models Do Multi-Label Classification Differently",
+      "NovelHopQA: Diagnosing Multi-Hop Reasoning Failures in Long Narrative Contexts",
+      "slow-reconvergence phase"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 4,
+    "iclr25": 12,
+    "icml25": 7,
+    "emnlp25": 8
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

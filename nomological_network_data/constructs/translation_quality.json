@@ -1,0 +1,190 @@
+{
+  "canonical_name": "Translation quality",
+  "type": "construct",
+  "canonical_definition": "Across the provided papers, translation quality is predominantly defined as the overall excellence of a translated text, consistently encompassing dimensions such as fluency, adequacy, correctness, and meaning preservation. A few sources also describe it as the overall fidelity or effectiveness of the output, with one paper framing it as a \"latent property\" of a model's ability to produce good translations (\"Speculative Diffusion Decoding: Accelerating Language Generation through Diffusion\"). The construct is operationalized and measured through a wide array of automated metrics and human evaluation. The most frequently cited measurement instruments include XCOMET, MetricX, AfriCOMET, BLEURT, COMETKIWI, and MQM. Human evaluation is also used to assess the construct, with annotators rating translations on criteria like fluency, understandability, and how well they preserve meaning. Translation quality is often studied in the context of trade-offs, such as balancing it with low latency. Some work reports that text simplification can improve translation quality, while other research challenges the assumption that high model probability is a reliable proxy for it.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Translation quality"
+  ],
+  "papers": [
+    "Cultural Learning-Based Culture Adaptation of Language Models",
+    "DioR: Adaptive Cognitive Detection and Contextual Retrieval Optimization for Dynamic Retrieval-Augmented Generation",
+    "DelTA: An Online Document-Level Translation Agent Based on Multi-Level Memory",
+    "Scaling Laws for Downstream Task Performance in Machine Translation",
+    "Arabic Dataset forLLMSafeguard Evaluation",
+    "KMI: A Dataset ofKorean Motivational Interviewing Dialogues for Psychotherapy",
+    "Speculative Diffusion Decoding: Accelerating Language Generation through Diffusion",
+    "When2Call: When (not) to Call Tools"
+  ],
+  "paper_count": 8,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The overall degree of excellence of a translated text, encompassing aspects like fluency, adequacy, and correctness, as judged by automated or human evaluation.",
+      "paper": "DelTA: An Online Document-Level Translation Agent Based on Multi-Level Memory",
+      "original_name": "Translation quality"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MQM",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "A Case Against Implicit Standards: Homophone Normalization in Machine Translation for Languages that use theGe\u2019ez Script.",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "A Case Against Implicit Standards: Homophone Normalization in Machine Translation for Languages that use theGe\u2019ez Script."
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Speculative Diffusion Decoding: Accelerating Language Generation through Diffusion",
+      "evidence": "We conduct a manual evaluation to determine whether bilingual human annotators rate translations generated using our winning rewrite method (simplification with TOWER-INSTRUCT) as superior to the original translations. (\u00a75.3)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Speculative Diffusion Decoding: Accelerating Language Generation through Diffusion"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text simplification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "KMI: A Dataset ofKorean Motivational Interviewing Dialogues for Psychotherapy",
+      "evidence": "Simplification with TOWER-INSTRUCT distinguishes itself by improving translation quality based on XCOMET(s, t, r) scores and maintaining it according to the METRICX(t, r) scores. (\u00a74.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "KMI: A Dataset ofKorean Motivational Interviewing Dialogues for Psychotherapy"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "XCOMET",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "KMI: A Dataset ofKorean Motivational Interviewing Dialogues for Psychotherapy",
+      "evidence": "We additionally report the combined evaluation metric, XCOMET(s\u2032, t\u2032, r) to take into account of the trade-off between the two above metrics, and METRICX(t\u2032, r) which also assesses translation quality of the rewrite but is not informed by the updated source s\u2032. (\u00a73.2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "KMI: A Dataset ofKorean Motivational Interviewing Dialogues for Psychotherapy"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MetricX",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Enhancing Large Vision-Language Models with Ultra-Detailed Image Caption Generation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Enhancing Large Vision-Language Models with Ultra-Detailed Image Caption Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "COMETKIWI",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Linguistic Neuron Overlap Patterns to Facilitate Cross-lingual Transfer on Low-resource Languages",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Linguistic Neuron Overlap Patterns to Facilitate Cross-lingual Transfer on Low-resource Languages"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AfriCOMET",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Speculative Diffusion Decoding: Accelerating Language Generation through Diffusion",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Speculative Diffusion Decoding: Accelerating Language Generation through Diffusion"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BLEURT",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Learning from others\u2019 mistakes: Finetuning machine translation models with span-level error annotations",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Learning from others\u2019 mistakes: Finetuning machine translation models with span-level error annotations"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Semantic drift",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "A Case Against Implicit Standards: Homophone Normalization in Machine Translation for Languages that use theGe\u2019ez Script.",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "A Case Against Implicit Standards: Homophone Normalization in Machine Translation for Languages that use theGe\u2019ez Script."
+        ]
+      }
+    }
+  ],
+  "relationship_count": 9,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 7,
+  "characterization": "Across the provided papers, translation quality is predominantly defined as the overall excellence of a translated text, consistently encompassing dimensions such as fluency, adequacy, correctness, and meaning preservation. A few sources also describe it as the overall fidelity or effectiveness of the output, with one paper framing it as a \"latent property\" of a model's ability to produce good translations (\"Speculative Diffusion Decoding: Accelerating Language Generation through Diffusion\"). The construct is operationalized and measured through a wide array of automated metrics and human evaluation. The most frequently cited measurement instruments include XCOMET, MetricX, AfriCOMET, BLEURT, COMETKIWI, and MQM. Human evaluation is also used to assess the construct, with annotators rating translations on criteria like fluency, understandability, and how well they preserve meaning. Translation quality is often studied in the context of trade-offs, such as balancing it with low latency. Some work reports that text simplification can improve translation quality, while other research challenges the assumption that high model probability is a reliable proxy for it.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "DelTA: An Online Document-Level Translation Agent Based on Multi-Level Memory",
+      "Scaling Laws for Downstream Task Performance in Machine Translation"
+    ],
+    "naacl25": [
+      "Arabic Dataset forLLMSafeguard Evaluation",
+      "KMI: A Dataset ofKorean Motivational Interviewing Dialogues for Psychotherapy",
+      "Speculative Diffusion Decoding: Accelerating Language Generation through Diffusion",
+      "When2Call: When (not) to Call Tools"
+    ],
+    "acl25": [
+      "Cultural Learning-Based Culture Adaptation of Language Models",
+      "DioR: Adaptive Cognitive Detection and Contextual Retrieval Optimization for Dynamic Retrieval-Augmented Generation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "naacl25": 4,
+    "acl25": 2
+  },
+  "conferences": [
+    "acl25",
+    "iclr25",
+    "naacl25"
+  ]
+}

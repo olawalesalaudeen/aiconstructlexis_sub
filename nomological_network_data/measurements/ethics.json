@@ -1,0 +1,164 @@
+{
+  "canonical_name": "ETHICS",
+  "type": "measurement",
+  "canonical_definition": "Across the surveyed literature, ETHICS is a benchmark dataset used to evaluate language models on tasks related to ethics and morality. It is most frequently used to measure 'Ethical reasoning,' with some papers also using it to assess 'Moral reasoning' and 'Ethical decision-making.' The benchmark is consistently described as consisting of scenarios, which are variously characterized as 'morally charged' or involving 'commonsense moral recognition.' Models are typically evaluated in a zero-shot setting, tasked with making classifications such as 'wrong' or 'not wrong' based on these scenarios, with accuracy being a common metric. Some papers specify that these scenarios cover topics like justice, deontology, and virtue ethics, while others mention using specific subsets like 'Commonsense' or 'Deontology.' A specific point raised in one study is that the dataset, collected from participants in the US, Canada, and Great Britain, 'dominantly reflects a Western ethical perspective'.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Social Chemistry 101",
+    "ETHICS dataset",
+    "Ethics",
+    "ETHICS"
+  ],
+  "papers": [
+    "Calibration Across Layers: Understanding Calibration Evolution inLLMs",
+    "FLUIDQA: A Multilingual Benchmark for Figurative Language Usage in Dialogue acrossEnglish,Chinese, andKorean",
+    "Bi-Factorial Preference Optimization: Balancing Safety-Helpfulness in Language Models",
+    "CBQ: Cross-Block Quantization for Large Language Models",
+    "More RLHF, More Trust? On The Impact of Preference Alignment On Trustworthiness",
+    "Raising the Bar: Investigating the Values of Large Language Models via Generative Evolving Testing",
+    "Representations Shape Weak-to-Strong Generalization: Theoretical Insights and Empirical Predictions",
+    "ALI-Agent: Assessing LLMs'  Alignment with Human Values via Agent-based Evaluation",
+    "EAI: Emotional Decision-Making of LLMs in Strategic Games and Ethical Dilemmas",
+    "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?"
+  ],
+  "paper_count": 10,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A dataset encompassing diverse social norms and moral judgments about everyday actions, used to evaluate morality.",
+      "paper": "ALI-Agent: Assessing LLMs'  Alignment with Human Values via Agent-based Evaluation",
+      "original_name": "Social Chemistry 101"
+    },
+    {
+      "text": "A benchmark dataset consisting of morally charged scenarios used to evaluate a model's ability to perform implicit ethical assessments.",
+      "paper": "EAI: Emotional Decision-Making of LLMs in Strategic Games and Ethical Dilemmas",
+      "original_name": "ETHICS dataset"
+    },
+    {
+      "text": "A zero-shot benchmark dataset used to assess model accuracy on ethical reasoning tasks.",
+      "paper": "CBQ: Cross-Block Quantization for Large Language Models",
+      "original_name": "Ethics"
+    },
+    {
+      "text": "A benchmark for evaluating machine ethics, including a 'Commonsense' subset with scenario-based moral recognition tasks.",
+      "paper": "More RLHF, More Trust? On The Impact of Preference Alignment On Trustworthiness",
+      "original_name": "ETHICS"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Ethical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "ALI-Agent: Assessing LLMs'  Alignment with Human Values via Agent-based Evaluation",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "neurips24": [
+          "ALI-Agent: Assessing LLMs'  Alignment with Human Values via Agent-based Evaluation",
+          "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?"
+        ],
+        "iclr25": [
+          "More RLHF, More Trust? On The Impact of Preference Alignment On Trustworthiness"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Ethical decision-making",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "EAI: Emotional Decision-Making of LLMs in Strategic Games and Ethical Dilemmas",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "EAI: Emotional Decision-Making of LLMs in Strategic Games and Ethical Dilemmas"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Zero-shot task performance",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "CBQ: Cross-Block Quantization for Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "CBQ: Cross-Block Quantization for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "TRANSIENTTABLES: EvaluatingLLMs\u2019 Reasoning on Temporally Evolving Semi-structured Tables",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "TRANSIENTTABLES: EvaluatingLLMs\u2019 Reasoning on Temporally Evolving Semi-structured Tables"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Moral reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "FLUIDQA: A Multilingual Benchmark for Figurative Language Usage in Dialogue acrossEnglish,Chinese, andKorean",
+      "evidence": "We evaluate models on four moral reasoning benchmarks with varying normative demands: Value Kaleidoscope (VK) (Sorensen et al., 2024), UniMoral (Kumar and Jurgens, 2025), ETHICS (Deontology) (Hendrycks et al., 2020), and MoralCoT (Jacovi et al., 2024). (Section 4)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "FLUIDQA: A Multilingual Benchmark for Figurative Language Usage in Dialogue acrossEnglish,Chinese, andKorean"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the surveyed literature, ETHICS is a benchmark dataset used to evaluate language models on tasks related to ethics and morality. It is most frequently used to measure 'Ethical reasoning,' with some papers also using it to assess 'Moral reasoning' and 'Ethical decision-making.' The benchmark is consistently described as consisting of scenarios, which are variously characterized as 'morally charged' or involving 'commonsense moral recognition.' Models are typically evaluated in a zero-shot setting, tasked with making classifications such as 'wrong' or 'not wrong' based on these scenarios, with accuracy being a common metric. Some papers specify that these scenarios cover topics like justice, deontology, and virtue ethics, while others mention using specific subsets like 'Commonsense' or 'Deontology.' A specific point raised in one study is that the dataset, collected from participants in the US, Canada, and Great Britain, 'dominantly reflects a Western ethical perspective'.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "ALI-Agent: Assessing LLMs'  Alignment with Human Values via Agent-based Evaluation",
+      "EAI: Emotional Decision-Making of LLMs in Strategic Games and Ethical Dilemmas",
+      "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?"
+    ],
+    "iclr25": [
+      "Bi-Factorial Preference Optimization: Balancing Safety-Helpfulness in Language Models",
+      "CBQ: Cross-Block Quantization for Large Language Models",
+      "More RLHF, More Trust? On The Impact of Preference Alignment On Trustworthiness"
+    ],
+    "icml25": [
+      "Raising the Bar: Investigating the Values of Large Language Models via Generative Evolving Testing",
+      "Representations Shape Weak-to-Strong Generalization: Theoretical Insights and Empirical Predictions"
+    ],
+    "emnlp25": [
+      "Calibration Across Layers: Understanding Calibration Evolution inLLMs",
+      "FLUIDQA: A Multilingual Benchmark for Figurative Language Usage in Dialogue acrossEnglish,Chinese, andKorean"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 3,
+    "iclr25": 3,
+    "icml25": 2,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

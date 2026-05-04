@@ -1,0 +1,148 @@
+{
+  "canonical_name": "LibriSpeech",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, LibriSpeech is consistently characterized as a large-scale corpus of read English speech, frequently noted to be derived from audiobooks from the LibriVox project and containing approximately 960 to 1000 hours of data. The most common application of this dataset is to measure `Speech recognition`, with multiple papers using it to evaluate Automatic Speech Recognition (ASR) performance on its various test sets. Beyond ASR, LibriSpeech is also used to assess other capabilities, including `Data reconstruction`, phone recognition, and, in one instance, `Faithfulness`. Researchers operationalize the dataset by employing specific subsets for distinct purposes, such as using the \"960-hour training set\" for pre-training and various \"dev\" and \"test\" sets like \"dev-clean\" and \"test-other\" for evaluation. The data is also used for training tokenizers, estimating mutual information, and as prompts for speech continuation tasks, as noted in \"A Variational Framework for Improving Naturalness in Generative Spoken Language Models\". While some definitions frame it broadly as a corpus for tasks like compression, the prevailing usage in this set of papers is as a benchmark for training and evaluating speech processing models.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "LibriSpeech",
+    "Librispeech"
+  ],
+  "papers": [
+    "Crowdsource, Crawl, or Generate? CreatingSEA-VL, a Multicultural Vision-Language Dataset forSoutheastAsia",
+    "Cultural Bias Matters: A Cross-Cultural Benchmark Dataset and Sentiment-Enriched Model for Understanding Multimodal Metaphors",
+    "Language Modeling Is Compression",
+    "SALMONN: Towards Generic Hearing Abilities for Large Language Models",
+    "SpeechTokenizer: Unified Speech Tokenizer for Speech Language Models",
+    "Aligned Better, Listen Better for Audio-Visual Large Language Models",
+    "HALL-E: Hierarchical Neural Codec Language Model for Minute-Long Zero-Shot Text-to-Speech Synthesis",
+    "Scaling Speech-Text Pre-training with Synthetic Interleaved Data",
+    "SyllableLM: Learning Coarse Semantic Units for Speech Language Models",
+    "The KoLMogorov Test: Compression by Code Generation",
+    "Theory, Analysis, and Best Practices for Sigmoid Self-Attention",
+    "VLAS: Vision-Language-Action Model with Speech Instructions for Customized Robot Manipulation",
+    "A Variational Framework for Improving Naturalness in Generative Spoken Language Models",
+    "ALMTokenizer: A Low-bitrate and Semantic-rich Audio Codec Tokenizer for Audio Language Modeling",
+    "LASER: Attention with Exponential Transformation",
+    "Looking Beyond the Top-1: Transformers Determine Top Tokens in Order",
+    "SING: Spatial Context in Large Language Model for Next-Gen Wearables"
+  ],
+  "paper_count": 17,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A large corpus of read English speech, from which chunks are extracted to create a 1GB audio dataset for compression experiments.",
+      "paper": "Language Modeling Is Compression",
+      "original_name": "LibriSpeech"
+    },
+    {
+      "text": "A speech recognition dataset used for closed-ended audio evaluation.",
+      "paper": "Aligned Better, Listen Better for Audio-Visual Large Language Models",
+      "original_name": "Librispeech"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Speech recognition",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "SALMONN: Towards Generic Hearing Abilities for Large Language Models",
+      "evidence": "",
+      "paper_count": 6,
+      "papers_by_conference": {
+        "iclr24": [
+          "SALMONN: Towards Generic Hearing Abilities for Large Language Models"
+        ],
+        "iclr25": [
+          "VLAS: Vision-Language-Action Model with Speech Instructions for Customized Robot Manipulation",
+          "Theory, Analysis, and Best Practices for Sigmoid Self-Attention"
+        ],
+        "icml25": [
+          "LASER: Attention with Exponential Transformation"
+        ],
+        "emnlp25": [
+          "Think and Recall: Layer-Level Prompting for Lifelong Model Editing",
+          "Matter-of-Fact: A Benchmark for Verifying the Feasibility of Literature-Supported Claims in Materials Science"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Speech reconstruction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "SpeechTokenizer: Unified Speech Tokenizer for Speech Language Models",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr24": [
+          "SpeechTokenizer: Unified Speech Tokenizer for Speech Language Models"
+        ],
+        "iclr25": [
+          "HALL-E: Hierarchical Neural Codec Language Model for Minute-Long Zero-Shot Text-to-Speech Synthesis"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Think and Recall: Layer-Level Prompting for Lifelong Model Editing",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Think and Recall: Layer-Level Prompting for Lifelong Model Editing"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, LibriSpeech is consistently characterized as a large-scale corpus of read English speech, frequently noted to be derived from audiobooks from the LibriVox project and containing approximately 960 to 1000 hours of data. The most common application of this dataset is to measure `Speech recognition`, with multiple papers using it to evaluate Automatic Speech Recognition (ASR) performance on its various test sets. Beyond ASR, LibriSpeech is also used to assess other capabilities, including `Data reconstruction`, phone recognition, and, in one instance, `Faithfulness`. Researchers operationalize the dataset by employing specific subsets for distinct purposes, such as using the \"960-hour training set\" for pre-training and various \"dev\" and \"test\" sets like \"dev-clean\" and \"test-other\" for evaluation. The data is also used for training tokenizers, estimating mutual information, and as prompts for speech continuation tasks, as noted in \"A Variational Framework for Improving Naturalness in Generative Spoken Language Models\". While some definitions frame it broadly as a corpus for tasks like compression, the prevailing usage in this set of papers is as a benchmark for training and evaluating speech processing models.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Language Modeling Is Compression",
+      "SALMONN: Towards Generic Hearing Abilities for Large Language Models",
+      "SpeechTokenizer: Unified Speech Tokenizer for Speech Language Models"
+    ],
+    "iclr25": [
+      "Aligned Better, Listen Better for Audio-Visual Large Language Models",
+      "HALL-E: Hierarchical Neural Codec Language Model for Minute-Long Zero-Shot Text-to-Speech Synthesis",
+      "Scaling Speech-Text Pre-training with Synthetic Interleaved Data",
+      "SyllableLM: Learning Coarse Semantic Units for Speech Language Models",
+      "The KoLMogorov Test: Compression by Code Generation",
+      "Theory, Analysis, and Best Practices for Sigmoid Self-Attention",
+      "VLAS: Vision-Language-Action Model with Speech Instructions for Customized Robot Manipulation"
+    ],
+    "acl25": [
+      "Crowdsource, Crawl, or Generate? CreatingSEA-VL, a Multicultural Vision-Language Dataset forSoutheastAsia",
+      "Cultural Bias Matters: A Cross-Cultural Benchmark Dataset and Sentiment-Enriched Model for Understanding Multimodal Metaphors"
+    ],
+    "icml25": [
+      "A Variational Framework for Improving Naturalness in Generative Spoken Language Models",
+      "ALMTokenizer: A Low-bitrate and Semantic-rich Audio Codec Tokenizer for Audio Language Modeling",
+      "LASER: Attention with Exponential Transformation",
+      "Looking Beyond the Top-1: Transformers Determine Top Tokens in Order",
+      "SING: Spatial Context in Large Language Model for Next-Gen Wearables"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 3,
+    "iclr25": 7,
+    "acl25": 2,
+    "icml25": 5
+  },
+  "conferences": [
+    "acl25",
+    "iclr24",
+    "iclr25",
+    "icml25"
+  ]
+}

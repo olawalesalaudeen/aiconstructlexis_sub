@@ -1,0 +1,244 @@
+{
+  "canonical_name": "Confidence estimation",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, confidence estimation is predominantly characterized as the observable behavior of a model articulating its certainty, which is operationalized in two primary ways: through numerical scores and through natural language expressions. The most frequent numerical approach involves the model generating an explicit confidence score, often as a probability or percentage, representing its certainty in an answer's correctness or its alignment with human preferences. Other numerical methods infer confidence from internal model states, such as by \"extracting the probability of the 'yes' token\" to verify a prediction (\"CertainlyUncertain: A Benchmark and Metric for Multimodal Epistemic and Aleatoric Awareness\") or by using signals like perplexity and token entropy. The second major operationalization involves linguistic expressions of uncertainty, where models generate text to qualify their answers with phrases ranging from direct statements like \"I am unsure\" (\"Forewarned is Forearmed:  Harnessing LLMs for Data Synthesis via Failure-induced Exploration\") to more nuanced hedging. The target of this estimation varies; while most work focuses on the final output, some papers measure confidence in intermediate steps, such as \"scoring the correctness of reasoning steps\" (\"AROMA: Autonomous Rank-one Matrix Adaptation\"). A less common framing treats confidence as an internal state inferred from the stability of representations or as a dynamic process, with one paper describing \"confidence correction\" as a recalibration pattern observed across model layers. In the provided literature, confidence estimation is also studied alongside self-consistency.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Confidence estimation",
+    "Probability estimation",
+    "Confidence Expression",
+    "Expressing uncertainty",
+    "Confidence score generation",
+    "Step correctness prediction",
+    "Confidence correction",
+    "Verbalized confidence",
+    "Nuanced uncertainty expression",
+    "Linguistic uncertainty expression",
+    "Natural language uncertainty expression",
+    "Self-knowledge estimation",
+    "Model confidence"
+  ],
+  "papers": [
+    "MEXMA: Token-level objectives improve sentence representations",
+    "Self-Taught Agentic Long Context Understanding",
+    "2025.emnlp-main.1505.checklist",
+    "2025.emnlp-main.530.checklist",
+    "AROMA: Autonomous Rank-one Matrix Adaptation",
+    "Evaluating Cognitive-Behavioral Fixation via Multimodal User Viewing Patterns on Social Media",
+    "Few-Shot Learning Translation from New Languages",
+    "MentalGLMSeries: Explainable Large Language Models for Mental Health Analysis onChinese Social Media",
+    "Multilingual Pretraining for Pixel Language Models",
+    "Non-Existent Relationship: Fact-Aware Multi-Level Machine-Generated Text Detection",
+    "Not What the Doctor Ordered: SurveyingLLM-based De-identification and Quantifying Clinical Information Loss",
+    "PIIvot: A LightweightNLPAnonymization Framework for Question-Anchored Tutoring Dialogues",
+    "SportReason: Evaluating Retrieval-Augmented Reasoning across Tables and Text for Sports Question Answering",
+    "Towards Faithful Natural Language Explanations: A Study Using Activation Patching in Large Language Models",
+    "ViPE: Visual Perception in Parameter Space for Efficient Video-Language Understanding",
+    "VisualWebInstruct: Scaling up Multimodal Instruction Data through Web Search",
+    "WISE: Weak-Supervision-Guided Step-by-Step Explanations for MultimodalLLMs in Image Classification",
+    "Your Language Model Can Secretly Write Like Humans: Contrastive Paraphrase Attacks onLLM-Generated Text Detectors",
+    "2025.emnlp-main.400.checklist",
+    "DA-Pred: Performance Prediction for Text Summarization under Domain-Shift and Instruct-Tuning",
+    "E",
+    "Multilingual Dialogue Generation and Localization with Dialogue Act Scripting",
+    "VELA: AnLLM-Hybrid-as-a-Judge Approach for Evaluating Long Image Captions",
+    "Recursive Training Loops inLLMs: How training data properties modulate distribution shift in generated data?",
+    "Unveiling the Response of Large Vision-Language Models to Visually Absent Tokens",
+    "BIRD: A Trustworthy Bayesian Inference Framework for Large Language Models",
+    "CertainlyUncertain: A Benchmark and Metric for Multimodal Epistemic and Aleatoric Awareness",
+    "Forewarned is Forearmed:  Harnessing LLMs for Data Synthesis via Failure-induced Exploration",
+    "Latent Space Chain-of-Embedding Enables Output-free LLM Self-Evaluation",
+    "Reflexive Guidance: Improving OoDD in Vision-Language Models via Self-Guided Image-Adaptive Concept Generation",
+    "Small Models are LLM Knowledge Triggers for Medical Tabular Prediction",
+    "To Trust or Not to Trust? Enhancing Large Language Models' Situated Faithfulness to External Contexts",
+    "Trust or Escalate: LLM Judges with Provable Guarantees for Human Agreement",
+    "Varying Shades of Wrong: Aligning LLMs with Wrong Answers Only",
+    "Self-Consistency Preference Optimization",
+    "Token Signature: Predicting Chain-of-Thought Gains with Token Decoding Feature in Large Language Models"
+  ],
+  "paper_count": 36,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The model generates a numerical score representing its certainty that its judgment aligns with human preferences.",
+      "paper": "Trust or Escalate: LLM Judges with Provable Guarantees for Human Agreement",
+      "original_name": "Confidence estimation"
+    },
+    {
+      "text": "The observable act of assigning a numerical probability or confidence score to a potential outcome given a context.",
+      "paper": "BIRD: A Trustworthy Bayesian Inference Framework for Large Language Models",
+      "original_name": "Probability estimation"
+    },
+    {
+      "text": "Providing probability estimates or confidence levels for predictions, often by verifying if a predicted answer is correct via token probability.",
+      "paper": "CertainlyUncertain: A Benchmark and Metric for Multimodal Epistemic and Aleatoric Awareness",
+      "original_name": "Confidence Expression"
+    },
+    {
+      "text": "The observable behavior of a model explicitly stating its lack of confidence or knowledge in its response, such as by outputting phrases like 'I am unsure'.",
+      "paper": "Forewarned is Forearmed:  Harnessing LLMs for Data Synthesis via Failure-induced Exploration",
+      "original_name": "Expressing uncertainty"
+    },
+    {
+      "text": "The action of producing numerical confidence values for each potential class in a classification task, expressed within a natural language response.",
+      "paper": "Reflexive Guidance: Improving OoDD in Vision-Language Models via Self-Guided Image-Adaptive Concept Generation",
+      "original_name": "Confidence score generation"
+    },
+    {
+      "text": "The observable task of assigning a confidence score to each reasoning step indicating whether it is correct or incorrect, based on internal model states.",
+      "paper": "AROMA: Autonomous Rank-one Matrix Adaptation",
+      "original_name": "Step correctness prediction"
+    },
+    {
+      "text": "The observable behavior of an LLM producing internal confidence signals about its own reasoning steps without external feedback.",
+      "paper": "AROMA: Autonomous Rank-one Matrix Adaptation",
+      "original_name": "Self-evaluation"
+    },
+    {
+      "text": "The model's output of a probability or likelihood score associated with its generated response or prediction.",
+      "paper": "2025.emnlp-main.530.checklist",
+      "original_name": "Confidence expression"
+    },
+    {
+      "text": "The observable pattern in which a model's confidence increases beyond accuracy (overconfidence) and then decreases to better align with accuracy in later layers, indicating active recalibration of confidence.",
+      "paper": "WISE: Weak-Supervision-Guided Step-by-Step Explanations for MultimodalLLMs in Image Classification",
+      "original_name": "Confidence correction"
+    },
+    {
+      "text": "The observable expression of a model's certainty in its answer, typically in the form of a percentage or probability statement.",
+      "paper": "VisualWebInstruct: Scaling up Multimodal Instruction Data through Web Search",
+      "original_name": "Verbalized confidence"
+    },
+    {
+      "text": "The generation of text that qualifies an answer with expressions of doubt or uncertainty, such as \"I am not sure but...\" or \"maybe\".",
+      "paper": "Non-Existent Relationship: Fact-Aware Multi-Level Machine-Generated Text Detection",
+      "original_name": "Nuanced uncertainty expression"
+    },
+    {
+      "text": "The observable use of words, phrases, and hedging language to convey a degree of confidence or doubt in a generated response.",
+      "paper": "Multilingual Pretraining for Pixel Language Models",
+      "original_name": "Linguistic uncertainty expression"
+    },
+    {
+      "text": "The model generates explicit statements about its confidence or uncertainty using natural language (e.g., 'I'm not sure' or 'I'm highly confident').",
+      "paper": "2025.emnlp-main.1505.checklist",
+      "original_name": "Natural language uncertainty expression"
+    },
+    {
+      "text": "The observable task of assigning a score to a model's own generated answer that reflects the model's confidence in its factual correctness, framed as a binary classification problem.",
+      "paper": "Your Language Model Can Secretly Write Like Humans: Contrastive Paraphrase Attacks onLLM-Generated Text Detectors",
+      "original_name": "Self-knowledge estimation"
+    },
+    {
+      "text": "The model's generation of confidence or uncertainty signals (e.g., perplexity, token entropy) in response to input questions, used to infer implicit awareness of evergreen-ness.",
+      "paper": "Your Language Model Can Secretly Write Like Humans: Contrastive Paraphrase Attacks onLLM-Generated Text Detectors",
+      "original_name": "Uncertainty estimation"
+    },
+    {
+      "text": "Assigning a numerical confidence level to a diagnostic decision based on factual consistency and evidence from a reasoning subgraph.",
+      "paper": "MentalGLMSeries: Explainable Large Language Models for Mental Health Analysis onChinese Social Media",
+      "original_name": "Confidence scoring"
+    },
+    {
+      "text": "The degree to which a model's internal representations reflect certainty in its predictions, inferred from stability of outputs and embedding dynamics.",
+      "paper": "Self-Taught Agentic Long Context Understanding",
+      "original_name": "Model confidence"
+    }
+  ],
+  "definition_count": 17,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Self-consistency",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Self-Consistency Preference Optimization",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Self-Consistency Preference Optimization"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "E",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "E"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 2,
+  "characterization": "Across the surveyed literature, confidence estimation is predominantly characterized as the observable behavior of a model articulating its certainty, which is operationalized in two primary ways: through numerical scores and through natural language expressions. The most frequent numerical approach involves the model generating an explicit confidence score, often as a probability or percentage, representing its certainty in an answer's correctness or its alignment with human preferences. Other numerical methods infer confidence from internal model states, such as by \"extracting the probability of the 'yes' token\" to verify a prediction (\"CertainlyUncertain: A Benchmark and Metric for Multimodal Epistemic and Aleatoric Awareness\") or by using signals like perplexity and token entropy. The second major operationalization involves linguistic expressions of uncertainty, where models generate text to qualify their answers with phrases ranging from direct statements like \"I am unsure\" (\"Forewarned is Forearmed:  Harnessing LLMs for Data Synthesis via Failure-induced Exploration\") to more nuanced hedging. The target of this estimation varies; while most work focuses on the final output, some papers measure confidence in intermediate steps, such as \"scoring the correctness of reasoning steps\" (\"AROMA: Autonomous Rank-one Matrix Adaptation\"). A less common framing treats confidence as an internal state inferred from the stability of representations or as a dynamic process, with one paper describing \"confidence correction\" as a recalibration pattern observed across model layers. In the provided literature, confidence estimation is also studied alongside self-consistency.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "BIRD: A Trustworthy Bayesian Inference Framework for Large Language Models",
+      "CertainlyUncertain: A Benchmark and Metric for Multimodal Epistemic and Aleatoric Awareness",
+      "Forewarned is Forearmed:  Harnessing LLMs for Data Synthesis via Failure-induced Exploration",
+      "Latent Space Chain-of-Embedding Enables Output-free LLM Self-Evaluation",
+      "Reflexive Guidance: Improving OoDD in Vision-Language Models via Self-Guided Image-Adaptive Concept Generation",
+      "Small Models are LLM Knowledge Triggers for Medical Tabular Prediction",
+      "To Trust or Not to Trust? Enhancing Large Language Models' Situated Faithfulness to External Contexts",
+      "Trust or Escalate: LLM Judges with Provable Guarantees for Human Agreement",
+      "Varying Shades of Wrong: Aligning LLMs with Wrong Answers Only"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.1505.checklist",
+      "2025.emnlp-main.530.checklist",
+      "AROMA: Autonomous Rank-one Matrix Adaptation",
+      "Evaluating Cognitive-Behavioral Fixation via Multimodal User Viewing Patterns on Social Media",
+      "Few-Shot Learning Translation from New Languages",
+      "MentalGLMSeries: Explainable Large Language Models for Mental Health Analysis onChinese Social Media",
+      "Multilingual Pretraining for Pixel Language Models",
+      "Non-Existent Relationship: Fact-Aware Multi-Level Machine-Generated Text Detection",
+      "Not What the Doctor Ordered: SurveyingLLM-based De-identification and Quantifying Clinical Information Loss",
+      "PIIvot: A LightweightNLPAnonymization Framework for Question-Anchored Tutoring Dialogues",
+      "SportReason: Evaluating Retrieval-Augmented Reasoning across Tables and Text for Sports Question Answering",
+      "Towards Faithful Natural Language Explanations: A Study Using Activation Patching in Large Language Models",
+      "ViPE: Visual Perception in Parameter Space for Efficient Video-Language Understanding",
+      "VisualWebInstruct: Scaling up Multimodal Instruction Data through Web Search",
+      "WISE: Weak-Supervision-Guided Step-by-Step Explanations for MultimodalLLMs in Image Classification",
+      "Your Language Model Can Secretly Write Like Humans: Contrastive Paraphrase Attacks onLLM-Generated Text Detectors",
+      "2025.emnlp-main.400.checklist",
+      "DA-Pred: Performance Prediction for Text Summarization under Domain-Shift and Instruct-Tuning",
+      "E",
+      "Multilingual Dialogue Generation and Localization with Dialogue Act Scripting",
+      "VELA: AnLLM-Hybrid-as-a-Judge Approach for Evaluating Long Image Captions",
+      "Recursive Training Loops inLLMs: How training data properties modulate distribution shift in generated data?",
+      "Unveiling the Response of Large Vision-Language Models to Visually Absent Tokens"
+    ],
+    "acl25": [
+      "MEXMA: Token-level objectives improve sentence representations",
+      "Self-Taught Agentic Long Context Understanding"
+    ],
+    "icml25": [
+      "Self-Consistency Preference Optimization",
+      "Token Signature: Predicting Chain-of-Thought Gains with Token Decoding Feature in Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 9,
+    "emnlp25": 23,
+    "acl25": 2,
+    "icml25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25"
+  ]
+}

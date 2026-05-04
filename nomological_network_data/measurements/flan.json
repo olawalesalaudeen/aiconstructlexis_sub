@@ -1,0 +1,117 @@
+{
+  "canonical_name": "FLAN",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, FLAN is consistently characterized as a multi-task benchmark or dataset used for robust evaluation. It is defined as a collection of diverse tasks\u2014with one paper noting a sample of 66 tasks\u2014that are expressed as natural language instructions. Some sources, referring to it as the \"FLAN Collection,\" highlight that it features data for evaluating instruction following, chain-of-thought, and in-context few-shot learning. The tasks are described as varied and include free-form generation such as translation and summarization. Papers commonly use FLAN to measure model `Generalization` and robustness, with one study including it as a reference dataset to \"demonstrate the generalizability and robustness\" of their method. It is also reported to be used for assessing `Commonsense knowledge` and `Safety`.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "FLAN",
+    "FLAN Collection"
+  ],
+  "papers": [
+    "BenTo: Benchmark Reduction with In-Context Transferability",
+    "Harnessing Diversity for Important Data Selection in Pretraining Large Language Models",
+    "LensLLM: Unveiling Fine-Tuning Dynamics for LLM Selection",
+    "MUDDFormer: Breaking Residual Bottlenecks in Transformers via Multiway Dynamic Dense Connections"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A benchmark of diverse tasks including free-form generation tasks such as translation and summarization, used here as a large multi-task evaluation set.",
+      "paper": "BenTo: Benchmark Reduction with In-Context Transferability",
+      "original_name": "FLAN"
+    },
+    {
+      "text": "The FLAN Collection is a dataset composed of various tasks formatted as instructions, used to evaluate instruction-following, chain-of-thought, and few-shot learning capabilities.",
+      "paper": "MUDDFormer: Breaking Residual Bottlenecks in Transformers via Multiway Dynamic Dense Connections",
+      "original_name": "FLAN Collection"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Harnessing Diversity for Important Data Selection in Pretraining Large Language Models",
+      "evidence": "To demonstrate the generalizability and robustness of our method, we include FLAN (Chung et al., 2024) (a mix of multiple NLP tasks) as reference datasets .",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Harnessing Diversity for Important Data Selection in Pretraining Large Language Models"
+        ],
+        "icml25": [
+          "LensLLM: Unveiling Fine-Tuning Dynamics for LLM Selection"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction following",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "MUDDFormer: Breaking Residual Bottlenecks in Transformers via Multiway Dynamic Dense Connections",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "MUDDFormer: Breaking Residual Bottlenecks in Transformers via Multiway Dynamic Dense Connections"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Robustness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Harnessing Diversity for Important Data Selection in Pretraining Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Harnessing Diversity for Important Data Selection in Pretraining Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Free-form generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "BenTo: Benchmark Reduction with In-Context Transferability",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "BenTo: Benchmark Reduction with In-Context Transferability"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the provided literature, FLAN is consistently characterized as a multi-task benchmark or dataset used for robust evaluation. It is defined as a collection of diverse tasks\u2014with one paper noting a sample of 66 tasks\u2014that are expressed as natural language instructions. Some sources, referring to it as the \"FLAN Collection,\" highlight that it features data for evaluating instruction following, chain-of-thought, and in-context few-shot learning. The tasks are described as varied and include free-form generation such as translation and summarization. Papers commonly use FLAN to measure model `Generalization` and robustness, with one study including it as a reference dataset to \"demonstrate the generalizability and robustness\" of their method. It is also reported to be used for assessing `Commonsense knowledge` and `Safety`.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "BenTo: Benchmark Reduction with In-Context Transferability",
+      "Harnessing Diversity for Important Data Selection in Pretraining Large Language Models"
+    ],
+    "icml25": [
+      "LensLLM: Unveiling Fine-Tuning Dynamics for LLM Selection",
+      "MUDDFormer: Breaking Residual Bottlenecks in Transformers via Multiway Dynamic Dense Connections"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "icml25": 2
+  },
+  "conferences": [
+    "iclr25",
+    "icml25"
+  ]
+}

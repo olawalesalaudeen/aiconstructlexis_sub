@@ -1,0 +1,492 @@
+{
+  "canonical_name": "Long-context processing",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, long-context processing is consistently defined as a model's latent ability to handle, comprehend, and utilize information from extended input sequences. Definitions vary slightly in terminology, using phrases like 'long-context comprehension,' 'long-text processing,' and 'long-context capability,' but converge on the core idea of integrating information distributed throughout a document rather than from isolated segments. One definition extends this to multimodal contexts, involving both visual and textual inputs. This construct is operationalized and measured through a wide range of benchmarks, with LongBench, RULER, InfiniteBench, and the Needle-in-a-haystack test being the most frequently used evaluation instruments. A broader set of tools, including L-Eval, PG-19, and various question-answering and language modeling datasets, are also employed to assess this ability. For instance, the MMNeedle benchmark is specifically cited for evaluating this capability in multimodal models by requiring retrieval of a 'sub-image (needle) from long-context images (haystack)'. The construct is studied in relation to other capabilities such as information retrieval, complex reasoning, and length generalization. Some work also explores directional relationships, suggesting it is influenced by coreference resolution and can, in turn, affect programming ability.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Long-context capability",
+    "Long-context comprehension",
+    "Long-context modeling",
+    "Long-context processing",
+    "Long-context processing ability",
+    "Long-text comprehension"
+  ],
+  "papers": [
+    "AID: Adaptive Integration of Detectors for SafeAIwith Language Models",
+    "Aligning Sentence Simplification withESLLearner\u2019s Proficiency for Language Acquisition",
+    "Are We Done withMMLU?",
+    "CAMIEval: EnhancingNLGEvaluation through Multidimensional Comparative Instruction-Following Analysis",
+    "Entangled Relations: LeveragingNLIand Meta-analysis to Enhance Biomedical Relation Extraction",
+    "Evaluating Evidence Attribution in Generated Fact Checking Explanations",
+    "LLM-guided Plan and Retrieval: A Strategic Alignment for Interpretable User Satisfaction Estimation in Dialogue",
+    "Reading between the Lines: CanLLMs Identify Cross-Cultural Communication Gaps?"
+  ],
+  "paper_count": 8,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The ability of a model to process and utilize information from very long documents or contexts to perform a task.",
+      "paper": "Aligning Sentence Simplification withESLLearner\u2019s Proficiency for Language Acquisition",
+      "original_name": "Long-context modeling"
+    },
+    {
+      "text": "The latent ability of a multimodal large language model to understand and effectively process extended sequences of visual and textual inputs, maintaining performance as context length increases.",
+      "paper": "Entangled Relations: LeveragingNLIand Meta-analysis to Enhance Biomedical Relation Extraction",
+      "original_name": "Long-context capability"
+    },
+    {
+      "text": "The latent ability of a model to understand and process information across extended input sequences, maintaining coherence and extracting relevant details over long contexts.",
+      "paper": "AID: Adaptive Integration of Detectors for SafeAIwith Language Models",
+      "original_name": "Long-text comprehension"
+    },
+    {
+      "text": "The capacity to extract relevant information from lengthy and complex input contexts, such as detailed patient case histories, to support accurate parameter extraction and decision-making.",
+      "paper": "Are We Done withMMLU?",
+      "original_name": "Long-context processing"
+    },
+    {
+      "text": "The latent ability of a model to understand and integrate information distributed throughout an extended input context, rather than relying on isolated segments.",
+      "paper": "CAMIEval: EnhancingNLGEvaluation through Multidimensional Comparative Instruction-Following Analysis",
+      "original_name": "Long-context comprehension"
+    },
+    {
+      "text": "The model's latent capability to effectively handle, integrate, and utilize information from very long sequences of input text.",
+      "paper": "Reading between the Lines: CanLLMs Identify Cross-Cultural Communication Gaps?",
+      "original_name": "Long-context processing ability"
+    },
+    {
+      "text": "The ability of a model to process, comprehend, and utilize information from extended input sequences that exceed its standard context window.",
+      "paper": "LLM-guided Plan and Retrieval: A Strategic Alignment for Interpretable User Satisfaction Estimation in Dialogue",
+      "original_name": "Long-context understanding"
+    }
+  ],
+  "definition_count": 7,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LongBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "ReAttention: Training-Free Infinite Context with Finite Attention Scope",
+      "evidence": "",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "iclr25": [
+          "ReAttention: Training-Free Infinite Context with Finite Attention Scope"
+        ],
+        "naacl25": [
+          "Reading between the Lines: CanLLMs Identify Cross-Cultural Communication Gaps?",
+          "LLM-guided Plan and Retrieval: A Strategic Alignment for Interpretable User Satisfaction Estimation in Dialogue"
+        ],
+        "icml25": [
+          "GANQ: GPU-Adaptive Non-Uniform Quantization for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "InfiniteBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Jamba: Hybrid Transformer-Mamba Language Models",
+      "evidence": "",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "iclr25": [
+          "Jamba: Hybrid Transformer-Mamba Language Models",
+          "LongPO: Long Context Self-Evolution of Large Language Models through Short-to-Long Preference Optimization",
+          "ReAttention: Training-Free Infinite Context with Finite Attention Scope"
+        ],
+        "naacl25": [
+          "LLM-guided Plan and Retrieval: A Strategic Alignment for Interpretable User Satisfaction Estimation in Dialogue"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "RULER",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Jamba: Hybrid Transformer-Mamba Language Models",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr25": [
+          "Jamba: Hybrid Transformer-Mamba Language Models",
+          "LongPO: Long Context Self-Evolution of Large Language Models through Short-to-Long Preference Optimization"
+        ],
+        "acl25": [
+          "Predicting Through Generation: Why Generation Is Better for Prediction"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PG-19",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Reading between the Lines: CanLLMs Identify Cross-Cultural Communication Gaps?",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "naacl25": [
+          "Reading between the Lines: CanLLMs Identify Cross-Cultural Communication Gaps?"
+        ],
+        "icml25": [
+          "LaCache: Ladder-Shaped KV Caching for Efficient Long-Context Modeling of Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Needle-in-a-haystack test",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "DuoAttention: Efficient Long-Context LLM Inference with Retrieval and Streaming Heads",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "DuoAttention: Efficient Long-Context LLM Inference with Retrieval and Streaming Heads",
+          "ReAttention: Training-Free Infinite Context with Finite Attention Scope"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "L-Eval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "ReAttention: Training-Free Infinite Context with Finite Attention Scope",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "ReAttention: Training-Free Infinite Context with Finite Attention Scope"
+        ],
+        "naacl25": [
+          "LLM-guided Plan and Retrieval: A Strategic Alignment for Interpretable User Satisfaction Estimation in Dialogue"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "NarrativeQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "AID: Adaptive Integration of Detectors for SafeAIwith Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "AID: Adaptive Integration of Detectors for SafeAIwith Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Length generalization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Long-Short Alignment for Effective Long-Context Modeling in LLMs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Long-Short Alignment for Effective Long-Context Modeling in LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Information retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "PoSE: Efficient Context Window Extension of LLMs via Positional Skip-wise Training",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "PoSE: Efficient Context Window Extension of LLMs via Positional Skip-wise Training"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language modeling",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "PoSE: Efficient Context Window Extension of LLMs via Positional Skip-wise Training",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "PoSE: Efficient Context Window Extension of LLMs via Positional Skip-wise Training"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Information extraction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Are We Done withMMLU?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Are We Done withMMLU?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "QuALITY",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Dataset Decomposition: Faster LLM Training with Variable Sequence Length Curriculum",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Dataset Decomposition: Faster LLM Training with Variable Sequence Length Curriculum"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Long-context understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "LaCache: Ladder-Shaped KV Caching for Efficient Long-Context Modeling of Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "LaCache: Ladder-Shaped KV Caching for Efficient Long-Context Modeling of Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Video understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "LongVILA: Scaling Long-Context Visual Language Models for Long Videos",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "LongVILA: Scaling Long-Context Visual Language Models for Long Videos"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multimodal understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "LongVILA: Scaling Long-Context Visual Language Models for Long Videos",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "LongVILA: Scaling Long-Context Visual Language Models for Long Videos"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Short-context capability",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "LongPO: Long Context Self-Evolution of Large Language Models through Short-to-Long Preference Optimization",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "LongPO: Long Context Self-Evolution of Large Language Models through Short-to-Long Preference Optimization"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-context learning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "CAMIEval: EnhancingNLGEvaluation through Multidimensional Comparative Instruction-Following Analysis",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "CAMIEval: EnhancingNLGEvaluation through Multidimensional Comparative Instruction-Following Analysis"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multi-Needle-in-a-Haystack",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "ReAttention: Training-Free Infinite Context with Finite Attention Scope",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "ReAttention: Training-Free Infinite Context with Finite Attention Scope"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "RACE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "AID: Adaptive Integration of Detectors for SafeAIwith Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "AID: Adaptive Integration of Detectors for SafeAIwith Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WikiText-103",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Reading between the Lines: CanLLMs Identify Cross-Cultural Communication Gaps?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Reading between the Lines: CanLLMs Identify Cross-Cultural Communication Gaps?"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Logical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "CAMIEval: EnhancingNLGEvaluation through Multidimensional Comparative Instruction-Following Analysis",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "CAMIEval: EnhancingNLGEvaluation through Multidimensional Comparative Instruction-Following Analysis"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Beyond Logits: Aligning Feature Dynamics for Effective Knowledge Distillation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Beyond Logits: Aligning Feature Dynamics for Effective Knowledge Distillation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Beyond Logits: Aligning Feature Dynamics for Effective Knowledge Distillation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Beyond Logits: Aligning Feature Dynamics for Effective Knowledge Distillation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "State tracking",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "xLSTM 7B: A Recurrent LLM for Fast and Efficient Inference",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "xLSTM 7B: A Recurrent LLM for Fast and Efficient Inference"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WikiText-2",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LaCache: Ladder-Shaped KV Caching for Efficient Long-Context Modeling of Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "LaCache: Ladder-Shaped KV Caching for Efficient Long-Context Modeling of Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Complex reasoning",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "SpeculatingLLMs\u2019Chinese Training Data Pollution from Their Tokens",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "SpeculatingLLMs\u2019Chinese Training Data Pollution from Their Tokens"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge forgetting",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "MEBench: Benchmarking Large Language Models for Cross-Document Multi-Entity Question Answering",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "MEBench: Benchmarking Large Language Models for Cross-Document Multi-Entity Question Answering"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 27,
+  "incoming_relationship_count": 9,
+  "outgoing_relationship_count": 18,
+  "characterization": "Across the surveyed literature, long-context processing is consistently defined as a model's latent ability to handle, comprehend, and utilize information from extended input sequences. Definitions vary slightly in terminology, using phrases like 'long-context comprehension,' 'long-text processing,' and 'long-context capability,' but converge on the core idea of integrating information distributed throughout a document rather than from isolated segments. One definition extends this to multimodal contexts, involving both visual and textual inputs. This construct is operationalized and measured through a wide range of benchmarks, with LongBench, RULER, InfiniteBench, and the Needle-in-a-haystack test being the most frequently used evaluation instruments. A broader set of tools, including L-Eval, PG-19, and various question-answering and language modeling datasets, are also employed to assess this ability. For instance, the MMNeedle benchmark is specifically cited for evaluating this capability in multimodal models by requiring retrieval of a 'sub-image (needle) from long-context images (haystack)'. The construct is studied in relation to other capabilities such as information retrieval, complex reasoning, and length generalization. Some work also explores directional relationships, suggesting it is influenced by coreference resolution and can, in turn, affect programming ability.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "naacl25": [
+      "AID: Adaptive Integration of Detectors for SafeAIwith Language Models",
+      "Aligning Sentence Simplification withESLLearner\u2019s Proficiency for Language Acquisition",
+      "Are We Done withMMLU?",
+      "CAMIEval: EnhancingNLGEvaluation through Multidimensional Comparative Instruction-Following Analysis",
+      "Entangled Relations: LeveragingNLIand Meta-analysis to Enhance Biomedical Relation Extraction",
+      "Evaluating Evidence Attribution in Generated Fact Checking Explanations",
+      "LLM-guided Plan and Retrieval: A Strategic Alignment for Interpretable User Satisfaction Estimation in Dialogue",
+      "Reading between the Lines: CanLLMs Identify Cross-Cultural Communication Gaps?"
+    ]
+  },
+  "paper_count_by_conference": {
+    "naacl25": 8
+  },
+  "conferences": [
+    "naacl25"
+  ]
+}

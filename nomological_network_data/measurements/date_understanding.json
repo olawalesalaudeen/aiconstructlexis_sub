@@ -1,0 +1,114 @@
+{
+  "canonical_name": "Date Understanding",
+  "type": "measurement",
+  "canonical_definition": "Date Understanding is consistently presented as a benchmark task originating from the BigBench suite, with some sources specifying its inclusion in BIG-Bench-Hard. Its primary purpose is to evaluate a model's ability to reason about dates, temporal relationships, and calendar logic, often when this information is presented in natural language. While there is broad agreement on its function, the specific cognitive ability it assesses is framed in several ways across the literature. The most prevalent uses are to operationalize and measure \"symbolic reasoning\" and \"commonsense reasoning,\" as stated in multiple papers. A smaller number of studies also use it to explicitly assess \"logical reasoning.\" Researchers commonly employ it as an evaluation instrument, sometimes alongside other benchmarks like CommonsenseQA and Object Counting. One paper also connects it to the measurement of \"Faithfulness,\" though this is a less frequently mentioned application in the provided data.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Date Understanding"
+  ],
+  "papers": [
+    "Eval",
+    "Synthesizing Post-Training Data forLLMs through Multi-Agent Simulation",
+    "CoPL: Collaborative Preference Learning for PersonalizingLLMs",
+    "DEL-ToM: Inference-Time Scaling for Theory-of-Mind Reasoning via Dynamic Epistemic Logic",
+    "FlashAdventure: A Benchmark forGUIAgents Solving Full Story Arcs in Diverse Adventure Games",
+    "ThinkSLM",
+    "Can LLMs Express Their Uncertainty? An Empirical Evaluation of Confidence Elicitation in LLMs",
+    "Predicting Emergent Abilities with Infinite Resolution Evaluation",
+    "Substance Beats Style: Why Beginning Students Fail to Code withLLMs",
+    "Unfamiliar Finetuning Examples Control How Language Models Hallucinate"
+  ],
+  "paper_count": 10,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A task from the BigBench suite that tests a model's ability to reason about and answer questions involving dates and temporal information.",
+      "paper": "Can LLMs Express Their Uncertainty? An Empirical Evaluation of Confidence Elicitation in LLMs",
+      "original_name": "Date Understanding"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Logical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Substance Beats Style: Why Beginning Students Fail to Code withLLMs",
+      "evidence": "Logical Reasoning: Date Understanding (bench authors, 2023). (Section 4)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Substance Beats Style: Why Beginning Students Fail to Code withLLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Unfamiliar Finetuning Examples Control How Language Models Hallucinate",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Unfamiliar Finetuning Examples Control How Language Models Hallucinate"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Symbolic reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "CoPL: Collaborative Preference Learning for PersonalizingLLMs",
+      "evidence": "Symbolic Reasoning. We select four datasets from BigBench (Srivastava et al., 2022) for testing, including Date Understanding, Penguin, Colored Objects and Logical Deduction. (Section 4.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "CoPL: Collaborative Preference Learning for PersonalizingLLMs"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization": "Date Understanding is consistently presented as a benchmark task originating from the BigBench suite, with some sources specifying its inclusion in BIG-Bench-Hard. Its primary purpose is to evaluate a model's ability to reason about dates, temporal relationships, and calendar logic, often when this information is presented in natural language. While there is broad agreement on its function, the specific cognitive ability it assesses is framed in several ways across the literature. The most prevalent uses are to operationalize and measure \"symbolic reasoning\" and \"commonsense reasoning,\" as stated in multiple papers. A smaller number of studies also use it to explicitly assess \"logical reasoning.\" Researchers commonly employ it as an evaluation instrument, sometimes alongside other benchmarks like CommonsenseQA and Object Counting. One paper also connects it to the measurement of \"Faithfulness,\" though this is a less frequently mentioned application in the provided data.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Can LLMs Express Their Uncertainty? An Empirical Evaluation of Confidence Elicitation in LLMs",
+      "Predicting Emergent Abilities with Infinite Resolution Evaluation"
+    ],
+    "naacl25": [
+      "Substance Beats Style: Why Beginning Students Fail to Code withLLMs",
+      "Unfamiliar Finetuning Examples Control How Language Models Hallucinate"
+    ],
+    "acl25": [
+      "Eval",
+      "Synthesizing Post-Training Data forLLMs through Multi-Agent Simulation"
+    ],
+    "emnlp25": [
+      "CoPL: Collaborative Preference Learning for PersonalizingLLMs",
+      "DEL-ToM: Inference-Time Scaling for Theory-of-Mind Reasoning via Dynamic Epistemic Logic",
+      "FlashAdventure: A Benchmark forGUIAgents Solving Full Story Arcs in Diverse Adventure Games",
+      "ThinkSLM"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "naacl25": 2,
+    "acl25": 2,
+    "emnlp25": 4
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "naacl25"
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "canonical_name": "TyDiQA",
+  "type": "measurement",
+  "canonical_definition": "Across the provided sources, TyDiQA is consistently characterized as a benchmark for multilingual question answering. Its prevailing use is to evaluate a model's capabilities across a diverse set of \"typologically different languages,\" as noted in several definitions. Papers use TyDiQA to operationalize and measure several abilities, most commonly \"Multilingual ability\" and \"Multilingual question answering,\" but also general \"Question answering,\" \"Commonsense knowledge,\" and \"Faithfulness.\" The task format is described by some sources as \"single-hop question answering\" where models must answer questions given a context from a \"Wikipedia datastore\" or article. While most definitions emphasize its multilingual nature, there is a slight variation in the number of languages mentioned, with some papers citing nine and others eleven. The benchmark is also used in language-specific subsets, as one paper notes with \"TyDiQA { ID, SW, FI }\". TyDiQA is frequently included in evaluation suites alongside other benchmarks like MMLU, GSM8K, and BBH to assess general model performance, particularly for instruction-tuned LLMs.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "TyDiQA",
+    "TydiQA",
+    "TYDIQA",
+    "Tydi QA"
+  ],
+  "papers": [
+    "Language Model Cascades: Token-Level Uncertainty And Beyond",
+    "Mixture-of-Experts Meets Instruction Tuning: A Winning Combination for Large Language Models",
+    "SALMON: Self-Alignment with Instructable Reward Models",
+    "Data Pruning by Information Maximization",
+    "Efficient stagewise pretraining via progressive subnetworks",
+    "Fine-tuning with Reserved Majority for Noise Reduction",
+    "Generative Representational Instruction Tuning",
+    "Improving Data Efficiency via Curating LLM-Driven Rating Systems",
+    "MoS: Unleashing Parameter Efficiency of Low-Rank Adaptation with Mixture of Shards",
+    "Pangea: A Fully Open Multilingual Multimodal LLM for 39 Languages",
+    "Provence: efficient and robust context pruning for retrieval-augmented generation",
+    "LAuReL: Learned Augmented Residual Layer",
+    "SeedLoRA: A Fusion Approach to Efficient LLM Fine-Tuning",
+    "Token Cleaning: Fine-Grained Data Selection for LLM Supervised Fine-Tuning",
+    "Beyond Logit Lens: Contextual Embeddings for Robust Hallucination Detection & Grounding inVLMs",
+    "Decomposition Dilemmas: Does Claim Decomposition Boost or Burden Fact-Checking Performance?",
+    "JRE-L: Journalist, Reader, and EditorLLMs in the Loop for Science Journalism for the General Audience"
+  ],
+  "paper_count": 17,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A multilingual question answering benchmark included in the expanded evaluation set, with language-specific subsets used in evaluation.",
+      "paper": "Language Model Cascades: Token-Level Uncertainty And Beyond",
+      "original_name": "TyDiQA"
+    },
+    {
+      "text": "A benchmark for evaluating multilingual question answering capabilities across a diverse set of typologically different languages.",
+      "paper": "SALMON: Self-Alignment with Instructable Reward Models",
+      "original_name": "TydiQA"
+    },
+    {
+      "text": "TyDi QA, a multilingual question-answering benchmark used here to evaluate instruction-tuned LLMs.",
+      "paper": "Data Pruning by Information Maximization",
+      "original_name": "TYDIQA"
+    },
+    {
+      "text": "A single-hop question answering benchmark evaluated with Wikipedia datastore contexts.",
+      "paper": "Provence: efficient and robust context pruning for retrieval-augmented generation",
+      "original_name": "TyDi QA"
+    },
+    {
+      "text": "A question answering dataset covering 11 typologically diverse languages, requiring models to answer questions given a Wikipedia article.",
+      "paper": "Efficient stagewise pretraining via progressive subnetworks",
+      "original_name": "Tydi QA"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multilingual ability",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "SALMON: Self-Alignment with Instructable Reward Models",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr24": [
+          "SALMON: Self-Alignment with Instructable Reward Models"
+        ],
+        "neurips24": [
+          "SelectIT: Selective Instruction Tuning for LLMs via Uncertainty-Aware Self-Reflection"
+        ],
+        "iclr25": [
+          "Data Pruning by Information Maximization"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "TSDS: Data Selection for Task-Specific Model Finetuning",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "TSDS: Data Selection for Task-Specific Model Finetuning"
+        ],
+        "naacl25": [
+          "Decomposition Dilemmas: Does Claim Decomposition Boost or Burden Fact-Checking Performance?"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction following",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "TSDS: Data Selection for Task-Specific Model Finetuning",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "TSDS: Data Selection for Task-Specific Model Finetuning"
+        ],
+        "icml25": [
+          "SeedLoRA: A Fusion Approach to Efficient LLM Fine-Tuning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General capabilities",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Decomposition Dilemmas: Does Claim Decomposition Boost or Burden Fact-Checking Performance?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Decomposition Dilemmas: Does Claim Decomposition Boost or Burden Fact-Checking Performance?"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multilingual question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Causal Representation Learning from Multimodal Clinical Records under Non-Random Modality Missingness",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Causal Representation Learning from Multimodal Clinical Records under Non-Random Modality Missingness"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "OpenLLM Leaderboard",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Improving Data Efficiency via Curating LLM-Driven Rating Systems",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Improving Data Efficiency via Curating LLM-Driven Rating Systems"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 6,
+  "incoming_relationship_count": 6,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided sources, TyDiQA is consistently characterized as a benchmark for multilingual question answering. Its prevailing use is to evaluate a model's capabilities across a diverse set of \"typologically different languages,\" as noted in several definitions. Papers use TyDiQA to operationalize and measure several abilities, most commonly \"Multilingual ability\" and \"Multilingual question answering,\" but also general \"Question answering,\" \"Commonsense knowledge,\" and \"Faithfulness.\" The task format is described by some sources as \"single-hop question answering\" where models must answer questions given a context from a \"Wikipedia datastore\" or article. While most definitions emphasize its multilingual nature, there is a slight variation in the number of languages mentioned, with some papers citing nine and others eleven. The benchmark is also used in language-specific subsets, as one paper notes with \"TyDiQA { ID, SW, FI }\". TyDiQA is frequently included in evaluation suites alongside other benchmarks like MMLU, GSM8K, and BBH to assess general model performance, particularly for instruction-tuned LLMs.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Language Model Cascades: Token-Level Uncertainty And Beyond",
+      "Mixture-of-Experts Meets Instruction Tuning: A Winning Combination for Large Language Models",
+      "SALMON: Self-Alignment with Instructable Reward Models"
+    ],
+    "iclr25": [
+      "Data Pruning by Information Maximization",
+      "Efficient stagewise pretraining via progressive subnetworks",
+      "Fine-tuning with Reserved Majority for Noise Reduction",
+      "Generative Representational Instruction Tuning",
+      "Improving Data Efficiency via Curating LLM-Driven Rating Systems",
+      "MoS: Unleashing Parameter Efficiency of Low-Rank Adaptation with Mixture of Shards",
+      "Pangea: A Fully Open Multilingual Multimodal LLM for 39 Languages",
+      "Provence: efficient and robust context pruning for retrieval-augmented generation"
+    ],
+    "naacl25": [
+      "Beyond Logit Lens: Contextual Embeddings for Robust Hallucination Detection & Grounding inVLMs",
+      "Decomposition Dilemmas: Does Claim Decomposition Boost or Burden Fact-Checking Performance?",
+      "JRE-L: Journalist, Reader, and EditorLLMs in the Loop for Science Journalism for the General Audience"
+    ],
+    "icml25": [
+      "LAuReL: Learned Augmented Residual Layer",
+      "SeedLoRA: A Fusion Approach to Efficient LLM Fine-Tuning",
+      "Token Cleaning: Fine-Grained Data Selection for LLM Supervised Fine-Tuning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 3,
+    "iclr25": 8,
+    "naacl25": 3,
+    "icml25": 3
+  },
+  "conferences": [
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25"
+  ]
+}

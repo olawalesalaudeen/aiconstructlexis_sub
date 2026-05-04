@@ -1,0 +1,93 @@
+{
+  "canonical_name": "Conditional ambiguous question answering",
+  "type": "behavior",
+  "canonical_definition": "Conditional ambiguous question answering is described as the task of answering a question whose correct interpretation depends on unstated or implicit conditions. The provided literature operationalizes this behavior as a two-part process: first, 'condition identification,' which involves extracting contextual factors that differentiate between interpretations, and second, 'conditional answer generation.' This second stage involves producing answers explicitly tied to the identified conditions, with one paper noting the output can be a \"structured set of condition-answer-citation triples.\" The behavior is most commonly measured using the CondAmbigQA benchmark, which is presented as a framework and dataset for evaluating models on both condition identification and conditional answer generation. The ASQA benchmark is also mentioned as a measurement instrument for this behavior in one source, though no further details are provided.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Ambiguous question answering",
+    "Conditional ambiguous question answering",
+    "Conditional answer generation",
+    "Condition identification"
+  ],
+  "papers": [
+    "2025.emnlp-main.115.checklist",
+    "Effective Red-Teaming of Policy-Adherent Agents",
+    "VeriFact: Enhancing Long-Form Factuality Evaluation with Refined Fact Extraction and Reference Facts"
+  ],
+  "paper_count": 3,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The observable task of generating one or more valid answers to a query that is inherently ambiguous and allows for multiple interpretations.",
+      "paper": "Effective Red-Teaming of Policy-Adherent Agents",
+      "original_name": "Ambiguous question answering"
+    },
+    {
+      "text": "The observable task of extracting and summarizing the key contextual factors or constraints from provided documents that differentiate between possible interpretations of an ambiguous query.",
+      "paper": "Effective Red-Teaming of Policy-Adherent Agents",
+      "original_name": "Condition identification"
+    },
+    {
+      "text": "Producing answers that are explicitly tied to identified conditions, ensuring responses are contextually grounded and distinguish between possible interpretations.",
+      "paper": "Effective Red-Teaming of Policy-Adherent Agents",
+      "original_name": "Conditional answer generation"
+    },
+    {
+      "text": "The task of providing an answer to a question whose interpretation and correct response depend on unstated or implicit conditions.",
+      "paper": "2025.emnlp-main.115.checklist",
+      "original_name": "Conditional ambiguous question answering"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CondAmbigQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Effective Red-Teaming of Policy-Adherent Agents",
+      "evidence": "Using CondAmbigQA, we develop an experimental protocol to evaluate models on both condition identification and conditional answer generation. (Introduction)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Effective Red-Teaming of Policy-Adherent Agents",
+          "2025.emnlp-main.115.checklist"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ASQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Generating Complex Question Decompositions in the Face of Distribution Shifts",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Generating Complex Question Decompositions in the Face of Distribution Shifts"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 2,
+  "characterization": "Conditional ambiguous question answering is described as the task of answering a question whose correct interpretation depends on unstated or implicit conditions. The provided literature operationalizes this behavior as a two-part process: first, 'condition identification,' which involves extracting contextual factors that differentiate between interpretations, and second, 'conditional answer generation.' This second stage involves producing answers explicitly tied to the identified conditions, with one paper noting the output can be a \"structured set of condition-answer-citation triples.\" The behavior is most commonly measured using the CondAmbigQA benchmark, which is presented as a framework and dataset for evaluating models on both condition identification and conditional answer generation. The ASQA benchmark is also mentioned as a measurement instrument for this behavior in one source, though no further details are provided.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "2025.emnlp-main.115.checklist",
+      "Effective Red-Teaming of Policy-Adherent Agents",
+      "VeriFact: Enhancing Long-Form Factuality Evaluation with Refined Fact Extraction and Reference Facts"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 3
+  },
+  "conferences": [
+    "emnlp25"
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "canonical_name": "Plan generation",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, `Plan generation` is consistently defined as the behavior of a large language model producing a sequence of actions to transition from an initial state to a goal state. The most prevalent framing, found in papers like \"Leveraging Environment Interaction...\" and \"LongLeader...\", specifies that the LLM generates these plans directly, without relying on external planners or formal languages. This is sometimes referred to as \"Intrinsic Planning,\" where the model is delegated the \"entire plan generation process.\" To operationalize and evaluate this behavior, the field uses measurement instruments such as VAL. The behavior is also described more generally as \"automatically generating reasonable solutions for given tasks\" based on user queries. The provided data also situates `Plan generation` in relation to other capabilities; it is reported to be caused by `State tracking` and can itself be a precursor to `Code generation`.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Plan generation"
+  ],
+  "papers": [
+    "AfriHate: A Multilingual Collection of Hate Speech and Abusive Language Datasets forAfrican Languages",
+    "LongLeader: A Comprehensive Leaderboard for Large Language Models in Long-context Scenarios",
+    "Constrained Human-AI Cooperation: An Inclusive Embodied Social Intelligence Challenge",
+    "Leveraging Environment Interaction for Automated PDDL Translation and Planning with Large Language Models"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The observable behavior of an LLM directly producing a sequence of actions intended to solve a planning problem, without translating to a formal language or using an external planner.",
+      "paper": "Leveraging Environment Interaction for Automated PDDL Translation and Planning with Large Language Models",
+      "original_name": "Plan generation"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VAL",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "A Silver Bullet or a Compromise for Full Attention? A Comprehensive Study of Gist Token-based Context Compression",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "A Silver Bullet or a Compromise for Full Attention? A Comprehensive Study of Gist Token-based Context Compression"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "State tracking",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "LongLeader: A Comprehensive Leaderboard for Large Language Models in Long-context Scenarios",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "LongLeader: A Comprehensive Leaderboard for Large Language Models in Long-context Scenarios"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Code generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Code-Generated Graph Representations Using Multiple LLM Agents for Material Properties Prediction",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Code-Generated Graph Representations Using Multiple LLM Agents for Material Properties Prediction"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 2,
+  "characterization": "Across the provided literature, `Plan generation` is consistently defined as the behavior of a large language model producing a sequence of actions to transition from an initial state to a goal state. The most prevalent framing, found in papers like \"Leveraging Environment Interaction...\" and \"LongLeader...\", specifies that the LLM generates these plans directly, without relying on external planners or formal languages. This is sometimes referred to as \"Intrinsic Planning,\" where the model is delegated the \"entire plan generation process.\" To operationalize and evaluate this behavior, the field uses measurement instruments such as VAL. The behavior is also described more generally as \"automatically generating reasonable solutions for given tasks\" based on user queries. The provided data also situates `Plan generation` in relation to other capabilities; it is reported to be caused by `State tracking` and can itself be a precursor to `Code generation`.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "Constrained Human-AI Cooperation: An Inclusive Embodied Social Intelligence Challenge",
+      "Leveraging Environment Interaction for Automated PDDL Translation and Planning with Large Language Models"
+    ],
+    "naacl25": [
+      "AfriHate: A Multilingual Collection of Hate Speech and Abusive Language Datasets forAfrican Languages",
+      "LongLeader: A Comprehensive Leaderboard for Large Language Models in Long-context Scenarios"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 2,
+    "naacl25": 2
+  },
+  "conferences": [
+    "naacl25",
+    "neurips24"
+  ]
+}

@@ -1,0 +1,1325 @@
+{
+  "canonical_name": "Complex reasoning",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, complex reasoning is predominantly characterized as an observable behavior involving a multi-step, sequential, or iterative process. The most common framing is \"multi-hop reasoning,\" defined as inferring an answer by \"chaining together multiple intermediate facts or relations across more than one step.\" Other definitions describe it as \"multi-step inference,\" which requires deriving intermediate conclusions, or as \"composite task solving,\" which involves the sequential execution of subtasks. A smaller set of papers defines it as an interactive process of refining answers through follow-up questions or reprocessing inputs. This behavior is operationalized and measured through performance on a wide array of benchmarks, with HotpotQA, MuSiQue, GSM8k, 2WikiMultihopQA, BBH, and MATH appearing as frequently used evaluation instruments. Complex reasoning is often studied alongside mathematical reasoning, question answering, and chain-of-thought reasoning. Some papers also report that behaviors such as planning, tool use, and self-correction can enable or cause complex reasoning.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Multi-hop reasoning",
+    "Two-hop relational question answering",
+    "Multi-hop tracing",
+    "Subtask execution",
+    "Composite task solving",
+    "Multi-step inference",
+    "Sequential inference",
+    "Iterative reasoning",
+    "Multi-step reasoning",
+    "Multi-turn reasoning",
+    "Complex reasoning",
+    "Multi-step problem solving",
+    "Complex reasoning task performance"
+  ],
+  "papers": [
+    "AIR-Bench: Automated Heterogeneous Information Retrieval Benchmark",
+    "AgentRM: Enhancing Agent Generalization with Reward Modeling",
+    "2025.emnlp-main.1147.checklist",
+    "An Empirical Study ofLLMReasoning Ability Under Strict Output Length Constraint",
+    "BeyondWER: Probing Whisper\u2019s Sub\u2010token Decoder Across Diverse Language Resource Levels",
+    "CalibratingLLMs for Text-to-SQLParsing by Leveraging Sub-clause Frequencies",
+    "ComplexTempQA: A 100m Dataset for Complex Temporal Question Answering",
+    "DEL-ToM: Inference-Time Scaling for Theory-of-Mind Reasoning via Dynamic Epistemic Logic",
+    "DocReRank: Single-Page Hard Negative Query Generation for Training Multi-ModalRAGRerankers",
+    "From Capabilities to Performance: Evaluating Key Functional Properties ofLLMArchitectures in Penetration Testing",
+    "Image Difference Captioning via Adversarial Preference Optimization",
+    "LASER: AnLLM-basedASRScoring and Evaluation Rubric",
+    "MEBench: Benchmarking Large Language Models for Cross-Document Multi-Entity Question Answering",
+    "Meta-Rewarding Language Models: Self-Improving Alignment withLLM-as-a-Meta-Judge",
+    "PricingLogic: EvaluatingLLMs Reasoning on Complex Tourism Pricing Tasks",
+    "Probing Narrative Morals: A New Character-FocusedMFTFramework for Use with Large Language Models",
+    "RESF: Regularized-Entropy-Sensitive Fingerprinting for Black-Box Tamper Detection of Large Language Models",
+    "RareSyn: Health Record Synthesis for Rare Disease Diagnosis",
+    "Resource-Rational Noisy-Channel Language Processing: Testing the Effect of Algorithmic Constraints on Inferences",
+    "SEAL: Structure and Element Aware Learning Improves Long Structured Document Retrieval",
+    "Same evaluation, more tokens: On the effect of input length for machine translation evaluation using Large Language Models",
+    "Seeing More, Saying More: Lightweight Language Experts are Dynamic Video Token Compressors",
+    "SliceMoE: Routing Embedding Slices Instead of Tokens for Fine-Grained and Balanced Transformer Scaling",
+    "Table-R1: Inference-Time Scaling for Table Reasoning Tasks",
+    "The Validation Gap: A Mechanistic Analysis of How Language Models Compute Arithmetic but Fail to Validate It",
+    "Understanding Subword Compositionality of Large Language Models",
+    "ViPE: Visual Perception in Parameter Space for Efficient Video-Language Understanding",
+    "VocalNet: SpeechLLMs with Multi-Token Prediction for Faster and High-Quality Generation",
+    "Data Pruning by Information Maximization",
+    "Personality Alignment of Large Language Models",
+    "Co-occurrence is not Factual Association in Language Models",
+    "Knowledge Circuits in Pretrained Transformers",
+    "LoFiT: Localized Fine-tuning on LLM Representations",
+    "SpatialRGPT: Grounded Spatial Reasoning in Vision-Language Models",
+    "Decompose, Analyze and Rethink: Solving Intricate Problems with Human-like Reasoning Cycle",
+    "JiuZhang3.0: Efficiently Improving Mathematical Reasoning by Training Small Data Synthesis Models",
+    "Mitigating Object Hallucination via Concentric Causal Attention"
+  ],
+  "paper_count": 37,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Inferring an answer by chaining together multiple intermediate facts or relations across more than one step.",
+      "paper": "LoFiT: Localized Fine-tuning on LLM Representations",
+      "original_name": "Multi-hop reasoning"
+    },
+    {
+      "text": "The task of following a chain of reasoning or references across multiple steps within a text to answer a question.",
+      "paper": "SEAL: Structure and Element Aware Learning Improves Long Structured Document Retrieval",
+      "original_name": "Multi-hop tracing"
+    },
+    {
+      "text": "The task of answering a question that requires composing two distinct relational facts from a provided context to find the correct entity.",
+      "paper": "DocReRank: Single-Page Hard Negative Query Generation for Training Multi-ModalRAGRerankers",
+      "original_name": "Two-hop relational question answering"
+    },
+    {
+      "text": "Producing correct outputs for tasks that require two sequential subtask applications, such as retrieving knowledge and then transforming it, without explicit intermediate steps in the input.",
+      "paper": "Understanding Subword Compositionality of Large Language Models",
+      "original_name": "Composite task solving"
+    },
+    {
+      "text": "The observable generation or processing of intermediate steps in a reasoning task, such as solving a part of a multi-step problem.",
+      "paper": "2025.emnlp-main.1147.checklist",
+      "original_name": "Subtask execution"
+    },
+    {
+      "text": "The observable process of generating a sequence of conclusions or actions based on a set of facts to solve a problem.",
+      "paper": "Image Difference Captioning via Adversarial Preference Optimization",
+      "original_name": "Sequential inference"
+    },
+    {
+      "text": "Producing an output that depends on correctly deriving intermediate conclusions from a chain of premises, where each step relies on the previous one.",
+      "paper": "2025.emnlp-main.1714.checklist",
+      "original_name": "Multi-step inference"
+    },
+    {
+      "text": "Generating follow-up explanations or justifications for an initial answer by reprocessing the original question augmented with the prior response and a prompting prefix.",
+      "paper": "RESF: Regularized-Entropy-Sensitive Fingerprinting for Black-Box Tamper Detection of Large Language Models",
+      "original_name": "Iterative reasoning"
+    },
+    {
+      "text": "Engaging in iterative, step-by-step reasoning to refine answers by decomposing queries, generating follow-up questions, and progressively improving response quality.",
+      "paper": "Same evaluation, more tokens: On the effect of input length for machine translation evaluation using Large Language Models",
+      "original_name": "Multi-step reasoning"
+    },
+    {
+      "text": "Engaging in a sequential reasoning process where the model generates partial outputs across multiple turns, each conditioned on prior truncated responses and intervention prompts.",
+      "paper": "MAVL: A Multilingual Audio-Video Lyrics Dataset for Animated Song Translation",
+      "original_name": "Multi-turn reasoning"
+    },
+    {
+      "text": "Answering multimodal questions that require higher-level inference beyond simple recognition or description.",
+      "paper": "Mitigating Object Hallucination via Concentric Causal Attention",
+      "original_name": "Complex reasoning"
+    },
+    {
+      "text": "The observable task of solving a complex mathematical problem that requires integrating multiple knowledge concepts in a sequential reasoning process.",
+      "paper": "AIR-Bench: Automated Heterogeneous Information Retrieval Benchmark",
+      "original_name": "Multi-step problem solving"
+    },
+    {
+      "text": "The observable behavior of solving structured problems that require multi-step logical, mathematical, or commonsense reasoning, as measured by performance on specific benchmarks.",
+      "paper": "Personality Alignment of Large Language Models",
+      "original_name": "Complex reasoning task performance"
+    }
+  ],
+  "definition_count": 13,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HotpotQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "HippoRAG: Neurobiologically Inspired Long-Term Memory for Large Language Models",
+      "evidence": "",
+      "paper_count": 10,
+      "papers_by_conference": {
+        "neurips24": [
+          "HippoRAG: Neurobiologically Inspired Long-Term Memory for Large Language Models",
+          "Chain of Agents: Large Language Models Collaborating on Long-Context Tasks"
+        ],
+        "iclr25": [
+          "Sufficient Context: A New Lens on Retrieval Augmented Generation Systems",
+          "OmniKV: Dynamic Context Selection for Efficient Long-Context LLMs",
+          "Accelerating Inference of Retrieval-Augmented Generation via Sparse Context Selection"
+        ],
+        "naacl25": [
+          "AgentSense: Benchmarking Social Intelligence of Language Agents through Interactive Scenarios"
+        ],
+        "acl25": [
+          "Enhancing Transformers for Generalizable First-Order Logical Entailment",
+          "MadaKV: Adaptive Modality-PerceptionKVCache Eviction for Efficient Multimodal Long-Context Inference"
+        ],
+        "icml25": [
+          "SPEX: Scaling Feature Interaction Explanations for LLMs"
+        ],
+        "emnlp25": [
+          "Static Word Embeddings for Sentence Semantic Representation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MuSiQue",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Take a Step Back: Evoking Reasoning via Abstraction in Large Language Models",
+      "evidence": "",
+      "paper_count": 9,
+      "papers_by_conference": {
+        "iclr24": [
+          "Take a Step Back: Evoking Reasoning via Abstraction in Large Language Models"
+        ],
+        "neurips24": [
+          "Chain of Agents: Large Language Models Collaborating on Long-Context Tasks"
+        ],
+        "iclr25": [
+          "Speculative RAG: Enhancing Retrieval Augmented Generation through Drafting",
+          "Sufficient Context: A New Lens on Retrieval Augmented Generation Systems"
+        ],
+        "naacl25": [
+          "AgentSense: Benchmarking Social Intelligence of Language Agents through Interactive Scenarios",
+          "Rethinking Word Similarity: Semantic Similarity through Classification Confusion"
+        ],
+        "acl25": [
+          "MadaKV: Adaptive Modality-PerceptionKVCache Eviction for Efficient Multimodal Long-Context Inference"
+        ],
+        "emnlp25": [
+          "TRUST-VL: An Explainable News Assistant for General Multimodal Misinformation Detection",
+          "Static Word Embeddings for Sentence Semantic Representation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mathematical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "DART-Math: Difficulty-Aware Rejection Tuning for Mathematical Problem-Solving",
+      "evidence": "Complex reasoning has been an intriguing ability of large language models (LLMs), with application in for example mathematical problem-solving (Section 1).",
+      "paper_count": 8,
+      "papers_by_conference": {
+        "neurips24": [
+          "DART-Math: Difficulty-Aware Rejection Tuning for Mathematical Problem-Solving",
+          "Transformers Can Do Arithmetic with the Right Embeddings"
+        ],
+        "iclr25": [
+          "Step-by-Step Reasoning for Math Problems  via Twisted Sequential Monte Carlo",
+          "Token-Supervised Value Models for Enhancing Mathematical Problem-Solving Capabilities of Large Language Models",
+          "Omni-MATH: A Universal Olympiad Level Mathematic Benchmark for Large Language Models"
+        ],
+        "naacl25": [
+          "Investigating Hallucinations in Simultaneous Machine Translation: Knowledge Distillation Solution and Components Analysis"
+        ],
+        "acl25": [
+          "Uncovering the Impact of Chain-of-Thought Reasoning for Direct Preference Optimization: Lessons from Text-to-SQL"
+        ],
+        "icml25": [
+          "Think Smarter not Harder: Adaptive Reasoning with Inference Aware Optimization"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8k",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "ExtendingLLMContext Window with Adaptive Grouped Positional Encoding: A Training-Free Method",
+      "evidence": "",
+      "paper_count": 6,
+      "papers_by_conference": {
+        "acl25": [
+          "ExtendingLLMContext Window with Adaptive Grouped Positional Encoding: A Training-Free Method",
+          "Fairness Beyond Performance: Revealing Reliability Disparities Across Groups in LegalNLP",
+          "AgentRM: Enhancing Agent Generalization with Reward Modeling"
+        ],
+        "icml25": [
+          "CommVQ: Commutative Vector Quantization for KV Cache Compression",
+          "Lexico: Extreme KV Cache Compression via Sparse Coding over Universal Dictionaries"
+        ],
+        "emnlp25": [
+          "pFedGPT: Hierarchically OptimizingLoRAAggregation Weights for Personalized FederatedGPTModels"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "2WikiMultihopQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "OmniKV: Dynamic Context Selection for Efficient Long-Context LLMs",
+      "evidence": "",
+      "paper_count": 5,
+      "papers_by_conference": {
+        "iclr25": [
+          "OmniKV: Dynamic Context Selection for Efficient Long-Context LLMs"
+        ],
+        "naacl25": [
+          "Rethinking Word Similarity: Semantic Similarity through Classification Confusion"
+        ],
+        "icml25": [
+          "Grokking in the Wild: Data Augmentation for Real-World Multi-Hop Reasoning with Transformers"
+        ],
+        "emnlp25": [
+          "TRUST-VL: An Explainable News Assistant for General Multimodal Misinformation Detection",
+          "Static Word Embeddings for Sentence Semantic Representation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Chain-of-thought reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Iteration Head: A Mechanistic Study of Chain-of-Thought",
+      "evidence": "",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "neurips24": [
+          "Iteration Head: A Mechanistic Study of Chain-of-Thought"
+        ],
+        "iclr25": [
+          "OmniKV: Dynamic Context Selection for Efficient Long-Context LLMs",
+          "Training Nonlinear Transformers for Chain-of-Thought Inference:  A Theoretical Generalization Analysis",
+          "TPO: Aligning Large Language Models with Multi-branch & Multi-step Preference Trees"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WebQSP",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "G-Retriever: Retrieval-Augmented Generation for Textual Graph Understanding and Question Answering",
+      "evidence": "",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "neurips24": [
+          "G-Retriever: Retrieval-Augmented Generation for Textual Graph Understanding and Question Answering"
+        ],
+        "iclr25": [
+          "Think-on-Graph 2.0: Deep and Faithful Large Language Model Reasoning with Knowledge-guided Retrieval Augmented Generation",
+          "Simple is Effective: The Roles of Graphs and Large Language Models in Knowledge-Graph-Based Retrieval-Augmented Generation"
+        ],
+        "acl25": [
+          "Beyond One-Size-Fits-All: Tailored Benchmarks for Efficient Evaluation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "StrategyQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Take a Step Back: Evoking Reasoning via Abstraction in Large Language Models",
+      "evidence": "",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "iclr24": [
+          "Take a Step Back: Evoking Reasoning via Abstraction in Large Language Models"
+        ],
+        "emnlp25": [
+          "Unleashing the Reasoning Potential ofLLMs by Critique Fine-Tuning on One Problem",
+          "TRUST-VL: An Explainable News Assistant for General Multimodal Misinformation Detection",
+          "GraDaSE: Graph-Based Dataset Search with Examples"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BBH",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Data Pruning by Information Maximization",
+      "evidence": "Finally, we select four text-only benchmarks to evaluate text-based performance: ...BBH for complex reasoning (Suzgun et al., 2023)... (Section 4.1)",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "iclr25": [
+          "Data Pruning by Information Maximization",
+          "TPO: Aligning Large Language Models with Multi-branch & Multi-step Preference Trees"
+        ],
+        "naacl25": [
+          "Iterative Self-TuningLLMs for Enhanced Jailbreaking Capabilities"
+        ],
+        "acl25": [
+          "Fairness Beyond Performance: Revealing Reliability Disparities Across Groups in LegalNLP"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Divide-and-Conquer Meets Consensus: Unleashing the Power of Functions in Code Generation",
+      "evidence": "",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "neurips24": [
+          "Divide-and-Conquer Meets Consensus: Unleashing the Power of Functions in Code Generation"
+        ],
+        "iclr25": [
+          "Improving Complex Reasoning with Dynamic Prompt Corruption: A Soft Prompt Optimization Approach"
+        ],
+        "naacl25": [
+          "The Plagiarism Singularity Conjecture"
+        ],
+        "emnlp25": [
+          "pFedGPT: Hierarchically OptimizingLoRAAggregation Weights for Personalized FederatedGPTModels"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "RULER",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LongPO: Long Context Self-Evolution of Large Language Models through Short-to-Long Preference Optimization",
+      "evidence": "",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "iclr25": [
+          "LongPO: Long Context Self-Evolution of Large Language Models through Short-to-Long Preference Optimization",
+          "Scaling Instruction-tuned LLMs to Million-token Contexts via Hierarchical Synthetic Data Generation",
+          "Scaling Long Context Training Data by Long-Distance Referrals"
+        ],
+        "icml25": [
+          "LaCache: Ladder-Shaped KV Caching for Efficient Long-Context Modeling of Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Task decomposition",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Towards Robust Multi-Modal Reasoning via Model Selection",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr24": [
+          "Towards Robust Multi-Modal Reasoning via Model Selection"
+        ],
+        "neurips24": [
+          "AvaTaR: Optimizing LLM Agents for Tool Usage via Contrastive Reasoning"
+        ],
+        "emnlp25": [
+          "GraDaSE: Graph-Based Dataset Search with Examples"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Information Re-Organization Improves Reasoning in Large Language Models",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "neurips24": [
+          "Information Re-Organization Improves Reasoning in Large Language Models"
+        ],
+        "emnlp25": [
+          "Mixture of Weight-shared Heterogeneous Group Attention Experts for Dynamic Token-wiseKVOptimization",
+          "AdaSteer: Your AlignedLLMis Inherently an Adaptive Jailbreak Defender"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GrailQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Reasoning of Large Language Models over Knowledge Graphs with Super-Relations",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Reasoning of Large Language Models over Knowledge Graphs with Super-Relations"
+        ],
+        "acl25": [
+          "Beyond One-Size-Fits-All: Tailored Benchmarks for Efficient Evaluation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "MMIE: Massive Multimodal Interleaved Comprehension Benchmark for Large Vision-Language Models",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "MMIE: Massive Multimodal Interleaved Comprehension Benchmark for Large Vision-Language Models"
+        ],
+        "icml25": [
+          "Reward-Guided Speculative Decoding for Efficient LLM Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MQUAKE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "From Capabilities to Performance: Evaluating Key Functional Properties ofLLMArchitectures in Penetration Testing",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "emnlp25": [
+          "From Capabilities to Performance: Evaluating Key Functional Properties ofLLMArchitectures in Penetration Testing",
+          "Dual-Path Dynamic Fusion with Learnable Query for Multimodal Sentiment Analysis"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLaVA-Bench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Draw-and-Understand: Leveraging Visual Prompts to Enable MLLMs to Comprehend What You Want",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Draw-and-Understand: Leveraging Visual Prompts to Enable MLLMs to Comprehend What You Want",
+          "DAMO: Decoding by Accumulating Activations Momentum for Mitigating Hallucinations in Vision-Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Implicit reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Grokking in the Wild: Data Augmentation for Real-World Multi-Hop Reasoning with Transformers",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "icml25": [
+          "Grokking in the Wild: Data Augmentation for Real-World Multi-Hop Reasoning with Transformers"
+        ],
+        "emnlp25": [
+          "CodeArena: Evaluating and AligningCodeLLMs on Human Preference"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU-Pro",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Lexico: Extreme KV Cache Compression via Sparse Coding over Universal Dictionaries",
+      "evidence": "Additionally, we evaluate generative performance on complex reasoning tasks, such as GSM8K (Cobbe et al., 2021) with 5-shot prompting and MMLU-Pro Engineering/Law (Wang et al., 2024a) with zero-shot chain-of-thought.",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "icml25": [
+          "Lexico: Extreme KV Cache Compression via Sparse Coding over Universal Dictionaries"
+        ],
+        "emnlp25": [
+          "Morpheme Induction for Emergent Language"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CWQ",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Simple is Effective: The Roles of Graphs and Large Language Models in Knowledge-Graph-Based Retrieval-Augmented Generation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Simple is Effective: The Roles of Graphs and Large Language Models in Knowledge-Graph-Based Retrieval-Augmented Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Table reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "SNaRe: Domain-aware Data Generation for Low-Resource Event Detection",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "SNaRe: Domain-aware Data Generation for Low-Resource Event Detection"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Chain-of-thought reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "DQ-LoRe: Dual Queries with Low Rank Approximation Re-ranking for In-Context Learning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "DQ-LoRe: Dual Queries with Low Rank Approximation Re-ranking for In-Context Learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Let's Verify Step by Step",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Let's Verify Step by Step"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Abstract reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "THOUGHT PROPAGATION: AN ANALOGICAL APPROACH TO COMPLEX REASONING WITH LARGE LANGUAGE MODELS",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "THOUGHT PROPAGATION: AN ANALOGICAL APPROACH TO COMPLEX REASONING WITH LARGE LANGUAGE MODELS"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Contextual understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Towards Robust Multi-Modal Reasoning via Model Selection",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Towards Robust Multi-Modal Reasoning via Model Selection"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multi-hop question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Delving into Multilingual Ethical Bias: TheMSQADwith Statistical Hypothesis Tests for Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Delving into Multilingual Ethical Bias: TheMSQADwith Statistical Hypothesis Tests for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Critique",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Take the essence and discard the dross: A Rethinking on Data Selection for Fine-Tuning Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Take the essence and discard the dross: A Rethinking on Data Selection for Fine-Tuning Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Tool use",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "AvaTaR: Optimizing LLM Agents for Tool Usage via Contrastive Reasoning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "AvaTaR: Optimizing LLM Agents for Tool Usage via Contrastive Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Tool use",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "TinySQL: A Progressive Text-to-SQLDataset for Mechanistic Interpretability Research",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "TinySQL: A Progressive Text-to-SQLDataset for Mechanistic Interpretability Research"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Claim verification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Information Re-Organization Improves Reasoning in Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Information Re-Organization Improves Reasoning in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TACT",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "TACT: Advancing Complex Aggregative Reasoning with Information Extraction Tools",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "TACT: Advancing Complex Aggregative Reasoning with Information Extraction Tools"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Planning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Policy Guided Tree Search for Enhanced LLM Reasoning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Policy Guided Tree Search for Enhanced LLM Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Portability",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "From Capabilities to Performance: Evaluating Key Functional Properties ofLLMArchitectures in Penetration Testing",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "From Capabilities to Performance: Evaluating Key Functional Properties ofLLMArchitectures in Penetration Testing"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CLUTRR",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LoFiT: Localized Fine-tuning on LLM Representations",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "LoFiT: Localized Fine-tuning on LLM Representations"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Knowledge transfer",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Iteration Head: A Mechanistic Study of Chain-of-Thought",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Iteration Head: A Mechanistic Study of Chain-of-Thought"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Textual reasoning",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "JiuZhang3.0: Efficiently Improving Mathematical Reasoning by Training Small Data Synthesis Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "JiuZhang3.0: Efficiently Improving Mathematical Reasoning by Training Small Data Synthesis Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Compositional reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Limits of Deep Learning: Sequence Modeling through the Lens of Complexity Theory",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Limits of Deep Learning: Sequence Modeling through the Lens of Complexity Theory"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Planning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "CodePlan: Unlocking Reasoning Potential in Large Language Models by Scaling Code-form Planning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "CodePlan: Unlocking Reasoning Potential in Large Language Models by Scaling Code-form Planning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Information retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "DEFAME: Dynamic Evidence-based FAct-checking with Multimodal Experts",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "DEFAME: Dynamic Evidence-based FAct-checking with Multimodal Experts"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Omni-MATH",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Omni-MATH: A Universal Olympiad Level Mathematic Benchmark for Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Omni-MATH: A Universal Olympiad Level Mathematic Benchmark for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OBQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "HiRA: Parameter-Efficient Hadamard High-Rank Adaptation for Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "HiRA: Parameter-Efficient Hadamard High-Rank Adaptation for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Long-context reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Scaling Instruction-tuned LLMs to Million-token Contexts via Hierarchical Synthetic Data Generation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Scaling Instruction-tuned LLMs to Million-token Contexts via Hierarchical Synthetic Data Generation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Verifiable by Design: Aligning Language Models to Quote from Pre-Training Data",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Verifiable by Design: Aligning Language Models to Quote from Pre-Training Data"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CLEVR",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Verifiable by Design: Aligning Language Models to Quote from Pre-Training Data",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Verifiable by Design: Aligning Language Models to Quote from Pre-Training Data"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Self-correction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Pay More Attention to Images: Numerous Images-Oriented Multimodal Summarization",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Pay More Attention to Images: Numerous Images-Oriented Multimodal Summarization"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Sequential reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Exploring Safety-Utility Trade-Offs in Personalized Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Exploring Safety-Utility Trade-Offs in Personalized Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Claim verification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Multilingual Needle in a Haystack: Investigating Long-Context Behavior of Multilingual Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Multilingual Needle in a Haystack: Investigating Long-Context Behavior of Multilingual Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Entity disambiguation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Multilingual Needle in a Haystack: Investigating Long-Context Behavior of Multilingual Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Multilingual Needle in a Haystack: Investigating Long-Context Behavior of Multilingual Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HumanEval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "pFedGPT: Hierarchically OptimizingLoRAAggregation Weights for Personalized FederatedGPTModels",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "pFedGPT: Hierarchically OptimizingLoRAAggregation Weights for Personalized FederatedGPTModels"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Instance-Selection-Inspired Undersampling Strategies for Bias Reduction in Small and Large Language Models for Binary Text Classification",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Instance-Selection-Inspired Undersampling Strategies for Bias Reduction in Small and Large Language Models for Binary Text Classification"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Self-correction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Adaptive Self-improvement LLM Agentic System for ML Library Development",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Adaptive Self-improvement LLM Agentic System for ML Library Development"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "FOLIO",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Morpheme Induction for Emergent Language",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Morpheme Induction for Emergent Language"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MultiHopRAG",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MadaKV: Adaptive Modality-PerceptionKVCache Eviction for Efficient Multimodal Long-Context Inference",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "MadaKV: Adaptive Modality-PerceptionKVCache Eviction for Efficient Multimodal Long-Context Inference"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ComplexWebQuestions",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Beyond One-Size-Fits-All: Tailored Benchmarks for Efficient Evaluation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Beyond One-Size-Fits-All: Tailored Benchmarks for Efficient Evaluation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WebQuestions",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Beyond One-Size-Fits-All: Tailored Benchmarks for Efficient Evaluation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Beyond One-Size-Fits-All: Tailored Benchmarks for Efficient Evaluation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Code navigation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Nemotron-CORTEXA: Enhancing LLM Agents for Software Engineering Tasks via Improved Localization and Solution Diversity",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Nemotron-CORTEXA: Enhancing LLM Agents for Software Engineering Tasks via Improved Localization and Solution Diversity"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Iterative refinement",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Think Twice, Act Once: A Co-Evolution Framework of LLM and RL for Large-Scale Decision Making",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Think Twice, Act Once: A Co-Evolution Framework of LLM and RL for Large-Scale Decision Making"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLaVA-Bench-in-the-Wild",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "DAMA: Data- and Model-aware Alignment of Multi-modal LLMs",
+      "evidence": "LLaVA-Bench-in-the-Wild (Liu et al., 2024), which examines the helpfulness of VLMs in aspects like instruction following and complex reasoning (Section 5.2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "DAMA: Data- and Model-aware Alignment of Multi-modal LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-Easy",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "EncryptedLLM: Privacy-Preserving Large Language Model Inference via GPU-Accelerated Fully Homomorphic Encryption",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "EncryptedLLM: Privacy-Preserving Large Language Model Inference via GPU-Accelerated Fully Homomorphic Encryption"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GPQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Resource-Rational Noisy-Channel Language Processing: Testing the Effect of Algorithmic Constraints on Inferences",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Resource-Rational Noisy-Channel Language Processing: Testing the Effect of Algorithmic Constraints on Inferences"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Long-context understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "LLM-Guided Co-Training for Text Classification",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "LLM-Guided Co-Training for Text Classification"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ProofWriter",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Morpheme Induction for Emergent Language",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Morpheme Induction for Emergent Language"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GPQA-Diamond",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Morpheme Induction for Emergent Language",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Morpheme Induction for Emergent Language"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Long-context processing",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "SpeculatingLLMs\u2019Chinese Training Data Pollution from Their Tokens",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "SpeculatingLLMs\u2019Chinese Training Data Pollution from Their Tokens"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HybridQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Vision-Free Retrieval: Rethinking Multimodal Search with Textual Scene Descriptions",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Vision-Free Retrieval: Rethinking Multimodal Search with Textual Scene Descriptions"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AndroidWorld",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Phi: Preference Hijacking in Multi-modal Large Language Models at Inference Time",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Phi: Preference Hijacking in Multi-modal Large Language Models at Inference Time"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multi-step planning",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "zFLoRA: Zero-Latency Fused Low-Rank Adapters",
+      "evidence": "Our detailed analysis demonstrates how planning trajectories improves complex reasoning capabilities, showing that PLAN-TUNING is an effective strategy for improving task-specific performance of smaller LLMs. (Abstract)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "zFLoRA: Zero-Latency Fused Low-Rank Adapters"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MBPP",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "pFedGPT: Hierarchically OptimizingLoRAAggregation Weights for Personalized FederatedGPTModels",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "pFedGPT: Hierarchically OptimizingLoRAAggregation Weights for Personalized FederatedGPTModels"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ViDoSeek",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "ComplexTempQA: A 100m Dataset for Complex Temporal Question Answering",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "ComplexTempQA: A 100m Dataset for Complex Temporal Question Answering"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LongMemEval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Easy asPIE? Identifying Multi-Word Expressions withLLMs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Easy asPIE? Identifying Multi-Word Expressions withLLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Associative reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Static Word Embeddings for Sentence Semantic Representation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Static Word Embeddings for Sentence Semantic Representation"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 71,
+  "incoming_relationship_count": 10,
+  "outgoing_relationship_count": 61,
+  "characterization": "Across the provided literature, complex reasoning is predominantly characterized as an observable behavior involving a multi-step, sequential, or iterative process. The most common framing is \"multi-hop reasoning,\" defined as inferring an answer by \"chaining together multiple intermediate facts or relations across more than one step.\" Other definitions describe it as \"multi-step inference,\" which requires deriving intermediate conclusions, or as \"composite task solving,\" which involves the sequential execution of subtasks. A smaller set of papers defines it as an interactive process of refining answers through follow-up questions or reprocessing inputs. This behavior is operationalized and measured through performance on a wide array of benchmarks, with HotpotQA, MuSiQue, GSM8k, 2WikiMultihopQA, BBH, and MATH appearing as frequently used evaluation instruments. Complex reasoning is often studied alongside mathematical reasoning, question answering, and chain-of-thought reasoning. Some papers also report that behaviors such as planning, tool use, and self-correction can enable or cause complex reasoning.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "Co-occurrence is not Factual Association in Language Models",
+      "Knowledge Circuits in Pretrained Transformers",
+      "LoFiT: Localized Fine-tuning on LLM Representations",
+      "SpatialRGPT: Grounded Spatial Reasoning in Vision-Language Models",
+      "Decompose, Analyze and Rethink: Solving Intricate Problems with Human-like Reasoning Cycle",
+      "JiuZhang3.0: Efficiently Improving Mathematical Reasoning by Training Small Data Synthesis Models",
+      "Mitigating Object Hallucination via Concentric Causal Attention"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.1147.checklist",
+      "An Empirical Study ofLLMReasoning Ability Under Strict Output Length Constraint",
+      "BeyondWER: Probing Whisper\u2019s Sub\u2010token Decoder Across Diverse Language Resource Levels",
+      "CalibratingLLMs for Text-to-SQLParsing by Leveraging Sub-clause Frequencies",
+      "ComplexTempQA: A 100m Dataset for Complex Temporal Question Answering",
+      "DEL-ToM: Inference-Time Scaling for Theory-of-Mind Reasoning via Dynamic Epistemic Logic",
+      "DocReRank: Single-Page Hard Negative Query Generation for Training Multi-ModalRAGRerankers",
+      "From Capabilities to Performance: Evaluating Key Functional Properties ofLLMArchitectures in Penetration Testing",
+      "Image Difference Captioning via Adversarial Preference Optimization",
+      "LASER: AnLLM-basedASRScoring and Evaluation Rubric",
+      "MEBench: Benchmarking Large Language Models for Cross-Document Multi-Entity Question Answering",
+      "Meta-Rewarding Language Models: Self-Improving Alignment withLLM-as-a-Meta-Judge",
+      "PricingLogic: EvaluatingLLMs Reasoning on Complex Tourism Pricing Tasks",
+      "Probing Narrative Morals: A New Character-FocusedMFTFramework for Use with Large Language Models",
+      "RESF: Regularized-Entropy-Sensitive Fingerprinting for Black-Box Tamper Detection of Large Language Models",
+      "RareSyn: Health Record Synthesis for Rare Disease Diagnosis",
+      "Resource-Rational Noisy-Channel Language Processing: Testing the Effect of Algorithmic Constraints on Inferences",
+      "SEAL: Structure and Element Aware Learning Improves Long Structured Document Retrieval",
+      "Same evaluation, more tokens: On the effect of input length for machine translation evaluation using Large Language Models",
+      "Seeing More, Saying More: Lightweight Language Experts are Dynamic Video Token Compressors",
+      "SliceMoE: Routing Embedding Slices Instead of Tokens for Fine-Grained and Balanced Transformer Scaling",
+      "Table-R1: Inference-Time Scaling for Table Reasoning Tasks",
+      "The Validation Gap: A Mechanistic Analysis of How Language Models Compute Arithmetic but Fail to Validate It",
+      "Understanding Subword Compositionality of Large Language Models",
+      "ViPE: Visual Perception in Parameter Space for Efficient Video-Language Understanding",
+      "VocalNet: SpeechLLMs with Multi-Token Prediction for Faster and High-Quality Generation"
+    ],
+    "acl25": [
+      "AIR-Bench: Automated Heterogeneous Information Retrieval Benchmark",
+      "AgentRM: Enhancing Agent Generalization with Reward Modeling"
+    ],
+    "iclr25": [
+      "Data Pruning by Information Maximization",
+      "Personality Alignment of Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 7,
+    "emnlp25": 26,
+    "acl25": 2,
+    "iclr25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "neurips24"
+  ]
+}

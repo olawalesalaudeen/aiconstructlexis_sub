@@ -1,0 +1,466 @@
+{
+  "canonical_name": "Long-form text generation",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, long-form text generation is predominantly defined as the observable behavior of producing extended, coherent, and structured text, such as biographies, Wikipedia articles, or detailed answers spanning multiple paragraphs. While most definitions focus on the length and structure of the output, with some specifying lengths exceeding 10,000 or even 100,000 tokens, a less common framing defines it as generation conditioned on a very long input context. This behavior is frequently positioned as representative of real-world applications, with one paper noting it is \"more similar to downstream tasks than providing a rating as in a Likert scale\" (REAL-MM-RAG: A Real-World Multi-Modal Retrieval Benchmark). The behavior is operationalized and measured using a wide array of instruments, including benchmarks like LongGenBench, HelloBench, TruthfulQA, and LongBench, as well as evaluation procedures like LLM-as-a-judge. For instance, the ASQA dataset is specifically used to evaluate how well models generate comprehensive answers that cover multiple valid interpretations of a question. Long-form text generation is studied alongside concepts such as instruction following, length generalization, self-consistency, and code generation. One line of work explicitly frames it as one of three primary strategies for disambiguation, alongside query rewriting and asking clarifying questions. Finally, enhancing factuality in these extended outputs is noted as a \"challenging and underexplored area\" (Unleashing the Reasoning Potential ofLLMs by Critique Fine-Tuning on One Problem).",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Long-form generation",
+    "Open-ended generation",
+    "Long-form text generation",
+    "Wikipedia article generation",
+    "Open-ended response generation",
+    "Long-form answer generation",
+    "Coherent multi-paragraph generation",
+    "Open-ended long text generation",
+    "Long-text generation",
+    "Long-context generation",
+    "Long-response generation",
+    "Ultra-long sequence generation"
+  ],
+  "papers": [
+    "ControlSpeech: Towards Simultaneous and Independent Zero-shot Speaker Cloning and Zero-shot Language Style Control",
+    "Disambiguating Reference in Visually Grounded Dialogues through Joint Modeling of Textual and Multimodal Semantic Structures",
+    "KERL: Knowledge-Enhanced Personalized Recipe Recommendation using Large Language Models",
+    "MemeQA: Holistic Evaluation for Meme Understanding",
+    "MultipleLLMAgents Debate for Equitable Cultural Alignment",
+    "REAL-MM-RAG: A Real-World Multi-Modal Retrieval Benchmark",
+    "Tree-of-Debate: Multi-Persona Debate Trees Elicit Critical Thinking for Scientific Comparative Analysis",
+    "2025.emnlp-main.1543.checklist",
+    "Agent-as-Judge for Factual Summarization of Long Narratives",
+    "Beyond Task-Oriented and Chitchat Dialogues: Proactive and Transition-Aware Conversational Agents",
+    "CARD: Cross-modal Agent Framework for Generative and Editable Residential Design",
+    "Good Intentions BeyondACL: Who DoesNLPfor Social Good, and Where?",
+    "Interpretability Analysis of Arithmetic In-Context Learning in Large Language Models",
+    "Representation Potentials of Foundation Models for Multimodal Alignment: A Survey",
+    "Dialogue Without Limits: Constant-Sized KV Caches for Extended Response in LLMs",
+    "Look Twice Before You Answer: Memory-Space Visual Retracing for Hallucination Mitigation in Multimodal Large Language Models",
+    "RAPID: Long-Context Inference with Retrieval-Augmented Speculative Decoding",
+    "TokenSwift: Lossless Acceleration of Ultra Long Sequence Generation"
+  ],
+  "paper_count": 18,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Producing extended, coherent text responses (e.g., biographies) that contain multiple factual claims, often spanning hundreds of words.",
+      "paper": "MemeQA: Holistic Evaluation for Meme Understanding",
+      "original_name": "Long-form generation"
+    },
+    {
+      "text": "Producing unstructured, long-form text responses to open-ended prompts in multiple languages.",
+      "paper": "KERL: Knowledge-Enhanced Personalized Recipe Recommendation using Large Language Models",
+      "original_name": "Open-ended generation"
+    },
+    {
+      "text": "The observable act of producing extended, context-specific text in response to a prompt, as required for many real-world tasks.",
+      "paper": "Intuitive Fine-Tuning: Towards Simplifying Alignment into a Single Process",
+      "original_name": "Long-form text generation"
+    },
+    {
+      "text": "Producing full-length, structured Wikipedia-style articles from web-sourced information, including section organization and content synthesis.",
+      "paper": "Tree-of-Debate: Multi-Persona Debate Trees Elicit Critical Thinking for Scientific Comparative Analysis",
+      "original_name": "Wikipedia article generation"
+    },
+    {
+      "text": "Producing free-text answers to political statements without constrained output formats, reflecting how models express opinions in naturalistic settings.",
+      "paper": "REAL-MM-RAG: A Real-World Multi-Modal Retrieval Benchmark",
+      "original_name": "Open-ended response generation"
+    },
+    {
+      "text": "Producing detailed, multi-sentence responses to user questions, typically requiring synthesis of information and structured explanation.",
+      "paper": "VC4VG: Optimizing Video Captions for Text-to-Video Generation",
+      "original_name": "Long-form answer generation"
+    },
+    {
+      "text": "The specific task of producing a well-structured and logically flowing text composed of multiple paragraphs from a collection of unordered points.",
+      "paper": "Interpretability Analysis of Arithmetic In-Context Learning in Large Language Models",
+      "original_name": "Coherent multi-paragraph generation"
+    },
+    {
+      "text": "Producing lengthy, coherent, and informative responses to complex questions that require synthesis of knowledge across multiple topics or domains.",
+      "paper": "Good Intentions BeyondACL: Who DoesNLPfor Social Good, and Where?",
+      "original_name": "Open-ended long text generation"
+    },
+    {
+      "text": "The task of producing coherent and contextually relevant text sequences that are exceptionally long, such as exceeding 10,000 tokens.",
+      "paper": "CARD: Cross-modal Agent Framework for Generative and Editable Residential Design",
+      "original_name": "Long-text generation"
+    },
+    {
+      "text": "Generating text while conditioning on very long input contexts, often beyond 100K tokens.",
+      "paper": "RAPID: Long-Context Inference with Retrieval-Augmented Speculative Decoding",
+      "original_name": "Long-context generation"
+    },
+    {
+      "text": "The task of generating a substantial number of output tokens from a relatively short input prompt, such as in essay writing or code synthesis.",
+      "paper": "Dialogue Without Limits: Constant-Sized KV Caches for Extended Response in LLMs",
+      "original_name": "Long-response generation"
+    },
+    {
+      "text": "The observable task of producing a continuous, coherent text sequence of exceptional length, such as 100,000 tokens.",
+      "paper": "TokenSwift: Lossless Acceleration of Ultra Long Sequence Generation",
+      "original_name": "Ultra-long sequence generation"
+    }
+  ],
+  "definition_count": 12,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "SLED: Self Logits Evolution Decoding for Improving Factuality in Large Language Models",
+      "evidence": "",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "neurips24": [
+          "SLED: Self Logits Evolution Decoding for Improving Factuality in Large Language Models",
+          "LoFiT: Localized Fine-tuning on LLM Representations"
+        ],
+        "iclr25": [
+          "Semantics-Adaptive Activation Intervention for LLMs via Dynamic Steering Vectors"
+        ],
+        "icml25": [
+          "TruthFlow: Truthful LLM Generation via Representation Flow Correction"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LongGenBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LongGenBench: Benchmarking Long-Form Generation in Long Context LLMs",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr25": [
+          "LongGenBench: Benchmarking Long-Form Generation in Long Context LLMs"
+        ],
+        "acl25": [
+          "Top-n\ud835\udf0e: Eliminating Noise in Logit Space for Robust Token Sampling ofLLM"
+        ],
+        "icml25": [
+          "Dialogue Without Limits: Constant-Sized KV Caches for Extended Response in LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction following",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Sheared LLaMA: Accelerating Language Model Pre-training via Structured Pruning",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr24": [
+          "Sheared LLaMA: Accelerating Language Model Pre-training via Structured Pruning"
+        ],
+        "neurips24": [
+          "ReFT: Representation Finetuning for Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-as-a-judge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "GuideLLM: ExploringLLM-Guided Conversation with Applications in Autobiography Interviewing",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "naacl25": [
+          "GuideLLM: ExploringLLM-Guided Conversation with Applications in Autobiography Interviewing"
+        ],
+        "icml25": [
+          "NICE Data Selection for Instruction Tuning in LLMs with Non-differentiable Evaluation Metric"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HelloBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Harnessing Diversity for Important Data Selection in Pretraining Large Language Models",
+      "evidence": "To evaluate the performance of PIC in long-form text generation, we select HelloBench (Que et al., 2024) and LongBench-Write (Bai et al., 2024) as the evaluation benchmarks. (Section 4.1)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Harnessing Diversity for Important Data Selection in Pretraining Large Language Models"
+        ],
+        "acl25": [
+          "ControlSpeech: Towards Simultaneous and Independent Zero-shot Speaker Cloning and Zero-shot Language Style Control"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Dialogue Without Limits: Constant-Sized KV Caches for Extended Response in LLMs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Dialogue Without Limits: Constant-Sized KV Caches for Extended Response in LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MBPP",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Escape Sky-high Cost: Early-stopping Self-Consistency for Multi-step Reasoning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Escape Sky-high Cost: Early-stopping Self-Consistency for Multi-step Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Self-consistency",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Integrative Decoding: Improving Factuality via Implicit Self-consistency",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Integrative Decoding: Improving Factuality via Implicit Self-consistency"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Length generalization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "DAPE: Data-Adaptive Positional Encoding for Length Extrapolation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "DAPE: Data-Adaptive Positional Encoding for Length Extrapolation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TriviaQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Semantics-Adaptive Activation Intervention for LLMs via Dynamic Steering Vectors",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Semantics-Adaptive Activation Intervention for LLMs via Dynamic Steering Vectors"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Mixture of In-Context Experts Enhance LLMs' Long Context Awareness",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Mixture of In-Context Experts Enhance LLMs' Long Context Awareness"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "L-Eval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Mixture of In-Context Experts Enhance LLMs' Long Context Awareness",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Mixture of In-Context Experts Enhance LLMs' Long Context Awareness"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LongBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "KVTuner: Sensitivity-Aware Layer-Wise Mixed-Precision KV Cache Quantization for Efficient and Nearly Lossless LLM Inference",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "KVTuner: Sensitivity-Aware Layer-Wise Mixed-Precision KV Cache Quantization for Efficient and Nearly Lossless LLM Inference"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ToxiGen",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Semantics-Adaptive Activation Intervention for LLMs via Dynamic Steering Vectors",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Semantics-Adaptive Activation Intervention for LLMs via Dynamic Steering Vectors"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WikiText",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Harnessing Diversity for Important Data Selection in Pretraining Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Harnessing Diversity for Important Data Selection in Pretraining Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PG-19",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "TokenSwift: Lossless Acceleration of Ultra Long Sequence Generation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "TokenSwift: Lossless Acceleration of Ultra Long Sequence Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ASQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Bitune: Leveraging Bidirectional Attention to Improve Decoder-OnlyLLMs",
+      "evidence": "To the best of our knowledge, ASQA (Stelmakh et al., 2022) is the only dataset that falls into this category. (Section 4)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Bitune: Leveraging Bidirectional Attention to Improve Decoder-OnlyLLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CHAIR",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Interpretation Meets Safety: A Survey on Interpretation Methods and Tools for ImprovingLLMSafety",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Interpretation Meets Safety: A Survey on Interpretation Methods and Tools for ImprovingLLMSafety"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLaVA-Bench-in-the-Wild",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "CoMemo: LVLMs Need Image Context with Image Memory",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "CoMemo: LVLMs Need Image Context with Image Memory"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Unveiling Internal Reasoning Modes inLLMs: A Deep Dive into Latent Reasoning vs. Factual Shortcuts with Attribute Rate Ratio",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Unveiling Internal Reasoning Modes inLLMs: A Deep Dive into Latent Reasoning vs. Factual Shortcuts with Attribute Rate Ratio"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Disambiguation",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Bitune: Leveraging Bidirectional Attention to Improve Decoder-OnlyLLMs",
+      "evidence": "we argue existing disambiguation works fall in three major policies... Query Rewriting, Middle. Long Form Answer Generation, Right. Asking Clarifying Questions. (Section 3, Figure 2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Bitune: Leveraging Bidirectional Attention to Improve Decoder-OnlyLLMs"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 21,
+  "incoming_relationship_count": 5,
+  "outgoing_relationship_count": 16,
+  "characterization": "Across the surveyed literature, long-form text generation is predominantly defined as the observable behavior of producing extended, coherent, and structured text, such as biographies, Wikipedia articles, or detailed answers spanning multiple paragraphs. While most definitions focus on the length and structure of the output, with some specifying lengths exceeding 10,000 or even 100,000 tokens, a less common framing defines it as generation conditioned on a very long input context. This behavior is frequently positioned as representative of real-world applications, with one paper noting it is \"more similar to downstream tasks than providing a rating as in a Likert scale\" (REAL-MM-RAG: A Real-World Multi-Modal Retrieval Benchmark). The behavior is operationalized and measured using a wide array of instruments, including benchmarks like LongGenBench, HelloBench, TruthfulQA, and LongBench, as well as evaluation procedures like LLM-as-a-judge. For instance, the ASQA dataset is specifically used to evaluate how well models generate comprehensive answers that cover multiple valid interpretations of a question. Long-form text generation is studied alongside concepts such as instruction following, length generalization, self-consistency, and code generation. One line of work explicitly frames it as one of three primary strategies for disambiguation, alongside query rewriting and asking clarifying questions. Finally, enhancing factuality in these extended outputs is noted as a \"challenging and underexplored area\" (Unleashing the Reasoning Potential ofLLMs by Critique Fine-Tuning on One Problem).",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "ControlSpeech: Towards Simultaneous and Independent Zero-shot Speaker Cloning and Zero-shot Language Style Control",
+      "Disambiguating Reference in Visually Grounded Dialogues through Joint Modeling of Textual and Multimodal Semantic Structures",
+      "KERL: Knowledge-Enhanced Personalized Recipe Recommendation using Large Language Models",
+      "MemeQA: Holistic Evaluation for Meme Understanding",
+      "MultipleLLMAgents Debate for Equitable Cultural Alignment",
+      "REAL-MM-RAG: A Real-World Multi-Modal Retrieval Benchmark",
+      "Tree-of-Debate: Multi-Persona Debate Trees Elicit Critical Thinking for Scientific Comparative Analysis"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.1543.checklist",
+      "Agent-as-Judge for Factual Summarization of Long Narratives",
+      "Beyond Task-Oriented and Chitchat Dialogues: Proactive and Transition-Aware Conversational Agents",
+      "CARD: Cross-modal Agent Framework for Generative and Editable Residential Design",
+      "Good Intentions BeyondACL: Who DoesNLPfor Social Good, and Where?",
+      "Interpretability Analysis of Arithmetic In-Context Learning in Large Language Models",
+      "Representation Potentials of Foundation Models for Multimodal Alignment: A Survey"
+    ],
+    "icml25": [
+      "Dialogue Without Limits: Constant-Sized KV Caches for Extended Response in LLMs",
+      "Look Twice Before You Answer: Memory-Space Visual Retracing for Hallucination Mitigation in Multimodal Large Language Models",
+      "RAPID: Long-Context Inference with Retrieval-Augmented Speculative Decoding",
+      "TokenSwift: Lossless Acceleration of Ultra Long Sequence Generation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 7,
+    "emnlp25": 7,
+    "icml25": 4
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "icml25"
+  ]
+}

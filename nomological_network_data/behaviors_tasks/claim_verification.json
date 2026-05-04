@@ -1,0 +1,462 @@
+{
+  "canonical_name": "Claim verification",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, claim verification is a broad category of behaviors predominantly centered on assessing the truthfulness, correctness, or validity of a given statement against a source of evidence. This task appears under various names, including 'fact checking,' 'veracity prediction,' and 'fact verification.' The most frequent operationalization involves classifying a claim\u2014which can range from a news headline to a scientific hypothesis\u2014as supported or refuted based on a provided knowledge source, corpus, or grounding document, often with a categorical output like 'True'/'False' or 'Supported'/'Refuted'/'NotEnoughInfo'. This behavior is measured using datasets such as FEVER for 'fact extraction and verification,' SciFact for scientific claims, and the TRUE benchmark for 'factual consistency evaluation.' While most definitions focus on factual claims, a smaller set of studies extends the concept to verifying other types of generated content, such as the logical validity of a 'reasoning chain,' the correctness of a formal 'proof' using the Lean4 compiler, or the superiority of one 'plan' over another. The verification process itself also varies; some work describes 'self-verification,' where a model checks its own output during generation, while others detail 'cross-modal verification' to ensure consistency between textual reasoning and visual evidence. Some approaches employ specific mechanisms, such as using chain-of-thought for 'forward verification' or a reviewer agent for 'answer verification' against complementary sources.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Veracity analysis",
+    "Factuality checking",
+    "Fact extraction and verification",
+    "Veracity judgment",
+    "Claim verification",
+    "Fact verification",
+    "Table fact verification",
+    "Statement verification",
+    "Verdict prediction",
+    "Factual consistency evaluation",
+    "Veracity labeling",
+    "Hypothesis validation",
+    "Answer verification",
+    "Correction verification",
+    "Ownership verification",
+    "Plan verification",
+    "Verification",
+    "Forward verification",
+    "Proof verification",
+    "Answer correctness assessment",
+    "Reasoning chain validation",
+    "Sentence-level verification",
+    "Factual verification",
+    "Hypothesis verification",
+    "Label verification",
+    "Self-verification",
+    "Cross-modal verification",
+    "Connection verification",
+    "Sequence answer verification"
+  ],
+  "papers": [
+    "2025.emnlp-main.1050.checklist",
+    "2025.emnlp-main.710.checklist",
+    "A Computational Simulation of Language Production in First Language Acquisition",
+    "Agent-as-Judge for Factual Summarization of Long Narratives",
+    "AnchorAttention: Difference-Aware Sparse Attention with Stripe Granularity",
+    "Answer Convergence as a Signal for Early Stopping in Reasoning",
+    "Beyond Hate Speech:NLP\u2019s Challenges and Opportunities in Uncovering Dehumanizing Language",
+    "Beyond the Score: Uncertainty-CalibratedLLMs for Automated Essay Assessment",
+    "DMDTEval: An Evaluation and Analysis ofLLMs on Disambiguation in Multi-domain Translation",
+    "Diagnosing Memorization in Chain-of-Thought Reasoning, One Token at a Time",
+    "Discursive Circuits: How Do Language Models Understand Discourse Relations?",
+    "Easy asPIE? Identifying Multi-Word Expressions withLLMs",
+    "EasyRec: Simple yet Effective Language Models for Recommendation",
+    "Exploring Large Language Models for Detecting Mental Disorders",
+    "Extending Automatic Machine Translation Evaluation to Book-Length Documents",
+    "GenLink: Generation-Driven Schema-Linking via Multi-Model Learning for Text-to-SQL",
+    "Generator-Assistant Stepwise Rollback Framework for Large Language Model Agent",
+    "Hanfu-Bench: A Multimodal Benchmark on Cross-Temporal Cultural Understanding and Transcreation",
+    "HookMoE: A learnable performance compensation strategy of Mixture-of-Experts forLLMinference acceleration",
+    "Improving the Quality of Web-mined Parallel Corpora of Low-Resource Languages using Debiasing Heuristics",
+    "Interpretable Mnemonic Generation for Kanji Learning via Expectation-Maximization",
+    "LM-Searcher: Cross-domain Neural Architecture Search withLLMs via Unified Numerical Encoding",
+    "Language Models Can be Efficiently Steered via Minimal Embedding Layer Transformations",
+    "NOVA-63: Native Omni-lingual Versatile Assessments of 63 Disciplines",
+    "One Planner To Guide Them All ! Learning Adaptive Conversational Planners for Goal-oriented Dialogues",
+    "PBI-Attack: Prior-Guided Bimodal Interactive Black-Box Jailbreak Attack for Toxicity Maximization",
+    "PORTS: Preference-Optimized Retrievers for Tool Selection with Large Language Models",
+    "PRISM: Efficient Long-Range Reasoning With Short-ContextLLMs",
+    "PersonalizedLLMDecoding via Contrasting Personal Preference",
+    "Predicting Prosodic Boundaries for Children\u2019s Texts",
+    "R2I-Bench: Benchmarking Reasoning-Driven Text-to-Image Generation",
+    "RCScore: Quantifying Response Consistency in Large Language Models",
+    "ReAgent: Reversible Multi-Agent Reasoning for Knowledge-Enhanced Multi-HopQA",
+    "ReflAct: World-Grounded Decision Making inLLMAgents via Goal-State Reflection",
+    "Rule Discovery for Natural Language Inference Data Generation Using Out-of-Distribution Detection",
+    "SABER: Uncovering Vulnerabilities in Safety Alignment via Cross-Layer Residual Connection",
+    "SAKI-RAG: Mitigating Context Fragmentation in Long-DocumentRAGvia Sentence-level Attention Knowledge Integration",
+    "SNaRe: Domain-aware Data Generation for Low-Resource Event Detection",
+    "SOLAR: Towards Characterizing Subjectivity of Individuals through Modeling Value Conflicts and Trade-offs",
+    "SafeKey: Amplifying Aha-Moment Insights for Safety Reasoning",
+    "Self-Critique and Refinement for Faithful Natural Language Explanations",
+    "Stop Looking for \u201cImportant Tokens\u201d in Multimodal Language Models: Duplication Matters More",
+    "The Good, the Bad and the Constructive: Automatically Measuring Peer Review\u2019s Utility for Authors",
+    "Token-level Proximal Policy Optimization for Query Generation",
+    "Toward Efficient Sparse Autoencoder-Guided Steering for Improved In-Context Learning in Large Language Models",
+    "Towards Author-informedNLP: Mind the Social Bias",
+    "Towards Robust Mathematical Reasoning",
+    "iVISPAR\u2014 An Interactive Visual-Spatial Reasoning Benchmark forVLMs"
+  ],
+  "paper_count": 48,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The task of classifying a claim as true, false, or another relevant category based on retrieved evidence.",
+      "paper": "Self-Critique and Refinement for Faithful Natural Language Explanations",
+      "original_name": "Veracity prediction"
+    },
+    {
+      "text": "The process of synthesizing evidence to make a judgment on whether a claim should be believed, including handling cases of missing or contradictory evidence.",
+      "paper": "AnchorAttention: Difference-Aware Sparse Attention with Stripe Granularity",
+      "original_name": "Veracity analysis"
+    },
+    {
+      "text": "The task of identifying factual claims in text and verifying their correctness against a knowledge source.",
+      "paper": "Stop Looking for \u201cImportant Tokens\u201d in Multimodal Language Models: Duplication Matters More",
+      "original_name": "Fact extraction and verification"
+    },
+    {
+      "text": "Judging whether a generated fact is entailed by retrieved evidence.",
+      "paper": "PORTS: Preference-Optimized Retrievers for Tool Selection with Large Language Models",
+      "original_name": "Factuality checking"
+    },
+    {
+      "text": "The task of verifying the truthfulness of a given claim against a corpus of evidence.",
+      "paper": "PBI-Attack: Prior-Guided Bimodal Interactive Black-Box Jailbreak Attack for Toxicity Maximization",
+      "original_name": "Fact checking"
+    },
+    {
+      "text": "The task of making a final determination on whether a piece of news is true or false, based on provided analysis, evidence, and decision rules.",
+      "paper": "RCScore: Quantifying Response Consistency in Large Language Models",
+      "original_name": "Veracity judgment"
+    },
+    {
+      "text": "Determining whether a scientific claim is supported or refuted by evidence in a given abstract or paper, often accompanied by extracted supporting or refuting statements.",
+      "paper": "DMDTEval: An Evaluation and Analysis ofLLMs on Disambiguation in Multi-domain Translation",
+      "original_name": "Claim verification"
+    },
+    {
+      "text": "The task of determining whether a given claim is supported or refuted by evidence from a provided knowledge source.",
+      "paper": "NOVA-63: Native Omni-lingual Versatile Assessments of 63 Disciplines",
+      "original_name": "Fact verification"
+    },
+    {
+      "text": "The task of determining whether a given statement is true or false based on the content of an associated table.",
+      "paper": "R2I-Bench: Benchmarking Reasoning-Driven Text-to-Image Generation",
+      "original_name": "Table fact verification"
+    },
+    {
+      "text": "The observable behavior of a model assessing whether a given statement is factually correct, often through step-by-step reasoning.",
+      "paper": "One Planner To Guide Them All ! Learning Adaptive Conversational Planners for Goal-oriented Dialogues",
+      "original_name": "Statement verification"
+    },
+    {
+      "text": "Classifying the truthfulness of a claim based on retrieved evidence, typically as Supported, Refuted, or NotEnoughInfo.",
+      "paper": "Language Models Can be Efficiently Steered via Minimal Embedding Layer Transformations",
+      "original_name": "Verdict prediction"
+    },
+    {
+      "text": "Assessing whether a generated text (e.g., summary, dialogue response) is factually consistent with respect to a grounding text or source document.",
+      "paper": "iVISPAR\u2014 An Interactive Visual-Spatial Reasoning Benchmark forVLMs",
+      "original_name": "Factual consistency evaluation"
+    },
+    {
+      "text": "Assigning a truthfulness label to a claim-evidence pair after reviewing both elements, either through human annotation or LLM-assisted labeling.",
+      "paper": "Extending Automatic Machine Translation Evaluation to Book-Length Documents",
+      "original_name": "Veracity labeling"
+    },
+    {
+      "text": "The process of cross-checking a generated answer against complementary sources or modalities to confirm its accuracy and completeness.",
+      "paper": "Generator-Assistant Stepwise Rollback Framework for Large Language Model Agent",
+      "original_name": "Answer verification"
+    },
+    {
+      "text": "Assessing the validity of scientific hypotheses through code generation, replication, or outcome prediction.",
+      "paper": "EasyRec: Simple yet Effective Language Models for Recommendation",
+      "original_name": "Hypothesis validation"
+    },
+    {
+      "text": "Querying a model via API with predefined watermark inputs and analyzing outputs to detect the presence of embedded identifiers for tracing purposes.",
+      "paper": "Toward Efficient Sparse Autoencoder-Guided Steering for Improved In-Context Learning in Large Language Models",
+      "original_name": "Ownership verification"
+    },
+    {
+      "text": "Judging whether a proposed correction is better than the original sentence or whether both versions are incorrect.",
+      "paper": "The Good, the Bad and the Constructive: Automatically Measuring Peer Review\u2019s Utility for Authors",
+      "original_name": "Correction verification"
+    },
+    {
+      "text": "Identifying errors or checking whether a solution is correct.",
+      "paper": "Token-level Proximal Policy Optimization for Query Generation",
+      "original_name": "Verification"
+    },
+    {
+      "text": "Comparing two versions of a plan and selecting the one judged to be superior in terms of correctness, completeness, or safety.",
+      "paper": "Discursive Circuits: How Do Language Models Understand Discourse Relations?",
+      "original_name": "Plan verification"
+    },
+    {
+      "text": "Using chain-of-thought reasoning to assess and correct the semantic consistency between a synthesized natural language question and its corresponding formal query.",
+      "paper": "SAKI-RAG: Mitigating Context Fragmentation in Long-DocumentRAGvia Sentence-level Attention Knowledge Integration",
+      "original_name": "Forward verification"
+    },
+    {
+      "text": "Checking whether a generated formal proof is accepted by the Lean4 compiler or verifier.",
+      "paper": "Diagnosing Memorization in Chain-of-Thought Reasoning, One Token at a Time",
+      "original_name": "Proof verification"
+    },
+    {
+      "text": "Observably determining whether a generated answer is factually accurate and logically sound based on evidence from heterogeneous documents.",
+      "paper": "2025.emnlp-main.710.checklist",
+      "original_name": "Answer correctness assessment"
+    },
+    {
+      "text": "Determining whether a sequence of chronologically ordered scientific papers forms a logically coherent and valid path of reasoning, and identifying breakpoints where inconsistencies occur.",
+      "paper": "SafeKey: Amplifying Aha-Moment Insights for Safety Reasoning",
+      "original_name": "Reasoning chain validation"
+    },
+    {
+      "text": "The observable process of checking the factual correctness of individual sentences as they are generated during text production.",
+      "paper": "Exploring Large Language Models for Detecting Mental Disorders",
+      "original_name": "Sentence-level verification"
+    },
+    {
+      "text": "The observable task of assessing a given factual statement and producing a binary output of \"True\" or \"False\" based on the instructional context.",
+      "paper": "SABER: Uncovering Vulnerabilities in Safety Alignment via Cross-Layer Residual Connection",
+      "original_name": "Factual verification"
+    },
+    {
+      "text": "Determining whether a hypothesis is true, false, or unknown from a set of facts and rules.",
+      "paper": "SOLAR: Towards Characterizing Subjectivity of Individuals through Modeling Value Conflicts and Trade-offs",
+      "original_name": "Hypothesis verification"
+    },
+    {
+      "text": "The observable behavior of an LLM checking whether a provided label for a query is consistent with its internal knowledge by attempting to reproduce it in a task-specific context.",
+      "paper": "Beyond the Score: Uncertainty-CalibratedLLMs for Automated Essay Assessment",
+      "original_name": "Label verification"
+    },
+    {
+      "text": "The model's observable behavior of checking or validating its own generated content during the decoding process to ensure consistency or accuracy.",
+      "paper": "2025.emnlp-main.1050.checklist",
+      "original_name": "Self-verification"
+    },
+    {
+      "text": "Validating emotion predictions by checking consistency between textual reasoning and visual evidence across iterative refinement steps.",
+      "paper": "Hanfu-Bench: A Multimodal Benchmark on Cross-Temporal Cultural Understanding and Transcreation",
+      "original_name": "Cross-modal verification"
+    },
+    {
+      "text": "The task of determining the spatial relationship (e.g., above-below, left-right, or non-adjacent) between two randomly selected patches from an original image.",
+      "paper": "Rule Discovery for Natural Language Inference Data Generation Using Out-of-Distribution Detection",
+      "original_name": "Connection verification"
+    },
+    {
+      "text": "Evaluating responses that consist of ordered sequences of elements, requiring element-by-element matching against a reference sequence.",
+      "paper": "ReflAct: World-Grounded Decision Making inLLMAgents via Goal-State Reflection",
+      "original_name": "Sequence answer verification"
+    }
+  ],
+  "definition_count": 31,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HoVer",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Information Re-Organization Improves Reasoning in Large Language Models",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "neurips24": [
+          "Information Re-Organization Improves Reasoning in Large Language Models"
+        ],
+        "naacl25": [
+          "Multilingual Needle in a Haystack: Investigating Long-Context Behavior of Multilingual Large Language Models",
+          "B4: A Black-Box Scrubbing Attack onLLMWatermarks"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "FEVEROUS",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Information Re-Organization Improves Reasoning in Large Language Models",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "neurips24": [
+          "Information Re-Organization Improves Reasoning in Large Language Models"
+        ],
+        "naacl25": [
+          "Multilingual Needle in a Haystack: Investigating Long-Context Behavior of Multilingual Large Language Models",
+          "B4: A Black-Box Scrubbing Attack onLLMWatermarks"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Complex reasoning",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Information Re-Organization Improves Reasoning in Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Information Re-Organization Improves Reasoning in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SciFact",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Information Re-Organization Improves Reasoning in Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Information Re-Organization Improves Reasoning in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Misinformation detection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "B4: A Black-Box Scrubbing Attack onLLMWatermarks",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "B4: A Black-Box Scrubbing Attack onLLMWatermarks"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Interpretability and explainability",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Multilingual Needle in a Haystack: Investigating Long-Context Behavior of Multilingual Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Multilingual Needle in a Haystack: Investigating Long-Context Behavior of Multilingual Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Complex reasoning",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Multilingual Needle in a Haystack: Investigating Long-Context Behavior of Multilingual Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Multilingual Needle in a Haystack: Investigating Long-Context Behavior of Multilingual Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Entity disambiguation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Multilingual Needle in a Haystack: Investigating Long-Context Behavior of Multilingual Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Multilingual Needle in a Haystack: Investigating Long-Context Behavior of Multilingual Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "B4: A Black-Box Scrubbing Attack onLLMWatermarks",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "B4: A Black-Box Scrubbing Attack onLLMWatermarks"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Climate-FEVER",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Predicting Prosodic Boundaries for Children\u2019s Texts",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Predicting Prosodic Boundaries for Children\u2019s Texts"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 10,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 7,
+  "characterization": "Across the provided literature, claim verification is a broad category of behaviors predominantly centered on assessing the truthfulness, correctness, or validity of a given statement against a source of evidence. This task appears under various names, including 'fact checking,' 'veracity prediction,' and 'fact verification.' The most frequent operationalization involves classifying a claim\u2014which can range from a news headline to a scientific hypothesis\u2014as supported or refuted based on a provided knowledge source, corpus, or grounding document, often with a categorical output like 'True'/'False' or 'Supported'/'Refuted'/'NotEnoughInfo'. This behavior is measured using datasets such as FEVER for 'fact extraction and verification,' SciFact for scientific claims, and the TRUE benchmark for 'factual consistency evaluation.' While most definitions focus on factual claims, a smaller set of studies extends the concept to verifying other types of generated content, such as the logical validity of a 'reasoning chain,' the correctness of a formal 'proof' using the Lean4 compiler, or the superiority of one 'plan' over another. The verification process itself also varies; some work describes 'self-verification,' where a model checks its own output during generation, while others detail 'cross-modal verification' to ensure consistency between textual reasoning and visual evidence. Some approaches employ specific mechanisms, such as using chain-of-thought for 'forward verification' or a reviewer agent for 'answer verification' against complementary sources.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "2025.emnlp-main.1050.checklist",
+      "2025.emnlp-main.710.checklist",
+      "A Computational Simulation of Language Production in First Language Acquisition",
+      "Agent-as-Judge for Factual Summarization of Long Narratives",
+      "AnchorAttention: Difference-Aware Sparse Attention with Stripe Granularity",
+      "Answer Convergence as a Signal for Early Stopping in Reasoning",
+      "Beyond Hate Speech:NLP\u2019s Challenges and Opportunities in Uncovering Dehumanizing Language",
+      "Beyond the Score: Uncertainty-CalibratedLLMs for Automated Essay Assessment",
+      "DMDTEval: An Evaluation and Analysis ofLLMs on Disambiguation in Multi-domain Translation",
+      "Diagnosing Memorization in Chain-of-Thought Reasoning, One Token at a Time",
+      "Discursive Circuits: How Do Language Models Understand Discourse Relations?",
+      "Easy asPIE? Identifying Multi-Word Expressions withLLMs",
+      "EasyRec: Simple yet Effective Language Models for Recommendation",
+      "Exploring Large Language Models for Detecting Mental Disorders",
+      "Extending Automatic Machine Translation Evaluation to Book-Length Documents",
+      "GenLink: Generation-Driven Schema-Linking via Multi-Model Learning for Text-to-SQL",
+      "Generator-Assistant Stepwise Rollback Framework for Large Language Model Agent",
+      "Hanfu-Bench: A Multimodal Benchmark on Cross-Temporal Cultural Understanding and Transcreation",
+      "HookMoE: A learnable performance compensation strategy of Mixture-of-Experts forLLMinference acceleration",
+      "Improving the Quality of Web-mined Parallel Corpora of Low-Resource Languages using Debiasing Heuristics",
+      "Interpretable Mnemonic Generation for Kanji Learning via Expectation-Maximization",
+      "LM-Searcher: Cross-domain Neural Architecture Search withLLMs via Unified Numerical Encoding",
+      "Language Models Can be Efficiently Steered via Minimal Embedding Layer Transformations",
+      "NOVA-63: Native Omni-lingual Versatile Assessments of 63 Disciplines",
+      "One Planner To Guide Them All ! Learning Adaptive Conversational Planners for Goal-oriented Dialogues",
+      "PBI-Attack: Prior-Guided Bimodal Interactive Black-Box Jailbreak Attack for Toxicity Maximization",
+      "PORTS: Preference-Optimized Retrievers for Tool Selection with Large Language Models",
+      "PRISM: Efficient Long-Range Reasoning With Short-ContextLLMs",
+      "PersonalizedLLMDecoding via Contrasting Personal Preference",
+      "Predicting Prosodic Boundaries for Children\u2019s Texts",
+      "R2I-Bench: Benchmarking Reasoning-Driven Text-to-Image Generation",
+      "RCScore: Quantifying Response Consistency in Large Language Models",
+      "ReAgent: Reversible Multi-Agent Reasoning for Knowledge-Enhanced Multi-HopQA",
+      "ReflAct: World-Grounded Decision Making inLLMAgents via Goal-State Reflection",
+      "Rule Discovery for Natural Language Inference Data Generation Using Out-of-Distribution Detection",
+      "SABER: Uncovering Vulnerabilities in Safety Alignment via Cross-Layer Residual Connection",
+      "SAKI-RAG: Mitigating Context Fragmentation in Long-DocumentRAGvia Sentence-level Attention Knowledge Integration",
+      "SNaRe: Domain-aware Data Generation for Low-Resource Event Detection",
+      "SOLAR: Towards Characterizing Subjectivity of Individuals through Modeling Value Conflicts and Trade-offs",
+      "SafeKey: Amplifying Aha-Moment Insights for Safety Reasoning",
+      "Self-Critique and Refinement for Faithful Natural Language Explanations",
+      "Stop Looking for \u201cImportant Tokens\u201d in Multimodal Language Models: Duplication Matters More",
+      "The Good, the Bad and the Constructive: Automatically Measuring Peer Review\u2019s Utility for Authors",
+      "Token-level Proximal Policy Optimization for Query Generation",
+      "Toward Efficient Sparse Autoencoder-Guided Steering for Improved In-Context Learning in Large Language Models",
+      "Towards Author-informedNLP: Mind the Social Bias",
+      "Towards Robust Mathematical Reasoning",
+      "iVISPAR\u2014 An Interactive Visual-Spatial Reasoning Benchmark forVLMs"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 48
+  },
+  "conferences": [
+    "emnlp25"
+  ]
+}

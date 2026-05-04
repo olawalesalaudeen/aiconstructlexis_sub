@@ -1,0 +1,177 @@
+{
+  "canonical_name": "Ethical reasoning",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, ethical reasoning is predominantly framed as a latent ability for models to understand, adhere to, and make judgments based on moral principles, particularly in complex or conflicting scenarios. Definitions vary in terminology, using phrases like \"machine ethics,\" \"moral reasoning,\" and \"morality,\" but generally converge on this core concept of navigating situations involving right and wrong. A few papers offer more specific or alternative framings; one line of work analyzes the construct through distinct philosophical lenses, such as Deontological (rule-based) and Utilitarian (consequence-based) morality. A different, more behavioral definition treats \"ethical consideration\" not as an internal capacity but as an observable \"tendency for outputs to comment on ethics, limitations, or responsible use,\" as noted in one study where \"GPT and Claude comment much more on ethics and limitations than Llama\" (VibeCheck: Discover and Quantify Qualitative Differences in Large Language Models). The most common method for operationalizing this construct is through the ETHICS benchmark, which is frequently cited as a tool for its measurement, probing a model's understanding of concepts like justice, well-being, and commonsense morality. Failures in ethical reasoning are sometimes characterized as \"causal reasoning gaps\" or \"ethical blind spots\" where a model fails to \"fully realize the consequences of its actions\" (BadRobot: Jailbreaking Embodied LLM Agents in the Physical World). The construct is studied alongside Faithfulness and Safety, and human preference alignment is reported to improve this ability, with one paper finding that RLHF leads to a \"substantial average improvement... on the machine ethics benchmark\" (More RLHF, More Trust? On The Impact of Preference Alignment On Trustworthiness).",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Machine ethics",
+    "Ethical reasoning",
+    "Ethical consideration",
+    "Deontological morality",
+    "Utilitarian morality",
+    "Ethical considerations",
+    "Ethics",
+    "Morality"
+  ],
+  "papers": [
+    "BadRobot: Jailbreaking Embodied LLM Agents in the Physical World",
+    "DailyDilemmas: Revealing Value Preferences of LLMs with Quandaries of Daily Life",
+    "Moral Alignment for LLM Agents",
+    "More RLHF, More Trust? On The Impact of Preference Alignment On Trustworthiness",
+    "VibeCheck: Discover and Quantify Qualitative Differences in Large Language Models",
+    "A Checks-and-Balances Framework for Context-Aware Ethical AI Alignment",
+    "MM-RLHF: The Next Step Forward in Multimodal LLM Alignment",
+    "Raising the Bar: Investigating the Values of Large Language Models via Generative Evolving Testing",
+    "ALI-Agent: Assessing LLMs'  Alignment with Human Values via Agent-based Evaluation",
+    "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+    "Unveiling the Bias Impact on Symmetric Moral Consistency of Large Language Models"
+  ],
+  "paper_count": 11,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The latent ability to evaluate the moral and consequential implications of actions, beyond superficial rule-following.",
+      "paper": "BadRobot: Jailbreaking Embodied LLM Agents in the Physical World",
+      "original_name": "Ethical reasoning"
+    },
+    {
+      "text": "The model's adherence to ethical principles and its ability to recognize actions that are against human morality.",
+      "paper": "More RLHF, More Trust? On The Impact of Preference Alignment On Trustworthiness",
+      "original_name": "Machine ethics"
+    },
+    {
+      "text": "The cognitive ability to navigate and make judgments in situations involving complex and often conflicting ethical principles.",
+      "paper": "DailyDilemmas: Revealing Value Preferences of LLMs with Quandaries of Daily Life",
+      "original_name": "Moral reasoning"
+    },
+    {
+      "text": "A tendency for outputs to comment on ethics, limitations, or responsible use in addition to providing factual content.",
+      "paper": "VibeCheck: Discover and Quantify Qualitative Differences in Large Language Models",
+      "original_name": "Ethical consideration"
+    },
+    {
+      "text": "A moral framework where the morality of an action is judged based on its adherence to a set of rules or norms, such as not defecting against a cooperator.",
+      "paper": "Moral Alignment for LLM Agents",
+      "original_name": "Deontological morality"
+    },
+    {
+      "text": "A moral framework where the morality of an action is judged based on its consequences, specifically its ability to maximize the collective welfare or payoff for all agents.",
+      "paper": "Moral Alignment for LLM Agents",
+      "original_name": "Utilitarian morality"
+    },
+    {
+      "text": "The model's capacity to adhere to moral principles and make ethically sound judgments, particularly in complex dilemmas.",
+      "paper": "Raising the Bar: Investigating the Values of Large Language Models via Generative Evolving Testing",
+      "original_name": "Ethics"
+    },
+    {
+      "text": "The adherence of a model's responses to ethical principles, including safety, privacy, fairness, and the avoidance of harmful or biased content.",
+      "paper": "MM-RLHF: The Next Step Forward in Multimodal LLM Alignment",
+      "original_name": "Ethical considerations"
+    },
+    {
+      "text": "The model's latent adherence to ethical principles and commonsense moral judgments when presented with scenarios involving right and wrong.",
+      "paper": "ALI-Agent: Assessing LLMs'  Alignment with Human Values via Agent-based Evaluation",
+      "original_name": "Morality"
+    }
+  ],
+  "definition_count": 9,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ETHICS",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "ALI-Agent: Assessing LLMs'  Alignment with Human Values via Agent-based Evaluation",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "neurips24": [
+          "ALI-Agent: Assessing LLMs'  Alignment with Human Values via Agent-based Evaluation",
+          "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?"
+        ],
+        "iclr25": [
+          "More RLHF, More Trust? On The Impact of Preference Alignment On Trustworthiness"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Trustworthiness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "More RLHF, More Trust? On The Impact of Preference Alignment On Trustworthiness",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "More RLHF, More Trust? On The Impact of Preference Alignment On Trustworthiness"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Human preference alignment",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "More RLHF, More Trust? On The Impact of Preference Alignment On Trustworthiness",
+      "evidence": "RLHF applied to a general-purpose preference dataset leads to a substantial average improvement of 31% on the machine ethics benchmark. (Section 1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "More RLHF, More Trust? On The Impact of Preference Alignment On Trustworthiness"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Safety",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "MM-RLHF: The Next Step Forward in Multimodal LLM Alignment",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "MM-RLHF: The Next Step Forward in Multimodal LLM Alignment"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 3,
+  "characterization": "Across the surveyed literature, ethical reasoning is predominantly framed as a latent ability for models to understand, adhere to, and make judgments based on moral principles, particularly in complex or conflicting scenarios. Definitions vary in terminology, using phrases like \"machine ethics,\" \"moral reasoning,\" and \"morality,\" but generally converge on this core concept of navigating situations involving right and wrong. A few papers offer more specific or alternative framings; one line of work analyzes the construct through distinct philosophical lenses, such as Deontological (rule-based) and Utilitarian (consequence-based) morality. A different, more behavioral definition treats \"ethical consideration\" not as an internal capacity but as an observable \"tendency for outputs to comment on ethics, limitations, or responsible use,\" as noted in one study where \"GPT and Claude comment much more on ethics and limitations than Llama\" (VibeCheck: Discover and Quantify Qualitative Differences in Large Language Models). The most common method for operationalizing this construct is through the ETHICS benchmark, which is frequently cited as a tool for its measurement, probing a model's understanding of concepts like justice, well-being, and commonsense morality. Failures in ethical reasoning are sometimes characterized as \"causal reasoning gaps\" or \"ethical blind spots\" where a model fails to \"fully realize the consequences of its actions\" (BadRobot: Jailbreaking Embodied LLM Agents in the Physical World). The construct is studied alongside Faithfulness and Safety, and human preference alignment is reported to improve this ability, with one paper finding that RLHF leads to a \"substantial average improvement... on the machine ethics benchmark\" (More RLHF, More Trust? On The Impact of Preference Alignment On Trustworthiness).",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "BadRobot: Jailbreaking Embodied LLM Agents in the Physical World",
+      "DailyDilemmas: Revealing Value Preferences of LLMs with Quandaries of Daily Life",
+      "Moral Alignment for LLM Agents",
+      "More RLHF, More Trust? On The Impact of Preference Alignment On Trustworthiness",
+      "VibeCheck: Discover and Quantify Qualitative Differences in Large Language Models"
+    ],
+    "icml25": [
+      "A Checks-and-Balances Framework for Context-Aware Ethical AI Alignment",
+      "MM-RLHF: The Next Step Forward in Multimodal LLM Alignment",
+      "Raising the Bar: Investigating the Values of Large Language Models via Generative Evolving Testing"
+    ],
+    "neurips24": [
+      "ALI-Agent: Assessing LLMs'  Alignment with Human Values via Agent-based Evaluation",
+      "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+      "Unveiling the Bias Impact on Symmetric Moral Consistency of Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 5,
+    "icml25": 3,
+    "neurips24": 3
+  },
+  "conferences": [
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

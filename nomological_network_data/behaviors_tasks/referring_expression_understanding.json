@@ -1,0 +1,454 @@
+{
+  "canonical_name": "Referring expression understanding",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, \"Referring expression understanding\" is most commonly framed as the behavior of localizing a specific object or region in an image based on a natural language description. This is operationalized under various names, including \"referring expression segmentation,\" \"referring segmentation,\" and \"referring expression comprehension,\" with the model's output typically being a segmentation mask or a bounding box. The performance of this behavior is predominantly measured using the RefCOCO, RefCOCO+, and RefCOCOg benchmarks, where correctness can be determined by an Intersection over Union (IoU) threshold, as one paper notes \"a prediction is considered correct if the IoU between the predicted and ground truth bounding boxes exceeds 0.5\" (Text4Seg: Reimagining Image Segmentation as Text Generation). A smaller body of work conceptualizes the task in reverse, defining it as generating a textual description for a given visual region, a behavior evaluated on Ferret-Bench. Other alternative framings apply the concept to 3D object part segmentation, measured on datasets like Talk2Car, or to user interface elements, involving tasks like OCR and widget classification. The behavior is frequently studied alongside `Visual grounding` and is described as requiring both `spatial reasoning` and `semantic reasoning`. One study also reports a correlation between performance on this task and a model's score on the HellaSwag reasoning benchmark.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Referring expression segmentation",
+    "Referring segmentation",
+    "Referring expression comprehension",
+    "Referring description",
+    "Referring reasoning",
+    "Referring image segmentation",
+    "Visual referring",
+    "Referring object part segmentation",
+    "Referring"
+  ],
+  "papers": [
+    "CoVLM: Composing Visual Entities and Relationships in Large Language Models Via Communicative Decoding",
+    "GENOME: Generative Neuro-Symbolic Visual Reasoning by Growing and Reusing Modules",
+    "Grounding Multimodal Large Language Models to the World",
+    "3D-AffordanceLLM: Harnessing Large Language Models for Open-Vocabulary Affordance Detection in 3D Worlds",
+    "Adapt-$\\infty$: Scalable Continual Multimodal Instruction Tuning via Dynamic Data Selection",
+    "Bridging Compressed Image Latents and Multimodal Large Language Models",
+    "ClawMachine: Learning to Fetch Visual Tokens for Referential Comprehension",
+    "Draw-and-Understand: Leveraging Visual Prompts to Enable MLLMs to Comprehend What You Want",
+    "Ferret-UI 2: Mastering Universal User Interface Understanding Across Platforms",
+    "LLM-wrapper: Black-Box Semantic-Aware Adaptation of Vision-Language Models for Referring Expression Comprehension",
+    "Language-Image Models with 3D Understanding",
+    "MM1.5: Methods, Analysis & Insights from Multimodal LLM Fine-tuning",
+    "MMR: A Large-scale Benchmark Dataset for Multi-target and Multi-granularity Reasoning Segmentation",
+    "SegLLM: Multi-round Reasoning Segmentation with Large Language Models",
+    "Text4Seg: Reimagining Image Segmentation as Text Generation",
+    "Towards Semantic Equivalence of Tokenization in Multimodal LLM",
+    "Visual Agents as Fast and Slow Thinkers",
+    "Visual-O1: Understanding Ambiguous Instructions via Multi-modal Multi-turn Chain-of-thoughts Reasoning",
+    "Accelerating Pre-training of Multimodal LLMs via Chain-of-Sight",
+    "CogVLM: Visual Expert for Pretrained Language Models",
+    "Instruction-Guided Visual Masking",
+    "LOVA3: Learning to Visual Question Answering, Asking and Assessment",
+    "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+    "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+    "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding",
+    "Visual CoT: Advancing Multi-Modal Language Models with a Comprehensive Dataset and Benchmark for Chain-of-Thought Reasoning",
+    "Vitron: A Unified Pixel-level Vision LLM for Understanding, Generating, Segmenting, Editing",
+    "Boosting Weakly Supervised Referring Image Segmentation via Progressive Comprehension",
+    "Interfacing Foundation Models' Embeddings",
+    "Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models",
+    "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+    "Unleashing Region Understanding in Intermediate Layers for MLLM-based Referring Expression Generation"
+  ],
+  "paper_count": 32,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The task of segmenting the specific object or region in an image that is described by a given natural language expression.",
+      "paper": "Text4Seg: Reimagining Image Segmentation as Text Generation",
+      "original_name": "Referring expression segmentation"
+    },
+    {
+      "text": "Identifying the referred object by generating a mask and deriving a bounding box that matches the language query.",
+      "paper": "Text4Seg: Reimagining Image Segmentation as Text Generation",
+      "original_name": "Referring expression comprehension"
+    },
+    {
+      "text": "The task of segmenting an object in an image based on a natural language description.",
+      "paper": "Visual Agents as Fast and Slow Thinkers",
+      "original_name": "Referring segmentation"
+    },
+    {
+      "text": "An observable task, evaluated on Ferret-Bench, where the model provides a textual description corresponding to a visual prompt.",
+      "paper": "Draw-and-Understand: Leveraging Visual Prompts to Enable MLLMs to Comprehend What You Want",
+      "original_name": "Referring description"
+    },
+    {
+      "text": "An observable task, evaluated on Ferret-Bench, where the model performs reasoning based on information within a visually prompted region.",
+      "paper": "Draw-and-Understand: Leveraging Visual Prompts to Enable MLLMs to Comprehend What You Want",
+      "original_name": "Referring reasoning"
+    },
+    {
+      "text": "The task of segmenting a specific object or region in an image based on a natural language description.",
+      "paper": "Visual-O1: Understanding Ambiguous Instructions via Multi-modal Multi-turn Chain-of-thoughts Reasoning",
+      "original_name": "Referring image segmentation"
+    },
+    {
+      "text": "Given an image and a referred region, the model produces a detailed natural-language description of that region.",
+      "paper": "ClawMachine: Learning to Fetch Visual Tokens for Referential Comprehension",
+      "original_name": "Visual referring"
+    },
+    {
+      "text": "The pre-training task of predicting a binary mask for a specific component of a 3D object, given a referring expression that names the component.",
+      "paper": "3D-AffordanceLLM: Harnessing Large Language Models for Open-Vocabulary Affordance Detection in 3D Worlds",
+      "original_name": "Referring object part segmentation"
+    },
+    {
+      "text": "The observable task of identifying or describing a specific UI element based on its properties, such as recognizing text within a bounding box or classifying a widget's type.",
+      "paper": "Ferret-UI 2: Mastering Universal User Interface Understanding Across Platforms",
+      "original_name": "Referring"
+    }
+  ],
+  "definition_count": 9,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "RefCOCO",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "GENOME: Generative Neuro-Symbolic Visual Reasoning by Growing and Reusing Modules",
+      "evidence": "For referring expression segmentation (RES), we follow standard evaluation protocols (Lai et al., 2024; Xia et al., 2024) and assess our method using the refCOCO series. (Section 4.2)",
+      "paper_count": 13,
+      "papers_by_conference": {
+        "iclr24": [
+          "GENOME: Generative Neuro-Symbolic Visual Reasoning by Growing and Reusing Modules",
+          "Grounding Multimodal Large Language Models to the World"
+        ],
+        "neurips24": [
+          "Accelerating Pre-training of Multimodal LLMs via Chain-of-Sight",
+          "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+          "Vitron: A Unified Pixel-level Vision LLM for Understanding, Generating, Segmenting, Editing",
+          "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding",
+          "CogVLM: Visual Expert for Pretrained Language Models"
+        ],
+        "iclr25": [
+          "MMR: A Large-scale Benchmark Dataset for Multi-target and Multi-granularity Reasoning Segmentation",
+          "Text4Seg: Reimagining Image Segmentation as Text Generation",
+          "LLM-wrapper: Black-Box Semantic-Aware Adaptation of Vision-Language Models for Referring Expression Comprehension",
+          "Towards Semantic Equivalence of Tokenization in Multimodal LLM",
+          "Visual Agents as Fast and Slow Thinkers"
+        ],
+        "emnlp25": [
+          "MuCAL: Contrastive Alignment for Preference-DrivenKG-to-Text Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "RefCOCOg",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Grounding Multimodal Large Language Models to the World",
+      "evidence": "For referring expression segmentation (RES), we follow standard evaluation protocols (Lai et al., 2024; Xia et al., 2024) and assess our method using the refCOCO series. (Section 4.2)",
+      "paper_count": 9,
+      "papers_by_conference": {
+        "iclr24": [
+          "Grounding Multimodal Large Language Models to the World"
+        ],
+        "neurips24": [
+          "Accelerating Pre-training of Multimodal LLMs via Chain-of-Sight",
+          "Vitron: A Unified Pixel-level Vision LLM for Understanding, Generating, Segmenting, Editing",
+          "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding"
+        ],
+        "iclr25": [
+          "Text4Seg: Reimagining Image Segmentation as Text Generation",
+          "LLM-wrapper: Black-Box Semantic-Aware Adaptation of Vision-Language Models for Referring Expression Comprehension",
+          "Towards Semantic Equivalence of Tokenization in Multimodal LLM",
+          "Visual Agents as Fast and Slow Thinkers"
+        ],
+        "emnlp25": [
+          "MuCAL: Contrastive Alignment for Preference-DrivenKG-to-Text Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual grounding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Grounding Multimodal Large Language Models to the World",
+      "evidence": "flexible switching between referring expression segmentation, open-vocabulary segmentation, and other visual grounding tasks. (Section 1)",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "iclr24": [
+          "Grounding Multimodal Large Language Models to the World"
+        ],
+        "neurips24": [
+          "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models"
+        ],
+        "iclr25": [
+          "Text4Seg: Reimagining Image Segmentation as Text Generation",
+          "ClawMachine: Learning to Fetch Visual Tokens for Referential Comprehension"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Ferret-Bench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Ferret: Refer and Ground Anything Anywhere at Any Granularity",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr24": [
+          "Ferret: Refer and Ground Anything Anywhere at Any Granularity"
+        ],
+        "iclr25": [
+          "Draw-and-Understand: Leveraging Visual Prompts to Enable MLLMs to Comprehend What You Want"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Spatial understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Ferret: Refer and Ground Anything Anywhere at Any Granularity",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Ferret: Refer and Ground Anything Anywhere at Any Granularity"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Referring expression generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Unleashing Region Understanding in Intermediate Layers for MLLM-based Referring Expression Generation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Unleashing Region Understanding in Intermediate Layers for MLLM-based Referring Expression Generation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal alignment",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Boosting Weakly Supervised Referring Image Segmentation via Progressive Comprehension",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Boosting Weakly Supervised Referring Image Segmentation via Progressive Comprehension"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Video question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "LongVideoBench: A Benchmark for Long-context Interleaved Video-Language Understanding",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "LongVideoBench: A Benchmark for Long-context Interleaved Video-Language Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual perception",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "LongVideoBench: A Benchmark for Long-context Interleaved Video-Language Understanding",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "LongVideoBench: A Benchmark for Long-context Interleaved Video-Language Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Relational reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "LongVideoBench: A Benchmark for Long-context Interleaved Video-Language Understanding",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "LongVideoBench: A Benchmark for Long-context Interleaved Video-Language Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multiple-choice question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "LongVideoBench: A Benchmark for Long-context Interleaved Video-Language Understanding",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "LongVideoBench: A Benchmark for Long-context Interleaved Video-Language Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual recognition",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Spatial reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "LLM-wrapper: Black-Box Semantic-Aware Adaptation of Vision-Language Models for Referring Expression Comprehension",
+      "evidence": "Referring Expression Comprehension (REC) (Mao et al., 2016), which involves localizing an object in an image based on a complex textual query, requiring both spatial and semantic reasoning.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "LLM-wrapper: Black-Box Semantic-Aware Adaptation of Vision-Language Models for Referring Expression Comprehension"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Semantic reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "LLM-wrapper: Black-Box Semantic-Aware Adaptation of Vision-Language Models for Referring Expression Comprehension",
+      "evidence": "Referring Expression Comprehension (REC) (Mao et al., 2016), which involves localizing an object in an image based on a complex textual query, requiring both spatial and semantic reasoning.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "LLM-wrapper: Black-Box Semantic-Aware Adaptation of Vision-Language Models for Referring Expression Comprehension"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Object detection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "LLM-wrapper: Black-Box Semantic-Aware Adaptation of Vision-Language Models for Referring Expression Comprehension",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "LLM-wrapper: Black-Box Semantic-Aware Adaptation of Vision-Language Models for Referring Expression Comprehension"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Talk2Car",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LLM-wrapper: Black-Box Semantic-Aware Adaptation of Vision-Language Models for Referring Expression Comprehension",
+      "evidence": "Talk2Car (Deruyttere et al., 2019) is a 3D referring expression comprehension dataset of various driving scenarios. (Section 4.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "LLM-wrapper: Black-Box Semantic-Aware Adaptation of Vision-Language Models for Referring Expression Comprehension"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "RefCOCO/g/+",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Language-Image Models with 3D Understanding",
+      "evidence": "In Table 4, we compare CUBE-LLM to the state-of-the-arts in Referring Expression Comprehension (REC) benchmark on refCOCO/+/g (Yu et al., 2016) dataset. (Section 4.4)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Language-Image Models with 3D Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "HellaSwag",
+      "other_type": "measurements",
+      "relationship_type": "correlates",
+      "paper": "LLM-wrapper: Black-Box Semantic-Aware Adaptation of Vision-Language Models for Referring Expression Comprehension",
+      "evidence": "\u201cFurther analysis shows a Pearson correlation of 0.88 between the LLM\u2019s original performance on reasoning benchmarks, measured by the HellaSwag score (Zellers et al., 2019), and REC performance\u201d",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "LLM-wrapper: Black-Box Semantic-Aware Adaptation of Vision-Language Models for Referring Expression Comprehension"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 18,
+  "incoming_relationship_count": 5,
+  "outgoing_relationship_count": 13,
+  "characterization": "Across the surveyed literature, \"Referring expression understanding\" is most commonly framed as the behavior of localizing a specific object or region in an image based on a natural language description. This is operationalized under various names, including \"referring expression segmentation,\" \"referring segmentation,\" and \"referring expression comprehension,\" with the model's output typically being a segmentation mask or a bounding box. The performance of this behavior is predominantly measured using the RefCOCO, RefCOCO+, and RefCOCOg benchmarks, where correctness can be determined by an Intersection over Union (IoU) threshold, as one paper notes \"a prediction is considered correct if the IoU between the predicted and ground truth bounding boxes exceeds 0.5\" (Text4Seg: Reimagining Image Segmentation as Text Generation). A smaller body of work conceptualizes the task in reverse, defining it as generating a textual description for a given visual region, a behavior evaluated on Ferret-Bench. Other alternative framings apply the concept to 3D object part segmentation, measured on datasets like Talk2Car, or to user interface elements, involving tasks like OCR and widget classification. The behavior is frequently studied alongside `Visual grounding` and is described as requiring both `spatial reasoning` and `semantic reasoning`. One study also reports a correlation between performance on this task and a model's score on the HellaSwag reasoning benchmark.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "3D-AffordanceLLM: Harnessing Large Language Models for Open-Vocabulary Affordance Detection in 3D Worlds",
+      "Adapt-$\\infty$: Scalable Continual Multimodal Instruction Tuning via Dynamic Data Selection",
+      "Bridging Compressed Image Latents and Multimodal Large Language Models",
+      "ClawMachine: Learning to Fetch Visual Tokens for Referential Comprehension",
+      "Draw-and-Understand: Leveraging Visual Prompts to Enable MLLMs to Comprehend What You Want",
+      "Ferret-UI 2: Mastering Universal User Interface Understanding Across Platforms",
+      "LLM-wrapper: Black-Box Semantic-Aware Adaptation of Vision-Language Models for Referring Expression Comprehension",
+      "Language-Image Models with 3D Understanding",
+      "MM1.5: Methods, Analysis & Insights from Multimodal LLM Fine-tuning",
+      "MMR: A Large-scale Benchmark Dataset for Multi-target and Multi-granularity Reasoning Segmentation",
+      "SegLLM: Multi-round Reasoning Segmentation with Large Language Models",
+      "Text4Seg: Reimagining Image Segmentation as Text Generation",
+      "Towards Semantic Equivalence of Tokenization in Multimodal LLM",
+      "Visual Agents as Fast and Slow Thinkers",
+      "Visual-O1: Understanding Ambiguous Instructions via Multi-modal Multi-turn Chain-of-thoughts Reasoning"
+    ],
+    "iclr24": [
+      "CoVLM: Composing Visual Entities and Relationships in Large Language Models Via Communicative Decoding",
+      "GENOME: Generative Neuro-Symbolic Visual Reasoning by Growing and Reusing Modules",
+      "Grounding Multimodal Large Language Models to the World"
+    ],
+    "neurips24": [
+      "Accelerating Pre-training of Multimodal LLMs via Chain-of-Sight",
+      "CogVLM: Visual Expert for Pretrained Language Models",
+      "Instruction-Guided Visual Masking",
+      "LOVA3: Learning to Visual Question Answering, Asking and Assessment",
+      "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+      "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding",
+      "Visual CoT: Advancing Multi-Modal Language Models with a Comprehensive Dataset and Benchmark for Chain-of-Thought Reasoning",
+      "Vitron: A Unified Pixel-level Vision LLM for Understanding, Generating, Segmenting, Editing",
+      "Boosting Weakly Supervised Referring Image Segmentation via Progressive Comprehension",
+      "Interfacing Foundation Models' Embeddings",
+      "Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models",
+      "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+      "Unleashing Region Understanding in Intermediate Layers for MLLM-based Referring Expression Generation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 15,
+    "iclr24": 3,
+    "neurips24": 14
+  },
+  "conferences": [
+    "iclr24",
+    "iclr25",
+    "neurips24"
+  ]
+}

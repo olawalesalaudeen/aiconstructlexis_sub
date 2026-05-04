@@ -1,0 +1,80 @@
+{
+  "canonical_name": "Reward function generation",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, reward function generation is consistently framed as the task of producing code that specifies an agent's objectives within a simulation. This generated code defines the reward signal for a reinforcement learning agent, which, as one paper notes, \"returns a scalar number, whose cumulative maximization defines the task\" ('OMNI-EPIC...'). The behavior is often discussed as part of a larger generative process where models create not only reward functions but also other simulation elements like \"simulator dynamics\" and \"termination functions\" ('FactorSim...', 'OMNI-EPIC...'). The application domains mentioned for this task include robotics and games. The provided data also suggests connections to underlying model capabilities, with some work positing that constructs like `Information extraction` and `Commonsense understanding` are causes of reward function generation.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Reward function generation"
+  ],
+  "papers": [
+    "OMNI-EPIC: Open-endedness via Models of human Notions of Interestingness with Environments Programmed in Code",
+    "REvolve: Reward Evolution with Large Language Models using Human Feedback",
+    "A Decision-Language Model (DLM) for Dynamic Restless Multi-Armed Bandit Tasks in Public Health",
+    "FactorSim: Generative Simulation via Factorized Representation"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The task of generating code for reward functions that specify the objectives for an agent within a simulation.",
+      "paper": "FactorSim: Generative Simulation via Factorized Representation",
+      "original_name": "Reward function generation"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Information extraction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "A Decision-Language Model (DLM) for Dynamic Restless Multi-Armed Bandit Tasks in Public Health",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "A Decision-Language Model (DLM) for Dynamic Restless Multi-Armed Bandit Tasks in Public Health"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense understanding",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "REvolve: Reward Evolution with Large Language Models using Human Feedback",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "REvolve: Reward Evolution with Large Language Models using Human Feedback"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, reward function generation is consistently framed as the task of producing code that specifies an agent's objectives within a simulation. This generated code defines the reward signal for a reinforcement learning agent, which, as one paper notes, \"returns a scalar number, whose cumulative maximization defines the task\" ('OMNI-EPIC...'). The behavior is often discussed as part of a larger generative process where models create not only reward functions but also other simulation elements like \"simulator dynamics\" and \"termination functions\" ('FactorSim...', 'OMNI-EPIC...'). The application domains mentioned for this task include robotics and games. The provided data also suggests connections to underlying model capabilities, with some work positing that constructs like `Information extraction` and `Commonsense understanding` are causes of reward function generation.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "A Decision-Language Model (DLM) for Dynamic Restless Multi-Armed Bandit Tasks in Public Health",
+      "FactorSim: Generative Simulation via Factorized Representation"
+    ],
+    "iclr25": [
+      "OMNI-EPIC: Open-endedness via Models of human Notions of Interestingness with Environments Programmed in Code",
+      "REvolve: Reward Evolution with Large Language Models using Human Feedback"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 2,
+    "iclr25": 2
+  },
+  "conferences": [
+    "iclr25",
+    "neurips24"
+  ]
+}

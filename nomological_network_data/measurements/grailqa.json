@@ -1,0 +1,164 @@
+{
+  "canonical_name": "GrailQA",
+  "type": "measurement",
+  "canonical_definition": "GrailQA is consistently described in the provided literature as a benchmark for knowledge base question answering (KBQA) over the Freebase knowledge base. Its most prevalent use is to evaluate the generalization capabilities of models, particularly semantic parsing systems. The dataset is explicitly structured to assess different generalization levels, featuring splits for I.I.D., zero-shot, and compositional settings. One source specifies that its validation and test sets contain 50% zero-shot questions, 25% compositional questions, and 25% I.I.D. questions. Beyond generalizability, GrailQA is also used to measure complex reasoning, as it contains questions requiring up to 4-hop reasoning. It is referred to as a \"widely-used multi-hop KGQA benchmark,\" and performance improvements are reported in terms of F1 scores.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "GrailQA"
+  ],
+  "papers": [
+    "AdaDHP: Fine-Grained Fine-Tuning via DualHadamard Product and Adaptive Parameter Selection",
+    "Beyond One-Size-Fits-All: Tailored Benchmarks for Efficient Evaluation",
+    "Context-Aware Sentiment Forecasting viaLLM-based Multi-Perspective Role-Playing Agents",
+    "PreP-OCR: A Complete Pipeline for Document Image Restoration and EnhancedOCRAccuracy",
+    "Certainty in Uncertainty: Reasoning over Uncertain Knowledge Graphs with Statistical Guarantees",
+    "MiCRo: Mixture Modeling and Context-aware Routing for Personalized Preference Learning"
+  ],
+  "paper_count": 6,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Knowledge base question answering benchmark focusing on complex, compositional, and zero-shot reasoning over Freebase, used to evaluate semantic parsing systems.",
+      "paper": "Context-Aware Sentiment Forecasting viaLLM-based Multi-Perspective Role-Playing Agents",
+      "original_name": "GrailQA"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Context-Aware Sentiment Forecasting viaLLM-based Multi-Perspective Role-Playing Agents",
+      "evidence": "We experiment on GrailQA to compare the performance on different generalization levels (preliminary in Appendix D). (Section 4.3.3)",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "acl25": [
+          "Context-Aware Sentiment Forecasting viaLLM-based Multi-Perspective Role-Playing Agents"
+        ],
+        "emnlp25": [
+          "MiCRo: Mixture Modeling and Context-aware Routing for Personalized Preference Learning",
+          "Certainty in Uncertainty: Reasoning over Uncertain Knowledge Graphs with Statistical Guarantees"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Complex reasoning",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Reasoning of Large Language Models over Knowledge Graphs with Super-Relations",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Reasoning of Large Language Models over Knowledge Graphs with Super-Relations"
+        ],
+        "acl25": [
+          "Beyond One-Size-Fits-All: Tailored Benchmarks for Efficient Evaluation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge graph question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "PreP-OCR: A Complete Pipeline for Document Image Restoration and EnhancedOCRAccuracy",
+      "evidence": "We assess the performance of SAFE on three widely-used multi-hop KGQA benchmarks: CWQ (Talmor and Berant, 2018), WebQSP (Yih et al., 2016), and GrailQA (Gu et al., 2021) (Section 5).",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "acl25": [
+          "PreP-OCR: A Complete Pipeline for Document Image Restoration and EnhancedOCRAccuracy"
+        ],
+        "emnlp25": [
+          "MiCRo: Mixture Modeling and Context-aware Routing for Personalized Preference Learning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Data efficiency",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Context-Aware Sentiment Forecasting viaLLM-based Multi-Perspective Role-Playing Agents",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Context-Aware Sentiment Forecasting viaLLM-based Multi-Perspective Role-Playing Agents"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Robustness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Context-Aware Sentiment Forecasting viaLLM-based Multi-Perspective Role-Playing Agents",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Context-Aware Sentiment Forecasting viaLLM-based Multi-Perspective Role-Playing Agents"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Zero-shot generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Certainty in Uncertainty: Reasoning over Uncertain Knowledge Graphs with Statistical Guarantees",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Certainty in Uncertainty: Reasoning over Uncertain Knowledge Graphs with Statistical Guarantees"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Compositional generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Certainty in Uncertainty: Reasoning over Uncertain Knowledge Graphs with Statistical Guarantees",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Certainty in Uncertainty: Reasoning over Uncertain Knowledge Graphs with Statistical Guarantees"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 7,
+  "incoming_relationship_count": 7,
+  "outgoing_relationship_count": 0,
+  "characterization": "GrailQA is consistently described in the provided literature as a benchmark for knowledge base question answering (KBQA) over the Freebase knowledge base. Its most prevalent use is to evaluate the generalization capabilities of models, particularly semantic parsing systems. The dataset is explicitly structured to assess different generalization levels, featuring splits for I.I.D., zero-shot, and compositional settings. One source specifies that its validation and test sets contain 50% zero-shot questions, 25% compositional questions, and 25% I.I.D. questions. Beyond generalizability, GrailQA is also used to measure complex reasoning, as it contains questions requiring up to 4-hop reasoning. It is referred to as a \"widely-used multi-hop KGQA benchmark,\" and performance improvements are reported in terms of F1 scores.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "AdaDHP: Fine-Grained Fine-Tuning via DualHadamard Product and Adaptive Parameter Selection",
+      "Beyond One-Size-Fits-All: Tailored Benchmarks for Efficient Evaluation",
+      "Context-Aware Sentiment Forecasting viaLLM-based Multi-Perspective Role-Playing Agents",
+      "PreP-OCR: A Complete Pipeline for Document Image Restoration and EnhancedOCRAccuracy"
+    ],
+    "emnlp25": [
+      "Certainty in Uncertainty: Reasoning over Uncertain Knowledge Graphs with Statistical Guarantees",
+      "MiCRo: Mixture Modeling and Context-aware Routing for Personalized Preference Learning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 4,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25"
+  ]
+}

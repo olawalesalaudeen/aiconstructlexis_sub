@@ -1,0 +1,110 @@
+{
+  "canonical_name": "Direct prompting",
+  "type": "measurement",
+  "canonical_definition": "Across the surveyed literature, \"Direct prompting\" is most commonly described as an evaluation protocol where a language model is directly queried to generate a prediction or response for a given task. This method is frequently positioned as a baseline for comparison against other techniques, such as embedding-based classification or more complex reasoning approaches. The prevailing operationalization involves providing a model with test questions or examples and asking it to infer an output \"without intermediate reasoning steps\" (`Hypothesis Search: Inductive Reasoning with Language Models`), a framing that is sometimes explicitly contrasted with Chain-of-Thought prompting. However, a minority view defines it as a \"textual reasoning mode\" that incorporates Chain-of-Thought examples to decompose and verify answers for TableQA (`Triples as the Key: Structuring Makes Decomposition and Verification Easier in LLM-based TableQA`). The applications of this method are varied, including testing for memorized private content, generating structured forecasts, and performing zero-shot classification. As a measurement procedure, direct prompting is used to assess constructs such as `Programming ability` and `Natural language understanding`. Some sources characterize it as a \"na\u00efve approach\" (`X-FLoRA: Cross-modal Federated Learning with Modality-expertLoRAfor MedicalVQA`), reinforcing its common role as a straightforward baseline.",
+  "expert_reviewed": false,
+  "expert_removed": true,
+  "expert_removed_reason": "method/training pipeline \u2014 not a construct/measurement/behavior of LLM ability",
+  "names": [
+    "Direct prompting",
+    "Direct Prompting",
+    "DIRECT PROMPT"
+  ],
+  "papers": [
+    "Topic Coverage-based Demonstration Retrieval for In-Context Learning",
+    "X-FLoRA: Cross-modal Federated Learning with Modality-expertLoRAfor MedicalVQA",
+    "Hypothesis Search: Inductive Reasoning with Language Models",
+    "Zero-Shot Robustification of Zero-Shot Models",
+    "Large Language Models Often Say One Thing and Do Another",
+    "ScienceAgentBench: Toward Rigorous Assessment of Language Agents for Data-Driven Scientific Discovery",
+    "Triples as the Key: Structuring Makes Decomposition and Verification Easier in LLM-based TableQA",
+    "Context is Key: A Benchmark for Forecasting with Essential Textual Information",
+    "Watch Out Your Album! On the Inadvertent Privacy Memorization in Multi-Modal Large Language Models"
+  ],
+  "paper_count": 9,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Human evaluation protocol where language models are directly queried for predictions to compare against embedding-based zero-shot classification.",
+      "paper": "Hypothesis Search: Inductive Reasoning with Language Models",
+      "original_name": "Direct prompting"
+    },
+    {
+      "text": "A textual TableQA prompting procedure that uses prompts such as Chain-of-Thought examples or zero-shot instructions to decompose, reason, and verify answers.",
+      "paper": "Triples as the Key: Structuring Makes Decomposition and Verification Easier in LLM-based TableQA",
+      "original_name": "Direct Prompting"
+    },
+    {
+      "text": "A prompt-based evaluation method where an LLM is instructed to directly output a forecast as a structured output for all required timestamps in a single pass.",
+      "paper": "Context is Key: A Benchmark for Forecasting with Essential Textual Information",
+      "original_name": "DIRECT PROMPT"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Programming",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "ScienceAgentBench: Toward Rigorous Assessment of Language Agents for Data-Driven Scientific Discovery",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "ScienceAgentBench: Toward Rigorous Assessment of Language Agents for Data-Driven Scientific Discovery"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Natural language understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Topic Coverage-based Demonstration Retrieval for In-Context Learning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Topic Coverage-based Demonstration Retrieval for In-Context Learning"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the surveyed literature, \"Direct prompting\" is most commonly described as an evaluation protocol where a language model is directly queried to generate a prediction or response for a given task. This method is frequently positioned as a baseline for comparison against other techniques, such as embedding-based classification or more complex reasoning approaches. The prevailing operationalization involves providing a model with test questions or examples and asking it to infer an output \"without intermediate reasoning steps\" (`Hypothesis Search: Inductive Reasoning with Language Models`), a framing that is sometimes explicitly contrasted with Chain-of-Thought prompting. However, a minority view defines it as a \"textual reasoning mode\" that incorporates Chain-of-Thought examples to decompose and verify answers for TableQA (`Triples as the Key: Structuring Makes Decomposition and Verification Easier in LLM-based TableQA`). The applications of this method are varied, including testing for memorized private content, generating structured forecasts, and performing zero-shot classification. As a measurement procedure, direct prompting is used to assess constructs such as `Programming ability` and `Natural language understanding`. Some sources characterize it as a \"na\u00efve approach\" (`X-FLoRA: Cross-modal Federated Learning with Modality-expertLoRAfor MedicalVQA`), reinforcing its common role as a straightforward baseline.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Hypothesis Search: Inductive Reasoning with Language Models",
+      "Zero-Shot Robustification of Zero-Shot Models"
+    ],
+    "iclr25": [
+      "Large Language Models Often Say One Thing and Do Another",
+      "ScienceAgentBench: Toward Rigorous Assessment of Language Agents for Data-Driven Scientific Discovery",
+      "Triples as the Key: Structuring Makes Decomposition and Verification Easier in LLM-based TableQA"
+    ],
+    "icml25": [
+      "Context is Key: A Benchmark for Forecasting with Essential Textual Information",
+      "Watch Out Your Album! On the Inadvertent Privacy Memorization in Multi-Modal Large Language Models"
+    ],
+    "emnlp25": [
+      "Topic Coverage-based Demonstration Retrieval for In-Context Learning",
+      "X-FLoRA: Cross-modal Federated Learning with Modality-expertLoRAfor MedicalVQA"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "iclr25": 3,
+    "icml25": 2,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25"
+  ]
+}

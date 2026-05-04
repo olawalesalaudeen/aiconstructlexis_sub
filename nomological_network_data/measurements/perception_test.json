@@ -1,0 +1,99 @@
+{
+  "canonical_name": "Perception Test",
+  "type": "measurement",
+  "canonical_definition": "Across the surveyed literature, Perception Test is consistently described as a benchmark for evaluating video models, particularly Multimodal Large Language Models (MLLMs). The prevailing usage of the benchmark is to assess `video understanding`, a purpose explicitly stated across multiple papers. More specifically, it is frequently characterized as focusing on both the `perception` and `reasoning` skills of models. A smaller set of papers provide further detail, stating that it evaluates more granular capabilities such as `fine-grained visual understanding`, `logical inference`, `object tracking`, `spatial awareness`, and the understanding of `human actions`. One paper specifies its format as a \"video multiple-choice question answering dataset,\" while another describes it as an \"open-set video understanding benchmark.\" This focus on specific skills is reflected in its use, as one study notes selecting \"all questions whose tags are related to action\" for their experiments (NexusSum: HierarchicalLLMAgents for Long-Form Narrative Summarization). Finally, it is also referred to as a \"challenging perception and reasoning diagnostic for video models\" (Unifying Specialized Visual Encoders for Video Language Models).",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "PerceptionTest",
+    "Perception Test"
+  ],
+  "papers": [
+    "NexusSum: HierarchicalLLMAgents for Long-Form Narrative Summarization",
+    "Understanding Common Ground Misalignment in Goal-Oriented Dialog: A Case-Study withUbuntu Chat Logs",
+    "CREMA: Generalizable and Efficient Video-Language Reasoning via Multimodal Modular Fusion",
+    "LongVILA: Scaling Long-Context Visual Language Models for Long Videos",
+    "Oryx MLLM: On-Demand Spatial-Temporal Understanding at Arbitrary Resolution",
+    "MMInference: Accelerating Pre-filling for Long-Context Visual Language Models via Modality-Aware Permutation Sparse Attention",
+    "Unifying Specialized Visual Encoders for Video Language Models"
+  ],
+  "paper_count": 7,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A video perception benchmark used to assess visual understanding over video sequences.",
+      "paper": "LongVILA: Scaling Long-Context Visual Language Models for Long Videos",
+      "original_name": "PerceptionTest"
+    },
+    {
+      "text": "Perception Test (Patraucean et al., 2024) is a benchmark that focuses on the perception and reasoning skills of MLLMs.",
+      "paper": "Oryx MLLM: On-Demand Spatial-Temporal Understanding at Arbitrary Resolution",
+      "original_name": "Perception Test"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Video understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "LongVILA: Scaling Long-Context Visual Language Models for Long Videos",
+      "evidence": "We evaluate our model on a comprehensive suite of video understanding benchmarks, including the open-ended MSVD-QA (Xu et al., 2017), MSRVTT-QA (Xu et al., 2017), TGIF (Jang et al., 2017), and ActivityNet-QA (Yu et al., 2019), as well as the multiple-choice benchmarks NExT-QA (Xiao et al., 2021), VLEP (Lei et al., 2020), TVQA (Lei et al., 2018), and Perception Test (P\u0103tr\u0103ucean et al., 2023).",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "LongVILA: Scaling Long-Context Visual Language Models for Long Videos"
+        ],
+        "icml25": [
+          "Unifying Specialized Visual Encoders for Video Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Animal-Bench: Benchmarking Multimodal Video Models for Animal-centric Video Understanding",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Animal-Bench: Benchmarking Multimodal Video Models for Animal-centric Video Understanding"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the surveyed literature, Perception Test is consistently described as a benchmark for evaluating video models, particularly Multimodal Large Language Models (MLLMs). The prevailing usage of the benchmark is to assess `video understanding`, a purpose explicitly stated across multiple papers. More specifically, it is frequently characterized as focusing on both the `perception` and `reasoning` skills of models. A smaller set of papers provide further detail, stating that it evaluates more granular capabilities such as `fine-grained visual understanding`, `logical inference`, `object tracking`, `spatial awareness`, and the understanding of `human actions`. One paper specifies its format as a \"video multiple-choice question answering dataset,\" while another describes it as an \"open-set video understanding benchmark.\" This focus on specific skills is reflected in its use, as one study notes selecting \"all questions whose tags are related to action\" for their experiments (NexusSum: HierarchicalLLMAgents for Long-Form Narrative Summarization). Finally, it is also referred to as a \"challenging perception and reasoning diagnostic for video models\" (Unifying Specialized Visual Encoders for Video Language Models).",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "CREMA: Generalizable and Efficient Video-Language Reasoning via Multimodal Modular Fusion",
+      "LongVILA: Scaling Long-Context Visual Language Models for Long Videos",
+      "Oryx MLLM: On-Demand Spatial-Temporal Understanding at Arbitrary Resolution"
+    ],
+    "acl25": [
+      "NexusSum: HierarchicalLLMAgents for Long-Form Narrative Summarization",
+      "Understanding Common Ground Misalignment in Goal-Oriented Dialog: A Case-Study withUbuntu Chat Logs"
+    ],
+    "icml25": [
+      "MMInference: Accelerating Pre-filling for Long-Context Visual Language Models via Modality-Aware Permutation Sparse Attention",
+      "Unifying Specialized Visual Encoders for Video Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3,
+    "acl25": 2,
+    "icml25": 2
+  },
+  "conferences": [
+    "acl25",
+    "iclr25",
+    "icml25"
+  ]
+}

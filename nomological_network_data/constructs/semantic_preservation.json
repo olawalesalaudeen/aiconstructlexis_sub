@@ -1,0 +1,132 @@
+{
+  "canonical_name": "Semantic preservation",
+  "type": "construct",
+  "canonical_definition": "Across the provided literature, semantic preservation is most commonly defined as the degree to which a transformed or stylized text retains the meaning of the original input. This concept is frequently applied in text generation tasks where, as one paper notes, \"generating stylized responses must not compromise the original semantics\" (\"DRESSing Up LLM: Efficient Stylized Question-Answering via Style Subspace Editing\"), and also in the context of adversarial attacks on watermarking, where modifications should maintain the original content. A less common application treats semantic preservation as the extent to which a subset of a dataset retains the semantic information of the full set. The construct is operationalized and measured in several ways; some papers use BERTScore to evaluate semantic similarity with contextual embeddings, while others employ the Semantic Similarity (SIM) measure from the ParaDetox benchmark. In the context of dataset subsetting, one paper quantifies it using the Wasserstein distance between text embeddings. The concept is studied in relation to Style transfer and Text quality.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Content preservation",
+    "Semantic preservation"
+  ],
+  "papers": [
+    "Are Language Models Consequentialist or Deontological Moral Reasoners?",
+    "Learning to See through Sound: FromVggCaps toMulti2Cap for Richer Automated Audio Captioning",
+    "Measuring scalar constructs in social science withLLMs",
+    "Multi-Modal Framing Analysis of News",
+    "Targeted Distillation for Sentiment Analysis",
+    "DRESSing Up LLM: Efficient Stylized Question-Answering via Style Subspace Editing",
+    "Pareto Prompt Optimization",
+    "Scaling Speech-Text Pre-training with Synthetic Interleaved Data",
+    "Learning Extrapolative Sequence Transformations from Markov Chains",
+    "Revealing Weaknesses in Text Watermarking Through Self-Information Rewrite Attacks",
+    "STAMP Your Content: Proving Dataset Membership via Watermarked Rephrasings"
+  ],
+  "paper_count": 11,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The degree to which a stylized response retains the meaning of the original response rather than drifting in content.",
+      "paper": "DRESSing Up LLM: Efficient Stylized Question-Answering via Style Subspace Editing",
+      "original_name": "Semantic preservation"
+    },
+    {
+      "text": "The degree to which the semantic meaning of an input text is maintained in a transformed output text.",
+      "paper": "Pareto Prompt Optimization",
+      "original_name": "Content preservation"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Style transfer",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Pareto Prompt Optimization",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Pareto Prompt Optimization"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BERTScore",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Are Language Models Consequentialist or Deontological Moral Reasoners?",
+      "evidence": "\"Evaluation metrics Our evaluation spans detection performance (AUC and accuracy), text quality (PPL and BLEU), semantic alignment (STS and BertScore)\"",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Are Language Models Consequentialist or Deontological Moral Reasoners?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Text quality",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Multi-Modal Framing Analysis of News",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Multi-Modal Framing Analysis of News"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ParaDetox",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Measuring scalar constructs in social science withLLMs",
+      "evidence": "Semantic Similarity (SIM) measures to what extent the generated text preserves the meaning of the original input. (Section 4.1.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Measuring scalar constructs in social science withLLMs"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 4,
+  "characterization": "Across the provided literature, semantic preservation is most commonly defined as the degree to which a transformed or stylized text retains the meaning of the original input. This concept is frequently applied in text generation tasks where, as one paper notes, \"generating stylized responses must not compromise the original semantics\" (\"DRESSing Up LLM: Efficient Stylized Question-Answering via Style Subspace Editing\"), and also in the context of adversarial attacks on watermarking, where modifications should maintain the original content. A less common application treats semantic preservation as the extent to which a subset of a dataset retains the semantic information of the full set. The construct is operationalized and measured in several ways; some papers use BERTScore to evaluate semantic similarity with contextual embeddings, while others employ the Semantic Similarity (SIM) measure from the ParaDetox benchmark. In the context of dataset subsetting, one paper quantifies it using the Wasserstein distance between text embeddings. The concept is studied in relation to Style transfer and Text quality.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "DRESSing Up LLM: Efficient Stylized Question-Answering via Style Subspace Editing",
+      "Pareto Prompt Optimization",
+      "Scaling Speech-Text Pre-training with Synthetic Interleaved Data"
+    ],
+    "icml25": [
+      "Learning Extrapolative Sequence Transformations from Markov Chains",
+      "Revealing Weaknesses in Text Watermarking Through Self-Information Rewrite Attacks",
+      "STAMP Your Content: Proving Dataset Membership via Watermarked Rephrasings"
+    ],
+    "emnlp25": [
+      "Are Language Models Consequentialist or Deontological Moral Reasoners?",
+      "Learning to See through Sound: FromVggCaps toMulti2Cap for Richer Automated Audio Captioning",
+      "Measuring scalar constructs in social science withLLMs",
+      "Multi-Modal Framing Analysis of News",
+      "Targeted Distillation for Sentiment Analysis"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3,
+    "icml25": 3,
+    "emnlp25": 5
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "icml25"
+  ]
+}

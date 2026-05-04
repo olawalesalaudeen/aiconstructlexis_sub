@@ -1,0 +1,100 @@
+{
+  "canonical_name": "Books3",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, Books3 is consistently characterized as a dataset composed of an extensive collection of books, primarily used for evaluating language model performance. It is frequently employed to measure both `Language modeling` and `Length generalization`, with a specific focus on performance on extremely long documents, such as those with 96k-128k tokens. The most common method for this evaluation is calculating perplexity on the dataset, as noted in multiple papers, although one source also mentions using accuracy. While its primary role is evaluation, some work also uses Books3 for training language models, describing it as a \"frequently used benchmark\". In practice, it is often used alongside other book-based datasets like Gutenberg (PG-19) and other text corpora such as Arxiv. A minor variation in naming, 'Book3', appears in one paper, though it refers to the same underlying data source and usage. The dataset is also noted as being related to The Pile.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Books3",
+    "Book3"
+  ],
+  "papers": [
+    "PoSE: Efficient Context Window Extension of LLMs via Positional Skip-wise Training",
+    "Scaling Laws of RoPE-based Extrapolation",
+    "An Efficient Recipe for Long Context Extension via Middle-Focused Positional Encoding",
+    "DAPE: Data-Adaptive Positional Encoding for Length Extrapolation"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A dataset consisting of an extensive collection of books, used to evaluate model performance on extremely long documents (e.g., 96k-128k tokens).",
+      "paper": "PoSE: Efficient Context Window Extension of LLMs via Positional Skip-wise Training",
+      "original_name": "Books3"
+    },
+    {
+      "text": "A large dataset of books used for evaluating language modeling performance on long-context sequences.",
+      "paper": "An Efficient Recipe for Long Context Extension via Middle-Focused Positional Encoding",
+      "original_name": "Book3"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Length generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Scaling Laws of RoPE-based Extrapolation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Scaling Laws of RoPE-based Extrapolation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language modeling",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "An Efficient Recipe for Long Context Extension via Middle-Focused Positional Encoding",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "An Efficient Recipe for Long Context Extension via Middle-Focused Positional Encoding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "The Pile",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Data Mixing Laws: Optimizing Data Mixtures by Predicting Language Modeling Performance",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Data Mixing Laws: Optimizing Data Mixtures by Predicting Language Modeling Performance"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the provided literature, Books3 is consistently characterized as a dataset composed of an extensive collection of books, primarily used for evaluating language model performance. It is frequently employed to measure both `Language modeling` and `Length generalization`, with a specific focus on performance on extremely long documents, such as those with 96k-128k tokens. The most common method for this evaluation is calculating perplexity on the dataset, as noted in multiple papers, although one source also mentions using accuracy. While its primary role is evaluation, some work also uses Books3 for training language models, describing it as a \"frequently used benchmark\". In practice, it is often used alongside other book-based datasets like Gutenberg (PG-19) and other text corpora such as Arxiv. A minor variation in naming, 'Book3', appears in one paper, though it refers to the same underlying data source and usage. The dataset is also noted as being related to The Pile.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "PoSE: Efficient Context Window Extension of LLMs via Positional Skip-wise Training",
+      "Scaling Laws of RoPE-based Extrapolation"
+    ],
+    "neurips24": [
+      "An Efficient Recipe for Long Context Extension via Middle-Focused Positional Encoding",
+      "DAPE: Data-Adaptive Positional Encoding for Length Extrapolation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "neurips24": 2
+  },
+  "conferences": [
+    "iclr24",
+    "neurips24"
+  ]
+}

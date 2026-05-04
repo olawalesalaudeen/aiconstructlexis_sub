@@ -1,0 +1,106 @@
+{
+  "canonical_name": "MLQA",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, MLQA is consistently described as the Multilingual Question Answering dataset, a benchmark used for evaluation. It is most frequently used to measure `Multilingual question answering` and general `Question answering`, with some work also using it to evaluate broader `Natural language understanding` and comprehension skills. More specifically, papers state that the benchmark evaluates \"cross-lingual reading comprehension and answer extraction\" and \"extractive question answering capabilities in multiple languages.\" The dataset is characterized as consisting of \"extractive question-answer instances\" presented in the SQuAD format. One source specifies it contains \"over 5K\" instances across seven languages: English, Arabic, German, Spanish, Hindi, Vietnamese, and Simplified Chinese. A noted feature of its design is its \"aligned dataset structure, where each question-answer pair is present in multiple languages,\" which facilitates cross-lingual evaluation. Beyond standard evaluation, MLQA is also mentioned as a source for the MLNeedle test and as a benchmark in a \"language skill unlearning task.\"",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "MLQA"
+  ],
+  "papers": [
+    "Ambiguity Awareness Optimization: Towards Semantic Disambiguation for Direct Preference Optimization",
+    "CHENGYU-BENCH: Benchmarking Large Language Models forChinese Idiom Understanding and Use",
+    "Causal Representation Learning from Multimodal Clinical Records under Non-Random Modality Missingness",
+    "iTool: Reinforced Fine-Tuning with Dynamic Deficiency Calibration for Advanced Tool Use",
+    "Beyond Logit Lens: Contextual Embeddings for Robust Hallucination Detection & Grounding inVLMs",
+    "Model Surgery: ModulatingLLM\u2019s Behavior Via Simple Parameter Editing",
+    "On the Vulnerability of Text Sanitization",
+    "One Unified Model for Diverse Tasks: Emotion Cause Analysis via Self-Promote Cognitive Structure Modeling"
+  ],
+  "paper_count": 8,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The Multilingual Question Answering dataset, which consists of extractive question-answer instances across seven languages in the SQuAD format, used as the source for the MLNeedle test.",
+      "paper": "Beyond Logit Lens: Contextual Embeddings for Robust Hallucination Detection & Grounding inVLMs",
+      "original_name": "MLQA"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multilingual question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "On the Vulnerability of Text Sanitization",
+      "evidence": "However, efforts such as MLQA (Lewis et al., 2020) and XQuAD (Artetxe et al., 2019) have introduced datasets supporting multiple languages, facilitating cross-lingual evaluation of QA systems. (Section 5)",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "naacl25": [
+          "On the Vulnerability of Text Sanitization"
+        ],
+        "emnlp25": [
+          "Causal Representation Learning from Multimodal Clinical Records under Non-Random Modality Missingness",
+          "Ambiguity Awareness Optimization: Towards Semantic Disambiguation for Direct Preference Optimization"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "iTool: Reinforced Fine-Tuning with Dynamic Deficiency Calibration for Advanced Tool Use",
+      "evidence": "\u201cFor the question-answering task, we fine-tune Qwen2.5-1.5B... We evaluate LMTransplant on five established benchmarks: \u2022 MLQA ... A question-answering benchmark\u201d",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "iTool: Reinforced Fine-Tuning with Dynamic Deficiency Calibration for Advanced Tool Use"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Natural language understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Model Surgery: ModulatingLLM\u2019s Behavior Via Simple Parameter Editing",
+      "evidence": "We evaluate our methods on unlearning math-solving, Python-coding, and comprehension skills across seven different languages with GSM8K, MBPP, and MLQA datasets respectively. (Section 6)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Model Surgery: ModulatingLLM\u2019s Behavior Via Simple Parameter Editing"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, MLQA is consistently described as the Multilingual Question Answering dataset, a benchmark used for evaluation. It is most frequently used to measure `Multilingual question answering` and general `Question answering`, with some work also using it to evaluate broader `Natural language understanding` and comprehension skills. More specifically, papers state that the benchmark evaluates \"cross-lingual reading comprehension and answer extraction\" and \"extractive question answering capabilities in multiple languages.\" The dataset is characterized as consisting of \"extractive question-answer instances\" presented in the SQuAD format. One source specifies it contains \"over 5K\" instances across seven languages: English, Arabic, German, Spanish, Hindi, Vietnamese, and Simplified Chinese. A noted feature of its design is its \"aligned dataset structure, where each question-answer pair is present in multiple languages,\" which facilitates cross-lingual evaluation. Beyond standard evaluation, MLQA is also mentioned as a source for the MLNeedle test and as a benchmark in a \"language skill unlearning task.\"",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "naacl25": [
+      "Beyond Logit Lens: Contextual Embeddings for Robust Hallucination Detection & Grounding inVLMs",
+      "Model Surgery: ModulatingLLM\u2019s Behavior Via Simple Parameter Editing",
+      "On the Vulnerability of Text Sanitization",
+      "One Unified Model for Diverse Tasks: Emotion Cause Analysis via Self-Promote Cognitive Structure Modeling"
+    ],
+    "emnlp25": [
+      "Ambiguity Awareness Optimization: Towards Semantic Disambiguation for Direct Preference Optimization",
+      "CHENGYU-BENCH: Benchmarking Large Language Models forChinese Idiom Understanding and Use",
+      "Causal Representation Learning from Multimodal Clinical Records under Non-Random Modality Missingness",
+      "iTool: Reinforced Fine-Tuning with Dynamic Deficiency Calibration for Advanced Tool Use"
+    ]
+  },
+  "paper_count_by_conference": {
+    "naacl25": 4,
+    "emnlp25": 4
+  },
+  "conferences": [
+    "emnlp25",
+    "naacl25"
+  ]
+}

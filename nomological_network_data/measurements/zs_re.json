@@ -1,0 +1,191 @@
+{
+  "canonical_name": "zs-RE",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, zs-RE is consistently defined as a benchmark or dataset for zero-shot relation extraction, where models must identify relations between entities without prior examples. A prevalent application of zs-RE is in the evaluation of knowledge editing, with multiple papers citing it as a \"representative benchmark in the field of model editing\" used to assess a model's ability to update its knowledge. This evaluation is frequently operationalized as a question answering task, as several sources describe zs-RE as a \"closed-book question answering (QA) dataset.\" One definition explicitly links these uses, framing the instrument as a tool to \"evaluate the ability of models to update knowledge based on single-relation prompts without prior examples.\" In addition to knowledge editing, the benchmark is also used to measure information extraction capabilities more broadly. The provided data also indicates that zs-RE is used to assess other model properties, including locality, generality, factuality, hallucination, and faithfulness.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "zs-RE",
+    "ZsRE"
+  ],
+  "papers": [
+    "Are Checklists Really Useful for Automatic Evaluation of Generative Tasks?",
+    "EquiBench: Benchmarking Large Language Models\u2019 Reasoning about Program Semantics via Equivalence Checking",
+    "Identification of Multiple Logical Interpretations in Counter-Arguments",
+    "Implicit Values Embedded in How Humans andLLMs Complete Subjective Everyday Tasks",
+    "Investigating Pedagogical Teacher and StudentLLMAgents: Genetic Adaptation Meets Retrieval-Augmented Generation Across Learning Styles",
+    "PBI-Attack: Prior-Guided Bimodal Interactive Black-Box Jailbreak Attack for Toxicity Maximization",
+    "SciNLP: A Domain-Specific Benchmark for Full-Text Scientific Entity and Relation Extraction inNLP"
+  ],
+  "paper_count": 7,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "zs-RE is a benchmark for zero-shot relation extraction, where models must identify relations between entities without prior examples for those specific relations.",
+      "paper": "PBI-Attack: Prior-Guided Bimodal Interactive Black-Box Jailbreak Attack for Toxicity Maximization",
+      "original_name": "zs-RE"
+    },
+    {
+      "text": "Zero-shot Relation Extraction dataset used to evaluate the ability of models to update knowledge based on single-relation prompts without prior examples.",
+      "paper": "Identification of Multiple Logical Interpretations in Counter-Arguments",
+      "original_name": "ZsRE"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Massive Editing for Large Language Models via Meta Learning",
+      "evidence": "\"ZsRE is a closed-book question answering (QA) dataset derived from zero-shot relation extraction.\"",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "iclr24": [
+          "Massive Editing for Large Language Models via Meta Learning"
+        ],
+        "neurips24": [
+          "WISE: Rethinking the Knowledge Memory for Lifelong Model Editing of Large Language Models"
+        ],
+        "iclr25": [
+          "Composable Interventions for Language Models"
+        ],
+        "emnlp25": [
+          "SciNLP: A Domain-Specific Benchmark for Full-Text Scientific Entity and Relation Extraction inNLP"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge editing",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Unlocking Efficient, Scalable, and Continual Knowledge Editing with Basis-Level Representation Fine-Tuning",
+      "evidence": "\"We adopted two representative benchmarks in the field of model editing: Counterfact(Meng et al., 2022) and ZsRE(Levy et al., 2017).\" (Section 4.1) and \"we adopt the metrics for evaluating knowledge updating ability: Efficacy (efficiency success) and Generalization (paraphrase success)\" (Section 4.1)",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr25": [
+          "Unlocking Efficient, Scalable, and Continual Knowledge Editing with Basis-Level Representation Fine-Tuning"
+        ],
+        "emnlp25": [
+          "Implicit Values Embedded in How Humans andLLMs Complete Subjective Everyday Tasks",
+          "Identification of Multiple Logical Interpretations in Counter-Arguments"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Locality",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "A Cognitive Evaluation Benchmark of Image Reasoning and Description for Large Vision-Language Models",
+      "evidence": "Results on three metrics for the two datasets using LLAMA2-7B and LLAMA-7B. (Table 1)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "naacl25": [
+          "A Cognitive Evaluation Benchmark of Image Reasoning and Description for Large Vision-Language Models"
+        ],
+        "emnlp25": [
+          "Investigating Pedagogical Teacher and StudentLLMAgents: Genetic Adaptation Meets Retrieval-Augmented Generation Across Learning Styles"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generality",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "A Cognitive Evaluation Benchmark of Image Reasoning and Description for Large Vision-Language Models",
+      "evidence": "Results on three metrics for the two datasets using LLAMA2-7B and LLAMA-7B. (Table 1)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "naacl25": [
+          "A Cognitive Evaluation Benchmark of Image Reasoning and Description for Large Vision-Language Models"
+        ],
+        "emnlp25": [
+          "Investigating Pedagogical Teacher and StudentLLMAgents: Genetic Adaptation Meets Retrieval-Augmented Generation Across Learning Styles"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Factual knowledge",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Perturbation-Restrained Sequential Model Editing",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Perturbation-Restrained Sequential Model Editing"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Information extraction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "PBI-Attack: Prior-Guided Bimodal Interactive Black-Box Jailbreak Attack for Toxicity Maximization",
+      "evidence": "\u201czs-RE (Levy et al., 2017), Relation extraction\u201d",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "PBI-Attack: Prior-Guided Bimodal Interactive Black-Box Jailbreak Attack for Toxicity Maximization"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Stealth edits to large language models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Stealth edits to large language models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reliability",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Investigating Pedagogical Teacher and StudentLLMAgents: Genetic Adaptation Meets Retrieval-Augmented Generation Across Learning Styles",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Investigating Pedagogical Teacher and StudentLLMAgents: Genetic Adaptation Meets Retrieval-Augmented Generation Across Learning Styles"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 8,
+  "incoming_relationship_count": 8,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, zs-RE is consistently defined as a benchmark or dataset for zero-shot relation extraction, where models must identify relations between entities without prior examples. A prevalent application of zs-RE is in the evaluation of knowledge editing, with multiple papers citing it as a \"representative benchmark in the field of model editing\" used to assess a model's ability to update its knowledge. This evaluation is frequently operationalized as a question answering task, as several sources describe zs-RE as a \"closed-book question answering (QA) dataset.\" One definition explicitly links these uses, framing the instrument as a tool to \"evaluate the ability of models to update knowledge based on single-relation prompts without prior examples.\" In addition to knowledge editing, the benchmark is also used to measure information extraction capabilities more broadly. The provided data also indicates that zs-RE is used to assess other model properties, including locality, generality, factuality, hallucination, and faithfulness.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Are Checklists Really Useful for Automatic Evaluation of Generative Tasks?",
+      "EquiBench: Benchmarking Large Language Models\u2019 Reasoning about Program Semantics via Equivalence Checking",
+      "Identification of Multiple Logical Interpretations in Counter-Arguments",
+      "Implicit Values Embedded in How Humans andLLMs Complete Subjective Everyday Tasks",
+      "Investigating Pedagogical Teacher and StudentLLMAgents: Genetic Adaptation Meets Retrieval-Augmented Generation Across Learning Styles",
+      "PBI-Attack: Prior-Guided Bimodal Interactive Black-Box Jailbreak Attack for Toxicity Maximization",
+      "SciNLP: A Domain-Specific Benchmark for Full-Text Scientific Entity and Relation Extraction inNLP"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 7
+  },
+  "conferences": [
+    "emnlp25"
+  ]
+}

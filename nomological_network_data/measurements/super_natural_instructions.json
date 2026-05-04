@@ -1,0 +1,166 @@
+{
+  "canonical_name": "Super-Natural Instructions",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, Super-Natural Instructions is predominantly characterized as a large and diverse benchmark designed to evaluate the general instruction-following capabilities of language models. Most definitions describe it as a collection of numerous NLP tasks, with one source specifying over 1600, that are accompanied by expert-written instructions. The benchmark is consistently used to measure performance on both `text generation` and `text classification` tasks, with one paper noting a selection of tasks across categories like dialogue generation, question answering, and summarization. A more specific line of work frames it as a benchmark for `continual learning`, using it to construct task sequences and, as one paper notes, to \"evaluate cross-task generation and conflict.\" In this context, one source describes using a subset of 15 NLP tasks to evaluate general continual learning performance. In addition to these applications, Super-Natural Instructions is also reported to be used for assessing model `generalization`, `translation capability`, `commonsense knowledge`, and performance after `instruction fine-tuning`.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "SuperNI",
+    "Super-Natural Instructions",
+    "SuperNI Benchmark"
+  ],
+  "papers": [
+    "An Auditing Test to Detect Behavioral Shift in Language Models",
+    "LoRA Done RITE: Robust Invariant Transformation Equilibration for LoRA Optimization",
+    "PEARL: Towards Permutation-Resilient LLMs",
+    "Unlocking the Power of Function Vectors for Characterizing and Mitigating Catastrophic Forgetting in Continual Instruction Tuning",
+    "DA-KD: Difficulty-Aware Knowledge Distillation for Efficient Large Language Models",
+    "Exploiting Presentative Feature Distributions for Parameter-Efficient Continual Learning of Large Language Models"
+  ],
+  "paper_count": 6,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A collection of NLP tasks with expert-written instructions used to build continual instruction tuning task sequences and evaluate cross-task generation and conflict.",
+      "paper": "Unlocking the Power of Function Vectors for Characterizing and Mitigating Catastrophic Forgetting in Continual Instruction Tuning",
+      "original_name": "SuperNI"
+    },
+    {
+      "text": "A large and diverse benchmark dataset containing over 1600 NLP tasks, designed to evaluate the general instruction-following capabilities of language models across both classification and generation formats.",
+      "paper": "LoRA Done RITE: Robust Invariant Transformation Equilibration for LoRA Optimization",
+      "original_name": "Super-Natural Instructions"
+    },
+    {
+      "text": "A comprehensive continual learning benchmark consisting of 15 NLP tasks across categories such as dialogue generation, information extraction, question answering, summarization, and sentiment analysis, used to evaluate general CL performance.",
+      "paper": "Exploiting Presentative Feature Distributions for Parameter-Efficient Continual Learning of Large Language Models",
+      "original_name": "SuperNI Benchmark"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "LoRA Done RITE: Robust Invariant Transformation Equilibration for LoRA Optimization",
+      "evidence": "These sequences consist of pure generation tasks, pure classification tasks and mixed sequences containing both generation and classification tasks. (Section 3)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "LoRA Done RITE: Robust Invariant Transformation Equilibration for LoRA Optimization"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text classification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "LoRA Done RITE: Robust Invariant Transformation Equilibration for LoRA Optimization",
+      "evidence": "These sequences consist of pure generation tasks, pure classification tasks and mixed sequences containing both generation and classification tasks. (Section 3)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "LoRA Done RITE: Robust Invariant Transformation Equilibration for LoRA Optimization"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Translation capability",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "An Auditing Test to Detect Behavioral Shift in Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "An Auditing Test to Detect Behavioral Shift in Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction following",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "DA-KD: Difficulty-Aware Knowledge Distillation for Efficient Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "DA-KD: Difficulty-Aware Knowledge Distillation for Efficient Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "PEARL: Towards Permutation-Resilient LLMs",
+      "evidence": "Experiments on synthetic pre-training and real-world instruction tuning tasks demonstrate that PEARL effectively mitigates permutation attacks and enhances performance. Notably, despite being trained on fewer shots and shorter contexts, PEARL achieves performance gains of up to 40% when scaled to many-shot and long-context scenarios, highlighting its efficiency and generalization capabilities.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "PEARL: Towards Permutation-Resilient LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction fine-tuning",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "PEARL: Towards Permutation-Resilient LLMs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "PEARL: Towards Permutation-Resilient LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Continual learning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Exploiting Presentative Feature Distributions for Parameter-Efficient Continual Learning of Large Language Models",
+      "evidence": "We conducted experiments on two CL benchmarks, including SuperNI Benchmark (Wang et al., 2022a) and Long Sequence Benchmark (Razdaibiedina et al., 2023). (Section 4.1).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Exploiting Presentative Feature Distributions for Parameter-Efficient Continual Learning of Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 7,
+  "incoming_relationship_count": 7,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, Super-Natural Instructions is predominantly characterized as a large and diverse benchmark designed to evaluate the general instruction-following capabilities of language models. Most definitions describe it as a collection of numerous NLP tasks, with one source specifying over 1600, that are accompanied by expert-written instructions. The benchmark is consistently used to measure performance on both `text generation` and `text classification` tasks, with one paper noting a selection of tasks across categories like dialogue generation, question answering, and summarization. A more specific line of work frames it as a benchmark for `continual learning`, using it to construct task sequences and, as one paper notes, to \"evaluate cross-task generation and conflict.\" In this context, one source describes using a subset of 15 NLP tasks to evaluate general continual learning performance. In addition to these applications, Super-Natural Instructions is also reported to be used for assessing model `generalization`, `translation capability`, `commonsense knowledge`, and performance after `instruction fine-tuning`.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "An Auditing Test to Detect Behavioral Shift in Language Models",
+      "LoRA Done RITE: Robust Invariant Transformation Equilibration for LoRA Optimization",
+      "PEARL: Towards Permutation-Resilient LLMs",
+      "Unlocking the Power of Function Vectors for Characterizing and Mitigating Catastrophic Forgetting in Continual Instruction Tuning"
+    ],
+    "icml25": [
+      "DA-KD: Difficulty-Aware Knowledge Distillation for Efficient Large Language Models",
+      "Exploiting Presentative Feature Distributions for Parameter-Efficient Continual Learning of Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 4,
+    "icml25": 2
+  },
+  "conferences": [
+    "iclr25",
+    "icml25"
+  ]
+}

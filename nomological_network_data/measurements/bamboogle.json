@@ -1,0 +1,131 @@
+{
+  "canonical_name": "Bamboogle",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, Bamboogle is characterized as a question answering dataset used for evaluating models, often as an \"unseen evaluation task\" or for \"out-of-domain evaluation.\" Its most prevalent application is to measure multi-hop question answering, with several papers explicitly grouping it with other datasets of this type. It is also used to assess a model's generalization ability beyond its training domain. A less common, single-paper claim is that it measures compositional reasoning. The dataset is consistently defined as containing \"complex or adversarial questions.\" One source specifies that answering these questions \"requires knowledge beyond Wikipedia\u2019s coverage,\" while another notes they are questions that \"Google answers incorrectly.\"",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Bamboogle"
+  ],
+  "papers": [
+    "Evaluating Sequence Labeling on the basis of Information Theory",
+    "LoGU: Long-form Generation with Uncertainty Expressions",
+    "CLIP-MoE: Towards Building Mixture of Experts forCLIPwith Diversified Multiplet Upcycling",
+    "Chain-of-Talkers (CoTalk): Fast Human Annotation of Dense Image Captions",
+    "DART: Distilling Autoregressive Reasoning to Silent Thought",
+    "DSMoE: Matrix-Partitioned Experts with Dynamic Routing for Computation-Efficient DenseLLMs",
+    "P-MMEval: A Parallel Multilingual Multitask Benchmark for Consistent Evaluation ofLLMs",
+    "RICO: Improving Accuracy and Completeness in Image Recaptioning via Visual Reconstruction",
+    "SimVBG: Simulating Individual Values by Backstory Generation",
+    "ViClaim: A Multilingual Multilabel Dataset for Automatic Claim Detection in Videos",
+    "Inference Scaling for Long-Context Retrieval Augmented Generation",
+    "Long-Context LLMs Meet RAG: Overcoming Challenges for Long Inputs in RAG",
+    "MindSearch: Mimicking Human Minds Elicits Deep AI Searcher"
+  ],
+  "paper_count": 13,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A dataset of complex or adversarial questions, used as an unseen evaluation task for RAG-tuned models.",
+      "paper": "Long-Context LLMs Meet RAG: Overcoming Challenges for Long Inputs in RAG",
+      "original_name": "Bamboogle"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multi-hop question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Evaluating Sequence Labeling on the basis of Information Theory",
+      "evidence": "We conduct experiments on five multi-hop QA datasets: HotPotQA (Yang et al., 2018), 2WikiMultiHopQA (2Wiki) (Ho et al., 2020), MuSiQue (Trivedi et al., 2022), Bamboogle (Press et al., 2023) and WebQuestions (WebQA) (Berant et al., 2013). (Section 4.1)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "acl25": [
+          "Evaluating Sequence Labeling on the basis of Information Theory",
+          "LoGU: Long-form Generation with Uncertainty Expressions"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Chain of Preference Optimization: Improving Chain-of-Thought Reasoning in LLMs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Chain of Preference Optimization: Improving Chain-of-Thought Reasoning in LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "ViClaim: A Multilingual Multilabel Dataset for Automatic Claim Detection in Videos",
+      "evidence": "\u201cFor out-of-domain evaluation, we introduce three datasets that differ significantly in question style and information distribution: MuSiQue (Trivedi et al., 2022), Bamboogle (Press et al., 2022), and PopQA (Mallen et al., 2022). These datasets test the model\u2019s generalization ability beyond the training domain.\u201d",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "ViClaim: A Multilingual Multilabel Dataset for Automatic Claim Detection in Videos"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Compositional reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "CLIP-MoE: Towards Building Mixture of Experts forCLIPwith Diversified Multiplet Upcycling",
+      "evidence": "Bamboogle (Press et al., 2023) includes complex questions that Google answers incorrectly, assessing compositional reasoning. (Section 4.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "CLIP-MoE: Towards Building Mixture of Experts forCLIPwith Diversified Multiplet Upcycling"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, Bamboogle is characterized as a question answering dataset used for evaluating models, often as an \"unseen evaluation task\" or for \"out-of-domain evaluation.\" Its most prevalent application is to measure multi-hop question answering, with several papers explicitly grouping it with other datasets of this type. It is also used to assess a model's generalization ability beyond its training domain. A less common, single-paper claim is that it measures compositional reasoning. The dataset is consistently defined as containing \"complex or adversarial questions.\" One source specifies that answering these questions \"requires knowledge beyond Wikipedia\u2019s coverage,\" while another notes they are questions that \"Google answers incorrectly.\"",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Inference Scaling for Long-Context Retrieval Augmented Generation",
+      "Long-Context LLMs Meet RAG: Overcoming Challenges for Long Inputs in RAG",
+      "MindSearch: Mimicking Human Minds Elicits Deep AI Searcher"
+    ],
+    "acl25": [
+      "Evaluating Sequence Labeling on the basis of Information Theory",
+      "LoGU: Long-form Generation with Uncertainty Expressions"
+    ],
+    "emnlp25": [
+      "CLIP-MoE: Towards Building Mixture of Experts forCLIPwith Diversified Multiplet Upcycling",
+      "Chain-of-Talkers (CoTalk): Fast Human Annotation of Dense Image Captions",
+      "DART: Distilling Autoregressive Reasoning to Silent Thought",
+      "DSMoE: Matrix-Partitioned Experts with Dynamic Routing for Computation-Efficient DenseLLMs",
+      "P-MMEval: A Parallel Multilingual Multitask Benchmark for Consistent Evaluation ofLLMs",
+      "RICO: Improving Accuracy and Completeness in Image Recaptioning via Visual Reconstruction",
+      "SimVBG: Simulating Individual Values by Backstory Generation",
+      "ViClaim: A Multilingual Multilabel Dataset for Automatic Claim Detection in Videos"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3,
+    "acl25": 2,
+    "emnlp25": 8
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25"
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "canonical_name": "Winogender",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, Winogender is most commonly described as a diagnostic dataset or benchmark for evaluating gender bias, specifically within the task of coreference resolution. Its primary function is to test whether models resolve pronouns in a gender-stereotyped manner, particularly in the context of occupations. One paper specifies its operationalization as \"computing the Pearson correlation coefficient \u03c1 between the probabilities assigned by the model to female-gendered pronouns... and the gender statistics of occupations\" (\"SHARE: AnSLM-based Hierarchical ActionCorREction Assistant for Text-to-SQL\"). The benchmark is used to measure several constructs, including `Stereotyping`, `Social bias`, `Fairness`, and `Human preference alignment`. While this is the prevailing usage, a smaller line of work describes repurposing the benchmark for \"non-stereotypical evaluation\" by filtering sentences with strong gender co-occurrences. A critical perspective is also present, with one paper noting that WinoGrad Schema-based datasets like Winogender \"are no longer adequate to evaluate recent LLMs\" (\"Is Your Model Fairly Certain? Uncertainty-Aware Fairness Evaluation for LLMs\").",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "WinoGender",
+    "Winogender"
+  ],
+  "papers": [
+    "CanLLMs DeceiveCLIP? Benchmarking Adversarial Compositionality of Pre-trained Multimodal Representation via Text Updates",
+    "SHARE: AnSLM-based Hierarchical ActionCorREction Assistant for Text-to-SQL",
+    "Are Models Biased on Text without Gender-related Language?",
+    "Beyond Imitation: Leveraging Fine-grained Quality Signals for Alignment",
+    "Is Your Model Fairly Certain? Uncertainty-Aware Fairness Evaluation for LLMs",
+    "Position: Rethinking LLM Bias Probing Using Lessons from the Social Sciences"
+  ],
+  "paper_count": 6,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Winogender (WG), a coreference-resolution gender-occupation bias benchmark repurposed here by filtering out sentences with strong gender co-occurrences.",
+      "paper": "Are Models Biased on Text without Gender-related Language?",
+      "original_name": "Winogender"
+    },
+    {
+      "text": "Diagnostic dataset evaluating gender bias in coreference resolution by testing whether models resolve pronouns in a gender-stereotyped manner.",
+      "paper": "Beyond Imitation: Leveraging Fine-grained Quality Signals for Alignment",
+      "original_name": "WinoGender"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Stereotyping",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "SHARE: AnSLM-based Hierarchical ActionCorREction Assistant for Text-to-SQL",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "SHARE: AnSLM-based Hierarchical ActionCorREction Assistant for Text-to-SQL"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Fairness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Enhancing Efficiency and Exploration in Reinforcement Learning forLLMs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Enhancing Efficiency and Exploration in Reinforcement Learning forLLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Social bias",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Is Your Model Fairly Certain? Uncertainty-Aware Fairness Evaluation for LLMs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Is Your Model Fairly Certain? Uncertainty-Aware Fairness Evaluation for LLMs"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, Winogender is most commonly described as a diagnostic dataset or benchmark for evaluating gender bias, specifically within the task of coreference resolution. Its primary function is to test whether models resolve pronouns in a gender-stereotyped manner, particularly in the context of occupations. One paper specifies its operationalization as \"computing the Pearson correlation coefficient \u03c1 between the probabilities assigned by the model to female-gendered pronouns... and the gender statistics of occupations\" (\"SHARE: AnSLM-based Hierarchical ActionCorREction Assistant for Text-to-SQL\"). The benchmark is used to measure several constructs, including `Stereotyping`, `Social bias`, `Fairness`, and `Human preference alignment`. While this is the prevailing usage, a smaller line of work describes repurposing the benchmark for \"non-stereotypical evaluation\" by filtering sentences with strong gender co-occurrences. A critical perspective is also present, with one paper noting that WinoGrad Schema-based datasets like Winogender \"are no longer adequate to evaluate recent LLMs\" (\"Is Your Model Fairly Certain? Uncertainty-Aware Fairness Evaluation for LLMs\").",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Are Models Biased on Text without Gender-related Language?",
+      "Beyond Imitation: Leveraging Fine-grained Quality Signals for Alignment"
+    ],
+    "acl25": [
+      "CanLLMs DeceiveCLIP? Benchmarking Adversarial Compositionality of Pre-trained Multimodal Representation via Text Updates",
+      "SHARE: AnSLM-based Hierarchical ActionCorREction Assistant for Text-to-SQL"
+    ],
+    "icml25": [
+      "Is Your Model Fairly Certain? Uncertainty-Aware Fairness Evaluation for LLMs",
+      "Position: Rethinking LLM Bias Probing Using Lessons from the Social Sciences"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "acl25": 2,
+    "icml25": 2
+  },
+  "conferences": [
+    "acl25",
+    "iclr24",
+    "icml25"
+  ]
+}

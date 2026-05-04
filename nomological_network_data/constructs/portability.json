@@ -1,0 +1,98 @@
+{
+  "canonical_name": "Portability",
+  "type": "construct",
+  "canonical_definition": "Across the provided literature, Portability is consistently defined as a model's ability to apply newly edited knowledge beyond the direct context of the edit. The prevailing usage frames this as applying knowledge to \"related but distinct content or contexts\" (MMKE-Bench). A more expansive view, offered by one paper, describes it as the extent to which an edit generalizes to more complex scenarios, such as \"multi-hop reasoning or downstream tasks,\" which is seen as an indicator of deep knowledge integration (From Capabilities to Performance). The construct is operationalized by observing whether a model can successfully transfer an edit; for example, one paper notes that after editing the US president, \"relevant knowledge such as the first lady of United States should be updated as well\" (Unlocking Efficient...). Portability is frequently studied as a criterion within `Knowledge editing` and is also associated with `Complex reasoning`, with one study noting that portability \"degrades in multi-hop reasoning settings\" (From Capabilities to Performance). Additionally, one paper proposes that `Commonsense knowledge` influences Portability.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Portability"
+  ],
+  "papers": [
+    "CalibratingLLMs for Text-to-SQLParsing by Leveraging Sub-clause Frequencies",
+    "From Capabilities to Performance: Evaluating Key Functional Properties ofLLMArchitectures in Penetration Testing",
+    "Can Knowledge Editing Really Correct Hallucinations?",
+    "MMKE-Bench: A Multimodal Editing Benchmark for Diverse Visual Knowledge",
+    "PortLLM: Personalizing Evolving Large Language Models with Training-Free and Portable Model Patches",
+    "Unlocking Efficient, Scalable, and Continual Knowledge Editing with Basis-Level Representation Fine-Tuning"
+  ],
+  "paper_count": 6,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The ability of a model to successfully apply newly edited knowledge to related but distinct content or contexts.",
+      "paper": "MMKE-Bench: A Multimodal Editing Benchmark for Diverse Visual Knowledge",
+      "original_name": "Portability"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Complex reasoning",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "From Capabilities to Performance: Evaluating Key Functional Properties ofLLMArchitectures in Penetration Testing",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "From Capabilities to Performance: Evaluating Key Functional Properties ofLLMArchitectures in Penetration Testing"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge editing",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Unlocking Efficient, Scalable, and Continual Knowledge Editing with Basis-Level Representation Fine-Tuning",
+      "evidence": "Knowledge editing seeks to maximize the chance of an LLM responding with y given x, while satisfying the following additional criteria at the same time...: (2) Portability: relevant knowledge such as the first lady of United States should be updated as well. (Section 2.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Unlocking Efficient, Scalable, and Continual Knowledge Editing with Basis-Level Representation Fine-Tuning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense knowledge",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "MMKE-Bench: A Multimodal Editing Benchmark for Diverse Visual Knowledge",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "MMKE-Bench: A Multimodal Editing Benchmark for Diverse Visual Knowledge"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, Portability is consistently defined as a model's ability to apply newly edited knowledge beyond the direct context of the edit. The prevailing usage frames this as applying knowledge to \"related but distinct content or contexts\" (MMKE-Bench). A more expansive view, offered by one paper, describes it as the extent to which an edit generalizes to more complex scenarios, such as \"multi-hop reasoning or downstream tasks,\" which is seen as an indicator of deep knowledge integration (From Capabilities to Performance). The construct is operationalized by observing whether a model can successfully transfer an edit; for example, one paper notes that after editing the US president, \"relevant knowledge such as the first lady of United States should be updated as well\" (Unlocking Efficient...). Portability is frequently studied as a criterion within `Knowledge editing` and is also associated with `Complex reasoning`, with one study noting that portability \"degrades in multi-hop reasoning settings\" (From Capabilities to Performance). Additionally, one paper proposes that `Commonsense knowledge` influences Portability.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Can Knowledge Editing Really Correct Hallucinations?",
+      "MMKE-Bench: A Multimodal Editing Benchmark for Diverse Visual Knowledge",
+      "PortLLM: Personalizing Evolving Large Language Models with Training-Free and Portable Model Patches",
+      "Unlocking Efficient, Scalable, and Continual Knowledge Editing with Basis-Level Representation Fine-Tuning"
+    ],
+    "emnlp25": [
+      "CalibratingLLMs for Text-to-SQLParsing by Leveraging Sub-clause Frequencies",
+      "From Capabilities to Performance: Evaluating Key Functional Properties ofLLMArchitectures in Penetration Testing"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 4,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25"
+  ]
+}

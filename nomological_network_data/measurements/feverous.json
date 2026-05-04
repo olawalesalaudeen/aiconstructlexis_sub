@@ -1,0 +1,137 @@
+{
+  "canonical_name": "FEVEROUS",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, FEVEROUS is consistently characterized as a dataset or benchmark for fact verification and claim checking. Its primary task involves verifying complex claims, which some sources state necessitates \"multi-hop reasoning for verification\" (Information Re-Organization Improves Reasoning in Large Language Models). A defining feature mentioned in nearly all sources is its use of mixed evidence formats, requiring models to reason over both structured data, such as tables, and unstructured text from sentences. Several papers specify that the underlying data is sourced from Wikipedia, with evidence annotated from \"either sentences or table cells\" (Multilingual Needle in a Haystack...). Consequently, FEVEROUS is used as a measurement instrument for general `Evaluation`, and is also applied more specifically to assess `Table and chart reasoning`, with one paper noting it was \"adapted the dataset for open-domain table reasoning\" (OpenTab: Advancing Large Language Models as Open-domain Table Reasoners). A smaller number of sources also report its use for measuring `Entity disambiguation` and note its focus on numerical reasoning. The prevailing usage, therefore, positions FEVEROUS as a tool for evaluating a model's ability to integrate and reason over combined textual and tabular information to validate factual statements.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "FEVEROUS",
+    "Feverous"
+  ],
+  "papers": [
+    "Interpretable Mnemonic Generation for Kanji Learning via Expectation-Maximization",
+    "SNaRe: Domain-aware Data Generation for Low-Resource Event Detection",
+    "OpenTab: Advancing Large Language Models as Open-domain Table Reasoners",
+    "Towards Understanding Factual Knowledge of Large Language Models",
+    "B4: A Black-Box Scrubbing Attack onLLMWatermarks",
+    "Multilingual Needle in a Haystack: Investigating Long-Context Behavior of Multilingual Large Language Models",
+    "Chain of Preference Optimization: Improving Chain-of-Thought Reasoning in LLMs",
+    "Information Re-Organization Improves Reasoning in Large Language Models"
+  ],
+  "paper_count": 8,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "FEVEROUS, a fact-verification dataset used here in an open-domain table reasoning setting requiring identification of relevant evidence tables.",
+      "paper": "OpenTab: Advancing Large Language Models as Open-domain Table Reasoners",
+      "original_name": "FEVEROUS"
+    },
+    {
+      "text": "A fact verification benchmark requiring models to verify claims using evidence from semi-structured tables and text, with complex reasoning.",
+      "paper": "SNaRe: Domain-aware Data Generation for Low-Resource Event Detection",
+      "original_name": "Feverous"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Claim verification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Information Re-Organization Improves Reasoning in Large Language Models",
+      "evidence": "",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "neurips24": [
+          "Information Re-Organization Improves Reasoning in Large Language Models"
+        ],
+        "naacl25": [
+          "Multilingual Needle in a Haystack: Investigating Long-Context Behavior of Multilingual Large Language Models",
+          "B4: A Black-Box Scrubbing Attack onLLMWatermarks"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Evaluation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "OpenTab: Advancing Large Language Models as Open-domain Table Reasoners",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr24": [
+          "OpenTab: Advancing Large Language Models as Open-domain Table Reasoners"
+        ],
+        "neurips24": [
+          "Chain of Preference Optimization: Improving Chain-of-Thought Reasoning in LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Table reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "OpenTab: Advancing Large Language Models as Open-domain Table Reasoners",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "OpenTab: Advancing Large Language Models as Open-domain Table Reasoners"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Entity disambiguation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Multilingual Needle in a Haystack: Investigating Long-Context Behavior of Multilingual Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Multilingual Needle in a Haystack: Investigating Long-Context Behavior of Multilingual Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, FEVEROUS is consistently characterized as a dataset or benchmark for fact verification and claim checking. Its primary task involves verifying complex claims, which some sources state necessitates \"multi-hop reasoning for verification\" (Information Re-Organization Improves Reasoning in Large Language Models). A defining feature mentioned in nearly all sources is its use of mixed evidence formats, requiring models to reason over both structured data, such as tables, and unstructured text from sentences. Several papers specify that the underlying data is sourced from Wikipedia, with evidence annotated from \"either sentences or table cells\" (Multilingual Needle in a Haystack...). Consequently, FEVEROUS is used as a measurement instrument for general `Evaluation`, and is also applied more specifically to assess `Table and chart reasoning`, with one paper noting it was \"adapted the dataset for open-domain table reasoning\" (OpenTab: Advancing Large Language Models as Open-domain Table Reasoners). A smaller number of sources also report its use for measuring `Entity disambiguation` and note its focus on numerical reasoning. The prevailing usage, therefore, positions FEVEROUS as a tool for evaluating a model's ability to integrate and reason over combined textual and tabular information to validate factual statements.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "OpenTab: Advancing Large Language Models as Open-domain Table Reasoners",
+      "Towards Understanding Factual Knowledge of Large Language Models"
+    ],
+    "neurips24": [
+      "Chain of Preference Optimization: Improving Chain-of-Thought Reasoning in LLMs",
+      "Information Re-Organization Improves Reasoning in Large Language Models"
+    ],
+    "naacl25": [
+      "B4: A Black-Box Scrubbing Attack onLLMWatermarks",
+      "Multilingual Needle in a Haystack: Investigating Long-Context Behavior of Multilingual Large Language Models"
+    ],
+    "emnlp25": [
+      "Interpretable Mnemonic Generation for Kanji Learning via Expectation-Maximization",
+      "SNaRe: Domain-aware Data Generation for Low-Resource Event Detection"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "neurips24": 2,
+    "naacl25": 2,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "naacl25",
+    "neurips24"
+  ]
+}

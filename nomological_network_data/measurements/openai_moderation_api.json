@@ -1,0 +1,194 @@
+{
+  "canonical_name": "OpenAI moderation API",
+  "type": "measurement",
+  "canonical_definition": "The OpenAI moderation API is predominantly characterized in the provided literature as a content-safety evaluation procedure used to classify text against safety policies. Most definitions specify that it identifies various violation categories, such as hate, harassment, self-harm, and sexual content. One paper notes it provides both a binary tag indicating if a response is safe and a continuous harmfulness score. Researchers employ this API in several ways: to evaluate model responses to jailbreak prompts, to tag and filter unsafe conversations in large datasets, and as a preprocessing step to remove toxic content. For instance, one study deems a conversation unsafe \"if any of its messages is flagged by the API\" (LMSYS-Chat-1M: A Large-Scale Real-World LLM Conversation Dataset). Across the surveyed work, it is consistently used to measure constructs like `Safety` and `Harmlessness`, and behaviors such as `Harmful content detection` and `Harmful content generation`. It is sometimes used in conjunction with other tools, such as the Perspective API and Detoxify, for toxicity classification. A smaller number of papers frame it differently, referring to it as a 'standard safety dataset' or 'benchmark' (under the names 'OpenAI Mod' or 'OpenAI Moderation') for assessing guardrail models.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "OpenAI Moderation API",
+    "OpenAI moderation API",
+    "OpenAI Moderation",
+    "OpenAI Mod"
+  ],
+  "papers": [
+    "Amulet: Putting Complex Multi-Turn Conversations on the Stand withLLMJuries",
+    "EmpoweringGraphRAGwith Knowledge Filtering and Integration",
+    "ProLongVid: A Simple but Strong Baseline for Long-context Video Instruction Tuning",
+    "LMSYS-Chat-1M: A Large-Scale Real-World LLM Conversation Dataset",
+    "WildChat: 1M ChatGPT Interaction Logs in the Wild",
+    "$R^2$-Guard: Robust Reasoning Enabled LLM Guardrail via Knowledge-Enhanced Logical Reasoning",
+    "BingoGuard: LLM Content Moderation Tools with Risk Levels",
+    "Do as I do (Safely): Mitigating Task-Specific Fine-tuning Risks in Large Language Models",
+    "HarmAug: Effective Data Augmentation for Knowledge Distillation of Safety Guard Models",
+    "On Calibration of LLM-based Guard Models for Reliable Content Moderation",
+    "Semantic Loss Guided Data Efficient Supervised Fine Tuning for Safe Responses in LLMs",
+    "Benign Samples Matter! Fine-tuning On Outlier Benign Samples Severely Breaks Safety",
+    "ELITE: Enhanced Language-Image Toxicity Evaluation for Safety",
+    "A StrongREJECT for Empty Jailbreaks",
+    "ALI-Agent: Assessing LLMs'  Alignment with Human Values via Agent-based Evaluation",
+    "Alignment at Pre-training! Towards Native Alignment for Arabic LLMs"
+  ],
+  "paper_count": 16,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "OpenAI Moderation API, a content-safety evaluation procedure that assigns violation categories to messages and is used here to tag unsafe conversations and evaluate moderation and jailbreak responses.",
+      "paper": "LMSYS-Chat-1M: A Large-Scale Real-World LLM Conversation Dataset",
+      "original_name": "OpenAI moderation API"
+    },
+    {
+      "text": "Official API provided by OpenAI to classify text content based on safety policies, including categories like hate, harassment, self-harm, and sexual content.",
+      "paper": "WildChat: 1M ChatGPT Interaction Logs in the Wild",
+      "original_name": "OpenAI Moderation API"
+    },
+    {
+      "text": "A publicly available tool from OpenAI used to assess the safety of text data by scoring it on dimensions like harassment, sexual content, hate speech, and violence.",
+      "paper": "Alignment at Pre-training! Towards Native Alignment for Arabic LLMs",
+      "original_name": "OpenAI Moderation"
+    },
+    {
+      "text": "A standard safety dataset used to evaluate the performance of guardrail models in detecting unsafe content.",
+      "paper": "$R^2$-Guard: Robust Reasoning Enabled LLM Guardrail via Knowledge-Enhanced Logical Reasoning",
+      "original_name": "OpenAI Mod"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmlessness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "WildChat: 1M ChatGPT Interaction Logs in the Wild",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr24": [
+          "WildChat: 1M ChatGPT Interaction Logs in the Wild"
+        ],
+        "iclr25": [
+          "Do as I do (Safely): Mitigating Task-Specific Fine-tuning Risks in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmful content detection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "$R^2$-Guard: Robust Reasoning Enabled LLM Guardrail via Knowledge-Enhanced Logical Reasoning",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "$R^2$-Guard: Robust Reasoning Enabled LLM Guardrail via Knowledge-Enhanced Logical Reasoning",
+          "On Calibration of LLM-based Guard Models for Reliable Content Moderation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmful content generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "WildChat: 1M ChatGPT Interaction Logs in the Wild",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "WildChat: 1M ChatGPT Interaction Logs in the Wild"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Content moderation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "LMSYS-Chat-1M: A Large-Scale Real-World LLM Conversation Dataset",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "LMSYS-Chat-1M: A Large-Scale Real-World LLM Conversation Dataset"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Safety",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Semantic Loss Guided Data Efficient Supervised Fine Tuning for Safe Responses in LLMs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Semantic Loss Guided Data Efficient Supervised Fine Tuning for Safe Responses in LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmfulness detection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "HarmAug: Effective Data Augmentation for Knowledge Distillation of Safety Guard Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "HarmAug: Effective Data Augmentation for Knowledge Distillation of Safety Guard Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 6,
+  "incoming_relationship_count": 6,
+  "outgoing_relationship_count": 0,
+  "characterization": "The OpenAI moderation API is predominantly characterized in the provided literature as a content-safety evaluation procedure used to classify text against safety policies. Most definitions specify that it identifies various violation categories, such as hate, harassment, self-harm, and sexual content. One paper notes it provides both a binary tag indicating if a response is safe and a continuous harmfulness score. Researchers employ this API in several ways: to evaluate model responses to jailbreak prompts, to tag and filter unsafe conversations in large datasets, and as a preprocessing step to remove toxic content. For instance, one study deems a conversation unsafe \"if any of its messages is flagged by the API\" (LMSYS-Chat-1M: A Large-Scale Real-World LLM Conversation Dataset). Across the surveyed work, it is consistently used to measure constructs like `Safety` and `Harmlessness`, and behaviors such as `Harmful content detection` and `Harmful content generation`. It is sometimes used in conjunction with other tools, such as the Perspective API and Detoxify, for toxicity classification. A smaller number of papers frame it differently, referring to it as a 'standard safety dataset' or 'benchmark' (under the names 'OpenAI Mod' or 'OpenAI Moderation') for assessing guardrail models.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "LMSYS-Chat-1M: A Large-Scale Real-World LLM Conversation Dataset",
+      "WildChat: 1M ChatGPT Interaction Logs in the Wild"
+    ],
+    "neurips24": [
+      "A StrongREJECT for Empty Jailbreaks",
+      "ALI-Agent: Assessing LLMs'  Alignment with Human Values via Agent-based Evaluation",
+      "Alignment at Pre-training! Towards Native Alignment for Arabic LLMs"
+    ],
+    "iclr25": [
+      "$R^2$-Guard: Robust Reasoning Enabled LLM Guardrail via Knowledge-Enhanced Logical Reasoning",
+      "BingoGuard: LLM Content Moderation Tools with Risk Levels",
+      "Do as I do (Safely): Mitigating Task-Specific Fine-tuning Risks in Large Language Models",
+      "HarmAug: Effective Data Augmentation for Knowledge Distillation of Safety Guard Models",
+      "On Calibration of LLM-based Guard Models for Reliable Content Moderation",
+      "Semantic Loss Guided Data Efficient Supervised Fine Tuning for Safe Responses in LLMs"
+    ],
+    "icml25": [
+      "Benign Samples Matter! Fine-tuning On Outlier Benign Samples Severely Breaks Safety",
+      "ELITE: Enhanced Language-Image Toxicity Evaluation for Safety"
+    ],
+    "emnlp25": [
+      "Amulet: Putting Complex Multi-Turn Conversations on the Stand withLLMJuries",
+      "EmpoweringGraphRAGwith Knowledge Filtering and Integration",
+      "ProLongVid: A Simple but Strong Baseline for Long-context Video Instruction Tuning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "neurips24": 3,
+    "iclr25": 6,
+    "icml25": 2,
+    "emnlp25": 3
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

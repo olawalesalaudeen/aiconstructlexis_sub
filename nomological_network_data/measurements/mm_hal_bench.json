@@ -1,0 +1,175 @@
+{
+  "canonical_name": "MM-Hal-Bench",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, MM-Hal-Bench is consistently defined as a benchmark designed to assess hallucination in multimodal models, particularly Large Vision-Language Models (LVLMs). Its most frequently cited application is the measurement of `Hallucination`, with some papers also specifying its use for `Visual hallucination` and `Object hallucination`. One paper notes that the benchmark evaluates models \"beyond object hallucination,\" while others use it to assess related constructs like `Attribute recognition` and `Faithfulness`. The benchmark is consistently described as containing 96 questions or \"carefully designed image-question pairs\" organized into 8 categories. These categories cover a variety of scenarios, with papers frequently mentioning types such as object attributes, adversarial objects, counting, and spatial relations. For evaluation, some sources state that MM-Hal-Bench uses GPT-4 to assess model outputs. One paper elaborates that this process involves comparing model responses against human responses and object labels to determine response quality and hallucination rates.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "MMHAL-Bench",
+    "MM-Hal-Bench"
+  ],
+  "papers": [
+    "CHiP: Cross-modal Hierarchical Direct Preference Optimization for Multimodal LLMs",
+    "CertainlyUncertain: A Benchmark and Metric for Multimodal Epistemic and Aleatoric Awareness",
+    "LLaVA-MoD: Making LLaVA Tiny via MoE-Knowledge Distillation",
+    "Matryoshka Multimodal Models",
+    "Mitigating Object Hallucination in MLLMs via Data-augmented Phrase-level Alignment",
+    "Reducing Hallucinations in Large Vision-Language Models via Latent Space Steering",
+    "See What You Are Told: Visual Attention Sink in Large Multimodal Models",
+    "DAMA: Data- and Model-aware Alignment of Multi-modal LLMs",
+    "Perception in Reflection",
+    "The Devil Is in the Details: Tackling Unimodal Spurious Correlations for Generalizable Multimodal Reward Models",
+    "The Hidden Life of Tokens: Reducing Hallucination of Large Vision-Language Models Via Visual Information Steering"
+  ],
+  "paper_count": 11,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "MMHal-Bench is a benchmark designed to assess hallucination in multimodal models across a variety of scenarios.",
+      "paper": "LLaVA-MoD: Making LLaVA Tiny via MoE-Knowledge Distillation",
+      "original_name": "MMHal-Bench"
+    },
+    {
+      "text": "A benchmark for evaluating multimodal hallucination across multiple question types, including object attributes, adversarial objects, comparisons, counting, spatial relations, environment, holistic description, and others.",
+      "paper": "Reducing Hallucinations in Large Vision-Language Models via Latent Space Steering",
+      "original_name": "MMHAL-Bench"
+    },
+    {
+      "text": "A hallucination-based benchmark containing 96 questions across 8 categories such as object attribute, adversarial object, and counting.",
+      "paper": "CertainlyUncertain: A Benchmark and Metric for Multimodal Epistemic and Aleatoric Awareness",
+      "original_name": "MM-Hal-Bench"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Automated Multi-level Preference for MLLMs",
+      "evidence": "Moreover, we conduct experiments on several hallucination benchmarks such as ... MMHal-Bench (Sun et al., 2023). (Section 4.1)",
+      "paper_count": 9,
+      "papers_by_conference": {
+        "neurips24": [
+          "Automated Multi-level Preference for MLLMs",
+          "CODE: Contrasting Self-generated Description to Combat Hallucination in Large Multi-modal Models"
+        ],
+        "iclr25": [
+          "Matryoshka Multimodal Models",
+          "CHiP: Cross-modal Hierarchical Direct Preference Optimization for Multimodal LLMs",
+          "Reducing Hallucinations in Large Vision-Language Models via Latent Space Steering"
+        ],
+        "icml25": [
+          "The Hidden Life of Tokens: Reducing Hallucination of Large Vision-Language Models Via Visual Information Steering",
+          "DAMA: Data- and Model-aware Alignment of Multi-modal LLMs"
+        ],
+        "emnlp25": [
+          "Do It Yourself (DIY): Modifying Images for Poems in a Zero-Shot Setting Using Weighted Prompt Manipulation",
+          "CityEQA: A HierarchicalLLMAgent on Embodied Question Answering Benchmark in City Space"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "CHiP: Cross-modal Hierarchical Direct Preference Optimization for Multimodal LLMs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "CHiP: Cross-modal Hierarchical Direct Preference Optimization for Multimodal LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "See What You Are Told: Visual Attention Sink in Large Multimodal Models",
+      "evidence": "Visual hallucination task evaluates whether the response of the model is consistent with the image content to ensure the trustworthiness and reliability of the model. We use CHAIR (Rohrbach et al., 2018), POPE (Li et al., 2023c), and MMHal-Bench (Sun et al., 2023).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "See What You Are Told: Visual Attention Sink in Large Multimodal Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Attribute recognition",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Reducing Hallucinations in Large Vision-Language Models via Latent Space Steering",
+      "evidence": "\"MMHAL-Bench (Sun et al., 2023): This benchmark evaluates LVLMs beyond object hallucination and contains eight question types: object attributes, adversarial objects, comparisons, counting, spatial relations, environment, holistic description, and others.\"",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Reducing Hallucinations in Large Vision-Language Models via Latent Space Steering"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Object hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Mitigating Object Hallucination in MLLMs via Data-augmented Phrase-level Alignment",
+      "evidence": "we benchmark VTI on the MMHAL dataset with the evaluations of eight different hallucination types.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Mitigating Object Hallucination in MLLMs via Data-augmented Phrase-level Alignment"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "The Devil Is in the Details: Tackling Unimodal Spurious Correlations for Generalizable Multimodal Reward Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "The Devil Is in the Details: Tackling Unimodal Spurious Correlations for Generalizable Multimodal Reward Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 6,
+  "incoming_relationship_count": 6,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, MM-Hal-Bench is consistently defined as a benchmark designed to assess hallucination in multimodal models, particularly Large Vision-Language Models (LVLMs). Its most frequently cited application is the measurement of `Hallucination`, with some papers also specifying its use for `Visual hallucination` and `Object hallucination`. One paper notes that the benchmark evaluates models \"beyond object hallucination,\" while others use it to assess related constructs like `Attribute recognition` and `Faithfulness`. The benchmark is consistently described as containing 96 questions or \"carefully designed image-question pairs\" organized into 8 categories. These categories cover a variety of scenarios, with papers frequently mentioning types such as object attributes, adversarial objects, counting, and spatial relations. For evaluation, some sources state that MM-Hal-Bench uses GPT-4 to assess model outputs. One paper elaborates that this process involves comparing model responses against human responses and object labels to determine response quality and hallucination rates.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "CHiP: Cross-modal Hierarchical Direct Preference Optimization for Multimodal LLMs",
+      "CertainlyUncertain: A Benchmark and Metric for Multimodal Epistemic and Aleatoric Awareness",
+      "LLaVA-MoD: Making LLaVA Tiny via MoE-Knowledge Distillation",
+      "Matryoshka Multimodal Models",
+      "Mitigating Object Hallucination in MLLMs via Data-augmented Phrase-level Alignment",
+      "Reducing Hallucinations in Large Vision-Language Models via Latent Space Steering",
+      "See What You Are Told: Visual Attention Sink in Large Multimodal Models"
+    ],
+    "icml25": [
+      "DAMA: Data- and Model-aware Alignment of Multi-modal LLMs",
+      "Perception in Reflection",
+      "The Devil Is in the Details: Tackling Unimodal Spurious Correlations for Generalizable Multimodal Reward Models",
+      "The Hidden Life of Tokens: Reducing Hallucination of Large Vision-Language Models Via Visual Information Steering"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 7,
+    "icml25": 4
+  },
+  "conferences": [
+    "iclr25",
+    "icml25"
+  ]
+}

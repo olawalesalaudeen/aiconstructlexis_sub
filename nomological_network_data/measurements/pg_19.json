@@ -1,0 +1,258 @@
+{
+  "canonical_name": "PG-19",
+  "type": "measurement",
+  "canonical_definition": "Across the surveyed literature, PG-19 is consistently defined as a dataset or benchmark composed of long documents derived from Project Gutenberg books. The prevailing use of this instrument is to evaluate `language modeling` performance, with nearly all papers operationalizing this by measuring perplexity on these extended texts. This evaluation is frequently situated in the context of assessing `long-context processing` or `long-sequence language modeling`, as the dataset's book-length content provides what one paper calls a \"comprehensive long-context benchmark.\" One source specifies the dataset consists of \"over 28,000 freely-available Project Gutenberg books published prior to 1919.\"\n\nWhile its primary function is measuring language modeling via perplexity, PG-19 is also used to assess a range of other capabilities. Several papers use it to evaluate `length generalization`, and a smaller set of studies employ it for more specific tasks, such as \"benchmarking decoding speedup,\" assessing \"model stability in streaming settings,\" or evaluating `continual learning`. The specific evaluation protocol varies, with some studies sampling a subset of documents, others using a validation set of 100 books, and at least one focusing on the first book of the test set. The constructs of `linguistic quality` and `long-form text generation` are also associated with PG-19, though less frequently detailed.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "PG-19",
+    "PG19"
+  ],
+  "papers": [
+    "AligningVLMAssistants with Personalized Situated Cognition",
+    "MorphMark: Flexible Adaptive Watermarking for Large Language Models",
+    "PlanningArena: A Modular Benchmark for Multidimensional Evaluation of Planning and Tool Learning",
+    "RuleArena: A Benchmark for Rule-Guided Reasoning withLLMs in Real-World Scenarios",
+    "Beyond Seen Data: ImprovingKBQAGeneralization Through Schema-Guided Logical Form Generation",
+    "To Mask or to Mirror: Human-AIAlignment in Collective Reasoning",
+    "TracingL1 Interference inEnglish Learner Writing: A Longitudinal Corpus with Error Annotations",
+    "Hierarchical Context Merging: Better Long Context Understanding for Pre-trained LLMs",
+    "Transformer-VQ: Linear-Time Transformers via Vector Quantization",
+    "Efficient Streaming Language Models with Attention Sinks",
+    "LongLoRA: Efficient Fine-tuning of Long-Context Large Language Models",
+    "$\\text{D}_{2}\\text{O}$: Dynamic Discriminative Operations for Efficient Long-Context Inference of Large Language Models",
+    "A Training-Free Sub-quadratic Cost Transformer Model Serving Framework with Hierarchically Pruned Attention",
+    "DeciMamba: Exploring the Length Extrapolation Potential of Mamba",
+    "Gated Delta Networks: Improving Mamba2 with Delta Rule",
+    "Human-inspired Episodic Memory for Infinite Context LLMs",
+    "LongMamba: Enhancing Mamba's Long-Context Capabilities via Training-Free Receptive Field Enlargement",
+    "MELODI: Exploring Memory Compression for Long Contexts",
+    "MagicDec: Breaking the Latency-Throughput Tradeoff for Long Context Generation with Speculative Decoding",
+    "MambaExtend: A Training-Free Approach to Improve Long Context Extension of Mamba",
+    "Radar: Fast Long-Context Decoding for Any Transformer",
+    "Relaxed Recursive Transformers: Effective Parameter Sharing with Layer-wise LoRA",
+    "Scalable Bayesian Learning with posteriors",
+    "TidalDecode: Fast and Accurate LLM Decoding with Position Persistent Sparse Attention",
+    "Training Free Exponential Context Extension via Cascading KV Cache",
+    "Efficient Length-Generalizable Attention via Causal Retrieval for Long-Context Language Modeling",
+    "LaCache: Ladder-Shaped KV Caching for Efficient Long-Context Modeling of Large Language Models",
+    "QuantSpec: Self-Speculative Decoding with Hierarchical Quantized KV Cache",
+    "Rethinking Addressing in Language Models via Contextualized Equivariant Positional Encoding",
+    "SepLLM: Accelerate Large Language Models by Compressing One Segment into One Separator",
+    "TokenSwift: Lossless Acceleration of Ultra Long Sequence Generation",
+    "An Efficient Recipe for Long Context Extension via Middle-Focused Positional Encoding",
+    "Megalodon: Efficient LLM Pretraining and Inference with Unlimited Context Length"
+  ],
+  "paper_count": 33,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A dataset of long documents derived from Project Gutenberg books, used to measure the perplexity and language modeling fluency of models on extended contexts.",
+      "paper": "Hierarchical Context Merging: Better Long Context Understanding for Pre-trained LLMs",
+      "original_name": "PG-19"
+    },
+    {
+      "text": "A long-context language modeling benchmark used here to evaluate latency and perplexity under varying context lengths.",
+      "paper": "A Training-Free Sub-quadratic Cost Transformer Model Serving Framework with Hierarchically Pruned Attention",
+      "original_name": "PG19"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language modeling",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "An Efficient Recipe for Long Context Extension via Middle-Focused Positional Encoding",
+      "evidence": "We evaluate HiP on the PG19 (Rae et al., 2019) datasets. (Section 5.2, under the heading 'LANGUAGE MODELING PERFORMANCE EVALUATION')",
+      "paper_count": 5,
+      "papers_by_conference": {
+        "neurips24": [
+          "An Efficient Recipe for Long Context Extension via Middle-Focused Positional Encoding",
+          "Megalodon: Efficient LLM Pretraining and Inference with Unlimited Context Length"
+        ],
+        "iclr25": [
+          "LongMamba: Enhancing Mamba's Long-Context Capabilities via Training-Free Receptive Field Enlargement",
+          "DeciMamba: Exploring the Length Extrapolation Potential of Mamba"
+        ],
+        "acl25": [
+          "MorphMark: Flexible Adaptive Watermarking for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-context processing",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Reading between the Lines: CanLLMs Identify Cross-Cultural Communication Gaps?",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "naacl25": [
+          "Reading between the Lines: CanLLMs Identify Cross-Cultural Communication Gaps?"
+        ],
+        "icml25": [
+          "LaCache: Ladder-Shaped KV Caching for Efficient Long-Context Modeling of Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Length generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Gated Delta Networks: Improving Mamba2 with Delta Rule",
+      "evidence": "As shown in Fig.2, we evaluate the models' capacity to extrapolate to sequences of up to 20K tokens across six long-context benchmarks.",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Gated Delta Networks: Improving Mamba2 with Delta Rule"
+        ],
+        "emnlp25": [
+          "To Mask or to Mirror: Human-AIAlignment in Collective Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Fluency",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Hierarchical Context Merging: Better Long Context Understanding for Pre-trained LLMs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Hierarchical Context Merging: Better Long Context Understanding for Pre-trained LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Quality",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "TidalDecode: Fast and Accurate LLM Decoding with Position Persistent Sparse Attention",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "TidalDecode: Fast and Accurate LLM Decoding with Position Persistent Sparse Attention"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-context understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "MambaExtend: A Training-Free Approach to Improve Long Context Extension of Mamba",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "MambaExtend: A Training-Free Approach to Improve Long Context Extension of Mamba"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Continual learning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Scalable Bayesian Learning with posteriors",
+      "evidence": "We consider the problem of episodal continual learning (Kirkpatrick et al., 2017; Nguyen et al., 2017) where each episode\u2019s data, yn, is one of 20 books from the PG19 (Rae et al., 2019) dataset",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Scalable Bayesian Learning with posteriors"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-form text generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "TokenSwift: Lossless Acceleration of Ultra Long Sequence Generation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "TokenSwift: Lossless Acceleration of Ultra Long Sequence Generation"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 8,
+  "incoming_relationship_count": 8,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the surveyed literature, PG-19 is consistently defined as a dataset or benchmark composed of long documents derived from Project Gutenberg books. The prevailing use of this instrument is to evaluate `language modeling` performance, with nearly all papers operationalizing this by measuring perplexity on these extended texts. This evaluation is frequently situated in the context of assessing `long-context processing` or `long-sequence language modeling`, as the dataset's book-length content provides what one paper calls a \"comprehensive long-context benchmark.\" One source specifies the dataset consists of \"over 28,000 freely-available Project Gutenberg books published prior to 1919.\"\n\nWhile its primary function is measuring language modeling via perplexity, PG-19 is also used to assess a range of other capabilities. Several papers use it to evaluate `length generalization`, and a smaller set of studies employ it for more specific tasks, such as \"benchmarking decoding speedup,\" assessing \"model stability in streaming settings,\" or evaluating `continual learning`. The specific evaluation protocol varies, with some studies sampling a subset of documents, others using a validation set of 100 books, and at least one focusing on the first book of the test set. The constructs of `linguistic quality` and `long-form text generation` are also associated with PG-19, though less frequently detailed.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Hierarchical Context Merging: Better Long Context Understanding for Pre-trained LLMs",
+      "Transformer-VQ: Linear-Time Transformers via Vector Quantization",
+      "Efficient Streaming Language Models with Attention Sinks",
+      "LongLoRA: Efficient Fine-tuning of Long-Context Large Language Models"
+    ],
+    "neurips24": [
+      "An Efficient Recipe for Long Context Extension via Middle-Focused Positional Encoding",
+      "Megalodon: Efficient LLM Pretraining and Inference with Unlimited Context Length"
+    ],
+    "iclr25": [
+      "$\\text{D}_{2}\\text{O}$: Dynamic Discriminative Operations for Efficient Long-Context Inference of Large Language Models",
+      "A Training-Free Sub-quadratic Cost Transformer Model Serving Framework with Hierarchically Pruned Attention",
+      "DeciMamba: Exploring the Length Extrapolation Potential of Mamba",
+      "Gated Delta Networks: Improving Mamba2 with Delta Rule",
+      "Human-inspired Episodic Memory for Infinite Context LLMs",
+      "LongMamba: Enhancing Mamba's Long-Context Capabilities via Training-Free Receptive Field Enlargement",
+      "MELODI: Exploring Memory Compression for Long Contexts",
+      "MagicDec: Breaking the Latency-Throughput Tradeoff for Long Context Generation with Speculative Decoding",
+      "MambaExtend: A Training-Free Approach to Improve Long Context Extension of Mamba",
+      "Radar: Fast Long-Context Decoding for Any Transformer",
+      "Relaxed Recursive Transformers: Effective Parameter Sharing with Layer-wise LoRA",
+      "Scalable Bayesian Learning with posteriors",
+      "TidalDecode: Fast and Accurate LLM Decoding with Position Persistent Sparse Attention",
+      "Training Free Exponential Context Extension via Cascading KV Cache"
+    ],
+    "icml25": [
+      "Efficient Length-Generalizable Attention via Causal Retrieval for Long-Context Language Modeling",
+      "LaCache: Ladder-Shaped KV Caching for Efficient Long-Context Modeling of Large Language Models",
+      "QuantSpec: Self-Speculative Decoding with Hierarchical Quantized KV Cache",
+      "Rethinking Addressing in Language Models via Contextualized Equivariant Positional Encoding",
+      "SepLLM: Accelerate Large Language Models by Compressing One Segment into One Separator",
+      "TokenSwift: Lossless Acceleration of Ultra Long Sequence Generation"
+    ],
+    "acl25": [
+      "AligningVLMAssistants with Personalized Situated Cognition",
+      "MorphMark: Flexible Adaptive Watermarking for Large Language Models",
+      "PlanningArena: A Modular Benchmark for Multidimensional Evaluation of Planning and Tool Learning",
+      "RuleArena: A Benchmark for Rule-Guided Reasoning withLLMs in Real-World Scenarios"
+    ],
+    "emnlp25": [
+      "Beyond Seen Data: ImprovingKBQAGeneralization Through Schema-Guided Logical Form Generation",
+      "To Mask or to Mirror: Human-AIAlignment in Collective Reasoning",
+      "TracingL1 Interference inEnglish Learner Writing: A Longitudinal Corpus with Error Annotations"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 4,
+    "neurips24": 2,
+    "iclr25": 14,
+    "icml25": 6,
+    "acl25": 4,
+    "emnlp25": 3
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

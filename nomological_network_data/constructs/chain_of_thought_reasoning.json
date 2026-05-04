@@ -1,0 +1,2633 @@
+{
+  "canonical_name": "Chain-of-thought reasoning",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, Chain-of-thought reasoning is predominantly characterized as the observable behavior of a model generating a sequence of intermediate steps before producing a final answer, described with terms like \"step-by-step reasoning,\" \"rationale generation,\" and \"reasoning path generation.\" However, a notable portion of the work also defines it as a latent construct, referring to a model's underlying \"capability\" or \"ability\" for multi-step or complex reasoning. This behavior is commonly elicited through prompting strategies, such as providing in-context examples or explicit instructions like \"Let\u2019s think step by step.\" The field operationalizes and measures this behavior using a wide array of benchmarks, with a frequent focus on mathematical and logical reasoning tasks, including GSM8k, StrategyQA, and MuSiQue. Generating these intermediate steps is widely reported to improve performance on complex tasks, most notably mathematical reasoning, but also symbolic, logical, and algorithmic reasoning, and is also cited as enhancing interpretability. The generated output can take various forms, from natural language explanations and executable code snippets (\"Program chain-of-thought generation\") to latent or non-verbalized steps (\"Silent chain-of-thought generation\"). The concept is frequently studied in relation to tool use, self-consistency, and faithfulness, and is sometimes investigated for its connection to failure modes like hallucination.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Intermediate step generation",
+    "Chain-of-thought generation",
+    "Step-by-step reasoning",
+    "Rationale generation",
+    "Chain-of-thought reasoning",
+    "Step-by-step solution generation",
+    "Reasoning path generation",
+    "Chain-of-thought computation",
+    "Step-by-step reasoning generation",
+    "Reasoning generation",
+    "Reasoning trace generation",
+    "Hierarchical thought generation",
+    "Multi-step problem solving",
+    "Multi-hop tracing",
+    "Chain-of-thought verification",
+    "Intermediate reasoning generation",
+    "Multi-step reasoning generation",
+    "Multi-step inference",
+    "Multi-step decision-making",
+    "Multi-branch reasoning",
+    "Multi-step reasoning",
+    "Search trajectory verbalization",
+    "Off-target response generation",
+    "Complex Reasoning",
+    "Multi-step execution",
+    "Reasoning chain generation",
+    "Chain-of-thought inference",
+    "Label rationalization",
+    "Stepwise reasoning",
+    "Reasoning chain construction",
+    "Inner monologue generation",
+    "Reasoning context generation",
+    "Silent chain-of-thought generation",
+    "Explicit Chain-of-Thought generation",
+    "Intermediate instruction generation",
+    "Reasoning step generation",
+    "Logic generation",
+    "Step-by-step execution",
+    "Structured response generation",
+    "Continuous thought generation",
+    "Compressed chain-of-thought generation",
+    "Chain-of-thought translation",
+    "Structured chain-of-thought generation",
+    "Natural language chain-of-thought generation",
+    "Program chain-of-thought generation",
+    "Chain-of-Thought reasoning",
+    "Chain-of-reasoning",
+    "Thought chain reasoning",
+    "Chain-of-Thought ability",
+    "Chain-of-thought capability",
+    "Composite reasoning",
+    "Multi-session reasoning",
+    "Multistep mathematical reasoning",
+    "Deep reasoning",
+    "Higher-order reasoning",
+    "Long-chain reasoning",
+    "Multi-turn reasoning",
+    "Chain-of-thought faithfulness",
+    "Multihop reasoning",
+    "High-level reasoning",
+    "Two-hop reasoning",
+    "Reasoning length",
+    "Internal chain-of-thought",
+    "Comprehensive reasoning",
+    "Advanced reasoning",
+    "Multistep reasoning",
+    "Step-by-step thinking",
+    "Intermediate reasoning",
+    "Procedural reasoning",
+    "Iterative reasoning",
+    "Chain-of-Thought Reasoning",
+    "Long Chain-of-Thought reasoning",
+    "Long chain-of-thought reasoning"
+  ],
+  "papers": [
+    "A Multi-persona Framework for Argument Quality Assessment",
+    "AnRe: Analogical Replay for Temporal Knowledge Graph Forecasting",
+    "Can Knowledge Graphs Make Large Language Models More Trustworthy? An Empirical Study Over Open-ended Question Answering",
+    "CoAM: Corpus of All-Type Multiword Expressions",
+    "Code-Switching Red-Teaming:LLMEvaluation for Safety and Multilingual Understanding",
+    "ConInstruction: Universal Jailbreaking of Multimodal Large Language Models via Non-Textual Modalities",
+    "Confidence v.s. Critique: A Decomposition of Self-Correction Capability forLLMs",
+    "CrisisTS: Coupling Social Media Textual Data and Meteorological Time Series for Urgency Classification",
+    "Cultivating Gaming Sense for Yourself: MakingVLMs Gaming Experts",
+    "Data-Constrained Synthesis of Training Data for De-Identification",
+    "Do Language Models Understand Honorific Systems inJavanese?",
+    "EdiText: Controllable Coarse-to-Fine Text Editing with Diffusion Language Models",
+    "FCMR: Robust Evaluation of Financial Cross-Modal Multi-Hop Reasoning",
+    "From Objectives to Questions: A Planning-based Framework for Educational Mathematical Question Generation",
+    "GALLa: Graph Aligned Large Language Models for Improved Source Code Understanding",
+    "HFT: Half Fine-Tuning for Large Language Models",
+    "How to Mitigate Overfitting in Weak-to-strong Generalization?",
+    "InductionBench:LLMs Fail in the Simplest Complexity Class",
+    "LLM-Powered Test Case Generation for Detecting Bugs in Plausible Programs",
+    "Large Margin Representation Learning for Robust Cross-lingual Named Entity Recognition",
+    "LoGU: Long-form Generation with Uncertainty Expressions",
+    "MaXIFE: Multilingual and Cross-lingual Instruction Following Evaluation",
+    "Magnet: Multi-turn Tool-use Data Synthesis and Distillation via Graph Translation",
+    "PKU-SafeRLHF: Towards Multi-Level Safety Alignment forLLMs with Human Preference",
+    "People who frequently useChatGPTfor writing tasks are accurate and robust detectors ofAI-generated text",
+    "Pre-Training Curriculum for Multi-Token Prediction in Language Models",
+    "QDTSynth: Quality-Driven Formal Theorem Synthesis for Enhancing Proving Performance ofLLMs",
+    "SocialEval: Evaluating Social Intelligence of Large Language Models",
+    "Synthesizing Post-Training Data forLLMs through Multi-Agent Simulation",
+    "Teaching Vision-Language Models to Ask: Resolving Ambiguity in Visual Questions",
+    "UORA: Uniform Orthogonal Reinitialization Adaptation in Parameter Efficient Fine-Tuning of Large Models",
+    "Unlocking General Long Chain-of-Thought Reasoning Capabilities of Large Language Models via Representation Engineering",
+    "Untie the Knots: An Efficient Data Augmentation Strategy for Long-Context Pre-Training in Language Models",
+    "Unveiling the Power of Source: Source-based MinimumBayes Risk Decoding for Neural Machine Translation",
+    "Align-SLM: Textless Spoken Language Models with Reinforcement Learning fromAIFeedback",
+    "EAGLE: Expert-Guided Self-Enhancement for Preference Alignment in Pathology Large Vision-Language Model",
+    "HSCR: Hierarchical Self-Contrastive Rewarding for Aligning Medical Vision Language Models",
+    "IAM: Efficient Inference through Attention Mapping between Different-scaleLLMs",
+    "KatFishNet: DetectingLLM-GeneratedKorean Text through Linguistic Feature Analysis",
+    "MT-RAIG: Novel Benchmark and Evaluation Framework for Retrieval-Augmented Insight Generation over Multiple Tables",
+    "Meta-Learning Neural Mechanisms rather thanBayesian Priors",
+    "Real-time Factuality Assessment from Adversarial Feedback",
+    "TRACT: Regression-Aware Fine-tuning Meets Chain-of-Thought Reasoning forLLM-as-a-Judge",
+    "AdaDHP: Fine-Grained Fine-Tuning via DualHadamard Product and Adaptive Parameter Selection",
+    "Fairness Beyond Performance: Revealing Reliability Disparities Across Groups in LegalNLP",
+    "SpindleKV: A NovelKVCache Reduction Method Balancing Both Shallow and Deep Layers",
+    "CodeTool: Enhancing Programmatic Tool Invocation ofLLMs via Process Supervision",
+    "ExtendingLLMContext Window with Adaptive Grouped Positional Encoding: A Training-Free Method",
+    "Sample-Efficient Human Evaluation of Large Language Models via Maximum Discrepancy Competition",
+    "2025.emnlp-main.157.checklist",
+    "2025.emnlp-main.1588.checklist",
+    "2025.emnlp-main.504.checklist",
+    "2025.emnlp-main.634.checklist",
+    "A Necessary Step toward Faithfulness: Measuring and Improving Consistency in Free-Text Explanations",
+    "A Systematic Survey of Automatic Prompt Optimization Techniques",
+    "AROMA: Autonomous Rank-one Matrix Adaptation",
+    "AccessEval: Benchmarking Disability Bias in Large Language Models",
+    "AdaptThink: Reasoning Models Can Learn When to Think",
+    "Advancing Fine-Grained Visual Understanding with Multi-Scale Alignment in Multi-Modal Models",
+    "Amulet: Putting Complex Multi-Turn Conversations on the Stand withLLMJuries",
+    "Anecdoctoring: Automated Red-Teaming Across Language and Place",
+    "Answering Narrative-Driven Recommendation Queries via a Retrieve\u2013Rank Paradigm and theOCG-Agent",
+    "Are Vision-Language Models Safe in the Wild? A Meme-Based Benchmark Study",
+    "Avoidance Decoding for Diverse Multi-Branch Story Generation",
+    "Balcony: A Lightweight Approach to Dynamic Inference of Generative Language Models",
+    "Beyond Averages: Learning with Annotator Disagreement inSTS",
+    "Beyond Outlining: Heterogeneous Recursive Planning for Adaptive Long-form Writing with Language Models",
+    "Beyond Task-Oriented and Chitchat Dialogues: Proactive and Transition-Aware Conversational Agents",
+    "Beyond Text: Unveiling Privacy Vulnerabilities in Multi-modal Retrieval-Augmented Generation",
+    "Beyond the Leaderboard: Understanding Performance Disparities in Large Language Models via Model Diffing",
+    "Biased Tales: Cultural and Topic Bias in Generating Children\u2019s Stories",
+    "CLIP-MoE: Towards Building Mixture of Experts forCLIPwith Diversified Multiplet Upcycling",
+    "COAS2W: AChinese Older-Adults Spoken-to-Written Transformation Corpus with Context Awareness",
+    "Can Large Language Models Be Good Language Teachers?",
+    "Can Vision-Language Models Solve Visual Math Equations?",
+    "CanLLMs Extract Frame-Semantic Arguments?",
+    "CanLLMs Help You at Work? A Sandbox for EvaluatingLLMAgents in Enterprise Environments",
+    "Case-Based Decision-Theoretic Decoding with Quality Memories",
+    "Chat-Driven Text Generation and Interaction for Person Retrieval",
+    "CoBia: Constructed Conversations Can Trigger Otherwise Concealed Societal Biases inLLMs",
+    "CoMAT: Chain of Mathematically Annotated Thought Improves Mathematical Reasoning",
+    "Code to Think, Think to Code: A Survey on Code-Enhanced Reasoning and Reasoning-Driven Code Intelligence inLLMs",
+    "Compositional Generalisation for Explainable Hate Speech Detection",
+    "Continuously SteeringLLMs Sensitivity to Contextual Knowledge with Proxy Models",
+    "Correct-Detect: Balancing Performance and Ambiguity Through the Lens of Coreference Resolution inLLMs",
+    "DSCD: Large Language Model Detoxification with Self-Constrained Decoding",
+    "DSVD: Dynamic Self-Verify Decoding for Faithful Generation in Large Language Models",
+    "Dial-InLLM: Human-AlignedLLM-in-the-loop Intent Clustering for Customer Service Dialogues",
+    "Dynamic Collaboration of Multi-Language Models based on Minimal Complete Semantic Units",
+    "ECC: An Emotion-Cause Conversation Dataset for Empathy Response",
+    "Enhancing Reasoning Abilities of SmallLLMs with Cognitive Alignment",
+    "Evaluating Cognitive-Behavioral Fixation via Multimodal User Viewing Patterns on Social Media",
+    "Exploring Chain-of-Thought Reasoning for Steerable Pluralistic Alignment",
+    "Extracting Linguistic Information from Large Language Models: Syntactic Relations and Derivational Knowledge",
+    "Fann or Flop: A Multigenre, Multiera Benchmark forArabic Poetry Understanding inLLMs",
+    "Foot-In-The-Door: A Multi-turn Jailbreak forLLMs",
+    "From Automation to Autonomy: A Survey on Large Language Models in Scientific Discovery",
+    "From Parameters to Performance: A Data-Driven Study onLLMStructure and Development",
+    "GATEAU: Selecting Influential Samples for Long Context Alignment",
+    "Humanizing Machines: RethinkingLLMAnthropomorphism Through a Multi-Level Framework of Design",
+    "HydraOpt: Navigating the Efficiency-Performance Trade-off of Adapter Merging",
+    "ICG: Improving Cover Image Generation viaMLLM-based Prompting and Personalized Preference Alignment",
+    "Identifying Unlearned Data inLLMs via Membership Inference Attacks",
+    "Image Embedding Sampling Method for Diverse Captioning",
+    "Improving Reasoning Capabilities in Small Models through Mixture-of-layers Distillation with Stepwise Attention on Key Information",
+    "In-Context Learning Boosts Speech Recognition via Human-like Adaptation to Speakers and Language Varieties",
+    "IntentionFrame: A Semi-Structured, Multi-Aspect Framework for Fine-Grained Conversational Intention Understanding",
+    "JI2S: JointInfluence\u2010Aware Instruction Data Selection for EfficientFine\u2010Tuning",
+    "JOLT-SQL: Joint Loss Tuning of Text-to-SQLwith Confusion-aware Noisy Schema Sampling",
+    "Koel-TTS: EnhancingLLMbased Speech Generation with Preference Alignment and Classifier Free Guidance",
+    "LaMDAgent: An Autonomous Framework for Post-Training Pipeline Optimization viaLLMAgents",
+    "LaMP-QA: A Benchmark for Personalized Long-form Question Answering",
+    "Language Models as Continuous Self-Evolving Data Engineers",
+    "LightThinker: Thinking Step-by-Step Compression",
+    "M-BRe: Discovering Training Samples for Relation Extraction from Unlabeled Texts with Large Language Models",
+    "MAC-Tuning:LLMMulti-Compositional Problem Reasoning with Enhanced Knowledge Boundary Awareness",
+    "MAIN: Mutual Alignment Is Necessary for instruction tuning",
+    "MIO: A Foundation Model on Multimodal Tokens",
+    "MMAG: Multimodal Learning for Mucus Anomaly Grading in Nasal Endoscopy via Semantic Attribute Prompting",
+    "Mah\u0101n\u0101ma: A Unique Testbed for Literary Entity Discovery and Linking",
+    "Measuring the Effect of Disfluency in Multilingual Knowledge Probing Benchmarks",
+    "Mixture of Length and Pruning Experts for Knowledge Graphs Reasoning",
+    "Multi-perspective Analysis of Large Language Model Domain Specialization: An Experiment in Accounting Audit Procedures Generation",
+    "NormGenesis: Multicultural Dialogue Generation via Exemplar-Guided Social Norm Modeling and Violation Recovery",
+    "OBLIVIATE: Robust and Practical Machine Unlearning for Large Language Models",
+    "OMS: On-the-fly, Multi-Objective, Self-Reflective Ad Keyword Generation viaLLMAgent",
+    "OmniEval: An Omnidirectional and AutomaticRAGEvaluation Benchmark in Financial Domain",
+    "One Planner To Guide Them All ! Learning Adaptive Conversational Planners for Goal-oriented Dialogues",
+    "Out of Sight, Not Out of Context? Egocentric Spatial Reasoning inVLMs Across Disjoint Frames",
+    "Parallel Continuous Chain-of-Thought with Jacobi Iteration",
+    "PhonoThink: Improving Large Language Models\u2019 Reasoning onChinese Phonological Ambiguities",
+    "Plan Dynamically, Express Rhetorically: A Debate-Driven Rhetorical Framework for Argumentative Writing",
+    "Please Translate Again: Two Simple Experiments on Whether Human-Like Reasoning Helps Translation",
+    "PoSum-Bench: Benchmarking Position Bias inLLM-based Conversational Summarization",
+    "Pointing to a Llama and Call it a Camel: On the Sycophancy of Multimodal Large Language Models",
+    "Precise In-Parameter Concept Erasure in Large Language Models",
+    "PrimeX: A Dataset of Worldview, Opinion, and Explanation",
+    "Promote, Suppress, Iterate: How Language Models Answer One-to-Many Factual Queries",
+    "PychoAgent: Psychology-drivenLLMAgents for Explainable Panic Prediction on Social Media during Sudden Disaster Events",
+    "R2I-Bench: Benchmarking Reasoning-Driven Text-to-Image Generation",
+    "REACT: Representation Extraction And Controllable Tuning to Overcome Overfitting inLLMKnowledge Editing",
+    "RareSyn: Health Record Synthesis for Rare Disease Diagnosis",
+    "Reliable and Cost-Effective Exploratory Data Analysis via Graph-GuidedRAG",
+    "RethinkMCTS: Refining Erroneous Thoughts inMonteCarlo Tree Search for Code Generation",
+    "Revealing and Mitigating the Challenge of Detecting Character Knowledge Errors inLLMRole-Playing",
+    "Robust Adaptation of Large Multimodal Models for Retrieval Augmented Hateful Meme Detection",
+    "SAFE: Schema-Driven Approximate Distance Join for Efficient Knowledge Graph Querying",
+    "SAFENUDGE: Safeguarding Large Language Models in Real-time with Tunable Safety-Performance Trade-offs",
+    "SAND: BoostingLLMAgents with Self-Taught Action Deliberation",
+    "SATER: A Self-Aware and Token-Efficient Approach to Routing and Cascading",
+    "SEA: Supervised Embedding Alignment for Token-Level Visual-Textual Integration inMLLMs",
+    "SHARP: Steering Hallucination inLVLMs via Representation Engineering",
+    "SNaRe: Domain-aware Data Generation for Low-Resource Event Detection",
+    "SQLWOZ: A Realistic Task-Oriented Dialogue Dataset withSQL-Based Dialogue State Representation for Complex User Requirements",
+    "SQUiD: Synthesizing Relational Databases from Unstructured Text",
+    "STARQA: A Question Answering Dataset for Complex Analytical Reasoning over Structured Databases",
+    "SciRIFF: A Resource to Enhance Language Model Instruction-Following over Scientific Literature",
+    "Seeing More, Saying More: Lightweight Language Experts are Dynamic Video Token Compressors",
+    "Seeing the Same Story Differently:Framing\u2010Divergent Event Coreference for Computational Framing Analysis",
+    "SemVink: AdvancingVLMs\u2019 Semantic Understanding of Optical Illusions via Visual Global Thinking",
+    "Sentence Smith: Controllable Edits for Evaluating Text Embeddings",
+    "Slim-SC: Thought Pruning for Efficient Scaling with Self-Consistency",
+    "Spatial Layouts in News Homepages Capture Human Preferences",
+    "Subtle Risks, Critical Failures: A Framework for Diagnosing Physical Safety ofLLMs for Embodied Decision Making",
+    "Superficial Self-Improved Reasoners Benefit from Model Merging",
+    "TRUST-VL: An Explainable News Assistant for General Multimodal Misinformation Detection",
+    "TTT-Bench: A Benchmark for Evaluating Reasoning Ability with Simple and Novel Tic-Tac-Toe-style Games",
+    "Teach Small Models to Reason by Curriculum Distillation",
+    "Think, Verbalize, then Speak: Bridging Complex Thoughts and Comprehensible Speech",
+    "ThinkSLM",
+    "Thought calibration: Efficient and confident test-time scaling",
+    "Token-Aware Editing of Internal Activations for Large Language Model Alignment",
+    "Token-level Proximal Policy Optimization for Query Generation",
+    "Towards a Holistic and Automated Evaluation Framework for Multi-Level Comprehension ofLLMs in Book-Length Contexts",
+    "Towards a Unified Paradigm of Concept Editing in Large Language Models",
+    "Translationese-index: Using Likelihood Ratios for Graded and Generalizable Measurement of Translationese",
+    "UNCLE: Benchmarking Uncertainty Expressions in Long-Form Generation",
+    "UnCo: Uncertainty-Driven Collaborative Framework of Large and Small Models for Grounded MultimodalNER",
+    "UniDebugger: Hierarchical Multi-Agent Framework for Unified Software Debugging",
+    "Unleashing the Reasoning Potential ofLLMs by Critique Fine-Tuning on One Problem",
+    "VersaTune: An Efficient Data Composition Framework for Training Multi-CapabilityLLMs",
+    "VisualWebInstruct: Scaling up Multimodal Instruction Data through Web Search",
+    "Waste-Bench: A Comprehensive Benchmark for EvaluatingVLLMs in Cluttered Environments",
+    "Where Confabulation Lives: Latent Feature Discovery inLLMs",
+    "ZoomEye: Enhancing MultimodalLLMs with Human-Like Zooming Capabilities through Tree-Based Image Exploration",
+    "2025.emnlp-main.1147.checklist",
+    "2025.emnlp-main.1301.checklist",
+    "2025.emnlp-main.615.checklist",
+    "2025.emnlp-main.817.checklist",
+    "DIWALI- Diversity and Inclusivity aWare cuLture specific Items forIndia: Dataset and Assessment ofLLMs for Cultural Text Adaptation inIndian Context",
+    "Gamma-Guard: Lightweight Residual Adapters for Robust Guardrails in Large Language Models",
+    "How Sememic Components Can Benefit Link Prediction for Lexico-Semantic Knowledge Graphs?",
+    "Synthetic Socratic Debates: Examining Persona Effects on Moral Decision and Persuasion Dynamics",
+    "Understanding Subword Compositionality of Large Language Models",
+    "2025.emnlp-main.390.checklist",
+    "AdaSteer: Your AlignedLLMis Inherently an Adaptive Jailbreak Defender",
+    "AskToAct: EnhancingLLMs Tool Use via Self-Correcting Clarification",
+    "ComplexTempQA: A 100m Dataset for Complex Temporal Question Answering",
+    "EasyRec: Simple yet Effective Language Models for Recommendation",
+    "PRISM: Efficient Long-Range Reasoning With Short-ContextLLMs",
+    "Personality Matters: User Traits PredictLLMPreferences in Multi-Turn Collaborative Tasks",
+    "Probing for Arithmetic Errors in Language Models",
+    "Theorem-Validated Reverse Chain-of-Thought Problem Generation for Geometric Reasoning",
+    "zFLoRA: Zero-Latency Fused Low-Rank Adapters",
+    "Discursive Circuits: How Do Language Models Understand Discourse Relations?",
+    "MakingVLMs More Robot-Friendly: Self-Critical Distillation of Low-Level Procedural Reasoning",
+    "Retrieving Support to Rank Answers in Open-Domain Question Answering",
+    "LVLMs are Bad at Overhearing Human Referential Communication",
+    "Chain-of-Knowledge: Grounding Large Language Models via Dynamic Knowledge Adapting over Heterogeneous Sources",
+    "RAPPER: Reinforced Rationale-Prompted Paradigm for Natural Language Explanation in Visual Question Answering",
+    "Rephrase, Augment, Reason: Visual Grounding of Questions for Vision-Language Models",
+    "SuRe: Summarizing Retrievals using Answer Candidates for Open-domain QA of LLMs",
+    "Supervised Knowledge Makes Large Language Models Better In-context Learners",
+    "Tailoring Self-Rationalizers with Multi-Reward Distillation",
+    "ToRA: A Tool-Integrated Reasoning Agent for Mathematical Problem Solving",
+    "Chain-of-Experts: When LLMs Meet Complex Operations Research Problems",
+    "Hierarchical Context Merging: Better Long Context Understanding for Pre-trained LLMs",
+    "Measuring Vision-Language STEM Skills of Neural Models",
+    "SWE-bench: Can Language Models Resolve Real-world Github Issues?",
+    "THOUGHT PROPAGATION: AN ANALOGICAL APPROACH TO COMPLEX REASONING WITH LARGE LANGUAGE MODELS",
+    "Think-on-Graph: Deep and Responsible Reasoning of Large Language Model on Knowledge Graph",
+    "Amortizing intractable inference in large language models",
+    "Connecting Large Language Models with Evolutionary Algorithms Yields Powerful Prompt Optimizers",
+    "DQ-LoRe: Dual Queries with Low Rank Approximation Re-ranking for In-Context Learning",
+    "DoLa: Decoding by Contrasting Layers Improves Factuality in Large Language Models",
+    "Escape Sky-high Cost: Early-stopping Self-Consistency for Multi-step Reasoning",
+    "Making Retrieval-Augmented Language Models Robust to Irrelevant Context",
+    "MuSR: Testing the Limits of Chain-of-thought with Multistep Soft Reasoning",
+    "Multimodal Web Navigation with Instruction-Finetuned Foundation Models",
+    "Skeleton-of-Thought: Prompting LLMs for Efficient Parallel Generation",
+    "Take a Step Back: Evoking Reasoning via Abstraction in Large Language Models",
+    "Accelerating Inference of Retrieval-Augmented Generation via Sparse Context Selection",
+    "Advancing Mathematical Reasoning in Language Models: The Impact of Problem-Solving Data, Data Synthesis Methods, and Training Stages",
+    "Ask, and it shall be given: On the Turing completeness of prompting",
+    "Can LLMs Solve Longer Math Word Problems Better?",
+    "Can LLMs Understand Time Series Anomalies?",
+    "Can We Trust Embodied Agents? Exploring Backdoor Attacks against Embodied LLM-Based Decision-Making Systems",
+    "Chain-of-Thought Provably Enables Learning the (Otherwise) Unlearnable",
+    "CoTFormer: A Chain of Thought Driven Architecture with Budget-Adaptive Computation Cost at Inference",
+    "Correlation and Navigation in the Vocabulary Key Representation Space of Language Models",
+    "DAMO: Decoding by Accumulating Activations Momentum for Mitigating Hallucinations in Vision-Language Models",
+    "DOTS: Learning to Reason Dynamically in LLMs via Optimal Reasoning Trajectories Search",
+    "DeFT: Decoding with Flash Tree-attention for Efficient Tree-structured LLM Inference",
+    "DeepSeek-Prover-V1.5: Harnessing Proof Assistant Feedback for Reinforcement Learning and Monte-Carlo Tree Search",
+    "Distributional Associations vs In-Context Reasoning: A Study of Feed-forward and Attention Layers",
+    "Does Refusal Training in LLMs Generalize to the Past Tense?",
+    "Don't Take Things Out of Context: Attention Intervention for Enhancing Chain-of-Thought Reasoning in Large Language Models",
+    "Dualformer: Controllable Fast and Slow Thinking by Learning with Randomized Reasoning Traces",
+    "Empowering LLM Agents with Zero-Shot Optimal Decision-Making through Q-learning",
+    "Enhancing Graph Of Thought: Enhancing Prompts with LLM Rationales and Dynamic Temperature Control",
+    "FlexPrefill: A Context-Aware Sparse Attention Mechanism for Efficient Long-Sequence Inference",
+    "Forking Paths in Neural Text Generation",
+    "From Artificial Needles to Real Haystacks: Improving Retrieval Capabilities in LLMs by Finetuning on Synthetic Data",
+    "From Few to Many: Self-Improving Many-Shot Reasoners Through Iterative Optimization and Generation",
+    "GReaTer: Gradients Over Reasoning Makes Smaller Language Models Strong Prompt Optimizers",
+    "GameArena: Evaluating LLM Reasoning through Live Computer Games",
+    "Generalization v.s. Memorization: Tracing Language Models\u2019 Capabilities Back to Pretraining Data",
+    "Generalizing Reasoning Problems to Longer Lengths",
+    "Generative Verifiers: Reward Modeling as Next-Token Prediction",
+    "Holistic Reasoning with Long-Context LMs: A Benchmark for Database Operations on Massive Textual Data",
+    "Improving Complex Reasoning with Dynamic Prompt Corruption: A Soft Prompt Optimization Approach",
+    "Improving Reasoning Performance in Large Language Models via Representation Engineering",
+    "Inference Scaling Laws: An Empirical Analysis of Compute-Optimal Inference for LLM Problem-Solving",
+    "InstructRAG: Instructing Retrieval-Augmented Generation via Self-Synthesized Rationales",
+    "It Helps to Take a Second Opinion: Teaching Smaller LLMs To Deliberate Mutually via Selective Rationale Optimisation",
+    "KOR-Bench: Benchmarking Language Models on Knowledge-Orthogonal Reasoning Tasks",
+    "Language Imbalance Driven Rewarding for Multilingual Self-improving",
+    "Large (Vision) Language Models are Unsupervised In-Context Learners",
+    "Large Language Models Meet Symbolic Provers for Logical Reasoning Evaluation",
+    "Lean-STaR: Learning to Interleave Thinking and Proving",
+    "Learning How Hard to Think: Input-Adaptive Allocation of LM Computation",
+    "Learning LLM-as-a-Judge for Preference Alignment",
+    "Limits of Deep Learning: Sequence Modeling through the Lens of Complexity Theory",
+    "Long-Context LLMs Meet RAG: Overcoming Challenges for Long Inputs in RAG",
+    "LongPO: Long Context Self-Evolution of Large Language Models through Short-to-Long Preference Optimization",
+    "MAVIS: Mathematical Visual Instruction Tuning with an Automatic Data Engine",
+    "MMIE: Massive Multimodal Interleaved Comprehension Benchmark for Large Vision-Language Models",
+    "MathGAP: Out-of-Distribution Evaluation on Problems with Arbitrarily Complex Proofs",
+    "Multi-modal Agent Tuning: Building a VLM-Driven Agent for Efficient Tool Usage",
+    "Mutual Reasoning Makes Smaller LLMs Stronger Problem-Solver",
+    "OCEAN: Offline Chain-of-thought Evaluation and Alignment in Large Language Models",
+    "OmniKV: Dynamic Context Selection for Efficient Long-Context LLMs",
+    "OmnixR: Evaluating Omni-modality Language Models on Reasoning across Modalities",
+    "OpenMathInstruct-2: Accelerating AI for Math with Massive Open-Source Instruction Data",
+    "Physics of Language Models: Part 2.1, Grade-School Math and the Hidden Reasoning Process",
+    "Physics of Language Models: Part 2.2, How to Learn From Mistakes on Grade-School Math Problems",
+    "Procedural Knowledge in Pretraining Drives Reasoning in Large Language Models",
+    "Process Reward Model with Q-value Rankings",
+    "RNNs are not Transformers (Yet):  The Key Bottleneck on In-Context Retrieval",
+    "Rational Decision-Making Agent with Learning Internal Utility Judgment",
+    "ReGenesis: LLMs can Grow into Reasoning Generalists via Self-Improvement",
+    "Reasoning with Latent Thoughts: On the Power of Looped Transformers",
+    "Reasoning-Enhanced Healthcare Predictions with Knowledge Graph Community Retrieval",
+    "Rewarding Progress: Scaling Automated Process Verifiers for LLM Reasoning",
+    "SBSC: Step-by-Step Coding for Improving Mathematical Olympiad Performance",
+    "SCBench: A KV Cache-Centric Analysis of Long-Context Methods",
+    "Scaling Instruction-tuned LLMs to Million-token Contexts via Hierarchical Synthetic Data Generation",
+    "Scaling Long Context Training Data by Long-Distance Referrals",
+    "SePer: Measure Retrieval Utility Through The Lens Of Semantic Perplexity Reduction",
+    "Smaller, Weaker, Yet Better: Training LLM Reasoners via Compute-Optimal Sampling",
+    "Speculative RAG: Enhancing Retrieval Augmented Generation through Drafting",
+    "SuperCorrect: Advancing Small LLM Reasoning with Thought Template Distillation and Self-Correction",
+    "System 1.x: Learning to Balance Fast and Slow Planning with Language Models",
+    "TPO: Aligning Large Language Models with Multi-branch & Multi-step Preference Trees",
+    "The Unreasonable Ineffectiveness of the Deeper Layers",
+    "Think-on-Graph 2.0: Deep and Faithful Large Language Model Reasoning with Knowledge-guided Retrieval Augmented Generation",
+    "To CoT or not to CoT? Chain-of-thought helps mainly on math and symbolic reasoning",
+    "Training Large Language Models for Retrieval-Augmented Question Answering through Backtracking Correction",
+    "Training Nonlinear Transformers for Chain-of-Thought Inference:  A Theoretical Generalization Analysis",
+    "Transformers Provably Solve Parity Efficiently with Chain of Thought",
+    "Turning Up the Heat: Min-p Sampling for Creative and Coherent LLM Outputs",
+    "Uncovering Overfitting in Large Language Model Editing",
+    "Unearthing Skill-level Insights for Understanding Trade-offs of Foundation Models",
+    "Video-STaR: Self-Training Enables Video Instruction Tuning with Any Supervision",
+    "WizardMath: Empowering Mathematical Reasoning for Large Language Models via Reinforced Evol-Instruct",
+    "ActionReasoningBench: Reasoning about Actions with and without Ramification Constraints",
+    "Benchmarking Multimodal Retrieval Augmented Generation with Dynamic VQA Dataset and Self-adaptive Planning Agent",
+    "Beyond Autoregression: Discrete Diffusion for Complex Reasoning and Planning",
+    "Building Math Agents with Multi-Turn Iterative Preference Learning",
+    "CodePlan: Unlocking Reasoning Potential in Large Language Models by Scaling Code-form Planning",
+    "CofCA: A STEP-WISE Counterfactual Multi-hop QA benchmark",
+    "Data Pruning by Information Maximization",
+    "Draw-and-Understand: Leveraging Visual Prompts to Enable MLLMs to Comprehend What You Want",
+    "LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory",
+    "MIND: Math Informed syNthetic Dialogues for Pretraining LLMs",
+    "MMQA: Evaluating LLMs with Multi-Table Multi-Hop Complex Questions",
+    "Mix-CPT: A Domain Adaptation Framework via Decoupling Knowledge Learning and Format Alignment",
+    "Neuron-based Multifractal Analysis of Neuron Interaction Dynamics in Large Models",
+    "NovelQA: Benchmarking Question Answering on Documents Exceeding 200K Tokens",
+    "Omni-MATH: A Universal Olympiad Level Mathematic Benchmark for Large Language Models",
+    "On Targeted Manipulation and Deception when Optimizing LLMs for User Feedback",
+    "Q-SFT: Q-Learning for Language Models via Supervised Fine-Tuning",
+    "Retrieval Head Mechanistically Explains Long-Context Factuality",
+    "Scaling Autonomous Agents via Automatic Reward Modeling And Planning",
+    "SiReRAG: Indexing Similar and Related Information for Multihop Reasoning",
+    "Simple is Effective: The Roles of Graphs and Large Language Models in Knowledge-Graph-Based Retrieval-Augmented Generation",
+    "Step-by-Step Reasoning for Math Problems  via Twisted Sequential Monte Carlo",
+    "Sufficient Context: A New Lens on Retrieval Augmented Generation Systems",
+    "ThinkBot: Embodied Instruction Following with Thought Chain Reasoning",
+    "Token-Supervised Value Models for Enhancing Mathematical Problem-Solving Capabilities of Large Language Models",
+    "Training on the Test Task Confounds Evaluation and Emergence",
+    "Transformers Learn to Implement Multi-step Gradient Descent with Chain of Thought",
+    "Unified Parameter-Efficient Unlearning for LLMs",
+    "WildBench: Benchmarking LLMs with Challenging Tasks from Real Users in the Wild",
+    "Accelerating Large Language Model Reasoning via Speculative Search",
+    "Aguvis: Unified Pure Vision Agents for Autonomous GUI Interaction",
+    "Aligning with Logic: Measuring, Evaluating and Improving Logical Preference Consistency in Large Language Models",
+    "Bring Reason to Vision: Understanding Perception and Reasoning through Model Merging",
+    "Can Transformers Reason Logically? A Study in SAT Solving",
+    "CodeIO: Condensing Reasoning Patterns via Code Input-Output Prediction",
+    "CommVQ: Commutative Vector Quantization for KV Cache Compression",
+    "Demystifying Long Chain-of-Thought Reasoning",
+    "Diving into Self-Evolving Training for Multimodal Reasoning",
+    "Forest-of-Thought: Scaling Test-Time Compute for Enhancing LLM Reasoning",
+    "Foundation Molecular Grammar: Multi-Modal Foundation Models Induce Interpretable Molecular Graph Languages",
+    "Generalizing from SIMPLE to HARD Visual Reasoning: Can We Mitigate Modality Imbalance in VLMs?",
+    "KV Shifting Attention Enhances Language Modeling",
+    "LaCache: Ladder-Shaped KV Caching for Efficient Long-Context Modeling of Large Language Models",
+    "Learning to Plan & Reason for Evaluation with Thinking-LLM-as-a-Judge",
+    "Leveraging Online Olympiad-Level Math Problems for LLMs Training and Contamination-Resistant Evaluation",
+    "Lower Bounds for Chain-of-Thought Reasoning in Hard-Attention Transformers",
+    "MARGE: Improving Math Reasoning with Guided Exploration",
+    "Measuring In-Context Computation Complexity via Hidden State Prediction",
+    "Metastable Dynamics of Chain-of-Thought Reasoning: Provable Benefits of Search, RL and Distillation",
+    "Mitigating Heterogeneous Token Overfitting in LLM Knowledge Editing",
+    "Multi-agent Architecture Search via Agentic Supernet",
+    "On the Power of Context-Enhanced Learning in LLMs",
+    "Optimizing Language Models for Inference Time Objectives using Reinforcement Learning",
+    "PhantomWiki: On-Demand Datasets for Reasoning and Retrieval Evaluation",
+    "Proposer-Agent-Evaluator (PAE): Autonomous Skill Discovery For Foundation Model Internet Agents",
+    "Re-ranking Reasoning Context with Tree Search Makes Large Vision-Language Models Stronger",
+    "Rethinking Chain-of-Thought from the Perspective of Self-Training",
+    "Rethinking External Slow-Thinking: From Snowball Errors to Probability of Correct Reasoning",
+    "Revisiting Chain-of-Thought in Code Generation: Do Language Models Need to Learn Reasoning before Coding?",
+    "Reward-Guided Speculative Decoding for Efficient LLM Reasoning",
+    "STAIR: Improving Safety Alignment with Introspective Reasoning",
+    "SafetyAnalyst: Interpretable, Transparent, and Steerable Safety Moderation for AI Behavior",
+    "Self-Consistency Preference Optimization",
+    "Star Attention: Efficient LLM Inference over Long Sequences",
+    "The Logical Implication Steering Method for Conditional Interventions on Transformer Generation",
+    "Think Smarter not Harder: Adaptive Reasoning with Inference Aware Optimization",
+    "Think Twice, Act Once: A Co-Evolution Framework of LLM and RL for Large-Scale Decision Making",
+    "Thinking LLMs: General Instruction Following with Thought Generation",
+    "Token Assorted: Mixing Latent and Text Tokens for Improved Language Model Reasoning",
+    "Token Signature: Predicting Chain-of-Thought Gains with Token Decoding Feature in Large Language Models",
+    "Towards Practical Defect-Focused Automated Code Review",
+    "Training a Generally Curious Agent",
+    "Tuning LLM Judge Design Decisions for 1/1000 of the Cost",
+    "VinePPO: Refining Credit Assignment in RL Training of LLMs",
+    "XAttention: Block Sparse Attention with Antidiagonal Scoring",
+    "ZebraLogic: On the Scaling Limits of LLMs for Logical Reasoning",
+    "C-3PO: Compact Plug-and-Play Proxy Optimization to Achieve Human-like Retrieval-Augmented Generation",
+    "DEFAME: Dynamic Evidence-based FAct-checking with Multimodal Experts",
+    "EncryptedLLM: Privacy-Preserving Large Language Model Inference via GPU-Accelerated Fully Homomorphic Encryption",
+    "Extractive Structures Learned in Pretraining Enable Generalization on Finetuned Facts",
+    "From Complex to Atomic: Enhancing Augmented Generation via Knowledge-Aware Dual Rewriting and Reasoning",
+    "GIVE: Structured Reasoning of Large Language Models with Knowledge Graph Inspired Veracity Extrapolation",
+    "GRADEO: Towards Human-Like Evaluation for Text-to-Video Generation via Multi-Step Reasoning",
+    "Grokking in the Wild: Data Augmentation for Real-World Multi-Hop Reasoning with Transformers",
+    "Layer by Layer: Uncovering Hidden Representations in Language Models",
+    "MME-CoT: Benchmarking Chain-of-Thought in Large Multimodal Models for Reasoning Quality, Robustness, and Efficiency",
+    "MedRAX: Medical Reasoning Agent for Chest X-ray",
+    "Nemotron-CORTEXA: Enhancing LLM Agents for Software Engineering Tasks via Improved Localization and Solution Diversity",
+    "SPEX: Scaling Feature Interaction Explanations for LLMs",
+    "SafeAuto: Knowledge-Enhanced Safe Autonomous Driving with Multimodal Foundation Models",
+    "Sample Efficient Demonstration Selection for In-Context Learning",
+    "Task Generalization with Autoregressive Compositional Structure: Can Learning from $D$ Tasks Generalize to $D^T$ Tasks?",
+    "Understanding Chain-of-Thought in LLMs through Information Theory",
+    "WikiBigEdit: Understanding the Limits of Lifelong Knowledge Editing in LLMs",
+    "Adaptive Self-improvement LLM Agentic System for ML Library Development",
+    "Lexico: Extreme KV Cache Compression via Sparse Coding over Universal Dictionaries",
+    "Policy Filtration for RLHF to Mitigate Noise in Reward Models",
+    "Policy Guided Tree Search for Enhanced LLM Reasoning",
+    "RBench: Graduate-level Multi-disciplinary Benchmarks for LLM & MLLM Complex Reasoning Evaluation",
+    "SNS-Bench: Defining, Building, and Assessing Capabilities of Large Language Models in Social Networking Services",
+    "MA-LoT: Model-Collaboration Lean-based Long Chain-of-Thought Reasoning enhances Formal Theorem Proving",
+    "How Good AreLLMs for Literary Translation, Really? Literary Translation Evaluation with Humans andLLMs",
+    "LBC: Language-Based-Classifier for Out-Of-Variable Generalization",
+    "Mutual-pairing Data Augmentation for Fewshot Continual Relation Extraction",
+    "Private Synthetic Text Generation with Diffusion Models",
+    "Bridging the Visual Gap: Fine-Tuning Multimodal Models with Knowledge-Adapted Captions",
+    "SALAD: Improving Robustness and Generalization through Contrastive Learning with Structure-Aware andLLM-Driven Augmented Data",
+    "Stronger Universal and Transferable Attacks by Suppressing Refusals",
+    "Correcting Negative Bias in Large Language Models through Negative Attention Score Alignment",
+    "Upsample or Upweight? Balanced Training on Heavily Imbalanced Datasets",
+    "Ihquin tlahtouah in Tetelahtzincocah: An annotated, multi-purpose audio and text corpus of Western SierraPueblaNahuatl",
+    "The Plagiarism Singularity Conjecture",
+    "Script-Agnosticism and its Impact on Language Identification forDravidian Languages",
+    "Hybrid Graphs for Table-and-Text based Question Answering usingLLMs",
+    "Instruct-of-Reflection: Enhancing Large Language Models Iterative Reflection Capabilities via Dynamic-Meta Instruction",
+    "Iterative Self-TuningLLMs for Enhanced Jailbreaking Capabilities",
+    "CanLLMs Convert Graphs to Text-Attributed Graphs?",
+    "ImgTrojan: Jailbreaking Vision-Language Models withONEImage",
+    "Multilingual Needle in a Haystack: Investigating Long-Context Behavior of Multilingual Large Language Models",
+    "Rethinking Word Similarity: Semantic Similarity through Classification Confusion",
+    "UFO: AUI-Focused Agent for WindowsOSInteraction",
+    "Verifiable by Design: Aligning Language Models to Quote from Pre-Training Data",
+    "A Careful Examination of Large Language Model Performance on Grade School Arithmetic",
+    "ActionAtlas: A VideoQA Benchmark for Domain-specialized Action Recognition",
+    "Adaptable Logical Control for Large Language Models",
+    "Automating Dataset Updates Towards Reliable and Timely Evaluation of Large Language Models",
+    "Calibrating Reasoning in Language Models with Internal Consistency",
+    "Can LLMs Learn by Teaching for Better Reasoning? A Preliminary Study",
+    "Can large language models explore in-context?",
+    "Chain of Preference Optimization: Improving Chain-of-Thought Reasoning in LLMs",
+    "Chain-of-Thought Reasoning Without Prompting",
+    "Decompose, Analyze and Rethink: Solving Intricate Problems with Human-like Reasoning Cycle",
+    "Diffusion of Thought: Chain-of-Thought Reasoning in Diffusion Language Models",
+    "ERBench: An Entity-Relationship based Automatically Verifiable Hallucination Benchmark for Large Language Models",
+    "Easy-to-Hard Generalization: Scalable Alignment Beyond Human Supervision",
+    "How Far Can Transformers Reason? The Globality Barrier and Inductive Scratchpad",
+    "Information Re-Organization Improves Reasoning in Large Language Models",
+    "Instance-adaptive Zero-shot Chain-of-Thought Prompting",
+    "Iterative Reasoning Preference Optimization",
+    "Large Language Models' Expert-level Global History Knowledge Benchmark (HiST-LLM)",
+    "Limits of Transformer Language Models on Learning to Compose Algorithms",
+    "MR-Ben: A Meta-Reasoning Benchmark for Evaluating System-2 Thinking in LLMs",
+    "MediQ: Question-Asking LLMs and a Benchmark for Reliable Interactive Clinical Reasoning",
+    "Neuro-Symbolic Data Generation for Math Reasoning",
+    "Noise Contrastive Alignment of Language Models with Explicit Rewards",
+    "OlympicArena: Benchmarking Multi-discipline Cognitive Reasoning for Superintelligent AI",
+    "OmniJARVIS: Unified Vision-Language-Action Tokenization Enables Open-World Instruction Following Agents",
+    "On the Power of Decision Trees in Auto-Regressive Language Modeling",
+    "RL on Incorrect Synthetic Data Scales the Efficiency of LLM Math Reasoning by Eight-Fold",
+    "ReFT: Representation Finetuning for Language Models",
+    "ReST-MCTS*: LLM Self-Training via Process Reward Guided Tree Search",
+    "SLED: Self Logits Evolution Decoding for Improving Factuality in Large Language Models",
+    "SPIQA: A Dataset for Multimodal Question Answering on Scientific Papers",
+    "SciInstruct: a Self-Reflective Instruction Annotated Dataset for Training Scientific Language Models",
+    "UDA: A Benchmark Suite for Retrieval Augmented Generation in Real-World Document Analysis",
+    "Unlocking the Capabilities of Thought: A Reasoning Boundary Framework to Quantify and Optimize Chain-of-Thought",
+    "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback",
+    "VLM4Bio: A Benchmark Dataset to Evaluate Pretrained Vision-Language Models for Trait Discovery from Biological Images",
+    "Web-Scale Visual Entity Recognition: An LLM-Driven Data Approach",
+    "What Factors Affect Multi-Modal In-Context Learning? An In-Depth Exploration",
+    "Compositional 3D-aware Video Generation with LLM Director",
+    "Iteration Head: A Mechanistic Study of Chain-of-Thought",
+    "Measuring Multimodal Mathematical Reasoning with MATH-Vision Dataset",
+    "Paralinguistics-Aware Speech-Empowered Large Language Models for Natural Conversation",
+    "Towards a Theoretical Understanding of the 'Reversal Curse' via Training Dynamics",
+    "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data",
+    "Chain of Agents: Large Language Models Collaborating on Long-Context Tasks",
+    "DART-Math: Difficulty-Aware Rejection Tuning for Mathematical Problem-Solving",
+    "DeiSAM: Segment Anything with Deictic Prompting",
+    "Divide-and-Conquer Meets Consensus: Unleashing the Power of Functions in Code Generation",
+    "FinBen: A Holistic Financial Benchmark for Large Language Models",
+    "MMScan: A Multi-Modal 3D Scene Dataset with Hierarchical Grounded Language Annotations",
+    "NYU CTF Bench: A Scalable Open-Source Benchmark Dataset for Evaluating LLMs in Offensive Security",
+    "Neuro-Vision to Language: Enhancing Brain Recording-based Visual Reconstruction and Language Interaction",
+    "On the Effects of Data Scale on UI Control Agents",
+    "StrategyLLM: Large Language Models as Strategy Generators, Executors, Optimizers, and Evaluators for Problem Solving",
+    "Transformers Can Do Arithmetic with the Right Embeddings",
+    "SELF-DISCOVER: Large Language Models Self-Compose Reasoning Structures"
+  ],
+  "paper_count": 493,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The observable behavior of a model generating a sequence of intermediate computations or reasoning steps (a scratchpad) before producing a final answer.",
+      "paper": "How Far Can Transformers Reason? The Globality Barrier and Inductive Scratchpad",
+      "original_name": "Intermediate step generation"
+    },
+    {
+      "text": "The observable model output of generating a sequence of intermediate steps that lead to a final answer.",
+      "paper": "Chain-of-Thought Reasoning Without Prompting",
+      "original_name": "Chain-of-thought generation"
+    },
+    {
+      "text": "The observable behavior of generating a sequence of intermediate steps or a rationale that leads to the final answer, typically prompted by a Chain-of-Thought strategy.",
+      "paper": "UDA: A Benchmark Suite for Retrieval Augmented Generation in Real-World Document Analysis",
+      "original_name": "Step-by-step reasoning"
+    },
+    {
+      "text": "The behavior of producing a chain of reasoning or explanation for a decision or confidence level when prompted.",
+      "paper": "MediQ: Question-Asking LLMs and a Benchmark for Reliable Interactive Clinical Reasoning",
+      "original_name": "Rationale generation"
+    },
+    {
+      "text": "The task of generating a step-by-step explanation (a 'chain of thought') that leads to the final answer for a complex reasoning problem, often involving both text and images.",
+      "paper": "What Factors Affect Multi-Modal In-Context Learning? An In-Depth Exploration",
+      "original_name": "Chain-of-thought reasoning"
+    },
+    {
+      "text": "The specific action of producing one or more candidate intermediate reasoning steps (thoughts) from a given state in a problem-solving process.",
+      "paper": "Chain of Preference Optimization: Improving Chain-of-Thought Reasoning in LLMs",
+      "original_name": "Thought generation"
+    },
+    {
+      "text": "The behavior of producing a detailed, sequential reasoning process (chain-of-thought) leading to a final answer for a given problem.",
+      "paper": "SciInstruct: a Self-Reflective Instruction Annotated Dataset for Training Scientific Language Models",
+      "original_name": "Step-by-step solution generation"
+    },
+    {
+      "text": "The behavior of generating a step-by-step explanation or sequence of intermediate thoughts (Chain-of-Thought) that leads from a problem statement to its solution.",
+      "paper": "Neuro-Symbolic Data Generation for Math Reasoning",
+      "original_name": "Reasoning path generation"
+    },
+    {
+      "text": "The observable behavior of generating a series of intermediate reasoning steps before producing a final answer.",
+      "paper": "On the Power of Decision Trees in Auto-Regressive Language Modeling",
+      "original_name": "Chain-of-thought computation"
+    },
+    {
+      "text": "The action of verbalizing a sequence of intermediate steps that lead to a final answer for a given problem.",
+      "paper": "Unlocking the Capabilities of Thought: A Reasoning Boundary Framework to Quantify and Optimize Chain-of-Thought",
+      "original_name": "Step-by-step reasoning generation"
+    },
+    {
+      "text": "Producing a short explanation of evidence and reasoning before giving the final answer.",
+      "paper": "Large Language Models' Expert-level Global History Knowledge Benchmark (HiST-LLM)",
+      "original_name": "Reasoning generation"
+    },
+    {
+      "text": "The observable act of autoregressively producing a sequence of reasoning steps from a given problem or prompt.",
+      "paper": "ReST-MCTS*: LLM Self-Training via Process Reward Guided Tree Search",
+      "original_name": "Reasoning trace generation"
+    },
+    {
+      "text": "A task requiring the model to follow a chain of references or reasoning steps across multiple points in a long document to find an answer.",
+      "paper": "FlexPrefill: A Context-Aware Sparse Attention Mechanism for Efficient Long-Sequence Inference",
+      "original_name": "Multi-hop tracing"
+    },
+    {
+      "text": "The generation of a structured reasoning process that includes both a high-level, generalized solution template and a detailed, step-by-step explanation of critical steps.",
+      "paper": "SuperCorrect: Advancing Small LLM Reasoning with Thought Template Distillation and Self-Correction",
+      "original_name": "Hierarchical thought generation"
+    },
+    {
+      "text": "The observable behavior of a model generating an explicit, step-by-step rationale to critique a solution before making a final correctness judgment.",
+      "paper": "Generative Verifiers: Reward Modeling as Next-Token Prediction",
+      "original_name": "Chain-of-thought verification"
+    },
+    {
+      "text": "The observable behavior of generating a sequence of intermediate steps to arrive at a solution for a complex problem.",
+      "paper": "Process Reward Model with Q-value Rankings",
+      "original_name": "Multi-step problem solving"
+    },
+    {
+      "text": "Combining information from multiple retrieved documents to reach an answer through an intermediate reasoning chain.",
+      "paper": "Speculative RAG: Enhancing Retrieval Augmented Generation through Drafting",
+      "original_name": "Multi-hop reasoning"
+    },
+    {
+      "text": "The observable process of generating a sequence of intermediate steps, or a reasoning trajectory, to solve a problem.",
+      "paper": "Mutual Reasoning Makes Smaller LLMs Stronger Problem-Solver",
+      "original_name": "Multi-step reasoning generation"
+    },
+    {
+      "text": "Solving problems that require chaining multiple inferential steps across modalities.",
+      "paper": "MMIE: Massive Multimodal Interleaved Comprehension Benchmark for Large Vision-Language Models",
+      "original_name": "Multi-step inference"
+    },
+    {
+      "text": "The process of generating a sequence of intermediate reasoning steps to reach a final answer.",
+      "paper": "TPO: Aligning Large Language Models with Multi-branch & Multi-step Preference Trees",
+      "original_name": "Multi-step reasoning"
+    },
+    {
+      "text": "The process of generating multiple, distinct reasoning trajectories from a single prompt or intermediate state.",
+      "paper": "TPO: Aligning Large Language Models with Multi-branch & Multi-step Preference Trees",
+      "original_name": "Multi-branch reasoning"
+    },
+    {
+      "text": "Selecting and sequencing actions over multiple steps to accomplish a task or instruction.",
+      "paper": "Rational Decision-Making Agent with Learning Internal Utility Judgment",
+      "original_name": "Multi-step decision-making"
+    },
+    {
+      "text": "The behavior of generating an explicit reasoning paragraph that identifies relevant passages and explains the rationale before producing the final answer.",
+      "paper": "Long-Context LLMs Meet RAG: Overcoming Challenges for Long Inputs in RAG",
+      "original_name": "Intermediate reasoning generation"
+    },
+    {
+      "text": "Outputting a step-by-step textual representation of explored states and actions during search.",
+      "paper": "System 1.x: Learning to Balance Fast and Slow Planning with Language Models",
+      "original_name": "Search trajectory verbalization"
+    },
+    {
+      "text": "An observable failure mode where the model produces responses that are irrelevant, in the wrong language, or otherwise fail to address the prompt's intent.",
+      "paper": "Language Imbalance Driven Rewarding for Multilingual Self-improving",
+      "original_name": "Off-target response generation"
+    },
+    {
+      "text": "The task of solving questions that require multi-step logical inference or detailed analysis.",
+      "paper": "DAMO: Decoding by Accumulating Activations Momentum for Mitigating Hallucinations in Vision-Language Models",
+      "original_name": "Complex Reasoning"
+    },
+    {
+      "text": "Generating stepwise reasoning outputs for a query when the prompt includes examples with intermediate steps.",
+      "paper": "Training Nonlinear Transformers for Chain-of-Thought Inference:  A Theoretical Generalization Analysis",
+      "original_name": "Chain-of-thought inference"
+    },
+    {
+      "text": "The observable behavior of carrying out a sequence of operations or steps to solve a problem.",
+      "paper": "KOR-Bench: Benchmarking Language Models on Knowledge-Orthogonal Reasoning Tasks",
+      "original_name": "Multi-step execution"
+    },
+    {
+      "text": "The observable behavior of producing a step-by-step textual explanation that details the logic leading to a specific prediction.",
+      "paper": "Reasoning-Enhanced Healthcare Predictions with Knowledge Graph Community Retrieval",
+      "original_name": "Reasoning chain generation"
+    },
+    {
+      "text": "The process where a model is given a video, a question, and the correct label, and is prompted to generate a step-by-step explanation for how to arrive at that label.",
+      "paper": "Video-STaR: Self-Training Enables Video Instruction Tuning with Any Supervision",
+      "original_name": "Label rationalization"
+    },
+    {
+      "text": "The behavior of generating a sequence of intermediate analytical steps or reasoning chains before producing a final answer, particularly when processing multiple documents.",
+      "paper": "Training Large Language Models for Retrieval-Augmented Question Answering through Backtracking Correction",
+      "original_name": "Stepwise reasoning"
+    },
+    {
+      "text": "The observable behavior of generating a textual explanation to justify a prediction, specifically in the context of the Legal Concept Entailment task.",
+      "paper": "Confidence v.s. Critique: A Decomposition of Self-Correction Capability forLLMs",
+      "original_name": "Reason generation"
+    },
+    {
+      "text": "Iteratively building a sequence of logically connected knowledge triples that support answering a given question.",
+      "paper": "LoGU: Long-form Generation with Uncertainty Expressions",
+      "original_name": "Reasoning chain construction"
+    },
+    {
+      "text": "Producing explicit, intermediate reasoning steps in natural language that reflect the agent\u2019s thought process before taking actions.",
+      "paper": "Aguvis: Unified Pure Vision Agents for Autonomous GUI Interaction",
+      "original_name": "Inner monologue generation"
+    },
+    {
+      "text": "Producing extended sequences of reasoning tokens that precede the final answer, often exceeding typical output lengths and demonstrating structured thought.",
+      "paper": "Demystifying Long Chain-of-Thought Reasoning",
+      "original_name": "Long chain-of-thought generation"
+    },
+    {
+      "text": "Producing step-by-step logical justifications or intermediate reasoning steps for question-answer pairs, enriching the knowledge base with explainable inference patterns.",
+      "paper": "Re-ranking Reasoning Context with Tree Search Makes Large Vision-Language Models Stronger",
+      "original_name": "Reasoning context generation"
+    },
+    {
+      "text": "The model's production of a fixed number of <THINK> tokens during output, simulating internal reasoning without explicit intermediate steps in the final answer.",
+      "paper": "On the Power of Context-Enhanced Learning in LLMs",
+      "original_name": "Silent chain-of-thought generation"
+    },
+    {
+      "text": "The observable behavior of generating intermediate reasoning steps in natural language before providing a final answer.",
+      "paper": "MAC-Tuning:LLMMulti-Compositional Problem Reasoning with Enhanced Knowledge Boundary Awareness",
+      "original_name": "Explicit Chain-of-Thought generation"
+    },
+    {
+      "text": "The observable behavior of explicitly generating natural language reasoning steps, such as arithmetic and logical checks, between generation stages to ensure constraint adherence.",
+      "paper": "Biased Tales: Cultural and Topic Bias in Generating Children\u2019s Stories",
+      "original_name": "Intermediate instruction generation"
+    },
+    {
+      "text": "Producing intermediate reasoning tokens (e.g., justifications, decompositions) before arriving at a final answer, often enclosed in specific tags.",
+      "paper": "Enhancing Reasoning Abilities of SmallLLMs with Cognitive Alignment",
+      "original_name": "Reasoning step generation"
+    },
+    {
+      "text": "Producing intermediate reasoning steps that justify the answer to a question, based on unlabeled input and task type.",
+      "paper": "OmniEval: An Omnidirectional and AutomaticRAGEvaluation Benchmark in Financial Domain",
+      "original_name": "Logic generation"
+    },
+    {
+      "text": "The observable behavior of generating a sequence of intermediate outputs that follow a prescribed procedural rubric, including tokenization, n-gram generation, and numerical computation.",
+      "paper": "DSVD: Dynamic Self-Verify Decoding for Faithful Generation in Large Language Models",
+      "original_name": "Step-by-step execution"
+    },
+    {
+      "text": "The behavior of generating a response that is segmented into logically discrete reasoning steps, often marked by transitional phrases like \"Step 1:\", \"Step 2:\", etc.",
+      "paper": "AROMA: Autonomous Rank-one Matrix Adaptation",
+      "original_name": "Structured response generation"
+    },
+    {
+      "text": "Autoregressively generating a sequence of continuous latent representations as intermediate reasoning steps before producing an answer.",
+      "paper": "MAC-Tuning:LLMMulti-Compositional Problem Reasoning with Enhanced Knowledge Boundary Awareness",
+      "original_name": "Continuous thought generation"
+    },
+    {
+      "text": "The observable behavior of generating a condensed chain-of-thought by selectively omitting tokens deemed less semantically important, thereby reducing the total output length.",
+      "paper": "Humanizing Machines: RethinkingLLMAnthropomorphism Through a Multi-Level Framework of Design",
+      "original_name": "Compressed chain-of-thought generation"
+    },
+    {
+      "text": "Producing a translation by first reasoning through the input in steps, such as reading the sentence and then translating it.",
+      "paper": "JOLT-SQL: Joint Loss Tuning of Text-to-SQLwith Confusion-aware Noisy Schema Sampling",
+      "original_name": "Chain-of-thought translation"
+    },
+    {
+      "text": "Producing explicit multi-step reasoning traces before the final answer, often with labeled planning, captioning, reasoning, and summary sections.",
+      "paper": "Robust Adaptation of Large Multimodal Models for Retrieval Augmented Hateful Meme Detection",
+      "original_name": "Structured chain-of-thought generation"
+    },
+    {
+      "text": "The observable behavior of producing a step-by-step reasoning rationale in natural language to solve a problem.",
+      "paper": "HydraOpt: Navigating the Efficiency-Performance Trade-off of Adapter Merging",
+      "original_name": "Natural language chain-of-thought generation"
+    },
+    {
+      "text": "Generating executable code snippets that represent the reasoning steps for solving a mathematical problem, which can be verified by an interpreter.",
+      "paper": "HydraOpt: Navigating the Efficiency-Performance Trade-off of Adapter Merging",
+      "original_name": "Program chain-of-thought generation"
+    },
+    {
+      "text": "The ability of a language model to solve complex problems by generating a sequence of intermediate, logical steps before providing a final answer.",
+      "paper": "Iteration Head: A Mechanistic Study of Chain-of-Thought",
+      "original_name": "Chain-of-Thought reasoning"
+    },
+    {
+      "text": "The model's ability to break down a problem into intermediate, sequential steps to arrive at a final solution, often by generating explicit intermediate text.",
+      "paper": "Paralinguistics-Aware Speech-Empowered Large Language Models for Natural Conversation",
+      "original_name": "Chain-of-reasoning"
+    },
+    {
+      "text": "The model's ability to benefit from or perform step-by-step reasoning when prompted to explain intermediate inference steps.",
+      "paper": "Large Language Models Meet Symbolic Provers for Logical Reasoning Evaluation",
+      "original_name": "Chain-of-thought capability"
+    },
+    {
+      "text": "The latent capability of a model to perform multi-step reasoning by generating intermediate steps when prompted with examples.",
+      "paper": "Training Nonlinear Transformers for Chain-of-Thought Inference:  A Theoretical Generalization Analysis",
+      "original_name": "Chain-of-Thought ability"
+    },
+    {
+      "text": "The latent ability of a model to infer and articulate a series of intermediate, unstated steps that connect an initial problem to a final solution, particularly for recovering missing actions from sparse instructions.",
+      "paper": "ThinkBot: Embodied Instruction Following with Thought Chain Reasoning",
+      "original_name": "Thought chain reasoning"
+    },
+    {
+      "text": "The inferred cognitive ability to understand and process sequences of information, such as the history of utterances in a dialogue, to determine an appropriate next action.",
+      "paper": "Q-SFT: Q-Learning for Language Models via Supervised Fine-Tuning",
+      "original_name": "Sequential reasoning"
+    },
+    {
+      "text": "The latent ability to perform a sequence of logical and mathematical steps to arrive at a solution for a quantitative problem.",
+      "paper": "Training on the Test Task Confounds Evaluation and Emergence",
+      "original_name": "Multistep mathematical reasoning"
+    },
+    {
+      "text": "The ability to solve complex problems by integrating multiple distinct reasoning steps or categories, such as combining fluent tracking with action executability.",
+      "paper": "ActionReasoningBench: Reasoning about Actions with and without Ramification Constraints",
+      "original_name": "Composite reasoning"
+    },
+    {
+      "text": "The ability to synthesize information spread across multiple sessions in order to answer questions that require aggregation or comparison.",
+      "paper": "LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory",
+      "original_name": "Multi-session reasoning"
+    },
+    {
+      "text": "The ability to perform sophisticated logical and inferential thinking to solve complex problems.",
+      "paper": "Neuron-based Multifractal Analysis of Neuron Interaction Dynamics in Large Models",
+      "original_name": "Complex reasoning"
+    },
+    {
+      "text": "The capacity to engage in complex cognitive processes that go beyond basic information retrieval, involving multiple steps or constraints.",
+      "paper": "WildBench: Benchmarking LLMs with Challenging Tasks from Real Users in the Wild",
+      "original_name": "Higher-order reasoning"
+    },
+    {
+      "text": "The ability to solve complex questions by integrating multiple pieces of knowledge through multi-step inference.",
+      "paper": "Think-on-Graph 2.0: Deep and Faithful Large Language Model Reasoning with Knowledge-guided Retrieval Augmented Generation",
+      "original_name": "Deep reasoning"
+    },
+    {
+      "text": "The capacity to maintain context and make a sequence of coherent decisions or inferences over multiple interaction turns with an external environment.",
+      "paper": "Building Math Agents with Multi-Turn Iterative Preference Learning",
+      "original_name": "Multi-turn reasoning"
+    },
+    {
+      "text": "The capability to perform tasks that require numerous sequential steps, where errors in any single step can lead to an incorrect final outcome.",
+      "paper": "TPO: Aligning Large Language Models with Multi-branch & Multi-step Preference Trees",
+      "original_name": "Long-chain reasoning"
+    },
+    {
+      "text": "The degree to which a model's explicit reasoning trace accurately reflects the true basis of its outputs.",
+      "paper": "On Targeted Manipulation and Deception when Optimizing LLMs for User Feedback",
+      "original_name": "Chain-of-thought faithfulness"
+    },
+    {
+      "text": "The ability to answer complex questions by finding, connecting, and synthesizing information from multiple distinct documents or evidence snippets.",
+      "paper": "SiReRAG: Indexing Similar and Related Information for Multihop Reasoning",
+      "original_name": "Multihop reasoning"
+    },
+    {
+      "text": "The latent ability to compose two factual associations (a \u2192 b and b \u2192 c) to infer a distant relationship (a \u2192 c), where one fact is newly learned and the other is pre-existing.",
+      "paper": "Extractive Structures Learned in Pretraining Enable Generalization on Finetuned Facts",
+      "original_name": "Two-hop reasoning"
+    },
+    {
+      "text": "The latent ability of an autonomous driving system to connect high-level decisions, such as 'the car should slow to a stop', with low-level control signals.",
+      "paper": "SafeAuto: Knowledge-Enhanced Safe Autonomous Driving with Multimodal Foundation Models",
+      "original_name": "High-level reasoning"
+    },
+    {
+      "text": "The latent extent to which a model generates extended, step-by-step reasoning before producing a final answer, reflecting the depth and thoroughness of its internal problem-solving process.",
+      "paper": "REACT: Representation Extraction And Controllable Tuning to Overcome Overfitting inLLMKnowledge Editing",
+      "original_name": "Reasoning length"
+    },
+    {
+      "text": "The latent capacity of LLMs to internally decompose composite tasks into subtasks and process them sequentially across network layers, even when intermediate steps are not expressed in output.",
+      "paper": "Understanding Subword Compositionality of Large Language Models",
+      "original_name": "Internal chain-of-thought"
+    },
+    {
+      "text": "The general reasoning capacity reflected in performance on hard benchmark tasks requiring multi-step inference.",
+      "paper": "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data",
+      "original_name": "Comprehensive reasoning"
+    },
+    {
+      "text": "The ability to perform complex cognitive operations beyond simple pattern matching, which is required for difficult tasks like forecasting and text generation.",
+      "paper": "FinBen: A Holistic Financial Benchmark for Large Language Models",
+      "original_name": "Advanced reasoning"
+    },
+    {
+      "text": "A general cognitive capability to solve problems by breaking them down into a sequence of intermediate steps or operations.",
+      "paper": "Iteration Head: A Mechanistic Study of Chain-of-Thought",
+      "original_name": "Multistep reasoning"
+    },
+    {
+      "text": "The ability to break down a problem into a sequence of smaller, manageable steps and solve them sequentially.",
+      "paper": "SELF-DISCOVER: Large Language Models Self-Compose Reasoning Structures",
+      "original_name": "Step-by-step thinking"
+    },
+    {
+      "text": "The capacity to carry out step-by-step problem solving using methods, inference rules, or solution procedures rather than only retrieving facts.",
+      "paper": "SQUiD: Synthesizing Relational Databases from Unstructured Text",
+      "original_name": "Procedural reasoning"
+    },
+    {
+      "text": "The ability to correctly perform the intermediate steps within a larger reasoning process, as opposed to only arriving at the final answer.",
+      "paper": "MakingVLMs More Robot-Friendly: Self-Critical Distillation of Low-Level Procedural Reasoning",
+      "original_name": "Intermediate reasoning"
+    },
+    {
+      "text": "A cognitive-like process of progressively refining an internal representation or prediction over multiple steps to capture more nuanced semantic details and cross-modal relationships.",
+      "paper": "RoT: Enhancing Table Reasoning with Iterative Row-Wise Traversals",
+      "original_name": "Iterative reasoning"
+    },
+    {
+      "text": "Generating intermediate reasoning steps before producing a final answer, often used to improve performance on complex reasoning tasks.",
+      "paper": "Predicting Emergent Abilities with Infinite Resolution Evaluation",
+      "original_name": "Chain-of-Thought Reasoning"
+    },
+    {
+      "text": "The emergent capability of a model to perform deep, structured natural language reasoning before generating formal outputs, enabling high-level planning and self-reflection in problem solving.",
+      "paper": "MA-LoT: Model-Collaboration Lean-based Long Chain-of-Thought Reasoning enhances Formal Theorem Proving",
+      "original_name": "Long Chain-of-Thought reasoning"
+    },
+    {
+      "text": "The ability to generate extended, coherent, and step-by-step reasoning processes to solve complex problems.",
+      "paper": "LVLMs are Bad at Overhearing Human Referential Communication",
+      "original_name": "Long chain-of-thought reasoning"
+    }
+  ],
+  "definition_count": 79,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mathematical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "MAmmoTH: Building Math Generalist Models through Hybrid Instruction Tuning",
+      "evidence": "Although recent large language models (LLMs) (Jiang et al., 2023; Dubey et al., 2024) have showcased extensive capabilities across various domains, they still face challenges with complex multi-step reasoning tasks such as mathematical problem-solving. (Section 1)",
+      "paper_count": 9,
+      "papers_by_conference": {
+        "iclr24": [
+          "MAmmoTH: Building Math Generalist Models through Hybrid Instruction Tuning"
+        ],
+        "neurips24": [
+          "RL on Incorrect Synthetic Data Scales the Efficiency of LLM Math Reasoning by Eight-Fold"
+        ],
+        "iclr25": [
+          "TPO: Aligning Large Language Models with Multi-branch & Multi-step Preference Trees"
+        ],
+        "naacl25": [
+          "A Logical Fallacy-Informed Framework for Argument Generation"
+        ],
+        "icml25": [
+          "Optimizing Language Models for Inference Time Objectives using Reinforcement Learning",
+          "Understanding Chain-of-Thought in LLMs through Information Theory",
+          "rStar-Math: Small LLMs Can Master Math Reasoning with Self-Evolved Deep Thinking",
+          "Bring Reason to Vision: Understanding Perception and Reasoning through Model Merging"
+        ],
+        "emnlp25": [
+          "Out of Sight, Not Out of Context? Egocentric Spatial Reasoning inVLMs Across Disjoint Frames"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mathematical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "UDA: A Benchmark Suite for Retrieval Augmented Generation in Real-World Document Analysis",
+      "evidence": "In the first stage, we extract hierarchical high-level and detailed thought templates from the teacher model to guide the student model in eliciting more fine-grained reasoning thoughts.",
+      "paper_count": 7,
+      "papers_by_conference": {
+        "neurips24": [
+          "UDA: A Benchmark Suite for Retrieval Augmented Generation in Real-World Document Analysis"
+        ],
+        "iclr25": [
+          "SuperCorrect: Advancing Small LLM Reasoning with Thought Template Distillation and Self-Correction",
+          "To CoT or not to CoT? Chain-of-thought helps mainly on math and symbolic reasoning",
+          "CoTFormer: A Chain of Thought Driven Architecture with Budget-Adaptive Computation Cost at Inference"
+        ],
+        "naacl25": [
+          "How Good AreLLMs for Literary Translation, Really? Literary Translation Evaluation with Humans andLLMs"
+        ],
+        "acl25": [
+          "Align-SLM: Textless Spoken Language Models with Reinforcement Learning fromAIFeedback"
+        ],
+        "icml25": [
+          "Think Smarter not Harder: Adaptive Reasoning with Inference Aware Optimization"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Seeking Neural Nuggets: Knowledge Transfer in Large Language Models from a Parametric Perspective",
+      "evidence": "",
+      "paper_count": 7,
+      "papers_by_conference": {
+        "iclr24": [
+          "Seeking Neural Nuggets: Knowledge Transfer in Large Language Models from a Parametric Perspective",
+          "Amortizing intractable inference in large language models"
+        ],
+        "neurips24": [
+          "OmniJARVIS: Unified Vision-Language-Action Tokenization Enables Open-World Instruction Following Agents"
+        ],
+        "iclr25": [
+          "Automatic Curriculum Expert Iteration for Reliable LLM Reasoning"
+        ],
+        "acl25": [
+          "Can Knowledge Graphs Make Large Language Models More Trustworthy? An Empirical Study Over Open-ended Question Answering"
+        ],
+        "icml25": [
+          "Bring Reason to Vision: Understanding Perception and Reasoning through Model Merging"
+        ],
+        "emnlp25": [
+          "CanLLMs Help You at Work? A Sandbox for EvaluatingLLMAgents in Enterprise Environments"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8k",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Generalization v.s. Memorization: Tracing Language Models\u2019 Capabilities Back to Pretraining Data",
+      "evidence": "",
+      "paper_count": 6,
+      "papers_by_conference": {
+        "iclr25": [
+          "Generalization v.s. Memorization: Tracing Language Models\u2019 Capabilities Back to Pretraining Data",
+          "Retrieval Head Mechanistically Explains Long-Context Factuality"
+        ],
+        "naacl25": [
+          "LBC: Language-Based-Classifier for Out-Of-Variable Generalization"
+        ],
+        "icml25": [
+          "The Logical Implication Steering Method for Conditional Interventions on Transformer Generation"
+        ],
+        "emnlp25": [
+          "UnCo: Uncertainty-Driven Collaborative Framework of Large and Small Models for Grounded MultimodalNER",
+          "MAIN: Mutual Alignment Is Necessary for instruction tuning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Complex reasoning",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Iteration Head: A Mechanistic Study of Chain-of-Thought",
+      "evidence": "",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "neurips24": [
+          "Iteration Head: A Mechanistic Study of Chain-of-Thought"
+        ],
+        "iclr25": [
+          "OmniKV: Dynamic Context Selection for Efficient Long-Context LLMs",
+          "Training Nonlinear Transformers for Chain-of-Thought Inference:  A Theoretical Generalization Analysis",
+          "TPO: Aligning Large Language Models with Multi-branch & Multi-step Preference Trees"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback",
+      "evidence": "",
+      "paper_count": 4,
+      "papers_by_conference": {
+        "neurips24": [
+          "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback",
+          "OmniJARVIS: Unified Vision-Language-Action Tokenization Enables Open-World Instruction Following Agents"
+        ],
+        "acl25": [
+          "InductionBench:LLMs Fail in the Simplest Complexity Class",
+          "Synthesizing Post-Training Data forLLMs through Multi-Agent Simulation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Interpretability and explainability",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Reasoning-Enhanced Healthcare Predictions with Knowledge Graph Community Retrieval",
+      "evidence": "Con-J ensures natural interpretability through the generated rationales supporting the judgments (Abstract).",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr25": [
+          "Reasoning-Enhanced Healthcare Predictions with Knowledge Graph Community Retrieval"
+        ],
+        "acl25": [
+          "Learning Together to Perform Better: Teaching Small-ScaleLLMs to Collaborate via Preferential Rationale Tuning"
+        ],
+        "icml25": [
+          "Modularized Self-Reflected Video Reasoner for Multimodal LLM with Application to Video Question Answering"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Video-STaR: Self-Training Enables Video Instruction Tuning with Any Supervision",
+      "evidence": "Label Rationalization is more prone to hallucinations, so we prefer direct Answer Generation and use rationalizations only if answer generation fails (Sec. 2.2).",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Video-STaR: Self-Training Enables Video Instruction Tuning with Any Supervision"
+        ],
+        "acl25": [
+          "A Multi-persona Framework for Argument Quality Assessment"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8k",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "DoLa: Decoding by Contrasting Layers Improves Factuality in Large Language Models",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr24": [
+          "DoLa: Decoding by Contrasting Layers Improves Factuality in Large Language Models"
+        ],
+        "neurips24": [
+          "Iterative Reasoning Preference Optimization"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Commonsense knowledge",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Training Nonlinear Transformers for Chain-of-Thought Inference:  A Theoretical Generalization Analysis",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Training Nonlinear Transformers for Chain-of-Thought Inference:  A Theoretical Generalization Analysis",
+          "ReGenesis: LLMs can Grow into Reasoning Generalists via Self-Improvement"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Tool use",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Amortizing intractable inference in large language models",
+      "evidence": "we opt for the framework of the ReAct agent that performs step-by-step reasoning for tool usage based on observations of previous steps.",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr24": [
+          "Amortizing intractable inference in large language models"
+        ],
+        "iclr25": [
+          "Rational Decision-Making Agent with Learning Internal Utility Judgment"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "OCEAN: Offline Chain-of-thought Evaluation and Alignment in Large Language Models",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "OCEAN: Offline Chain-of-thought Evaluation and Alignment in Large Language Models"
+        ],
+        "emnlp25": [
+          "Mixture of Length and Pruning Experts for Knowledge Graphs Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Symbolic reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "To CoT or not to CoT? Chain-of-thought helps mainly on math and symbolic reasoning",
+      "evidence": "Large Language Models (LLMs) have achieved significant advancements in tackling complex reasoning tasks (Zhou et al., 2023; Yao et al., 2023; Besta et al., 2023), such as mathematics(Imani et al., 2023; Cobbe et al., 2021; Yuan et al., 2023) and symbolic logic(Patel et al., 2021; Srivastava et al., 2022; Ling et al., 2017), by adopting the innovative Chain-of-Thought (CoT) prompting strategy (Wei et al., 2022)... (Section 1)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "To CoT or not to CoT? Chain-of-thought helps mainly on math and symbolic reasoning"
+        ],
+        "acl25": [
+          "Align-SLM: Textless Spoken Language Models with Reinforcement Learning fromAIFeedback"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Slow thinking",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Dualformer: Controllable Fast and Slow Thinking by Learning with Randomized Reasoning Traces",
+      "evidence": "These strategies encourage longer Chain-of-Thought (CoT) to handle more complex queries, mimicking human-like reflection and correction mechanisms to improve reasoning (Section 1).",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "Dualformer: Controllable Fast and Slow Thinking by Learning with Randomized Reasoning Traces"
+        ],
+        "acl25": [
+          "PKU-SafeRLHF: Towards Multi-Level Safety Alignment forLLMs with Human Preference"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-as-a-judge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Revisiting Chain-of-Thought in Code Generation: Do Language Models Need to Learn Reasoning before Coding?",
+      "evidence": "we adopt a pairwise comparison approach, where an LLM evaluates a question alongside two answers and determines which response is of higher quality. (Section 6.4)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "icml25": [
+          "Revisiting Chain-of-Thought in Code Generation: Do Language Models Need to Learn Reasoning before Coding?"
+        ],
+        "emnlp25": [
+          "NormGenesis: Multicultural Dialogue Generation via Exemplar-Guided Social Norm Modeling and Violation Recovery"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Backtracking",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Can Transformers Reason Logically? A Study in SAT Solving",
+      "evidence": "The Transformer model simulates logical assumption, deduction, and backtracking by generating new tokens and ultimately outputs a SAT/UNSAT label as the result of the 3-SAT decision problem.",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "icml25": [
+          "Can Transformers Reason Logically? A Study in SAT Solving",
+          "Demystifying Long Chain-of-Thought Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Backtracking",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Demystifying Long Chain-of-Thought Reasoning",
+      "evidence": "The backtrack operation involves multiple actions, as the policy specifies how many steps to backtrack.",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "icml25": [
+          "Demystifying Long Chain-of-Thought Reasoning",
+          "Can Transformers Reason Logically? A Study in SAT Solving"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "StrategyQA",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "DoLa: Decoding by Contrasting Layers Improves Factuality in Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "DoLa: Decoding by Contrasting Layers Improves Factuality in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Complex reasoning",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "DQ-LoRe: Dual Queries with Low Rank Approximation Re-ranking for In-Context Learning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "DQ-LoRe: Dual Queries with Low Rank Approximation Re-ranking for In-Context Learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Commonsense reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "TPO: Aligning Large Language Models with Multi-branch & Multi-step Preference Trees",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "TPO: Aligning Large Language Models with Multi-branch & Multi-step Preference Trees"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Logical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Understanding Chain-of-Thought in LLMs through Information Theory",
+      "evidence": "\u201cAnother failure mode multi-branch reasoning, i.e. in keeping track of multiple reasoning traces that could lead to valid solutions.\u201d",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Understanding Chain-of-Thought in LLMs through Information Theory"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Self-consistency",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Upsample or Upweight? Balanced Training on Heavily Imbalanced Datasets",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Upsample or Upweight? Balanced Training on Heavily Imbalanced Datasets"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "In-context learning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Synthetic Socratic Debates: Examining Persona Effects on Moral Decision and Persuasion Dynamics",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Synthetic Socratic Debates: Examining Persona Effects on Moral Decision and Persuasion Dynamics"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "StrategyQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MAIN: Mutual Alignment Is Necessary for instruction tuning",
+      "evidence": "Following prior work (Zhang et al., 2024a; Chuang et al., 2023), we evaluate chain-of-thought reasoning capabilities using StrategyQA (Geva et al., 2021) and GSM8K (Cobbe et al., 2021). (Section 3.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "MAIN: Mutual Alignment Is Necessary for instruction tuning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Compositional reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Teaching Arithmetic to Small Transformers",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Teaching Arithmetic to Small Transformers"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ScienceQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "What Factors Affect Multi-Modal In-Context Learning? An In-Depth Exploration",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "What Factors Affect Multi-Modal In-Context Learning? An In-Depth Exploration"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Evaluation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Cooperative or Competitive? Understanding the Interaction between Attention Heads From A Game Theory Perspective",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Cooperative or Competitive? Understanding the Interaction between Attention Heads From A Game Theory Perspective"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Self-correction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Think Smarter not Harder: Adaptive Reasoning with Inference Aware Optimization",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Think Smarter not Harder: Adaptive Reasoning with Inference Aware Optimization"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction following",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "CART: A Generative Cross-Modal Retrieval Framework With Coarse-To-Fine Semantic Modeling",
+      "evidence": "By leveraging the strong instruction-following abilities of large language models, INSTRUCTRAG generates detailed rationales that articulate how the ground-truth answers can be derived from the retrieved documents. (Section 5)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "CART: A Generative Cross-Modal Retrieval Framework With Coarse-To-Fine Semantic Modeling"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Active information gathering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Can large language models explore in-context?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Can large language models explore in-context?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Retrieval Head Mechanistically Explains Long-Context Factuality",
+      "evidence": "To examine how retrieval heads effect reasoning tasks, we test Mistrial-7B-Instruct-v0.2 on MMLU (Hendrycks et al., 2020), MuSiQue and GSM8K (Cobbe et al., 2021), with and without chain-of-thought (CoT) reasoning. (Section 4.3)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Retrieval Head Mechanistically Explains Long-Context Factuality"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Direct answer generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "MIO: A Foundation Model on Multimodal Tokens",
+      "evidence": "DART (Distilling Autoregressive Reasoning to Silent Thought), a novel framework that enables the LLMs to internalize the autoregressive CoT into non-autoregressive Silent Thought (ST) with an excellent efficiency-efficacy trade-off. (Section 1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "MIO: A Foundation Model on Multimodal Tokens"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Pattern recognition",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Chain of Thoughtlessness? An Analysis of CoT in Planning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Chain of Thoughtlessness? An Analysis of CoT in Planning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Speech synthesis",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Paralinguistics-Aware Speech-Empowered Large Language Models for Natural Conversation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Paralinguistics-Aware Speech-Empowered Large Language Models for Natural Conversation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Answer generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "LBC: Language-Based-Classifier for Out-Of-Variable Generalization",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "LBC: Language-Based-Classifier for Out-Of-Variable Generalization"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM Evaluation Harness",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "A Careful Examination of Large Language Model Performance on Grade School Arithmetic",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "A Careful Examination of Large Language Model Performance on Grade School Arithmetic"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "LoGU: Long-form Generation with Uncertainty Expressions",
+      "evidence": "Asking the Constructor to complete the whole chain reduces hallucination, and avoids a sub-optimal greedy approach. (Section 3.2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "LoGU: Long-form Generation with Uncertainty Expressions"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Label prediction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Reasoning-Enhanced Healthcare Predictions with Knowledge Graph Community Retrieval",
+      "evidence": "We fine-tune a relatively small local LLM (e.g., a 7B-parameter model) to perform both reasoning chain generation and label prediction for each patient p and healthcare prediction task \u03c4 (such as mortality or readmission prediction). (Section 3.3.2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Reasoning-Enhanced Healthcare Predictions with Knowledge Graph Community Retrieval"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Task decomposition",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Modularized Self-Reflected Video Reasoner for Multimodal LLM with Application to Video Question Answering",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Modularized Self-Reflected Video Reasoner for Multimodal LLM with Application to Video Question Answering"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Response quality",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Learning How Hard to Think: Input-Adaptive Allocation of LM Computation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Learning How Hard to Think: Input-Adaptive Allocation of LM Computation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Logical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "To CoT or not to CoT? Chain-of-thought helps mainly on math and symbolic reasoning",
+      "evidence": "Finding 1: CoT only helps substantially on problems requiring mathematical, logical, or algorithmic reasoning. (Section 1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "To CoT or not to CoT? Chain-of-thought helps mainly on math and symbolic reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Algorithmic reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "To CoT or not to CoT? Chain-of-thought helps mainly on math and symbolic reasoning",
+      "evidence": "Finding 1: CoT only helps substantially on problems requiring mathematical, logical, or algorithmic reasoning. (Section 1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "To CoT or not to CoT? Chain-of-thought helps mainly on math and symbolic reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LongMemEval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "LASER",
+      "other_type": "measurements",
+      "relationship_type": "causes",
+      "paper": "Distributional Associations vs In-Context Reasoning: A Study of Feed-forward and Attention Layers",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Distributional Associations vs In-Context Reasoning: A Study of Feed-forward and Attention Layers"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MuSiQue",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Retrieval Head Mechanistically Explains Long-Context Factuality",
+      "evidence": "HotpotQA (Yang et al., 2018), 2WikiMultihopQA (Ho et al., 2020), and MuSiQue (Trivedi et al., 2021) can be applied to evaluate the multi-step reasoning performance of LLMs. (Section 2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Retrieval Head Mechanistically Explains Long-Context Factuality"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Demystifying Long Chain-of-Thought Reasoning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Demystifying Long Chain-of-Thought Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Majority voting",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Optimizing Language Models for Inference Time Objectives using Reinforcement Learning",
+      "evidence": "In general, majority voting is applicable if the generation y = (c, a) can be decomposed into a chain-of-thought c and a final answer a. (Section 2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Optimizing Language Models for Inference Time Objectives using Reinforcement Learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Chain-of-thought prompting",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Large Language Models Meet Symbolic Provers for Logical Reasoning Evaluation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Large Language Models Meet Symbolic Provers for Logical Reasoning Evaluation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Information retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Retrieval Head Mechanistically Explains Long-Context Factuality",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Retrieval Head Mechanistically Explains Long-Context Factuality"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "G-Eval",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Token-based Decision Criteria Are Suboptimal in In-context Learning",
+      "evidence": "Furthermore, we report G-EVAL (Liu et al., 2023a), an auto-CoT prompting framework, and the current state-of-the-art in NLG evaluation. (Section 5.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Token-based Decision Criteria Are Suboptimal in In-context Learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Answer generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "TinyThinker: Distilling Reasoning through Coarse-to-Fine Knowledge Internalization with Self-Reflection",
+      "evidence": "We utilize Chain-of-Thought (CoT) (Wei et al., 2022) reasoning to link individual pieces of evidence that form a coherent step-by-step narrative, ensuring that the answer is not only accurate but also logically derived from the evidence, leading to more robust and reliable responses. (Section 5.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "TinyThinker: Distilling Reasoning through Coarse-to-Fine Knowledge Internalization with Self-Reflection"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MedQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LBC: Language-Based-Classifier for Out-Of-Variable Generalization",
+      "evidence": "We use one dataset from each of these categories for fine-tuning the LLM and we use all the datasets to evaluate the effect of fine-tuning on the given dataset... i) MedQA (Jin et al., 2021): Multiple choice question answers from the United States Medical License Exams (USMLE)... (Section 4)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "LBC: Language-Based-Classifier for Out-Of-Variable Generalization"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MedMCQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LBC: Language-Based-Classifier for Out-Of-Variable Generalization",
+      "evidence": "We use one dataset from each of these categories for fine-tuning the LLM and we use all the datasets to evaluate the effect of fine-tuning on the given dataset... ii) MedMCQA (Pal et al., 2022): Multiple choice question answers from the All India Institute of Medical Sciences (AIIMS) and National Eligibility cum Entrance Exam (NEET)... (Section 4)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "LBC: Language-Based-Classifier for Out-Of-Variable Generalization"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CosmosQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LBC: Language-Based-Classifier for Out-Of-Variable Generalization",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "LBC: Language-Based-Classifier for Out-Of-Variable Generalization"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Interpretability and explainability",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "SATER: A Self-Aware and Token-Efficient Approach to Routing and Cascading",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "SATER: A Self-Aware and Token-Efficient Approach to Routing and Cascading"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reward hacking",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "KatFishNet: DetectingLLM-GeneratedKorean Text through Linguistic Feature Analysis",
+      "evidence": "Our analysis shows that CoT reasoning is crucial for unlocking DPO\u2019s potential, as it mitigates reward hacking, strengthens discriminative capabilities, and improves scalability. (Section 5.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "KatFishNet: DetectingLLM-GeneratedKorean Text through Linguistic Feature Analysis"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Scalability",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "KatFishNet: DetectingLLM-GeneratedKorean Text through Linguistic Feature Analysis",
+      "evidence": "Our analysis shows that CoT reasoning is crucial for unlocking DPO\u2019s potential, as it mitigates reward hacking, strengthens discriminative capabilities, and improves scalability. (Section 5.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "KatFishNet: DetectingLLM-GeneratedKorean Text through Linguistic Feature Analysis"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AIME",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Beyond Logits: Aligning Feature Dynamics for Effective Knowledge Distillation",
+      "evidence": "We assess both models on the challenging American Invitational Mathematics Examination (AIME 24) benchmark. (Section 3.3, Chain-of-Thought Reasoning Evaluation).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Beyond Logits: Aligning Feature Dynamics for Effective Knowledge Distillation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Molecule understanding",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Learning Together to Perform Better: Teaching Small-ScaleLLMs to Collaborate via Preferential Rationale Tuning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Learning Together to Perform Better: Teaching Small-ScaleLLMs to Collaborate via Preferential Rationale Tuning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AIME 2024",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Slim-SC: Thought Pruning for Efficient Scaling with Self-Consistency",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Slim-SC: Thought Pruning for Efficient Scaling with Self-Consistency"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Critique",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Demystifying Long Chain-of-Thought Reasoning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Demystifying Long Chain-of-Thought Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Code generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Revisiting Chain-of-Thought in Code Generation: Do Language Models Need to Learn Reasoning before Coding?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Revisiting Chain-of-Thought in Code Generation: Do Language Models Need to Learn Reasoning before Coding?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Task generalization",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Task Generalization with Autoregressive Compositional Structure: Can Learning from $D$ Tasks Generalize to $D^T$ Tasks?",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Task Generalization with Autoregressive Compositional Structure: Can Learning from $D$ Tasks Generalize to $D^T$ Tasks?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Memorization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "2025.emnlp-main.157.checklist",
+      "evidence": "Paper title: Diagnosing Memorization in Chain-of-Thought Reasoning, One Token at a Time",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "2025.emnlp-main.157.checklist"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Chemical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Foundation Molecular Grammar: Multi-Modal Foundation Models Induce Interpretable Molecular Graph Languages",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Foundation Molecular Grammar: Multi-Modal Foundation Models Induce Interpretable Molecular Graph Languages"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Re-ranking Reasoning Context with Tree Search Makes Large Vision-Language Models Stronger",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Re-ranking Reasoning Context with Tree Search Makes Large Vision-Language Models Stronger"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Safety",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "STAIR: Improving Safety Alignment with Introspective Reasoning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "STAIR: Improving Safety Alignment with Introspective Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH-500",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Slim-SC: Thought Pruning for Efficient Scaling with Self-Consistency",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Slim-SC: Thought Pruning for Efficient Scaling with Self-Consistency"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Machine translation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "DIWALI- Diversity and Inclusivity aWare cuLture specific Items forIndia: Dataset and Assessment ofLLMs for Cultural Text Adaptation inIndian Context",
+      "evidence": "This indicates that the reasoning-based approach of LLMs can generate more accurate translations across multiple domains. (Section 3.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "DIWALI- Diversity and Inclusivity aWare cuLture specific Items forIndia: Dataset and Assessment ofLLMs for Cultural Text Adaptation inIndian Context"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MR-GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MakingVLMs More Robot-Friendly: Self-Critical Distillation of Low-Level Procedural Reasoning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "MakingVLMs More Robot-Friendly: Self-Critical Distillation of Low-Level Procedural Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Post-hoc rationalization",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Where Confabulation Lives: Latent Feature Discovery inLLMs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Where Confabulation Lives: Latent Feature Discovery inLLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Trojsten Benchmark",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Retrieving Support to Rank Answers in Open-Domain Question Answering",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Retrieving Support to Rank Answers in Open-Domain Question Answering"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GPQA-Diamond",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Slim-SC: Thought Pruning for Efficient Scaling with Self-Consistency",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Slim-SC: Thought Pruning for Efficient Scaling with Self-Consistency"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 73,
+  "incoming_relationship_count": 5,
+  "outgoing_relationship_count": 68,
+  "characterization": "Across the surveyed literature, Chain-of-thought reasoning is predominantly characterized as the observable behavior of a model generating a sequence of intermediate steps before producing a final answer, described with terms like \"step-by-step reasoning,\" \"rationale generation,\" and \"reasoning path generation.\" However, a notable portion of the work also defines it as a latent construct, referring to a model's underlying \"capability\" or \"ability\" for multi-step or complex reasoning. This behavior is commonly elicited through prompting strategies, such as providing in-context examples or explicit instructions like \"Let\u2019s think step by step.\" The field operationalizes and measures this behavior using a wide array of benchmarks, with a frequent focus on mathematical and logical reasoning tasks, including GSM8k, StrategyQA, and MuSiQue. Generating these intermediate steps is widely reported to improve performance on complex tasks, most notably mathematical reasoning, but also symbolic, logical, and algorithmic reasoning, and is also cited as enhancing interpretability. The generated output can take various forms, from natural language explanations and executable code snippets (\"Program chain-of-thought generation\") to latent or non-verbalized steps (\"Silent chain-of-thought generation\"). The concept is frequently studied in relation to tool use, self-consistency, and faithfulness, and is sometimes investigated for its connection to failure modes like hallucination.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "A Careful Examination of Large Language Model Performance on Grade School Arithmetic",
+      "ActionAtlas: A VideoQA Benchmark for Domain-specialized Action Recognition",
+      "Adaptable Logical Control for Large Language Models",
+      "Automating Dataset Updates Towards Reliable and Timely Evaluation of Large Language Models",
+      "Calibrating Reasoning in Language Models with Internal Consistency",
+      "Can LLMs Learn by Teaching for Better Reasoning? A Preliminary Study",
+      "Can large language models explore in-context?",
+      "Chain of Preference Optimization: Improving Chain-of-Thought Reasoning in LLMs",
+      "Chain-of-Thought Reasoning Without Prompting",
+      "Decompose, Analyze and Rethink: Solving Intricate Problems with Human-like Reasoning Cycle",
+      "Diffusion of Thought: Chain-of-Thought Reasoning in Diffusion Language Models",
+      "ERBench: An Entity-Relationship based Automatically Verifiable Hallucination Benchmark for Large Language Models",
+      "Easy-to-Hard Generalization: Scalable Alignment Beyond Human Supervision",
+      "How Far Can Transformers Reason? The Globality Barrier and Inductive Scratchpad",
+      "Information Re-Organization Improves Reasoning in Large Language Models",
+      "Instance-adaptive Zero-shot Chain-of-Thought Prompting",
+      "Iterative Reasoning Preference Optimization",
+      "Large Language Models' Expert-level Global History Knowledge Benchmark (HiST-LLM)",
+      "Limits of Transformer Language Models on Learning to Compose Algorithms",
+      "MR-Ben: A Meta-Reasoning Benchmark for Evaluating System-2 Thinking in LLMs",
+      "MediQ: Question-Asking LLMs and a Benchmark for Reliable Interactive Clinical Reasoning",
+      "Neuro-Symbolic Data Generation for Math Reasoning",
+      "Noise Contrastive Alignment of Language Models with Explicit Rewards",
+      "OlympicArena: Benchmarking Multi-discipline Cognitive Reasoning for Superintelligent AI",
+      "OmniJARVIS: Unified Vision-Language-Action Tokenization Enables Open-World Instruction Following Agents",
+      "On the Power of Decision Trees in Auto-Regressive Language Modeling",
+      "RL on Incorrect Synthetic Data Scales the Efficiency of LLM Math Reasoning by Eight-Fold",
+      "ReFT: Representation Finetuning for Language Models",
+      "ReST-MCTS*: LLM Self-Training via Process Reward Guided Tree Search",
+      "SLED: Self Logits Evolution Decoding for Improving Factuality in Large Language Models",
+      "SPIQA: A Dataset for Multimodal Question Answering on Scientific Papers",
+      "SciInstruct: a Self-Reflective Instruction Annotated Dataset for Training Scientific Language Models",
+      "UDA: A Benchmark Suite for Retrieval Augmented Generation in Real-World Document Analysis",
+      "Unlocking the Capabilities of Thought: A Reasoning Boundary Framework to Quantify and Optimize Chain-of-Thought",
+      "Unpacking DPO and PPO: Disentangling Best Practices for Learning from Preference Feedback",
+      "VLM4Bio: A Benchmark Dataset to Evaluate Pretrained Vision-Language Models for Trait Discovery from Biological Images",
+      "Web-Scale Visual Entity Recognition: An LLM-Driven Data Approach",
+      "What Factors Affect Multi-Modal In-Context Learning? An In-Depth Exploration",
+      "Compositional 3D-aware Video Generation with LLM Director",
+      "Iteration Head: A Mechanistic Study of Chain-of-Thought",
+      "Measuring Multimodal Mathematical Reasoning with MATH-Vision Dataset",
+      "Paralinguistics-Aware Speech-Empowered Large Language Models for Natural Conversation",
+      "Towards a Theoretical Understanding of the 'Reversal Curse' via Training Dynamics",
+      "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data",
+      "Chain of Agents: Large Language Models Collaborating on Long-Context Tasks",
+      "DART-Math: Difficulty-Aware Rejection Tuning for Mathematical Problem-Solving",
+      "DeiSAM: Segment Anything with Deictic Prompting",
+      "Divide-and-Conquer Meets Consensus: Unleashing the Power of Functions in Code Generation",
+      "FinBen: A Holistic Financial Benchmark for Large Language Models",
+      "MMScan: A Multi-Modal 3D Scene Dataset with Hierarchical Grounded Language Annotations",
+      "NYU CTF Bench: A Scalable Open-Source Benchmark Dataset for Evaluating LLMs in Offensive Security",
+      "Neuro-Vision to Language: Enhancing Brain Recording-based Visual Reconstruction and Language Interaction",
+      "On the Effects of Data Scale on UI Control Agents",
+      "StrategyLLM: Large Language Models as Strategy Generators, Executors, Optimizers, and Evaluators for Problem Solving",
+      "Transformers Can Do Arithmetic with the Right Embeddings",
+      "SELF-DISCOVER: Large Language Models Self-Compose Reasoning Structures"
+    ],
+    "iclr25": [
+      "Accelerating Inference of Retrieval-Augmented Generation via Sparse Context Selection",
+      "Advancing Mathematical Reasoning in Language Models: The Impact of Problem-Solving Data, Data Synthesis Methods, and Training Stages",
+      "Ask, and it shall be given: On the Turing completeness of prompting",
+      "Can LLMs Solve Longer Math Word Problems Better?",
+      "Can LLMs Understand Time Series Anomalies?",
+      "Can We Trust Embodied Agents? Exploring Backdoor Attacks against Embodied LLM-Based Decision-Making Systems",
+      "Chain-of-Thought Provably Enables Learning the (Otherwise) Unlearnable",
+      "CoTFormer: A Chain of Thought Driven Architecture with Budget-Adaptive Computation Cost at Inference",
+      "Correlation and Navigation in the Vocabulary Key Representation Space of Language Models",
+      "DAMO: Decoding by Accumulating Activations Momentum for Mitigating Hallucinations in Vision-Language Models",
+      "DOTS: Learning to Reason Dynamically in LLMs via Optimal Reasoning Trajectories Search",
+      "DeFT: Decoding with Flash Tree-attention for Efficient Tree-structured LLM Inference",
+      "DeepSeek-Prover-V1.5: Harnessing Proof Assistant Feedback for Reinforcement Learning and Monte-Carlo Tree Search",
+      "Distributional Associations vs In-Context Reasoning: A Study of Feed-forward and Attention Layers",
+      "Does Refusal Training in LLMs Generalize to the Past Tense?",
+      "Don't Take Things Out of Context: Attention Intervention for Enhancing Chain-of-Thought Reasoning in Large Language Models",
+      "Dualformer: Controllable Fast and Slow Thinking by Learning with Randomized Reasoning Traces",
+      "Empowering LLM Agents with Zero-Shot Optimal Decision-Making through Q-learning",
+      "Enhancing Graph Of Thought: Enhancing Prompts with LLM Rationales and Dynamic Temperature Control",
+      "FlexPrefill: A Context-Aware Sparse Attention Mechanism for Efficient Long-Sequence Inference",
+      "Forking Paths in Neural Text Generation",
+      "From Artificial Needles to Real Haystacks: Improving Retrieval Capabilities in LLMs by Finetuning on Synthetic Data",
+      "From Few to Many: Self-Improving Many-Shot Reasoners Through Iterative Optimization and Generation",
+      "GReaTer: Gradients Over Reasoning Makes Smaller Language Models Strong Prompt Optimizers",
+      "GameArena: Evaluating LLM Reasoning through Live Computer Games",
+      "Generalization v.s. Memorization: Tracing Language Models\u2019 Capabilities Back to Pretraining Data",
+      "Generalizing Reasoning Problems to Longer Lengths",
+      "Generative Verifiers: Reward Modeling as Next-Token Prediction",
+      "Holistic Reasoning with Long-Context LMs: A Benchmark for Database Operations on Massive Textual Data",
+      "Improving Complex Reasoning with Dynamic Prompt Corruption: A Soft Prompt Optimization Approach",
+      "Improving Reasoning Performance in Large Language Models via Representation Engineering",
+      "Inference Scaling Laws: An Empirical Analysis of Compute-Optimal Inference for LLM Problem-Solving",
+      "InstructRAG: Instructing Retrieval-Augmented Generation via Self-Synthesized Rationales",
+      "It Helps to Take a Second Opinion: Teaching Smaller LLMs To Deliberate Mutually via Selective Rationale Optimisation",
+      "KOR-Bench: Benchmarking Language Models on Knowledge-Orthogonal Reasoning Tasks",
+      "Language Imbalance Driven Rewarding for Multilingual Self-improving",
+      "Large (Vision) Language Models are Unsupervised In-Context Learners",
+      "Large Language Models Meet Symbolic Provers for Logical Reasoning Evaluation",
+      "Lean-STaR: Learning to Interleave Thinking and Proving",
+      "Learning How Hard to Think: Input-Adaptive Allocation of LM Computation",
+      "Learning LLM-as-a-Judge for Preference Alignment",
+      "Limits of Deep Learning: Sequence Modeling through the Lens of Complexity Theory",
+      "Long-Context LLMs Meet RAG: Overcoming Challenges for Long Inputs in RAG",
+      "LongPO: Long Context Self-Evolution of Large Language Models through Short-to-Long Preference Optimization",
+      "MAVIS: Mathematical Visual Instruction Tuning with an Automatic Data Engine",
+      "MMIE: Massive Multimodal Interleaved Comprehension Benchmark for Large Vision-Language Models",
+      "MathGAP: Out-of-Distribution Evaluation on Problems with Arbitrarily Complex Proofs",
+      "Multi-modal Agent Tuning: Building a VLM-Driven Agent for Efficient Tool Usage",
+      "Mutual Reasoning Makes Smaller LLMs Stronger Problem-Solver",
+      "OCEAN: Offline Chain-of-thought Evaluation and Alignment in Large Language Models",
+      "OmniKV: Dynamic Context Selection for Efficient Long-Context LLMs",
+      "OmnixR: Evaluating Omni-modality Language Models on Reasoning across Modalities",
+      "OpenMathInstruct-2: Accelerating AI for Math with Massive Open-Source Instruction Data",
+      "Physics of Language Models: Part 2.1, Grade-School Math and the Hidden Reasoning Process",
+      "Physics of Language Models: Part 2.2, How to Learn From Mistakes on Grade-School Math Problems",
+      "Procedural Knowledge in Pretraining Drives Reasoning in Large Language Models",
+      "Process Reward Model with Q-value Rankings",
+      "RNNs are not Transformers (Yet):  The Key Bottleneck on In-Context Retrieval",
+      "Rational Decision-Making Agent with Learning Internal Utility Judgment",
+      "ReGenesis: LLMs can Grow into Reasoning Generalists via Self-Improvement",
+      "Reasoning with Latent Thoughts: On the Power of Looped Transformers",
+      "Reasoning-Enhanced Healthcare Predictions with Knowledge Graph Community Retrieval",
+      "Rewarding Progress: Scaling Automated Process Verifiers for LLM Reasoning",
+      "SBSC: Step-by-Step Coding for Improving Mathematical Olympiad Performance",
+      "SCBench: A KV Cache-Centric Analysis of Long-Context Methods",
+      "Scaling Instruction-tuned LLMs to Million-token Contexts via Hierarchical Synthetic Data Generation",
+      "Scaling Long Context Training Data by Long-Distance Referrals",
+      "SePer: Measure Retrieval Utility Through The Lens Of Semantic Perplexity Reduction",
+      "Smaller, Weaker, Yet Better: Training LLM Reasoners via Compute-Optimal Sampling",
+      "Speculative RAG: Enhancing Retrieval Augmented Generation through Drafting",
+      "SuperCorrect: Advancing Small LLM Reasoning with Thought Template Distillation and Self-Correction",
+      "System 1.x: Learning to Balance Fast and Slow Planning with Language Models",
+      "TPO: Aligning Large Language Models with Multi-branch & Multi-step Preference Trees",
+      "The Unreasonable Ineffectiveness of the Deeper Layers",
+      "Think-on-Graph 2.0: Deep and Faithful Large Language Model Reasoning with Knowledge-guided Retrieval Augmented Generation",
+      "To CoT or not to CoT? Chain-of-thought helps mainly on math and symbolic reasoning",
+      "Training Large Language Models for Retrieval-Augmented Question Answering through Backtracking Correction",
+      "Training Nonlinear Transformers for Chain-of-Thought Inference:  A Theoretical Generalization Analysis",
+      "Transformers Provably Solve Parity Efficiently with Chain of Thought",
+      "Turning Up the Heat: Min-p Sampling for Creative and Coherent LLM Outputs",
+      "Uncovering Overfitting in Large Language Model Editing",
+      "Unearthing Skill-level Insights for Understanding Trade-offs of Foundation Models",
+      "Video-STaR: Self-Training Enables Video Instruction Tuning with Any Supervision",
+      "WizardMath: Empowering Mathematical Reasoning for Large Language Models via Reinforced Evol-Instruct",
+      "ActionReasoningBench: Reasoning about Actions with and without Ramification Constraints",
+      "Benchmarking Multimodal Retrieval Augmented Generation with Dynamic VQA Dataset and Self-adaptive Planning Agent",
+      "Beyond Autoregression: Discrete Diffusion for Complex Reasoning and Planning",
+      "Building Math Agents with Multi-Turn Iterative Preference Learning",
+      "CodePlan: Unlocking Reasoning Potential in Large Language Models by Scaling Code-form Planning",
+      "CofCA: A STEP-WISE Counterfactual Multi-hop QA benchmark",
+      "Data Pruning by Information Maximization",
+      "Draw-and-Understand: Leveraging Visual Prompts to Enable MLLMs to Comprehend What You Want",
+      "LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory",
+      "MIND: Math Informed syNthetic Dialogues for Pretraining LLMs",
+      "MMQA: Evaluating LLMs with Multi-Table Multi-Hop Complex Questions",
+      "Mix-CPT: A Domain Adaptation Framework via Decoupling Knowledge Learning and Format Alignment",
+      "Neuron-based Multifractal Analysis of Neuron Interaction Dynamics in Large Models",
+      "NovelQA: Benchmarking Question Answering on Documents Exceeding 200K Tokens",
+      "Omni-MATH: A Universal Olympiad Level Mathematic Benchmark for Large Language Models",
+      "On Targeted Manipulation and Deception when Optimizing LLMs for User Feedback",
+      "Q-SFT: Q-Learning for Language Models via Supervised Fine-Tuning",
+      "Retrieval Head Mechanistically Explains Long-Context Factuality",
+      "Scaling Autonomous Agents via Automatic Reward Modeling And Planning",
+      "SiReRAG: Indexing Similar and Related Information for Multihop Reasoning",
+      "Simple is Effective: The Roles of Graphs and Large Language Models in Knowledge-Graph-Based Retrieval-Augmented Generation",
+      "Step-by-Step Reasoning for Math Problems  via Twisted Sequential Monte Carlo",
+      "Sufficient Context: A New Lens on Retrieval Augmented Generation Systems",
+      "ThinkBot: Embodied Instruction Following with Thought Chain Reasoning",
+      "Token-Supervised Value Models for Enhancing Mathematical Problem-Solving Capabilities of Large Language Models",
+      "Training on the Test Task Confounds Evaluation and Emergence",
+      "Transformers Learn to Implement Multi-step Gradient Descent with Chain of Thought",
+      "Unified Parameter-Efficient Unlearning for LLMs",
+      "WildBench: Benchmarking LLMs with Challenging Tasks from Real Users in the Wild"
+    ],
+    "acl25": [
+      "A Multi-persona Framework for Argument Quality Assessment",
+      "AnRe: Analogical Replay for Temporal Knowledge Graph Forecasting",
+      "Can Knowledge Graphs Make Large Language Models More Trustworthy? An Empirical Study Over Open-ended Question Answering",
+      "CoAM: Corpus of All-Type Multiword Expressions",
+      "Code-Switching Red-Teaming:LLMEvaluation for Safety and Multilingual Understanding",
+      "ConInstruction: Universal Jailbreaking of Multimodal Large Language Models via Non-Textual Modalities",
+      "Confidence v.s. Critique: A Decomposition of Self-Correction Capability forLLMs",
+      "CrisisTS: Coupling Social Media Textual Data and Meteorological Time Series for Urgency Classification",
+      "Cultivating Gaming Sense for Yourself: MakingVLMs Gaming Experts",
+      "Data-Constrained Synthesis of Training Data for De-Identification",
+      "Do Language Models Understand Honorific Systems inJavanese?",
+      "EdiText: Controllable Coarse-to-Fine Text Editing with Diffusion Language Models",
+      "FCMR: Robust Evaluation of Financial Cross-Modal Multi-Hop Reasoning",
+      "From Objectives to Questions: A Planning-based Framework for Educational Mathematical Question Generation",
+      "GALLa: Graph Aligned Large Language Models for Improved Source Code Understanding",
+      "HFT: Half Fine-Tuning for Large Language Models",
+      "How to Mitigate Overfitting in Weak-to-strong Generalization?",
+      "InductionBench:LLMs Fail in the Simplest Complexity Class",
+      "LLM-Powered Test Case Generation for Detecting Bugs in Plausible Programs",
+      "Large Margin Representation Learning for Robust Cross-lingual Named Entity Recognition",
+      "LoGU: Long-form Generation with Uncertainty Expressions",
+      "MaXIFE: Multilingual and Cross-lingual Instruction Following Evaluation",
+      "Magnet: Multi-turn Tool-use Data Synthesis and Distillation via Graph Translation",
+      "PKU-SafeRLHF: Towards Multi-Level Safety Alignment forLLMs with Human Preference",
+      "People who frequently useChatGPTfor writing tasks are accurate and robust detectors ofAI-generated text",
+      "Pre-Training Curriculum for Multi-Token Prediction in Language Models",
+      "QDTSynth: Quality-Driven Formal Theorem Synthesis for Enhancing Proving Performance ofLLMs",
+      "SocialEval: Evaluating Social Intelligence of Large Language Models",
+      "Synthesizing Post-Training Data forLLMs through Multi-Agent Simulation",
+      "Teaching Vision-Language Models to Ask: Resolving Ambiguity in Visual Questions",
+      "UORA: Uniform Orthogonal Reinitialization Adaptation in Parameter Efficient Fine-Tuning of Large Models",
+      "Unlocking General Long Chain-of-Thought Reasoning Capabilities of Large Language Models via Representation Engineering",
+      "Untie the Knots: An Efficient Data Augmentation Strategy for Long-Context Pre-Training in Language Models",
+      "Unveiling the Power of Source: Source-based MinimumBayes Risk Decoding for Neural Machine Translation",
+      "Align-SLM: Textless Spoken Language Models with Reinforcement Learning fromAIFeedback",
+      "EAGLE: Expert-Guided Self-Enhancement for Preference Alignment in Pathology Large Vision-Language Model",
+      "HSCR: Hierarchical Self-Contrastive Rewarding for Aligning Medical Vision Language Models",
+      "IAM: Efficient Inference through Attention Mapping between Different-scaleLLMs",
+      "KatFishNet: DetectingLLM-GeneratedKorean Text through Linguistic Feature Analysis",
+      "MT-RAIG: Novel Benchmark and Evaluation Framework for Retrieval-Augmented Insight Generation over Multiple Tables",
+      "Meta-Learning Neural Mechanisms rather thanBayesian Priors",
+      "Real-time Factuality Assessment from Adversarial Feedback",
+      "TRACT: Regression-Aware Fine-tuning Meets Chain-of-Thought Reasoning forLLM-as-a-Judge",
+      "AdaDHP: Fine-Grained Fine-Tuning via DualHadamard Product and Adaptive Parameter Selection",
+      "Fairness Beyond Performance: Revealing Reliability Disparities Across Groups in LegalNLP",
+      "SpindleKV: A NovelKVCache Reduction Method Balancing Both Shallow and Deep Layers",
+      "CodeTool: Enhancing Programmatic Tool Invocation ofLLMs via Process Supervision",
+      "ExtendingLLMContext Window with Adaptive Grouped Positional Encoding: A Training-Free Method",
+      "Sample-Efficient Human Evaluation of Large Language Models via Maximum Discrepancy Competition"
+    ],
+    "icml25": [
+      "Accelerating Large Language Model Reasoning via Speculative Search",
+      "Aguvis: Unified Pure Vision Agents for Autonomous GUI Interaction",
+      "Aligning with Logic: Measuring, Evaluating and Improving Logical Preference Consistency in Large Language Models",
+      "Bring Reason to Vision: Understanding Perception and Reasoning through Model Merging",
+      "Can Transformers Reason Logically? A Study in SAT Solving",
+      "CodeIO: Condensing Reasoning Patterns via Code Input-Output Prediction",
+      "CommVQ: Commutative Vector Quantization for KV Cache Compression",
+      "Demystifying Long Chain-of-Thought Reasoning",
+      "Diving into Self-Evolving Training for Multimodal Reasoning",
+      "Forest-of-Thought: Scaling Test-Time Compute for Enhancing LLM Reasoning",
+      "Foundation Molecular Grammar: Multi-Modal Foundation Models Induce Interpretable Molecular Graph Languages",
+      "Generalizing from SIMPLE to HARD Visual Reasoning: Can We Mitigate Modality Imbalance in VLMs?",
+      "KV Shifting Attention Enhances Language Modeling",
+      "LaCache: Ladder-Shaped KV Caching for Efficient Long-Context Modeling of Large Language Models",
+      "Learning to Plan & Reason for Evaluation with Thinking-LLM-as-a-Judge",
+      "Leveraging Online Olympiad-Level Math Problems for LLMs Training and Contamination-Resistant Evaluation",
+      "Lower Bounds for Chain-of-Thought Reasoning in Hard-Attention Transformers",
+      "MARGE: Improving Math Reasoning with Guided Exploration",
+      "Measuring In-Context Computation Complexity via Hidden State Prediction",
+      "Metastable Dynamics of Chain-of-Thought Reasoning: Provable Benefits of Search, RL and Distillation",
+      "Mitigating Heterogeneous Token Overfitting in LLM Knowledge Editing",
+      "Multi-agent Architecture Search via Agentic Supernet",
+      "On the Power of Context-Enhanced Learning in LLMs",
+      "Optimizing Language Models for Inference Time Objectives using Reinforcement Learning",
+      "PhantomWiki: On-Demand Datasets for Reasoning and Retrieval Evaluation",
+      "Proposer-Agent-Evaluator (PAE): Autonomous Skill Discovery For Foundation Model Internet Agents",
+      "Re-ranking Reasoning Context with Tree Search Makes Large Vision-Language Models Stronger",
+      "Rethinking Chain-of-Thought from the Perspective of Self-Training",
+      "Rethinking External Slow-Thinking: From Snowball Errors to Probability of Correct Reasoning",
+      "Revisiting Chain-of-Thought in Code Generation: Do Language Models Need to Learn Reasoning before Coding?",
+      "Reward-Guided Speculative Decoding for Efficient LLM Reasoning",
+      "STAIR: Improving Safety Alignment with Introspective Reasoning",
+      "SafetyAnalyst: Interpretable, Transparent, and Steerable Safety Moderation for AI Behavior",
+      "Self-Consistency Preference Optimization",
+      "Star Attention: Efficient LLM Inference over Long Sequences",
+      "The Logical Implication Steering Method for Conditional Interventions on Transformer Generation",
+      "Think Smarter not Harder: Adaptive Reasoning with Inference Aware Optimization",
+      "Think Twice, Act Once: A Co-Evolution Framework of LLM and RL for Large-Scale Decision Making",
+      "Thinking LLMs: General Instruction Following with Thought Generation",
+      "Token Assorted: Mixing Latent and Text Tokens for Improved Language Model Reasoning",
+      "Token Signature: Predicting Chain-of-Thought Gains with Token Decoding Feature in Large Language Models",
+      "Towards Practical Defect-Focused Automated Code Review",
+      "Training a Generally Curious Agent",
+      "Tuning LLM Judge Design Decisions for 1/1000 of the Cost",
+      "VinePPO: Refining Credit Assignment in RL Training of LLMs",
+      "XAttention: Block Sparse Attention with Antidiagonal Scoring",
+      "ZebraLogic: On the Scaling Limits of LLMs for Logical Reasoning",
+      "C-3PO: Compact Plug-and-Play Proxy Optimization to Achieve Human-like Retrieval-Augmented Generation",
+      "DEFAME: Dynamic Evidence-based FAct-checking with Multimodal Experts",
+      "EncryptedLLM: Privacy-Preserving Large Language Model Inference via GPU-Accelerated Fully Homomorphic Encryption",
+      "Extractive Structures Learned in Pretraining Enable Generalization on Finetuned Facts",
+      "From Complex to Atomic: Enhancing Augmented Generation via Knowledge-Aware Dual Rewriting and Reasoning",
+      "GIVE: Structured Reasoning of Large Language Models with Knowledge Graph Inspired Veracity Extrapolation",
+      "GRADEO: Towards Human-Like Evaluation for Text-to-Video Generation via Multi-Step Reasoning",
+      "Grokking in the Wild: Data Augmentation for Real-World Multi-Hop Reasoning with Transformers",
+      "Layer by Layer: Uncovering Hidden Representations in Language Models",
+      "MME-CoT: Benchmarking Chain-of-Thought in Large Multimodal Models for Reasoning Quality, Robustness, and Efficiency",
+      "MedRAX: Medical Reasoning Agent for Chest X-ray",
+      "Nemotron-CORTEXA: Enhancing LLM Agents for Software Engineering Tasks via Improved Localization and Solution Diversity",
+      "SPEX: Scaling Feature Interaction Explanations for LLMs",
+      "SafeAuto: Knowledge-Enhanced Safe Autonomous Driving with Multimodal Foundation Models",
+      "Sample Efficient Demonstration Selection for In-Context Learning",
+      "Task Generalization with Autoregressive Compositional Structure: Can Learning from $D$ Tasks Generalize to $D^T$ Tasks?",
+      "Understanding Chain-of-Thought in LLMs through Information Theory",
+      "WikiBigEdit: Understanding the Limits of Lifelong Knowledge Editing in LLMs",
+      "Adaptive Self-improvement LLM Agentic System for ML Library Development",
+      "Lexico: Extreme KV Cache Compression via Sparse Coding over Universal Dictionaries",
+      "Policy Filtration for RLHF to Mitigate Noise in Reward Models",
+      "Policy Guided Tree Search for Enhanced LLM Reasoning",
+      "RBench: Graduate-level Multi-disciplinary Benchmarks for LLM & MLLM Complex Reasoning Evaluation",
+      "SNS-Bench: Defining, Building, and Assessing Capabilities of Large Language Models in Social Networking Services",
+      "MA-LoT: Model-Collaboration Lean-based Long Chain-of-Thought Reasoning enhances Formal Theorem Proving"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.157.checklist",
+      "2025.emnlp-main.1588.checklist",
+      "2025.emnlp-main.504.checklist",
+      "2025.emnlp-main.634.checklist",
+      "A Necessary Step toward Faithfulness: Measuring and Improving Consistency in Free-Text Explanations",
+      "A Systematic Survey of Automatic Prompt Optimization Techniques",
+      "AROMA: Autonomous Rank-one Matrix Adaptation",
+      "AccessEval: Benchmarking Disability Bias in Large Language Models",
+      "AdaptThink: Reasoning Models Can Learn When to Think",
+      "Advancing Fine-Grained Visual Understanding with Multi-Scale Alignment in Multi-Modal Models",
+      "Amulet: Putting Complex Multi-Turn Conversations on the Stand withLLMJuries",
+      "Anecdoctoring: Automated Red-Teaming Across Language and Place",
+      "Answering Narrative-Driven Recommendation Queries via a Retrieve\u2013Rank Paradigm and theOCG-Agent",
+      "Are Vision-Language Models Safe in the Wild? A Meme-Based Benchmark Study",
+      "Avoidance Decoding for Diverse Multi-Branch Story Generation",
+      "Balcony: A Lightweight Approach to Dynamic Inference of Generative Language Models",
+      "Beyond Averages: Learning with Annotator Disagreement inSTS",
+      "Beyond Outlining: Heterogeneous Recursive Planning for Adaptive Long-form Writing with Language Models",
+      "Beyond Task-Oriented and Chitchat Dialogues: Proactive and Transition-Aware Conversational Agents",
+      "Beyond Text: Unveiling Privacy Vulnerabilities in Multi-modal Retrieval-Augmented Generation",
+      "Beyond the Leaderboard: Understanding Performance Disparities in Large Language Models via Model Diffing",
+      "Biased Tales: Cultural and Topic Bias in Generating Children\u2019s Stories",
+      "CLIP-MoE: Towards Building Mixture of Experts forCLIPwith Diversified Multiplet Upcycling",
+      "COAS2W: AChinese Older-Adults Spoken-to-Written Transformation Corpus with Context Awareness",
+      "Can Large Language Models Be Good Language Teachers?",
+      "Can Vision-Language Models Solve Visual Math Equations?",
+      "CanLLMs Extract Frame-Semantic Arguments?",
+      "CanLLMs Help You at Work? A Sandbox for EvaluatingLLMAgents in Enterprise Environments",
+      "Case-Based Decision-Theoretic Decoding with Quality Memories",
+      "Chat-Driven Text Generation and Interaction for Person Retrieval",
+      "CoBia: Constructed Conversations Can Trigger Otherwise Concealed Societal Biases inLLMs",
+      "CoMAT: Chain of Mathematically Annotated Thought Improves Mathematical Reasoning",
+      "Code to Think, Think to Code: A Survey on Code-Enhanced Reasoning and Reasoning-Driven Code Intelligence inLLMs",
+      "Compositional Generalisation for Explainable Hate Speech Detection",
+      "Continuously SteeringLLMs Sensitivity to Contextual Knowledge with Proxy Models",
+      "Correct-Detect: Balancing Performance and Ambiguity Through the Lens of Coreference Resolution inLLMs",
+      "DSCD: Large Language Model Detoxification with Self-Constrained Decoding",
+      "DSVD: Dynamic Self-Verify Decoding for Faithful Generation in Large Language Models",
+      "Dial-InLLM: Human-AlignedLLM-in-the-loop Intent Clustering for Customer Service Dialogues",
+      "Dynamic Collaboration of Multi-Language Models based on Minimal Complete Semantic Units",
+      "ECC: An Emotion-Cause Conversation Dataset for Empathy Response",
+      "Enhancing Reasoning Abilities of SmallLLMs with Cognitive Alignment",
+      "Evaluating Cognitive-Behavioral Fixation via Multimodal User Viewing Patterns on Social Media",
+      "Exploring Chain-of-Thought Reasoning for Steerable Pluralistic Alignment",
+      "Extracting Linguistic Information from Large Language Models: Syntactic Relations and Derivational Knowledge",
+      "Fann or Flop: A Multigenre, Multiera Benchmark forArabic Poetry Understanding inLLMs",
+      "Foot-In-The-Door: A Multi-turn Jailbreak forLLMs",
+      "From Automation to Autonomy: A Survey on Large Language Models in Scientific Discovery",
+      "From Parameters to Performance: A Data-Driven Study onLLMStructure and Development",
+      "GATEAU: Selecting Influential Samples for Long Context Alignment",
+      "Humanizing Machines: RethinkingLLMAnthropomorphism Through a Multi-Level Framework of Design",
+      "HydraOpt: Navigating the Efficiency-Performance Trade-off of Adapter Merging",
+      "ICG: Improving Cover Image Generation viaMLLM-based Prompting and Personalized Preference Alignment",
+      "Identifying Unlearned Data inLLMs via Membership Inference Attacks",
+      "Image Embedding Sampling Method for Diverse Captioning",
+      "Improving Reasoning Capabilities in Small Models through Mixture-of-layers Distillation with Stepwise Attention on Key Information",
+      "In-Context Learning Boosts Speech Recognition via Human-like Adaptation to Speakers and Language Varieties",
+      "IntentionFrame: A Semi-Structured, Multi-Aspect Framework for Fine-Grained Conversational Intention Understanding",
+      "JI2S: JointInfluence\u2010Aware Instruction Data Selection for EfficientFine\u2010Tuning",
+      "JOLT-SQL: Joint Loss Tuning of Text-to-SQLwith Confusion-aware Noisy Schema Sampling",
+      "Koel-TTS: EnhancingLLMbased Speech Generation with Preference Alignment and Classifier Free Guidance",
+      "LaMDAgent: An Autonomous Framework for Post-Training Pipeline Optimization viaLLMAgents",
+      "LaMP-QA: A Benchmark for Personalized Long-form Question Answering",
+      "Language Models as Continuous Self-Evolving Data Engineers",
+      "LightThinker: Thinking Step-by-Step Compression",
+      "M-BRe: Discovering Training Samples for Relation Extraction from Unlabeled Texts with Large Language Models",
+      "MAC-Tuning:LLMMulti-Compositional Problem Reasoning with Enhanced Knowledge Boundary Awareness",
+      "MAIN: Mutual Alignment Is Necessary for instruction tuning",
+      "MIO: A Foundation Model on Multimodal Tokens",
+      "MMAG: Multimodal Learning for Mucus Anomaly Grading in Nasal Endoscopy via Semantic Attribute Prompting",
+      "Mah\u0101n\u0101ma: A Unique Testbed for Literary Entity Discovery and Linking",
+      "Measuring the Effect of Disfluency in Multilingual Knowledge Probing Benchmarks",
+      "Mixture of Length and Pruning Experts for Knowledge Graphs Reasoning",
+      "Multi-perspective Analysis of Large Language Model Domain Specialization: An Experiment in Accounting Audit Procedures Generation",
+      "NormGenesis: Multicultural Dialogue Generation via Exemplar-Guided Social Norm Modeling and Violation Recovery",
+      "OBLIVIATE: Robust and Practical Machine Unlearning for Large Language Models",
+      "OMS: On-the-fly, Multi-Objective, Self-Reflective Ad Keyword Generation viaLLMAgent",
+      "OmniEval: An Omnidirectional and AutomaticRAGEvaluation Benchmark in Financial Domain",
+      "One Planner To Guide Them All ! Learning Adaptive Conversational Planners for Goal-oriented Dialogues",
+      "Out of Sight, Not Out of Context? Egocentric Spatial Reasoning inVLMs Across Disjoint Frames",
+      "Parallel Continuous Chain-of-Thought with Jacobi Iteration",
+      "PhonoThink: Improving Large Language Models\u2019 Reasoning onChinese Phonological Ambiguities",
+      "Plan Dynamically, Express Rhetorically: A Debate-Driven Rhetorical Framework for Argumentative Writing",
+      "Please Translate Again: Two Simple Experiments on Whether Human-Like Reasoning Helps Translation",
+      "PoSum-Bench: Benchmarking Position Bias inLLM-based Conversational Summarization",
+      "Pointing to a Llama and Call it a Camel: On the Sycophancy of Multimodal Large Language Models",
+      "Precise In-Parameter Concept Erasure in Large Language Models",
+      "PrimeX: A Dataset of Worldview, Opinion, and Explanation",
+      "Promote, Suppress, Iterate: How Language Models Answer One-to-Many Factual Queries",
+      "PychoAgent: Psychology-drivenLLMAgents for Explainable Panic Prediction on Social Media during Sudden Disaster Events",
+      "R2I-Bench: Benchmarking Reasoning-Driven Text-to-Image Generation",
+      "REACT: Representation Extraction And Controllable Tuning to Overcome Overfitting inLLMKnowledge Editing",
+      "RareSyn: Health Record Synthesis for Rare Disease Diagnosis",
+      "Reliable and Cost-Effective Exploratory Data Analysis via Graph-GuidedRAG",
+      "RethinkMCTS: Refining Erroneous Thoughts inMonteCarlo Tree Search for Code Generation",
+      "Revealing and Mitigating the Challenge of Detecting Character Knowledge Errors inLLMRole-Playing",
+      "Robust Adaptation of Large Multimodal Models for Retrieval Augmented Hateful Meme Detection",
+      "SAFE: Schema-Driven Approximate Distance Join for Efficient Knowledge Graph Querying",
+      "SAFENUDGE: Safeguarding Large Language Models in Real-time with Tunable Safety-Performance Trade-offs",
+      "SAND: BoostingLLMAgents with Self-Taught Action Deliberation",
+      "SATER: A Self-Aware and Token-Efficient Approach to Routing and Cascading",
+      "SEA: Supervised Embedding Alignment for Token-Level Visual-Textual Integration inMLLMs",
+      "SHARP: Steering Hallucination inLVLMs via Representation Engineering",
+      "SNaRe: Domain-aware Data Generation for Low-Resource Event Detection",
+      "SQLWOZ: A Realistic Task-Oriented Dialogue Dataset withSQL-Based Dialogue State Representation for Complex User Requirements",
+      "SQUiD: Synthesizing Relational Databases from Unstructured Text",
+      "STARQA: A Question Answering Dataset for Complex Analytical Reasoning over Structured Databases",
+      "SciRIFF: A Resource to Enhance Language Model Instruction-Following over Scientific Literature",
+      "Seeing More, Saying More: Lightweight Language Experts are Dynamic Video Token Compressors",
+      "Seeing the Same Story Differently:Framing\u2010Divergent Event Coreference for Computational Framing Analysis",
+      "SemVink: AdvancingVLMs\u2019 Semantic Understanding of Optical Illusions via Visual Global Thinking",
+      "Sentence Smith: Controllable Edits for Evaluating Text Embeddings",
+      "Slim-SC: Thought Pruning for Efficient Scaling with Self-Consistency",
+      "Spatial Layouts in News Homepages Capture Human Preferences",
+      "Subtle Risks, Critical Failures: A Framework for Diagnosing Physical Safety ofLLMs for Embodied Decision Making",
+      "Superficial Self-Improved Reasoners Benefit from Model Merging",
+      "TRUST-VL: An Explainable News Assistant for General Multimodal Misinformation Detection",
+      "TTT-Bench: A Benchmark for Evaluating Reasoning Ability with Simple and Novel Tic-Tac-Toe-style Games",
+      "Teach Small Models to Reason by Curriculum Distillation",
+      "Think, Verbalize, then Speak: Bridging Complex Thoughts and Comprehensible Speech",
+      "ThinkSLM",
+      "Thought calibration: Efficient and confident test-time scaling",
+      "Token-Aware Editing of Internal Activations for Large Language Model Alignment",
+      "Token-level Proximal Policy Optimization for Query Generation",
+      "Towards a Holistic and Automated Evaluation Framework for Multi-Level Comprehension ofLLMs in Book-Length Contexts",
+      "Towards a Unified Paradigm of Concept Editing in Large Language Models",
+      "Translationese-index: Using Likelihood Ratios for Graded and Generalizable Measurement of Translationese",
+      "UNCLE: Benchmarking Uncertainty Expressions in Long-Form Generation",
+      "UnCo: Uncertainty-Driven Collaborative Framework of Large and Small Models for Grounded MultimodalNER",
+      "UniDebugger: Hierarchical Multi-Agent Framework for Unified Software Debugging",
+      "Unleashing the Reasoning Potential ofLLMs by Critique Fine-Tuning on One Problem",
+      "VersaTune: An Efficient Data Composition Framework for Training Multi-CapabilityLLMs",
+      "VisualWebInstruct: Scaling up Multimodal Instruction Data through Web Search",
+      "Waste-Bench: A Comprehensive Benchmark for EvaluatingVLLMs in Cluttered Environments",
+      "Where Confabulation Lives: Latent Feature Discovery inLLMs",
+      "ZoomEye: Enhancing MultimodalLLMs with Human-Like Zooming Capabilities through Tree-Based Image Exploration",
+      "2025.emnlp-main.1147.checklist",
+      "2025.emnlp-main.1301.checklist",
+      "2025.emnlp-main.615.checklist",
+      "2025.emnlp-main.817.checklist",
+      "DIWALI- Diversity and Inclusivity aWare cuLture specific Items forIndia: Dataset and Assessment ofLLMs for Cultural Text Adaptation inIndian Context",
+      "Gamma-Guard: Lightweight Residual Adapters for Robust Guardrails in Large Language Models",
+      "How Sememic Components Can Benefit Link Prediction for Lexico-Semantic Knowledge Graphs?",
+      "Synthetic Socratic Debates: Examining Persona Effects on Moral Decision and Persuasion Dynamics",
+      "Understanding Subword Compositionality of Large Language Models",
+      "2025.emnlp-main.390.checklist",
+      "AdaSteer: Your AlignedLLMis Inherently an Adaptive Jailbreak Defender",
+      "AskToAct: EnhancingLLMs Tool Use via Self-Correcting Clarification",
+      "ComplexTempQA: A 100m Dataset for Complex Temporal Question Answering",
+      "EasyRec: Simple yet Effective Language Models for Recommendation",
+      "PRISM: Efficient Long-Range Reasoning With Short-ContextLLMs",
+      "Personality Matters: User Traits PredictLLMPreferences in Multi-Turn Collaborative Tasks",
+      "Probing for Arithmetic Errors in Language Models",
+      "Theorem-Validated Reverse Chain-of-Thought Problem Generation for Geometric Reasoning",
+      "zFLoRA: Zero-Latency Fused Low-Rank Adapters",
+      "Discursive Circuits: How Do Language Models Understand Discourse Relations?",
+      "MakingVLMs More Robot-Friendly: Self-Critical Distillation of Low-Level Procedural Reasoning",
+      "Retrieving Support to Rank Answers in Open-Domain Question Answering",
+      "LVLMs are Bad at Overhearing Human Referential Communication"
+    ],
+    "naacl25": [
+      "How Good AreLLMs for Literary Translation, Really? Literary Translation Evaluation with Humans andLLMs",
+      "LBC: Language-Based-Classifier for Out-Of-Variable Generalization",
+      "Mutual-pairing Data Augmentation for Fewshot Continual Relation Extraction",
+      "Private Synthetic Text Generation with Diffusion Models",
+      "Bridging the Visual Gap: Fine-Tuning Multimodal Models with Knowledge-Adapted Captions",
+      "SALAD: Improving Robustness and Generalization through Contrastive Learning with Structure-Aware andLLM-Driven Augmented Data",
+      "Stronger Universal and Transferable Attacks by Suppressing Refusals",
+      "Correcting Negative Bias in Large Language Models through Negative Attention Score Alignment",
+      "Upsample or Upweight? Balanced Training on Heavily Imbalanced Datasets",
+      "Ihquin tlahtouah in Tetelahtzincocah: An annotated, multi-purpose audio and text corpus of Western SierraPueblaNahuatl",
+      "The Plagiarism Singularity Conjecture",
+      "Script-Agnosticism and its Impact on Language Identification forDravidian Languages",
+      "Hybrid Graphs for Table-and-Text based Question Answering usingLLMs",
+      "Instruct-of-Reflection: Enhancing Large Language Models Iterative Reflection Capabilities via Dynamic-Meta Instruction",
+      "Iterative Self-TuningLLMs for Enhanced Jailbreaking Capabilities",
+      "CanLLMs Convert Graphs to Text-Attributed Graphs?",
+      "ImgTrojan: Jailbreaking Vision-Language Models withONEImage",
+      "Multilingual Needle in a Haystack: Investigating Long-Context Behavior of Multilingual Large Language Models",
+      "Rethinking Word Similarity: Semantic Similarity through Classification Confusion",
+      "UFO: AUI-Focused Agent for WindowsOSInteraction",
+      "Verifiable by Design: Aligning Language Models to Quote from Pre-Training Data"
+    ],
+    "iclr24": [
+      "Chain-of-Knowledge: Grounding Large Language Models via Dynamic Knowledge Adapting over Heterogeneous Sources",
+      "RAPPER: Reinforced Rationale-Prompted Paradigm for Natural Language Explanation in Visual Question Answering",
+      "Rephrase, Augment, Reason: Visual Grounding of Questions for Vision-Language Models",
+      "SuRe: Summarizing Retrievals using Answer Candidates for Open-domain QA of LLMs",
+      "Supervised Knowledge Makes Large Language Models Better In-context Learners",
+      "Tailoring Self-Rationalizers with Multi-Reward Distillation",
+      "ToRA: A Tool-Integrated Reasoning Agent for Mathematical Problem Solving",
+      "Chain-of-Experts: When LLMs Meet Complex Operations Research Problems",
+      "Hierarchical Context Merging: Better Long Context Understanding for Pre-trained LLMs",
+      "Measuring Vision-Language STEM Skills of Neural Models",
+      "SWE-bench: Can Language Models Resolve Real-world Github Issues?",
+      "THOUGHT PROPAGATION: AN ANALOGICAL APPROACH TO COMPLEX REASONING WITH LARGE LANGUAGE MODELS",
+      "Think-on-Graph: Deep and Responsible Reasoning of Large Language Model on Knowledge Graph",
+      "Amortizing intractable inference in large language models",
+      "Connecting Large Language Models with Evolutionary Algorithms Yields Powerful Prompt Optimizers",
+      "DQ-LoRe: Dual Queries with Low Rank Approximation Re-ranking for In-Context Learning",
+      "DoLa: Decoding by Contrasting Layers Improves Factuality in Large Language Models",
+      "Escape Sky-high Cost: Early-stopping Self-Consistency for Multi-step Reasoning",
+      "Making Retrieval-Augmented Language Models Robust to Irrelevant Context",
+      "MuSR: Testing the Limits of Chain-of-thought with Multistep Soft Reasoning",
+      "Multimodal Web Navigation with Instruction-Finetuned Foundation Models",
+      "Skeleton-of-Thought: Prompting LLMs for Efficient Parallel Generation",
+      "Take a Step Back: Evoking Reasoning via Abstraction in Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 56,
+    "iclr25": 113,
+    "acl25": 49,
+    "icml25": 72,
+    "emnlp25": 159,
+    "naacl25": 21,
+    "iclr24": 23
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

@@ -1,0 +1,648 @@
+{
+  "canonical_name": "Coherence",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, coherence is most frequently described as the quality of a model's output being logical, internally consistent, and free from contradictions. This general concept is specified across various contexts, including `semantic coherence` (relevance to preceding text), `dialogue coherence` (consistency across conversational turns), and `temporal coherence` (logical progression in video). While most definitions focus on the properties of the generated text, a distinct framing defines coherence as the alignment between a model's generative and discriminative judgments, where both procedures should \"agree about which candidate answers are correct\" (The Consensus Game: Language Model Generation via Equilibrium Search). The construct is operationalized through several methods, with some papers relying on `Human evaluation` or using specific benchmarks like `MCBench` to assess it. Other approaches employ automated metrics, such as calculating the \"cosine similarity between the sentence embedding of the prefix... and the generated continuation\" (Language Model Decoding as Direct Metrics Optimization), using log-perplexity for speech quality, or applying statistical measures like Cronbach's alpha for internal consistency. Several papers distinguish coherence from other qualities; for example, one study notes that compressed models can generate text that is \"fluent, consistent, and coherent\" yet factually incorrect (Compressing LLMs: The Truth is Rarely Pure and Never Simple). The challenge of maintaining coherence is a recurring theme, particularly in long-form generation where models may exhibit \"a loss of coherence and adherence to task instructions\" over extended outputs (LongGenBench: Benchmarking Long-Form Generation in Long Context LLMs).",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Coherence",
+    "Semantic coherence",
+    "Coherency",
+    "Internal consistency",
+    "Contextual consistency",
+    "Long-range consistency",
+    "Logical coherence",
+    "Temporal coherence",
+    "Dialogue coherence",
+    "Cohesion"
+  ],
+  "papers": [
+    "CLAIM: Mitigating Multilingual Object Hallucination in Large Vision-Language Models with Cross-Lingual Attention Intervention",
+    "ClusterAttn:KVCache Compression under Intrinsic Attention Clustering",
+    "DNCASR: End-to-End Training for Speaker-AttributedASR",
+    "Enhancing Lexicon-Based Text Embeddings with Large Language Models",
+    "Generative Psycho-Lexical Approach for Constructing Value Systems in Large Language Models",
+    "GoR",
+    "HD-NDEs: Neural Differential Equations for Hallucination Detection inLLMs",
+    "MaCP: Minimal yet Mighty Adaptation via Hierarchical Cosine Projection",
+    "The Impact of Token Granularity on the Predictive Power of Language Model Surprisal",
+    "BIG-Bench Extra Hard",
+    "CodeTool: Enhancing Programmatic Tool Invocation ofLLMs via Process Supervision",
+    "Think&Cite: Improving Attributed Text Generation with Self-Guided Tree Search and Progress Reward Modeling",
+    "Game Development as Human-LLMInteraction",
+    "2025.emnlp-main.136.checklist",
+    "2025.emnlp-main.1785.checklist",
+    "AdaRewriter: Unleashing the Power of Prompting-based Conversational Query Reformulation via Test-Time Adaptation",
+    "Agent-as-Judge for Factual Summarization of Long Narratives",
+    "BRSpeech-DF: A Deep Fake Synthetic Speech Dataset forPortuguese Zero-ShotTTS",
+    "CARD: Cross-modal Agent Framework for Generative and Editable Residential Design",
+    "CARE: Multilingual Human Preference Learning for Cultural Awareness",
+    "Certified Mitigation of Worst-CaseLLMCopyright Infringement",
+    "DSVD: Dynamic Self-Verify Decoding for Faithful Generation in Large Language Models",
+    "DoLLMs Adhere to Label Definitions? Examining Their Receptivity to External Label Definitions",
+    "Dynamic Collaboration of Multi-Language Models based on Minimal Complete Semantic Units",
+    "Efficient Real-time Refinement of Language Model Text Generation",
+    "Evaluating Language Translation Models by Playing Telephone",
+    "Expanding before Inferring: Enhancing Factuality in Large Language Models through Premature Layers Interpolation",
+    "Extracting Linguistic Information from Large Language Models: Syntactic Relations and Derivational Knowledge",
+    "Friend or Foe? A Computational Investigation of Semantic FalseFriends acrossRomance Languages",
+    "Judging Quality Across Languages: A Multilingual Approach to Pretraining Data Filtering with Language Models",
+    "LORAXBENCH: A Multitask, Multilingual Benchmark Suite for 20Indonesian Languages",
+    "MS-RAG: Simple and Effective Multi-Semantic Retrieval-Augmented Generation",
+    "Mixture of Length and Pruning Experts for Knowledge Graphs Reasoning",
+    "Model Consistency as a Cheap yet Predictive Proxy forLLMElo Scores",
+    "OpenNER1.0: Standardized Open-Access Named Entity Recognition Datasets in 50+ Languages",
+    "PAFT: Prompt-Agnostic Fine-Tuning",
+    "Permutative Preference Alignment from Listwise Ranking of Human Judgments",
+    "Preemptive Detection and Correction of Misaligned Actions inLLMAgents",
+    "Probing for Arithmetic Errors in Language Models",
+    "ReSURE: Regularizing Supervision Unreliability for Multi-turn Dialogue Fine-tuning",
+    "Reading Between the Prompts: How Stereotypes ShapeLLM\u2019s Implicit Personalization",
+    "Refusal-Aware Red Teaming: Exposing Inconsistency in Safety Evaluations",
+    "Reliable and Cost-Effective Exploratory Data Analysis via Graph-GuidedRAG",
+    "Rewarding the Unlikely: LiftingGRPOBeyond Distribution Sharpening",
+    "SCRIBE: Structured Chain Reasoning for Interactive Behaviour Explanations using Tool Calling",
+    "START: Self-taught Reasoner with Tools",
+    "Static or Dynamic: Towards Query-Adaptive Token Selection for Video Question Answering",
+    "The Role of Outgoing Connection Heterogeneity in Feedforward Layers of Large Language Models",
+    "Threading the Needle: Reweaving Chain-of-Thought Reasoning to Explain Human Label Variation",
+    "Unmasking Deceptive Visuals: Benchmarking Multimodal Large Language Models on Misleading Chart Question Answering",
+    "When Life Gives You Samples: The Benefits of Scaling up Inference Compute for MultilingualLLMs",
+    "similarity relationships",
+    "Alignment for Efficient Tool Calling of Large Language Models",
+    "CLIP-MoE: Towards Building Mixture of Experts forCLIPwith Diversified Multiplet Upcycling",
+    "Disambiguation in Conversational Question Answering in the Era ofLLMs and Agents: A Survey",
+    "PLAN-TUNING: Post-Training Language Models to Learn Step-by-Step Planning for Complex Problem Solving",
+    "PerspectiveMod: A Perspectivist Resource for Deliberative Moderation",
+    "SOLAR: Towards Characterizing Subjectivity of Individuals through Modeling Value Conflicts and Trade-offs",
+    "Sentence Smith: Controllable Edits for Evaluating Text Embeddings",
+    "TRUST-VL: An Explainable News Assistant for General Multimodal Misinformation Detection",
+    "Understanding the Thinking Process of Reasoning Models: A Perspective from Schoenfeld\u2019s Episode Theory",
+    "Active Layer-Contrastive Decoding Reduces Hallucination in Large Language Model Generation",
+    "Mapping the Minds ofLLMs: A Graph-Based Analysis of ReasoningLLMs",
+    "Corrupted but Not Broken: Understanding and Mitigating the Negative Impacts of Corrupted Data in Visual Instruction Tuning",
+    "Data-Efficient Hate Speech Detection via Cross-Lingual Nearest Neighbor Retrieval with Limited Labeled Data",
+    "LLM-Driven Implicit Target Augmentation and Fine-Grained Contextual Modeling for Zero-Shot and Few-Shot Stance Detection",
+    "Logits-Based Finetuning",
+    "Plutus: Benchmarking Large Language Models in Low-ResourceGreek Finance",
+    "ARGS: Alignment as Reward-Guided Search",
+    "BooookScore: A systematic exploration of book-length summarization in the era of LLMs",
+    "Closing the Curious Case of Neural Text Degeneration",
+    "Compressing LLMs: The Truth is Rarely Pure and Never Simple",
+    "Language Model Decoding as Direct Metrics Optimization",
+    "Spoken Question Answering and Speech Continuation Using Spectrogram-Powered LLM",
+    "The Consensus Game: Language Model Generation via Equilibrium Search",
+    "Collab: Controlled Decoding using Mixture of Agents for LLM Alignment",
+    "Context Steering: Controllable Personalization at Inference Time",
+    "HelpSteer2-Preference: Complementing Ratings with Preferences",
+    "Interleaved Scene Graphs for Interleaved Text-and-Image Generation Assessment",
+    "LongGenBench: Benchmarking Long-Form Generation in Long Context LLMs",
+    "LongWriter: Unleashing 10,000+ Word Generation from Long Context LLMs",
+    "MA-RLHF: Reinforcement Learning from Human Feedback with Macro Actions",
+    "MAP: Multi-Human-Value Alignment Palette",
+    "MMRole: A Comprehensive Framework for Developing and Evaluating Multimodal Role-Playing Agents",
+    "RevisEval: Improving LLM-as-a-Judge via Response-Adapted References",
+    "Simulating Human-like Daily Activities with Desire-driven Autonomy",
+    "TeaserGen: Generating Teasers for Long Documentaries",
+    "Turning Up the Heat: Min-p Sampling for Creative and Coherent LLM Outputs",
+    "AgentPoison: Red-teaming LLM Agents via Poisoning Memory or Knowledge Bases",
+    "CODE: Contrasting Self-generated Description to Combat Hallucination in Large Multi-modal Models",
+    "Decoding-Time Language Model Alignment with Multiple Objectives",
+    "HelpSteer 2: Open-source dataset for training top-performing reward models",
+    "Learning Goal-Conditioned Representations for Language Reward Models",
+    "On the Power of Decision Trees in Auto-Regressive Language Modeling",
+    "Order-Independence Without Fine Tuning",
+    "Transfer Q-star : Principled Decoding for LLM Alignment",
+    "Decompose, Analyze and Rethink: Solving Intricate Problems with Human-like Reasoning Cycle",
+    "MMDU: A Multi-Turn Multi-Image Dialog Understanding Benchmark and Instruction-Tuning Dataset for LVLMs",
+    "ChronoMagic-Bench: A Benchmark for Metamorphic Evaluation of Text-to-Time-lapse Video Generation",
+    "GenRL: Multimodal-foundation world models for generalization in embodied agents",
+    "One Token to Seg Them All: Language Instructed Reasoning Segmentation in Videos"
+  ],
+  "paper_count": 101,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The degree to which a language model's generative and discriminative judgments align, reflecting a consistent internal assessment of correctness across different query modes.",
+      "paper": "BooookScore: A systematic exploration of book-length summarization in the era of LLMs",
+      "original_name": "Coherence"
+    },
+    {
+      "text": "The latent ability of a model to generate text that is contextually consistent and semantically relevant to the preceding input.",
+      "paper": "ARGS: Alignment as Reward-Guided Search",
+      "original_name": "Semantic coherence"
+    },
+    {
+      "text": "The extent to which an agent's responses maintain a consistent line of dialogue, avoiding contradictions with previous turns or internal inconsistencies.",
+      "paper": "MMRole: A Comprehensive Framework for Developing and Evaluating Multimodal Role-Playing Agents",
+      "original_name": "Coherency"
+    },
+    {
+      "text": "The tendency for a reasoning chain to remain coherent and free of contradictions across its steps.",
+      "paper": "Mixture of Length and Pruning Experts for Knowledge Graphs Reasoning",
+      "original_name": "Logical consistency"
+    },
+    {
+      "text": "The degree to which a model's responses to items measuring the same underlying construct are correlated and reliable.",
+      "paper": "Preemptive Detection and Correction of Misaligned Actions inLLMAgents",
+      "original_name": "Internal consistency"
+    },
+    {
+      "text": "The tendency to keep generated content aligned with earlier context and avoid contradictions or drift as sequence length grows.",
+      "paper": "CARD: Cross-modal Agent Framework for Generative and Editable Residential Design",
+      "original_name": "Contextual consistency"
+    },
+    {
+      "text": "The ability to maintain and correctly reuse intermediate results and other information across multiple steps of a long computational process.",
+      "paper": "DSVD: Dynamic Self-Verify Decoding for Faithful Generation in Large Language Models",
+      "original_name": "Long-range consistency"
+    },
+    {
+      "text": "The quality of a model's generated output being logically structured, consistent, and free from contradictions.",
+      "paper": "MMDU: A Multi-Turn Multi-Image Dialog Understanding Benchmark and Instruction-Tuning Dataset for LVLMs",
+      "original_name": "Logical coherence"
+    },
+    {
+      "text": "The extent to which a generated video maintains smooth, logically continuous progression across frames without flicker or discontinuities.",
+      "paper": "ChronoMagic-Bench: A Benchmark for Metamorphic Evaluation of Text-to-Time-lapse Video Generation",
+      "original_name": "Temporal coherence"
+    },
+    {
+      "text": "The quality of producing segmentation masks for an object that are stable and coherent across consecutive video frames.",
+      "paper": "One Token to Seg Them All: Language Instructed Reasoning Segmentation in Videos",
+      "original_name": "Temporal consistency"
+    },
+    {
+      "text": "The quality of a conversation where responses are logically connected, consistent, and relevant to the preceding context, especially over long interactions.",
+      "paper": "Corrupted but Not Broken: Understanding and Mitigating the Negative Impacts of Corrupted Data in Visual Instruction Tuning",
+      "original_name": "Dialogue coherence"
+    },
+    {
+      "text": "The latent ability to maintain discourse coherence through appropriate use of anaphoric and cataphoric reference words (e.g., pronouns) that link utterances in dialogue.",
+      "paper": "Game Development as Human-LLMInteraction",
+      "original_name": "Cohesion"
+    }
+  ],
+  "definition_count": 12,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "ChronoMagic-Bench: A Benchmark for Metamorphic Evaluation of Text-to-Time-lapse Video Generation",
+      "evidence": "",
+      "paper_count": 6,
+      "papers_by_conference": {
+        "neurips24": [
+          "ChronoMagic-Bench: A Benchmark for Metamorphic Evaluation of Text-to-Time-lapse Video Generation"
+        ],
+        "iclr25": [
+          "MA-RLHF: Reinforcement Learning from Human Feedback with Macro Actions"
+        ],
+        "naacl25": [
+          "Style Transfer with Multi-iteration Preference Optimization"
+        ],
+        "acl25": [
+          "The Impact of Token Granularity on the Predictive Power of Language Model Surprisal",
+          "CLAIM: Mitigating Multilingual Object Hallucination in Large Vision-Language Models with Cross-Lingual Attention Intervention"
+        ],
+        "icml25": [
+          "Accelerating Unbiased LLM Evaluation via Synthetic Feedback"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HelpSteer",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Decoding-Time Language Model Alignment with Multiple Objectives",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "Decoding-Time Language Model Alignment with Multiple Objectives",
+          "Learning Goal-Conditioned Representations for Language Reward Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HelpSteer2",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "HelpSteer2-Preference: Complementing Ratings with Preferences",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "HelpSteer2-Preference: Complementing Ratings with Preferences"
+        ],
+        "emnlp25": [
+          "LORAXBENCH: A Multitask, Multilingual Benchmark Suite for 20Indonesian Languages"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "G-Eval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Dynamic Collaboration of Multi-Language Models based on Minimal Complete Semantic Units",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Dynamic Collaboration of Multi-Language Models based on Minimal Complete Semantic Units",
+          "Reading Between the Prompts: How Stereotypes ShapeLLM\u2019s Implicit Personalization"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Soft Reasoning: Navigating Solution Spaces in Large Language Models through Controlled Embedding Exploration",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Soft Reasoning: Navigating Solution Spaces in Large Language Models through Controlled Embedding Exploration"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human evaluation",
+      "other_type": "measurements",
+      "relationship_type": "correlates",
+      "paper": "BooookScore: A systematic exploration of book-length summarization in the era of LLMs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "BooookScore: A systematic exploration of book-length summarization in the era of LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generation diversity",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Closing the Curious Case of Neural Text Degeneration",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Closing the Curious Case of Neural Text Degeneration"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "The Consensus Game: Language Model Generation via Equilibrium Search",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "The Consensus Game: Language Model Generation via Equilibrium Search"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Text generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Collab: Controlled Decoding using Mixture of Agents for LLM Alignment",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Collab: Controlled Decoding using Mixture of Agents for LLM Alignment"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "correlates",
+      "paper": "HelpSteer 2: Open-source dataset for training top-performing reward models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "HelpSteer 2: Open-source dataset for training top-performing reward models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-based evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Simulating Human-like Daily Activities with Desire-driven Autonomy",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Simulating Human-like Daily Activities with Desire-driven Autonomy"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Creativity",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Turning Up the Heat: Min-p Sampling for Creative and Coherent LLM Outputs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Turning Up the Heat: Min-p Sampling for Creative and Coherent LLM Outputs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Memory retention",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "LongGenBench: Benchmarking Long-Form Generation in Long Context LLMs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "LongGenBench: Benchmarking Long-Form Generation in Long Context LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AlpacaEval v1.0",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "ReSURE: Regularizing Supervision Unreliability for Multi-turn Dialogue Fine-tuning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "ReSURE: Regularizing Supervision Unreliability for Multi-turn Dialogue Fine-tuning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Stability",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Guiding Medical Vision-Language Models with Diverse Visual Prompts: Framework Design and Comprehensive Exploration of Prompt Variations",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Guiding Medical Vision-Language Models with Diverse Visual Prompts: Framework Design and Comprehensive Exploration of Prompt Variations"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BERTScore",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "A Unified Supervised and Unsupervised Dialogue Topic Segmentation Framework Based on Utterance Pair Modeling",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "A Unified Supervised and Unsupervised Dialogue Topic Segmentation Framework Based on Utterance Pair Modeling"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MT-Bench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Reflection-Window Decoding: Text Generation with Selective Refinement",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Reflection-Window Decoding: Text Generation with Selective Refinement"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Causal reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Diagram-Driven Course Questions Generation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Diagram-Driven Course Questions Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Instruction following",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "ReSURE: Regularizing Supervision Unreliability for Multi-turn Dialogue Fine-tuning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "ReSURE: Regularizing Supervision Unreliability for Multi-turn Dialogue Fine-tuning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8k",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "DoLLMs Adhere to Label Definitions? Examining Their Receptivity to External Label Definitions",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "DoLLMs Adhere to Label Definitions? Examining Their Receptivity to External Label Definitions"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MATH",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "DoLLMs Adhere to Label Definitions? Examining Their Receptivity to External Label Definitions",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "DoLLMs Adhere to Label Definitions? Examining Their Receptivity to External Label Definitions"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MCBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "DSVD: Dynamic Self-Verify Decoding for Faithful Generation in Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "DSVD: Dynamic Self-Verify Decoding for Faithful Generation in Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 22,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 20,
+  "characterization": "Across the surveyed literature, coherence is most frequently described as the quality of a model's output being logical, internally consistent, and free from contradictions. This general concept is specified across various contexts, including `semantic coherence` (relevance to preceding text), `dialogue coherence` (consistency across conversational turns), and `temporal coherence` (logical progression in video). While most definitions focus on the properties of the generated text, a distinct framing defines coherence as the alignment between a model's generative and discriminative judgments, where both procedures should \"agree about which candidate answers are correct\" (The Consensus Game: Language Model Generation via Equilibrium Search). The construct is operationalized through several methods, with some papers relying on `Human evaluation` or using specific benchmarks like `MCBench` to assess it. Other approaches employ automated metrics, such as calculating the \"cosine similarity between the sentence embedding of the prefix... and the generated continuation\" (Language Model Decoding as Direct Metrics Optimization), using log-perplexity for speech quality, or applying statistical measures like Cronbach's alpha for internal consistency. Several papers distinguish coherence from other qualities; for example, one study notes that compressed models can generate text that is \"fluent, consistent, and coherent\" yet factually incorrect (Compressing LLMs: The Truth is Rarely Pure and Never Simple). The challenge of maintaining coherence is a recurring theme, particularly in long-form generation where models may exhibit \"a loss of coherence and adherence to task instructions\" over extended outputs (LongGenBench: Benchmarking Long-Form Generation in Long Context LLMs).",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "ARGS: Alignment as Reward-Guided Search",
+      "BooookScore: A systematic exploration of book-length summarization in the era of LLMs",
+      "Closing the Curious Case of Neural Text Degeneration",
+      "Compressing LLMs: The Truth is Rarely Pure and Never Simple",
+      "Language Model Decoding as Direct Metrics Optimization",
+      "Spoken Question Answering and Speech Continuation Using Spectrogram-Powered LLM",
+      "The Consensus Game: Language Model Generation via Equilibrium Search"
+    ],
+    "neurips24": [
+      "AgentPoison: Red-teaming LLM Agents via Poisoning Memory or Knowledge Bases",
+      "CODE: Contrasting Self-generated Description to Combat Hallucination in Large Multi-modal Models",
+      "Decoding-Time Language Model Alignment with Multiple Objectives",
+      "HelpSteer 2: Open-source dataset for training top-performing reward models",
+      "Learning Goal-Conditioned Representations for Language Reward Models",
+      "On the Power of Decision Trees in Auto-Regressive Language Modeling",
+      "Order-Independence Without Fine Tuning",
+      "Transfer Q-star : Principled Decoding for LLM Alignment",
+      "Decompose, Analyze and Rethink: Solving Intricate Problems with Human-like Reasoning Cycle",
+      "MMDU: A Multi-Turn Multi-Image Dialog Understanding Benchmark and Instruction-Tuning Dataset for LVLMs",
+      "ChronoMagic-Bench: A Benchmark for Metamorphic Evaluation of Text-to-Time-lapse Video Generation",
+      "GenRL: Multimodal-foundation world models for generalization in embodied agents",
+      "One Token to Seg Them All: Language Instructed Reasoning Segmentation in Videos"
+    ],
+    "iclr25": [
+      "Collab: Controlled Decoding using Mixture of Agents for LLM Alignment",
+      "Context Steering: Controllable Personalization at Inference Time",
+      "HelpSteer2-Preference: Complementing Ratings with Preferences",
+      "Interleaved Scene Graphs for Interleaved Text-and-Image Generation Assessment",
+      "LongGenBench: Benchmarking Long-Form Generation in Long Context LLMs",
+      "LongWriter: Unleashing 10,000+ Word Generation from Long Context LLMs",
+      "MA-RLHF: Reinforcement Learning from Human Feedback with Macro Actions",
+      "MAP: Multi-Human-Value Alignment Palette",
+      "MMRole: A Comprehensive Framework for Developing and Evaluating Multimodal Role-Playing Agents",
+      "RevisEval: Improving LLM-as-a-Judge via Response-Adapted References",
+      "Simulating Human-like Daily Activities with Desire-driven Autonomy",
+      "TeaserGen: Generating Teasers for Long Documentaries",
+      "Turning Up the Heat: Min-p Sampling for Creative and Coherent LLM Outputs"
+    ],
+    "acl25": [
+      "CLAIM: Mitigating Multilingual Object Hallucination in Large Vision-Language Models with Cross-Lingual Attention Intervention",
+      "ClusterAttn:KVCache Compression under Intrinsic Attention Clustering",
+      "DNCASR: End-to-End Training for Speaker-AttributedASR",
+      "Enhancing Lexicon-Based Text Embeddings with Large Language Models",
+      "Generative Psycho-Lexical Approach for Constructing Value Systems in Large Language Models",
+      "GoR",
+      "HD-NDEs: Neural Differential Equations for Hallucination Detection inLLMs",
+      "MaCP: Minimal yet Mighty Adaptation via Hierarchical Cosine Projection",
+      "The Impact of Token Granularity on the Predictive Power of Language Model Surprisal",
+      "BIG-Bench Extra Hard",
+      "CodeTool: Enhancing Programmatic Tool Invocation ofLLMs via Process Supervision",
+      "Think&Cite: Improving Attributed Text Generation with Self-Guided Tree Search and Progress Reward Modeling",
+      "Game Development as Human-LLMInteraction"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.136.checklist",
+      "2025.emnlp-main.1785.checklist",
+      "AdaRewriter: Unleashing the Power of Prompting-based Conversational Query Reformulation via Test-Time Adaptation",
+      "Agent-as-Judge for Factual Summarization of Long Narratives",
+      "BRSpeech-DF: A Deep Fake Synthetic Speech Dataset forPortuguese Zero-ShotTTS",
+      "CARD: Cross-modal Agent Framework for Generative and Editable Residential Design",
+      "CARE: Multilingual Human Preference Learning for Cultural Awareness",
+      "Certified Mitigation of Worst-CaseLLMCopyright Infringement",
+      "DSVD: Dynamic Self-Verify Decoding for Faithful Generation in Large Language Models",
+      "DoLLMs Adhere to Label Definitions? Examining Their Receptivity to External Label Definitions",
+      "Dynamic Collaboration of Multi-Language Models based on Minimal Complete Semantic Units",
+      "Efficient Real-time Refinement of Language Model Text Generation",
+      "Evaluating Language Translation Models by Playing Telephone",
+      "Expanding before Inferring: Enhancing Factuality in Large Language Models through Premature Layers Interpolation",
+      "Extracting Linguistic Information from Large Language Models: Syntactic Relations and Derivational Knowledge",
+      "Friend or Foe? A Computational Investigation of Semantic FalseFriends acrossRomance Languages",
+      "Judging Quality Across Languages: A Multilingual Approach to Pretraining Data Filtering with Language Models",
+      "LORAXBENCH: A Multitask, Multilingual Benchmark Suite for 20Indonesian Languages",
+      "MS-RAG: Simple and Effective Multi-Semantic Retrieval-Augmented Generation",
+      "Mixture of Length and Pruning Experts for Knowledge Graphs Reasoning",
+      "Model Consistency as a Cheap yet Predictive Proxy forLLMElo Scores",
+      "OpenNER1.0: Standardized Open-Access Named Entity Recognition Datasets in 50+ Languages",
+      "PAFT: Prompt-Agnostic Fine-Tuning",
+      "Permutative Preference Alignment from Listwise Ranking of Human Judgments",
+      "Preemptive Detection and Correction of Misaligned Actions inLLMAgents",
+      "Probing for Arithmetic Errors in Language Models",
+      "ReSURE: Regularizing Supervision Unreliability for Multi-turn Dialogue Fine-tuning",
+      "Reading Between the Prompts: How Stereotypes ShapeLLM\u2019s Implicit Personalization",
+      "Refusal-Aware Red Teaming: Exposing Inconsistency in Safety Evaluations",
+      "Reliable and Cost-Effective Exploratory Data Analysis via Graph-GuidedRAG",
+      "Rewarding the Unlikely: LiftingGRPOBeyond Distribution Sharpening",
+      "SCRIBE: Structured Chain Reasoning for Interactive Behaviour Explanations using Tool Calling",
+      "START: Self-taught Reasoner with Tools",
+      "Static or Dynamic: Towards Query-Adaptive Token Selection for Video Question Answering",
+      "The Role of Outgoing Connection Heterogeneity in Feedforward Layers of Large Language Models",
+      "Threading the Needle: Reweaving Chain-of-Thought Reasoning to Explain Human Label Variation",
+      "Unmasking Deceptive Visuals: Benchmarking Multimodal Large Language Models on Misleading Chart Question Answering",
+      "When Life Gives You Samples: The Benefits of Scaling up Inference Compute for MultilingualLLMs",
+      "similarity relationships",
+      "Alignment for Efficient Tool Calling of Large Language Models",
+      "CLIP-MoE: Towards Building Mixture of Experts forCLIPwith Diversified Multiplet Upcycling",
+      "Disambiguation in Conversational Question Answering in the Era ofLLMs and Agents: A Survey",
+      "PLAN-TUNING: Post-Training Language Models to Learn Step-by-Step Planning for Complex Problem Solving",
+      "PerspectiveMod: A Perspectivist Resource for Deliberative Moderation",
+      "SOLAR: Towards Characterizing Subjectivity of Individuals through Modeling Value Conflicts and Trade-offs",
+      "Sentence Smith: Controllable Edits for Evaluating Text Embeddings",
+      "TRUST-VL: An Explainable News Assistant for General Multimodal Misinformation Detection",
+      "Understanding the Thinking Process of Reasoning Models: A Perspective from Schoenfeld\u2019s Episode Theory",
+      "Active Layer-Contrastive Decoding Reduces Hallucination in Large Language Model Generation",
+      "Mapping the Minds ofLLMs: A Graph-Based Analysis of ReasoningLLMs",
+      "Corrupted but Not Broken: Understanding and Mitigating the Negative Impacts of Corrupted Data in Visual Instruction Tuning",
+      "Data-Efficient Hate Speech Detection via Cross-Lingual Nearest Neighbor Retrieval with Limited Labeled Data",
+      "LLM-Driven Implicit Target Augmentation and Fine-Grained Contextual Modeling for Zero-Shot and Few-Shot Stance Detection",
+      "Logits-Based Finetuning",
+      "Plutus: Benchmarking Large Language Models in Low-ResourceGreek Finance"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 7,
+    "neurips24": 13,
+    "iclr25": 13,
+    "acl25": 13,
+    "emnlp25": 55
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "neurips24"
+  ]
+}

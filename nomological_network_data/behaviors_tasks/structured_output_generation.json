@@ -1,0 +1,174 @@
+{
+  "canonical_name": "Structured output generation",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, structured output generation is most commonly defined as producing text that adheres to a required format, particularly for matching API or function-call specifications. This behavior is operationalized through a variety of specific tasks, including the generation of JSON, YAML configuration files, circuit netlists, tabular summaries, and presentation slides. The emphasis is on strict conformance to a pre-defined structure, as one paper notes, \"a successful function call must strictly match the format specified in the API definition\" (ToolACE: Winning the Points of LLM Function Calling). To enforce these constraints, some work employs methods like constrained decoding, and the behavior is measured by benchmarks such as TACT. Structured output generation is frequently studied in the context of `Tool use`, as parseable formats are a prerequisite for many external tool interactions. Research also investigates factors affecting this capability, with one study finding that model compression \"Significantly Impacts Structured Output Generation,\" especially for JSON formats compared to plain strings (Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression). The behavior is also examined in multi-stage processes, where a related task like `Outline generation` can produce an intermediate structure that guides the final output.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Result formatting",
+    "Structured output generation",
+    "Configuration generation",
+    "JSON generation",
+    "Netlist generation",
+    "Formalized representation generation",
+    "Presentation generation",
+    "Slide generation",
+    "Table generation"
+  ],
+  "papers": [
+    "2025.emnlp-main.728.checklist",
+    "CoBia: Constructed Conversations Can Trigger Otherwise Concealed Societal Biases inLLMs",
+    "Confidence-guided Refinement Reasoning for Zero-shot Question Answering",
+    "EasyRec: Simple yet Effective Language Models for Recommendation",
+    "Flexible-length Text Infilling for Discrete Diffusion Models",
+    "Warm Up Before You Train: Unlocking General Reasoning in Resource-Constrained Settings",
+    "Planning Anything with Rigor: General-Purpose Zero-Shot Planning with LLM-based Formalized Programming",
+    "ToolACE: Winning the Points of LLM Function Calling",
+    "AUTOCIRCUIT-RL: Reinforcement Learning-Driven LLM for Automated Circuit Topology Generation",
+    "Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression",
+    "Dialogue Without Limits: Constant-Sized KV Caches for Extended Response in LLMs",
+    "Earley-Driven Dynamic Pruning for Efficient Structured Decoding",
+    "Flexible and Efficient Grammar-Constrained Decoding",
+    "PINNsAgent: Automated PDE Surrogation with Large Language Models",
+    "Q-VLM: Post-training Quantization for Large Vision-Language Models",
+    "TACT: Advancing Complex Aggregative Reasoning with Information Extraction Tools"
+  ],
+  "paper_count": 16,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Producing outputs in a required structured format that matches API or function-call specifications.",
+      "paper": "ToolACE: Winning the Points of LLM Function Calling",
+      "original_name": "Structured output generation"
+    },
+    {
+      "text": "Converting solver outputs into a fixed structured output format.",
+      "paper": "Planning Anything with Rigor: General-Purpose Zero-Shot Planning with LLM-based Formalized Programming",
+      "original_name": "Result formatting"
+    },
+    {
+      "text": "The task of producing text that is a syntactically valid JSON object, often based on a natural language prompt or other input.",
+      "paper": "Earley-Driven Dynamic Pruning for Efficient Structured Decoding",
+      "original_name": "JSON generation"
+    },
+    {
+      "text": "Outputting a textual representation of a circuit as a list of component-to-node connections, formatted using incident encoding.",
+      "paper": "AUTOCIRCUIT-RL: Reinforcement Learning-Driven LLM for Automated Circuit Topology Generation",
+      "original_name": "Netlist generation"
+    },
+    {
+      "text": "The task of producing structured configuration files, such as in YAML format, that specify the hyperparameters and settings for an experiment.",
+      "paper": "PINNsAgent: Automated PDE Surrogation with Large Language Models",
+      "original_name": "Configuration generation"
+    },
+    {
+      "text": "The production of structured, unambiguous dialogue turn representations that include speaker intention, relevant slots, and explanatory reasoning, derived from natural language utterances.",
+      "paper": "CoBia: Constructed Conversations Can Trigger Otherwise Concealed Societal Biases inLLMs",
+      "original_name": "Formalized representation generation"
+    },
+    {
+      "text": "The task of automatically creating a multi-slide presentation from a source document.",
+      "paper": "Warm Up Before You Train: Unlocking General Reasoning in Resource-Constrained Settings",
+      "original_name": "Presentation generation"
+    },
+    {
+      "text": "Producing presentation slides by iteratively applying editing actions (e.g., replace_span, replace_image) to reference slides based on input content.",
+      "paper": "Warm Up Before You Train: Unlocking General Reasoning in Resource-Constrained Settings",
+      "original_name": "Slide generation"
+    },
+    {
+      "text": "Creating structured tabular summaries from scientific literature or data.",
+      "paper": "EasyRec: Simple yet Effective Language Models for Recommendation",
+      "original_name": "Table generation"
+    }
+  ],
+  "definition_count": 9,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TACT",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "TACT: Advancing Complex Aggregative Reasoning with Information Extraction Tools",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "TACT: Advancing Complex Aggregative Reasoning with Information Extraction Tools"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Tool use",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression",
+      "evidence": "Model Compression Significantly Impacts Structured Output Generation. Our experimental results in Table 8 demonstrate significant performance variations between JSON and string format outputs under different compression techniques. The analysis reveals that model performance consistently degrades more severely when generating JSON-structured outputs compared to string formats.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Outline generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Warm Up Before You Train: Unlocking General Reasoning in Resource-Constrained Settings",
+      "evidence": "Guided by the presentation outline from the previous phase, slides are generated iteratively. (Section 2.3)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Warm Up Before You Train: Unlocking General Reasoning in Resource-Constrained Settings"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 2,
+  "characterization": "Across the surveyed literature, structured output generation is most commonly defined as producing text that adheres to a required format, particularly for matching API or function-call specifications. This behavior is operationalized through a variety of specific tasks, including the generation of JSON, YAML configuration files, circuit netlists, tabular summaries, and presentation slides. The emphasis is on strict conformance to a pre-defined structure, as one paper notes, \"a successful function call must strictly match the format specified in the API definition\" (ToolACE: Winning the Points of LLM Function Calling). To enforce these constraints, some work employs methods like constrained decoding, and the behavior is measured by benchmarks such as TACT. Structured output generation is frequently studied in the context of `Tool use`, as parseable formats are a prerequisite for many external tool interactions. Research also investigates factors affecting this capability, with one study finding that model compression \"Significantly Impacts Structured Output Generation,\" especially for JSON formats compared to plain strings (Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression). The behavior is also examined in multi-stage processes, where a related task like `Outline generation` can produce an intermediate structure that guides the final output.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Planning Anything with Rigor: General-Purpose Zero-Shot Planning with LLM-based Formalized Programming",
+      "ToolACE: Winning the Points of LLM Function Calling"
+    ],
+    "icml25": [
+      "AUTOCIRCUIT-RL: Reinforcement Learning-Driven LLM for Automated Circuit Topology Generation",
+      "Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression",
+      "Dialogue Without Limits: Constant-Sized KV Caches for Extended Response in LLMs",
+      "Earley-Driven Dynamic Pruning for Efficient Structured Decoding",
+      "Flexible and Efficient Grammar-Constrained Decoding",
+      "PINNsAgent: Automated PDE Surrogation with Large Language Models"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.728.checklist",
+      "CoBia: Constructed Conversations Can Trigger Otherwise Concealed Societal Biases inLLMs",
+      "Confidence-guided Refinement Reasoning for Zero-shot Question Answering",
+      "EasyRec: Simple yet Effective Language Models for Recommendation",
+      "Flexible-length Text Infilling for Discrete Diffusion Models",
+      "Warm Up Before You Train: Unlocking General Reasoning in Resource-Constrained Settings"
+    ],
+    "neurips24": [
+      "Q-VLM: Post-training Quantization for Large Vision-Language Models",
+      "TACT: Advancing Complex Aggregative Reasoning with Information Extraction Tools"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "icml25": 6,
+    "emnlp25": 6,
+    "neurips24": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "canonical_name": "Privacy preservation",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, privacy preservation is a construct concerned with minimizing data exposure and memorization risk from private data used in LLM training, fine-tuning, and prompting. The common goal is to prevent models from leaking, regurgitating, or otherwise disclosing sensitive information, such as \"private user information found in the training corpus.\" This construct is studied in multiple contexts, including federated learning where clients train on local data, and in-context learning where there is a risk that models \"may leak or regurgitate the private examples demonstrated in the prompt.\" The most prevalent method for operationalizing this construct is through formal mathematical guarantees, with multiple papers defining it via differential privacy (DP). This involves ensuring that model parameters, outputs, or generated prompts satisfy a formal `(\u03b5, \u03b4)-DP` guarantee with respect to the private dataset. Other techniques mentioned include generating synthetic data or prompts with DP guarantees. To empirically assess the degree of privacy preservation, the provided literature indicates the use of both `LLM-as-a-judge` and `Human evaluation`, with one paper stating its use of human evaluation to assess a model's \"capability in generating private summaries.\"",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Privacy preservation"
+  ],
+  "papers": [
+    "2025.emnlp-main.223.checklist",
+    "Evaluating Language Translation Models by Playing Telephone",
+    "FinetuningLLMs for Human Behavior Prediction in Social Science Experiments",
+    "Path Drift in Large Reasoning Models: How First-Person Commitments Override Safety",
+    "RESF: Regularized-Entropy-Sensitive Fingerprinting for Black-Box Tamper Detection of Large Language Models",
+    "STAREat the Structure: SteeringICLExemplar Selection with Structural Alignment",
+    "Breaking Physical and Linguistic Borders: Multilingual Federated Prompt Tuning for Low-Resource Languages",
+    "DP-OPT: Make Large Language Model Your Privacy-Preserving Prompt Engineer",
+    "Privacy-Preserving In-Context Learning with Differentially Private Few-Shot Generation",
+    "Privately Aligning Language Models with Reinforcement Learning",
+    "CollabEdit: Towards Non-destructive Collaborative Knowledge Editing",
+    "IterGen: Iterative Semantic-aware Structured LLM Generation with Backtracking",
+    "Efficient Personalized Adaptation for Physiological Signal Foundation Model",
+    "Efficient and Privacy-Preserving Soft Prompt Transfer for LLMs",
+    "Federated In-Context Learning: Iterative Refinement for Improved Answer Quality",
+    "Synthesizing Privacy-Preserving Text Data via Finetuning *without* Finetuning Billion-Scale LLMs",
+    "Synthetic Text Generation for Training Large Language Models via Gradient Matching"
+  ],
+  "paper_count": 17,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The extent to which a model training process minimizes data exposure and memorization risk, particularly in federated settings with decentralized data.",
+      "paper": "Breaking Physical and Linguistic Borders: Multilingual Federated Prompt Tuning for Low-Resource Languages",
+      "original_name": "Privacy preservation"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-as-a-judge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LLMThe Genius Paradox: A Linguistic and Math Expert\u2019s Struggle with Simple Word-based Counting Problems",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "LLMThe Genius Paradox: A Linguistic and Math Expert\u2019s Struggle with Simple Word-based Counting Problems"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "FinetuningLLMs for Human Behavior Prediction in Social Science Experiments",
+      "evidence": "We further evaluate the LMs capability in generating private summaries by conducting a human evaluation. (Section 4.5)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "FinetuningLLMs for Human Behavior Prediction in Social Science Experiments"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 2,
+  "characterization": "Across the surveyed literature, privacy preservation is a construct concerned with minimizing data exposure and memorization risk from private data used in LLM training, fine-tuning, and prompting. The common goal is to prevent models from leaking, regurgitating, or otherwise disclosing sensitive information, such as \"private user information found in the training corpus.\" This construct is studied in multiple contexts, including federated learning where clients train on local data, and in-context learning where there is a risk that models \"may leak or regurgitate the private examples demonstrated in the prompt.\" The most prevalent method for operationalizing this construct is through formal mathematical guarantees, with multiple papers defining it via differential privacy (DP). This involves ensuring that model parameters, outputs, or generated prompts satisfy a formal `(\u03b5, \u03b4)-DP` guarantee with respect to the private dataset. Other techniques mentioned include generating synthetic data or prompts with DP guarantees. To empirically assess the degree of privacy preservation, the provided literature indicates the use of both `LLM-as-a-judge` and `Human evaluation`, with one paper stating its use of human evaluation to assess a model's \"capability in generating private summaries.\"",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Breaking Physical and Linguistic Borders: Multilingual Federated Prompt Tuning for Low-Resource Languages",
+      "DP-OPT: Make Large Language Model Your Privacy-Preserving Prompt Engineer",
+      "Privacy-Preserving In-Context Learning with Differentially Private Few-Shot Generation",
+      "Privately Aligning Language Models with Reinforcement Learning"
+    ],
+    "iclr25": [
+      "CollabEdit: Towards Non-destructive Collaborative Knowledge Editing",
+      "IterGen: Iterative Semantic-aware Structured LLM Generation with Backtracking"
+    ],
+    "icml25": [
+      "Efficient Personalized Adaptation for Physiological Signal Foundation Model",
+      "Efficient and Privacy-Preserving Soft Prompt Transfer for LLMs",
+      "Federated In-Context Learning: Iterative Refinement for Improved Answer Quality",
+      "Synthesizing Privacy-Preserving Text Data via Finetuning *without* Finetuning Billion-Scale LLMs",
+      "Synthetic Text Generation for Training Large Language Models via Gradient Matching"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.223.checklist",
+      "Evaluating Language Translation Models by Playing Telephone",
+      "FinetuningLLMs for Human Behavior Prediction in Social Science Experiments",
+      "Path Drift in Large Reasoning Models: How First-Person Commitments Override Safety",
+      "RESF: Regularized-Entropy-Sensitive Fingerprinting for Black-Box Tamper Detection of Large Language Models",
+      "STAREat the Structure: SteeringICLExemplar Selection with Structural Alignment"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 4,
+    "iclr25": 2,
+    "icml25": 5,
+    "emnlp25": 6
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25"
+  ]
+}

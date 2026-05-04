@@ -1,0 +1,86 @@
+{
+  "canonical_name": "OpenOrca",
+  "type": "measurement",
+  "canonical_definition": "Across the surveyed literature, OpenOrca is consistently presented as a dataset with a dual purpose: for supervised fine-tuning (SFT) and for the evaluation of large language models. It is most frequently used to assess \"general reasoning and comprehension performance\" and \"instruction-following capabilities.\" One study also employs it to \"validate model\u2019s self-information retention and sequence-level semantic aggregation.\" There is some variation in how its composition is described. One framing presents the broader \"Orca\" family, which includes OpenOrca, as being \"derived from explanations of chain-of-thought reasoning steps from larger models.\" Another common description characterizes it as an SFT collection that \"samples from and combines prior SFT collections, including T0, FLAN, NIV, and CoT.\" The dataset is referred to interchangeably as \"OpenOrca,\" \"Orca,\" and as part of the \"ORCA\" family, which also contains a distilled version named SLIMORCA.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "OpenOrca",
+    "ORCA",
+    "Orca"
+  ],
+  "papers": [
+    "SEAL: Safety-enhanced Aligned LLM Fine-tuning via Bilevel Data Selection",
+    "Train Small, Infer Large: Memory-Efficient LoRA Training for Large Language Models",
+    "A Lens into Interpretable Transformer Mistakes via Semantic Dependency",
+    "Data Mixing Optimization for Supervised Fine-Tuning of Large Language Models",
+    "Keeping LLMs Aligned After Fine-tuning: The Crucial Role of Prompt Templates",
+    "Would I Lie To You? Inference Time Alignment of Language Models using Direct Preference Heads"
+  ],
+  "paper_count": 6,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "An instruction/reasoning dataset used to fine-tune and evaluate general reasoning and comprehension performance.",
+      "paper": "Keeping LLMs Aligned After Fine-tuning: The Crucial Role of Prompt Templates",
+      "original_name": "OpenOrca"
+    },
+    {
+      "text": "A dataset family (including OPENORCA and SLIMORCA) used for evaluating instruction-following capabilities, derived from explanations of chain-of-thought reasoning steps from larger models.",
+      "paper": "SEAL: Safety-enhanced Aligned LLM Fine-tuning via Bilevel Data Selection",
+      "original_name": "ORCA"
+    },
+    {
+      "text": "SFT collection that aggregates data from prior instruction-tuning datasets like FLAN, T0, and CoT, used for re-weighting and downstream evaluation.",
+      "paper": "Data Mixing Optimization for Supervised Fine-Tuning of Large Language Models",
+      "original_name": "Orca"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction following",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "SEAL: Safety-enhanced Aligned LLM Fine-tuning via Bilevel Data Selection",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "SEAL: Safety-enhanced Aligned LLM Fine-tuning via Bilevel Data Selection"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the surveyed literature, OpenOrca is consistently presented as a dataset with a dual purpose: for supervised fine-tuning (SFT) and for the evaluation of large language models. It is most frequently used to assess \"general reasoning and comprehension performance\" and \"instruction-following capabilities.\" One study also employs it to \"validate model\u2019s self-information retention and sequence-level semantic aggregation.\" There is some variation in how its composition is described. One framing presents the broader \"Orca\" family, which includes OpenOrca, as being \"derived from explanations of chain-of-thought reasoning steps from larger models.\" Another common description characterizes it as an SFT collection that \"samples from and combines prior SFT collections, including T0, FLAN, NIV, and CoT.\" The dataset is referred to interchangeably as \"OpenOrca,\" \"Orca,\" and as part of the \"ORCA\" family, which also contains a distilled version named SLIMORCA.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "Keeping LLMs Aligned After Fine-tuning: The Crucial Role of Prompt Templates",
+      "Would I Lie To You? Inference Time Alignment of Language Models using Direct Preference Heads"
+    ],
+    "iclr25": [
+      "SEAL: Safety-enhanced Aligned LLM Fine-tuning via Bilevel Data Selection",
+      "Train Small, Infer Large: Memory-Efficient LoRA Training for Large Language Models"
+    ],
+    "icml25": [
+      "A Lens into Interpretable Transformer Mistakes via Semantic Dependency",
+      "Data Mixing Optimization for Supervised Fine-Tuning of Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 2,
+    "iclr25": 2,
+    "icml25": 2
+  },
+  "conferences": [
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

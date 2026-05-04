@@ -1,0 +1,108 @@
+{
+  "canonical_name": "Contradiction detection",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, contradiction detection is a behavior focused on identifying logical inconsistencies between textual assertions. The most prevalent framing involves detecting contradictions within a single source, such as identifying \"mutually inconsistent statements within the same report\" (D-CoDe: Scaling Image-PretrainedVLMs to Video via Dynamic Compression and Question Decomposition) or internal inconsistencies in a multi-sentence document. Another common approach is to identify contradictions between different sources, such as between a piece of evidence and a testimony, or between facts within a larger corpus. A more specialized application defines it as detecting semantic differences in model responses to the same question across multiple languages to find \"locale-sensitive\" questions (Causal Representation Learning from Multimodal Clinical Records under Non-Random Modality Missingness). The behavior is operationalized in various ways, including as a \"multiple-choice format\" task for selecting a contradictory pair and as a \"binary classification task over atomic facts.\" The stated purpose of this detection is often to ensure \"textual coherence and reliability\" (MovieCORE:COgnitiveREasoning in Movies), with identified contradictions sometimes being classified as \"Severe Errors\" or used to trigger resolution processes. The provided data also indicates that contradiction detection is studied in relation to knowledge conflict resolution.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Document-level self-contradiction detection",
+    "Contradiction identification",
+    "Conflict detection",
+    "Logical contradiction",
+    "Answer conflict detection",
+    "Corpus-level inconsistency detection"
+  ],
+  "papers": [
+    "Measuring Data Diversity for Instruction Tuning: A Systematic Analysis and A Reliable Metric",
+    "NeuSym-RAG: Hybrid Neural Symbolic Retrieval with Multiview Structuring forPDFQuestion Answering",
+    "Causal Representation Learning from Multimodal Clinical Records under Non-Random Modality Missingness",
+    "D-CoDe: Scaling Image-PretrainedVLMs to Video via Dynamic Compression and Question Decomposition",
+    "End-to-End Learnable Psychiatric Scale Guided Risky Post Screening for Depression Detection on Social Media",
+    "Foot-In-The-Door: A Multi-turn Jailbreak forLLMs",
+    "Measuring the Effect of Disfluency in Multilingual Knowledge Probing Benchmarks",
+    "MovieCORE:COgnitiveREasoning in Movies",
+    "Towards Author-informedNLP: Mind the Social Bias",
+    "WojoodRelations:Arabic Relation Extraction Corpus and Modeling"
+  ],
+  "paper_count": 10,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The task of identifying whether a multi-sentence document contains any internal contradictions.",
+      "paper": "MovieCORE:COgnitiveREasoning in Movies",
+      "original_name": "Document-level self-contradiction detection"
+    },
+    {
+      "text": "The observable task of selecting a pair of testimony and evidence that logically contradict each other based on narrative context.",
+      "paper": "Foot-In-The-Door: A Multi-turn Jailbreak forLLMs",
+      "original_name": "Contradiction identification"
+    },
+    {
+      "text": "Observably identifying logical inconsistencies between assertions, either within a single agent or across the multi-agent system.",
+      "paper": "End-to-End Learnable Psychiatric Scale Guided Risky Post Screening for Depression Detection on Social Media",
+      "original_name": "Conflict detection"
+    },
+    {
+      "text": "Including mutually inconsistent statements within the same report, such as asserting both the presence and absence of a finding.",
+      "paper": "D-CoDe: Scaling Image-PretrainedVLMs to Video via Dynamic Compression and Question Decomposition",
+      "original_name": "Logical contradiction"
+    },
+    {
+      "text": "Identifying cases where model responses differ semantically across languages for the same question, indicating potential locale sensitivity.",
+      "paper": "Causal Representation Learning from Multimodal Clinical Records under Non-Random Modality Missingness",
+      "original_name": "Answer conflict detection"
+    },
+    {
+      "text": "The task of identifying, for a given fact from a corpus, whether there exists at least one other fact within the same corpus that contradicts it.",
+      "paper": "Towards Author-informedNLP: Mind the Social Bias",
+      "original_name": "Corpus-level inconsistency detection"
+    }
+  ],
+  "definition_count": 6,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Knowledge conflict resolution",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Measuring Data Diversity for Instruction Tuning: A Systematic Analysis and A Reliable Metric",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Measuring Data Diversity for Instruction Tuning: A Systematic Analysis and A Reliable Metric"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the provided literature, contradiction detection is a behavior focused on identifying logical inconsistencies between textual assertions. The most prevalent framing involves detecting contradictions within a single source, such as identifying \"mutually inconsistent statements within the same report\" (D-CoDe: Scaling Image-PretrainedVLMs to Video via Dynamic Compression and Question Decomposition) or internal inconsistencies in a multi-sentence document. Another common approach is to identify contradictions between different sources, such as between a piece of evidence and a testimony, or between facts within a larger corpus. A more specialized application defines it as detecting semantic differences in model responses to the same question across multiple languages to find \"locale-sensitive\" questions (Causal Representation Learning from Multimodal Clinical Records under Non-Random Modality Missingness). The behavior is operationalized in various ways, including as a \"multiple-choice format\" task for selecting a contradictory pair and as a \"binary classification task over atomic facts.\" The stated purpose of this detection is often to ensure \"textual coherence and reliability\" (MovieCORE:COgnitiveREasoning in Movies), with identified contradictions sometimes being classified as \"Severe Errors\" or used to trigger resolution processes. The provided data also indicates that contradiction detection is studied in relation to knowledge conflict resolution.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Causal Representation Learning from Multimodal Clinical Records under Non-Random Modality Missingness",
+      "D-CoDe: Scaling Image-PretrainedVLMs to Video via Dynamic Compression and Question Decomposition",
+      "End-to-End Learnable Psychiatric Scale Guided Risky Post Screening for Depression Detection on Social Media",
+      "Foot-In-The-Door: A Multi-turn Jailbreak forLLMs",
+      "Measuring the Effect of Disfluency in Multilingual Knowledge Probing Benchmarks",
+      "MovieCORE:COgnitiveREasoning in Movies",
+      "Towards Author-informedNLP: Mind the Social Bias",
+      "WojoodRelations:Arabic Relation Extraction Corpus and Modeling"
+    ],
+    "acl25": [
+      "Measuring Data Diversity for Instruction Tuning: A Systematic Analysis and A Reliable Metric",
+      "NeuSym-RAG: Hybrid Neural Symbolic Retrieval with Multiview Structuring forPDFQuestion Answering"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 8,
+    "acl25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25"
+  ]
+}

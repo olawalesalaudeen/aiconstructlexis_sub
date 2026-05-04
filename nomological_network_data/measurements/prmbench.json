@@ -1,0 +1,114 @@
+{
+  "canonical_name": "PRMBENCH",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, PRMBENCH is consistently described as a benchmark for evaluating process-level reward models. Its primary function is to assess the step-level correctness of reasoning chains in multi-step problem-solving, with one paper specifying its design is for evaluating \"reasoning correctness and error detection\" (BELLE: A Bi-Level Multi-Agent Reasoning Framework for Multi-Hop Question Answering). Built on the PRM800K corpus, the benchmark is composed of math problems, with sources citing either \"6k\" or more specifically \"6,216 carefully designed problems\" distributed across nine error categories. The dataset also contains \"83,456 step-level labels\" to facilitate its evaluation goals. According to the relationships provided, papers use PRMBENCH to measure model performance across multiple dimensions, including the constructs of `Simplicity`, `Soundness`, and `Sensitivity`. It is also identified as an instrument for conducting `Error analysis`. In practice, it is used in evaluations alongside other datasets, with model performance reported using metrics like Macro-F1 scores.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "PRMBENCH",
+    "PRMBench"
+  ],
+  "papers": [
+    "BELLE: A Bi-Level Multi-Agent Reasoning Framework for Multi-Hop Question Answering",
+    "Language Constrained Multimodal Hyper Adapter For Many-to-Many Multimodal Summarization",
+    "AIMMerging: Adaptive Iterative Model Merging Using Training Trajectories for Language Model Continual Learning",
+    "Avoidance Decoding for Diverse Multi-Branch Story Generation"
+  ],
+  "paper_count": 4,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Benchmark dataset built on PRM800K corpus with 6k math problems across 9 error categories, designed to evaluate process-level reward models on reasoning correctness and error detection.",
+      "paper": "BELLE: A Bi-Level Multi-Agent Reasoning Framework for Multi-Hop Question Answering",
+      "original_name": "PRMBENCH"
+    },
+    {
+      "text": "Benchmark for evaluating process-level rewards in reasoning chains, assessing step-level correctness in multi-step problem solving.",
+      "paper": "Avoidance Decoding for Diverse Multi-Branch Story Generation",
+      "original_name": "PRMBench"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Simplicity",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Language Constrained Multimodal Hyper Adapter For Many-to-Many Multimodal Summarization",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Language Constrained Multimodal Hyper Adapter For Many-to-Many Multimodal Summarization"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Soundness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Language Constrained Multimodal Hyper Adapter For Many-to-Many Multimodal Summarization",
+      "evidence": "PRMBENCH comprises 6,216 carefully designed problems and 83,456 step-level labels, evaluating models across multiple dimensions, including simplicity, soundness, and sensitivity. (Section 1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Language Constrained Multimodal Hyper Adapter For Many-to-Many Multimodal Summarization"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Sensitivity",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Language Constrained Multimodal Hyper Adapter For Many-to-Many Multimodal Summarization",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Language Constrained Multimodal Hyper Adapter For Many-to-Many Multimodal Summarization"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Error analysis",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "AIMMerging: Adaptive Iterative Model Merging Using Training Trajectories for Language Model Continual Learning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "AIMMerging: Adaptive Iterative Model Merging Using Training Trajectories for Language Model Continual Learning"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, PRMBENCH is consistently described as a benchmark for evaluating process-level reward models. Its primary function is to assess the step-level correctness of reasoning chains in multi-step problem-solving, with one paper specifying its design is for evaluating \"reasoning correctness and error detection\" (BELLE: A Bi-Level Multi-Agent Reasoning Framework for Multi-Hop Question Answering). Built on the PRM800K corpus, the benchmark is composed of math problems, with sources citing either \"6k\" or more specifically \"6,216 carefully designed problems\" distributed across nine error categories. The dataset also contains \"83,456 step-level labels\" to facilitate its evaluation goals. According to the relationships provided, papers use PRMBENCH to measure model performance across multiple dimensions, including the constructs of `Simplicity`, `Soundness`, and `Sensitivity`. It is also identified as an instrument for conducting `Error analysis`. In practice, it is used in evaluations alongside other datasets, with model performance reported using metrics like Macro-F1 scores.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "BELLE: A Bi-Level Multi-Agent Reasoning Framework for Multi-Hop Question Answering",
+      "Language Constrained Multimodal Hyper Adapter For Many-to-Many Multimodal Summarization"
+    ],
+    "emnlp25": [
+      "AIMMerging: Adaptive Iterative Model Merging Using Training Trajectories for Language Model Continual Learning",
+      "Avoidance Decoding for Diverse Multi-Branch Story Generation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25"
+  ]
+}

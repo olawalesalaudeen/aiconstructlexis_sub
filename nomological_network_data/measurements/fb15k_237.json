@@ -1,0 +1,116 @@
+{
+  "canonical_name": "FB15k-237",
+  "type": "measurement",
+  "canonical_definition": "Across the provided sources, FB15k-237 is consistently characterized as a benchmark dataset derived from Freebase. The prevailing usage of this instrument is to evaluate models on the task of knowledge graph completion, with papers also using it to measure link prediction and for general evaluation purposes. Multiple definitions agree on its construction, noting that it is a subset of the original FB15k dataset specifically created by removing inverse relations to prevent what is described as \"test set leakage.\" A less common framing, found in one paper, describes it as \"a large-scale knowledge graph with complex relational semantics\" and uses it to assess graph partitioning. One source specifies that the dataset focuses on \"common knowledge.\" In practice, it is often used in experiments alongside other benchmarks like WN18RR and YAGO3-10.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "FB15K-237",
+    "FB15k-237"
+  ],
+  "papers": [
+    "Improving Chemical Understanding ofLLMs viaSMILESParsing",
+    "PORTS: Preference-Optimized Retrievers for Tool Selection with Large Language Models",
+    "Tool Preferences in AgenticLLMs are Unreliable",
+    "KG-FIT: Knowledge Graph Fine-Tuning Upon Open-World Knowledge",
+    "MKGL: Mastery of a Three-Word Language"
+  ],
+  "paper_count": 5,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A benchmark dataset derived from Freebase for knowledge graph completion, focusing on common knowledge and designed to prevent test set leakage from simple relation inversion.",
+      "paper": "KG-FIT: Knowledge Graph Fine-Tuning Upon Open-World Knowledge",
+      "original_name": "FB15K-237"
+    },
+    {
+      "text": "A standard knowledge graph completion benchmark derived from FB15k by removing inverse relations to reduce test leakage.",
+      "paper": "MKGL: Mastery of a Three-Word Language",
+      "original_name": "FB15k-237"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Evaluation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Unsupervised Pretraining for Fact Verification by Language Model Distillation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Unsupervised Pretraining for Fact Verification by Language Model Distillation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Link prediction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "HiDe-LLaVA: Hierarchical Decoupling for Continual Instruction Tuning of Multimodal Large Language Model",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "HiDe-LLaVA: Hierarchical Decoupling for Continual Instruction Tuning of Multimodal Large Language Model"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge graph completion",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "MKGL: Mastery of a Three-Word Language",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "MKGL: Mastery of a Three-Word Language"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Graph partitioning",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Improving Chemical Understanding ofLLMs viaSMILESParsing",
+      "evidence": "To further assess the scalability and practical utility of our method, we also experimented with three larger real-world graphs that exceed the direct processing capacity of vanilla LLMs such as Qwen2.5-Plus, Qwen2.5-Max, and DeepSeek-R1: ... and FB15k-237... (Section 5.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Improving Chemical Understanding ofLLMs viaSMILESParsing"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided sources, FB15k-237 is consistently characterized as a benchmark dataset derived from Freebase. The prevailing usage of this instrument is to evaluate models on the task of knowledge graph completion, with papers also using it to measure link prediction and for general evaluation purposes. Multiple definitions agree on its construction, noting that it is a subset of the original FB15k dataset specifically created by removing inverse relations to prevent what is described as \"test set leakage.\" A less common framing, found in one paper, describes it as \"a large-scale knowledge graph with complex relational semantics\" and uses it to assess graph partitioning. One source specifies that the dataset focuses on \"common knowledge.\" In practice, it is often used in experiments alongside other benchmarks like WN18RR and YAGO3-10.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "KG-FIT: Knowledge Graph Fine-Tuning Upon Open-World Knowledge",
+      "MKGL: Mastery of a Three-Word Language"
+    ],
+    "emnlp25": [
+      "Improving Chemical Understanding ofLLMs viaSMILESParsing",
+      "PORTS: Preference-Optimized Retrievers for Tool Selection with Large Language Models",
+      "Tool Preferences in AgenticLLMs are Unreliable"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 2,
+    "emnlp25": 3
+  },
+  "conferences": [
+    "emnlp25",
+    "neurips24"
+  ]
+}

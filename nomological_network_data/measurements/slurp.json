@@ -1,0 +1,87 @@
+{
+  "canonical_name": "SLURP",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, SLURP is consistently described as a spoken language understanding dataset. Its most common application appears to be as a measurement instrument for evaluating model capabilities, specifically for tasks like `Information extraction` and `Intention recognition`. One paper highlights its use for \"slot filling from reference transcriptions,\" drawing on the dataset's annotations for \"scenarios, actions and entities.\" The dataset is composed of \"single-turn user interactions with a home assistant,\" containing both audio recordings and text transcriptions, though at least one study reports using only the text for training. A different application is also noted, where SLURP serves as a \"seed corpus for generating dialogues.\" In this context, it is used to construct new corpora by leveraging its \"diverse intents and interwoven mode switches.\"",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "SLURP"
+  ],
+  "papers": [
+    "2025.emnlp-main.672.checklist",
+    "CARE: A Disagreement Detection Framework with Concept Alignment and Reasoning Enhancement",
+    "Profiler: Black-boxAI-generated Text Origin Detection via Context-aware Inference Pattern Analysis",
+    "Bayesian WeakS-to-Strong from Text Classification to Generation",
+    "Improving Semantic Understanding in Speech Language Models via Brain-tuning",
+    "Joint Fine-tuning and Conversion of Pretrained Speech and Language Models towards Linear Complexity"
+  ],
+  "paper_count": 6,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "SLURP is a spoken language understanding dataset used here for slot filling from reference transcriptions of single-turn user interactions.",
+      "paper": "Bayesian WeakS-to-Strong from Text Classification to Generation",
+      "original_name": "SLURP"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Information extraction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "SALMONN: Towards Generic Hearing Abilities for Large Language Models",
+      "evidence": "SLURP dataset (Bastianelli et al., 2020) was used which contains 16.5k sentences and 72k audio recordings of single-turn user interactions with a home assistant, annotated with scenarios, actions and entities. (Section 5.1)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr24": [
+          "SALMONN: Towards Generic Hearing Abilities for Large Language Models"
+        ],
+        "iclr25": [
+          "Bayesian WeakS-to-Strong from Text Classification to Generation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Intent classification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Joint Fine-tuning and Conversion of Pretrained Speech and Language Models towards Linear Complexity",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Joint Fine-tuning and Conversion of Pretrained Speech and Language Models towards Linear Complexity"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, SLURP is consistently described as a spoken language understanding dataset. Its most common application appears to be as a measurement instrument for evaluating model capabilities, specifically for tasks like `Information extraction` and `Intention recognition`. One paper highlights its use for \"slot filling from reference transcriptions,\" drawing on the dataset's annotations for \"scenarios, actions and entities.\" The dataset is composed of \"single-turn user interactions with a home assistant,\" containing both audio recordings and text transcriptions, though at least one study reports using only the text for training. A different application is also noted, where SLURP serves as a \"seed corpus for generating dialogues.\" In this context, it is used to construct new corpora by leveraging its \"diverse intents and interwoven mode switches.\"",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Bayesian WeakS-to-Strong from Text Classification to Generation",
+      "Improving Semantic Understanding in Speech Language Models via Brain-tuning",
+      "Joint Fine-tuning and Conversion of Pretrained Speech and Language Models towards Linear Complexity"
+    ],
+    "emnlp25": [
+      "2025.emnlp-main.672.checklist",
+      "CARE: A Disagreement Detection Framework with Concept Alignment and Reasoning Enhancement",
+      "Profiler: Black-boxAI-generated Text Origin Detection via Context-aware Inference Pattern Analysis"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3,
+    "emnlp25": 3
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25"
+  ]
+}

@@ -1,0 +1,238 @@
+{
+  "canonical_name": "Noise robustness",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, noise robustness is most commonly defined as a model's ability to maintain performance when faced with corrupted inputs or irrelevant, distracting information in its context. This latter framing is particularly prevalent in studies of retrieval-augmented generation (RAG), where some papers note that \"reader robustness to noise\u2014rather than retriever quality alone\u2014determines downstream effectiveness\" (RAGGED: Towards Informed Design of Scalable and Stable RAG Systems). A second, frequently discussed form of this construct concerns robustness to imperfections in the training data, such as corrupted labels, noisy textual supervision, or errors in self-generated data used for self-improvement. A few papers offer more specific definitions, describing resilience to noise introduced during the training process itself (e.g., from DP-SGD), tolerance to noisy preference data, or the stability of internal mechanisms like attention weights. The construct is operationalized in several ways, including by introducing synthetic noise, as one study does by adding \"5% synthetic label noise into the training data\" and evaluating on MNLI and CivilComments-WILDS (The MaleCEOand the Female Assistant...). Other measurement approaches involve using specialized datasets like RobustHP, which contains pairs from ASR corpora in noisy scenarios, or standard benchmarks like CIFAR-10. Noise robustness is studied in relation to information retrieval, and some work suggests it influences both scalability and safety.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Noise robustness",
+    "Robustness to noisy labels",
+    "Robustness to noisy textual descriptions",
+    "Susceptibility to noisy information",
+    "Resilience to noise",
+    "Robustness to noise",
+    "Noise Sensitivity",
+    "Noise resistance",
+    "Reader robustness to noise",
+    "Robustness to label noise",
+    "Robustness to random noise",
+    "Noise sensitivity",
+    "Noise-tolerance"
+  ],
+  "papers": [
+    "Are Any-to-Any Models More Consistent Across Modality Transfers Than Specialists?",
+    "MadaKV: Adaptive Modality-PerceptionKVCache Eviction for Efficient Multimodal Long-Context Inference",
+    "The MaleCEOand the Female Assistant: Evaluation and Mitigation of Gender Biases in Text-To-Image Generation of Dual Subjects",
+    "ComplexTempQA: A 100m Dataset for Complex Temporal Question Answering",
+    "Interpretable Mnemonic Generation for Kanji Learning via Expectation-Maximization",
+    "Reimagining Safety Alignment with An Image",
+    "Large Language Models are Efficient Learners of Noise-Robust Speech Recognition",
+    "Repeated Random Sampling for Minimizing the Time-to-Accuracy of Learning",
+    "Causal Graphical Models for Vision-Language Compositional Understanding",
+    "InstructRAG: Instructing Retrieval-Augmented Generation via Self-Synthesized Rationales",
+    "Revisiting In-context Learning Inference Circuit in Large Language Models",
+    "TOMATO: Assessing Visual Temporal Reasoning Capabilities in Multimodal Foundation Models",
+    "Training Large Language Models for Retrieval-Augmented Question Answering through Backtracking Correction",
+    "Curse of High Dimensionality Issue in Transformer for Long Context Modeling",
+    "RAGGED: Towards Informed Design of Scalable and Stable RAG Systems",
+    "ROPO: Robust Preference Optimization for Large Language Models",
+    "Self-Improving Transformers Overcome Easy-to-Hard and Length Generalization Challenges",
+    "CAMIEval: EnhancingNLGEvaluation through Multidimensional Comparative Instruction-Following Analysis",
+    "From Evidence to Belief: ABayesian Epistemology Approach to Language Models",
+    "CAST: Corpus-Aware Self-similarity Enhanced Topic modelling",
+    "Soft Language Prompts for Language Transfer",
+    "Boosting the Potential of Large Language Models with an Intelligent Information Assistant",
+    "RAGChecker: A Fine-grained Framework for Diagnosing Retrieval-Augmented Generation"
+  ],
+  "paper_count": 23,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The ability of the model to maintain performance when processing inputs that are corrupted or derived from noisy sources.",
+      "paper": "Large Language Models are Efficient Learners of Noise-Robust Speech Recognition",
+      "original_name": "Noise robustness"
+    },
+    {
+      "text": "The degree to which model performance degrades minimally when training labels are corrupted or mislabeled.",
+      "paper": "Repeated Random Sampling for Minimizing the Time-to-Accuracy of Learning",
+      "original_name": "Robustness to noisy labels"
+    },
+    {
+      "text": "The degree to which a model maintains compositional performance when captions or textual supervision are noisy.",
+      "paper": "Causal Graphical Models for Vision-Language Compositional Understanding",
+      "original_name": "Robustness to noisy textual descriptions"
+    },
+    {
+      "text": "The degree to which a model's performance is degraded by the presence of irrelevant, distracting, or misleading information in the input.",
+      "paper": "TOMATO: Assessing Visual Temporal Reasoning Capabilities in Multimodal Foundation Models",
+      "original_name": "Susceptibility to noisy information"
+    },
+    {
+      "text": "The latent property of a model to maintain performance and generate coherent output despite the introduction of noise during training, such as from DP-SGD.",
+      "paper": "From Evidence to Belief: ABayesian Epistemology Approach to Language Models",
+      "original_name": "Resilience to noise"
+    },
+    {
+      "text": "The resilience of a model's performance in the presence of synthetic label noise in the training data, indicating stability in learning despite data imperfections.",
+      "paper": "The MaleCEOand the Female Assistant: Evaluation and Mitigation of Gender Biases in Text-To-Image Generation of Dual Subjects",
+      "original_name": "Robustness to noise"
+    },
+    {
+      "text": "The latent tendency of the generator to incorporate incorrect information from retrieved chunks, whether relevant or irrelevant.",
+      "paper": "RAGChecker: A Fine-grained Framework for Diagnosing Retrieval-Augmented Generation",
+      "original_name": "Noise Sensitivity"
+    },
+    {
+      "text": "The model's latent ability to maintain performance and generate correct answers when provided with irrelevant or distracting information.",
+      "paper": "Boosting the Potential of Large Language Models with an Intelligent Information Assistant",
+      "original_name": "Noise resistance"
+    },
+    {
+      "text": "The disposition of a model to have its performance degrade when presented with irrelevant or distracting content in the retrieved context.",
+      "paper": "RAGGED: Towards Informed Design of Scalable and Stable RAG Systems",
+      "original_name": "Noise sensitivity"
+    },
+    {
+      "text": "The latent ability of a reader model to maintain performance when exposed to irrelevant or distracting retrieved content, distinguishing useful information from noise.",
+      "paper": "RAGGED: Towards Informed Design of Scalable and Stable RAG Systems",
+      "original_name": "Reader robustness to noise"
+    },
+    {
+      "text": "The model's ability to maintain performance and continue the self-improvement process even when trained on self-generated data that contains a certain amount of errors or inaccuracies.",
+      "paper": "Self-Improving Transformers Overcome Easy-to-Hard and Length Generalization Challenges",
+      "original_name": "Robustness to label noise"
+    },
+    {
+      "text": "A property of a training process or loss function where the presence of noisy preference data does not significantly degrade the model's learning and final performance.",
+      "paper": "ROPO: Robust Preference Optimization for Large Language Models",
+      "original_name": "Noise-tolerance"
+    },
+    {
+      "text": "The ability of a model's attention mechanism to maintain stable output distributions when subjected to random perturbations in attention weights, reducing sensitivity to noise.",
+      "paper": "Curse of High Dimensionality Issue in Transformer for Long Context Modeling",
+      "original_name": "Robustness to random noise"
+    }
+  ],
+  "definition_count": 13,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CIFAR-10",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Repeated Random Sampling for Minimizing the Time-to-Accuracy of Learning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Repeated Random Sampling for Minimizing the Time-to-Accuracy of Learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Stability",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "RAGGED: Towards Informed Design of Scalable and Stable RAG Systems",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "RAGGED: Towards Informed Design of Scalable and Stable RAG Systems"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Scalability",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "RAGGED: Towards Informed Design of Scalable and Stable RAG Systems",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "RAGGED: Towards Informed Design of Scalable and Stable RAG Systems"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Robustness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "ROPO: Robust Preference Optimization for Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "ROPO: Robust Preference Optimization for Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 4,
+  "characterization": "Across the surveyed literature, noise robustness is most commonly defined as a model's ability to maintain performance when faced with corrupted inputs or irrelevant, distracting information in its context. This latter framing is particularly prevalent in studies of retrieval-augmented generation (RAG), where some papers note that \"reader robustness to noise\u2014rather than retriever quality alone\u2014determines downstream effectiveness\" (RAGGED: Towards Informed Design of Scalable and Stable RAG Systems). A second, frequently discussed form of this construct concerns robustness to imperfections in the training data, such as corrupted labels, noisy textual supervision, or errors in self-generated data used for self-improvement. A few papers offer more specific definitions, describing resilience to noise introduced during the training process itself (e.g., from DP-SGD), tolerance to noisy preference data, or the stability of internal mechanisms like attention weights. The construct is operationalized in several ways, including by introducing synthetic noise, as one study does by adding \"5% synthetic label noise into the training data\" and evaluating on MNLI and CivilComments-WILDS (The MaleCEOand the Female Assistant...). Other measurement approaches involve using specialized datasets like RobustHP, which contains pairs from ASR corpora in noisy scenarios, or standard benchmarks like CIFAR-10. Noise robustness is studied in relation to information retrieval, and some work suggests it influences both scalability and safety.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Large Language Models are Efficient Learners of Noise-Robust Speech Recognition",
+      "Repeated Random Sampling for Minimizing the Time-to-Accuracy of Learning"
+    ],
+    "iclr25": [
+      "Causal Graphical Models for Vision-Language Compositional Understanding",
+      "InstructRAG: Instructing Retrieval-Augmented Generation via Self-Synthesized Rationales",
+      "Revisiting In-context Learning Inference Circuit in Large Language Models",
+      "TOMATO: Assessing Visual Temporal Reasoning Capabilities in Multimodal Foundation Models",
+      "Training Large Language Models for Retrieval-Augmented Question Answering through Backtracking Correction"
+    ],
+    "naacl25": [
+      "CAMIEval: EnhancingNLGEvaluation through Multidimensional Comparative Instruction-Following Analysis",
+      "From Evidence to Belief: ABayesian Epistemology Approach to Language Models",
+      "CAST: Corpus-Aware Self-similarity Enhanced Topic modelling",
+      "Soft Language Prompts for Language Transfer"
+    ],
+    "acl25": [
+      "Are Any-to-Any Models More Consistent Across Modality Transfers Than Specialists?",
+      "MadaKV: Adaptive Modality-PerceptionKVCache Eviction for Efficient Multimodal Long-Context Inference",
+      "The MaleCEOand the Female Assistant: Evaluation and Mitigation of Gender Biases in Text-To-Image Generation of Dual Subjects"
+    ],
+    "emnlp25": [
+      "ComplexTempQA: A 100m Dataset for Complex Temporal Question Answering",
+      "Interpretable Mnemonic Generation for Kanji Learning via Expectation-Maximization",
+      "Reimagining Safety Alignment with An Image"
+    ],
+    "neurips24": [
+      "Boosting the Potential of Large Language Models with an Intelligent Information Assistant",
+      "RAGChecker: A Fine-grained Framework for Diagnosing Retrieval-Augmented Generation"
+    ],
+    "icml25": [
+      "Curse of High Dimensionality Issue in Transformer for Long Context Modeling",
+      "RAGGED: Towards Informed Design of Scalable and Stable RAG Systems",
+      "ROPO: Robust Preference Optimization for Large Language Models",
+      "Self-Improving Transformers Overcome Easy-to-Hard and Length Generalization Challenges"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "iclr25": 5,
+    "naacl25": 4,
+    "acl25": 3,
+    "emnlp25": 3,
+    "neurips24": 2,
+    "icml25": 4
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

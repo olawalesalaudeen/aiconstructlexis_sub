@@ -1,0 +1,150 @@
+{
+  "canonical_name": "Training stability",
+  "type": "construct",
+  "canonical_definition": "Across the surveyed literature, training stability is predominantly defined as a property of the training process characterized by smooth convergence and the absence of divergent behaviors. The most common framing, found in numerous papers, centers on avoiding issues like loss spikes, escalating gradient norms, and the frequent need for interventions such as gradient clipping. This construct is operationalized by observing several indicators of its inverse, instability, which include sudden increases in KL divergence, oscillating training curves, and performance degradation on the training set itself. Conversely, stability is evidenced by consistent increases in reward, stable value predictions in reinforcement learning, and loss curves that decline smoothly, as one paper notes, \"The loss of \u2018Zero-initialized\u2019 declines much faster at the beginning, and finally converges to zero\" (LLaMA-Adapter: Efficient Fine-tuning of Large Language Models with Zero-initialized Attention). This concept is applied across various contexts, including pre-training, fine-tuning, and reinforcement learning with human feedback. A less common, more mechanistic definition treats stability as the degree to which internal model states like activations, gradients, and weight updates remain well-scaled. Papers frequently investigate how stability is affected by choices of optimizers, initialization strategies, regularization techniques, and finetuning methods like LoRA.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Training stability",
+    "Training dynamics stability",
+    "Training instability"
+  ],
+  "papers": [
+    "Finite State Automata Inside Transformers with Chain-of-Thought: A Mechanistic Study on State Tracking",
+    "PKU-SafeRLHF: Towards Multi-Level Safety Alignment forLLMs with Human Preference",
+    "People who frequently useChatGPTfor writing tasks are accurate and robust detectors ofAI-generated text",
+    "A Middle Path for On-PremisesLLMDeployment: Preserving Privacy Without Sacrificing Model Confidentiality",
+    "Beyond Human Labels: A Multi-Linguistic Auto-Generated Benchmark for Evaluating Large Language Models on Resume Parsing",
+    "DiplomacyAgent: DoLLMs Balance Interests and Ethical Principles in International Events?",
+    "LingGym: How Far AreLLMs from Thinking Like Field Linguists?",
+    "Mixture-of-Clustered-Experts: Advancing Expert Specialization and Generalization in Instruction Tuning",
+    "SUA: Stealthy Multimodal Large Language Model Unlearning Attack",
+    "X-CoT: Explainable Text-to-Video Retrieval viaLLM-based Chain-of-Thought Reasoning",
+    "$\\mathcal{B}$-Coder: Value-Based Deep Reinforcement Learning for Program Synthesis",
+    "CPPO: Continual Learning for Reinforcement Learning with Human Feedback",
+    "Improving Generalization of Alignment with Human Preferences through Group Invariant Learning",
+    "LLaMA-Adapter: Efficient Fine-tuning of Large Language Models with Zero-initialized Attention",
+    "Sophia: A Scalable Stochastic Second-order Optimizer for Language Model Pre-training",
+    "When Scaling Meets LLM Finetuning: The Effect of Data, Model and Finetuning Method",
+    "Dataset Decomposition: Faster LLM Training with Variable Sequence Length Curriculum",
+    "Mixture of Tokens: Continuous MoE through Cross-Example Aggregation",
+    "OneBit: Towards Extremely Low-bit Large Language Models",
+    "RouterDC: Query-Based Router by Dual Contrastive Learning for Assembling Large Language Models",
+    "Sparse maximal update parameterization: A holistic approach to sparse training dynamics",
+    "What matters when building vision-language models?"
+  ],
+  "paper_count": 22,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The property of the training process characterized by smooth convergence and infrequent need for interventions like gradient clipping to prevent divergence or loss spikes.",
+      "paper": "$\\mathcal{B}$-Coder: Value-Based Deep Reinforcement Learning for Program Synthesis",
+      "original_name": "Training stability"
+    },
+    {
+      "text": "The degree to which activations, gradients, and weight updates remain well-scaled and do not vanish or explode as sparsity or width changes.",
+      "paper": "Sparse maximal update parameterization: A holistic approach to sparse training dynamics",
+      "original_name": "Training dynamics stability"
+    },
+    {
+      "text": "A phenomenon during model training characterized by issues like loss spikes, escalating gradient norms, and divergent updates, which hinder effective model convergence.",
+      "paper": "People who frequently useChatGPTfor writing tasks are accurate and robust detectors ofAI-generated text",
+      "original_name": "Training instability"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Improving Generalization of Alignment with Human Preferences through Group Invariant Learning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Improving Generalization of Alignment with Human Preferences through Group Invariant Learning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge retention",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "CPPO: Continual Learning for Reinforcement Learning with Human Feedback",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "CPPO: Continual Learning for Reinforcement Learning with Human Feedback"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Slow thinking",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "PKU-SafeRLHF: Towards Multi-Level Safety Alignment forLLMs with Human Preference",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "PKU-SafeRLHF: Towards Multi-Level Safety Alignment forLLMs with Human Preference"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the surveyed literature, training stability is predominantly defined as a property of the training process characterized by smooth convergence and the absence of divergent behaviors. The most common framing, found in numerous papers, centers on avoiding issues like loss spikes, escalating gradient norms, and the frequent need for interventions such as gradient clipping. This construct is operationalized by observing several indicators of its inverse, instability, which include sudden increases in KL divergence, oscillating training curves, and performance degradation on the training set itself. Conversely, stability is evidenced by consistent increases in reward, stable value predictions in reinforcement learning, and loss curves that decline smoothly, as one paper notes, \"The loss of \u2018Zero-initialized\u2019 declines much faster at the beginning, and finally converges to zero\" (LLaMA-Adapter: Efficient Fine-tuning of Large Language Models with Zero-initialized Attention). This concept is applied across various contexts, including pre-training, fine-tuning, and reinforcement learning with human feedback. A less common, more mechanistic definition treats stability as the degree to which internal model states like activations, gradients, and weight updates remain well-scaled. Papers frequently investigate how stability is affected by choices of optimizers, initialization strategies, regularization techniques, and finetuning methods like LoRA.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "$\\mathcal{B}$-Coder: Value-Based Deep Reinforcement Learning for Program Synthesis",
+      "CPPO: Continual Learning for Reinforcement Learning with Human Feedback",
+      "Improving Generalization of Alignment with Human Preferences through Group Invariant Learning",
+      "LLaMA-Adapter: Efficient Fine-tuning of Large Language Models with Zero-initialized Attention",
+      "Sophia: A Scalable Stochastic Second-order Optimizer for Language Model Pre-training",
+      "When Scaling Meets LLM Finetuning: The Effect of Data, Model and Finetuning Method"
+    ],
+    "neurips24": [
+      "Dataset Decomposition: Faster LLM Training with Variable Sequence Length Curriculum",
+      "Mixture of Tokens: Continuous MoE through Cross-Example Aggregation",
+      "OneBit: Towards Extremely Low-bit Large Language Models",
+      "RouterDC: Query-Based Router by Dual Contrastive Learning for Assembling Large Language Models",
+      "Sparse maximal update parameterization: A holistic approach to sparse training dynamics",
+      "What matters when building vision-language models?"
+    ],
+    "acl25": [
+      "Finite State Automata Inside Transformers with Chain-of-Thought: A Mechanistic Study on State Tracking",
+      "PKU-SafeRLHF: Towards Multi-Level Safety Alignment forLLMs with Human Preference",
+      "People who frequently useChatGPTfor writing tasks are accurate and robust detectors ofAI-generated text"
+    ],
+    "emnlp25": [
+      "A Middle Path for On-PremisesLLMDeployment: Preserving Privacy Without Sacrificing Model Confidentiality",
+      "Beyond Human Labels: A Multi-Linguistic Auto-Generated Benchmark for Evaluating Large Language Models on Resume Parsing",
+      "DiplomacyAgent: DoLLMs Balance Interests and Ethical Principles in International Events?",
+      "LingGym: How Far AreLLMs from Thinking Like Field Linguists?",
+      "Mixture-of-Clustered-Experts: Advancing Expert Specialization and Generalization in Instruction Tuning",
+      "SUA: Stealthy Multimodal Large Language Model Unlearning Attack",
+      "X-CoT: Explainable Text-to-Video Retrieval viaLLM-based Chain-of-Thought Reasoning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 6,
+    "neurips24": 6,
+    "acl25": 3,
+    "emnlp25": 7
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "neurips24"
+  ]
+}

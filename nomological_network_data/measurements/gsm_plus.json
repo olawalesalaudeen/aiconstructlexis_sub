@@ -1,0 +1,114 @@
+{
+  "canonical_name": "GSM-Plus",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, GSM-Plus is consistently framed as a benchmark derived from GSM8k. The most common description is as an \"adversarial version of the GSM8k benchmark,\" with a less frequent framing calling it an \"extension.\" Its primary application is to evaluate mathematical reasoning, particularly on grade-school math problems, and it is frequently used alongside other math benchmarks. A related and commonly mentioned use is to specifically assess model robustness; one paper states it \"measures resilience to adversarial perturbations\" and categorizes it as a \"robustness benchmark.\" A more distinct application appears in one study where questions from GSM-Plus are used to construct a test corpus for evaluating a model's verification ability.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "GSM-Plus",
+    "GSM-PLUS"
+  ],
+  "papers": [
+    "From Shortcuts to Balance: Attribution Analysis of Speech-Text Feature Utilization in Distinguishing Original from Machine-Translated Texts",
+    "MakingVLMs More Robot-Friendly: Self-Critical Distillation of Low-Level Procedural Reasoning",
+    "Advancing LLM Reasoning Generalists with Preference Trees",
+    "Forewarned is Forearmed:  Harnessing LLMs for Data Synthesis via Failure-induced Exploration",
+    "Process Reward Model with Q-value Rankings",
+    "TPO: Aligning Large Language Models with Multi-branch & Multi-step Preference Trees",
+    "Weak-to-Strong Preference Optimization: Stealing Reward from Weak Aligned Model"
+  ],
+  "paper_count": 7,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "An adversarial version of the GSM8k benchmark, designed to be more challenging and test the robustness of a model's mathematical reasoning.",
+      "paper": "Forewarned is Forearmed:  Harnessing LLMs for Data Synthesis via Failure-induced Exploration",
+      "original_name": "GSM-Plus"
+    },
+    {
+      "text": "The GSM-PLUS benchmark, an extension of GSM8K, used to evaluate mathematical reasoning on grade-school math problems.",
+      "paper": "Weak-to-Strong Preference Optimization: Stealing Reward from Weak Aligned Model",
+      "original_name": "GSM-PLUS"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Noise Contrastive Alignment of Language Models with Explicit Rewards",
+      "evidence": "The model\u2019s performance is evaluated on two grade school math benchmarks: GSM8k (Cobbe et al., 2021) and GSM-Plus (Li et al., 2024), which is an adversarial version of GSM8k. (Section 4.4)",
+      "paper_count": 5,
+      "papers_by_conference": {
+        "neurips24": [
+          "Noise Contrastive Alignment of Language Models with Explicit Rewards"
+        ],
+        "iclr25": [
+          "Advancing LLM Reasoning Generalists with Preference Trees",
+          "TPO: Aligning Large Language Models with Multi-branch & Multi-step Preference Trees",
+          "Forewarned is Forearmed:  Harnessing LLMs for Data Synthesis via Failure-induced Exploration"
+        ],
+        "acl25": [
+          "Unveil: Unified Visual-Textual Integration and Distillation for Multi-modal Document Retrieval"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Robustness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Forewarned is Forearmed:  Harnessing LLMs for Data Synthesis via Failure-induced Exploration",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Forewarned is Forearmed:  Harnessing LLMs for Data Synthesis via Failure-induced Exploration"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Verification ability",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Process Reward Model with Q-value Rankings",
+      "evidence": "\u201cThe test corpus includes 128 solutions for each question from GSM-Plus (Li et al., 2024) and MATH500 (Hendrycks et al., 2021) datasets.\u201d",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Process Reward Model with Q-value Rankings"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, GSM-Plus is consistently framed as a benchmark derived from GSM8k. The most common description is as an \"adversarial version of the GSM8k benchmark,\" with a less frequent framing calling it an \"extension.\" Its primary application is to evaluate mathematical reasoning, particularly on grade-school math problems, and it is frequently used alongside other math benchmarks. A related and commonly mentioned use is to specifically assess model robustness; one paper states it \"measures resilience to adversarial perturbations\" and categorizes it as a \"robustness benchmark.\" A more distinct application appears in one study where questions from GSM-Plus are used to construct a test corpus for evaluating a model's verification ability.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Advancing LLM Reasoning Generalists with Preference Trees",
+      "Forewarned is Forearmed:  Harnessing LLMs for Data Synthesis via Failure-induced Exploration",
+      "Process Reward Model with Q-value Rankings",
+      "TPO: Aligning Large Language Models with Multi-branch & Multi-step Preference Trees",
+      "Weak-to-Strong Preference Optimization: Stealing Reward from Weak Aligned Model"
+    ],
+    "emnlp25": [
+      "From Shortcuts to Balance: Attribution Analysis of Speech-Text Feature Utilization in Distinguishing Original from Machine-Translated Texts",
+      "MakingVLMs More Robot-Friendly: Self-Critical Distillation of Low-Level Procedural Reasoning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 5,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25"
+  ]
+}

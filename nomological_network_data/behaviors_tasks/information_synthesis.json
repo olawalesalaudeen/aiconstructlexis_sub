@@ -1,0 +1,96 @@
+{
+  "canonical_name": "Information synthesis",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, information synthesis is consistently described as a behavior involving the combination, integration, or aggregation of information from multiple locations or sources. The specific context and goal of this synthesis, however, vary across different lines of work. A common framing defines it as integrating information from diverse sources, such as web pages and knowledge graphs, to \"generate a coherent answer\" (CRAG - Comprehensive RAG Benchmark). Other usages treat it as the task of collecting and synthesizing information from various parts of a long document for tasks like sorting, or as a database-like operation involving a \"semantics-based GROUP BY\" on unstructured data (UQE: A Query Engine for Unstructured Databases). A more domain-specific definition involves aggregating patient information from conversation histories to update a clinical understanding. To evaluate this behavior, researchers use benchmarks such as ZeroSCROLLS and 2WikiMultihopQA, and it is also operationalized through tasks like BookSumSort. The concept is also noted as being related to commonsense knowledge.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Information integration",
+    "Information aggregation",
+    "Abstraction and aggregation",
+    "Information synthesis"
+  ],
+  "papers": [
+    "Boosting the Potential of Large Language Models with an Intelligent Information Assistant",
+    "CRAG - Comprehensive RAG Benchmark",
+    "Found in the Middle: How Language Models Use Long Contexts Better via Plug-and-Play Positional Encoding",
+    "MediQ: Question-Asking LLMs and a Benchmark for Reliable Interactive Clinical Reasoning",
+    "UQE: A Query Engine for Unstructured Databases"
+  ],
+  "paper_count": 5,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Aggregating gathered patient information from conversation history to update understanding of the patient condition.",
+      "paper": "MediQ: Question-Asking LLMs and a Benchmark for Reliable Interactive Clinical Reasoning",
+      "original_name": "Information integration"
+    },
+    {
+      "text": "The task of collecting and synthesizing information from various parts of a long document or multiple documents to perform a task like sorting or ordering.",
+      "paper": "Found in the Middle: How Language Models Use Long Contexts Better via Plug-and-Play Positional Encoding",
+      "original_name": "Information aggregation"
+    },
+    {
+      "text": "Grouping rows from a database based on an abstract, semantically-derived attribute and then performing an aggregation operation (like counting) on each group.",
+      "paper": "UQE: A Query Engine for Unstructured Databases",
+      "original_name": "Abstraction and aggregation"
+    },
+    {
+      "text": "The process of integrating and combining information from multiple different sources, such as web pages and knowledge graphs, to generate a coherent answer.",
+      "paper": "CRAG - Comprehensive RAG Benchmark",
+      "original_name": "Information synthesis"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ZeroSCROLLS",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Found in the Middle: How Language Models Use Long Contexts Better via Plug-and-Play Positional Encoding",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Found in the Middle: How Language Models Use Long Contexts Better via Plug-and-Play Positional Encoding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "2WikiMultihopQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "From Scores to Steps: Diagnosing and ImprovingLLMPerformance in Evidence-Based Medical Calculations",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "From Scores to Steps: Diagnosing and ImprovingLLMPerformance in Evidence-Based Medical Calculations"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 2,
+  "characterization": "Across the surveyed literature, information synthesis is consistently described as a behavior involving the combination, integration, or aggregation of information from multiple locations or sources. The specific context and goal of this synthesis, however, vary across different lines of work. A common framing defines it as integrating information from diverse sources, such as web pages and knowledge graphs, to \"generate a coherent answer\" (CRAG - Comprehensive RAG Benchmark). Other usages treat it as the task of collecting and synthesizing information from various parts of a long document for tasks like sorting, or as a database-like operation involving a \"semantics-based GROUP BY\" on unstructured data (UQE: A Query Engine for Unstructured Databases). A more domain-specific definition involves aggregating patient information from conversation histories to update a clinical understanding. To evaluate this behavior, researchers use benchmarks such as ZeroSCROLLS and 2WikiMultihopQA, and it is also operationalized through tasks like BookSumSort. The concept is also noted as being related to commonsense knowledge.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "Boosting the Potential of Large Language Models with an Intelligent Information Assistant",
+      "CRAG - Comprehensive RAG Benchmark",
+      "Found in the Middle: How Language Models Use Long Contexts Better via Plug-and-Play Positional Encoding",
+      "MediQ: Question-Asking LLMs and a Benchmark for Reliable Interactive Clinical Reasoning",
+      "UQE: A Query Engine for Unstructured Databases"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 5
+  },
+  "conferences": [
+    "neurips24"
+  ]
+}

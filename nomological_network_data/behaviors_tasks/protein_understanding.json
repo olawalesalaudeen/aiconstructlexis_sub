@@ -1,0 +1,258 @@
+{
+  "canonical_name": "Protein understanding",
+  "type": "behavior",
+  "canonical_definition": "In the surveyed literature, 'Protein understanding' represents a broad collection of behaviors centered on predicting protein structure, function, and generating novel sequences. A prevalent theme across papers is the prediction of functional and biophysical properties, with 'fitness prediction' being a frequently documented task, defined variously as predicting the impact of mutations or assigning a functional score to a sequence. These property prediction tasks are commonly operationalized as either regression (e.g., for fluorescence, stability) or binary classification (e.g., for metal ion binding, solubility). The behavior of protein fitness prediction is explicitly measured using the ProteinGym benchmark. Another major group of tasks involves structure, including predicting 3D structure from a sequence ('folding'), the reverse ('inverse folding'), and identifying internal features like residue contacts and secondary structure. The scope of tasks sometimes extends to other biomolecules, with some papers defining RNA-related prediction tasks such as contact and distance map prediction. A final set of behaviors involves generation, from creating plausible new protein sequences to targeted 'protein sequence design' for enhanced stability.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Protein sequence generation",
+    "Protein contact prediction",
+    "Protein fold classification",
+    "Fluorescence prediction",
+    "Fitness prediction",
+    "Metal ion binding prediction",
+    "Solubility prediction",
+    "Stability prediction",
+    "Paratope prediction",
+    "Secondary structure prediction",
+    "Contact map prediction",
+    "Distance map prediction",
+    "Folding",
+    "Inverse folding",
+    "Mutation effect prediction",
+    "Protein variant fitness prediction",
+    "Zero-shot fitness prediction",
+    "Motif-scaffolding",
+    "Biophysical property prediction",
+    "Protein-protein interface prediction",
+    "Remote homology prediction",
+    "Protein fitness prediction",
+    "Protein sequence design",
+    "Mammalian cell expression prediction",
+    "Subcellular localization prediction",
+    "Thermostability prediction",
+    "Protein function prediction"
+  ],
+  "papers": [
+    "A new framework for evaluating model out-of-distribution generalisation for the biochemical domain",
+    "Bio-xLSTM: Generative modeling, representation and in-context learning of biological and chemical sequences",
+    "DPLM-2: A Multimodal Diffusion Protein Language Model",
+    "Metalic: Meta-Learning In-Context with Protein Language Models",
+    "Protein Language Model Fitness is a Matter of Preference",
+    "The OMG dataset: An Open MetaGenomic corpus for mixed-modality genomic language modeling",
+    "AutoEval Done Right: Using Synthetic Data for Model Evaluation",
+    "From Mechanistic Interpretability to Mechanistic Biology: Training, Evaluating, and Interpreting Sparse Autoencoders on Protein Language Models",
+    "Learning Extrapolative Sequence Transformations from Markov Chains",
+    "Position: AI Competitions Provide the Gold Standard for Empirical Rigor in GenAI Evaluation",
+    "A SARS-CoV-2 Interaction Dataset and VHH Sequence Corpus for Antibody Language Models",
+    "BEACON: Benchmark for Comprehensive RNA Tasks and Language Models",
+    "Training Compute-Optimal Protein Language Models"
+  ],
+  "paper_count": 13,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The task of creating novel amino acid sequences that are plausible or functional proteins.",
+      "paper": "Training Compute-Optimal Protein Language Models",
+      "original_name": "Protein sequence generation"
+    },
+    {
+      "text": "The task of predicting whether two amino acids in a protein sequence are close to each other in the folded 3D structure.",
+      "paper": "Training Compute-Optimal Protein Language Models",
+      "original_name": "Protein contact prediction"
+    },
+    {
+      "text": "The task of assigning a protein sequence to one of a predefined set of structural fold classes.",
+      "paper": "Training Compute-Optimal Protein Language Models",
+      "original_name": "Protein fold classification"
+    },
+    {
+      "text": "A regression task to predict the fluorescence intensity of a protein.",
+      "paper": "Training Compute-Optimal Protein Language Models",
+      "original_name": "Fluorescence prediction"
+    },
+    {
+      "text": "A regression task to predict a protein's fitness, a measure of its functional performance.",
+      "paper": "Training Compute-Optimal Protein Language Models",
+      "original_name": "Fitness prediction"
+    },
+    {
+      "text": "A binary classification task to determine whether a protein sequence binds to metal ions.",
+      "paper": "Training Compute-Optimal Protein Language Models",
+      "original_name": "Metal ion binding prediction"
+    },
+    {
+      "text": "A binary classification task to predict whether a protein will be soluble when expressed.",
+      "paper": "Training Compute-Optimal Protein Language Models",
+      "original_name": "Solubility prediction"
+    },
+    {
+      "text": "A regression task to predict the thermostability of a protein.",
+      "paper": "Training Compute-Optimal Protein Language Models",
+      "original_name": "Stability prediction"
+    },
+    {
+      "text": "The task of identifying the specific residues in an antibody's sequence that constitute the binding site (paratope) for an antigen.",
+      "paper": "A SARS-CoV-2 Interaction Dataset and VHH Sequence Corpus for Antibody Language Models",
+      "original_name": "Paratope prediction"
+    },
+    {
+      "text": "The task of identifying and predicting the base-pairing interactions within a single RNA molecule to determine its two-dimensional structure.",
+      "paper": "BEACON: Benchmark for Comprehensive RNA Tasks and Language Models",
+      "original_name": "Secondary structure prediction"
+    },
+    {
+      "text": "The task of identifying which pairs of nucleotides in an RNA sequence are in close physical proximity in the molecule's three-dimensional structure.",
+      "paper": "BEACON: Benchmark for Comprehensive RNA Tasks and Language Models",
+      "original_name": "Contact map prediction"
+    },
+    {
+      "text": "The task of estimating the physical, three-dimensional distances between all pairs of nucleotides within an RNA molecule.",
+      "paper": "BEACON: Benchmark for Comprehensive RNA Tasks and Language Models",
+      "original_name": "Distance map prediction"
+    },
+    {
+      "text": "Predicting a 3D protein structure from an amino-acid sequence.",
+      "paper": "DPLM-2: A Multimodal Diffusion Protein Language Model",
+      "original_name": "Folding"
+    },
+    {
+      "text": "Generating an amino-acid sequence that is compatible with a given backbone structure.",
+      "paper": "DPLM-2: A Multimodal Diffusion Protein Language Model",
+      "original_name": "Inverse folding"
+    },
+    {
+      "text": "Generating scaffold regions around a fixed motif while preserving the motif\u2019s structure and function.",
+      "paper": "DPLM-2: A Multimodal Diffusion Protein Language Model",
+      "original_name": "Motif-scaffolding"
+    },
+    {
+      "text": "The task of predicting the functional effect or fitness impact of amino acid substitutions (mutations) in a protein sequence.",
+      "paper": "Bio-xLSTM: Generative modeling, representation and in-context learning of biological and chemical sequences",
+      "original_name": "Protein variant fitness prediction"
+    },
+    {
+      "text": "The observable task of assigning a score to a mutated protein sequence relative to a wild type sequence to predict its functional fitness, without any fine-tuning on labeled fitness data.",
+      "paper": "Protein Language Model Fitness is a Matter of Preference",
+      "original_name": "Zero-shot fitness prediction"
+    },
+    {
+      "text": "The specific task of predicting the functional outcome of one or more mutations in a protein sequence, often as a log odds ratio.",
+      "paper": "Protein Language Model Fitness is a Matter of Preference",
+      "original_name": "Mutation effect prediction"
+    },
+    {
+      "text": "The task of predicting physical or chemical properties of proteins based on their sequence, such as the optimal temperature for catalysis.",
+      "paper": "A new framework for evaluating model out-of-distribution generalisation for the biochemical domain",
+      "original_name": "Biophysical property prediction"
+    },
+    {
+      "text": "The task of identifying specific amino acid residues that are in close proximity and form the interaction surface between two or more proteins.",
+      "paper": "The OMG dataset: An Open MetaGenomic corpus for mixed-modality genomic language modeling",
+      "original_name": "Protein-protein interface prediction"
+    },
+    {
+      "text": "The task of identifying evolutionary relationships between proteins that have low sequence similarity.",
+      "paper": "The OMG dataset: An Open MetaGenomic corpus for mixed-modality genomic language modeling",
+      "original_name": "Remote homology prediction"
+    },
+    {
+      "text": "The task of assigning a scalar value or a relative ranking to protein sequences based on their predicted biophysical or functional properties.",
+      "paper": "Metalic: Meta-Learning In-Context with Protein Language Models",
+      "original_name": "Protein fitness prediction"
+    },
+    {
+      "text": "Predicting the cellular compartment (e.g., nucleus, extracellular space) where a protein is localized based on its sequence.",
+      "paper": "From Mechanistic Interpretability to Mechanistic Biology: Training, Evaluating, and Interpreting Sparse Autoencoders on Protein Language Models",
+      "original_name": "Subcellular localization prediction"
+    },
+    {
+      "text": "Predicting the melting temperature of a protein based on its sequence, used as a continuous regression task.",
+      "paper": "From Mechanistic Interpretability to Mechanistic Biology: Training, Evaluating, and Interpreting Sparse Autoencoders on Protein Language Models",
+      "original_name": "Thermostability prediction"
+    },
+    {
+      "text": "A binary classification task to determine whether a given protein can be successfully expressed in a specific host cell line (e.g., Chinese hamster ovary cells).",
+      "paper": "From Mechanistic Interpretability to Mechanistic Biology: Training, Evaluating, and Interpreting Sparse Autoencoders on Protein Language Models",
+      "original_name": "Mammalian cell expression prediction"
+    },
+    {
+      "text": "The task of generating mutant protein sequences (specifically ACE2) with higher stability, measured by lower free energy (ddG), than the original wildtype sequence.",
+      "paper": "Learning Extrapolative Sequence Transformations from Markov Chains",
+      "original_name": "Protein sequence design"
+    },
+    {
+      "text": "Predicting the biological function of proteins based on their amino acid sequences, in the absence of experimentally verified annotations during training.",
+      "paper": "Position: AI Competitions Provide the Gold Standard for Empirical Rigor in GenAI Evaluation",
+      "original_name": "Protein function prediction"
+    }
+  ],
+  "definition_count": 27,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ProteinGym",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Metalic: Meta-Learning In-Context with Protein Language Models",
+      "evidence": "Specifically, we take the wild type proteins in 217 DMS studies from ProteinGym (Notin et al., 2023) and calculating PLLs for each of them. (Section 4.3)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Metalic: Meta-Learning In-Context with Protein Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Tool use",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Metalic: Meta-Learning In-Context with Protein Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Metalic: Meta-Learning In-Context with Protein Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 1,
+  "characterization": "In the surveyed literature, 'Protein understanding' represents a broad collection of behaviors centered on predicting protein structure, function, and generating novel sequences. A prevalent theme across papers is the prediction of functional and biophysical properties, with 'fitness prediction' being a frequently documented task, defined variously as predicting the impact of mutations or assigning a functional score to a sequence. These property prediction tasks are commonly operationalized as either regression (e.g., for fluorescence, stability) or binary classification (e.g., for metal ion binding, solubility). The behavior of protein fitness prediction is explicitly measured using the ProteinGym benchmark. Another major group of tasks involves structure, including predicting 3D structure from a sequence ('folding'), the reverse ('inverse folding'), and identifying internal features like residue contacts and secondary structure. The scope of tasks sometimes extends to other biomolecules, with some papers defining RNA-related prediction tasks such as contact and distance map prediction. A final set of behaviors involves generation, from creating plausible new protein sequences to targeted 'protein sequence design' for enhanced stability.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "A SARS-CoV-2 Interaction Dataset and VHH Sequence Corpus for Antibody Language Models",
+      "BEACON: Benchmark for Comprehensive RNA Tasks and Language Models",
+      "Training Compute-Optimal Protein Language Models"
+    ],
+    "iclr25": [
+      "A new framework for evaluating model out-of-distribution generalisation for the biochemical domain",
+      "Bio-xLSTM: Generative modeling, representation and in-context learning of biological and chemical sequences",
+      "DPLM-2: A Multimodal Diffusion Protein Language Model",
+      "Metalic: Meta-Learning In-Context with Protein Language Models",
+      "Protein Language Model Fitness is a Matter of Preference",
+      "The OMG dataset: An Open MetaGenomic corpus for mixed-modality genomic language modeling"
+    ],
+    "icml25": [
+      "AutoEval Done Right: Using Synthetic Data for Model Evaluation",
+      "From Mechanistic Interpretability to Mechanistic Biology: Training, Evaluating, and Interpreting Sparse Autoencoders on Protein Language Models",
+      "Learning Extrapolative Sequence Transformations from Markov Chains",
+      "Position: AI Competitions Provide the Gold Standard for Empirical Rigor in GenAI Evaluation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 3,
+    "iclr25": 6,
+    "icml25": 4
+  },
+  "conferences": [
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "canonical_name": "Response classification",
+  "type": "behavior",
+  "canonical_definition": "Determining whether a model response is safe or unsafe for moderation purposes.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Response classification"
+  ],
+  "papers": [
+    "BingoGuard: LLM Content Moderation Tools with Risk Levels",
+    "On Calibration of LLM-based Guard Models for Reliable Content Moderation"
+  ],
+  "paper_count": 2,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Determining whether a model response is safe or unsafe for moderation purposes.",
+      "paper": "BingoGuard: LLM Content Moderation Tools with Risk Levels",
+      "original_name": "Response classification"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WildGuardMix",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "On Calibration of LLM-based Guard Models for Reliable Content Moderation",
+      "evidence": "For the response classification, we utilize datasets containing BeaverTails Test (Ji et al., 2024), SafeRLHF Test (Dai et al., 2023), Harmbench Response (Mazeika et al., 2024), and WildGuardMix Test Response (Han et al., 2024).",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "On Calibration of LLM-based Guard Models for Reliable Content Moderation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Temperature scaling",
+      "other_type": "measurements",
+      "relationship_type": "causes",
+      "paper": "On Calibration of LLM-based Guard Models for Reliable Content Moderation",
+      "evidence": "Contextual calibration proves more effective for prompt classification and temperature scaling benefits response classification more.",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "On Calibration of LLM-based Guard Models for Reliable Content Moderation"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 1,
+  "characterization": "Determining whether a model response is safe or unsafe for moderation purposes.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "BingoGuard: LLM Content Moderation Tools with Risk Levels",
+      "On Calibration of LLM-based Guard Models for Reliable Content Moderation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2
+  },
+  "conferences": [
+    "iclr25"
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "canonical_name": "Visual dialogue",
+  "type": "behavior",
+  "canonical_definition": "Across the surveyed literature, visual dialogue is consistently defined as a multi-turn, conversational interaction between a user and a model that is grounded in visual content. The prevailing definitions emphasize that a model's responses must be contextually dependent on both the image and the preceding dialogue history. While this general framing is common, some papers describe more specific variants, such as conversations in the biomedical domain or interactions where users refer to image regions with visual prompts like points or boxes. The field operationalizes and measures this behavior using several benchmarks, with papers citing its evaluation on `MM-Vet`, `GQA`, and `TextVQA`. This behavior is studied alongside and considered related to `Visual question answering` and `Visual understanding`. Some work frames it as a capability for \"real-world AI assistants,\" as noted in \"ConvBench: A Multi-Turn Conversation Evaluation Benchmark...\".",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Open-ended visual chat",
+    "Multimodal chat",
+    "Multi-modal chat",
+    "Visual dialogue",
+    "Image-based conversation",
+    "Visual prompt-based conversation",
+    "Visual conversation",
+    "Multi-modal dialogue",
+    "Multi-turn visual conversation",
+    "Visual dialog"
+  ],
+  "papers": [
+    "Biomedical Visual Instruction Tuning with Clinician Preference Alignment",
+    "ConvBench: A Multi-Turn Conversation Evaluation Benchmark with Hierarchical Ablation Capability for Large Vision-Language Models",
+    "Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models",
+    "Efficient Large Multi-modal Models via Visual Context Compression",
+    "FlexCap: Describe Anything in Images in Controllable Detail",
+    "MaVEn: An Effective Multi-granularity Hybrid Visual Encoding Framework for Multimodal Large Language Model",
+    "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+    "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding",
+    "WildVision: Evaluating Vision-Language Models in the Wild with Human Preferences"
+  ],
+  "paper_count": 9,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Responding to image-based prompts in a multi-round conversational format with contextually relevant biomedical answers.",
+      "paper": "Biomedical Visual Instruction Tuning with Clinician Preference Alignment",
+      "original_name": "Open-ended visual chat"
+    },
+    {
+      "text": "Engaging in a multi-turn conversational interaction with a user, where the conversation is grounded in one or more images.",
+      "paper": "WildVision: Evaluating Vision-Language Models in the Wild with Human Preferences",
+      "original_name": "Multimodal chat"
+    },
+    {
+      "text": "The task of engaging in a conversation that involves understanding and responding to inputs from multiple modalities, such as combined text and image queries.",
+      "paper": "Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models",
+      "original_name": "Multi-modal chat"
+    },
+    {
+      "text": "The observable task of participating in a conversation about an image, where the model's responses are contextually dependent on both the visual input and the dialogue history.",
+      "paper": "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding",
+      "original_name": "Visual dialogue"
+    },
+    {
+      "text": "The task of engaging in a multi-turn dialogue with a user about the content of an image.",
+      "paper": "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+      "original_name": "Image-based conversation"
+    },
+    {
+      "text": "The task of engaging in a dialogue about an image where the user can refer to specific areas using visual prompts like points, boxes, or masks.",
+      "paper": "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+      "original_name": "Visual prompt-based conversation"
+    },
+    {
+      "text": "Engaging in multi-turn dialogue about visual content, producing responses conditioned on images and prior turns.",
+      "paper": "Efficient Large Multi-modal Models via Visual Context Compression",
+      "original_name": "Visual conversation"
+    },
+    {
+      "text": "Engaging in a conversational exchange that involves both textual and visual information.",
+      "paper": "MaVEn: An Effective Multi-granularity Hybrid Visual Encoding Framework for Multimodal Large Language Model",
+      "original_name": "Multi-modal dialogue"
+    },
+    {
+      "text": "The observable behavior of engaging in a sequence of dialogue turns involving both visual and textual inputs, where responses depend on prior context.",
+      "paper": "ConvBench: A Multi-Turn Conversation Evaluation Benchmark with Hierarchical Ablation Capability for Large Vision-Language Models",
+      "original_name": "Multi-turn visual conversation"
+    },
+    {
+      "text": "Engaging in a multi-turn conversational exchange with a user about the content of an image.",
+      "paper": "FlexCap: Describe Anything in Images in Controllable Detail",
+      "original_name": "Visual dialog"
+    }
+  ],
+  "definition_count": 10,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MM-Vet",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Efficient Large Multi-modal Models via Visual Context Compression",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "Efficient Large Multi-modal Models via Visual Context Compression"
+        ],
+        "iclr25": [
+          "Solving Token Gradient Conflict in Mixture-of-Experts for Large Vision-Language Model"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Cross-modal retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Bridging Vision and Language Spaces with Assignment Prediction",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Bridging Vision and Language Spaces with Assignment Prediction"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "FlexCap: Describe Anything in Images in Controllable Detail",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "FlexCap: Describe Anything in Images in Controllable Detail"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TextVQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 6,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 5,
+  "characterization": "Across the surveyed literature, visual dialogue is consistently defined as a multi-turn, conversational interaction between a user and a model that is grounded in visual content. The prevailing definitions emphasize that a model's responses must be contextually dependent on both the image and the preceding dialogue history. While this general framing is common, some papers describe more specific variants, such as conversations in the biomedical domain or interactions where users refer to image regions with visual prompts like points or boxes. The field operationalizes and measures this behavior using several benchmarks, with papers citing its evaluation on `MM-Vet`, `GQA`, and `TextVQA`. This behavior is studied alongside and considered related to `Visual question answering` and `Visual understanding`. Some work frames it as a capability for \"real-world AI assistants,\" as noted in \"ConvBench: A Multi-Turn Conversation Evaluation Benchmark...\".",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "Biomedical Visual Instruction Tuning with Clinician Preference Alignment",
+      "ConvBench: A Multi-Turn Conversation Evaluation Benchmark with Hierarchical Ablation Capability for Large Vision-Language Models",
+      "Delta-CoMe: Training-Free Delta-Compression with Mixed-Precision for Large Language Models",
+      "Efficient Large Multi-modal Models via Visual Context Compression",
+      "FlexCap: Describe Anything in Images in Controllable Detail",
+      "MaVEn: An Effective Multi-granularity Hybrid Visual Encoding Framework for Multimodal Large Language Model",
+      "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+      "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding",
+      "WildVision: Evaluating Vision-Language Models in the Wild with Human Preferences"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 9
+  },
+  "conferences": [
+    "neurips24"
+  ]
+}

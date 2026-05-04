@@ -1,0 +1,86 @@
+{
+  "canonical_name": "Representational stability",
+  "type": "construct",
+  "canonical_definition": "Across the provided literature, representational stability is most commonly defined as the robustness or consistency of a model's internal representations when subjected to perturbations in the input. A distinct framing, termed 'instance-level stability', focuses more on output consistency, defining it as the degree to which an accelerated model produces the same predictions as its original counterpart for the same inputs. The construct is typically operationalized by applying 'targeted, systematic perturbations' and then measuring the effect on a model's 'internal hidden state representations'. For example, one paper introduces a method, CCPS, that probes these internal states, hypothesizing that greater stability correlates with higher LLM confidence. This approach is presented as an 'efficient alternative to methods relying on multiple generation passes for consistency checking'. In the context of model acceleration, this stability is investigated to ensure accelerated models maintain 'behavioral fidelity'. The concept is also studied alongside `Faithfulness`.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Representation stability",
+    "Representational stability",
+    "Instance-level stability"
+  ],
+  "papers": [
+    "2025.emnlp-main.530.checklist",
+    "ConsistentChat: Building Skeleton-Guided Consistent Multi-Turn Dialogues for Large Language Models from Scratch",
+    "Towards Faithful Natural Language Explanations: A Study Using Activation Patching in Large Language Models"
+  ],
+  "paper_count": 3,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The robustness of a model's internal hidden state representations against targeted, systematic perturbations.",
+      "paper": "Towards Faithful Natural Language Explanations: A Study Using Activation Patching in Large Language Models",
+      "original_name": "Representational stability"
+    },
+    {
+      "text": "The consistency of a model's internal representations when subjected to small perturbations in the input, reflecting the robustness of its semantic understanding.",
+      "paper": "2025.emnlp-main.530.checklist",
+      "original_name": "Representation stability"
+    },
+    {
+      "text": "The degree to which an accelerated model produces the same predictions for the same inputs as its original, unaccelerated counterpart.",
+      "paper": "ConsistentChat: Building Skeleton-Guided Consistent Multi-Turn Dialogues for Large Language Models from Scratch",
+      "original_name": "Instance-level stability"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reliability",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "ConsistentChat: Building Skeleton-Guided Consistent Multi-Turn Dialogues for Large Language Models from Scratch",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "ConsistentChat: Building Skeleton-Guided Consistent Multi-Turn Dialogues for Large Language Models from Scratch"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Behavioral fidelity",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "ConsistentChat: Building Skeleton-Guided Consistent Multi-Turn Dialogues for Large Language Models from Scratch",
+      "evidence": "Low DR and NDR values signify that an accelerated VLM maintains behavioral fidelity and reliability. (Section 1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "ConsistentChat: Building Skeleton-Guided Consistent Multi-Turn Dialogues for Large Language Models from Scratch"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, representational stability is most commonly defined as the robustness or consistency of a model's internal representations when subjected to perturbations in the input. A distinct framing, termed 'instance-level stability', focuses more on output consistency, defining it as the degree to which an accelerated model produces the same predictions as its original counterpart for the same inputs. The construct is typically operationalized by applying 'targeted, systematic perturbations' and then measuring the effect on a model's 'internal hidden state representations'. For example, one paper introduces a method, CCPS, that probes these internal states, hypothesizing that greater stability correlates with higher LLM confidence. This approach is presented as an 'efficient alternative to methods relying on multiple generation passes for consistency checking'. In the context of model acceleration, this stability is investigated to ensure accelerated models maintain 'behavioral fidelity'. The concept is also studied alongside `Faithfulness`.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "2025.emnlp-main.530.checklist",
+      "ConsistentChat: Building Skeleton-Guided Consistent Multi-Turn Dialogues for Large Language Models from Scratch",
+      "Towards Faithful Natural Language Explanations: A Study Using Activation Patching in Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 3
+  },
+  "conferences": [
+    "emnlp25"
+  ]
+}

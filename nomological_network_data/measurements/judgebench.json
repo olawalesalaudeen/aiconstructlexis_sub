@@ -1,0 +1,176 @@
+{
+  "canonical_name": "JudgeBench",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, JudgeBench is consistently characterized as a benchmark for evaluating LLM-as-a-Judge systems. The most prevalent usage is to assess these systems using what one paper describes as \"challenging response pairs spanning knowledge, reasoning, math, and coding.\" In this capacity, JudgeBench is used to measure constructs including Mathematical reasoning, Commonsense knowledge, and Faithfulness. The benchmark's content is specified as being derived from other datasets, namely MMLU-Pro for its knowledge category, LiveBench for reasoning and mathematics, and LiveCodeBench for coding. Some papers use it to test the \"robustness and accuracy\" of judge models, while a less common framing positions it as a case study for evaluating \"judge behavior and agreement under uncertainty.\" In the context of other evaluation tools, it is listed alongside instruments like RewardBench and MTBench-Human, and is explicitly described as a \"valuable complement to RewardBench for evaluating reward models on difficult tasks requiring reasoning.\"",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "JudgeBench"
+  ],
+  "papers": [
+    "Quantifying Lexical Semantic Shift via Unbalanced Optimal Transport",
+    "S-RAG: A Novel Audit Framework for Detecting Unauthorized Use of Personal Data inRAGSystems",
+    "Stepwise Reasoning Disruption Attack ofLLMs",
+    "Beyond correlation: The impact of human uncertainty in measuring the effectiveness of automatic evaluation and LLM-as-a-judge",
+    "JudgeBench: A Benchmark for Evaluating LLM-Based Judges",
+    "RevisEval: Improving LLM-as-a-Judge via Response-Adapted References",
+    "Learning to Plan & Reason for Evaluation with Thinking-LLM-as-a-Judge",
+    "Teaching Language Models to Critique via Reinforcement Learning"
+  ],
+  "paper_count": 8,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A benchmark referenced as an additional case study for evaluating judge behavior and agreement under uncertainty.",
+      "paper": "Beyond correlation: The impact of human uncertainty in measuring the effectiveness of automatic evaluation and LLM-as-a-judge",
+      "original_name": "JudgeBench"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "JudgeBench: A Benchmark for Evaluating LLM-Based Judges",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "JudgeBench: A Benchmark for Evaluating LLM-Based Judges"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense knowledge",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "JudgeBench: A Benchmark for Evaluating LLM-Based Judges",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "JudgeBench: A Benchmark for Evaluating LLM-Based Judges"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU-Pro",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "JudgeBench: A Benchmark for Evaluating LLM-Based Judges",
+      "evidence": "We use MMLU-Pro for the Knowledge category. (Section 3)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "JudgeBench: A Benchmark for Evaluating LLM-Based Judges"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LiveBench",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "JudgeBench: A Benchmark for Evaluating LLM-Based Judges",
+      "evidence": "For the Reasoning and Mathematics categories, we use the corresponding LiveBench datasets. (Section 3)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "JudgeBench: A Benchmark for Evaluating LLM-Based Judges"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LiveCodeBench",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "JudgeBench: A Benchmark for Evaluating LLM-Based Judges",
+      "evidence": "LiveCodeBench is a contamination-free dataset for coding tasks, containing over 300 challenging questions sourced from coding contests like LeetCode, AtCoder, and Codeforces. We select this dataset for the Coding category. (Section 3)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "JudgeBench: A Benchmark for Evaluating LLM-Based Judges"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reward-Bench",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "JudgeBench: A Benchmark for Evaluating LLM-Based Judges",
+      "evidence": "Thus, JudgeBench offers a valuable complement to RewardBench for evaluating reward models on difficult tasks requiring reasoning. (Section 4.3)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "JudgeBench: A Benchmark for Evaluating LLM-Based Judges"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Factuality",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Quantifying Lexical Semantic Shift via Unbalanced Optimal Transport",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Quantifying Lexical Semantic Shift via Unbalanced Optimal Transport"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Learning to Plan & Reason for Evaluation with Thinking-LLM-as-a-Judge",
+      "evidence": "JudgeBench is a recent benchmark that evaluates LLM-based judges on challenging response pairs spanning knowledge, reasoning, math, and coding. (Section 3)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Learning to Plan & Reason for Evaluation with Thinking-LLM-as-a-Judge"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 8,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 4,
+  "characterization": "Across the provided literature, JudgeBench is consistently characterized as a benchmark for evaluating LLM-as-a-Judge systems. The most prevalent usage is to assess these systems using what one paper describes as \"challenging response pairs spanning knowledge, reasoning, math, and coding.\" In this capacity, JudgeBench is used to measure constructs including Mathematical reasoning, Commonsense knowledge, and Faithfulness. The benchmark's content is specified as being derived from other datasets, namely MMLU-Pro for its knowledge category, LiveBench for reasoning and mathematics, and LiveCodeBench for coding. Some papers use it to test the \"robustness and accuracy\" of judge models, while a less common framing positions it as a case study for evaluating \"judge behavior and agreement under uncertainty.\" In the context of other evaluation tools, it is listed alongside instruments like RewardBench and MTBench-Human, and is explicitly described as a \"valuable complement to RewardBench for evaluating reward models on difficult tasks requiring reasoning.\"",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Beyond correlation: The impact of human uncertainty in measuring the effectiveness of automatic evaluation and LLM-as-a-judge",
+      "JudgeBench: A Benchmark for Evaluating LLM-Based Judges",
+      "RevisEval: Improving LLM-as-a-Judge via Response-Adapted References"
+    ],
+    "acl25": [
+      "Quantifying Lexical Semantic Shift via Unbalanced Optimal Transport",
+      "S-RAG: A Novel Audit Framework for Detecting Unauthorized Use of Personal Data inRAGSystems",
+      "Stepwise Reasoning Disruption Attack ofLLMs"
+    ],
+    "icml25": [
+      "Learning to Plan & Reason for Evaluation with Thinking-LLM-as-a-Judge",
+      "Teaching Language Models to Critique via Reinforcement Learning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3,
+    "acl25": 3,
+    "icml25": 2
+  },
+  "conferences": [
+    "acl25",
+    "iclr25",
+    "icml25"
+  ]
+}

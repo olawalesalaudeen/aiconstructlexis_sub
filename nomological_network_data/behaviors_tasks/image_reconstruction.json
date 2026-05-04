@@ -1,0 +1,138 @@
+{
+  "canonical_name": "Image reconstruction",
+  "type": "behavior",
+  "canonical_definition": "Image reconstruction is predominantly defined as the task of encoding an image into a compressed representation and then decoding it back to its original form to measure fidelity. A related framing describes it as producing reconstructed versions of input images or their latent visual representations, as one study aims to \"supervise visual outputs by reconstruction\" (\"Reconstructive Visual Instruction Tuning\"). This process can also involve recovering \"clean fine-grained tokens... from noisy tokens\" (\"Reconstructive Visual Instruction Tuning\"). This behavior is operationalized and evaluated using several datasets, including MS-COCO, CUB-200-2011, and CelebA. The literature suggests that performing image reconstruction can influence other model capabilities. It is reported to improve representation quality and is linked to enhanced fine-grained understanding. One paper specifically argues that this approach encourages models to maintain low-level details, thereby \"enhancing their fine-grained comprehension abilities and reducing hallucinations\" (\"Reconstructive Visual Instruction Tuning\").",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Image reconstruction"
+  ],
+  "papers": [
+    "DEEM: Diffusion models serve as the eyes of large language models for image perception",
+    "Reconstructive Visual Instruction Tuning",
+    "Towards Semantic Equivalence of Tokenization in Multimodal LLM",
+    "Graph-based Unsupervised Disentangled Representation Learning via Multimodal Large Language Models",
+    "LG-VQ: Language-Guided Codebook Learning"
+  ],
+  "paper_count": 5,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The task of encoding an image into a compressed representation and then decoding it back to its original form to measure fidelity.",
+      "paper": "LG-VQ: Language-Guided Codebook Learning",
+      "original_name": "Image reconstruction"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CelebA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Graph-based Unsupervised Disentangled Representation Learning via Multimodal Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Graph-based Unsupervised Disentangled Representation Learning via Multimodal Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CUB-200-2011",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LG-VQ: Language-Guided Codebook Learning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "LG-VQ: Language-Guided Codebook Learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MS-COCO",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LG-VQ: Language-Guided Codebook Learning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "LG-VQ: Language-Guided Codebook Learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Fine-grained understanding",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Reconstructive Visual Instruction Tuning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Reconstructive Visual Instruction Tuning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Reconstructive Visual Instruction Tuning",
+      "evidence": "This approach encourages LMMs to maintain low-level details, thereby enhancing their fine-grained comprehension abilities and reducing hallucinations. (Section 1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Reconstructive Visual Instruction Tuning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Representation quality",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "DS-VLM: Diffusion Supervision Vision Language Model",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "DS-VLM: Diffusion Supervision Vision Language Model"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 6,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 6,
+  "characterization": "Image reconstruction is predominantly defined as the task of encoding an image into a compressed representation and then decoding it back to its original form to measure fidelity. A related framing describes it as producing reconstructed versions of input images or their latent visual representations, as one study aims to \"supervise visual outputs by reconstruction\" (\"Reconstructive Visual Instruction Tuning\"). This process can also involve recovering \"clean fine-grained tokens... from noisy tokens\" (\"Reconstructive Visual Instruction Tuning\"). This behavior is operationalized and evaluated using several datasets, including MS-COCO, CUB-200-2011, and CelebA. The literature suggests that performing image reconstruction can influence other model capabilities. It is reported to improve representation quality and is linked to enhanced fine-grained understanding. One paper specifically argues that this approach encourages models to maintain low-level details, thereby \"enhancing their fine-grained comprehension abilities and reducing hallucinations\" (\"Reconstructive Visual Instruction Tuning\").",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "Graph-based Unsupervised Disentangled Representation Learning via Multimodal Large Language Models",
+      "LG-VQ: Language-Guided Codebook Learning"
+    ],
+    "iclr25": [
+      "DEEM: Diffusion models serve as the eyes of large language models for image perception",
+      "Reconstructive Visual Instruction Tuning",
+      "Towards Semantic Equivalence of Tokenization in Multimodal LLM"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 2,
+    "iclr25": 3
+  },
+  "conferences": [
+    "iclr25",
+    "neurips24"
+  ]
+}

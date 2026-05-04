@@ -1,0 +1,88 @@
+{
+  "canonical_name": "CFBench",
+  "type": "measurement",
+  "canonical_definition": "CFBench is consistently presented as a benchmark for evaluating language models on instruction following, with a prevalent focus on complex instructions containing multiple constraints. Across the provided sources, it is used to measure the behaviors of \"Instruction following\" and, more specifically, \"Complex instruction following.\" The benchmark is designed to assess model performance across a \"comprehensive range of constraint types,\" which are stated to include categories like format, content, style, and numerical dimensions. One paper characterizes it as a \"Single-Instruction Multi-Constraint\" benchmark. Another source provides a more specific description, defining it as a \"large-scale Chinese Comprehensive Constraints Following Benchmark\" with samples from numerous real-life scenarios and NLP tasks. The evaluation procedure is reported to use GPT-4 as a judge and can yield an \"ISR score.\" CFBench is frequently mentioned alongside other complex instruction-following benchmarks such as FollowBench and ComplexBench.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "CFBench"
+  ],
+  "papers": [
+    "Aligned but Blind: Alignment Increases Implicit Bias by Reducing Awareness of Race",
+    "DAPEV2: Process Attention Score as Feature Map for Length Extrapolation",
+    "NewsInterview: a Dataset and a Playground to EvaluateLLMs\u2019 Grounding Gap via Informational Interviews",
+    "Orthogonal Finetuning Made Scalable",
+    "Structured Moral Reasoning in Language Models: A Value-Grounded Evaluation Framework"
+  ],
+  "paper_count": 5,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Complex instruction-following benchmark assessing a model's ability to follow instructions with multiple constraints, evaluated using GPT-4 as a judge.",
+      "paper": "DAPEV2: Process Attention Score as Feature Map for Length Extrapolation",
+      "original_name": "CFBench"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Complex instruction following",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "DAPEV2: Process Attention Score as Feature Map for Length Extrapolation",
+      "evidence": "We mainly conduct evaluations on two complex instruction-following benchmarks, CFBench (Zhang et al., 2024) and FollowBench (Jiang et al., 2023), where instructions consist of multiple constraints.",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "acl25": [
+          "DAPEV2: Process Attention Score as Feature Map for Length Extrapolation"
+        ],
+        "emnlp25": [
+          "Orthogonal Finetuning Made Scalable"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction following",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "NewsInterview: a Dataset and a Playground to EvaluateLLMs\u2019 Grounding Gap via Informational Interviews",
+      "evidence": "we propose CFBench, a large-scale Chinese Comprehensive Constraints Following Benchmark for LLMs, featuring 1,000 curated samples that cover more than 200 real-life scenarios and over 50 NLP tasks. (Abstract)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "acl25": [
+          "NewsInterview: a Dataset and a Playground to EvaluateLLMs\u2019 Grounding Gap via Informational Interviews"
+        ],
+        "emnlp25": [
+          "Structured Moral Reasoning in Language Models: A Value-Grounded Evaluation Framework"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "CFBench is consistently presented as a benchmark for evaluating language models on instruction following, with a prevalent focus on complex instructions containing multiple constraints. Across the provided sources, it is used to measure the behaviors of \"Instruction following\" and, more specifically, \"Complex instruction following.\" The benchmark is designed to assess model performance across a \"comprehensive range of constraint types,\" which are stated to include categories like format, content, style, and numerical dimensions. One paper characterizes it as a \"Single-Instruction Multi-Constraint\" benchmark. Another source provides a more specific description, defining it as a \"large-scale Chinese Comprehensive Constraints Following Benchmark\" with samples from numerous real-life scenarios and NLP tasks. The evaluation procedure is reported to use GPT-4 as a judge and can yield an \"ISR score.\" CFBench is frequently mentioned alongside other complex instruction-following benchmarks such as FollowBench and ComplexBench.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Aligned but Blind: Alignment Increases Implicit Bias by Reducing Awareness of Race",
+      "DAPEV2: Process Attention Score as Feature Map for Length Extrapolation",
+      "NewsInterview: a Dataset and a Playground to EvaluateLLMs\u2019 Grounding Gap via Informational Interviews"
+    ],
+    "emnlp25": [
+      "Orthogonal Finetuning Made Scalable",
+      "Structured Moral Reasoning in Language Models: A Value-Grounded Evaluation Framework"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 3,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25"
+  ]
+}

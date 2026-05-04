@@ -1,0 +1,116 @@
+{
+  "canonical_name": "Reasoning quality",
+  "type": "construct",
+  "canonical_definition": "Within the provided literature, reasoning quality is characterized as the degree to which a model's chain-of-thought process is logically valid, accurate, and comprehensive in its steps. The paper introducing this definition operationalizes the construct through two specific metrics: Recall, which is used to quantify 'reasoning informativeness' by checking for ground-truth solution steps, and Precision, which measures 'faithfulness' by evaluating the accuracy of generated steps. Other work also operationalizes reasoning quality using measurement instruments like `Process Reward Models`, with `Math-Shepherd` cited as one example, and through more general `LLM-based evaluation`. The construct is positioned within a causal network where it is reported to be influenced by `Self-reflection` and, in turn, is suggested to affect `Sampling efficiency`.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Reasoning quality"
+  ],
+  "papers": [
+    "Accelerating Large Language Model Reasoning via Speculative Search",
+    "Flow of Reasoning: Training LLMs for Divergent Reasoning with Minimal Examples",
+    "MME-CoT: Benchmarking Chain-of-Thought in Large Multimodal Models for Reasoning Quality, Robustness, and Efficiency"
+  ],
+  "paper_count": 3,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The degree to which a model's chain-of-thought process is logically valid, accurate, and comprehensive in its steps.",
+      "paper": "MME-CoT: Benchmarking Chain-of-Thought in Large Multimodal Models for Reasoning Quality, Robustness, and Efficiency",
+      "original_name": "Reasoning quality"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Sampling efficiency",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Unfamiliar Finetuning Examples Control How Language Models Hallucinate",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "naacl25": [
+          "Unfamiliar Finetuning Examples Control How Language Models Hallucinate"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Self-reflection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "MME-CoT: Benchmarking Chain-of-Thought in Large Multimodal Models for Reasoning Quality, Robustness, and Efficiency",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "MME-CoT: Benchmarking Chain-of-Thought in Large Multimodal Models for Reasoning Quality, Robustness, and Efficiency"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-based evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MME-CoT: Benchmarking Chain-of-Thought in Large Multimodal Models for Reasoning Quality, Robustness, and Efficiency",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "MME-CoT: Benchmarking Chain-of-Thought in Large Multimodal Models for Reasoning Quality, Robustness, and Efficiency"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Math-Shepherd",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Accelerating Large Language Model Reasoning via Speculative Search",
+      "evidence": "To evaluate the generalization of SpecSearch across thought evaluators, we test it with two PRMs\u2014Math-Shepherd (Wang et al., 2024c) and MATH-psa (Wang et al., 2024a)\u2014on beam search. (Section 5)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Accelerating Large Language Model Reasoning via Speculative Search"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Process Reward Model",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Accelerating Large Language Model Reasoning via Speculative Search",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Accelerating Large Language Model Reasoning via Speculative Search"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 4,
+  "characterization": "Within the provided literature, reasoning quality is characterized as the degree to which a model's chain-of-thought process is logically valid, accurate, and comprehensive in its steps. The paper introducing this definition operationalizes the construct through two specific metrics: Recall, which is used to quantify 'reasoning informativeness' by checking for ground-truth solution steps, and Precision, which measures 'faithfulness' by evaluating the accuracy of generated steps. Other work also operationalizes reasoning quality using measurement instruments like `Process Reward Models`, with `Math-Shepherd` cited as one example, and through more general `LLM-based evaluation`. The construct is positioned within a causal network where it is reported to be influenced by `Self-reflection` and, in turn, is suggested to affect `Sampling efficiency`.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "icml25": [
+      "Accelerating Large Language Model Reasoning via Speculative Search",
+      "Flow of Reasoning: Training LLMs for Divergent Reasoning with Minimal Examples",
+      "MME-CoT: Benchmarking Chain-of-Thought in Large Multimodal Models for Reasoning Quality, Robustness, and Efficiency"
+    ]
+  },
+  "paper_count_by_conference": {
+    "icml25": 3
+  },
+  "conferences": [
+    "icml25"
+  ]
+}

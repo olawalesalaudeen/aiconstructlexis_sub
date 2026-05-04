@@ -1,0 +1,241 @@
+{
+  "canonical_name": "Commonsense question answering",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, commonsense question answering is consistently framed as the observable task of answering questions or completing sentences that require implicit, real-world knowledge not explicitly stated in the context. This behavior is most commonly operationalized and measured using a suite of benchmarks, with PIQA, HellaSwag, WinoGrande, and CommonsenseQA appearing frequently across studies. The format of these tasks is typically multiple-choice, though some papers also mention true/false or boolean-response questions. Evaluation is often conducted in zero-shot or few-shot settings to assess a model's general capabilities. While the dominant focus is on everyday situations, a few papers describe more specific instantiations, such as reasoning over provided facts or answering factual queries like a celebrity's birth year parity. This task is studied as a way to evaluate a model's broader commonsense understanding, as one paper notes that \"answering commonsense questions correctly requires not only knowledge but also reasoning\" (HFT: Half Fine-Tuning for Large Language Models).",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Commonsense question answering"
+  ],
+  "papers": [
+    "CoT-ICLLab: A Synthetic Framework for Studying Chain-of-Thought Learning from In-Context Demonstrations",
+    "Demystifying Small Language Models for Edge Deployment",
+    "HFT: Half Fine-Tuning for Large Language Models",
+    "MT-RAIG: Novel Benchmark and Evaluation Framework for Retrieval-Augmented Insight Generation over Multiple Tables",
+    "THOR-MoE: Hierarchical Task-Guided and Context-Responsive Routing for Neural Machine Translation",
+    "DQ-LoRe: Dual Queries with Low Rank Approximation Re-ranking for In-Context Learning",
+    "Jointly Training Large Autoregressive Multimodal Models",
+    "Large Language Models Cannot Self-Correct Reasoning Yet",
+    "QA-LoRA: Quantization-Aware Low-Rank Adaptation of Large Language Models",
+    "Rethinking Channel Dimensions to Isolate Outliers for Low-bit Weight Quantization of Large Language Models",
+    "Think before you speak: Training Language Models With Pause Tokens",
+    "CoRAC: Integrating SelectiveAPIDocument Retrieval with Question Semantic Intent for Code Question Answering",
+    "CompAct: Compressed Activations for Memory-EfficientLLMTraining",
+    "How Good AreLLMs for Literary Translation, Really? Literary Translation Evaluation with Humans andLLMs",
+    "LBC: Language-Based-Classifier for Out-Of-Variable Generalization",
+    "MiCEval: Unveiling Multimodal Chain of Thought\u2019s Quality via Image Description and Reasoning Steps",
+    "Multi-Conditional Ranking with Large Language Models",
+    "Reversed Attention: On The Gradient Descent Of Attention Layers InGPT",
+    "Temporal-Aware Soft Prompt Tuning for Automatic Text Dating",
+    "3-in-1: 2D Rotary Adaptation for Efficient Finetuning, Efficient Batching and Composability",
+    "AmoebaLLM: Constructing Any-Shape Large Language Models for Efficient and Instant Deployment",
+    "Chain-of-Thought Reasoning Without Prompting",
+    "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models",
+    "DropBP: Accelerating Fine-Tuning of Large Language Models by Dropping Backward Propagation",
+    "Efficient Contextual LLM Cascades through Budget-Constrained Policy Learning",
+    "FouRA: Fourier Low-Rank Adaptation",
+    "Instance-adaptive Zero-shot Chain-of-Thought Prompting",
+    "MindMerger: Efficiently Boosting LLM Reasoning in non-English Languages",
+    "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity",
+    "SVFT: Parameter-Efficient Fine-Tuning with Singular Vectors",
+    "Shopping MMLU: A Massive Multi-Task Online Shopping Benchmark for Large Language Models",
+    "SlimGPT: Layer-wise Structured Pruning for Large Language Models",
+    "Sparse High Rank Adapters",
+    "Unchosen Experts Can Contribute Too: Unleashing MoE Models\u2019 Power by Self-Contrast"
+  ],
+  "paper_count": 34,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The observable task of answering questions or completing sentences that require real-world, everyday knowledge, as evaluated on benchmarks like PIQA, HellaSwag, and WinoGrande.",
+      "paper": "BadChain: Backdoor Chain-of-Thought Prompting for Large Language Models",
+      "original_name": "Commonsense question answering"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CommonsenseQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Think before you speak: Training Language Models With Pause Tokens",
+      "evidence": "We consider nine varied downstream tasks: ... (c) general understanding (CommonSenseQA (Talmor et al., 2019), PhysicalIQA (Bisk et al., 2020))",
+      "paper_count": 3,
+      "papers_by_conference": {
+        "iclr24": [
+          "Think before you speak: Training Language Models With Pause Tokens"
+        ],
+        "neurips24": [
+          "Efficient Contextual LLM Cascades through Budget-Constrained Policy Learning"
+        ],
+        "iclr25": [
+          "Beyond Surface Structure: A Causal Assessment of LLMs' Comprehension ability"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MoE++: Accelerating Mixture-of-Experts Methods with Zero-Computation Experts",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "MoE++: Accelerating Mixture-of-Experts Methods with Zero-Computation Experts"
+        ],
+        "icml25": [
+          "Radio: Rate\u2013Distortion Optimization for Large Language Model Compression"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HellaSwag",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Radio: Rate\u2013Distortion Optimization for Large Language Model Compression",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Radio: Rate\u2013Distortion Optimization for Large Language Model Compression"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Radio: Rate\u2013Distortion Optimization for Large Language Model Compression",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Radio: Rate\u2013Distortion Optimization for Large Language Model Compression"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BoolQ",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Path Drift in Large Reasoning Models: How First-Person Commitments Override Safety",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Path Drift in Large Reasoning Models: How First-Person Commitments Override Safety"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OpenBookQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Path Drift in Large Reasoning Models: How First-Person Commitments Override Safety",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Path Drift in Large Reasoning Models: How First-Person Commitments Override Safety"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Commonsense reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "HFT: Half Fine-Tuning for Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "HFT: Half Fine-Tuning for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Commonsense170k",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Sketch to Adapt: Fine-Tunable Sketches for Efficient LLM Adaptation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Sketch to Adapt: Fine-Tunable Sketches for Efficient LLM Adaptation"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 8,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 8,
+  "characterization": "Across the provided literature, commonsense question answering is consistently framed as the observable task of answering questions or completing sentences that require implicit, real-world knowledge not explicitly stated in the context. This behavior is most commonly operationalized and measured using a suite of benchmarks, with PIQA, HellaSwag, WinoGrande, and CommonsenseQA appearing frequently across studies. The format of these tasks is typically multiple-choice, though some papers also mention true/false or boolean-response questions. Evaluation is often conducted in zero-shot or few-shot settings to assess a model's general capabilities. While the dominant focus is on everyday situations, a few papers describe more specific instantiations, such as reasoning over provided facts or answering factual queries like a celebrity's birth year parity. This task is studied as a way to evaluate a model's broader commonsense understanding, as one paper notes that \"answering commonsense questions correctly requires not only knowledge but also reasoning\" (HFT: Half Fine-Tuning for Large Language Models).",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "DQ-LoRe: Dual Queries with Low Rank Approximation Re-ranking for In-Context Learning",
+      "Jointly Training Large Autoregressive Multimodal Models",
+      "Large Language Models Cannot Self-Correct Reasoning Yet",
+      "QA-LoRA: Quantization-Aware Low-Rank Adaptation of Large Language Models",
+      "Rethinking Channel Dimensions to Isolate Outliers for Low-bit Weight Quantization of Large Language Models",
+      "Think before you speak: Training Language Models With Pause Tokens"
+    ],
+    "neurips24": [
+      "3-in-1: 2D Rotary Adaptation for Efficient Finetuning, Efficient Batching and Composability",
+      "AmoebaLLM: Constructing Any-Shape Large Language Models for Efficient and Instant Deployment",
+      "Chain-of-Thought Reasoning Without Prompting",
+      "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models",
+      "DropBP: Accelerating Fine-Tuning of Large Language Models by Dropping Backward Propagation",
+      "Efficient Contextual LLM Cascades through Budget-Constrained Policy Learning",
+      "FouRA: Fourier Low-Rank Adaptation",
+      "Instance-adaptive Zero-shot Chain-of-Thought Prompting",
+      "MindMerger: Efficiently Boosting LLM Reasoning in non-English Languages",
+      "S$^{2}$FT: Efficient, Scalable and Generalizable LLM Fine-tuning by Structured Sparsity",
+      "SVFT: Parameter-Efficient Fine-Tuning with Singular Vectors",
+      "Shopping MMLU: A Massive Multi-Task Online Shopping Benchmark for Large Language Models",
+      "SlimGPT: Layer-wise Structured Pruning for Large Language Models",
+      "Sparse High Rank Adapters",
+      "Unchosen Experts Can Contribute Too: Unleashing MoE Models\u2019 Power by Self-Contrast"
+    ],
+    "naacl25": [
+      "CoRAC: Integrating SelectiveAPIDocument Retrieval with Question Semantic Intent for Code Question Answering",
+      "CompAct: Compressed Activations for Memory-EfficientLLMTraining",
+      "How Good AreLLMs for Literary Translation, Really? Literary Translation Evaluation with Humans andLLMs",
+      "LBC: Language-Based-Classifier for Out-Of-Variable Generalization",
+      "MiCEval: Unveiling Multimodal Chain of Thought\u2019s Quality via Image Description and Reasoning Steps",
+      "Multi-Conditional Ranking with Large Language Models",
+      "Reversed Attention: On The Gradient Descent Of Attention Layers InGPT",
+      "Temporal-Aware Soft Prompt Tuning for Automatic Text Dating"
+    ],
+    "acl25": [
+      "CoT-ICLLab: A Synthetic Framework for Studying Chain-of-Thought Learning from In-Context Demonstrations",
+      "Demystifying Small Language Models for Edge Deployment",
+      "HFT: Half Fine-Tuning for Large Language Models",
+      "MT-RAIG: Novel Benchmark and Evaluation Framework for Retrieval-Augmented Insight Generation over Multiple Tables",
+      "THOR-MoE: Hierarchical Task-Guided and Context-Responsive Routing for Neural Machine Translation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 6,
+    "neurips24": 15,
+    "naacl25": 8,
+    "acl25": 5
+  },
+  "conferences": [
+    "acl25",
+    "iclr24",
+    "naacl25",
+    "neurips24"
+  ]
+}

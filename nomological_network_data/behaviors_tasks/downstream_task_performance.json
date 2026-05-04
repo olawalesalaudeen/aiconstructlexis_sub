@@ -1,0 +1,277 @@
+{
+  "canonical_name": "Downstream task performance",
+  "type": "behavior",
+  "canonical_definition": "Across the provided literature, downstream task performance is consistently defined as the observable performance of a pre-trained model on a suite of specific, often supervised, tasks. This behavior is evaluated to assess the capabilities a model has acquired during processes like pre-training or continual growth. The operationalization of this behavior is frequently standardized using evaluation frameworks, with the LLM Evaluation Harness being a widely cited tool for this purpose. This framework, along with direct evaluations, is used to measure performance on a wide array of specific benchmarks. Among the most frequently mentioned benchmarks in this dataset are HellaSwag, PIQA, WinoGrande, COPA, MMLU, and various versions of ARC (ARC-Easy and ARC-Challenge). Other datasets cited for measuring this behavior include LAMBADA, BoolQ, SST-2, and AG News. Researchers use this metric to compare models, for instance, to show that a new method can reduce computational costs while \"retaining equivalent or better downstream performance\" (LOIRE: LifelOng learning on Incremental data via pre-trained language model gRowth Efficiently). The scope of these evaluations is broad, with papers reporting the use of these benchmarks to measure \"NLU capabilities\" and \"general knowledge and reasoning capabilities\".",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Downstream task performance",
+    "Downstream task evaluation"
+  ],
+  "papers": [
+    "Hierarchical Autoregressive Transformers: Combining Byte- and Word-Level Processing for Robust, Adaptable Language Models",
+    "Knowledge Entropy Decay during Language Model Pretraining Hinders New Knowledge Acquisition",
+    "LOIRE: LifelOng learning on Incremental data via pre-trained language model gRowth Efficiently",
+    "Polynomial Composition Activations: Unleashing the Dynamics of Large Language Models",
+    "nGPT: Normalized Transformer with Representation Learning on the Hypersphere",
+    "LASER: Attention with Exponential Transformation",
+    "Reinforced Lifelong Editing for Language Models",
+    "The Sharpness Disparity Principle in Transformers for Accelerating Language Model Pre-Training"
+  ],
+  "paper_count": 8,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Producing outputs that support strong performance on supervised language tasks after pre-training or continual growth.",
+      "paper": "LOIRE: LifelOng learning on Incremental data via pre-trained language model gRowth Efficiently",
+      "original_name": "Downstream task performance"
+    },
+    {
+      "text": "The observable performance of a pre-trained model on a suite of specific, often supervised, tasks to assess its acquired capabilities.",
+      "paper": "The Sharpness Disparity Principle in Transformers for Accelerating Language Model Pre-Training",
+      "original_name": "Downstream task evaluation"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM Evaluation Harness",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Domain2Vec: Vectorizing Datasets to Find the Optimal Data Mixture without Training",
+      "evidence": "\u201cWe use LM Evaluation Harness framework (Gao et al., 2024) to assess model performance on HellaSwag ... as well as ARC-Easy and ARC-Challenge\u201d",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "icml25": [
+          "Domain2Vec: Vectorizing Datasets to Find the Optimal Data Mixture without Training",
+          "The Sharpness Disparity Principle in Transformers for Accelerating Language Model Pre-Training"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Scaling Inference-Efficient Language Models",
+      "evidence": "\u201cWe also compare the models\u2019 general knowledge and reasoning capabilities by measuring accuracy across 57 diverse academic subjects using the MMLU benchmark (Hendrycks et al., 2020).\u201d",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Scaling Inference-Efficient Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LAMBADA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Scaling Inference-Efficient Language Models",
+      "evidence": "We evaluate the downstream task accuracy of models derived from the methodology outlined in \u00a72.3 using the following datasets: ARC-Easy (Clark et al., 2018), ARC-Challenge (Clark et al., 2018), BoolQ (Clark et al., 2019), COPA (Roemmele et al., 2011), HellaSwag (Zellers et al., 2019), LAMBADA (Paperno et al., 2016), PIQA (Bisk et al., 2020), WinoGrande (Sakaguchi et al., 2021), MMLU (Hendrycks et al., 2020), Jeopardy (Jeo, 2022), and Winograd (Levesque et al., 2012). (Section 3.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Scaling Inference-Efficient Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Scaling Inference-Efficient Language Models",
+      "evidence": "We evaluate the downstream task accuracy of models derived from the methodology outlined in \u00a72.3 using the following datasets: ARC-Easy (Clark et al., 2018), ARC-Challenge (Clark et al., 2018), BoolQ (Clark et al., 2019), COPA (Roemmele et al., 2011), HellaSwag (Zellers et al., 2019), LAMBADA (Paperno et al., 2016), PIQA (Bisk et al., 2020), WinoGrande (Sakaguchi et al., 2021), MMLU (Hendrycks et al., 2020), Jeopardy (Jeo, 2022), and Winograd (Levesque et al., 2012). (Section 3.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Scaling Inference-Efficient Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HellaSwag",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Scaling Inference-Efficient Language Models",
+      "evidence": "We utilize validation sets from six benchmarks: PIQA (Bisk et al., 2020), HellaSwag (Zellers et al., 2019), ARC-E (Clark et al., 2018), ARC-C (Clark et al., 2018), COPA (Roemmele et al., 2011), Winograd (Levesque et al., 2012), and MathQA (Amini et al., 2019). (Section 4.2.3)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Scaling Inference-Efficient Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Scaling Inference-Efficient Language Models",
+      "evidence": "We utilize validation sets from six benchmarks: PIQA (Bisk et al., 2020), HellaSwag (Zellers et al., 2019), ARC-E (Clark et al., 2018), ARC-C (Clark et al., 2018), COPA (Roemmele et al., 2011), Winograd (Levesque et al., 2012), and MathQA (Amini et al., 2019). (Section 4.2.3)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Scaling Inference-Efficient Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BoolQ",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Scaling Inference-Efficient Language Models",
+      "evidence": "We evaluate the downstream task accuracy of models derived from the methodology outlined in \u00a72.3 using the following datasets: ARC-Easy (Clark et al., 2018), ARC-Challenge (Clark et al., 2018), BoolQ (Clark et al., 2019), COPA (Roemmele et al., 2011), HellaSwag (Zellers et al., 2019), LAMBADA (Paperno et al., 2016), PIQA (Bisk et al., 2020), WinoGrande (Sakaguchi et al., 2021), MMLU (Hendrycks et al., 2020), Jeopardy (Jeo, 2022), and Winograd (Levesque et al., 2012). (Section 3.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Scaling Inference-Efficient Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-Easy",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Scaling Inference-Efficient Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Scaling Inference-Efficient Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-Challenge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Scaling Inference-Efficient Language Models",
+      "evidence": "We evaluate the downstream task accuracy of models derived from the methodology outlined in \u00a72.3 using the following datasets: ARC-Easy (Clark et al., 2018), ARC-Challenge (Clark et al., 2018), BoolQ (Clark et al., 2019), COPA (Roemmele et al., 2011), HellaSwag (Zellers et al., 2019), LAMBADA (Paperno et al., 2016), PIQA (Bisk et al., 2020), WinoGrande (Sakaguchi et al., 2021), MMLU (Hendrycks et al., 2020), Jeopardy (Jeo, 2022), and Winograd (Levesque et al., 2012). (Section 3.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Scaling Inference-Efficient Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SST-2",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Antidote: Post-fine-tuning Safety Alignment for Large Language Models against Harmful Fine-tuning Attack",
+      "evidence": "For fine-tuning tasks, we consider four different datasets, i.e., SST2, AGNEWS, GSM8K and AlpacaEval. (Sec. 5.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Antidote: Post-fine-tuning Safety Alignment for Large Language Models against Harmful Fine-tuning Attack"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AG News",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Antidote: Post-fine-tuning Safety Alignment for Large Language Models against Harmful Fine-tuning Attack",
+      "evidence": "For fine-tuning tasks, we consider four different datasets, i.e., SST2, AGNEWS, GSM8K and AlpacaEval. (Sec. 5.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Antidote: Post-fine-tuning Safety Alignment for Large Language Models against Harmful Fine-tuning Attack"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8k",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Antidote: Post-fine-tuning Safety Alignment for Large Language Models against Harmful Fine-tuning Attack",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Antidote: Post-fine-tuning Safety Alignment for Large Language Models against Harmful Fine-tuning Attack"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AlpacaEval v1.0",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Antidote: Post-fine-tuning Safety Alignment for Large Language Models against Harmful Fine-tuning Attack",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Antidote: Post-fine-tuning Safety Alignment for Large Language Models against Harmful Fine-tuning Attack"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "COPA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Scaling Inference-Efficient Language Models",
+      "evidence": "We utilize validation sets from six benchmarks: PIQA (Bisk et al., 2020), HellaSwag (Zellers et al., 2019), ARC-E (Clark et al., 2018), ARC-C (Clark et al., 2018), COPA (Roemmele et al., 2011), Winograd (Levesque et al., 2012), and MathQA (Amini et al., 2019). (Section 4.2.3)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Scaling Inference-Efficient Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Winograd",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Scaling Inference-Efficient Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Scaling Inference-Efficient Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 15,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 15,
+  "characterization": "Across the provided literature, downstream task performance is consistently defined as the observable performance of a pre-trained model on a suite of specific, often supervised, tasks. This behavior is evaluated to assess the capabilities a model has acquired during processes like pre-training or continual growth. The operationalization of this behavior is frequently standardized using evaluation frameworks, with the LLM Evaluation Harness being a widely cited tool for this purpose. This framework, along with direct evaluations, is used to measure performance on a wide array of specific benchmarks. Among the most frequently mentioned benchmarks in this dataset are HellaSwag, PIQA, WinoGrande, COPA, MMLU, and various versions of ARC (ARC-Easy and ARC-Challenge). Other datasets cited for measuring this behavior include LAMBADA, BoolQ, SST-2, and AG News. Researchers use this metric to compare models, for instance, to show that a new method can reduce computational costs while \"retaining equivalent or better downstream performance\" (LOIRE: LifelOng learning on Incremental data via pre-trained language model gRowth Efficiently). The scope of these evaluations is broad, with papers reporting the use of these benchmarks to measure \"NLU capabilities\" and \"general knowledge and reasoning capabilities\".",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Hierarchical Autoregressive Transformers: Combining Byte- and Word-Level Processing for Robust, Adaptable Language Models",
+      "Knowledge Entropy Decay during Language Model Pretraining Hinders New Knowledge Acquisition",
+      "LOIRE: LifelOng learning on Incremental data via pre-trained language model gRowth Efficiently",
+      "Polynomial Composition Activations: Unleashing the Dynamics of Large Language Models",
+      "nGPT: Normalized Transformer with Representation Learning on the Hypersphere"
+    ],
+    "icml25": [
+      "LASER: Attention with Exponential Transformation",
+      "Reinforced Lifelong Editing for Language Models",
+      "The Sharpness Disparity Principle in Transformers for Accelerating Language Model Pre-Training"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 5,
+    "icml25": 3
+  },
+  "conferences": [
+    "iclr25",
+    "icml25"
+  ]
+}

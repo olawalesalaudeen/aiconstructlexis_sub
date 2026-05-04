@@ -1,0 +1,147 @@
+{
+  "canonical_name": "Task interference",
+  "type": "construct",
+  "canonical_definition": "Task interference is most commonly described as a phenomenon where a model's performance on certain tasks degrades due to conflicting signals from handling multiple capabilities. This construct is frequently studied in two primary settings: multi-task learning, where models are trained jointly on diverse tasks, and model merging, where separately fine-tuned models are combined. While several papers use the term \"task interference,\" related labels such as \"negative transfer\" and \"parameter interference\" are also used to describe this performance degradation. A smaller line of work applies the concept to more specific scenarios, such as \"in-context interference,\" where performance deteriorates with an increasing number of in-context demonstrations, or \"tool knowledge deletion,\" which frames it as the targeted removal of a capability. The construct is primarily operationalized by observing performance degradation on tasks when they are trained or merged with others. One paper suggests measuring it via \"changes in internal activations induced by merging\" (\"No Task Left Behind\"). Some work posits that interference is caused by a failure of \"weight disentanglement,\" where fine-tuning modifies parameters that are critical for other tasks. The concept is also studied alongside \"Catastrophic forgetting\" and \"Knowledge forgetting\".",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Task interference",
+    "Negative transfer",
+    "Tool knowledge deletion",
+    "In-context interference",
+    "Inter-task interference"
+  ],
+  "papers": [
+    "Can Large Language Models Tackle Graph Partitioning?",
+    "Cost-Optimal Grouped-Query Attention for Long-Context Modeling",
+    "RTQA: Recursive Thinking for Complex Temporal Knowledge Graph Question Answering with Large Language Models",
+    "Efficient Model Editing with Task-Localized Sparse Fine-tuning",
+    "LiNeS: Post-training Layer Scaling Prevents Forgetting and Enhances Model Merging",
+    "LMAct: A Benchmark for In-Context Imitation Learning with Long Multimodal Demonstrations",
+    "Modeling Multi-Task Model Merging as Adaptive Projective Gradient Descent",
+    "No Task Left Behind: Isotropic Model Merging with Common and Task-Specific Subspaces",
+    "Tool Unlearning for Tool-Augmented LLMs",
+    "Whoever Started the interference Should End It: Guiding Data-Free Model Merging via Task Vectors",
+    "Customizing Language Models with Instance-wise LoRA for Sequential Recommendation",
+    "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models"
+  ],
+  "paper_count": 12,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A latent phenomenon in multi-task learning where a model's performance on certain tasks degrades due to conflicting learning signals from being trained on a diverse mixture of other tasks.",
+      "paper": "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+      "original_name": "Task interference"
+    },
+    {
+      "text": "A phenomenon where training on diverse or unrelated tasks or data instances leads to a degradation in model performance, as opposed to synergistic learning.",
+      "paper": "Customizing Language Models with Instance-wise LoRA for Sequential Recommendation",
+      "original_name": "Negative transfer"
+    },
+    {
+      "text": "The latent ability of a model to fully remove its internalized capability to use specific tools, such that it behaves as if it had never learned them.",
+      "paper": "Tool Unlearning for Tool-Augmented LLMs",
+      "original_name": "Tool knowledge deletion"
+    },
+    {
+      "text": "A latent phenomenon in model merging where parameter conflicts between different source models cause performance degradation in the final unified model.",
+      "paper": "Whoever Started the interference Should End It: Guiding Data-Free Model Merging via Task Vectors",
+      "original_name": "Parameter interference"
+    },
+    {
+      "text": "The phenomenon where the process of learning or combining capabilities for one task negatively impacts performance on other tasks within a multi-task model.",
+      "paper": "No Task Left Behind: Isotropic Model Merging with Common and Task-Specific Subspaces",
+      "original_name": "Inter-task interference"
+    },
+    {
+      "text": "The latent tendency for model performance to degrade as the number of in-context demonstrations increases, due to suboptimal action selection rather than format errors.",
+      "paper": "LMAct: A Benchmark for In-Context Imitation Learning with Long Multimodal Demonstrations",
+      "original_name": "In-context interference"
+    }
+  ],
+  "definition_count": 6,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Weight disentanglement",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Efficient Model Editing with Task-Localized Sparse Fine-tuning",
+      "evidence": "Task interference occurs when fine-tuning modifies parameters that are critical to other tasks, resulting in unintended behavioral shifts. To prevent this, data from disjoint regions in the input space (representing different tasks) should affect only their corresponding regions in the activation space. Ortiz-Jimenez et al. (2023) formalized this concept as weight disentanglement. (Section 1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Efficient Model Editing with Task-Localized Sparse Fine-tuning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Catastrophic forgetting",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "LiNeS: Post-training Layer Scaling Prevents Forgetting and Enhances Model Merging",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "LiNeS: Post-training Layer Scaling Prevents Forgetting and Enhances Model Merging"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge forgetting",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Merge then Realign: Simple and Effective Modality-Incremental Continual Learning for MultimodalLLMs",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Merge then Realign: Simple and Effective Modality-Incremental Continual Learning for MultimodalLLMs"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization": "Task interference is most commonly described as a phenomenon where a model's performance on certain tasks degrades due to conflicting signals from handling multiple capabilities. This construct is frequently studied in two primary settings: multi-task learning, where models are trained jointly on diverse tasks, and model merging, where separately fine-tuned models are combined. While several papers use the term \"task interference,\" related labels such as \"negative transfer\" and \"parameter interference\" are also used to describe this performance degradation. A smaller line of work applies the concept to more specific scenarios, such as \"in-context interference,\" where performance deteriorates with an increasing number of in-context demonstrations, or \"tool knowledge deletion,\" which frames it as the targeted removal of a capability. The construct is primarily operationalized by observing performance degradation on tasks when they are trained or merged with others. One paper suggests measuring it via \"changes in internal activations induced by merging\" (\"No Task Left Behind\"). Some work posits that interference is caused by a failure of \"weight disentanglement,\" where fine-tuning modifies parameters that are critical for other tasks. The concept is also studied alongside \"Catastrophic forgetting\" and \"Knowledge forgetting\".",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "Customizing Language Models with Instance-wise LoRA for Sequential Recommendation",
+      "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models"
+    ],
+    "iclr25": [
+      "Efficient Model Editing with Task-Localized Sparse Fine-tuning",
+      "LiNeS: Post-training Layer Scaling Prevents Forgetting and Enhances Model Merging"
+    ],
+    "icml25": [
+      "LMAct: A Benchmark for In-Context Imitation Learning with Long Multimodal Demonstrations",
+      "Modeling Multi-Task Model Merging as Adaptive Projective Gradient Descent",
+      "No Task Left Behind: Isotropic Model Merging with Common and Task-Specific Subspaces",
+      "Tool Unlearning for Tool-Augmented LLMs",
+      "Whoever Started the interference Should End It: Guiding Data-Free Model Merging via Task Vectors"
+    ],
+    "emnlp25": [
+      "Can Large Language Models Tackle Graph Partitioning?",
+      "Cost-Optimal Grouped-Query Attention for Long-Context Modeling",
+      "RTQA: Recursive Thinking for Complex Temporal Knowledge Graph Question Answering with Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 2,
+    "iclr25": 2,
+    "icml25": 5,
+    "emnlp25": 3
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

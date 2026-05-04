@@ -1,0 +1,140 @@
+{
+  "canonical_name": "Weak-to-strong generalization",
+  "type": "construct",
+  "canonical_definition": "The prevailing framing of weak-to-strong generalization across the provided literature is a phenomenon where a more capable model surpasses the performance of a weaker supervisor after being trained on data labeled by that weaker model. This construct is operationalized through a specific training setup where, as one paper puts it, \"weak supervision from weak models can effectively stimulate the potential of the stronger model\" to generalize beyond the supervisor's knowledge (`Super(ficial)-alignment: Strong Models May Deceive Weak Models in Weak-to-Strong Generalization`). Most sources describe the goal as the strong model learning the \"task\u2019s intent and rules\" rather than merely replicating the weak model's outputs (`Weak to Strong Generalization for Large Language Models with Multi-capabilities`). Some papers frame this as the strong model's ability to \"recover its full capabilities,\" though it is also noted that \"errors in weak labels limit the performance\" (`Bayesian WeakS-to-Strong from Text Classification to Generation`). A distinct, minority framing appears as \"Weak-to-strong transition,\" defining it as the latent potential of underperforming models to become top performers through \"collaborative search\" rather than direct supervision (`Model Swarms...`). The construct is studied alongside `Generalization` and `Self-correction`. It is also reported to have an inverse correlation with `Model similarity`, where greater similarity between the weak supervisor and the initial strong model is associated with less performance improvement from the training.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Weak-to-strong generalization",
+    "Weak to strong generalization",
+    "Weak-to-Strong generalization",
+    "Weak-to-strong transition"
+  ],
+  "papers": [
+    "CrisisTS: Coupling Social Media Textual Data and Meteorological Time Series for Urgency Classification",
+    "TunableLLM-based Proactive Recommendation Agent",
+    "A transfer learning framework for weak to strong generalization",
+    "Bayesian WeakS-to-Strong from Text Classification to Generation",
+    "Iterative Label Refinement Matters More than Preference Optimization under Weak Supervision",
+    "Super(ficial)-alignment: Strong Models May Deceive Weak Models in Weak-to-Strong Generalization",
+    "Weak to Strong Generalization for Large Language Models with Multi-capabilities",
+    "Model Swarms: Collaborative Search to Adapt LLM Experts via Swarm Intelligence",
+    "Relating Misfit to Gain in Weak-to-Strong Generalization Beyond the Squared Loss",
+    "Representations Shape Weak-to-Strong Generalization: Theoretical Insights and Empirical Predictions",
+    "Teaching Language Models to Critique via Reinforcement Learning",
+    "Can LLMs Learn by Teaching for Better Reasoning? A Preliminary Study",
+    "Recursive Introspection: Teaching Language Model Agents How to Self-Improve",
+    "Stress-Testing Capability Elicitation With Password-Locked Models"
+  ],
+  "paper_count": 14,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "The phenomenon where training on weaker demonstrations or weaker supervision still yields performance above the weak source policy.",
+      "paper": "Stress-Testing Capability Elicitation With Password-Locked Models",
+      "original_name": "Weak-to-strong generalization"
+    },
+    {
+      "text": "The ability of a more powerful model to learn a task and surpass the performance of a weaker supervisor model by training on data labeled by that weaker model.",
+      "paper": "Weak to Strong Generalization for Large Language Models with Multi-capabilities",
+      "original_name": "Weak to strong generalization"
+    },
+    {
+      "text": "The ability of a stronger model to recover its full capabilities when supervised only by the labels from a weaker, less capable model.",
+      "paper": "Bayesian WeakS-to-Strong from Text Classification to Generation",
+      "original_name": "Weak-to-Strong generalization"
+    },
+    {
+      "text": "The latent potential of initially underperforming LLM experts to become top-performing models through collaborative search, indicating untapped or implicit expertise.",
+      "paper": "Model Swarms: Collaborative Search to Adapt LLM Experts via Swarm Intelligence",
+      "original_name": "Weak-to-strong transition"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Recursive Introspection: Teaching Language Model Agents How to Self-Improve",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Recursive Introspection: Teaching Language Model Agents How to Self-Improve"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Critique",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Teaching Language Models to Critique via Reinforcement Learning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Teaching Language Models to Critique via Reinforcement Learning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Model similarity",
+      "other_type": "constructs",
+      "relationship_type": "correlates",
+      "paper": "Great Models Think Alike and this Undermines AI Oversight",
+      "evidence": "for all model combinations, similarity between the weak supervisor and initial strong student inversely correlates with the improvement obtained from weak-to-strong training (r = \u22120.85). (Section 4.2)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Great Models Think Alike and this Undermines AI Oversight"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization": "The prevailing framing of weak-to-strong generalization across the provided literature is a phenomenon where a more capable model surpasses the performance of a weaker supervisor after being trained on data labeled by that weaker model. This construct is operationalized through a specific training setup where, as one paper puts it, \"weak supervision from weak models can effectively stimulate the potential of the stronger model\" to generalize beyond the supervisor's knowledge (`Super(ficial)-alignment: Strong Models May Deceive Weak Models in Weak-to-Strong Generalization`). Most sources describe the goal as the strong model learning the \"task\u2019s intent and rules\" rather than merely replicating the weak model's outputs (`Weak to Strong Generalization for Large Language Models with Multi-capabilities`). Some papers frame this as the strong model's ability to \"recover its full capabilities,\" though it is also noted that \"errors in weak labels limit the performance\" (`Bayesian WeakS-to-Strong from Text Classification to Generation`). A distinct, minority framing appears as \"Weak-to-strong transition,\" defining it as the latent potential of underperforming models to become top performers through \"collaborative search\" rather than direct supervision (`Model Swarms...`). The construct is studied alongside `Generalization` and `Self-correction`. It is also reported to have an inverse correlation with `Model similarity`, where greater similarity between the weak supervisor and the initial strong model is associated with less performance improvement from the training.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "Can LLMs Learn by Teaching for Better Reasoning? A Preliminary Study",
+      "Recursive Introspection: Teaching Language Model Agents How to Self-Improve",
+      "Stress-Testing Capability Elicitation With Password-Locked Models"
+    ],
+    "iclr25": [
+      "A transfer learning framework for weak to strong generalization",
+      "Bayesian WeakS-to-Strong from Text Classification to Generation",
+      "Iterative Label Refinement Matters More than Preference Optimization under Weak Supervision",
+      "Super(ficial)-alignment: Strong Models May Deceive Weak Models in Weak-to-Strong Generalization",
+      "Weak to Strong Generalization for Large Language Models with Multi-capabilities"
+    ],
+    "acl25": [
+      "CrisisTS: Coupling Social Media Textual Data and Meteorological Time Series for Urgency Classification",
+      "TunableLLM-based Proactive Recommendation Agent"
+    ],
+    "icml25": [
+      "Model Swarms: Collaborative Search to Adapt LLM Experts via Swarm Intelligence",
+      "Relating Misfit to Gain in Weak-to-Strong Generalization Beyond the Squared Loss",
+      "Representations Shape Weak-to-Strong Generalization: Theoretical Insights and Empirical Predictions",
+      "Teaching Language Models to Critique via Reinforcement Learning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 3,
+    "iclr25": 5,
+    "acl25": 2,
+    "icml25": 4
+  },
+  "conferences": [
+    "acl25",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

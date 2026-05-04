@@ -1,0 +1,83 @@
+{
+  "canonical_name": "TRUE",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, TRUE is consistently described as a Natural Language Inference (NLI) model that functions as an automated evaluator. It is specified as a T5-11B model fine-tuned on a collection of NLI datasets. The model's primary role is to judge the entailment between a premise, such as a source document, and a hypothesis, like a generated claim. As one study notes, its output can be represented as a binary value indicating whether \"the premise p entails the hypothesis h.\" The most prevalent application for TRUE in this set of papers is to measure `Citation quality`, where it is used to verify if a claim is fully supported by cited documents. It is also documented as a tool for assessing the related construct of `Faithfulness`, specifically for evaluating factual consistency between summaries and their references. In all cases, it serves as a component within evaluation frameworks to assess the factual grounding of generated text.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "TRUE"
+  ],
+  "papers": [
+    "EMNLP: Educator-role Moral and Normative Large Language Models Profiling",
+    "POINTS-Reader: Distillation-Free Adaptation of Vision-Language Models for Document Conversion",
+    "iVISPAR\u2014 An Interactive Visual-Spatial Reasoning Benchmark forVLMs",
+    "KS-Lottery: Finding Certified Lottery Tickets for Multilingual Transfer in Large Language Models",
+    "PeerQA: A Scientific Question Answering Dataset from Peer Reviews"
+  ],
+  "paper_count": 5,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A fine-tuned T5-11B model used as the Natural Language Inference (NLI) component within evaluation frameworks to judge the entailment between a source passage and a generated claim.",
+      "paper": "KS-Lottery: Finding Certified Lottery Tickets for Multilingual Transfer in Large Language Models",
+      "original_name": "TRUE"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Citation quality",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "PeerQA: A Scientific Question Answering Dataset from Peer Reviews",
+      "evidence": "We use TRUE3, a fine-tuned T5-11B (Raffel et al., 2020) model as the NLI model for the judgement of entailment in citation quality. (Section 4)",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "naacl25": [
+          "PeerQA: A Scientific Question Answering Dataset from Peer Reviews",
+          "KS-Lottery: Finding Certified Lottery Tickets for Multilingual Transfer in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "POINTS-Reader: Distillation-Free Adaptation of Vision-Language Models for Document Conversion",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "emnlp25": [
+          "POINTS-Reader: Distillation-Free Adaptation of Vision-Language Models for Document Conversion"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization": "Across the provided literature, TRUE is consistently described as a Natural Language Inference (NLI) model that functions as an automated evaluator. It is specified as a T5-11B model fine-tuned on a collection of NLI datasets. The model's primary role is to judge the entailment between a premise, such as a source document, and a hypothesis, like a generated claim. As one study notes, its output can be represented as a binary value indicating whether \"the premise p entails the hypothesis h.\" The most prevalent application for TRUE in this set of papers is to measure `Citation quality`, where it is used to verify if a claim is fully supported by cited documents. It is also documented as a tool for assessing the related construct of `Faithfulness`, specifically for evaluating factual consistency between summaries and their references. In all cases, it serves as a component within evaluation frameworks to assess the factual grounding of generated text.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "naacl25": [
+      "KS-Lottery: Finding Certified Lottery Tickets for Multilingual Transfer in Large Language Models",
+      "PeerQA: A Scientific Question Answering Dataset from Peer Reviews"
+    ],
+    "emnlp25": [
+      "EMNLP: Educator-role Moral and Normative Large Language Models Profiling",
+      "POINTS-Reader: Distillation-Free Adaptation of Vision-Language Models for Document Conversion",
+      "iVISPAR\u2014 An Interactive Visual-Spatial Reasoning Benchmark forVLMs"
+    ]
+  },
+  "paper_count_by_conference": {
+    "naacl25": 2,
+    "emnlp25": 3
+  },
+  "conferences": [
+    "emnlp25",
+    "naacl25"
+  ]
+}

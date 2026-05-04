@@ -1,0 +1,292 @@
+{
+  "canonical_name": "DocVQA",
+  "type": "measurement",
+  "canonical_definition": "DocVQA is a benchmark predominantly used for document visual question answering, where models are evaluated on their capacity to answer questions based on document images. Across the provided literature, it is described as testing a model's ability to extract and reason about information from a document's text and layout. There is some disagreement regarding its scope; while the most common definition states it is used for both single-page and multi-page documents, one paper explicitly claims it \"can only assess single-page documents\" and contrasts it with multi-page benchmarks. The benchmark is most frequently used to operationalize and measure capabilities related to `Optical character recognition` (OCR) and `Fine-grained visual understanding`, with several sources grouping it with other OCR-extensive tasks. It is also widely employed to assess `Natural language understanding`, particularly \"reading comprehension tasks over document images.\" Other abilities it is reported to measure include `Visual question answering`, `Document question answering`, `Information retrieval`, and `Multimodal perception`.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "DocVQA",
+    "MP-DocVQA"
+  ],
+  "papers": [
+    "An Expanded Massive Multilingual Dataset for High-Performance Language Technologies (HPLT)",
+    "BIPro: Zero-shotChinese Poem Generation via Block Inverse Prompting Constrained Generation Framework",
+    "Efficient Universal Goal Hijacking with Semantics-guided Prompt Organization",
+    "Enhancing Machine Translation with Self-Supervised Preference Data",
+    "ISR: Self-Refining Referring Expressions for Entity Grounding",
+    "Real-time Factuality Assessment from Adversarial Feedback",
+    "Response Wide Shut? Surprising Observations in Basic Vision Language Model Capabilities",
+    "Adversarial Attacks Against Automated Fact-Checking: A Survey",
+    "Cost-Optimal Grouped-Query Attention for Long-Context Modeling",
+    "Please Translate Again: Two Simple Experiments on Whether Human-Like Reasoning Helps Translation",
+    "The Pursuit of Empathy: Evaluating Small Language Models forPTSDDialogue Support",
+    "Turning Logic Against Itself: Probing Model Defenses Through Contrastive Questions",
+    "UniversalCEFR: Enabling Open Multilingual Research on Language Proficiency Assessment",
+    "What Do Indonesians Really Need from Language Technology? A Nationwide Survey",
+    "BigDocs: An Open Dataset for Training Multimodal Models on Document and Code Tasks",
+    "ColPali: Efficient Document Retrieval with Vision Language Models",
+    "DocMIA: Document-Level Membership Inference Attacks against DocVQA Models",
+    "Draw-and-Understand: Leveraging Visual Prompts to Enable MLLMs to Comprehend What You Want",
+    "Eagle: Exploring The Design Space for Multimodal LLMs with Mixture of Encoders",
+    "Enhancing Document Understanding with Group Position Embedding: A Novel Approach to Incorporate Layout Information",
+    "Feast Your Eyes:  Mixture-of-Resolution Adaptation for Multimodal Large Language Models",
+    "Harnessing Webpage UIs for Text-Rich Visual Understanding",
+    "Inference Optimal VLMs Need Fewer Visual Tokens and More Parameters",
+    "LLaVA-Interleave: Tackling Multi-image, Video, and 3D in Large Multimodal Models",
+    "LiveXiv - A Multi-Modal live benchmark based on Arxiv papers content",
+    "MEGA-Bench: Scaling Multimodal Evaluation to over 500 Real-World Tasks",
+    "MLLMs Know Where to Look: Training-free Perception of Small Visual Details with Multimodal LLMs",
+    "MM1.5: Methods, Analysis & Insights from Multimodal LLM Fine-tuning",
+    "Matryoshka Multimodal Models",
+    "Mini-Monkey: Alleviating the Semantic Sawtooth Effect for Lightweight MLLMs via Complementary Image Pyramid",
+    "MixEval-X: Any-to-any Evaluations from Real-world Data Mixture",
+    "Oryx MLLM: On-Demand Spatial-Temporal Understanding at Arbitrary Resolution",
+    "SV-RAG: LoRA-Contextualizing Adaptation of  MLLMs for Long Document Understanding",
+    "Solving Token Gradient Conflict in Mixture-of-Experts for Large Vision-Language Model",
+    "CoreMatching: A Co-adaptive Sparse Inference Framework with Token and Neuron Pruning for Comprehensive Acceleration of Vision-Language Models",
+    "Diffusion Instruction Tuning",
+    "LAuReL: Learned Augmented Residual Layer",
+    "MM-RLHF: The Next Step Forward in Multimodal LLM Alignment",
+    "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding",
+    "R2-T2: Re-Routing in Test-Time for Multimodal Mixture-of-Experts",
+    "Ranked from Within: Ranking Large Multimodal Models Without Labels",
+    "Streamline Without Sacrifice - Squeeze out Computation Redundancy in LMM"
+  ],
+  "paper_count": 42,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "Document visual question answering benchmark used for evaluating single-page and multi-page document QA and retrieval.",
+      "paper": "SV-RAG: LoRA-Contextualizing Adaptation of  MLLMs for Long Document Understanding",
+      "original_name": "DocVQA"
+    },
+    {
+      "text": "A benchmark for multi-page document question answering, limited to documents under 20 pages.",
+      "paper": "BIPro: Zero-shotChinese Poem Generation via Block Inverse Prompting Constrained Generation Framework",
+      "original_name": "MP-DocVQA"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Document understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Leveraging Visual Tokens for Extended Text Contexts in Multi-Modal Learning",
+      "evidence": "",
+      "paper_count": 7,
+      "papers_by_conference": {
+        "neurips24": [
+          "Leveraging Visual Tokens for Extended Text Contexts in Multi-Modal Learning",
+          "What matters when building vision-language models?"
+        ],
+        "iclr25": [
+          "Matryoshka Multimodal Models",
+          "Eagle: Exploring The Design Space for Multimodal LLMs with Mixture of Encoders",
+          "MEGA-Bench: Scaling Multimodal Evaluation to over 500 Real-World Tasks",
+          "Oryx MLLM: On-Demand Spatial-Temporal Understanding at Arbitrary Resolution"
+        ],
+        "icml25": [
+          "CoreMatching: A Co-adaptive Sparse Inference Framework with Token and Neuron Pruning for Comprehensive Acceleration of Vision-Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Optical character recognition",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD",
+      "evidence": "OCR-Related Tasks. DocVQA (Mathew et al., 2021), ChartQA (Masry et al., 2022), TextVQA (Singh et al., 2019), InfoVQA (Mathew et al., 2022), VisualMRC (Tanaka et al., 2021), OCRBench (Liu et al., 2023c).",
+      "paper_count": 5,
+      "papers_by_conference": {
+        "neurips24": [
+          "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD"
+        ],
+        "iclr25": [
+          "Harnessing Webpage UIs for Text-Rich Visual Understanding",
+          "Inference Optimal VLMs Need Fewer Visual Tokens and More Parameters"
+        ],
+        "icml25": [
+          "Ranked from Within: Ranking Large Multimodal Models Without Labels",
+          "R2-T2: Re-Routing in Test-Time for Multimodal Mixture-of-Experts"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "neurips24": [
+          "MoVA: Adapting Mixture of Vision Experts to Multimodal Context"
+        ],
+        "iclr25": [
+          "VisRAG: Vision-based Retrieval-augmented Generation on Multi-modality Documents"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Fine-grained visual understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "MLLMs Know Where to Look: Training-free Perception of Small Visual Details with Multimodal LLMs",
+      "evidence": "\u201cWe evaluate their effectiveness in improving the perception of smaller visual concepts on 4 detail-sensitive datasets (TextVQA 2 (Singh et al., 2019), V\u2217 (Wu and Xie, 2023), POPE (Li et al., 2023c), DocVQA (Mathew et al., 2021))\u201d",
+      "paper_count": 2,
+      "papers_by_conference": {
+        "iclr25": [
+          "MLLMs Know Where to Look: Training-free Perception of Small Visual Details with Multimodal LLMs"
+        ],
+        "icml25": [
+          "Streamline Without Sacrifice - Squeeze out Computation Redundancy in LMM"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Document question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Privacy-Preserving In-Context Learning for Large Language Models",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "Privacy-Preserving In-Context Learning for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Natural language understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "DocVQA (Mathew et al., 2021) focuses on reading comprehension tasks over document images. (Section 4.1)",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "MoVA: Adapting Mixture of Vision Experts to Multimodal Context"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Information retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Enhancing Machine Translation with Self-Supervised Preference Data",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "acl25": [
+          "Enhancing Machine Translation with Self-Supervised Preference Data"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reading comprehension",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Solving Token Gradient Conflict in Mixture-of-Experts for Large Vision-Language Model",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Solving Token Gradient Conflict in Mixture-of-Experts for Large Vision-Language Model"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal perception",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 9,
+  "incoming_relationship_count": 9,
+  "outgoing_relationship_count": 0,
+  "characterization": "DocVQA is a benchmark predominantly used for document visual question answering, where models are evaluated on their capacity to answer questions based on document images. Across the provided literature, it is described as testing a model's ability to extract and reason about information from a document's text and layout. There is some disagreement regarding its scope; while the most common definition states it is used for both single-page and multi-page documents, one paper explicitly claims it \"can only assess single-page documents\" and contrasts it with multi-page benchmarks. The benchmark is most frequently used to operationalize and measure capabilities related to `Optical character recognition` (OCR) and `Fine-grained visual understanding`, with several sources grouping it with other OCR-extensive tasks. It is also widely employed to assess `Natural language understanding`, particularly \"reading comprehension tasks over document images.\" Other abilities it is reported to measure include `Visual question answering`, `Document question answering`, `Information retrieval`, and `Multimodal perception`.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "BigDocs: An Open Dataset for Training Multimodal Models on Document and Code Tasks",
+      "ColPali: Efficient Document Retrieval with Vision Language Models",
+      "DocMIA: Document-Level Membership Inference Attacks against DocVQA Models",
+      "Draw-and-Understand: Leveraging Visual Prompts to Enable MLLMs to Comprehend What You Want",
+      "Eagle: Exploring The Design Space for Multimodal LLMs with Mixture of Encoders",
+      "Enhancing Document Understanding with Group Position Embedding: A Novel Approach to Incorporate Layout Information",
+      "Feast Your Eyes:  Mixture-of-Resolution Adaptation for Multimodal Large Language Models",
+      "Harnessing Webpage UIs for Text-Rich Visual Understanding",
+      "Inference Optimal VLMs Need Fewer Visual Tokens and More Parameters",
+      "LLaVA-Interleave: Tackling Multi-image, Video, and 3D in Large Multimodal Models",
+      "LiveXiv - A Multi-Modal live benchmark based on Arxiv papers content",
+      "MEGA-Bench: Scaling Multimodal Evaluation to over 500 Real-World Tasks",
+      "MLLMs Know Where to Look: Training-free Perception of Small Visual Details with Multimodal LLMs",
+      "MM1.5: Methods, Analysis & Insights from Multimodal LLM Fine-tuning",
+      "Matryoshka Multimodal Models",
+      "Mini-Monkey: Alleviating the Semantic Sawtooth Effect for Lightweight MLLMs via Complementary Image Pyramid",
+      "MixEval-X: Any-to-any Evaluations from Real-world Data Mixture",
+      "Oryx MLLM: On-Demand Spatial-Temporal Understanding at Arbitrary Resolution",
+      "SV-RAG: LoRA-Contextualizing Adaptation of  MLLMs for Long Document Understanding",
+      "Solving Token Gradient Conflict in Mixture-of-Experts for Large Vision-Language Model"
+    ],
+    "acl25": [
+      "An Expanded Massive Multilingual Dataset for High-Performance Language Technologies (HPLT)",
+      "BIPro: Zero-shotChinese Poem Generation via Block Inverse Prompting Constrained Generation Framework",
+      "Efficient Universal Goal Hijacking with Semantics-guided Prompt Organization",
+      "Enhancing Machine Translation with Self-Supervised Preference Data",
+      "ISR: Self-Refining Referring Expressions for Entity Grounding",
+      "Real-time Factuality Assessment from Adversarial Feedback",
+      "Response Wide Shut? Surprising Observations in Basic Vision Language Model Capabilities"
+    ],
+    "icml25": [
+      "CoreMatching: A Co-adaptive Sparse Inference Framework with Token and Neuron Pruning for Comprehensive Acceleration of Vision-Language Models",
+      "Diffusion Instruction Tuning",
+      "LAuReL: Learned Augmented Residual Layer",
+      "MM-RLHF: The Next Step Forward in Multimodal LLM Alignment",
+      "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding",
+      "R2-T2: Re-Routing in Test-Time for Multimodal Mixture-of-Experts",
+      "Ranked from Within: Ranking Large Multimodal Models Without Labels",
+      "Streamline Without Sacrifice - Squeeze out Computation Redundancy in LMM"
+    ],
+    "emnlp25": [
+      "Adversarial Attacks Against Automated Fact-Checking: A Survey",
+      "Cost-Optimal Grouped-Query Attention for Long-Context Modeling",
+      "Please Translate Again: Two Simple Experiments on Whether Human-Like Reasoning Helps Translation",
+      "The Pursuit of Empathy: Evaluating Small Language Models forPTSDDialogue Support",
+      "Turning Logic Against Itself: Probing Model Defenses Through Contrastive Questions",
+      "UniversalCEFR: Enabling Open Multilingual Research on Language Proficiency Assessment",
+      "What Do Indonesians Really Need from Language Technology? A Nationwide Survey"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 20,
+    "acl25": 7,
+    "icml25": 8,
+    "emnlp25": 7
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25"
+  ]
+}

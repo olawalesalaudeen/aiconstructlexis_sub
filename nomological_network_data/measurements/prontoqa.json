@@ -1,0 +1,136 @@
+{
+  "canonical_name": "PrOntoQA",
+  "type": "measurement",
+  "canonical_definition": "Across the provided literature, PrOntoQA is consistently characterized as a synthetic benchmark designed to evaluate logical reasoning in language models. It is most frequently used to measure `Logical reasoning` and, more specifically, `Logical deduction`, with some sources also connecting it to the measurement of `Commonsense knowledge`. The operationalization is described in two complementary ways: one common framing presents it as a dataset of hierarchical relationships where models must judge the correctness of a multi-step reasoning chain, while another describes it as a benchmark based on first-order logic, formal ontologies, and axioms. In practice, PrOntoQA is used for out-of-distribution (OOD) evaluation, and one paper notes the absence of a publicly available training set. The benchmark is also cited as corroborating the \"content effect,\" a phenomenon where models' logical reasoning performance degrades as premises deviate from real-world knowledge. It is often studied alongside other formal reasoning instruments like ProofWriter.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "PrOntoQA",
+    "ProntoQA"
+  ],
+  "papers": [
+    "DEL-ToM: Inference-Time Scaling for Theory-of-Mind Reasoning via Dynamic Epistemic Logic",
+    "FlashAdventure: A Benchmark forGUIAgents Solving Full Story Arcs in Diverse Adventure Games",
+    "TRIAL: Token Relations and Importance Aware Late-interaction for Accurate Text Retrieval",
+    "Large Language Models Meet Symbolic Provers for Logical Reasoning Evaluation",
+    "Self-Improvement in Language Models: The Sharpening Mechanism",
+    "An Analysis for Reasoning Bias of Language Models with Small Initialization",
+    "Flow of Reasoning: Training LLMs for Divergent Reasoning with Minimal Examples",
+    "Policy Guided Tree Search for Enhanced LLM Reasoning",
+    "RULEBREAKERS: Challenging LLMs at the Crossroads between Formal Logic and Human-like Reasoning",
+    "Rethinking External Slow-Thinking: From Snowball Errors to Probability of Correct Reasoning",
+    "Token Assorted: Mixing Latent and Text Tokens for Improved Language Model Reasoning",
+    "Calibrating Reasoning in Language Models with Internal Consistency",
+    "Initialization is Critical to Whether Transformers Fit Composite Functions by Reasoning or Memorizing",
+    "On scalable oversight with weak LLMs judging strong LLMs"
+  ],
+  "paper_count": 14,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A synthetic multi-step reasoning dataset where models must determine the correctness of a reasoning chain based on provided hierarchical relationships.",
+      "paper": "Initialization is Critical to Whether Transformers Fit Composite Functions by Reasoning or Memorizing",
+      "original_name": "PrOntoQA"
+    },
+    {
+      "text": "A synthetic first-order logic reasoning benchmark used for comparison and out-of-distribution evaluation.",
+      "paper": "Large Language Models Meet Symbolic Provers for Logical Reasoning Evaluation",
+      "original_name": "ProntoQA"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Logical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "On scalable oversight with weak LLMs judging strong LLMs",
+      "evidence": "For logical reasoning, we evaluate the PrOntoQA (Saparov & He, 2022) dataset for logical deduction in a 5-shot setting (Section 4).",
+      "paper_count": 5,
+      "papers_by_conference": {
+        "neurips24": [
+          "On scalable oversight with weak LLMs judging strong LLMs"
+        ],
+        "acl25": [
+          "MAPS: Motivation-Aware Personalized Search viaLLM-Driven Consultation Alignment"
+        ],
+        "icml25": [
+          "Flow of Reasoning: Training LLMs for Divergent Reasoning with Minimal Examples",
+          "Token Assorted: Mixing Latent and Text Tokens for Improved Language Model Reasoning",
+          "Policy Guided Tree Search for Enhanced LLM Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ProofWriter",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Large Language Models Meet Symbolic Provers for Logical Reasoning Evaluation",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr25": [
+          "Large Language Models Meet Symbolic Provers for Logical Reasoning Evaluation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Logical deduction",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Policy Guided Tree Search for Enhanced LLM Reasoning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Policy Guided Tree Search for Enhanced LLM Reasoning"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 1,
+  "characterization": "Across the provided literature, PrOntoQA is consistently characterized as a synthetic benchmark designed to evaluate logical reasoning in language models. It is most frequently used to measure `Logical reasoning` and, more specifically, `Logical deduction`, with some sources also connecting it to the measurement of `Commonsense knowledge`. The operationalization is described in two complementary ways: one common framing presents it as a dataset of hierarchical relationships where models must judge the correctness of a multi-step reasoning chain, while another describes it as a benchmark based on first-order logic, formal ontologies, and axioms. In practice, PrOntoQA is used for out-of-distribution (OOD) evaluation, and one paper notes the absence of a publicly available training set. The benchmark is also cited as corroborating the \"content effect,\" a phenomenon where models' logical reasoning performance degrades as premises deviate from real-world knowledge. It is often studied alongside other formal reasoning instruments like ProofWriter.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "Calibrating Reasoning in Language Models with Internal Consistency",
+      "Initialization is Critical to Whether Transformers Fit Composite Functions by Reasoning or Memorizing",
+      "On scalable oversight with weak LLMs judging strong LLMs"
+    ],
+    "iclr25": [
+      "Large Language Models Meet Symbolic Provers for Logical Reasoning Evaluation",
+      "Self-Improvement in Language Models: The Sharpening Mechanism"
+    ],
+    "icml25": [
+      "An Analysis for Reasoning Bias of Language Models with Small Initialization",
+      "Flow of Reasoning: Training LLMs for Divergent Reasoning with Minimal Examples",
+      "Policy Guided Tree Search for Enhanced LLM Reasoning",
+      "RULEBREAKERS: Challenging LLMs at the Crossroads between Formal Logic and Human-like Reasoning",
+      "Rethinking External Slow-Thinking: From Snowball Errors to Probability of Correct Reasoning",
+      "Token Assorted: Mixing Latent and Text Tokens for Improved Language Model Reasoning"
+    ],
+    "emnlp25": [
+      "DEL-ToM: Inference-Time Scaling for Theory-of-Mind Reasoning via Dynamic Epistemic Logic",
+      "FlashAdventure: A Benchmark forGUIAgents Solving Full Story Arcs in Diverse Adventure Games",
+      "TRIAL: Token Relations and Importance Aware Late-interaction for Accurate Text Retrieval"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 3,
+    "iclr25": 2,
+    "icml25": 6,
+    "emnlp25": 3
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "canonical_name": "WildChat",
+  "type": "measurement",
+  "canonical_definition": "WildChat is consistently characterized across the provided literature as a dataset of real-world conversations between users and Large Language Models, specifically GPT models. One paper notes its collection method involved offering a free API in exchange for interaction logs, which allows the dataset to \"more closely reflect real user needs\" (\"Language Mixing in Reasoning Language Models: Patterns, Impact, and Internal Causes\"). This focus on authentic data is a recurring theme, with another study contrasting WildChat's capture of \"real-world user interactions\" with datasets containing primarily synthetic responses. As a measurement instrument, WildChat is used to assess several model attributes, including `Harmlessness`, `Refusal to answer`, and `Multilingual ability`. Researchers also employ it for more specific analyses, such as studying the overlap between model outputs and online text in \"benign interactions,\" providing out-of-distribution prompts for testing generalization, and examining implicit feedback in naturalistic settings. The dataset is also generally studied in the context of `Dialogue`.",
+  "expert_reviewed": false,
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "WildChat"
+  ],
+  "papers": [
+    "Language Mixing in Reasoning Language Models: Patterns, Impact, and Internal Causes",
+    "TORSO: Template-Oriented Reasoning Towards General Tasks",
+    "fLSA: Learning Semantic Structures in Document Collections Using Foundation Models",
+    "First-Person Fairness in Chatbots",
+    "Instructional Segment Embedding: Improving LLM Safety with Instruction Hierarchy",
+    "Measuring Non-Adversarial Reproduction of Training Data in Large Language Models",
+    "Constrain Alignment with Sparse Autoencoders",
+    "Idiosyncrasies in Large Language Models",
+    "Position: The Most Expensive Part of an LLM *should* be its Training Data",
+    "STAIR: Improving Safety Alignment with Introspective Reasoning"
+  ],
+  "paper_count": 10,
+  "group_ids": [],
+  "definitions": [
+    {
+      "text": "A dataset of real-world LLM conversations used here to analyze whether generated outputs overlap with online text in benign interactions.",
+      "paper": "Measuring Non-Adversarial Reproduction of Training Data in Large Language Models",
+      "original_name": "WildChat"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Dialogue",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "WildChat: 1M ChatGPT Interaction Logs in the Wild",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "iclr24": [
+          "WildChat: 1M ChatGPT Interaction Logs in the Wild"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Refusal to answer",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Improving Alignment and Robustness with Circuit Breakers",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "neurips24": [
+          "Improving Alignment and Robustness with Circuit Breakers"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmlessness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "STAIR: Improving Safety Alignment with Introspective Reasoning",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "STAIR: Improving Safety Alignment with Introspective Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multilingual ability",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Constrain Alignment with Sparse Autoencoders",
+      "evidence": "",
+      "paper_count": 1,
+      "papers_by_conference": {
+        "icml25": [
+          "Constrain Alignment with Sparse Autoencoders"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 0,
+  "characterization": "WildChat is consistently characterized across the provided literature as a dataset of real-world conversations between users and Large Language Models, specifically GPT models. One paper notes its collection method involved offering a free API in exchange for interaction logs, which allows the dataset to \"more closely reflect real user needs\" (\"Language Mixing in Reasoning Language Models: Patterns, Impact, and Internal Causes\"). This focus on authentic data is a recurring theme, with another study contrasting WildChat's capture of \"real-world user interactions\" with datasets containing primarily synthetic responses. As a measurement instrument, WildChat is used to assess several model attributes, including `Harmlessness`, `Refusal to answer`, and `Multilingual ability`. Researchers also employ it for more specific analyses, such as studying the overlap between model outputs and online text in \"benign interactions,\" providing out-of-distribution prompts for testing generalization, and examining implicit feedback in naturalistic settings. The dataset is also generally studied in the context of `Dialogue`.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "First-Person Fairness in Chatbots",
+      "Instructional Segment Embedding: Improving LLM Safety with Instruction Hierarchy",
+      "Measuring Non-Adversarial Reproduction of Training Data in Large Language Models"
+    ],
+    "icml25": [
+      "Constrain Alignment with Sparse Autoencoders",
+      "Idiosyncrasies in Large Language Models",
+      "Position: The Most Expensive Part of an LLM *should* be its Training Data",
+      "STAIR: Improving Safety Alignment with Introspective Reasoning"
+    ],
+    "emnlp25": [
+      "Language Mixing in Reasoning Language Models: Patterns, Impact, and Internal Causes",
+      "TORSO: Template-Oriented Reasoning Towards General Tasks",
+      "fLSA: Learning Semantic Structures in Document Collections Using Foundation Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3,
+    "icml25": 4,
+    "emnlp25": 3
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "icml25"
+  ]
+}
