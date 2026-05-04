@@ -897,7 +897,6 @@
                 <div class="controls-section-label">View</div>
                 <div class="button-row">
                     <button id="resetViewBtn" class="btn primary" type="button">Reset View</button>
-                    <button id="togglePhysicsBtn" class="btn" type="button">Pause Physics</button>
                 </div>
             </aside>
 
@@ -941,13 +940,11 @@
             network: null,
             graphSearchInput: null,
             resetViewBtn: null,
-            togglePhysicsBtn: null,
             graphStats: null,
             init: function () {
                 this.network = document.getElementById('network');
                 this.graphSearchInput = document.getElementById('graphSearchInput');
                 this.resetViewBtn = document.getElementById('resetViewBtn');
-                this.togglePhysicsBtn = document.getElementById('togglePhysicsBtn');
                 this.graphStats = document.getElementById('graphStats');
             }
         };
@@ -2384,17 +2381,6 @@
                 resetBtn.addEventListener('click', function () {
                     resetHighlighting();
                     network.fit({ animation: true });
-                });
-            }
-
-            // Toggle physics button
-            let physicsEnabled = true;
-            const toggleBtn = domCache.togglePhysicsBtn || document.getElementById('togglePhysicsBtn');
-            if (toggleBtn) {
-                toggleBtn.addEventListener('click', function () {
-                    physicsEnabled = !physicsEnabled;
-                    network.setOptions({ physics: { enabled: physicsEnabled } });
-                    this.textContent = physicsEnabled ? 'Pause Physics' : 'Resume Physics';
                 });
             }
 
