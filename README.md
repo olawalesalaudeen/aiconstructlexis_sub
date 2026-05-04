@@ -42,8 +42,7 @@ python -m http.server 8000
 # then open http://localhost:8000/view_network.html
 ```
 
-A live deployment of this viewer is available at the GitHub Pages URL listed
-in the paper.
+A live deployment of this viewer is [here](https://69f81361478ce0078078ed3b--cute-piroshki-0e933b.netlify.app/view_network).
 
 ## Running the pipeline
 

@@ -18,11 +18,3 @@ Expert identities are anonymized as **E1..E6** consistent with the paper.
   in Figure 6.
 - `review_assignments_20papers.csv` — which papers were assigned to which
   reviewer.
-
-## Anonymization
-
-Workbook filenames have been renamed E1..E6. Office document properties
-(`creator`, `lastModifiedBy`, `Company`, `Manager`) have been overwritten
-to "Anonymous". Cell-level reviewer notes are preserved verbatim because they
-contain substantive feedback that the paper quotes; if any reviewer signed
-their notes, please flag.
