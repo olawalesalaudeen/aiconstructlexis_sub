@@ -72,7 +72,7 @@ echo "========================================"
 
 # Step 1 — Multi-model extraction (Gemini 2.5 Pro + GPT-5.4 Mini + Qwen 3.5-397B)
 echo ""
-echo "[Step 1/4] Multi-model extraction..."
+echo "[Step 1/5] Multi-model extraction..."
 EXTRACT_ARGS=(
     --papers_url "$PAPERS"
     --sandbox "$OUTDIR"
@@ -92,7 +92,7 @@ fi
 
 # Step 2 — Simplify extracted results
 echo ""
-echo "[Step 2/4] Simplify..."
+echo "[Step 2/5] Simplify..."
 SIMPLIFIED_JSON="$OUTDIR/inputs/simplified_multi_model_mv3.json"
 $PYTHON scripts/simplify_extracted_results.py \
     --input "$EXTRACTION_JSON" \
@@ -100,7 +100,7 @@ $PYTHON scripts/simplify_extracted_results.py \
 
 # Step 3 — Harmonize (LLM-based semantic grouping + relationship aggregation)
 echo ""
-echo "[Step 3/4] Harmonize..."
+echo "[Step 3/5] Harmonize..."
 HARMONIZED_JSON="$OUTDIR/harmonized_network.json"
 HARM_ARGS=(
     --input "$SIMPLIFIED_JSON"
@@ -115,12 +115,25 @@ if [[ -n "$NAME_MAPPING" ]]; then
 fi
 $PYTHON scripts/llm_aggregator.py "${HARM_ARGS[@]}"
 
-# Step 4 — Characterize entities (synthesize definitions) via Google batch API.
+# Step 4 — Canonical-level majority vote across the 3 models. Run AFTER
+# harmonization so that surface variants like
+# "Reasoning ability"/"Reasoning capability"/"Reasoning" count as the same
+# vote, and BEFORE characterization so we don't waste LLM compute on
+# entities that won't survive the filter.
+echo ""
+echo "[Step 4/5] Canonical majority vote..."
+$PYTHON scripts/canonical_majority_vote.py \
+    --harmonized "$HARMONIZED_JSON" \
+    --trials-dir "$OUTDIR/trials" \
+    --models gemini25pro gpt54mini qwen35_397b \
+    --threshold 2 --drop-zero
+
+# Step 5 — Characterize entities (synthesize definitions) via Google batch API.
 # Production used the BATCH version (synthesize_definitions_batch.py); the older
 # synchronous synthesize_definitions.py has been moved to DEP/.
 # Production parameters: --model gemini-2.5-pro, --min-papers 3.
 echo ""
-echo "[Step 4/4] Characterize..."
+echo "[Step 5/5] Characterize..."
 CHARACTERIZED_JSON="$OUTDIR/harmonized_network_characterized.json"
 VENUE_LABEL="$(basename "$OUTDIR")"
 $PYTHON scripts/synthesize_definitions_batch.py \

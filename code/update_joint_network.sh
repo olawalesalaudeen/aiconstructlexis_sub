@@ -12,16 +12,15 @@
 # Steps:
 #   1. Export the existing joint name_mapping (from the last joint network)
 #      as a seed for the new conference's harmonization.
-#   2. Run the full extraction + harmonization + characterization pipeline on
-#      the new conference, using the joint mapping as seed so canonical names
-#      align with prior conferences.
-#   3. Apply per-conference canonical-MV on the new conference's entities.
-#   4. Build the new joint network across ALL listed conferences (including
+#   2. Run the full per-conf pipeline (extract → harmonize → vote →
+#      characterize) on the new conference, using the joint mapping as seed
+#      so canonical names align with prior conferences.
+#   3. Build the new joint network across ALL listed conferences (including
 #      the new one).
-#   5. Run the LLM cross-conference merge to catch any new semantic dups
+#   4. Run the LLM cross-conference merge to catch any new semantic dups
 #      introduced by the new conference's vocabulary.
-#   6. Apply joint canonical-MV across all conferences for entities and
-#      relationships.
+#   5. Apply joint canonical-MV across all conferences for entities.
+#      Relationships are aggregated deterministically (no vote).
 #
 # Outputs:
 #   network_data/<new_conf>/                 # full per-conf artifacts
@@ -101,26 +100,16 @@ PYEOF
 fi
 echo "  Using seed mapping: $SEED_MAPPING"
 
-# ── Step 2: Per-conf pipeline (extraction + harmonization + characterization) ─
-echo "[2/6] Running per-conference pipeline on $NEW_CONF..."
+# ── Step 2: Per-conf pipeline (extraction → harmonization → vote → characterization) ─
+# The per-conf canonical majority vote is performed inside run_pipeline.sh
+# (between harmonization and characterization), so no separate per-conf vote
+# pass is needed here.
+echo "[2/5] Running per-conference pipeline on $NEW_CONF..."
 ./run_pipeline.sh "$NEW_PAPERS" "network_data/$NEW_CONF" --name-mapping "$SEED_MAPPING" \
     --batch-size "$BATCH_SIZE"
 
-# ── Step 3: Canonical-MV on new conference ──────────────────────────────────
-echo "[3/6] Applying canonical-MV to new conference's entities..."
-$PYTHON scripts/canonical_majority_vote.py \
-    --harmonized "network_data/$NEW_CONF/harmonized_network_characterized.json" \
-    --trials-dir "network_data/$NEW_CONF/trials" \
-    --models "${MODELS[@]}" \
-    --threshold "$THRESHOLD" --drop-zero
-$PYTHON scripts/canonical_majority_vote.py \
-    --harmonized "network_data/$NEW_CONF/harmonized_network.json" \
-    --trials-dir "network_data/$NEW_CONF/trials" \
-    --models "${MODELS[@]}" \
-    --threshold "$THRESHOLD" --drop-zero
-
-# ── Step 4: Build joint network across all conferences ──────────────────────
-echo "[4/6] Building joint network across all conferences..."
+# ── Step 3: Build joint network across all conferences ──────────────────────
+echo "[3/5] Building joint network across all conferences..."
 INPUTS=()
 for conf in "${CONFS[@]}"; do
     INPUTS+=("$conf:network_data/$conf/harmonized_network_characterized.json")
@@ -129,24 +118,22 @@ $PYTHON scripts/build_joint_network.py \
     --inputs "${INPUTS[@]}" \
     --output "$JOINT_DIR/joint_network.json"
 
-# ── Step 5: LLM cross-conference merge ──────────────────────────────────────
-echo "[5/6] Running LLM cross-conference merge..."
+# ── Step 4: LLM cross-conference merge ──────────────────────────────────────
+echo "[4/5] Running LLM cross-conference merge..."
 $PYTHON scripts/joint_llm_merge.py \
     --input "$JOINT_DIR/joint_network.json" \
     --output "$JOINT_DIR/joint_network_merged.json" \
     --provider google --model "$HARM_MODEL" --batch-size 500
 
-# ── Step 6: Joint canonical-MV (entities + relationships) ───────────────────
-echo "[6/6] Applying joint canonical-MV..."
+# ── Step 5: Joint canonical-MV (entities only) ──────────────────────────────
+# Relationships are aggregated deterministically by canonical (src, tgt, type)
+# in earlier steps; no separate vote pass is applied to edges.
+echo "[5/5] Applying joint canonical-MV..."
 TRIALS_ARGS=()
 for conf in "${CONFS[@]}"; do
     TRIALS_ARGS+=("$conf:network_data/$conf/trials")
 done
 $PYTHON scripts/joint_canonical_mv.py \
-    --joint "$JOINT_DIR/joint_network_merged.json" \
-    --confs "${TRIALS_ARGS[@]}" \
-    --models "${MODELS[@]}" --threshold "$THRESHOLD"
-$PYTHON scripts/joint_canonical_mv_relationships.py \
     --joint "$JOINT_DIR/joint_network_merged.json" \
     --confs "${TRIALS_ARGS[@]}" \
     --models "${MODELS[@]}" --threshold "$THRESHOLD"

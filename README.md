@@ -25,10 +25,6 @@ assess artifact quality.
 │   ├── requirements.txt              # Python dependencies
 │   ├── run_pipeline.sh, update_joint_network.sh
 │   └── README.md                     # pipeline run instructions
-├── validation/                       # expert validation data
-│   ├── expert_reviews/               # extraction P/R workbooks (E1..E6)
-│   ├── characterization_ratings/     # 5-point Likert ratings (E1..E6)
-│   └── precision_recall_summary.csv
 └── misc/                             # miscellaneous supporting files
 ```
 
@@ -49,12 +45,6 @@ A live deployment of this viewer is [here](https://69f81361478ce0078078ed3b--cut
 See `code/README.md` for end-to-end pipeline instructions, including the
 extraction prompts in `code/prompts/` and the harmonization scripts in
 `code/scripts/`.
-
-## Validation data
-
-`validation/` contains the human review data used to compute the precision /
-recall numbers and the characterization-rating agreement reported in §3.1
-of the paper. Expert identities are anonymized as E1..E6.
 
 ## License
 
